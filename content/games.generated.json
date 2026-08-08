@@ -1,0 +1,2806 @@
+[
+  {
+    "id": "corpse-party-ii-darkness-distortion",
+    "name": "Corpse Party II: Darkness Distortion",
+    "year": 2026,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-1943-rise-of-hydra",
+    "name": "Marvel 1943: Rise of Hydra",
+    "year": 2026,
+    "platforms": [],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Marvel_1943_Rise_of_Hydra.jpg/revision/latest?cb=20241026185901"
+  },
+  {
+    "id": "daemon-x-machina-titanic-scion",
+    "name": "Daemon X Machina: Titanic Scion",
+    "year": 2025,
+    "platforms": [
+      "PC",
+      "Xbox"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "deadpool-vr",
+    "name": "Deadpool VR",
+    "year": 2025,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "x-men",
+    "image": null
+  },
+  {
+    "id": "marvel-cosmic-invasion",
+    "name": "Marvel Cosmic Invasion",
+    "year": 2025,
+    "platforms": [
+      "PC",
+      "Xbox"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f4/Marvel_Cosmic_Invasion_003.jpg/revision/latest?cb=20251202020418"
+  },
+  {
+    "id": "marvel-mystic-mayhem",
+    "name": "Marvel Mystic Mayhem",
+    "year": 2025,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "story-of-seasons-grand-bazaar",
+    "name": "Story of Seasons: Grand Bazaar",
+    "year": 2025,
+    "platforms": [
+      "PC",
+      "Xbox"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "farmagia",
+    "name": "Farmagia",
+    "year": 2024,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "leximan",
+    "name": "Leximan",
+    "year": 2024,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-rivals",
+    "name": "Marvel Rivals",
+    "year": 2024,
+    "platforms": [
+      "PC",
+      "Xbox"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d0/Marvel_Rivals_key_art_2025_002.jpg/revision/latest?cb=20251207173730"
+  },
+  {
+    "id": "marvel-vs-capcom-fighting-collection-arcade-classics",
+    "name": "Marvel vs. Capcom Fighting Collection: Arcade Classics",
+    "year": 2024,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2e/Marvel_vs._Capcom_Fighting_Collection_Arcade_Classics.jpg/revision/latest?cb=20240620182958"
+  },
+  {
+    "id": "pok-mon-frienda",
+    "name": "Pokémon Frienda",
+    "year": 2024,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "princess-knights-mission-annas-marvelous-adventures",
+    "name": "Princess Knight's Mission ~ Anna's Marvelous Adventures ~",
+    "year": 2024,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "fashion-dreamer",
+    "name": "Fashion Dreamer",
+    "year": 2023,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "loop8-summer-of-gods",
+    "name": "Loop8: Summer of Gods",
+    "year": 2023,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvelous-marbles",
+    "name": "Marvelous Marbles",
+    "year": 2023,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "rune-factory-3-special",
+    "name": "Rune Factory 3 Special",
+    "year": 2023,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "silent-hope",
+    "name": "Silent Hope",
+    "year": 2023,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "story-of-seasons-a-wonderful-life",
+    "name": "Story of Seasons: A Wonderful Life",
+    "year": 2023,
+    "platforms": [
+      "PC",
+      "Xbox"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "deadcraft",
+    "name": "Deadcraft",
+    "year": 2022,
+    "platforms": [
+      "PC",
+      "Xbox"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "deadcraft-deluxe-edition",
+    "name": "Deadcraft Deluxe Edition",
+    "year": 2022,
+    "platforms": [
+      "Xbox"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "doraemon-story-of-seasons-friends-of-the-great-kingdom",
+    "name": "Doraemon Story of Seasons: Friends of the Great Kingdom",
+    "year": 2022,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-snap",
+    "name": "Marvel Snap",
+    "year": 2022,
+    "platforms": [
+      "PC",
+      "Phone"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/3f/Marvel_Snap.jpg/revision/latest?cb=20221203101901"
+  },
+  {
+    "id": "marvel-future-revolution",
+    "name": "Marvel Future Revolution",
+    "year": 2021,
+    "platforms": [
+      "Phone"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/73/Marvel_Future_Revolution_003.jpg/revision/latest?cb=20210826024234"
+  },
+  {
+    "id": "no-more-heroes-iii",
+    "name": "No More Heroes III",
+    "year": 2021,
+    "platforms": [
+      "PC",
+      "Xbox"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "rune-factory-5",
+    "name": "Rune Factory 5",
+    "year": 2021,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "story-of-seasons-pioneers-of-olive-town",
+    "name": "Story of Seasons: Pioneers of Olive Town",
+    "year": 2021,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "avengers",
+    "name": "Avengers",
+    "year": 2020,
+    "platforms": [
+      "PC",
+      "Xbox"
+    ],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/Fantastic_Four%2C_Avengers%2C_and_X-Men_%28Earth-12%29_from_Exiles_Vol_1_14_0001.jpg/revision/latest?cb=20191231001854"
+  },
+  {
+    "id": "kandagawa-jet-girls",
+    "name": "Kandagawa Jet Girls",
+    "year": 2020,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-duel",
+    "name": "Marvel Duel",
+    "year": 2020,
+    "platforms": [
+      "Phone"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b1/Marvel_Duel.jpg/revision/latest?cb=20201113063038"
+  },
+  {
+    "id": "marvel-realm-of-champions",
+    "name": "Marvel Realm of Champions",
+    "year": 2020,
+    "platforms": [
+      "Phone"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/ff/Marvel_Realm_of_Champions_FINAL_Loading_Screen.jpg/revision/latest?cb=20220204004157"
+  },
+  {
+    "id": "sakuna-of-rice-and-ruin",
+    "name": "Sakuna: Of Rice and Ruin",
+    "year": 2020,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "space-avengers",
+    "name": "Space Avengers",
+    "year": 2020,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "avengers",
+    "image": null
+  },
+  {
+    "id": "spider-man-remastered",
+    "name": "Spider-Man Remastered",
+    "year": 2020,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "spider-man-miles-morales",
+    "name": "Spider-Man: Miles Morales",
+    "year": 2020,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "daemon-x-machina",
+    "name": "Daemon X Machina",
+    "year": 2019,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "girl-cafe-gun",
+    "name": "Girl Cafe Gun",
+    "year": 2019,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marisas-marvelous-magic-shop",
+    "name": "Marisa's Marvelous Magic Shop",
+    "year": 2019,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-ultimate-alliance-3-the-black-order",
+    "name": "Marvel: Ultimate Alliance 3: The Black Order",
+    "year": 2019,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "rune-factory-4-special",
+    "name": "Rune Factory 4 Special",
+    "year": 2019,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-far-from-home-virtual-reality-experience",
+    "name": "Spider-Man: Far From Home - Virtual Reality Experience",
+    "year": 2019,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/47/Spider-Man_Far_From_Home_-_Virtual_Reality_Experience.jpg/revision/latest?cb=20190721085458"
+  },
+  {
+    "id": "story-of-seasons-friends-of-mineral-town",
+    "name": "Story of Seasons: Friends of Mineral Town",
+    "year": 2019,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "wacca",
+    "name": "WACCA",
+    "year": 2019,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "fate-extella-link",
+    "name": "Fate/Extella Link",
+    "year": 2018,
+    "platforms": [
+      "PC",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-battle-lines",
+    "name": "Marvel Battle Lines",
+    "year": 2018,
+    "platforms": [],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/72/Marvel_Battle_Lines_001.jpg/revision/latest?cb=20250620234646"
+  },
+  {
+    "id": "marvel-strike-force",
+    "name": "Marvel Strike Force",
+    "year": 2018,
+    "platforms": [],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/7b/Marvel_Strike_Force_002.jpg/revision/latest?cb=20180913080617"
+  },
+  {
+    "id": "marvellous-inc",
+    "name": "Marvellous Inc.",
+    "year": 2018,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "senran-kagura-burst",
+    "name": "Senran Kagura Burst",
+    "year": 2018,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "senran-kagura-burst-re-newal",
+    "name": "Senran Kagura Burst Re:Newal",
+    "year": 2018,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "senran-kagura-peach-ball",
+    "name": "Senran Kagura: Peach Ball",
+    "year": 2018,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "the-thousand-noble-musketeers",
+    "name": "The Thousand Noble Musketeers",
+    "year": 2018,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "lego-marvel-super-heroes-2",
+    "name": "Lego Marvel Super Heroes 2",
+    "year": 2017,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "lego",
+    "image": null
+  },
+  {
+    "id": "marvel-vs-capcom-infinite",
+    "name": "Marvel vs. Capcom: Infinite",
+    "year": 2017,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/45/Marvel_vs._Capcom_Infinite_box_art.jpg/revision/latest?cb=20170710210452"
+  },
+  {
+    "id": "osomatsu-san-yokubari-neet-island",
+    "name": "Osomatsu-san: Yokubari! NEET Island",
+    "year": 2017,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "senran-kagura-reflexions",
+    "name": "Senran Kagura Reflexions",
+    "year": 2017,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "senran-kagura-peach-beach-splash",
+    "name": "Senran Kagura: Peach Beach Splash",
+    "year": 2017,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "shinobi-master-senran-kagura-new-link",
+    "name": "Shinobi Master Senran Kagura: New Link",
+    "year": 2017,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-homecoming-virtual-reality-experience",
+    "name": "Spider-Man: Homecoming - Virtual Reality Experience",
+    "year": 2017,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/64/Spider-Man_Homecoming_Virtual_Reality_Experience_001.jpg/revision/latest?cb=20170709055216"
+  },
+  {
+    "id": "fate-extella-the-umbral-star",
+    "name": "Fate/Extella: The Umbral Star",
+    "year": 2016,
+    "platforms": [
+      "PC",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-avengers-academy",
+    "name": "Marvel Avengers Academy",
+    "year": 2016,
+    "platforms": [],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e5/Marvel_Avengers_Academy_%28video_game%29_001.jpg/revision/latest?cb=20160212002017"
+  },
+  {
+    "id": "monster-hunter-stories",
+    "name": "Monster Hunter Stories",
+    "year": 2016,
+    "platforms": [
+      "Nintendo",
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "story-of-seasons-trio-of-towns",
+    "name": "Story of Seasons: Trio of Towns",
+    "year": 2016,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "disney-infinity-3-0",
+    "name": "Disney Infinity 3.0",
+    "year": 2015,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "lego-marvels-avengers",
+    "name": "Lego Marvel's Avengers",
+    "year": 2015,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "lego",
+    "image": null
+  },
+  {
+    "id": "luminous-arc-infinity",
+    "name": "Luminous Arc Infinity",
+    "year": 2015,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-future-fight",
+    "name": "Marvel Future Fight",
+    "year": 2015,
+    "platforms": [],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c3/Marvel_Future_Fight_045.jpg/revision/latest?cb=20201002181046"
+  },
+  {
+    "id": "senran-kagura-estival-versus",
+    "name": "Senran Kagura: Estival Versus",
+    "year": 2015,
+    "platforms": [
+      "PC",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "skullgirls-2nd-encore",
+    "name": "Skullgirls: 2nd Encore",
+    "year": 2015,
+    "platforms": [
+      "PC",
+      "PlayStation handheld",
+      "Xbox"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "cities-in-motion-2-marvellous-monorails",
+    "name": "Cities in Motion 2: Marvellous Monorails",
+    "year": 2014,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "disney-infinity-2-0-marvel-super-heroes",
+    "name": "Disney Infinity 2.0: Marvel Super Heroes",
+    "year": 2014,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "ia-vt-colorful",
+    "name": "IA/VT Colorful",
+    "year": 2014,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "lord-of-magna-maiden-heaven",
+    "name": "Lord of Magna: Maiden Heaven",
+    "year": 2014,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-contest-of-champions",
+    "name": "Marvel Contest of Champions",
+    "year": 2014,
+    "platforms": [],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/36/Marvel_Contest_of_Champions_v23.0_001.jpg/revision/latest?cb=20250528173820"
+  },
+  {
+    "id": "senran-kagura-2-deep-crimson",
+    "name": "Senran Kagura 2: Deep Crimson",
+    "year": 2014,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "senran-kagura-bon-app-tit",
+    "name": "Senran Kagura: Bon Appétit!",
+    "year": 2014,
+    "platforms": [
+      "PC",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-unlimited",
+    "name": "Spider-Man Unlimited",
+    "year": 2014,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4c/Peter_Parker_%28Earth-616%29_from_Webspinners_Tales_of_Spider-Man_Vol_1_13_001.jpg/revision/latest?cb=20240904060213"
+  },
+  {
+    "id": "story-of-seasons",
+    "name": "Story of Seasons",
+    "year": 2014,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "the-amazing-spider-man-2",
+    "name": "The Amazing Spider-Man 2",
+    "year": 2014,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e9/Scarlet_Spiders_Vol_1_1_Bagley_Variant_Textless.jpg/revision/latest?cb=20140725235549"
+  },
+  {
+    "id": "the-amazing-spider-man-2-ios",
+    "name": "The Amazing Spider-Man 2 (IOS)",
+    "year": 2014,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "the-legend-of-heroes-trails-of-cold-steel-ii",
+    "name": "The Legend of Heroes: Trails of Cold Steel II",
+    "year": 2014,
+    "platforms": [
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "the-marvellous-miss-take",
+    "name": "The Marvellous Miss Take",
+    "year": 2014,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "the-thieves-and-the-1000-pok-mon",
+    "name": "The Thieves and the 1000 Pokémon",
+    "year": 2014,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "deadpool",
+    "name": "Deadpool",
+    "year": 2013,
+    "platforms": [
+      "PC",
+      "PS3"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/44/Deadpool_Vol_9_8_Deadpool_Virgin_Variant.jpg/revision/latest?cb=20241117002534"
+  },
+  {
+    "id": "fate-extra-ccc",
+    "name": "Fate/Extra CCC",
+    "year": 2013,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "lego-marvel-super-heroes",
+    "name": "Lego Marvel Super Heroes",
+    "year": 2013,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "lego",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/46/LEGO_Marvel_Super_Heroes_box_art.jpg/revision/latest?cb=20130710192805"
+  },
+  {
+    "id": "london-detective-mysteria",
+    "name": "London Detective Mysteria",
+    "year": 2013,
+    "platforms": [
+      "PC",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-heroes",
+    "name": "Marvel Heroes",
+    "year": 2013,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e1/Marvel_Heroes_%28video_game%29_Logo.png/revision/latest?cb=20210104063644"
+  },
+  {
+    "id": "marvel-puzzle-quest",
+    "name": "Marvel Puzzle Quest",
+    "year": 2013,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/3e/Marvel_Puzzle_Quest_Promo_0002.jpg/revision/latest?cb=20240427152644"
+  },
+  {
+    "id": "senran-kagura-shinovi-versus",
+    "name": "Senran Kagura Shinovi Versus",
+    "year": 2013,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "soul-sacrifice",
+    "name": "Soul Sacrifice",
+    "year": 2013,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "the-legend-of-heroes-trails-of-cold-steel",
+    "name": "The Legend of Heroes: Trails of Cold Steel",
+    "year": 2013,
+    "platforms": [
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "valhalla-knights-3",
+    "name": "Valhalla Knights 3",
+    "year": 2013,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "avengers-initiative",
+    "name": "Avengers Initiative",
+    "year": 2012,
+    "platforms": [],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1c/New_Avengers_Vol_2_10_Textless.jpg/revision/latest?cb=20110215183046"
+  },
+  {
+    "id": "harvest-moon-3d-a-new-beginning",
+    "name": "Harvest Moon 3D: A New Beginning",
+    "year": 2012,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "harvest-moon-hero-of-leaf-valley",
+    "name": "Harvest Moon: Hero of Leaf Valley",
+    "year": 2012,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-avengers-battle-for-earth",
+    "name": "Marvel Avengers: Battle for Earth",
+    "year": 2012,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/af/Marvel_Avengers_Battle_For_Earth.jpg/revision/latest?cb=20131016171337"
+  },
+  {
+    "id": "marvel-vs-capcom-origins",
+    "name": "Marvel vs. Capcom Origins",
+    "year": 2012,
+    "platforms": [
+      "PS3"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Marvel_vs_Capcom_Origins_-_Key_Art.jpg/revision/latest?cb=20131219234154"
+  },
+  {
+    "id": "marvel-avengers-alliance",
+    "name": "Marvel: Avengers Alliance",
+    "year": 2012,
+    "platforms": [],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Marvel_Avengers_Alliance_002.jpg/revision/latest?cb=20120524013746"
+  },
+  {
+    "id": "rune-factory-4",
+    "name": "Rune Factory 4",
+    "year": 2012,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "senran-kagura-new-wave",
+    "name": "Senran Kagura: New Wave",
+    "year": 2012,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "skullgirls",
+    "name": "Skullgirls",
+    "year": 2012,
+    "platforms": [
+      "PC",
+      "PS3"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "super-monkey-ball-banana-splitz",
+    "name": "Super Monkey Ball: Banana Splitz",
+    "year": 2012,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "the-amazing-spider-man",
+    "name": "The Amazing Spider-Man",
+    "year": 2012,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/60/Amazing_Spider-Man_Vol_5_1.jpg/revision/latest?cb=20180705182351"
+  },
+  {
+    "id": "the-amazing-spider-man-ios",
+    "name": "The Amazing Spider-Man (IOS)",
+    "year": 2012,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "captain-america-super-soldier",
+    "name": "Captain America: Super Soldier",
+    "year": 2011,
+    "platforms": [
+      "Nintendo",
+      "PS3"
+    ],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/20/Captain_America_Super_Soldier_XBox_360_Cover.jpg/revision/latest?cb=20110505215002"
+  },
+  {
+    "id": "cities-in-motion-design-marvels",
+    "name": "Cities in Motion: Design Marvels",
+    "year": 2011,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "fortune-street",
+    "name": "Fortune Street",
+    "year": 2011,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "grand-knights-history",
+    "name": "Grand Knights History",
+    "year": 2011,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "half-minute-hero-the-second-coming",
+    "name": "Half-Minute Hero: The Second Coming",
+    "year": 2011,
+    "platforms": [
+      "PC",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "ikenie-no-yoru",
+    "name": "Ikenie no Yoru",
+    "year": 2011,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-super-hero-squad-online",
+    "name": "Marvel Super Hero Squad Online",
+    "year": 2011,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/df/Marvel_Super_Hero_Squad_Online.jpg/revision/latest?cb=20120303193006"
+  },
+  {
+    "id": "marvel-super-hero-squad-comic-combat",
+    "name": "Marvel Super Hero Squad: Comic Combat",
+    "year": 2011,
+    "platforms": [
+      "Nintendo",
+      "PS3"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/bc/Marvel_Super_Hero_Squad_Comic_Combat.jpg/revision/latest?cb=20111015204134"
+  },
+  {
+    "id": "marvel-vs-capcom-3-fate-of-two-worlds",
+    "name": "Marvel vs. Capcom 3: Fate of Two Worlds",
+    "year": 2011,
+    "platforms": [
+      "PS3"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "rune-factory-tides-of-destiny",
+    "name": "Rune Factory: Tides of Destiny",
+    "year": 2011,
+    "platforms": [
+      "Nintendo",
+      "PS3"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "senran-kagura-skirting-shadows",
+    "name": "Senran Kagura: Skirting Shadows",
+    "year": 2011,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-edge-of-time",
+    "name": "Spider-Man: Edge of Time",
+    "year": 2011,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/ab/Spider_Man_Edge_of_Time.jpg/revision/latest?cb=20110508194300"
+  },
+  {
+    "id": "thor-god-of-thunder",
+    "name": "Thor: God of Thunder",
+    "year": 2011,
+    "platforms": [
+      "Nintendo",
+      "PS3"
+    ],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f1/Thor_God_Of_Thunder_%28video_game%29.jpg/revision/latest?cb=20110505214348"
+  },
+  {
+    "id": "thor-son-of-asgard",
+    "name": "Thor: Son of Asgard",
+    "year": 2011,
+    "platforms": [],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Thor_Son_of_Asgard_Vol_1_11.jpg/revision/latest?cb=20101031124936"
+  },
+  {
+    "id": "ultimate-marvel-vs-capcom-3",
+    "name": "Ultimate Marvel vs. Capcom 3",
+    "year": 2011,
+    "platforms": [
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b6/Marvel_Vs_Capcom_3_box_artwork.jpg/revision/latest?cb=20131219234745"
+  },
+  {
+    "id": "x-men-destiny",
+    "name": "X-Men: Destiny",
+    "year": 2011,
+    "platforms": [
+      "Nintendo",
+      "PS3"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/72/X-Men_Destiny.jpg/revision/latest?cb=20130325203150"
+  },
+  {
+    "id": "zoo-resort-3d",
+    "name": "Zoo Resort 3D",
+    "year": 2011,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "fate-extra",
+    "name": "Fate/Extra",
+    "year": 2010,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "harvest-moon-the-tale-of-two-towns",
+    "name": "Harvest Moon: The Tale of Two Towns",
+    "year": 2010,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "ikki-tousen-xross-impact",
+    "name": "Ikki Tousen: Xross Impact",
+    "year": 2010,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-pinball",
+    "name": "Marvel Pinball",
+    "year": 2010,
+    "platforms": [
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4a/Marvel_Pinball.jpg/revision/latest?cb=20110506201221"
+  },
+  {
+    "id": "marvel-super-hero-squad-the-infinity-gauntlet",
+    "name": "Marvel Super Hero Squad: The Infinity Gauntlet",
+    "year": 2010,
+    "platforms": [
+      "Nintendo",
+      "PS3"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/07/Marvel_Super_Hero_Squad_The_Infinity_Gauntlet.jpg/revision/latest?cb=20101215155525"
+  },
+  {
+    "id": "marvel-super-heroes-3d-grandmasters-challenge",
+    "name": "Marvel Super Heroes 3D: Grandmaster's Challenge",
+    "year": 2010,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2c/Earth-TRN335_from_Marvel_Super_Heroes_3D_Grandmaster%27s_Challenge_001.jpg/revision/latest?cb=20120923050253"
+  },
+  {
+    "id": "max-the-magic-marker",
+    "name": "Max & the Magic Marker",
+    "year": 2010,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "no-more-heroes-2-desperate-struggle",
+    "name": "No More Heroes 2: Desperate Struggle",
+    "year": 2010,
+    "platforms": [
+      "Nintendo",
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "no-more-heroes-heroes-paradise",
+    "name": "No More Heroes: Heroes' Paradise",
+    "year": 2010,
+    "platforms": [
+      "PS3"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-shattered-dimensions",
+    "name": "Spider-Man: Shattered Dimensions",
+    "year": 2010,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/95/Spider-Man_Shattered_Dimensions_Cover_0001.jpg/revision/latest?cb=20101228211245"
+  },
+  {
+    "id": "ultimate-spider-man-total-mayhem",
+    "name": "Ultimate Spider-Man: Total Mayhem",
+    "year": 2010,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Ultimate_Spider-Man_Total_Mayhem.jpg/revision/latest?cb=20130325203148"
+  },
+  {
+    "id": "equilibrio",
+    "name": "Equilibrio",
+    "year": 2009,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "half-minute-hero",
+    "name": "Half-Minute Hero",
+    "year": 2009,
+    "platforms": [
+      "PC",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "little-kings-story",
+    "name": "Little King's Story",
+    "year": 2009,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "luminous-arc-3",
+    "name": "Luminous Arc 3",
+    "year": 2009,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-super-hero-squad",
+    "name": "Marvel Super Hero Squad",
+    "year": 2009,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6b/Super_Hero_Squad_%28Earth-11911%29_from_Super_Hero_Squad_Hero_Up%21_Vol_1_1.jpg/revision/latest?cb=20140512131955"
+  },
+  {
+    "id": "marvel-ultimate-alliance-2",
+    "name": "Marvel: Ultimate Alliance 2",
+    "year": 2009,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/18/Marvel_Ultimate_Alliance_2.jpg/revision/latest?cb=20110406213510"
+  },
+  {
+    "id": "muramasa-the-demon-blade",
+    "name": "Muramasa: The Demon Blade",
+    "year": 2009,
+    "platforms": [
+      "Nintendo",
+      "PlayStation handheld"
+    ],
+    "franchise": "street-level",
+    "image": null
+  },
+  {
+    "id": "reel-fishing-challenge",
+    "name": "Reel Fishing Challenge",
+    "year": 2009,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "reel-fishing-anglers-dream",
+    "name": "Reel Fishing: Angler's Dream",
+    "year": 2009,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "rune-factory-3",
+    "name": "Rune Factory 3",
+    "year": 2009,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "sakura-note-ima-ni-tsunagaru-mirai",
+    "name": "Sakura Note: Ima ni Tsunagaru Mirai",
+    "year": 2009,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-toxic-city",
+    "name": "Spider-Man: Toxic City",
+    "year": 2009,
+    "platforms": [
+      "Phone"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/11/Spider-Man_Toxic_City.png/revision/latest?cb=20160614223418"
+  },
+  {
+    "id": "valhalla-knights-eldar-saga",
+    "name": "Valhalla Knights: Eldar Saga",
+    "year": 2009,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "x-men-origins-wolverine",
+    "name": "X-Men Origins: Wolverine",
+    "year": 2009,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a5/X-MenOriginsWolverineMoviePoster.jpg/revision/latest?cb=20110720142028"
+  },
+  {
+    "id": "avalon-code",
+    "name": "Avalon Code",
+    "year": 2008,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "corpse-party",
+    "name": "Corpse Party",
+    "year": 2008,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "harvest-moon-ds-grand-bazaar",
+    "name": "Harvest Moon DS: Grand Bazaar",
+    "year": 2008,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "harvest-moon-ds-sunshine-islands",
+    "name": "Harvest Moon DS: Sunshine Islands",
+    "year": 2008,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "harvest-moon-animal-parade",
+    "name": "Harvest Moon: Animal Parade",
+    "year": 2008,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "ikki-tousen-eloquent-fist",
+    "name": "Ikki Tousen: Eloquent Fist",
+    "year": 2008,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "iron-man",
+    "name": "Iron Man",
+    "year": 2008,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/8b/Invincible_Iron_Man_Vol_2_518_Textless.jpg/revision/latest?cb=20200612014506"
+  },
+  {
+    "id": "luminous-arc-2",
+    "name": "Luminous Arc 2",
+    "year": 2008,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "lux-pain",
+    "name": "Lux-Pain",
+    "year": 2008,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "rune-factory-2",
+    "name": "Rune Factory 2",
+    "year": 2008,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "rune-factory-frontier",
+    "name": "Rune Factory Frontier",
+    "year": 2008,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-web-of-shadows",
+    "name": "Spider-Man: Web of Shadows",
+    "year": 2008,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d9/Spider-Man_Web_of_Shadows_Cover.gif/revision/latest?cb=20231110163029"
+  },
+  {
+    "id": "steal-princess",
+    "name": "Steal Princess",
+    "year": 2008,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "the-incredible-hulk",
+    "name": "The Incredible Hulk",
+    "year": 2008,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3"
+    ],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b0/Totally_Awesome_Hulk_Vol_1_1_Textless.jpg/revision/latest?cb=20150908201942"
+  },
+  {
+    "id": "valhalla-knights-2",
+    "name": "Valhalla Knights 2",
+    "year": 2008,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "case-closed-the-mirapolis-investigation",
+    "name": "Case Closed: The Mirapolis Investigation",
+    "year": 2007,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "fantastic-four-rise-of-the-silver-surfer",
+    "name": "Fantastic Four: Rise of the Silver Surfer",
+    "year": 2007,
+    "platforms": [
+      "Nintendo",
+      "PS3"
+    ],
+    "franchise": "fantastic-four",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/8b/Fantastic_Four_Rise_of_the_Silver_Surfer_%28film%29_poster_1.jpg/revision/latest?cb=20200131093604"
+  },
+  {
+    "id": "ghost-rider",
+    "name": "Ghost Rider",
+    "year": 2007,
+    "platforms": [],
+    "franchise": "street-level",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Ghost_Rider_Vol_10_11_Mobili_Variant_Textless.jpg/revision/latest?cb=20240806004855"
+  },
+  {
+    "id": "harvest-moon-ds-island-of-happiness",
+    "name": "Harvest Moon DS: Island of Happiness",
+    "year": 2007,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "harvest-moon-tree-of-tranquility",
+    "name": "Harvest Moon: Tree of Tranquility",
+    "year": 2007,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "hi-hamtaro-little-hamsters-big-adventure",
+    "name": "Hi Hamtaro! Little Hamsters Big Adventure",
+    "year": 2007,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "hi-hamtaro-ham-ham-challenge",
+    "name": "Hi! Hamtaro: Ham-Ham Challenge",
+    "year": 2007,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "katekyo-hitman-reborn-dream-hyper-battle",
+    "name": "Katekyo Hitman Reborn! Dream Hyper Battle!",
+    "year": 2007,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "kujibiki-unbalance-kaich-onegai-smash-fight",
+    "name": "Kujibiki Unbalance: Kaichō Onegai Smash Fight",
+    "year": 2007,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "luminous-arc",
+    "name": "Luminous Arc",
+    "year": 2007,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-trading-card-game",
+    "name": "Marvel Trading Card Game",
+    "year": 2007,
+    "platforms": [
+      "Nintendo",
+      "PC"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/bc/Marvel_Trading_Card_Game.jpg/revision/latest?cb=20221227211128"
+  },
+  {
+    "id": "no-more-heroes",
+    "name": "No More Heroes",
+    "year": 2007,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "rainbow-islands-evolution",
+    "name": "Rainbow Islands Evolution",
+    "year": 2007,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-3",
+    "name": "Spider-Man 3",
+    "year": 2007,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/68/Miles_Morales_%28Earth-1610%29_from_All-New_X-Men_Vol_1_31.jpeg/revision/latest?cb=20140831010739"
+  },
+  {
+    "id": "spider-man-friend-or-foe",
+    "name": "Spider-Man: Friend or Foe",
+    "year": 2007,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PlayStation handheld"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/cb/Spider-Man_Friend_or_Foe.jpg/revision/latest?cb=20110506203259"
+  },
+  {
+    "id": "xxxholic-watanuki-no-izayoi-souwa",
+    "name": "xxxHolic: Watanuki no Izayoi Souwa",
+    "year": 2007,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "chao-dream-touch-happy-anniversary",
+    "name": "Chao Dream Touch! Happy Anniversary",
+    "year": 2006,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "contact",
+    "name": "Contact",
+    "year": 2006,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "innocent-life-a-futuristic-harvest-moon",
+    "name": "Innocent Life: A Futuristic Harvest Moon",
+    "year": 2006,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "kashimashi-girl-meets-girl-hajimete-no-natsu-monogatari",
+    "name": "Kashimashi: Girl Meets Girl Hajimete no Natsu Monogatari",
+    "year": 2006,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-ultimate-alliance",
+    "name": "Marvel: Ultimate Alliance",
+    "year": 2006,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d7/Marvel_Ultimate_Alliance_Cover.jpg/revision/latest?cb=20061230194804"
+  },
+  {
+    "id": "rune-factory-a-fantasy-harvest-moon",
+    "name": "Rune Factory: A Fantasy Harvest Moon",
+    "year": 2006,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-battle-for-new-york",
+    "name": "Spider-Man: Battle for New York",
+    "year": 2006,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/37/Spider-Man_Battle_for_New_York.jpg/revision/latest?cb=20110326233254"
+  },
+  {
+    "id": "valhalla-knights",
+    "name": "Valhalla Knights",
+    "year": 2006,
+    "platforms": [
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "x-men-the-official-game",
+    "name": "X-Men: The Official Game",
+    "year": 2006,
+    "platforms": [
+      "Nintendo",
+      "PC"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/27/X-Men_The_Official_Game.jpg/revision/latest?cb=20090811190219"
+  },
+  {
+    "id": "fantastic-four",
+    "name": "Fantastic Four",
+    "year": 2005,
+    "platforms": [
+      "Nintendo",
+      "PC"
+    ],
+    "franchise": "fantastic-four",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/Fantastic_Four%2C_Avengers%2C_and_X-Men_%28Earth-12%29_from_Exiles_Vol_1_14_0001.jpg/revision/latest?cb=20191231001854"
+  },
+  {
+    "id": "harvest-moon-ds",
+    "name": "Harvest Moon DS",
+    "year": 2005,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "harvest-moon-magical-melody",
+    "name": "Harvest Moon: Magical Melody",
+    "year": 2005,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "lunar-dragon-song",
+    "name": "Lunar: Dragon Song",
+    "year": 2005,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-nemesis-rise-of-the-imperfects",
+    "name": "Marvel Nemesis: Rise of the Imperfects",
+    "year": 2005,
+    "platforms": [
+      "Nintendo",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c5/Marvel_Nemesis_Rise_of_the_Imperfects.jpg/revision/latest?cb=20080922011647"
+  },
+  {
+    "id": "ultimate-spider-man",
+    "name": "Ultimate Spider-Man",
+    "year": 2005,
+    "platforms": [
+      "Nintendo",
+      "PC"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e0/Miles_Morales_Ultimate_Spider-Man_Vol_1_1_Staples_Variant_Textless.jpg/revision/latest?cb=20140411194205"
+  },
+  {
+    "id": "x-men-legends-ii-rise-of-apocalypse",
+    "name": "X-Men Legends II: Rise of Apocalypse",
+    "year": 2005,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "Phone",
+      "PlayStation handheld"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/61/X-Men_Legends_II_Rise_of_Apocalypse_Cover.png/revision/latest?cb=20250125120058"
+  },
+  {
+    "id": "spider-man-2",
+    "name": "Spider-Man 2",
+    "year": 2004,
+    "platforms": [
+      "Nintendo",
+      "PC",
+      "Phone",
+      "PlayStation handheld"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e9/Scarlet_Spiders_Vol_1_1_Bagley_Variant_Textless.jpg/revision/latest?cb=20140725235549"
+  },
+  {
+    "id": "the-punisher",
+    "name": "The Punisher",
+    "year": 2004,
+    "platforms": [
+      "PC",
+      "Phone"
+    ],
+    "franchise": "street-level",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Joe_Garrison_%28Earth-616%29_from_Daredevil_Woman_Without_Fear_Vol_2_1_001.jpg/revision/latest?cb=20260227173502"
+  },
+  {
+    "id": "tokyo-majin-gakuen-geh-ch-kepp-roku",
+    "name": "Tokyo Majin Gakuen Gehōchō: Keppūroku",
+    "year": 2004,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "x-men-legends",
+    "name": "X-Men Legends",
+    "year": 2004,
+    "platforms": [
+      "Nintendo",
+      "Phone"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2c/X-Men_Legends.png/revision/latest?cb=20090303201901"
+  },
+  {
+    "id": "harvest-moon-friends-of-mineral-town",
+    "name": "Harvest Moon: Friends of Mineral Town",
+    "year": 2003,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "x2-wolverines-revenge",
+    "name": "X2: Wolverine's Revenge",
+    "year": 2003,
+    "platforms": [
+      "Nintendo",
+      "PC"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/59/X2_Wolverine%27s_Revenge.png/revision/latest?cb=20090523022529"
+  },
+  {
+    "id": "x-men-next-dimension",
+    "name": "X-Men: Next Dimension",
+    "year": 2002,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/3c/X-Men_Next_Dimension.jpg/revision/latest?cb=20100218202727"
+  },
+  {
+    "id": "spider-man-2-enter-electro",
+    "name": "Spider-Man 2: Enter: Electro",
+    "year": 2001,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "spider-man-2-the-sinister-six",
+    "name": "Spider-Man 2: The Sinister Six",
+    "year": 2001,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/04/Spider-Man_2_The_Sinister_Six.png/revision/latest?cb=20130325203147"
+  },
+  {
+    "id": "spider-man-mysterios-menace",
+    "name": "Spider-Man: Mysterio's Menace",
+    "year": 2001,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/35/Spider-Man_Mysterio%27s_Menace.jpg/revision/latest?cb=20110506203443"
+  },
+  {
+    "id": "x-men-mutant-academy-2",
+    "name": "X-Men: Mutant Academy 2",
+    "year": 2001,
+    "platforms": [],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/87/X-Men_Mutant_Academy_2.jpg/revision/latest?cb=20070530122007"
+  },
+  {
+    "id": "x-men-reign-of-apocalypse",
+    "name": "X-Men: Reign of Apocalypse",
+    "year": 2001,
+    "platforms": [],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/X-Men_Reign_of_Apocalypse.png/revision/latest?cb=20130325203148"
+  },
+  {
+    "id": "x-men-wolverines-rage",
+    "name": "X-Men: Wolverine's Rage",
+    "year": 2001,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/11/X-Men_Wolverine%27s_Rage.png/revision/latest?cb=20130325203146"
+  },
+  {
+    "id": "blade",
+    "name": "Blade",
+    "year": 2000,
+    "platforms": [],
+    "franchise": "street-level",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Ultimate_Avengers_Vol_1_13_Follogram_Variant.jpg/revision/latest?cb=20111212153804"
+  },
+  {
+    "id": "love-hina-pocket",
+    "name": "Love Hina Pocket",
+    "year": 2000,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-vs-capcom-2-new-age-of-heroes",
+    "name": "Marvel vs. Capcom 2: New Age of Heroes",
+    "year": 2000,
+    "platforms": [
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/7a/Marvel_vs._Capcom_2_New_Age_of_Heroes_US_Flyer.jpg/revision/latest?cb=20090427035823"
+  },
+  {
+    "id": "sakura-momoko-gekij-coji-coji",
+    "name": "Sakura Momoko Gekijō Coji-Coji",
+    "year": 2000,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man",
+    "name": "Spider-Man",
+    "year": 2000,
+    "platforms": [
+      "Nintendo",
+      "PC"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Amazing_Spider-Man_Vol_5_75_Lee_Virgin_Variant.jpg/revision/latest?cb=20220405001421"
+  },
+  {
+    "id": "x-men-mutant-academy",
+    "name": "X-Men: Mutant Academy",
+    "year": 2000,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f6/X_Men_Mutant_Academy.jpg/revision/latest?cb=20110622165941"
+  },
+  {
+    "id": "x-men-mutant-wars",
+    "name": "X-Men: Mutant Wars",
+    "year": 2000,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b6/X-Men_Mutant_Wars.jpg/revision/latest?cb=20110911233755"
+  },
+  {
+    "id": "harvest-moon-64",
+    "name": "Harvest Moon 64",
+    "year": 1999,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-vs-capcom-clash-of-super-heroes",
+    "name": "Marvel vs. Capcom: Clash of Super Heroes",
+    "year": 1998,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/99/MVC_Clash_of_the_Super_Heroes.jpg/revision/latest?cb=20120621172411"
+  },
+  {
+    "id": "marvel-super-heroes-vs-street-fighter",
+    "name": "Marvel Super Heroes vs. Street Fighter",
+    "year": 1997,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c8/MSHvSFflyerUS.jpg/revision/latest?cb=20081226014742"
+  },
+  {
+    "id": "x-men-the-ravages-of-apocalypse",
+    "name": "X-Men: The Ravages of Apocalypse",
+    "year": 1997,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9b/XMen_Ravages_Apocalypse.jpg/revision/latest?cb=20110413212635"
+  },
+  {
+    "id": "marvel-super-heroes-in-war-of-the-gems",
+    "name": "Marvel Super Heroes in War of the Gems",
+    "year": 1996,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b5/MarvelSuperHeroesWaroftheGemsfrontcover.jpg/revision/latest?cb=20081121034337"
+  },
+  {
+    "id": "marvelous-m-hitotsu-no-takarajima",
+    "name": "Marvelous: Mōhitotsu no Takarajima",
+    "year": 1996,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "the-amazing-spider-man-web-of-fire",
+    "name": "The Amazing Spider-Man: Web of Fire",
+    "year": 1996,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "x-men-vs-street-fighter",
+    "name": "X-Men vs. Street Fighter",
+    "year": 1996,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b7/X-Men_vs._Street_Fighter_Flyer.jpg/revision/latest?cb=20081226014414"
+  },
+  {
+    "id": "x-men-mojo-world",
+    "name": "X-Men: Mojo World",
+    "year": 1996,
+    "platforms": [],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/ab/X-Men_Mojo_World.jpg/revision/latest?cb=20110113053831"
+  },
+  {
+    "id": "avengers-in-galactic-storm",
+    "name": "Avengers in Galactic Storm",
+    "year": 1995,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/ca/Avengers_in_Galactic_Storm.jpg/revision/latest?cb=20110322213216"
+  },
+  {
+    "id": "marvel-super-heroes",
+    "name": "Marvel Super Heroes",
+    "year": 1995,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-animated-series",
+    "name": "Spider-Man Animated Series",
+    "year": 1995,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "the-amazing-spider-man-lethal-foes",
+    "name": "The Amazing Spider-Man: Lethal Foes",
+    "year": 1995,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/61/LFSPMN.png/revision/latest?cb=20111220022340"
+  },
+  {
+    "id": "venom-spider-man-separation-anxiety",
+    "name": "Venom/Spider-Man: Separation Anxiety",
+    "year": 1995,
+    "platforms": [
+      "Nintendo",
+      "PC"
+    ],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "x-men-2-clone-wars",
+    "name": "X-Men 2: Clone Wars",
+    "year": 1995,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/X-Men_2_Clone_Wars.jpg/revision/latest?cb=20110327150014"
+  },
+  {
+    "id": "x-men-children-of-the-atom",
+    "name": "X-Men: Children of the Atom",
+    "year": 1995,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/94/X-Men_Children_of_the_Atom_Vol_1_1.jpg/revision/latest?cb=20180430011131"
+  },
+  {
+    "id": "marvins-marvellous-adventures",
+    "name": "Marvin's Marvellous Adventures",
+    "year": 1994,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-and-venom-maximum-carnage",
+    "name": "Spider-Man and Venom: Maximum Carnage",
+    "year": 1994,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "wolverine-adamantium-rage",
+    "name": "Wolverine: Adamantium Rage",
+    "year": 1994,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/35/Wolverine_adamantium_rage.jpg/revision/latest?cb=20120625104543"
+  },
+  {
+    "id": "x-men-mutant-apocalypse",
+    "name": "X-Men: Mutant Apocalypse",
+    "year": 1994,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a4/X-Men_Mutant_Apocalypse.jpg/revision/latest?cb=20081121033602"
+  },
+  {
+    "id": "spider-man-3-invasion-of-the-spider-slayers",
+    "name": "Spider-Man 3: Invasion of the Spider-Slayers",
+    "year": 1993,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "spider-man-and-the-x-men-in-arcades-revenge",
+    "name": "Spider-Man and the X-Men in Arcade's Revenge",
+    "year": 1993,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "spider-man-il-ritorno-di-hobgoblin",
+    "name": "Spider-Man: Il Ritorno di Hobgoblin",
+    "year": 1993,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "spider-man-return-of-the-sinister-six",
+    "name": "Spider-Man: Return of the Sinister Six",
+    "year": 1992,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/08/Spider-Man_Return_of_the_Sinister_Six.jpg/revision/latest?cb=20260805203123"
+  },
+  {
+    "id": "x-men",
+    "name": "X-Men",
+    "year": 1992,
+    "platforms": [
+      "PC",
+      "PS3",
+      "PlayStation handheld"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/19/X-Men_%28Earth-12%29_from_Exiles_Vol_1_14_0001.jpg/revision/latest?cb=20191231015914"
+  },
+  {
+    "id": "captain-america-and-the-avengers",
+    "name": "Captain America and The Avengers",
+    "year": 1991,
+    "platforms": [
+      "Nintendo",
+      "PC"
+    ],
+    "franchise": "avengers",
+    "image": null
+  },
+  {
+    "id": "spider-man-the-video-game",
+    "name": "Spider-Man: The Video Game",
+    "year": 1991,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/ad/Spider-Man_%281991_video_game%29.jpg/revision/latest?cb=20130913161653"
+  },
+  {
+    "id": "wolverine",
+    "name": "Wolverine",
+    "year": 1991,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Dark_Wolverine_Vol_1_77_Textless.jpg/revision/latest?cb=20090712125221"
+  },
+  {
+    "id": "marvel-land",
+    "name": "Marvel Land",
+    "year": 1990,
+    "platforms": [
+      "Nintendo",
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "spider-man-vs-the-kingpin",
+    "name": "Spider-Man vs. The Kingpin",
+    "year": 1990,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "x-men-ii-the-fall-of-the-mutants",
+    "name": "X-Men II: The Fall of the Mutants",
+    "year": 1990,
+    "platforms": [],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/02/X-Men_II_Fall_of_the_Mutants.jpg/revision/latest?cb=20110507170003"
+  },
+  {
+    "id": "spider-man-and-captain-america-in-doctor-dooms-revenge",
+    "name": "Spider-Man and Captain America in Doctor Doom's Revenge",
+    "year": 1989,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/The_Amazing_Spider-Man_%26_Captain_America_in_Dr._Doom%27s_Revenge.jpg/revision/latest?cb=20240817035634"
+  },
+  {
+    "id": "the-uncanny-x-men",
+    "name": "The Uncanny X-Men",
+    "year": 1989,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "x-men",
+    "image": null
+  },
+  {
+    "id": "x-men-madness-in-murderworld",
+    "name": "X-Men: Madness in Murderworld",
+    "year": 1989,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "x-men",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/27/X-Men_Madness_in_Murderworld.jpg/revision/latest?cb=20100122194837"
+  },
+  {
+    "id": "questprobe-featuring-spider-man",
+    "name": "Questprobe featuring Spider-Man",
+    "year": 1984,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "avengers-squad",
+    "name": "Avengers Squad",
+    "year": null,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "avengers",
+    "image": null
+  },
+  {
+    "id": "avengers-damage-control",
+    "name": "Avengers: Damage Control",
+    "year": null,
+    "platforms": [],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/57/Avengers_Damage_Control.jpg/revision/latest?cb=20220618012919"
+  },
+  {
+    "id": "dr-finklesteins-marvelous-room",
+    "name": "Dr. Finklestein's Marvelous Room",
+    "year": null,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "kaio-king-of-pirates",
+    "name": "Kaio: King of Pirates",
+    "year": null,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "learning-language-with-spider-man",
+    "name": "Learning Language with Spider-Man",
+    "year": null,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "lego-marvels-avengers-deluxe-edition",
+    "name": "LEGO Marvel’s Avengers Deluxe Edition",
+    "year": null,
+    "platforms": [],
+    "franchise": "lego",
+    "image": null
+  },
+  {
+    "id": "marvel-2099-one-nation-under-doom",
+    "name": "Marvel 2099: One Nation Under Doom",
+    "year": null,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-dimension-of-heroes",
+    "name": "Marvel Dimension of Heroes",
+    "year": null,
+    "platforms": [],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/cb/Marvel_Dimension_of_Heroes.jpg/revision/latest?cb=20220605083645"
+  },
+  {
+    "id": "marvel-disk-wars-the-avengers-ultimate-heroes",
+    "name": "Marvel Disk Wars: The Avengers - Ultimate Heroes",
+    "year": null,
+    "platforms": [],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/52/Marvel_Disk_Wars_The_Avengers_-_Ultimate_Heroes.jpg/revision/latest?cb=20170914170443"
+  },
+  {
+    "id": "marvel-end-time-arena",
+    "name": "Marvel End Time Arena",
+    "year": null,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e8/Marvel_End_Time_Arena.jpg/revision/latest?cb=20220618012841"
+  },
+  {
+    "id": "marvel-heroes-comic-book-creator",
+    "name": "Marvel Heroes: Comic Book Creator",
+    "year": null,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "marvel-maximum-collection",
+    "name": "Marvel MaXimum Collection",
+    "year": null,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e3/Marvel_MaXimum_Collection.jpg/revision/latest?cb=20260317003806"
+  },
+  {
+    "id": "marvel-mighty-heroes",
+    "name": "Marvel Mighty Heroes",
+    "year": null,
+    "platforms": [],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/Marvel_Mighty_Heroes.jpg/revision/latest?cb=20200318001854"
+  },
+  {
+    "id": "marvel-powers-united-vr",
+    "name": "Marvel Powers United VR",
+    "year": null,
+    "platforms": [],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Marvel_Powers_United_VR_001.jpg/revision/latest?cb=20180808205228"
+  },
+  {
+    "id": "marvel-run-jump-smash",
+    "name": "Marvel Run Jump Smash!",
+    "year": null,
+    "platforms": [],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/22/Marvel_Run_Jump_Smash%21_001.png/revision/latest?cb=20250626165525"
+  },
+  {
+    "id": "marvel-super-war",
+    "name": "Marvel Super War",
+    "year": null,
+    "platforms": [],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f3/Marvel_Super_War_003.jpg/revision/latest?cb=20200913202221"
+  },
+  {
+    "id": "marvel-tsum-tsum",
+    "name": "Marvel Tsum Tsum",
+    "year": null,
+    "platforms": [],
+    "franchise": "general",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2c/Marvel_Tsum_Tsum_Vol_1_1.jpg/revision/latest?cb=20160711214813"
+  },
+  {
+    "id": "marvel-avengers-alliance-2",
+    "name": "Marvel: Avengers Alliance 2",
+    "year": null,
+    "platforms": [],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f6/Marvel_Avengers_Alliance_2.jpg/revision/latest?cb=20160510221523"
+  },
+  {
+    "id": "marvel-avengers-alliance-tactics",
+    "name": "Marvel: Avengers Alliance Tactics",
+    "year": null,
+    "platforms": [],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/42/Marvel_Avengers_Alliance_Tactics.jpg/revision/latest?cb=20140614230252"
+  },
+  {
+    "id": "marvels-spider-man-remastered-pc",
+    "name": "Marvel's Spider-Man Remastered PC",
+    "year": null,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "marvels-the-avengers-iron-man-mark-vii",
+    "name": "Marvel's The Avengers Iron Man Mark VII",
+    "year": null,
+    "platforms": [],
+    "franchise": "avengers",
+    "image": null
+  },
+  {
+    "id": "mushishi-amefuru-sato",
+    "name": "Mushishi: Amefuru Sato",
+    "year": null,
+    "platforms": [
+      "Nintendo"
+    ],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "project-life-is-rpg",
+    "name": "Project Life is RPG",
+    "year": null,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "rune-factory-6",
+    "name": "Rune Factory 6",
+    "year": null,
+    "platforms": [],
+    "franchise": "general",
+    "image": null
+  },
+  {
+    "id": "scavengers-of-mars",
+    "name": "Scavengers of Mars",
+    "year": null,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "avengers",
+    "image": null
+  },
+  {
+    "id": "scavengers-of-the-mutant-world",
+    "name": "Scavengers of the Mutant World",
+    "year": null,
+    "platforms": [],
+    "franchise": "x-men",
+    "image": null
+  },
+  {
+    "id": "spider-man-cartoon-maker",
+    "name": "Spider-Man Cartoon Maker",
+    "year": null,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "spider-man-the-city-that-never-sleeps",
+    "name": "Spider-Man: The City That Never Sleeps",
+    "year": null,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": null
+  },
+  {
+    "id": "spider-man-ultimate-power",
+    "name": "Spider-Man: Ultimate Power",
+    "year": null,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/Spider-Man_Ultimate_Power.png/revision/latest?cb=20140911065724"
+  },
+  {
+    "id": "the-amazing-spider-man-webslinger",
+    "name": "The Amazing Spider-Man: Webslinger",
+    "year": null,
+    "platforms": [],
+    "franchise": "spider-man",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/da/The_Amazing_Spider-Man_Webslinger.gif/revision/latest?cb=20240807151450"
+  },
+  {
+    "id": "the-avengers",
+    "name": "The Avengers",
+    "year": null,
+    "platforms": [],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/Fantastic_Four%2C_Avengers%2C_and_X-Men_%28Earth-12%29_from_Exiles_Vol_1_14_0001.jpg/revision/latest?cb=20191231001854"
+  },
+  {
+    "id": "the-avengers-the-mobile-game",
+    "name": "The Avengers: The Mobile Game",
+    "year": null,
+    "platforms": [],
+    "franchise": "avengers",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/aa/The_Avengers_The_Mobile_Game.jpg/revision/latest?cb=20221227205206"
+  },
+  {
+    "id": "void-scavengers",
+    "name": "Void Scavengers",
+    "year": null,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "avengers",
+    "image": null
+  },
+  {
+    "id": "vultures-scavengers-of-death",
+    "name": "Vultures - Scavengers of Death",
+    "year": null,
+    "platforms": [
+      "PC"
+    ],
+    "franchise": "avengers",
+    "image": null
+  }
+]

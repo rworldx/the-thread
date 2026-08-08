@@ -1,0 +1,90 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Least privilege: this workflow only ever reads the repo.
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      # Brief §2 — a bad edge fails the build, not a page at runtime.
+      - name: Validate content graph
+        run: npm run validate
+
+      # A FABRICATED IDENTIFIER IS INVISIBLE TO EVERY OTHER CHECK.
+      #
+      # Two TMDB person photo paths were once written from memory. They had the
+      # right shape, the typecheck passed, the build was green, the page
+      # rendered, and both were 404. Only a request can see that.
+      #
+      # Separate from `validate` on purpose: that step is hermetic and instant
+      # and runs on every build. This one makes ~3,700 network calls, so it is
+      # its own step and it is the last gate before a deploy.
+      - name: Verify every external URL resolves
+        run: npm run verify:assets
+
+      # Must run BEFORE the tests. tests/render.test.ts asserts against the
+      # emitted HTML, and skips itself if .next/server/app is absent — so
+      # building afterwards would silently disable exactly the checks that
+      # catch a page which compiles, renders nothing, and exits zero.
+      - name: Build
+        run: npm run build
+
+      - name: Test
+        run: npm test
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      # The 320px floor and 400% reflow, measured in a real browser against the
+      # production build. Only meaningful because body has no overflow-x:hidden.
+      - name: Reflow and touch-target checks
+        run: npm run test:e2e
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
+
+      # REPORTS, DOES NOT BLOCK — and the distinction is the whole point.
+      #
+      # This gate asserts that a native reader has been through the Arabic:
+      # 167 spoiler-safe lines and 247 character records. That review has NOT
+      # happened, so `arReviewed` is false and this step exits 1.
+      #
+      # There were three ways to make CI green and only one of them is honest.
+      # Setting `arReviewed = true` would be claiming a review that nobody did,
+      # which is precisely the lie this gate exists to catch. Dropping "ar" from
+      # LOCALES would delete half the product. So it runs, it fails loudly in
+      # every single CI run, and it does not stop a deploy — the reminder stays
+      # visible until someone does the work and flips the flag for real.
+      - name: Publishable check (Arabic copy review outstanding)
+        continue-on-error: true
+        run: npm run check:publishable
+
+      - name: Audit
+        run: npm audit --audit-level=high

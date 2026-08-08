@@ -1,0 +1,55 @@
+{
+  "name": "the-thread",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "What to watch before the thing you want to watch.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "validate": "tsx scripts/validate-corpus.ts",
+    "sync:tmdb": "tsx --env-file-if-exists=.env.local scripts/sync-tmdb.ts",
+    "test:e2e": "playwright test",
+    "shots": "node scripts/screenshots.mjs",
+    "gen:tints": "tsx scripts/gen-tints.ts",
+    "gen:copy-todo": "tsx scripts/gen-copy-todo.ts",
+    "check:publishable": "tsx scripts/check-publishable.ts",
+    "gen:search": "tsx scripts/gen-search-index.ts",
+    "gen:context": "tsx scripts/gen-context.ts",
+    "sync:characters": "tsx --env-file-if-exists=.env.local scripts/sync-characters.ts",
+    "sync:ratings": "tsx --env-file-if-exists=.env.local scripts/sync-ratings.ts",
+    "verify:assets": "tsx scripts/verify-assets.ts",
+    "sync:games": "tsx scripts/sync-games.ts",
+    "gen:icons": "tsx scripts/gen-icons.ts"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "@tailwindcss/postcss": "^4.3.3",
+    "next": "^16.3.0",
+    "next-intl": "^4.13.5",
+    "postcss": "^8.5.25",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tailwindcss": "^4.3.3",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "intl-messageformat": "^11.2.13",
+    "node-html-parser": "^9.0.1",
+    "sharp": "^0.35.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^4.1.10"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

@@ -1,0 +1,257 @@
+import { z } from "zod";
+import { Bilingual, Id, Universe } from "./schema";
+
+/**
+ * THE CHARACTER CORPUS — the part with no API behind it.
+ *
+ * TMDB has cast, not characters. Marvel's own API has characters but no powers
+ * and no mutant classification. Powers, origin and rank are editorial work, the
+ * same shape as the 147 spoiler-safe lines, and they are held to the same rule:
+ * a missing fact fails the build rather than getting filled in by inference.
+ *
+ * APPEARANCES ARE DERIVED, NEVER TYPED. A character appears in a title if that
+ * title's TMDB cast credits name them. Hand-listing both sides guarantees they
+ * drift, which is the two-sources-of-truth failure this project has already hit
+ * twice (`titleEn` versus `seasons`, `spoilerSafe` in two files). The matching
+ * lives in lib/characters.ts and runs off `aliases`.
+ */
+
+export const CharacterCategory = z.enum([
+  "hero",
+  "villain",
+  "antihero",
+  /**
+   * ANTI-VILLAIN, which is not a synonym for anti-hero and not a way of being
+   * soft on anyone. An anti-hero does good by bad means; an anti-villain does
+   * harm for reasons that are recognisably decent. Ikaris and He Who Remains
+   * are the clearest cases in the corpus — both are opposed by the protagonists
+   * and neither is wrong about the stakes, and filing them as plain villains
+   * would say something about them that the films do not.
+   */
+  "antivillain",
+  "supporting",
+]);
+
+/**
+ * The real in-universe classification, not a power level invented for this
+ * site. Marvel published the Omega list in House of X #1; the five Omegas in
+ * this corpus are on it. Charles Xavier is conspicuously not, which is a fact
+ * worth carrying rather than quietly correcting.
+ *
+ * Null for anyone who is not a mutant, and for mutants with no published rank.
+ */
+export const MutantClass = z.enum([
+  "omega",
+  "alpha",
+  "beta",
+  "gamma",
+  "delta",
+  "epsilon",
+]);
+
+/**
+ * A typed edge between characters. Untyped, the related list renders as an
+ * undifferentiated blob; typed, it is the difference between "fought" and
+ * "is". `variant` matters more here than anywhere else — three Peter Parkers,
+ * two Wolverines — and it is the multiverse nobody else models.
+ */
+export const RelationKind = z.enum([
+  "ally",
+  "enemy",
+  "family",
+  /**
+   * A MULTIVERSE COUNTERPART. Three Peter Parkers, two Wolverines — the same
+   * person in different universes. NOT the same person wearing two names:
+   * Marc Spector and Mr. Knight are one record with two aliases, and so are
+   * Banner and the Hulk, and Reynolds and the Void.
+   */
+  "variant",
+  "team",
+  /**
+   * HOST. One being carrying another, which is neither of the two things above
+   * and was being recorded as `variant` for want of anything better.
+   *
+   * The Phoenix Force is not a version of Jean Grey. It predates her, outlives
+   * her, and has ridden Rachel Summers, Hope Summers, Cyclops and Emma Frost —
+   * two beings, correctly two records, and the edge between them is
+   * possession. Khonshu and Moon Knight are the same shape: a god and the
+   * human he speaks through, recorded as `ally`, which says nothing about the
+   * arrangement.
+   *
+   * The distinction matters on a site whose whole job is telling a beginner
+   * what they are looking at. "Variant" would say Jean IS the Phoenix, which
+   * is exactly the confusion this is meant to clear up.
+   */
+  "host",
+]);
+
+/**
+ * HOW A SYMBIOTE CAME TO EXIST — Marvel's own four categories, not a tier list.
+ *
+ * The same rule `MutantClass` follows: this is a published in-universe
+ * classification, so it can sit on a page as a fact. It is about ORIGIN rather
+ * than power, which is why Toxin and Riot are different kinds of thing even
+ * though both descend from Venom.
+ *
+ *   lineage  Natural generational descent. Venom, then Carnage from Venom,
+ *            then Toxin from Carnage — each generation stronger and less
+ *            vulnerable to fire and sound than the one before it.
+ *   spawn    Seedlings harvested in a lab rather than born. The Life
+ *            Foundation five, forced out of Venom by scientists, which is why
+ *            they lack the evolutionary upgrades a true offspring gets.
+ *   anomaly  Made by accident, mutation or magic, with the base biology
+ *            changed. Anti-Venom, charged out of leftover Venom cells by
+ *            Mr. Negative's light, is immune to fire and sound and burns other
+ *            symbiotes away on contact.
+ *   ancient  Primordial strains Knull forged before the hive existed —
+ *            All-Black the Necrosword and the symbiote dragons.
+ *
+ * Null for everyone who is not a symbiote, and for Knull, who is the god that
+ * made them rather than one of them.
+ */
+export const SymbioteClass = z.enum(["lineage", "spawn", "anomaly", "ancient"]);
+
+export const Relation = z.object({
+  id: Id,
+  kind: RelationKind,
+});
+
+/** A power is a short phrase, never a paragraph. It renders as a chip. */
+const PowerPhrase = z
+  .string()
+  .trim()
+  .min(1)
+  .max(48, "a power is a chip, not a sentence");
+
+export const Power = z.object({
+  en: PowerPhrase,
+  ar: PowerPhrase,
+});
+
+/**
+ * The origin is SPOILER-SAFE, by the same rule the title lines follow: it
+ * describes where someone starts, never where they end up. Two to three
+ * sentences.
+ */
+const OriginText = z
+  .string()
+  .trim()
+  .min(20)
+  .max(340, "an origin is a paragraph, not a synopsis");
+
+export const CharacterSource = z.object({
+  id: Id,
+  nameEn: z.string().trim().min(1),
+  nameAr: z.string().trim().min(1),
+
+  /**
+   * Every name this person is credited or searched under. This is BOTH the
+   * search surface (so "Logan" finds Wolverine) and the join key against TMDB
+   * cast credits, which come through as "Logan / Wolverine" or "Tony Stark".
+   */
+  aliases: z.array(z.string().trim().min(1)).default([]),
+
+  category: CharacterCategory,
+  /** "X-Men", "Avengers", "Defenders". Free text, used as filter chips. */
+  affiliation: z.array(z.string().trim().min(1)).default([]),
+  /** A character can span several. Wolverine is fox AND mcu. */
+  universe: z.array(Universe).min(1),
+  species: z.string().trim().min(1).nullable().default(null),
+  mutantClass: MutantClass.nullable().default(null),
+  symbioteClass: SymbioteClass.nullable().default(null),
+
+  powers: z.array(Power).min(1).max(6),
+  origin: Bilingual,
+  related: z.array(Relation).default([]),
+
+  /**
+   * APPEARANCES THE CREDITS DO NOT CARRY — the one escape hatch, kept narrow.
+   *
+   * Everything else here is derived from TMDB cast credits precisely so nobody
+   * has to remember to update two files. But a credit list is not the same as
+   * a film: Galactus is in Rise of the Silver Surfer as the cloud and TMDB
+   * credits no actor for him, because no actor played him. He is unmistakably
+   * in the film. Deriving from credits cannot find that, and no fix to the
+   * matcher ever will, because there is nothing there to match.
+   *
+   * So this is for appearances that are REAL and UNCREDITED, and nothing else.
+   * It is not a place to hand-list appearances the matcher could have found —
+   * those are matcher bugs, and hiding them here is how the derived corpus
+   * quietly turns back into a typed one.
+   */
+  alsoIn: z.array(z.string().trim().min(1)).default([]),
+
+  /**
+   * CREDITED AS A DIFFERENT NAME EVERY TIME — join on the actor instead.
+   *
+   * Stan Lee is in 28 titles here and the character name is different in all
+   * of them: "Stan the Man", "Xandarian Ladies' Man", "Bus Driver", "Hot Dog
+   * Vendor", "Rejected Wedding Guest". No alias list can match that, and
+   * hand-listing 28 films would be the two-sources-of-truth failure this
+   * corpus refuses everywhere else — the next cameo would silently be missing.
+   *
+   * The actor IS the constant, and the cast data already carries it. So the
+   * record names a performer and takes every title crediting them, derived the
+   * same way everything else here is.
+   *
+   * This is for people who appear AS THEMSELVES under many names. It is not a
+   * shortcut around writing aliases for an ordinary character.
+   */
+  creditedActor: z.string().trim().min(1).nullable().default(null),
+
+  /**
+   * A PERFORMANCE, NOT A PERSON — the one record shape that is not a character.
+   *
+   * All three live-action Spider-Men are Peter Parker. No alias can separate
+   * them, because every credit for all three reads "Peter Parker" and the
+   * matcher would give any record carrying that alias every Spider-Man film
+   * ever made. That is the Falcon bug the C18 guard exists to catch, and it is
+   * why three records looked impossible.
+   *
+   * The way through is that the join key does not have to be the NAME. TMDB
+   * credits carry the actor too, and an actor IS unique across these films.
+   * So a record can say "I am the Peter Parker that Tom Holland played", and
+   * its appearances derive from exactly the credits where BOTH match.
+   *
+   * Nothing is hand-listed. These records have no aliases at all, so they take
+   * part in no name matching and cannot steal a credit from anyone. Their
+   * films, their co-stars and their relations all fall out of the same cast
+   * data the rest of the corpus runs on — filtered by one more column.
+   */
+  performerOf: z
+    .object({
+      /** The character record this is a performance OF. */
+      character: Id,
+      /** The performer, spelled exactly as TMDB credits them. */
+      actor: z.string().trim().min(1),
+    })
+    .nullable()
+    .default(null),
+});
+
+export type CharacterSource = z.infer<typeof CharacterSource>;
+/**
+ * The AUTHORED shape, which is not the parsed one: `.default()` makes a field
+ * optional on the way in and guaranteed on the way out. Typing the corpus as
+ * the output type would demand `mutantClass: null` on all eighty non-mutants.
+ */
+export type CharacterDraft = z.input<typeof CharacterSource>;
+export type Relation = z.infer<typeof Relation>;
+export type RelationKind = z.infer<typeof RelationKind>;
+export type MutantClass = z.infer<typeof MutantClass>;
+export type SymbioteClass = z.infer<typeof SymbioteClass>;
+export type CharacterCategory = z.infer<typeof CharacterCategory>;
+
+/** The shipped shape: authored fields plus everything derived from the cast. */
+export interface Character extends CharacterSource {
+  /** Title ids, release order. Derived from TMDB cast credits, never typed. */
+  appearances: string[];
+  /** Who played them, per title. This is where variants become visible. */
+  portrayals: { titleId: string; actor: string; actorPhoto: string | null }[];
+  /** Character ARTWORK, or null where no source has any. Never an actor. */
+  image: string | null;
+  /** Where that artwork came from, so the page can attribute it. */
+  artSource: "marvel" | "shdb" | "mcu-wiki" | "chosen" | null;
+  /** The most-credited actor's photo. For "played by", never for the avatar. */
+  leadActorPhoto: string | null;
+}

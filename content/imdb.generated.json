@@ -1,0 +1,606 @@
+{
+  "howard-the-duck": {
+    "score": 4.8,
+    "votes": 55043
+  },
+  "the-punisher-1989": {
+    "score": 5.7,
+    "votes": 29049
+  },
+  "x-men-the-animated-series": {
+    "score": 8.4,
+    "votes": 54693
+  },
+  "captain-america-1990": {
+    "score": 3.3,
+    "votes": 16182
+  },
+  "spider-man-1994": {
+    "score": 8.4,
+    "votes": 39742
+  },
+  "the-incredible-hulk-1996": {
+    "score": 6.7,
+    "votes": 4266
+  },
+  "iron-man-1994": {
+    "score": 6.5,
+    "votes": 4152
+  },
+  "generation-x": {
+    "score": 4.4,
+    "votes": 2294
+  },
+  "nick-fury-agent-of-shield": {
+    "score": 3.8,
+    "votes": 3595
+  },
+  "blade": {
+    "score": 7.1,
+    "votes": 333637
+  },
+  "fantastic-four-2005": {
+    "score": 5.7,
+    "votes": 376808
+  },
+  "x-men": {
+    "score": 7.3,
+    "votes": 697173
+  },
+  "spider-man": {
+    "score": 7.4,
+    "votes": 983795
+  },
+  "fantastic-four-1994": {
+    "score": 6.4,
+    "votes": 4526
+  },
+  "blade-ii": {
+    "score": 6.7,
+    "votes": 254158
+  },
+  "x-men-evolution": {
+    "score": 7.8,
+    "votes": 14860
+  },
+  "ghost-rider": {
+    "score": 5.3,
+    "votes": 272102
+  },
+  "hulk-2003": {
+    "score": 5.7,
+    "votes": 293783
+  },
+  "daredevil-2003": {
+    "score": 5.3,
+    "votes": 241163
+  },
+  "x2": {
+    "score": 7.4,
+    "votes": 614621
+  },
+  "man-thing": {
+    "score": 4.1,
+    "votes": 7647
+  },
+  "spider-man-2": {
+    "score": 7.5,
+    "votes": 798225
+  },
+  "the-punisher-2004": {
+    "score": 6.4,
+    "votes": 182181
+  },
+  "elektra": {
+    "score": 4.7,
+    "votes": 105946
+  },
+  "blade-trinity": {
+    "score": 5.8,
+    "votes": 202494
+  },
+  "iron-man": {
+    "score": 7.9,
+    "votes": 1239055
+  },
+  "x-men-the-last-stand": {
+    "score": 6.6,
+    "votes": 575867
+  },
+  "spider-man-3": {
+    "score": 6.3,
+    "votes": 711282
+  },
+  "captain-america-the-first-avenger": {
+    "score": 6.9,
+    "votes": 978494
+  },
+  "x-men-origins-wolverine": {
+    "score": 6.5,
+    "votes": 571714
+  },
+  "ant-man": {
+    "score": 7.2,
+    "votes": 788506
+  },
+  "fantastic-four-rise-of-the-silver-surfer": {
+    "score": 5.6,
+    "votes": 301334
+  },
+  "ultimate-avengers": {
+    "score": 6.6,
+    "votes": 13668
+  },
+  "wolverine-and-the-x-men": {
+    "score": 8,
+    "votes": 13037
+  },
+  "the-incredible-hulk": {
+    "score": 6.6,
+    "votes": 571548
+  },
+  "thor": {
+    "score": 7,
+    "votes": 975889
+  },
+  "ultimate-avengers-2": {
+    "score": 6.5,
+    "votes": 10042
+  },
+  "blade-the-series": {
+    "score": 6.2,
+    "votes": 6779
+  },
+  "the-avengers": {
+    "score": 8,
+    "votes": 1572038
+  },
+  "the-invincible-iron-man": {
+    "score": 5.8,
+    "votes": 7943
+  },
+  "doctor-strange-2007": {
+    "score": 6.6,
+    "votes": 9278
+  },
+  "the-amazing-spider-man": {
+    "score": 7,
+    "votes": 777933
+  },
+  "the-spectacular-spider-man": {
+    "score": 8.4,
+    "votes": 23592
+  },
+  "hawkeye-s1": {
+    "score": 7.4,
+    "votes": 246478
+  },
+  "what-if-s3": {
+    "score": 7.3,
+    "votes": 161976
+  },
+  "moon-knight-s1": {
+    "score": 7.3,
+    "votes": 316322
+  },
+  "helstrom": {
+    "score": 6.7,
+    "votes": 11399
+  },
+  "thor-love-and-thunder": {
+    "score": 6.1,
+    "votes": 468798
+  },
+  "the-marvels": {
+    "score": 5.4,
+    "votes": 167991
+  },
+  "the-fantastic-four-first-steps": {
+    "score": 6.8,
+    "votes": 280183
+  },
+  "ghost-rider-spirit-of-vengeance": {
+    "score": 4.4,
+    "votes": 135502
+  },
+  "she-hulk-attorney-at-law-s1": {
+    "score": 5.2,
+    "votes": 211359
+  },
+  "ms-marvel-s1": {
+    "score": 6.2,
+    "votes": 132864
+  },
+  "spider-man-no-way-home": {
+    "score": 8.1,
+    "votes": 1051542
+  },
+  "ant-man-and-the-wasp-quantumania": {
+    "score": 6,
+    "votes": 275107
+  },
+  "madame-web": {
+    "score": 4.1,
+    "votes": 117035
+  },
+  "doctor-strange": {
+    "score": 7.5,
+    "votes": 890026
+  },
+  "iron-man-2": {
+    "score": 6.9,
+    "votes": 948894
+  },
+  "runaways": {
+    "score": 6.8,
+    "votes": 30546
+  },
+  "next-avengers": {
+    "score": 6.2,
+    "votes": 6000
+  },
+  "venom": {
+    "score": 6.6,
+    "votes": 613036
+  },
+  "x-men-first-class": {
+    "score": 7.7,
+    "votes": 768704
+  },
+  "iron-man-3": {
+    "score": 7.1,
+    "votes": 976053
+  },
+  "secret-invasion-s1": {
+    "score": 5.8,
+    "votes": 91739
+  },
+  "hulk-vs": {
+    "score": 6.9,
+    "votes": 14047
+  },
+  "ironheart-s1": {
+    "score": 4.5,
+    "votes": 68807
+  },
+  "the-guardians-of-the-galaxy-holiday-special": {
+    "score": 6.9,
+    "votes": 110316
+  },
+  "i-am-groot-s2": {
+    "score": 6.7,
+    "votes": 47221
+  },
+  "echo-s1": {
+    "score": 5.9,
+    "votes": 50185
+  },
+  "eyes-of-wakanda-s1": {
+    "score": 6.2,
+    "votes": 10848
+  },
+  "the-wolverine": {
+    "score": 6.7,
+    "votes": 527184
+  },
+  "deadpool": {
+    "score": 8,
+    "votes": 1264984
+  },
+  "captain-america-brave-new-world": {
+    "score": 5.6,
+    "votes": 188193
+  },
+  "planet-hulk": {
+    "score": 6.7,
+    "votes": 14481
+  },
+  "fantastic-four-2015": {
+    "score": 4.3,
+    "votes": 194391
+  },
+  "elektra-the-hand-and-the-devil": {
+    "score": 4.6,
+    "votes": 218
+  },
+  "werewolf-by-night": {
+    "score": 7.1,
+    "votes": 80712
+  },
+  "agatha-all-along-s1": {
+    "score": 7.2,
+    "votes": 90622
+  },
+  "x-men-97-s2": {
+    "score": 8.7,
+    "votes": 57221
+  },
+  "marvel-zombies-s1": {
+    "score": 7,
+    "votes": 25024
+  },
+  "your-friendly-neighborhood-spider-man": {
+    "score": 7.5,
+    "votes": 19448
+  },
+  "avengers-earths-mightiest-heroes": {
+    "score": 8.3,
+    "votes": 18276
+  },
+  "venom-the-last-dance": {
+    "score": 6,
+    "votes": 160943
+  },
+  "thor-tales-of-asgard": {
+    "score": 6.2,
+    "votes": 6143
+  },
+  "ultimate-spider-man": {
+    "score": 7.2,
+    "votes": 16901
+  },
+  "black-panther": {
+    "score": 7.3,
+    "votes": 919327
+  },
+  "captain-america-the-winter-soldier": {
+    "score": 7.7,
+    "votes": 981806
+  },
+  "the-amazing-spider-man-2": {
+    "score": 6.6,
+    "votes": 600759
+  },
+  "x-men-days-of-future-past": {
+    "score": 7.9,
+    "votes": 792794
+  },
+  "daredevil-born-again-s2": {
+    "score": 8.1,
+    "votes": 113643
+  },
+  "thor-the-dark-world": {
+    "score": 6.7,
+    "votes": 785686
+  },
+  "a-funny-thing-happened-on-the-way-to-thors-hammer": {
+    "score": 7,
+    "votes": 13151
+  },
+  "the-consultant": {
+    "score": 6.3,
+    "votes": 12167
+  },
+  "guardians-of-the-galaxy": {
+    "score": 8,
+    "votes": 1375431
+  },
+  "thunderbolts": {
+    "score": 7.1,
+    "votes": 293638
+  },
+  "wonder-man-s1": {
+    "score": 7.4,
+    "votes": 37812
+  },
+  "spider-man-brand-new-day": {
+    "score": 8.1,
+    "votes": 158311
+  },
+  "item-47": {
+    "score": 6.6,
+    "votes": 14142
+  },
+  "spider-man-homecoming": {
+    "score": 7.4,
+    "votes": 819787
+  },
+  "jessica-jones-s3": {
+    "score": 7.8,
+    "votes": 241135
+  },
+  "agents-of-shield": {
+    "score": 7.5,
+    "votes": 236366
+  },
+  "avengers-age-of-ultron": {
+    "score": 7.3,
+    "votes": 1012538
+  },
+  "hulk-and-the-agents-of-smash": {
+    "score": 6.1,
+    "votes": 3800
+  },
+  "avengers-assemble": {
+    "score": 7,
+    "votes": 9511
+  },
+  "iron-man-rise-of-technovore": {
+    "score": 5.2,
+    "votes": 4817
+  },
+  "spider-noir-s1": {
+    "score": 7.7,
+    "votes": 62861
+  },
+  "agent-carter-one-shot": {
+    "score": 7.4,
+    "votes": 16687
+  },
+  "logan": {
+    "score": 8.1,
+    "votes": 934659
+  },
+  "iron-fist-s2": {
+    "score": 6.4,
+    "votes": 150399
+  },
+  "daredevil-s3": {
+    "score": 8.6,
+    "votes": 538136
+  },
+  "luke-cage-s2": {
+    "score": 7.2,
+    "votes": 149596
+  },
+  "x-men-apocalypse": {
+    "score": 6.8,
+    "votes": 495887
+  },
+  "all-hail-the-king": {
+    "score": 7.2,
+    "votes": 15121
+  },
+  "agent-carter": {
+    "score": 7.8,
+    "votes": 95740
+  },
+  "black-widow": {
+    "score": 6.6,
+    "votes": 484145
+  },
+  "avengers-confidential": {
+    "score": 5.7,
+    "votes": 5101
+  },
+  "captain-america-civil-war": {
+    "score": 7.8,
+    "votes": 939873
+  },
+  "thor-ragnarok": {
+    "score": 7.9,
+    "votes": 905382
+  },
+  "the-punisher-one-last-kill": {
+    "score": 7,
+    "votes": 51365
+  },
+  "guardians-of-the-galaxy-vol-2": {
+    "score": 7.6,
+    "votes": 838975
+  },
+  "captain-marvel": {
+    "score": 6.7,
+    "votes": 666842
+  },
+  "avengers-infinity-war": {
+    "score": 8.4,
+    "votes": 1394781
+  },
+  "avengers-endgame": {
+    "score": 8.4,
+    "votes": 1470340
+  },
+  "marvels-inhumans": {
+    "score": 4.9,
+    "votes": 31386
+  },
+  "guardians-of-the-galaxy-2015": {
+    "score": 7.2,
+    "votes": 3948
+  },
+  "the-defenders-s1": {
+    "score": 7.2,
+    "votes": 128603
+  },
+  "the-gifted": {
+    "score": 7.2,
+    "votes": 40983
+  },
+  "spider-man-into-the-spider-verse": {
+    "score": 8.4,
+    "votes": 805522
+  },
+  "the-new-mutants": {
+    "score": 5.3,
+    "votes": 102678
+  },
+  "ant-man-and-the-wasp": {
+    "score": 7,
+    "votes": 501809
+  },
+  "morbius": {
+    "score": 5.1,
+    "votes": 173557
+  },
+  "legion": {
+    "score": 8.1,
+    "votes": 104242
+  },
+  "deadpool-2": {
+    "score": 7.6,
+    "votes": 752531
+  },
+  "cloak-and-dagger": {
+    "score": 6.6,
+    "votes": 24668
+  },
+  "the-punisher-s2": {
+    "score": 8.4,
+    "votes": 309913
+  },
+  "spider-man-2017": {
+    "score": 6.2,
+    "votes": 4187
+  },
+  "deadpool-and-wolverine": {
+    "score": 7.5,
+    "votes": 583503
+  },
+  "spider-man-far-from-home": {
+    "score": 7.3,
+    "votes": 659801
+  },
+  "x-men-dark-phoenix": {
+    "score": 5.7,
+    "votes": 230669
+  },
+  "guardians-of-the-galaxy-vol-3": {
+    "score": 7.9,
+    "votes": 480836
+  },
+  "venom-let-there-be-carnage": {
+    "score": 5.9,
+    "votes": 308314
+  },
+  "marvel-rising-secret-warriors": {
+    "score": 5.5,
+    "votes": 1712
+  },
+  "kraven-the-hunter": {
+    "score": 5.5,
+    "votes": 85212
+  },
+  "eternals": {
+    "score": 6.2,
+    "votes": 432748
+  },
+  "black-panther-wakanda-forever": {
+    "score": 6.6,
+    "votes": 396953
+  },
+  "loki-s2": {
+    "score": 8.2,
+    "votes": 479612
+  },
+  "wandavision-s1": {
+    "score": 7.9,
+    "votes": 420896
+  },
+  "the-falcon-and-the-winter-soldier-s1": {
+    "score": 7.1,
+    "votes": 283895
+  },
+  "spider-man-across-the-spider-verse": {
+    "score": 8.5,
+    "votes": 542120
+  },
+  "shang-chi-and-the-legend-of-the-ten-rings": {
+    "score": 7.3,
+    "votes": 496023
+  },
+  "doctor-strange-in-the-multiverse-of-madness": {
+    "score": 6.8,
+    "votes": 553528
+  }
+}

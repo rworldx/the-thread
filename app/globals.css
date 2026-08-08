@@ -1,0 +1,5938 @@
+@import "tailwindcss";
+
+/* ===========================================================================
+   THE THREAD — design tokens
+
+   This is a CATALOGUE, not a poster. The product is not the films, it is the
+   RECORD of them: a dependency graph with editorial footnotes. So the language
+   is the catalogue raisonné and the library index. Metadata is set like data,
+   the posters are the only images and carry all the colour, and the chrome is
+   close to absent.
+
+   Red is the one accent and it appears on exactly five things: the thread, the
+   target node, the progress fill, the focus ring, and the single primary CTA.
+   Under 5% of any screen. Every box that used to be red-bordered is now a
+   hairline; a red rule around a panel is decoration, and decoration is what
+   makes a page full of posters read as noisy rather than as expensive.
+
+   The neutrals are COOL (zinc). Warm neutral plus red lands in the beige /
+   oxblood family that every "premium" AI page ships, and it made the old
+   --paper (#FEF2F2, which is red-50) read as a pink page under red hairlines.
+   Warmth belongs in the posters, which supply it for free.
+   =========================================================================== */
+
+@theme {
+  /* --- colour ------------------------------------------------------------
+     THE POSTERS ARE THE PRODUCT. Everything here exists to stay out of their
+     way: one accent, cool neutrals, and depth instead of decoration.
+
+     Red appears on SIX things and nothing else: the thread, the target node,
+     the progress fill, the focus ring, the one primary CTA, and the rating
+     star. Under 5% of any screen. Contrast for every pair is computed from
+     these values in tests/contrast.test.ts, not asserted from a document. */
+  --color-red: #e23636; /* the dark-ground red. Lighter than #DC2626 */
+  --color-red-ink: #ff6b6b; /* red that can carry text on the dark ground */
+  --color-red-200: #5a1e1e; /* the rail TRACK, subordinate to the progress */
+
+  /* Not a second accent: an encoding. It means "not Marvel Studios" and
+     touches nothing but the branch node and its connector. */
+  --color-branch: #60a5fa;
+
+  --color-surface: #0a0a0b; /* near-black. NEVER #000000 */
+  --color-surface-2: #16161a;
+  --color-elevated: #1c1c21; /* cards, sheets, the things that sit on top */
+  --color-ink: #fafafa;
+  --color-ink-soft: #a1a1aa;
+  --color-hairline: rgb(250 250 250 / 0.1);
+
+  /* --- spacing ----------------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4rem;
+  --space-8: 6rem; /* section rhythm. One idea per screen needs real air */
+
+  /* --- breakpoints — named after real devices, not t-shirt sizes ---------- */
+  --breakpoint-xs: 22.5rem; /* 360  Android baseline */
+  --breakpoint-sm: 25.875rem; /* 414  large phone */
+  --breakpoint-md: 48rem; /* 768  tablet portrait */
+  --breakpoint-lg: 64rem; /* 1024 tablet landscape / small laptop */
+  --breakpoint-xl: 80rem; /* 1280 desktop */
+  --breakpoint-2xl: 96rem; /* 1536 large desktop */
+
+  /* --- type --------------------------------------------------------------
+     One Latin family at several weights, plus mono for data. Archivo carries
+     display and text; pairing two grotesques is the mistake this replaced. */
+  --font-display: var(--font-archivo), system-ui, sans-serif;
+  --font-body: var(--font-archivo), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  /* Thmanyah, with Noto behind it so a glyph the family lacks still renders. */
+  --font-ar-display: var(--font-thmanyah-display), var(--font-noto-naskh), serif;
+  --font-ar-body: var(--font-thmanyah-sans), var(--font-noto-sans-arabic), system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5625rem;
+  --text-2xl: 1.9375rem;
+  --text-3xl: 2.4375rem;
+
+  /* SHAPE LOCK. 8px on anything that holds an image, 4px on controls, 0 on the
+     rail because it is a drawn line rather than a container. Three values with
+     a rule, not a mix. */
+  --radius-media: 0.5rem;
+  --radius-control: 0.25rem;
+
+  /* --- depth --------------------------------------------------------------
+     DEPTH IS THE MATERIAL. The previous pass used hairlines only, which is why
+     it read flat. On a dark ground, hierarchy comes from elevation and light,
+     and the shadow is tinted to the ground rather than being pure black. */
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px rgb(0 0 0 / 0.28);
+  --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.4), 0 16px 48px rgb(0 0 0 / 0.4);
+
+  /* --- motion -------------------------------------------------------------
+     Two budgets, kept apart. INTERACTION feedback is capped at 300ms because a
+     400ms dropdown feels slower than a 180ms one; the delay lands exactly
+     where the reader is watching. REVEALS may run longer, because they are not
+     feedback. Never ease-in on either. */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  --dur-press: 120ms;
+  --dur-pop: 180ms;
+  --dur-menu: 220ms;
+  --dur-sheet: 300ms;
+  --dur-hover: 400ms;
+  --dur-reveal: 500ms;
+}
+
+/* ===========================================================================
+   THEME
+
+   DARK IS THE DEFAULT, and that is a content decision rather than a fashion.
+   Movie posters are mostly dark and high-contrast: a wall of them on white
+   reads as a contact sheet, and on #0A0A0B it reads as a cinema. It is also
+   what every streaming interface a reader compares this to does.
+
+   `auto` is the shipped state and follows the system. `data-theme` is only
+   present when someone has overridden it, which is why the media query has to
+   exclude the forced-dark case explicitly.
+   =========================================================================== */
+
+:root {
+  /* Display goes up, because the previous pass was too timid for this brief. */
+  --step-hero: clamp(3rem, 8vw, 6.5rem);
+  --step-h2: clamp(2rem, 4vw, 3.5rem);
+  --step-h1: clamp(2.5rem, 6vw, 5rem);
+  --step-body: 1.0625rem; /* 17px */
+  --step-data: 0.8125rem; /* mono, tabular */
+
+  --thread-inset: 20px;
+  --thread-width: 2px;
+  --node-size: 11px;
+
+  /* The page gutter, as a variable, so a full-bleed child can negate exactly
+     it. See .hero for why this is not viewport math. */
+  --gutter: var(--space-3);
+
+  color-scheme: dark;
+}
+
+/* LIGHT — one block, applied by preference or by choice. Duplicated rather
+   than shared because a CSS custom property cannot be aliased conditionally
+   without a third indirection that makes both harder to read. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --color-surface: #fafafa;
+    --color-surface-2: #f4f4f5;
+    --color-elevated: #ffffff;
+    --color-ink: #18181b;
+    --color-ink-soft: #52525b;
+    --color-hairline: rgb(24 24 27 / 0.1);
+    --color-red: #dc2626;
+    --color-red-ink: #b91c1c;
+    --color-red-200: #fecaca;
+    --color-branch: #2563eb;
+    --shadow-card: 0 1px 2px rgb(24 24 27 / 0.06), 0 8px 24px rgb(24 24 27 / 0.08);
+    --shadow-lift: 0 2px 4px rgb(24 24 27 / 0.08), 0 16px 48px rgb(24 24 27 / 0.14);
+    color-scheme: light;
+  }
+}
+
+:root[data-theme="light"] {
+  --color-surface: #fafafa;
+  --color-surface-2: #f4f4f5;
+  --color-elevated: #ffffff;
+  --color-ink: #18181b;
+  --color-ink-soft: #52525b;
+  --color-hairline: rgb(24 24 27 / 0.1);
+  --color-red: #dc2626;
+  --color-red-ink: #b91c1c;
+  --color-red-200: #fecaca;
+  --color-branch: #2563eb;
+  --shadow-card: 0 1px 2px rgb(24 24 27 / 0.06), 0 8px 24px rgb(24 24 27 / 0.08);
+  --shadow-lift: 0 2px 4px rgb(24 24 27 / 0.08), 0 16px 48px rgb(24 24 27 / 0.14);
+  color-scheme: light;
+}
+
+/* Arabic runs at its own optical size. Naskh reads smaller than a grotesk at
+   the same nominal size, so every display step is re-derived rather than
+   inherited, and Arabic gets more leading for its ascenders and descenders. */
+:root:lang(ar),
+[dir="rtl"] {
+  --step-hero: clamp(3.25rem, 8.6vw, 7rem);
+  --step-h2: clamp(2.15rem, 4.3vw, 3.75rem);
+  --step-h1: clamp(2.7rem, 6.5vw, 5.4rem);
+  line-height: 1.7;
+}
+
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* 320px hard floor (WCAG 1.4.10 reflow). Set now, not later — this is also
+     iPhone SE 1st gen, still in use in the GCC. */
+  min-width: 320px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--step-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  /* DELIBERATELY NO `overflow-x: hidden`.
+     It does not prevent overflow, it conceals it — which would make the 320px
+     floor unenforceable, silence the dev guard in app/overflow-guard.tsx, and
+     make any scrollWidth assertion pass on a broken layout. It also turns body
+     into a scroll container, which breaks `position: sticky` on descendants,
+     and the sticky top bar arrives in step 5.
+     Overflow stays visible so the tests can fail on it. */
+}
+
+body:lang(ar) {
+  font-family: var(--font-ar-body);
+  line-height: 1.7;
+}
+
+/* (2) Page gutter. Without it text hugs the viewport edge — invisible in LTR,
+   where the eye starts at the margin anyway, and glaring the moment the page
+   mirrors. */
+main,
+body > footer {
+  padding-inline: var(--space-3);
+  max-inline-size: 90rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --gutter: var(--space-5);
+  }
+  main,
+  body > footer {
+    padding-inline: var(--space-5);
+  }
+}
+
+/* (4) Icons that imply direction mirror; logos, posters and numerals do not (§6).
+   There is ONE arrow component. "Back" is the same glyph flipped, and RTL flips
+   it again, so both compose correctly instead of needing four icons. */
+.dir-icon {
+  display: inline-flex;
+  align-items: center;
+  /* Optical: the arrow's own box is taller than its stroke, so it rides high on
+     the baseline of a 600-weight label without this. */
+  transform: translateY(0.05em);
+}
+.dir-icon-back {
+  transform: translateY(0.05em) scaleX(-1);
+}
+[dir="rtl"] .dir-icon {
+  transform: translateY(0.05em) scaleX(-1);
+}
+[dir="rtl"] .dir-icon-back {
+  transform: translateY(0.05em);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  /* -0.03em, and the floor is -0.04em: any tighter and the letters touch, which
+     reads as cramped rather than as designed. */
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+/**
+ * A HEADING NEEDS AIR UNDER IT, and it had none.
+ *
+ * Headings carry no margin at all here — a deliberate reset, so that every
+ * component controls its own rhythm — and the components that put a paragraph
+ * straight after a heading never added it back. Measured on
+ * /ar/what-is-marvel: the h1 ended at 213px and the lede began at 213px. Zero.
+ *
+ * Latin got away with it because its descenders are shallow and its
+ * line-height leaves slack under the baseline. ARABIC DOES NOT: ي, ج, ؟ and
+ * the final ه all hang well below, so the heading's tail landed in the first
+ * line of the paragraph. That is the "words on top of each other".
+ *
+ * THE FIRST ATTEMPT WAS TOO CLEVER. It styled `:is(h1,h2,h3) + p`, to avoid
+ * reaching into layouts that manage their own spacing. Two problems: a heading
+ * is followed by a `ul` or a `dl` as often as by a `p`, and an adjacent-sibling
+ * rule carries element specificity — so `.section-lede`, `.char-hero-alt` and
+ * every other classed paragraph beat it and kept their zero. Auditing ten
+ * routes in both locales found six headings still sitting flush against what
+ * followed them.
+ *
+ * The margin goes on the HEADING, which is where vertical rhythm belongs and
+ * where nothing has to guess what comes next. The handful of headers that lay
+ * their children out themselves opt back out below.
+ */
+h1,
+h2,
+h3 {
+  margin-block: 0 var(--space-4);
+}
+/* Arabic descenders are deeper and the type sets on a taller line, so the same
+   gap reads tighter. Same correction the type scale and the section rhythm
+   already make. */
+:is(h1, h2, h3):lang(ar) {
+  margin-block-end: var(--space-5);
+}
+/**
+ * These lay their heading out as a flex or grid ITEM beside something else, so
+ * a block-end margin on it adds height to a row rather than air under a line.
+ */
+:is(.section-head, .door, .filter-select, .filter-search) > :is(h1, h2, h3) {
+  margin-block-end: 0;
+}
+
+h1 {
+  font-size: var(--step-h1);
+}
+h2 {
+  font-size: var(--step-h2);
+  letter-spacing: -0.025em;
+}
+
+/* The one place the scale goes all the way up. A four-word headline over a
+   wall of posters earns it; nothing else on the site does. */
+.hero-display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--step-hero);
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  text-wrap: balance;
+  margin: 0;
+}
+.hero-display:lang(ar) {
+  font-family: var(--font-ar-display);
+  letter-spacing: normal;
+  line-height: 1.25;
+}
+
+/* Uppercase is reserved for the two PLATE headings — the page title and a
+   section head. It is a catalogue device there. It was previously on every
+   heading including the 130 row titles, where it costs word-shape and makes a
+   long index measurably slower to scan. */
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* The measure, everywhere prose appears. 65ch is the ceiling, not a target.
+   Deliberately NOT on `li`: `.thread-panel` IS an li, and capping it would
+   break the alternating desktop grid and pull every node off the rail. */
+p,
+figcaption {
+  max-inline-size: 68ch;
+}
+
+/* The display voice follows the TEXT's language, never the page's direction.
+   Scoping this to [dir="rtl"] set every ENGLISH heading on an Arabic page in
+   Naskh — and titles are English-primary in both locales (§6), so that was most
+   of the page. Only the first AR render made it visible. */
+:is(h1, h2, h3):lang(ar) {
+  font-family: var(--font-ar-display);
+  /* Arabic has no case. Uppercasing it is a no-op at best and mangles
+     transliterated Latin fragments at worst. */
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.4;
+}
+
+/* An English run inside an Arabic heading keeps the Latin voice. */
+:is(h1, h2, h3) bdi:lang(en),
+.panel-title bdi:lang(en) {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+/* …and the reverse, once AR headings carry Arabic runs. */
+:is(h1, h2, h3) bdi:lang(ar),
+.panel-title bdi:lang(ar) {
+  font-family: var(--font-ar-display);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* Years, runtimes, index numbers, counts. Metadata set as DATA is the archival
+   move and it is the one place this design spends a second family: 13px mono,
+   tabular, ink at 62%. Columns line up, and a row of numbers reads as a record
+   rather than as prose. */
+time,
+.tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--step-data);
+  letter-spacing: 0;
+  color: var(--color-ink-soft);
+}
+
+/* NO `:lang(ar)` override here, deliberately.
+   The obvious defensive rule — `.tabular:lang(ar) { font-family: inherit }` —
+   matches EVERY tabular span on an Arabic page, because `lang` is inherited from
+   <html>. It stripped mono from the year and the #001 index too, which are
+   Latin numerals that want the column alignment.
+   `.tabular` is for numerals only. That is enforced by a render assertion (R21)
+   rather than by a CSS escape hatch that cannot tell which spans hold Arabic. */
+
+/* Never `outline: none`. 2px red, 2px offset, visible in both themes. */
+:focus-visible {
+  outline: 2px solid var(--color-red);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+/* Every interactive target clears 44×44 (ui-ux-pro-max §2, CRITICAL). */
+a,
+button,
+summary,
+[role="button"] {
+  min-height: 44px;
+  min-block-size: 44px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Tap highlight is removed above, so a real :active state has to replace it —
+   never remove feedback without providing feedback.
+
+   A button gets the physical push, because it IS an object being pressed. A
+   link gets opacity, because scaling a run of text in a paragraph is wrong and
+   because a link's box is often the whole row. */
+button:active,
+[role="button"]:active,
+.cta:active {
+  transform: scale(0.97);
+}
+a:active {
+  opacity: 0.7;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  button,
+  [role="button"],
+  .cta {
+    transition: transform var(--dur-press) var(--ease-out);
+  }
+}
+
+/* Inline links in prose are text, not tap targets, and must not inherit a 44px
+   box that would shred the line box. */
+p a,
+li a {
+  min-height: 0;
+  min-block-size: 0;
+}
+
+/* iOS Safari zooms on any input under 16px and strands the user at 1.3×. */
+input,
+select,
+textarea {
+  font-size: max(16px, 1rem);
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------------------------------------------------------------
+   THE ONE MOTION PRIMITIVE
+
+   A scroll reveal, driven by a CSS view() timeline rather than by JavaScript.
+   No scroll listener, no IntersectionObserver, no hydration cost, and nothing
+   for the CSP to have an opinion about.
+
+   IT ANIMATES TRANSFORM ONLY, AND THAT IS NOT A STYLISTIC CHOICE.
+
+   The first version faded opacity 0 -> 1. A scroll-driven animation needs
+   `fill-mode: both` to hold its start frame before the range opens, so every
+   section below the fold sat at opacity 0 until it was scrolled to. For a
+   person scrolling, fine. For a full-page screenshot, a print stylesheet, a
+   headless renderer, or anything that reads the document without scrolling it,
+   two entire sections of the homepage were BLANK — which is exactly what the
+   screenshot sheets showed, and exactly the failure mode of gating content
+   visibility on an animation.
+
+   Sliding 16px up reveals just as clearly and can never hide anything. The base
+   state is finished content at full opacity, at every scroll position, in every
+   renderer. The animation is layered on top inside @supports and
+   prefers-reduced-motion: no-preference.
+
+   Each element carries its own view() timeline, so a grid reveals as its cells
+   individually cross the threshold. That is the stagger, and it is honest: it
+   tracks where the thing actually is rather than counting to six.
+   -------------------------------------------------------------------------- */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: reveal-in var(--dur-reveal) var(--ease-out) both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 26%;
+    }
+    @keyframes reveal-in {
+      from {
+        transform: translateY(16px);
+      }
+      to {
+        transform: none;
+      }
+    }
+  }
+}
+
+/* Poster boxes are always reserved — this is what keeps CLS under 0.1. */
+.poster {
+  aspect-ratio: 2 / 3;
+  background: var(--poster-tint, var(--color-surface-2));
+}
+
+/* NO `content-visibility` here — deliberately, until step 10.
+   `contain-intrinsic-size` supplies a GUESSED height for off-screen content.
+   As panels scroll in, real heights replace guesses and the document's total
+   scroll height changes underneath you, so a scroll-driven timeline animates
+   against a moving denominator. That instability is in the document, not the
+   SVG, so no amount of restructuring the thread geometry fixes it.
+
+   The rule of thumb for when it returns: content-visibility is safe where
+   heights are UNIFORM and dangerous where they vary. Thread panels vary — some
+   carry an editor's note, some do not. The poster grid does not; every cell is
+   exactly 2:3. So at step 10, apply it to the grid, and apply it here only if a
+   measurement says the thread needs it. §14.6 fixed a measured problem; there
+   isn't one yet. */
+.thread-panel {
+  position: relative;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===========================================================================
+   THE THREAD — brief §4, §13.3
+   Mobile layout first. Every offset is a logical property, so the whole thing
+   mirrors in RTL with no extra rules. If it fails to mirror, there is a
+   hardcoded `left` somewhere.
+   =========================================================================== */
+
+.thread-wrap {
+  position: relative;
+}
+
+.thread-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.thread-rail {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: var(--thread-inset);
+  /* The stroke sits at the middle of this 4px box, so without the pull-back the
+     rail's visible centre lands 2px past --thread-inset while every node
+     centres exactly on it. */
+  margin-inline-start: -2px;
+  width: 4px;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.thread-track,
+.thread-progress {
+  stroke-width: var(--thread-width);
+  vector-effect: non-scaling-stroke;
+}
+.thread-track {
+  stroke: var(--color-red-200);
+}
+.thread-progress {
+  stroke: var(--color-red);
+}
+
+/* Progressive enhancement ONLY. Base state above is a complete thread; this
+   makes it draw. Gated on both the feature and the motion preference, so a
+   browser without scroll timelines and a user who asked for stillness both get
+   a finished thread rather than an empty one. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .thread-progress {
+      stroke-dasharray: 1;
+      animation: thread-draw linear both;
+      animation-timeline: scroll(root block);
+    }
+    @keyframes thread-draw {
+      from {
+        stroke-dashoffset: 1;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+}
+
+/* --- panels: mobile (≤767) ------------------------------------------------
+   Thread hugs inset-inline-start: 20px, panels fill the rest. */
+.thread-panel {
+  position: relative;
+  padding-inline-start: calc(var(--thread-inset) + var(--space-5));
+  padding-block: var(--space-3);
+
+  /* Per-panel node size, and the y it centres on. Anything that changes the
+     node — the target does, at 1.6× — sets ONLY this variable; the centring
+     below is computed from it. The previous version hardcoded the offset for
+     one size, so scaling the target pushed its centre ~3px off the rail on
+     mobile and tablet while looking correct on desktop, where the offset had
+     been recomputed by hand. */
+  --node: var(--node-size);
+  --node-y: calc(var(--space-3) + 0.4em + (var(--node-size) / 2));
+}
+.thread-panel[data-target="true"] {
+  --node: calc(var(--node-size) * 1.6);
+}
+
+/* The node. Filled red by default; hollow when optional; blue off-universe. */
+.thread-panel::before {
+  content: "";
+  position: absolute;
+  inline-size: var(--node);
+  block-size: var(--node);
+  inset-block-start: var(--node-y);
+  inset-inline-start: var(--thread-inset);
+  /* Negative LOGICAL margins centre the node on the rail at any size, and
+     mirror correctly in RTL — `translate: -50%` would keep moving left. */
+  margin-block-start: calc(var(--node) / -2);
+  margin-inline-start: calc(var(--node) / -2);
+  border-radius: 50%;
+  background: var(--color-red);
+  box-shadow: 0 0 0 3px var(--color-surface);
+}
+
+.thread-panel[data-optional="true"]::before {
+  background: var(--color-surface);
+  border: var(--thread-width) solid var(--color-red);
+}
+
+/* Blue means exactly one thing: this is not Marvel Studios. */
+.thread-panel[data-branch="true"]::before {
+  background: var(--color-branch);
+}
+
+/* Connector from node to panel. Dashed when the title is skippable — the
+   optionality is in the geometry, not only in the word "optional". */
+.thread-panel::after {
+  content: "";
+  position: absolute;
+  inset-block-start: var(--node-y);
+  inset-inline-start: calc(var(--thread-inset) + (var(--node) / 2));
+  inline-size: var(--space-3);
+  border-block-start: var(--thread-width) solid var(--color-red);
+}
+.thread-panel[data-optional="true"]::after {
+  border-block-start-style: dashed;
+}
+.thread-panel[data-branch="true"]::after {
+  border-block-start-color: var(--color-branch);
+}
+
+/* Below 768 the blue parallel track has no room to run alongside, so it
+   degrades to an indented sub-thread — same information, less geometry. */
+.thread-panel[data-branch="true"] {
+  padding-inline-start: calc(var(--thread-inset) + var(--space-5) + 1rem);
+}
+
+/* THE EDITOR'S NOTE — the catalogue footnote.
+   It was a solid red box. Red is now the accent for five things and a sixth
+   would have broken the lock, so the note earns its distinction from FORM
+   instead: a footnote set on the second surface, a hairline around it, the
+   signature in mono at the end. That is what a footnote looks like in a
+   catalogue raisonné, and it stops the note from competing with the thread it
+   is annotating. There are exactly five on the whole site; if every edge
+   produced one it would become wallpaper and stop meaning "detour ahead". */
+/**
+ * THE EDITOR'S NOTE — a margin note on a spine, not a card.
+ *
+ * DESIGN READ: an editorial aside inside a watch-order timeline, for a reader
+ * who does not know the films being named, in the site's existing quiet
+ * documentary language.
+ *
+ * It was a bordered box on `--color-surface-2` — a card, and taste 4.4 is
+ * explicit that cards are for when ELEVATION COMMUNICATES REAL HIERARCHY and
+ * that everything else groups with a rule or with negative space. A note is not
+ * elevated above the title it belongs to; it is attached to it. So the border
+ * on four sides becomes ONE RULE on the inline start, in the accent — the
+ * detour marker, in the one colour this site owns (4.2, colour consistency
+ * lock: the red is already the rail, the CTA and the active nav link, and no
+ * second accent gets invented here).
+ *
+ * The rule is the whole signal. Take it away and this reads as body copy;
+ * that is the test of whether it was doing any work.
+ */
+.editor-note {
+  margin-block: var(--space-4);
+  padding-inline-start: var(--space-4);
+  border-inline-start: 2px solid var(--color-red);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+.editor-note p {
+  margin: 0;
+  max-inline-size: 60ch;
+}
+.editor-note p + p {
+  margin-block-start: var(--space-2);
+}
+/**
+ * The Arabic line is the SAME note in another script, not a second note. It
+ * sits under the English at a lower weight of colour so the pair reads as one
+ * block rather than as two competing paragraphs.
+ */
+.editor-note p[lang="ar"] {
+  color: var(--color-ink-soft);
+}
+.editor-note-sig {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  color: var(--color-ink-soft);
+  text-align: end;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* --- tablet (768–1023): thread moves in, note takes the gutter ----------- */
+@media (min-width: 48rem) {
+  :root {
+    --thread-inset: 15%;
+  }
+  /* The measure cap belongs on the CONTENT, not on the panel.
+     --thread-inset is a percentage at this breakpoint, and a percentage inset
+     resolves against the element's own containing block: 15% of a 60ch panel is
+     not 15% of the full-width wrap, so the nodes sat 42px off the rail while
+     both rules looked individually correct. */
+  .panel-body {
+    max-inline-size: 60ch;
+  }
+}
+
+/* --- desktop (≥1024): thread centres, panels alternate ------------------
+   The panel spans the FULL width and takes its own row by ordinary
+   auto-placement; the left/right split happens INSIDE it, on :nth-child parity.
+
+   This replaced a `grid-row: var(--n)` that needed an inline style attribute.
+   CSP nonces do not cover style ATTRIBUTES, so `style-src` without
+   `unsafe-inline` would have blocked it at step 10 and silently collapsed the
+   layout back to side-by-side panels. It also survives a filtered list, where a
+   hardcoded index and a DOM position can diverge.
+
+   DOM order is still never touched — only `grid-column` moves anything. */
+@media (min-width: 64rem) {
+  :root {
+    --thread-inset: 50%;
+  }
+
+  .thread-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--space-7);
+    grid-column: 1 / -1;
+    padding-inline: 0;
+    max-inline-size: none;
+  }
+
+  .panel-body {
+    grid-column: 1;
+    text-align: end;
+    padding-inline-end: var(--space-5);
+  }
+  .thread-panel:nth-child(even) .panel-body {
+    grid-column: 2;
+    text-align: start;
+    padding-inline: var(--space-5) 0;
+  }
+
+  /* The rail is centred, so the node sits at 50% of the panel regardless of
+     which side the content is on. */
+  .thread-panel::before {
+    inset-inline-start: 50%;
+    inset-inline-end: auto;
+  }
+
+  /* The connector points at whichever column holds the content. */
+  .thread-panel::after {
+    inset-inline-start: auto;
+    inset-inline-end: calc(50% + (var(--node) / 2));
+  }
+  .thread-panel:nth-child(even)::after {
+    inset-inline-end: auto;
+    inset-inline-start: calc(50% + (var(--node) / 2));
+  }
+
+  .thread-panel[data-branch="true"] {
+    padding-inline-start: 0;
+  }
+
+  /* THE CHECKBOX BELONGS TO ITS NODE.
+     It lives INSIDE `.panel-body` (ThreadPanel wraps all its children), so it
+     could not be grid-placed as a sibling: it stacked above the title, aligned
+     to whichever text edge the panel used, a hundred pixels up and across from
+     the row it marks. Taking it out of flow and pinning it to `--node-y` puts
+     the tick level with the node, on the far side of the rail from its own
+     panel. Logical offsets, so it mirrors in RTL with everything else.
+
+     `--node-y` is the same variable the node itself centres on, so the two
+     cannot drift apart when the node size changes. */
+  .thread-panel .watched {
+    position: absolute;
+    inset-block-start: var(--node-y);
+    /* Half of the 44px target, so the box centres on the node rather than
+       hanging from it. */
+    margin-block-start: -22px;
+    inset-inline-start: calc(50% + var(--space-4));
+  }
+  .thread-panel:nth-child(even) .watched {
+    inset-inline-start: auto;
+    inset-inline-end: calc(50% + var(--space-4));
+  }
+}
+
+/* --- panel contents ------------------------------------------------------ */
+
+/* The index number is real sequence data, which is the only condition under
+   which numbering belongs in a design. It is set as data: mono, tabular,
+   subordinate. It used to be red, which spent the accent on 130 rows. */
+.panel-index {
+  display: block;
+  letter-spacing: 0.06em;
+}
+
+.panel-title {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-lg);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.panel-title a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Arabic sits BENEATH the English, never inline beside it (§6). Inlining the
+   two produces bidi soup that is hard to scan in either language, and Arabic
+   speakers search these titles by their English names. */
+.panel-title-ar {
+  display: block;
+  font-family: var(--font-ar-body);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: var(--color-ink-soft);
+  /* No direction set here on purpose — the block stays in the page direction
+     and inherits the panel's alignment, so the Arabic stacks under the English.
+     Bidi correctness comes from the <bdi> inside it. */
+}
+
+/* The meta row read "2000 · fox · 1h 44m" — two middle dots on one line, which
+   is the separator used as wallpaper. The dot is rationed to one per line, and
+   here it is rationed to zero: the fields are separated by a hairline rule and
+   real space, which is how a catalogue separates columns. */
+.panel-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1) var(--space-3);
+  margin-block-start: var(--space-2);
+  font-size: var(--step-data);
+  color: var(--color-ink-soft);
+}
+.panel-meta > * + * {
+  padding-inline-start: var(--space-3);
+  border-inline-start: 1px solid var(--color-hairline);
+}
+
+/* Desktop: panels alternate around the centred rail, so the meta row hugs the
+   rail-facing edge rather than always starting on the left. */
+@media (min-width: 64rem) {
+  .thread-panel .panel-meta {
+    justify-content: flex-end;
+  }
+  .thread-panel:nth-child(even) .panel-meta {
+    justify-content: flex-start;
+  }
+  .thread-panel:nth-child(even) .panel-body {
+    text-align: start;
+  }
+}
+
+/* The destination. A larger filled node and heavier type end the thread more
+   decisively than a heading did — and keep the whole order inside one <ol>. */
+.thread-panel[data-target="true"]::before {
+  background: var(--color-red);
+  border: none;
+}
+.thread-panel[data-target="true"] .panel-title {
+  font-size: var(--text-xl);
+}
+.thread-panel[data-target="true"] .panel-index {
+  color: var(--color-red);
+}
+
+/* ===========================================================================
+   THE POSTER CARD — the whole visual system
+
+   Every poster on this site is the same object: same ratio, same radius, same
+   scrim, same hover. That consistency is what lets the chrome disappear, and
+   the chrome disappearing is what lets the posters be the product.
+
+   THE IMAGE RESOLVES OUT OF ITS OWN COLOUR. Every title already carries its
+   dominant colour as a generated CSS tint, so the box is filled with the
+   poster's own palette before the poster arrives, and the image fades in over
+   it. That is better than a blur placeholder, costs nothing extra, and it is
+   why a long grid feels calm instead of flickering grey to colour.
+   =========================================================================== */
+
+.poster {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  /* The tint comes from app/poster-tints.css, keyed off data-tint. NOT an
+     inline style: a CSP without unsafe-inline blocks those, and the failure is
+     silent — 147 identical grey boxes. */
+  background: var(--poster-tint, var(--color-surface-2));
+  overflow: hidden;
+  border-radius: var(--radius-media);
+}
+.poster img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* The image arrives out of the tint rather than replacing a grey box. */
+  .poster img {
+    animation: poster-in var(--dur-reveal) var(--ease-out) both;
+    transition: transform var(--dur-hover) var(--ease-out);
+  }
+  @keyframes poster-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/**
+ * HOVER MOVES THE IMAGE, NEVER THE BOX.
+ *
+ * Scaling the tile would reflow its neighbours and make a grid breathe every
+ * time the pointer crosses it. Scaling the image inside a fixed, clipped box
+ * costs one composited layer and moves nothing.
+ *
+ * The lift is 3px and the shadow is tinted to the ground. Focus gets the same
+ * treatment as hover plus the ring, so a keyboard reader sees what a mouse
+ * reader sees.
+ */
+a:has(.poster),
+.poster-card {
+  display: block;
+  border-radius: var(--radius-media);
+  transition:
+    transform var(--dur-hover) var(--ease-out),
+    box-shadow var(--dur-hover) var(--ease-out);
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:hover .poster img,
+  a:focus-visible .poster img {
+    transform: scale(1.05);
+  }
+  a:has(.poster):hover,
+  a:has(.poster):focus-visible {
+    transform: translateY(-3px);
+  }
+}
+a:has(.poster):hover,
+a:has(.poster):focus-visible {
+  box-shadow: var(--shadow-lift);
+}
+
+/* The scrim, and the title inside it. Used wherever a poster carries its own
+   label: the universe tiles, the appearance grid, the gallery. */
+/* The scrim positions itself against its own box. Four callers happened to be
+   relative already and the fifth was not; a class whose pseudo-element needs a
+   positioned ancestor should provide one rather than assume it. */
+.poster-scrim {
+  position: relative;
+}
+.poster-scrim::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  block-size: 50%;
+  background: linear-gradient(to top, rgb(0 0 0 / 0.9), rgb(0 0 0 / 0));
+  pointer-events: none;
+}
+
+/* THE RATING BADGE. The sixth and last thing the accent touches. */
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink);
+}
+.rating-star {
+  color: var(--color-red);
+}
+.rating-votes {
+  color: var(--color-ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.poster[data-size="panel"] {
+  inline-size: 72px;
+}
+.poster[data-size="hero"] {
+  inline-size: clamp(7.5rem, 34vw, 17.5rem);
+}
+
+/* §14.7 — the absence gets a card of its own, not a broken-image icon. */
+.poster-fallback {
+  display: flex;
+  align-items: flex-end;
+  block-size: 100%;
+  padding: var(--space-3);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-media);
+}
+.poster-fallback-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--color-ink);
+}
+.poster-fallback-title:lang(ar) {
+  font-family: var(--font-ar-display);
+  text-transform: none;
+}
+
+/* --- the title hero ------------------------------------------------------ */
+
+.title-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-4);
+  align-items: flex-start;
+  padding-block: var(--space-4);
+}
+.title-hero-body {
+  flex: 1 1 16rem;
+  min-inline-size: 0;
+}
+
+/* THE ANSWER. It sits above everything else because it is the reason the page
+   exists — not a section to scroll for.
+
+   It used to carry a 3px red side-stripe. A coloured stripe down the start edge
+   of a block is never an intentional choice; it is what gets reached for when a
+   block needs to look important. The weight and the measure do that job here,
+   and the count above it is the data. */
+.title-answer {
+  margin-block: var(--space-4) var(--space-3);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  max-inline-size: 26ch;
+}
+/* The price, under the claim. Data, so it is set as data. */
+.title-answer-cost {
+  display: block;
+  margin-block-start: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--color-ink-soft);
+}
+/* Arabic runtimes are words, and the mono has no Arabic coverage. */
+.title-answer-cost:lang(ar) {
+  font-family: var(--font-ar-body);
+  font-variant-numeric: tabular-nums;
+}
+.spoiler-safe {
+  color: var(--color-ink-soft);
+  max-inline-size: 60ch;
+}
+
+/* --- the card inside a thread panel --------------------------------------
+   `container-type` goes on THIS wrapper, never on .thread-panel: containment
+   establishes a containing block, and the panel's ::before node and ::after
+   connector would start positioning against the card instead of the panel —
+   the thread geometry silently detaching. */
+.panel-card {
+  container-type: inline-size;
+  container-name: card;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-3);
+  align-items: start;
+}
+.panel-card-body {
+  min-inline-size: 0;
+}
+
+@container card (max-width: 18rem) {
+  .panel-card {
+    grid-template-columns: 1fr;
+  }
+  .panel-card .poster {
+    display: none;
+  }
+}
+
+@media (min-width: 64rem) {
+  /* Desktop panels alternate; the poster hugs the rail-facing edge. */
+  .thread-panel:not(:nth-child(even)) .panel-card {
+    grid-template-columns: 1fr auto;
+  }
+  .thread-panel:not(:nth-child(even)) .panel-card .poster {
+    order: 2;
+  }
+
+  /**
+   * THE HOMEPAGE EXCERPT DOES NOT MIRROR. Every poster on the same edge.
+   *
+   * Mirroring is right on a path page: that thread runs for thirty-odd nodes,
+   * the rail is the spine of the argument, and a poster hugging it on both
+   * sides is what makes the line read as a line.
+   *
+   * Four rows is not a spine. At that length the alternation stops reading as
+   * rhythm and starts reading as an inconsistency — two posters left, two
+   * right, for no reason a reader can see. So on the homepage the cards all
+   * face the same way and the eye gets one column of artwork to scan.
+   */
+  .home .thread-panel .panel-card {
+    grid-template-columns: auto 1fr;
+  }
+  .home .thread-panel .panel-card .poster {
+    order: 0;
+  }
+}
+
+/* --- order pages --------------------------------------------------------- */
+
+/* Sticky only because `body` has no `overflow-x: hidden` — that would make body
+   a scroll container and break position:sticky on every descendant. */
+.order-bar {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-3);
+  align-items: baseline;
+  justify-content: space-between;
+  padding-block: var(--space-3);
+  background: var(--color-surface);
+  border-block-end: 1px solid var(--color-hairline);
+}
+.order-count {
+  margin: 0;
+  max-inline-size: none;
+  font-weight: 600;
+}
+
+.order-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: baseline;
+  margin-block: var(--space-3);
+}
+.order-toggle [aria-current="page"] {
+  font-weight: 700;
+  text-decoration: none;
+  border-block-end: 2px solid var(--color-ink);
+}
+.universe-bridge,
+.universe-note {
+  max-inline-size: 60ch;
+}
+.universe-note {
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+  flex-basis: 100%;
+  margin: 0;
+}
+
+.type-credit {
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+}
+
+/* ===========================================================================
+   HEADER + SEARCH
+   =========================================================================== */
+
+.site-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-3);
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  max-inline-size: 90rem;
+  margin-inline: auto;
+  border-block-end: 1px solid var(--color-surface-2);
+}
+@media (min-width: 48rem) {
+  .site-head {
+    padding-inline: var(--space-5);
+  }
+}
+.site-name {
+  /* The mark and the words are one lockup, so they align on their centres and
+     never wrap apart. The gap is the only thing separating them — no rule, no
+     bullet; the mark's own whitespace does that work. */
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  white-space: nowrap;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-ink);
+  font-size: var(--text-lg);
+}
+.site-name:lang(ar) {
+  font-family: var(--font-ar-display);
+  text-transform: none;
+}
+/**
+ * FIVE DOORS, and at 320px they do not fit on one line.
+ *
+ * The nav went from three links to five and started overflowing the page by
+ * 4px. Wrapping is the honest fix: the header already wraps, the links already
+ * clear 44px, and a five-item nav squeezed onto one line at 320 would be
+ * unreadable even if it fitted.
+ */
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-3);
+  margin-inline-end: auto;
+  min-inline-size: 0;
+}
+.site-nav a {
+  white-space: nowrap;
+}
+
+.search-open {
+  background: none;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  color: inherit;
+  font: inherit;
+  padding-inline: var(--space-3);
+  cursor: pointer;
+}
+
+/* Below 768 it is a full-screen sheet; above, an inline panel. */
+.search-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  padding-block-end: calc(var(--space-3) + env(safe-area-inset-bottom));
+  background: var(--color-surface);
+  /* So scrolling the results does not scroll the page behind them. */
+  overscroll-behavior: contain;
+  overflow-y: auto;
+}
+
+/**
+ * The sheet is a drawer, so it gets the drawer curve and 260ms.
+ *
+ * The RESULTS LIST deliberately does not animate. Search is opened many times a
+ * day by anyone actually using this site, and a stagger on the rows would make
+ * every one of those feel slower — the frequency question answers itself. The
+ * container moving is enough to explain where it came from.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .search-sheet {
+    animation: sheet-in var(--dur-sheet) var(--ease-drawer) both;
+  }
+  @keyframes sheet-in {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+@media (min-width: 48rem) {
+  .search-sheet {
+    position: absolute;
+    inset: auto;
+    inset-inline-end: var(--space-5);
+    inset-block-start: 3.5rem;
+    inline-size: min(30rem, calc(100vw - var(--space-5) * 2));
+    max-block-size: 70vh;
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-control);
+    box-shadow: 0 12px 40px rgb(0 0 0 / 0.18);
+  }
+}
+
+.search-head {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+.search-input {
+  flex: 1;
+  /* 16px minimum, or iOS Safari zooms on focus and strands the user at 1.3×. */
+  font-size: max(16px, 1rem);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  background: var(--color-surface-2);
+  color: inherit;
+  min-block-size: 44px;
+}
+.search-close {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding-inline: var(--space-2);
+}
+.search-status {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+}
+
+.search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+.search-result a {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  /* 44px minimum row, per ui-ux-pro-max §2. */
+  min-block-size: 44px;
+  padding: var(--space-2);
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-control);
+}
+.search-result[data-active="true"] a {
+  background: var(--color-surface-2);
+  outline: 2px solid var(--color-red);
+  outline-offset: -2px;
+}
+.search-result-title {
+  font-weight: 600;
+}
+.search-result-ar {
+  font-weight: 400;
+  color: var(--color-ink-soft);
+  font-size: var(--text-sm);
+}
+.search-result-cost {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  color: var(--color-ink-soft);
+}
+.search-empty {
+  margin: 0;
+}
+
+/* ===========================================================================
+   SPOILER SHIELD + PROGRESS  (step 8)
+   =========================================================================== */
+
+.shield-toggle {
+  background: none;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  color: inherit;
+  font: inherit;
+  font-size: var(--text-sm);
+  padding-inline: var(--space-2);
+  min-block-size: 44px;
+  cursor: pointer;
+}
+/* Pressed is the DEFAULT state of this control, so it cannot be the loudest
+   thing in the header. Ink and weight, not the accent. */
+.shield-toggle[aria-pressed="true"] {
+  border-color: var(--color-ink);
+  font-weight: 600;
+}
+
+.spoiler-context {
+  margin-block-start: var(--space-2);
+  max-inline-size: 60ch;
+}
+.spoiler-context p {
+  margin: 0;
+  color: var(--color-ink-soft);
+}
+/* The collapsed state has NO text in it — only the button. There is nothing to
+   blur, because there is nothing there. */
+.spoiler-reveal {
+  background: none;
+  border: 1px dashed var(--color-hairline);
+  border-radius: var(--radius-control);
+  color: var(--color-ink);
+  font: inherit;
+  font-size: var(--text-sm);
+  padding-inline: var(--space-3);
+  min-block-size: 44px;
+  cursor: pointer;
+}
+
+.watched {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: 44px;
+  min-block-size: 44px;
+  cursor: pointer;
+}
+.watched input {
+  inline-size: 20px;
+  block-size: 20px;
+  accent-color: var(--color-red);
+}
+.watched span {
+  display: none;
+}
+/* The labelled variant, for the title hero. */
+.watched-labelled {
+  gap: var(--space-2);
+  padding-inline-end: var(--space-2);
+}
+.watched-labelled .watched-label {
+  display: inline;
+  font-size: var(--text-sm);
+}
+/* Columns with a hairline between them, matching .panel-meta. Not `.tabular`:
+   these fields hold Arabic words, and the mono has no Arabic coverage. */
+.watched-counter {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1) var(--space-3);
+  font-size: var(--step-data);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-soft);
+}
+.watched-counter > * + * {
+  padding-inline-start: var(--space-3);
+  border-inline-start: 1px solid var(--color-hairline);
+}
+
+/* The thread's own fill, bucketed to 5% so each step is a rule rather than an
+   inline style the CSP would block. */
+
+/* ===========================================================================
+   HOMEPAGE — a wall of posters with a choice on it
+
+   The hero used to be a headline over flat colour at 76svh. This is the single
+   highest-impact change in the redesign: photographs arrive first and the words
+   sit on them.
+   =========================================================================== */
+
+.hero {
+  position: relative;
+  min-block-size: 88svh;
+  display: flex;
+  align-items: flex-end;
+  /**
+   * Bleeds to the edge of `main`, by negating exactly the gutter.
+   *
+   * NOT `margin-inline: calc(50% - 50vw)`. `vw` includes the scrollbar, so on
+   * every desktop browser that reserves one the hero is wider than the viewport
+   * and the page scrolls sideways by 15 to 17px. That is precisely the failure
+   * the 320px floor exists to catch, and it caught it: five routes overflowed
+   * the moment this shipped.
+   *
+   * Negating the gutter cannot overflow, because it is bounded by the same box
+   * that contains it. Above 90rem the mosaic stops with the content rather than
+   * running to the window edge, which is the same rule the rest of the site
+   * follows: content stays capped, nothing bleeds past it.
+   */
+  margin-inline: calc(-1 * var(--gutter));
+  padding-inline: var(--gutter);
+  padding-block: var(--space-7) var(--space-6);
+  overflow: hidden;
+  border-radius: var(--radius-media);
+}
+
+.mosaic {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.mosaic-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  block-size: 100%;
+  /* The wall is bigger than the box and pulled up, so no row of posters ends
+     neatly at the top edge and announces itself as a grid. */
+  margin-block-start: -6%;
+}
+@media (min-width: 48rem) {
+  .mosaic-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+.mosaic-cell {
+  position: relative;
+  overflow: hidden;
+  background: var(--poster-tint, var(--color-surface-2));
+  min-block-size: 0;
+}
+.mosaic-cell img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  /* Texture, not detail. Nobody reads these through the scrim, and a slight
+     desaturation stops twenty-four competing palettes from fighting the type. */
+  filter: saturate(0.85);
+}
+
+/**
+ * The scrim, in two stops rather than one.
+ *
+ * A flat overlay dims every poster equally and kills the wall. A gradient
+ * anchored at the bottom, where the type is, keeps the top edge alive and
+ * still puts real contrast under the headline.
+ */
+.mosaic-scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to top,
+      var(--color-surface) 6%,
+      rgb(0 0 0 / 0.82) 42%,
+      rgb(0 0 0 / 0.55) 78%,
+      rgb(0 0 0 / 0.45) 100%
+    );
+}
+:root[data-theme="light"] .mosaic-scrim {
+  background:
+    linear-gradient(
+      to top,
+      var(--color-surface) 6%,
+      rgb(250 250 250 / 0.9) 42%,
+      rgb(250 250 250 / 0.76) 78%,
+      rgb(250 250 250 / 0.66) 100%
+    );
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .mosaic-scrim {
+    background:
+      linear-gradient(
+        to top,
+        var(--color-surface) 6%,
+        rgb(250 250 250 / 0.9) 42%,
+        rgb(250 250 250 / 0.76) 78%,
+        rgb(250 250 250 / 0.66) 100%
+      );
+  }
+}
+
+.hero-content {
+  position: relative;
+  inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  /* Explicit, so the Arabic hero is the mirror of the English one rather than
+     inheriting a centred alignment from somewhere up the tree. It was reading
+     as a different composition, not a mirrored one. */
+  align-items: flex-start;
+  text-align: start;
+}
+.hero-display {
+  max-inline-size: 14ch;
+}
+/* Each sentence on its own line. See the component for why this is structural
+   rather than a per-script measure. */
+.hero-display > span {
+  display: block;
+}
+/* Arabic fits fewer words per line at the same measure, so the headline gets a
+   wider box rather than wrapping into four lines where English takes two. The
+   sentence break is handled by the blocks above, not by this measure. */
+.hero-display:lang(ar) {
+  max-inline-size: 18ch;
+}
+
+/* THE SPLIT. Not cards: one 50/50 choice with a hairline down the middle. */
+.doors {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+.door {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding-block-start: var(--space-5);
+  border-block-start: 1px solid var(--color-hairline);
+}
+.doors > .door:first-child {
+  padding-block-start: 0;
+  border-block-start: 0;
+}
+@media (min-width: 48rem) {
+  .doors {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-7);
+  }
+  .door {
+    padding-block-start: 0;
+    border-block-start: 0;
+  }
+  .doors > .door + .door {
+    padding-inline-start: var(--space-7);
+    border-inline-start: 1px solid var(--color-hairline);
+  }
+}
+.door h2 {
+  font-size: var(--text-xl);
+  text-transform: none;
+  letter-spacing: -0.02em;
+  margin: 0;
+  max-inline-size: 18ch;
+}
+/**
+ * ARABIC WRAPS HERE TOO — both doors, two lines, same as English.
+ *
+ * Both titles wrap to two lines in English and rendered on ONE in Arabic,
+ * because Arabic sets shorter: "لم أشاهد أيًّا منها" is 18 characters against
+ * "I've never watched any of it" at 28. Same 18ch measure, different outcome,
+ * and the two doors were composed differently on the two pages.
+ *
+ * 9ch, measured rather than guessed: the shorter title renders 156px wide, so
+ * anything at or above that leaves it on one line, and the longer one is 223px
+ * so it still lands on two rather than three.
+ */
+.door h2:lang(ar) {
+  max-inline-size: 9ch;
+  letter-spacing: normal;
+}
+.door-body {
+  margin: 0;
+  color: var(--color-ink-soft);
+}
+.door-count {
+  font-variant-numeric: tabular-nums;
+  font-size: var(--text-sm);
+}
+
+/* THE ONE PRIMARY CTA, and the only filled red object on the site. */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-block-start: auto;
+  padding: var(--space-2) var(--space-4);
+  min-block-size: 44px;
+  background: var(--color-red);
+  color: #fff;
+  border-radius: var(--radius-control);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: var(--shadow-card);
+}
+.cta:hover {
+  background: var(--color-red-ink);
+  color: var(--color-surface);
+}
+
+/* A rotated phone is 844×390; 88svh of that is not a hero, it is a wall. */
+@media (max-height: 30rem) and (orientation: landscape) {
+  .hero {
+    min-block-size: 0;
+    padding-block: var(--space-5) var(--space-4);
+  }
+  .hero-content {
+    gap: var(--space-4);
+  }
+  .doors {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+  .door {
+    padding-block-start: 0;
+    border-block-start: 0;
+  }
+  .doors > .door + .door {
+    padding-inline-start: var(--space-4);
+    border-inline-start: 1px solid var(--color-hairline);
+  }
+}
+
+.home-search-label {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+}
+.home-search {
+  inline-size: 100%;
+}
+.home-search .search-input {
+  inline-size: 100%;
+}
+
+/**
+ * THE HERO RESULTS NEED A SURFACE OF THEIR OWN.
+ *
+ * The top-bar search opens inside a panel, so its rows inherit an opaque
+ * ground. This one drops straight onto the hero, which is a wall of posters —
+ * so the titles were reading over faces and colour, and the muted second line
+ * was close to invisible against a bright one. Contrast that survives on one
+ * poster and fails on the next is not contrast.
+ *
+ * An elevated plate fixes it at the root rather than by darkening the text:
+ * the rows get the same ground the rest of the site sets type on, and the
+ * hairline and shadow lift the list off the image so it reads as a layer
+ * rather than as something printed on the backdrop.
+ */
+.home-search .search-results {
+  margin-block-start: var(--space-2);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-card);
+  background: var(--color-elevated);
+  box-shadow: var(--shadow-card);
+  max-block-size: min(60vh, 26rem);
+}
+.home-search .search-result a {
+  /* Stacked, not inline. Sharing a line ran the title straight into the year
+     — "Iron Man2008" — because neither part carries its own spacing; in the
+     top-bar panel they are already two blocks. */
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  padding: var(--space-3);
+  text-decoration: none;
+}
+.home-search .search-result + .search-result a {
+  border-block-start: 1px solid var(--color-hairline);
+}
+.home-search .search-result a:hover,
+.home-search .search-result a:focus-visible {
+  background: var(--color-surface-2);
+}
+/* The cost line carried `--color-ink-soft`, which is tuned for the page
+   ground and too quiet on the elevated one. */
+.home-search .search-result-cost {
+  color: var(--color-ink);
+  opacity: 0.72;
+}
+
+/* Arabic script joins: it is never tracked and never uppercased. */
+/**
+ * `.site-name` IS NOT IN THIS LIST, and it used to be.
+ *
+ * These are small Latin-uppercase labels, and the Arabic BODY face is right for
+ * them. The wordmark is not one of them: it is the display object at the top of
+ * every page, it already asks for `--font-ar-display` 250 lines above, and this
+ * rule was quietly overriding that from further down the file. The result was
+ * "الخيط" set in the body face beside "THE THREAD" set in Archivo — visibly
+ * lighter, visibly smaller, and reading as an unstyled fallback rather than as
+ * the same mark in another script.
+ *
+ * Nothing in the build could see it. Two rules both matched, the later one won,
+ * and both were "correct" in isolation.
+ */
+:is(.home-search-label, .editor-note-sig, .universe-name):lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* --- the marquee --------------------------------------------------------
+   ONE per page. Two reads as filler. It moves so the seam between the hero and
+   the content is not dead, without animating any content. */
+.marquee {
+  margin-inline: calc(-1 * var(--gutter));
+  overflow: hidden;
+  border-block: 1px solid var(--color-hairline);
+  padding-block: var(--space-3);
+}
+.marquee-track {
+  display: flex;
+  inline-size: max-content;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--text-xl);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  /**
+   * VISIBLE, in both scripts.
+   *
+   * This was `--color-ink-soft` at `opacity: 0.5` — a grey, halved, on a
+   * near-black ground. In English it read as deliberately faint; in Arabic it
+   * disappeared, because Naskh strokes are thinner than Archivo 800 and there
+   * was not enough ink left to see. A strip nobody can see is not a subtle
+   * strip, it is an empty band.
+   *
+   * The colour carries the recession now instead of an opacity multiplier on
+   * top of an already-recessive colour.
+   */
+  color: var(--color-ink-faint);
+}
+/**
+ * EACH GROUP IS AT LEAST A FULL VIEWPORT WIDE.
+ *
+ * This is what stops the empty band. `min-inline-size: 100vw` guarantees one
+ * group covers the screen, so the second group is always already on stage when
+ * the first leaves; `space-around` spreads the copies to fill whatever width
+ * that turns out to be, rather than leaving the surplus at one end.
+ *
+ * The trailing space is PADDING on the group, not a `gap` between the two
+ * groups — a gap between them is not part of either, so translating by exactly
+ * -50% would land half a gap out and the strip would jump every cycle.
+ */
+.marquee-group {
+  display: flex;
+  flex: 0 0 auto;
+  gap: var(--space-6);
+  padding-inline-end: var(--space-6);
+  /**
+   * ENOUGH COPIES THAT THE CONTENT IS WIDER THAN THE SCREEN, which is what
+   * actually makes this work — the `min-inline-size` below is only a floor.
+   *
+   * The previous version had six copies and leaned on
+   * `justify-content: space-around` to fill the group out to 100vw. On a
+   * 2880px display that put 1,224px of words into a 2,880px box and spaced
+   * them 480px apart: five words adrift in an empty strip, which is the gap
+   * that kept getting reported. `space-around` cannot make a marquee, it can
+   * only make a sparse row.
+   *
+   * With enough copies the content overflows the floor, the floor goes inert,
+   * `space-around` has nothing left to distribute, and the words run at a
+   * fixed gap forever. The floor stays as the graceful failure for a display
+   * wider than the copies cover: sparse, but never a blank band at the end.
+   */
+  min-inline-size: 100vw;
+  justify-content: space-around;
+}
+/**
+ * ARABIC RUNS AT ITS OWN OPTICAL SIZE HERE TOO.
+ *
+ * "الخيط" in Thmanyah at the Latin size renders visibly lighter and shorter
+ * than "THE THREAD" in Archivo 800 — the strip read as a different, weaker
+ * element on the Arabic page. Naskh needs more size and more weight to carry
+ * the same presence, which is the same correction the display clamp makes.
+ */
+.marquee-track:lang(ar) {
+  font-family: var(--font-ar-display);
+  font-weight: 900;
+  font-size: var(--text-2xl);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.marquee-track:lang(ar) .marquee-group {
+  gap: var(--space-7);
+  padding-inline-end: var(--space-7);
+}
+/**
+ * `translateX` IS PHYSICAL, AND THAT IS WHY THE ARABIC STRIP WAS EMPTY.
+ *
+ * The track is 8,691px of `max-content` inside a 1,440px box. In LTR it starts
+ * at the left edge and `translateX(-50%)` walks it leftward through the clip —
+ * correct. In RTL a block places an over-wide child from its INLINE-START,
+ * which is the RIGHT edge, so the track already extends leftward: its left edge
+ * sits at 1440 − 8691 = −7,251 before any animation. Then −50% of 8,691 pushed
+ * it another 4,345px left, to −11,544, and every word was outside the
+ * `overflow: hidden` box. Measured: the first three spans at −2,924, −3,060 and
+ * −3,196. The band was not faint, it was empty.
+ *
+ * `animation-direction: reverse` — which is what was here — does NOT fix this.
+ * It plays the same timeline backwards, from −50% to 0. The sign never changes,
+ * so the strip still spends the whole cycle off to the left.
+ *
+ * RTL needs the opposite sign, so it gets its own keyframes. Both walk the
+ * track by exactly one group, so both loop seamlessly; they just walk it the
+ * way their own script reads.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .marquee-track {
+    animation: marquee 48s linear infinite;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      /* Exactly one group, which is exactly half the track. */
+      transform: translateX(-50%);
+    }
+  }
+  [dir="rtl"] .marquee-track {
+    animation-name: marquee-rtl;
+  }
+  @keyframes marquee-rtl {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(50%);
+    }
+  }
+}
+/* The direction is carried by the RTL keyframes above, not by reversing the
+   LTR ones — reversing keeps the sign and keeps the strip off-screen. */
+
+/* --- section rhythm ------------------------------------------------------
+   One idea per section with real air around it. This is the single thing that
+   most separates a page that reads as designed from one that reads as dense. */
+.home-section {
+  padding-block: var(--space-8);
+  border-block-start: 1px solid var(--color-hairline);
+}
+/**
+ * Arabic sits on a 1.7 line-height, so the same padding reads tighter against
+ * taller text: sections ran into each other on the Arabic page while looking
+ * correct on the English one. The extra space is the same correction the type
+ * scale makes, applied to rhythm.
+ */
+.home-section:lang(ar),
+.char-section:lang(ar),
+.title-section:lang(ar),
+.page-head:lang(ar) {
+  padding-block: calc(var(--space-8) + var(--space-3));
+}
+.home-section:first-of-type {
+  border-block-start: 0;
+}
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  align-items: baseline;
+  justify-content: space-between;
+  margin-block-end: var(--space-4);
+}
+.section-head h2 {
+  margin: 0;
+}
+.section-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 600;
+}
+/* A count in prose. Tabular figures, but never the mono FAMILY: these strings
+   carry Arabic words and IBM Plex Mono has no Arabic coverage. */
+.section-count {
+  font-variant-numeric: tabular-nums;
+  font-size: var(--text-sm);
+}
+
+.section-lede {
+  color: var(--color-ink-soft);
+  font-size: var(--text-lg);
+  max-inline-size: 56ch;
+  margin-block: 0 var(--space-5);
+}
+
+/* The thread slice keeps the mobile geometry at every width. Alternating four
+   panels around a centred rail reads as a fragment of a different page. */
+@media (min-width: 64rem) {
+  .home-section .thread-wrap {
+    --thread-inset: 20px;
+  }
+  .home-section .thread-panel {
+    display: block;
+    padding-inline-start: calc(var(--thread-inset) + var(--space-5));
+  }
+  .home-section .thread-panel .panel-body,
+  .home-section .thread-panel:nth-child(even) .panel-body {
+    grid-column: auto;
+    text-align: start;
+    padding-inline: 0;
+  }
+  .home-section .thread-panel::before,
+  .home-section .thread-panel:nth-child(even)::before {
+    inset-inline-start: var(--thread-inset);
+  }
+  .home-section .thread-panel::after,
+  .home-section .thread-panel:nth-child(even)::after {
+    inset-inline-end: auto;
+    inset-inline-start: calc(var(--thread-inset) + (var(--node) / 2));
+  }
+  .home-section .thread-panel .panel-meta,
+  .home-section .thread-panel:nth-child(even) .panel-meta {
+    justify-content: flex-start;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .home-section .thread-progress {
+      animation-timeline: view();
+      animation-range: entry 25% cover 55%;
+    }
+  }
+}
+
+/* --- the universes: seven cells, exactly ---------------------------------
+   Seven items, seven cells, no filler. MCU leads because it is 72 of the 147
+   titles; Animation takes the wide cell so the last row does not repeat the
+   first. Cell count equals content count. */
+.universe-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  /* minmax(0, 1fr), NOT 1fr: `1fr` is `minmax(auto, 1fr)` and a track can never
+     shrink below its content's intrinsic width, which here is a 500px poster.
+     One tile's image once starved the lead tile into a narrow strip. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 9rem;
+  gap: var(--space-2);
+}
+.universe-grid > li:first-child,
+.universe-grid > li:last-child {
+  grid-column: span 2;
+}
+
+@media (min-width: 48rem) {
+  .universe-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-auto-rows: clamp(8rem, 11vw, 11rem);
+    gap: var(--space-3);
+  }
+  /**
+   * Six columns, three rows, seven cells, zero holes.
+   *
+   *   row 1  MCU MCU | sony sony | fox | defenders
+   *   row 2  MCU MCU | marvel-tv marvel-tv | legacy legacy
+   *   row 3  animation animation animation animation animation animation
+   *
+   * The previous split gave sony 2 and everything after it 1, which left two
+   * empty cells in row two and two more in row three. A bento with a hole in it
+   * is a planning error, not a style, and pasting a blank tile to fill it is
+   * the wrong repair.
+   */
+  .universe-grid > li:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .universe-grid > li:nth-child(2),
+  .universe-grid > li:nth-child(5),
+  .universe-grid > li:nth-child(6) {
+    grid-column: span 2;
+  }
+  .universe-grid > li:last-child {
+    grid-column: span 6;
+  }
+}
+
+.universe-tile {
+  position: relative;
+  display: block;
+  block-size: 100%;
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-media);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+.universe-tile .poster {
+  aspect-ratio: auto;
+  block-size: 100%;
+  border-radius: var(--radius-media);
+}
+.universe-tile .poster img {
+  block-size: 100%;
+  object-position: center 30%;
+}
+.universe-name {
+  position: absolute;
+  z-index: 1;
+  inset-inline: 0;
+  inset-block-end: 0;
+  padding: var(--space-3);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-base);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  text-wrap: balance;
+  color: #fff;
+}
+.universe-name:lang(ar) {
+  font-family: var(--font-ar-display);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.universe-grid > li:first-child .universe-name {
+  font-size: var(--text-lg);
+  padding: var(--space-4);
+}
+
+/* --- the face rail ------------------------------------------------------- */
+
+/**
+ * A GRID, NOT A RAIL.
+ *
+ * This was a horizontal scroller and it was the wrong affordance twice over: a
+ * drag rail hides most of its contents behind a gesture, and on a page that
+ * already scrolls vertically it fights the direction the reader is moving in.
+ * Everything fits, so everything is shown.
+ */
+.face-rail {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(6.5rem, 22vw, 9rem), 1fr));
+  gap: var(--space-4) var(--space-3);
+}
+
+/* ===========================================================================
+   RIGHTS
+   =========================================================================== */
+
+.rights-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.rights-row {
+  display: grid;
+  gap: var(--space-1) var(--space-5);
+  grid-template-columns: 1fr;
+  padding-block: var(--space-5);
+  border-block-start: 1px solid var(--color-hairline);
+}
+@media (min-width: 48rem) {
+  /**
+   * YEAR, MARK, THEN THE SENTENCE — three columns, not two with a stack.
+   *
+   * The logo used to sit ABOVE its paragraph in the content column, which read
+   * as a lid on the text rather than as the company the row is about, and it
+   * capped how large the mark could be: anything bigger pushed the prose down
+   * the page. Given its own column it can be a real mark, and the eye reads
+   * left to right through year, who, what — which is the order the sentence
+   * is in anyway.
+   */
+  .rights-row {
+    grid-template-columns: 5rem 11rem 1fr;
+  }
+  /**
+   * EVERY ITEM NAMES ITS COLUMN, because auto-placement cannot be trusted here.
+   *
+   * The row is `year | content`, and it held exactly two children until the
+   * studio logos were added. A third child in a two-column grid does not go
+   * where you meant it to — it wraps. The logo took the second cell and pushed
+   * the BODY onto a new line, into the 6rem year column, where a paragraph of
+   * prose was set two words wide and ran for hundreds of pixels.
+   *
+   * That is how this page reached 11,842px tall. Nothing threw, nothing was
+   * missing, and the text was all there — in a column too narrow to read.
+   *
+   * So the columns are assigned rather than inferred. The logo is optional and
+   * the link is optional, and with explicit placement neither one can move
+   * anything else by appearing.
+   */
+  .rights-logo {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+  .rights-body,
+  .rights-link {
+    grid-column: 3;
+  }
+}
+.rights-year {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-lg);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-soft);
+}
+.rights-body {
+  margin: 0;
+  font-size: var(--text-lg);
+  max-inline-size: 62ch;
+}
+.rights-link {
+  margin: var(--space-2) 0 0;
+}
+.rights-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.rights-payoff {
+  margin-block: var(--space-7);
+  padding: var(--space-5);
+  background: var(--color-elevated);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-media);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+.rights-payoff p {
+  margin: 0;
+  font-size: var(--text-lg);
+}
+
+/* --- Previously… (§4.3) --------------------------------------------------- */
+
+.previously {
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  padding: var(--space-4);
+  margin-block: var(--space-4);
+  background: var(--color-surface-2);
+}
+.previously-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  font-size: var(--text-lg);
+  margin: 0;
+}
+.previously-heading:lang(ar) {
+  font-family: var(--font-ar-display);
+  text-transform: none;
+}
+.previously-days {
+  margin-block: var(--space-1) var(--space-3);
+}
+.previously-recap {
+  color: var(--color-ink-soft);
+  max-inline-size: 60ch;
+}
+.previously-next-link {
+  font-weight: 600;
+}
+
+/* --- where to watch ------------------------------------------------------ */
+
+.where-to-watch {
+  border-block-start: 1px solid var(--color-surface-2);
+  padding-block-start: var(--space-3);
+  margin-block: var(--space-4);
+}
+.wtw-region {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+}
+.wtw-region select {
+  min-block-size: 44px;
+  font-size: max(16px, 1rem);
+  font-family: inherit;
+  background: var(--color-surface);
+  color: inherit;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  padding-inline: var(--space-2);
+}
+.wtw-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-3);
+}
+.wtw-none,
+.wtw-disclaimer {
+  max-inline-size: 60ch;
+}
+.wtw-disclaimer {
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+}
+
+/* ===========================================================================
+   WHAT IS MARVEL — §13.8 horizontal journey
+   =========================================================================== */
+
+.what-intro,
+.what-payoff p {
+  max-inline-size: 60ch;
+  font-size: var(--text-lg);
+}
+
+.what-journey {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--space-4);
+}
+.what-chapter {
+  border-block-start: 1px solid var(--color-hairline);
+  padding-block-start: var(--space-3);
+  max-inline-size: 60ch;
+}
+.what-year {
+  margin: 0;
+}
+.what-chapter h2 {
+  font-size: var(--text-xl);
+  text-transform: none;
+  margin-block: var(--space-2) var(--space-2);
+}
+
+/**
+ * Horizontal ONLY on a fine pointer at ≥1024. Scroll-snap rather than
+ * scroll-jacking: the browser keeps its own gesture handling, there is no
+ * library, and no JavaScript for a CSP to block.
+ */
+/**
+ * VERTICAL AT EVERY WIDTH.
+ *
+ * This was a horizontal scroll-snap timeline above 1024 with a fine pointer.
+ * It was carefully built — no scroll-jacking, native gestures, a coarse-pointer
+ * fallback — and it was still the wrong idea: a chronology that runs sideways
+ * on one page and downward on every other page in the site teaches a reader two
+ * different reading directions for the same kind of content.
+ *
+ * At desktop it becomes two columns, which shows the same five chapters at once
+ * without asking anyone to drag.
+ */
+@media (min-width: 64rem) {
+  .what-journey {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6) var(--space-7);
+  }
+}
+
+.what-payoff {
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  background: var(--color-surface-2);
+  padding: var(--space-5);
+  margin-block: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  align-items: flex-start;
+}
+
+/* ===========================================================================
+   THEME SWITCH — three explicit states, not a toggle
+
+   A toggle cannot say "follow my system", which is what most people want and
+   what this defaults to. Segmented, small, and it never grows past the nav.
+   =========================================================================== */
+
+.theme-switch {
+  display: inline-flex;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  overflow: hidden;
+}
+.theme-option {
+  background: none;
+  border: 0;
+  color: var(--color-ink-soft);
+  font: inherit;
+  font-size: var(--step-data);
+  padding-inline: var(--space-2);
+  min-block-size: 44px;
+  cursor: pointer;
+}
+.theme-option + .theme-option {
+  border-inline-start: 1px solid var(--color-hairline);
+}
+.theme-option[data-active="true"] {
+  background: var(--color-elevated);
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+/* ===========================================================================
+   CHARACTERS
+   =========================================================================== */
+
+.page-head {
+  padding-block: var(--space-7) var(--space-5);
+}
+.page-lede {
+  color: var(--color-ink-soft);
+  font-size: var(--text-lg);
+  max-inline-size: 52ch;
+}
+
+.char-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-4);
+  align-items: flex-end;
+  padding-block-end: var(--space-4);
+  border-block-end: 1px solid var(--color-hairline);
+  margin-block-end: var(--space-5);
+}
+.char-search {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  flex: 1 1 16rem;
+}
+.char-search-label {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+}
+:is(.char-search-label):lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/**
+ * THIRTY CHIPS IN THREE LABELLED BANDS.
+ *
+ * A flat wrap of thirty pills reads as one long undifferentiated wall, and the
+ * reader has to scan all of it to find "Eternals". The bands are the same
+ * control split by the question each one answers — role, team, kind — and the
+ * label is what makes that legible without adding a second interaction.
+ *
+ * The label is a GRID COLUMN at wide widths and a line above at narrow ones,
+ * so it never squeezes the chips into two-word wrapping on a phone.
+ */
+.char-chips {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.chip-band {
+  display: grid;
+  gap: var(--space-1) var(--space-3);
+}
+@media (min-width: 48rem) {
+  .chip-band {
+    /* The label column is sized to the longest of the three, so the chip rows
+       all start on the same line. `max-content` on a shared track would be
+       per-row; a fixed measure keeps them aligned. */
+    grid-template-columns: 4.5rem 1fr;
+    align-items: baseline;
+  }
+}
+.chip-band-label {
+  color: var(--color-ink-faint);
+  font-size: var(--step--1);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Arabic is NEVER tracked and NEVER uppercased — both are Latin typographic
+   devices that do nothing to an Arabic word except damage its joins. */
+[lang="ar"] .chip-band-label {
+  letter-spacing: normal;
+  text-transform: none;
+}
+.chip-band-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+/* A chip is a control, so it takes the control radius, and it moves on press
+   like every other control on the site. */
+.chip {
+  background: none;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  color: var(--color-ink-soft);
+  font: inherit;
+  font-size: var(--text-sm);
+  padding-inline: var(--space-3);
+  min-block-size: 44px;
+  cursor: pointer;
+}
+.chip[aria-checked="true"] {
+  background: var(--color-elevated);
+  border-color: var(--color-ink);
+  color: var(--color-ink);
+  font-weight: 600;
+}
+.char-count {
+  margin: 0;
+}
+.char-empty {
+  padding-block: var(--space-6);
+  color: var(--color-ink-soft);
+}
+
+/**
+ * The portrait grid. `content-visibility` belongs HERE and nowhere else on the
+ * site: the cells are a uniform 2:3 and `contain-intrinsic-size` can be exact,
+ * so the scrollbar stays honest. On the thread it would be wrong, because the
+ * panels vary in height and a moving document height breaks a scroll-linked
+ * animation.
+ */
+.char-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(7rem, 26vw, 10rem), 1fr));
+  gap: var(--space-4) var(--space-3);
+}
+/**
+ * NO `content-visibility`, and it was here for a day.
+ *
+ * The PRD called the character grid the measured case §14.6 was waiting for.
+ * It is not, for two reasons. Nothing has measured that 84 uniform cells need
+ * it. And it skips rendering for off-screen subtrees, so every full-page
+ * screenshot showed this grid and the character rail EMPTY — the same class of
+ * blindness as the opacity reveal that shipped two sections blank, and it
+ * blinds the gate that catches the rest.
+ *
+ * It comes back when the budget test in e2e/perf.spec.ts fails and says so.
+ */
+.char-tile {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-media);
+}
+.char-tile-body {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-block-start: var(--space-2);
+}
+.char-tile-name {
+  font-weight: 600;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.char-tile-meta {
+  flex: none;
+}
+
+/* The portrait, and the gap designed as a gap. */
+.portrait {
+  display: block;
+  position: relative;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border-radius: var(--radius-media);
+  background: var(--color-surface-2);
+}
+.portrait img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+.portrait-empty {
+  border: 1px solid var(--color-hairline);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .portrait img {
+    transition: transform var(--dur-hover) var(--ease-out);
+  }
+  a:hover .portrait img,
+  a:focus-visible .portrait img {
+    transform: scale(1.05);
+  }
+}
+a:has(.portrait) {
+  transition:
+    transform var(--dur-hover) var(--ease-out),
+    box-shadow var(--dur-hover) var(--ease-out);
+}
+a:has(.portrait):hover,
+a:has(.portrait):focus-visible {
+  box-shadow: var(--shadow-lift);
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:has(.portrait):hover,
+  a:has(.portrait):focus-visible {
+    transform: translateY(-3px);
+  }
+}
+
+/* --- one character ------------------------------------------------------- */
+
+.char-hero {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: 1fr;
+  padding-block: var(--space-5) var(--space-6);
+}
+@media (min-width: 48rem) {
+  .char-hero {
+    grid-template-columns: minmax(0, 16rem) 1fr;
+    gap: var(--space-6);
+    align-items: start;
+  }
+}
+.char-hero-alt {
+  color: var(--color-ink-soft);
+  margin-block: var(--space-1) var(--space-4);
+}
+
+.char-facts {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-4);
+}
+.char-facts dt {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+}
+.char-facts dt:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.char-facts dd {
+  margin: var(--space-1) 0 0;
+}
+
+/* THE RANK. Only for someone who has one, and labelled as the published
+   classification so it never reads as a power score invented here. */
+.mutant-badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-elevated);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  margin: 0;
+}
+.mutant-badge-label {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+}
+.mutant-badge-label:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.mutant-badge strong {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+/* Only OMEGA gets the accent, because only omega is the top of the scale. If
+   every rank were coloured the colour would stop meaning anything. */
+.mutant-badge[data-class="omega"] strong {
+  color: var(--color-red-ink);
+}
+
+.char-section {
+  padding-block: var(--space-6);
+  border-block-start: 1px solid var(--color-hairline);
+}
+.char-section h2 {
+  margin-block: 0 var(--space-4);
+}
+.char-origin {
+  font-size: var(--text-lg);
+  max-inline-size: 62ch;
+}
+.char-note {
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+  margin-block-start: var(--space-4);
+}
+
+.power-chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.power-chip {
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-elevated);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  font-size: var(--text-sm);
+  max-inline-size: none;
+}
+
+.appearance-grid {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(7rem, 26vw, 9.5rem), 1fr));
+  gap: var(--space-4) var(--space-3);
+}
+.appearance {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.appearance-title {
+  display: block;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-block-start: var(--space-2);
+  text-wrap: balance;
+}
+.appearance-year {
+  display: block;
+}
+/* Several actors under one title is a VARIANT, and it is the reason this page
+   exists rather than a list of titles. */
+.appearance-actor {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+}
+
+.relation-group {
+  margin-block-start: var(--space-5);
+}
+.relation-group h3 {
+  font-size: var(--text-lg);
+  margin-block: 0 var(--space-3);
+}
+.relation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+  gap: var(--space-3);
+}
+.relation {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: var(--text-sm);
+}
+.relation span {
+  display: block;
+  margin-block-start: var(--space-2);
+  line-height: 1.25;
+}
+
+.back-link {
+  padding-block: var(--space-3);
+  margin: 0;
+}
+
+/* ===========================================================================
+   TITLE PAGE — trailer, cast, gallery
+   =========================================================================== */
+
+.title-section {
+  padding-block: var(--space-6);
+  border-block-start: 1px solid var(--color-hairline);
+}
+.title-section h2 {
+  margin-block: 0 var(--space-4);
+}
+
+/* --- the trailer facade -------------------------------------------------- */
+
+.trailer {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--color-surface-2);
+  border-radius: var(--radius-media);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+.trailer img,
+.trailer iframe {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  border: 0;
+  display: block;
+}
+.trailer-play {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  background: rgb(0 0 0 / 0.35);
+  border: 0;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+/* A triangle from a rotated square, not a hand-drawn SVG path and not a glyph
+   that changes shape between font stacks. */
+.trailer-play-mark {
+  inline-size: 4rem;
+  block-size: 4rem;
+  border-radius: 50%;
+  background: var(--color-red);
+  box-shadow: var(--shadow-lift);
+  position: relative;
+}
+.trailer-play-mark::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 54%;
+  translate: -50% -50%;
+  border-block: 0.75rem solid transparent;
+  border-inline-start: 1.15rem solid #fff;
+  border-inline-end: 0;
+}
+[dir="rtl"] .trailer-play-mark::after {
+  scale: -1 1;
+}
+.trailer-play-label {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.trailer-play-label:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .trailer-play-mark {
+    transition: transform var(--dur-pop) var(--ease-out);
+  }
+  .trailer-play:hover .trailer-play-mark {
+    transform: scale(1.08);
+  }
+}
+.trailer-none {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline: 0;
+  margin: 0;
+  padding: var(--space-3);
+  background: rgb(0 0 0 / 0.6);
+  color: #fff;
+  font-size: var(--text-sm);
+  max-inline-size: none;
+}
+
+/* --- the cast --------------------------------------------------------- */
+
+/**
+ * A WRAPPED GRID, not a drag rail.
+ *
+ * This was `grid-auto-flow: column` inside an `overflow-x: auto`, which is the
+ * pattern every streaming app uses and the one this site has now removed
+ * everywhere: a line you have to drag hides most of its contents behind a
+ * gesture, and there is no signal telling you how much is left. On a cast list
+ * that matters more than usual, because the person you are looking for is as
+ * likely to be twelfth as second.
+ *
+ * Wrapping shows the whole cast, costs one line of CSS, and needs no gesture at
+ * all. The tiles keep their size, so nothing about the design changes except
+ * that you can see it.
+ */
+.cast-rail {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 var(--space-3);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(6.5rem, 28vw, 9rem), 1fr));
+  gap: var(--space-4) var(--space-3);
+}
+.cast-credit {
+  max-inline-size: none;
+}
+.cast-actor {
+  display: block;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-block-start: var(--space-2);
+}
+.cast-character {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+  line-height: 1.3;
+}
+
+.char-chip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.char-link-chip {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  padding-inline: var(--space-3);
+  background: var(--color-elevated);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  text-decoration: none;
+  color: inherit;
+  font-size: var(--text-sm);
+}
+.char-link-chip:hover {
+  border-color: var(--color-ink);
+}
+
+/* --- the gallery and its lightbox ---------------------------------------- */
+
+.gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(6rem, 22vw, 9rem), 1fr));
+  gap: var(--space-3);
+}
+.gallery-thumb {
+  display: block;
+  inline-size: 100%;
+  padding: 0;
+  border: 0;
+  background: var(--color-surface-2);
+  border-radius: var(--radius-media);
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 2 / 3;
+  min-block-size: 0;
+}
+.gallery-thumb img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .gallery-thumb img {
+    transition: transform var(--dur-hover) var(--ease-out);
+  }
+  .gallery-thumb:hover img,
+  .gallery-thumb:focus-visible img {
+    transform: scale(1.05);
+  }
+}
+
+/* A native <dialog>: the focus trap, the Escape key, the inert background and
+   the top layer all come free, and every hand-rolled version is worse. */
+.lightbox {
+  border: 0;
+  padding: 0;
+  background: none;
+  max-inline-size: min(40rem, 92vw);
+  max-block-size: 92svh;
+  overflow: visible;
+}
+.lightbox::backdrop {
+  background: rgb(0 0 0 / 0.85);
+}
+.lightbox img {
+  inline-size: 100%;
+  block-size: auto;
+  max-block-size: 86svh;
+  object-fit: contain;
+  border-radius: var(--radius-media);
+  box-shadow: var(--shadow-lift);
+}
+.lightbox-close {
+  display: block;
+  margin: var(--space-3) auto 0;
+  min-block-size: 44px;
+  padding-inline: var(--space-4);
+  background: var(--color-elevated);
+  color: var(--color-ink);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  font: inherit;
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .lightbox[open] {
+    animation: sheet-in var(--dur-sheet) var(--ease-drawer) both;
+  }
+}
+
+/* --- where to watch, global ---------------------------------------------- */
+
+.wtw-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.wtw-provider {
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-elevated);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  font-size: var(--text-sm);
+  max-inline-size: none;
+}
+
+/* ===========================================================================
+   THE CHARACTER AVATAR
+
+   A picture of the CHARACTER, which is a different object from the actor still
+   in the cast rail. Same box, same ratio, same hover, so the two read as one
+   system while staying honest about what each one is.
+   =========================================================================== */
+
+.avatar {
+  display: block;
+  position: relative;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border-radius: var(--radius-media);
+  background: var(--color-surface-2);
+}
+.avatar img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  /* Comic art crops tighter to the face than a press photo does. */
+  object-position: center 22%;
+}
+
+/**
+ * TWO HALVES IN ONE FRAME — the character, and the man who wore the suit.
+ *
+ * A grid of two logical columns rather than absolute positioning, so RTL flips
+ * the halves for free and the character still leads in reading order. The
+ * seam is a hairline in the page's own accent, which is what stops it reading
+ * as a broken image: a visible edge says the split is deliberate.
+ *
+ * Each half crops to its own centre, because half of a `center 22%` crop is a
+ * shoulder. `50%` on the inner axis keeps a face in each panel.
+ */
+.avatar-split {
+  display: grid;
+  gap: 0;
+}
+/**
+ * BOTH HALVES IN ONE CELL, cut on a diagonal.
+ *
+ * A vertical seam down the middle read as two pictures placed side by side —
+ * a contact sheet, not one portrait. The angled cut is what makes it read as
+ * a single frame holding two things, and it is the convention a poster uses
+ * for exactly this: one character, two faces.
+ *
+ * They are stacked rather than columned so the cut can be a `clip-path` on the
+ * top layer. The polygon is in percentages, so it scales with the frame, and
+ * it is MIRRORED for RTL — otherwise the character half loses its lead in
+ * Arabic and the diagonal leans the wrong way against the text.
+ */
+.avatar-half {
+  grid-area: 1 / 1;
+  display: block;
+  overflow: hidden;
+}
+.avatar-half img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/**
+ * EACH FACE INSIDE ITS OWN WEDGE, which `object-position` could not do.
+ *
+ * Both sources are portraits at very nearly 2:3, so `cover` has no horizontal
+ * slack to crop into — `object-position: 55%` and `45%` moved nothing at all.
+ * Both faces stayed dead centre, which is exactly where the seam is, so the
+ * split showed two backgrounds and no people.
+ *
+ * A transform has the slack that cropping does not: scale up, then push each
+ * face toward the side it is visible on. The cut stays on the SPAN, which does
+ * not move; only the image inside it does.
+ */
+.avatar-half img {
+  transform-origin: 50% 20%;
+}
+.avatar-half-a img {
+  transform: scale(1.18) translateX(-17%);
+}
+.avatar-half-b img {
+  transform: scale(1.18) translateX(17%);
+}
+.avatar-half-b {
+  clip-path: polygon(62% 0, 100% 0, 100% 100%, 38% 100%);
+}
+/* The wedges swap sides in Arabic, so the pushes swap with them. */
+[dir="rtl"] .avatar-half-a img {
+  transform: scale(1.18) translateX(17%);
+}
+[dir="rtl"] .avatar-half-b img {
+  transform: scale(1.18) translateX(-17%);
+}
+[dir="rtl"] .avatar-half-b {
+  clip-path: polygon(0 0, 38% 0, 62% 100%, 0 100%);
+}
+/* The seam: a strip clipped to the SAME two points the cut uses, so it cannot
+   drift beside the join the way a 45° gradient did. */
+.avatar-split::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent);
+  clip-path: polygon(62% 0, 63.4% 0, 39.4% 100%, 38% 100%);
+  pointer-events: none;
+}
+[dir="rtl"] .avatar-split::after {
+  clip-path: polygon(38% 0, 36.6% 0, 60.6% 100%, 62% 100%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .avatar img {
+    transition: transform var(--dur-hover) var(--ease-out);
+  }
+  a:hover .avatar img,
+  a:focus-visible .avatar img {
+    transform: scale(1.05);
+  }
+}
+a:has(.avatar) {
+  transition:
+    transform var(--dur-hover) var(--ease-out),
+    box-shadow var(--dur-hover) var(--ease-out);
+}
+a:has(.avatar):hover,
+a:has(.avatar):focus-visible {
+  box-shadow: var(--shadow-lift);
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:has(.avatar):hover,
+  a:has(.avatar):focus-visible {
+    transform: translateY(-3px);
+  }
+}
+
+/**
+ * THE GAP, DESIGNED.
+ *
+ * Eleven of the eighty-four have no artwork in any source we use. That is a
+ * real state, and the one thing it must not do is quietly borrow an actor's
+ * face and let it pass as character art. The initial in the display face on the
+ * second surface is the same answer the missing posters get.
+ */
+.avatar-empty {
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-hairline);
+}
+.avatar-initial {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2rem, 9vw, 3.5rem);
+  letter-spacing: -0.04em;
+  color: var(--color-ink-soft);
+  opacity: 0.55;
+}
+.avatar-initial:lang(ar) {
+  font-family: var(--font-ar-display);
+  letter-spacing: normal;
+}
+
+/* ===========================================================================
+   RATINGS, LOCALE SWITCH, TRAILER RAIL, UNIVERSE INDEX
+   =========================================================================== */
+
+/**
+ * THE SCORES. A row of their own, at real size.
+ *
+ * These used to be one 13px number in the metadata strip beside the year, which
+ * is where a fact nobody came for goes. A rating is one of the two things
+ * people check, so it gets weight, and each one wears the name of whoever
+ * produced it, because they are different populations.
+ */
+.ratings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-block: var(--space-4) var(--space-3);
+}
+.rating {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 0 var(--space-2);
+  align-items: baseline;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-elevated);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+}
+.rating-source {
+  grid-column: 1 / -1;
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+}
+.rating-source:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.rating-score {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--text-xl);
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+}
+/* The accent marks the headline score and nothing else. If all three were red
+   the colour would stop meaning "this is the number". */
+.rating[data-source="imdb"] .rating-score {
+  color: var(--color-red-ink);
+}
+.rating-votes {
+  font-size: var(--step-data);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-soft);
+}
+
+/* --- the locale switch --------------------------------------------------- */
+
+.locale-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: 44px;
+  min-block-size: 44px;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  text-decoration: none;
+  color: var(--color-ink-soft);
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  letter-spacing: 0.08em;
+}
+/* The Arabic ain is a letterform, not a code: it needs the Arabic face and no
+   tracking, and it sits larger to match the optical weight of "EN". */
+.locale-switch[lang="ar"] {
+  font-family: var(--font-ar-display);
+  font-size: var(--text-lg);
+  letter-spacing: normal;
+}
+.locale-switch:hover {
+  color: var(--color-ink);
+  border-color: var(--color-ink);
+}
+
+/* --- trailers: small, and every official one ----------------------------- */
+
+/* Wrapped, for the same reason the cast is. Most titles have two or three
+   trailers and a scroller for three items is pure friction. */
+.trailer-rail {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0 0 var(--space-3);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(11rem, 44vw, 15rem), 1fr));
+  gap: var(--space-4) var(--space-3);
+}
+.trailer-rail > li {
+  max-inline-size: none;
+}
+.trailer-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.trailer-thumb {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-media);
+  background: var(--color-surface-2);
+  box-shadow: var(--shadow-card);
+}
+.trailer-thumb img {
+  inline-size: 100%;
+  block-size: 100%;
+  /* `cover` alone already crops a 4:3 source into a 16:9 box, which removes
+     exactly the letterbox bars. The extra scale(1.35) that was here on top of
+     it cropped the sides as well and cut the title out of every card. */
+  object-fit: cover;
+}
+.trailer-play-badge {
+  position: absolute;
+  inset-block-end: var(--space-2);
+  inset-inline-start: var(--space-2);
+  inline-size: 1.75rem;
+  block-size: 1.75rem;
+  border-radius: 50%;
+  background: var(--color-red);
+}
+.trailer-play-badge::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 55%;
+  translate: -50% -50%;
+  border-block: 0.32rem solid transparent;
+  border-inline-start: 0.5rem solid #fff;
+  border-inline-end: 0;
+}
+[dir="rtl"] .trailer-play-badge::after {
+  scale: -1 1;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .trailer-thumb img,
+  .trailer-play-badge {
+    transition: transform var(--dur-hover) var(--ease-out);
+  }
+  .trailer-card:hover .trailer-thumb img {
+    transform: scale(1.05);
+  }
+  .trailer-card:hover .trailer-play-badge {
+    transform: scale(1.12);
+  }
+}
+.trailer-kind {
+  display: block;
+  margin-block-start: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-red-ink);
+}
+.trailer-kind:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.trailer-name {
+  display: block;
+  font-size: var(--text-sm);
+  line-height: 1.3;
+  color: var(--color-ink);
+}
+.trailer-none-line {
+  color: var(--color-ink-soft);
+}
+
+/* --- the universes index ------------------------------------------------- */
+
+.universe-index-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.universe-row {
+  display: grid;
+  grid-template-columns: 5rem 1fr auto;
+  gap: var(--space-4);
+  align-items: center;
+  padding-block: var(--space-4);
+  border-block-start: 1px solid var(--color-hairline);
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 48rem) {
+  .universe-row {
+    grid-template-columns: 7rem 1fr auto;
+    gap: var(--space-5);
+  }
+}
+.universe-row-art {
+  position: relative;
+  display: block;
+  border-radius: var(--radius-media);
+  overflow: hidden;
+}
+.universe-row-name {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-xl);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.universe-row-name:lang(ar) {
+  font-family: var(--font-ar-display);
+  letter-spacing: normal;
+}
+.universe-row-meta {
+  display: block;
+  margin-block-start: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-soft);
+}
+.universe-row-bridge {
+  display: block;
+  margin-block-start: var(--space-2);
+  color: var(--color-ink-soft);
+  max-inline-size: 62ch;
+}
+
+/* Every actor who has played this character. Not more artwork: the FACES, which
+   is the one thing a single avatar cannot say. */
+.portrayal-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(6rem, 24vw, 8rem), 1fr));
+  gap: var(--space-3);
+}
+.portrayal-grid > li {
+  max-inline-size: none;
+}
+.portrayal-actor {
+  display: block;
+  margin-block-start: var(--space-2);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  line-height: 1.25;
+}
+.portrayal-count {
+  display: block;
+  font-size: var(--step-data);
+}
+
+
+/* ===========================================================================
+   THE FACE STACK — circular, overlapping, lifting clear on hover
+
+   A row of text chips said "these characters are in this film" without showing
+   anyone. Faces in a rank say it at a glance, and the overlap is what makes it
+   read as a cast rather than a list: they belong to one row and one of them
+   steps out of it when you point at it.
+   =========================================================================== */
+
+/**
+ * THE OVERLAP IS A NEGATIVE MARGIN, AND IT HAS TO SURVIVE WRAPPING.
+ *
+ * The first version put `margin-inline-start: -1.1rem` on `li + li`, which is
+ * correct for one row and wrong the moment the list wraps: the first item of
+ * every row AFTER the first is still an `li + li`, so it got pulled 1.1rem
+ * outside the container. Nothing showed until a title had enough characters to
+ * wrap at 320px — then the element-level reflow check named
+ * `a.face-stack-item` sitting at a negative x.
+ *
+ * So the pull goes on EVERY item and the container pays it back as padding.
+ * Row one nets to zero because the padding cancels the first item's margin;
+ * every wrapped row nets to zero for exactly the same reason, because the
+ * padding is on the box rather than on the first child.
+ */
+.face-stack {
+  list-style: none;
+  margin: 0;
+  padding: var(--space-3) 0 var(--space-5);
+  padding-inline-start: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* Row-gap stays positive so wrapped rows do not collide vertically. The
+     column gap is zero; the overlap below is what closes the distance. */
+  gap: var(--space-5) 0;
+}
+.face-stack > li {
+  max-inline-size: none;
+  margin-inline-start: -1.1rem;
+}
+.face-stack-item {
+  display: block;
+  position: relative;
+  inline-size: clamp(3.5rem, 13vw, 4.75rem);
+  text-decoration: none;
+  color: inherit;
+}
+/* The circle. `.avatar` is a 2:3 plate everywhere else, so this overrides the
+   ratio rather than adding a second component with the same job. */
+.face-stack-item .avatar {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  /* The ring is what separates one face from the one behind it. It is the page
+     colour, not a hairline, so the stack reads as depth rather than as a
+     row of outlined circles. */
+  box-shadow:
+    0 0 0 3px var(--color-surface),
+    var(--shadow-card);
+}
+.face-stack-item .avatar img {
+  object-position: center 18%;
+}
+.face-stack-name {
+  display: block;
+  margin-block-start: var(--space-2);
+  font-size: var(--step-data);
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-ink-soft);
+  opacity: 0;
+}
+
+/**
+ * IT LEAVES THE ROW. The face lifts, grows, and comes forward over its
+ * neighbours, and only then does its name appear. That is the whole effect:
+ * depth from one z-index and one transform, no library and no 3D engine.
+ */
+.face-stack-item {
+  transition: transform var(--dur-menu) var(--ease-out);
+}
+.face-stack-item:hover,
+.face-stack-item:focus-visible {
+  z-index: 2;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .face-stack-item:hover,
+  .face-stack-item:focus-visible {
+    transform: translateY(-0.6rem) scale(1.12);
+  }
+  .face-stack-name {
+    transition: opacity var(--dur-menu) var(--ease-out);
+  }
+}
+.face-stack-item:hover .face-stack-name,
+.face-stack-item:focus-visible .face-stack-name {
+  opacity: 1;
+}
+/**
+ * TOUCH IS A DIFFERENT LAYOUT, not the same one with the names turned on.
+ *
+ * The overlap exists so a face can lift OUT of the rank on hover and only then
+ * show its name. Touch has no hover, so the names are always visible — and
+ * under overlapping 4.75rem circles, "Iron Man", "Pepper Potts" and
+ * "Spider-Man" ran straight into each other. On a phone it read as one
+ * corrupted line of text, which is exactly what the screenshot showed.
+ *
+ * So on a coarse pointer the rank becomes a plain grid: no overlap, no lift, a
+ * column per face and the name under it with room to wrap. The effect is a
+ * pointer affordance and it is dropped where there is no pointer.
+ */
+@media (pointer: coarse) {
+  .face-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4.5rem, 1fr));
+    gap: var(--space-4) var(--space-2);
+    padding-inline-start: 0;
+  }
+  .face-stack > li {
+    margin-inline-start: 0;
+  }
+  .face-stack-item {
+    inline-size: 100%;
+  }
+  .face-stack-name {
+    opacity: 1;
+  }
+}
+
+/* ===========================================================================
+   PROJECTS — everything, in release order
+   =========================================================================== */
+
+.project-grid {
+  list-style: none;
+  margin: var(--space-5) 0 var(--space-8);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(7.5rem, 28vw, 11rem), 1fr));
+  gap: var(--space-5) var(--space-3);
+}
+/**
+ * `content-visibility` EARNS ITS PLACE HERE, and only here.
+ *
+ * §14.6 said it goes on the poster grid where cells are uniform, and only once
+ * a measurement demands it. Both conditions are now met: /projects is 166 cells
+ * of identical 2:3 shape, and the budget test measured 55 posters fetched
+ * before a single scroll against a ceiling of 8. Native lazy loading alone
+ * cannot help, because the browser's heuristic loads what is near the viewport
+ * and a dense grid puts fifty tiles near it.
+ *
+ * It went in and out once before, on the character grid, because it blanks
+ * off-screen content in a full-page render and blinded the screenshot gate.
+ * That risk is real here too and is accepted for one page: the alternative is a
+ * page that costs a phone fifty image requests to open. `contain-intrinsic-size`
+ * is exact rather than estimated, so the scrollbar stays honest.
+ */
+.project-grid > li {
+  max-inline-size: none;
+  content-visibility: auto;
+  /* MEASURED, not guessed: a project tile renders 360px at desktop and 332px
+     on a phone, against the 304px this used to claim. Under-reserving is what
+     makes a `content-visibility` grid feel janky — the page reports itself
+     shorter than it is, so the scrollbar lies and every cell that comes into
+     view shoves the ones below it. 21.5rem sits between the two real values. */
+  contain-intrinsic-size: auto 21.5rem;
+}
+
+/**
+ * AND NOW THE CHARACTER GRID, on the condition the note above set.
+ *
+ * `content-visibility` was pulled off this grid once, and the reason given was
+ * that nothing had measured 84 uniform cells as needing it. That was the right
+ * call then. The grid now holds 344, the page ships 838KB, and a phone opening
+ * it lays out every one of them before it can paint — so the measurement the
+ * note was waiting for has arrived.
+ *
+ * The cells are a uniform 2:3 with a fixed caption, so `contain-intrinsic-size`
+ * is a real number rather than a guess and the scrollbar stays honest. The
+ * known cost is the same one the poster grid accepts: a full-page screenshot
+ * blanks whatever is off screen.
+ */
+.char-grid > li,
+.character-grid > li {
+  content-visibility: auto;
+  /* Real heights are 270px at desktop and 287px on a phone; 15rem claimed 240.
+     17.5rem is the midpoint, so neither width drifts far. */
+  contain-intrinsic-size: auto 17.5rem;
+}
+.project-tile {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.project-art {
+  position: relative;
+  display: block;
+  border-radius: var(--radius-media);
+  overflow: hidden;
+}
+/* The score sits ON the poster, because it is the second thing anyone looks at
+   after the artwork itself. */
+.project-score {
+  position: absolute;
+  z-index: 1;
+  inset-block-start: var(--space-2);
+  inset-inline-end: var(--space-2);
+  padding: 0.15rem var(--space-2);
+  border-radius: var(--radius-control);
+  background: rgb(0 0 0 / 0.72);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.project-title {
+  display: block;
+  margin-block-start: var(--space-2);
+  font-weight: 600;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1) var(--space-2);
+  margin-block-start: var(--space-1);
+  font-size: var(--step-data);
+  color: var(--color-ink-soft);
+}
+
+/* ===========================================================================
+   FILTERS — four different questions, not four of the same control
+   =========================================================================== */
+
+.filters {
+  display: grid;
+  gap: var(--space-4);
+  padding-block-end: var(--space-4);
+}
+@media (min-width: 48rem) {
+  .filters {
+    grid-template-columns: minmax(0, 20rem) 1fr;
+    align-items: end;
+  }
+}
+.filter-search {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.filter-selects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+.filter-select {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  flex: 1 1 9rem;
+}
+.filter-label {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+}
+.filter-label:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.filter-select select {
+  min-block-size: 44px;
+  font-size: max(16px, 1rem);
+  font-family: inherit;
+  background: var(--color-elevated);
+  color: var(--color-ink);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  padding-inline: var(--space-3);
+}
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding-block: var(--space-3);
+  border-block: 1px solid var(--color-hairline);
+  margin-block-end: var(--space-4);
+}
+.filter-reset {
+  background: none;
+  border: 0;
+  color: var(--color-red-ink);
+  font: inherit;
+  font-size: var(--step-data);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  min-block-size: 0;
+  padding: 0;
+}
+/* The browser renders its own poster box rather than next/image: 155 tiles at
+   four widths each is a lot of optimiser variants for a grid that is mostly
+   scrolled past. The tint still fills the box first, so nothing flashes grey. */
+.project-art .poster img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+/* ===========================================================================
+   THE TOP BAR — quieter, and one line of it
+
+   It had grown to eight controls at body size and read as a toolbar. The rule
+   now is that navigation is 14px, every control is an icon-sized square or a
+   short word, and nothing in it competes with the page underneath.
+   =========================================================================== */
+
+.site-head {
+  gap: var(--space-2) var(--space-4);
+  padding-block: var(--space-2);
+  background: var(--color-surface);
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 3;
+}
+/**
+ * THE HEADER IS A GRID AT EVERY WIDTH, and it has exactly two shapes.
+ *
+ * As a wrapping flex row it produced a 263px-tall header on a phone — three
+ * full-width rows, a quarter of the screen given to navigation before any
+ * content — and at 1024 the tools cluster wrapped onto its own line, making
+ * the bar 115px and knocking the wordmark out of line with it. Measured at
+ * nine widths, it was two rows or three at every one of them except 1440.
+ *
+ * NARROW: the mark and the controls share the top line, the nav takes the
+ * full width underneath. Two rows, and the nav has the whole width to wrap in
+ * rather than fighting the controls for it.
+ *
+ * WIDE: one row, nav on the true centre. `1fr auto 1fr` is what makes it the
+ * TRUE centre rather than "whatever is left after the mark" — the outer
+ * columns are equal whatever the wordmark and the tools measure.
+ *
+ * The switch is at 68rem, not 64. At 1024 the three parts add up to 964px
+ * against 944px of usable width, so they genuinely do not fit and the old
+ * breakpoint was asking them to.
+ */
+/**
+ * THREE TIERS, and NOTHING IS EVER HIDDEN. Every link and every control is
+ * reachable at 320px; they are only rearranged.
+ *
+ * PHONE (<34rem): three full-width rows — mark, nav, controls. The controls
+ * need about 360px laid out in a line, so at 320 they cannot share a row with
+ * anything: squeezed into the 135px left over beside the wordmark they stacked
+ * into a 202px column and made the header 315px tall. Their own row costs one
+ * line and saves five.
+ *
+ * TABLET (34–68rem): mark and controls share the top line, nav underneath with
+ * the full width to wrap in.
+ *
+ * DESKTOP (≥68rem): one line, nav on the true centre. `1fr auto 1fr` is what
+ * makes it the TRUE centre rather than "whatever is left after the mark".
+ *
+ * The desktop switch is 68rem, not 64: at 1024 the three parts add up to 964px
+ * against 944px of usable width, so they genuinely do not fit on one line and
+ * the old breakpoint was asking them to — which is what pushed the controls
+ * onto a second row and knocked the wordmark out of line with them.
+ */
+.site-head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "name tools"
+    "nav  nav";
+  align-items: center;
+}
+.site-name {
+  grid-area: name;
+}
+.head-tools {
+  grid-area: tools;
+  justify-self: end;
+  /* Two controls now — search and the settings disclosure — so this never
+     needs to wrap at any width. */
+  flex-wrap: nowrap;
+}
+.site-nav {
+  grid-area: nav;
+  /* The auto margin was what pushed it left in the flex row. In a grid it
+     does the same thing, so it has to go. */
+  margin-inline-end: 0;
+}
+
+/**
+ * COMPACT CONTROLS on the narrow layout. Four controls plus a search button
+ * at full size are wider than a phone, so below the switch they lose their
+ * padding rather than their labels — a smaller hit area is a real cost, but
+ * every one of them still clears 44px in the block direction.
+ */
+@media (max-width: 67.999rem) {
+  .site-nav {
+    font-size: var(--text-sm);
+  }
+  .head-tools {
+    gap: var(--space-1);
+  }
+  .head-tools .theme-option,
+  .head-tools .locale-switch,
+  .head-tools .shield-toggle,
+  .head-tools .search-open {
+    padding-inline: var(--space-2);
+    font-size: var(--step-data);
+  }
+}
+
+/**
+ * ONE LINE FROM 48rem, and TRUE centring from 68rem.
+ *
+ * Two shapes rather than one, because they answer different questions.
+ *
+ * `auto 1fr tools` gets the bar onto a single line as early as 768px: the
+ * wordmark and the controls take exactly what they need and the nav centres
+ * inside whatever is left. At that width "centred in the space between" is
+ * what a reader sees as centred anyway.
+ *
+ * `1fr auto 1fr` is the TRUE centre of the header — the outer columns are
+ * equal whatever the wordmark and the controls measure — and it needs about
+ * 690px of nav-and-margins to hold, which is why it waits for 68rem. Forcing
+ * it at 768 would push the outer columns to the wider of the two and overflow
+ * by a few pixels.
+ */
+@media (min-width: 48rem) {
+  .site-head {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "name nav tools";
+  }
+  .site-nav {
+    justify-content: center;
+  }
+}
+@media (min-width: 68rem) {
+  .site-head {
+    grid-template-columns: 1fr auto 1fr;
+  }
+  .site-nav {
+    justify-self: center;
+  }
+}
+.site-nav {
+  font-size: var(--text-sm);
+}
+/**
+ * CENTRE THE LINE BOX, not just the element box.
+ *
+ * Every item in the header measured as centred — same top, same 44px height,
+ * same midpoint — and the TEXT still sat at different heights, the nav 4.5px
+ * above the wordmark. That is the whole reported bug, and the element boxes
+ * were never the thing to measure.
+ *
+ * A block element with `min-block-size: 44px` puts its single line box at the
+ * TOP of the content box and leaves the slack underneath. The wordmark's
+ * line-height is 33px and the nav's is 23px, so their text centres landed
+ * 16.5px and 11.5px below their identical box tops — five pixels apart, from
+ * two rules that both looked correct.
+ *
+ * `align-items: center` on each item centres the line box inside the 44px,
+ * which makes the text align regardless of what line-height either one uses.
+ */
+.site-nav a {
+  color: var(--color-ink-soft);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+}
+.site-head .site-name {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+}
+.site-nav a:hover {
+  color: var(--color-ink);
+}
+/**
+ * WHERE YOU ARE, in the one accent the site owns.
+ *
+ * The rule is `currentColor`-independent on purpose — it is the red, which
+ * appears in exactly six places on this site and this is now one of them.
+ * `aria-current` carries the same fact for anyone not seeing colour; the
+ * underline is the visible half of a pair, never the whole signal.
+ *
+ * `box-shadow` rather than `border-block-end`, so turning it on does not
+ * change the link's height and shift the whole bar by 2px.
+ */
+.site-nav a[aria-current="page"] {
+  color: var(--color-ink);
+  box-shadow: inset 0 -2px 0 0 var(--color-red);
+}
+.site-head .site-name {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+/* The controls cluster at the end, hairlined off the navigation so the bar
+   reads as "where you can go" then "how you see it". */
+/**
+ * WRAPS, and it has to.
+ *
+ * Four controls plus a search button do not fit beside the wordmark at 320px,
+ * and `margin-inline-start: auto` on a nowrap row pushed the cluster 60px past
+ * the viewport. The header already wraps; this row has to wrap with it.
+ */
+.head-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-inline-start: auto;
+  min-inline-size: 0;
+}
+@media (max-width: 30rem) {
+  /* Below the smallest phone the cluster takes its own line and starts at the
+     edge, rather than being shoved to the end of a row it cannot fit in. */
+  .head-tools {
+    margin-inline-start: 0;
+    inline-size: 100%;
+  }
+}
+
+/* ===========================================================================
+   THE FOOTER
+
+   It was three stacked paragraphs of small print, one of which credited a font.
+   A reader does not want a type credit; the licence does not require one. What
+   belongs here is where to go next, what this is, and who it is not.
+   =========================================================================== */
+
+body > footer {
+  padding-block: var(--space-7) var(--space-6);
+  margin-block-start: var(--space-7);
+  border-block-start: 1px solid var(--color-hairline);
+}
+.footer-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 48rem) {
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: var(--space-6);
+  }
+}
+.footer-mark {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--text-xl);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.footer-mark:lang(ar) {
+  font-family: var(--font-ar-display);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.footer-line {
+  margin-block-start: var(--space-2);
+  color: var(--color-ink-soft);
+  max-inline-size: 40ch;
+}
+.footer-col h2 {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+  margin: 0 0 var(--space-2);
+}
+.footer-col h2:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-1);
+}
+.footer-col a {
+  color: var(--color-ink);
+  text-decoration: none;
+  min-block-size: 0;
+}
+.footer-col a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer-legal {
+  margin-block-start: var(--space-6);
+  padding-block-start: var(--space-4);
+  border-block-start: 1px solid var(--color-hairline);
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+  max-inline-size: 70ch;
+}
+
+/* ===========================================================================
+   THE UNIVERSE SLIDER — a rail, the way a streaming app does it
+   =========================================================================== */
+
+/**
+ * A GRID, for the same reason the faces are. Eight universes fit on two rows at
+ * any width worth designing for, and a reader can see all of them at once
+ * instead of discovering there are more by dragging.
+ */
+/**
+ * THE HOMEPAGE UNIVERSES SECTION, and it is a WRAPPED GRID.
+ *
+ * The name says rail and the rules have never been one: no `overflow-x`, no
+ * snapping, no gesture. It wraps, so all seven are visible at once. The name
+ * is kept because it is what this section is called.
+ */
+.universe-rail {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(13rem, 44vw, 19rem), 1fr));
+  gap: var(--space-3);
+}
+.universe-rail > li {
+  max-inline-size: none;
+}
+.universe-slide {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-media);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow-card);
+}
+.universe-slide .poster {
+  aspect-ratio: auto;
+  block-size: 100%;
+  border-radius: var(--radius-media);
+}
+.universe-slide .poster img {
+  block-size: 100%;
+  object-position: center 28%;
+}
+.universe-slide-body {
+  position: absolute;
+  z-index: 1;
+  inset-inline: 0;
+  inset-block-end: 0;
+  padding: var(--space-4);
+}
+.universe-slide-name {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: #fff;
+}
+.universe-slide-name:lang(ar) {
+  font-family: var(--font-ar-display);
+  letter-spacing: normal;
+}
+.universe-slide-count {
+  display: block;
+  margin-block-start: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  font-variant-numeric: tabular-nums;
+  color: rgb(255 255 255 / 0.72);
+}
+
+/* ===========================================================================
+   THE PEOPLE — two, at different weights, because they are different claims
+   =========================================================================== */
+
+.people {
+  padding-block: var(--space-7);
+  border-block-start: 1px solid var(--color-hairline);
+}
+.people-list {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: 1fr;
+}
+/**
+ * IMAGE LEFT, EVERYTHING ELSE RIGHT, one person per row.
+ *
+ * Two side-by-side cards implied the two men are the same kind of claim. They
+ * are not: one co-created the characters, the other has run the films since
+ * 2007, and only one of them has an "about" worth reading. A row each gives the
+ * text somewhere to live.
+ */
+.people-list > li {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr;
+  padding-block: var(--space-5);
+  border-block-start: 1px solid var(--color-hairline);
+}
+@media (min-width: 48rem) {
+  .people-list > li {
+    /* Portrait left, prose right — and the portrait wide enough to be a
+       portrait. At 15rem it was a thumbnail beside a wall of text; the column
+       it sits in has room, and a photograph of a person is the reason anyone
+       stops on this section at all. */
+    grid-template-columns: minmax(0, 21rem) 1fr;
+    gap: var(--space-6);
+    align-items: start;
+  }
+  /**
+   * A MATCHED PAIR, because the section calls them a pair.
+   *
+   * Stan Lee's portrait was given a wider column than Kevin Feige's, on the
+   * reasoning that he is the lead of the two. On the page it did not read as
+   * hierarchy — it read as a mistake: two portraits of two men at two sizes,
+   * under a heading that says "the two people behind it". A section that
+   * presents two peers has to set them at one size, and the ranking that
+   * matters is already carried by the order they appear in.
+   */
+}
+.person-body {
+  min-inline-size: 0;
+}
+.person-facts {
+  margin-block-start: var(--space-4);
+  display: grid;
+  gap: var(--space-3);
+}
+.person-facts dt {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+}
+.person-facts dt:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.person-facts dd {
+  margin: var(--space-1) 0 0;
+  max-inline-size: 60ch;
+}
+.people-list > li {
+  max-inline-size: none;
+}
+.person-photo {
+  display: block;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: var(--radius-media);
+  background: var(--color-surface-2);
+  box-shadow: var(--shadow-card);
+}
+.person-photo img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+.person-name {
+  display: block;
+  margin-block-start: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-xl);
+  letter-spacing: -0.03em;
+}
+.person-name:lang(ar) {
+  font-family: var(--font-ar-display);
+  letter-spacing: normal;
+}
+.person-role {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-red-ink);
+}
+.person-role:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.person-line {
+  display: block;
+  margin-block-start: var(--space-2);
+  color: var(--color-ink-soft);
+  max-inline-size: 46ch;
+}
+
+.what-rights {
+  padding-block: var(--space-7) var(--space-5);
+  border-block-start: 1px solid var(--color-hairline);
+}
+
+/* Each critic score gets its own accent so the three read as three sources
+   rather than one number repeated. Red stays on IMDb, the headline. */
+.rating[data-source="rt"] .rating-score {
+  color: var(--color-ink);
+}
+.rating[data-source="metacritic"] .rating-score {
+  color: var(--color-ink);
+}
+
+/* ===========================================================================
+   THE SAGA TIMELINE — eighteen years on one line
+
+   THE SPINE DOES NOT BREAK. There is exactly one `.saga-rail` for the whole
+   page, absolutely positioned over every saga, every phase and all 72 rows.
+   Phases and sagas are markers ON it, never separate lines: six rails would
+   say "here are six things", and the true statement is "here is one thing, and
+   these are its chapters". That is the entire visual argument and every rule
+   below exists to protect it.
+   =========================================================================== */
+
+.saga-wrap {
+  position: relative;
+  padding-block: var(--space-5) var(--space-8);
+  /* The rail hugs the start edge on a phone. The desktop rule below moves it
+     to the centre; without this reset it would inherit the 50% the thread uses
+     at ≥1024 and leave a dead half-screen on mobile. */
+  --thread-inset: 20px;
+}
+/* The one rail. `.thread-rail` already positions and mirrors correctly, so this
+   only has to stop anything nested from drawing a second one. */
+.saga-rail {
+  inset-block: 0;
+}
+
+/**
+ * THE SPINE DRAWS AGAINST ITSELF, not against the page.
+ *
+ * `.thread-progress` already had a scroll-driven draw, on `scroll(root block)`
+ * — the whole document. On a path page that is right, because the thread and
+ * the page are the same length. Here they are not: this rail spans every saga
+ * and phase, thousands of pixels, while the root timeline completes over the
+ * document. So the line filled almost at once and then sat there, which reads
+ * as a static red bar rather than as progress. Correct behaviour, wrong ruler.
+ *
+ * A `view-timeline` on the wrap measures the thing the rail actually draws.
+ * `contain` is the right range for an element taller than the viewport: it
+ * starts when the wrap's top meets the viewport's top and finishes when its
+ * bottom meets the bottom — which is exactly "how far through this am I".
+ *
+ * WHY IT ANIMATES AT ALL, since that is the question worth answering: it is
+ * state indication. The MCU timeline is 74 titles long and a reader loses
+ * their place in it; a line that fills as they descend says where they are
+ * without a word of copy. Linear, because a progress indicator that eases is
+ * lying about the quantity it reports.
+ *
+ * Enhancement only, gated twice. A browser without view timelines and a reader
+ * who asked for stillness both get a finished thread rather than an empty one.
+ */
+.saga-wrap {
+  view-timeline-name: --saga-spine;
+  view-timeline-axis: block;
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .saga-rail .thread-progress {
+      stroke-dasharray: 1;
+      animation: thread-draw linear both;
+      animation-timeline: --saga-spine;
+      animation-range: contain 0% contain 100%;
+    }
+  }
+}
+
+.saga-list,
+.phase-list,
+.phase-titles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- saga --------------------------------------------------------------- */
+
+.saga {
+  padding-block-start: var(--space-7);
+}
+.saga:first-child {
+  padding-block-start: 0;
+}
+.saga-head {
+  padding-inline-start: calc(var(--thread-inset) + var(--space-5));
+  padding-block-end: var(--space-4);
+}
+.saga-head h2 {
+  margin: 0;
+  font-size: var(--step-h2);
+}
+.saga-meta {
+  /* A caption under the saga name rather than a paragraph after it, so it
+     stays tight — but 4px was tight enough that the year range read as part
+     of the heading's own descender. */
+  margin: var(--space-2) 0 0;
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-soft);
+}
+
+/* --- phase -------------------------------------------------------------- */
+
+.phase {
+  padding-block-end: var(--space-6);
+}
+
+/**
+ * STICKY, releasing at the next phase.
+ *
+ * Eighteen years is a long scroll and without this a reader is 40 rows into an
+ * undifferentiated column with no idea which chapter they are in. It sticks
+ * under the site header rather than at 0, or the two overlap.
+ *
+ * The background is the page colour, not a translucent panel: the rail runs
+ * behind this and a semi-transparent header would show the line crossing the
+ * words, which reads as a rendering bug rather than as depth.
+ */
+.phase-head {
+  position: sticky;
+  inset-block-start: 3.5rem;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2) var(--space-3);
+  margin: 0 0 var(--space-4);
+  padding-block: var(--space-2);
+  padding-inline-start: calc(var(--thread-inset) + var(--space-5));
+  background: var(--color-surface);
+  font-size: var(--text-lg);
+}
+.phase-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.phase-name:lang(ar) {
+  font-family: var(--font-ar-display);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.phase-years {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  font-variant-numeric: tabular-nums;
+  font-weight: 400;
+  color: var(--color-ink-soft);
+}
+
+/* --- one row ------------------------------------------------------------ */
+
+.saga-row {
+  position: relative;
+  max-inline-size: none;
+  padding-inline-start: calc(var(--thread-inset) + var(--space-5));
+  padding-block: var(--space-3);
+  /* Same node geometry as the thread, computed from the same variables, so a
+     row here and a row on a path page sit on their rail identically. */
+  --node: var(--node-size);
+  --node-y: calc(var(--space-3) + 0.4em + (var(--node-size) / 2));
+}
+.saga-row::before {
+  content: "";
+  position: absolute;
+  inline-size: var(--node);
+  block-size: var(--node);
+  inset-block-start: var(--node-y);
+  inset-inline-start: var(--thread-inset);
+  margin-block-start: calc(var(--node) / -2);
+  margin-inline-start: calc(var(--node) / -2);
+  border-radius: 50%;
+  background: var(--color-red);
+  box-shadow: 0 0 0 3px var(--color-surface);
+}
+.saga-row::after {
+  content: "";
+  position: absolute;
+  inset-block-start: var(--node-y);
+  inset-inline-start: calc(var(--thread-inset) + (var(--node) / 2));
+  inline-size: var(--space-3);
+  border-block-start: var(--thread-width) solid var(--color-red);
+}
+
+/**
+ * NOT OUT YET, AND IT LOOKS LIKE IT.
+ *
+ * A timeline that draws 2026 exactly like 2008 is lying about the only question
+ * this site answers. Hollow node, dimmed row, dashed connector, no rating: the
+ * same vocabulary the thread already uses for an optional title, because it
+ * means the same kind of thing — you cannot act on this one tonight.
+ */
+.saga-row[data-unreleased] {
+  opacity: 0.62;
+}
+.saga-row[data-unreleased]::before {
+  background: var(--color-surface);
+  border: var(--thread-width) solid var(--color-red);
+}
+.saga-row[data-unreleased]::after {
+  border-block-start-style: dashed;
+}
+.saga-soon {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-red-ink);
+}
+.saga-soon:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* The year, printed once per run rather than on every row. */
+.saga-year {
+  display: block;
+  margin-block-end: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-soft);
+}
+.saga-score {
+  color: var(--color-red-ink);
+}
+
+/* The editor's note sits IN the order, indented to the panel, not floated off
+   to a gutter where it would read as an aside. */
+.saga-row .editor-note {
+  margin-block: var(--space-3) 0;
+}
+
+/* --- motion -------------------------------------------------------------- */
+
+/**
+ * The spine fills as the page passes, via a view() timeline. Never a scroll
+ * listener: that runs on every frame, cannot be batched, and would be the only
+ * JavaScript on an otherwise static page.
+ */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .saga-wrap .thread-progress {
+      animation-timeline: view();
+      animation-range: entry 5% cover 92%;
+    }
+
+    /**
+     * The per-row reveal, staggered by position within its phase and capped at
+     * six. `--step` comes from a data attribute rather than an inline style,
+     * because a CSP without `unsafe-inline` blocks style ATTRIBUTES and the
+     * failure is silent — this is the same trap that would have collapsed the
+     * alternating desktop layout.
+     */
+    .reveal-step {
+      animation: reveal-in var(--dur-reveal) var(--ease-out) both;
+      animation-timeline: view();
+      animation-range: entry 8% cover 24%;
+    }
+    .reveal-step[data-step="1"] { animation-delay: 60ms; }
+    .reveal-step[data-step="2"] { animation-delay: 120ms; }
+    .reveal-step[data-step="3"] { animation-delay: 180ms; }
+    .reveal-step[data-step="4"] { animation-delay: 240ms; }
+    .reveal-step[data-step="5"] { animation-delay: 300ms; }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   DESKTOP: the spine centres, the rows alternate, the headings sit ON the line.
+
+   One project left, one right, around a line that never breaks. The saga and
+   phase headers are centred over the spine rather than pinned to one side,
+   because they belong to BOTH columns — putting them left would make the right
+   column look like a second, later list.
+
+   The alternation is pure `grid-column` placement on `:nth-child` parity. DOM
+   order is never touched: screen readers and keyboard tab order follow the DOM
+   and the order IS the information on this page.
+   --------------------------------------------------------------------------- */
+@media (min-width: 64rem) {
+  .saga-wrap {
+    --thread-inset: 50%;
+  }
+
+  /* Headings, centred on the line. */
+  .saga-head,
+  .phase-head {
+    padding-inline: 0;
+    text-align: center;
+  }
+  .phase-head {
+    justify-content: center;
+    gap: var(--space-3);
+  }
+  /* The year range is a <p>, so it inherits the 65ch measure and left-aligns
+     inside it. Centring the text is not enough; the BOX has to centre too. */
+  .saga-head .saga-meta {
+    max-inline-size: none;
+    text-align: center;
+  }
+  .saga-head h2 {
+    /* A rule either side, so the header reads as a marker ON the spine rather
+       than as a block that has interrupted it. */
+    display: inline-block;
+    padding-inline: var(--space-5);
+    background: var(--color-surface);
+  }
+  .phase-head {
+    background: none;
+  }
+  .phase-head .phase-name,
+  .phase-head .phase-years {
+    background: var(--color-surface);
+    padding-inline: var(--space-2);
+  }
+
+  /* The rows. Two columns, and the panel takes one of them by parity. */
+  .saga-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--space-7);
+    padding-inline: 0;
+  }
+  .saga-row > .panel-card,
+  .saga-row > .watched,
+  .saga-row > .saga-year,
+  .saga-row > .editor-note {
+    grid-column: 1;
+  }
+  .saga-row:nth-child(even) > .panel-card,
+  .saga-row:nth-child(even) > .watched,
+  .saga-row:nth-child(even) > .saga-year,
+  .saga-row:nth-child(even) > .editor-note {
+    grid-column: 2;
+  }
+
+  /* Odd rows read right-to-left toward the spine; even rows read away from it. */
+  .saga-row > .panel-card {
+    justify-items: end;
+    text-align: end;
+    padding-inline-end: var(--space-5);
+    grid-template-columns: 1fr auto;
+  }
+  .saga-row:nth-child(even) > .panel-card {
+    justify-items: start;
+    text-align: start;
+    padding-inline: var(--space-5) 0;
+    grid-template-columns: auto 1fr;
+  }
+  .saga-row > .panel-card .poster {
+    order: 2;
+  }
+  .saga-row:nth-child(even) > .panel-card .poster {
+    order: 0;
+  }
+  .saga-row .panel-meta {
+    justify-content: flex-end;
+  }
+  .saga-row:nth-child(even) .panel-meta {
+    justify-content: flex-start;
+  }
+  /* The tick sits level with its row's meta line rather than floating above
+     the poster, so the row reads as one object. */
+  .saga-row > .saga-year,
+  .saga-row > .watched {
+    justify-self: end;
+    padding-inline-end: var(--space-5);
+  }
+  .saga-row > .watched {
+    align-self: center;
+    grid-row: 2;
+  }
+  .saga-row:nth-child(even) > .saga-year,
+  .saga-row:nth-child(even) > .watched {
+    justify-self: start;
+    padding-inline: var(--space-5) 0;
+  }
+
+  /* The node stays on the centred line; the connector points at whichever
+     column holds the content. */
+  .saga-row::before {
+    inset-inline-start: 50%;
+  }
+  .saga-row::after {
+    inset-inline-start: auto;
+    inset-inline-end: calc(50% + (var(--node) / 2));
+  }
+  .saga-row:nth-child(even)::after {
+    inset-inline-end: auto;
+    inset-inline-start: calc(50% + (var(--node) / 2));
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 63.999rem) {
+  .saga-row,
+  .saga-head,
+  .phase-head {
+    padding-inline-start: calc(var(--thread-inset) + var(--space-6));
+  }
+}
+
+/* Who made it. Sits with the metadata, not in a credits block at the bottom:
+   a director is part of what a film IS, and on this site it is also the answer
+   to "is this the same people as the last one". */
+/**
+ * THE LABEL SITS ABOVE, NOT BESIDE.
+ *
+ * This was a baseline flex row, so "DIRECTED BY" took the inline start and the
+ * portrait began after it — indented by the width of the label, while every
+ * actor below started at the left edge. Two lists of people on one page,
+ * starting in different places.
+ *
+ * As a block the label is a caption over its list and the director's face lines
+ * up with the cast's, which is the whole reason the two were put in one
+ * section.
+ */
+.authorship {
+  display: block;
+  margin-block: var(--space-3) var(--space-5);
+  max-inline-size: none;
+}
+.authorship-role {
+  display: block;
+  margin-block-end: var(--space-2);
+}
+.authorship-role {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+}
+.authorship-role:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.authorship-names {
+  font-weight: 600;
+}
+
+/* A character with no screen credit. Set as a note rather than an error: the
+   zero is a fact about casting, not a gap in the corpus. */
+.char-offscreen {
+  color: var(--color-ink-soft);
+  max-width: 46ch;
+}
+
+/* ==========================================================================
+   THE UNIVERSES INDEX — eight doors, each behind its own band of artwork.
+   ========================================================================== */
+
+/**
+ * A LIST, NOT A CAROUSEL.
+ *
+ * Eight items is something you scroll past. Putting the site's main navigation
+ * inside a horizontal rail hides half of it behind a gesture, and a gesture is
+ * not a signpost. One column on a phone, two from tablet up.
+ */
+.gateway-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-5);
+}
+@media (min-width: 56rem) {
+  .gateway-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+  /* Everything is the widest door into the site, so it takes the full row and
+     reads as the way in rather than as one of the set. */
+  .gateway-list > li:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+.gateway {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color var(--motion-quick) var(--ease-standard);
+}
+.gateway:hover,
+.gateway:focus-visible {
+  border-color: var(--color-ink-faint);
+}
+
+/**
+ * THE BAND. Six real posters, edge to edge, under a scrim.
+ *
+ * `object-fit: cover` on a fixed-height strip rather than whole posters: this
+ * is texture that says WHICH corner of Marvel you are looking at, and six
+ * complete 2:3 posters in a row would be a contact sheet instead.
+ */
+/**
+ * `position: relative` IS LOAD-BEARING, and leaving it off cost a full page.
+ *
+ * `.poster-scrim::after` is `position: absolute` with `inset-inline: 0` and
+ * `inset-block-end: 0`. With no positioned ancestor it anchors to the initial
+ * containing block instead — so the darkening gradient stopped being a scrim on
+ * one band and became a full-width black wash across the bottom half of the
+ * whole document, eight times over.
+ *
+ * Every OTHER `.poster-scrim` on the site sits on something that was already
+ * relative, so the class had never needed to say this and I did not think to.
+ * Nothing caught it: the band measured 160px, the body started at exactly the
+ * band's bottom edge, and every layout assertion was correct. It was only
+ * visible in a screenshot.
+ */
+.gateway-band {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  /**
+   * `grid-template-rows: 100%` IS THE FIX, and `block-size` alone was the bug.
+   *
+   * The band declared a height, and the single implicit row stayed `auto`. So
+   * `block-size: 100%` on each image resolved against an indefinite area, fell
+   * back to the intrinsic 2:3 aspect, and the row grew to whatever a poster is
+   * tall at that column width — 344px inside a 160px box. The overflow pushed
+   * the card's title, lede and meta out of the bottom of an `overflow: hidden`
+   * parent, so two of the eight doors rendered as a wall of posters with no
+   * text at all.
+   *
+   * IT ONLY SHOWED ON THE WIDEST TWO. At 110px per column a poster is 165px
+   * tall and the overflow is five pixels; at 229px it is 344px and the overflow
+   * is 184. Everything spans the full row and Fantastic Four has three columns
+   * instead of six, so those were the two that broke.
+   *
+   * AND MY MEASUREMENT AGREED WITH THE CSS, WHICH IS WHY THIS SURVIVED TWO
+   * ROUNDS. `getBoundingClientRect().height` on the band returned 160 on every
+   * run, because the BOX really was 160 — it was the content inside it that was
+   * 344. I measured the container and concluded the layout was correct while
+   * looking at a screenshot showing it was not. Measuring the images is what
+   * found it.
+   *
+   * With a definite row, the percentage has something to resolve against.
+   */
+  grid-template-rows: clamp(6rem, 22vw, 10rem);
+  overflow: hidden;
+}
+.gateway-band img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+}
+/* The last two only appear where there is room for them, so a phone shows four
+   larger crops rather than six slivers. */
+@media (max-width: 34rem) {
+  .gateway-band img:nth-child(n + 5) {
+    display: none;
+  }
+}
+
+.gateway-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+}
+.gateway-name {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+/* Arabic display type is never tracked negative: the joins carry the word and
+   tightening them is what breaks it. */
+.gateway-name:lang(ar) {
+  letter-spacing: normal;
+}
+.gateway-lede {
+  color: var(--color-ink-soft);
+  max-inline-size: 60ch;
+}
+.gateway-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  margin-block-start: var(--space-1);
+  color: var(--color-ink-faint);
+  font-size: var(--text-sm);
+}
+.gateway-span {
+  font-variant-numeric: tabular-nums;
+}
+.gateway-badge {
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  padding: 0.1em 0.6em;
+  color: var(--color-ink-soft);
+}
+
+/* ==========================================================================
+   A COLLECTION — two orders, two views, and the notice one of them needs.
+   ========================================================================== */
+
+.collection-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+
+/**
+ * A SEGMENTED CONTROL made of real links.
+ *
+ * Both states are separate prerendered URLs, so these are anchors and not
+ * buttons: they work without JavaScript, they can be opened in a new tab, and
+ * `aria-current="page"` is the honest way to say which one you are on — this is
+ * navigation, not a form control.
+ */
+.seg {
+  display: inline-flex;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  overflow: hidden;
+}
+.seg a {
+  padding: var(--space-2) var(--space-4);
+  min-block-size: 44px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-ink-soft);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.seg a + a {
+  border-inline-start: 1px solid var(--color-hairline);
+}
+.seg a[aria-current="page"] {
+  background: var(--color-muted);
+  color: var(--color-ink);
+}
+
+/**
+ * THE SPOILER NOTICE. Deliberately not dismissible.
+ *
+ * A warning with a close button is a warning that the people who needed it
+ * dismiss first. It appears only on story order, which is the order that earns
+ * it, and it goes away by switching back — which is the action it is asking
+ * you to consider.
+ */
+.spoiler-notice {
+  margin-block-end: var(--space-5);
+  padding: var(--space-4);
+  border-inline-start: 3px solid var(--color-accent);
+  background: var(--color-muted);
+  border-radius: var(--radius-card);
+  color: var(--color-ink-soft);
+  max-inline-size: 70ch;
+}
+.spoiler-notice strong {
+  color: var(--color-ink);
+}
+
+.collection-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: var(--space-4) var(--space-3);
+}
+/**
+ * THE POSITION, ON the poster.
+ *
+ * The only reason this page exists rather than /projects is that item 1 comes
+ * before item 2. A grid with no numbers is a catalogue; the number is the
+ * information, so it sits on the artwork where it cannot be missed.
+ */
+.tile-index {
+  position: absolute;
+  inset-block-start: var(--space-2);
+  inset-inline-start: var(--space-2);
+  padding: 0.1em 0.5em;
+  border-radius: var(--radius-control);
+  background: color-mix(in oklab, var(--color-ground) 78%, transparent);
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+}
+
+/* The dates, and the paragraph that needs them. Set below the name so the
+   second number in "1922–2018" is the first thing after it. */
+.person-dates {
+  display: block;
+  margin-block-start: var(--space-1);
+  color: var(--color-ink-faint);
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
+}
+.person-about {
+  margin-block-start: var(--space-3);
+  max-inline-size: 64ch;
+  color: var(--color-ink-soft);
+}
+.person-creations {
+  margin-block-start: var(--space-4);
+}
+.person-creations h3 {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+  margin: 0 0 var(--space-2);
+}
+/* Arabic is never tracked and never uppercased. */
+.person-creations h3:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.person-creations .chip-row {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.person-creations .chip-row > li {
+  max-inline-size: none;
+}
+.person-creations .chip {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  text-decoration: none;
+}
+.person-creations-note {
+  margin-block-start: var(--space-3);
+  max-inline-size: 64ch;
+  color: var(--color-ink-faint);
+  font-size: var(--text-sm);
+}
+
+/* The one action in a page header. Sits under the lede, never beside the h1. */
+.page-actions {
+  margin-block-start: var(--space-4);
+}
+
+/* ==========================================================================
+   COLLAPSIBLE LISTS — ten shown, the rest one keypress away.
+   ========================================================================== */
+
+/**
+ * `:has()` IS DOING THE WORK, and it is what makes this JavaScript-free.
+ *
+ * The `<details>` sits AFTER the list in the DOM, which is where it belongs on
+ * screen — so no sibling combinator can reach backwards from it to the items.
+ * `:has()` reads the open state from the wrapper instead, and the items are
+ * plain children of a list that never knows it is inside a disclosure.
+ *
+ * `data-shown` is documentation rather than a hook: `nth-child` cannot read an
+ * attribute, so the number lives in both places and the attribute is what makes
+ * the CSS legible when they must be changed together.
+ *
+ * `ul` AND `ol`. This targeted `ul` only, so the appearance list on a character
+ * page — an `<ol>`, because release order is the information — rendered the
+ * disclosure, counted correctly, said "Show 18 more", and showed all 28 anyway.
+ * The control was there and did nothing.
+ */
+.collapsible > :is(ul, ol) > li:nth-child(n + 11) {
+  display: none;
+}
+.collapsible:has(> .collapsible-more[open]) > :is(ul, ol) > li:nth-child(n + 11) {
+  display: revert;
+}
+
+.collapsible-more {
+  margin-block-start: var(--space-3);
+}
+.collapsible-more > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-block-size: 44px;
+  padding-inline: var(--space-3);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  color: var(--color-ink-soft);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  /* The default triangle is replaced by the arrow below, which matches every
+     other directional affordance on the site. */
+  list-style: none;
+}
+.collapsible-more > summary::-webkit-details-marker {
+  display: none;
+}
+.collapsible-more > summary::after {
+  content: "";
+  inline-size: 0.6em;
+  block-size: 0.6em;
+  border-inline-end: 2px solid currentColor;
+  border-block-end: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform var(--motion-quick) var(--ease-standard);
+}
+.collapsible-more[open] > summary::after {
+  transform: rotate(-135deg);
+}
+.collapsible-more > summary:hover {
+  color: var(--color-ink);
+  border-color: var(--color-ink-faint);
+}
+
+
+/* ==========================================================================
+   THE SETTINGS DISCLOSURE — language, theme and spoilers, folded away.
+   ========================================================================== */
+
+.settings {
+  position: relative;
+}
+.settings > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-block-size: 44px;
+  padding-inline: var(--space-3);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-control);
+  color: var(--color-ink-soft);
+  font-size: var(--step-data);
+  cursor: pointer;
+  white-space: nowrap;
+  /* The UA triangle is replaced by the caret below, which matches every other
+     directional affordance on this site. */
+  list-style: none;
+}
+.settings > summary::-webkit-details-marker {
+  display: none;
+}
+.settings > summary:hover,
+.settings[open] > summary {
+  color: var(--color-ink);
+  border-color: var(--color-ink-faint);
+}
+.settings-caret {
+  inline-size: 0.5em;
+  block-size: 0.5em;
+  border-inline-end: 2px solid currentColor;
+  border-block-end: 2px solid currentColor;
+  transform: rotate(45deg) translate(-0.1em, -0.1em);
+  transition: transform var(--motion-quick) var(--ease-standard);
+}
+.settings[open] .settings-caret {
+  transform: rotate(-135deg) translate(-0.1em, -0.1em);
+}
+
+/**
+ * THE PANEL FLOATS. It has to.
+ *
+ * In flow it would push the header taller the moment it opened, which is the
+ * exact problem the disclosure was added to solve — the bar would go back to
+ * two rows, just only while you were using it. Absolute, anchored to the
+ * summary, above everything.
+ *
+ * `inset-inline-end: 0` rather than `left`: in Arabic the control sits on the
+ * left of the bar and the panel has to hang the other way. A physical property
+ * here would put the panel off-screen in one of the two languages.
+ */
+.settings-panel {
+  position: absolute;
+  z-index: 4;
+  inset-block-start: calc(100% + var(--space-2));
+  inset-inline-end: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  min-inline-size: max-content;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-card);
+  background: var(--color-surface-2);
+  box-shadow: var(--shadow-card);
+}
+
+/**
+ * THE TITLES AN EDITOR'S NOTE NAMES.
+ *
+ * A note says "the Deadpool films and Logan" and a reader who does not already
+ * know what those are has nowhere to go. These are the same names as real
+ * links, with the poster doing what a poster does everywhere else on this
+ * site: standing for a thing you can watch.
+ *
+ * SMALL. They sit inside a note, which is an aside on a spine, and they must
+ * read as a footnote's worth of links rather than as a second gallery.
+ */
+/**
+ * THE TITLES A NOTE NAMES — a poster grid, beside each other, not stacked.
+ *
+ * They were inline chips: a 30px sliver of poster next to a line of text,
+ * wrapping like tags. That threw away the one thing this site is built on —
+ * the poster is the product — and it stacked one per line the moment a title
+ * was long.
+ *
+ * `auto-fill` with a `minmax` floor rather than a fixed column count, so the
+ * row count follows the width instead of a breakpoint list. Measured: two up at
+ * 320, three at 390, four from tablet on.
+ *
+ * The two numbers are chosen together and neither is arbitrary. The 6.5rem
+ * floor is where a poster stops being recognisable at a glance; the 30rem cap
+ * is what holds the row to FOUR at any width above it — without it `auto-fill`
+ * kept going to five and six on a desktop, which turns a footnote back into
+ * the gallery this disclosure exists to prevent.
+ *
+ * (The taste rule banning "three equal cards in a row" is about a marketing
+ * FEATURE row — three invented benefits with icons. This is a catalogue of real
+ * posters, which is the pattern that rule points you toward, not away from.)
+ */
+.note-mentions {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  display: grid;
+  /* TWO up on a phone, THREE from 30rem, FOUR from 48rem. Explicit counts
+     rather than an `auto-fill` floor: the floor produced one column at 320 and
+     five on a desktop, neither of which is what was asked for, and a column
+     count is the thing being specified so it is the thing written down. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4) var(--space-3);
+  max-inline-size: 30rem;
+}
+@media (min-width: 30rem) {
+  .note-mentions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 48rem) {
+  .note-mentions {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.note-mentions > li {
+  max-inline-size: none;
+}
+.note-mention {
+  display: grid;
+  gap: var(--space-2);
+  color: var(--color-ink-soft);
+  text-decoration: none;
+  font-size: var(--step-data);
+  line-height: 1.3;
+}
+.note-mention img,
+.note-mention-plate {
+  inline-size: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-media);
+  background: var(--color-muted);
+  /* The poster carries the recognition, so it gets the only elevation in the
+     note — and only on hover, where it acknowledges the pointer. */
+  transition: transform var(--motion-quick) var(--ease-standard);
+}
+.note-mention:hover img,
+.note-mention:focus-visible img {
+  transform: translateY(-2px);
+}
+.note-mention:hover,
+.note-mention:focus-visible {
+  color: var(--color-ink);
+}
+.note-mention-name {
+  min-inline-size: 0;
+}
+
+/**
+ * THE TITLES AN EDITOR'S NOTE NAMES, BEHIND A CLICK.
+ *
+ * They used to sit open under the note. On a title page that was merely busy;
+ * on the timeline it was wrong — eight posters under a one-line note stopped
+ * being a footnote and became a second gallery, on the one page whose whole
+ * argument is that the spine does not break.
+ */
+.note-more {
+  margin-block-start: var(--space-3);
+}
+.note-more > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-block-size: 44px;
+  color: var(--color-ink-soft);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  list-style: none;
+}
+.note-more > summary::-webkit-details-marker {
+  display: none;
+}
+.note-more > summary:hover {
+  color: var(--color-ink);
+}
+.note-more-caret {
+  inline-size: 0.45em;
+  block-size: 0.45em;
+  border-inline-end: 2px solid currentColor;
+  border-block-end: 2px solid currentColor;
+  transform: rotate(45deg) translate(-0.1em, -0.1em);
+  transition: transform var(--motion-quick) var(--ease-standard);
+}
+.note-more[open] .note-more-caret {
+  transform: rotate(-135deg) translate(-0.1em, -0.1em);
+}
+.note-more .note-mentions {
+  margin-block-start: var(--space-2);
+}
+
+
+/* The director, with a face, above the cast. Same portrait the cast uses, so
+   the page reads as one list of people rather than two treatments. */
+.author-list {
+  list-style: none;
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+.author-list > li {
+  max-inline-size: none;
+  inline-size: clamp(5rem, 22vw, 7rem);
+}
+.author-name {
+  display: block;
+  margin-block-start: var(--space-2);
+  font-size: var(--text-sm);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+/* The split inside the cast section: who made it, then who is in it. The rule
+   is what separates them — one section, two claims. */
+.authorship {
+  margin-block-end: var(--space-5);
+}
+.cast-subhead {
+  margin-block: var(--space-5) var(--space-3);
+  padding-block-start: var(--space-4);
+  border-block-start: 1px solid var(--color-hairline);
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+}
+.cast-subhead:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/**
+ * THE INFINITY STONE A FILM INTRODUCES.
+ *
+ * Six titles carry this. It is a plate and a caption, not a card: the render
+ * has a transparent ground and its own glow, so a border around it would fight
+ * the artwork. The stone does the work and the type explains it.
+ */
+.stone {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-5);
+}
+.stone-art {
+  inline-size: clamp(6rem, 26vw, 10rem);
+  block-size: auto;
+  flex: 0 0 auto;
+}
+.stone-body {
+  min-inline-size: 0;
+  flex: 1 1 18rem;
+}
+.stone-name {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.stone-name:lang(ar) {
+  font-family: var(--font-ar-display);
+  letter-spacing: normal;
+}
+.stone-vessel {
+  margin-block: var(--space-2) 0;
+  max-inline-size: 52ch;
+}
+.stone-power {
+  margin-block-start: var(--space-2);
+  color: var(--color-ink-soft);
+  max-inline-size: 52ch;
+}
+
+/**
+ * THE SIGNATURE — the one first-person line on the site.
+ *
+ * Everything above it is a record written in the third person: 167 titles, 258
+ * characters, no author's voice anywhere. This says a person made it, so it is
+ * the one place the type system breaks its own rule and uses a hand.
+ *
+ * THE NAME IS THE SIGNATURE. "Designed by" stays in the site's own mono at a
+ * whisper, and only "Rashid" is signed — the way a real signature sits under a
+ * printed line rather than replacing it. Setting both in script would make it a
+ * greeting card.
+ *
+ * The rule underneath is the accent, cut to the width of the name: an ink line
+ * under a signature, not a border on a box.
+ */
+.signature {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  margin-block-start: var(--space-5);
+}
+.signature-lead {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-ink-faint);
+}
+.signature-lead:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.signature-name {
+  font-family: var(--font-signature), cursive;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  line-height: 1;
+  color: var(--color-ink);
+  /* The ink line, the width of the name and no wider. */
+  padding-block-end: var(--space-1);
+  border-block-end: 2px solid var(--color-red);
+  /* Script faces sit high in their box; this drops it onto the lead's baseline
+     rather than floating above it. */
+  transform: translateY(0.08em);
+}
+
+/**
+ * THE POSTER BAND INSIDE A HOMEPAGE UNIVERSE TILE.
+ *
+ * The tile is a 16:10 box with the name over a scrim. The band fills it edge to
+ * edge: four columns, `object-fit: cover` on each, so this is TEXTURE that says
+ * which corner of Marvel you are looking at — not four complete posters, which
+ * would be a contact sheet.
+ */
+.universe-slide-band {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  /* Load-bearing: without a definite row the images fall back to their 2:3
+     intrinsic aspect and blow the tile open. That exact bug shipped once on
+     the /universes bands. */
+  grid-template-rows: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-media);
+}
+.universe-slide-band img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+/**
+ * THE COMPANY MARK ON A RIGHTS ROW.
+ *
+ * Sized by HEIGHT, not width: these logos have wildly different aspect ratios —
+ * the Marvel block is nearly square, the Netflix wordmark is long — and matching
+ * their widths would make one tiny and the other enormous. A common cap height
+ * is how a row of logos is set anywhere it is done properly.
+ *
+ * They are marks, not artwork, so they sit at the ink-soft weight and come up
+ * to full strength with the row. On the dark ground the dark-on-white logos
+ * would vanish, so they get a light plate — the same treatment a press kit uses.
+ */
+/**
+ * A PLATE OF A CONSISTENT SIZE, not a logo of a consistent height.
+ *
+ * Cap-height normalisation is the right rule for logos set in a row, and on
+ * its own it produced a 29px Sony next to a 105px Marvel Studios — because
+ * Sony's mark is a tall column and Marvel Studios' is a wide wordmark. Correct
+ * by the rule, ragged on the page: eleven plates of eleven different widths
+ * reading as debris rather than as a set.
+ *
+ * So the PLATE is the constant and the mark is centred inside it. A tall logo
+ * and a wide one now occupy the same footprint, which is what makes a column
+ * of them scan. The mark still never distorts — `contain` guarantees that.
+ */
+.rights-logo {
+  display: block;
+  inline-size: 100%;
+  max-inline-size: 10rem;
+  block-size: 4.5rem;
+  object-fit: contain;
+  object-position: center;
+  margin-block-end: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-control);
+  /* Marks, not artwork: a press-kit plate so dark-on-white logos survive the
+     dark ground, with a hairline so the plate has an edge on the light one. */
+  background: #fff;
+  box-shadow: inset 0 0 0 1px var(--color-hairline);
+}
+
+
+/* The order switch: two states, side by side, on the same pill vocabulary as
+   the filter chips so it reads as a control rather than as navigation. */
+.char-sort {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+.char-sort .chip[aria-checked="true"] {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+
+/* ===========================================================================
+   EPISODES — a still and a name each, ten at a time
+
+   The same shape as the cast rail below it and for the same reason: the full
+   list is always in the markup and CSS hides the overflow, so a season's
+   episodes are in the HTML whether or not anybody opens the disclosure.
+   `data-shown` is the count that stays visible, and the sibling selector does
+   the hiding — no JavaScript decides what is in the page.
+   =========================================================================== */
+.episode-grid {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  display: grid;
+  /* A still has to be READABLE, which is what makes this different from the
+     cast rail beside it. A face works at 6rem; a frame of television does not
+     — you cannot tell what is in it. Tried narrower and it was worse, so the
+     tile stays at a size where the picture still says something. */
+  grid-template-columns: repeat(auto-fill, minmax(clamp(9rem, 40vw, 13rem), 1fr));
+  gap: var(--space-4) var(--space-3);
+}
+.episode-grid > li {
+  max-inline-size: none;
+  min-inline-size: 0;
+}
+.episode-still {
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-media);
+  background: var(--color-surface-2);
+}
+.episode-still img,
+.episode-still-empty {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+/* The number sits ON the still, bottom-inline-start, so it reads in both
+   directions without a second rule. */
+.episode-number {
+  position: absolute;
+  inset-block-end: var(--space-1);
+  inset-inline-start: var(--space-1);
+  padding: 0.1em 0.4em;
+  border-radius: var(--radius-control);
+  background: rgb(0 0 0 / 0.66);
+  color: #fff;
+  font-size: var(--step-data);
+}
+.episode-runtime {
+  display: block;
+  margin-block-start: 0.15em;
+  font-size: var(--step-data);
+  color: var(--color-ink-soft);
+}
+.episode-name {
+  display: block;
+  margin-block-start: var(--space-2);
+  font-size: var(--text-sm);
+  line-height: 1.3;
+  text-wrap: pretty;
+}
+/* Past the tenth, folded away until the disclosure opens. */
+.episode-grid[data-shown="10"] > li:nth-child(n + 11) {
+  display: none;
+}
+details[open] .episode-grid[data-shown="10"] > li:nth-child(n + 11) {
+  display: block;
+}
+
+
+/* ===========================================================================
+   THE NAV FOLDS INTO THE MENU WHEN IT NO LONGER FITS
+
+   52rem is measured, not chosen: the five titles break onto a second row at
+   816px in English, and the header splits into two rows at 760px in Arabic.
+   832px folds both before either wraps, with a few pixels of margin for the
+   width the fonts actually load at.
+
+   ABOVE THIS WIDTH NOTHING CHANGES — the bar keeps its five titles and the
+   disclosure keeps its three switches and its name. This is a rule for the
+   sizes that cannot hold the line, not a redesign of the ones that can.
+   =========================================================================== */
+.settings-nav,
+.settings-bars,
+.settings-label-narrow {
+  display: none;
+}
+
+@media (max-width: 51.999rem) {
+  .site-nav {
+    display: none;
+  }
+
+  /**
+   * THE SWITCHES FILL THE PANEL, rather than huddling at its start.
+   *
+   * `.theme-switch` is an `inline-flex`, so in a stretched column it shrank to
+   * its three buttons and sat against one edge with a stripe of empty panel
+   * beside it — next to a full-width locale row and a full-width spoiler
+   * toggle, which read as a layout fault rather than a choice. In a menu the
+   * rows should share one edge and one width.
+   */
+  .settings-panel .theme-switch {
+    display: flex;
+  }
+  .settings-panel .theme-switch > * {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+  }
+  .settings-label-wide {
+    display: none;
+  }
+  .settings-label-narrow {
+    display: inline;
+  }
+
+  /* Three bars, drawn rather than fetched — an icon this simple is cheaper as
+     two box-shadows than as a request, and it inherits `currentColor` so it
+     tracks the summary's hover and open states for free. */
+  .settings-bars {
+    display: block;
+    inline-size: 1em;
+    block-size: 2px;
+    background: currentColor;
+    box-shadow:
+      0 -0.34em 0 currentColor,
+      0 0.34em 0 currentColor;
+    transition: box-shadow 180ms var(--ease-out);
+  }
+  /* Open, the outer bars fold into the middle. Not a rotation into an X —
+     that needs three elements and this is one; the collapse reads as "closes"
+     just as clearly and costs nothing. */
+  .settings[open] .settings-bars {
+    box-shadow:
+      0 0 0 currentColor,
+      0 0 0 currentColor;
+  }
+
+  /* A SIDEBAR THAT HAPPENS TO DROP DOWN. Wider than a settings popover, with
+     real rows, so it reads as somewhere you navigate from rather than a
+     cluster of switches. */
+  .settings-panel {
+    inline-size: min(17rem, calc(100vw - var(--space-4) * 2));
+    gap: var(--space-2);
+    padding: var(--space-2);
+  }
+
+  .settings-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    /* `nav-hierarchy`: primary navigation and secondary settings are
+       different things and must not read as one list. */
+    padding-block-end: var(--space-2);
+    border-block-end: 1px solid var(--color-hairline);
+  }
+  .settings-nav a {
+    display: flex;
+    align-items: center;
+    min-block-size: 2.75rem; /* 44px, the floor asserted everywhere else */
+    padding: var(--space-2) var(--space-3);
+    border-inline-start: 3px solid transparent;
+    border-radius: var(--radius-control);
+    color: var(--color-ink);
+    font-size: var(--text-sm);
+    text-decoration: none;
+    transition: background-color 150ms var(--ease-out);
+  }
+  .settings-nav a:hover,
+  .settings-nav a:focus-visible {
+    background: var(--color-elevated);
+  }
+  /* `nav-state-active`: where you are, marked — and never by colour alone.
+     The rule is what you see; `aria-current` is what is announced. */
+  .settings-nav a[aria-current="page"] {
+    border-inline-start-color: var(--color-red);
+    background: var(--color-elevated);
+    font-weight: 600;
+  }
+
+  .settings-group-label {
+    margin: 0;
+    padding-inline: var(--space-3);
+    padding-block-start: var(--space-1);
+    font-family: var(--font-mono);
+    font-size: var(--step-data);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-ink-soft);
+  }
+  .settings-group-label:lang(ar) {
+    font-family: var(--font-ar-body);
+    text-transform: none;
+    letter-spacing: normal;
+  }
+}
+
+/* Above the fold width the panel is only settings, so the group heading would
+   be labelling the entire panel — noise. */
+@media (min-width: 52rem) {
+  .settings-group-label {
+    display: none;
+  }
+}
+
+/**
+ * THE PANEL ARRIVES, rather than appearing.
+ *
+ * `@starting-style` with `allow-discrete` is the only way to transition an
+ * element out of `display: none`, and it is what makes this work with no
+ * JavaScript at all — which this project needs, because the CSP has no
+ * `unsafe-inline` and the disclosure is a native `<details>`.
+ *
+ * 160ms and a strong ease-out, per the dropdown range. Never `ease-in`: it
+ * delays the first frame, which is the one being watched. Never
+ * `transition: all` — the properties are named.
+ */
+.settings-panel {
+  transition:
+    opacity 160ms var(--ease-out),
+    transform 160ms var(--ease-out),
+    display 160ms allow-discrete;
+}
+.settings[open] .settings-panel {
+  opacity: 1;
+  transform: translateY(0);
+}
+@starting-style {
+  .settings[open] .settings-panel {
+    opacity: 0;
+    transform: translateY(-0.35rem);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .settings-panel,
+  .settings-bars,
+  .settings-nav a {
+    transition: none;
+  }
+}
+
+
+/* The verdict links to the list it is a verdict about. Underlined on the
+   accent so it reads as the one thing on that line you can act on, and given
+   `scroll-margin` so the heading lands clear of the sticky header instead of
+   under it. */
+.title-answer-jump {
+  color: inherit;
+  text-decoration: none;
+  border-block-end: 2px solid var(--color-red);
+  transition: color var(--dur-hover) var(--ease-out);
+}
+.title-answer-jump:hover,
+.title-answer-jump:focus-visible {
+  color: var(--color-red-ink);
+}
+#order-heading {
+  scroll-margin-block-start: var(--space-6);
+}
+
+/**
+ * SMOOTH ONLY FOR AN ANCHOR, never for a navigation.
+ *
+ * `scroll-behavior: smooth` on `html` unconditionally also governs the scroll
+ * the browser performs on ARRIVING at a page — so opening any project animated
+ * up from wherever the previous page had been, which reads as the page sliding
+ * in and is nobody's idea of a page load.
+ *
+ * `:has(:target)` is the distinction: a fragment in the URL means the reader
+ * asked to be moved WITHIN a page, and that is the only case worth animating.
+ * A plain navigation has no target and lands instantly, as it should.
+ *
+ * The reduced-motion block above already forces `auto` on everything, so a
+ * reader who asked for stillness needs no second rule here.
+ */
+html:has(:target) {
+  scroll-behavior: smooth;
+}
+
+
+/* A CHARACTER ROW LOOKS LIKE A CHARACTER ROW.
+
+   Same list, two kinds of answer, and a reader scanning it should never have
+   to read the second line to know which they are looking at. The accent bar on
+   the inline start is the cheapest possible signal — no icon to fetch, no
+   layout shift, and it mirrors for free in Arabic. */
+.search-result a[data-kind="character"] {
+  border-inline-start: 3px solid var(--color-red);
+  padding-inline-start: calc(var(--space-3) - 3px);
+}
+.search-result-kind {
+  font-family: var(--font-mono);
+  font-size: var(--step-data);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-red-ink);
+}
+.search-result-kind:lang(ar) {
+  font-family: var(--font-ar-body);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+
+/* ===========================================================================
+   SEARCH RESULTS — the picture first, then the words
+
+   A list of pure text makes a reader parse names to find the one they meant.
+   A poster is recognised before it is read, which is the entire reason to
+   carry a thumbnail at all. Left in English, right in Arabic, for free: the
+   row is a flex line and `gap` plus logical properties do the mirroring.
+
+   FIXED 40x60 AND A RESERVED BOX. The width and height are attributes as well
+   as CSS, so the row never reflows as art arrives — a results list that jumps
+   while you are aiming at it is worse than one with no pictures.
+   =========================================================================== */
+.search-result a {
+  display: flex;
+  /* Explicit, because the rows already stacked their two text lines with
+     `flex-direction: column` — inheriting that put the poster ABOVE the title
+     and centred the lot. A flex direction is never safe to leave implied when
+     an earlier rule in the same cascade has an opinion about it. */
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: start;
+}
+.search-result-thumb {
+  flex: none;
+  inline-size: 40px;
+  block-size: 60px;
+  object-fit: cover;
+  border-radius: var(--radius-control);
+  background: var(--color-surface-2);
+}
+/* Character art is a figure, not a poster: centred, it crops to a chest or to
+   empty background. The avatars already bias to `center 22%` for exactly this
+   reason and the thumbnail has less room to get it wrong. */
+[data-kind="character"] .search-result-thumb {
+  object-position: center 18%;
+}
+.search-result-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  min-inline-size: 0;
+}
+/* The hero row already stacks; the flex above would fight it. */
+.home-search .search-result a {
+  flex-direction: row;
+  align-items: center;
+}

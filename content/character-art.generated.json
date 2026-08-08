@@ -1,0 +1,1752 @@
+{
+  "iron-man": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
+    "source": "shdb",
+    "matchedAs": "Iron Man"
+  },
+  "captain-america": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/149-captain-america.jpg",
+    "source": "shdb",
+    "matchedAs": "Captain America"
+  },
+  "thor": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/659-thor.jpg",
+    "source": "shdb",
+    "matchedAs": "Thor"
+  },
+  "hulk": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/332-hulk.jpg",
+    "source": "shdb",
+    "matchedAs": "Hulk"
+  },
+  "black-widow": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/107-black-widow.jpg",
+    "source": "shdb",
+    "matchedAs": "Black Widow"
+  },
+  "hawkeye": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/313-hawkeye.jpg",
+    "source": "shdb",
+    "matchedAs": "Hawkeye"
+  },
+  "scarlet-witch": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/579-scarlet-witch.jpg",
+    "source": "shdb",
+    "matchedAs": "Scarlet Witch"
+  },
+  "vision": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/bf/Vision_%28Earth-616%29_from_Vision_and_the_Scarlet_Witch_Vol_3_1_001.jpg/revision/latest?cb=20250919162046",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "falcon": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/251-falcon.jpg",
+    "source": "shdb",
+    "matchedAs": "Falcon"
+  },
+  "winter-soldier": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/714-winter-soldier.jpg",
+    "source": "shdb",
+    "matchedAs": "Winter Soldier"
+  },
+  "war-machine": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/703-war-machine.jpg",
+    "source": "shdb",
+    "matchedAs": "War Machine"
+  },
+  "ant-man": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/7c/Astonishing_Ant-Man_Vol_1_10_Mighty_Men_of_Marvel_Cancelled_Variant_Textless.jpg/revision/latest?cb=20160319233924",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "wasp": {
+    "image": "https://oyster.ignimgs.com/wordpress/stg.ign.com/2018/01/Janet_van_Dyne_Earth-616_from_Uncanny_Avengers_Vol_3_10_001.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "doctor-strange": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/226-doctor-strange.jpg",
+    "source": "shdb",
+    "matchedAs": "Doctor Strange"
+  },
+  "black-panther": {
+    "image": "https://static.wikia.nocookie.net/superhero-films/images/9/9f/Black_Panther_OS_Vol_1_2.png/revision/latest?cb=20190203135803",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "captain-marvel": {
+    "image": "https://i.redd.it/t3a1epygj48e1.jpeg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "shang-chi": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/40/Shang-Chi_Profile.jpg/revision/latest/scale-to-width-down/1200?cb=20250318203001",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "loki": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/414-loki.jpg",
+    "source": "shdb",
+    "matchedAs": "Loki"
+  },
+  "nick-fury": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/489-nick-fury.jpg",
+    "source": "shdb",
+    "matchedAs": "Nick Fury"
+  },
+  "pepper-potts": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d4/Rescue_Infobox.png/revision/latest?cb=20231025192612",
+    "source": "mcu-wiki",
+    "matchedAs": "Pepper Potts"
+  },
+  "shuri": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/93/Black_Panther_Infobox.jpg/revision/latest?cb=20240802145610",
+    "source": "mcu-wiki",
+    "matchedAs": "Shuri"
+  },
+  "quicksilver": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/80/Pietro_Maximoff_%28Earth-616%29_from_Scarlet_Witch_%26_Quicksilver_Vol_1_3_Cover_001.jpg/revision/latest/scale-to-width-down/1200?cb=20250517010915",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "ms-marvel": {
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2018/12/ms._marvel_38_-_publicity_-_p_2018.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "kate-bishop": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/df/Katherine_Bishop_%28Earth-616%29_from_Hawkeye_Kate_Bishop_Vol_1_1_cover.jpg/revision/latest?cb=20211130210330",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "wong": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/00/Wong_in_She-Hulk.jpg/revision/latest?cb=20240802144541",
+    "source": "mcu-wiki",
+    "matchedAs": "Wong"
+  },
+  "sylvie": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a3/The_Variant_Loki.png/revision/latest?cb=20231020213758",
+    "source": "mcu-wiki",
+    "matchedAs": "Sylvie"
+  },
+  "star-lord": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/630-star-lord.jpg",
+    "source": "shdb",
+    "matchedAs": "Star-Lord"
+  },
+  "gamora": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/275-gamora.jpg",
+    "source": "shdb",
+    "matchedAs": "Gamora"
+  },
+  "rocket": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/566-rocket-raccoon.jpg",
+    "source": "shdb",
+    "matchedAs": "Rocket Raccoon"
+  },
+  "groot": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/303-groot.jpg",
+    "source": "shdb",
+    "matchedAs": "Groot"
+  },
+  "drax": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/234-drax-the-destroyer.jpg",
+    "source": "shdb",
+    "matchedAs": "Drax the Destroyer"
+  },
+  "nebula": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/487-nebula.jpg",
+    "source": "shdb",
+    "matchedAs": "Nebula"
+  },
+  "wolverine": {
+    "image": "https://www.superherotoystore.com/cdn/shop/articles/4602600-8803586180-44110_688x.jpg?v=1468257272",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "professor-x": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/527-professor-x.jpg",
+    "source": "shdb",
+    "matchedAs": "Professor X"
+  },
+  "magneto": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/423-magneto.jpg",
+    "source": "shdb",
+    "matchedAs": "Magneto"
+  },
+  "jean-grey": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/356-jean-grey.jpg",
+    "source": "shdb",
+    "matchedAs": "Jean Grey"
+  },
+  "storm": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/638-storm.jpg",
+    "source": "shdb",
+    "matchedAs": "Storm"
+  },
+  "cyclops": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/196-cyclops.jpg",
+    "source": "shdb",
+    "matchedAs": "Cyclops"
+  },
+  "mystique": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/480-mystique.jpg",
+    "source": "shdb",
+    "matchedAs": "Mystique"
+  },
+  "beast": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/75-beast.jpg",
+    "source": "shdb",
+    "matchedAs": "Beast"
+  },
+  "rogue": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/567-rogue.jpg",
+    "source": "shdb",
+    "matchedAs": "Rogue"
+  },
+  "nightcrawler": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/490-nightcrawler.jpg",
+    "source": "shdb",
+    "matchedAs": "Nightcrawler"
+  },
+  "iceman": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/339-iceman.jpg",
+    "source": "shdb",
+    "matchedAs": "Iceman"
+  },
+  "deadpool": {
+    "image": "https://static.wikia.nocookie.net/character-stats-and-profiles/images/f/fa/2022-01-22-17-00-08.jpg/revision/latest?cb=20220122140101",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "colossus": {
+    "image": "https://upload.wikimedia.org/wikipedia/en/2/26/Colossus-AvX_Consequences.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "sabretooth": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/570-sabretooth.jpg",
+    "source": "shdb",
+    "matchedAs": "Sabretooth"
+  },
+  "spider-man": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/620-spider-man.jpg",
+    "source": "shdb",
+    "matchedAs": "Spider-Man"
+  },
+  "miles-morales": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Miles_Morales_Spider-Man_Vol_3_1_Textless.jpg/revision/latest?cb=20260421170022",
+    "source": "mcu-wiki",
+    "matchedAs": "Miles Morales (Earth-1610)"
+  },
+  "gwen-stacy": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/619-spider-gwen.jpg",
+    "source": "shdb",
+    "matchedAs": "Spider-Gwen"
+  },
+  "venom": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/687-venom.jpg",
+    "source": "shdb",
+    "matchedAs": "Venom"
+  },
+  "green-goblin": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/299-green-goblin.jpg",
+    "source": "shdb",
+    "matchedAs": "Green Goblin"
+  },
+  "doctor-octopus": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/225-doctor-octopus.jpg",
+    "source": "shdb",
+    "matchedAs": "Doctor Octopus"
+  },
+  "electro": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/237-electro.jpg",
+    "source": "shdb",
+    "matchedAs": "Electro"
+  },
+  "sandman": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/572-sandman.jpg",
+    "source": "shdb",
+    "matchedAs": "Sandman"
+  },
+  "lizard": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/412-lizard.jpg",
+    "source": "shdb",
+    "matchedAs": "Lizard"
+  },
+  "carnage": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/162-carnage.jpg",
+    "source": "shdb",
+    "matchedAs": "Carnage"
+  },
+  "kraven": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Amazing_Spider-Man_Vol_5_19_ComicXposure_Exclusive_Virgin_Variant.jpg/revision/latest?cb=20210222060432",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "morbius": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Morbius_Vol_1_1_Textless.jpg/revision/latest?cb=20211102194828",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "daredevil": {
+    "image": "https://static.wikia.nocookie.net/heroes-and-villain/images/a/aa/Daredevil_Vol_6_21_Textless.jpg/revision/latest?cb=20250803023146",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "jessica-jones": {
+    "image": "https://static.wikia.nocookie.net/heroes-and-villain/images/b/bd/Jessica_Jones.png/revision/latest?cb=20190324230446",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "luke-cage": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Luke_Cage_Gang_War_Vol_1_1_Textless.jpg/revision/latest/scale-to-width-down/1200?cb=20231126151302",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "iron-fist": {
+    "image": "https://i.redd.it/ukz9z7cp8lka1.png",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "punisher": {
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/1/15776/9998597-punisher.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "elektra": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/238-elektra.jpg",
+    "source": "shdb",
+    "matchedAs": "Elektra"
+  },
+  "kingpin": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/391-kingpin.jpg",
+    "source": "shdb",
+    "matchedAs": "Kingpin"
+  },
+  "echo": {
+    "image": "https://static.wikia.nocookie.net/p__/images/0/0d/Maya_Lopez_%28Earth-616%29_from_Daredevil_Vol_2_10_cover.jpg/revision/latest?cb=20240109231654&path-prefix=protagonist",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mister-fantastic": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/456-mister-fantastic.jpg",
+    "source": "shdb",
+    "matchedAs": "Mister Fantastic"
+  },
+  "invisible-woman": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/344-invisible-woman.jpg",
+    "source": "shdb",
+    "matchedAs": "Invisible Woman"
+  },
+  "human-torch": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/333-human-torch.jpg",
+    "source": "shdb",
+    "matchedAs": "Human Torch"
+  },
+  "the-thing": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/658-thing.jpg",
+    "source": "shdb",
+    "matchedAs": "Thing"
+  },
+  "doctor-doom": {
+    "image": "https://static.wikia.nocookie.net/heroes-and-villain/images/f/fc/Doctor_Doom.jpg/revision/latest?cb=20220208120207",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "silver-surfer": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/598-silver-surfer.jpg",
+    "source": "shdb",
+    "matchedAs": "Silver Surfer"
+  },
+  "thanos": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6f/Thanos_Vol_4_1_Lim_Virgin_Variant.jpg/revision/latest?cb=20231110201203",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "ultron": {
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/5e/Ultron_%28MCU%29.png",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "killmonger": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Black_Panther_Textless_Character_Poster_03.jpg/revision/latest?cb=20231024003905",
+    "source": "mcu-wiki",
+    "matchedAs": "Killmonger"
+  },
+  "kang": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/379-kang.jpg",
+    "source": "shdb",
+    "matchedAs": "Kang"
+  },
+  "red-skull": {
+    "image": "https://static.wikia.nocookie.net/villains/images/0/0c/Red_skull_infobox.webp/revision/latest?cb=20240417011026",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "hela": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/321-hela.jpg",
+    "source": "shdb",
+    "matchedAs": "Hela"
+  },
+  "abomination": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/4-abomination.jpg",
+    "source": "shdb",
+    "matchedAs": "Abomination"
+  },
+  "agatha-harkness": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a5/Agatha_Harkness_Infobox.jpg/revision/latest?cb=20250404171313",
+    "source": "mcu-wiki",
+    "matchedAs": "Agatha Harkness"
+  },
+  "the-mandarin": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/430-mandarin.jpg",
+    "source": "shdb",
+    "matchedAs": "Mandarin"
+  },
+  "galactus": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/273-galactus.jpg",
+    "source": "shdb",
+    "matchedAs": "Galactus"
+  },
+  "blade": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/112-blade.jpg",
+    "source": "shdb",
+    "matchedAs": "Blade"
+  },
+  "ghost-rider": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/280-ghost-rider.jpg",
+    "source": "shdb",
+    "matchedAs": "Ghost Rider"
+  },
+  "mantis": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/431-mantis.jpg",
+    "source": "shdb",
+    "matchedAs": "Mantis"
+  },
+  "odin": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/498-odin.jpg",
+    "source": "shdb",
+    "matchedAs": "Odin"
+  },
+  "gambit": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/274-gambit.jpg",
+    "source": "shdb",
+    "matchedAs": "Gambit"
+  },
+  "bullseye": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/141-bullseye.jpg",
+    "source": "shdb",
+    "matchedAs": "Bullseye"
+  },
+  "sif": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/594-sif.jpg",
+    "source": "shdb",
+    "matchedAs": "Sif"
+  },
+  "black-bolt": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/96-black-bolt.jpg",
+    "source": "shdb",
+    "matchedAs": "Black Bolt"
+  },
+  "medusa": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/441-medusa.jpg",
+    "source": "shdb",
+    "matchedAs": "Medusa"
+  },
+  "crystal": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/191-crystal.jpg",
+    "source": "shdb",
+    "matchedAs": "Crystal"
+  },
+  "emma-frost": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/241-emma-frost.jpg",
+    "source": "shdb",
+    "matchedAs": "Emma Frost"
+  },
+  "havok": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/311-havok.jpg",
+    "source": "shdb",
+    "matchedAs": "Havok"
+  },
+  "pyro": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/532-pyro.jpg",
+    "source": "shdb",
+    "matchedAs": "Pyro"
+  },
+  "juggernaut": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/374-juggernaut.jpg",
+    "source": "shdb",
+    "matchedAs": "Juggernaut"
+  },
+  "negasonic": {
+    "image": "https://static.wikia.nocookie.net/p__/images/5/5b/8CA60400-8761-494F-9FB0-E16156DBC11F.png/revision/latest?cb=20221120120832&path-prefix=protagonist",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "jubilee": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/372-jubilee.jpg",
+    "source": "shdb",
+    "matchedAs": "Jubilee"
+  },
+  "apocalypse": {
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a0/Apocalypse_%28En_Sabah_Nur_-_circa_2009%29.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mysterio": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/479-mysterio.jpg",
+    "source": "shdb",
+    "matchedAs": "Mysterio"
+  },
+  "vulture": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/701-vulture.jpg",
+    "source": "shdb",
+    "matchedAs": "Vulture"
+  },
+  "taskmaster": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/653-taskmaster.jpg",
+    "source": "shdb",
+    "matchedAs": "Taskmaster"
+  },
+  "moon-knight": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/470-moon-knight.jpg",
+    "source": "shdb",
+    "matchedAs": "Moon Knight"
+  },
+  "khonshu": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0a/Khonshu.png/revision/latest?cb=20220710113106",
+    "source": "mcu-wiki",
+    "matchedAs": "Khonshu"
+  },
+  "she-hulk": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/589-she-hulk.jpg",
+    "source": "shdb",
+    "matchedAs": "She-Hulk"
+  },
+  "namor": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/481-namor.jpg",
+    "source": "shdb",
+    "matchedAs": "Namor"
+  },
+  "cable": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/145-cable.jpg",
+    "source": "shdb",
+    "matchedAs": "Cable"
+  },
+  "domino": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/227-domino.jpg",
+    "source": "shdb",
+    "matchedAs": "Domino"
+  },
+  "x-23": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/723-x-23.jpg",
+    "source": "shdb",
+    "matchedAs": "X-23"
+  },
+  "ego": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/235-ego.jpg",
+    "source": "shdb",
+    "matchedAs": "Ego"
+  },
+  "modok": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/463-modok.jpg",
+    "source": "shdb",
+    "matchedAs": "MODOK"
+  },
+  "yellowjacket": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/726-yellowjacket.jpg",
+    "source": "shdb",
+    "matchedAs": "Yellowjacket"
+  },
+  "legion": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/403-legion.jpg",
+    "source": "shdb",
+    "matchedAs": "Legion"
+  },
+  "banshee": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/61-banshee.jpg",
+    "source": "shdb",
+    "matchedAs": "Banshee"
+  },
+  "blink": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/115-blink.jpg",
+    "source": "shdb",
+    "matchedAs": "Blink"
+  },
+  "azazel": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/57-azazel.jpg",
+    "source": "shdb",
+    "matchedAs": "Azazel"
+  },
+  "toad": {
+    "image": "https://cdn.marvel.com/content/2x/toad.webp",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "polaris": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/523-polaris.jpg",
+    "source": "shdb",
+    "matchedAs": "Polaris"
+  },
+  "sebastian-shaw": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/ec/Immortal_X-Men_Vol_1_6_Textless.jpg/revision/latest?cb=20220515111421",
+    "source": "mcu-wiki",
+    "matchedAs": "Sebastian Shaw (Earth-616)"
+  },
+  "scorpion": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/581-scorpion.jpg",
+    "source": "shdb",
+    "matchedAs": "Scorpion"
+  },
+  "talos": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a1/Talos_Infobox.png/revision/latest?cb=20250204001702",
+    "source": "mcu-wiki",
+    "matchedAs": "Talos"
+  },
+  "alioth": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/92/Alioth_Loki.jpg/revision/latest?cb=20210710221953",
+    "source": "mcu-wiki",
+    "matchedAs": "Alioth"
+  },
+  "super-skrull": {
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/87/Super_Skrull.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-spot": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e5/Johnathon_Ohnn_%28Earth-616%29_from_Spider-Man_Unlimited_Infinity_Comic_Vol_1_2_001.jpg/revision/latest?cb=20231130202505",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "stan-lee": {
+    "image": "https://image.tmdb.org/t/p/original/kKeyWoFtTqOPsbmwylNHmuB3En9.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "eli-bradley": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/fd/Eli_Bradley_Headshot.png/revision/latest?cb=20210423141633",
+    "source": "mcu-wiki",
+    "matchedAs": "Eli Bradley"
+  },
+  "moon-girl": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f0/Fantastic_Four_Vol_6_41_Black_History_Month_Variant_Textless.jpg/revision/latest?cb=20260227052625",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "erik-selvig": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Erik_Selvig_%28Earth-616%29_from_Avengers_Standoff_Welcome_to_Pleasant_Hill_Vol_1_1_001.jpg/revision/latest?cb=20160218012151",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "darcy-lewis": {
+    "image": "https://static.wikia.nocookie.net/thor/images/3/31/Darcy_lewis.png/revision/latest?cb=20150507115716",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "everett-ross": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1a/Black_Panther_%28film%29_poster_011_Textless.jpg/revision/latest?cb=20180318195759",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mister-negative": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c8/Mister_Negative_%28Earth-616%29_from_Amazing_Spider-Man_Vol_5_59_001.jpg/revision/latest?cb=20210321042930",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mephisto": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/443-mephisto.jpg",
+    "source": "shdb",
+    "matchedAs": "Mephisto"
+  },
+  "rhomann-dey": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e2/Rhomann.jpg/revision/latest?cb=20140716220810",
+    "source": "mcu-wiki",
+    "matchedAs": "Rhomann Dey"
+  },
+  "valkyrie": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d8/Valkyrie_in_LoveAndThunder_Poster.png/revision/latest?cb=20231021012751",
+    "source": "mcu-wiki",
+    "matchedAs": "Valkyrie"
+  },
+  "okoye": {
+    "image": "https://i.pinimg.com/originals/65/a0/c0/65a0c0db02e90a95d04e93c9477ceca0.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-ancient-one": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/dc/Ancient_One.png/revision/latest?cb=20231020202432",
+    "source": "mcu-wiki",
+    "matchedAs": "The Ancient One"
+  },
+  "frigga": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/65/Frigga_Profile.png/revision/latest?cb=20210513163108",
+    "source": "mcu-wiki",
+    "matchedAs": "Frigga"
+  },
+  "heimdall": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/ea/Heimdall_Infobox.jpg/revision/latest?cb=20250203022212",
+    "source": "mcu-wiki",
+    "matchedAs": "Heimdall"
+  },
+  "happy-hogan": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/89/Happy_Hogan_Infobox.png/revision/latest?cb=20240807203350",
+    "source": "mcu-wiki",
+    "matchedAs": "Happy Hogan"
+  },
+  "peggy-carter": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/6b/Peggy_Carter_Infobox.png/revision/latest?cb=20250209154948",
+    "source": "mcu-wiki",
+    "matchedAs": "Peggy Carter"
+  },
+  "jane-foster": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/8e/Jane_Foster_%28Earth-616%29_from_Mighty_Thor_Vol_2_1_001.jpg/revision/latest/scale-to-width-down/791?cb=20151118210746",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "aunt-may": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e2/Maybelle_Parker_%28Earth-616%29_from_Howard_the_Duck_Vol_6_1_cover_001.jpg/revision/latest?cb=20220628175232",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "miek": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ad/Tlat_miek.png/revision/latest?cb=20230710000319",
+    "source": "mcu-wiki",
+    "matchedAs": "Miek"
+  },
+  "korg": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/80/Korg_-_Infobox.jpg/revision/latest?cb=20231021012818",
+    "source": "mcu-wiki",
+    "matchedAs": "Korg"
+  },
+  "ramonda": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1a/Ramonda_Infobox.png/revision/latest?cb=20231021151049",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "hank-pym": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0e/Hank_Pym_Quantumania.jpg/revision/latest?cb=20231124223815",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "janet-van-dyne": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Wasp_Vol_1_1_Nie_Variant_Textless.jpg/revision/latest?cb=20221225122128",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "thaddeus-ross": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/547-red-hulk.jpg",
+    "source": "shdb",
+    "matchedAs": "Red Hulk"
+  },
+  "maria-hill": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f4/Maria_Hill_Infobox.jpg/revision/latest?cb=20250203210426",
+    "source": "mcu-wiki",
+    "matchedAs": "Maria Hill"
+  },
+  "kraglin": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/4e/Kraglin_Obfonteri_Infobox.jpg/revision/latest?cb=20241128003917",
+    "source": "mcu-wiki",
+    "matchedAs": "Kraglin Obfonteri"
+  },
+  "mbaku": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7e/M%27Baku_Profile.png/revision/latest?cb=20231021150505",
+    "source": "mcu-wiki",
+    "matchedAs": "M'Baku"
+  },
+  "ebony-maw": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/67/Ebony_Maw_Infobox.jpg/revision/latest?cb=20210525202154",
+    "source": "mcu-wiki",
+    "matchedAs": "Ebony Maw"
+  },
+  "proxima-midnight": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c6/Proxima02.jpg/revision/latest?cb=20260507225713",
+    "source": "mcu-wiki",
+    "matchedAs": "Proxima Midnight"
+  },
+  "corvus-glaive": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0f/Corvus_Glaive_Infobox.png/revision/latest?cb=20180604193419",
+    "source": "mcu-wiki",
+    "matchedAs": "Corvus Glaive"
+  },
+  "cull-obsidian": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f5/Cull_Obsidian.JPG/revision/latest?cb=20210525191742",
+    "source": "mcu-wiki",
+    "matchedAs": "Cull Obsidian"
+  },
+  "eitri": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ac/Eitri.png/revision/latest?cb=20220205165648",
+    "source": "mcu-wiki",
+    "matchedAs": "Eitri"
+  },
+  "the-collector": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0d/Collector_Infobox.jpg/revision/latest?cb=20231022154628",
+    "source": "mcu-wiki",
+    "matchedAs": "The Collector"
+  },
+  "grandmaster": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/92/Thor_Ragnarok_Textless_Character_Posters_06.jpg/revision/latest?cb=20231021034059",
+    "source": "mcu-wiki",
+    "matchedAs": "The Grandmaster"
+  },
+  "howard-stark": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f6/Howard_Stark_Infobox.png/revision/latest?cb=20191004205535",
+    "source": "mcu-wiki",
+    "matchedAs": "Howard Stark"
+  },
+  "ayo": {
+    "image": "https://static.wikia.nocookie.net/heroes-and-villain/images/1/12/BP_Ayo.jpg/revision/latest?cb=20181220165824",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-one-above-all": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/One_Above_All_%28Multiverse%29_from_Storm_Vol_5_8_001.jpg/revision/latest?cb=20250508024307",
+    "source": "mcu-wiki",
+    "matchedAs": "One Above All (Multiverse)"
+  },
+  "the-living-tribunal": {
+    "image": "https://images.squarespace-cdn.com/content/v1/58c35f74d1758e424ee76710/1557960737862-DA8TG6YX0QA9OMAATAJM/7c4ce77870905d23eed53669de9ae36c--living-tribunal-comic-books.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "eternity": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b8/Eternity_Infobox.jpg/revision/latest?cb=20241027222001",
+    "source": "mcu-wiki",
+    "matchedAs": "Eternity"
+  },
+  "infinity": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/aa/Infinity_%28Multiverse%29_from_Ultimates_2_Vol_2_100_001.jpg/revision/latest?cb=20190206130229",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "death": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/07/Death_Infobox.png/revision/latest?cb=20241102024102",
+    "source": "mcu-wiki",
+    "matchedAs": "Death"
+  },
+  "oblivion": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/07/Oblivion_%28Earth-616%29_from_Mighty_Thor_Annual_Vol_1_1_001.jpg/revision/latest/scale-to-width-down/985?cb=20211130020701",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-one-below-all": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4b/Immortal_Hulk_Vol_1_12_Textless.jpg/revision/latest?cb=20181021045341",
+    "source": "mcu-wiki",
+    "matchedAs": "One Below All (Multiverse)"
+  },
+  "the-beyonder": {
+    "image": "https://i.pinimg.com/736x/7c/12/73/7c1273e72145647b433b44d43bf870dc.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-watcher": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e5/Uatu_the_Watcher.png/revision/latest?cb=20241230223134",
+    "source": "mcu-wiki",
+    "matchedAs": "The Watcher"
+  },
+  "molecule-man": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/67/Owen_Reece_%28Earth-616%29_from_New_Avengers_Vol_3_24_001.jpg/revision/latest?cb=20240516161927",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-runner": {
+    "image": "https://static.wikia.nocookie.net/marvelcomicsfanon/images/8/8f/Runner_61615.jpg/revision/latest?cb=20190319143937",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "knull": {
+    "image": "https://cdn.marvel.com/content/2x/venom_2018_4_1.webp",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "dormammu": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/232-dormammu.jpg",
+    "source": "shdb",
+    "matchedAs": "Dormammu"
+  },
+  "arishem": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7e/Arishem.png/revision/latest?cb=20230926005618",
+    "source": "mcu-wiki",
+    "matchedAs": "Arishem the Judge"
+  },
+  "tiamut": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/81/Tiamut_Eternals.png/revision/latest?cb=20220124131019",
+    "source": "mcu-wiki",
+    "matchedAs": "Tiamut"
+  },
+  "eson": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b7/Esonsearcher.png/revision/latest?cb=20141126104220",
+    "source": "mcu-wiki",
+    "matchedAs": "Eson the Searcher"
+  },
+  "ikaris": {
+    "image": "https://static.wikia.nocookie.net/disney/images/e/e7/Ikaris_-_Profile.jpg/revision/latest?cb=20220626100045",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "sersi": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/cc/Sersi_Character_Poster.jpg/revision/latest?cb=20260218025919",
+    "source": "mcu-wiki",
+    "matchedAs": "Sersi"
+  },
+  "thena": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/db/Thena_First_Look.jpg/revision/latest?cb=20231021144120",
+    "source": "mcu-wiki",
+    "matchedAs": "Thena"
+  },
+  "ajak": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3f/Ajak_Infobox.jpg/revision/latest?cb=20231021144101",
+    "source": "mcu-wiki",
+    "matchedAs": "Ajak"
+  },
+  "kingo": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/25/Kingo_Character_Poster.jpg/revision/latest?cb=20231021143730",
+    "source": "mcu-wiki",
+    "matchedAs": "Kingo"
+  },
+  "sprite": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d8/Sprite_Character_Poster.jpg/revision/latest?cb=20231021143803",
+    "source": "mcu-wiki",
+    "matchedAs": "Sprite"
+  },
+  "phastos": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/39/Phastos_Character_Poster.jpg/revision/latest?cb=20231021143830",
+    "source": "mcu-wiki",
+    "matchedAs": "Phastos"
+  },
+  "makkari": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/78/Makkari_infobox.jpg/revision/latest?cb=20231021143853",
+    "source": "mcu-wiki",
+    "matchedAs": "Makkari"
+  },
+  "druig": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/6d/Druig_Character_Poster.jpg/revision/latest?cb=20231021143931",
+    "source": "mcu-wiki",
+    "matchedAs": "Druig"
+  },
+  "gilgamesh": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/07/Gilgamesh_Character_Poster.jpg/revision/latest?cb=20231021143955",
+    "source": "mcu-wiki",
+    "matchedAs": "Gilgamesh"
+  },
+  "karnak": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8e/Karnak.jpg/revision/latest?cb=20170814180234",
+    "source": "mcu-wiki",
+    "matchedAs": "Karnak"
+  },
+  "gorgon": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/79/Gorgo_Profile.png/revision/latest?cb=20170814180628",
+    "source": "mcu-wiki",
+    "matchedAs": "Gorgon"
+  },
+  "maximus": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/24/Maximus.jpg/revision/latest?cb=20191120220617",
+    "source": "mcu-wiki",
+    "matchedAs": "Maximus"
+  },
+  "triton": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/677-triton.jpg",
+    "source": "shdb",
+    "matchedAs": "Triton"
+  },
+  "lockjaw": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Lockjaw.JPG/revision/latest?cb=20231023140237",
+    "source": "mcu-wiki",
+    "matchedAs": "Lockjaw"
+  },
+  "sentry": {
+    "image": "https://static.wikia.nocookie.net/characterprofile/images/e/ed/Sentry_Marvel_Comics.jpeg/revision/latest/scale-to-width-down/1200?cb=20250525071708",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "yelena-belova": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8e/Yelena_Belova_Infobox.jpg/revision/latest?cb=20250425194545",
+    "source": "mcu-wiki",
+    "matchedAs": "Yelena Belova"
+  },
+  "red-guardian": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a0/Red_Guardian_Infobox.jpg/revision/latest?cb=20260313235054",
+    "source": "mcu-wiki",
+    "matchedAs": "Red Guardian"
+  },
+  "ghost": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/4f/Ghost_Infobox.jpg/revision/latest?cb=20260313234608",
+    "source": "mcu-wiki",
+    "matchedAs": "Ghost"
+  },
+  "john-walker": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/ba/U.S._Agent_Infobox.png/revision/latest?cb=20260313234727",
+    "source": "mcu-wiki",
+    "matchedAs": "U.S. Agent"
+  },
+  "valentina": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/25/Valentina_Allegra_de_Fontaine_Infobox.png/revision/latest?cb=20250828180751",
+    "source": "mcu-wiki",
+    "matchedAs": "Valentina Allegra de Fontaine"
+  },
+  "skaar": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/605-skaar.jpg",
+    "source": "shdb",
+    "matchedAs": "Skaar"
+  },
+  "betty-ross": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/86/Betty_Ross.jpg/revision/latest?cb=20160101141249",
+    "source": "mcu-wiki",
+    "matchedAs": "Betty Ross"
+  },
+  "phoenix": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/ee/Phoenix_Force_%28Earth-616%29_from_Avengers_Vol_8_32_001.jpg/revision/latest?cb=20210406171416",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "angel": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/24-angel.jpg",
+    "source": "shdb",
+    "matchedAs": "Angel"
+  },
+  "hope-summers": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/330-hope-summers.jpg",
+    "source": "shdb",
+    "matchedAs": "Hope Summers"
+  },
+  "dazzler": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/211-dazzler.jpg",
+    "source": "shdb",
+    "matchedAs": "Dazzler"
+  },
+  "aurora": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/56-aurora.jpg",
+    "source": "shdb",
+    "matchedAs": "Aurora"
+  },
+  "mister-sinister": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/460-mister-sinister.jpg",
+    "source": "shdb",
+    "matchedAs": "Mister Sinister"
+  },
+  "riot": {
+    "image": "https://static.wikia.nocookie.net/villains/images/9/97/Riot_%28Earth-616%29_from_Absolute_Carnage_Scream_Vol_1_1_Bagley_Connecting_Variant_cover_001.jpg/revision/latest?cb=20241029173122",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "toxin": {
+    "image": "https://i.redd.it/isk712hqkxq61.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "anti-venom": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Amazing_Spider-Man_Presents_Anti-Venom_-_New_Ways_To_Live_Vol_1_1_Textless.jpg/revision/latest?cb=20160406162532",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "scream": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/Absolute_Carnage_Scream_Vol_1_1_Textless.jpg/revision/latest?cb=20190523183515",
+    "source": "mcu-wiki",
+    "matchedAs": "Scream"
+  },
+  "agony": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f8/Extreme_Carnage_Agony_Vol_1_1_Textless.jpg/revision/latest?cb=20220919223451",
+    "source": "mcu-wiki",
+    "matchedAs": "Agony"
+  },
+  "spider-man-2099": {
+    "image": "https://static.wikia.nocookie.net/spiderverseseries/images/a/ac/Miguel_O%27Hara_-_ATSV.png/revision/latest?cb=20230601181303",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "spider-man-noir": {
+    "image": "https://static.wikia.nocookie.net/p__/images/e/e7/1733106593483_v2pt7q_2_1~2.jpg/revision/latest?cb=20241202023919&path-prefix=protagonist",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "peni-parker": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6a/Edge_of_Spider-Geddon_Vol_1_2_Textless.jpg/revision/latest?cb=20181005044750",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "spider-ham": {
+    "image": "https://playcontestofchampions.com/wp-content/uploads/2023/04/champion-spider-ham.webp",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "spider-woman": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9d/Spider-Woman_Vol_7_11_Textless.jpg/revision/latest?cb=20210116123553",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "ben-reilly": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/577-scarlet-spider.jpg",
+    "source": "shdb",
+    "matchedAs": "Scarlet Spider"
+  },
+  "rhino": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/556-rhino.jpg",
+    "source": "shdb",
+    "matchedAs": "Rhino"
+  },
+  "shocker": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/591-shocker.jpg",
+    "source": "shdb",
+    "matchedAs": "Shocker"
+  },
+  "black-cat": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/99-black-cat.jpg",
+    "source": "shdb",
+    "matchedAs": "Black Cat"
+  },
+  "prowler": {
+    "image": "https://static.wikia.nocookie.net/villains/images/8/89/Prowler2.jpg/revision/latest?cb=20190227002026",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "tombstone": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/cb/Tombstone_Infobox.jpg/revision/latest?cb=20260808030126",
+    "source": "mcu-wiki",
+    "matchedAs": "Tombstone"
+  },
+  "high-evolutionary": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c2/High_Evolutionary_Infobox.png/revision/latest?cb=20230904031119",
+    "source": "mcu-wiki",
+    "matchedAs": "The High Evolutionary"
+  },
+  "malekith": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b1/Malekith-TextlessPoster1.jpg/revision/latest?cb=20231022145132",
+    "source": "mcu-wiki",
+    "matchedAs": "Malekith"
+  },
+  "he-who-remains": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/52/He_Who_Remains-_Poster.jpg/revision/latest?cb=20240201135929",
+    "source": "mcu-wiki",
+    "matchedAs": "He Who Remains"
+  },
+  "franklin-richards": {
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO0M4Hoz8oYnwDeK0zj7-y48Nxz1qaorHtrH41Dw_LddZDM5RVCKilkgSldOdfBpfNyLLMLMWiXZux40YOFI9VpNFURwbEenzTWwYy9vyyXt1B5DlTIc9AaAQgRpsiBqn1gHp8HLUViw_tgz4uPSTI7_UT01LOLPB03ZV_ndjAgn2tzfVkeox7_khcTu4/s3056/Fantastic%20Four%20v7%20%23%2018%20(1).jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "hercules": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/325-hercules.jpg",
+    "source": "shdb",
+    "matchedAs": "Hercules"
+  },
+  "zeus": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2c/Zeus_Infobox.jpg/revision/latest?cb=20231021012844",
+    "source": "mcu-wiki",
+    "matchedAs": "Zeus"
+  },
+  "america-chavez": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a8/America_Chavez.png/revision/latest?cb=20231021153752",
+    "source": "mcu-wiki",
+    "matchedAs": "America Chavez"
+  },
+  "richard-rider": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/99/Imperial_Vol_1_3_Just_Spectacular_Collection_Virgin_Variant.jpg/revision/latest?cb=20250825201846",
+    "source": "mcu-wiki",
+    "matchedAs": "Richard Rider (Earth-616)"
+  },
+  "sam-alexander": {
+    "image": "https://static.comicvine.com/uploads/original/3/31666/2940089-sam_5.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "howard-the-duck": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d0/Howard_duck.png/revision/latest?cb=20230707222901",
+    "source": "mcu-wiki",
+    "matchedAs": "Howard the Duck"
+  },
+  "a-bomb": {
+    "image": "https://static.wikia.nocookie.net/marvel-battlelines/images/c/c9/Screenshot_2018-11-15-13-16-45.png/revision/latest?cb=20181116004936",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "adam-warlock": {
+    "image": "https://i.pinimg.com/736x/b6/30/78/b63078241e496fdaf4073646a12da56c.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "wiccan": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/83/Wiccan_Infobox.png/revision/latest?cb=20241018202830",
+    "source": "mcu-wiki",
+    "matchedAs": "Wiccan"
+  },
+  "speed": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e4/Tommy_Maximoff.png/revision/latest?cb=20210707182645",
+    "source": "mcu-wiki",
+    "matchedAs": "Speed"
+  },
+  "bedlam": {
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/11144/111442876/9616112-ccrzcse.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "shatterstar": {
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/be/Shatterstar.png",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "vanisher": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a7/Vanisher_%28Earth-616%29_from_Uncanny_X-Men_Vol_5_19_001.png/revision/latest?cb=20190608234221",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "zeitgeist": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/cb/Axel_Cluney_%28Earth-616%29_from_Giant-Size_X-Statix_Vol_1_1_002.png/revision/latest/scale-to-width-down/800?cb=20190715002648",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "peter-wisdom": {
+    "image": "https://i.pinimg.com/736x/a1/ef/ff/a1efff2544a6575605aff6a8557c23ca.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "werewolf-by-night": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/bb/Werewolf_by_Night.png/revision/latest?cb=20250407225448",
+    "source": "mcu-wiki",
+    "matchedAs": "Werewolf by Night"
+  },
+  "man-thing": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/428-man-thing.jpg",
+    "source": "shdb",
+    "matchedAs": "Man-Thing"
+  },
+  "elsa-bloodstone": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b0/Elsa_Bloodstone.jpg/revision/latest?cb=20231020152003",
+    "source": "mcu-wiki",
+    "matchedAs": "Elsa Bloodstone"
+  },
+  "doctor-voodoo": {
+    "image": "https://i.pinimg.com/736x/03/0b/ca/030bcaf2391b6b49e777f889926657f1.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "hobgoblin": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2d/Spider-Man_Vol_2_237_Textless.jpg/revision/latest?cb=20171219181335",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "harry-osborn": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2d/Harry_Osborn_YFNSM_Infobox.jpeg/revision/latest?cb=20260630184926",
+    "source": "mcu-wiki",
+    "matchedAs": "New Goblin"
+  },
+  "ned-leeds": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/88/Ned_Leeds_Infobox.jpg/revision/latest?cb=20260617111633",
+    "source": "mcu-wiki",
+    "matchedAs": "Ned Leeds"
+  },
+  "mary-jane-watson": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/Mary_Jane_Watson_%28Earth-616%29_from_Amazing_Spider-Man_Vol_5_50.LR_001.jpg/revision/latest?cb=20210315024600",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "michelle-jones": {
+    "image": "https://static.wikia.nocookie.net/p__/images/f/f2/MJ-NWH.png/revision/latest?cb=20220308041822&path-prefix=protagonist",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "ben-parker": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/Benjamin_Parker_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_Book_of_the_Dead_2004_Vol_1_1_0001.png/revision/latest?cb=20170410023208",
+    "source": "mcu-wiki",
+    "matchedAs": "Ben Parker"
+  },
+  "squirrel-girl": {
+    "image": "https://static.wikia.nocookie.net/versus-compendium/images/0/01/Squirrel_Girl.png/revision/latest?cb=20181025135059",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "starfox": {
+    "image": "https://static.wikia.nocookie.net/crossgencomicsdatabase/images/2/24/Starfox_Thanos_Vol_2_7.png/revision/latest?cb=20201205021117",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "yondu": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6d/All-New_Guardians_of_the_Galaxy_Annual_Vol_1_1_Mora_Variant_Textless.jpg/revision/latest?cb=20170623090214",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "sentinels": {
+    "image": "https://static.wikia.nocookie.net/xmenmovies/images/d/d9/Markx.jpg/revision/latest?cb=20140714214324",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "captain-carter": {
+    "image": "https://theronin.org/wp-content/uploads/2021/08/captain-carter_haley-atwell_invaders_mcu_what-if_.jpeg?w=469",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "ironheart": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/48/Ironheart_Infobox.jpg/revision/latest?cb=20250516014201",
+    "source": "mcu-wiki",
+    "matchedAs": "Ironheart"
+  },
+  "kid-loki": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a6/Kid_Loki-official.jpg/revision/latest?cb=20231020213859",
+    "source": "mcu-wiki",
+    "matchedAs": "Kid Loki"
+  },
+  "cassie-lang": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/4b/Cassie_Lang_Infobox.jpg/revision/latest?cb=20231124223701",
+    "source": "mcu-wiki",
+    "matchedAs": "Cassie Lang"
+  },
+  "love": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ab/LoveTLAT.png/revision/latest?cb=20220909151103",
+    "source": "mcu-wiki",
+    "matchedAs": "Love"
+  },
+  "mobius": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2d/Mobius_M._Mobius.png/revision/latest?cb=20231020213732",
+    "source": "mcu-wiki",
+    "matchedAs": "Mobius M. Mobius"
+  },
+  "ouroboros": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f1/Ouroboros_Infobox.jpg/revision/latest?cb=20231013213311",
+    "source": "mcu-wiki",
+    "matchedAs": "Ouroboros"
+  },
+  "miss-minutes": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/29/Miss_Minutes_Profile.png/revision/latest?cb=20260728164648",
+    "source": "mcu-wiki",
+    "matchedAs": "Miss Minutes"
+  },
+  "classic-loki": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/29/Classic_Loki_Character_Poster.jpg/revision/latest?cb=20231020213825",
+    "source": "mcu-wiki",
+    "matchedAs": "Classic Loki"
+  },
+  "boastful-loki": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/43/Boastful_Loki_Official.jpg/revision/latest?cb=20231020213919",
+    "source": "mcu-wiki",
+    "matchedAs": "Boastful Loki"
+  },
+  "monica-rambeau": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/dc/Monica_Rambeau_Profile.png/revision/latest?cb=20240120054741",
+    "source": "mcu-wiki",
+    "matchedAs": "Monica Rambeau"
+  },
+  "alligator-loki": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0e/Alligator_Loki_Official.jpg/revision/latest?cb=20231020213936",
+    "source": "mcu-wiki",
+    "matchedAs": "Alligator Loki"
+  },
+  "throg": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Thor_Vol_6_18_Textless.jpg/revision/latest?cb=20211206190320",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "president-loki": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2c/Loki_%28TV_series%29_poster_013.jpg/revision/latest?cb=20210712144857",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "ronan": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0f/Ronan_the_Accuser_Infobox.jpg/revision/latest?cb=20241127020215",
+    "source": "mcu-wiki",
+    "matchedAs": "Ronan the Accuser"
+  },
+  "black-knight": {
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/66/Dane_Whitman_as_Black_Knight_%282020%29.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "phil-coulson": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/98/Phil_Coulson_Infobox.jpg/revision/latest?cb=20250203215516",
+    "source": "mcu-wiki",
+    "matchedAs": "Phil Coulson"
+  },
+  "spider-punk": {
+    "image": "https://static.wikia.nocookie.net/spiderverseseries/images/8/80/Spider-Punk_-_ATSV.png/revision/latest?cb=20230601181414",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "madame-web": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Cassandra_Webb_%28Earth-616%29_from_Prowler_Vol_2_1_001.jpg/revision/latest?cb=20220428150725",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "julia-carpenter": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/74/Julia_Carpenter_%28Earth-616%29_from_Prowler_Vol_2_2_001.jpg/revision/latest?cb=20191006044458",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "anya-corazon": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e2/A%C3%B1a_Coraz%C3%B3n_%28Earth-616%29_from_Edge_of_Spider-Verse_Vol_2_1_001.jpg/revision/latest?cb=20220804155915",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mattie-franklin": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/19/Martha_Franklin_%28Earth-616%29_from_Silk_Vol_2_14_001.jpg/revision/latest?cb=20260611235256",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "ezekiel-sims": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Ezekiel_Sims_%28Earth-616%29_from_Amazing_Spider-Man_Vol_2_33_cover.jpg/revision/latest?cb=20191219062701",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "spider-man-tobey": {
+    "image": "https://media.zenfs.com/en/us_magazine_896/8371b7c99efa855c94440f4fbb1ed7fb",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "spider-man-andrew": {
+    "image": "https://i.redd.it/qnd04cbvbefa1.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "spider-man-tom": {
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/0f/Tom_Holland_as_Spider-Man.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "white-vision": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/13/WhiteVision_%28WV%29.jpg/revision/latest?cb=20240812220039",
+    "source": "mcu-wiki",
+    "matchedAs": "White Vision"
+  },
+  "harley-keener": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c2/Harley_Keener.png/revision/latest?cb=20221203155727",
+    "source": "mcu-wiki",
+    "matchedAs": "Harley Keener"
+  },
+  "trevor-slattery": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/22/TrevorSlatteryShangChi.jpeg/revision/latest?cb=20231210194425",
+    "source": "mcu-wiki",
+    "matchedAs": "Trevor Slattery"
+  },
+  "aldrich-killian": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c0/Aldrich_Killian_Infobox.jpeg/revision/latest?cb=20210418203927",
+    "source": "mcu-wiki",
+    "matchedAs": "Aldrich Killian"
+  },
+  "surtur": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e7/Surtur_Profile.png/revision/latest?cb=20180208221832",
+    "source": "mcu-wiki",
+    "matchedAs": "Surtur"
+  },
+  "zemo": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d5/TF%26TWS_Textless_Character_Posters_02.jpg/revision/latest?cb=20231021161327",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "wonder-man": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/719-wonder-man.jpg",
+    "source": "shdb",
+    "matchedAs": "Wonder Man"
+  },
+  "obadiah-stane": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/347-iron-monger.jpg",
+    "source": "shdb",
+    "matchedAs": "Iron Monger"
+  },
+  "ivan-vanko": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/cb/Whiplash_Profile.png/revision/latest?cb=20240227160708",
+    "source": "mcu-wiki",
+    "matchedAs": "Whiplash"
+  },
+  "justin-hammer": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b1/Iron_man_2_50.jpg/revision/latest?cb=20141204045154",
+    "source": "mcu-wiki",
+    "matchedAs": "Justin Hammer"
+  },
+  "arnim-zola": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/67/Arnim_Zola.png/revision/latest?cb=20141127015752",
+    "source": "mcu-wiki",
+    "matchedAs": "Arnim Zola"
+  },
+  "crossbones": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/88/Crossbones_Infobox.jpg/revision/latest?cb=20160229172341",
+    "source": "mcu-wiki",
+    "matchedAs": "Crossbones"
+  },
+  "alexander-pierce": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3e/Alexander_Pierce_profile.png/revision/latest?cb=20231022031139",
+    "source": "mcu-wiki",
+    "matchedAs": "Alexander Pierce"
+  },
+  "kaecilius": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f2/Kaecilius.png/revision/latest?cb=20250211065758",
+    "source": "mcu-wiki",
+    "matchedAs": "Kaecilius"
+  },
+  "ayesha": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/87/Ayesha_profile_%281%29.png/revision/latest?cb=20210506194507",
+    "source": "mcu-wiki",
+    "matchedAs": "Ayesha"
+  },
+  "gorr": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/71/Gorr_Infobox.png/revision/latest?cb=20231021012723",
+    "source": "mcu-wiki",
+    "matchedAs": "Gorr the God Butcher"
+  },
+  "dreykov": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/87/Dreykov.png/revision/latest?cb=20250520123750",
+    "source": "mcu-wiki",
+    "matchedAs": "Dreykov"
+  },
+  "dar-benn": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/bb/Dar-Benn_Promo.jpg/revision/latest?cb=20231201092608",
+    "source": "mcu-wiki",
+    "matchedAs": "Dar-Benn"
+  },
+  "yon-rogg": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/23/Yon-Rogg_Textless_Poster.jpg/revision/latest?cb=20231025001232",
+    "source": "mcu-wiki",
+    "matchedAs": "Yon-Rogg"
+  },
+  "cassandra-nova": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ac/Cassandra_Nova.png/revision/latest?cb=20240628203222",
+    "source": "mcu-wiki",
+    "matchedAs": "Cassandra Nova"
+  },
+  "kilgrave": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/da/Kilgrave-Profile-JJ.jpg/revision/latest?cb=20191114200307",
+    "source": "mcu-wiki",
+    "matchedAs": "Kilgrave"
+  },
+  "davos": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b3/Davos.jpg/revision/latest?cb=20190531095929",
+    "source": "mcu-wiki",
+    "matchedAs": "Davos"
+  },
+  "mordo": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/98/Karl_Mordo.png/revision/latest?cb=20231020202643",
+    "source": "mcu-wiki",
+    "matchedAs": "Baron Mordo"
+  },
+  "william-stryker": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/69/William_Stryker_%28Earth-65%29_from_Spider-Gwen_Vol_2_20_001.png/revision/latest?cb=20171008132759",
+    "source": "mcu-wiki",
+    "matchedAs": "William Stryker"
+  },
+  "silver-samurai": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Shingen_Harada_II_%28Earth-616%29_from_All-New_X-Men_Vol_1_13_001.jpg/revision/latest?cb=20190925001754",
+    "source": "mcu-wiki",
+    "matchedAs": "Silver Samurai"
+  },
+  "viper": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7d/Aida_Infobox.jpg/revision/latest?cb=20170401230442",
+    "source": "mcu-wiki",
+    "matchedAs": "Viper"
+  },
+  "ajax": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/13-ajax.jpg",
+    "source": "shdb",
+    "matchedAs": "Ajax"
+  },
+  "bolivar-trask": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Bolivar_Trask_%28Earth-161%29_from_X-Men_Forever_Vol_2_9_001.jpg/revision/latest?cb=20091016020444",
+    "source": "mcu-wiki",
+    "matchedAs": "Bolivar Trask"
+  },
+  "annihilus": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/29-annihilus.jpg",
+    "source": "shdb",
+    "matchedAs": "Annihilus"
+  },
+  "mole-man": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/32/Mole_Man_Infobox.png/revision/latest?cb=20250717183400",
+    "source": "mcu-wiki",
+    "matchedAs": "Mole Man"
+  },
+  "blackheart": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5a/Blackheart_%28Earth-9411%29_from_Marvel_Heroes_%28UK%29_Vol_1_14_001.jpg/revision/latest?cb=20200713142648",
+    "source": "mcu-wiki",
+    "matchedAs": "Blackheart"
+  },
+  "deacon-frost": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/91/Deacon_Frost_%28Earth-1610%29_from_Ultimate_Avengers_vs._New_Ultimates_Vol_1_2_0001.jpg/revision/latest?cb=20110311161218",
+    "source": "mcu-wiki",
+    "matchedAs": "Deacon Frost"
+  },
+  "nobu": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1e/NobuResurrected.png/revision/latest?cb=20211016194026",
+    "source": "mcu-wiki",
+    "matchedAs": "Nobu"
+  },
+  "muse": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/16/Muse_Infobox.png/revision/latest?cb=20251024023930",
+    "source": "mcu-wiki",
+    "matchedAs": "Muse"
+  },
+  "supreme-intelligence": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f2/Supreme_Intelligence_Infobox.png/revision/latest?cb=20240806135051",
+    "source": "mcu-wiki",
+    "matchedAs": "The Supreme Intelligence"
+  },
+  "harold-meachum": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0a/Harold_Meachum.png/revision/latest?cb=20170324174103",
+    "source": "mcu-wiki",
+    "matchedAs": "Harold Meachum"
+  },
+  "phyla-vell": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/62/Phyla_Infobox.png/revision/latest?cb=20230809030044",
+    "source": "mcu-wiki",
+    "matchedAs": "Phyla-Vell"
+  },
+  "cosmo": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/80/Cosmo_Vol3_Infobox.jpg/revision/latest?cb=20231113215156",
+    "source": "mcu-wiki",
+    "matchedAs": "Cosmo the Spacedog"
+  },
+  "stakar-ogord": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c1/Stakar_Ogord.jpg/revision/latest?cb=20250119215739",
+    "source": "mcu-wiki",
+    "matchedAs": "Stakar Ogord"
+  },
+  "martinex": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/58/Martinex.jpg/revision/latest?cb=20230516023625",
+    "source": "mcu-wiki",
+    "matchedAs": "Martinex"
+  },
+  "krugarr": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/33/Krugarr-0.jpg/revision/latest?cb=20170808145705",
+    "source": "mcu-wiki",
+    "matchedAs": "Krugarr"
+  },
+  "mainframe": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/95/Mainframe.jpg/revision/latest?cb=20230516023646",
+    "source": "mcu-wiki",
+    "matchedAs": "Mainframe"
+  },
+  "lylla": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/64/Lylla_on_floor_infobox.png/revision/latest?cb=20230722010732",
+    "source": "mcu-wiki",
+    "matchedAs": "Lylla"
+  },
+  "teefs": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d0/Teefs.jpg/revision/latest?cb=20230517175832",
+    "source": "mcu-wiki",
+    "matchedAs": "Teefs"
+  },
+  "floor": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8f/Floor.png/revision/latest?cb=20230802150408",
+    "source": "mcu-wiki",
+    "matchedAs": "Floor"
+  },
+  "northstar": {
+    "image": "https://i.pinimg.com/736x/66/c4/70/66c4704583b875c6933296de905325fc.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "agent-venom": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/0c/Extreme_Carnage_Alpha_Vol_1_1_616_Comics_and_Jolzar_Collectibles_Exclusive_Variant_Textless.jpg/revision/latest?cb=20210901232245",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "white-tiger": {
+    "image": "https://static.wikia.nocookie.net/p__/images/d/d8/Ava_Ayala_%28Earth-616%29_from_Mighty_Avengers_Vol_2_6_001.jpg/revision/latest?cb=20170425210855&path-prefix=protagonist",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "cloak": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/180-cloak.jpg",
+    "source": "shdb",
+    "matchedAs": "Cloak"
+  },
+  "dagger": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/198-dagger.jpg",
+    "source": "shdb",
+    "matchedAs": "Dagger"
+  },
+  "mayhem": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/81/Mayhem_HS.jpg/revision/latest?cb=20231020211248",
+    "source": "mcu-wiki",
+    "matchedAs": "Mayhem"
+  },
+  "nico-minoru": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/60/Nico_Minoru_S3_-_Poster.jpg/revision/latest?cb=20231020204233",
+    "source": "mcu-wiki",
+    "matchedAs": "Nico Minoru"
+  },
+  "karolina-dean": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f1/Karolina.jpg/revision/latest?cb=20161204194534",
+    "source": "mcu-wiki",
+    "matchedAs": "Karolina Dean"
+  },
+  "gert-yorkes": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0e/Gert_Yorkes_S3_-_Poster.jpg/revision/latest?cb=20231020204151",
+    "source": "mcu-wiki",
+    "matchedAs": "Gert Yorkes"
+  },
+  "chase-stein": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/66/Chase_Stein_S3_-_Poster.jpg/revision/latest?cb=20231020204109",
+    "source": "mcu-wiki",
+    "matchedAs": "Chase Stein"
+  },
+  "molly-hernandez": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/ef/Molly_Hernandez_S3_-_Poster.jpg/revision/latest?cb=20231020204048",
+    "source": "mcu-wiki",
+    "matchedAs": "Molly Hernandez"
+  },
+  "alex-wilder": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3c/Alex_Wilder_Infobox.jpg/revision/latest?cb=20231020204253",
+    "source": "mcu-wiki",
+    "matchedAs": "Alex Wilder"
+  },
+  "daimon-helstrom": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e6/Daimon_Helstrom_profile.png/revision/latest?cb=20230331153919",
+    "source": "mcu-wiki",
+    "matchedAs": "Daimon Helstrom"
+  },
+  "ana-helstrom": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d2/Ana_Helstrom_profile.png/revision/latest?cb=20230331153926",
+    "source": "mcu-wiki",
+    "matchedAs": "Ana Helstrom"
+  },
+  "mirage": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1e/Danielle_Moonstar_%28Earth-616%29_from_Uncanny_X-Men_Vol_5_21_001.png/revision/latest?cb=20190718001414",
+    "source": "mcu-wiki",
+    "matchedAs": "Mirage"
+  },
+  "magik": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Illyana_Rasputina_%28Earth-616%29_from_Extraordinary_X-Men_Vol_1_19_cover_001.jpg/revision/latest?cb=20170315030840",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "cannonball": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/148-cannonball.jpg",
+    "source": "shdb",
+    "matchedAs": "Cannonball"
+  },
+  "wolfsbane": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/716-wolfsbane.jpg",
+    "source": "shdb",
+    "matchedAs": "Wolfsbane"
+  },
+  "sunspot": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/640-sunspot.jpg",
+    "source": "shdb",
+    "matchedAs": "Sunspot"
+  },
+  "eclipse": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/Eclipse_%28Earth-616%29_from_Ironheart_Vol_1_7_001.png/revision/latest?cb=20190615162656",
+    "source": "mcu-wiki",
+    "matchedAs": "Eclipse"
+  },
+  "thunderbird": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/661-thunderbird.jpg",
+    "source": "shdb",
+    "matchedAs": "Thunderbird"
+  },
+  "lauren-strucker": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/df/Lauren_Strucker_%28Earth-17372%29_from_The_Gifted_%28TV_series%29_promotional_art_001.jpg/revision/latest?cb=20171018015221",
+    "source": "mcu-wiki",
+    "matchedAs": "Lauren Strucker"
+  },
+  "andy-strucker": {
+    "image": "https://static.wikia.nocookie.net/marvelmovies/images/d/d7/7FFC5FE3-B833-46E7-8640-30C0D2AE95D4.jpeg/revision/latest?cb=20180829043448",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "shadow-king": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/584-shadow-king.jpg",
+    "source": "shdb",
+    "matchedAs": "Shadow King"
+  },
+  "syd-barrett": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Sydney_Barrett_%28Earth-TRN1067%29_from_Legion_%28TV_series%29_Season_2_7.jpg/revision/latest?cb=20251215001400",
+    "source": "mcu-wiki",
+    "matchedAs": "Syd Barrett"
+  }
+}
