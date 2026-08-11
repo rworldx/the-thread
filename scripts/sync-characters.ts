@@ -195,6 +195,37 @@ const IMAGE_OVERRIDES: Record<string, string> = {
    * Wendell Vaughn it returns an Annihilation: NOVA cover, and for Nightmare a
    * Doctor Voodoo cover. Both were replaced from the character galleries.
    */
+  /* The Host, from Marvel Database. Their pages live under (First Cosmos)
+     and (Multiverse) rather than Earth-616 — a Celestial is not from an
+     Earth — which is why an Earth-616 lookup returns nothing for them. */
+  exitar:
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/73/Exitar_%28Multiverse%29_from_Uncanny_Avengers_Vol_1_16_001.jpg/revision/latest?cb=20230614004008",
+  jemiah:
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a5/Jemiah_%28First_Cosmos%29_from_Official_Handbook_of_the_Marvel_Universe_Master_Edition_Vol_1_16_001.jpg/revision/latest?cb=20161030073148",
+  nezarr:
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Nezarr_%28First_Cosmos%29_from_Official_Handbook_of_the_Marvel_Universe_Master_Edition_Vol_1_11_001.jpg/revision/latest?cb=20161030073156",
+  gammenon:
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c7/Gammenon_%28First_Cosmos%29_from_X-Factor_Vol_1_43_001.jpg/revision/latest?cb=20230819214214",
+  hargen:
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Hargen_%28Multiverse%29_from_Official_Handbook_of_the_Marvel_Universe_Vol_2_2_001.jpg/revision/latest?cb=20161030073140",
+  oneg:
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Oneg_%28First_Cosmos%29_from_Official_Handbook_of_the_Marvel_Universe_Master_Edition_Vol_1_1_001.jpg/revision/latest?cb=20161030073221",
+  ziran:
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/95/Ziran_%28First_Cosmos%29_from_Official_Handbook_of_the_Marvel_Universe_Master_Edition_Vol_1_4_001.jpg/revision/latest?cb=20161029063024",
+  scathan:
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/72/Scathan_%28Multiverse%29_from_Guardians_of_the_Galaxy_Vol_1_50_001.jpg/revision/latest?cb=20191207184747",
+  tefral:
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e3/Tefral_%28First_Cosmos%29_from_Official_Handbook_of_the_Marvel_Universe_Vol_2_2_001.jpg/revision/latest?cb=20161030073230",
+  ashema:
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/Ashema_%28Multiverse%29_from_Heroes_Reborn_Doom_Vol_1_1_0001.jpg/revision/latest?cb=20220722190613",
+  devron:
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/96/Devron_%28Multiverse%29_from_Marvel_Monsters_Devil_Dinosaur_Vol_1_1_0001.jpg/revision/latest?cb=20180401052700",
+  gamiel:
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Gamiel_%28Multiverse%29_from_Marvel_Monsters_Devil_Dinosaur_Vol_1_1_0001.jpg/revision/latest?cb=20180401052709",
+  zgreb:
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/Zgreb_%28Multiverse%29_from_Marvel_Legacy_Vol_1_1_001.jpg/revision/latest?cb=20170928011354",
+  godhead:
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/37/Godhead_%28Earth-616%29_from_Marvel_Year-In-Review_Vol_1_5_001.jpg/revision/latest?cb=20260414073951",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

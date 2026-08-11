@@ -24,7 +24,7 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(358);
+    expect(authored).toHaveLength(372);
   });
 
   it("C4 every relation points at a character that exists", () => {
@@ -77,7 +77,9 @@ describe("C. the character corpus", () => {
      * pinned rather than bounded so that a drift of one still fails.
      */
     const offScreen = allCharacters.filter((c) => c.appearances.length === 0);
-    expect(offScreen).toHaveLength(16);
+    /* 16 -> 30: the fourteen unfilmed Celestials, added on request as
+       reference. Their empty appearance lists are the intent, not a fault. */
+    expect(offScreen).toHaveLength(30);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);
