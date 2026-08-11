@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { titles, posterOf } from "@/content/build";
+import { titles, posterOf, ratingsOf } from "@/content/build";
 import { infinitySaga, mcuOrder } from "@/lib/graph";
 import { localeParams } from "@/lib/locales";
 import { Poster } from "@/app/components/poster";
@@ -44,10 +44,27 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const slice = mcuOrder(titles).slice(0, 4);
 
   /**
-   * 24 posters for the mosaic, strided across the whole corpus rather than
-   * taken from the front. The first 24 are four Iron Man films and a lot of
-   * phase one; a stride across release order gives thirty years of artwork,
-   * which is the point of a wall.
+   * 24 POSTERS FOR THE WALL — the most-RECOGNISED titles, not every Nth.
+   *
+   * This used to stride across the whole corpus in release order, and that was
+   * stable only while the corpus was. Going from 167 titles to 216 moved the
+   * stride from 6 to 8 and dealt a completely different 24: the wall that had
+   * been Avengers and Iron Man became Pryde of the X-Men, Marvel Disk Wars,
+   * Spider-Man (1967) and Howard the Duck. Nothing about those is wrong as
+   * data — they are real Marvel — but a first-time visitor recognises none of
+   * them, and the wall exists to be recognised. Every title added would have
+   * reshuffled it again.
+   *
+   * TMDB vote COUNT is the honest measure of that, and it is already fetched
+   * for every title: not how good a film is, but how many people have seen it
+   * enough to rate it. It needs no hand-kept list of "the famous ones" that
+   * would rot the way the stride did.
+   *
+   * Ranking alone would give 24 tiles of Avengers and Iron Man sequels, so the
+   * wall takes every other title from the top 48. That keeps X-Men, Spider-Verse,
+   * Venom, Loki and the Hulk in the frame — the whole thirty years, all of it
+   * recognisable — and an obscure addition can never enter the top 48, so the
+   * wall no longer moves when the corpus grows.
    */
   /**
    * TMDB-hosted posters only.
@@ -55,7 +72,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
    * One title supplies its own absolute poster URL, and the mosaic prefixes a
    * TMDB size onto whatever it is given — which produced
    * `image.tmdb.org/t/p/w185https://m.media-amazon.com/...` and a 404 in the
-   * server log. The mosaic is texture behind a scrim, so skipping one of 166
+   * server log. The mosaic is texture behind a scrim, so skipping one of 216
    * costs nothing; branching on the URL shape here would put the same
    * conditional in a third place instead.
    */
@@ -63,14 +80,26 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     const p = posterOf(x.id);
     return p !== null && !p.startsWith("http");
   });
-  const stride = Math.max(1, Math.floor(withPosters.length / 24));
-  const mosaic: MosaicTile[] = withPosters
-    .filter((_, i) => i % stride === 0)
-    .slice(0, 24)
+  const mosaic: MosaicTile[] = [...withPosters]
+    .sort((a, b) => (ratingsOf(b.id)?.tmdb?.votes ?? 0) - (ratingsOf(a.id)?.tmdb?.votes ?? 0))
+    .slice(0, 48)
+    .filter((_, i) => i % 2 === 0)
     .map((x) => ({ id: x.id, posterPath: posterOf(x.id)! }));
 
-  /** A rail of portraits, ranked by appearances, which is a real ranking. */
+  /**
+   * A RAIL OF PORTRAITS, ranked by appearances — a real ranking, but NOT STAN LEE, even though he outranks everyone.
+   *
+   * This rail ranks by appearance count, and by that measure Stan Lee is the
+   * single biggest character in Marvel — he is in more of these than Iron Man.
+   * He is also not a character. He is the man who made them, appearing as
+   * himself under a different name every time, and putting him first on a page
+   * that asks "who is in all this" answers a question nobody was asking.
+   *
+   * He keeps his record and all his cameos; he is simply not the face that
+   * greets a first-time visitor.
+   */
   const faces = [...shownCharacters]
+    .filter((c) => c.creditedActor === null)
     .sort((a, b) => b.appearances.length - a.appearances.length)
     .slice(0, 12);
 
