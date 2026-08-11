@@ -15,11 +15,16 @@
  *   2. EVERY universe gets at least one tile — the wall is the only place the
  *      site claims breadth before a reader has clicked anything, and a wall of
  *      pure MCU would be claiming something false.
- *   3. The NEWEST film and the NEWEST show, so the wall says "up to date"
- *      without anybody having to write a date anywhere.
- *   4. The rest by TMDB vote COUNT — not how good a film is, but how many
+ *   3. The rest by TMDB vote COUNT — not how good a film is, but how many
  *      people have seen it enough to rate it. It is already fetched for every
  *      title and needs no hand-kept list of "the famous ones" to rot.
+ *
+ * It briefly also forced the NEWEST film and the NEWEST show on, so the wall
+ * would say "up to date" on its own. That is a real thing to want, but the two
+ * it produced — Black Panther 3 and VisionQuest — are announcements with
+ * placeholder art, and a wall of recognisable posters is worth more than a
+ * wall that is provably current. Avengers: Doomsday is pinned and carries the
+ * same message with artwork somebody recognises.
  *
  * Then the order is shuffled apart so no two neighbours are the same thing:
  * two Avengers posters side by side read as a repeat rather than a range.
@@ -30,8 +35,6 @@ export interface WallItem {
   universe: string;
   releaseDate: string;
   votes: number;
-  /** Whether it has episodes. Used only to find the newest SHOW. */
-  show: boolean;
   posterPath: string;
 }
 
@@ -155,21 +158,8 @@ export function pickWall(
         the whole point of pinning. */
   for (const id of pinned) take(pool.find((x) => x.id === id), true);
 
-  /* 2. The newest film and the newest show. Latest by release date, which for
-        an announced-but-unreleased title is the date it is announced for —
-        that is exactly the "we go up to here" the wall is meant to say. */
-  const newest = (want: boolean) =>
-    pool
-      .filter((x) => x.show === want)
-      .reduce<WallItem | undefined>(
-        (best, x) => (!best || x.releaseDate > best.releaseDate ? x : best),
-        undefined,
-      );
-  take(newest(false));
-  take(newest(true));
-
   /**
-   * 3. ONE OF EVERY UNIVERSE FIRST, THEN A CAP.
+   * 2. ONE OF EVERY UNIVERSE FIRST, THEN A CAP.
    *
    * Two failed attempts are worth recording, because the right answer is
    * between them. Filling purely by vote count gave 18 MCU tiles out of 24 —
@@ -203,7 +193,7 @@ export function pickWall(
     take(x);
   }
 
-  /* 4. Anything still short — a universe running out of titles — by votes. */
+  /* 3. Anything still short — a universe running out of titles — by votes. */
   for (const x of byVotes) take(x);
 
   /**

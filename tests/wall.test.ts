@@ -1,15 +1,20 @@
 import { describe, expect, it } from "vitest";
-import { titles, posterOf, ratingsOf, episodesOf } from "@/content/build";
+import { titles, posterOf, ratingsOf } from "@/content/build";
 import { pickWall, franchiseOf, spaceOut, applySwaps, type WallItem } from "@/lib/wall";
 
-const PINNED = ["the-amazing-spider-man", "wonder-man-s1", "avengers-doomsday"];
+const PINNED = [
+  "the-amazing-spider-man",
+  "wonder-man-s1",
+  "avengers-doomsday",
+  "legion",
+  "cloak-and-dagger",
+];
 const COUNT = 24;
 /** Must mirror WALL_SWAPS in app/[locale]/page.tsx. */
 const SWAPS = [
   ["the-amazing-spider-man", "the-amazing-spider-man-2"],
   ["x2", "daredevil-s1"],
   ["wonder-man-s1", "fantastic-four-2005"],
-  ["ghost-rider", "avengers-doomsday"],
 ] as const;
 
 const pool: WallItem[] = titles.flatMap((x) => {
@@ -21,7 +26,6 @@ const pool: WallItem[] = titles.flatMap((x) => {
       universe: x.universe,
       releaseDate: x.releaseDate,
       votes: ratingsOf(x.id)?.tmdb?.votes ?? 0,
-      show: episodesOf(x.id).length > 0 || x.type === "series" || x.type === "season",
       posterPath: p,
     },
   ];
@@ -51,16 +55,6 @@ describe("W1 the poster wall", () => {
     }
   });
 
-  /** So the wall says "we go up to here" without a date written anywhere. */
-  it("includes the newest film and the newest show", () => {
-    for (const show of [false, true]) {
-      const newest = pool
-        .filter((x) => x.show === show)
-        .reduce((a, b) => (b.releaseDate > a.releaseDate ? b : a));
-      expect(wall.some((x) => x.id === newest.id), `newest ${show ? "show" : "film"}`).toBe(true);
-    }
-  });
-
   /** Two Avengers posters side by side read as a repeat, not a range. */
   it("never places two of the same franchise next to each other", () => {
     const clashes = wall
@@ -75,7 +69,6 @@ describe("W1 the poster wall", () => {
       universe: "animation",
       releaseDate: "1978-01-01",
       votes: 3,
-      show: true,
       posterPath: "/x.jpg",
     };
     const after = pickWall([...pool, extra], PINNED, COUNT, keyOf, SWAPS);

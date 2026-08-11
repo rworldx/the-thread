@@ -62,17 +62,23 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       universe: x.universe,
       releaseDate: x.releaseDate,
       votes: ratingsOf(x.id)?.tmdb?.votes ?? 0,
-      show: episodesOf(x.id).length > 0 || x.type === "series" || x.type === "season",
       posterPath: p,
     }];
   });
 
   /**
-   * PINNED BY HAND, and the only hand-kept list here — three titles that the
-   * vote ranking cannot reach and that the site should still lead with.
-   * Doomsday and Wonder Man are unreleased, so almost nobody has rated them.
+   * PINNED BY HAND, and the only hand-kept list here — titles the vote ranking
+   * cannot reach and that the wall should carry anyway. Doomsday and Wonder Man
+   * are unreleased, so almost nobody has rated them; Legion and Cloak & Dagger
+   * are small shows with artwork worth more than their audience numbers.
    */
-  const PINNED = ["the-amazing-spider-man", "wonder-man-s1", "avengers-doomsday"];
+  const PINNED = [
+    "the-amazing-spider-man",
+    "wonder-man-s1",
+    "avengers-doomsday",
+    "legion",
+    "cloak-and-dagger",
+  ];
 
   /**
    * Exchanges made by eye, over the derived order. Whether two posters sit
@@ -83,7 +89,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     ["the-amazing-spider-man", "the-amazing-spider-man-2"],
     ["x2", "daredevil-s1"],
     ["wonder-man-s1", "fantastic-four-2005"],
-    ["ghost-rider", "avengers-doomsday"],
   ] as const;
 
   const franchise = new Map(titles.map((x) => [x.id, franchiseOf(x.titleEn)]));
