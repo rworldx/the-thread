@@ -473,6 +473,31 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/9/99/NYX_Vol_2_4_Cuckoos_Virgin_Variant.jpg/revision/latest?cb=20240823102057",
   "vulcan":
     "https://static.wikia.nocookie.net/marveldatabase/images/7/72/Gabriel_Summers_%28Earth-616%29_from_X-Men_Red_Vol_2_17_001.jpg/revision/latest?cb=20250812152352",
+  /* Mutants, batch 12. Quentin Quire is filed as Quintavius Quire. */
+  "armor":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b8/Hisako_Ichiki_%28Earth-616%29_from_Secret_X-Men_Vol_1_1_002.jpg/revision/latest?cb=20250327234000",
+  "cecilia-reyes":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/47/X-Factor_Vol_5_4_Cecilia_Reyes_Virgin_Variant.jpg/revision/latest?cb=20250104115512",
+  "dust":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Sooraya_Qadir_%28Earth-616%29_from_Champions_Vol_3_10_cover_001.png/revision/latest?cb=20191005035218",
+  "elixir":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c1/X-Men_-_Forever_Vol_1_2_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250130001155",
+  "mastermind":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Hellions_Vol_1_9_from_cover_001.jpg/revision/latest?cb=20210215024644",
+  "monet-st-croix":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/96/Monet_St._Croix_%28Earth-616%29_from_Giant-Size_X-Men_Storm_Vol_1_1_002.jpg/revision/latest?cb=20200917223338",
+  "rockslide":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/ca/Young_X-Men_Vol_1_7_Textless.jpg/revision/latest?cb=20230104124139",
+  "surge":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/75/Noriko_Ashida_%28Earth-616%29_from_X-Force_Vol_7_10_001.jpg/revision/latest?cb=20250426104228",
+  "synch":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/05/X-Men_Vol_6_7_New_Line-Up_Trading_Card_Variant_Textless.jpg/revision/latest?cb=20211203182822",
+  "xorn":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/51/Shen_Xorn_%28Earth-616%29_from_X-Men_Vol_7_1_001.jpg/revision/latest?cb=20240710133152",
+  "kwannon":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Psylocke_Vol_2_4_Textless.jpg/revision/latest?cb=20241123063239",
+  "quentin-quire":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/18/Quintavius_Quire_%28Earth-616%29_from_X-Men_Vol_7_3_001.jpg/revision/latest?cb=20250521084021",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

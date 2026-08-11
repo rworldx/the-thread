@@ -11408,6 +11408,282 @@ const mutantsC: CharacterDraft[] = [
   },
 ];
 
+/**
+ * MUTANTS, batch 12. Kwannon is filed as a `variant` of Psylocke rather than
+ * an ally, which is the honest edge: Betsy Braddock lived in her body for
+ * years, Kwannon got it back, and both of them carry the Psylocke name now.
+ * Two people and one identity is exactly what `variant` is for.
+ */
+const mutantsD: CharacterDraft[] = [
+  {
+    id: "armor",
+    nameEn: "Armor",
+    nameAr: "آرمور",
+    aliases: ["Armor", "Hisako Ichiki"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "A shell of psionic force", ar: "درع من قوة ذهنية" },
+      { en: "Strength of her ancestors", ar: "قوة أسلافها" },
+      { en: "Grief makes it bigger", ar: "الحزن يكبّرها" },
+    ],
+    origin: {
+      en: "A young mutant who wraps herself in a glowing exoskeleton drawn from her ancestors, and which grows stronger the more of them she has lost.",
+      ar: "متحوّلة يافعة تلفّ نفسها بهيكل خارجي متوهّج مستمدّ من أسلافها، ويزداد قوة كلما فقدت منهم أكثر.",
+    },
+    related: [
+      { id: "wolverine", kind: "ally" },
+    ],
+  },
+  {
+    id: "cecilia-reyes",
+    nameEn: "Cecilia Reyes",
+    nameAr: "سيسيليا رييس",
+    aliases: ["Cecilia Reyes"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "A force field she cannot see", ar: "حقل قوة لا تراه" },
+      { en: "A trauma surgeon first", ar: "جرّاحة طوارئ قبل كل شيء" },
+      { en: "Never wanted the costume", ar: "لم تُرد الزيّ قط" },
+    ],
+    origin: {
+      en: "An emergency surgeon who generates a protective field she cannot turn off, and who spent years refusing to be an X-Man because she already had a job saving lives.",
+      ar: "جرّاحة طوارئ تولّد حقلًا واقيًا لا تستطيع إطفاءه، وأمضت سنين ترفض أن تكون من الإكس مِن لأن لها أصلًا عملًا في إنقاذ الأرواح.",
+    },
+    related: [
+      { id: "storm", kind: "ally" },
+    ],
+  },
+  {
+    id: "dust",
+    nameEn: "Dust",
+    nameAr: "داست",
+    aliases: ["Dust", "Sooraya Qadir"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Becomes a sandstorm", ar: "تصير عاصفة رملية" },
+      { en: "Strips flesh from bone", ar: "تنزع اللحم عن العظم" },
+      { en: "Wears the niqab by choice", ar: "ترتدي النقاب اختيارًا" },
+    ],
+    origin: {
+      en: "An Afghan mutant who turns into a cloud of sand, rescued from slavers by Wolverine, and who wears the niqab because she chooses to and says so whenever anyone assumes otherwise.",
+      ar: "متحوّلة أفغانية تتحول إلى سحابة رمل، أنقذها ولفرين من تجّار الرقيق، وترتدي النقاب لأنها تختاره وتقول ذلك كلما افترض أحد غيره.",
+    },
+    related: [
+      { id: "wolverine", kind: "ally" },
+    ],
+  },
+  {
+    id: "elixir",
+    nameEn: "Elixir",
+    nameAr: "إليكسير",
+    aliases: ["Elixir", "Josh Foley", "Joshua Foley"],
+    category: "hero",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "Heals any wound at all", ar: "يشفي أي جرح كان" },
+      { en: "Can kill with the same touch", ar: "ويقتل باللمسة نفسها" },
+      { en: "Gold when healing, black when not", ar: "ذهبيّ حين يشفي وأسود حين لا يشفي" },
+    ],
+    origin: {
+      en: "An Omega-level healer who turns gold when he mends and black when he kills, and who found out he could do the second thing by accident. He was raised to hate mutants.",
+      ar: "شافٍ من مستوى أوميغا يصير ذهبيًا حين يرمّم وأسود حين يقتل، واكتشف قدرته على الثانية مصادفة. وقد نشأ على كراهية المتحوّلين.",
+    },
+    related: [
+      { id: "magik", kind: "ally" },
+    ],
+  },
+  {
+    id: "mastermind",
+    nameEn: "Mastermind",
+    nameAr: "ماستر مايند",
+    aliases: ["Mastermind", "Jason Wyngarde"],
+    category: "villain",
+    affiliation: ["Brotherhood"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Illusions nobody can disbelieve", ar: "أوهام لا يقدر أحد على تكذيبها" },
+      { en: "Made Jean into the Black Queen", ar: "صنع من جين الملكة السوداء" },
+      { en: "Physically unremarkable", ar: "لا شيء فيه جسديًا" },
+    ],
+    origin: {
+      en: "An illusionist who cannot lift a car but can make you certain you are somewhere else, and whose slow manipulation of Jean Grey is what set the Phoenix loose.",
+      ar: "صانع أوهام لا يرفع سيارة لكنه يجعلك موقنًا أنك في مكان آخر، وتلاعبه البطيء بجين غراي هو ما أطلق العنقاء.",
+    },
+    related: [
+      { id: "magneto", kind: "ally" },
+      { id: "jean-grey", kind: "enemy" },
+    ],
+  },
+  {
+    id: "monet-st-croix",
+    nameEn: "Monet St. Croix",
+    nameAr: "مونيه سان كروا",
+    aliases: ["Monet St. Croix", "Penance"],
+    category: "antihero",
+    affiliation: ["Generation X"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Strong, fast, and flies", ar: "قوية وسريعة وتطير" },
+      { en: "Telepath as well", ar: "قارئة أفكار أيضًا" },
+      { en: "Says she is perfect", ar: "تقول إنها كاملة" },
+    ],
+    origin: {
+      en: "A mutant who is genuinely good at nearly everything and has never once pretended otherwise, and who spent years trapped in another body by a brother nobody knew about.",
+      ar: "متحوّلة بارعة حقًا في كل شيء تقريبًا ولم تتظاهر يومًا بغير ذلك، وقضت سنين حبيسة جسد آخر بفعل أخٍ لم يعلم به أحد.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "quentin-quire",
+    nameEn: "Quentin Quire",
+    nameAr: "كوينتن كواير",
+    aliases: ["Quentin Quire", "Kid Omega", "Quintavius Quire"],
+    category: "antihero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "Omega-level telepath", ar: "قارئ أفكار من مستوى أوميغا" },
+      { en: "Started a riot at school", ar: "أشعل شغبًا في المدرسة" },
+      { en: "Pink hair, always", ar: "شعر وردي دائمًا" },
+    ],
+    origin: {
+      en: "An Omega-level telepath who read the world's opinion of mutants and started a riot about it while still at school. He has grown up somewhat and lost none of the anger.",
+      ar: "قارئ أفكار من مستوى أوميغا، قرأ رأي العالم في المتحوّلين فأشعل شغبًا بسببه وهو ما يزال في المدرسة. نضج بعض الشيء ولم يفقد شيئًا من غضبه.",
+    },
+    related: [
+      { id: "professor-x", kind: "enemy" },
+    ],
+  },
+  {
+    id: "rockslide",
+    nameEn: "Rockslide",
+    nameAr: "روكسلايد",
+    aliases: ["Rockslide", "Santo Vaccarro"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "A body of animated stone", ar: "جسد من حجر متحرّك" },
+      { en: "Throws his own fists", ar: "يقذف قبضتيه" },
+      { en: "Rebuilds from any rubble", ar: "يعيد بناء نفسه من أي ركام" },
+    ],
+    origin: {
+      en: "A mutant who is a pile of rock with a mind in it rather than a person wearing rock, which is why he can throw a fist across a room and grow a new one.",
+      ar: "متحوّل هو كومة صخر فيها عقل، لا شخصٌ يرتدي صخرًا، ولهذا يقذف قبضته عبر الغرفة وتنبت له أخرى.",
+    },
+    related: [
+      { id: "magik", kind: "ally" },
+    ],
+  },
+  {
+    id: "surge",
+    nameEn: "Surge",
+    nameAr: "سيرج",
+    aliases: ["Surge", "Noriko Ashida"],
+    category: "hero",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Absorbs electricity constantly", ar: "تمتص الكهرباء باستمرار" },
+      { en: "Gauntlets keep her from overload", ar: "قفازان يمنعان عنها الفيضان" },
+      { en: "Moves faster than she can think", ar: "تتحرك أسرع مما تفكر" },
+    ],
+    origin: {
+      en: "A mutant who absorbs electricity whether she wants to or not and wears gauntlets to bleed it off, and who is running at a speed her own judgement cannot keep up with.",
+      ar: "متحوّلة تمتص الكهرباء شاءت أم أبت وترتدي قفازين لتصريفها، وتجري بسرعة لا يلحق بها حكمها على الأمور.",
+    },
+    related: [
+      { id: "magik", kind: "ally" },
+    ],
+  },
+  {
+    id: "synch",
+    nameEn: "Synch",
+    nameAr: "سينك",
+    aliases: ["Synch", "Everett Thomas"],
+    category: "hero",
+    affiliation: ["Generation X"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Copies any power nearby", ar: "ينسخ أي قوة قريبة" },
+      { en: "Uses it better than the owner", ar: "ويستعملها أفضل من صاحبها" },
+      { en: "Died young, came back", ar: "مات صغيرًا ثم عاد" },
+    ],
+    origin: {
+      en: "A mutant who synchronises with any power near him and tends to use it with more precision than the person born to it. He died as a teenager and was one of the first brought back.",
+      ar: "متحوّل يتزامن مع أي قوة قريبة منه ويستعملها غالبًا بدقة تفوق من وُلد بها. مات مراهقًا وكان من أوائل من أُعيدوا.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "xorn",
+    nameEn: "Xorn",
+    nameAr: "زورن",
+    aliases: ["Xorn", "Shen Xorn", "Kuan-Yin Xorn"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "A star inside his head", ar: "نجم داخل رأسه" },
+      { en: "Heals or destroys with it", ar: "يشفي به أو يدمّر" },
+      { en: "Two brothers, one name", ar: "أخوان باسم واحد" },
+    ],
+    origin: {
+      en: "A mutant with a star where his brain should be, kept behind an iron mask. There are two of them, brothers, and most of what is remembered about the name belongs to an impostor.",
+      ar: "متحوّل في موضع دماغه نجم، محبوس خلف قناع حديدي. وهما اثنان، أخوان، وأكثر ما يُذكر عن الاسم يخصّ منتحلًا.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "kwannon",
+    nameEn: "Kwannon",
+    nameAr: "كوانون",
+    aliases: ["Kwannon", "Revanche"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Psychic blade of her own", ar: "نصل ذهني خاص بها" },
+      { en: "Trained as an assassin", ar: "دُرّبت قاتلة محترفة" },
+      { en: "Got her own body back", ar: "استعادت جسدها" },
+    ],
+    origin: {
+      en: "A Japanese assassin whose body Betsy Braddock lived in for years, and who eventually got it back and took up the Psylocke name herself rather than surrender it.",
+      ar: "قاتلة محترفة يابانية عاشت بيتسي برادوك في جسدها سنين، ثم استعادته وحملت اسم سايلوك بنفسها بدل أن تتنازل عنه.",
+    },
+    related: [
+      { id: "psylocke", kind: "variant" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -11420,6 +11696,7 @@ export const characters: CharacterDraft[] = [
   ...heralds,
   ...mutantsB,
   ...mutantsC,
+  ...mutantsD,
   ...avengers,
   ...guardians,
   ...xmen,

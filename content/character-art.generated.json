@@ -594,6 +594,66 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "armor": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b8/Hisako_Ichiki_%28Earth-616%29_from_Secret_X-Men_Vol_1_1_002.jpg/revision/latest?cb=20250327234000",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "cecilia-reyes": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/47/X-Factor_Vol_5_4_Cecilia_Reyes_Virgin_Variant.jpg/revision/latest?cb=20250104115512",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "dust": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Sooraya_Qadir_%28Earth-616%29_from_Champions_Vol_3_10_cover_001.png/revision/latest?cb=20191005035218",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "elixir": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c1/X-Men_-_Forever_Vol_1_2_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250130001155",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mastermind": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Hellions_Vol_1_9_from_cover_001.jpg/revision/latest?cb=20210215024644",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "monet-st-croix": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/96/Monet_St._Croix_%28Earth-616%29_from_Giant-Size_X-Men_Storm_Vol_1_1_002.jpg/revision/latest?cb=20200917223338",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "quentin-quire": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/18/Quintavius_Quire_%28Earth-616%29_from_X-Men_Vol_7_3_001.jpg/revision/latest?cb=20250521084021",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "rockslide": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/ca/Young_X-Men_Vol_1_7_Textless.jpg/revision/latest?cb=20230104124139",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "surge": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/75/Noriko_Ashida_%28Earth-616%29_from_X-Force_Vol_7_10_001.jpg/revision/latest?cb=20250426104228",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "synch": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/05/X-Men_Vol_6_7_New_Line-Up_Trading_Card_Variant_Textless.jpg/revision/latest?cb=20211203182822",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "xorn": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/51/Shen_Xorn_%28Earth-616%29_from_X-Men_Vol_7_1_001.jpg/revision/latest?cb=20240710133152",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "kwannon": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Psylocke_Vol_2_4_Textless.jpg/revision/latest?cb=20241123063239",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",
