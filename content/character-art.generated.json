@@ -44,11 +44,6 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
-  "tombstone": {
-    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/59/Daredevil_Vol_5_24_Textless.jpg/revision/latest?cb=20170419054211",
-    "source": "chosen",
-    "matchedAs": "hand-picked"
-  },
   "hydro-man": {
     "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/ee/Classic_Marvel_Figurine_Collection_Vol_1_163_Textless.png/revision/latest?cb=20240421080822",
     "source": "chosen",
@@ -96,6 +91,66 @@
   },
   "calypso": {
     "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/de/Calypso_%28Earth-616%29_from_Marvel_Illustrated_The_Odyssey_Vol_1_2_002.jpg/revision/latest?cb=20231118184004",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "psylocke": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4f/X-Force_Vol_7_7_Textless.jpg/revision/latest?cb=20240922081512",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "multiple-man": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/71/X-Factor_Vol_3_47_70th_Frame_Variant_Textless.jpg/revision/latest?cb=20210404124655",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "marrow": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c2/Marrow_%28Sarah%29_%28Earth-616%29_from_Secret_X-Men_Vol_1_1_Cover.jpg/revision/latest?cb=20220210231006",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "forge": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/80/X-Force_Vol_7_1_Forge_Virgin_Variant.jpg/revision/latest?cb=20240801205535",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "sage": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/96/X-Force_Vol_7_6_Sage_Virgin_Variant.jpg/revision/latest?cb=20241202053713",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "karma": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b5/Marvel%27s_Voices_Pride_Vol_1_1_Souza_Variant_Textless.jpg/revision/latest?cb=20210522181124",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "husk": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/77/Paige_Guthrie_%28Earth-616%29_from_Astonishing_X-Men_Infinity_Comic_Vol_1_20_001.jpg/revision/latest?cb=20250513085839",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "siryn": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/75/Theresa_Cassidy_%28Earth-616%29_from_X-Factor_Vol_4_6_001.jpg/revision/latest?cb=20210111225550",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "sunfire": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d5/X-Men_Vol_6_4_New_Line-Up_Trading_Card_Variant_Textless.jpg/revision/latest?cb=20220128090535",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "morph": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/Kevin_Sidney_%28Earth-616%29_from_Astonishing_X-Men_Infinity_Comic_Vol_1_41_001.jpg/revision/latest?cb=20251024140411",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mimic": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4e/Calvin_Rankin_%28Earth-616%29_from_X-Men_Legacy_Vol_1_264_001.jpg/revision/latest?cb=20120328234818",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "madelyne-pryor": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/Dark_X-Men_Vol_2_2_Larroca_Variant_Textless.jpg/revision/latest?cb=20250113033319",
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
@@ -1268,6 +1323,11 @@
     "image": "https://static.wikia.nocookie.net/villains/images/8/89/Prowler2.jpg/revision/latest?cb=20190227002026",
     "source": "chosen",
     "matchedAs": "hand-picked"
+  },
+  "tombstone": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/cb/Tombstone_Infobox.jpg/revision/latest?cb=20260808030126",
+    "source": "mcu-wiki",
+    "matchedAs": "Tombstone"
   },
   "high-evolutionary": {
     "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c2/High_Evolutionary_Infobox.png/revision/latest?cb=20230904031119",

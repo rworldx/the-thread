@@ -251,6 +251,33 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c2/Silvija_Sablinova_%28Earth-616%29_from_Wolverine_Vol_8_14_001.jpg/revision/latest?cb=20260108161834",
   "calypso":
     "https://static.wikia.nocookie.net/marveldatabase/images/d/de/Calypso_%28Earth-616%29_from_Marvel_Illustrated_The_Odyssey_Vol_1_2_002.jpg/revision/latest?cb=20231118184004",
+  /* Mutants. Marvel Database files most of them under their real names —
+     Elizabeth Braddock, James Madrox, Teresia Karisik, Xuan Cao Manh,
+     Kevin Sidney — so a codename lookup returns nothing. */
+  "psylocke":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/4f/X-Force_Vol_7_7_Textless.jpg/revision/latest?cb=20240922081512",
+  "multiple-man":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/71/X-Factor_Vol_3_47_70th_Frame_Variant_Textless.jpg/revision/latest?cb=20210404124655",
+  "marrow":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c2/Marrow_%28Sarah%29_%28Earth-616%29_from_Secret_X-Men_Vol_1_1_Cover.jpg/revision/latest?cb=20220210231006",
+  "forge":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/80/X-Force_Vol_7_1_Forge_Virgin_Variant.jpg/revision/latest?cb=20240801205535",
+  "sage":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/96/X-Force_Vol_7_6_Sage_Virgin_Variant.jpg/revision/latest?cb=20241202053713",
+  "karma":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b5/Marvel%27s_Voices_Pride_Vol_1_1_Souza_Variant_Textless.jpg/revision/latest?cb=20210522181124",
+  "husk":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/77/Paige_Guthrie_%28Earth-616%29_from_Astonishing_X-Men_Infinity_Comic_Vol_1_20_001.jpg/revision/latest?cb=20250513085839",
+  "siryn":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/75/Theresa_Cassidy_%28Earth-616%29_from_X-Factor_Vol_4_6_001.jpg/revision/latest?cb=20210111225550",
+  "sunfire":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d5/X-Men_Vol_6_4_New_Line-Up_Trading_Card_Variant_Textless.jpg/revision/latest?cb=20220128090535",
+  "morph":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/Kevin_Sidney_%28Earth-616%29_from_Astonishing_X-Men_Infinity_Comic_Vol_1_41_001.jpg/revision/latest?cb=20251024140411",
+  "mimic":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/4e/Calvin_Rankin_%28Earth-616%29_from_X-Men_Legacy_Vol_1_264_001.jpg/revision/latest?cb=20120328234818",
+  "madelyne-pryor":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/Dark_X-Men_Vol_2_2_Larroca_Variant_Textless.jpg/revision/latest?cb=20250113033319",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

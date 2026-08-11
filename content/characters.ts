@@ -9041,9 +9041,293 @@ const spiderRogues: CharacterDraft[] = [
   },
 ];
 
+/**
+ * MUTANTS, batch 3 of the supplied rosters — the ones a reader is most likely
+ * to look for by name.
+ *
+ * Same affiliation rule as batch 2: no Avengers, Defenders, Fantastic Four,
+ * Thunderbolts, X-Force, Guardians, Midnight Sons, Revengers or either Civil
+ * War side. X-Men, X-Factor, New Mutants, Generation X, Morlocks and the
+ * Hellfire Club are named where they are real, and left empty where they are
+ * not.
+ */
+const namedMutants: CharacterDraft[] = [
+  {
+    id: "psylocke",
+    nameEn: "Psylocke",
+    nameAr: "سايلوك",
+    aliases: ["Psylocke", "Betsy Braddock", "Elizabeth Braddock"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "alpha",
+    powers: [
+      { en: "A blade of pure psi", ar: "نصل من طاقة ذهنية" },
+      { en: "Reads and rewrites minds", ar: "تقرأ العقول وتعيد كتابتها" },
+      { en: "Trained as an assassin", ar: "دُرّبت قاتلةً محترفة" },
+    ],
+    origin: {
+      en: "A British telepath who was a model and a pilot before she was a fighter, and who spent years in a body that was not the one she was born in. The psychic knife is the focused totality of her power.",
+      ar: "قارئة أفكار بريطانية كانت عارضة وطيّارة قبل أن تصير مقاتلة، وقضت سنين في جسدٍ ليس الذي وُلدت فيه. والسكين الذهنية هي مجموع قوتها مركّزًا.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+      { id: "wolverine", kind: "ally" },
+    ],
+  },
+  {
+    id: "multiple-man",
+    nameEn: "Multiple Man",
+    nameAr: "مالتيبل مان",
+    aliases: ["Multiple Man", "Jamie Madrox", "James Madrox"],
+    category: "hero",
+    affiliation: ["X-Factor"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Every impact makes a copy", ar: "كل صدمة تصنع نسخة" },
+      { en: "Copies learn separately", ar: "النسخ تتعلم منفصلة" },
+      { en: "Runs a detective agency", ar: "يدير وكالة تحرٍّ" },
+    ],
+    origin: {
+      en: "A mutant who splits into a duplicate whenever he is struck, and who sent his copies out to learn medicine, law and combat before absorbing them back. Being a crowd is his whole method.",
+      ar: "متحوّل ينقسم إلى نسخة كلما ضُرب، أرسل نسخه ليتعلّموا الطب والقانون والقتال ثم استعادهم. وأن يكون حشدًا هو منهجه كله.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "marrow",
+    nameEn: "Marrow",
+    nameAr: "مارو",
+    aliases: ["Marrow"],
+    category: "antihero",
+    affiliation: ["Morlocks"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Grows bone through skin", ar: "ينمو العظم عبر جلدها" },
+      { en: "Tears it out as a weapon", ar: "تنتزعه سلاحًا" },
+      { en: "Heals what she rips", ar: "تلتئم مما تمزّق" },
+    ],
+    origin: {
+      en: "A Morlock raised in the tunnels beneath the city, whose bones grow through her own skin and can be pulled out as blades. She learned early that the surface world was not going to be kind.",
+      ar: "مورلوك نشأت في الأنفاق تحت المدينة، تنمو عظامها عبر جلدها وتُنتزع نصالًا. وتعلّمت مبكرًا أن عالم السطح لن يكون رحيمًا.",
+    },
+    related: [
+      { id: "storm", kind: "ally" },
+    ],
+  },
+  {
+    id: "forge",
+    nameEn: "Forge",
+    nameAr: "فورج",
+    aliases: ["Forge"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Invents by instinct", ar: "يخترع بالسليقة" },
+      { en: "Sees how machines should be", ar: "يرى ما ينبغي أن تكونه الآلة" },
+      { en: "Builds it in an afternoon", ar: "يبنيها في أصيل يوم" },
+    ],
+    origin: {
+      en: "A Cheyenne engineer whose mutation is not a weapon but an understanding, since he looks at a machine and knows what it should be. Most of the X-Men's equipment exists because he made it.",
+      ar: "مهندس من الشايان، طفرته ليست سلاحًا بل فهمًا: ينظر إلى آلة فيعرف ما ينبغي أن تكون. ومعظم عتاد الإكس مِن أنه صنعه.",
+    },
+    related: [
+      { id: "storm", kind: "ally" },
+    ],
+  },
+  {
+    id: "sage",
+    nameEn: "Sage",
+    nameAr: "سيج",
+    aliases: ["Sage", "Tessa"],
+    category: "hero",
+    affiliation: ["X-Men", "Hellfire Club"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Forgets nothing, ever", ar: "لا تنسى شيئًا أبدًا" },
+      { en: "Thinks like a computer", ar: "تفكّر كالحاسوب" },
+      { en: "Spent years undercover", ar: "قضت سنين متخفّية" },
+    ],
+    origin: {
+      en: "A living computer who spent decades inside the Hellfire Club as Xavier's spy, holding every detail she ever saw. She kept the secret so long that both sides had reason to doubt her.",
+      ar: "حاسوب حيّ قضت عقودًا داخل نادي هيلفاير جاسوسةً لإكزافير، تحفظ كل تفصيل رأته. وكتمت السر طويلًا حتى صار لكلا الطرفين سبب للشك فيها.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "karma",
+    nameEn: "Karma",
+    nameAr: "كارما",
+    aliases: ["Karma"],
+    category: "hero",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Possesses another's body", ar: "تتلبّس جسد آخر" },
+      { en: "Takes the controls", ar: "تمسك بزمام الحركة" },
+      { en: "Refuses to use it lightly", ar: "تأبى استعمالها استخفافًا" },
+    ],
+    origin: {
+      en: "A Vietnamese refugee and one of the first New Mutants, who can take over another person's body entirely. She treats the power as something close to a violation and uses it sparingly.",
+      ar: "لاجئة فيتنامية وإحدى أوائل الميوتانتس الجدد، تستطيع السيطرة على جسد غيرها كاملًا. وتعدّ هذه القدرة أقرب إلى الانتهاك فلا تستعملها إلا نادرًا.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+      { id: "magik", kind: "ally" },
+    ],
+  },
+  {
+    id: "husk",
+    nameEn: "Husk",
+    nameAr: "هَسك",
+    aliases: ["Husk", "Paige Guthrie"],
+    category: "hero",
+    affiliation: ["Generation X"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Tears off her own skin", ar: "تنزع جلدها" },
+      { en: "Underneath is stone or steel", ar: "وتحته حجر أو فولاذ" },
+      { en: "Works twice as hard", ar: "تجتهد ضعف غيرها" },
+    ],
+    origin: {
+      en: "Cannonball's younger sister, who shucks her skin to reveal a body of whatever she concentrates on: rock, metal, diamond. She pushed herself harder than anyone because she was following a brother who made it look easy.",
+      ar: "أخت كانونبول الصغرى، تنزع جلدها لتكشف جسدًا مما تركّز عليه: صخرًا أو معدنًا أو ماسًا. وأجهدت نفسها أكثر من الجميع لأنها تتبع أخًا بدا الأمر عنده هيّنًا.",
+    },
+    related: [
+      { id: "cannonball", kind: "family" },
+    ],
+  },
+  {
+    id: "siryn",
+    nameEn: "Siryn",
+    nameAr: "سايرن",
+    aliases: ["Siryn", "Theresa Cassidy"],
+    category: "hero",
+    affiliation: ["X-Factor"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "A scream that shatters", ar: "صرخة تحطّم" },
+      { en: "Rides her own sound", ar: "تركب صوتها طيرانًا" },
+      { en: "Her father's voice", ar: "صوت أبيها" },
+    ],
+    origin: {
+      en: "Banshee's daughter, with the same sonic scream and the same trouble deciding whether to be a hero because of him or in spite of him. She can fly on the sound she makes.",
+      ar: "ابنة بانشي، ورثت الصرخة الصوتية نفسها والحيرة نفسها: أتكون بطلة بسببه أم رغمًا عنه. وتستطيع الطيران على الصوت الذي تصدره.",
+    },
+    related: [
+      { id: "banshee", kind: "family" },
+    ],
+  },
+  {
+    id: "sunfire",
+    nameEn: "Sunfire",
+    nameAr: "سَنفاير",
+    aliases: ["Sunfire", "Shiro Yoshida"],
+    category: "antihero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Plasma hot as a star", ar: "بلازما بحرارة نجم" },
+      { en: "Flies inside his own fire", ar: "يطير داخل ناره" },
+      { en: "Serves Japan first", ar: "يقدّم اليابان أولًا" },
+    ],
+    origin: {
+      en: "A Japanese mutant who generates solar plasma and who has never been comfortable on a team, joining the X-Men briefly and leaving because his loyalty was to his country before any of them.",
+      ar: "متحوّل ياباني يولّد بلازما شمسية، لم يرتح يومًا في فريق، انضم إلى الإكس مِن قليلًا ثم مضى لأن ولاءه لبلده قبلهم جميعًا.",
+    },
+    related: [
+      { id: "wolverine", kind: "ally" },
+    ],
+  },
+  {
+    id: "morph",
+    nameEn: "Morph",
+    nameAr: "مورف",
+    aliases: ["Morph", "Kevin Sydney", "Kevin Sidney", "Changeling"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Becomes anyone", ar: "يصير أي أحد" },
+      { en: "Voice and face both", ar: "الصوت والوجه معًا" },
+      { en: "Jokes through everything", ar: "يمزح في كل حال" },
+    ],
+    origin: {
+      en: "A shapeshifter who can take any form down to the voice, and who covers everything with a joke. The team's clown, which is a role people mistake for not caring.",
+      ar: "متبدّل الشكل يتخذ أي هيئة حتى الصوت، ويغطي كل شيء بمزحة. مهرّج الفريق، وهو دور يخلط الناس بينه وبين قلة الاكتراث.",
+    },
+    related: [
+      { id: "wolverine", kind: "ally" },
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "mimic",
+    nameEn: "Mimic",
+    nameAr: "ميميك",
+    aliases: ["Mimic", "Calvin Rankin"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Copies five mutants at once", ar: "ينسخ خمسة متحوّلين دفعة" },
+      { en: "Keeps what he copies", ar: "يحتفظ بما ينسخ" },
+      { en: "Never quite belongs", ar: "لا ينتمي تمامًا" },
+    ],
+    origin: {
+      en: "A man who can hold the powers of five mutants at a time, and who was briefly the sixth X-Man before anyone was ready for him. He has spent his life being almost part of something.",
+      ar: "رجل يحمل قوى خمسة متحوّلين في آن، وكان لفترة وجيزة سادس الإكس مِن قبل أن يكون أحد مستعدًا له. وقضى عمره على وشك الانتماء إلى شيء.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "madelyne-pryor",
+    nameEn: "Madelyne Pryor",
+    nameAr: "مادلين برايور",
+    aliases: ["Madelyne Pryor", "Goblin Queen"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Clone",
+    powers: [
+      { en: "Wears Jean Grey's face", ar: "تحمل وجه جين غراي" },
+      { en: "Raw telekinetic force", ar: "قوة تحريك ذهني خام" },
+      { en: "Made, not born", ar: "صُنعت ولم تولد" },
+    ],
+    origin: {
+      en: "A clone of Jean Grey grown to be a vessel, who married Cyclops and had his son before learning what she was. Everything she does afterwards is an answer to being made as a substitute.",
+      ar: "نسخة من جين غراي أُنميت لتكون وعاءً، تزوّجت سايكلوبس وأنجبت ابنه قبل أن تعرف ما هي. وكل ما فعلته بعد ذلك جواب عن كونها صُنعت بديلًا.",
+    },
+    related: [
+      { id: "cyclops", kind: "family" },
+      { id: "jean-grey", kind: "variant" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
+  ...namedMutants,
   ...avengers,
   ...guardians,
   ...xmen,
