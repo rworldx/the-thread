@@ -11,7 +11,7 @@
  */
 
 import { writeFile } from "node:fs/promises";
-import { titles, posterOf, isAbsolutePoster } from "../content/build";
+import { titles, posterOf, isAbsolutePoster, ratingsOf } from "../content/build";
 import { pathTo } from "../lib/graph";
 import { shownCharacters } from "../lib/characters";
 import type { SearchItem } from "../lib/search";
@@ -33,6 +33,7 @@ const titleRows: SearchItem[] = titles
       titleAr: t.titleAr,
       year: t.releaseDate.slice(0, 4),
       universe: t.universe,
+      fame: ratingsOf(t.id)?.tmdb?.votes ?? 0,
       // Everything BEFORE it — the number the row quotes.
       pathLength: path.length - 1,
       minutes: known.length === path.length ? known.reduce((n, p) => n + p.runtimeMin!, 0) : null,

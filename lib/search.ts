@@ -16,6 +16,18 @@ export interface SearchItem {
   year: string;
   universe: string;
   /**
+   * HOW MANY PEOPLE HAVE SEEN IT — TMDB's vote COUNT, not its score.
+   *
+   * The ranking used to break ties by year, OLDEST first, which meant a query
+   * of "spider" answered Spider-Woman (1979), Spider-Man (1967), Spider-Man
+   * (1977) and the Toei one before it reached a single film anybody was
+   * looking for. Recency is no better as a rule — it would bury Spider-Man
+   * (2002) under whatever shipped last. What a reader means by a bare
+   * franchise name is the FAMOUS one, and vote count is the honest measure of
+   * that. Absent means unknown, which sorts last.
+   */
+  fame?: number;
+  /**
    * WHAT THIS ROW IS, because the index now holds two kinds of thing.
    *
    * The top bar was the only search on the site that could not find a
@@ -192,11 +204,27 @@ export function search(query: string, index: readonly SearchItem[], limit = 8): 
     // A shorter title matching the same tokens is the better hit: "Venom"
     // should outrank "Venom: Let There Be Carnage" for the query "venom".
     const brevity = Math.max(0, 20 - haystack.length * 2);
-    results.push({ item, score: total + brevity, fuzzy: !exactAll });
+    /**
+     * FAME BREAKS TIES THE BREVITY BONUS WOULD OTHERWISE DECIDE ALONE.
+     *
+     * Logarithmic and capped at 26 — above the 20 a short title can earn for
+     * brevity, so "captain america" answers The First Avenger rather than the
+     * 1990 television film whose title happens to be shorter, and below the 55 an
+     * exact token match scores: a famous title can outrank an equally exact
+     * obscure one, but can never outrank a BETTER match. Without the cap the
+     * Avengers films would answer every query they partly matched.
+     */
+    const fame = Math.min(26, Math.log10((item.fame ?? 0) + 1) * 5);
+    results.push({ item, score: total + brevity + fame, fuzzy: !exactAll });
   }
 
   return results
-    .sort((a, b) => b.score - a.score || (a.item.year < b.item.year ? -1 : 1))
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        (b.item.fame ?? 0) - (a.item.fame ?? 0) ||
+        (a.item.year < b.item.year ? -1 : 1),
+    )
     .slice(0, limit);
 }
 
