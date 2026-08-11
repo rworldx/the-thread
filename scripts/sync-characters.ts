@@ -278,6 +278,32 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/4/4e/Calvin_Rankin_%28Earth-616%29_from_X-Men_Legacy_Vol_1_264_001.jpg/revision/latest?cb=20120328234818",
   "madelyne-pryor":
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/Dark_X-Men_Vol_2_2_Larroca_Variant_Textless.jpg/revision/latest?cb=20250113033319",
+  /* The Inheritors are catalogued under Earth-001, their home reality, not
+     Earth-616. Spider-UK is Earth-833 and filed as William Braddock. */
+  "omega-red":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/99/Wolverine_Vol_7_11_Unknown_Comic_Books_Exclusive_Virgin_Variant.jpg/revision/latest?cb=20210403195047",
+  "silk":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/37/Silk_Vol_3_1_Yoon_Virgin_Variant.jpg/revision/latest?cb=20210327180532",
+  "kaine":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/bc/Scarlet_Spider_Vol_2_1_Bagley_Variant_Textless.jpg/revision/latest?cb=20111207185824",
+  "morlun":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/Morlun_%28Earth-001%29_from_Spider-Man_Vol_4_1_001.jpg/revision/latest?cb=20260324164257",
+  "solus":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Solus_%28Earth-001%29_from_Amazing_Spider-Man_Vol_3_11_0003.jpeg/revision/latest?cb=20141214032444",
+  "verna":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/dc/Spider-Force_Vol_1_2_Textless.jpg/revision/latest?cb=20180822075733",
+  "daemos":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/90/Daemos_%28Earth-001%29_from_Amazing_Spider-Man_Vol_3_8_0001.png/revision/latest?cb=20141025084417",
+  "jennix":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Jennix_%28Earth-001%29_from_Scarlet_Spiders_Vol_1_2_001.jpg/revision/latest?cb=20141229034533",
+  "brix":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e7/Brix_%28Earth-001%29_from_Spider-Girls_Vol_1_2_001.jpg/revision/latest?cb=20210430201140",
+  "bora":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a3/Bora_%28Earth-001%29_from_Superior_Spider-Man_Vol_1_33_001.png/revision/latest?cb=20140918235552",
+  "karn":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/14/Karn_%28Earth-001%29_from_Spider-Geddon_Vol_1_2_001.jpg/revision/latest?cb=20240413203542",
+  "spider-uk":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/William_Braddock_%28Earth-833%29_from_Amazing_Spider-Man_Vol_3_7_002.jpg/revision/latest?cb=20141012071303",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

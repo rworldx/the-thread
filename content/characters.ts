@@ -9324,10 +9324,289 @@ const namedMutants: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE INHERITORS, plus Silk, Kaine, Spider-UK and Omega Red, batch 4.
+ *
+ * The Inheritors are the Spider-Verse's own cosmic villains: one family that
+ * hunts spider-totems across every reality and eats their life-force. They
+ * belong together and are written together, which is also why they share a
+ * power set — what distinguishes them is method, not ability.
+ *
+ * Affiliation rule unchanged: Inheritors and Spider-Society are real and are
+ * named; nothing here carries any of the ten excluded team labels.
+ */
+const inheritors: CharacterDraft[] = [
+  {
+    id: "omega-red",
+    nameEn: "Omega Red",
+    nameAr: "أوميغا ريد",
+    aliases: ["Omega Red", "Arkady Rossovich"],
+    category: "villain",
+    affiliation: ["Brotherhood"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Carbonadium tentacles", ar: "مجسّات كربونادية" },
+      { en: "Drains life to live", ar: "يمتص الحياة ليحيا" },
+      { en: "A death spore in his blood", ar: "بوغ مميت في دمه" },
+    ],
+    origin: {
+      en: "A Soviet serial killer turned into a weapon, wound with living metal coils and cursed with a spore that kills everything near him unless he drains a life to keep it down.",
+      ar: "قاتل متسلسل سوفييتي حُوّل إلى سلاح، لُفّ بملفات معدنية حية ولُعن ببوغٍ يقتل كل من حوله ما لم يمتص حياةً ليكبحه.",
+    },
+    related: [
+      { id: "wolverine", kind: "enemy" },
+    ],
+  },
+  {
+    id: "silk",
+    nameEn: "Silk",
+    nameAr: "سِلك",
+    aliases: ["Silk", "Cindy Moon"],
+    category: "hero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Bitten by the same spider", ar: "لدغتها العنكبوت نفسها" },
+      { en: "Spins silk from her fingers", ar: "تغزل الحرير من أصابعها" },
+      { en: "A warning sense sharper than his", ar: "حسّ إنذار أحدّ من حسّه" },
+    ],
+    origin: {
+      en: "Bitten by the same spider that bit Peter Parker, then shut in a bunker for over a decade to hide her scent from things that hunt spiders. She came out with the powers and none of the practice.",
+      ar: "لدغتها العنكبوت نفسها التي لدغت بيتر باركر، ثم حُبست في قبو أكثر من عقد لإخفاء أثرها عمّن يصطاد العناكب. فخرجت بالقوى دون شيء من المِران.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "kaine",
+    nameEn: "Kaine",
+    nameAr: "كين",
+    aliases: ["Kaine", "Kaine Parker"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Clone",
+    powers: [
+      { en: "The first flawed clone", ar: "أول نسخة معيبة" },
+      { en: "Marks his kills", ar: "يسم قتلاه" },
+      { en: "Stronger than the original", ar: "أقوى من الأصل" },
+    ],
+    origin: {
+      en: "The first attempt at cloning Peter Parker, kept alive but degrading, who spent years hating the man he was copied from before deciding to be something better than either of them.",
+      ar: "أول محاولة لاستنساخ بيتر باركر، أُبقي حيًّا وهو يتحلّل، أمضى سنين يكره من نُسخ عنه قبل أن يقرّر أن يكون خيرًا منهما معًا.",
+    },
+    related: [
+      { id: "spider-man", kind: "variant" },
+    ],
+  },
+  {
+    id: "morlun",
+    nameEn: "Morlun",
+    nameAr: "مورلون",
+    aliases: ["Morlun"],
+    category: "villain",
+    affiliation: ["Inheritors"],
+    universe: ["sony"],
+    species: "Inheritor",
+    powers: [
+      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
+      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+    ],
+    origin: {
+      en: "The eldest hunter of the Inheritors, who tracks a spider by its life-force and has been eating totems for centuries. He does not rush, because he has never needed to.",
+      ar: "أكبر صيّادي الورثة، يتتبّع العنكبوت بأثر حياته، ويأكل الطواطم منذ قرون. لا يتعجّل لأنه لم يحتج إلى العجلة قط.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "solus",
+    nameEn: "Solus",
+    nameAr: "سولوس",
+    aliases: ["Solus"],
+    category: "villain",
+    affiliation: ["Inheritors"],
+    universe: ["sony"],
+    species: "Inheritor",
+    powers: [
+      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
+      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+    ],
+    origin: {
+      en: "The patriarch of the Inheritors and the strongest of them, who fathered the family that hunts spiders across every reality and treats the Great Web as a table set for him.",
+      ar: "بطريرك الورثة وأقواهم، أنجب العائلة التي تصطاد العناكب في كل واقع، ويعدّ الشبكة الكبرى مائدة مُعدّة له.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "verna",
+    nameEn: "Verna",
+    nameAr: "فيرنا",
+    aliases: ["Verna"],
+    category: "villain",
+    affiliation: ["Inheritors"],
+    universe: ["sony"],
+    species: "Inheritor",
+    powers: [
+      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
+      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+    ],
+    origin: {
+      en: "The Inheritor who hunts with a pack of hounds and enjoys the chase more than the meal, running her prey to exhaustion across worlds before she closes.",
+      ar: "الوريثة التي تصطاد بقطيع كلاب وتستمتع بالمطاردة أكثر من الوليمة، تُنهك فريستها عبر العوالم قبل أن تُطبق.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "daemos",
+    nameEn: "Daemos",
+    nameAr: "دايموس",
+    aliases: ["Daemos"],
+    category: "villain",
+    affiliation: ["Inheritors"],
+    universe: ["sony"],
+    species: "Inheritor",
+    powers: [
+      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
+      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+    ],
+    origin: {
+      en: "The heaviest of the Inheritors, who kills by walking through whatever is in the way. Where his siblings hunt, he simply arrives.",
+      ar: "أثقل الورثة، يقتل بأن يمشي عبر ما يعترضه. فبينما يصطاد إخوته، هو يصل فحسب.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "jennix",
+    nameEn: "Jennix",
+    nameAr: "جينيكس",
+    aliases: ["Jennix"],
+    category: "villain",
+    affiliation: ["Inheritors"],
+    universe: ["sony"],
+    species: "Inheritor",
+    powers: [
+      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
+      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+    ],
+    origin: {
+      en: "The Inheritor who keeps laboratories in every reality and backups of himself in all of them, so that killing him has never once been permanent.",
+      ar: "الوريث الذي يحفظ مختبرات في كل واقع ونسخًا احتياطية من نفسه فيها جميعًا، فلم يكن قتله دائمًا قط.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "brix",
+    nameEn: "Brix",
+    nameAr: "بريكس",
+    aliases: ["Brix"],
+    category: "villain",
+    affiliation: ["Inheritors"],
+    universe: ["sony"],
+    species: "Inheritor",
+    powers: [
+      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
+      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+    ],
+    origin: {
+      en: "One of the younger Inheritors, who hunts alongside Bora and treats the whole thing as sport. The recklessness is real and so is the appetite.",
+      ar: "أحد الورثة الصغار، يصطاد مع بورا ويعدّ الأمر كله رياضة. والتهوّر حقيقي، والشهية كذلك.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "bora",
+    nameEn: "Bora",
+    nameAr: "بورا",
+    aliases: ["Bora"],
+    category: "villain",
+    affiliation: ["Inheritors"],
+    universe: ["sony"],
+    species: "Inheritor",
+    powers: [
+      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
+      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+    ],
+    origin: {
+      en: "One of the younger Inheritors, who hunts with Brix and shares his taste for making a game of it. Together they are less careful than the elders and no less lethal.",
+      ar: "إحدى الورثة الصغار، تصطاد مع بريكس وتشاركه لذّة أن يجعلا منه لعبة. وهما معًا أقل حذرًا من الكبار ولا أقل فتكًا.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "karn",
+    nameEn: "Karn",
+    nameAr: "كارن",
+    aliases: ["Karn"],
+    category: "antihero",
+    affiliation: ["Inheritors"],
+    universe: ["sony"],
+    species: "Inheritor",
+    powers: [
+      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
+      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+    ],
+    origin: {
+      en: "The Inheritor his family cast out and made to wear a mask, who was sent to hunt spiders and ended up standing with them. He inherited the Web he was told to feed on.",
+      ar: "الوريث الذي نبذته عائلته وألزمته قناعًا، أُرسل ليصطاد العناكب فانتهى واقفًا معها. وورث الشبكة التي قيل له أن يقتات عليها.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "spider-uk",
+    nameEn: "Spider-UK",
+    nameAr: "سبايدر يوكي",
+    aliases: ["Spider-UK", "Billy Braddock", "William Braddock"],
+    category: "hero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Captain Britain of his Earth", ar: "كابتن بريطانيا في أرضه" },
+      { en: "Walks between realities", ar: "يمشي بين الوقائع" },
+      { en: "Gathered the Web Warriors", ar: "جمع محاربي الشبكة" },
+    ],
+    origin: {
+      en: "The Captain Britain of a world where the Corps recruited a Spider-Man, who noticed spiders vanishing across realities and went looking for the survivors before anyone else knew there was a hunt.",
+      ar: "كابتن بريطانيا في عالمٍ جنّد فيه الفيلق سبايدرمان، لاحظ اختفاء العناكب عبر الوقائع فمضى يبحث عن الناجين قبل أن يعلم أحد بوجود صيد.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
   ...namedMutants,
+  ...inheritors,
   ...avengers,
   ...guardians,
   ...xmen,

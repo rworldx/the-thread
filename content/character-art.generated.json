@@ -154,6 +154,66 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "omega-red": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/99/Wolverine_Vol_7_11_Unknown_Comic_Books_Exclusive_Virgin_Variant.jpg/revision/latest?cb=20210403195047",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "silk": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/37/Silk_Vol_3_1_Yoon_Virgin_Variant.jpg/revision/latest?cb=20210327180532",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "kaine": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/bc/Scarlet_Spider_Vol_2_1_Bagley_Variant_Textless.jpg/revision/latest?cb=20111207185824",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "morlun": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/Morlun_%28Earth-001%29_from_Spider-Man_Vol_4_1_001.jpg/revision/latest?cb=20260324164257",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "solus": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Solus_%28Earth-001%29_from_Amazing_Spider-Man_Vol_3_11_0003.jpeg/revision/latest?cb=20141214032444",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "verna": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/dc/Spider-Force_Vol_1_2_Textless.jpg/revision/latest?cb=20180822075733",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "daemos": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/90/Daemos_%28Earth-001%29_from_Amazing_Spider-Man_Vol_3_8_0001.png/revision/latest?cb=20141025084417",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "jennix": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Jennix_%28Earth-001%29_from_Scarlet_Spiders_Vol_1_2_001.jpg/revision/latest?cb=20141229034533",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "brix": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e7/Brix_%28Earth-001%29_from_Spider-Girls_Vol_1_2_001.jpg/revision/latest?cb=20210430201140",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "bora": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a3/Bora_%28Earth-001%29_from_Superior_Spider-Man_Vol_1_33_001.png/revision/latest?cb=20140918235552",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "karn": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/14/Karn_%28Earth-001%29_from_Spider-Geddon_Vol_1_2_001.jpg/revision/latest?cb=20240413203542",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "spider-uk": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/William_Braddock_%28Earth-833%29_from_Amazing_Spider-Man_Vol_3_7_002.jpg/revision/latest?cb=20141012071303",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",
