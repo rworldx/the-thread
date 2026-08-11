@@ -448,6 +448,31 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a6/Selene_Gallio_%28Earth-616%29_from_Immortal_X-Men_Vol_1_1_001.jpg/revision/latest?cb=20220401041713",
   "warpath":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/05/Uncanny_X-Men_Vol_1_476_Textless.jpg/revision/latest?cb=20210517183725",
+  /* Mutants, batch 11. All twelve on the first try. */
+  "cypher":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/33/Douglas_Ramsey_%28Earth-616%29_from_X-Men_Vol_7_19_cover_001.jpg/revision/latest?cb=20250702061540",
+  "exodus":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/cc/Bennet_du_Paris_%28Earth-616%29_from_Immortal_X-Men_Vol_1_14_001.jpg/revision/latest?cb=20230810143335",
+  "fantomex":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/28/Giant-Size_X-Men_Fantomex_Vol_1_1_Gist_Variant_Textless.jpg/revision/latest?cb=20210414094843",
+  "hellion":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5a/Julian_Keller_%28Earth-616%29_from_NYX_Vol_2_1_001.jpg/revision/latest?cb=20240725161957",
+  "nate-grey":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/86/Uncanny_X-Men_Vol_5_4_Textless.jpg/revision/latest?cb=20180919023849",
+  "pixie":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/ba/Way_of_X_Vol_1_1_Unknown_Comic_Books_Exclusive_Pixie_Virgin_Variant.jpg/revision/latest?cb=20210404181229",
+  "prodigy":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9b/X-Men_Vol_7_17_Pride_Variant_Textless.jpg/revision/latest?cb=20250523091419",
+  "rictor":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a0/Julio_Richter_%28Earth-616%29_from_Excalibur_Vol_4_16_001.jpg/revision/latest?cb=20210113013547",
+  "sauron":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f2/Karl_Lykos_%28Earth-616%29_from_X-Men_Unlimited_Infinity_Comic_Vol_1_8_001.jpg/revision/latest?cb=20211018153810",
+  "scalphunter":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/88/John_Greycrow_%28Earth-616%29_from_Psylocke_Vol_2_9_001.jpg/revision/latest?cb=20250725193035",
+  "stepford-cuckoos":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/99/NYX_Vol_2_4_Cuckoos_Virgin_Variant.jpg/revision/latest?cb=20240823102057",
+  "vulcan":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/72/Gabriel_Summers_%28Earth-616%29_from_X-Men_Red_Vol_2_17_001.jpg/revision/latest?cb=20250812152352",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

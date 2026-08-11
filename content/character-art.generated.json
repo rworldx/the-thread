@@ -534,6 +534,66 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "cypher": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/33/Douglas_Ramsey_%28Earth-616%29_from_X-Men_Vol_7_19_cover_001.jpg/revision/latest?cb=20250702061540",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "exodus": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/cc/Bennet_du_Paris_%28Earth-616%29_from_Immortal_X-Men_Vol_1_14_001.jpg/revision/latest?cb=20230810143335",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "fantomex": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/28/Giant-Size_X-Men_Fantomex_Vol_1_1_Gist_Variant_Textless.jpg/revision/latest?cb=20210414094843",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "hellion": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5a/Julian_Keller_%28Earth-616%29_from_NYX_Vol_2_1_001.jpg/revision/latest?cb=20240725161957",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "nate-grey": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/86/Uncanny_X-Men_Vol_5_4_Textless.jpg/revision/latest?cb=20180919023849",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "pixie": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/ba/Way_of_X_Vol_1_1_Unknown_Comic_Books_Exclusive_Pixie_Virgin_Variant.jpg/revision/latest?cb=20210404181229",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "prodigy": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9b/X-Men_Vol_7_17_Pride_Variant_Textless.jpg/revision/latest?cb=20250523091419",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "rictor": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a0/Julio_Richter_%28Earth-616%29_from_Excalibur_Vol_4_16_001.jpg/revision/latest?cb=20210113013547",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "sauron": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f2/Karl_Lykos_%28Earth-616%29_from_X-Men_Unlimited_Infinity_Comic_Vol_1_8_001.jpg/revision/latest?cb=20211018153810",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "scalphunter": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/88/John_Greycrow_%28Earth-616%29_from_Psylocke_Vol_2_9_001.jpg/revision/latest?cb=20250725193035",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "stepford-cuckoos": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/99/NYX_Vol_2_4_Cuckoos_Virgin_Variant.jpg/revision/latest?cb=20240823102057",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "vulcan": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/72/Gabriel_Summers_%28Earth-616%29_from_X-Men_Red_Vol_2_17_001.jpg/revision/latest?cb=20250812152352",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",

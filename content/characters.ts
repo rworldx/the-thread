@@ -11129,6 +11129,285 @@ const mutantsB: CharacterDraft[] = [
   },
 ];
 
+/**
+ * MUTANTS, batch 11. Three more Omegas off the published list — Exodus, Nate
+ * Grey and Vulcan — and Cypher, who is the argument against reading
+ * `mutantClass` as a power score: he understands every language there is,
+ * which sounds like nothing until you notice it covers machines, lies and the
+ * way a person is standing.
+ */
+const mutantsC: CharacterDraft[] = [
+  {
+    id: "cypher",
+    nameEn: "Cypher",
+    nameAr: "سايفر",
+    aliases: ["Cypher", "Doug Ramsey", "Douglas Ramsey"],
+    category: "hero",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Reads any language at all", ar: "يقرأ أي لغة كانت" },
+      { en: "Machine code and body language too", ar: "لغة الآلة ولغة الجسد أيضًا" },
+      { en: "The least flashy power there is", ar: "أقل القوى بريقًا" },
+    ],
+    origin: {
+      en: "A mutant who understands every language instantly, which sounds minor next to flight or fire until you notice he can read a machine, a lie, or a person's posture with the same fluency.",
+      ar: "متحوّل يفهم كل لغة فورًا، وهو ما يبدو تافهًا إلى جانب الطيران أو النار حتى تنتبه أنه يقرأ آلةً أو كذبةً أو وقفة شخص بالطلاقة نفسها.",
+    },
+    related: [
+      { id: "magik", kind: "ally" },
+    ],
+  },
+  {
+    id: "exodus",
+    nameEn: "Exodus",
+    nameAr: "إكزودس",
+    aliases: ["Exodus", "Bennet du Paris"],
+    category: "villain",
+    affiliation: ["Brotherhood"],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "Telepathy and telekinesis at Omega level", ar: "تخاطر وتحريك بمستوى أوميغا" },
+      { en: "Woken from the Crusades", ar: "أُيقظ من الحروب الصليبية" },
+      { en: "Believes Magneto was right", ar: "يؤمن أن ماغنيتو كان محقًّا" },
+    ],
+    origin: {
+      en: "A twelfth-century crusader woken into the present as an Omega-level mutant, who took Magneto's argument and made a religion of it. He is the true believer Magneto never asked for.",
+      ar: "صليبيّ من القرن الثاني عشر أُوقظ في الحاضر متحوّلًا من مستوى أوميغا، أخذ حجّة ماغنيتو فجعلها دينًا. وهو المؤمن المتشدّد الذي لم يطلبه ماغنيتو قط.",
+    },
+    related: [
+      { id: "magneto", kind: "ally" },
+    ],
+  },
+  {
+    id: "fantomex",
+    nameEn: "Fantomex",
+    nameAr: "فانتوميكس",
+    aliases: ["Fantomex", "Charlie Cluster-7"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Misdirection as a power", ar: "التضليل قدرةً" },
+      { en: "Three brains, one man", ar: "ثلاثة أدمغة في رجل" },
+      { en: "Flies a living aircraft", ar: "يقود طائرة حية" },
+    ],
+    origin: {
+      en: "A weapon grown in a laboratory who escaped and reinvented himself as a gentleman thief, complete with an accent he chose. His power is making you look at the wrong thing.",
+      ar: "سلاح أُنمي في مختبر ففرّ وأعاد صنع نفسه لصًّا نبيلًا، بلكنة اختارها بنفسه. وقدرته أن يجعلك تنظر إلى الشيء الخطأ.",
+    },
+    related: [
+      { id: "wolverine", kind: "ally" },
+    ],
+  },
+  {
+    id: "hellion",
+    nameEn: "Hellion",
+    nameAr: "هيليون",
+    aliases: ["Hellion", "Julian Keller"],
+    category: "antihero",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Telekinesis with a temper", ar: "تحريك ذهني بمزاج حادّ" },
+      { en: "Rich and says so", ar: "ثريّ ولا يخفي ذلك" },
+      { en: "Lost his hands and kept going", ar: "فقد يديه ومضى" },
+    ],
+    origin: {
+      en: "A wealthy telekinetic with a mouth that gets him into more trouble than his power gets him out of, who lost both hands and had to learn the whole thing again.",
+      ar: "محرّك ذهني ثري، لسانه يورده من المآزق أكثر مما تخرجه قوته، فقد يديه واضطر إلى تعلّم الأمر كله من جديد.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "nate-grey",
+    nameEn: "Nate Grey",
+    nameAr: "نيت غراي",
+    aliases: ["Nate Grey", "X-Man", "Nathaniel Grey"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "Reality bends around him", ar: "الواقع ينثني حوله" },
+      { en: "Grown from Scott and Jean", ar: "نبت من سكوت وجين" },
+      { en: "Burning himself out", ar: "يحرق نفسه" },
+    ],
+    origin: {
+      en: "An Omega-level mutant engineered in another timeline from Scott Summers and Jean Grey, who arrived here with more power than his body can hold and a certainty that he can fix the world.",
+      ar: "متحوّل من مستوى أوميغا هُندس في خط زمني آخر من سكوت سمرز وجين غراي، وصل إلى هنا بقوة تفوق ما يحتمله جسده، وبيقين أنه قادر على إصلاح العالم.",
+    },
+    related: [
+      { id: "cyclops", kind: "family" },
+      { id: "jean-grey", kind: "family" },
+    ],
+  },
+  {
+    id: "pixie",
+    nameEn: "Pixie",
+    nameAr: "بيكسي",
+    aliases: ["Pixie", "Megan Gwynn"],
+    category: "hero",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Wings and pixie dust", ar: "جناحان وغبار جنّي" },
+      { en: "Teleports by spell", ar: "تنتقل بتعويذة" },
+      { en: "Half her soul is missing", ar: "نصف روحها مفقود" },
+    ],
+    origin: {
+      en: "A cheerful young mutant with butterfly wings who had a piece of her soul cut out to forge a magic dagger, and who came back from that funnier rather than darker.",
+      ar: "متحوّلة يافعة مرحة بجناحي فراشة، اقتُطعت قطعة من روحها لصوغ خنجر سحري، فعادت من ذلك أكثر طرافة لا أكثر عتمة.",
+    },
+    related: [
+      { id: "magik", kind: "ally" },
+    ],
+  },
+  {
+    id: "prodigy",
+    nameEn: "Prodigy",
+    nameAr: "برودجي",
+    aliases: ["Prodigy", "David Alleyne"],
+    category: "hero",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Copies any skill nearby", ar: "ينسخ أي مهارة قريبة" },
+      { en: "Kept every skill he lost", ar: "احتفظ بكل مهارة فقدها" },
+      { en: "Remembers all his lives", ar: "يتذكر كل حيواته" },
+    ],
+    origin: {
+      en: "A mutant who absorbs the skills of anyone near him, lost the power, and found he had kept everything he had ever learned. He also remembers every version of himself the resurrections made.",
+      ar: "متحوّل يمتص مهارات من حوله، فقد قدرته فوجد أنه احتفظ بكل ما تعلّمه يومًا. ويتذكر أيضًا كل نسخة من نفسه صنعتها الإحياءات.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "rictor",
+    nameEn: "Rictor",
+    nameAr: "ريكتور",
+    aliases: ["Rictor", "Julio Richter"],
+    category: "hero",
+    affiliation: ["X-Factor"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Shakes the ground itself", ar: "يهزّ الأرض نفسها" },
+      { en: "Lost the power and got it back", ar: "فقد قوته ثم استعادها" },
+      { en: "Grew up under a cartel", ar: "نشأ تحت وطأة عصابة" },
+    ],
+    origin: {
+      en: "A mutant who generates seismic waves, who lost his power on M-Day and spent the years without it discovering he was still the same person underneath.",
+      ar: "متحوّل يولّد موجات زلزالية، فقد قوته يوم إم وأمضى السنين بدونها يكتشف أنه ظل الشخص نفسه تحت ذلك.",
+    },
+    related: [
+      { id: "cannonball", kind: "ally" },
+    ],
+  },
+  {
+    id: "sauron",
+    nameEn: "Sauron",
+    nameAr: "سورون",
+    aliases: ["Sauron", "Karl Lykos"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Becomes a pteranodon", ar: "يصير تيرانودون" },
+      { en: "Drains mutant energy", ar: "يمتص طاقة المتحوّلين" },
+      { en: "A doctor when he is himself", ar: "طبيب حين يكون نفسه" },
+    ],
+    origin: {
+      en: "A doctor who has to drain mutant life-force to survive and turns into a great winged reptile when he does. He fights it, loses, and fights it again.",
+      ar: "طبيب مضطر إلى امتصاص طاقة حياة المتحوّلين ليبقى، فيتحوّل حين يفعل إلى زاحف مجنّح ضخم. يقاوم فيخسر ثم يقاوم من جديد.",
+    },
+    related: [
+      { id: "professor-x", kind: "enemy" },
+    ],
+  },
+  {
+    id: "scalphunter",
+    nameEn: "Scalphunter",
+    nameAr: "سكالبهنتر",
+    aliases: ["Scalphunter", "John Greycrow"],
+    category: "villain",
+    affiliation: ["Marauders"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Uses any weapon perfectly", ar: "يتقن أي سلاح فورًا" },
+      { en: "A Marauder for Sinister", ar: "مغيرٌ في خدمة سينيستر" },
+      { en: "Led the tunnel massacre", ar: "قاد مجزرة الأنفاق" },
+    ],
+    origin: {
+      en: "A mutant who can operate any weapon he picks up as though he built it, and one of the Marauders Mister Sinister sent into the Morlock tunnels.",
+      ar: "متحوّل يشغّل أي سلاح يلتقطه كأنه صانعه، وأحد المغيرين الذين أرسلهم مستر سينيستر إلى أنفاق المورلوك.",
+    },
+    related: [
+      { id: "mister-sinister", kind: "ally" },
+    ],
+  },
+  {
+    id: "stepford-cuckoos",
+    nameEn: "Stepford Cuckoos",
+    nameAr: "فتيات ستيبفورد",
+    aliases: ["Stepford Cuckoos", "Celeste", "Mindee", "Phoebe"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Five minds acting as one", ar: "خمسة عقول تعمل كعقل" },
+      { en: "Cloned from Emma Frost", ar: "استُنسخن من إيما فروست" },
+      { en: "Diamond form, inherited", ar: "صورة الماس بالوراثة" },
+    ],
+    origin: {
+      en: "Five identical telepaths cloned from Emma Frost who think as a single mind, and who have already lost two of their number. They finish each other's sentences because it is one sentence.",
+      ar: "خمس قارئات أفكار متطابقات استُنسخن من إيما فروست ويفكرن كعقل واحد، وقد فقدن اثنتين منهن. يكملن جمل بعضهن لأنها جملة واحدة.",
+    },
+    related: [
+      { id: "emma-frost", kind: "family" },
+    ],
+  },
+  {
+    id: "vulcan",
+    nameEn: "Vulcan",
+    nameAr: "فولكان",
+    aliases: ["Vulcan", "Gabriel Summers"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "Controls any energy at all", ar: "يتحكم بأي طاقة كانت" },
+      { en: "The third Summers brother", ar: "ثالث الإخوة سمرز" },
+      { en: "Took the Shi'ar throne", ar: "استولى على عرش الشيعار" },
+    ],
+    origin: {
+      en: "The Summers brother nobody knew existed, an Omega-level mutant raised as a slave who came back angry enough to take an empire and did.",
+      ar: "أخو سمرز الذي لم يعلم أحد بوجوده، متحوّل من مستوى أوميغا نشأ عبدًا وعاد من الغضب إلى حدّ أن ينتزع إمبراطورية، ففعل.",
+    },
+    related: [
+      { id: "cyclops", kind: "family" },
+      { id: "havok", kind: "family" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -11140,6 +11419,7 @@ export const characters: CharacterDraft[] = [
   ...mystics,
   ...heralds,
   ...mutantsB,
+  ...mutantsC,
   ...avengers,
   ...guardians,
   ...xmen,
