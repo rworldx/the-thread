@@ -1090,44 +1090,6 @@ a:has(.poster):focus-visible {
   gap: var(--space-3) var(--space-4);
   align-items: flex-start;
   padding-block: var(--space-4);
-  /* Containing block for the backdrop, and a new stacking context so it can
-     sit behind this header's own children without escaping to the page. */
-  position: relative;
-  isolate: isolate;
-}
-
-/**
- * BLEEDS TO THE EDGE OF `main`, by negating exactly the gutter — the same rule
- * `.hero` follows, and for the same reason recorded there: `50% - 50vw` counts
- * the scrollbar and scrolls the page sideways. Negating the gutter is bounded
- * by the box that contains it and cannot overflow.
- */
-.title-backdrop {
-  position: absolute;
-  z-index: -1;
-  inset-block: calc(var(--space-4) * -1) 0;
-  inset-inline: calc(-1 * var(--gutter));
-  inline-size: calc(100% + var(--gutter) * 2);
-  block-size: calc(100% + var(--space-4));
-  object-fit: cover;
-  object-position: 50% 25%;
-  pointer-events: none;
-  /* Fades on both axes so it never meets an edge with a hard seam. The
-     content sits over the darkest part of it. */
-  mask-image:
-    linear-gradient(to bottom, rgb(0 0 0 / 0.85), transparent),
-    linear-gradient(to right, transparent, rgb(0 0 0 / 1) 20% 80%, transparent);
-  mask-composite: intersect;
-  opacity: 0.22;
-}
-/* Light mode: a pale ground shows far more of an image, so it needs less. */
-:root:not([data-theme="dark"]) .title-backdrop {
-  opacity: 0.1;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .title-backdrop {
-    opacity: 0.22;
-  }
 }
 .title-hero-body {
   flex: 1 1 16rem;

@@ -23,7 +23,6 @@ import {
   providersGlobalOf,
   ratingsOf,
   postersOf,
-  backdropOf,
   castOf,
   authorsOf,
   videosOf,
@@ -169,7 +168,6 @@ export default async function PathPage({ params }: Params) {
   const target = minimum.at(-1)!;
   const ratings = ratingsOf(target.id);
   const videos = videosOf(target.id);
-  const backdrop = backdropOf(target.id);
   const gallery = postersOf(target.id);
   const cast = castOf(target.id);
   const authors = authorsOf(target.id);
@@ -211,31 +209,6 @@ export default async function PathPage({ params }: Params) {
     <main>
 
       <header className="title-hero">
-        {/**
-         * THE BACKDROP — the film's own still, behind its own hero.
-         *
-         * A plain <img>, not next/image, and that is deliberate: TMDB
-         * publishes backdrops at four fixed widths of their own (w300, w780,
-         * w1280, original) which are NOT the poster widths, so nothing here
-         * needs resizing and nothing is billed as a Vercel transformation.
-         *
-         * `aria-hidden` and empty alt because it carries no information the
-         * page does not already state in text — it is atmosphere, and a
-         * screen reader announcing "backdrop" would be noise.
-         */}
-        {backdrop ? (
-          <img
-            className="title-backdrop"
-            src={`https://image.tmdb.org/t/p/w780${backdrop}`}
-            srcSet={`https://image.tmdb.org/t/p/w780${backdrop} 780w, https://image.tmdb.org/t/p/w1280${backdrop} 1280w`}
-            sizes="100vw"
-            alt=""
-            aria-hidden="true"
-            decoding="async"
-            fetchPriority="low"
-          />
-        ) : null}
-
         {/* The ONE priority image on this page — the LCP element (§14.5).
             Everything else is native lazy; eight preloads make LCP worse. */}
         <Poster
