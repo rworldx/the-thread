@@ -211,6 +211,31 @@ export default async function PathPage({ params }: Params) {
     <main>
 
       <header className="title-hero">
+        {/**
+         * THE BACKDROP — the film's own still, behind its own hero.
+         *
+         * A plain <img>, not next/image, and that is deliberate: TMDB
+         * publishes backdrops at four fixed widths of their own (w300, w780,
+         * w1280, original) which are NOT the poster widths, so nothing here
+         * needs resizing and nothing is billed as a Vercel transformation.
+         *
+         * `aria-hidden` and empty alt because it carries no information the
+         * page does not already state in text — it is atmosphere, and a
+         * screen reader announcing "backdrop" would be noise.
+         */}
+        {backdrop ? (
+          <img
+            className="title-backdrop"
+            src={`https://image.tmdb.org/t/p/w780${backdrop}`}
+            srcSet={`https://image.tmdb.org/t/p/w780${backdrop} 780w, https://image.tmdb.org/t/p/w1280${backdrop} 1280w`}
+            sizes="100vw"
+            alt=""
+            aria-hidden="true"
+            decoding="async"
+            fetchPriority="low"
+          />
+        ) : null}
+
         {/* The ONE priority image on this page — the LCP element (§14.5).
             Everything else is native lazy; eight preloads make LCP worse. */}
         <Poster
@@ -312,7 +337,7 @@ export default async function PathPage({ params }: Params) {
           loads unless a reader actually goes there. */}
       <section className="title-section" aria-labelledby="trailer-heading">
         <h2 id="trailer-heading">{t("title.trailer")}</h2>
-        <Trailers videos={videos} backdrop={backdrop} />
+        <Trailers videos={videos} />
       </section>
 
       {/**

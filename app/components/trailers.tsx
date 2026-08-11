@@ -27,20 +27,13 @@ const WATCH = (key: string) => `https://www.youtube.com/watch?v=${key}`;
 /** Same rule as the cast: ten, then the rest on request. */
 const SHOWN = 10;
 
-export async function Trailers({
-  videos,
-  backdrop,
-}: {
-  videos: TitleVideo[];
-  backdrop: string | null;
-}) {
+export async function Trailers({ videos }: { videos: TitleVideo[] }) {
   const t = await getTranslations("title");
 
   if (videos.length === 0) {
     return (
       <p className="trailer-none-line">
         {t("noTrailer")}
-        {backdrop ? "" : ""}
       </p>
     );
   }
