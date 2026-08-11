@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { titles, posterOf, ratingsOf, episodesOf } from "@/content/build";
+import { titles, posterOf, ratingsOf, tintOf } from "@/content/build";
 import { pickWall, franchiseOf, type WallItem } from "@/lib/wall";
 import { infinitySaga, mcuOrder } from "@/lib/graph";
 import { localeParams } from "@/lib/locales";
@@ -63,6 +63,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       releaseDate: x.releaseDate,
       votes: ratingsOf(x.id)?.tmdb?.votes ?? 0,
       posterPath: p,
+      tint: tintOf(x.id) ?? "#000000",
     }];
   });
 
@@ -80,16 +81,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     "cloak-and-dagger",
   ];
 
-  /**
-   * Exchanges made by eye, over the derived order. Whether two posters sit
-   * well beside each other is a judgement about artwork, which no ranking
-   * answers. Naming a title that has left the wall throws — see applySwaps.
-   */
-  const WALL_SWAPS = [
-    ["the-amazing-spider-man", "the-amazing-spider-man-2"],
-    ["x2", "daredevil-s1"],
-    ["wonder-man-s1", "fantastic-four-2005"],
-  ] as const;
+  /** Asked for by name to be off the wall. */
+  const EXCLUDED = ["the-amazing-spider-man-2"];
 
   const franchise = new Map(titles.map((x) => [x.id, franchiseOf(x.titleEn)]));
   const mosaic: MosaicTile[] = pickWall(
@@ -97,7 +90,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     PINNED,
     24,
     (x) => franchise.get(x.id) ?? x.id,
-    WALL_SWAPS,
+    [],
+    EXCLUDED,
   ).map((x) => ({ id: x.id, posterPath: x.posterPath }));
 
   /**

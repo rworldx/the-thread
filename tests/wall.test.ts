@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { titles, posterOf, ratingsOf } from "@/content/build";
-import { pickWall, franchiseOf, spaceOut, applySwaps, type WallItem } from "@/lib/wall";
+import { titles, posterOf, ratingsOf, tintOf } from "@/content/build";
+import { pickWall, franchiseOf, colourGap, applySwaps, type WallItem } from "@/lib/wall";
 
 const PINNED = [
   "the-amazing-spider-man",
@@ -10,13 +10,6 @@ const PINNED = [
   "cloak-and-dagger",
 ];
 const COUNT = 24;
-/** Must mirror WALL_SWAPS in app/[locale]/page.tsx. */
-const SWAPS = [
-  ["the-amazing-spider-man", "the-amazing-spider-man-2"],
-  ["x2", "daredevil-s1"],
-  ["wonder-man-s1", "fantastic-four-2005"],
-] as const;
-
 const pool: WallItem[] = titles.flatMap((x) => {
   const p = posterOf(x.id);
   if (p === null || p.startsWith("http")) return [];
@@ -27,13 +20,15 @@ const pool: WallItem[] = titles.flatMap((x) => {
       releaseDate: x.releaseDate,
       votes: ratingsOf(x.id)?.tmdb?.votes ?? 0,
       posterPath: p,
+      tint: tintOf(x.id) ?? "#000000",
     },
   ];
 });
 
 const franchise = new Map(titles.map((x) => [x.id, franchiseOf(x.titleEn)]));
 const keyOf = (x: WallItem) => franchise.get(x.id) ?? x.id;
-const wall = pickWall(pool, PINNED, COUNT, keyOf, SWAPS);
+const EXCLUDED = ["the-amazing-spider-man-2"];
+const wall = pickWall(pool, PINNED, COUNT, keyOf, [], EXCLUDED);
 
 describe("W1 the poster wall", () => {
   it("holds exactly the tiles asked for, with no repeats", () => {
@@ -70,8 +65,9 @@ describe("W1 the poster wall", () => {
       releaseDate: "1978-01-01",
       votes: 3,
       posterPath: "/x.jpg",
+      tint: "#123456",
     };
-    const after = pickWall([...pool, extra], PINNED, COUNT, keyOf, SWAPS);
+    const after = pickWall([...pool, extra], PINNED, COUNT, keyOf, [], EXCLUDED);
     expect(after.map((x) => x.id)).toEqual(wall.map((x) => x.id));
   });
 });
@@ -89,14 +85,6 @@ describe("franchiseOf", () => {
   });
 });
 
-describe("spaceOut", () => {
-  /** It must degrade rather than loop or drop when separation is impossible. */
-  it("keeps every item even when they all share a key", () => {
-    const same = ["a", "a", "a"];
-    expect(spaceOut(same, (x) => x).sort()).toEqual(same);
-  });
-});
-
 describe("applySwaps", () => {
   /** A swap that quietly matches nothing is how a hand-tuned order rots. */
   it("throws rather than no-opping when a title has left the wall", () => {
@@ -110,5 +98,22 @@ describe("applySwaps", () => {
     expect(swapped[0]!.id).toBe(wall[5]!.id);
     expect(swapped[5]!.id).toBe(wall[0]!.id);
     expect(swapped.map((x) => x.id).sort()).toEqual(wall.map((x) => x.id).sort());
+  });
+});
+
+describe("the wall as a composition", () => {
+  it("keeps an excluded title off entirely", () => {
+    expect(wall.some((x) => x.id === "the-amazing-spider-man-2")).toBe(false);
+  });
+
+  /**
+   * The point of the colour walk: neighbours should agree. Compared against
+   * the same 24 in vote order, which is the arrangement it replaced.
+   */
+  it("places posters beside ones they sit well with", () => {
+    const mean = (xs: WallItem[]) =>
+      xs.slice(1).reduce((n, x, i) => n + colourGap(x.tint, xs[i]!.tint), 0) / (xs.length - 1);
+    const byVotes = [...wall].sort((a, b) => b.votes - a.votes);
+    expect(mean(wall)).toBeLessThan(mean(byVotes));
   });
 });

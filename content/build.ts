@@ -247,6 +247,11 @@ export function requireBuilt() {
  * pairs with it lives in app/poster-tints.css, keyed off the same id, so the two
  * cannot drift.
  */
+/** The poster's dominant colour, "#rrggbb". Null where none was extracted. */
+export function tintOf(id: string): string | null {
+  return generated[id]?.posterTint ?? null;
+}
+
 export function posterOf(id: string): string | null {
   /**
    * A hand-set absolute URL wins. It starts with "http" where a TMDB path
