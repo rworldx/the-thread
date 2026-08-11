@@ -24,7 +24,7 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(372);
+    expect(authored).toHaveLength(383);
   });
 
   it("C4 every relation points at a character that exists", () => {
@@ -77,9 +77,11 @@ describe("C. the character corpus", () => {
      * pinned rather than bounded so that a drift of one still fails.
      */
     const offScreen = allCharacters.filter((c) => c.appearances.length === 0);
-    /* 16 -> 30: the fourteen unfilmed Celestials, added on request as
-       reference. Their empty appearance lists are the intent, not a fault. */
-    expect(offScreen).toHaveLength(30);
+    /* 16 -> 30 -> 42: the fourteen unfilmed Celestials, then eleven of
+       Spider-Man's rogues — of whom only three stayed off-screen, the other
+       eight turning out to be credited in the animated series once they had
+       aliases to match on. Empty lists here are the intent, not a fault. */
+    expect(offScreen).toHaveLength(33);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);

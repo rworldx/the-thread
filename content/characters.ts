@@ -8761,7 +8761,9 @@ const cosmicBeings: CharacterDraft[] = [
     nameAr: "كوازار",
     aliases: ["Quasar", "Wendell Vaughn"],
     category: "hero",
-    affiliation: ["Avengers"],
+    /* Not "Avengers": the title he actually holds is Protector of the
+       Universe, which Eon appoints and no team confers. */
+    affiliation: ["Protectors of the Universe"],
     universe: ["animation"],
     species: "Human",
     powers: [
@@ -8777,8 +8779,271 @@ const cosmicBeings: CharacterDraft[] = [
   },
 ];
 
+/**
+ * SPIDER-MAN'S ROGUES, batch 2 of the supplied rosters.
+ *
+ * Comics characters, so their appearance lists are empty by design — the same
+ * arrangement the Celestials arrived under and that C7 exists to police.
+ *
+ * NONE of these carries Avengers, Defenders, Fantastic Four, Thunderbolts,
+ * X-Force, Guardians, Midnight Sons, Revengers or either Civil War side, per
+ * request. Where a real allegiance exists it is named — the Maggia for the
+ * three crime bosses, the Sinister Syndicate for Beetle and Boomerang, the
+ * Wild Pack for Silver Sable — and where none does the list is left empty
+ * rather than padded.
+ */
+const spiderRogues: CharacterDraft[] = [
+  {
+    id: "hammerhead",
+    nameEn: "Hammerhead",
+    nameAr: "هامرهيد",
+    aliases: ["Hammerhead"],
+    category: "villain",
+    affiliation: ["Maggia"],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "A skull plated in steel", ar: "جمجمة مصفّحة بالفولاذ" },
+      { en: "Charges head first", ar: "يندفع برأسه أولًا" },
+      { en: "Runs a crime family", ar: "يدير عائلة إجرام" },
+    ],
+    origin: {
+      en: "A gangster rebuilt after a beating with a steel alloy plate across his skull, who came out of surgery convinced he was a 1920s mob boss and has run his family that way ever since.",
+      ar: "عصابيّ أُعيد بناؤه بعد ضربٍ مبرح بصفيحة من سبيكة فولاذية فوق جمجمته، فخرج من الجراحة مقتنعًا أنه زعيم مافيا من العشرينيات، وظل يدير عائلته على ذلك النحو.",
+    },
+    related: [
+      { id: "kingpin", kind: "enemy" },
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "hydro-man",
+    nameEn: "Hydro-Man",
+    nameAr: "هيدرو مان",
+    aliases: ["Hydro-Man"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Becomes water", ar: "يصير ماءً" },
+      { en: "Cannot be held", ar: "لا يُمسك" },
+      { en: "Reforms from a puddle", ar: "يتشكّل من بركة" },
+    ],
+    origin: {
+      en: "A ship hand knocked overboard into an experimental discharge, who surfaced able to turn to water at will and found that nothing anyone throws at him stays thrown.",
+      ar: "بحّار سقط من سفينته في تصريفٍ تجريبي، فطفا قادرًا على التحول إلى ماء متى شاء، ووجد أن لا شيء يُلقى عليه يبقى ملقى.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+      { id: "sandman", kind: "ally" },
+    ],
+  },
+  {
+    id: "molten-man",
+    nameEn: "Molten Man",
+    nameAr: "مولتن مان",
+    aliases: ["Molten Man"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Skin of molten alloy", ar: "جلد من سبيكة منصهرة" },
+      { en: "Burns what he touches", ar: "يحرق ما يلمس" },
+      { en: "Cooling is the hard part", ar: "التبريد هو الأصعب" },
+    ],
+    origin: {
+      en: "A lab assistant who stole an experimental alloy and wore it into his own skin, and now runs at a heat he cannot switch off. Staying cool enough to be near people is his whole struggle.",
+      ar: "مساعد مختبر سرق سبيكة تجريبية فاندمجت في جلده، فصار يتّقد بحرارةٍ لا يستطيع إطفاءها. وأن يبرد بما يكفي ليقترب من الناس هو صراعه كله.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "silvermane",
+    nameEn: "Silvermane",
+    nameAr: "سيلفرمين",
+    aliases: ["Silvermane"],
+    category: "villain",
+    affiliation: ["Maggia"],
+    universe: ["sony"],
+    species: "Cyborg",
+    powers: [
+      { en: "Ran the Maggia for decades", ar: "قاد المافيا عقودًا" },
+      { en: "Rebuilt as a machine", ar: "أُعيد بناؤه آلة" },
+      { en: "Terrified of dying", ar: "يرهبه الموت" },
+    ],
+    origin: {
+      en: "An old crime boss who spent his fortune chasing ways not to die, and ended up keeping his head alive on a machine body. Every scheme he runs is about buying more time.",
+      ar: "زعيم إجرام مسنّ أنفق ثروته بحثًا عن سبيل ألا يموت، فانتهى به الأمر يُبقي رأسه حيًّا على جسدٍ آلي. وكل مكيدة يحيكها إنما هي شراء مزيد من الوقت.",
+    },
+    related: [
+      { id: "kingpin", kind: "enemy" },
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "beetle",
+    nameEn: "Beetle",
+    nameAr: "بيتل",
+    aliases: ["Beetle"],
+    category: "antihero",
+    affiliation: ["Sinister Syndicate"],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "An armoured flight suit", ar: "بدلة طيران مدرّعة" },
+      { en: "Builds his own gear", ar: "يصنع عتاده بنفسه" },
+      { en: "Better engineer than crook", ar: "مهندس أفضل منه لصًّا" },
+    ],
+    origin: {
+      en: "A mechanic good enough to build a flying battlesuit in a garage and not quite good enough to stop robbing people with it. He keeps upgrading the armour and his luck stays the same.",
+      ar: "ميكانيكي بارع بما يكفي ليصنع بدلة قتال طائرة في مرآب، وليس بارعًا بما يكفي ليكفّ عن السطو بها. يظلّ يطوّر الدرع ويظل حظه على حاله.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "boomerang",
+    nameEn: "Boomerang",
+    nameAr: "بوميرانغ",
+    aliases: ["Boomerang"],
+    category: "antihero",
+    affiliation: ["Sinister Syndicate"],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Never misses a throw", ar: "لا تخطئ رميته" },
+      { en: "Trick boomerangs for everything", ar: "بوميرانغات لكل غرض" },
+      { en: "Talks his way out", ar: "يخرج بالكلام" },
+    ],
+    origin: {
+      en: "A washed-out pitcher who turned a perfect throwing arm into a criminal career, and survives mostly by being more useful alive than dead to whoever he has just betrayed.",
+      ar: "رامي بيسبول فاشل حوّل ذراعًا لا تخطئ إلى مسيرة إجرامية، وينجو غالبًا لأنه حيًّا أنفع ممن خانهم للتوّ منه ميتًا.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "vermin",
+    nameEn: "Vermin",
+    nameAr: "فيرمين",
+    aliases: ["Vermin"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Commands rats", ar: "يأمر الجرذان" },
+      { en: "Claws and teeth", ar: "مخالب وأنياب" },
+      { en: "Was a man once", ar: "كان إنسانًا يومًا" },
+    ],
+    origin: {
+      en: "A man turned into something between a rat and a person by an experiment, who lives in the tunnels under the city and is more frightened than frightening once anyone slows down enough to see it.",
+      ar: "رجل حوّلته تجربة إلى شيء بين الجرذ والإنسان، يعيش في أنفاق المدينة، وهو مذعور أكثر مما هو مُذعِر متى تمهّل أحد بما يكفي ليرى.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "demogoblin",
+    nameEn: "Demogoblin",
+    nameAr: "ديموغوبلن",
+    aliases: ["Demogoblin"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Demon",
+    powers: [
+      { en: "A demon on a glider", ar: "شيطان على منزلقة" },
+      { en: "Judges the guilty", ar: "يحاكم المذنبين" },
+      { en: "Pumpkin bombs of hellfire", ar: "قنابل يقطين من نار الجحيم" },
+    ],
+    origin: {
+      en: "The demon half of a Hobgoblin split in two, which kept the weapons and the glider and decided it was sent to punish sinners. It is the rare goblin that thinks it is the hero.",
+      ar: "النصف الشيطاني من هوبغوبلن انشطر شطرين، فاحتفظ بالسلاح والمنزلقة وقرّر أنه مُرسَل ليعاقب المذنبين. وهو الغوبلن النادر الذي يحسب نفسه البطل.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+      { id: "green-goblin", kind: "enemy" },
+    ],
+  },
+  {
+    id: "alistair-smythe",
+    nameEn: "Alistair Smythe",
+    nameAr: "أليستير سمايث",
+    aliases: ["Alistair Smythe"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Builds Spider-Slayers", ar: "يبني قاتلي العنكبوت" },
+      { en: "Rebuilt himself as one", ar: "أعاد بناء نفسه واحدًا منها" },
+      { en: "Blames Spider-Man", ar: "يحمّل سبايدرمان الوزر" },
+    ],
+    origin: {
+      en: "The son of the man who built the first Spider-Slayers, who blamed Spider-Man for his father's death and eventually turned himself into the machine rather than keep building them.",
+      ar: "ابن الرجل الذي بنى أوائل قاتلي العنكبوت، حمّل سبايدرمان موت أبيه، وانتهى إلى أن حوّل نفسه إلى الآلة بدل أن يظلّ يصنعها.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "silver-sable",
+    nameEn: "Silver Sable",
+    nameAr: "سيلفر سيبل",
+    aliases: ["Silver Sable"],
+    category: "antihero",
+    affiliation: ["Wild Pack"],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Runs a mercenary company", ar: "تدير شركة مرتزقة" },
+      { en: "Trained for every weapon", ar: "مدرَّبة على كل سلاح" },
+      { en: "Works for the contract", ar: "تعمل بالعقد" },
+    ],
+    origin: {
+      en: "The head of a mercenary outfit and of a small nation that lives on its fees, who is neither an enemy nor a friend but whoever the contract says. She keeps her word exactly as written.",
+      ar: "رئيسة شركة مرتزقة ودولةٍ صغيرة تعيش على أتعابها، ليست عدوة ولا صديقة بل ما يقوله العقد. وتفي بكلمتها كما كُتبت تمامًا.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "calypso",
+    nameEn: "Calypso",
+    nameAr: "كاليبسو",
+    aliases: ["Calypso"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Voodoo and old rites", ar: "سحر الفودو وطقوس قديمة" },
+      { en: "Bends a hunter's will", ar: "تلوي إرادة صيّاد" },
+      { en: "Drums that carry", ar: "طبول تبلغ بعيدًا" },
+    ],
+    origin: {
+      en: "A priestess who used Kraven as her instrument for years, steering his hunts with ritual and drums. When he was gone she went on hunting in his name.",
+      ar: "كاهنة اتخذت كرايفن أداةً لها سنين، توجّه صيده بالطقوس والطبول. ولمّا مضى، مضت تصطاد باسمه.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
+  ...spiderRogues,
   ...avengers,
   ...guardians,
   ...xmen,

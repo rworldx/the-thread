@@ -226,6 +226,31 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/Zgreb_%28Multiverse%29_from_Marvel_Legacy_Vol_1_1_001.jpg/revision/latest?cb=20170928011354",
   godhead:
     "https://static.wikia.nocookie.net/marveldatabase/images/3/37/Godhead_%28Earth-616%29_from_Marvel_Year-In-Review_Vol_1_5_001.jpg/revision/latest?cb=20260414073951",
+  /* Spider-Man's rogues. Several are catalogued under their real names —
+     Alonzo Lincoln, Silvio Manfredi, Frederick Myers, Silvija Sablinova —
+     so a codename lookup finds nothing for them. */
+  "hammerhead":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Amazing_Spider-Man_Vol_3_17.1_Textless.jpg/revision/latest?cb=20150119193829",
+  "hydro-man":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/ee/Classic_Marvel_Figurine_Collection_Vol_1_163_Textless.png/revision/latest?cb=20240421080822",
+  "molten-man":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Mark_Raxton_%28Earth-616%29_from_Amazing_Spider-Man_Vol_3_16_001.jpg/revision/latest?cb=20150312234724",
+  "silvermane":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b2/Silvio_Manfredi_%28Earth-616%29_from_Silk_Vol_3_3_001.jpg/revision/latest?cb=20250622044037",
+  "beetle":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/07/Abner_Jenkins_%28Earth-616%29_from_Thunderbolts_Vol_4_4_001.png/revision/latest?cb=20160901025546",
+  "boomerang":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Web_of_Venom_Vol_1_1_Virgin_Variant.jpg/revision/latest?cb=20260420022347",
+  "vermin":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/32/Edward_Whelan_%28Earth-616%29_from_Spider-Gwen_The_Ghost-Spider_Vol_1_5_001.jpg/revision/latest?cb=20240913225111",
+  "demogoblin":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/22/Demogoblin_%28Earth-616%29_from_Absolute_Carnage_Lethal_Protectors_Vol_1_2_cover_001.jpg/revision/latest?cb=20190922001604",
+  "alistair-smythe":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Alistaire_Smythe_%28Earth-616%29_from_Amazing_Spider-Man_Vol_2_650_0001.jpg/revision/latest?cb=20191129030806",
+  "silver-sable":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c2/Silvija_Sablinova_%28Earth-616%29_from_Wolverine_Vol_8_14_001.jpg/revision/latest?cb=20260108161834",
+  "calypso":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/de/Calypso_%28Earth-616%29_from_Marvel_Illustrated_The_Odyssey_Vol_1_2_002.jpg/revision/latest?cb=20231118184004",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:
