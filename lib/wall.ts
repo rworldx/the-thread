@@ -82,16 +82,50 @@ export function spaceOut<T>(items: readonly T[], keyOf: (x: T) => string): T[] {
 }
 
 /**
+ * HAND SWAPS, APPLIED LAST — the editorial pass over a derived order.
+ *
+ * Everything above answers "which 24 and roughly where", which no rule can
+ * finish: whether two posters sit well beside each other is a judgement about
+ * artwork, not about data. So a short list of exchanges runs over the result.
+ *
+ * A swap naming an id that is NOT on the wall THROWS rather than doing
+ * nothing. A silent no-op is the exact failure mode that has already cost this
+ * project twice — the image overrides that quietly matched nothing, and the
+ * search index that sat at 167 while the corpus moved on. If a swap stops
+ * applying, the wall changed underneath it and somebody needs to look.
+ */
+export function applySwaps<T extends { id: string }>(
+  list: readonly T[],
+  swaps: readonly (readonly [string, string])[],
+): T[] {
+  const out = [...list];
+  for (const [a, b] of swaps) {
+    const i = out.findIndex((x) => x.id === a);
+    const j = out.findIndex((x) => x.id === b);
+    if (i === -1 || j === -1) {
+      throw new Error(
+        `wall swap [${a}, ${b}]: ${i === -1 ? a : b} is not on the wall. ` +
+          `The selection changed — re-check the swap list against it.`,
+      );
+    }
+    [out[i], out[j]] = [out[j]!, out[i]!];
+  }
+  return out;
+}
+
+/**
  * @param pool     every title that has a usable poster
  * @param pinned   ids that must appear whatever their vote count
  * @param count    how many tiles the wall holds
  * @param keyOf    franchise key, for the adjacency rule
+ * @param swaps    hand exchanges applied to the finished order
  */
 export function pickWall(
   pool: readonly WallItem[],
   pinned: readonly string[],
   count: number,
   keyOf: (x: WallItem) => string,
+  swaps: readonly (readonly [string, string])[] = [],
 ): WallItem[] {
   const byVotes = [...pool].sort((a, b) => b.votes - a.votes);
   const chosen = new Map<string, WallItem>();
@@ -178,5 +212,5 @@ export function pickWall(
    * newest-of picks sit among them rather than in a clump at the front.
    */
   const ordered = [...chosen.values()].sort((a, b) => b.votes - a.votes);
-  return spaceOut(ordered, keyOf);
+  return applySwaps(spaceOut(ordered, keyOf), swaps);
 }

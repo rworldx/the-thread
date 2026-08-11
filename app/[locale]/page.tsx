@@ -74,9 +74,26 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
    */
   const PINNED = ["the-amazing-spider-man", "wonder-man-s1", "avengers-doomsday"];
 
+  /**
+   * Exchanges made by eye, over the derived order. Whether two posters sit
+   * well beside each other is a judgement about artwork, which no ranking
+   * answers. Naming a title that has left the wall throws — see applySwaps.
+   */
+  const WALL_SWAPS = [
+    ["the-amazing-spider-man", "the-amazing-spider-man-2"],
+    ["x2", "daredevil-s1"],
+    ["wonder-man-s1", "fantastic-four-2005"],
+    ["ghost-rider", "avengers-doomsday"],
+  ] as const;
+
   const franchise = new Map(titles.map((x) => [x.id, franchiseOf(x.titleEn)]));
-  const mosaic: MosaicTile[] = pickWall(pool, PINNED, 24, (x) => franchise.get(x.id) ?? x.id)
-    .map((x) => ({ id: x.id, posterPath: x.posterPath }));
+  const mosaic: MosaicTile[] = pickWall(
+    pool,
+    PINNED,
+    24,
+    (x) => franchise.get(x.id) ?? x.id,
+    WALL_SWAPS,
+  ).map((x) => ({ id: x.id, posterPath: x.posterPath }));
 
   /**
    * A RAIL OF PORTRAITS, ranked by appearances — a real ranking, but NOT STAN LEE, even though he outranks everyone.

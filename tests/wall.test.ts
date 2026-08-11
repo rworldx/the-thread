@@ -1,9 +1,16 @@
 import { describe, expect, it } from "vitest";
 import { titles, posterOf, ratingsOf, episodesOf } from "@/content/build";
-import { pickWall, franchiseOf, spaceOut, type WallItem } from "@/lib/wall";
+import { pickWall, franchiseOf, spaceOut, applySwaps, type WallItem } from "@/lib/wall";
 
 const PINNED = ["the-amazing-spider-man", "wonder-man-s1", "avengers-doomsday"];
 const COUNT = 24;
+/** Must mirror WALL_SWAPS in app/[locale]/page.tsx. */
+const SWAPS = [
+  ["the-amazing-spider-man", "the-amazing-spider-man-2"],
+  ["x2", "daredevil-s1"],
+  ["wonder-man-s1", "fantastic-four-2005"],
+  ["ghost-rider", "avengers-doomsday"],
+] as const;
 
 const pool: WallItem[] = titles.flatMap((x) => {
   const p = posterOf(x.id);
@@ -22,7 +29,7 @@ const pool: WallItem[] = titles.flatMap((x) => {
 
 const franchise = new Map(titles.map((x) => [x.id, franchiseOf(x.titleEn)]));
 const keyOf = (x: WallItem) => franchise.get(x.id) ?? x.id;
-const wall = pickWall(pool, PINNED, COUNT, keyOf);
+const wall = pickWall(pool, PINNED, COUNT, keyOf, SWAPS);
 
 describe("W1 the poster wall", () => {
   it("holds exactly the tiles asked for, with no repeats", () => {
@@ -71,7 +78,7 @@ describe("W1 the poster wall", () => {
       show: true,
       posterPath: "/x.jpg",
     };
-    const after = pickWall([...pool, extra], PINNED, COUNT, keyOf);
+    const after = pickWall([...pool, extra], PINNED, COUNT, keyOf, SWAPS);
     expect(after.map((x) => x.id)).toEqual(wall.map((x) => x.id));
   });
 });
@@ -94,5 +101,21 @@ describe("spaceOut", () => {
   it("keeps every item even when they all share a key", () => {
     const same = ["a", "a", "a"];
     expect(spaceOut(same, (x) => x).sort()).toEqual(same);
+  });
+});
+
+describe("applySwaps", () => {
+  /** A swap that quietly matches nothing is how a hand-tuned order rots. */
+  it("throws rather than no-opping when a title has left the wall", () => {
+    expect(() => applySwaps(wall, [["the-avengers", "not-a-real-title"]])).toThrow(
+      /not-a-real-title/,
+    );
+  });
+
+  it("exchanges the two positions and keeps everything else in place", () => {
+    const swapped = applySwaps(wall, [[wall[0]!.id, wall[5]!.id]]);
+    expect(swapped[0]!.id).toBe(wall[5]!.id);
+    expect(swapped[5]!.id).toBe(wall[0]!.id);
+    expect(swapped.map((x) => x.id).sort()).toEqual(wall.map((x) => x.id).sort());
   });
 });
