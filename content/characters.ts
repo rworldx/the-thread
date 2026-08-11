@@ -10562,6 +10562,290 @@ const mystics: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE REST OF THE HERALDS, and the first of the power-list names, batch 9.
+ *
+ * The heralds are one job held by very different people and that is the whole
+ * point of them: Air-Walker took the bargain willingly and did not get to
+ * stop, Morg was chosen precisely because he had no conscience to trouble the
+ * work, Stardust treats it as a faith rather than a bargain, and the Fallen
+ * One was discarded for being too cruel even by that standard and imprisoned
+ * rather than released.
+ *
+ * Onslaught is filed as a `variant` of both Xavier and Magneto rather than as
+ * an ally of either, because that is literally what he is: the argument
+ * between them, alive.
+ */
+const heralds: CharacterDraft[] = [
+  {
+    id: "air-walker",
+    nameEn: "Air-Walker",
+    nameAr: "إير ووكر",
+    aliases: ["Air-Walker", "Gabriel Lan"],
+    category: "antihero",
+    affiliation: ["Heralds of Galactus"],
+    universe: ["mcu"],
+    species: "Xandarian",
+    powers: [
+      { en: "The Power Cosmic", ar: "القوة الكونية" },
+      { en: "Rebuilt as an android", ar: "أُعيد بناؤه آليًا" },
+      { en: "Died and served on", ar: "مات وظلّ يخدم" },
+    ],
+    origin: {
+      en: "A Xandarian captain who took the heralds' bargain willingly, was killed doing the job, and was rebuilt by Galactus as a machine that carried on with it. He is the one who did not get to stop.",
+      ar: "قائد زاندري قبل صفقة البشراء طائعًا، فقُتل وهو يؤدي المهمة، فأعاد جالاكتوس بناءه آلةً تواصل العمل. وهو الذي لم يُتَح له أن يتوقف.",
+    },
+    related: [
+      { id: "galactus", kind: "ally" },
+      { id: "firelord", kind: "ally" },
+    ],
+  },
+  {
+    id: "morg",
+    nameEn: "Morg",
+    nameAr: "مورغ",
+    aliases: ["Morg", "Morg the Executioner"],
+    category: "villain",
+    affiliation: ["Heralds of Galactus"],
+    universe: ["mcu"],
+    species: "Alien",
+    powers: [
+      { en: "The Power Cosmic", ar: "القوة الكونية" },
+      { en: "Carries a cosmic axe", ar: "يحمل فأسًا كونية" },
+      { en: "Chosen for his cruelty", ar: "اختير لقسوته" },
+    ],
+    origin: {
+      en: "An executioner picked as herald precisely because he had no conscience to trouble the work. The other heralds regard him as proof of how badly the arrangement can go.",
+      ar: "جلّاد اختير بشيرًا لأنه بلا ضمير يعكّر العمل. ويراه سائر البشراء دليلًا على مبلغ ما قد يسوء إليه هذا الترتيب.",
+    },
+    related: [
+      { id: "galactus", kind: "ally" },
+      { id: "silver-surfer", kind: "enemy" },
+    ],
+  },
+  {
+    id: "stardust",
+    nameEn: "Stardust",
+    nameAr: "ستارداست",
+    aliases: ["Stardust", "Lambda-Zero"],
+    category: "villain",
+    affiliation: ["Heralds of Galactus"],
+    universe: ["mcu"],
+    species: "Alien",
+    powers: [
+      { en: "The Power Cosmic", ar: "القوة الكونية" },
+      { en: "A being of living energy", ar: "كائن من طاقة حية" },
+      { en: "Zealous past reason", ar: "متعصّب إلى غير حدّ" },
+    ],
+    origin: {
+      en: "A herald who treats serving Galactus as a faith rather than a bargain, and who has destroyed worlds that were not even on the menu because devotion does not stop at instructions.",
+      ar: "بشير يعدّ خدمة جالاكتوس عقيدةً لا صفقة، ودمّر عوالم لم تكن أصلًا مطلوبة، لأن التعبّد لا يقف عند التعليمات.",
+    },
+    related: [
+      { id: "galactus", kind: "ally" },
+    ],
+  },
+  {
+    id: "red-shift",
+    nameEn: "Red Shift",
+    nameAr: "ريد شيفت",
+    aliases: ["Red Shift"],
+    category: "villain",
+    affiliation: ["Heralds of Galactus"],
+    universe: ["mcu"],
+    species: "Alien",
+    powers: [
+      { en: "The Power Cosmic", ar: "القوة الكونية" },
+      { en: "Opens rifts in space", ar: "يفتح شقوقًا في الفضاء" },
+      { en: "Silent almost always", ar: "صامت في أغلب الأحيان" },
+    ],
+    origin: {
+      en: "A herald who tears space open to travel and says very little about anything. He was found on a dead world and has never explained what he was doing there.",
+      ar: "بشير يمزّق الفضاء ليسافر ولا يقول في شيء إلا القليل. وُجد على عالم ميت ولم يفسّر قط ما كان يفعله هناك.",
+    },
+    related: [
+      { id: "galactus", kind: "ally" },
+    ],
+  },
+  {
+    id: "the-fallen-one",
+    nameEn: "The Fallen One",
+    nameAr: "الساقط",
+    aliases: ["The Fallen One", "Fallen One"],
+    category: "villain",
+    affiliation: ["Heralds of Galactus"],
+    universe: ["mcu"],
+    species: "Alien",
+    powers: [
+      { en: "The first herald of all", ar: "أول البشراء جميعًا" },
+      { en: "Turned on his master", ar: "انقلب على سيده" },
+      { en: "Imprisoned rather than freed", ar: "سُجن ولم يُطلق" },
+    ],
+    origin: {
+      en: "Galactus's first herald, discarded for being too cruel even by that standard, and imprisoned rather than released. He has spent the time since planning what to do about it.",
+      ar: "أول بشراء جالاكتوس، نُبذ لأنه كان أقسى مما يحتمل حتى ذلك المقياس، فسُجن ولم يُطلق. وقضى ما بعدها يخطط لما يفعله حيال ذلك.",
+    },
+    related: [
+      { id: "galactus", kind: "enemy" },
+    ],
+  },
+  {
+    id: "praeter",
+    nameEn: "Praeter",
+    nameAr: "برايتر",
+    aliases: ["Praeter"],
+    category: "antihero",
+    affiliation: ["Heralds of Galactus"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "The Power Cosmic", ar: "القوة الكونية" },
+      { en: "Was an ordinary man", ar: "كان رجلًا عاديًا" },
+      { en: "Chosen almost at random", ar: "اختير كالمصادفة" },
+    ],
+    origin: {
+      en: "An ordinary man remade into a herald, which is the version of the story that shows what the Power Cosmic does to somebody with no preparation for it at all.",
+      ar: "رجل عادي أُعيد صنعه بشيرًا، وهي الرواية التي تُظهر ما تفعله القوة الكونية بمن لا استعداد له بها البتة.",
+    },
+    related: [
+      { id: "galactus", kind: "ally" },
+    ],
+  },
+  {
+    id: "beta-ray-bill",
+    nameEn: "Beta Ray Bill",
+    nameAr: "بيتا راي بيل",
+    aliases: ["Beta Ray Bill"],
+    category: "hero",
+    affiliation: ["Asgard"],
+    universe: ["mcu"],
+    species: "Korbinite",
+    powers: [
+      { en: "Worthy of the hammer", ar: "أهل للمطرقة" },
+      { en: "Carries Stormbreaker", ar: "يحمل ستورمبريكر" },
+      { en: "Last of his people", ar: "آخر قومه" },
+    ],
+    origin: {
+      en: "The champion of a dying people who picked up Thor's hammer and found it answered him, which nobody had expected including Odin. He was given a hammer of his own rather than sent away.",
+      ar: "بطل شعبٍ يفنى، التقط مطرقة ثور فوجدها تجيبه، وهو ما لم يتوقعه أحد بمن فيهم أودين. فمُنح مطرقة خاصة به بدل أن يُصرَف.",
+    },
+    related: [
+      { id: "thor", kind: "ally" },
+    ],
+  },
+  {
+    id: "gladiator",
+    nameEn: "Gladiator",
+    nameAr: "غلاديتور",
+    aliases: ["Gladiator", "Kallark"],
+    category: "antihero",
+    affiliation: ["Shi'ar"],
+    universe: ["mcu"],
+    species: "Strontian",
+    powers: [
+      { en: "Strength that scales with belief", ar: "قوة تكبر بيقينه" },
+      { en: "Leads the Imperial Guard", ar: "يقود الحرس الإمبراطوري" },
+      { en: "Loyal past his own judgement", ar: "وفيّ فوق حكمه الخاص" },
+    ],
+    origin: {
+      en: "The commander of the Shi'ar Imperial Guard, whose strength rises and falls with his own conviction, and who has carried out orders he disagreed with because the empire asked.",
+      ar: "قائد الحرس الإمبراطوري الشياري، تعلو قوته وتهبط بيقينه، ونفّذ أوامر لم يوافق عليها لأن الإمبراطورية طلبت.",
+    },
+    related: [
+      { id: "professor-x", kind: "enemy" },
+    ],
+  },
+  {
+    id: "hyperion",
+    nameEn: "Hyperion",
+    nameAr: "هايبريون",
+    aliases: ["Hyperion", "Marcus Milton"],
+    category: "hero",
+    affiliation: ["Squadron Supreme"],
+    universe: ["mcu"],
+    species: "Eternal",
+    powers: [
+      { en: "Strength of a small sun", ar: "قوة شمس صغيرة" },
+      { en: "Eyes that burn through", ar: "عينان تحرقان ما تنظران" },
+      { en: "The last of his Earth", ar: "آخر أهل أرضه" },
+    ],
+    origin: {
+      en: "The strongest man from a world that no longer exists, who survived its ending and now lives on this one trying to be of use to a planet that is not the one he failed.",
+      ar: "أقوى رجل في عالم لم يعد موجودًا، نجا من نهايته ويعيش الآن على هذا العالم محاولًا أن ينفع كوكبًا ليس هو الذي خذله.",
+    },
+    related: [
+      { id: "thor", kind: "ally" },
+    ],
+  },
+  {
+    id: "mangog",
+    nameEn: "Mangog",
+    nameAr: "مانغوغ",
+    aliases: ["Mangog"],
+    category: "villain",
+    affiliation: ["Asgard"],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "The rage of a billion dead", ar: "غضب مليار قتيل" },
+      { en: "Grows with every prayer unanswered", ar: "ينمو بكل دعاء لم يُستجب" },
+      { en: "Exists to kill Odin", ar: "وُجد ليقتل أودين" },
+    ],
+    origin: {
+      en: "Not a creature but a grievance made solid: the collected fury of a billion beings Odin destroyed, given a body and one purpose. It cannot be killed while the grievance is true.",
+      ar: "ليس مخلوقًا بل مظلمة تجسّدت: غضب مليار كائن أفناهم أودين، مجموعًا في جسد ولغرض واحد. ولا يُقتل ما دامت المظلمة صادقة.",
+    },
+    related: [
+      { id: "thor", kind: "enemy" },
+    ],
+  },
+  {
+    id: "blue-marvel",
+    nameEn: "Blue Marvel",
+    nameAr: "بلو مارفل",
+    aliases: ["Blue Marvel", "Adam Brashear"],
+    category: "hero",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "Antimatter reactor for a body", ar: "جسد كمفاعل مضاد للمادة" },
+      { en: "A physicist first", ar: "فيزيائي قبل كل شيء" },
+      { en: "Retired for the wrong reason", ar: "اعتزل لسبب خاطئ" },
+    ],
+    origin: {
+      en: "A scientist who became one of the most powerful beings on Earth in the early sixties and was quietly asked to retire when the country found out he was black. He came back decades later.",
+      ar: "عالم صار من أقوى الكائنات على الأرض في أوائل الستينيات، فطُلب إليه بهدوء أن يعتزل حين علمت البلاد أنه أسود. وعاد بعد عقود.",
+    },
+    related: [
+      { id: "iron-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "onslaught",
+    nameEn: "Onslaught",
+    nameAr: "أونسلوت",
+    aliases: ["Onslaught"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Psychic Entity",
+    powers: [
+      { en: "Xavier's mind and Magneto's", ar: "عقل إكزافير وعقل ماغنيتو" },
+      { en: "Every power of both", ar: "كل قوى الاثنين" },
+      { en: "Born from one lost temper", ar: "وُلد من لحظة غضب واحدة" },
+    ],
+    origin: {
+      en: "What formed when Xavier finally lost his temper inside Magneto's mind and something took the worst of both and kept going. It is the argument between them, alive and hostile.",
+      ar: "ما تكوّن حين فقد إكزافير أعصابه أخيرًا داخل عقل ماغنيتو، فأخذ شيءٌ أسوأ ما فيهما ومضى. إنه الخصام بينهما، حيًّا وعدائيًا.",
+    },
+    related: [
+      { id: "professor-x", kind: "variant" },
+      { id: "magneto", kind: "variant" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -10571,6 +10855,7 @@ export const characters: CharacterDraft[] = [
   ...elders,
   ...abstractsBatch,
   ...mystics,
+  ...heralds,
   ...avengers,
   ...guardians,
   ...xmen,

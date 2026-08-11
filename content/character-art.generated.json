@@ -414,6 +414,66 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "air-walker": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/65/Gabriel_Lan_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_Vol_2_16_001.jpg/revision/latest?cb=20240708083503",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "morg": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/56/Morg_%28Earth-616%29_from_All-New_Official_Handbook_of_the_Marvel_Universe_A_to_Z_Vol_1_7_0001.jpg/revision/latest?cb=20171230020226",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "stardust": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/46/Lambda-Zero_%28Earth-616%29_from_Annihilation_Silver_Surfer_Vol_1_3_0001.jpg/revision/latest?cb=20191126061545",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "red-shift": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2a/Red_Shift_%28Earth-616%29_from_Annihilation_The_Nova_Corps_Files_Vol_1_1_0001.jpg/revision/latest?cb=20210209175923",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-fallen-one": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/7c/Fallen_One_%28Herald%29_%28Earth-616%29_from_Thanos_Vol_1_11_001.jpg/revision/latest?cb=20101209183132",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "praeter": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b7/Praeter_%28Mike%29_%28Earth-616%29_from_Mighty_Thor_Vol_1_6_001.jpg/revision/latest?cb=20111002171207",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "beta-ray-bill": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c3/Beta_Ray_Bill_%28Earth-616%29_from_Mortal_Thor_Vol_1_2_Clarke_Variant.jpg/revision/latest?cb=20250926064724",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "gladiator": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Realm_of_Kings_Imperial_Guard_Vol_1_5_Textless.jpg/revision/latest?cb=20221215064147",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "hyperion": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Hyperion_Vol_1_1_Textless.jpg/revision/latest?cb=20151023184219",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mangog": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/60/Mangog_%28Earth-616%29_from_Marvel_Monsters_Vol_1_1_001.jpg/revision/latest?cb=20221112174158",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "blue-marvel": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/97/Adam_Brashear_%28Earth-616%29_from_Marvel_Legends_promotional_artwork_001.jpg/revision/latest?cb=20220314224837",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "onslaught": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/36/Onslaught_%28Earth-616%29_from_Marvel_Masterpieces_%28Trading_Cards%29_1996_Set_001.jpg/revision/latest?cb=20051218191341",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",
