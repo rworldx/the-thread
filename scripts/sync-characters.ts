@@ -304,6 +304,29 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/1/14/Karn_%28Earth-001%29_from_Spider-Geddon_Vol_1_2_001.jpg/revision/latest?cb=20240413203542",
   "spider-uk":
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/William_Braddock_%28Earth-833%29_from_Amazing_Spider-Man_Vol_3_7_002.jpg/revision/latest?cb=20141012071303",
+  /* Symbiotes are filed under "(Symbiote)", their hosts under real names —
+     Andrea Benton, Scott Washington, Tanis Nieves, Dmitri Smerdyakov, Lily
+     Hollister, Phillip Urich. */
+  "lasher":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a6/Extreme_Carnage_Lasher_Vol_1_1_Comic_Kingdom_of_Canada_Exclusive_Virgin_Variant.jpg/revision/latest?cb=20210721011601",
+  "phage":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/ed/Extreme_Carnage_Phage_Vol_1_1_Textless.jpg/revision/latest?cb=20211015151651",
+  "sleeper":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Venom_Vol_4_20_Codex_Variant_Textless.jpg/revision/latest?cb=20200823015914",
+  "mania":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/7e/Andrea_Benton_%28Earth-616%29_and_Silence_%28Symbiote%29_%28Earth-616%29_from_Venom_War_Deadpool_Vol_1_2_Cover.jpg/revision/latest?cb=20260205183440",
+  "hybrid":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/34/Venom_Vol_4_18_Codex_Variant_Textless.jpg/revision/latest?cb=20190901185734",
+  "dylan-brock":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a8/Dylan_Brock_%28Earth-616%29_and_Toxin_%28Symbiote%29_%28Earth-616%29_from_Venom_Vol_6_259_001.jpg/revision/latest?cb=20260627030657",
+  "scorn":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/af/Tanis_Nieves_%28Earth-616%29_and_Scorn_%28Symbiote%29_%28Earth-616%29_from_Carnage%2C_U.S.A._Vol_1_5_001.png/revision/latest?cb=20120422120551",
+  "chameleon":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/65/Dmitri_Smerdyakov_%28Earth-616%29_from_Giant-Size_Amazing_Spider-Man_Chameleon_Conspiracy_Vol_1_1_cover_001.jpg/revision/latest?cb=20210712021523",
+  "menace":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Lily_Hollister_%28Earth-616%29_from_Black_Cat_Vol_1_12_001.jpg/revision/latest?cb=20220320175716",
+  "phil-urich":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/00/Phillip_Urich_%28Earth-616%29_from_Red_Goblin_Vol_1_1.jpg/revision/latest?cb=20230610112349",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

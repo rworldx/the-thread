@@ -1213,7 +1213,9 @@ const spiderVerse: CharacterDraft[] = [
     id: "green-goblin",
     nameEn: "Green Goblin",
     nameAr: "الغرين غوبلن",
-    aliases: ["Green Goblin", "Norman Osborn"],
+    /* Red Goblin is Norman wearing Carnage, not a second person. An alias,
+       so a search for it lands on him rather than on a duplicate record. */
+    aliases: ["Green Goblin", "Norman Osborn", "Red Goblin"],
     category: "villain",
     affiliation: [],
     universe: ["sony", "mcu"],
@@ -5999,7 +6001,9 @@ const others: CharacterDraft[] = [
      * across two films, and it is a cost this site pays knowingly rather than
      * by inventing per-title alias overrides.
      */
-    aliases: ["Harry Osborn", "New Goblin"],
+    /* Kindred is Harry, revealed. Same rule as Red Goblin: an alias, not a
+       record, because the corpus holds people rather than costumes. */
+    aliases: ["Harry Osborn", "New Goblin", "Kindred"],
     category: "antivillain",
     affiliation: [],
     universe: ["sony"],
@@ -9602,11 +9606,258 @@ const inheritors: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE LIFE FOUNDATION FIVE AND THE GOBLIN EDGES, batch 5.
+ *
+ * TWO ENTRIES ON THE SUPPLIED ROSTER ARE NOT PEOPLE. Kindred is Harry Osborn
+ * revealed, and the Red Goblin is Norman wearing Carnage. Both are listed as
+ * separate characters and both would have been duplicate records of men this
+ * corpus already holds, so they went on as ALIASES instead. This file holds
+ * people, not costumes: Banner and the Hulk are one record for the same
+ * reason, and so are Marc Spector and Mr. Knight.
+ *
+ * `symbioteClass` does real work here. The Life Foundation four are `spawn`,
+ * harvested in a lab rather than born, which is exactly why they lack what a
+ * true descendant inherits. Sleeper, Mania, Dylan's Venom and Scorn are
+ * `lineage`, born of Venom or Carnage.
+ */
+const lifeFoundation: CharacterDraft[] = [
+  {
+    id: "lasher",
+    nameEn: "Lasher",
+    nameAr: "لاشر",
+    aliases: ["Lasher"],
+    category: "villain",
+    affiliation: ["Symbiotes"],
+    universe: ["sony"],
+    species: "Symbiote",
+    symbioteClass: "spawn",
+    powers: [
+      { en: "Whips of living tendril", ar: "سياط من محلاق حيّ" },
+      { en: "Cut from Venom in a lab", ar: "انتُزع من فينوم في مختبر" },
+      { en: "Bonds to a soldier", ar: "يرتبط بجندي" },
+    ],
+    origin: {
+      en: "One of five symbiotes forced out of Venom by Life Foundation scientists who wanted their own. Harvested rather than born, which is why it lacks what a true offspring inherits.",
+      ar: "أحد خمسة سيمبيوتات انتُزعت من فينوم على يد علماء مؤسسة الحياة أرادوا واحدًا لأنفسهم. حُصد ولم يولد، ولهذا يفتقر إلى ما يرثه المولود الحقيقي.",
+    },
+    related: [
+      { id: "venom", kind: "family" },
+    ],
+  },
+  {
+    id: "phage",
+    nameEn: "Phage",
+    nameAr: "فيج",
+    aliases: ["Phage"],
+    category: "villain",
+    affiliation: ["Symbiotes"],
+    universe: ["sony"],
+    species: "Symbiote",
+    symbioteClass: "spawn",
+    powers: [
+      { en: "Blades from every limb", ar: "نصال من كل طرف" },
+      { en: "Cut from Venom in a lab", ar: "انتُزع من فينوم في مختبر" },
+      { en: "Yellow and serrated", ar: "أصفر ومسنّن" },
+    ],
+    origin: {
+      en: "Another of the Life Foundation five, taken from Venom by force and grown into a weapon. It shapes its whole body into edges rather than hands.",
+      ar: "آخر من خمسة مؤسسة الحياة، أُخذ من فينوم قسرًا وأُنمي سلاحًا. يشكّل جسده كله حوافّ بدل أن يكون أيديًا.",
+    },
+    related: [
+      { id: "venom", kind: "family" },
+    ],
+  },
+  {
+    id: "sleeper",
+    nameEn: "Sleeper",
+    nameAr: "سليبر",
+    aliases: ["Sleeper"],
+    category: "antihero",
+    affiliation: ["Symbiotes"],
+    universe: ["sony"],
+    species: "Symbiote",
+    symbioteClass: "lineage",
+    powers: [
+      { en: "Born, not harvested", ar: "وُلد ولم يُحصد" },
+      { en: "Changes shape at will", ar: "يبدّل شكله كما يشاء" },
+      { en: "Wants no host at all", ar: "لا يريد مضيفًا أصلًا" },
+    ],
+    origin: {
+      en: "Venom's own offspring, and the first of the line to decide it did not want a host. It left to find out what a symbiote is when nobody is riding it.",
+      ar: "ابن فينوم نفسه، وأول في السلالة يقرّر أنه لا يريد مضيفًا. مضى ليعرف ما يكون السيمبيوت حين لا يركبه أحد.",
+    },
+    related: [
+      { id: "venom", kind: "family" },
+    ],
+  },
+  {
+    id: "mania",
+    nameEn: "Mania",
+    nameAr: "مانيا",
+    aliases: ["Mania", "Andi Benton", "Andrea Benton"],
+    category: "antihero",
+    affiliation: ["Symbiotes"],
+    universe: ["sony"],
+    species: "Symbiote",
+    symbioteClass: "lineage",
+    powers: [
+      { en: "A shard of Venom's own", ar: "شظية من فينوم نفسه" },
+      { en: "Hellmark burning under it", ar: "وسم جحيم يتّقد تحته" },
+      { en: "Younger than the job", ar: "أصغر من المهمة" },
+    ],
+    origin: {
+      en: "A teenager given a piece of the Venom symbiote by Flash Thompson to protect her, who turned out to be carrying something older and angrier underneath it.",
+      ar: "مراهقة أعطاها فلاش طومسون قطعة من سيمبيوت فينوم لتحميها، فتبيّن أنها تحمل تحته شيئًا أقدم وأشدّ غضبًا.",
+    },
+    related: [
+      { id: "venom", kind: "family" },
+    ],
+  },
+  {
+    id: "hybrid",
+    nameEn: "Hybrid",
+    nameAr: "هايبرد",
+    aliases: ["Hybrid", "Scott Washington"],
+    category: "antihero",
+    affiliation: ["Symbiotes"],
+    universe: ["sony"],
+    species: "Symbiote",
+    symbioteClass: "spawn",
+    powers: [
+      { en: "Four symbiotes in one", ar: "أربعة سيمبيوتات في واحد" },
+      { en: "Argues with itself", ar: "يخاصم نفسه" },
+      { en: "Bonded to a wounded man", ar: "ارتبط برجل جريح" },
+    ],
+    origin: {
+      en: "Four of the Life Foundation symbiotes merged into a single creature and bonded to a paralysed man, who could walk again as long as the four inside him agreed on anything.",
+      ar: "أربعة من سيمبيوتات مؤسسة الحياة اندمجت في كائن واحد وارتبطت برجل مشلول، صار يمشي ما دام الأربعة في داخله متفقين على شيء.",
+    },
+    related: [
+      { id: "venom", kind: "family" },
+    ],
+  },
+  {
+    id: "dylan-brock",
+    nameEn: "Dylan Brock",
+    nameAr: "ديلان بروك",
+    aliases: ["Dylan Brock"],
+    category: "hero",
+    affiliation: ["Symbiotes"],
+    universe: ["sony"],
+    species: "Symbiote",
+    symbioteClass: "lineage",
+    powers: [
+      { en: "Commands symbiotes outright", ar: "يأمر السيمبيوتات مباشرة" },
+      { en: "Fire and sound do not touch him", ar: "لا تمسّه النار ولا الصوت" },
+      { en: "Carries Venom now", ar: "يحمل فينوم الآن" },
+    ],
+    origin: {
+      en: "Eddie Brock's son, born with an authority over symbiotes his father never had, who took up Venom while Eddie was elsewhere and found the suit answered him differently.",
+      ar: "ابن إيدي بروك، وُلد بسلطان على السيمبيوتات لم يملكه أبوه، حمل فينوم حين كان إيدي في مكان آخر فوجد البدلة تجيبه على نحو مختلف.",
+    },
+    related: [
+      { id: "venom", kind: "family" },
+    ],
+  },
+  {
+    id: "scorn",
+    nameEn: "Scorn",
+    nameAr: "سكورن",
+    aliases: ["Scorn", "Tanis Nieves"],
+    category: "villain",
+    affiliation: ["Symbiotes"],
+    universe: ["sony"],
+    species: "Symbiote",
+    symbioteClass: "lineage",
+    powers: [
+      { en: "Grown from Carnage", ar: "نبت من كارنيج" },
+      { en: "Merges with machinery", ar: "يندمج بالآلات" },
+      { en: "Bonded to a psychiatrist", ar: "ارتبط بطبيبة نفسية" },
+    ],
+    origin: {
+      en: "A piece of Carnage that attached itself to the psychiatrist sent to treat its host, and fused with her prosthetic arm before taking the rest of her.",
+      ar: "قطعة من كارنيج علقت بالطبيبة النفسية المرسَلة لعلاج مضيفه، فاندمجت بذراعها الاصطناعية قبل أن تأخذ سائرها.",
+    },
+    related: [
+      { id: "carnage", kind: "family" },
+    ],
+  },
+  {
+    id: "chameleon",
+    nameEn: "Chameleon",
+    nameAr: "كاميليون",
+    aliases: ["Chameleon", "Dmitri Smerdyakov"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Wears anyone's face", ar: "يلبس وجه أي أحد" },
+      { en: "Studies a man for weeks", ar: "يدرس المرء أسابيع" },
+      { en: "Kraven's half-brother", ar: "أخو كرايفن لأمه" },
+    ],
+    origin: {
+      en: "A master of disguise who can pass as anyone he has had time to study, and who was the first foe Spider-Man ever faced. Being nobody in particular is the closest thing he has to a self.",
+      ar: "سيّد التنكّر، يمرّ بوصفه أي أحد أتيح له أن يدرسه، وكان أول خصم واجهه سبايدرمان. وأن يكون لا أحد بعينه هو أقرب ما يملك إلى ذات.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "menace",
+    nameEn: "Menace",
+    nameAr: "مِناس",
+    aliases: ["Menace", "Lily Hollister"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "A goblin serum, self-taken", ar: "مصل غوبلن تناولته بنفسها" },
+      { en: "Glider and pumpkin bombs", ar: "منزلقة وقنابل يقطين" },
+      { en: "Harry Osborn's girlfriend", ar: "حبيبة هاري أوزبورن" },
+    ],
+    origin: {
+      en: "Harry Osborn's girlfriend, who found one of Norman's serums and took it deliberately, then used the transformation to run her father's election from the other side.",
+      ar: "حبيبة هاري أوزبورن، وجدت أحد أمصال نورمان وتناولته عن عمد، ثم استعملت التحوّل لتدير حملة أبيها الانتخابية من الجهة الأخرى.",
+    },
+    related: [
+      { id: "harry-osborn", kind: "enemy" },
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "phil-urich",
+    nameEn: "Phil Urich",
+    nameAr: "فيل يوريك",
+    aliases: ["Phil Urich", "Phillip Urich"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Found the goblin gear", ar: "عثر على عتاد الغوبلن" },
+      { en: "A laugh that stuns", ar: "ضحكة تصعق" },
+      { en: "Ben Urich's nephew", ar: "ابن أخي بن يوريك" },
+    ],
+    origin: {
+      en: "A reporter's nephew who found a goblin's abandoned equipment and used it as a hero for a while before the mask started deciding things for him.",
+      ar: "ابن أخي صحفي، عثر على عتاد غوبلن متروك واستعمله بطلًا مدة، قبل أن يبدأ القناع يقرّر عنه.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
   ...namedMutants,
   ...inheritors,
+  ...lifeFoundation,
   ...avengers,
   ...guardians,
   ...xmen,
