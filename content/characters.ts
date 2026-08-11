@@ -10087,6 +10087,265 @@ const elders: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE COSMIC ABSTRACTS, batch 7 — the tier the master list warns about.
+ *
+ * Its own caveat is the useful part: abstracts are NOT automatically stronger
+ * than non-abstracts, and it gives Eon as the proof, an abstract described in
+ * the comics as weak. So none of these is written as a power level. Order and
+ * Chaos are a PAIR and neither is the good one; Entropy is not a villain but
+ * the last step, arriving on time; Nemesis is what the Infinity Gems become
+ * when reunited as a being rather than a weapon, and the first thing she did
+ * with that was decide not to continue.
+ *
+ * Oblivion was on the list and is already in the corpus, so it was left alone.
+ */
+const abstractsBatch: CharacterDraft[] = [
+  {
+    id: "master-order",
+    nameEn: "Master Order",
+    nameAr: "سيد النظام",
+    aliases: ["Master Order"],
+    category: "antivillain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Embodies order itself", ar: "يجسّد النظام ذاته" },
+      { en: "Balances Lord Chaos", ar: "يوازن سيد الفوضى" },
+      { en: "Cannot act without him", ar: "لا يقدر على الفعل دونه" },
+    ],
+    origin: {
+      en: "One half of the pair that keeps the universe from settling into either perfect pattern or complete noise. He is not good, and the thing he opposes is not evil; they are two necessary halves.",
+      ar: "أحد شطري الثنائي الذي يمنع الكون من الاستقرار على نظام تام أو ضجيج كامل. ليس خيرًا، وما يعارضه ليس شرًّا، بل هما شطران لا غنى عنهما.",
+    },
+    related: [
+      { id: "lord-chaos", kind: "enemy" },
+    ],
+  },
+  {
+    id: "lord-chaos",
+    nameEn: "Lord Chaos",
+    nameAr: "سيد الفوضى",
+    aliases: ["Lord Chaos"],
+    category: "antivillain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Embodies chaos itself", ar: "يجسّد الفوضى ذاتها" },
+      { en: "Balances Master Order", ar: "يوازن سيد النظام" },
+      { en: "Neither of them can win", ar: "لا ينتصر أيّ منهما" },
+    ],
+    origin: {
+      en: "The other half of the pair, who is not destruction but change, and without whom nothing in the universe could ever become anything it was not already.",
+      ar: "الشطر الآخر من الثنائي، وهو ليس الدمار بل التغيّر، ولولاه لما صار شيء في الكون شيئًا لم يكنه من قبل.",
+    },
+    related: [
+      { id: "master-order", kind: "enemy" },
+    ],
+  },
+  {
+    id: "the-in-betweener",
+    nameEn: "The In-Betweener",
+    nameAr: "البَينِيّ",
+    aliases: ["The In-Betweener", "In-Betweener"],
+    category: "antivillain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Agent of Order and Chaos", ar: "عميل النظام والفوضى" },
+      { en: "Half light, half dark", ar: "نصفه نور ونصفه ظلمة" },
+      { en: "Turns a thing into its opposite", ar: "يقلب الشيء إلى ضدّه" },
+    ],
+    origin: {
+      en: "The servant Order and Chaos share, sent to correct anything that has tilted too far one way. He inverts what he touches, which makes him the only errand either of them can agree on.",
+      ar: "الخادم الذي يشترك فيه النظام والفوضى، يُرسَل ليصحّح ما مال أكثر من اللازم إلى جهة. يقلب ما يلمسه، وهو المهمة الوحيدة التي يتفقان عليها.",
+    },
+    related: [
+      { id: "master-order", kind: "ally" },
+      { id: "lord-chaos", kind: "ally" },
+    ],
+  },
+  {
+    id: "the-stranger",
+    nameEn: "The Stranger",
+    nameAr: "الغريب",
+    aliases: ["The Stranger"],
+    category: "antivillain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Collects living specimens", ar: "يجمع عيّنات حية" },
+      { en: "Power nobody has measured", ar: "قوة لم يقسها أحد" },
+      { en: "Keeps a Laboratory World", ar: "يملك عالمًا مختبرًا" },
+    ],
+    origin: {
+      en: "A cosmic being who wanders the universe abducting whatever interests him and keeping it on a world he uses as a laboratory. Nobody has established what he is or how strong, including him.",
+      ar: "كائن كوني يجوب الكون فيخطف ما يثير اهتمامه ويحتفظ به في عالم يتخذه مختبرًا. ولم يثبت أحد ما هو ولا مبلغ قوته، ولا هو نفسه.",
+    },
+    related: [
+      { id: "galactus", kind: "enemy" },
+    ],
+  },
+  {
+    id: "eon",
+    nameEn: "Eon",
+    nameAr: "إيون",
+    aliases: ["Eon"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Appoints the Protector", ar: "يعيّن حامي الكون" },
+      { en: "Older than most of them", ar: "أقدم من معظمهم" },
+      { en: "Weak for an abstract", ar: "ضعيف بمقياس المجرّدات" },
+    ],
+    origin: {
+      en: "The entity that chooses who holds the Quantum Bands and carries the title Protector of the Universe. He was called weak for an abstract, which the master list keeps as a caution against assuming abstracts outrank everything.",
+      ar: "الكيان الذي يختار من يحمل أساور الكم ويحمل لقب حامي الكون. وقد وُصف بالضعف بمقياس المجرّدات، وهو ما يبقيه المرجع تحذيرًا من افتراض تفوّق المجرّدات على كل شيء.",
+    },
+    related: [
+      { id: "quasar", kind: "ally" },
+    ],
+  },
+  {
+    id: "epoch",
+    nameEn: "Epoch",
+    nameAr: "إيبوك",
+    aliases: ["Epoch"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Eon's successor", ar: "خليفة إيون" },
+      { en: "Watches over the living", ar: "يرعى الأحياء" },
+      { en: "Grew from Eon's remains", ar: "نبت من بقايا إيون" },
+    ],
+    origin: {
+      en: "Eon's successor, grown from what was left of him, who took on the duty of appointing Protectors and watching the universe for the kind of trouble abstracts are supposed to notice.",
+      ar: "خليفة إيون، نبت مما بقي منه، فتولّى واجب تعيين الحماة ومراقبة الكون تحسّبًا لما يُفترض بالمجرّدات أن تنتبه إليه.",
+    },
+    related: [
+      { id: "eon", kind: "family" },
+    ],
+  },
+  {
+    id: "entropy",
+    nameEn: "Entropy",
+    nameAr: "إنتروبي",
+    aliases: ["Entropy"],
+    category: "antivillain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Child of Eternity", ar: "ابن الأزل" },
+      { en: "Unmakes what is finished", ar: "يفكّ ما تمّ" },
+      { en: "Ends a universe cleanly", ar: "ينهي كونًا بلا فوضى" },
+    ],
+    origin: {
+      en: "Eternity's child, whose function is to take a universe apart once it has run its course. He is not a villain; he is the last step, and he arrives on time.",
+      ar: "ابن الأزل، وظيفته أن يفكّ كونًا متى بلغ منتهاه. ليس شريرًا، بل هو الخطوة الأخيرة، ويأتي في موعده.",
+    },
+    related: [
+      { id: "eternity", kind: "family" },
+    ],
+  },
+  {
+    id: "kronos",
+    nameEn: "Kronos",
+    nameAr: "كرونوس",
+    aliases: ["Kronos"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Eternal",
+    powers: [
+      { en: "An Eternal who became abstract", ar: "أزليّ صار مجرّدًا" },
+      { en: "Exists as pure energy", ar: "يوجد طاقةً خالصة" },
+      { en: "Watches over time", ar: "يرعى الزمن" },
+    ],
+    origin: {
+      en: "An Eternal of Titan whose body was destroyed in an experiment and who reassembled as a being of pure energy with a hold over time. Thanos and Starfox are his grandsons.",
+      ar: "أزليّ من تايتان دُمّر جسده في تجربة فأعاد تشكّل نفسه كيانًا من طاقة خالصة له سلطان على الزمن. وثانوس وستارفوكس حفيداه.",
+    },
+    related: [
+      { id: "thanos", kind: "family" },
+    ],
+  },
+  {
+    id: "nemesis",
+    nameEn: "Nemesis",
+    nameAr: "نيميسيس",
+    aliases: ["Nemesis"],
+    category: "antivillain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "The Infinity Gems, reunited", ar: "أحجار لانهاية مجتمعة" },
+      { en: "A being, not an object", ar: "كائن لا شيء" },
+      { en: "Chose to end herself", ar: "اختارت إنهاء نفسها" },
+    ],
+    origin: {
+      en: "What the Infinity Gems become when all of them are brought back together as one being rather than one weapon. Finding herself alone at the top of everything, she chose not to continue.",
+      ar: "ما تصيره أحجار لانهاية حين تُجمع كلها كيانًا واحدًا لا سلاحًا واحدًا. ولمّا وجدت نفسها وحيدة على قمة كل شيء، اختارت ألا تستمر.",
+    },
+    related: [
+      { id: "thanos", kind: "enemy" },
+    ],
+  },
+  {
+    id: "protege",
+    nameEn: "Protege",
+    nameAr: "بروتيجيه",
+    aliases: ["Protege"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Copies any cosmic being", ar: "ينسخ أي كائن كوني" },
+      { en: "Becomes stronger than the original", ar: "يصير أقوى من الأصل" },
+      { en: "A child, in effect", ar: "طفل في حقيقته" },
+    ],
+    origin: {
+      en: "A being that can mimic any cosmic entity it observes and then exceed it, raised by a church that told it this made it a god. It has the power of everything it has seen and the judgement of a child.",
+      ar: "كائن يحاكي أي كيان كوني يراه ثم يفوقه، ربّته كنيسة أخبرته أن ذلك يجعله إلهًا. فله قوة كل ما رآه، وحُكم طفل.",
+    },
+    related: [
+      { id: "the-living-tribunal", kind: "enemy" },
+    ],
+  },
+  {
+    id: "tenebrous",
+    nameEn: "Tenebrous",
+    nameAr: "تينيبروس",
+    aliases: ["Tenebrous", "Tenebrous of the Darkness Between"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Older than this universe", ar: "أقدم من هذا الكون" },
+      { en: "Commands darkness and gravity", ar: "يأمر الظلمة والجاذبية" },
+      { en: "Imprisoned for aeons", ar: "سُجن دهورًا" },
+    ],
+    origin: {
+      en: "One of the beings that ruled before this universe existed, defeated by Galactus in his first days and sealed away. He was released long after, and has not forgiven anyone for the interval.",
+      ar: "أحد الكائنات التي حكمت قبل وجود هذا الكون، هزمه جالاكتوس في أيامه الأولى وختم عليه. أُطلق بعد دهر طويل، ولم يغفر لأحد تلك المدة.",
+    },
+    related: [
+      { id: "galactus", kind: "enemy" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -10094,6 +10353,7 @@ export const characters: CharacterDraft[] = [
   ...inheritors,
   ...lifeFoundation,
   ...elders,
+  ...abstractsBatch,
   ...avengers,
   ...guardians,
   ...xmen,

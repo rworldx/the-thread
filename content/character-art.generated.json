@@ -314,6 +314,61 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "master-order": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1f/Master_Order_%28Earth-616%29_from_G.O.D.S._Vol_1_6_Cosmic_Homage_Variant_cover_001.jpg/revision/latest?cb=20240522133951",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "lord-chaos": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/bf/Lord_Chaos_%28Earth-616%29_from_G.O.D.S._Vol_1_5_Cosmic_Homage_Variant_cover_001.jpg/revision/latest?cb=20240228175436",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-in-betweener": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/58/G.O.D.S._Vol_1_6_Reis_Variant_Textless.jpg/revision/latest?cb=20251026160219",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-stranger": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Stranger_%28Cosmic_Being%29_%28Earth-616%29_from_Howard_the_Duck_Vol_6_3_001.jpg/revision/latest?cb=20160102080157",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "eon": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/Eon_%28Earth-616%29_from_Captain_Marvel_Vol_1_28_0001.jpg/revision/latest?cb=20161011040647",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "epoch": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/Epoch_%28Earth-616%29_from_Fantastic_Four_Vol_3_544_0001.jpg/revision/latest?cb=20191202032038",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "entropy": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/22/Entropy_%28Earth-616%29_from_Captain_Marvel_Vol_5_5_001.jpg/revision/latest?cb=20220901143731",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "kronos": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4b/Kronos_%28Earth-616%29_from_Eternals_Thanos_Rises_Vol_1_1_001.jpg/revision/latest?cb=20220228050646",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "nemesis": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Nemesis_%28Cosmic_Being%29_%28First_Cosmos%29_from_Avengers_UltraForce_Vol_1_1_001.jpg/revision/latest?cb=20180303090223",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "protege": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6f/Prot%C3%A9g%C3%A9_%28Earth-691%29_from_Guardians_of_the_Galaxy_Vol_1_15_0001.jpg/revision/latest?cb=20191127024328",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "tenebrous": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/31/Tenebrous_%28Earth-616%29_from_Annihilation_Silver_Surfer_Vol_1_3_002.jpg/revision/latest?cb=20191126061634",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",

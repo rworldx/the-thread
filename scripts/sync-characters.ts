@@ -350,6 +350,30 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/9/94/Rubanna_Quormo_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_A_to_Z_Update_Vol_1_3_001.jpg/revision/latest?cb=20151128230617",
   "the-obliterator":
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/Maht_Pacle_%28Earth-616%29_from_Marauders_Vol_2_4_001.jpg/revision/latest?cb=20220731233044",
+  /* Abstracts sit under (Multiverse) or (Cosmic Being) rather than an Earth,
+     and Nemesis under (First Cosmos) — she predates this universe. */
+  "master-order":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1f/Master_Order_%28Earth-616%29_from_G.O.D.S._Vol_1_6_Cosmic_Homage_Variant_cover_001.jpg/revision/latest?cb=20240522133951",
+  "lord-chaos":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/bf/Lord_Chaos_%28Earth-616%29_from_G.O.D.S._Vol_1_5_Cosmic_Homage_Variant_cover_001.jpg/revision/latest?cb=20240228175436",
+  "the-in-betweener":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/58/G.O.D.S._Vol_1_6_Reis_Variant_Textless.jpg/revision/latest?cb=20251026160219",
+  "eon":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/Eon_%28Earth-616%29_from_Captain_Marvel_Vol_1_28_0001.jpg/revision/latest?cb=20161011040647",
+  "epoch":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/Epoch_%28Earth-616%29_from_Fantastic_Four_Vol_3_544_0001.jpg/revision/latest?cb=20191202032038",
+  "entropy":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/22/Entropy_%28Earth-616%29_from_Captain_Marvel_Vol_5_5_001.jpg/revision/latest?cb=20220901143731",
+  "kronos":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/4b/Kronos_%28Earth-616%29_from_Eternals_Thanos_Rises_Vol_1_1_001.jpg/revision/latest?cb=20220228050646",
+  "tenebrous":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/31/Tenebrous_%28Earth-616%29_from_Annihilation_Silver_Surfer_Vol_1_3_002.jpg/revision/latest?cb=20191126061634",
+  "the-stranger":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Stranger_%28Cosmic_Being%29_%28Earth-616%29_from_Howard_the_Duck_Vol_6_3_001.jpg/revision/latest?cb=20160102080157",
+  "nemesis":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Nemesis_%28Cosmic_Being%29_%28First_Cosmos%29_from_Avengers_UltraForce_Vol_1_1_001.jpg/revision/latest?cb=20180303090223",
+  "protege":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6f/Prot%C3%A9g%C3%A9_%28Earth-691%29_from_Guardians_of_the_Galaxy_Vol_1_15_0001.jpg/revision/latest?cb=20191127024328",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:
