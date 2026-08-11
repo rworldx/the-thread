@@ -68,21 +68,87 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   });
 
   /**
-   * PINNED BY HAND, and the only hand-kept list here — titles the vote ranking
-   * cannot reach and that the wall should carry anyway. Doomsday and Wonder Man
-   * are unreleased, so almost nobody has rated them; Legion and Cloak & Dagger
-   * are small shows with artwork worth more than their audience numbers.
+   * THE WALL IS CHOSEN, NOT RANKED.
+   *
+   * Every earlier version derived these — vote count, universe quotas, newest
+   * of each — and every one of them answered a question about POPULARITY when
+   * the question is about ARTWORK. Vote count cannot see that Iron Fist has a
+   * beautiful poster and a small audience, and no amount of tuning a ranking
+   * turns it into an eye.
+   *
+   * So these twenty-four are picked. Where a title was named as a family
+   * rather than a specific film, the one with the poster that sits best in
+   * this palette was taken:
+   *
+   *   Venom (2018)          darkest and coolest of the three, anchors the low end
+   *   Daredevil S1          near-black red; the darkest tile on the wall
+   *   The Punisher S1       near-black, and the only true monochrome here
+   *   Infinity War          warm red, where The Avengers is a cool blue-grey
+   *                         that fights the warm middle of this set
+   *   The Winter Soldier    cool grey-green, the best-composed of the three
+   *   Spider-Man 2          warm red that pairs with Logan; Spider-Man 3 is a
+   *                         cold blue that strands next to nothing
+   *
+   * The last six are mine, for the palette and for the two universes the named
+   * list left uncovered: Blade for legacy at the dark end, X-Men: The Animated
+   * Series for animation at the light end, Black Panther for its blue, and
+   * Moon Knight, Legion and Deadpool as the pale anchors the gradient needs to
+   * climb to — a wall of twenty-four dark posters has nowhere to go.
+   *
+   * The derivation below still runs and is not dead: if a title here is ever
+   * renamed or loses its poster, the ranking quietly fills the gap rather than
+   * shipping a wall of twenty-three.
    */
   const PINNED = [
-    "the-amazing-spider-man",
-    "wonder-man-s1",
+    // named
+    "spider-man-brand-new-day",
     "avengers-doomsday",
-    "legion",
+    "wonder-man-s1",
+    "the-amazing-spider-man",
     "cloak-and-dagger",
+    "venom",
+    "daredevil-s1",
+    "the-punisher-s1",
+    "avengers-infinity-war",
+    "captain-america-the-winter-soldier",
+    "thor-the-dark-world",
+    "doctor-strange",
+    "spider-man-2",
+    "helstrom",
+    "luke-cage-s1",
+    "iron-fist-s1",
+    "jessica-jones-s1",
+    "logan",
+    // chosen, for the palette and for legacy and animation
+    "blade",
+    "x-men-the-animated-series",
+    "black-panther",
+    "moon-knight-s1",
+    "legion",
+    "deadpool",
   ];
 
   /** Asked for by name to be off the wall. */
   const EXCLUDED = ["the-amazing-spider-man-2"];
+
+  /**
+   * THE SHOP WINDOW — positions 9 to 16, the only tiles seen whole.
+   *
+   * Two upcoming films lead it, so the first thing fully visible says the site
+   * runs to the end of what is announced. Then the six with the strongest
+   * artwork. Wonder Man loses its place here to Doctor Strange purely on the
+   * poster, and keeps its tile just below the band.
+   */
+  const BAND = [
+    "spider-man-brand-new-day",
+    "avengers-doomsday",
+    "black-panther",
+    "avengers-infinity-war",
+    "spider-man-2",
+    "logan",
+    "captain-america-the-winter-soldier",
+    "doctor-strange",
+  ];
 
   const franchise = new Map(titles.map((x) => [x.id, franchiseOf(x.titleEn)]));
   const mosaic: MosaicTile[] = pickWall(
@@ -92,6 +158,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     (x) => franchise.get(x.id) ?? x.id,
     [],
     EXCLUDED,
+    BAND,
   ).map((x) => ({ id: x.id, posterPath: x.posterPath }));
 
   /**

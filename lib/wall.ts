@@ -9,25 +9,17 @@
  * data — they are real Marvel — but a first-time visitor recognises none of
  * them, and a wall exists to be recognised.
  *
- * So the wall is now chosen against four requirements, in this order:
+ * Every version after that derived them — vote count, universe quotas, newest
+ * of each — and every one answered a question about POPULARITY when the
+ * question is about ARTWORK. A ranking cannot see that Iron Fist has a
+ * beautiful poster and a small audience, and no amount of tuning turns it into
+ * an eye. So the twenty-four are named in app/[locale]/page.tsx and this file
+ * arranges them: which colours sit beside which, and which are placed where a
+ * visitor can actually see them.
  *
- *   1. NAMED titles that must appear regardless of rank.
- *   2. EVERY universe gets at least one tile — the wall is the only place the
- *      site claims breadth before a reader has clicked anything, and a wall of
- *      pure MCU would be claiming something false.
- *   3. The rest by TMDB vote COUNT — not how good a film is, but how many
- *      people have seen it enough to rate it. It is already fetched for every
- *      title and needs no hand-kept list of "the famous ones" to rot.
- *
- * It briefly also forced the NEWEST film and the NEWEST show on, so the wall
- * would say "up to date" on its own. That is a real thing to want, but the two
- * it produced — Black Panther 3 and VisionQuest — are announcements with
- * placeholder art, and a wall of recognisable posters is worth more than a
- * wall that is provably current. Avengers: Doomsday is pinned and carries the
- * same message with artwork somebody recognises.
- *
- * Then the order is shuffled apart so no two neighbours are the same thing:
- * two Avengers posters side by side read as a repeat rather than a range.
+ * The derivation below still runs and is not dead. If a named title is ever
+ * renamed or loses its poster, it fills the gap rather than shipping a wall of
+ * twenty-three.
  */
 
 export interface WallItem {
@@ -110,24 +102,58 @@ export function franchiseOf(titleEn: string): string {
 export function harmonise(
   items: readonly WallItem[],
   keyOf: (x: WallItem) => string,
+  band: readonly string[] = [],
 ): WallItem[] {
   const luma = (x: WallItem) => colourGap(x.tint, "#000000");
-  const out = [...items].sort((a, b) => luma(a) - luma(b));
+  const byLuma = (a: WallItem, b: WallItem) => luma(a) - luma(b);
 
-  for (let i = 1; i < out.length; i++) {
-    if (keyOf(out[i]!) !== keyOf(out[i - 1]!)) continue;
-    /* Swap with the nearest following tile that clashes with neither side.
-       One pass, and a pair with no legal partner is simply left — the wall
-       degrades rather than looping. */
-    const j = out.findIndex(
-      (x, k) =>
-        k > i &&
-        keyOf(x) !== keyOf(out[i - 1]!) &&
-        (k + 1 >= out.length || keyOf(out[i]!) !== keyOf(out[k + 1]!)),
-    );
-    if (j !== -1) [out[i], out[j]] = [out[j]!, out[i]!];
-  }
-  return out;
+  /**
+   * THE MIDDLE OF THE WALL IS THE ONLY PART SEEN WHOLE.
+   *
+   * The grid is 8 x 3 on a desktop and 4 x 6 on a phone, and in both the top
+   * and bottom rows run under the headline and off the edges — a tile there is
+   * cropped, tinted and half-covered. Positions 9 to 16 are the middle row on
+   * a desktop and the two middle rows on a phone, and they are the only
+   * posters a visitor actually sees.
+   *
+   * A pure luminance sort decides what lands there by tint alone, which is an
+   * accident: it was seating Jessica Jones and TASM 1 in the shop window while
+   * Doomsday and Doctor Strange sat in the cropped rows. So the strongest
+   * eight are placed in the middle on purpose, and the remaining sixteen fill
+   * the dark rows above and the pale rows below.
+   *
+   * Each of the three segments is still sorted by luminance, so the wall reads
+   * as a composition rather than three piles. It costs a little smoothness at
+   * the two seams — mean neighbour difference 51 against 48 for a pure sort —
+   * which is a cheap price for the right posters being the visible ones.
+   */
+  const inBand = new Set(band);
+  const centre = items.filter((x) => inBand.has(x.id)).sort(byLuma);
+  const edges = items.filter((x) => !inBand.has(x.id)).sort(byLuma);
+  const start = Math.floor((items.length - centre.length) / 2);
+  const segments = centre.length
+    ? [edges.slice(0, start), centre, edges.slice(start)]
+    : [[...items].sort(byLuma)];
+
+  /* Separated WITHIN each segment, so fixing an adjacent pair can never push a
+     title out of the middle band it was deliberately placed in. */
+  return segments.flatMap((seg) => {
+    const out = [...seg];
+    for (let i = 1; i < out.length; i++) {
+      if (keyOf(out[i]!) !== keyOf(out[i - 1]!)) continue;
+      /* Swap with the nearest following tile that clashes with neither side.
+         One pass, and a pair with no legal partner is simply left — the wall
+         degrades rather than looping. */
+      const j = out.findIndex(
+        (x, k) =>
+          k > i &&
+          keyOf(x) !== keyOf(out[i - 1]!) &&
+          (k + 1 >= out.length || keyOf(out[i]!) !== keyOf(out[k + 1]!)),
+      );
+      if (j !== -1) [out[i], out[j]] = [out[j]!, out[i]!];
+    }
+    return out;
+  });
 }
 
 /**
@@ -176,6 +202,7 @@ export function pickWall(
   keyOf: (x: WallItem) => string,
   swaps: readonly (readonly [string, string])[] = [],
   excluded: readonly string[] = [],
+  band: readonly string[] = [],
 ): WallItem[] {
   const out = new Set(excluded);
   const byVotes = [...pool].filter((x) => !out.has(x.id)).sort((a, b) => b.votes - a.votes);
@@ -249,5 +276,5 @@ export function pickWall(
    * ones that survive if the wall is ever cropped, and the pinned and
    * newest-of picks sit among them rather than in a clump at the front.
    */
-  return applySwaps(harmonise([...chosen.values()], keyOf), swaps);
+  return applySwaps(harmonise([...chosen.values()], keyOf, band), swaps);
 }

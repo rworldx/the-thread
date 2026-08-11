@@ -3,11 +3,32 @@ import { titles, posterOf, ratingsOf, tintOf } from "@/content/build";
 import { pickWall, franchiseOf, colourGap, applySwaps, type WallItem } from "@/lib/wall";
 
 const PINNED = [
-  "the-amazing-spider-man",
-  "wonder-man-s1",
+  // named
+  "spider-man-brand-new-day",
   "avengers-doomsday",
-  "legion",
+  "wonder-man-s1",
+  "the-amazing-spider-man",
   "cloak-and-dagger",
+  "venom",
+  "daredevil-s1",
+  "the-punisher-s1",
+  "avengers-infinity-war",
+  "captain-america-the-winter-soldier",
+  "thor-the-dark-world",
+  "doctor-strange",
+  "spider-man-2",
+  "helstrom",
+  "luke-cage-s1",
+  "iron-fist-s1",
+  "jessica-jones-s1",
+  "logan",
+  // chosen, for the palette and for legacy and animation
+  "blade",
+  "x-men-the-animated-series",
+  "black-panther",
+  "moon-knight-s1",
+  "legion",
+  "deadpool",
 ];
 const COUNT = 24;
 const pool: WallItem[] = titles.flatMap((x) => {
@@ -28,7 +49,18 @@ const pool: WallItem[] = titles.flatMap((x) => {
 const franchise = new Map(titles.map((x) => [x.id, franchiseOf(x.titleEn)]));
 const keyOf = (x: WallItem) => franchise.get(x.id) ?? x.id;
 const EXCLUDED = ["the-amazing-spider-man-2"];
-const wall = pickWall(pool, PINNED, COUNT, keyOf, [], EXCLUDED);
+/** Must mirror BAND in app/[locale]/page.tsx — positions 9-16. */
+const BAND = [
+  "spider-man-brand-new-day",
+  "avengers-doomsday",
+  "black-panther",
+  "avengers-infinity-war",
+  "spider-man-2",
+  "logan",
+  "captain-america-the-winter-soldier",
+  "doctor-strange",
+];
+const wall = pickWall(pool, PINNED, COUNT, keyOf, [], EXCLUDED, BAND);
 
 describe("W1 the poster wall", () => {
   it("holds exactly the tiles asked for, with no repeats", () => {
@@ -67,7 +99,7 @@ describe("W1 the poster wall", () => {
       posterPath: "/x.jpg",
       tint: "#123456",
     };
-    const after = pickWall([...pool, extra], PINNED, COUNT, keyOf, [], EXCLUDED);
+    const after = pickWall([...pool, extra], PINNED, COUNT, keyOf, [], EXCLUDED, BAND);
     expect(after.map((x) => x.id)).toEqual(wall.map((x) => x.id));
   });
 });
@@ -115,5 +147,24 @@ describe("the wall as a composition", () => {
       xs.slice(1).reduce((n, x, i) => n + colourGap(x.tint, xs[i]!.tint), 0) / (xs.length - 1);
     const byVotes = [...wall].sort((a, b) => b.votes - a.votes);
     expect(mean(wall)).toBeLessThan(mean(byVotes));
+  });
+});
+
+describe("W2 the visible band", () => {
+  /**
+   * The grid crops its top and bottom rows under the headline, so 9-16 are the
+   * only posters seen whole. What sits there is a decision, not a by-product
+   * of tint.
+   */
+  it("puts exactly the named eight in positions 9 to 16", () => {
+    expect(wall.slice(8, 16).map((x) => x.id).sort()).toEqual([...BAND].sort());
+  });
+
+  it("still runs dark to light inside the band and inside each edge", () => {
+    const luma = (x: (typeof wall)[number]) => colourGap(x.tint, "#000000");
+    for (const seg of [wall.slice(0, 8), wall.slice(8, 16), wall.slice(16)]) {
+      const l = seg.map(luma);
+      expect([...l].sort((a, b) => a - b)).toEqual(l);
+    }
   });
 });
