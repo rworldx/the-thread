@@ -460,8 +460,21 @@ export default async function PathPage({ params }: Params) {
                 <li key={`${ep.season}x${ep.number}`}>
                   <span className="episode-still">
                     {ep.still ? (
+                      /**
+                       * `unoptimized`, like every other image here — this one
+                       * was missed when the rest moved off Vercel's optimiser,
+                       * so all 1,934 episode stills kept requesting a quota
+                       * that was already spent and rendered as nothing.
+                       *
+                       * And NOT through `remoteSrc`: that maps a TMDB path
+                       * onto the POSTER width ladder, which would ask for
+                       * w342. Stills are published at w92/w185/w300/original
+                       * and a poster width 404s on them. w300 is already the
+                       * right size, so the URL is used as written.
+                       */
                       <Image
                         src={`https://image.tmdb.org/t/p/w300${ep.still}`}
+                        unoptimized
                         alt=""
                         width={300}
                         height={169}

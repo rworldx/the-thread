@@ -26,6 +26,9 @@ export interface ProjectCard {
   universe: string;
   category: string;
   type: string;
+  /** Whether TMDB lists episodes for it. See KINDS — this, not `type`, is
+      what makes something a show. */
+  episodic: boolean;
   genres: string[];
   score: number | null;
   poster: string | null;
@@ -132,19 +135,34 @@ export function ProjectBrowser({
    *
    * `season` still rides with `series`, because a season is a child of a show
    * rather than a different shape of thing.
+   *
+   * WHAT MAKES A SHOW IS EPISODES, NOT THE `type` STRING. `animation` is the
+   * odd one in the corpus: it names a MEDIUM where the other five name a
+   * SHAPE, so it holds animated films and animated shows together. Filtering
+   * on it put 45 shows — What If...?, X-Men '97, Marvel Zombies, I Am Groot,
+   * Spidey and His Amazing Friends — in "film" and left them out of "series"
+   * entirely, which is the opposite of both answers.
+   *
+   * So the question asked here is the one a reader actually means: does it
+   * have episodes. The authored type stays as a fallback for the handful of
+   * shows TMDB lists no episodes for, so nothing typed as a show can fall out
+   * of the shows bucket, and film is then simply what is left.
    */
-  const KINDS: Record<string, (t: string) => boolean> = {
-    film: (t) => t === "film" || t === "animation",
-    series: (t) => t === "series" || t === "season",
-    special: (t) => t === "special",
-    oneshot: (t) => t === "short",
+  const isShow = (x: ProjectCard) =>
+    x.episodic || x.type === "series" || x.type === "season";
+
+  const KINDS: Record<string, (x: ProjectCard) => boolean> = {
+    film: (x) => !isShow(x) && x.type !== "special" && x.type !== "short",
+    series: isShow,
+    special: (x) => x.type === "special",
+    oneshot: (x) => x.type === "short",
   };
 
   const shown = useMemo(() => {
     const q = normalise(query);
     const kept = index.filter(
       (x) =>
-        (kind === "all" || (KINDS[kind]?.(x.type) ?? true)) &&
+        (kind === "all" || (KINDS[kind]?.(x) ?? true)) &&
         (cat === "all" || x.category === cat) &&
         (studio === "all" || x.universe === studio) &&
         (genre === "all" || x.genres.includes(genre)) &&

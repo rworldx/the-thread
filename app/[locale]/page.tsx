@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { titles, posterOf, ratingsOf } from "@/content/build";
+import { titles, posterOf, ratingsOf, episodesOf } from "@/content/build";
+import { pickWall, franchiseOf, type WallItem } from "@/lib/wall";
 import { infinitySaga, mcuOrder } from "@/lib/graph";
 import { localeParams } from "@/lib/locales";
 import { Poster } from "@/app/components/poster";
@@ -44,47 +45,38 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const slice = mcuOrder(titles).slice(0, 4);
 
   /**
-   * 24 POSTERS FOR THE WALL — the most-RECOGNISED titles, not every Nth.
+   * 24 POSTERS FOR THE WALL. The rules, and why each exists, are in lib/wall.ts.
    *
-   * This used to stride across the whole corpus in release order, and that was
-   * stable only while the corpus was. Going from 167 titles to 216 moved the
-   * stride from 6 to 8 and dealt a completely different 24: the wall that had
-   * been Avengers and Iron Man became Pryde of the X-Men, Marvel Disk Wars,
-   * Spider-Man (1967) and Howard the Duck. Nothing about those is wrong as
-   * data — they are real Marvel — but a first-time visitor recognises none of
-   * them, and the wall exists to be recognised. Every title added would have
-   * reshuffled it again.
-   *
-   * TMDB vote COUNT is the honest measure of that, and it is already fetched
-   * for every title: not how good a film is, but how many people have seen it
-   * enough to rate it. It needs no hand-kept list of "the famous ones" that
-   * would rot the way the stride did.
-   *
-   * Ranking alone would give 24 tiles of Avengers and Iron Man sequels, so the
-   * wall takes every other title from the top 48. That keeps X-Men, Spider-Verse,
-   * Venom, Loki and the Hulk in the frame — the whole thirty years, all of it
-   * recognisable — and an obscure addition can never enter the top 48, so the
-   * wall no longer moves when the corpus grows.
-   */
-  /**
-   * TMDB-hosted posters only.
-   *
-   * One title supplies its own absolute poster URL, and the mosaic prefixes a
-   * TMDB size onto whatever it is given — which produced
-   * `image.tmdb.org/t/p/w185https://m.media-amazon.com/...` and a 404 in the
-   * server log. The mosaic is texture behind a scrim, so skipping one of 216
-   * costs nothing; branching on the URL shape here would put the same
+   * TMDB-hosted posters only. One title supplies its own absolute poster URL,
+   * and the mosaic prefixes a TMDB size onto whatever it is given — which
+   * produced `image.tmdb.org/t/p/w185https://m.media-amazon.com/...` and a 404
+   * in the server log. The wall is texture behind a scrim, so skipping one of
+   * 216 costs nothing; branching on the URL shape here would put the same
    * conditional in a third place instead.
    */
-  const withPosters = titles.filter((x) => {
+  const pool: WallItem[] = titles.flatMap((x) => {
     const p = posterOf(x.id);
-    return p !== null && !p.startsWith("http");
+    if (p === null || p.startsWith("http")) return [];
+    return [{
+      id: x.id,
+      universe: x.universe,
+      releaseDate: x.releaseDate,
+      votes: ratingsOf(x.id)?.tmdb?.votes ?? 0,
+      show: episodesOf(x.id).length > 0 || x.type === "series" || x.type === "season",
+      posterPath: p,
+    }];
   });
-  const mosaic: MosaicTile[] = [...withPosters]
-    .sort((a, b) => (ratingsOf(b.id)?.tmdb?.votes ?? 0) - (ratingsOf(a.id)?.tmdb?.votes ?? 0))
-    .slice(0, 48)
-    .filter((_, i) => i % 2 === 0)
-    .map((x) => ({ id: x.id, posterPath: posterOf(x.id)! }));
+
+  /**
+   * PINNED BY HAND, and the only hand-kept list here — three titles that the
+   * vote ranking cannot reach and that the site should still lead with.
+   * Doomsday and Wonder Man are unreleased, so almost nobody has rated them.
+   */
+  const PINNED = ["the-amazing-spider-man", "wonder-man-s1", "avengers-doomsday"];
+
+  const franchise = new Map(titles.map((x) => [x.id, franchiseOf(x.titleEn)]));
+  const mosaic: MosaicTile[] = pickWall(pool, PINNED, 24, (x) => franchise.get(x.id) ?? x.id)
+    .map((x) => ({ id: x.id, posterPath: x.posterPath }));
 
   /**
    * A RAIL OF PORTRAITS, ranked by appearances — a real ranking, but NOT STAN LEE, even though he outranks everyone.

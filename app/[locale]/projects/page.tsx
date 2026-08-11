@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeParams } from "@/lib/locales";
-import { titles, posterOf, ratingsOf, genresOf } from "@/content/build";
+import { titles, posterOf, ratingsOf, genresOf , episodesOf } from "@/content/build";
 import { releaseOrder } from "@/lib/graph";
 import { formatRuntimeIntl } from "@/lib/runtime";
 import { uiMessages } from "@/lib/ui-messages";
@@ -65,6 +65,7 @@ export default async function ProjectsPage({
     universe: x.universe,
     category: categoryOf(x),
     type: x.type,
+    episodic: episodesOf(x.id).length > 0,
     genres: genresOf(x.id),
     score: ratingsOf(x.id).imdb?.score ?? null,
     poster: posterOf(x.id),
