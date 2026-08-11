@@ -264,6 +264,56 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "the-champion": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/28/Tryco_Slatterus_%28Earth-616%29_from_Thanos_Vol_2_1_001.png/revision/latest?cb=20161201000442",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-gardener": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Ord_Zyonz_%28Earth-616%29_from_All-New_Guardians_of_the_Galaxy_Vol_1_10_001.jpg/revision/latest?cb=20180308010713",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-contemplator": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b3/Tath_Ki_%28Earth-616%29_from_G.O.D.S._Vol_1_1_001.jpg/revision/latest?cb=20231008045113",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-astronomer": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Ecce_%28Earth-616%29_from_Super-Villain_Classics_Vol_1_1_001.jpg/revision/latest?cb=20231219095047",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-possessor": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/0f/Kamo_Tharnn_%28Earth-616%29_from_G.O.D.S._Vol_1_1_001.jpg/revision/latest?cb=20231008041749",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-trader": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4e/Cort_Zo_Tinnus_%28Earth-616%29_from_G.O.D.S._Vol_1_1_001.jpg/revision/latest?cb=20231009231550",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-explorer": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/33/Zamanathan_Rambunazeth_%28Earth-616%29_from_Quasar_Vol_1_48_0001.jpg/revision/latest?cb=20080517200312",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-caregiver": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/94/Rubanna_Quormo_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_A_to_Z_Update_Vol_1_3_001.jpg/revision/latest?cb=20151128230617",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-judicator": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Judicator_%28Earth-616%29_from_All-New_Guardians_of_the_Galaxy_Vol_1_10_001.png/revision/latest?cb=20170924035643",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-obliterator": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/Maht_Pacle_%28Earth-616%29_from_Marauders_Vol_2_4_001.jpg/revision/latest?cb=20220731233044",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",

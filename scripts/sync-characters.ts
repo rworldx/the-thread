@@ -327,6 +327,29 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Lily_Hollister_%28Earth-616%29_from_Black_Cat_Vol_1_12_001.jpg/revision/latest?cb=20220320175716",
   "phil-urich":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/00/Phillip_Urich_%28Earth-616%29_from_Red_Goblin_Vol_1_1.jpg/revision/latest?cb=20230610112349",
+  /* Elders are filed under their own names, not their titles: Tryco
+     Slatterus, Ord Zyonz, Tath Ki, Ecce, Kamo Tharnn, Cort Zo Tinnus,
+     Zamanathan Rambunazeth, Rubanna Quormo, Maht Pacle. */
+  "the-champion":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/28/Tryco_Slatterus_%28Earth-616%29_from_Thanos_Vol_2_1_001.png/revision/latest?cb=20161201000442",
+  "the-gardener":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Ord_Zyonz_%28Earth-616%29_from_All-New_Guardians_of_the_Galaxy_Vol_1_10_001.jpg/revision/latest?cb=20180308010713",
+  "the-contemplator":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b3/Tath_Ki_%28Earth-616%29_from_G.O.D.S._Vol_1_1_001.jpg/revision/latest?cb=20231008045113",
+  "the-astronomer":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Ecce_%28Earth-616%29_from_Super-Villain_Classics_Vol_1_1_001.jpg/revision/latest?cb=20231219095047",
+  "the-possessor":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/0f/Kamo_Tharnn_%28Earth-616%29_from_G.O.D.S._Vol_1_1_001.jpg/revision/latest?cb=20231008041749",
+  "the-judicator":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Judicator_%28Earth-616%29_from_All-New_Guardians_of_the_Galaxy_Vol_1_10_001.png/revision/latest?cb=20170924035643",
+  "the-trader":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/4e/Cort_Zo_Tinnus_%28Earth-616%29_from_G.O.D.S._Vol_1_1_001.jpg/revision/latest?cb=20231009231550",
+  "the-explorer":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/33/Zamanathan_Rambunazeth_%28Earth-616%29_from_Quasar_Vol_1_48_0001.jpg/revision/latest?cb=20080517200312",
+  "the-caregiver":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/94/Rubanna_Quormo_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_A_to_Z_Update_Vol_1_3_001.jpg/revision/latest?cb=20151128230617",
+  "the-obliterator":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/Maht_Pacle_%28Earth-616%29_from_Marauders_Vol_2_4_001.jpg/revision/latest?cb=20220731233044",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

@@ -9852,12 +9852,248 @@ const lifeFoundation: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE ELDERS OF THE UNIVERSE, batch 6 — the last coherent group on the cosmic
+ * list, and the one the master document places at the BOTTOM of the cosmic
+ * hierarchy despite the name.
+ *
+ * They are the last survivors of their species, each of whom stayed sane
+ * across millions of years by fixing on a single obsession and never letting
+ * go of it. That is the whole species trait and it is why their names are
+ * jobs: the Collector collects, the Grandmaster plays, the Champion fights,
+ * the Caregiver sits with the dying. Both of the ones already here arrived
+ * through Marvel Studios; these ten never have.
+ */
+const elders: CharacterDraft[] = [
+  {
+    id: "the-champion",
+    nameEn: "The Champion",
+    nameAr: "البطل",
+    aliases: ["The Champion", "Tryco Slatterus"],
+    category: "antivillain",
+    affiliation: ["Elders of the Universe"],
+    universe: ["mcu"],
+    species: "Elder of the Universe",
+    powers: [
+      { en: "Unbeaten for millions of years", ar: "لم يُهزم منذ ملايين السنين" },
+      { en: "Fights only worthy opponents", ar: "لا يقاتل إلا كفؤًا" },
+      { en: "Refuses to use powers", ar: "يأبى استعمال قواه" },
+    ],
+    origin: {
+      en: "An Elder who spent his immortality learning to fight and now travels between worlds looking for someone who can last. He will not use his cosmic power in a bout, because that would spoil it.",
+      ar: "شيخ أنفق خلوده في تعلّم القتال، وصار يجول بين العوالم باحثًا عمّن يصمد. ويأبى استعمال قوته الكونية في نزال، لأن ذلك يفسده.",
+    },
+    related: [
+      { id: "hulk", kind: "enemy" },
+    ],
+  },
+  {
+    id: "the-gardener",
+    nameEn: "The Gardener",
+    nameAr: "البستاني",
+    aliases: ["The Gardener", "Ord Zyonz"],
+    category: "supporting",
+    affiliation: ["Elders of the Universe"],
+    universe: ["mcu"],
+    species: "Elder of the Universe",
+    powers: [
+      { en: "Grows life on dead worlds", ar: "ينبت الحياة في عوالم ميتة" },
+      { en: "Held the Time Stone", ar: "حمل حجر الزمن" },
+      { en: "Prefers plants to people", ar: "يؤثر النبات على الناس" },
+    ],
+    origin: {
+      en: "An Elder who has spent millions of years planting gardens on dead worlds, and who used an Infinity Stone mostly to help things grow. Of all of them he is the least interested in power.",
+      ar: "شيخ أمضى ملايين السنين يغرس الحدائق في عوالم ميتة، واستعمل حجر لانهاية في إنماء الأشياء أكثر من أي شيء. وهو أقلهم جميعًا اهتمامًا بالسلطان.",
+    },
+    related: [
+      { id: "the-collector", kind: "family" },
+    ],
+  },
+  {
+    id: "the-contemplator",
+    nameEn: "The Contemplator",
+    nameAr: "المتأمّل",
+    aliases: ["The Contemplator", "Tath Ki"],
+    category: "supporting",
+    affiliation: ["Elders of the Universe"],
+    universe: ["mcu"],
+    species: "Elder of the Universe",
+    powers: [
+      { en: "Millions of years of thought", ar: "ملايين السنين من التأمل" },
+      { en: "Reads minds and futures", ar: "يقرأ العقول والمآلات" },
+      { en: "Meddles more than he admits", ar: "يتدخّل أكثر مما يعترف" },
+    ],
+    origin: {
+      en: "An Elder who chose contemplation as his obsession and has been thinking without pause ever since, though he intervenes in other people's affairs far more often than a contemplative should.",
+      ar: "شيخ اختار التأمّل هوسًا له فما انفكّ يفكّر منذ ذلك الحين، وإن كان يتدخّل في شؤون غيره أكثر بكثير مما يليق بمتأمّل.",
+    },
+    related: [
+      { id: "the-collector", kind: "family" },
+    ],
+  },
+  {
+    id: "the-astronomer",
+    nameEn: "The Astronomer",
+    nameAr: "الفلكي",
+    aliases: ["The Astronomer", "Ecce"],
+    category: "supporting",
+    affiliation: ["Elders of the Universe"],
+    universe: ["mcu"],
+    species: "Elder of the Universe",
+    powers: [
+      { en: "Charts every star there is", ar: "يرسم كل نجم موجود" },
+      { en: "Reads what the sky will do", ar: "يقرأ ما ستفعله السماء" },
+      { en: "Found Galactus a world", ar: "دلّ جالاكتوس على عالم" },
+    ],
+    origin: {
+      en: "An Elder who maps the heavens and reads what is coming in them. He is the one who pointed Galactus at a planet, which is a thing an astronomer can do and a thing he has to live with.",
+      ar: "شيخ يرسم خرائط السماوات ويقرأ ما هو آتٍ فيها. وهو من دلّ جالاكتوس على كوكب، وذلك ما يقدر عليه فلكيّ وما عليه أن يعيش به.",
+    },
+    related: [
+      { id: "galactus", kind: "ally" },
+    ],
+  },
+  {
+    id: "the-possessor",
+    nameEn: "The Possessor",
+    nameAr: "الحائز",
+    aliases: ["The Possessor", "Kamo Tharnn"],
+    category: "supporting",
+    affiliation: ["Elders of the Universe"],
+    universe: ["mcu"],
+    species: "Elder of the Universe",
+    powers: [
+      { en: "Hoards knowledge, not things", ar: "يكنز المعرفة لا الأشياء" },
+      { en: "Held the Power Stone", ar: "حمل حجر القوة" },
+      { en: "Guards what he has learned", ar: "يحرس ما تعلّمه" },
+    ],
+    origin: {
+      en: "An Elder who collects knowledge the way the Collector gathers objects, keeping every fact he has ever acquired and parting with almost none of it.",
+      ar: "شيخ يجمع المعرفة كما يجمع الجامع الأشياء، يحفظ كل حقيقة حصّلها ولا يفرّط في شيء منها تقريبًا.",
+    },
+    related: [
+      { id: "the-collector", kind: "family" },
+    ],
+  },
+  {
+    id: "the-trader",
+    nameEn: "The Trader",
+    nameAr: "التاجر",
+    aliases: ["The Trader", "Cort Zo Tinnus"],
+    category: "supporting",
+    affiliation: ["Elders of the Universe"],
+    universe: ["mcu"],
+    species: "Elder of the Universe",
+    powers: [
+      { en: "Bargains across galaxies", ar: "يساوم عبر المجرّات" },
+      { en: "Never takes a bad deal", ar: "لا يقبل صفقة خاسرة" },
+      { en: "Everything has a price", ar: "لكل شيء ثمن" },
+    ],
+    origin: {
+      en: "An Elder whose obsession is the deal itself rather than anything he gains from it. He has been trading long enough that entire civilisations have been the currency.",
+      ar: "شيخ هوسه الصفقة ذاتها لا ما يكسبه منها. وقد ظل يقايض حتى صارت حضارات بأكملها عملةً في يديه.",
+    },
+    related: [
+      { id: "the-collector", kind: "family" },
+    ],
+  },
+  {
+    id: "the-explorer",
+    nameEn: "The Explorer",
+    nameAr: "المستكشف",
+    aliases: ["The Explorer", "Zamanathan Rambunazeth"],
+    category: "supporting",
+    affiliation: ["Elders of the Universe"],
+    universe: ["mcu"],
+    species: "Elder of the Universe",
+    powers: [
+      { en: "Goes where nothing has been", ar: "يمضي حيث لم يمضِ شيء" },
+      { en: "Never stays anywhere", ar: "لا يستقر في مكان" },
+      { en: "Older than most stars", ar: "أقدم من معظم النجوم" },
+    ],
+    origin: {
+      en: "An Elder who has spent his immortality moving, on the reasoning that a universe this large would be wasted on anyone who settled. He has outlasted most of the places he has seen.",
+      ar: "شيخ أنفق خلوده متنقلًا، بحجة أن كونًا بهذا الاتساع يضيع على من يستقرّ. وقد بقي بعد معظم الأماكن التي رآها.",
+    },
+    related: [
+      { id: "the-collector", kind: "family" },
+    ],
+  },
+  {
+    id: "the-caregiver",
+    nameEn: "The Caregiver",
+    nameAr: "الراعية",
+    aliases: ["The Caregiver", "Rubanna Quormo"],
+    category: "supporting",
+    affiliation: ["Elders of the Universe"],
+    universe: ["mcu"],
+    species: "Elder of the Universe",
+    powers: [
+      { en: "Tends the dying", ar: "ترعى المحتضرين" },
+      { en: "Sits with whole species", ar: "تجلس مع أنواع بأكملها" },
+      { en: "Outlived everyone she nursed", ar: "بقيت بعد كل من مرّضت" },
+    ],
+    origin: {
+      en: "An Elder whose chosen obsession is caring for others as they die, which on her scale means sitting with entire species through their last years. She is the gentlest of them and the saddest.",
+      ar: "شيخة اختارت رعاية الآخرين عند موتهم هوسًا لها، وذلك على مقياسها يعني الجلوس مع أنواع بأكملها في سنيها الأخيرة. وهي أرقّهم وأحزنهم.",
+    },
+    related: [
+      { id: "the-collector", kind: "family" },
+    ],
+  },
+  {
+    id: "the-judicator",
+    nameEn: "The Judicator",
+    nameAr: "القاضي",
+    aliases: ["The Judicator"],
+    category: "antivillain",
+    affiliation: ["Elders of the Universe"],
+    universe: ["mcu"],
+    species: "Elder of the Universe",
+    powers: [
+      { en: "Passes sentence on species", ar: "يصدر الحكم على الأنواع" },
+      { en: "Answers to no court", ar: "لا يخضع لمحكمة" },
+      { en: "Certain of every verdict", ar: "واثق من كل حكم" },
+    ],
+    origin: {
+      en: "An Elder who took judgement as his obsession and appointed himself to it, weighing whole peoples against a standard he wrote and nobody agreed to.",
+      ar: "شيخ اتخذ القضاء هوسًا وولّى نفسه إياه، يزن شعوبًا بأسرها بمعيارٍ كتبه هو ولم يوافق عليه أحد.",
+    },
+    related: [
+      { id: "the-collector", kind: "family" },
+    ],
+  },
+  {
+    id: "the-obliterator",
+    nameEn: "The Obliterator",
+    nameAr: "المُبيد",
+    aliases: ["The Obliterator", "Maht Pacle", "Achernon"],
+    category: "villain",
+    affiliation: ["Elders of the Universe"],
+    universe: ["mcu"],
+    species: "Elder of the Universe",
+    powers: [
+      { en: "Destroys as a discipline", ar: "يدمّر ممارسةً ومنهجًا" },
+      { en: "Hunts what cannot be killed", ar: "يصطاد ما لا يُقتل" },
+      { en: "Wields a weapon of pure force", ar: "يحمل سلاحًا من قوة خالصة" },
+    ],
+    origin: {
+      en: "An Elder who chose destruction as his obsession, and hunts targets specifically because they are said to be unkillable. It is the difficulty he is after, not the ruin.",
+      ar: "شيخ اختار التدمير هوسًا له، ويطارد أهدافًا لأنه قيل إنها لا تُقتل. فالصعوبة هي مبتغاه لا الخراب.",
+    },
+    related: [
+      { id: "silver-surfer", kind: "enemy" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
   ...namedMutants,
   ...inheritors,
   ...lifeFoundation,
+  ...elders,
   ...avengers,
   ...guardians,
   ...xmen,
