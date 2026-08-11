@@ -98,20 +98,37 @@ export function totalRuntime(
 ): string {
   if (path.length === 0) return formatRuntimeIntl(0, m);
   const missing = path.filter((t) => t.runtimeMin === null).length;
-  if (missing === 0) {
-    return formatRuntimeIntl(path.reduce((n, t) => n + (t.runtimeMin ?? 0), 0), m);
-  }
   if (missing / path.length > APPROX_THRESHOLD) return m.notSynced(missing, path.length);
 
+  /**
+   * NOT YET RELEASED IS A QUESTION ABOUT THE DATE, NOT ABOUT THE RUNTIME.
+   *
+   * This counted only titles that were BOTH undated in the future AND missing
+   * a runtime, on the assumption that an unreleased film has no runtime yet.
+   * That assumption expires: TMDB publishes a runtime for Avengers: Doomsday
+   * long before it opens, so Doomsday silently stopped counting and a list
+   * holding four unreleased titles said three. A reader counting the future
+   * films in front of them gets a different number than the page does, and
+   * they are right.
+   *
+   * So the two facts are now counted separately, because they are separate:
+   * how many titles are not out yet, and how many released ones have no
+   * runtime on record.
+   */
+  const now = new Date().toISOString().slice(0, 10);
+  const unreleased = path.filter((t) => String(t.releaseDate) > now).length;
+  const unmeasured = path.filter(
+    (t) => t.runtimeMin === null && String(t.releaseDate) <= now,
+  ).length;
+
   const known = path.reduce((n, t) => n + (t.runtimeMin ?? 0), 0);
+  /* Everything is out and every runtime is known: an exact total, no caveat. */
+  if (unreleased === 0 && unmeasured === 0) return formatRuntimeIntl(known, m);
+
   const runtime = formatRuntimeIntl(known, m);
   /* Unmade titles outnumbering unmeasured ones is the normal case, so that
      wording leads; a released title with no figure is the exception. */
-  const now = new Date().toISOString().slice(0, 10);
-  const unreleased = path.filter(
-    (t) => t.runtimeMin === null && String(t.releaseDate) > now,
-  ).length;
-  if (unreleased === missing) return m.approx(runtime, missing);
-  if (unreleased === 0) return m.approxUnmeasured(runtime, missing);
-  return m.approxMixed(runtime, unreleased, missing - unreleased);
+  if (unmeasured === 0) return m.approx(runtime, unreleased);
+  if (unreleased === 0) return m.approxUnmeasured(runtime, unmeasured);
+  return m.approxMixed(runtime, unreleased, unmeasured);
 }

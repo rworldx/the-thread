@@ -95,12 +95,31 @@ export function pickWall(
 ): WallItem[] {
   const byVotes = [...pool].sort((a, b) => b.votes - a.votes);
   const chosen = new Map<string, WallItem>();
-  const take = (x: WallItem | undefined) => {
-    if (x && !chosen.has(x.id) && chosen.size < count) chosen.set(x.id, x);
+  /**
+   * ONE TILE PER FRANCHISE, which is stricter than the adjacency rule and
+   * replaces most of its work. Spacing three Daredevil seasons apart still
+   * spends three of twenty-four tiles on one show — and seasons of a show
+   * routinely share a single poster on TMDB, so it can literally repeat the
+   * same artwork. A wall of 24 distinct franchises says far more about how
+   * much is here than a wall of 24 titles.
+   */
+  const used = new Set<string>();
+  const take = (x: WallItem | undefined, force = false) => {
+    if (!x || chosen.has(x.id) || chosen.size >= count) return;
+    const key = keyOf(x);
+    if (!force && used.has(key)) return;
+    /* A forced pick does NOT claim its franchise. Pinning Avengers: Doomsday
+       was taking the "avengers" slot and knocking The Avengers, Endgame and
+       Infinity War off the wall entirely — a pin is a demand that one title
+       appear, not a demand that its franchise appear only once. */
+    if (!force) used.add(key);
+    chosen.set(x.id, x);
   };
 
-  /* 1. The named ones first, so nothing below can crowd them out. */
-  for (const id of pinned) take(pool.find((x) => x.id === id));
+  /* 1. The named ones first, so nothing below can crowd them out — and they
+        override the one-per-franchise rule, since being asked for by name is
+        the whole point of pinning. */
+  for (const id of pinned) take(pool.find((x) => x.id === id), true);
 
   /* 2. The newest film and the newest show. Latest by release date, which for
         an announced-but-unreleased title is the date it is announced for —
@@ -115,13 +134,42 @@ export function pickWall(
   take(newest(false));
   take(newest(true));
 
-  /* 3. One per universe, the most-seen of each, for the ones not yet covered. */
-  for (const u of new Set(pool.map((x) => x.universe))) {
-    if ([...chosen.values()].some((x) => x.universe === u)) continue;
+  /**
+   * 3. ONE OF EVERY UNIVERSE FIRST, THEN A CAP.
+   *
+   * Two failed attempts are worth recording, because the right answer is
+   * between them. Filling purely by vote count gave 18 MCU tiles out of 24 —
+   * the wall became an advertisement for one universe. Correcting that with a
+   * strict round-robin overshot: it gave marvel-tv seven tiles and had to
+   * reach Runaways, Inhumans, Cloak & Dagger, Helstrom and Hit-Monkey to fill
+   * them, while The Avengers, Endgame, Infinity War and Black Panther fell off
+   * the wall entirely. Equal shares are the wrong target, because the
+   * universes are not equal in size: the MCU genuinely has more distinct
+   * properties than the Defenders do.
+   *
+   * So every universe is guaranteed its best title, and after that the wall
+   * fills by vote count with a ceiling on any one universe. The MCU keeps the
+   * largest share because it earns it, and it cannot take the whole wall.
+   */
+  for (const u of new Set(byVotes.map((x) => x.universe))) {
     take(byVotes.find((x) => x.universe === u));
   }
 
-  /* 4. Fill out by vote count. */
+  /* Generous enough that the MCU is clearly the largest block, tight enough
+     that six of the seven universes are still visible at a glance. */
+  const CAP = Math.ceil(count / 3);
+  const perUniverse = () => {
+    const n = new Map<string, number>();
+    for (const x of chosen.values()) n.set(x.universe, (n.get(x.universe) ?? 0) + 1);
+    return n;
+  };
+  for (const x of byVotes) {
+    if (chosen.size >= count) break;
+    if ((perUniverse().get(x.universe) ?? 0) >= CAP) continue;
+    take(x);
+  }
+
+  /* 4. Anything still short — a universe running out of titles — by votes. */
   for (const x of byVotes) take(x);
 
   /**
