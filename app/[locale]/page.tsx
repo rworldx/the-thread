@@ -106,8 +106,28 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
    * He keeps his record and all his cameos; he is simply not the face that
    * greets a first-time visitor.
    */
+  /**
+   * AND NOT AUNT MAY, for a different reason than Stan Lee.
+   *
+   * She is a genuine character, and by appearance count she outranks Ant-Man
+   * and Hawkeye — she is in every Spider-Man film there is. But this rail is
+   * the site's answer to "who is in all this", and a reader scanning twelve
+   * faces for somebody to follow is looking for the people who fight, not the
+   * people they come home to.
+   *
+   * The line is drawn at AFFILIATION rather than at the `supporting` category,
+   * which would have been the obvious rule and is the wrong one: Nick Fury is
+   * `supporting` too, and he holds the Avengers together. Fury carries
+   * S.H.I.E.L.D. and the Avengers; May Parker carries none, because she
+   * belongs to no side of it. That keeps Fury and drops her, which is exactly
+   * the split intended, and it needs no name written into the code.
+   *
+   * She keeps her record and every appearance; the characters page still
+   * ranks her where her count puts her.
+   */
   const faces = [...shownCharacters]
     .filter((c) => c.creditedActor === null)
+    .filter((c) => c.category !== "supporting" || c.affiliation.length > 0)
     .sort((a, b) => b.appearances.length - a.appearances.length)
     .slice(0, 12);
 
