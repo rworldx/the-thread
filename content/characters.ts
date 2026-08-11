@@ -10846,6 +10846,289 @@ const heralds: CharacterDraft[] = [
   },
 ];
 
+/**
+ * MUTANTS, batch 10. Two are Omega-level and typed as such — Proteus and
+ * Rachel Summers both appear on the supplied Omega subset, and `mutantClass`
+ * is a published in-universe rank rather than a power score this site invented.
+ */
+const mutantsB: CharacterDraft[] = [
+  {
+    id: "blob",
+    nameEn: "Blob",
+    nameAr: "بلوب",
+    aliases: ["Blob", "Fred Dukes", "Frederick Dukes"],
+    category: "villain",
+    affiliation: ["Brotherhood"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Immovable once planted", ar: "لا يُزحزح متى ثبت" },
+      { en: "Absorbs any impact", ar: "يمتص أي صدمة" },
+      { en: "Was a carnival act", ar: "كان فقرة في سيرك" },
+    ],
+    origin: {
+      en: "A circus strongman who cannot be moved from a spot he has decided to stand on. He joined Magneto early, and most of his life has been about being laughed at first and unmovable second.",
+      ar: "قويّ سيرك لا يمكن إزاحته عن موضع قرّر الوقوف فيه. انضم إلى ماغنيتو مبكرًا، وأكثر عمره كان أن يُضحَك عليه أولًا ثم لا يُزحزح ثانيًا.",
+    },
+    related: [
+      { id: "magneto", kind: "ally" },
+    ],
+  },
+  {
+    id: "boom-boom",
+    nameEn: "Boom-Boom",
+    nameAr: "بوم بوم",
+    aliases: ["Boom-Boom", "Tabitha Smith", "Meltdown", "Boomer"],
+    category: "antihero",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Makes plasma time bombs", ar: "تصنع قنابل بلازما موقوتة" },
+      { en: "Sets the fuse herself", ar: "تضبط الفتيل بنفسها" },
+      { en: "Runs off more than she stays", ar: "تهرب أكثر مما تبقى" },
+    ],
+    origin: {
+      en: "A runaway who makes glowing spheres that explode when she decides they should, and who has left more teams than most people join. The recklessness is a habit she keeps meaning to break.",
+      ar: "هاربة تصنع كرات متوهّجة تنفجر متى قرّرت، وقد تركت من الفرق أكثر مما ينضم إليه معظم الناس. والتهوّر عادة تنوي دائمًا أن تقلع عنها.",
+    },
+    related: [
+      { id: "cannonball", kind: "ally" },
+    ],
+  },
+  {
+    id: "caliban",
+    nameEn: "Caliban",
+    nameAr: "كاليبان",
+    aliases: ["Caliban"],
+    category: "antihero",
+    affiliation: ["Morlocks"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Senses any mutant nearby", ar: "يستشعر أي متحوّل قريب" },
+      { en: "Tracks them anywhere", ar: "يتعقبهم في أي مكان" },
+      { en: "Wanted only to be liked", ar: "لم يُرد إلا أن يُحَبّ" },
+    ],
+    origin: {
+      en: "A Morlock who can feel every mutant around him, which made him useful to people who were not kind to him. He has been a tracker for both sides and belonged to neither.",
+      ar: "مورلوك يحسّ بكل متحوّل حوله، وهو ما جعله نافعًا لمن لم يرفقوا به. عمل متعقّبًا للجهتين ولم ينتمِ إلى أيّ منهما.",
+    },
+    related: [
+      { id: "storm", kind: "ally" },
+    ],
+  },
+  {
+    id: "callisto",
+    nameEn: "Callisto",
+    nameAr: "كاليستو",
+    aliases: ["Callisto"],
+    category: "antihero",
+    affiliation: ["Morlocks"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Superhuman speed and reflexes", ar: "سرعة وردود فعل خارقة" },
+      { en: "Led the tunnels", ar: "قادت الأنفاق" },
+      { en: "Fought Storm for the crown", ar: "نازلت ستورم على الزعامة" },
+    ],
+    origin: {
+      en: "The leader of the Morlocks, who took the job by being the toughest one down there and lost it to Storm in a knife fight she insisted on. She stayed anyway.",
+      ar: "زعيمة المورلوك، نالت الزعامة بكونها أقساهم في الأسفل، وخسرتها أمام ستورم في نزال سكاكين أصرّت عليه. وبقيت رغم ذلك.",
+    },
+    related: [
+      { id: "storm", kind: "enemy" },
+    ],
+  },
+  {
+    id: "chamber",
+    nameEn: "Chamber",
+    nameAr: "تشيمبر",
+    aliases: ["Chamber", "Jonothon Starsmore"],
+    category: "hero",
+    affiliation: ["Generation X"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Psionic fire for a chest", ar: "نار ذهنية مكان صدره" },
+      { en: "Speaks mind to mind", ar: "يتكلم من عقل إلى عقل" },
+      { en: "Burned away his own face", ar: "أحرق نصف وجهه" },
+    ],
+    origin: {
+      en: "A young mutant whose power detonated the first time it woke and took his jaw and chest with it. He has no mouth, so he talks telepathically, and he is far more articulate than most people expect.",
+      ar: "متحوّل يافع انفجرت قوته أول ما استيقظت فأخذت فكّه وصدره. لا فم له فيتكلم تخاطرًا، وهو أفصح بكثير مما يتوقع الناس.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "darwin",
+    nameEn: "Darwin",
+    nameAr: "داروين",
+    aliases: ["Darwin", "Armando Munoz"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Adapts to anything at all", ar: "يتكيف مع أي شيء" },
+      { en: "Cannot be killed twice the same way", ar: "لا يُقتل بالطريقة نفسها مرتين" },
+      { en: "The body decides, not him", ar: "الجسد يقرر لا هو" },
+    ],
+    origin: {
+      en: "A mutant whose body reacts to any threat by becoming whatever survives it, without asking him first. Put underwater he grows gills; shot at, he turns to something the bullet cannot hurt.",
+      ar: "متحوّل يستجيب جسده لأي خطر بأن يصير ما ينجو منه، دون أن يستأذنه. يُغرَق فتنبت له خياشيم، ويُرمى بالرصاص فيصير ما لا تؤذيه الرصاصة.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "firestar",
+    nameEn: "Firestar",
+    nameAr: "فايرستار",
+    aliases: ["Firestar", "Angelica Jones"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Microwave energy at will", ar: "طاقة ميكروويف كما تشاء" },
+      { en: "Flies on her own heat", ar: "تطير على حرارتها" },
+      { en: "The power is slowly poisoning her", ar: "القوة تسمّمها ببطء" },
+    ],
+    origin: {
+      en: "A mutant who generates microwave radiation, flies on it, and has to live with the fact that using it has been quietly damaging her for years.",
+      ar: "متحوّلة تولّد إشعاع الميكروويف وتطير عليه، وعليها أن تتعايش مع أن استعماله ظل يؤذيها بهدوء سنين.",
+    },
+    related: [
+      { id: "iceman", kind: "ally" },
+    ],
+  },
+  {
+    id: "magma",
+    nameEn: "Magma",
+    nameAr: "ماغما",
+    aliases: ["Magma", "Amara Aquilla"],
+    category: "hero",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Commands lava and quakes", ar: "تأمر الحمم والزلازل" },
+      { en: "Body of living fire", ar: "جسد من نار حية" },
+      { en: "Raised in a hidden Roman city", ar: "نشأت في مدينة رومانية خفية" },
+    ],
+    origin: {
+      en: "A girl raised in a Roman colony that never learned the empire had fallen, whose power over the earth itself surfaced when she was thrown into a pit of lava as a sacrifice.",
+      ar: "فتاة نشأت في مستعمرة رومانية لم تعلم قط بسقوط الإمبراطورية، ظهرت قدرتها على الأرض نفسها حين أُلقيت في حفرة حمم قربانًا.",
+    },
+    related: [
+      { id: "cannonball", kind: "ally" },
+    ],
+  },
+  {
+    id: "proteus",
+    nameEn: "Proteus",
+    nameAr: "بروتيوس",
+    aliases: ["Proteus", "Kevin MacTaggert"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "Warps reality outright", ar: "يشوّه الواقع مباشرة" },
+      { en: "Burns through any body he takes", ar: "يحرق كل جسد يسكنه" },
+      { en: "Cannot be held for long", ar: "لا يُحتوى طويلًا" },
+    ],
+    origin: {
+      en: "Moira MacTaggert's son, an Omega-level mutant with no body of his own who wears other people until they burn out. His mother kept him locked up and could not bring herself to end it.",
+      ar: "ابن مويرا ماكتاغرت، متحوّل من مستوى أوميغا بلا جسد خاص، يلبس الناس حتى يحترقوا. أبقته أمه حبيسًا ولم تقوَ على إنهاء الأمر.",
+    },
+    related: [
+      { id: "professor-x", kind: "enemy" },
+    ],
+  },
+  {
+    id: "rachel-summers",
+    nameEn: "Rachel Summers",
+    nameAr: "رايتشل سمرز",
+    aliases: ["Rachel Summers", "Rachel Grey"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "A Phoenix host in her own right", ar: "مضيفة للعنقاء بحقّها" },
+      { en: "Telepath and telekinetic", ar: "قارئة أفكار ومحرّكة" },
+      { en: "Came back from a dead future", ar: "جاءت من مستقبل ميت" },
+    ],
+    origin: {
+      en: "The daughter Scott Summers and Jean Grey had in a future that was destroyed, who came back to a present where her parents are younger than the memories she has of them.",
+      ar: "ابنة سكوت سمرز وجين غراي في مستقبل دُمّر، عادت إلى حاضر أبواها فيه أصغر من الذكريات التي تحملها عنهما.",
+    },
+    related: [
+      { id: "jean-grey", kind: "family" },
+      { id: "cyclops", kind: "family" },
+    ],
+  },
+  {
+    id: "selene",
+    nameEn: "Selene Gallio",
+    nameAr: "سيلين غاليو",
+    /* NOT a bare "Selene". Daredevil: Born Again credits a character by that
+       name and it is not the Hellfire Club's Black Queen — a street-level MCU
+       show has no millennia-old sorceress in it. A single given name as an
+       alias is the false match this corpus has already been caught by with
+       Trevor, Jean and Gwen. Her own nameEn still carries the search. */
+    aliases: ["Selene Gallio", "Black Queen"],
+    category: "villain",
+    affiliation: ["Hellfire Club"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Drains life to stay young", ar: "تمتص الحياة لتبقى شابة" },
+      { en: "Thousands of years old", ar: "عمرها آلاف السنين" },
+      { en: "Sorceress as well as mutant", ar: "ساحرة ومتحوّلة معًا" },
+    ],
+    origin: {
+      en: "A mutant who has been alive for millennia by taking the life out of other people, and who runs the Hellfire Club's inner circle when she is not trying to become a goddess outright.",
+      ar: "متحوّلة عاشت آلاف السنين بامتصاص حياة الآخرين، وتدير الدائرة الداخلية لنادي هيلفاير حين لا تسعى إلى أن تصير إلهة صراحة.",
+    },
+    related: [
+      { id: "emma-frost", kind: "enemy" },
+    ],
+  },
+  {
+    id: "warpath",
+    nameEn: "Warpath",
+    nameAr: "ووربَاث",
+    /* NOT "Thunderbird". James took his dead brother's codename, and John
+       Proudstar is already a record here — sharing the alias would give one
+       brother the other's credits. They are two people. */
+    aliases: ["Warpath", "James Proudstar"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Strength and speed beyond human", ar: "قوة وسرعة تفوق البشر" },
+      { en: "Carries his brother's name", ar: "يحمل اسم أخيه" },
+      { en: "Bowie knives, always", ar: "سكاكين بووي دائمًا" },
+    ],
+    origin: {
+      en: "The younger brother of the first Thunderbird, who joined the people he blamed for his brother's death and stayed long enough to stop blaming them.",
+      ar: "الأخ الأصغر لأول ثاندربيرد، انضم إلى من حمّلهم موت أخيه وبقي حتى كفّ عن تحميلهم.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -10856,6 +11139,7 @@ export const characters: CharacterDraft[] = [
   ...abstractsBatch,
   ...mystics,
   ...heralds,
+  ...mutantsB,
   ...avengers,
   ...guardians,
   ...xmen,

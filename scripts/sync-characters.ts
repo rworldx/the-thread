@@ -420,6 +420,34 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7c/Fallen_One_%28Herald%29_%28Earth-616%29_from_Thanos_Vol_1_11_001.jpg/revision/latest?cb=20101209183132",
   "praeter":
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b7/Praeter_%28Mike%29_%28Earth-616%29_from_Mighty_Thor_Vol_1_6_001.jpg/revision/latest?cb=20111002171207",
+  /* Mutants, batch 10. All twelve resolved under real names on the first
+     try — Frederick Dukes, Tabitha Smith, Jonothon Starsmore, Armando
+     Munoz, Angelica Jones, Amara Aquilla, Kevin MacTaggert, Selene Gallio,
+     James Proudstar. Rachel Summers is Earth-811, the future she is from. */
+  "blob":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/3c/Frederick_Dukes_%28Earth-616%29_from_Uncanny_X-Men_Vol_6_7_001.jpg/revision/latest?cb=20241214224821",
+  "boom-boom":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/0d/Tabitha_Smith_%28Earth-616%29_from_X-Men_Vol_7_10_001.jpg/revision/latest?cb=20250203014233",
+  "caliban":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Caliban_%28Earth-616%29_from_NYX_Vol_2_3_001.jpg/revision/latest?cb=20240925191733",
+  "callisto":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/4a/Marauders_Vol_1_7_Textless.jpg/revision/latest?cb=20191120184928",
+  "chamber":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/Jonothon_Starsmore_%28Earth-616%29_from_Weapon_X-Men_Vol_2_2_Shalvey_Variant_cover.jpg/revision/latest?cb=20241223092234",
+  "darwin":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/54/Armando_Mu%C3%B1oz_%28Earth-616%29_from_X-Men_Vol_5_5_001.jpg/revision/latest?cb=20200131035105",
+  "firestar":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/55/West_Coast_Avengers_Vol_4_1_Artgerm_Virgin_Variant.jpg/revision/latest?cb=20241128220131",
+  "magma":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/35/Avengers_Vol_7_685_New_Mutants_Variant_Textless.jpg/revision/latest?cb=20180330070950",
+  "proteus":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b5/X-Men_-_Forever_Vol_1_1_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250130001739",
+  "rachel-summers":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/X-Force_Vol_7_2_Rachel_Summers_Virgin_Variant.jpg/revision/latest?cb=20240901001722",
+  "selene":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a6/Selene_Gallio_%28Earth-616%29_from_Immortal_X-Men_Vol_1_1_001.jpg/revision/latest?cb=20220401041713",
+  "warpath":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/05/Uncanny_X-Men_Vol_1_476_Textless.jpg/revision/latest?cb=20210517183725",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

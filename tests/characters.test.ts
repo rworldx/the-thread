@@ -24,7 +24,7 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(459);
+    expect(authored).toHaveLength(471);
   });
 
   it("C4 every relation points at a character that exists", () => {
@@ -78,10 +78,10 @@ describe("C. the character corpus", () => {
      */
     const offScreen = allCharacters.filter((c) => c.appearances.length === 0);
     /* 16 -> 30 -> 42: the fourteen unfilmed Celestials, then eleven of
-       Spider-Man's rogues and twelve named mutants, then the Inheritors and the Life Foundation symbiotes, then the Elders and the cosmic abstracts, then the mystics and the remaining Heralds — of whom only three stayed off-screen, the other
+       Spider-Man's rogues and twelve named mutants, then the Inheritors and the Life Foundation symbiotes, then the Elders and the cosmic abstracts, then the mystics and the remaining Heralds, then more mutants — of whom only three stayed off-screen, the other
        eight turning out to be credited in the animated series once they had
        aliases to match on. Empty lists here are the intent, not a fault. */
-    expect(offScreen).toHaveLength(97);
+    expect(offScreen).toHaveLength(102);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);
@@ -152,8 +152,11 @@ describe("C. the character corpus", () => {
       .filter((c) => c.mutantClass === "omega")
       .map((c) => c.id)
       .sort();
+    /* Proteus and Rachel Summers join on the same rule the others are here
+       by: both are named on Marvel's published Omega list, which the supplied
+       roster reproduces. Neither is here because they feel powerful. */
     expect(omegas).toEqual(["hope-summers",
-      "iceman", "jean-grey", "legion", "magneto", "storm"]);
+      "iceman", "jean-grey", "legion", "magneto", "proteus", "rachel-summers", "storm"]);
     expect(allCharacters.find((c) => c.id === "professor-x")!.mutantClass).not.toBe(
       "omega",
     );
