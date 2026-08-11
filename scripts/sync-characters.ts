@@ -374,6 +374,26 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Nemesis_%28Cosmic_Being%29_%28First_Cosmos%29_from_Avengers_UltraForce_Vol_1_1_001.jpg/revision/latest?cb=20180303090223",
   "protege":
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6f/Prot%C3%A9g%C3%A9_%28Earth-691%29_from_Guardians_of_the_Galaxy_Vol_1_15_0001.jpg/revision/latest?cb=20191127024328",
+  /* Mystics: Shuma-Gorath under (Multiverse), the Demiurge filed as
+     "Demiurge Primordial". */
+  "cyttorak":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/85/Cyttorak_%28Earth-616%29_and_Cain_Marko_%28Earth-616%29_from_Juggernaut_Vol_3_4_001.jpg/revision/latest?cb=20210519150308",
+  "oshtur":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/cc/Oshtur_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124848",
+  "hoggoth":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/Hoggoth_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124702",
+  "umar":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/87/Strange_Vol_3_4_Lubera_Variant_Textless.jpg/revision/latest?cb=20220727113619",
+  "zom":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Zom_%28Earth-616%29_from_Strange_Tales_Vol_1_156_031.jpg/revision/latest?cb=20211215050707",
+  "gaea":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c4/Gaea_%28Earth-616%29_from_Immortal_Thor_Vol_1_8_001.png/revision/latest?cb=20240313174931",
+  "set":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Set_%28Earth-616%29_from_Savage_Avengers_Vol_2_4_0001.jpeg/revision/latest?cb=20221110064408",
+  "shuma-gorath":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/2c/Invaders_Now%21_Vol_1_4_Textless.jpg/revision/latest?cb=20160517200603",
+  "the-demiurge":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/75/Demiurge_Primordial_%28Earth-616%29_from_Immortal_Thor_Vol_1_5_001.jpg/revision/latest?cb=20260124002743",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

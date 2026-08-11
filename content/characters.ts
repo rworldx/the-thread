@@ -10346,6 +10346,222 @@ const abstractsBatch: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE MYSTIC POWERS, batch 8 — the tier the list files beside the cosmics
+ * while noting it is a distinct category, which it is.
+ *
+ * The Elder Gods are one story told across several records here and it only
+ * reads if they are kept together: Set began eating the others, that is what
+ * turned the generation into demons, and Gaea is the one who neither turned
+ * nor left. Oshtur left rather than take part. Chthon, already in the corpus
+ * from batch 1, wrote everything he knew into a book before going.
+ *
+ * The Vishanti are three beings and not a committee, so Oshtur and Hoggoth
+ * get records of their own beside Agamotto rather than one entry for the
+ * trinity.
+ */
+const mystics: CharacterDraft[] = [
+  {
+    id: "cyttorak",
+    nameEn: "Cyttorak",
+    nameAr: "سيتوراك",
+    aliases: ["Cyttorak"],
+    category: "villain",
+    affiliation: ["Magic"],
+    universe: ["mcu"],
+    species: "Demon",
+    powers: [
+      { en: "Grants unstoppable force", ar: "يهب قوة لا تُوقف" },
+      { en: "Powers the Juggernaut", ar: "يمدّ الجاغرنوت بالقوة" },
+      { en: "Wants destruction done for him", ar: "يريد من يدمّر نيابة عنه" },
+    ],
+    origin: {
+      en: "The demon whose crimson gem makes whoever claims it unstoppable, on the understanding that they will destroy things in his name. Cain Marko picked it up and has been paying for it since.",
+      ar: "الشيطان الذي تجعل جوهرته القرمزية من يحوزها لا يُوقَف، على أن يدمّر باسمه. التقطها كين ماركو وما زال يدفع الثمن منذئذ.",
+    },
+    related: [
+      { id: "juggernaut", kind: "ally" },
+    ],
+  },
+  {
+    id: "shuma-gorath",
+    nameEn: "Shuma-Gorath",
+    nameAr: "شوما غوراث",
+    aliases: ["Shuma-Gorath", "Iop-Oa"],
+    category: "villain",
+    affiliation: ["Magic"],
+    universe: ["mcu"],
+    species: "Elder God",
+    powers: [
+      { en: "Ruled Earth before people", ar: "حكم الأرض قبل البشر" },
+      { en: "A mass of eyes and tendrils", ar: "كتلة من أعين ومحالق" },
+      { en: "Devours whole dimensions", ar: "يلتهم أبعادًا كاملة" },
+    ],
+    origin: {
+      en: "One of the things that owned this world before anything human walked on it, waiting outside for a door. Doctor Strange has spent much of his career keeping that door shut.",
+      ar: "أحد ما امتلك هذا العالم قبل أن يمشي عليه بشر، ينتظر في الخارج بابًا. وقد أنفق دكتور سترينج شطرًا من مسيرته في إبقاء ذلك الباب مغلقًا.",
+    },
+    related: [
+      { id: "doctor-strange", kind: "enemy" },
+    ],
+  },
+  {
+    id: "oshtur",
+    nameEn: "Oshtur",
+    nameAr: "أوشتور",
+    aliases: ["Oshtur"],
+    category: "hero",
+    affiliation: ["Magic", "Vishanti"],
+    universe: ["mcu"],
+    species: "Elder God",
+    powers: [
+      { en: "One of the Vishanti", ar: "إحدى الفيشانتي" },
+      { en: "Left Earth by choice", ar: "غادرت الأرض اختيارًا" },
+      { en: "Refused to feed on it", ar: "أبت أن تقتات عليها" },
+    ],
+    origin: {
+      en: "An Elder God who left this world rather than take part in what her siblings were becoming, and one of the three names every sorcerer invokes. Agamotto is her son.",
+      ar: "إلهة قديمة غادرت هذا العالم بدل أن تشارك فيما صار إليه إخوتها، وهي إحدى الأسماء الثلاثة التي يستنجد بها كل ساحر. وأجاموتو ابنها.",
+    },
+    related: [
+      { id: "agamotto", kind: "family" },
+    ],
+  },
+  {
+    id: "hoggoth",
+    nameEn: "Hoggoth",
+    nameAr: "هوغوث",
+    aliases: ["Hoggoth"],
+    category: "hero",
+    affiliation: ["Magic", "Vishanti"],
+    universe: ["mcu"],
+    species: "Elder God",
+    powers: [
+      { en: "One of the Vishanti", ar: "أحد الفيشانتي" },
+      { en: "Lends power to the worthy", ar: "يمنح القوة لمن يستحق" },
+      { en: "Ancient beyond reckoning", ar: "قديم لا يُحصى قِدَمه" },
+    ],
+    origin: {
+      en: "The third of the Vishanti, invoked in the same breath as Agamotto and Oshtur every time a sorcerer needs something borrowed. He answers, and he keeps his own counsel about why.",
+      ar: "ثالث الفيشانتي، يُستنجد به في نفس النَّفَس مع أجاموتو وأوشتور كلما احتاج ساحر عاريةً من قوة. يستجيب، ويكتم سببه لنفسه.",
+    },
+    related: [
+      { id: "agamotto", kind: "ally" },
+    ],
+  },
+  {
+    id: "umar",
+    nameEn: "Umar",
+    nameAr: "أومار",
+    aliases: ["Umar"],
+    category: "villain",
+    affiliation: ["Magic"],
+    universe: ["mcu"],
+    species: "Faltine",
+    powers: [
+      { en: "Dormammu's sister", ar: "أخت دورمامو" },
+      { en: "Raw mystical force", ar: "قوة سحرية خام" },
+      { en: "Ruled the Dark Dimension", ar: "حكمت البعد المظلم" },
+    ],
+    origin: {
+      en: "Dormammu's sister, born of the same energy and exiled with him, who has taken the Dark Dimension from him more than once. She finds his ambitions tedious and says so.",
+      ar: "أخت دورمامو، وُلدت من الطاقة ذاتها ونُفيت معه، وقد انتزعت منه البعد المظلم أكثر من مرة. تجد طموحاته مملّة ولا تكتم ذلك.",
+    },
+    related: [
+      { id: "dormammu", kind: "family" },
+      { id: "doctor-strange", kind: "enemy" },
+    ],
+  },
+  {
+    id: "zom",
+    nameEn: "Zom",
+    nameAr: "زوم",
+    aliases: ["Zom"],
+    category: "villain",
+    affiliation: ["Magic"],
+    universe: ["mcu"],
+    species: "Demon",
+    powers: [
+      { en: "Power without restraint", ar: "قوة بلا كابح" },
+      { en: "Corrupts whoever wields it", ar: "تفسد من يستعملها" },
+      { en: "Bound rather than killed", ar: "قُيّد ولم يُقتل" },
+    ],
+    origin: {
+      en: "A destructive force so unmanageable that even the beings who beat it could only bind it. Doctor Strange once took its power to win a fight and spent a long time regretting the trade.",
+      ar: "قوة مدمّرة عصيّة إلى حدّ أن من هزمها لم يقدر إلا على تقييدها. وقد أخذ دكتور سترينج قوتها مرة ليكسب معركة، فندم على المقايضة طويلًا.",
+    },
+    related: [
+      { id: "doctor-strange", kind: "enemy" },
+    ],
+  },
+  {
+    id: "gaea",
+    nameEn: "Gaea",
+    nameAr: "غايا",
+    aliases: ["Gaea", "Mother Earth"],
+    category: "hero",
+    affiliation: ["Magic"],
+    universe: ["mcu"],
+    species: "Elder God",
+    powers: [
+      { en: "The living Earth itself", ar: "الأرض الحية نفسها" },
+      { en: "Grew all life on it", ar: "أنبتت كل حياة عليها" },
+      { en: "The only Elder God who stayed", ar: "الإلهة القديمة الوحيدة التي بقيت" },
+    ],
+    origin: {
+      en: "The one Elder God who did not turn on the rest and did not leave, choosing instead to become the planet's own life. Thor's mother, and the reason there is anything growing here at all.",
+      ar: "الإلهة القديمة الوحيدة التي لم تنقلب على البقية ولم ترحل، بل اختارت أن تصير حياة الكوكب نفسه. أمّ ثور، وسبب وجود أي شيء نامٍ هنا أصلًا.",
+    },
+    related: [
+      { id: "thor", kind: "family" },
+    ],
+  },
+  {
+    id: "the-demiurge",
+    nameEn: "The Demiurge",
+    nameAr: "الديميورغ",
+    aliases: ["The Demiurge", "Demiurge"],
+    category: "supporting",
+    affiliation: ["Magic"],
+    universe: ["mcu"],
+    species: "Elder God",
+    powers: [
+      { en: "The source Earth's gods grew from", ar: "المنبع الذي نبتت منه آلهة الأرض" },
+      { en: "Older than the Elder Gods", ar: "أقدم من الآلهة القديمة" },
+      { en: "Returns roughly every thousand years", ar: "يعود كل ألف عام تقريبًا" },
+    ],
+    origin: {
+      en: "The mystical source that Earth's gods came out of, and the thing Wiccan is said to be growing into. It is less a person than a wellspring that occasionally takes a shape.",
+      ar: "المنبع السحري الذي خرجت منه آلهة الأرض، وما يقال إن ويكان صائر إليه. وهو نبعٌ يتخذ شكلًا أحيانًا أكثر منه شخصًا.",
+    },
+    related: [
+      { id: "gaea", kind: "family" },
+    ],
+  },
+  {
+    id: "set",
+    nameEn: "Set",
+    nameAr: "سِت",
+    aliases: ["Set"],
+    category: "villain",
+    affiliation: ["Magic"],
+    universe: ["mcu"],
+    species: "Elder God",
+    powers: [
+      { en: "A seven-headed serpent", ar: "أفعى بسبعة رؤوس" },
+      { en: "First of the Elder Gods to kill", ar: "أول الآلهة القديمة قتلًا" },
+      { en: "Fed on his own kind", ar: "اقتات على بني جنسه" },
+    ],
+    origin: {
+      en: "The Elder God who began eating the others, which is what turned that generation into demons and drove Gaea to make something new. Every serpent cult on Earth traces back to him.",
+      ar: "الإله القديم الذي بدأ يأكل الآخرين، وهو ما حوّل ذلك الجيل إلى شياطين ودفع غايا إلى صنع شيء جديد. وكل عبادة أفعى على الأرض ترجع إليه.",
+    },
+    related: [
+      { id: "gaea", kind: "enemy" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -10354,6 +10570,7 @@ export const characters: CharacterDraft[] = [
   ...lifeFoundation,
   ...elders,
   ...abstractsBatch,
+  ...mystics,
   ...avengers,
   ...guardians,
   ...xmen,
