@@ -24,7 +24,7 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(350);
+    expect(authored).toHaveLength(358);
   });
 
   it("C4 every relation points at a character that exists", () => {

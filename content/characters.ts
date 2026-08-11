@@ -8284,7 +8284,212 @@ const livePeters: CharacterDraft[] = [
   },
 ];
 
+/**
+ * COSMIC BEINGS — the tier above the fights, and the rule that decides who
+ * gets a record here.
+ *
+ * A supplied master list of 121 cosmic entities was checked name by name
+ * against the cast credits of all 216 titles. Most of that list has never been
+ * filmed: the Ur-Divisors, the Beyonders, twelve of the sixteen named
+ * Celestials, the Elders past the Grandmaster and the Collector. Those are
+ * real Marvel and they are not on this site, because this site answers "what
+ * do I watch", and a character with no appearance answers nothing.
+ *
+ * The eight below are the ones that WERE credited and were missing. Every one
+ * of them earns its record from a real credit, listed against it.
+ *
+ * Four entries on that list matched only by accident and were rejected: "On
+ * Set Rocket" is not the Elder God Set, "Suicide Drug Runner" is not the
+ * Runner, "Nova Prime" is the Nova Corps rather than Galactus's herald, and
+ * "Agent Weaver" is not the Web of Life. Shuma-Gorath was dropped too: Doctor
+ * Strange in the Multiverse of Madness credits two "Gargantos Fight
+ * Spectator" extras and no Gargantos, so there is nothing to derive from.
+ */
+const cosmicBeings: CharacterDraft[] = [
+  {
+    /* Avengers Assemble, credited "Agamotto (voice)". */
+    id: "agamotto",
+    nameEn: "Agamotto",
+    nameAr: "أجاموتو",
+    aliases: ["Agamotto"],
+    category: "hero",
+    affiliation: ["Magic", "Vishanti"],
+    universe: ["animation"],
+    species: "Elder God",
+    powers: [
+      { en: "First Sorcerer Supreme", ar: "أول ساحر أعظم" },
+      { en: "Sees every truth", ar: "يرى كل حقيقة" },
+      { en: "Made the Eye", ar: "صنع العين" },
+    ],
+    origin: {
+      en: "The first being on Earth to hold the title of Sorcerer Supreme, and one of the three the Vishanti are named for. The eye every later sorcerer swears by is the one he made and left behind.",
+      ar: "أول من حمل لقب الساحر الأعظم على الأرض، وأحد الثلاثة الذين سُمّي بهم الفيشانتي. والعين التي يقسم بها كل ساحر بعده هي التي صنعها وتركها وراءه.",
+    },
+    related: [{ id: "doctor-strange", kind: "ally" }],
+  },
+  {
+    /* The Super Hero Squad Show, credited "Chthon". */
+    id: "chthon",
+    nameEn: "Chthon",
+    nameAr: "كثون",
+    aliases: ["Chthon"],
+    category: "villain",
+    affiliation: ["Magic"],
+    universe: ["animation"],
+    species: "Elder God",
+    powers: [
+      { en: "Wrote the Darkhold", ar: "كتب الداركهولد" },
+      { en: "Source of chaos magic", ar: "منبع سحر الفوضى" },
+      { en: "Older than the gods", ar: "أقدم من الآلهة" },
+    ],
+    origin: {
+      en: "An Elder God who wrote everything he knew into a book before the Earth had people on it, so that his knowledge would outlive his banishment. Every corruption that book has caused since is the plan working.",
+      ar: "إله قديم دوّن كل ما يعرفه في كتاب قبل أن يسكن البشر الأرض، كي تبقى معرفته بعد نفيه. وكل فساد سبّبه ذلك الكتاب منذئذٍ هو الخطة وهي تعمل.",
+    },
+    related: [{ id: "scarlet-witch", kind: "enemy" }],
+  },
+  {
+    /* Hulk: Where Monsters Dwell and Ultimate Spider-Man, both "Nightmare". */
+    id: "nightmare",
+    nameEn: "Nightmare",
+    nameAr: "نايتمير",
+    aliases: ["Nightmare"],
+    category: "villain",
+    affiliation: ["Magic"],
+    universe: ["animation"],
+    species: "Demon",
+    powers: [
+      { en: "Rules the Dream Dimension", ar: "يحكم بُعد الأحلام" },
+      { en: "Feeds on fear", ar: "يتغذى على الخوف" },
+      { en: "Reaches anyone asleep", ar: "يبلغ كل نائم" },
+    ],
+    origin: {
+      en: "The ruler of the place minds go when they sleep, who grows stronger the more he is feared. He cannot touch anyone awake, which is why he is patient.",
+      ar: "حاكم المكان الذي تذهب إليه العقول حين تنام، ويزداد قوة كلما ازداد الخوف منه. لا يستطيع لمس مستيقظ، ولهذا هو صبور.",
+    },
+    related: [{ id: "doctor-strange", kind: "enemy" }],
+  },
+  {
+    /* Fantastic Four (1994) and Avengers: EMH, both "Terrax". */
+    id: "terrax",
+    nameEn: "Terrax the Tamer",
+    nameAr: "تيراكس المروّض",
+    aliases: ["Terrax", "Terrax the Tamer", "Tyros"],
+    category: "villain",
+    affiliation: ["Heralds of Galactus"],
+    universe: ["animation"],
+    species: "Birjian",
+    powers: [
+      { en: "The Power Cosmic", ar: "القوة الكونية" },
+      { en: "Commands rock and earth", ar: "يأمر الصخر والأرض" },
+      { en: "Carries a cosmic axe", ar: "يحمل فأسًا كونية" },
+    ],
+    origin: {
+      en: "A tyrant who ruled his own world by force before Galactus made him a herald, and the only one of them who took the job as a promotion. He looks for worlds to devour with more enthusiasm than his master.",
+      ar: "طاغية حكم عالمه بالقوة قبل أن يجعله جالاكتوس بشيرًا له، وهو الوحيد بينهم الذي عدّ المهمة ترقية. يبحث عن عوالم تُلتهم بحماسة تفوق حماسة سيده.",
+    },
+    related: [
+      { id: "galactus", kind: "ally" },
+      { id: "silver-surfer", kind: "enemy" },
+    ],
+  },
+  {
+    /* Fantastic Four (1994), credited "Firelord". */
+    id: "firelord",
+    nameEn: "Firelord",
+    nameAr: "فايرلورد",
+    aliases: ["Firelord", "Pyreus Kril"],
+    category: "antihero",
+    affiliation: ["Heralds of Galactus"],
+    universe: ["animation"],
+    species: "Xandarian",
+    powers: [
+      { en: "The Power Cosmic", ar: "القوة الكونية" },
+      { en: "Wields living flame", ar: "يسخّر لهبًا حيًا" },
+      { en: "Flies between stars", ar: "يطير بين النجوم" },
+    ],
+    origin: {
+      en: "A starship officer who went looking for his lost captain and found Galactus instead, and took the job of herald as the price of the answer. Freed from it, he stayed a long way from home.",
+      ar: "ضابط سفينة فضاء خرج باحثًا عن قائده المفقود فوجد جالاكتوس، فقبل مهمة البشير ثمنًا للإجابة. وحين تحرّر منها، بقي بعيدًا عن دياره.",
+    },
+    related: [{ id: "galactus", kind: "ally" }],
+  },
+  {
+    /**
+     * Fantastic Four (1994) and Fantastic Four: World's Greatest Heroes, both
+     * "Frankie Raye". The alias list is her NAME only and never "Nova": the
+     * corpus already holds the Nova Corps, and a bare "Nova" alias would take
+     * every one of their credits — the exact false match this file keeps
+     * getting caught by.
+     */
+    id: "frankie-raye",
+    nameEn: "Nova (Frankie Raye)",
+    nameAr: "نوفا (فرانكي راي)",
+    aliases: ["Frankie Raye"],
+    category: "antihero",
+    affiliation: ["Heralds of Galactus"],
+    universe: ["animation"],
+    species: "Human",
+    powers: [
+      { en: "The Power Cosmic", ar: "القوة الكونية" },
+      { en: "Burns without being burned", ar: "تحرق دون أن تحترق" },
+      { en: "Feels no fear of fire", ar: "لا تخشى النار" },
+    ],
+    origin: {
+      en: "Johnny Storm's girlfriend, who had the same accident he did and none of his hesitation about it. She volunteered to be Galactus's herald because the alternative was watching him choose someone unwilling.",
+      ar: "حبيبة جوني ستورم، أصابها ما أصابه ولم يصبها تردده. تطوّعت لتكون بشيرة جالاكتوس لأن البديل أن تراه يختار من لا يريد.",
+    },
+    related: [
+      { id: "human-torch", kind: "ally" },
+      { id: "galactus", kind: "ally" },
+    ],
+  },
+  {
+    /* Ultimate Spider-Man and Avengers: EMH, "Korvac" / "Michael Korvac". */
+    id: "korvac",
+    nameEn: "Korvac",
+    nameAr: "كورفاك",
+    aliases: ["Korvac", "Michael Korvac"],
+    category: "villain",
+    affiliation: [],
+    universe: ["animation"],
+    species: "Cyborg",
+    powers: [
+      { en: "The Power Cosmic", ar: "القوة الكونية" },
+      { en: "Half man, half machine", ar: "نصف إنسان ونصف آلة" },
+      { en: "Rewrites what is real", ar: "يعيد كتابة الواقع" },
+    ],
+    origin: {
+      en: "A computer technician from the thirty-first century, punished by his conquerors by being welded into a machine, who later stole enough cosmic power to remake a universe he thought he could run better.",
+      ar: "فنيّ حواسيب من القرن الحادي والثلاثين، عاقبه غزاته بلحمه في آلة، ثم سرق من القوة الكونية ما يكفي لإعادة صنع كونٍ ظنّ أنه يديره أفضل.",
+    },
+    related: [{ id: "galactus", kind: "enemy" }],
+  },
+  {
+    /* Avengers: Earth's Mightiest Heroes, credited "Quasar (voice)". */
+    id: "quasar",
+    nameEn: "Quasar",
+    nameAr: "كوازار",
+    aliases: ["Quasar", "Wendell Vaughn"],
+    category: "hero",
+    affiliation: ["Avengers"],
+    universe: ["animation"],
+    species: "Human",
+    powers: [
+      { en: "Wears the Quantum Bands", ar: "يرتدي أساور الكم" },
+      { en: "Protector of the Universe", ar: "حامي الكون" },
+      { en: "Builds anything from light", ar: "يبني أي شيء من الضوء" },
+    ],
+    origin: {
+      en: "A security guard who washed out of every field programme he tried, handed a pair of alien wristbands nobody else had survived wearing. He lived because he stopped trying to force them and simply asked.",
+      ar: "حارس أمن أخفق في كل برنامج ميداني جرّبه، سُلّم زوجًا من أساور فضائية لم ينجُ أحد من ارتدائها. نجا لأنه كفّ عن إجبارها واكتفى بأن يطلب.",
+    },
+    related: [{ id: "captain-america", kind: "ally" }],
+  },
+];
+
 export const characters: CharacterDraft[] = [
+  ...cosmicBeings,
   ...avengers,
   ...guardians,
   ...xmen,

@@ -181,6 +181,38 @@ const IMAGE_OVERRIDES: Record<string, string> = {
    * entries — `?s=<signature>` — and those go away. This is the direct upload
    * host: a bare path, no signature, no expiry.
    */
+  /**
+   * THE COSMIC BEINGS — every one of these is a CORRECTION, not a preference.
+   *
+   * The automatic sources found art for all eight and got five of them wrong
+   * in the same way: they matched the NAME and not the CHARACTER. Quasar came
+   * back as Phyla-Vell, who is a different Quasar entirely and not the one
+   * credited. Agamotto came back as the Earth-001 Spider-Verse version, Terrax
+   * as Earth-982 and Korvac as Earth X — three alternate realities. Chthon
+   * came back as a stone statue of him rather than him.
+   *
+   * Marvel Database's own page image is not automatically right either: for
+   * Wendell Vaughn it returns an Annihilation: NOVA cover, and for Nightmare a
+   * Doctor Voodoo cover. Both were replaced from the character galleries.
+   */
+  agamotto:
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
+  chthon:
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Chthon_%28Earth-616%29_from_Darkhold_Omega_Vol_1_1_002.jpg/revision/latest?cb=20220106163854",
+  /* Strange Tales 122 — his first clean full-figure appearance. */
+  nightmare:
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/55/Nightmare_%28Earth-616%29_from_Strange_Tales_Vol_1_122_0001.jpg/revision/latest?cb=20191220014305",
+  terrax:
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/22/Tyros_%28Earth-616%29_from_Superior_Spider-Man_Vol_2_1_001.jpg/revision/latest?cb=20200505040204",
+  /* Earth-691, the 31st century he is actually from — not the Earth X version. */
+  korvac:
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a1/Michael_Korvac_%28Earth-691%29_from_Iron_Man_Vol_5_15_001.jpg/revision/latest?cb=20211228033211",
+  /* Wendell Vaughn in the Quasar suit, from his own gallery. */
+  quasar:
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Wendell_Vaughn_%28Earth-616%29_from_Annihilation_Nova_Vol_1_4_0001.jpg/revision/latest?cb=20161001030249",
+  /* Her AS Nova, rather than the Fearless Defenders panel of her out of it. */
+  "frankie-raye":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/497-nova.jpg",
   toxin: "https://i.redd.it/isk712hqkxq61.jpg",
   "moon-girl":
     "https://static.wikia.nocookie.net/marveldatabase/images/f/f0/Fantastic_Four_Vol_6_41_Black_History_Month_Variant_Textless.jpg/revision/latest?cb=20260227052625",

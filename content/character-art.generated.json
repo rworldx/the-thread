@@ -1,4 +1,44 @@
 {
+  "agamotto": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "chthon": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Chthon_%28Earth-616%29_from_Darkhold_Omega_Vol_1_1_002.jpg/revision/latest?cb=20220106163854",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "nightmare": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/55/Nightmare_%28Earth-616%29_from_Strange_Tales_Vol_1_122_0001.jpg/revision/latest?cb=20191220014305",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "terrax": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/22/Tyros_%28Earth-616%29_from_Superior_Spider-Man_Vol_2_1_001.jpg/revision/latest?cb=20200505040204",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "firelord": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/258-firelord.jpg",
+    "source": "shdb",
+    "matchedAs": "Firelord"
+  },
+  "frankie-raye": {
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/497-nova.jpg",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "korvac": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a1/Michael_Korvac_%28Earth-691%29_from_Iron_Man_Vol_5_15_001.jpg/revision/latest?cb=20211228033211",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "quasar": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Wendell_Vaughn_%28Earth-616%29_from_Annihilation_Nova_Vol_1_4_0001.jpg/revision/latest?cb=20161001030249",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",
