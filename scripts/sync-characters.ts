@@ -524,6 +524,22 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/1/18/Maggott_%28Japheth%29_%28Earth-616%29_from_Storm_Vol_5_6_001.png.png/revision/latest?cb=20250416065525",
   "kitty-pryde":
     "https://static.wikia.nocookie.net/marveldatabase/images/1/16/Exceptional_X-Men_Vol_1_10_Pride_Variant_Textless.jpg/revision/latest?cb=20250523091103",
+  /* Batch 14 — the ones the loose gap-check hid. Bishop is Earth-1191,
+     the future he came back from. */
+  "bishop":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/8d/Lucas_Bishop_%28Earth-1191%29_from_Timeslide_Vol_1_1_002.jpg/revision/latest?cb=20241228152902",
+  "skin":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/17/Angelo_Espinosa_%28Earth-616%29_from_Astonishing_X-Men_Infinity_Comic_Vol_1_29_001.png/revision/latest?cb=20250828001953",
+  "oya":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/2b/X-Men_Vol_7_11_Black_History_Month_Variant_Textless.jpg/revision/latest?cb=20260108204154",
+  "cipher":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/0b/Alisa_Tager_%28Earth-616%29_from_Young_X-Men_Vol_1_10_003.jpg/revision/latest?cb=20170320170324",
+  "jackal":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/93/Miles_Warren_%28Earth-616%29_from_Spider-Island_Deadly_Foes_Vol_1_1_001.jpg/revision/latest?cb=20120117113235",
+  "the-rose":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Devil%27s_Reign_Spider-Man_Vol_1_1_Carlos_Variant_Textless.jpg/revision/latest?cb=20230604042814",
+  "robbie-robertson":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5e/Joseph_Robertson_%28Earth-616%29_from_Amazing_Spider-Man_Vol_5_64_001.jpg/revision/latest?cb=20210421234837",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

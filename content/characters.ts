@@ -11978,6 +11978,183 @@ const mutantsE: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE ONES THE LOOSE AUDIT HID, batch 14.
+ *
+ * Every name here was reported as ALREADY PRESENT by the substring gap-check
+ * that drove batches 2 to 13, and none of them was. Bishop is the worst of
+ * it: a founding-tier X-Man who is in Days of Future Past. Re-running the
+ * check with exact matching found 147 still outstanding rather than the 114
+ * I had been reporting, which is a correction to my own numbers and not a
+ * change in the job.
+ */
+const hiddenByAudit: CharacterDraft[] = [
+  {
+    id: "bishop",
+    nameEn: "Bishop",
+    nameAr: "بيشوب",
+    aliases: ["Bishop", "Lucas Bishop"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Absorbs energy and fires it back", ar: "يمتص الطاقة ويردّها" },
+      { en: "Born in a camp", ar: "وُلد في معسكر" },
+      { en: "Came back to stop it", ar: "عاد ليمنع وقوعه" },
+    ],
+    origin: {
+      en: "A mutant from a future where his people were rounded up and branded, who travelled back to prevent it and has never entirely stopped treating the present as evidence.",
+      ar: "متحوّل من مستقبل جُمع فيه قومه ووُسموا، عاد ليمنع ذلك، ولم يكفّ قط عن معاملة الحاضر بوصفه دليلًا.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "skin",
+    nameEn: "Skin",
+    nameAr: "سكين",
+    aliases: ["Skin", "Angelo Espinosa"],
+    category: "hero",
+    affiliation: ["Generation X"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Six feet of spare skin", ar: "ستة أقدام من جلد فائض" },
+      { en: "Stretches and shapes it", ar: "يمدّه ويشكّله" },
+      { en: "Grey and impossible to hide", ar: "رماديّ يستحيل إخفاؤه" },
+    ],
+    origin: {
+      en: "A former gang member with several feet of extra grey skin he can stretch at will, and no way at all of passing for anything but what he is.",
+      ar: "عضو عصابة سابق لديه أقدام إضافية من جلد رمادي يمدّه كما يشاء، ولا سبيل البتة إلى أن يبدو شيئًا غير ما هو عليه.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "oya",
+    nameEn: "Oya",
+    nameAr: "أويا",
+    aliases: ["Oya", "Idie Okonkwo"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Fire and ice together", ar: "نار وجليد معًا" },
+      { en: "Devout and troubled by it", ar: "متديّنة ويقلقها ذلك" },
+      { en: "Killed before she was ready", ar: "قتلت قبل أن تستعدّ" },
+    ],
+    origin: {
+      en: "A Nigerian mutant who commands fire and ice and believes herself damned for using them, having killed to protect other children before she was old enough to weigh it.",
+      ar: "متحوّلة نيجيرية تأمر النار والجليد وتعتقد أنها هلكت باستعمالهما، إذ قتلت حمايةً لأطفال آخرين قبل أن تبلغ سنّ الموازنة.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "cipher",
+    nameEn: "Cipher",
+    nameAr: "سايفر (أليسا)",
+    aliases: ["Cipher", "Alisa Tager"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Permanently invisible", ar: "خفيّة على الدوام" },
+      { en: "Undetectable by any sense", ar: "لا يكشفها أي حسّ" },
+      { en: "Watched the school for years", ar: "راقبت المدرسة سنين" },
+    ],
+    origin: {
+      en: "A mutant nobody can see, hear or sense, who spent years living inside the school unnoticed and knowing everything about everyone before she let anyone find her.",
+      ar: "متحوّلة لا يراها أحد ولا يسمعها ولا يحسّ بها، عاشت سنين داخل المدرسة دون أن يُنتبه إليها وهي تعلم كل شيء عن الجميع، قبل أن تدع أحدًا يجدها.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "jackal",
+    nameEn: "The Jackal",
+    nameAr: "الجاكال",
+    /* NOT a bare "Jackal". Captain America: Brave New World credits a
+       mercenary by that name and it is not Peter Parker's cloning professor.
+       Third time this corpus has been caught by a bare codename, after
+       Selene and Thunderbird. The article keeps the display name honest and
+       the segment match away. */
+    aliases: ["Miles Warren"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Clones anybody at all", ar: "يستنسخ أي أحد" },
+      { en: "Was Peter's professor", ar: "كان أستاذ بيتر" },
+      { en: "Grief turned to obsession", ar: "حزن استحال هوسًا" },
+    ],
+    origin: {
+      en: "Peter Parker's biology professor, who lost a student he was in love with and answered it by learning to clone people. Every clone in Spider-Man's life traces back to him.",
+      ar: "أستاذ الأحياء لبيتر باركر، فقد طالبة أحبّها فأجاب على ذلك بأن تعلّم استنساخ البشر. وكل نسخة في حياة سبايدرمان ترجع إليه.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+      { id: "kaine", kind: "family" },
+    ],
+  },
+  {
+    id: "the-rose",
+    nameEn: "The Rose",
+    nameAr: "الوردة",
+    aliases: ["The Rose", "Richard Fisk"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Runs the city's crime quietly", ar: "يدير جريمة المدينة بهدوء" },
+      { en: "Kingpin's son", ar: "ابن كينغبن" },
+      { en: "Wants his father ruined", ar: "يريد خراب أبيه" },
+    ],
+    origin: {
+      en: "Wilson Fisk's son, who built a criminal operation of his own for the single purpose of dismantling his father's, and wore a mask so the old man would not know who was doing it.",
+      ar: "ابن ويلسون فيسك، بنى عملية إجرامية خاصة به لغرض واحد هو تفكيك عملية أبيه، ولبس قناعًا كي لا يعرف الرجل من يفعل ذلك.",
+    },
+    related: [
+      { id: "kingpin", kind: "family" },
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "robbie-robertson",
+    nameEn: "Robbie Robertson",
+    nameAr: "روبي روبرتسون",
+    aliases: ["Robbie Robertson", "Joe Robertson", "Joseph Robertson"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Runs the newsroom", ar: "يدير غرفة الأخبار" },
+      { en: "The conscience of the Bugle", ar: "ضمير البيوغل" },
+      { en: "Says no to Jameson", ar: "يقول لا لجيمسون" },
+    ],
+    origin: {
+      en: "The Daily Bugle's editor-in-chief and the one person in the building who tells J. Jonah Jameson he is wrong and keeps his job. Peter Parker's steadiest adult ally.",
+      ar: "رئيس تحرير الديلي بيوغل، والوحيد في المبنى الذي يقول لجي جونا جيمسون إنه مخطئ ويظل في عمله. وهو أثبت حلفاء بيتر باركر من الكبار.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+      /* J. Jonah Jameson belongs here and is not in this corpus yet — another
+         name the loose gap-check reported as present. C4 caught the dangling
+         edge. The relation goes back the moment he does. */
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -11992,6 +12169,7 @@ export const characters: CharacterDraft[] = [
   ...mutantsC,
   ...mutantsD,
   ...mutantsE,
+  ...hiddenByAudit,
   ...avengers,
   ...guardians,
   ...xmen,

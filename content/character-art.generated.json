@@ -714,6 +714,41 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "bishop": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/8d/Lucas_Bishop_%28Earth-1191%29_from_Timeslide_Vol_1_1_002.jpg/revision/latest?cb=20241228152902",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "skin": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/17/Angelo_Espinosa_%28Earth-616%29_from_Astonishing_X-Men_Infinity_Comic_Vol_1_29_001.png/revision/latest?cb=20250828001953",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "oya": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2b/X-Men_Vol_7_11_Black_History_Month_Variant_Textless.jpg/revision/latest?cb=20260108204154",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "cipher": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/0b/Alisa_Tager_%28Earth-616%29_from_Young_X-Men_Vol_1_10_003.jpg/revision/latest?cb=20170320170324",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "jackal": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/93/Miles_Warren_%28Earth-616%29_from_Spider-Island_Deadly_Foes_Vol_1_1_001.jpg/revision/latest?cb=20120117113235",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-rose": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Devil%27s_Reign_Spider-Man_Vol_1_1_Carlos_Variant_Textless.jpg/revision/latest?cb=20230604042814",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "robbie-robertson": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5e/Joseph_Robertson_%28Earth-616%29_from_Amazing_Spider-Man_Vol_5_64_001.jpg/revision/latest?cb=20210421234837",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",
