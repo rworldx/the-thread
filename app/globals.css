@@ -5958,3 +5958,56 @@ html:has(:target) {
   opacity: 0.5;
   vertical-align: middle;
 }
+
+/**
+ * THE CHIP FOLD — a disclosure on a phone, nothing at all on a desktop.
+ *
+ * Fifty chips is a map on a wide screen and a wall on a narrow one. Rather
+ * than branch on a breakpoint in JavaScript, a native <details> ships open
+ * and CSS decides whether the summary is visible: hidden and the content
+ * forced open above 48rem, a real toggle below it. No hydration, no state,
+ * and the desktop layout is byte-identical to what it was.
+ */
+.chip-fold-summary {
+  display: none;
+}
+.chip-band-child {
+  margin-block-start: var(--space-2);
+}
+@media (max-width: 47.99rem) {
+  .chip-fold-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-pill, 999px);
+    cursor: pointer;
+    font: inherit;
+    color: var(--color-text);
+    list-style: none;
+  }
+  .chip-fold-summary::-webkit-details-marker {
+    display: none;
+  }
+  /* The caret, drawn rather than typed, so it flips in RTL with the box. */
+  .chip-fold-summary::after {
+    content: "";
+    inline-size: 0.5em;
+    block-size: 0.5em;
+    border-inline-end: 2px solid currentColor;
+    border-block-end: 2px solid currentColor;
+    transform: rotate(45deg) translate(-0.1em, -0.1em);
+    transition: transform 0.15s ease;
+  }
+  .chip-fold[open] .chip-fold-summary::after {
+    transform: rotate(-135deg) translate(-0.15em, -0.15em);
+  }
+  .chip-fold:not([open]) .chip-band-row {
+    display: none;
+  }
+  .chip-fold[open] .chip-band-row {
+    margin-block-start: var(--space-2);
+  }
+}

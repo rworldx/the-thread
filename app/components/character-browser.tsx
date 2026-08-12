@@ -106,6 +106,18 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       { id: "team-cap", match: aff("Team Captain America") },
       { id: "team-iron-man", match: aff("Team Iron Man") },
       { id: "wakandan", match: aff("Wakandan heroes") },
+      { id: "weapon-x", match: aff("Weapon X") },
+      { id: "brotherhood", match: aff("Brotherhood") },
+      { id: "acolytes", match: aff("Acolytes") },
+      { id: "marauders", match: aff("Marauders") },
+      { id: "hellions", match: aff("Hellions") },
+      { id: "hellfire", match: aff("Hellfire Club") },
+      { id: "sinister-six", match: aff("Sinister Six") },
+      { id: "inheritors", match: aff("Inheritors") },
+      { id: "new-mutants", match: aff("New Mutants") },
+      { id: "generation-x", match: aff("Generation X") },
+      { id: "x-factor", match: aff("X-Factor") },
+      { id: "morlocks", match: aff("Morlocks") },
       /* Three groupings a reader asks for by name and the data already holds:
          who works for S.H.I.E.L.D., every Loki, and the Spider-Society. */
       { id: "agents", match: aff("S.H.I.E.L.D.") },
@@ -127,7 +139,11 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       { id: "mutant-alpha", parent: "mutant", match: (c) => c.mutantClass === "alpha" },
       { id: "mutant-beta", parent: "mutant", match: (c) => c.mutantClass === "beta" },
       { id: "mutant-gamma", parent: "mutant", match: (c) => c.mutantClass === "gamma" },
-      { id: "inhuman", match: is("Inhuman") },
+      { id: "inhuman", match: (c) => is("Inhuman")(c) || aff("Inhumans")(c) },
+      { id: "kree", match: (c) => is("Kree")(c) || aff("Kree")(c) },
+      { id: "skrull", match: (c) => is("Skrull")(c) || aff("Skrull")(c) },
+      { id: "shiar", match: (c) => is("Shi'ar", "Strontian")(c) || aff("Shi'ar")(c) },
+      { id: "clandestine", match: aff("ClanDestine") },
       { id: "eternal", match: is("Eternal") },
       { id: "celestial", match: is("Celestial") },
       /* HOSTS COUNT. A separate "Venom family" chip was a duplicate of this
@@ -361,32 +377,75 @@ export function CharacterBrowser({
          * headings inside the one group.
          */}
         <div className="char-chips" role="radiogroup" aria-label={t("heading")}>
-          {GROUPS.map((g) => (
-            <div key={g.group} className="chip-band">
-              <span className="chip-band-label" aria-hidden="true">
-                {t(`chipGroup.${g.group}`)}
-              </span>
-              <div className="chip-band-row">
-                {g.chips
-                  /* A child shows when its parent is the active chip, or when
-                     it is itself active — otherwise pressing one would hide
-                     the row it lives in. */
-                  .filter((c) => !c.parent || c.parent === chip || c.id === chip)
-                  .map((c) => (
-                  <button
-                    key={c.id}
-                    type="button"
-                    role="radio"
-                    aria-checked={chip === c.id}
-                    className={c.parent ? "chip chip-child" : "chip"}
-                    onClick={() => setChip(c.id)}
-                  >
-                    {t(`chip.${c.id}`)}
-                  </button>
-                ))}
+          {/**
+           * BANDS, AND A BAND OF CHILDREN IS ITS OWN BAND.
+           *
+           * The level chips used to sit inline among their siblings, which put
+           * "Omega" next to "Inhumans" and made a narrowing look like a peer.
+           * When a parent is active its children get their own labelled band
+           * underneath, so the hierarchy is visible rather than implied.
+           */}
+          {GROUPS.map((g) => {
+            const parents = g.chips.filter((c) => !c.parent);
+            const kids = g.chips.filter((c) => c.parent === chip);
+            return (
+              <div key={g.group} className="chip-band-group">
+                <div className="chip-band">
+                  <span className="chip-band-label" aria-hidden="true">
+                    {t(`chipGroup.${g.group}`)}
+                  </span>
+                  {/**
+                   * A NATIVE <details> ON SMALL SCREENS ONLY.
+                   *
+                   * Fifty chips is a wall on a phone and a useful map on a
+                   * desktop. CSS opens and locks this at 48rem, so a wide
+                   * screen sees the row exactly as before and never a
+                   * disclosure — no JS, no breakpoint state, no hydration.
+                   */}
+                  <details className="chip-fold" open>
+                    <summary className="chip-fold-summary">
+                      {t(`chip.${chip}`)}
+                    </summary>
+                    <div className="chip-band-row">
+                      {parents.map((c) => (
+                        <button
+                          key={c.id}
+                          type="button"
+                          role="radio"
+                          aria-checked={chip === c.id}
+                          className="chip"
+                          onClick={() => setChip(c.id)}
+                        >
+                          {t(`chip.${c.id}`)}
+                        </button>
+                      ))}
+                    </div>
+                  </details>
+                </div>
+                {kids.length > 0 && (
+                  <div className="chip-band chip-band-child">
+                    <span className="chip-band-label" aria-hidden="true">
+                      {t(`chipGroup.${chip}`)}
+                    </span>
+                    <div className="chip-band-row">
+                      {kids.map((c) => (
+                        <button
+                          key={c.id}
+                          type="button"
+                          role="radio"
+                          aria-checked={chip === c.id}
+                          className="chip chip-child"
+                          onClick={() => setChip(c.id)}
+                        >
+                          {t(`chip.${c.id}`)}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <p className="char-count tabular" role="status" aria-live="polite">

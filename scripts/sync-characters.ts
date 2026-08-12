@@ -832,6 +832,10 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/8/8e/Preordained_%28Earth-616%29_from_G.O.D.S._Vol_1_6_001.jpg/revision/latest?cb=20240330220442",
   "the-aspirants":
     "https://static.wikia.nocookie.net/marveldatabase/images/8/8b/Aspirants_from_Marvel_Boy_Vol_2_5_001.jpg/revision/latest?cb=20170427040258",
+  /* Kosmos, found on the Fictional Battle Omniverse wiki after Marvel
+     Database turned out to have only the DIMENSION of that name. */
+  kosmos:
+    "https://static.wikia.nocookie.net/fictional-battle-omniverse/images/5/5d/Kosmos_Marvel_Comics.jpg/revision/latest?cb=20170425140014",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

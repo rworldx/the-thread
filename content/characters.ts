@@ -374,7 +374,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "بلاك بانثر",
     aliases: ["T'Challa", "Black Panther", "King T'Challa"],
     category: "hero",
-    affiliation: ["Avengers", "Wakanda", "Team Iron Man", "Wakandan heroes"],
+    affiliation: ["Avengers", "Wakandan heroes", "Team Iron Man"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -397,7 +397,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "كابتن مارفل",
     aliases: ["Carol Danvers", "Captain Marvel", "Vers"],
     category: "hero",
-    affiliation: ["Avengers"],
+    affiliation: ["Avengers", "Kree"],
     universe: ["mcu"],
     species: "Human-Kree hybrid",
     powers: [
@@ -507,7 +507,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "شوري",
     aliases: ["Shuri"],
     category: "hero",
-    affiliation: ["Wakanda", "Wakandan heroes"],
+    affiliation: ["Wakandan heroes"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -549,7 +549,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "مِس مارفل",
     aliases: ["Kamala Khan", "Ms. Marvel"],
     category: "hero",
-    affiliation: ["Young Avengers"],
+    affiliation: ["Young Avengers", "Inhumans"],
     universe: ["mcu"],
     /* MUTANT, NOT INHUMAN, and she was neither — this record said "Human".
        The 2014 comics gave her an Inhuman origin and both canons have since
@@ -768,7 +768,7 @@ const xmen: CharacterDraft[] = [
     nameAr: "وولفرين",
     aliases: ["Logan", "Wolverine", "James Howlett", "Weapon X", "Logan / Wolverine"],
     category: "antihero",
-    affiliation: ["X-Men", "Midnight Sons"],
+    affiliation: ["X-Men", "Midnight Sons", "Weapon X"],
     universe: ["fox", "mcu"],
     species: "Mutant",
     mutantClass: "beta",
@@ -1038,7 +1038,7 @@ const xmen: CharacterDraft[] = [
     nameAr: "ديدبول",
     aliases: ["Deadpool", "Wade Wilson"],
     category: "antihero",
-    affiliation: ["X-Force"],
+    affiliation: ["X-Force", "Weapon X"],
     universe: ["fox", "mcu"],
     species: "Mutate",
     powers: [
@@ -1082,7 +1082,7 @@ const xmen: CharacterDraft[] = [
     nameAr: "سيبرتوث",
     aliases: ["Sabretooth", "Victor Creed"],
     category: "villain",
-    affiliation: ["Brotherhood"],
+    affiliation: ["Brotherhood", "Weapon X", "Marauders"],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "beta",
@@ -1247,7 +1247,7 @@ const spiderVerse: CharacterDraft[] = [
       "Superior Octopus",
     ],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["sony", "mcu"],
     species: "Human",
     powers: [
@@ -1266,7 +1266,7 @@ const spiderVerse: CharacterDraft[] = [
     nameAr: "إلكترو",
     aliases: ["Electro", "Max Dillon", "Max Dillon / Electro"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["sony", "mcu"],
     species: "Human mutate",
     powers: [
@@ -1285,7 +1285,7 @@ const spiderVerse: CharacterDraft[] = [
     nameAr: "ساندمان",
     aliases: ["Sandman", "Flint Marko"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["sony", "mcu"],
     species: "Human mutate",
     powers: [
@@ -1304,7 +1304,7 @@ const spiderVerse: CharacterDraft[] = [
     nameAr: "السحلية",
     aliases: ["The Lizard", "Curt Connors", "Dr. Curt Connors", "Lizard"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["sony", "mcu"],
     species: "Human mutate",
     powers: [
@@ -1344,7 +1344,7 @@ const spiderVerse: CharacterDraft[] = [
     nameAr: "كرايفن الصياد",
     aliases: ["Kraven", "Sergei Kravinoff", "Kraven the Hunter"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["sony"],
     species: "Human mutate",
     powers: [
@@ -2131,7 +2131,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "إيما فروست",
     aliases: ["White Queen", "Emma Frost"],
     category: "antihero",
-    affiliation: ["Brotherhood"],
+    affiliation: ["Brotherhood", "Hellions"],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "alpha",
@@ -2287,7 +2287,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "ميستيريو",
     aliases: ["Mysterio", "Quentin Beck"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["mcu", "sony"],
     species: "Human",
     powers: [
@@ -2309,7 +2309,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "فَلتشر",
     aliases: ["Vulture", "Adrian Toomes"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -2506,7 +2506,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "إكس 23",
     aliases: ["X-23", "Laura", "Laura Kinney"],
     category: "antihero",
-    affiliation: ["X-Men"],
+    affiliation: ["X-Men", "Weapon X"],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "beta",
@@ -2745,7 +2745,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "سكوربيون",
     aliases: ["Scorpion", "Mac Gargan"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["mcu", "sony"],
     species: "Human",
     powers: [
@@ -2766,7 +2766,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "تالوس",
     aliases: ["Talos", "Talos / Keller"],
     category: "hero",
-    affiliation: ["S.H.I.E.L.D."],
+    affiliation: ["S.H.I.E.L.D.", "Skrull"],
     universe: ["mcu"],
     species: "Skrull",
     powers: [
@@ -2833,7 +2833,7 @@ const supporting: CharacterDraft[] = [
      */
     aliases: ["Super-Skrull", "Kl'rt", "Klrt", "G'iah", "Giah"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Skrull"],
     universe: ["mcu"],
     species: "Skrull",
     powers: [
@@ -3159,7 +3159,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "أوكويي",
     aliases: ["Okoye"],
     category: "hero",
-    affiliation: ["Wakanda", "Wakandan heroes"],
+    affiliation: ["Wakandan heroes"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -3386,7 +3386,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "راموندا",
     aliases: ["Ramonda"],
     category: "supporting",
-    affiliation: ["Wakanda", "Wakandan heroes"],
+    affiliation: ["Wakandan heroes"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -3541,7 +3541,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "إمباكو",
     aliases: ["M'Baku"],
     category: "antihero",
-    affiliation: ["Wakanda", "Wakandan heroes"],
+    affiliation: ["Wakandan heroes"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -3736,7 +3736,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "آيو",
     aliases: ["Ayo"],
     category: "supporting",
-    affiliation: ["Wakanda", "Wakandan heroes"],
+    affiliation: ["Wakandan heroes"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -6578,7 +6578,7 @@ const others: CharacterDraft[] = [
     nameAr: "رونان المُتّهِم",
     aliases: ["Ronan", "Ronan the Accuser"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Kree"],
     universe: ["mcu", "legacy"],
     species: "Kree",
     powers: [
@@ -8076,7 +8076,7 @@ const antagonists: CharacterDraft[] = [
     nameAr: "دار-بِن",
     aliases: ["Dar-Benn"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Kree"],
     universe: ["mcu"],
     species: "Kree",
     powers: [
@@ -8098,7 +8098,7 @@ const antagonists: CharacterDraft[] = [
     nameAr: "يون-روغ",
     aliases: ["Yon-Rogg"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Kree"],
     universe: ["mcu"],
     species: "Kree",
     powers: [
@@ -8458,7 +8458,7 @@ const antagonists: CharacterDraft[] = [
     nameAr: "الذكاء الأسمى",
     aliases: ["Supreme Intelligence", "The Supreme Intelligence"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Kree"],
     universe: ["mcu"],
     species: "Artificial intelligence",
     powers: [
@@ -9356,7 +9356,7 @@ const inheritors: CharacterDraft[] = [
     nameAr: "أوميغا ريد",
     aliases: ["Omega Red", "Arkady Rossovich"],
     category: "villain",
-    affiliation: ["Brotherhood"],
+    affiliation: ["Brotherhood", "Weapon X"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -11175,7 +11175,7 @@ const mutantsC: CharacterDraft[] = [
     nameAr: "إكزودس",
     aliases: ["Exodus", "Bennet du Paris"],
     category: "villain",
-    affiliation: ["Brotherhood"],
+    affiliation: ["Brotherhood", "Acolytes"],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "omega",
@@ -11220,7 +11220,7 @@ const mutantsC: CharacterDraft[] = [
     nameAr: "هيليون",
     aliases: ["Hellion", "Julian Keller"],
     category: "antihero",
-    affiliation: ["New Mutants"],
+    affiliation: ["New Mutants", "Hellions"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -11398,7 +11398,7 @@ const mutantsC: CharacterDraft[] = [
     nameAr: "فولكان",
     aliases: ["Vulcan", "Gabriel Summers"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Shi'ar"],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "omega",
@@ -11859,7 +11859,7 @@ const mutantsE: CharacterDraft[] = [
     nameAr: "فرينزي",
     aliases: ["Frenzy", "Joanna Cargill"],
     category: "antihero",
-    affiliation: ["X-Men"],
+    affiliation: ["X-Men", "Acolytes"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -13075,7 +13075,7 @@ const mutantsF: CharacterDraft[] = [
     nameAr: "مافريك",
     aliases: ["Maverick", "Christoph Nord", "Agent Zero"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["Weapon X"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -13185,7 +13185,7 @@ const mutantsF: CharacterDraft[] = [
     nameAr: "الليدي ديثسترايك",
     aliases: ["Lady Deathstrike", "Yuriko Oyama"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Weapon X"],
     universe: ["fox"],
     species: "Cyborg",
     powers: [
@@ -13207,7 +13207,7 @@ const mutantsF: CharacterDraft[] = [
     nameAr: "فابيان كورتيز",
     aliases: ["Fabian Cortez"],
     category: "villain",
-    affiliation: ["Brotherhood"],
+    affiliation: ["Brotherhood", "Acolytes"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -13573,7 +13573,7 @@ const mutantsG: CharacterDraft[] = [
     nameAr: "آدم إكس",
     aliases: ["Adam X", "Adam Neramani", "Adam X the X-Treme"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["Shi'ar"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -13683,7 +13683,7 @@ const mutantsG: CharacterDraft[] = [
     nameAr: "فيفر بيتش",
     aliases: ["Fever Pitch"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Acolytes"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -13771,7 +13771,7 @@ const mutantsG: CharacterDraft[] = [
     nameAr: "جيتستريم",
     aliases: ["Jetstream", "Haroun ibn Sallah al-Rashid"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Hellions"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -15046,9 +15046,11 @@ const collectives: CharacterDraft[] = [
      * from, and putting a picture of a dimension on a person is the same
      * mistake as putting an island on Wallop.
      *
-     * So the record ships with no artwork. Avatar renders an initial plate for
-     * exactly this, and its own comment says the gap is designed rather than
-     * broken. An honest blank beats a confident wrong picture.
+     * It has a picture now. Rashid supplied four candidate URLs; two were
+     * plainly other things (the Fifth Cosmos is a universe, Cosmos of
+     * Earth-829 is a different character), and the real one came from the
+     * Fictional Battle Omniverse wiki, which files the character where Marvel
+     * Database files only the dimension.
      */
     id: "kosmos",
     nameEn: "Kosmos",
