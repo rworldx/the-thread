@@ -456,7 +456,8 @@
     "sortLabel": "Order",
     "sort": {
       "fame": "Most known",
-      "az": "A–Z"
+      "az": "A–Z",
+      "za": "Z–A"
     },
     "symbioteClass": "Symbiote origin",
     "symbioteClass_": {

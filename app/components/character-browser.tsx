@@ -413,7 +413,14 @@ export function CharacterBrowser({
           })()
         : kept;
     if (sort === "fame") return merged;
-    return [...merged].sort((a, b) => a.name.localeCompare(b.name, locale));
+    /**
+     * ONE COMPARISON, NEGATED, rather than two sorts kept in step. And
+     * `localeCompare` with the page's own locale, so Arabic sorts by Arabic
+     * rules — a codepoint sort puts أ after ي and gets the alphabet wrong in
+     * the language the page is written in.
+     */
+    const dir = sort === "za" ? -1 : 1;
+    return [...merged].sort((a, b) => dir * a.name.localeCompare(b.name, locale));
   }, [index, chip, query, haystack, sort, locale]);
 
   return (
@@ -435,7 +442,7 @@ export function CharacterBrowser({
         {/* Two states, so a segmented control rather than a select: both
             options are visible and switching is one tap, not three. */}
         <div className="char-sort" role="radiogroup" aria-label={t("sortLabel")}>
-          {(["fame", "az"] as const).map((mode) => (
+          {(["fame", "az", "za"] as const).map((mode) => (
             <button
               key={mode}
               type="button"

@@ -456,7 +456,8 @@
     "sortLabel": "الترتيب",
     "sort": {
       "fame": "الأشهر أولًا",
-      "az": "أ–ي"
+      "az": "أ–ي",
+      "za": "ي–أ"
     },
     "symbioteClass": "أصل السيمبيوت",
     "symbioteClass_": {
