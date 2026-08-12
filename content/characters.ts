@@ -1854,7 +1854,7 @@ const villains: CharacterDraft[] = [
        does not, then trying to take it. She is a centuries-old witch
        practising traditional dark witchcraft, which is a different craft
        rather than a lesser amount of the same one. */
-    magicSchool: "dark",
+    magicSchool: "witchcraft",
     powers: [
       { en: "Witchcraft", ar: "سحر" },
       { en: "Drains other witches", ar: "تستنزف الساحرات الأخريات" },
@@ -3084,7 +3084,9 @@ const supporting: CharacterDraft[] = [
     affiliation: [],
     universe: ["sony"],
     species: "Enhanced human",
-    magicSchool: "dark",
+    /* NOT a magic school. Martin Li channels Darkforce, which is a
+       dimension of physics that Cloak and Dagger also touch, not a craft
+       anybody studies. */
     powers: [
       { en: "Corrupts by touch", ar: "يُفسد باللمس" },
       { en: "Darkforce and Lightforce", ar: "قوة الظلام وقوة النور" },
@@ -3106,7 +3108,7 @@ const supporting: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["legacy"],
     species: "Demon",
-    magicSchool: "dark",
+    magicSchool: "infernal",
     powers: [
       { en: "Makes bargains", ar: "يعقد الصفقات" },
       { en: "Reshapes souls", ar: "يعيد تشكيل الأرواح" },
@@ -4081,7 +4083,7 @@ const abstracts: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu", "legacy"],
     species: "Demon",
-    magicSchool: "dark",
+    magicSchool: "dark-dimension",
     powers: [
       { en: "Rules the Dark Dimension", ar: "يحكم البعد المظلم" },
       { en: "Devours whole worlds", ar: "يلتهم عوالم كاملة" },
@@ -5988,7 +5990,7 @@ const others: CharacterDraft[] = [
     affiliation: ["Midnight Sons", "Masters of the Mystic Arts", "Magic"],
     universe: ["mcu", "legacy"],
     species: "Human",
-    magicSchool: "eldritch",
+    magicSchool: "voodoo",
     powers: [
       { en: "Houngan Supreme", ar: "الهونغان الأعلى" },
       { en: "Shares his brother's spirit", ar: "يشارك روح أخيه" },
@@ -6972,7 +6974,7 @@ const laterAdditions: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Fire demon",
-    magicSchool: "dark",
+    magicSchool: "asgardian",
     powers: [
       { en: "The Twilight Sword", ar: "سيف الشفق" },
       { en: "Grows without limit", ar: "ينمو بلا حدّ" },
@@ -7448,7 +7450,7 @@ const smallScreen: CharacterDraft[] = [
     species: "Witch",
     /* The Staff of One is blood magic, paid for in her own blood and never
        repeating a spell. Closer to Agatha's witchcraft than to Wanda's. */
-    magicSchool: "dark",
+    magicSchool: "blood",
     powers: [
       { en: "The Staff of One", ar: "عصا الواحد" },
       { en: "Each spell said once", ar: "كل تعويذة تُقال مرة" },
@@ -7581,7 +7583,7 @@ const smallScreen: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["marvel-tv"],
     species: "Human hybrid",
-    magicSchool: "dark",
+    magicSchool: "infernal",
     powers: [
       { en: "Casts out demons", ar: "يطرد الشياطين" },
       { en: "Hellfire in the blood", ar: "نار الجحيم في دمه" },
@@ -7604,7 +7606,7 @@ const smallScreen: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["marvel-tv"],
     species: "Human hybrid",
-    magicSchool: "dark",
+    magicSchool: "infernal",
     powers: [
       { en: "Reads a life by touch", ar: "تقرأ حياة المرء بلمسة" },
       { en: "Sells antiques", ar: "تبيع التحف" },
@@ -8426,7 +8428,7 @@ const antagonists: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["legacy"],
     species: "Demon",
-    magicSchool: "dark",
+    magicSchool: "infernal",
     powers: [
       { en: "Son of Mephisto", ar: "ابن مفيستو" },
       { en: "Takes the souls of the damned", ar: "يأخذ أرواح الملعونين" },
@@ -8450,7 +8452,7 @@ const antagonists: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["legacy"],
     species: "Vampire",
-    magicSchool: "dark",
+    magicSchool: "infernal",
     powers: [
       { en: "Turned, not born", ar: "تحوّل ولم يُولد" },
       { en: "Reads the old blood scriptures", ar: "يقرأ كتب الدم القديمة" },
@@ -8720,7 +8722,7 @@ const cosmicBeings: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["animation"],
     species: "Demon",
-    magicSchool: "dark",
+    magicSchool: "dark-dimension",
     powers: [
       { en: "Rules the Dream Dimension", ar: "يحكم بُعد الأحلام" },
       { en: "Feeds on fear", ar: "يتغذى على الخوف" },
@@ -9033,7 +9035,7 @@ const spiderRogues: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["sony"],
     species: "Demon",
-    magicSchool: "dark",
+    magicSchool: "infernal",
     powers: [
       { en: "A demon on a glider", ar: "شيطان على منزلقة" },
       { en: "Judges the guilty", ar: "يحاكم المذنبين" },
@@ -10448,7 +10450,7 @@ const mystics: CharacterDraft[] = [
     /* NOT eldritch. She is born of the Dark Dimension and rules it after
        Dormammu; the purple she throws is his energy, not Kamar-Taj's. She
        learns Earth sorcery later, but the magic she IS comes from there. */
-    magicSchool: "dark",
+    magicSchool: "dark-dimension",
     powers: [
       { en: "Sorceress of the Dark Dimension", ar: "ساحرة البعد المظلم" },
       { en: "Opens incursions and closes them", ar: "تفتح الاختراقات وتغلقها" },
@@ -10473,7 +10475,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Demon",
-    magicSchool: "dark",
+    magicSchool: "elder",
     powers: [
       { en: "Grants unstoppable force", ar: "يهب قوة لا تُوقف" },
       { en: "Powers the Juggernaut", ar: "يمدّ الجاغرنوت بالقوة" },
@@ -10496,7 +10498,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
-    magicSchool: "dark",
+    magicSchool: "elder",
     powers: [
       { en: "Ruled Earth before people", ar: "حكم الأرض قبل البشر" },
       { en: "A mass of eyes and tendrils", ar: "كتلة من أعين ومحالق" },
@@ -10565,7 +10567,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Faltine",
-    magicSchool: "dark",
+    magicSchool: "dark-dimension",
     powers: [
       { en: "Dormammu's sister", ar: "أخت دورمامو" },
       { en: "Raw mystical force", ar: "قوة سحرية خام" },
@@ -10589,7 +10591,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Demon",
-    magicSchool: "dark",
+    magicSchool: "infernal",
     powers: [
       { en: "Power without restraint", ar: "قوة بلا كابح" },
       { en: "Corrupts whoever wields it", ar: "تفسد من يستعملها" },
@@ -11203,7 +11205,7 @@ const mutantsB: CharacterDraft[] = [
     affiliation: ["Hellfire Club"],
     universe: ["fox"],
     species: "Mutant",
-    magicSchool: "dark",
+    magicSchool: "necromancy",
     powers: [
       { en: "Drains life to stay young", ar: "تمتص الحياة لتبقى شابة" },
       { en: "Thousands of years old", ar: "عمرها آلاف السنين" },
@@ -15467,7 +15469,7 @@ const collectives: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Demon",
-    magicSchool: "dark",
+    magicSchool: "infernal",
     powers: [
       { en: "Ruled Earth before people", ar: "حكموا الأرض قبل البشر" },
       { en: "Waiting to be let back", ar: "ينتظرون من يعيدهم" },
@@ -15490,7 +15492,7 @@ const collectives: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Demon",
-    magicSchool: "dark",
+    magicSchool: "infernal",
     powers: [
       { en: "From the Cancerverse", ar: "من كون السرطان" },
       { en: "A reality where death died", ar: "واقع مات فيه الموت" },

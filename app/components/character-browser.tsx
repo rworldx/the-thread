@@ -195,10 +195,34 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
        * separating Strange from Mordo, who draw on the identical source.
        * Reading `magicSchool` asks the question a reader means.
        */
+      /**
+       * DARK IS AN UMBRELLA, AND IT HAS TO BE.
+       *
+       * The corpus splits it four ways because Dormammu's Dark Dimension,
+       * Mephisto's hell, Agatha's coven witchcraft and Selene's life-draining
+       * are genuinely different practices. But every fan calls all of them
+       * dark magic, and after the split there was no way left to ask the
+       * question people actually ask. So the umbrella stays and the precise
+       * schools sit beside it: press Dark for all of them, press Dark
+       * Dimension for Dormammu's line specifically.
+       */
+      {
+        id: "magic-dark",
+        parent: "magician",
+        match: (c) =>
+          ["dark-dimension", "infernal", "witchcraft", "necromancy", "blood"].includes(
+            c.magicSchool ?? "",
+          ),
+      },
       { id: "magic-eldritch", parent: "magician", match: (c) => c.magicSchool === "eldritch" },
       { id: "magic-asgardian", parent: "magician", match: (c) => c.magicSchool === "asgardian" },
       { id: "magic-chaos", parent: "magician", match: (c) => c.magicSchool === "chaos" },
-      { id: "magic-dark", parent: "magician", match: (c) => c.magicSchool === "dark" },
+      { id: "magic-dark-dimension", parent: "magician", match: (c) => c.magicSchool === "dark-dimension" },
+      { id: "magic-infernal", parent: "magician", match: (c) => c.magicSchool === "infernal" },
+      { id: "magic-witchcraft", parent: "magician", match: (c) => c.magicSchool === "witchcraft" },
+      { id: "magic-necromancy", parent: "magician", match: (c) => c.magicSchool === "necromancy" },
+      { id: "magic-blood", parent: "magician", match: (c) => c.magicSchool === "blood" },
+      { id: "magic-voodoo", parent: "magician", match: (c) => c.magicSchool === "voodoo" },
       { id: "magic-elder", parent: "magician", match: (c) => c.magicSchool === "elder" },
       { id: "magic-green", parent: "magician", match: (c) => c.magicSchool === "green" },
       { id: "god", match: (c) => aff("Gods")(c) || is("Olympian")(c) },

@@ -257,9 +257,15 @@
       "magic-eldritch": "إلدرتش",
       "magic-asgardian": "أسغاردي",
       "magic-chaos": "الفوضى",
-      "magic-dark": "أسود",
       "magic-elder": "الآلهة القديمة",
-      "magic-green": "أخضر"
+      "magic-green": "أخضر",
+      "magic-dark-dimension": "البعد المظلم",
+      "magic-infernal": "جهنمي",
+      "magic-witchcraft": "سحر السحرة",
+      "magic-necromancy": "سحر الموتى",
+      "magic-blood": "سحر الدم",
+      "magic-voodoo": "فودو",
+      "magic-dark": "السحر الأسود"
     },
     "appearsIn": "يظهر في",
     "appearanceCount": "{n, plural, zero {لا عناوين} one {عنوان واحد} two {عنوانان} few {# عناوين} many {# عنوانًا} other {# عنوان}}",

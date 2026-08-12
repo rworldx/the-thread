@@ -257,9 +257,15 @@
       "magic-eldritch": "Eldritch",
       "magic-asgardian": "Asgardian",
       "magic-chaos": "Chaos",
-      "magic-dark": "Dark",
       "magic-elder": "Elder God",
-      "magic-green": "Green"
+      "magic-green": "Green",
+      "magic-dark-dimension": "Dark Dimension",
+      "magic-infernal": "Infernal",
+      "magic-witchcraft": "Witchcraft",
+      "magic-necromancy": "Necromancy",
+      "magic-blood": "Blood",
+      "magic-voodoo": "Voodoo",
+      "magic-dark": "Dark"
     },
     "appearsIn": "Appears in",
     "appearanceCount": "{n, plural, one {# title} other {# titles}}",

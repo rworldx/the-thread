@@ -124,20 +124,42 @@ export const RelationKind = z.enum([
  *              Loki because Odin would not.
  *   chaos      Not learned at all and not borrowed. Wanda and Agatha, and the
  *              Darkhold that Chthon wrote it into.
- *   dark       The Dark Dimension and the hells: Dormammu, Mephisto, Umar,
- *              Nightmare. Power lent on terms, always.
+ *   dark-dimension  Dormammu's realm and its heirs: Umar, Clea. Purple, and a
+ *                   specific place rather than a mood.
+ *   infernal        The hells. Mephisto, Blackheart, demons who deal.
+ *   witchcraft      Covens and the Salem line. Agatha, who covets chaos magic
+ *                   precisely because she does not have it.
+ *   necromancy      Death magic. Selene has stayed alive for millennia by
+ *                   taking the life out of other people.
+ *   blood           Paid for in the caster's own. Nico's Staff of One never
+ *                   repeats a spell.
+ *   voodoo          The Loa. Doctor Voodoo commands spirits rather than
+ *                   dimensional energy, which is its own branch entirely.
  *   elder      What the Elder Gods are made of, older than any practice.
  *   green      Gaea's magic, of the living earth rather than any dimension.
  *
+ * "Dark" WAS ONE OF THESE AND HELD TWENTY PEOPLE, which made it a bucket
+ * rather than a school. Rashid's objection was exact: not everything purple is
+ * the same magic. Dormammu's Dark Dimension, Mephisto's hell, Agatha's coven
+ * witchcraft and Selene's life-draining are four different practices that
+ * happened to share a colour, so they are four entries now.
+ *
  * Null for everyone who does not practise magic. NOT a power ranking: an
  * eldritch sorcerer is not weaker than a chaos witch, they are doing
- * different things.
+ * different things. And NOT for energies that merely look occult — the
+ * Darkforce that Cloak and Mister Negative channel is a dimension of physics,
+ * not a craft anybody studies.
  */
 export const MagicSchool = z.enum([
   "eldritch",
   "asgardian",
   "chaos",
-  "dark",
+  "dark-dimension",
+  "infernal",
+  "witchcraft",
+  "necromancy",
+  "blood",
+  "voodoo",
   "elder",
   "green",
 ]);

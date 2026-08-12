@@ -51,11 +51,24 @@ const CHILDREN: { id: string; parent: string; match: (c: C) => boolean }[] = [
     parent: "symbiote",
     match: (c: C) => c.symbioteClass === k,
   })),
-  ...["eldritch", "asgardian", "chaos", "dark", "elder", "green"].map((k) => ({
+  ...[
+    "eldritch", "asgardian", "chaos", "dark-dimension", "infernal", "witchcraft",
+    "necromancy", "blood", "voodoo", "elder", "green",
+  ].map((k) => ({
     id: `magic-${k}`,
     parent: "magician",
     match: (c: C) => c.magicSchool === k,
   })),
+  /* The umbrella. Every fan calls all of these dark magic, so the question
+     has to remain askable even though the corpus separates the practices. */
+  {
+    id: "magic-dark",
+    parent: "magician",
+    match: (c: C) =>
+      ["dark-dimension", "infernal", "witchcraft", "necromancy", "blood"].includes(
+        c.magicSchool ?? "",
+      ),
+  },
   { id: "abstract", parent: "cosmic", match: is("Abstract entity", "Abstract Entity") },
   { id: "celestial", parent: "cosmic", match: (c) => is("Celestial")(c) || aff("Celestials")(c) },
   { id: "elder-universe", parent: "cosmic", match: aff("Elders of the Universe") },
