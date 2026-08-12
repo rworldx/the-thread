@@ -178,7 +178,13 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
         match: (c) =>
           is("Abstract entity", "Abstract Entity", "Cosmic entity", "Cosmic Being", "Watcher")(c) ||
           aff("Cosmic entities")(c) ||
-          aff("Celestials")(c),
+          aff("Celestials")(c) ||
+          /* The children have to be inside the parent. Heralds and Elders each
+             had a chip UNDER Cosmic entities while failing to match Cosmic
+             entities itself, so pressing the parent hid the very people the
+             child chips listed. */
+          aff("Heralds of Galactus")(c) ||
+          aff("Elders of the Universe")(c),
       },
       { id: "abstract", parent: "cosmic", match: is("Abstract entity", "Abstract Entity") },
       { id: "celestial", parent: "cosmic", match: (c) => is("Celestial")(c) || aff("Celestials")(c) },

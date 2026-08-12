@@ -1657,7 +1657,7 @@ const fantasticFour: CharacterDraft[] = [
     nameAr: "السيلفر سيرفر",
     aliases: ["Silver Surfer", "Norrin Radd"],
     category: "antihero",
-    affiliation: ["Cosmic entities"],
+    affiliation: ["Cosmic entities", "Heralds of Galactus"],
     universe: ["fox"],
     species: "Zenn-Lavian",
     powers: [
@@ -12675,7 +12675,7 @@ const powerList: CharacterDraft[] = [
     nameAr: "كوزميك غوست رايدر",
     aliases: ["Cosmic Ghost Rider"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["Cosmic entities", "Midnight Sons"],
     universe: ["mcu"],
     species: "Human",
     powers: [
