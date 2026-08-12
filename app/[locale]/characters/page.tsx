@@ -1,6 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeParams } from "@/lib/locales";
-import { shownCharacters } from "@/lib/characters";
+import { shownCharacters, characterOf } from "@/lib/characters";
 import { CharacterBrowser } from "@/app/components/character-browser";
 
 /**
@@ -69,9 +69,15 @@ export default async function CharactersPage({
     mutantClass: c.mutantClass,
     symbioteClass: c.symbioteClass,
     performerOf: c.performerOf?.character ?? null,
-    /* The performer's own photo, for the split avatar the two MCU team chips
-       show. `leadActorPhoto` is already derived per character. */
-    actorPhoto: c.performerOf ? c.leadActorPhoto : null,
+    /**
+     * THE BASE CHARACTER'S ARTWORK, for the character half of the split.
+     *
+     * NOT this record's own `image`: a performance record's image is already
+     * the actor, which is why passing it as the character half rendered Tom
+     * Holland twice. The project page has always taken the character half
+     * from the record being performed, and this now does the same.
+     */
+    baseImage: c.performerOf ? (characterOf(c.performerOf.character)?.image ?? null) : null,
     universe: c.universe,
     appearances: c.appearances.length,
     /**

@@ -41,7 +41,9 @@ export interface CharacterCard {
   /** Set only on a PERFORMANCE record: the character it performs, and the
       actor's photo, so the two teams below can show a split avatar. */
   performerOf: string | null;
-  actorPhoto: string | null;
+  /** The performed character's artwork. This record's own `image` is the
+      actor, so the split takes its two halves from different places. */
+  baseImage: string | null;
   appearances: number;
 }
 
@@ -421,7 +423,17 @@ export function CharacterBrowser({
            */}
           {GROUPS.map((g) => {
             const parents = g.chips.filter((c) => !c.parent);
-            const kids = g.chips.filter((c) => c.parent === chip);
+            /**
+             * THE OPEN PARENT IS THE SELECTION *OR* THE SELECTION'S PARENT.
+             *
+             * Keying the child band off `parent === chip` alone made it vanish
+             * the moment you chose a child: nothing has "mutant-gamma" as its
+             * parent, so the band emptied and the row you were standing in
+             * disappeared under you. Choosing Gamma means Mutants AND Gamma
+             * are both active, and the band has to stay open to say so.
+             */
+            const openParent = CHIPS.find((c) => c.id === chip)?.parent ?? chip;
+            const kids = g.chips.filter((c) => c.parent === openParent);
             return (
               <div key={g.group} className="chip-band-group">
                 <div className="chip-band">
@@ -446,7 +458,9 @@ export function CharacterBrowser({
                           key={c.id}
                           type="button"
                           role="radio"
-                          aria-checked={chip === c.id}
+                          /* A parent reads as chosen while one of its children
+                             is, because it still is. */
+                          aria-checked={chip === c.id || openParent === c.id}
                           className="chip"
                           onClick={() => setChip(c.id)}
                         >
@@ -494,10 +508,10 @@ export function CharacterBrowser({
           {shown.map((c) => (
             <li key={c.id}>
               <Link className="char-tile" href={`/${locale}/characters/${c.id}`}>
-                {c.performerOf && c.actorPhoto ? (
+                {c.performerOf && c.baseImage ? (
                   <SplitAvatar
-                    characterSrc={c.image}
-                    actorSrc={c.actorPhoto}
+                    characterSrc={c.baseImage}
+                    actorSrc={c.image}
                     name={c.name}
                   />
                 ) : (
