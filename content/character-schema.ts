@@ -48,6 +48,25 @@ export const CharacterCategory = z.enum([
  *
  * Null for anyone who is not a mutant, and for mutants with no published rank.
  */
+/**
+ * SIX LEVELS, ORDERED MOST POWERFUL TO LEAST, and the order of this enum IS
+ * that ranking rather than an alphabetical accident:
+ *
+ *   omega    An undefinable upper limit within the power's own class. This is
+ *            the only one Marvel formally defined (House of X #1), and it is
+ *            a statement about ONE power, not about overall strength.
+ *   alpha    The common superhuman tier: strong, bounded, useful.
+ *   beta     Practical but minimally so.
+ *   gamma    Powerful and visibly mutated, at a physical cost.
+ *   delta    Useful but limited. Roughly half of all mutants sit here, which
+ *            makes it the statistical baseline and the least interesting.
+ *   epsilon  Little or no ability, and a mutation that makes life harder.
+ *
+ * ONLY ALPHA, BETA AND OMEGA ARE REALLY EARTH-616. Gamma appears in Earth-295
+ * and delta and epsilon come from secondary and adjacent material, which is
+ * why the corpus holds one gamma and no deltas or epsilons: the levels exist
+ * so the enum can express them, not so anybody is obliged to fill them.
+ */
 export const MutantClass = z.enum([
   "omega",
   "alpha",
