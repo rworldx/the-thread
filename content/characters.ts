@@ -14701,6 +14701,291 @@ const lateAdditions: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE TOP OF THE COSMIC LIST, batch 24 — the tier above the tier above.
+ *
+ * Galan of Taa is filed as a `variant` of Galactus and not as an ally, which
+ * is the only honest edge: he is the same being before he became it, the way
+ * Banner is Hulk. He gets his own record rather than an alias because the man
+ * and the Devourer are separated by an event rather than by a costume.
+ *
+ * Love and Hate are a PAIR and neither is the villain, the same shape as
+ * Order and Chaos. Sire Hate is typed antivillain for exactly that reason.
+ *
+ * Captain Universe is not a person at all: it is a power that finds whoever
+ * is needed, lends them what the moment requires and leaves. It has been a
+ * child, a mechanic and Spider-Man.
+ */
+const cosmicTop: CharacterDraft[] = [
+  {
+    id: "galan-of-taa",
+    nameEn: "Galan of Taa",
+    nameAr: "غالان من تاء",
+    aliases: ["Galan of Taa", "Galan"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "The last man of the last universe", ar: "آخر رجال الكون السابق" },
+      { en: "Flew into a dying cosmos", ar: "حلّق في كونٍ يحتضر" },
+      { en: "Came out as Galactus", ar: "خرج جالاكتوس" },
+    ],
+    origin: {
+      en: "The mortal scientist of a universe before this one, who flew into its final collapse to see what was there and emerged as the thing that eats worlds.",
+      ar: "العالم الفاني من كونٍ سبق هذا، طار إلى انهياره الأخير ليرى ما هناك، فخرج الكائن الذي يلتهم العوالم.",
+    },
+    related: [
+      { id: "galactus", kind: "variant" },
+    ],
+  },
+  {
+    id: "mistress-love",
+    nameEn: "Mistress Love",
+    nameAr: "سيدة الحب",
+    aliases: ["Mistress Love"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Love, embodied", ar: "الحب مجسّدًا" },
+      { en: "Paired against Sire Hate", ar: "تقابل سيّد الكراهية" },
+      { en: "Neither can win outright", ar: "ولا ينتصر أحدهما تمامًا" },
+    ],
+    origin: {
+      en: "The personification of love, who exists in balance with hate rather than in victory over it, because a universe that had only one of them would stop working.",
+      ar: "تجسيد الحب، توجد في توازن مع الكراهية لا في انتصار عليها، لأن كونًا فيه واحدة منهما فقط يتوقف عن العمل.",
+    },
+    related: [
+      { id: "sire-hate", kind: "enemy" },
+    ],
+  },
+  {
+    id: "sire-hate",
+    nameEn: "Sire Hate",
+    nameAr: "سيد الكراهية",
+    aliases: ["Sire Hate"],
+    category: "antivillain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Hate, embodied", ar: "الكراهية مجسّدة" },
+      { en: "Paired against Mistress Love", ar: "يقابل سيدة الحب" },
+      { en: "Not evil, only necessary", ar: "ليس شرًّا بل ضرورة" },
+    ],
+    origin: {
+      en: "The personification of hate, and not a villain: he is one half of a pair that has to stay in balance, and he knows it better than most beings know anything.",
+      ar: "تجسيد الكراهية، وليس شريرًا: هو نصف ثنائي عليه أن يبقى متوازنًا، وهو يعلم ذلك أكثر مما تعلم أكثر الكائنات أيّ شيء.",
+    },
+    related: [
+      { id: "mistress-love", kind: "enemy" },
+    ],
+  },
+  {
+    id: "queen-of-nevers",
+    nameEn: "The Queen of Nevers",
+    nameAr: "ملكة ما لم يكن",
+    aliases: ["The Queen of Nevers", "The Pilgrim"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Keeps what never happened", ar: "تحفظ ما لم يحدث قط" },
+      { en: "From the Fourth Cosmos", ar: "من الكون الرابع" },
+      { en: "Outside the hierarchy", ar: "خارج التسلسل" },
+    ],
+    origin: {
+      en: "A being from a universe four cosmoses ago who collects possibilities that were never taken, and who sits outside the hierarchy entirely rather than above or below it.",
+      ar: "كائنة من كونٍ يسبق هذا بأربعة أكوان، تجمع الاحتمالات التي لم تُسلك قط، وتقف خارج التسلسل كليًا لا فوقه ولا تحته.",
+    },
+    related: [
+      { id: "the-living-tribunal", kind: "ally" },
+    ],
+  },
+  {
+    id: "captain-universe",
+    nameEn: "Captain Universe",
+    nameAr: "كابتن يونيفرس",
+    aliases: ["Captain Universe", "Uni-Power", "Enigma Force"],
+    category: "hero",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "The Uni-Power picks a host", ar: "القوة الكونية تختار مضيفًا" },
+      { en: "Anyone at all, briefly", ar: "أي أحد كان، لفترة" },
+      { en: "Leaves when the job is done", ar: "وتمضي متى تمّ العمل" },
+    ],
+    origin: {
+      en: "Not a person but a power that finds whoever is needed, gives them what the moment requires, and leaves. It has been a child, a mechanic and Spider-Man.",
+      ar: "ليس شخصًا بل قوة تجد من تحتاجه، فتمنحه ما تقتضيه اللحظة ثم تمضي. كانت طفلًا وميكانيكيًا وسبايدرمان.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "the-progenitor",
+    nameEn: "The Progenitor",
+    nameAr: "المُنجِب",
+    aliases: ["The Progenitor"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Celestial",
+    powers: [
+      { en: "A Celestial that died on Earth", ar: "سماويّ مات على الأرض" },
+      { en: "Its blood became life here", ar: "صار دمه حياةً هنا" },
+      { en: "Woke to judge everyone", ar: "استيقظ ليحاكم الجميع" },
+    ],
+    origin: {
+      en: "The Celestial whose corpse fell to Earth and whose blood is why anything here mutated at all, and who woke long enough to judge the planet it accidentally created.",
+      ar: "السماويّ الذي سقطت جثته على الأرض وكان دمه سبب أي طفرة هنا، واستيقظ ما يكفي ليحاكم الكوكب الذي خلقه مصادفة.",
+    },
+    related: [
+      { id: "arishem", kind: "family" },
+    ],
+  },
+  {
+    id: "logos",
+    nameEn: "Logos",
+    nameAr: "لوغوس",
+    aliases: ["Logos"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Speaks for jurisdiction", ar: "ينطق في الاختصاص" },
+      { en: "Knows which court applies", ar: "يعرف أي محكمة تنطبق" },
+      { en: "Rarely intervenes", ar: "نادرًا ما يتدخل" },
+    ],
+    origin: {
+      en: "A cosmic being concerned with which authority governs what, and who turns up mainly to say that a matter belongs to a different court than the one hearing it.",
+      ar: "كائن كوني معنيّ بأي سلطة تحكم أي شيء، ويظهر غالبًا ليقول إن المسألة تخصّ محكمة غير التي تنظر فيها.",
+    },
+    related: [
+      { id: "the-living-tribunal", kind: "ally" },
+    ],
+  },
+  {
+    id: "aegis-cosmic",
+    nameEn: "Aegis, Lady of All Sorrows",
+    nameAr: "إيجيس سيدة كل الأحزان",
+    aliases: ["Aegis", "Lady of All Sorrows"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Holds every grief there is", ar: "تحمل كل حزن موجود" },
+      { en: "Older than most abstracts", ar: "أقدم من معظم المجرّدات" },
+      { en: "Shields what she pities", ar: "تحمي ما ترثي له" },
+    ],
+    origin: {
+      en: "A cosmic being who carries the sorrow of everything that has ever suffered, and who shields what she pities rather than avenging it.",
+      ar: "كائنة كونية تحمل حزن كل ما تألّم يومًا، وتحمي ما ترثي له بدل أن تنتقم له.",
+    },
+    related: [
+      { id: "eternity", kind: "ally" },
+    ],
+  },
+  {
+    id: "antiphon",
+    nameEn: "Antiphon the Overseer",
+    nameAr: "أنتيفون المشرف",
+    aliases: ["Antiphon", "Antiphon the Overseer"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Oversees cosmic affairs", ar: "يشرف على الشؤون الكونية" },
+      { en: "Answers to the Tribunal", ar: "يخضع للمحكمة" },
+      { en: "Almost never seen", ar: "لا يكاد يُرى" },
+    ],
+    origin: {
+      en: "A cosmic overseer who acts on the Living Tribunal's behalf in matters too small for it and too large for anybody else, and who is almost never seen doing it.",
+      ar: "مشرف كوني يتصرف نيابة عن المحكمة الحية في أمور أصغر من أن تتولاها وأكبر من أن يتولاها سواه، ولا يكاد يُرى وهو يفعل.",
+    },
+    related: [
+      { id: "the-living-tribunal", kind: "ally" },
+    ],
+  },
+  {
+    id: "the-fulcrum",
+    nameEn: "The Fulcrum",
+    nameAr: "المرتكز",
+    aliases: ["The Fulcrum"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Commands cosmic beings", ar: "يأمر الكائنات الكونية" },
+      { en: "May be the One-Above-All", ar: "قد يكون الأعلى فوق الجميع" },
+      { en: "Nobody has established which", ar: "ولم يثبت أحد أيّهما" },
+    ],
+    origin: {
+      en: "A being that gives orders to Celestials and abstracts alike, and which may be an aspect of the One-Above-All wearing another face. Nothing published settles it.",
+      ar: "كائن يصدر الأوامر إلى السماويين والمجرّدات على السواء، وقد يكون وجهًا آخر للأعلى فوق الجميع. ولا شيء منشور يحسم ذلك.",
+    },
+    related: [
+      { id: "the-one-above-all", kind: "ally" },
+    ],
+  },
+  {
+    id: "first-firmament",
+    nameEn: "The First Firmament",
+    nameAr: "الجَلَد الأول",
+    aliases: ["The First Firmament"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "The original universe", ar: "الكون الأول" },
+      { en: "Made the first Celestials", ar: "صنع أول السماويين" },
+      { en: "Wants to be alone again", ar: "يريد أن يعود وحده" },
+    ],
+    origin: {
+      en: "The very first universe, which made itself company and was then divided when that company rebelled. Everything since, including the multiverse, is the argument continuing.",
+      ar: "أول كون على الإطلاق، صنع لنفسه رفقة ثم انقسم حين تمرّدت تلك الرفقة. وكل ما تلا، بما فيه الكون المتعدد، هو استمرار للخصام.",
+    },
+    /* Pointed at Arishem, who is a Celestial this corpus actually holds.
+       There is no group record for the Celestials and inventing one to hang
+       an edge off would be worse than naming a real member. */
+    related: [
+      { id: "arishem", kind: "enemy" },
+    ],
+  },
+  {
+    id: "the-beyonders",
+    nameEn: "The Beyonders",
+    nameAr: "ما وراء",
+    aliases: ["The Beyonders"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "From outside the multiverse", ar: "من خارج الكون المتعدد" },
+      { en: "Ran an experiment on everything", ar: "أجروا تجربة على كل شيء" },
+      { en: "Killed the abstracts to end it", ar: "وقتلوا المجرّدات لإنهائها" },
+    ],
+    origin: {
+      en: "A race from outside the multiverse entirely, who treated all of creation as a laboratory and ended the experiment by killing the beings that hold it together.",
+      ar: "جنس من خارج الكون المتعدد كليًا، عاملوا الخلق كله مختبرًا، وأنهوا التجربة بقتل الكائنات التي تمسكه.",
+    },
+    related: [
+      { id: "molecule-man", kind: "enemy" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -14726,6 +15011,7 @@ export const characters: CharacterDraft[] = [
   ...mutantsI,
   ...spiderLast,
   ...lateAdditions,
+  ...cosmicTop,
   ...avengers,
   ...guardians,
   ...xmen,

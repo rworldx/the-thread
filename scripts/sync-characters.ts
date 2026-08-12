@@ -770,6 +770,32 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/9/96/X-Men_Red_Vol_2_16_Comunidades_Variant_Textless.jpg/revision/latest?cb=20240909113116",
   "warlock-technarch":
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/New_Mutants_Vol_4_2_Adams_Variant_Textless.jpg/revision/latest?cb=20200514003124",
+  /* Batch 24 — the top of the cosmic hierarchy. Mistress Love, Sire Hate
+     and the Fulcrum are filed under Earth-616 rather than (Multiverse). */
+  "galan-of-taa":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d1/Amazing_Spider-Man_Vol_5_12_Fantastic_Four_Villains_Variant_Textless.jpg/revision/latest?cb=20181216083445",
+  "queen-of-nevers":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/48/Silver_Surfer_Vol_7_2_Textless.jpg/revision/latest?cb=20140116222853",
+  "captain-universe":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1a/Avengers_Vol_5_6_Textless.jpg/revision/latest?cb=20121115175227",
+  "the-progenitor":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/03/Progenitor_%28Celestial%29_%28Multiverse%29_from_A.X.E._Judgment_Day_Vol_1_2_002.jpg/revision/latest?cb=20221006173948",
+  "logos":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Logos_%28Cosmic_Being%29_%28Earth-616%29_from_Ultimates_2_Vol_2_3_001.jpg/revision/latest?cb=20170120085252",
+  "aegis-cosmic":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/ec/Aegis_%28Proemial_God%29_%28Earth-616%29_from_Annihilation_Silver_Surfer_Vol_1_3_0001.jpg/revision/latest?cb=20200703210320",
+  "antiphon":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/7c/Antiphon_%28Earth-616%29_from_Annihilation_Heralds_of_Galactus_Vol_1_2_0001.jpg/revision/latest?cb=20191202045739",
+  "first-firmament":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/32/First_Cosmos_from_Ultimates_2_Vol_2_6_001.jpg/revision/latest?cb=20211206015406",
+  "the-beyonders":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/75/Beyonders_from_New_Avengers_Vol_3_29_001.jpg/revision/latest?cb=20150128180552",
+  "mistress-love":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1e/Mistress_Love_%28Earth-616%29_from_Iron_Man_Vol_5_15_001.jpg/revision/latest?cb=20211228034133",
+  "sire-hate":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Sire_Hate_%28Earth-616%29_from_Iron_Man_Vol_5_15_001.jpg/revision/latest?cb=20211228034147",
+  "the-fulcrum":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/19/Fulcrum_%28Earth-616%29_from_Eternals_Vol_4_9_0001.png/revision/latest?cb=20130924135423",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:
