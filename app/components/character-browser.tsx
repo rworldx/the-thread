@@ -494,9 +494,28 @@ export function CharacterBrowser({
                    * screen sees the row exactly as before and never a
                    * disclosure — no JS, no breakpoint state, no hydration.
                    */}
-                  <details className="chip-fold" open>
+                  {/**
+                   * CLOSED BY DEFAULT, and that is the whole point on a phone.
+                   *
+                   * It shipped `open`, so a narrow screen showed every band
+                   * expanded: fifty-odd chips to scroll past before the first
+                   * character. The page is for finding people, not for reading
+                   * a taxonomy. Closed, each band is one row that names the
+                   * band and its current choice, so the three of them cost
+                   * three rows and the characters start immediately below.
+                   *
+                   * No `open` attribute at all now — CSS forces the row
+                   * visible above 48rem, so the desktop never sees a
+                   * disclosure and loses nothing.
+                   */}
+                  <details className="chip-fold">
                     <summary className="chip-fold-summary">
-                      {t(`chip.${chip}`)}
+                      <span className="chip-fold-name">{t(`chipGroup.${g.group}`)}</span>
+                      <span className="chip-fold-value">
+                        {parents.some((c) => c.id === chip) || openParent !== chip
+                          ? t(`chip.${chip}`)
+                          : t("chip.all")}
+                      </span>
                     </summary>
                     <div className="chip-band-row">
                       {parents.map((c) => (

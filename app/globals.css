@@ -6012,6 +6012,26 @@ html:has(:target) {
 .chip-band-group + .chip-band-group {
   margin-block-start: var(--space-3);
 }
+/* Above the fold breakpoint the disclosure does not exist: the row is shown
+   whatever the details element thinks, and the summary is hidden. */
+@media (min-width: 48rem) {
+  /**
+   * FORCING A CLOSED <details> OPEN, which takes two rules and not one.
+   *
+   * `display` alone does not do it any more: current browsers hide the
+   * contents of a closed details through the `::details-content` pseudo with
+   * `content-visibility: hidden`, which a display rule on the child cannot
+   * reach. Overriding both is what actually shows the row, and it is why the
+   * desktop briefly rendered two chips instead of fifty.
+   */
+  .chip-fold::details-content {
+    content-visibility: visible;
+    block-size: auto;
+  }
+  .chip-fold:not([open]) .chip-band-row {
+    display: flex;
+  }
+}
 @media (max-width: 47.99rem) {
   .chip-fold-summary {
     display: flex;
@@ -6047,5 +6067,34 @@ html:has(:target) {
   }
   .chip-fold[open] .chip-band-row {
     margin-block-start: var(--space-2);
+  }
+  /* The summary IS the control when closed, so it carries the tap target. */
+  .chip-fold-summary {
+    min-block-size: 44px;
+    touch-action: manipulation;
+  }
+  .chip-fold-name {
+    color: var(--color-ink-faint);
+    font-size: var(--step--1);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  [lang="ar"] .chip-fold-name {
+    letter-spacing: normal;
+    text-transform: none;
+  }
+  .chip-fold-value {
+    margin-inline-start: auto;
+    margin-inline-end: var(--space-2);
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+  /* The band label is the summary's job on a phone; two of them is noise. */
+  .chip-band > .chip-band-label {
+    display: none;
+  }
+  /* Bands stack tight so the characters start high on the page. */
+  .chip-band-group + .chip-band-group {
+    margin-block-start: var(--space-1);
   }
 }
