@@ -709,6 +709,35 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ad/Marauders_Vol_2_4_Textless.jpg/revision/latest?cb=20220319231800",
   "unus":
     "https://static.wikia.nocookie.net/marveldatabase/images/3/35/Gunther_Bain_%28Earth-616%29_from_Excalibur_Vol_3_2_001.jpg/revision/latest?cb=20220629024846",
+  /* Batch 22 — the last of the mutant roster. */
+  "onyxx":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9a/Sidney_Green_%28Earth-616%29_from_X-Men_Earth%27s_Mutant_Heroes_Vol_1_1_0001.jpg/revision/latest?cb=20161123234139",
+  "stacy-x":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/58/Miranda_Leevald_%28Earth-616%29_from_Way_of_X_Vol_1_3_003.jpg/revision/latest?cb=20210625024009",
+  "tempus":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/7f/X-Men_-_Forever_Vol_1_3_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250130000604",
+  "trance":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/cd/Hope_Abbott_%28Earth-616%29_from_X-Men_Legacy_Vol_1_228_001.jpg/revision/latest?cb=20180909020747",
+  "triage":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Christopher_Muse_%28Earth-616%29_from_X-Men_Unlimited_Infinity_Comic_Vol_1_44_001.jpg/revision/latest?cb=20220909020256",
+  "transonic":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1b/Laurie_Tromette_%28Earth-616%29_from_Generation_Hope_Vol_1_11_002.jpg/revision/latest?cb=20170611001804",
+  "tarot":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1d/Marie-Ange_Colbert_%28Earth-616%29_from_Spider-Man_Deadpool_Vol_1_11_0002.png/revision/latest?cb=20161212152706",
+  "velocidad":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a0/Gabriel_Cohuelo_%28Earth-616%29_from_Generation_Hope_Vol_1_13_001.jpg/revision/latest?cb=20210228201759",
+  "wallflower":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/41/Laurie_Collins_%28Earth-616%29_from_X-Factor_Vol_4_001.jpg/revision/latest?cb=20210116191348",
+  "wind-dancer":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/31/Sofia_Mantega_%28Earth-616%29_from_Dazzler_Vol_3_3_001.jpg/revision/latest?cb=20241201204129",
+  "yukio":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/de/Yukio_%28Earth-616%29_from_Exceptional_X-Men_Vol_1_5_001.jpg/revision/latest?cb=20250115200506",
+  "whiz-kid":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/cd/Whiz_Kid_%28Earth-616%29_from_Avengers_The_Initiative_Annual_Vol_1_1_001.jpg/revision/latest?cb=20220725191215",
+  "wraith":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6a/Hector_Rendoza_%28Earth-616%29_from_X-Men_Earth%27s_Mutant_Heroes_Vol_1_1.png/revision/latest?cb=20140129191726",
+  "ziggy-karst":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b4/Ziggy_Karst_%28Earth-616%29_from_Nightcrawler_Vol_4_5_001.png/revision/latest?cb=20141116061509",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

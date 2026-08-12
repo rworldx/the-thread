@@ -14014,6 +14014,329 @@ const mutantsH: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE LAST OF THE MUTANT ROSTER, batch 22.
+ *
+ * Shark-Girl and Wallop have no published art and are not here, joining
+ * Hindsight, Match and Sunder. Five of the roster's 179 could not be given a
+ * picture, which is a better hit rate than I expected when I warned that this
+ * tier would run dry.
+ *
+ * Yukio was the only one of the sixteen with screen credits, and she has
+ * three: The Wolverine, Deadpool 2 and Deadpool and Wolverine.
+ */
+const mutantsI: CharacterDraft[] = [
+  {
+    id: "onyxx",
+    nameEn: "Onyxx",
+    nameAr: "أونيكس",
+    aliases: ["Onyxx", "Sidney Green"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "A body of living rock", ar: "جسد من صخر حيّ" },
+      { en: "Takes a hit and stands", ar: "يتلقى الضربة ويثبت" },
+      { en: "Was a gang enforcer", ar: "كان منفّذ عصابة" },
+    ],
+    origin: {
+      en: "A mutant made of dark stone who came to the school from a gang and found the same size and temper useful for something else.",
+      ar: "متحوّل من حجر داكن، جاء إلى المدرسة من عصابة فوجد أن الحجم والطبع نفسيهما ينفعان في شيء آخر.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "stacy-x",
+    nameEn: "Stacy X",
+    nameAr: "ستايسي إكس",
+    aliases: ["Stacy X", "Miranda Leevald"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Scaled skin like a snake", ar: "جلد محرشف كالأفعى" },
+      { en: "Controls people through touch", ar: "تتحكم بالناس باللمس" },
+      { en: "Worked a brothel first", ar: "عملت في ماخور أولًا" },
+    ],
+    origin: {
+      en: "A mutant who alters other people's bodies through her skin, who worked in a mutant brothel before the X-Men found her and never pretended otherwise.",
+      ar: "متحوّلة تغيّر أجساد الآخرين عبر جلدها، عملت في ماخور للمتحوّلين قبل أن يجدها الإكس مِن ولم تتظاهر بغير ذلك يومًا.",
+    },
+    related: [
+      { id: "storm", kind: "ally" },
+    ],
+  },
+  {
+    id: "tempus",
+    nameEn: "Tempus",
+    nameAr: "تيمبوس",
+    aliases: ["Tempus", "Eva Bell"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Freezes time in a bubble", ar: "تجمّد الزمن في فقاعة" },
+      { en: "Travelled to her own future", ar: "سافرت إلى مستقبلها" },
+      { en: "Came back much older", ar: "وعادت أكبر بكثير" },
+    ],
+    origin: {
+      en: "An Australian student who encases things in bubbles of stopped time, and who went forward to live decades and came back to a class she had outgrown.",
+      ar: "طالبة أسترالية تحبس الأشياء في فقاعات من زمن متوقف، مضت إلى الأمام فعاشت عقودًا ثم عادت إلى صفّ تجاوزته.",
+    },
+    related: [
+      { id: "cyclops", kind: "ally" },
+    ],
+  },
+  {
+    id: "trance",
+    nameEn: "Trance",
+    nameAr: "ترانس",
+    aliases: ["Trance", "Hope Abbott"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Leaves her body as energy", ar: "تغادر جسدها طاقةً" },
+      { en: "Passes through walls that way", ar: "وتعبر الجدران هكذا" },
+      { en: "Shy about all of it", ar: "خجولة من ذلك كله" },
+    ],
+    origin: {
+      en: "A student who projects an astral form of purple energy that can pass through anything, and who is quieter about her power than almost anyone at the school.",
+      ar: "طالبة تُسقط صورة أثيرية من طاقة بنفسجية تعبر أي شيء، وهي أكتم من كل من في المدرسة تقريبًا عن قوتها.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "triage",
+    nameEn: "Triage",
+    nameAr: "تراياج",
+    aliases: ["Triage", "Christopher Muse"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Heals by touch", ar: "يشفي باللمس" },
+      { en: "Brought people back from dead", ar: "أعاد أناسًا من الموت" },
+      { en: "Cannot heal himself", ar: "ولا يشفي نفسه" },
+    ],
+    origin: {
+      en: "A young healer who can repair almost any injury in another person by touch, and none at all in himself, which is the arrangement he has to live with.",
+      ar: "شافٍ يافع يرمّم أي إصابة تقريبًا في غيره باللمس، ولا يرمّم في نفسه شيئًا، وذلك الترتيب الذي عليه أن يعيش به.",
+    },
+    related: [
+      { id: "magik", kind: "ally" },
+    ],
+  },
+  {
+    id: "transonic",
+    nameEn: "Transonic",
+    nameAr: "ترانسونيك",
+    aliases: ["Transonic", "Laurie Tromette"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Flies faster than sound", ar: "تطير أسرع من الصوت" },
+      { en: "Blue skin and no hair", ar: "بشرة زرقاء وبلا شعر" },
+      { en: "Would not change back", ar: "ولم تشأ العودة" },
+    ],
+    origin: {
+      en: "A student whose mutation turned her blue and let her break the sound barrier, and who declined a cure on the grounds that she liked the flying more than the face.",
+      ar: "طالبة حوّلتها طفرتها إلى زرقاء وأتاحت لها كسر حاجز الصوت، ورفضت علاجًا بحجة أن الطيران أحبّ إليها من الوجه.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "tarot",
+    nameEn: "Tarot",
+    nameAr: "تاروت",
+    aliases: ["Tarot", "Marie-Ange Colbert"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Her card figures become real", ar: "أشكال بطاقاتها تصير حقيقية" },
+      { en: "Draws what she summons", ar: "ترسم ما تستدعي" },
+      { en: "The deck decides as much as she does", ar: "المجموعة تقرر بقدرها" },
+    ],
+    origin: {
+      en: "A French mutant who brings the figures on her tarot cards into the world as solid creatures, and who has never been entirely sure the deck is not choosing for her.",
+      ar: "متحوّلة فرنسية تُخرج أشكال بطاقات التاروت إلى العالم مخلوقات صلبة، ولم تتيقن قط أن المجموعة لا تختار عنها.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "velocidad",
+    nameEn: "Velocidad",
+    nameAr: "فيلوسيداد",
+    aliases: ["Velocidad", "Gabriel Cohuelo"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Moves faster than time", ar: "يتحرك أسرع من الزمن" },
+      { en: "Ages while everyone waits", ar: "يشيخ بينما ينتظر الجميع" },
+      { en: "Every sprint costs him years", ar: "كل عَدْوة تكلّفه سنين" },
+    ],
+    origin: {
+      en: "A speedster who does not move quickly so much as slow the world, and who ages at the ordinary rate the whole time he is doing it.",
+      ar: "عدّاء لا يتحرك بسرعة بقدر ما يبطئ العالم، وهو يشيخ بالوتيرة العادية طوال ما يفعل ذلك.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "wallflower",
+    nameEn: "Wallflower",
+    nameAr: "والفلاور",
+    aliases: ["Wallflower", "Laurie Collins"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Pheromones that steer a mood", ar: "فيرومونات توجّه المزاج" },
+      { en: "Cannot switch them off", ar: "لا تستطيع إطفاءها" },
+      { en: "Never knows if it is real", ar: "لا تدري قط أهو حقيقي" },
+    ],
+    origin: {
+      en: "A student who emits pheromones that change how people feel about her, and who can never be certain whether anyone likes her or has simply been near her.",
+      ar: "طالبة تفرز فيرومونات تغيّر شعور الناس نحوها، ولا تتيقن أبدًا أأحبّها أحد أم كان قريبًا منها فحسب.",
+    },
+    related: [
+      { id: "elixir", kind: "ally" },
+    ],
+  },
+  {
+    id: "wind-dancer",
+    nameEn: "Wind Dancer",
+    nameAr: "ويند دانسر",
+    aliases: ["Wind Dancer", "Sofia Mantega"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Commands the wind", ar: "تأمر الريح" },
+      { en: "Flies on it", ar: "وتطير عليها" },
+      { en: "Led the class by vote", ar: "قادت الصف بالانتخاب" },
+    ],
+    origin: {
+      en: "A Venezuelan student who controls air currents and was elected squad leader by her classmates, which is a rarer distinction at that school than any power.",
+      ar: "طالبة فنزويلية تتحكم بتيارات الهواء، انتخبها زملاؤها قائدة للفرقة، وهو تمييز أندر في تلك المدرسة من أي قوة.",
+    },
+    related: [
+      { id: "prodigy", kind: "ally" },
+    ],
+  },
+  {
+    id: "whiz-kid",
+    nameEn: "Whiz Kid",
+    nameAr: "ويز كيد",
+    aliases: ["Whiz Kid", "Takashi Matsuya"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Reshapes machines by touch", ar: "يعيد تشكيل الآلات باللمس" },
+      { en: "Builds from any scrap", ar: "يبني من أي خردة" },
+      { en: "A wheelchair he engineered himself", ar: "كرسيّ صمّمه بنفسه" },
+    ],
+    origin: {
+      en: "A young mutant who rebuilds any machine he touches into something better, starting with the wheelchair he uses, which he has improved more times than anyone has counted.",
+      ar: "متحوّل يافع يعيد بناء أي آلة يلمسها إلى ما هو أفضل، بدءًا بالكرسي المتحرك الذي يستعمله، وقد حسّنه مرات لم يحصها أحد.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "wraith",
+    nameEn: "Wraith",
+    nameAr: "رايث",
+    aliases: ["Wraith", "Hector Rendoza"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Phases through anything", ar: "يعبر أي شيء" },
+      { en: "Disappears mid-sentence", ar: "يختفي في منتصف الجملة" },
+      { en: "Xavier's student, briefly", ar: "طالب إكزافير لفترة قصيرة" },
+    ],
+    origin: {
+      en: "A student who phases out of solid matter and out of conversations, and who was at the school for a short and eventful time.",
+      ar: "طالب يعبر خارج المادة الصلبة وخارج الأحاديث، وكان في المدرسة مدة قصيرة حافلة.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "ziggy-karst",
+    nameEn: "Ziggy Karst",
+    nameAr: "زيغي كارست",
+    aliases: ["Ziggy Karst"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Reshapes stone and metal", ar: "يعيد تشكيل الحجر والمعدن" },
+      { en: "Sculpts rather than smashes", ar: "ينحت ولا يحطّم" },
+      { en: "An artist by inclination", ar: "فنان بالطبع" },
+    ],
+    origin: {
+      en: "A mutant who reshapes hard matter the way a sculptor does, and who has consistently treated the power as a craft rather than a weapon.",
+      ar: "متحوّل يعيد تشكيل المادة الصلبة كما يفعل النحّات، وظل يعامل قوته صنعةً لا سلاحًا.",
+    },
+    related: [
+      { id: "magneto", kind: "ally" },
+    ],
+  },
+  {
+    id: "yukio",
+    nameEn: "Yukio",
+    nameAr: "يوكيو",
+    aliases: ["Yukio"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Sees how a person dies", ar: "ترى كيف يموت المرء" },
+      { en: "Fights with a bladed whip", ar: "تقاتل بسوط ذي نصل" },
+      { en: "Cheerfully fearless", ar: "مرحة لا تخاف" },
+    ],
+    origin: {
+      en: "A Japanese mutant who can see how a person is going to die, which has left her with less fear than anyone around her and a great deal more cheerfulness.",
+      ar: "متحوّلة يابانية ترى كيف سيموت المرء، فتركها ذلك أقل خوفًا ممن حولها وأكثر مرحًا بكثير.",
+    },
+    related: [
+      { id: "wolverine", kind: "ally" },
+      { id: "deadpool", kind: "ally" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -14036,6 +14359,7 @@ export const characters: CharacterDraft[] = [
   ...minorRogues,
   ...mutantsG,
   ...mutantsH,
+  ...mutantsI,
   ...avengers,
   ...guardians,
   ...xmen,

@@ -1144,6 +1144,76 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "onyxx": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9a/Sidney_Green_%28Earth-616%29_from_X-Men_Earth%27s_Mutant_Heroes_Vol_1_1_0001.jpg/revision/latest?cb=20161123234139",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "stacy-x": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/58/Miranda_Leevald_%28Earth-616%29_from_Way_of_X_Vol_1_3_003.jpg/revision/latest?cb=20210625024009",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "tempus": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/7f/X-Men_-_Forever_Vol_1_3_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250130000604",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "trance": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/cd/Hope_Abbott_%28Earth-616%29_from_X-Men_Legacy_Vol_1_228_001.jpg/revision/latest?cb=20180909020747",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "triage": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Christopher_Muse_%28Earth-616%29_from_X-Men_Unlimited_Infinity_Comic_Vol_1_44_001.jpg/revision/latest?cb=20220909020256",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "transonic": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1b/Laurie_Tromette_%28Earth-616%29_from_Generation_Hope_Vol_1_11_002.jpg/revision/latest?cb=20170611001804",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "tarot": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1d/Marie-Ange_Colbert_%28Earth-616%29_from_Spider-Man_Deadpool_Vol_1_11_0002.png/revision/latest?cb=20161212152706",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "velocidad": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a0/Gabriel_Cohuelo_%28Earth-616%29_from_Generation_Hope_Vol_1_13_001.jpg/revision/latest?cb=20210228201759",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "wallflower": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/41/Laurie_Collins_%28Earth-616%29_from_X-Factor_Vol_4_001.jpg/revision/latest?cb=20210116191348",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "wind-dancer": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/31/Sofia_Mantega_%28Earth-616%29_from_Dazzler_Vol_3_3_001.jpg/revision/latest?cb=20241201204129",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "whiz-kid": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/cd/Whiz_Kid_%28Earth-616%29_from_Avengers_The_Initiative_Annual_Vol_1_1_001.jpg/revision/latest?cb=20220725191215",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "wraith": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6a/Hector_Rendoza_%28Earth-616%29_from_X-Men_Earth%27s_Mutant_Heroes_Vol_1_1.png/revision/latest?cb=20140129191726",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "ziggy-karst": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b4/Ziggy_Karst_%28Earth-616%29_from_Nightcrawler_Vol_4_5_001.png/revision/latest?cb=20141116061509",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "yukio": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/de/Yukio_%28Earth-616%29_from_Exceptional_X-Men_Vol_1_5_001.jpg/revision/latest?cb=20250115200506",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",
