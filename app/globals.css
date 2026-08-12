@@ -2496,7 +2496,21 @@ a:has(.poster):focus-visible {
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
-  flex: 1 1 16rem;
+  /**
+   * `flex: 1 1 16rem` ONLY MAKES SENSE IN A ROW.
+   *
+   * The basis is on the main axis, so in the row layout 16rem is a sensible
+   * minimum WIDTH. When the controls became a column on phones, the same
+   * declaration made it a 16rem minimum HEIGHT and the search box grew into
+   * the tall slab in Rashid's screenshot. It is auto in the column and
+   * restored to the original only where the row exists.
+   */
+  flex: 0 0 auto;
+}
+@media (min-width: 48rem) {
+  .char-search {
+    flex: 1 1 16rem;
+  }
 }
 .char-search-label {
   font-family: var(--font-mono);
