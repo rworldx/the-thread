@@ -13238,6 +13238,287 @@ const mutantsF: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE MINOR ROGUES, batch 19.
+ *
+ * The Owl is aliased "The Owl" and "Leland Owlsley" and never a bare "Owl".
+ * The pre-check found an "Owl" credited in Agatha All Along, which is plainly
+ * not a corrupt financier with skin flaps — the fourth time a single word
+ * would have taken a credit that was not his, and the first time it was
+ * caught before the record existed rather than after.
+ *
+ * None of the other eleven has an exact credit anywhere in the 216 titles,
+ * which was checked before any of them was written.
+ */
+const minorRogues: CharacterDraft[] = [
+  {
+    id: "the-owl",
+    nameEn: "The Owl",
+    nameAr: "البومة",
+    aliases: ["The Owl", "Leland Owlsley"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Glides on skin flaps", ar: "ينزلق على أغشية جلدية" },
+      { en: "Talons and a grip", ar: "مخالب وقبضة" },
+      { en: "A crooked financier first", ar: "ماليّ فاسد قبل كل شيء" },
+    ],
+    origin: {
+      en: "A corrupt financier who altered himself to glide and grew talons, and who runs a piece of the city's crime from a position halfway between banker and bird.",
+      ar: "ماليّ فاسد عدّل نفسه ليطير انزلاقًا ونبتت له مخالب، ويدير جزءًا من جريمة المدينة من موقع بين المصرفي والطير.",
+    },
+    related: [
+      { id: "kingpin", kind: "enemy" },
+      { id: "daredevil", kind: "enemy" },
+    ],
+  },
+  {
+    id: "black-tarantula",
+    nameEn: "Black Tarantula",
+    nameAr: "التارانتولا السوداء",
+    aliases: ["Black Tarantula", "Carlos LaMuerto"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Strength from a family rite", ar: "قوة من طقس عائلي" },
+      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      { en: "The latest of a long line", ar: "آخر سلسلة طويلة" },
+    ],
+    origin: {
+      en: "The current holder of a title passed down a Peruvian family line for centuries, each one given strength by a ritual, and the first of them to question what it is for.",
+      ar: "الحامل الحالي للقب توارثته عائلة بيروفية قرونًا، يُمنح كل منهم قوة بطقس، وهو أولهم الذي يسأل عمّا يفيد ذلك.",
+    },
+    related: [
+      { id: "kingpin", kind: "enemy" },
+    ],
+  },
+  {
+    id: "crime-master",
+    nameEn: "Crime Master",
+    nameAr: "سيد الجريمة",
+    aliases: ["Crime Master", "Nicholas Lewis"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Organises other criminals", ar: "ينظّم سائر المجرمين" },
+      { en: "A mask nobody has seen behind", ar: "قناع لم ير أحد ما خلفه" },
+      { en: "The title gets inherited", ar: "اللقب يُورَّث" },
+    ],
+    origin: {
+      en: "A masked crime organiser whose identity has passed between several men, each of whom built a syndicate and each of whom was eventually found out by the same wall-crawler.",
+      ar: "منظّم جريمة مقنّع انتقلت هويته بين عدة رجال، بنى كلٌّ منهم عصابة، وانكشف كلٌّ منهم في النهاية على يد الزاحف على الجدران نفسه.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "mister-fear",
+    nameEn: "Mister Fear",
+    nameAr: "مستر فير",
+    aliases: ["Mister Fear", "Larry Cranston", "Lawrence Cranston"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "A gas that induces terror", ar: "غاز يبثّ الرعب" },
+      { en: "A lawyer by profession", ar: "محامٍ بالمهنة" },
+      { en: "Never fights directly", ar: "لا يقاتل مباشرة" },
+    ],
+    origin: {
+      en: "A lawyer with a chemical that makes people afraid of nothing in particular, who has never once needed to be in the room when it works.",
+      ar: "محامٍ يملك مركبًا يجعل الناس يخافون من لا شيء بعينه، ولم يحتج قط إلى أن يكون في الغرفة حين يعمل.",
+    },
+    related: [
+      { id: "daredevil", kind: "enemy" },
+    ],
+  },
+  {
+    id: "stunner",
+    nameEn: "Stunner",
+    nameAr: "ستَنر",
+    aliases: ["Stunner", "Angelina Brancale"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "A body built in virtual reality", ar: "جسد بُني في واقع افتراضي" },
+      { en: "Strength to match the Hulk", ar: "قوة تضاهي هالك" },
+      { en: "Doctor Octopus made it for her", ar: "صنعه لها دكتور أوكتوبس" },
+    ],
+    origin: {
+      en: "A woman who projects herself into an idealised body built by Doctor Octopus, whom she loves, and who is far stronger inside it than anyone expects.",
+      ar: "امرأة تُسقط نفسها في جسد مثالي بناه لها دكتور أوكتوبس الذي تحبه، وهي داخله أقوى بكثير مما يتوقع أحد.",
+    },
+    related: [
+      { id: "doctor-octopus", kind: "ally" },
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "white-rabbit",
+    nameEn: "White Rabbit",
+    nameAr: "الأرنب الأبيض",
+    aliases: ["White Rabbit", "Lorina Dodson"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "A themed gang and gadgets", ar: "عصابة وعتاد على الثيمة" },
+      { en: "Rocket-powered hutch", ar: "مركبة أرنبية صاروخية" },
+      { en: "Bored, wealthy and armed", ar: "مملّة وثرية ومسلّحة" },
+    ],
+    origin: {
+      en: "A wealthy widow who took up costumed crime out of boredom and committed entirely to an Alice in Wonderland theme, which makes her ridiculous and does not make her harmless.",
+      ar: "أرملة ثرية امتهنت الجريمة المقنّعة من الملل والتزمت تمامًا بثيمة أليس في بلاد العجائب، وذلك يجعلها سخيفة ولا يجعلها غير خطرة.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "screwball",
+    nameEn: "Screwball",
+    nameAr: "سكروبول",
+    aliases: ["Screwball"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Streams her own crimes", ar: "تبثّ جرائمها مباشرة" },
+      { en: "A parkour athlete", ar: "رياضية باركور" },
+      { en: "Wants the audience, not the money", ar: "تريد الجمهور لا المال" },
+    ],
+    origin: {
+      en: "A parkour athlete who commits crimes purely to livestream them, and who is chasing viewers rather than profit. Getting caught on camera is the point.",
+      ar: "رياضية باركور ترتكب الجرائم لمجرّد بثّها مباشرة، وتطارد المشاهدين لا الربح. وأن تُضبط أمام الكاميرا هو المقصد.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "big-wheel",
+    nameEn: "Big Wheel",
+    nameAr: "العجلة الكبرى",
+    aliases: ["Big Wheel", "Jackson Weele"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Drives an enormous wheel", ar: "يقود عجلة هائلة" },
+      { en: "Guns mounted on it", ar: "مدافع مثبتة عليها" },
+      { en: "Ruined himself building it", ar: "أفلس وهو يبنيها" },
+    ],
+    origin: {
+      en: "An embezzler who spent what was left of his money on an armed vehicle shaped like a giant wheel, which is exactly as difficult to steer as it sounds.",
+      ar: "مختلس أنفق ما بقي من ماله على مركبة مسلّحة على هيئة عجلة عملاقة، وهي عسيرة القيادة تمامًا كما تبدو.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "rocket-racer",
+    nameEn: "Rocket Racer",
+    nameAr: "روكيت ريسر",
+    aliases: ["Rocket Racer", "Robert Farrell"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "A rocket-powered skateboard", ar: "لوح تزلّج صاروخي" },
+      { en: "Built the gear himself", ar: "صنع العتاد بنفسه" },
+      { en: "Stole to feed his brothers", ar: "سرق ليطعم إخوته" },
+    ],
+    origin: {
+      en: "A gifted young engineer who built rocket skates and turned to robbery to support his younger siblings, and who was talked out of it and went to college instead.",
+      ar: "مهندس شاب موهوب صنع زلّاجات صاروخية ولجأ إلى السرقة ليعيل إخوته الصغار، ثم أُقنع بالعدول عن ذلك فذهب إلى الجامعة.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "speed-demon",
+    nameEn: "Speed Demon",
+    nameAr: "شيطان السرعة",
+    aliases: ["Speed Demon", "James Sanders"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Superhuman speed", ar: "سرعة خارقة" },
+      { en: "A chemist who dosed himself", ar: "كيميائي جرّب على نفسه" },
+      { en: "Steals more than he fights", ar: "يسرق أكثر مما يقاتل" },
+    ],
+    origin: {
+      en: "A chemist who gave himself super-speed and uses it almost entirely for theft, on the reasoning that fighting anyone is a waste of a good head start.",
+      ar: "كيميائي منح نفسه سرعة خارقة ويستعملها في السرقة كلها تقريبًا، بحجّة أن قتال أحد تبديد لسبقٍ جيد.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "gibbon",
+    nameEn: "Gibbon",
+    nameAr: "غيبون",
+    aliases: ["Gibbon", "Martin Blank"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Ape-like agility", ar: "رشاقة القرد" },
+      { en: "Wanted to be a sidekick", ar: "أراد أن يكون مساعدًا" },
+      { en: "Spider-Man turned him down", ar: "رفضه سبايدرمان" },
+    ],
+    origin: {
+      en: "A man born with simian features and agility who asked Spider-Man to take him on as a partner, was refused, and turned to crime largely out of hurt feelings.",
+      ar: "رجل وُلد بملامح ورشاقة قردية، طلب من سبايدرمان أن يتخذه شريكًا فرُفض، فمال إلى الجريمة من جرح المشاعر أساسًا.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "mister-hyde",
+    nameEn: "Mister Hyde",
+    nameAr: "مستر هايد",
+    aliases: ["Mister Hyde", "Calvin Zabo"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "A formula that makes a monster", ar: "تركيبة تصنع وحشًا" },
+      { en: "Strength near the Hulk's", ar: "قوة تقارب قوة هالك" },
+      { en: "A doctor who wanted to be feared", ar: "طبيب أراد أن يُرهَب" },
+    ],
+    origin: {
+      en: "A doctor who recreated the Jekyll formula on himself out of resentment, and who is one of the few men on the street able to trade blows with the genuinely superhuman.",
+      ar: "طبيب أعاد صنع تركيبة جيكل على نفسه من الحقد، وهو من قلائل في الشارع يقدرون على تبادل اللكمات مع من هم خارقون حقًا.",
+    },
+    related: [
+      { id: "daredevil", kind: "enemy" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -13257,6 +13538,7 @@ export const characters: CharacterDraft[] = [
   ...powerList,
   ...spiderVariants,
   ...mutantsF,
+  ...minorRogues,
   ...avengers,
   ...guardians,
   ...xmen,

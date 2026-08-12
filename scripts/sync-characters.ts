@@ -639,6 +639,31 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d9/James_Braddock_Jr._%28Earth-616%29_from_Planet-Size_X-Men_Vol_1_1_001.jpg/revision/latest?cb=20210623002005",
   "angel-dust":
     "https://static.wikia.nocookie.net/marveldatabase/images/2/27/Angel_Dust_%28Earth-616%29_from_Morlocks_Vol_1_1_001.jpg/revision/latest?cb=20130805013835",
+  /* Batch 19. Mister Fear is filed as Lawrence Cranston, not Larry. */
+  "the-owl":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1c/Leland_Owlsley_%28Earth-616%29_from_Jackpot_and_Black_Cat_Vol_1_4_001.jpg/revision/latest?cb=20240629142157",
+  "black-tarantula":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5d/Carlos_LaMuerto_%28Earth-616%29_from_Spider-Gwen_The_Ghost-Spider_Vol_1_3_001.jpg/revision/latest?cb=20240804202222",
+  "crime-master":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Nicholas_Lewis_Jr._%28Earth-616%29_from_Marvel_Team-Up_Vol_1_40_001.jpg/revision/latest?cb=20230711163927",
+  "stunner":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/69/Superior_Spider-Man_Vol_1_21_Textless.jpg/revision/latest?cb=20130815194003",
+  "white-rabbit":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Tony_Stark_Iron_Man_Vol_1_10_Spider-Man_Villains_Variant_Textless.jpg/revision/latest?cb=20210112085810",
+  "screwball":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/04/Screwball_%28Earth-616%29_from_Amazing_Mary_Jane_Vol_1_3_001.jpg/revision/latest?cb=20260112200513",
+  "big-wheel":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/80/Jackson_Weele_%28Earth-616%29_from_Iron_Man_Vol_5_16_002.jpg/revision/latest?cb=20220227214413",
+  "rocket-racer":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5a/Robert_Farrell_%28Earth-616%29_from_Amazing_Spider-Man_Vol_6_44_Black_History_Month_Variant_cover_001.jpg/revision/latest?cb=20240413142130",
+  "speed-demon":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/27/Superior_Foes_of_Spider-Man_Vol_1_3_Bagley_Variant_Textless.jpg/revision/latest?cb=20130813234347",
+  "gibbon":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/dc/Amazing_Spider-Man_Vol_5_18.HU_Textless.jpg/revision/latest?cb=20190125201957",
+  "mister-hyde":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/67/Calvin_Zabo_%28Earth-616%29_from_Avengers_Vol_9_26.jpeg/revision/latest?cb=20250608095846",
+  "mister-fear":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/Lawrence_Cranston_%28Earth-616%29_from_Spider-Gwen_The_Ghost-Spider_Vol_1_8_001.jpg/revision/latest?cb=20241209004846",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

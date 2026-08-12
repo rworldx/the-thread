@@ -979,6 +979,66 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "the-owl": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1c/Leland_Owlsley_%28Earth-616%29_from_Jackpot_and_Black_Cat_Vol_1_4_001.jpg/revision/latest?cb=20240629142157",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "black-tarantula": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5d/Carlos_LaMuerto_%28Earth-616%29_from_Spider-Gwen_The_Ghost-Spider_Vol_1_3_001.jpg/revision/latest?cb=20240804202222",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "crime-master": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Nicholas_Lewis_Jr._%28Earth-616%29_from_Marvel_Team-Up_Vol_1_40_001.jpg/revision/latest?cb=20230711163927",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mister-fear": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/Lawrence_Cranston_%28Earth-616%29_from_Spider-Gwen_The_Ghost-Spider_Vol_1_8_001.jpg/revision/latest?cb=20241209004846",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "stunner": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/69/Superior_Spider-Man_Vol_1_21_Textless.jpg/revision/latest?cb=20130815194003",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "white-rabbit": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Tony_Stark_Iron_Man_Vol_1_10_Spider-Man_Villains_Variant_Textless.jpg/revision/latest?cb=20210112085810",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "screwball": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/04/Screwball_%28Earth-616%29_from_Amazing_Mary_Jane_Vol_1_3_001.jpg/revision/latest?cb=20260112200513",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "big-wheel": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/80/Jackson_Weele_%28Earth-616%29_from_Iron_Man_Vol_5_16_002.jpg/revision/latest?cb=20220227214413",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "rocket-racer": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5a/Robert_Farrell_%28Earth-616%29_from_Amazing_Spider-Man_Vol_6_44_Black_History_Month_Variant_cover_001.jpg/revision/latest?cb=20240413142130",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "speed-demon": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/27/Superior_Foes_of_Spider-Man_Vol_1_3_Bagley_Variant_Textless.jpg/revision/latest?cb=20130813234347",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "gibbon": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/dc/Amazing_Spider-Man_Vol_5_18.HU_Textless.jpg/revision/latest?cb=20190125201957",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mister-hyde": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/67/Calvin_Zabo_%28Earth-616%29_from_Avengers_Vol_9_26.jpeg/revision/latest?cb=20250608095846",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",
