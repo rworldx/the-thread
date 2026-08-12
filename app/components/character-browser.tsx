@@ -119,7 +119,10 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
      * pointed out and what the corpus already believed.
      */
     chips: [
-      { id: "mutant", match: is("Mutant", "Mutant hybrid") },
+      /* A CLASS IMPLIES THE KIND. Anyone carrying a published mutant rank is a
+         mutant whatever their species field says, so the parent can never lose
+         one of its own levels. */
+      { id: "mutant", match: (c) => is("Mutant", "Mutant hybrid")(c) || Boolean(c.mutantClass) },
       { id: "mutant-omega", parent: "mutant", match: (c) => c.mutantClass === "omega" },
       { id: "mutant-alpha", parent: "mutant", match: (c) => c.mutantClass === "alpha" },
       { id: "mutant-beta", parent: "mutant", match: (c) => c.mutantClass === "beta" },
@@ -151,7 +154,12 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
          one, and the only thing it added was people this chip was missing by
          reading species alone — Agent Venom carrying the Venom symbiote is a
          symbiote answer to "show me the symbiotes". */
-      { id: "symbiote", match: is("Symbiote", "Symbiote god", "Symbiote host") },
+      /* Same rule: a symbiote origin implies a symbiote. */
+      {
+        id: "symbiote",
+        match: (c) =>
+          is("Symbiote", "Symbiote god", "Symbiote host")(c) || Boolean(c.symbioteClass),
+      },
       { id: "symbiote-lineage", parent: "symbiote", match: (c) => c.symbioteClass === "lineage" },
       { id: "symbiote-spawn", parent: "symbiote", match: (c) => c.symbioteClass === "spawn" },
       { id: "symbiote-anomaly", parent: "symbiote", match: (c) => c.symbioteClass === "anomaly" },
@@ -161,7 +169,20 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
         /* "Magic" is an affiliation because magic is a ROLE here, not a
            species. Wanda is an Enhanced human, Loki and Sylvie are Frost
            Giants, and no species rule reaches all three. */
+        /**
+         * ANYONE WITH A SCHOOL IS A MAGIC USER, and that clause is doing real
+         * work rather than tidying. Nine were tagged with a school and did not
+         * match this chip — Frigga among them, who taught Loki everything he
+         * knows and carried Asgard and Gods but never Magic. So did Hela, four
+         * Lokis, Selene, Nature Girl and Mister Negative. Same failure as the
+         * Heralds sitting under Cosmic entities without matching it: a parent
+         * that does not contain its own children hides them.
+         */
         match: (c) =>
+          /* Truthy, NOT `!== null`. An unset field arrives as undefined, and
+             `undefined !== null` is true, so the strict form matched all 651
+             characters and the chip became "everyone". */
+          Boolean(c.magicSchool) ||
           aff("Magic")(c) ||
           aff("Masters of the Mystic Arts")(c) ||
           is("Witch", "Demon", "Human avatar")(c),
