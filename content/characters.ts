@@ -12148,9 +12148,268 @@ const hiddenByAudit: CharacterDraft[] = [
     },
     related: [
       { id: "spider-man", kind: "ally" },
-      /* J. Jonah Jameson belongs here and is not in this corpus yet — another
-         name the loose gap-check reported as present. C4 caught the dangling
-         edge. The relation goes back the moment he does. */
+      { id: "j-jonah-jameson", kind: "ally" },
+    ],
+  },
+];
+
+/**
+ * THE BUGLE AND THE REST OF THE ROGUES, batch 15.
+ *
+ * J. Jonah Jameson leads it because C4 caught him as a dangling relation off
+ * Robbie Robertson last batch — the second hole the loose gap-check denied.
+ * Robertson's edge to him is restored below.
+ *
+ * Every single-word codename here was checked against the cast data BEFORE
+ * the record was written, which is the change the Jackal, Selene and
+ * Thunderbird misses earned. Swarm and Grizzly both have exact credits and
+ * both are genuinely them; Overdrive, Tarantula, Scarecrow, Stunner,
+ * Kangaroo, Gibbon, Massacre and Raze have none at all, so none of them can
+ * steal one.
+ */
+const bugleAndRogues: CharacterDraft[] = [
+  {
+    id: "j-jonah-jameson",
+    nameEn: "J. Jonah Jameson",
+    nameAr: "ج. جونا جيمسون",
+    aliases: ["J. Jonah Jameson", "John Jonah Jameson", "Jonah Jameson"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Runs the Daily Bugle", ar: "يدير الديلي بيوغل" },
+      { en: "Hates Spider-Man in print", ar: "يكره سبايدرمان في المطبوع" },
+      { en: "Right about almost nothing else", ar: "مصيب في كل شيء تقريبًا سواه" },
+    ],
+    origin: {
+      en: "The newspaperman who has spent his career calling Spider-Man a menace, and who has also run every story about corrupt officials nobody else would print. He is wrong about one thing loudly.",
+      ar: "الصحفي الذي أنفق مسيرته يصف سبايدرمان بالخطر، وهو نفسه من نشر كل قصة عن مسؤول فاسد أحجم غيره عنها. مخطئ في أمر واحد وبصوت عالٍ.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+      { id: "robbie-robertson", kind: "ally" },
+    ],
+  },
+  {
+    id: "yuri-watanabe",
+    nameEn: "Yuri Watanabe",
+    nameAr: "يوري واتانابي",
+    aliases: ["Yuri Watanabe", "Yuriko Watanabe"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "A police captain first", ar: "نقيبة شرطة قبل كل شيء" },
+      { en: "Works cases with Spider-Man", ar: "تعمل القضايا مع سبايدرمان" },
+      { en: "Took the Wraith mask up", ar: "حملت قناع الشبح" },
+    ],
+    origin: {
+      en: "A police captain who worked alongside Spider-Man until the system kept failing the cases she brought it, then put on a mask herself to do what the badge would not let her.",
+      ar: "نقيبة شرطة عملت إلى جانب سبايدرمان حتى ظل النظام يخذل القضايا التي رفعتها، فارتدت قناعًا لتفعل ما لم تدعها الشارة تفعله.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "glory-grant",
+    nameEn: "Glory Grant",
+    nameAr: "غلوري غرانت",
+    aliases: ["Glory Grant", "Gloria Grant"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Jameson's secretary", ar: "سكرتيرة جيمسون" },
+      { en: "Was Peter's neighbour", ar: "كانت جارة بيتر" },
+      { en: "Knows everyone in the building", ar: "تعرف كل من في المبنى" },
+    ],
+    origin: {
+      en: "Peter Parker's old neighbour who became J. Jonah Jameson's secretary, and who knows more about what happens at the Bugle than anyone whose name is on the masthead.",
+      ar: "جارة بيتر باركر القديمة التي صارت سكرتيرة جي جونا جيمسون، وتعرف عمّا يجري في البيوغل أكثر من أي أحد اسمه على الترويسة.",
+    },
+    related: [
+      { id: "j-jonah-jameson", kind: "ally" },
+    ],
+  },
+  {
+    id: "randy-robertson",
+    nameEn: "Randy Robertson",
+    nameAr: "راندي روبرتسون",
+    aliases: ["Randy Robertson", "Randolph Robertson"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Robbie's son", ar: "ابن روبي" },
+      { en: "Peter's roommate", ar: "رفيق سكن بيتر" },
+      { en: "An activist before anything", ar: "ناشط قبل كل شيء" },
+    ],
+    origin: {
+      en: "Robbie Robertson's son and one of Peter Parker's roommates, an activist who has been arguing about the same injustices since college and has not got tired of it.",
+      ar: "ابن روبي روبرتسون وأحد رفاق سكن بيتر باركر، ناشط يجادل في المظالم نفسها منذ الجامعة ولم يملّ.",
+    },
+    related: [
+      { id: "robbie-robertson", kind: "family" },
+    ],
+  },
+  {
+    id: "mayday-parker",
+    nameEn: "Spider-Girl",
+    nameAr: "سبايدر غيرل",
+    aliases: ["Mayday Parker", "May Parker (Earth-982)", "Spider-Girl"],
+    category: "hero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Her father's powers, inherited", ar: "قوى أبيها بالوراثة" },
+      { en: "Basketball star first", ar: "نجمة كرة سلة أولًا" },
+      { en: "From a future that kept going", ar: "من مستقبل مضى قدمًا" },
+    ],
+    origin: {
+      en: "Peter Parker and Mary Jane's daughter in a future where they both survived and retired, who found the powers in herself and the costume in the attic.",
+      ar: "ابنة بيتر باركر وماري جين في مستقبل نجا فيه كلاهما واعتزلا، وجدت القوى في نفسها والزيّ في العلّية.",
+    },
+    related: [
+      { id: "spider-man", kind: "family" },
+      { id: "mary-jane-watson", kind: "family" },
+    ],
+  },
+  {
+    id: "pavitr-prabhakar",
+    nameEn: "Spider-Man India",
+    nameAr: "سبايدر مان الهند",
+    aliases: ["Pavitr Prabhakar", "Spider-Man India"],
+    category: "hero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Powers from a yogi, not a spider", ar: "قواه من يوغيّ لا من عنكبوت" },
+      { en: "Fights demons, not scientists", ar: "يقاتل شياطين لا علماء" },
+      { en: "Mumbai is the whole point", ar: "مومباي هي المقصد كله" },
+    ],
+    origin: {
+      en: "The Spider-Man of Mumbai, whose powers came from a dying yogi rather than a laboratory accident, and whose city is not a backdrop but the reason the story works differently.",
+      ar: "سبايدرمان مومباي، جاءته قواه من يوغيّ يحتضر لا من حادث مختبر، ومدينته ليست خلفية بل سبب اختلاف الحكاية.",
+    },
+    related: [
+      { id: "spider-man", kind: "variant" },
+    ],
+  },
+  {
+    id: "overdrive",
+    nameEn: "Overdrive",
+    nameAr: "أوفردرايف",
+    aliases: ["Overdrive", "James Beverley"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Rebuilds any vehicle he touches", ar: "يعيد بناء أي مركبة يلمسها" },
+      { en: "A getaway driver by trade", ar: "سائق هروب بالمهنة" },
+      { en: "A fan of Spider-Man, oddly", ar: "معجب بسبايدرمان، والغريب أنه صادق" },
+    ],
+    origin: {
+      en: "A getaway driver who can turn any car he touches into something far faster, and who is a genuine Spider-Man fan while working for the people trying to kill him.",
+      ar: "سائق هروب يحوّل أي سيارة يلمسها إلى ما هو أسرع بكثير، وهو معجب صادق بسبايدرمان بينما يعمل لدى من يحاولون قتله.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "swarm",
+    nameEn: "Swarm",
+    nameAr: "سوارم",
+    aliases: ["Swarm", "Fritz von Meyer"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "A man made of bees", ar: "رجل من نحل" },
+      { en: "No body to hit", ar: "لا جسد يُضرب" },
+      { en: "Was a Nazi scientist", ar: "كان عالمًا نازيًا" },
+    ],
+    origin: {
+      en: "A Nazi scientist consumed by mutated bees who did not die so much as become the swarm, and who has no solid body for anyone to punch.",
+      ar: "عالم نازي التهمه نحل متطفّر، فلم يمت بقدر ما صار السرب نفسه، ولا جسد صلب فيه يلكمه أحد.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "grizzly",
+    nameEn: "Grizzly",
+    nameAr: "غريزلي",
+    aliases: ["Grizzly", "Maxwell Markham"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "A powered bear suit", ar: "بدلة دبّ مدعّمة" },
+      { en: "Was a wrestler", ar: "كان مصارعًا" },
+      { en: "Blamed Jameson for the end of it", ar: "حمّل جيمسون وزر نهايتها" },
+    ],
+    origin: {
+      en: "A wrestler whose career was ended by a Daily Bugle story, who put on a powered bear suit to do something about it and has been drifting between crews ever since.",
+      ar: "مصارع أنهت مسيرته قصة في الديلي بيوغل، فارتدى بدلة دبّ مدعّمة ليفعل شيئًا حيال ذلك، وظل يتنقل بين العصابات منذئذ.",
+    },
+    related: [
+      { id: "j-jonah-jameson", kind: "enemy" },
+    ],
+  },
+  {
+    id: "tarantula",
+    nameEn: "Tarantula",
+    nameAr: "تارانتولا",
+    aliases: ["Tarantula", "Anton Rodriguez"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Blades in his boots", ar: "نصال في حذائه" },
+      { en: "A government killer once", ar: "كان قاتلًا حكوميًا" },
+      { en: "Turned into an actual spider", ar: "استحال عنكبوتًا فعليًا" },
+    ],
+    origin: {
+      en: "A South American political assassin turned costumed killer, whose employers eventually experimented on him until he stopped being a man in a spider suit and became a spider.",
+      ar: "قاتل سياسي من أمريكا الجنوبية صار قاتلًا مقنّعًا، وانتهى بمشغّليه أن جرّبوا عليه حتى كفّ عن كونه رجلًا في زيّ عنكبوت وصار عنكبوتًا.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "scarecrow",
+    nameEn: "Scarecrow",
+    nameAr: "سكيركرو",
+    aliases: ["Scarecrow", "Ebenezer Laughton"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "A contortionist's body", ar: "جسد بهلوان" },
+      { en: "Trained crows to attack", ar: "درّب غربانًا على الهجوم" },
+      { en: "Feeds on fear he causes", ar: "يقتات على الخوف الذي يبثه" },
+    ],
+    origin: {
+      en: "A circus contortionist who can fold himself through any gap, commands a flock of crows, and grows stronger on the fear he provokes.",
+      ar: "بهلوان سيرك يطوي نفسه عبر أي فُرجة، ويأمر سربًا من الغربان، ويزداد قوة بالخوف الذي يثيره.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
     ],
   },
 ];
@@ -12170,6 +12429,7 @@ export const characters: CharacterDraft[] = [
   ...mutantsD,
   ...mutantsE,
   ...hiddenByAudit,
+  ...bugleAndRogues,
   ...avengers,
   ...guardians,
   ...xmen,

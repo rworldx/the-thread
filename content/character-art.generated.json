@@ -749,6 +749,61 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "j-jonah-jameson": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/96/John_Jonah_Jameson_%28Earth-616%29_from_Marvel_Knights_Spider-Man_Vol_1_4_001.jpg/revision/latest?cb=20161214062419",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "yuri-watanabe": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2c/Yuriko_Watanabe_%28Earth-616%29_from_Superior_Spider-Man_Vol_1_16_001.jpg/revision/latest?cb=20131021051455",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "glory-grant": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9a/Gloria_Grant_%28Earth-616%29_from_Iron_Man_Vol_5_1_001.jpg/revision/latest?cb=20200919215240",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "randy-robertson": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/0f/Randolph_Robertson_%28Earth-616%29_from_Amazing_Spider-Man_Vol_7_1_001.jpg/revision/latest?cb=20250413090624",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mayday-parker": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/62/Amazing_Spider-Girl_Vol_1_1_Textless.jpg/revision/latest?cb=20250811092457",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "pavitr-prabhakar": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/Pavitr_Prabhakar_%28Earth-50101%29_from_Spider-Man_India_Vol_2_5_New_Costume_Variant_001.jpg/revision/latest?cb=20240220050600",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "overdrive": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b8/James_Beverley_%28Earth-616%29_from_Amazing_Spider-Man_Vol_2_564_001.jpg/revision/latest?cb=20120203213657",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "swarm": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/72/Fritz_von_Meyer_%28Earth-616%29_from_Runaways_Vol_2_7_001.jpg/revision/latest?cb=20230226150930",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "grizzly": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Maxwell_Markham_%28Earth-616%29_from_Iron_Man_Vol_7_2_001.jpg/revision/latest?cb=20260301011805",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "tarantula": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6f/Anton_Miguel_Rodriquez_%28Earth-616%29_from_Sinister_War_Vol_1_2_001.jpg/revision/latest?cb=20231117151828",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "scarecrow": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/7c/Ebenezer_Laughton_%28Earth-616%29_from_Danny_Ketch_Ghost_Rider_Vol_1_2_001.jpg/revision/latest?cb=20231001203711",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",

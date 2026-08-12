@@ -540,6 +540,30 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Devil%27s_Reign_Spider-Man_Vol_1_1_Carlos_Variant_Textless.jpg/revision/latest?cb=20230604042814",
   "robbie-robertson":
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5e/Joseph_Robertson_%28Earth-616%29_from_Amazing_Spider-Man_Vol_5_64_001.jpg/revision/latest?cb=20210421234837",
+  /* Batch 15. Jameson is filed as "John Jonah Jameson" without the Jr.,
+     Mayday under Earth-982 and Pavitr under Earth-50101. */
+  "yuri-watanabe":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/2c/Yuriko_Watanabe_%28Earth-616%29_from_Superior_Spider-Man_Vol_1_16_001.jpg/revision/latest?cb=20131021051455",
+  "glory-grant":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9a/Gloria_Grant_%28Earth-616%29_from_Iron_Man_Vol_5_1_001.jpg/revision/latest?cb=20200919215240",
+  "randy-robertson":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/0f/Randolph_Robertson_%28Earth-616%29_from_Amazing_Spider-Man_Vol_7_1_001.jpg/revision/latest?cb=20250413090624",
+  "mayday-parker":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/62/Amazing_Spider-Girl_Vol_1_1_Textless.jpg/revision/latest?cb=20250811092457",
+  "pavitr-prabhakar":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/Pavitr_Prabhakar_%28Earth-50101%29_from_Spider-Man_India_Vol_2_5_New_Costume_Variant_001.jpg/revision/latest?cb=20240220050600",
+  "overdrive":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b8/James_Beverley_%28Earth-616%29_from_Amazing_Spider-Man_Vol_2_564_001.jpg/revision/latest?cb=20120203213657",
+  "swarm":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/72/Fritz_von_Meyer_%28Earth-616%29_from_Runaways_Vol_2_7_001.jpg/revision/latest?cb=20230226150930",
+  "grizzly":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Maxwell_Markham_%28Earth-616%29_from_Iron_Man_Vol_7_2_001.jpg/revision/latest?cb=20260301011805",
+  "tarantula":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6f/Anton_Miguel_Rodriquez_%28Earth-616%29_from_Sinister_War_Vol_1_2_001.jpg/revision/latest?cb=20231117151828",
+  "scarecrow":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/7c/Ebenezer_Laughton_%28Earth-616%29_from_Danny_Ketch_Ghost_Rider_Vol_1_2_001.jpg/revision/latest?cb=20231001203711",
+  "j-jonah-jameson":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/96/John_Jonah_Jameson_%28Earth-616%29_from_Marvel_Knights_Spider-Man_Vol_1_4_001.jpg/revision/latest?cb=20161214062419",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:
