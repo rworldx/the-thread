@@ -1259,6 +1259,31 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "hindsight": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Nathaniel_Carver_%28Earth-616%29_from_Generation_X_Vol_2_3_001.jpg/revision/latest?cb=20170617034025",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "match": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/de/Benjamin_Hammil_%28Earth-616%29_from_New_X-Men_Academy_X_Yearbook_Vol_1_1_0002.jpg/revision/latest?cb=20191127052949",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "sunder": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Mark_Hallett_%28Earth-616%29_from_Uncanny_X-Men_Vol_1_254.png/revision/latest?cb=20180603015643",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "shark-girl": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/96/X-Men_Red_Vol_2_16_Comunidades_Variant_Textless.jpg/revision/latest?cb=20240909113116",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "warlock-technarch": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/New_Mutants_Vol_4_2_Adams_Variant_Textless.jpg/revision/latest?cb=20200514003124",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",

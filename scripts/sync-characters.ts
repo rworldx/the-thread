@@ -757,6 +757,19 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/8/85/Jason_Macendale_Jr._%28Earth-616%29_from_Daredevil_Black_Armor_Vol_1_2_001.jpg/revision/latest?cb=20250915111656",
   "madame-masque":
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b7/Whitney_Frost_%28Earth-616%29_from_Iron_Man_Vol_7_3_Bengal_Varinat_cover_001.jpg/revision/latest?cb=20260314030354",
+  /* The five I wrongly reported as having no art, found once I searched
+     for their real names instead of guessing them: Nathaniel Carver,
+     Benjamin Hammil, Mark Hallett, Iara Dos Santos. Plus the Technarch. */
+  "hindsight":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Nathaniel_Carver_%28Earth-616%29_from_Generation_X_Vol_2_3_001.jpg/revision/latest?cb=20170617034025",
+  "match":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/de/Benjamin_Hammil_%28Earth-616%29_from_New_X-Men_Academy_X_Yearbook_Vol_1_1_0002.jpg/revision/latest?cb=20191127052949",
+  "sunder":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Mark_Hallett_%28Earth-616%29_from_Uncanny_X-Men_Vol_1_254.png/revision/latest?cb=20180603015643",
+  "shark-girl":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/96/X-Men_Red_Vol_2_16_Comunidades_Variant_Textless.jpg/revision/latest?cb=20240909113116",
+  "warlock-technarch":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/New_Mutants_Vol_4_2_Adams_Variant_Textless.jpg/revision/latest?cb=20200514003124",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

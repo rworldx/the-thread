@@ -14567,6 +14567,140 @@ const spiderLast: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE FIVE I SAID HAD NO ART, AND THE OTHER WARLOCK.
+ *
+ * I reported Hindsight, Match, Sunder, Shark-Girl and Wallop as having no
+ * published artwork. That was wrong for four of them and the cause was mine:
+ * I had guessed their real names and guessed badly. Match is Benjamin HAMMIL,
+ * not Ben Hamill. Sunder is Mark Hallett. Hindsight is Nathaniel Carver.
+ * Shark-Girl is filed with a capital D in Dos Santos. Searching for them
+ * instead of guessing found all four immediately.
+ *
+ * WALLOP IS STILL OUT. A search for him returns the Krakoa island page, and
+ * putting a picture of an island on a man is worse than leaving him absent.
+ * He is the one character out of 179 with genuinely no usable artwork.
+ *
+ * THE TECHNARCH WARLOCK IS A RECORD NOW, alongside Adam Warlock. The corpus
+ * already holds several Peters who are different people, and this is the same
+ * situation: his record name carries the qualifier so a search for "Warlock"
+ * surfaces both, while his ALIASES stay distinct so neither can take the
+ * other's credits. C18 is satisfied without either man losing his name.
+ */
+const lateAdditions: CharacterDraft[] = [
+  {
+    id: "hindsight",
+    nameEn: "Hindsight",
+    nameAr: "هايندسايت",
+    aliases: ["Hindsight", "Nathaniel Carver"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Reads an object's past", ar: "يقرأ ماضي الشيء" },
+      { en: "Sees it all by touch", ar: "يرى ذلك كله باللمس" },
+      { en: "Cannot choose what he sees", ar: "لا يختار ما يرى" },
+    ],
+    origin: {
+      en: "A mutant who sees everything that has happened to an object or a person by touching them, without any say in which memory arrives.",
+      ar: "متحوّل يرى كل ما جرى لشيء أو لشخص بمجرّد لمسه، دون أن يكون له رأي في أي ذكرى تصله.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "match",
+    nameEn: "Match",
+    nameAr: "ماتش",
+    aliases: ["Match", "Benjamin Hammil"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "A head of living flame", ar: "رأس من لهب حيّ" },
+      { en: "Cannot put it out", ar: "لا يستطيع إطفاءه" },
+      { en: "Burns hotter when angry", ar: "يشتدّ حين يغضب" },
+    ],
+    origin: {
+      en: "A student whose head is permanently on fire, which he cannot extinguish and which burns hotter the angrier he gets, in a school full of teenagers.",
+      ar: "طالب رأسه مشتعل على الدوام، لا يقدر على إطفائه ويشتدّ اشتعاله كلما ازداد غضبًا، في مدرسة تعجّ بالمراهقين.",
+    },
+    related: [
+      { id: "rockslide", kind: "ally" },
+    ],
+  },
+  {
+    id: "sunder",
+    nameEn: "Sunder",
+    nameAr: "سَندر",
+    aliases: ["Sunder", "Mark Hallett"],
+    category: "antihero",
+    affiliation: ["Morlocks"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Strength enough for a wall", ar: "قوة تكفي لجدار" },
+      { en: "Callisto's right hand", ar: "ذراع كاليستو اليمنى" },
+      { en: "Died in the tunnels", ar: "مات في الأنفاق" },
+    ],
+    origin: {
+      en: "A Morlock strong enough to walk through a wall and Callisto's second in command, who died defending the tunnels from the Marauders.",
+      ar: "مورلوك من القوة بحيث يمشي عبر جدار، وكان ساعد كاليستو الأيمن، ومات دفاعًا عن الأنفاق أمام المغيرين.",
+    },
+    related: [
+      { id: "callisto", kind: "ally" },
+      { id: "scalphunter", kind: "enemy" },
+    ],
+  },
+  {
+    id: "shark-girl",
+    nameEn: "Shark-Girl",
+    nameAr: "شارك غيرل",
+    aliases: ["Shark-Girl", "Iara dos Santos"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Turns into a shark", ar: "تتحول إلى قرش" },
+      { en: "Breathes water either way", ar: "تتنفس الماء في الحالتين" },
+      { en: "From the Amazon", ar: "من الأمازون" },
+    ],
+    origin: {
+      en: "A Brazilian student who becomes a humanoid shark, and who is far more comfortable in the water than in a classroom full of people who stare.",
+      ar: "طالبة برازيلية تتحول إلى قرش بشريّ الهيئة، وهي في الماء أكثر ارتياحًا منها في صفّ يملؤه من يحدّقون.",
+    },
+    related: [
+      { id: "armor", kind: "ally" },
+    ],
+  },
+  {
+    id: "warlock-technarch",
+    nameEn: "Warlock (Technarch)",
+    nameAr: "وارلوك (التكنارك)",
+    aliases: ["Technarch Warlock", "Warlock of the Technarchy"],
+    category: "hero",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Technarch",
+    powers: [
+      { en: "A living machine", ar: "آلة حية" },
+      { en: "Reshapes his own body", ar: "يعيد تشكيل جسده" },
+      { en: "Fled his own father", ar: "فرّ من أبيه" },
+    ],
+    origin: {
+      en: "A techno-organic alien who fled his own species because they kill their young to prove strength, and who joined the New Mutants and became the gentlest of them.",
+      ar: "كائن فضائي تقنيّ عضويّ فرّ من بني جنسه لأنهم يقتلون صغارهم إثباتًا للقوة، فانضم إلى الميوتانتس الجدد وصار أرقّهم.",
+    },
+    related: [
+      { id: "cypher", kind: "ally" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -14591,6 +14725,7 @@ export const characters: CharacterDraft[] = [
   ...mutantsH,
   ...mutantsI,
   ...spiderLast,
+  ...lateAdditions,
   ...avengers,
   ...guardians,
   ...xmen,
