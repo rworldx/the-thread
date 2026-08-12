@@ -68,6 +68,10 @@ export default async function CharactersPage({
     species: c.species,
     mutantClass: c.mutantClass,
     symbioteClass: c.symbioteClass,
+    performerOf: c.performerOf?.character ?? null,
+    /* The performer's own photo, for the split avatar the two MCU team chips
+       show. `leadActorPhoto` is already derived per character. */
+    actorPhoto: c.performerOf ? c.leadActorPhoto : null,
     universe: c.universe,
     appearances: c.appearances.length,
     /**

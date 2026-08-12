@@ -5,7 +5,7 @@ import { useUrlState } from "@/lib/use-url-state";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { normalise, squash } from "@/lib/search";
-import { Avatar } from "@/app/components/avatar";
+import { Avatar, SplitAvatar } from "@/app/components/avatar";
 import type { MutantClass } from "@/content/character-schema";
 
 /**
@@ -38,6 +38,10 @@ export interface CharacterCard {
   actors: string[];
   /** Appears in a Sony Spider-Verse title or an MCU Spider-Man film. */
   spiderVerse: boolean;
+  /** Set only on a PERFORMANCE record: the character it performs, and the
+      actor's photo, so the two teams below can show a split avatar. */
+  performerOf: string | null;
+  actorPhoto: string | null;
   appearances: number;
 }
 
@@ -339,8 +343,29 @@ export function CharacterBrowser({
       (c) => rule(c) && (q === "" || (haystack.get(c.id) ?? "").includes(q) ||
         (haystack.get(c.id) ?? "").includes(squash(query))),
     );
-    if (sort === "fame") return kept;
-    return [...kept].sort((a, b) => a.name.localeCompare(b.name, locale));
+    /**
+     * THE TWO TEAMS THAT HOLD BOTH A SPIDER-MAN AND A PERFORMANCE OF HIM.
+     *
+     * Avengers and Team Iron Man each list `spider-man` and the Tom Holland
+     * record, so both render and the row shows two near-identical Spider-Men.
+     * The project pages already solved this: the performance REPLACES the
+     * character it performs and the avatar is split, half art and half actor.
+     *
+     * Only these two, deliberately. Everywhere else the two records stay
+     * separate, because a reader browsing all characters is looking for the
+     * character and a reader browsing a Spider chip wants every Peter listed.
+     */
+    const merged =
+      chip === "avengers" || chip === "team-iron-man"
+        ? (() => {
+            const replaced = new Set(
+              kept.flatMap((c) => (c.performerOf ? [c.performerOf] : [])),
+            );
+            return kept.filter((c) => !replaced.has(c.id));
+          })()
+        : kept;
+    if (sort === "fame") return merged;
+    return [...merged].sort((a, b) => a.name.localeCompare(b.name, locale));
   }, [index, chip, query, haystack, sort, locale]);
 
   return (
@@ -469,7 +494,15 @@ export function CharacterBrowser({
           {shown.map((c) => (
             <li key={c.id}>
               <Link className="char-tile" href={`/${locale}/characters/${c.id}`}>
-                <Avatar src={c.image} name={c.name} />
+                {c.performerOf && c.actorPhoto ? (
+                  <SplitAvatar
+                    characterSrc={c.image}
+                    actorSrc={c.actorPhoto}
+                    name={c.name}
+                  />
+                ) : (
+                  <Avatar src={c.image} name={c.name} />
+                )}
                 <span className="char-tile-body">
                   <span className="char-tile-name">{c.name}</span>
                   <span className="char-tile-meta tabular">{c.appearances}</span>
