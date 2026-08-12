@@ -14577,9 +14577,9 @@ const spiderLast: CharacterDraft[] = [
  * Shark-Girl is filed with a capital D in Dos Santos. Searching for them
  * instead of guessing found all four immediately.
  *
- * WALLOP IS STILL OUT. A search for him returns the Krakoa island page, and
- * putting a picture of an island on a man is worse than leaving him absent.
- * He is the one character out of 179 with genuinely no usable artwork.
+ * Wallop was the last of them and is in now: he is Walter Destine, a
+ * ClanDestine rather than a mutant, which is why every mutant-shaped lookup
+ * failed. Searching his name plus "marvel" found him at once.
  *
  * THE TECHNARCH WARLOCK IS A RECORD NOW, alongside Adam Warlock. The corpus
  * already holds several Peters who are different people, and this is the same
@@ -14717,6 +14717,36 @@ const lateAdditions: CharacterDraft[] = [
  * child, a mechanic and Spider-Man.
  */
 const cosmicTop: CharacterDraft[] = [
+  {
+    /**
+     * WALLOP IS WALTER DESTINE, and he is not a mutant.
+     *
+     * I twice reported that no artwork existed for him. It existed the whole
+     * time under his real name, which I did not have because I was guessing
+     * from the codename instead of searching for the character. He is filed
+     * under Walter Destine and he is a ClanDestine, the son of the immortal
+     * Adam Destine and the djinn Elalyth, which is why every mutant-shaped
+     * lookup for him failed.
+     */
+    id: "wallop",
+    nameEn: "Wallop",
+    nameAr: "والوب",
+    aliases: ["Wallop", "Walter Destine"],
+    category: "hero",
+    affiliation: ["ClanDestine"],
+    universe: ["fox"],
+    species: "Djinn-blooded",
+    powers: [
+      { en: "Swells into a hulking form", ar: "ينتفخ إلى هيئة ضخمة" },
+      { en: "The strongman of his family", ar: "قويّ عائلته" },
+      { en: "Over two centuries old", ar: "تجاوز عمره قرنين" },
+    ],
+    origin: {
+      en: "The son of an immortal and a djinn, more than two hundred years old, who raises his far younger siblings and refuses to answer to the codename they gave him.",
+      ar: "ابن خالدٍ وجنّية، تجاوز عمره مئتي عام، يربّي إخوته الأصغر منه بكثير ويأبى أن يُنادى بالاسم الحركي الذي أطلقوه عليه.",
+    },
+    related: [{ id: "krakoa", kind: "ally" }],
+  },
   {
     id: "galan-of-taa",
     nameEn: "Galan of Taa",

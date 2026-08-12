@@ -796,6 +796,9 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Sire_Hate_%28Earth-616%29_from_Iron_Man_Vol_5_15_001.jpg/revision/latest?cb=20211228034147",
   "the-fulcrum":
     "https://static.wikia.nocookie.net/marveldatabase/images/1/19/Fulcrum_%28Earth-616%29_from_Eternals_Vol_4_9_0001.png/revision/latest?cb=20130924135423",
+  /* Wallop is filed as Walter Destine — he is a ClanDestine, not a mutant. */
+  "wallop":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1b/Walter_Destine_%28Earth-616%29_from_ClanDestine_Vol_1_8_001.jpeg/revision/latest?cb=20210628174734",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:
