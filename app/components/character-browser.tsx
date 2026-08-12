@@ -107,89 +107,22 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
   },
   {
     group: "kind",
+    /**
+     * ORDERED FROM WHAT PEOPLE LOOK FOR TO WHAT THEY STUMBLE ON.
+     *
+     * Mutants, humans and super-soldiers first because those are the three
+     * questions a reader actually arrives with. Then the non-human peoples,
+     * then the powers, then the tiers above the story. Celestials are NOT here
+     * any more: they are a kind of cosmic entity, so they sit under it as a
+     * child alongside Abstracts, Elders and Heralds, which is what Rashid
+     * pointed out and what the corpus already believed.
+     */
     chips: [
       { id: "mutant", match: is("Mutant", "Mutant hybrid") },
-      /* Marvel's own published ranks, not a power score invented here. Only
-         the four the corpus actually holds get a chip. */
       { id: "mutant-omega", parent: "mutant", match: (c) => c.mutantClass === "omega" },
       { id: "mutant-alpha", parent: "mutant", match: (c) => c.mutantClass === "alpha" },
       { id: "mutant-beta", parent: "mutant", match: (c) => c.mutantClass === "beta" },
       { id: "mutant-gamma", parent: "mutant", match: (c) => c.mutantClass === "gamma" },
-      { id: "inhuman", match: (c) => is("Inhuman")(c) || aff("Inhumans")(c) },
-      { id: "kree", match: (c) => is("Kree")(c) || aff("Kree")(c) },
-      { id: "skrull", match: (c) => is("Skrull")(c) || aff("Skrull")(c) },
-      { id: "shiar", match: (c) => is("Shi'ar", "Strontian")(c) || aff("Shi'ar")(c) },
-      { id: "clandestine", match: aff("ClanDestine") },
-      { id: "eternal", match: is("Eternal") },
-      { id: "celestial", match: is("Celestial") },
-      /* HOSTS COUNT. A separate "Venom family" chip was a duplicate of this
-         one, and the only thing it added was people this chip was missing by
-         reading species alone — Agent Venom carrying the Venom symbiote is a
-         symbiote answer to "show me the symbiotes". */
-      { id: "symbiote", match: is("Symbiote", "Symbiote god", "Symbiote host") },
-      /* Origin, not strength: a spawn was harvested in a lab and a lineage was
-         born, which is why Toxin and Riot are different kinds of thing. */
-      { id: "symbiote-lineage", parent: "symbiote", match: (c) => c.symbioteClass === "lineage" },
-      { id: "symbiote-spawn", parent: "symbiote", match: (c) => c.symbioteClass === "spawn" },
-      { id: "symbiote-anomaly", parent: "symbiote", match: (c) => c.symbioteClass === "anomaly" },
-      { id: "symbiote-ancient", parent: "symbiote", match: (c) => c.symbioteClass === "ancient" },
-      { id: "hulks", match: aff("Hulks") },
-      {
-        id: "asgardian",
-        /* Species OR affiliation. Throg is a frog with a splinter of Mjolnir
-           and Alligator Loki is an alligator in horns — both of Asgard, and
-           neither has an Asgardian body. Belonging is the question here. */
-        match: (c) => is("Asgardian", "Frost Giant")(c) || aff("Asgard")(c),
-      },
-      { id: "god", match: (c) => aff("Gods")(c) || is("Olympian")(c) },
-      { id: "super-soldier", match: is("Enhanced human") },
-      {
-        id: "magician",
-        /* "Magic" is an affiliation because magic is a ROLE here, not a
-           species. Wanda is an Enhanced human, Loki and Sylvie are Frost
-           Giants, and no species rule reaches all three — which is how the
-           three most obvious magic users in the MCU were missing from a chip
-           called Magicians. */
-        match: (c) =>
-          aff("Magic")(c) ||
-          aff("Masters of the Mystic Arts")(c) ||
-          is("Witch", "Demon", "Human avatar")(c),
-      },
-      /* The parent stays: "show me the magic users" is still the common ask.
-         These three split what it was doing badly, because a Sorcerer
-         Supreme, an Elder God and a demon are not the same kind of thing. */
-      {
-        id: "sorcerer",
-        parent: "magician",
-        match: (c) => aff("Masters of the Mystic Arts")(c) || aff("Vishanti")(c),
-      },
-      { id: "elder-god", parent: "magician", match: is("Elder God") },
-      { id: "demon", parent: "magician", match: is("Demon", "Faltine") },
-      {
-        id: "cosmic",
-        match: (c) =>
-          is("Abstract entity", "Cosmic entity", "Cosmic Being", "Watcher")(c) ||
-          aff("Cosmic entities")(c),
-      },
-      /* Same rule as magic: the parent stays and the three real distinctions
-         inside it get their own chips. The list's own caveat is that these
-         are different CATEGORIES rather than different tiers. */
-      {
-        id: "abstract",
-        parent: "cosmic",
-        match: is("Abstract entity", "Abstract Entity"),
-      },
-      { id: "elder-universe", parent: "cosmic", match: aff("Elders of the Universe") },
-      { id: "herald", parent: "cosmic", match: aff("Heralds of Galactus") },
-      /**
-       * ORDINARY PEOPLE, which is a real answer and was missing.
-       *
-       * Iron Man, Black Widow, Hawkeye, Nick Fury, Kingpin: no mutation, no
-       * serum, no magic, no alien blood. Everything they do they do with
-       * money, training or nerve, and a reader who wants exactly that had no
-       * way to ask for it. Enhanced humans and mutates are deliberately NOT
-       * here — a super-soldier is not an ordinary man.
-       */
       {
         id: "human",
         match: (c) =>
@@ -198,14 +131,71 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
           !aff("Magic")(c) &&
           !aff("Masters of the Mystic Arts")(c),
       },
+      { id: "super-soldier", match: is("Enhanced human") },
+      { id: "hulks", match: aff("Hulks") },
+      { id: "inhuman", match: (c) => is("Inhuman")(c) || aff("Inhumans")(c) },
+      { id: "eternal", match: is("Eternal") },
+      {
+        id: "asgardian",
+        /* Species OR affiliation. Throg is a frog with a splinter of Mjolnir
+           and Alligator Loki is an alligator in horns — both of Asgard, and
+           neither has an Asgardian body. Belonging is the question here. */
+        match: (c) => is("Asgardian", "Frost Giant")(c) || aff("Asgard")(c),
+      },
+      { id: "kree", match: (c) => is("Kree")(c) || aff("Kree")(c) },
+      { id: "skrull", match: (c) => is("Skrull")(c) || aff("Skrull")(c) },
+      { id: "shiar", match: (c) => is("Shi'ar", "Strontian")(c) || aff("Shi'ar")(c) },
+      { id: "clandestine", match: aff("ClanDestine") },
+      /* HOSTS COUNT. A separate "Venom family" chip was a duplicate of this
+         one, and the only thing it added was people this chip was missing by
+         reading species alone — Agent Venom carrying the Venom symbiote is a
+         symbiote answer to "show me the symbiotes". */
+      { id: "symbiote", match: is("Symbiote", "Symbiote god", "Symbiote host") },
+      { id: "symbiote-lineage", parent: "symbiote", match: (c) => c.symbioteClass === "lineage" },
+      { id: "symbiote-spawn", parent: "symbiote", match: (c) => c.symbioteClass === "spawn" },
+      { id: "symbiote-anomaly", parent: "symbiote", match: (c) => c.symbioteClass === "anomaly" },
+      { id: "symbiote-ancient", parent: "symbiote", match: (c) => c.symbioteClass === "ancient" },
+      {
+        id: "magician",
+        /* "Magic" is an affiliation because magic is a ROLE here, not a
+           species. Wanda is an Enhanced human, Loki and Sylvie are Frost
+           Giants, and no species rule reaches all three. */
+        match: (c) =>
+          aff("Magic")(c) ||
+          aff("Masters of the Mystic Arts")(c) ||
+          is("Witch", "Demon", "Human avatar")(c),
+      },
+      {
+        id: "sorcerer",
+        parent: "magician",
+        match: (c) => aff("Masters of the Mystic Arts")(c) || aff("Vishanti")(c),
+      },
+      { id: "elder-god", parent: "magician", match: is("Elder God") },
+      { id: "demon", parent: "magician", match: is("Demon", "Faltine", "Fire demon") },
+      { id: "god", match: (c) => aff("Gods")(c) || is("Olympian")(c) },
+      {
+        id: "cosmic",
+        match: (c) =>
+          is("Abstract entity", "Abstract Entity", "Cosmic entity", "Cosmic Being", "Watcher")(c) ||
+          aff("Cosmic entities")(c) ||
+          aff("Celestials")(c),
+      },
+      { id: "abstract", parent: "cosmic", match: is("Abstract entity", "Abstract Entity") },
+      { id: "celestial", parent: "cosmic", match: (c) => is("Celestial")(c) || aff("Celestials")(c) },
+      { id: "elder-universe", parent: "cosmic", match: aff("Elders of the Universe") },
+      { id: "herald", parent: "cosmic", match: aff("Heralds of Galactus") },
     ],
   },
   {
     group: "team",
+    /**
+     * MCU ROSTERS FIRST, then the mutant institutions, then the rest. A reader
+     * naming a team is usually naming one they saw in a film, and those nine
+     * are fixed sets Rashid asked not to be touched — so they lead, in the
+     * order the films introduced them.
+     */
     chips: [
       { id: "avengers", match: aff("Avengers") },
-      { id: "x-men", match: aff("X-Men") },
-      { id: "x-force", match: aff("X-Force") },
       { id: "guardians", match: aff("Guardians of the Galaxy") },
       { id: "defenders", match: aff("Defenders") },
       { id: "fantastic-four", match: aff("Fantastic Four") },
@@ -215,28 +205,25 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       { id: "revengers", match: aff("Revengers") },
       { id: "team-cap", match: aff("Team Captain America") },
       { id: "team-iron-man", match: aff("Team Iron Man") },
-      { id: "wakandan", match: aff("Wakandan heroes") },
+      { id: "x-men", match: aff("X-Men") },
+      { id: "x-force", match: aff("X-Force") },
+      { id: "x-factor", match: aff("X-Factor") },
+      { id: "new-mutants", match: aff("New Mutants") },
+      { id: "generation-x", match: aff("Generation X") },
       { id: "weapon-x", match: aff("Weapon X") },
       { id: "brotherhood", match: aff("Brotherhood") },
       { id: "acolytes", match: aff("Acolytes") },
       { id: "marauders", match: aff("Marauders") },
       { id: "hellions", match: aff("Hellions") },
       { id: "hellfire", match: aff("Hellfire Club") },
+      { id: "morlocks", match: aff("Morlocks") },
+      { id: "spider-verse", match: (c) => c.spiderVerse },
+      { id: "spider-society", match: aff("Spider-Society") },
       { id: "sinister-six", match: aff("Sinister Six") },
       { id: "inheritors", match: aff("Inheritors") },
-      { id: "new-mutants", match: aff("New Mutants") },
-      { id: "generation-x", match: aff("Generation X") },
-      { id: "x-factor", match: aff("X-Factor") },
-      { id: "morlocks", match: aff("Morlocks") },
-      /* Three groupings a reader asks for by name and the data already holds:
-         who works for S.H.I.E.L.D., every Loki, and the Spider-Society. */
+      { id: "wakandan", match: aff("Wakandans") },
       { id: "agents", match: aff("S.H.I.E.L.D.") },
       { id: "loki-variants", match: aff("Loki variants") },
-      { id: "spider-society", match: aff("Spider-Society") },
-      /* Computed from appearances upstream — see the note in the page. A
-         rights tag put Kingpin and Ned Leeds outside a category they are
-         obviously in. */
-      { id: "spider-verse", match: (c) => c.spiderVerse },
     ],
   },
 ];
@@ -472,8 +459,11 @@ export function CharacterBrowser({
                 </div>
                 {kids.length > 0 && (
                   <div className="chip-band chip-band-child">
+                    {/* The PARENT names this band, not the selection. Keying
+                        it to `chip` printed "chipGroup.mutant-alpha", which
+                        has no message and rendered as the raw key. */}
                     <span className="chip-band-label" aria-hidden="true">
-                      {t(`chipGroup.${chip}`)}
+                      {t(`chipGroup.${openParent}`)}
                     </span>
                     <div className="chip-band-row">
                       {kids.map((c) => (

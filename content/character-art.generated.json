@@ -369,6 +369,11 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "clea": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5f/Sorcerer_Supreme_Vol_1_5_Fanyang_Variant_Textless.jpg/revision/latest?cb=20260427073207",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "cyttorak": {
     "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/85/Cyttorak_%28Earth-616%29_and_Cain_Marko_%28Earth-616%29_from_Juggernaut_Vol_3_4_001.jpg/revision/latest?cb=20210519150308",
     "source": "chosen",
@@ -1346,6 +1351,11 @@
   },
   "the-beyonders": {
     "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/75/Beyonders_from_New_Avengers_Vol_3_29_001.jpg/revision/latest?cb=20150128180552",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "kosmos": {
+    "image": "https://static.wikia.nocookie.net/fictional-battle-omniverse/images/5/5d/Kosmos_Marvel_Comics.jpg/revision/latest?cb=20170425140014",
     "source": "chosen",
     "matchedAs": "hand-picked"
   },

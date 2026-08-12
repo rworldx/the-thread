@@ -24,7 +24,7 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(650);
+    expect(authored).toHaveLength(651);
   });
 
   it("C4 every relation points at a character that exists", () => {
@@ -81,7 +81,7 @@ describe("C. the character corpus", () => {
        Spider-Man's rogues and twelve named mutants, then the Inheritors and the Life Foundation symbiotes, then the Elders and the cosmic abstracts, then the mystics and the remaining Heralds, then more mutants — of whom only three stayed off-screen, the other
        eight turning out to be credited in the animated series once they had
        aliases to match on. Empty lists here are the intent, not a fault. */
-    expect(offScreen).toHaveLength(243);
+    expect(offScreen).toHaveLength(242);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);
@@ -381,7 +381,7 @@ describe("C. the character corpus", () => {
   it("C17b most of the corpus has real artwork, and the rest is a known set", () => {
     // A coverage floor, so a broken sync cannot silently empty the grid.
     const withArt = allCharacters.filter((c) => c.image !== null);
-    expect(withArt.length).toBe(allCharacters.length - 1);
+    expect(withArt.length).toBe(allCharacters.length);
     // Named, so adding one to this list is a deliberate diff rather than drift.
     const without = allCharacters
       .filter((c) => c.image === null)
@@ -405,15 +405,12 @@ describe("C. the character corpus", () => {
      * Comics art still wins where both have it, so the grid does not alternate
      * between drawn and photographic at random.
      *
-     * ONE ENTRY, AND IT IS DELIBERATE. Kosmos is the evolved Cosmic Cube that
-     * formed from the Beyonder and Molecule Man. It is written about in three
-     * places and drawn in none that are reachable: the only Marvel Database
-     * picture filed under that name is the DIMENSION Pym Particles borrow
-     * mass from. Avatar has a designed empty state for this and its own
-     * comment says the gap is intended, so the record ships without a
-     * portrait rather than wearing a photograph of somewhere.
+     * BACK TO EMPTY. Kosmos was the one exception and is not any more:
+     * Rashid supplied the URL, and it came from a wiki that files the
+     * character where Marvel Database files only the dimension of the same
+     * name. Every character in the corpus has real artwork again.
      */
-    expect(without).toEqual(["kosmos"]);
+    expect(without).toEqual([]);
   });
 
   /**

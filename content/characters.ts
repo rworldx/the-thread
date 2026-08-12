@@ -374,7 +374,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "بلاك بانثر",
     aliases: ["T'Challa", "Black Panther", "King T'Challa"],
     category: "hero",
-    affiliation: ["Avengers", "Wakandan heroes", "Team Iron Man"],
+    affiliation: ["Avengers", "Wakandans", "Team Iron Man"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -507,7 +507,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "شوري",
     aliases: ["Shuri"],
     category: "hero",
-    affiliation: ["Wakandan heroes"],
+    affiliation: ["Wakandans"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -1727,7 +1727,7 @@ const villains: CharacterDraft[] = [
     nameAr: "كيلمونجر",
     aliases: ["Killmonger", "Erik Killmonger", "N'Jadaka", "Erik Stevens"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Wakandans"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -2045,7 +2045,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "سيف",
     aliases: ["Sif", "Lady Sif"],
     category: "supporting",
-    affiliation: ["Asgard"],
+    affiliation: ["Asgard", "Gods"],
     universe: ["mcu"],
     species: "Asgardian",
     powers: [
@@ -2528,7 +2528,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "إيغو",
     aliases: ["Ego"],
     category: "villain",
-    affiliation: ["Celestials"],
+    affiliation: ["Celestials", "Gods"],
     universe: ["mcu"],
     species: "Celestial",
     powers: [
@@ -3077,7 +3077,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "مفيستو",
     aliases: ["Mephisto"],
     category: "villain",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "Gods"],
     universe: ["legacy"],
     species: "Demon",
     powers: [
@@ -3137,7 +3137,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "فالكيري",
     aliases: ["Valkyrie", "Brunnhilde"],
     category: "hero",
-    affiliation: ["Asgard", "Avengers", "Revengers"],
+    affiliation: ["Asgard", "Avengers", "Revengers", "Gods"],
     universe: ["mcu"],
     species: "Asgardian",
     powers: [
@@ -3159,7 +3159,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "أوكويي",
     aliases: ["Okoye"],
     category: "hero",
-    affiliation: ["Wakandan heroes"],
+    affiliation: ["Wakandans"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -3204,7 +3204,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "فريغا",
     aliases: ["Frigga"],
     category: "supporting",
-    affiliation: ["Asgard"],
+    affiliation: ["Asgard", "Gods"],
     universe: ["mcu"],
     species: "Asgardian",
     powers: [
@@ -3228,7 +3228,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "هيمدال",
     aliases: ["Heimdall"],
     category: "supporting",
-    affiliation: ["Asgard"],
+    affiliation: ["Asgard", "Gods"],
     universe: ["mcu"],
     species: "Asgardian",
     powers: [
@@ -3386,7 +3386,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "راموندا",
     aliases: ["Ramonda"],
     category: "supporting",
-    affiliation: ["Wakandan heroes"],
+    affiliation: ["Wakandans"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -3541,7 +3541,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "إمباكو",
     aliases: ["M'Baku"],
     category: "antihero",
-    affiliation: ["Wakandan heroes"],
+    affiliation: ["Wakandans"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -3736,7 +3736,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "آيو",
     aliases: ["Ayo"],
     category: "supporting",
-    affiliation: ["Wakandan heroes"],
+    affiliation: ["Wakandans"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -4022,7 +4022,7 @@ const abstracts: CharacterDraft[] = [
     nameAr: "نال",
     aliases: ["Knull", "The King in Black"],
     category: "villain",
-    affiliation: ["Symbiotes", "Cosmic entities"],
+    affiliation: ["Symbiotes", "Cosmic entities", "Gods"],
     universe: ["sony", "legacy"],
     species: "Symbiote god",
     powers: [
@@ -4045,7 +4045,7 @@ const abstracts: CharacterDraft[] = [
     nameAr: "دورمامو",
     aliases: ["Dormammu"],
     category: "villain",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "Gods"],
     universe: ["mcu", "legacy"],
     species: "Demon",
     powers: [
@@ -6924,7 +6924,7 @@ const laterAdditions: CharacterDraft[] = [
     nameAr: "سورتر",
     aliases: ["Surtur"],
     category: "villain",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Fire demon",
     powers: [
@@ -7571,7 +7571,7 @@ const smallScreen: CharacterDraft[] = [
     nameAr: "ميراج",
     aliases: ["Mirage", "Dani Moonstar", "Danielle Moonstar"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["New Mutants"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -7593,7 +7593,7 @@ const smallScreen: CharacterDraft[] = [
     nameAr: "ماجيك",
     aliases: ["Magik", "Illyana Rasputin", "Illyana"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["New Mutants"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -7616,7 +7616,7 @@ const smallScreen: CharacterDraft[] = [
     nameAr: "كانونبول",
     aliases: ["Cannonball", "Sam Guthrie", "Samuel Guthrie"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["New Mutants"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -7638,7 +7638,7 @@ const smallScreen: CharacterDraft[] = [
     nameAr: "وولفسباين",
     aliases: ["Wolfsbane", "Rahne Sinclair", "Rahne"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["New Mutants"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -7660,7 +7660,7 @@ const smallScreen: CharacterDraft[] = [
     nameAr: "صنسبوت",
     aliases: ["Sunspot", "Roberto da Costa", "Bobby da Costa"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["New Mutants"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -8616,7 +8616,7 @@ const cosmicBeings: CharacterDraft[] = [
     nameAr: "أجاموتو",
     aliases: ["Agamotto"],
     category: "hero",
-    affiliation: ["Magic", "Vishanti"],
+    affiliation: ["Magic", "Vishanti", "Gods"],
     universe: ["animation"],
     species: "Elder God",
     powers: [
@@ -8637,7 +8637,7 @@ const cosmicBeings: CharacterDraft[] = [
     nameAr: "كثون",
     aliases: ["Chthon"],
     category: "villain",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "Gods"],
     universe: ["animation"],
     species: "Elder God",
     powers: [
@@ -10372,12 +10372,39 @@ const abstractsBatch: CharacterDraft[] = [
  */
 const mystics: CharacterDraft[] = [
   {
+    /* Credited in Doctor Strange in the Multiverse of Madness — the woman who
+       walks out of a portal in the mid-credits scene and tells him he has
+       caused an incursion. Missing entirely until Rashid noticed. */
+    id: "clea",
+    nameEn: "Clea",
+    nameAr: "كليا",
+    aliases: ["Clea", "Clea Strange"],
+    category: "hero",
+    affiliation: ["Magic", "Masters of the Mystic Arts"],
+    universe: ["mcu"],
+    species: "Faltine",
+    powers: [
+      { en: "Sorceress of the Dark Dimension", ar: "ساحرة البعد المظلم" },
+      { en: "Opens incursions and closes them", ar: "تفتح الاختراقات وتغلقها" },
+      { en: "Dormammu's niece", ar: "ابنة أخت دورمامو" },
+    ],
+    origin: {
+      en: "A sorceress born of the Dark Dimension and Dormammu's own niece, who rules it after him and arrives to tell Doctor Strange that the multiverse he broke is now his problem to fix.",
+      ar: "ساحرة وُلدت من البعد المظلم وابنة أخت دورمامو نفسه، تحكمه بعده، وتأتي لتخبر دكتور سترينج أن الكون المتعدد الذي كسره صار مشكلته هو.",
+    },
+    related: [
+      { id: "doctor-strange", kind: "ally" },
+      { id: "dormammu", kind: "family" },
+      { id: "umar", kind: "family" },
+    ],
+  },
+  {
     id: "cyttorak",
     nameEn: "Cyttorak",
     nameAr: "سيتوراك",
     aliases: ["Cyttorak"],
     category: "villain",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Demon",
     powers: [
@@ -10399,7 +10426,7 @@ const mystics: CharacterDraft[] = [
     nameAr: "شوما غوراث",
     aliases: ["Shuma-Gorath", "Iop-Oa"],
     category: "villain",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
     powers: [
@@ -10421,7 +10448,7 @@ const mystics: CharacterDraft[] = [
     nameAr: "أوشتور",
     aliases: ["Oshtur"],
     category: "hero",
-    affiliation: ["Magic", "Vishanti"],
+    affiliation: ["Magic", "Vishanti", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
     powers: [
@@ -10443,7 +10470,7 @@ const mystics: CharacterDraft[] = [
     nameAr: "هوغوث",
     aliases: ["Hoggoth"],
     category: "hero",
-    affiliation: ["Magic", "Vishanti"],
+    affiliation: ["Magic", "Vishanti", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
     powers: [
@@ -10465,7 +10492,7 @@ const mystics: CharacterDraft[] = [
     nameAr: "أومار",
     aliases: ["Umar"],
     category: "villain",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Faltine",
     powers: [
@@ -10510,7 +10537,7 @@ const mystics: CharacterDraft[] = [
     nameAr: "غايا",
     aliases: ["Gaea", "Mother Earth"],
     category: "hero",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
     powers: [
@@ -10532,7 +10559,7 @@ const mystics: CharacterDraft[] = [
     nameAr: "الديميورغ",
     aliases: ["The Demiurge", "Demiurge"],
     category: "supporting",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
     powers: [
@@ -10554,7 +10581,7 @@ const mystics: CharacterDraft[] = [
     nameAr: "سِت",
     aliases: ["Set"],
     category: "villain",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
     powers: [
@@ -10793,7 +10820,7 @@ const heralds: CharacterDraft[] = [
     nameAr: "مانغوغ",
     aliases: ["Mangog"],
     category: "villain",
-    affiliation: ["Asgard"],
+    affiliation: ["Asgard", "Gods"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -11451,9 +11478,11 @@ const mutantsD: CharacterDraft[] = [
     id: "cecilia-reyes",
     nameEn: "Cecilia Reyes",
     nameAr: "سيسيليا رييس",
-    aliases: ["Cecilia Reyes"],
+    /* The New Mutants credits her "Dr. Reyes" — the film never says her first
+       name, so the derivation missed her entirely without this. */
+    aliases: ["Cecilia Reyes", "Dr. Reyes"],
     category: "hero",
-    affiliation: ["X-Men"],
+    affiliation: ["X-Men", "New Mutants"],
     universe: ["fox"],
     species: "Mutant",
     powers: [

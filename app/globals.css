@@ -1465,8 +1465,13 @@ a:has(.poster):focus-visible {
   font: inherit;
   font-size: var(--text-sm);
   padding-inline: var(--space-3);
+  /* 44px is the Apple HIG floor and the Material 48dp one rounds to it. Every
+     chip is a real tap target at every width, never a text link pretending. */
   min-block-size: 44px;
+  min-inline-size: 44px;
   cursor: pointer;
+  /* Kills the 300ms tap delay without disabling pinch zoom. */
+  touch-action: manipulation;
 }
 
 .watched {
@@ -2507,14 +2512,23 @@ a:has(.poster):focus-visible {
 }
 @media (min-width: 48rem) {
   .chip-band {
-    /* The label column is sized to the longest of the three, so the chip rows
-       all start on the same line. `max-content` on a shared track would be
-       per-row; a fixed measure keeps them aligned. */
-    grid-template-columns: 4.5rem 1fr;
+    /**
+     * A LABEL COLUMN THAT CANNOT BE OVERRUN.
+     *
+     * This was a flat 4.5rem, which held while the labels were ROLE, KIND and
+     * TEAM and broke the moment a child band arrived carrying "Kind of magic":
+     * the text ran straight across the chips beside it. `minmax` gives it a
+     * floor wide enough to align the three parents and a ceiling it can grow
+     * to, and the label wraps inside its own column instead of over its
+     * neighbour.
+     */
+    grid-template-columns: minmax(4.5rem, max-content) 1fr;
     align-items: baseline;
   }
 }
 .chip-band-label {
+  /* Wraps in its own column rather than pushing into the chips. */
+  overflow-wrap: anywhere;
   color: var(--color-ink-faint);
   font-size: var(--step--1);
   letter-spacing: 0.06em;
@@ -5971,8 +5985,32 @@ html:has(:target) {
 .chip-fold-summary {
   display: none;
 }
+/**
+ * THE CHILD BAND, drawn as a branch of the row above it.
+ *
+ * It is a narrowing of the chip that is already on, so it reads as attached:
+ * a rule down the inline start, indented from the parent row, and the whole
+ * thing announced on entry rather than appearing without explanation.
+ */
 .chip-band-child {
   margin-block-start: var(--space-2);
+  padding-inline-start: var(--space-3);
+  border-inline-start: 2px solid var(--color-hairline);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .chip-band-child {
+    animation: chip-band-in 160ms ease-out;
+  }
+}
+@keyframes chip-band-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.25rem);
+  }
+}
+/* Grouping wrapper: the parent row and its branch travel together. */
+.chip-band-group + .chip-band-group {
+  margin-block-start: var(--space-3);
 }
 @media (max-width: 47.99rem) {
   .chip-fold-summary {
