@@ -564,6 +564,32 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7c/Ebenezer_Laughton_%28Earth-616%29_from_Danny_Ketch_Ghost_Rider_Vol_1_2_001.jpg/revision/latest?cb=20231001203711",
   "j-jonah-jameson":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/96/John_Jonah_Jameson_%28Earth-616%29_from_Marvel_Knights_Spider-Man_Vol_1_4_001.jpg/revision/latest?cb=20161214062419",
+  /* Batch 16. The Marquis of Death is Clyde Wyncham Jr. on Earth-807128,
+     Malloy Earth-14923, Cosmic Ghost Rider Francis Castle on TRN666. */
+  "griever":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/98/Fantastic_Four_Vol_6_1_ComicXposure_Exclusive_Villain_Virgin_Variant.jpg/revision/latest?cb=20180722143612",
+  "mad-jim-jaspers":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/ef/James_Jaspers_%28Earth-616%29_from_X-Men_Die_by_the_Sword_Vol_1_3_001.jpg/revision/latest?cb=20191230234518",
+  "abraxas":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Abraxas_%28Multiverse%29_from_Storm_Vol_5_9_001.jpg/revision/latest?cb=20250608013134",
+  "chaos-king":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/33/Amatsu-Mikaboshi_%28Earth-616%29_from_Chaos_War_Vol_1_4_0001.jpg/revision/latest?cb=20160628224150",
+  "mister-m":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/87/District_X_Vol_1_4_Textless.jpg/revision/latest?cb=20070922144250",
+  "thane":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/90/Thane_%28Earth-616%29_from_Thanos_A_God_Up_There_Listening_Infinite_Comic_Vol_1_1_001.jpg/revision/latest?cb=20200717200411",
+  "sasquatch":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b6/Walter_Langkowski_%28Earth-616%29_from_Alpha_Flight_Vol_5_5_001.jpg/revision/latest?cb=20240210141512",
+  "namora":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/24/Atlas_Vol_1_1_Women_of_Marvel_Variant_Textless.jpg/revision/latest?cb=20100219131014",
+  "namorita":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Namorita_Prentiss_%28Earth-616%29_from_Civil_War_Unmasked_Vol_1_1_001.jpg/revision/latest?cb=20260513075658",
+  "marquis-of-death":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/3b/Clyde_Wyncham_Jr._%28Earth-807128%29_from_Fantastic_Four_Vol_3_566_001.jpg/revision/latest?cb=20201011175347",
+  "matthew-malloy":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Matthew_Malloy_%28Earth-14923%29_from_Uncanny_X-Men_Vol_3_24_0002.png/revision/latest?cb=20140731195103",
+  "cosmic-ghost-rider":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/61/Cosmic_Ghost_Rider_Vol_1_5_Campbell_Variant_Textless.jpg/revision/latest?cb=20180822094725",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

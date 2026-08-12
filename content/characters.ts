@@ -12414,6 +12414,291 @@ const bugleAndRogues: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE REST OF THE POWER LIST, batch 16 — and that list is now complete.
+ *
+ * Three more Omegas off the published list: the Marquis of Death, Mad Jim
+ * Jaspers and Matthew Malloy, plus Mister M. Malloy is the one worth reading
+ * — not a villain at all, but an Omega so dangerous that Xavier suppressed
+ * his memory and his power and left him an ordinary life. He is what happens
+ * when that suppression fails, which is a different kind of story from anyone
+ * else on the list.
+ *
+ * Namora was the surprise: she has real credits in Wakanda Forever and
+ * Avengers: Doomsday, found by the pre-check before her record was written.
+ */
+const powerList: CharacterDraft[] = [
+  {
+    id: "griever",
+    nameEn: "The Griever at the End of All Things",
+    nameAr: "الفاجعة عند نهاية كل شيء",
+    aliases: ["The Griever at the End of All Things", "Griever"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Ends whole realities", ar: "تنهي وقائع بأكملها" },
+      { en: "Mourns what she destroys", ar: "تنعى ما تدمّر" },
+      { en: "Hunts the last survivors", ar: "تطارد آخر الناجين" },
+    ],
+    origin: {
+      en: "A cosmic being who arrives when a reality is finished, grieving for it while she removes what is left. She goes after survivors specifically, because a survivor means the ending is incomplete.",
+      ar: "كائنة كونية تصل حين ينتهي واقعٌ ما، تنعاه وهي تزيل ما بقي منه. وتلاحق الناجين تحديدًا، لأن ناجيًا يعني أن النهاية لم تكتمل.",
+    },
+    related: [
+      { id: "star-lord", kind: "enemy" },
+    ],
+  },
+  {
+    id: "marquis-of-death",
+    nameEn: "The Marquis of Death",
+    nameAr: "ماركيز الموت",
+    aliases: ["The Marquis of Death", "Clyde Wyncham"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "Rewrites reality at will", ar: "يعيد كتابة الواقع كما يشاء" },
+      { en: "Aged Doctor Doom into dust", ar: "حوّل دكتور دووم إلى غبار" },
+      { en: "An Omega mutant, once a boy", ar: "متحوّل أوميغا كان صبيًا" },
+    ],
+    origin: {
+      en: "An Omega-level mutant driven past sanity and returned as something that unmakes what it touches, who beat Doctor Doom so thoroughly that Doom spent the rest of it planning an answer.",
+      ar: "متحوّل من مستوى أوميغا دُفع إلى ما وراء العقل وعاد كائنًا يفكّ ما يلمسه، هزم دكتور دووم هزيمة جعلت دووم يقضي ما تبقى في تدبير ردّ.",
+    },
+    related: [
+      { id: "doctor-doom", kind: "enemy" },
+    ],
+  },
+  {
+    id: "mad-jim-jaspers",
+    nameEn: "Mad Jim Jaspers",
+    nameAr: "جيم جاسبرز المجنون",
+    aliases: ["Mad Jim Jaspers", "James Jaspers"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "Warps reality by thinking", ar: "يشوّه الواقع بالتفكير" },
+      { en: "The madder he gets, the worse", ar: "كلما ازداد جنونًا ازداد الأمر سوءًا" },
+      { en: "A politician in public", ar: "سياسي في العلن" },
+    ],
+    origin: {
+      en: "A reality-warping mutant whose power scales with his own insanity, and who was a respectable politician for as long as the madness stayed private.",
+      ar: "متحوّل يشوّه الواقع، تنمو قوته مع جنونه، وكان سياسيًا محترمًا ما دام الجنون في طيّ الكتمان.",
+    },
+    related: [
+      { id: "psylocke", kind: "enemy" },
+    ],
+  },
+  {
+    id: "abraxas",
+    nameEn: "Abraxas",
+    nameAr: "أبراكساس",
+    aliases: ["Abraxas"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "The destruction of the multiverse", ar: "دمار الكون المتعدد" },
+      { en: "Held back only by Galactus", ar: "لا يكبحه إلا جالاكتوس" },
+      { en: "Free the moment Galactus dies", ar: "يُطلق لحظة موت جالاكتوس" },
+    ],
+    origin: {
+      en: "The embodiment of the multiverse's destruction, kept sealed by Galactus's mere existence. Every time Galactus has died, Abraxas has come out.",
+      ar: "تجسيد دمار الكون المتعدد، يبقيه مختومًا مجرّد وجود جالاكتوس. وكلما مات جالاكتوس خرج أبراكساس.",
+    },
+    related: [
+      { id: "galactus", kind: "enemy" },
+    ],
+  },
+  {
+    id: "chaos-king",
+    nameEn: "The Chaos King",
+    nameAr: "ملك الفوضى",
+    aliases: ["The Chaos King", "Amatsu-Mikaboshi"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Was the void before creation", ar: "كان العدم قبل الخلق" },
+      { en: "Kills gods wholesale", ar: "يقتل الآلهة جملةً" },
+      { en: "Wants everything unmade", ar: "يريد فكّ كل شيء" },
+    ],
+    origin: {
+      en: "The primordial darkness that existed before anything else and wants to be the only thing again, which is not a conquest but a restoration as far as it is concerned.",
+      ar: "الظلمة البدئية التي وُجدت قبل كل شيء وتريد أن تعود الشيء الوحيد، وذلك في نظرها ليس غزوًا بل إعادة إلى الأصل.",
+    },
+    related: [
+      { id: "thor", kind: "enemy" },
+    ],
+  },
+  {
+    id: "matthew-malloy",
+    nameEn: "Matthew Malloy",
+    nameAr: "ماثيو مالوي",
+    aliases: ["Matthew Malloy"],
+    category: "antivillain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "Power he never asked for", ar: "قوة لم يطلبها قط" },
+      { en: "Erases whatever frightens him", ar: "يمحو ما يفزعه" },
+      { en: "Xavier hid him from himself", ar: "أخفاه إكزافير عن نفسه" },
+    ],
+    origin: {
+      en: "An Omega-level mutant so dangerous that Xavier suppressed his memory and his power and left him to live an ordinary life. He is not a villain; he is what happens when the suppression fails.",
+      ar: "متحوّل من مستوى أوميغا بلغ من الخطورة أن كبت إكزافير ذاكرته وقوته وتركه يعيش حياة عادية. ليس شريرًا، بل هو ما يحدث حين يخفق الكبت.",
+    },
+    related: [
+      { id: "professor-x", kind: "enemy" },
+    ],
+  },
+  {
+    id: "mister-m",
+    nameEn: "Mister M",
+    nameAr: "مستر إم",
+    aliases: ["Mister M", "Absolon Mercator"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "Controls matter itself", ar: "يتحكم بالمادة ذاتها" },
+      { en: "Fixed mutants after M-Day", ar: "أصلح متحوّلين بعد يوم إم" },
+      { en: "Refuses to pick a side", ar: "يأبى الانحياز" },
+    ],
+    origin: {
+      en: "An Omega-level mutant who can rearrange matter at will and used it mostly to repair other mutants after they lost their powers, while declining to join anyone's cause.",
+      ar: "متحوّل من مستوى أوميغا يعيد ترتيب المادة كما يشاء، واستعملها في الأغلب لإصلاح متحوّلين بعد فقدهم قواهم، رافضًا الانضمام إلى قضية أحد.",
+    },
+    related: [
+      { id: "magneto", kind: "ally" },
+    ],
+  },
+  {
+    id: "thane",
+    nameEn: "Thane",
+    nameAr: "ثين",
+    aliases: ["Thane"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Eternal",
+    powers: [
+      { en: "Thanos's son", ar: "ابن ثانوس" },
+      { en: "One hand kills, one imprisons", ar: "يد تقتل ويد تسجن" },
+      { en: "Grew up healing people", ar: "نشأ يداوي الناس" },
+    ],
+    origin: {
+      en: "Thanos's son by an Inhuman, who spent his life as a healer in a hidden city before his father came looking. One of his hands kills and the other seals a person in amber.",
+      ar: "ابن ثانوس من امرأة لا بشرية، أمضى عمره مداويًا في مدينة خفية قبل أن يأتي أبوه باحثًا عنه. إحدى يديه تقتل والأخرى تحبس المرء في كهرمان.",
+    },
+    related: [
+      { id: "thanos", kind: "family" },
+    ],
+  },
+  {
+    id: "sasquatch",
+    nameEn: "Sasquatch",
+    nameAr: "ساسكواتش",
+    aliases: ["Sasquatch", "Walter Langkowski"],
+    category: "hero",
+    affiliation: ["Alpha Flight"],
+    universe: ["mcu"],
+    species: "Mutate",
+    powers: [
+      { en: "Turns into an orange giant", ar: "يتحول إلى عملاق برتقالي" },
+      { en: "A physicist underneath", ar: "فيزيائي في الأصل" },
+      { en: "Borrowed a beast's strength", ar: "استعار قوة وحش" },
+    ],
+    origin: {
+      en: "A Canadian physicist who tried to reproduce the Hulk's transformation on himself and instead bound a mythical creature's strength to his body.",
+      ar: "فيزيائي كندي حاول أن يكرّر تحوّل هالك في نفسه، فربط بجسده بدلًا من ذلك قوة مخلوق أسطوري.",
+    },
+    related: [
+      { id: "hulk", kind: "ally" },
+    ],
+  },
+  {
+    id: "cosmic-ghost-rider",
+    nameEn: "Cosmic Ghost Rider",
+    nameAr: "كوزميك غوست رايدر",
+    aliases: ["Cosmic Ghost Rider"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "The Power Cosmic and hellfire", ar: "القوة الكونية ونار الجحيم" },
+      { en: "Sold his soul, then his service", ar: "باع روحه ثم خدمته" },
+      { en: "Frank Castle, at the end of things", ar: "فرانك كاسل في آخر الزمان" },
+    ],
+    origin: {
+      en: "Frank Castle from a future where everything had already lost, who made a deal with Mephisto and then another with Galactus, and came out carrying both.",
+      ar: "فرانك كاسل من مستقبل خُسر فيه كل شيء سلفًا، عقد صفقة مع مفيستو ثم أخرى مع جالاكتوس، فخرج حاملًا الاثنتين.",
+    },
+    related: [
+      { id: "punisher", kind: "variant" },
+      { id: "galactus", kind: "ally" },
+    ],
+  },
+  {
+    id: "namora",
+    nameEn: "Namora",
+    nameAr: "نامورا",
+    aliases: ["Namora", "Aquaria Nautica Neptunia"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Atlantean",
+    powers: [
+      { en: "Strength beyond Namor's", ar: "قوة تفوق قوة نامور" },
+      { en: "Flies on ankle wings", ar: "تطير بجناحي كاحلها" },
+      { en: "Namor's cousin", ar: "ابنة عم نامور" },
+    ],
+    origin: {
+      en: "Namor's cousin, stronger than he is and considerably less interested in diplomacy, who has spent most of her life defending the sea from whoever came for it that decade.",
+      ar: "ابنة عم نامور، أقوى منه وأقل اهتمامًا بالدبلوماسية بكثير، أمضت أكثر عمرها تدافع عن البحر ضد من جاءه في كل عقد.",
+    },
+    related: [
+      { id: "namor", kind: "family" },
+    ],
+  },
+  {
+    id: "namorita",
+    nameEn: "Namorita",
+    nameAr: "ناموريتا",
+    aliases: ["Namorita", "Namorita Prentiss"],
+    category: "hero",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Atlantean",
+    powers: [
+      { en: "Atlantean strength", ar: "قوة أتلانتية" },
+      { en: "Grew up on the surface", ar: "نشأت على السطح" },
+      { en: "Died starting a war", ar: "ماتت فأشعلت حربًا" },
+    ],
+    origin: {
+      en: "Namora's clone-daughter, raised among surface humans, whose death alongside hundreds of civilians is the event that started the superhero civil war.",
+      ar: "ابنة نامورا المستنسخة، نشأت بين بشر السطح، وموتها مع مئات المدنيين هو الحدث الذي أشعل الحرب الأهلية بين الأبطال.",
+    },
+    related: [
+      { id: "namora", kind: "family" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -12430,6 +12715,7 @@ export const characters: CharacterDraft[] = [
   ...mutantsE,
   ...hiddenByAudit,
   ...bugleAndRogues,
+  ...powerList,
   ...avengers,
   ...guardians,
   ...xmen,

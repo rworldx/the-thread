@@ -255,6 +255,7 @@
       "artificial-being": "Artificial being",
       "artificial-intelligence": "Artificial intelligence",
       "asgardian": "Asgardian",
+      "atlantean": "Atlantean",
       "birjian": "Birjian",
       "celestial": "Celestial",
       "centaurian": "Centaurian",
@@ -320,6 +321,7 @@
       "zenn-lavian": "Zenn-Lavian"
     },
     "affiliation_": {
+      "alpha-flight": "Alpha Flight",
       "asgard": "Asgard",
       "avengers": "Avengers",
       "black-order": "Black Order",

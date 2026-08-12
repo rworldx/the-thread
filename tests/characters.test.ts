@@ -24,7 +24,7 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(525);
+    expect(authored).toHaveLength(537);
   });
 
   it("C4 every relation points at a character that exists", () => {
@@ -81,7 +81,7 @@ describe("C. the character corpus", () => {
        Spider-Man's rogues and twelve named mutants, then the Inheritors and the Life Foundation symbiotes, then the Elders and the cosmic abstracts, then the mystics and the remaining Heralds, then more mutants — of whom only three stayed off-screen, the other
        eight turning out to be credited in the animated series once they had
        aliases to match on. Empty lists here are the intent, not a fault. */
-    expect(offScreen).toHaveLength(136);
+    expect(offScreen).toHaveLength(147);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);
@@ -155,8 +155,12 @@ describe("C. the character corpus", () => {
     /* Proteus and Rachel Summers join on the same rule the others are here
        by: both are named on Marvel's published Omega list, which the supplied
        roster reproduces. Neither is here because they feel powerful. */
-    expect(omegas).toEqual(["elixir", "exodus", "hope-summers",
-      "iceman", "jean-grey", "legion", "magneto", "nate-grey", "proteus", "quentin-quire", "rachel-summers", "storm", "vulcan"]);
+    expect(omegas).toEqual([
+      "elixir", "exodus", "hope-summers", "iceman", "jean-grey", "legion",
+      "mad-jim-jaspers", "magneto", "marquis-of-death", "matthew-malloy",
+      "mister-m", "nate-grey", "proteus", "quentin-quire", "rachel-summers",
+      "storm", "vulcan",
+    ]);
     expect(allCharacters.find((c) => c.id === "professor-x")!.mutantClass).not.toBe(
       "omega",
     );
