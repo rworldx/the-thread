@@ -833,8 +833,26 @@ const xmen: CharacterDraft[] = [
     nameEn: "Magneto",
     nameAr: "ماغنيتو",
     aliases: ["Erik Lehnsherr", "Magneto", "Max Eisenhardt"],
-    /* ANTIVILLAIN, not villain. A Holocaust survivor whose goal is that it never happens to his people. Opposed by the protagonists and not wrong about the stakes, which is the definition this file already uses for Ikaris and He Who Remains. He has also fought beside the X-Men and led them. */
-    category: "antivillain",
+    /**
+     * ANTI-HERO, and this one is genuinely arguable rather than settled.
+     *
+     * The distinction is not goals versus methods — both anti-types have
+     * decent goals and harsh methods. It is which side of the story someone
+     * stands on: an anti-hero is a PROTAGONIST who lacks heroic qualities, an
+     * anti-villain is an ANTAGONIST who is not purely evil.
+     *
+     * By that test Magneto is both, across fourteen titles. He is the
+     * antagonist of X-Men, X2, The Last Stand and Apocalypse. But Xavier
+     * wills him the school in X-Men '97 and he LEADS the X-Men through two
+     * seasons, which is not something an antagonist does. Stan Lee said he
+     * never wrote him as a bad guy, and the modern books treat him as an
+     * anti-hero outright.
+     *
+     * The corpus holds one value, so it holds the one that covers the most
+     * of him. Filed anti-villain first, which was defensible and put the
+     * weight on the wrong era.
+     */
+    category: "antihero",
     affiliation: ["Brotherhood"],
     universe: ["fox"],
     species: "Mutant",
