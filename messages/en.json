@@ -187,7 +187,7 @@
     "metaTitle": "Characters",
     "metaDescription": "{n} characters, and every title each one appears in.",
     "heading": "Every character",
-    "lede": "Pick a person instead of a title. Each one carries every film and series they appear in, in release order.",
+    "lede": "Pick a person instead of a title. 651 of them, filtered by role, kind or team, each carrying every film and series they appear in.",
     "count": "{n, plural, one {# character} other {# characters}}",
     "searchLabel": "Search characters",
     "searchPlaceholder": "Name or alias...",

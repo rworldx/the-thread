@@ -349,8 +349,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <section className="home-section reveal" aria-labelledby="universes-heading">
         <div className="section-head">
           <h2 id="universes-heading">{t("home.universesHeading")}</h2>
-          <Link className="section-link" href={`/${locale}/rights`}>
-            {t("rights.cta")}
+          {/* This pointed at /rights, which is a different page about who
+              OWNS what. The heading says Every universe, so the link has to
+              go to the universes. */}
+          <Link className="section-link" href={`/${locale}/universes`}>
+            {t("universes.backToAll")}
             <ArrowIcon />
           </Link>
         </div>

@@ -2462,14 +2462,35 @@ a:has(.poster):focus-visible {
   max-inline-size: 52ch;
 }
 
+/**
+ * ON A PHONE THESE STACK, and that is not what flex-wrap was giving.
+ *
+ * Search, sort and the three bands were one wrapping row, so at narrow widths
+ * the sort control and the bands ended up side by side: sort on the left,
+ * ROLE / KIND / TEAM floating against the right edge with the gaps between
+ * them stretched. It read as a broken grid because it was one row pretending
+ * to be two columns.
+ *
+ * Below 48rem they are a single column in reading order — search, then sort,
+ * then the bands — and the wrapping row returns above it, where there is
+ * room for it.
+ */
 .char-controls {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3) var(--space-4);
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-3);
   padding-block-end: var(--space-4);
   border-block-end: 1px solid var(--color-hairline);
   margin-block-end: var(--space-5);
+}
+@media (min-width: 48rem) {
+  .char-controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-4);
+    align-items: flex-end;
+  }
 }
 .char-search {
   display: flex;
