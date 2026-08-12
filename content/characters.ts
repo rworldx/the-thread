@@ -12699,6 +12699,265 @@ const powerList: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE SPIDER-VARIANTS, batch 17.
+ *
+ * Every one that is a Peter is typed `variant` of Spider-Man; the ones who
+ * are their own people — Spider-Boy, Web-Weaver, Sun-Spider, Spider-Byte —
+ * are allies instead. The distinction matters on the one site that models it.
+ *
+ * The Superior Spider-Man is deliberately absent. He is Otto Octavius in
+ * Peter's body, and Doctor Octopus is already a record here; a second one
+ * would be the same duplicate mistake as Kindred and the Red Goblin. He
+ * belongs as an alias or not at all, and that is a call to make rather than
+ * an omission.
+ */
+const spiderVariants: CharacterDraft[] = [
+  {
+    id: "spider-boy",
+    nameEn: "Spider-Boy",
+    nameAr: "سبايدر بوي",
+    aliases: ["Spider-Boy", "Bailey Briggs"],
+    category: "hero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Sticks to anything", ar: "يلتصق بأي شيء" },
+      { en: "Erased from everyone's memory", ar: "مُحي من ذاكرة الجميع" },
+      { en: "Was Spider-Man's sidekick", ar: "كان مساعد سبايدرمان" },
+    ],
+    origin: {
+      en: "Spider-Man's forgotten sidekick, wiped from the memory of everyone who knew him including Peter, and now trying to prove to a world with no record of him that he was ever there.",
+      ar: "مساعد سبايدرمان المنسيّ، مُحي من ذاكرة كل من عرفه بمن فيهم بيتر، ويحاول الآن أن يثبت لعالم لا سجلّ له فيه أنه كان موجودًا.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "web-slinger",
+    nameEn: "Web-Slinger",
+    nameAr: "ويب سلينغر",
+    aliases: ["Web-Slinger", "Patrick O'Hara"],
+    category: "hero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Rides a spider-sensed horse", ar: "يمتطي حصانًا بحسّ عنكبوتي" },
+      { en: "Web-lines and six-guns", ar: "خيوط ومسدسان" },
+      { en: "A sheriff in the old west", ar: "عمدة في الغرب القديم" },
+    ],
+    origin: {
+      en: "The Spider-Man of an American frontier reality, a masked sheriff with a horse called Widow who shares his warning sense.",
+      ar: "سبايدرمان في واقعٍ من التخوم الأمريكية، عمدة مقنّع بحصان اسمه الأرملة يشاركه حسّ الإنذار.",
+    },
+    related: [
+      { id: "spider-man", kind: "variant" },
+    ],
+  },
+  {
+    id: "spider-rex",
+    nameEn: "Spider-Rex",
+    nameAr: "سبايدر ريكس",
+    aliases: ["Spider-Rex", "Pter Ptarker"],
+    category: "hero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "A tyrannosaur with the powers", ar: "تيرانوصور بالقوى" },
+      { en: "Bitten by a radioactive spider", ar: "لدغته عنكبوت مشعّ" },
+      { en: "Genuinely a dinosaur", ar: "ديناصور حقًا" },
+    ],
+    origin: {
+      en: "A tyrannosaurus from a world where dinosaurs never died out, bitten by a radioactive spider. He is exactly what he sounds like and takes the responsibility just as seriously.",
+      ar: "تيرانوصور من عالمٍ لم تنقرض فيه الديناصورات، لدغته عنكبوت مشعّ. وهو تمامًا ما يبدو عليه، ويحمل المسؤولية بالجدّية نفسها.",
+    },
+    related: [
+      { id: "spider-man", kind: "variant" },
+    ],
+  },
+  {
+    id: "spinstress",
+    nameEn: "Spinstress",
+    nameAr: "سبينستريس",
+    aliases: ["Spinstress"],
+    category: "hero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "A princess who sings", ar: "أميرة تغني" },
+      { en: "Animals answer her", ar: "تجيبها الحيوانات" },
+      { en: "Her world runs on songs", ar: "عالمها يسير بالأغاني" },
+    ],
+    origin: {
+      en: "The Spider-Woman of a reality shaped like a musical, a princess whose singing summons help and whose problems resolve in verses.",
+      ar: "سبايدر وومان في واقعٍ على هيئة مسرحية غنائية، أميرة يستدعي غناؤها العون وتُحلّ مشكلاتها في مقاطع.",
+    },
+    related: [
+      { id: "spider-man", kind: "variant" },
+    ],
+  },
+  {
+    id: "web-weaver",
+    nameEn: "Web-Weaver",
+    nameAr: "ويب ويفر",
+    aliases: ["Web-Weaver", "Cooper Coen"],
+    category: "hero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Designed his own suit", ar: "صمّم بدلته بنفسه" },
+      { en: "A fashion designer by day", ar: "مصمم أزياء نهارًا" },
+      { en: "Webbing spun as thread", ar: "خيوط تُغزل نسيجًا" },
+    ],
+    origin: {
+      en: "A fashion designer who became a Spider-hero and made a point of the costume being genuinely well made, which none of the others can claim.",
+      ar: "مصمم أزياء صار بطلًا عنكبوتيًا وحرص على أن يكون الزيّ مصنوعًا صنعةً حقيقية، وهو ما لا يدّعيه سواه.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "spider-smasher",
+    nameEn: "Spider-Smasher",
+    nameAr: "سبايدر سماشر",
+    aliases: ["Spider-Smasher", "Billie Morales"],
+    category: "antihero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Hunts spider-totems", ar: "تصطاد الطواطم العنكبوتية" },
+      { en: "Miles Morales's sister", ar: "أخت مايلز موراليس" },
+      { en: "Raised to end the Web", ar: "نشأت لإنهاء الشبكة" },
+    ],
+    origin: {
+      en: "Miles Morales's sister from a reality where she was raised by the enemies of the Great Web and taught that spider-totems are the thing to be stopped.",
+      ar: "أخت مايلز موراليس من واقعٍ ربّاها فيه أعداء الشبكة الكبرى وعلّموها أن الطواطم العنكبوتية هي ما يجب إيقافه.",
+    },
+    related: [
+      { id: "miles-morales", kind: "family" },
+    ],
+  },
+  {
+    id: "old-man-spider",
+    nameEn: "Old Man Spider",
+    nameAr: "سبايدرمان العجوز",
+    aliases: ["Old Man Spider"],
+    category: "antihero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Decades past retiring", ar: "تجاوز التقاعد بعقود" },
+      { en: "Outlived everyone he saved", ar: "بقي بعد كل من أنقذ" },
+      { en: "Still going out anyway", ar: "وما يزال يخرج رغم ذلك" },
+    ],
+    origin: {
+      en: "A Peter Parker from a ruined future who is far too old for this and does it anyway, having outlived every person the work was supposed to be for.",
+      ar: "بيتر باركر من مستقبل خرِب، تجاوز السنّ بكثير ويفعلها رغم ذلك، بعدما بقي حيًّا بعد كل من كان العمل من أجلهم.",
+    },
+    related: [
+      { id: "spider-man", kind: "variant" },
+    ],
+  },
+  {
+    id: "sun-spider",
+    nameEn: "Sun-Spider",
+    nameAr: "صن سبايدر",
+    aliases: ["Sun-Spider", "Charlotte Webber"],
+    category: "hero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Swings with forearm crutches", ar: "تتأرجح بعكازي ساعد" },
+      { en: "Ehlers-Danlos syndrome", ar: "متلازمة إهلرز دانلوس" },
+      { en: "Built her gear around herself", ar: "صمّمت عتادها حولها" },
+    ],
+    origin: {
+      en: "A Spider-Woman with Ehlers-Danlos syndrome who designed her own web-shooters and crutches to work together, rather than treating her body as the problem to be solved.",
+      ar: "سبايدر وومان مصابة بمتلازمة إهلرز دانلوس، صمّمت قاذفات خيوطها وعكازيها ليعملا معًا، بدل أن تعامل جسدها كمشكلة تُحلّ.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "charlotte-witter",
+    nameEn: "Charlotte Witter",
+    nameAr: "شارلوت ويتر",
+    aliases: ["Charlotte Witter"],
+    category: "villain",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Drains other spiders' powers", ar: "تمتص قوى العناكب الأخرى" },
+      { en: "Four spider-legs from her back", ar: "أربع أرجل عنكبوتية من ظهرها" },
+      { en: "Made by Doctor Octopus", ar: "صنعها دكتور أوكتوبس" },
+    ],
+    origin: {
+      en: "A model surgically altered by Doctor Octopus into a Spider-Woman built specifically to drain the powers of the others and leave them ordinary.",
+      ar: "عارضة أزياء عدّلها دكتور أوكتوبس جراحيًا إلى سبايدر وومان صُنعت خصيصًا لامتصاص قوى الأخريات وتركهنّ عاديات.",
+    },
+    related: [
+      { id: "doctor-octopus", kind: "ally" },
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "spider-byte",
+    nameEn: "Spider-Byte",
+    nameAr: "سبايدر بايت",
+    aliases: ["Spider-Byte", "Margo Kess"],
+    category: "hero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Lives partly in the network", ar: "تعيش جزئيًا في الشبكة" },
+      { en: "Digital avatar body", ar: "جسد رمزيّ رقمي" },
+      { en: "Powers from a virtual world", ar: "قواها من عالم افتراضي" },
+    ],
+    origin: {
+      en: "A Spider-hero whose powers exist in a virtual reality and who learned to carry them out of it, which makes her the only spider whose body is partly software.",
+      ar: "بطلة عنكبوتية قواها قائمة في واقع افتراضي، وتعلّمت أن تحملها خارجه، فصارت العنكبوت الوحيدة التي جسدها برمجيّ في جزء منه.",
+    },
+    related: [
+      { id: "miles-morales", kind: "ally" },
+    ],
+  },
+  {
+    id: "bride-of-nine-spiders",
+    nameEn: "Bride of Nine Spiders",
+    nameAr: "عروس العناكب التسعة",
+    aliases: ["Bride of Nine Spiders"],
+    category: "antihero",
+    affiliation: ["Spider-Society"],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Nine spiders answer her", ar: "تسعة عناكب تجيبها" },
+      { en: "A chamber of them at her call", ar: "حجرة منها رهن ندائها" },
+      { en: "One of the Immortal Weapons", ar: "إحدى الأسلحة الخالدة" },
+    ],
+    origin: {
+      en: "One of the Seven Capital Cities' Immortal Weapons, who fights by opening her cloak and letting nine spiders out of it. She rarely speaks and does not need to.",
+      ar: "إحدى الأسلحة الخالدة لمدن العواصم السبع، تقاتل بأن تفتح عباءتها فتخرج منها تسعة عناكب. نادرًا ما تتكلم ولا حاجة بها إلى ذلك.",
+    },
+    related: [
+      { id: "iron-fist", kind: "ally" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -12716,6 +12975,7 @@ export const characters: CharacterDraft[] = [
   ...hiddenByAudit,
   ...bugleAndRogues,
   ...powerList,
+  ...spiderVariants,
   ...avengers,
   ...guardians,
   ...xmen,

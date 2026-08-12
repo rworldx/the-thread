@@ -590,6 +590,30 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Matthew_Malloy_%28Earth-14923%29_from_Uncanny_X-Men_Vol_3_24_0002.png/revision/latest?cb=20140731195103",
   "cosmic-ghost-rider":
     "https://static.wikia.nocookie.net/marveldatabase/images/6/61/Cosmic_Ghost_Rider_Vol_1_5_Campbell_Variant_Textless.jpg/revision/latest?cb=20180822094725",
+  /* Batch 17. Each variant is filed under its own reality — Earth-31913,
+     Earth-66, Earth-71490, Earth-90266, Earth-20023, Earth-22191. */
+  "spider-boy":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/71/Edge_of_Spider-Verse_Vol_3_3_Golden_Apple_Comics_Exclusive_Virgin_Variant.jpg/revision/latest?cb=20230621175721",
+  "web-slinger":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/41/Spider-Verse_Vol_3_4_Textless.jpg/revision/latest?cb=20200129124446",
+  "spider-rex":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c5/Edge_of_Spider-Verse_Vol_2_1_Spider-Rex_Variant_Textless.jpg/revision/latest?cb=20240525095212",
+  "spinstress":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Amazing_Spider-Man_Vol_5_75_Lee_Virgin_Variant.jpg/revision/latest?cb=20220405001421",
+  "web-weaver":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9a/Edge_of_Spider-Verse_Vol_2_5_Anka_Variant_Textless.jpg/revision/latest?cb=20221008073944",
+  "spider-smasher":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/0e/Miles_Morales_Spider-Man_Vol_1_38_Spoiler_Variant_Textless.jpg/revision/latest?cb=20230621183015",
+  "old-man-spider":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/2d/Peter_Parker_%28Earth-90266%29_from_What_If%3F_Newer_Fantastic_Four_Vol_1_1_001.jpg/revision/latest?cb=20130214000735",
+  "sun-spider":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/2a/Charlotte_Webber_%28Earth-20023%29_from_Edge_of_Spider-Verse_Vol_2_4_001.jpg/revision/latest?cb=20220924103428",
+  "charlotte-witter":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/bc/Charlotte_Witter_%28Earth-616%29_from_Marvel_Comics_Presents_Vol_3_8_001.png/revision/latest?cb=20190821181658",
+  "spider-byte":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f1/Margo_Kess_%28Earth-22191%29_from_Edge_of_Spider-Verse_Vol_4_1_001.jpg/revision/latest?cb=20240229105530",
+  "bride-of-nine-spiders":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/71/Bride_of_Nine_World-Breakers_%28Temporal_Paradox%29_%28Earth-6160%29_from_Ultimates_Vol_3_12_001.jpg/revision/latest?cb=20260112185324",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:
