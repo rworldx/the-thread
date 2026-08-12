@@ -5584,6 +5584,14 @@ const others: CharacterDraft[] = [
     affiliation: ["Fantastic Four"],
     universe: ["mcu", "legacy"],
     species: "Mutant",
+    /**
+     * OMEGA, and he is the fourteenth name on the House of X #1 list — the
+     * one this corpus was missing. Marvel then spent years treating him as
+     * not a mutant at all, and reversed it in March 2024: he had been
+     * suppressing his own X-gene without knowing. The published list is the
+     * rule here, and he has been on it the whole time.
+     */
+    mutantClass: "omega",
     powers: [
       { en: "Creates universes", ar: "يخلق أكوانًا" },
       { en: "Reshapes reality", ar: "يعيد تشكيل الواقع" },

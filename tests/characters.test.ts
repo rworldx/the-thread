@@ -156,9 +156,9 @@ describe("C. the character corpus", () => {
        by: both are named on Marvel's published Omega list, which the supplied
        roster reproduces. Neither is here because they feel powerful. */
     expect(omegas).toEqual([
-      "elixir", "exodus", "hope-summers", "iceman", "jamie-braddock",
-      "jean-grey", "legion", "magneto", "mister-m", "proteus",
-      "quentin-quire", "storm", "vulcan",
+      "elixir", "exodus", "franklin-richards", "hope-summers", "iceman",
+      "jamie-braddock", "jean-grey", "legion", "magneto", "mister-m",
+      "proteus", "quentin-quire", "storm", "vulcan",
     ]);
     expect(allCharacters.find((c) => c.id === "professor-x")!.mutantClass).not.toBe(
       "omega",
