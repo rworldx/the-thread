@@ -5081,7 +5081,15 @@ const moreMutants: CharacterDraft[] = [
     id: "hope-summers",
     nameEn: "Hope Summers",
     nameAr: "هوب سَمرز",
-    aliases: ["Hope Summers", "Hope"],
+    /**
+     * NO BARE "Hope". Ant-Man and the Wasp credits a "Young Hope" — Hope van
+     * Dyne as a child — and the matcher's age-prefix fallback strips the
+     * "Young" and matches. So a mutant who has never been in a film derived
+     * an Ant-Man credit. Sixth bare-given-name collision in this corpus after
+     * Selene, Thunderbird, the Jackal, the Owl and Abyss, and the first where
+     * the age-prefix rule was the mechanism rather than a plain segment.
+     */
+    aliases: ["Hope Summers"],
     category: "hero",
     affiliation: ["X-Men"],
     universe: ["fox"],
