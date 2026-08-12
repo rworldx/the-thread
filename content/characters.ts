@@ -803,7 +803,13 @@ const xmen: CharacterDraft[] = [
     affiliation: ["X-Men"],
     universe: ["fox", "mcu"],
     species: "Mutant",
-    mutantClass: "alpha",
+    /**
+     * OMEGA SINCE 2025, and he was filed alpha. This file used to say Xavier
+     * was "conspicuously not" on the Omega list and that the absence was a
+     * fact worth carrying — true of House of X #1, false since the
+     * compilation added him. The old note was the reason he sat at alpha.
+     */
+    mutantClass: "omega",
     powers: [
       { en: "The strongest telepath", ar: "أقوى قارئ للأفكار" },
       { en: "Mind control", ar: "التحكم بالعقول" },
@@ -9232,6 +9238,14 @@ const namedMutants: CharacterDraft[] = [
     affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Mutant",
+    /**
+     * OMEGA, WITH AN ASTERISK THAT MATTERS. House of X #1 used Forge as the
+     * COUNTEREXAMPLE to Magneto: his technology could theoretically be
+     * surpassed, and had been. He later built a machine that lets him reach
+     * Omega-level technopathy while using it, which is how he joins the
+     * compilation — machine-assisted rather than naturally classified.
+     */
+    mutantClass: "omega",
     powers: [
       { en: "Invents by instinct", ar: "يخترع بالسليقة" },
       { en: "Sees how machines should be", ar: "يرى ما ينبغي أن تكونه الآلة" },
@@ -12046,6 +12060,13 @@ const mutantsE: CharacterDraft[] = [
     affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Mutant",
+    /**
+     * OMEGA, added in 2025. The power description in secondary sources is
+     * inconsistent — "psychometry" is the common shorthand and is probably
+     * wrong; his Omega claim rests on the essentially unlimited matter his
+     * slugs can consume and process. Left undescribed rather than asserted.
+     */
+    mutantClass: "omega",
     powers: [
       { en: "Two slugs do his digesting", ar: "دودتان تهضمان عنه" },
       { en: "They eat anything at all", ar: "تأكلان أي شيء كان" },

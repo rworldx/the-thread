@@ -34,9 +34,17 @@ export const CharacterCategory = z.enum([
 
 /**
  * The real in-universe classification, not a power level invented for this
- * site. Marvel published the Omega list in House of X #1; the five Omegas in
- * this corpus are on it. Charles Xavier is conspicuously not, which is a fact
- * worth carrying rather than quietly correcting.
+ * site. House of X #1 defined it — a mutant whose dominant power reaches an
+ * undefinable upper limit of its own classification — and named fourteen.
+ *
+ * THE LIST HAS GROWN SINCE AND THIS COMMENT USED TO BE WRONG ABOUT IT. It
+ * said Charles Xavier was "conspicuously not" on the list and that the
+ * absence was worth carrying. True of House of X #1; false since the 2025
+ * additions, which put Xavier, Maggott and Forge on it. The compilation now
+ * runs to 36 names, most of them Arakkii mutants this corpus does not hold.
+ *
+ * Forge is the odd one: House of X used him as the COUNTEREXAMPLE, and he
+ * qualifies only through a machine he built. Recorded, not smoothed over.
  *
  * Null for anyone who is not a mutant, and for mutants with no published rank.
  */

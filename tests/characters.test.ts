@@ -147,6 +147,15 @@ describe("C. the character corpus", () => {
      * list but not in this corpus. Charles Xavier is NOT on that
      * list, which is a real and slightly famous omission, and recording him as
      * Omega because he feels like one would be inventing a fact.
+     *
+     * SEVENTEEN, NOT FOURTEEN. House of X #1 named fourteen; the compilation
+     * has since added Forge, Professor X and Maggott. Xavier's arrival is the
+     * awkward one — this file used to cite his ABSENCE as a fact worth
+     * carrying, and that note is what kept him filed alpha.
+     *
+     * The full list runs to 36. The other nineteen are Arakkii — Genesis,
+     * Isca, Tarn, the Great Ring, the four Horsemen of Arakko — and none of
+     * them is in this corpus, because none of them has ever been filmed.
      */
     const omegas = authored
       .filter((c) => c.mutantClass === "omega")
@@ -156,13 +165,17 @@ describe("C. the character corpus", () => {
        by: both are named on Marvel's published Omega list, which the supplied
        roster reproduces. Neither is here because they feel powerful. */
     expect(omegas).toEqual([
-      "elixir", "exodus", "franklin-richards", "hope-summers", "iceman",
-      "jamie-braddock", "jean-grey", "legion", "magneto", "mister-m",
-      "proteus", "quentin-quire", "storm", "vulcan",
+      "elixir", "exodus", "forge", "franklin-richards", "hope-summers",
+      "iceman", "jamie-braddock", "jean-grey", "legion", "maggott",
+      "magneto", "mister-m", "professor-x", "proteus", "quentin-quire",
+      "storm", "vulcan",
     ]);
-    expect(allCharacters.find((c) => c.id === "professor-x")!.mutantClass).not.toBe(
-      "omega",
-    );
+    /* This asserted the OPPOSITE until today: that Xavier must not be Omega,
+       because House of X #1 pointedly left him off. The 2025 compilation put
+       him on, so the guard now asserts he IS one. Kept as an explicit line
+       rather than folded into the list above, because the reversal is the
+       interesting part and a future reader should see it was deliberate. */
+    expect(allCharacters.find((c) => c.id === "professor-x")!.mutantClass).toBe("omega");
   });
 
   it("C20 every avatar resolved to the character we asked for", () => {
