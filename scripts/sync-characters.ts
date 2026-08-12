@@ -664,6 +664,30 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/6/67/Calvin_Zabo_%28Earth-616%29_from_Avengers_Vol_9_26.jpeg/revision/latest?cb=20250608095846",
   "mister-fear":
     "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/Lawrence_Cranston_%28Earth-616%29_from_Spider-Gwen_The_Ghost-Spider_Vol_1_8_001.jpg/revision/latest?cb=20241209004846",
+  /* Batch 20. Jetstream is filed under his full name, Haroun ibn Sallah
+     al-Rashid. */
+  "abyss":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/08/Nils_Styger_%28Earth-616%29_from_Dark_X-Men_Vol_2_4_001.jpg/revision/latest?cb=20240714142834",
+  "adam-x":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/03/Adam_Neramani_%28Earth-616%29_from_X-Men_Legends_Vol_1_2_0001.jpg/revision/latest?cb=20210402143501",
+  "el-aguila":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e3/Alejandro_Montoya_%28Earth-616%29_from_Marvel_Comics_Presents_Vol_1_9_001.jpg/revision/latest?cb=20240124204145",
+  "alchemy":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d5/Thomas_Jones_%28Earth-616%29_from_Death_of_X_Vol_1_4_001.jpg/revision/latest?cb=20161123184741",
+  "box":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/76/Madison_Jeffries_%28Earth-616%29_from_Sabretooth_Vol_4_4_001.jpg/revision/latest?cb=20220903232912",
+  "eye-boy":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f1/Trevor_Hawkins_%28Earth-616%29_from_X-Factor_Vol_4_6_001.jpg/revision/latest?cb=20210106172350",
+  "fever-pitch":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/Fever_Pitch_%28Earth-616%29_from_X-Force_Vol_3_13_0001.jpg/revision/latest?cb=20131226170533",
+  "gentle":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/61/X-Men_Red_Vol_1_6_Textless.jpg/revision/latest?cb=20180419074741",
+  "graymalkin":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1f/Jonas_Graymalkin_%28Earth-616%29_from_Young_X-Men_Vol_1_10_cover.jpg/revision/latest?cb=20100504163222",
+  "hijack":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/7e/Hijack_%28Earth-616%29_from_X-Men_Legacy_Annual_Vol_1_1_001.jpg/revision/latest?cb=20090918020802",
+  "jetstream":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6d/Haroum_ibn_Sallah_al-Rashid_%28Earth-616%29_from_New_Mutants_Vol_3_7.png/revision/latest?cb=20141103172342",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

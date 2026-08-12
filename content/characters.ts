@@ -13519,6 +13519,266 @@ const minorRogues: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE DEEP MUTANT TAIL, batch 20.
+ *
+ * Abyss carries his real name as his record name — "Abyss (Nils Styger)" —
+ * because an "Abyss" is credited in Moon Girl and Devil Dinosaur and
+ * Nightcrawler's half-brother is not in a children's cartoon. Fifth
+ * single-word codename to need this, and the second caught before writing.
+ *
+ * El Aguila's credit in She-Hulk is real and was confirmed the same way.
+ *
+ * Hindsight was in this batch and is NOT here: no published art exists for
+ * him under any title I could find. He gets a record when there is a picture
+ * to put on it, rather than a wrong picture now.
+ */
+const mutantsG: CharacterDraft[] = [
+  {
+    id: "abyss",
+    nameEn: "Abyss (Nils Styger)",
+    nameAr: "أبيس (نيلز شتايغر)",
+    aliases: ["Nils Styger"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Unravels into a void", ar: "ينحلّ إلى فراغ" },
+      { en: "Pulls things into himself", ar: "يجذب الأشياء إلى داخله" },
+      { en: "Azazel's son", ar: "ابن أزازيل" },
+    ],
+    origin: {
+      en: "Nightcrawler's half-brother and Azazel's son, who can come apart into a hole in the world and draw whatever is nearby into it.",
+      ar: "أخو نايتكرولر لأبيه وابن أزازيل، ينحلّ إلى ثقب في العالم ويجذب إليه ما حوله.",
+    },
+    related: [
+      { id: "nightcrawler", kind: "family" },
+      { id: "azazel", kind: "family" },
+    ],
+  },
+  {
+    id: "adam-x",
+    nameEn: "Adam X the X-Treme",
+    nameAr: "آدم إكس",
+    aliases: ["Adam X", "Adam Neramani", "Adam X the X-Treme"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Ignites blood in the air", ar: "يُشعل الدم في الهواء" },
+      { en: "Throwing cards, always", ar: "بطاقات رمي دائمًا" },
+      { en: "A Shi'ar heir, secretly", ar: "وريث شياري في الخفاء" },
+    ],
+    origin: {
+      en: "A mutant who ignites the blood of anyone bleeding near him, and the half-brother of the Shi'ar empress, which almost nobody in either family knows.",
+      ar: "متحوّل يشعل دم كل نازف قربه، وهو أخو إمبراطورة الشيعار غير الشقيق، وهو ما لا يكاد يعلمه أحد في أيّ من العائلتين.",
+    },
+    related: [
+      { id: "gladiator", kind: "enemy" },
+    ],
+  },
+  {
+    id: "el-aguila",
+    nameEn: "El Aguila",
+    nameAr: "إل أغيلا",
+    aliases: ["El Aguila", "Alejandro Montoya"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Electric charge down a blade", ar: "شحنة كهربائية عبر النصل" },
+      { en: "Fences like a swashbuckler", ar: "يبارز كفارس مغامر" },
+      { en: "A nobleman and a thief", ar: "نبيل ولصّ" },
+    ],
+    origin: {
+      en: "A Spanish nobleman who fences with an electrically charged sabre and robs from people who will not miss it, in the full swashbuckling tradition.",
+      ar: "نبيل إسباني يبارز بسيف مشحون كهربائيًا ويسرق ممن لا يفتقدون المال، على تقليد الفروسية المغامرة كاملًا.",
+    },
+    related: [
+      { id: "she-hulk", kind: "ally" },
+    ],
+  },
+  {
+    id: "alchemy",
+    nameEn: "Alchemy",
+    nameAr: "ألكيمي",
+    aliases: ["Alchemy", "Thomas Jones"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Transmutes any element", ar: "يحوّل أي عنصر" },
+      { en: "Touch is enough", ar: "تكفيه لمسة" },
+      { en: "Wanted nothing to do with it", ar: "لم يُرد شيئًا من ذلك" },
+    ],
+    origin: {
+      en: "A British mutant who turns one element into another by touch, and who spent most of his life trying to have an ordinary one instead.",
+      ar: "متحوّل بريطاني يحوّل عنصرًا إلى آخر باللمس، وأمضى أكثر عمره محاولًا أن يحيا حياة عادية بدل ذلك.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "box",
+    nameEn: "Box",
+    nameAr: "بوكس",
+    aliases: ["Box", "Madison Jeffries"],
+    category: "hero",
+    affiliation: ["Alpha Flight"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Shapes metal by thought", ar: "يشكّل المعدن بالفكر" },
+      { en: "Wears a robot he built", ar: "يرتدي آليًا صنعه" },
+      { en: "Rebuilds it every time", ar: "يعيد بناءه كل مرة" },
+    ],
+    origin: {
+      en: "A Canadian mutant who reshapes metal and machinery with his mind, and who pilots a robot body he has rebuilt from scratch more times than he can count.",
+      ar: "متحوّل كندي يعيد تشكيل المعدن والآلات بعقله، ويقود جسدًا آليًا أعاد بناءه من الصفر مرات لا يحصيها.",
+    },
+    related: [
+      { id: "sasquatch", kind: "ally" },
+    ],
+  },
+  {
+    id: "eye-boy",
+    nameEn: "Eye-Boy",
+    nameAr: "آي بوي",
+    aliases: ["Eye-Boy", "Trevor Hawkins"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Eyes all over his body", ar: "أعين في جسده كله" },
+      { en: "Sees what is hidden", ar: "يرى ما خفي" },
+      { en: "Reads lies and secrets", ar: "يقرأ الكذب والأسرار" },
+    ],
+    origin: {
+      en: "A student covered in eyes who sees far more than sight: secrets, lies, hidden things, and is generally the first to notice something is wrong.",
+      ar: "طالب مغطّى بالأعين يرى أكثر بكثير من البصر: الأسرار والأكاذيب والخفايا، وهو غالبًا أول من يلحظ أن شيئًا ما ليس على ما يرام.",
+    },
+    related: [
+      { id: "armor", kind: "ally" },
+    ],
+  },
+  {
+    id: "fever-pitch",
+    nameEn: "Fever Pitch",
+    nameAr: "فيفر بيتش",
+    aliases: ["Fever Pitch"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Burns without being burned", ar: "يحترق دون أن يتأذى" },
+      { en: "A living fire", ar: "نار حية" },
+      { en: "Ran with the Acolytes", ar: "سار مع الأتباع" },
+    ],
+    origin: {
+      en: "A mutant whose body burns constantly without harming him, who fought for Magneto's followers because nobody on the other side had offered.",
+      ar: "متحوّل يتّقد جسده باستمرار دون أن يؤذيه، قاتل مع أتباع ماغنيتو لأن أحدًا من الجهة الأخرى لم يعرض عليه شيئًا.",
+    },
+    related: [
+      { id: "magneto", kind: "ally" },
+    ],
+  },
+  {
+    id: "gentle",
+    nameEn: "Gentle",
+    nameAr: "جنتل",
+    aliases: ["Gentle", "Nezhno Abidemi"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Grows to enormous size", ar: "ينمو إلى حجم هائل" },
+      { en: "Vibranium tattoos hold it back", ar: "وشوم فيبرانيوم تكبحه" },
+      { en: "Using it is killing him", ar: "استعمالها يقتله" },
+    ],
+    origin: {
+      en: "A Wakandan mutant who grows to giant size, tattooed with vibranium to keep the power from tearing him apart, and who knows each use shortens his life.",
+      ar: "متحوّل واكانديّ ينمو إلى حجم عملاق، وُشم بالفيبرانيوم لئلا تمزّقه قوته، ويعلم أن كل استعمال يقصّر عمره.",
+    },
+    related: [
+      { id: "storm", kind: "ally" },
+    ],
+  },
+  {
+    id: "graymalkin",
+    nameEn: "Graymalkin",
+    nameAr: "غرايمالكين",
+    aliases: ["Graymalkin", "Jonas Graymalkin"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Strength that grows in darkness", ar: "قوة تنمو في الظلام" },
+      { en: "Buried alive for centuries", ar: "دُفن حيًا قرونًا" },
+      { en: "Born in the eighteenth century", ar: "وُلد في القرن الثامن عشر" },
+    ],
+    origin: {
+      en: "A mutant buried alive by his own father in the 1700s for being caught with another boy, whose power kept him alive underground until the ground was disturbed.",
+      ar: "متحوّل دفنه أبوه حيًا في القرن الثامن عشر لأنه ضُبط مع فتى آخر، وأبقته قوته حيًا تحت الأرض حتى قُلبت التربة.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "hijack",
+    nameEn: "Hijack",
+    nameAr: "هايجاك",
+    aliases: ["Hijack", "Marcus"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Drives any vehicle remotely", ar: "يقود أي مركبة عن بعد" },
+      { en: "Never needs to be inside", ar: "لا يحتاج أن يكون داخلها" },
+      { en: "Joined for the ride", ar: "انضم من أجل المتعة" },
+    ],
+    origin: {
+      en: "A mutant who takes control of any vehicle from a distance, and who joined a mutant cause mostly because it looked like the more interesting option.",
+      ar: "متحوّل يسيطر على أي مركبة من بعد، وانضم إلى قضية المتحوّلين في الأغلب لأنها بدت الخيار الأمتع.",
+    },
+    related: [
+      { id: "cyclops", kind: "ally" },
+    ],
+  },
+  {
+    id: "jetstream",
+    nameEn: "Jetstream",
+    nameAr: "جيتستريم",
+    aliases: ["Jetstream", "Haroun ibn Sallah al-Rashid"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Plasma jets from his body", ar: "نفثات بلازما من جسده" },
+      { en: "Flies at enormous speed", ar: "يطير بسرعة هائلة" },
+      { en: "Trained at the Hellions", ar: "تدرّب مع الهيليونز" },
+    ],
+    origin: {
+      en: "A Moroccan mutant who flies by generating plasma exhaust, trained at the school that competed with Xavier's rather than at Xavier's.",
+      ar: "متحوّل مغربي يطير بتوليد عادم بلازمي، تدرّب في المدرسة التي نافست مدرسة إكزافير لا في مدرسته.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -13539,6 +13799,7 @@ export const characters: CharacterDraft[] = [
   ...spiderVariants,
   ...mutantsF,
   ...minorRogues,
+  ...mutantsG,
   ...avengers,
   ...guardians,
   ...xmen,
