@@ -1672,9 +1672,13 @@ const fantasticFour: CharacterDraft[] = [
     aliases: ["Doctor Doom", "Victor Von Doom", "Doom", "Victor Domashev"],
     /* ANTIVILLAIN, not villain. A dictator who genuinely believes only he can protect Latveria, and is often right about the threat if never about himself. */
     category: "antivillain",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["fox", "mcu"],
     species: "Human",
+    /* He learned it, the same as Strange did — Doom studies sorcery as
+       seriously as he studies engineering, and the corpus filed him as a man
+       in armour with no magic at all. */
+    magicSchools: ["eldritch"],
     powers: [
       { en: "Sorcery and science", ar: "سحر وعِلم" },
       { en: "Powered armour", ar: "بذلة مدرّعة" },
@@ -3535,7 +3539,8 @@ const ensemble: CharacterDraft[] = [
     category: "antivillain",
     affiliation: ["Hulks"],
     universe: ["mcu", "animation"],
-    species: "Human",
+    /* NOT Human. He becomes the Red Hulk. Whatever he is between transformations, ordinary is not it. */
+    species: "Enhanced human",
     powers: [
       { en: "Commands the hunt", ar: "يقود المطاردة" },
       { en: "Secretary of State", ar: "وزير الخارجية" },
@@ -5677,7 +5682,8 @@ const others: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Young Avengers"],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT Human. Born in the Utopian Parallel, a pocket universe, to two mothers who were not human either. Punching holes between realities is not a human ability. */
+    species: "Alien",
     powers: [
       { en: "Punches holes between universes", ar: "تلكم ثقوبًا بين الأكوان" },
       { en: "Super strength", ar: "قوة خارقة" },
@@ -5700,7 +5706,8 @@ const others: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Nova Corps"],
     universe: ["legacy"],
-    species: "Human",
+    /* NOT Human. The Nova Force is worn, but it rewrites what the body can do. A man flying at light speed is not in the ordinary-humans chip. */
+    species: "Enhanced human",
     powers: [
       { en: "The Nova Force", ar: "قوة نوفا" },
       { en: "Flight at light speed", ar: "طيران بسرعة الضوء" },
@@ -5720,7 +5727,8 @@ const others: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Nova Corps"],
     universe: ["legacy"],
-    species: "Human",
+    /* NOT Human. Same helmet, same reason. */
+    species: "Enhanced human",
     powers: [
       { en: "The Nova Force", ar: "قوة نوفا" },
       { en: "Flight", ar: "طيران" },
@@ -8134,7 +8142,8 @@ const antagonists: CharacterDraft[] = [
     category: "antivillain",
     affiliation: [],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT Human. He is not human and never was. Gorr is from a desert world that let its god ignore it, and the Necrosword is what he picked up afterwards. */
+    species: "Alien",
     powers: [
       { en: "The Necrosword", ar: "سيف الموت" },
       { en: "Shadow monsters", ar: "وحوش من الظل" },
@@ -15358,7 +15367,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "الأفاتار",
     aliases: ["The Avatar", "Wyn", "Reddwyn"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Human",
     powers: [
