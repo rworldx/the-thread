@@ -15029,10 +15029,50 @@ const cosmicTop: CharacterDraft[] = [
  * own, because a reader searching "Vishanti" and a reader searching "Oshtur"
  * want different pages.
  *
- * Kosmos is the one absent: it has no page of its own anywhere, only mentions
- * inside Kubik's. Second and last character across 264 with nothing to show.
+ * Kosmos is here too, without a picture. See its record: the coverage exists,
+ * the artwork does not, and Avatar has a designed empty state for precisely
+ * that. Nothing across all 264 is left out now.
  */
 const collectives: CharacterDraft[] = [
+  {
+    /**
+     * KOSMOS HAS NO PICTURE, AND THAT IS A DESIGNED STATE.
+     *
+     * I said this one had no page anywhere and that was wrong: it is covered
+     * on Wikipedia inside the Beyonder article, on ComicVine and on League of
+     * Comic Geeks. What genuinely does not exist in any source reachable from
+     * here is a usable IMAGE. The single Marvel Database picture filed under
+     * "Kosmos" is the DIMENSION of that name, which Pym Particles borrow mass
+     * from, and putting a picture of a dimension on a person is the same
+     * mistake as putting an island on Wallop.
+     *
+     * So the record ships with no artwork. Avatar renders an initial plate for
+     * exactly this, and its own comment says the gap is designed rather than
+     * broken. An honest blank beats a confident wrong picture.
+     */
+    id: "kosmos",
+    nameEn: "Kosmos",
+    nameAr: "كوزموس",
+    aliases: ["Kosmos"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Rewrites reality at will", ar: "تعيد كتابة الواقع كما تشاء" },
+      { en: "Grew out of the Beyonder", ar: "نبتت من البيوندر" },
+      { en: "Chose a gentler shape", ar: "اختارت هيئة أرفق" },
+    ],
+    origin: {
+      en: "The Cosmic Cube that formed when the Beyonder and Molecule Man merged, which expelled them both and became its own being. It took a female form deliberately, hoping to avoid what its previous incarnation had been.",
+      ar: "المكعب الكوني الذي تكوّن حين اندمج البيوندر ومولكيول مان، فطردهما وصار كائنًا قائمًا بذاته. واتخذ هيئة أنثوية عن قصد، رجاء أن يتجنّب ما كانه في تجسّده السابق.",
+    },
+    related: [
+      { id: "the-beyonder", kind: "variant" },
+      { id: "molecule-man", kind: "variant" },
+      { id: "kubik", kind: "family" },
+    ],
+  },
   {
     id: "powers-that-be",
     nameEn: "The-Powers-That-Be",
