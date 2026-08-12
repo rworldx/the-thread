@@ -13846,7 +13846,7 @@ const mutantsG: CharacterDraft[] = [
     nameAr: "جنتل",
     aliases: ["Gentle", "Nezhno Abidemi"],
     category: "hero",
-    affiliation: ["X-Men"],
+    affiliation: ["X-Men", "Wakandans"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -15559,6 +15559,155 @@ const collectives: CharacterDraft[] = [
   },
 ];
 
+/**
+ * WAKANDA, THE REST OF IT.
+ *
+ * The Wakandans chip held seven and the country has more people in it than
+ * that. All six here are credited — Nakia in three titles, T'Chaka in three —
+ * and none of them existed. W'Kabi and N'Jobu are typed antivillain on the
+ * usual test: both do harm for a reason the films treat as legitimate, and
+ * N'Jobu's grievance is the one Killmonger inherits.
+ */
+const wakanda: CharacterDraft[] = [
+  {
+    id: "nakia",
+    nameEn: "Nakia",
+    nameAr: "ناكيا",
+    aliases: ["Nakia", "Nakia Shauku"],
+    category: "hero",
+    affiliation: ["Wakandans"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "A War Dog abroad", ar: "كلبة حرب في الخارج" },
+      { en: "Spy before soldier", ar: "جاسوسة قبل أن تكون جندية" },
+      { en: "Argues Wakanda should help", ar: "ترى أن على واكاندا أن تعين" },
+    ],
+    origin: {
+      en: "A Wakandan spy who works outside the country and comes back arguing that a nation this rich has no business hiding, which is the argument the films eventually agree with.",
+      ar: "جاسوسة واكاندية تعمل خارج البلاد وتعود محاججةً بأن أمة بهذا الغنى لا عذر لها في الاختباء، وهي الحجة التي تنتهي الأفلام إلى تصديقها.",
+    },
+    related: [
+      { id: "black-panther", kind: "ally" },
+      { id: "shuri", kind: "ally" },
+    ],
+  },
+  {
+    id: "zuri",
+    nameEn: "Zuri",
+    nameAr: "زوري",
+    aliases: ["Zuri"],
+    category: "supporting",
+    affiliation: ["Wakandans"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "Keeper of the heart-shaped herb", ar: "حارس العشبة القلبية" },
+      { en: "Advised two kings", ar: "نصح ملكين" },
+      { en: "Kept one secret too long", ar: "كتم سرًا أطول مما ينبغي" },
+    ],
+    origin: {
+      en: "The elder who administers the herb that makes a Black Panther, and who kept the truth about N'Jobu from T'Challa until it walked into the throne room.",
+      ar: "الشيخ الذي يناول العشبة التي تصنع بلاك بانثر، وكتم عن تشالا حقيقة نجوبو حتى دخلت قاعة العرش على قدميها.",
+    },
+    related: [
+      { id: "black-panther", kind: "ally" },
+    ],
+  },
+  {
+    id: "wkabi",
+    nameEn: "W'Kabi",
+    nameAr: "وكابي",
+    aliases: ["W'Kabi"],
+    category: "antivillain",
+    affiliation: ["Wakandans"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "Commands the border tribe", ar: "يقود قبيلة الحدود" },
+      { en: "Rides armoured rhinos", ar: "يركب وحيدات قرن مدرّعة" },
+      { en: "Wanted Klaue answered for", ar: "أراد قصاصًا من كلاو" },
+    ],
+    origin: {
+      en: "T'Challa's oldest friend and head of the border tribe, who backed Killmonger because his own king kept failing to bring his parents' killer home.",
+      ar: "أقدم أصدقاء تشالا وزعيم قبيلة الحدود، ساند كيلمونجر لأن ملكه ظل يخفق في إحضار قاتل أبويه.",
+    },
+    related: [
+      { id: "black-panther", kind: "enemy" },
+      { id: "killmonger", kind: "ally" },
+    ],
+  },
+  {
+    id: "njobu",
+    nameEn: "N'Jobu",
+    nameAr: "نجوبو",
+    aliases: ["N'Jobu"],
+    category: "antivillain",
+    affiliation: ["Wakandans"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "A War Dog in Oakland", ar: "كلب حرب في أوكلاند" },
+      { en: "Killmonger's father", ar: "والد كيلمونجر" },
+      { en: "Died at his brother's hand", ar: "مات بيد أخيه" },
+    ],
+    origin: {
+      en: "T'Chaka's brother, sent to spy in America and radicalised by what he saw there, who planned to arm the oppressed and was killed by the king for it.",
+      ar: "أخو تشاكا، أُرسل جاسوسًا إلى أمريكا فتطرّف بما رآه، وعزم على تسليح المضطهدين فقتله الملك لأجل ذلك.",
+    },
+    related: [
+      { id: "killmonger", kind: "family" },
+      { id: "tchaka", kind: "family" },
+    ],
+  },
+  {
+    id: "tchaka",
+    nameEn: "T'Chaka",
+    nameAr: "تشاكا",
+    aliases: ["T'Chaka"],
+    category: "supporting",
+    affiliation: ["Wakandans"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "Black Panther before his son", ar: "بلاك بانثر قبل ابنه" },
+      { en: "Killed his own brother", ar: "قتل أخاه" },
+      { en: "Left the boy behind", ar: "وترك الصبي" },
+    ],
+    origin: {
+      en: "T'Challa's father and the Black Panther before him, who killed his own brother to protect Wakanda's secret and left a child in Oakland to find out about it alone.",
+      ar: "أبو تشالا وبلاك بانثر قبله، قتل أخاه حمايةً لسرّ واكاندا وترك طفلًا في أوكلاند يكتشف الأمر وحده.",
+    },
+    related: [
+      { id: "black-panther", kind: "family" },
+      { id: "njobu", kind: "family" },
+    ],
+  },
+  {
+    id: "aneka",
+    nameEn: "Aneka",
+    nameAr: "أنيكا",
+    aliases: ["Aneka"],
+    category: "hero",
+    affiliation: ["Wakandans"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "Dora Milaje", ar: "الدورا ميلاجي" },
+      { en: "Trains the ones who come after", ar: "تدرّب من يأتين بعدها" },
+      { en: "Fights with vibranium spears", ar: "تقاتل برماح فيبرانيوم" },
+    ],
+    origin: {
+      en: "A Dora Milaje who trains the next of them, and one of the warriors who holds the line when Wakanda is invaded from the sea.",
+      ar: "من الدورا ميلاجي، تدرّب من يليها منهنّ، وإحدى المقاتلات اللواتي يثبتن حين تُغزى واكاندا من البحر.",
+    },
+    related: [
+      { id: "okoye", kind: "ally" },
+      { id: "ayo", kind: "ally" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -15586,6 +15735,7 @@ export const characters: CharacterDraft[] = [
   ...lateAdditions,
   ...cosmicTop,
   ...collectives,
+  ...wakanda,
   ...avengers,
   ...guardians,
   ...xmen,

@@ -838,6 +838,19 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/fictional-battle-omniverse/images/5/5d/Kosmos_Marvel_Comics.jpg/revision/latest?cb=20170425140014",
   clea:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5f/Sorcerer_Supreme_Vol_1_5_Fanyang_Variant_Textless.jpg/revision/latest?cb=20260427073207",
+  /* Wakanda. Nakia is filed as Nakia Shauku. */
+  "zuri":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/50/Zuri_%28Earth-616%29_from_Black_Panther_Vol_3_1_001.jpg/revision/latest?cb=20161122202136",
+  "wkabi":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/09/W%27Kabi_%28Earth-616%29_from_Fantastic_Four_Vol_3_544_0001.jpg/revision/latest?cb=20191202031822",
+  "njobu":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/62/N%27Jobu_%28Earth-199999%29_from_Black_Panther_%28film%29_001.png/revision/latest?cb=20190116201608",
+  "tchaka":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9c/T%27Chaka_%28Earth-616%29_from_Rise_of_the_Black_Panther_Vol_1_1_001.jpg/revision/latest?cb=20200710030331",
+  "aneka":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e9/Aneka_%28Earth-616%29_from_Thunderbolts_Doomstrike_Vol_1_3_001.jpg/revision/latest?cb=20250506193701",
+  "nakia":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Nakia_Shauku_%28Earth-616%29_from_Black_Panther_Vol_3_23_002.jpg/revision/latest?cb=20221025173801",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:
