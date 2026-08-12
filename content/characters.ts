@@ -11194,7 +11194,9 @@ const mutantsB: CharacterDraft[] = [
     affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Mutant",
-    mutantClass: "omega",
+    /* NOT omega. Marvel named its Omega-level mutants in House of X #1 and
+       this one is not on that list. See C12: the rule is the published list,
+       not a fan roster and not how strong someone feels. */
     powers: [
       { en: "A Phoenix host in her own right", ar: "مضيفة للعنقاء بحقّها" },
       { en: "Telepath and telekinetic", ar: "قارئة أفكار ومحرّكة" },
@@ -11370,7 +11372,9 @@ const mutantsC: CharacterDraft[] = [
     affiliation: [],
     universe: ["fox"],
     species: "Mutant",
-    mutantClass: "omega",
+    /* NOT omega. Marvel named its Omega-level mutants in House of X #1 and
+       this one is not on that list. See C12: the rule is the published list,
+       not a fan roster and not how strong someone feels. */
     powers: [
       { en: "Reality bends around him", ar: "الواقع ينثني حوله" },
       { en: "Grown from Scott and Jean", ar: "نبت من سكوت وجين" },
@@ -12598,7 +12602,9 @@ const powerList: CharacterDraft[] = [
     affiliation: ["Brotherhood"],
     universe: ["fox"],
     species: "Mutant",
-    mutantClass: "omega",
+    /* NOT omega. Marvel named its Omega-level mutants in House of X #1 and
+       this one is not on that list. See C12: the rule is the published list,
+       not a fan roster and not how strong someone feels. */
     powers: [
       { en: "Rewrites reality at will", ar: "يعيد كتابة الواقع كما يشاء" },
       { en: "Aged Doctor Doom into dust", ar: "حوّل دكتور دووم إلى غبار" },
@@ -12621,7 +12627,9 @@ const powerList: CharacterDraft[] = [
     affiliation: ["Brotherhood"],
     universe: ["fox"],
     species: "Mutant",
-    mutantClass: "omega",
+    /* NOT omega. Marvel named its Omega-level mutants in House of X #1 and
+       this one is not on that list. See C12: the rule is the published list,
+       not a fan roster and not how strong someone feels. */
     powers: [
       { en: "Warps reality by thinking", ar: "يشوّه الواقع بالتفكير" },
       { en: "The madder he gets, the worse", ar: "كلما ازداد جنونًا ازداد الأمر سوءًا" },
@@ -12690,7 +12698,9 @@ const powerList: CharacterDraft[] = [
     affiliation: [],
     universe: ["fox"],
     species: "Mutant",
-    mutantClass: "omega",
+    /* NOT omega. Marvel named its Omega-level mutants in House of X #1 and
+       this one is not on that list. See C12: the rule is the published list,
+       not a fan roster and not how strong someone feels. */
     powers: [
       { en: "Power he never asked for", ar: "قوة لم يطلبها قط" },
       { en: "Erases whatever frightens him", ar: "يمحو ما يفزعه" },

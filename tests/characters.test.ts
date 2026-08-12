@@ -157,10 +157,8 @@ describe("C. the character corpus", () => {
        roster reproduces. Neither is here because they feel powerful. */
     expect(omegas).toEqual([
       "elixir", "exodus", "hope-summers", "iceman", "jamie-braddock",
-      "jean-grey", "legion",
-      "mad-jim-jaspers", "magneto", "marquis-of-death", "matthew-malloy",
-      "mister-m", "nate-grey", "proteus", "quentin-quire", "rachel-summers",
-      "storm", "vulcan",
+      "jean-grey", "legion", "magneto", "mister-m", "proteus",
+      "quentin-quire", "storm", "vulcan",
     ]);
     expect(allCharacters.find((c) => c.id === "professor-x")!.mutantClass).not.toBe(
       "omega",
