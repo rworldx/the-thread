@@ -4051,7 +4051,10 @@ const abstracts: CharacterDraft[] = [
     category: "antivillain",
     affiliation: ["Cosmic entities"],
     universe: ["legacy"],
-    species: "Human",
+    /* NOT plain Human. A lab technician the accident rewrote: he controls all
+       matter and has held a multiverse together. The body is human and nothing
+       else about him is, which is exactly what Mutate is for. */
+    species: "Mutate",
     powers: [
       { en: "Control of all matter", ar: "تحكّم في كل مادة" },
       { en: "Holds a multiverse together", ar: "يمسك متعدد الأكوان" },

@@ -135,11 +135,30 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       { id: "mutant-epsilon", parent: "mutant", match: (c) => c.mutantClass === "epsilon" },
       {
         id: "human",
+        /**
+         * ORDINARY MEANS ORDINARY, and the rule kept letting people through.
+         *
+         * It began as species plus "no mutant class, no magic", which misses
+         * anyone whose powers were GRANTED rather than born: Black Panther on
+         * the herb, Doom studying sorcery, Molecule Man rewriting matter. Each
+         * was caught by reading a record rather than by the rule.
+         *
+         * A cosmic, divine or symbiotic label now disqualifies too. Someone
+         * who holds a multiverse together is not in the chip for people with
+         * no powers, whatever their species field says.
+         */
         match: (c) =>
           c.species === "Human" &&
           c.mutantClass === null &&
+          (c.magicSchools?.length ?? 0) === 0 &&
           !aff("Magic")(c) &&
-          !aff("Masters of the Mystic Arts")(c),
+          !aff("Masters of the Mystic Arts")(c) &&
+          !aff("Cosmic entities")(c) &&
+          !aff("Celestials")(c) &&
+          !aff("Heralds of Galactus")(c) &&
+          !aff("Elders of the Universe")(c) &&
+          !aff("Symbiotes")(c) &&
+          !aff("Gods")(c),
       },
       { id: "super-soldier", match: is("Enhanced human") },
       { id: "hulks", match: aff("Hulks") },
