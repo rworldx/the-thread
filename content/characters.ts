@@ -12309,9 +12309,13 @@ const hiddenByAudit: CharacterDraft[] = [
     category: "villain",
     affiliation: [],
     universe: ["sony"],
-    species: "Human",
+    /* NOT Human. Miles Warren experimented on himself along with everyone
+       else and ended up a humanoid jackal with claws and enhanced strength.
+       He started as a geneticist and did not stay one. */
+    species: "Mutate",
     powers: [
       { en: "Clones anybody at all", ar: "يستنسخ أي أحد" },
+      { en: "Mutated himself into a jackal", ar: "حوّل نفسه إلى ابن آوى" },
       { en: "Was Peter's professor", ar: "كان أستاذ بيتر" },
       { en: "Grief turned to obsession", ar: "حزن استحال هوسًا" },
     ],
