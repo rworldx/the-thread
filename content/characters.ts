@@ -378,7 +378,8 @@ const avengers: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Avengers", "Wakandans", "Team Iron Man"],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT plain Human. The heart-shaped herb is a serum by another name: it gives him strength, speed and senses past any human's. Filing him Human put the King of Wakanda in a chip meant for people with no powers. */
+    species: "Enhanced human",
     powers: [
       { en: "Enhanced by the herb", ar: "معزّز بالعشبة" },
       { en: "Vibranium suit", ar: "بذلة فيبرانيوم" },
@@ -1765,7 +1766,8 @@ const villains: CharacterDraft[] = [
     category: "antivillain",
     affiliation: ["Wakandans"],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT plain Human. Took the herb too, and beat T'Challa with it. */
+    species: "Enhanced human",
     powers: [
       { en: "Black-ops training", ar: "تدريب عمليات خاصة" },
       { en: "Enhanced by the herb", ar: "معزّز بالعشبة" },
@@ -2243,7 +2245,8 @@ const supporting: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Brotherhood"],
     universe: ["fox"],
-    species: "Human",
+    /* NOT plain Human. Cyttorak's gem made him unstoppable. Whatever else he is, he has not been an ordinary man since he picked it up. */
+    species: "Human mutate",
     powers: [
       { en: "Unstoppable once moving", ar: "لا يتوقف متى تحرّك" },
       { en: "Enormous strength", ar: "قوة هائلة" },
@@ -2794,7 +2797,8 @@ const supporting: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Sinister Six"],
     universe: ["mcu", "sony"],
-    species: "Human",
+    /* NOT plain Human. Surgically bonded to the rig and chemically altered with it. The tail is equipment; the strength is not. */
+    species: "Mutate",
     powers: [
       { en: "Powered tail rig", ar: "ذيل آلي" },
       { en: "Enhanced strength", ar: "قوة معزّزة" },
@@ -8834,7 +8838,8 @@ const cosmicBeings: CharacterDraft[] = [
     category: "antihero",
     affiliation: ["Heralds of Galactus"],
     universe: ["animation"],
-    species: "Human",
+    /* NOT plain Human. She carries the Power Cosmic. A herald of Galactus is not a person with no powers. */
+    species: "Enhanced human",
     powers: [
       { en: "The Power Cosmic", ar: "القوة الكونية" },
       { en: "Burns without being burned", ar: "تحرق دون أن تحترق" },
@@ -10859,7 +10864,8 @@ const heralds: CharacterDraft[] = [
     category: "antihero",
     affiliation: ["Heralds of Galactus"],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT plain Human. An ordinary man remade into a herald — which is the point of him, and also why he cannot stay in a chip for ordinary men. */
+    species: "Enhanced human",
     powers: [
       { en: "The Power Cosmic", ar: "القوة الكونية" },
       { en: "Was an ordinary man", ar: "كان رجلًا عاديًا" },
@@ -12826,7 +12832,8 @@ const powerList: CharacterDraft[] = [
     category: "antihero",
     affiliation: ["Cosmic entities", "Midnight Sons"],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT plain Human. Frank Castle carrying the Power Cosmic and the Spirit of Vengeance at once. */
+    species: "Enhanced human",
     powers: [
       { en: "The Power Cosmic and hellfire", ar: "القوة الكونية ونار الجحيم" },
       { en: "Sold his soul, then his service", ar: "باع روحه ثم خدمته" },
