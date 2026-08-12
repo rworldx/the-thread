@@ -799,6 +799,39 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   /* Wallop is filed as Walter Destine — he is a ClanDestine, not a mutant. */
   "wallop":
     "https://static.wikia.nocookie.net/marveldatabase/images/1/1b/Walter_Destine_%28Earth-616%29_from_ClanDestine_Vol_1_8_001.jpeg/revision/latest?cb=20210628174734",
+  /* Batch 25 — the collectives. The G.O.D.S. abstracts are filed under
+     Earth-616 rather than (Multiverse), which is why the first pass missed
+     all four of them. */
+  "the-centivars":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/44/G.O.D.S._Vol_1_6_Hans_Variant_Textless.jpg/revision/latest?cb=20251026155941",
+  "kubik":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f1/Kubik_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_Update_%2789_Vol_1_4_001.jpg/revision/latest?cb=20160822032522",
+  "shaper-of-worlds":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/04/Shaper_of_Worlds_%28Earth-616%29_from_Incredible_Hulk_Vol_1_155_001.jpg/revision/latest?cb=20210617015245",
+  "great-web":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/74/Vault_of_Spiders_Vol_1_2_Textless.jpg/revision/latest?cb=20180822083236",
+  "master-weaver":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c1/Karn_%28Temporal_Paradox%29_%28Earth-001%29_from_Superior_Spider-Man_Vol_1_33_001.jpg/revision/latest?cb=20240413201814",
+  "undying-ones":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/60/Stephen_Strange_%28Earth-616%29%2C_Namor_McKenzie_%28Earth-616%29%2C_and_Undying_Ones_from_Sub-Mariner_Vol_2_22_001.jpg/revision/latest?cb=20241115075432",
+  "many-angled-ones":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d0/Many-Angled_Ones_from_Thanos_Imperative_Vol_1_6_001.jpg/revision/latest?cb=20210528060529",
+  "cosmic-cube":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Avengers_Standoff_Welcome_to_Pleasant_Hill_Vol_1_1_Textless.jpg/revision/latest?cb=20151117195132",
+  "powers-that-be":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a8/The-Powers-That-Be_%28Earth-616%29_from_Vision_and_the_Scarlet_Witch_Vol_3_1_001.jpg/revision/latest?cb=20250919161905",
+  "natural-order":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f6/The-Natural-Order-of-Things_%28Earth-616%29_from_G.O.D.S._Vol_1_2_001.jpg/revision/latest?cb=20231108171541",
+  "continuum":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Continuum_%28Earth-616%29_from_G.O.D.S._Vol_1_8_Noto_Variant_cover_001.jpg/revision/latest?cb=20241009115951",
+  "the-avatar":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/45/G.O.D.S._Vol_1_1_Virgin_Variant.jpg/revision/latest?cb=20231005190950",
+  "the-vishanti":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b8/Vishanti_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318050230",
+  "the-preordained":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/8e/Preordained_%28Earth-616%29_from_G.O.D.S._Vol_1_6_001.jpg/revision/latest?cb=20240330220442",
+  "the-aspirants":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/8b/Aspirants_from_Marvel_Boy_Vol_2_5_001.jpg/revision/latest?cb=20170427040258",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

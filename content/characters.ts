@@ -15016,6 +15016,362 @@ const cosmicTop: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE COLLECTIVES AND THE CONCEPTS, batch 25 — and this finishes all four
+ * supplied rosters.
+ *
+ * These are the entries I flagged four times as objects rather than people,
+ * and the instruction was to do them all, so they are done as what they are.
+ * The Cosmic Cube is typed `Artifact` and its record says plainly that it is
+ * a device — one that grows a mind if left alone long enough, which is why
+ * Kubik and the Shaper of Worlds are `variant` of it rather than allies.
+ * The Vishanti is a record for the trinity AND the three of them keep their
+ * own, because a reader searching "Vishanti" and a reader searching "Oshtur"
+ * want different pages.
+ *
+ * Kosmos is the one absent: it has no page of its own anywhere, only mentions
+ * inside Kubik's. Second and last character across 264 with nothing to show.
+ */
+const collectives: CharacterDraft[] = [
+  {
+    id: "powers-that-be",
+    nameEn: "The-Powers-That-Be",
+    nameAr: "القوى القائمة",
+    aliases: ["The-Powers-That-Be"],
+    category: "antivillain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Governs magic itself", ar: "تحكم السحر ذاته" },
+      { en: "Opposed to science", ar: "نقيض العلم" },
+      { en: "Refuses an intermediary", ar: "ترفض وسيطًا" },
+    ],
+    origin: {
+      en: "The abstract that governs everything magical and strange. It and its opposite are the only pair in the hierarchy with no intermediary between them, because neither will accept one.",
+      ar: "المجرّدة التي تحكم كل ما هو سحري وغريب. وهي ونقيضها الثنائي الوحيد في التسلسل بلا وسيط بينهما، لأن أيًّا منهما لا يقبل وسيطًا.",
+    },
+    related: [
+      { id: "natural-order", kind: "enemy" },
+    ],
+  },
+  {
+    id: "natural-order",
+    nameEn: "The-Natural-Order-of-Things",
+    nameAr: "النظام الطبيعي للأشياء",
+    aliases: ["The-Natural-Order-of-Things"],
+    category: "antivillain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Governs science itself", ar: "يحكم العلم ذاته" },
+      { en: "Built universes to test in", ar: "بنى أكوانًا ليختبر فيها" },
+      { en: "Hates its opposite", ar: "يمقت نقيضه" },
+    ],
+    origin: {
+      en: "The abstract that governs science and the measurable, which has created entire universes purely to run experiments in. It and magic have kept a truce for millennia and like each other no better for it.",
+      ar: "المجرّد الذي يحكم العلم والمقيس، وقد خلق أكوانًا بأكملها لمجرّد إجراء التجارب فيها. وقد حافظ هو والسحر على هدنة آلاف السنين ولم يزدد أيّ منهما حبًّا للآخر.",
+    },
+    related: [
+      { id: "powers-that-be", kind: "enemy" },
+    ],
+  },
+  {
+    id: "the-preordained",
+    nameEn: "The Preordained",
+    nameAr: "المقدَّر",
+    aliases: ["The Preordained"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Stands between judgement and nothing", ar: "يقف بين القضاء والعدم" },
+      { en: "Speaks for both", ar: "ينطق باسمهما" },
+      { en: "Serves the Tribunal and Oblivion", ar: "يخدم المحكمة والعدم" },
+    ],
+    origin: {
+      en: "The intermediary between the Living Tribunal and Oblivion, carrying messages between the thing that judges everything and the thing that would end it.",
+      ar: "الوسيط بين المحكمة الحية والعدم، يحمل الرسائل بين ما يقضي في كل شيء وما ينهيه.",
+    },
+    related: [
+      { id: "the-living-tribunal", kind: "ally" },
+      { id: "oblivion", kind: "ally" },
+    ],
+  },
+  {
+    id: "continuum",
+    nameEn: "Continuum",
+    nameAr: "كونتينيوم",
+    aliases: ["Continuum"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Abstract Entity",
+    powers: [
+      { en: "Stands between time and space", ar: "يقف بين الزمان والمكان" },
+      { en: "Intermediary for Eternity and Infinity", ar: "وسيط بين الأزل واللانهاية" },
+      { en: "Neither one nor the other", ar: "لا هذا ولا ذاك" },
+    ],
+    origin: {
+      en: "The intermediary between Eternity and Infinity, which is to say between all of time and all of space, and belongs entirely to neither.",
+      ar: "الوسيط بين الأزل واللانهاية، أي بين الزمان كله والمكان كله، ولا ينتمي إلى أيّ منهما كليًا.",
+    },
+    related: [
+      { id: "eternity", kind: "ally" },
+      { id: "infinity", kind: "ally" },
+    ],
+  },
+  {
+    id: "the-avatar",
+    nameEn: "The Avatar",
+    nameAr: "الأفاتار",
+    aliases: ["The Avatar", "Wyn", "Reddwyn"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "Speaks for magic among mortals", ar: "ينطق باسم السحر بين الفانين" },
+      { en: "Chosen, not born", ar: "مختار لا مولود" },
+      { en: "Answers to The-Powers-That-Be", ar: "يتبع القوى القائمة" },
+    ],
+    origin: {
+      en: "The mortal chosen to represent The-Powers-That-Be in the world, currently a man called Wyn, whose authority is borrowed and whose judgement is entirely his own.",
+      ar: "الفاني المختار ليمثّل القوى القائمة في العالم، وهو حاليًا رجل يُدعى وِن، سلطته مستعارة وحكمه له وحده.",
+    },
+    related: [
+      { id: "powers-that-be", kind: "ally" },
+    ],
+  },
+  {
+    id: "the-centivars",
+    nameEn: "The Centivars",
+    nameAr: "السنتيفار",
+    aliases: ["The Centivars", "Aiko Maki"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "A hundred of them at once", ar: "مئة منهم في آن" },
+      { en: "Represent the natural order", ar: "يمثلون النظام الطبيعي" },
+      { en: "Replaced as they die", ar: "يُستبدلون متى ماتوا" },
+    ],
+    origin: {
+      en: "The hundred mortals who represent The-Natural-Order-of-Things, always exactly a hundred, each replaced the moment one of them dies.",
+      ar: "المئة من الفانين الذين يمثلون النظام الطبيعي للأشياء، مئة بالضبط دائمًا، ويُستبدل كلٌّ منهم لحظة موته.",
+    },
+    related: [
+      { id: "natural-order", kind: "ally" },
+    ],
+  },
+  {
+    id: "cosmic-cube",
+    nameEn: "The Cosmic Cube",
+    nameAr: "المكعب الكوني",
+    aliases: ["Cosmic Cube", "The Cosmic Cube"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Artifact",
+    powers: [
+      { en: "Rewrites reality on request", ar: "يعيد كتابة الواقع عند الطلب" },
+      { en: "Wants to become someone", ar: "يريد أن يصير أحدًا" },
+      { en: "Grows a mind if left alone", ar: "ينمو له عقل إن تُرك" },
+    ],
+    origin: {
+      en: "A device that reshapes reality to match a wish, and which is not inert: left long enough, a Cube develops a mind and stops being a tool.",
+      ar: "أداة تعيد تشكيل الواقع بما يوافق أمنية، وهي ليست جامدة: إن تُرك المكعب طويلًا نما له عقل وكفّ عن كونه أداة.",
+    },
+    related: [
+      { id: "red-skull", kind: "enemy" },
+    ],
+  },
+  {
+    id: "kubik",
+    nameEn: "Kubik",
+    nameAr: "كوبيك",
+    aliases: ["Kubik"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "A Cube that woke up", ar: "مكعب استيقظ" },
+      { en: "Learns what a person is", ar: "يتعلم ما يكونه الشخص" },
+      { en: "Taught by the Shaper", ar: "علّمه الصائغ" },
+    ],
+    origin: {
+      en: "A Cosmic Cube that achieved awareness and had to be taught what people are, by another Cube that had already gone through it.",
+      ar: "مكعب كوني بلغ الوعي فاحتاج أن يُعلَّم ما هم الناس، على يد مكعب آخر سبقه إلى ذلك.",
+    },
+    related: [
+      { id: "shaper-of-worlds", kind: "family" },
+      { id: "cosmic-cube", kind: "variant" },
+    ],
+  },
+  {
+    id: "shaper-of-worlds",
+    nameEn: "The Shaper of Worlds",
+    nameAr: "صائغ العوالم",
+    aliases: ["The Shaper of Worlds", "Shaper of Worlds"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Builds worlds out of dreams", ar: "يبني العوالم من الأحلام" },
+      { en: "Was a Cosmic Cube once", ar: "كان مكعبًا كونيًا" },
+      { en: "Needs a dreamer to work", ar: "يحتاج حالمًا ليعمل" },
+    ],
+    origin: {
+      en: "A Cosmic Cube that became a being, which now remakes worlds out of whatever a dreamer gives it, and cannot create anything without somebody to dream it first.",
+      ar: "مكعب كوني صار كائنًا، يعيد صنع العوالم مما يعطيه إياه حالم، ولا يقدر أن يخلق شيئًا دون من يحلم به أولًا.",
+    },
+    related: [
+      { id: "cosmic-cube", kind: "variant" },
+    ],
+  },
+  {
+    id: "great-web",
+    nameEn: "The Great Web of Destiny",
+    nameAr: "شبكة القدر الكبرى",
+    aliases: ["The Great Web of Destiny", "Web of Life and Destiny"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Force",
+    powers: [
+      { en: "Every spider-totem is a strand", ar: "كل طوطم عنكبوتي خيط" },
+      { en: "Connects all realities", ar: "تربط كل الوقائع" },
+      { en: "The Inheritors feed on it", ar: "الورثة يقتاتون عليها" },
+    ],
+    origin: {
+      en: "The structure connecting every spider-totem across every reality, which is why the Inheritors hunt spiders and why killing one is felt everywhere.",
+      ar: "البنية التي تربط كل طوطم عنكبوتي عبر كل واقع، ولذلك يصطاد الورثة العناكب، ولذلك يُحسّ بمقتل واحد في كل مكان.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "master-weaver",
+    nameEn: "The Master Weaver",
+    nameAr: "النسّاج الأعظم",
+    aliases: ["The Master Weaver"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Weaves the Web itself", ar: "ينسج الشبكة نفسها" },
+      { en: "Chained to a loom", ar: "مقيّد إلى نول" },
+      { en: "Was Karn all along", ar: "كان كارن طوال الوقت" },
+    ],
+    origin: {
+      en: "The being that weaves the Great Web, kept chained to the loom by the Inheritors, and revealed to be one of their own family taken out of time.",
+      ar: "الكائن الذي ينسج الشبكة الكبرى، أبقاه الورثة مقيّدًا إلى النول، وتبيّن أنه من عائلتهم نفسها أُخذ من الزمن.",
+    },
+    related: [
+      { id: "karn", kind: "variant" },
+      { id: "great-web", kind: "ally" },
+    ],
+  },
+  {
+    id: "the-vishanti",
+    nameEn: "The Vishanti",
+    nameAr: "الفيشانتي",
+    aliases: ["The Vishanti"],
+    category: "hero",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Cosmic Being",
+    powers: [
+      { en: "Three beings, one oath", ar: "ثلاثة كائنات وقسم واحد" },
+      { en: "Lend power to sorcerers", ar: "يعيرون القوة للسحرة" },
+      { en: "Agamotto, Oshtur, Hoggoth", ar: "أجاموتو وأوشتور وهوغوث" },
+    ],
+    origin: {
+      en: "The trinity every sorcerer swears by, three separate beings who answer as one when invoked and who each have their own record and their own reasons.",
+      ar: "الثالوث الذي يقسم به كل ساحر، ثلاثة كائنات منفصلة تجيب كواحد متى استُنجد بها، ولكلٍّ منها سجلّه وأسبابه.",
+    },
+    related: [
+      { id: "agamotto", kind: "family" },
+      { id: "oshtur", kind: "family" },
+      { id: "hoggoth", kind: "family" },
+    ],
+  },
+  {
+    id: "undying-ones",
+    nameEn: "The Undying Ones",
+    nameAr: "الخالدون",
+    aliases: ["The Undying Ones"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Demon",
+    powers: [
+      { en: "Ruled Earth before people", ar: "حكموا الأرض قبل البشر" },
+      { en: "Waiting to be let back", ar: "ينتظرون من يعيدهم" },
+      { en: "Need a human to open the way", ar: "يحتاجون بشريًا ليفتح الطريق" },
+    ],
+    origin: {
+      en: "A race of demons that ruled this world before humanity and were banished from it, who cannot return unless somebody here opens the door for them.",
+      ar: "جنس من الشياطين حكم هذا العالم قبل البشر ثم نُفي منه، ولا يقدرون على العودة ما لم يفتح لهم أحدٌ من هنا الباب.",
+    },
+    related: [
+      { id: "doctor-strange", kind: "enemy" },
+    ],
+  },
+  {
+    id: "many-angled-ones",
+    nameEn: "The Many-Angled Ones",
+    nameAr: "ذوو الزوايا الكثيرة",
+    aliases: ["The Many-Angled Ones"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Demon",
+    powers: [
+      { en: "From the Cancerverse", ar: "من كون السرطان" },
+      { en: "A reality where death died", ar: "واقع مات فيه الموت" },
+      { en: "Life that will not stop", ar: "حياة لا تتوقف" },
+    ],
+    origin: {
+      en: "The powers behind a reality where Death itself was killed, leaving life to grow without limit until nothing could die and everything was in agony.",
+      ar: "القوى الكامنة وراء واقع قُتل فيه الموت نفسه، فتركت الحياة تنمو بلا حدّ حتى لم يعد شيء يموت وصار كل شيء في عذاب.",
+    },
+    related: [
+      { id: "thanos", kind: "enemy" },
+    ],
+  },
+  {
+    id: "the-aspirants",
+    nameEn: "The Aspirants",
+    nameAr: "الطامحون",
+    aliases: ["The Aspirants"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Celestial",
+    powers: [
+      { en: "The First Firmament's loyal Celestials", ar: "سماويّو الجَلَد الأول الموالون" },
+      { en: "Fought their own siblings", ar: "قاتلوا إخوتهم" },
+      { en: "Lost, and kept fighting", ar: "خسروا وظلّوا يقاتلون" },
+    ],
+    origin: {
+      en: "The Celestials who stayed loyal to the First Firmament when the rest rebelled, and who have been losing that war ever since without conceding it.",
+      ar: "السماويون الذين ظلّوا على ولائهم للجَلَد الأول حين تمرّد الباقون، وما زالوا يخسرون تلك الحرب منذئذ دون أن يسلّموا بها.",
+    },
+    related: [
+      { id: "first-firmament", kind: "ally" },
+      { id: "arishem", kind: "enemy" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -15042,6 +15398,7 @@ export const characters: CharacterDraft[] = [
   ...spiderLast,
   ...lateAdditions,
   ...cosmicTop,
+  ...collectives,
   ...avengers,
   ...guardians,
   ...xmen,
