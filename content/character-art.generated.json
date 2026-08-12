@@ -919,6 +919,66 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "arclight": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/ca/Philippa_Sontag_%28Earth-616%29_from_X-Men_Blue_Vol_1_14_001.jpg/revision/latest?cb=20180611145850",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "beak": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/db/Barnell_Bohusk_%28Earth-616%29_from_X-Men_Unlimited_Infinity_Comic_Vol_1_43_002.jpg/revision/latest?cb=20220909001115",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "ink": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d8/Eric_Gitter_%28Earth-616%29_from_X-Men_Gold_Vol_2_23_001.jpg/revision/latest?cb=20210524073105",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "anarchist": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/7a/Tike_Alicar_%28Earth-616%29_from_Giant-Size_X-Statix_Vol_1_1_001.png/revision/latest?cb=20190715013927",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "maverick": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Christoph_Nord_%28Earth-616%29_from_Wolverine_Vol_7_9_001.jpg/revision/latest?cb=20210301203317",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "hepzibah": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c4/Hepzibah_%28Earth-616%29_from_Mr._and_Mrs._X_Vol_1_4_001.jpg/revision/latest?cb=20181021225424",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "goldballs": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/79/X-Men_-_Forever_Vol_1_4_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250129235615",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "glob-herman": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e9/Robert_Herman_%28Earth-616%29_from_New_Mutants_Vol_4_11_001.jpg/revision/latest?cb=20200821025306",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "angel-dust": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/27/Angel_Dust_%28Earth-616%29_from_Morlocks_Vol_1_1_001.jpg/revision/latest?cb=20130805013835",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "lady-deathstrike": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/61/Death_of_Wolverine_The_Logan_Legacy_Vol_1_4_Textless.jpg/revision/latest?cb=20140819215859",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "fabian-cortez": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/64/Fabian_Cortez_%28Earth-616%29_from_S.W.O.R.D._Vol_2_5_Cover.jpg/revision/latest?cb=20210421164643",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "jamie-braddock": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d9/James_Braddock_Jr._%28Earth-616%29_from_Planet-Size_X-Men_Vol_1_1_001.jpg/revision/latest?cb=20210623002005",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",

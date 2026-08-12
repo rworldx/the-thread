@@ -614,6 +614,31 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/f/f1/Margo_Kess_%28Earth-22191%29_from_Edge_of_Spider-Verse_Vol_4_1_001.jpg/revision/latest?cb=20240229105530",
   "bride-of-nine-spiders":
     "https://static.wikia.nocookie.net/marveldatabase/images/7/71/Bride_of_Nine_World-Breakers_%28Temporal_Paradox%29_%28Earth-6160%29_from_Ultimates_Vol_3_12_001.jpg/revision/latest?cb=20260112185324",
+  /* Batch 18. Angel Dust is filed as "Angel Dust (Christine)". */
+  "arclight":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/ca/Philippa_Sontag_%28Earth-616%29_from_X-Men_Blue_Vol_1_14_001.jpg/revision/latest?cb=20180611145850",
+  "beak":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/db/Barnell_Bohusk_%28Earth-616%29_from_X-Men_Unlimited_Infinity_Comic_Vol_1_43_002.jpg/revision/latest?cb=20220909001115",
+  "ink":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d8/Eric_Gitter_%28Earth-616%29_from_X-Men_Gold_Vol_2_23_001.jpg/revision/latest?cb=20210524073105",
+  "anarchist":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/7a/Tike_Alicar_%28Earth-616%29_from_Giant-Size_X-Statix_Vol_1_1_001.png/revision/latest?cb=20190715013927",
+  "maverick":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Christoph_Nord_%28Earth-616%29_from_Wolverine_Vol_7_9_001.jpg/revision/latest?cb=20210301203317",
+  "hepzibah":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c4/Hepzibah_%28Earth-616%29_from_Mr._and_Mrs._X_Vol_1_4_001.jpg/revision/latest?cb=20181021225424",
+  "goldballs":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/79/X-Men_-_Forever_Vol_1_4_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250129235615",
+  "glob-herman":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e9/Robert_Herman_%28Earth-616%29_from_New_Mutants_Vol_4_11_001.jpg/revision/latest?cb=20200821025306",
+  "lady-deathstrike":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/61/Death_of_Wolverine_The_Logan_Legacy_Vol_1_4_Textless.jpg/revision/latest?cb=20140819215859",
+  "fabian-cortez":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/64/Fabian_Cortez_%28Earth-616%29_from_S.W.O.R.D._Vol_2_5_Cover.jpg/revision/latest?cb=20210421164643",
+  "jamie-braddock":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d9/James_Braddock_Jr._%28Earth-616%29_from_Planet-Size_X-Men_Vol_1_1_001.jpg/revision/latest?cb=20210623002005",
+  "angel-dust":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/27/Angel_Dust_%28Earth-616%29_from_Morlocks_Vol_1_1_001.jpg/revision/latest?cb=20130805013835",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

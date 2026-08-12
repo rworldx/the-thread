@@ -12958,6 +12958,286 @@ const spiderVariants: CharacterDraft[] = [
   },
 ];
 
+/**
+ * MUTANTS, batch 18 — and two of them are not mutants.
+ *
+ * Ink's tattoos grant real powers and he is not a mutant at all; the
+ * tattooist was, which he spent a long time not knowing. Hepzibah is a
+ * Mephitisoid pirate. Both are on the roster and both are typed by what they
+ * actually are, the same call made for Longshot and Lockheed.
+ *
+ * Six of the twelve were confirmed by the pre-check to have real screen
+ * credits before any record was written: Arclight, Ink, Maverick, Angel Dust,
+ * Lady Deathstrike and Fabian Cortez.
+ */
+const mutantsF: CharacterDraft[] = [
+  {
+    id: "arclight",
+    nameEn: "Arclight",
+    nameAr: "آركلايت",
+    aliases: ["Arclight", "Philippa Sontag"],
+    category: "villain",
+    affiliation: ["Marauders"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Shockwaves through the ground", ar: "موجات صدم عبر الأرض" },
+      { en: "Shatters what she stands on", ar: "تحطّم ما تقف عليه" },
+      { en: "A Marauder from the start", ar: "مغيرة منذ البداية" },
+    ],
+    origin: {
+      en: "A Marauder who sends destructive shockwaves through anything she touches, and one of the group Mister Sinister sent into the Morlock tunnels.",
+      ar: "مغيرة تبعث موجات صدم مدمّرة عبر كل ما تلمسه، وإحدى من أرسلهم مستر سينيستر إلى أنفاق المورلوك.",
+    },
+    related: [
+      { id: "mister-sinister", kind: "ally" },
+    ],
+  },
+  {
+    id: "beak",
+    nameEn: "Beak",
+    nameAr: "بيك",
+    aliases: ["Beak", "Barnell Bohusk"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Hollow bones and feathers", ar: "عظام مجوّفة وريش" },
+      { en: "Cannot really fly", ar: "لا يطير حقًا" },
+      { en: "Kindest man in the school", ar: "ألطف رجل في المدرسة" },
+    ],
+    origin: {
+      en: "A bird-like mutant who got all of the appearance and almost none of the ability, and who is widely agreed to be the most decent person the school has produced.",
+      ar: "متحوّل شبيه بالطير، نال المظهر كله ولم ينل من القدرة شيئًا يُذكر، ويكاد يُجمَع على أنه أكرم من أخرجته المدرسة.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "ink",
+    nameEn: "Ink",
+    nameAr: "إنك",
+    aliases: ["Ink", "Eric Gitter"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Tattoos that actually work", ar: "وشوم تعمل فعلًا" },
+      { en: "Not a mutant himself", ar: "ليس متحوّلًا هو نفسه" },
+      { en: "The tattooist was", ar: "الواشم كان كذلك" },
+    ],
+    origin: {
+      en: "A man whose tattoos grant real powers, drawn by a mutant tattooist. He is not a mutant at all, which he spent a long time not knowing.",
+      ar: "رجل تمنحه وشومه قوى حقيقية، رسمها واشم متحوّل. وهو ليس متحوّلًا البتة، وقد جهل ذلك زمنًا طويلًا.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "anarchist",
+    nameEn: "Anarchist",
+    nameAr: "الأناركي",
+    aliases: ["Anarchist", "Tike Alicar"],
+    category: "antihero",
+    affiliation: ["X-Statix"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Corrosive sweat", ar: "عرق أكّال" },
+      { en: "A celebrity mutant", ar: "متحوّل مشهور" },
+      { en: "Angry about the marketing", ar: "غاضب من التسويق" },
+    ],
+    origin: {
+      en: "A member of a mutant team assembled for television, whose sweat burns through anything and who is entirely aware that he was cast rather than recruited.",
+      ar: "عضو في فريق متحوّلين جُمع للتلفزيون، عرقه يحرق كل شيء، وهو يدرك تمامًا أنه اختير للدور لا جُنّد.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "maverick",
+    nameEn: "Maverick",
+    nameAr: "مافريك",
+    aliases: ["Maverick", "Christoph Nord", "Agent Zero"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Absorbs kinetic energy", ar: "يمتص الطاقة الحركية" },
+      { en: "A Weapon X operative", ar: "عميل في ويبون إكس" },
+      { en: "Fought beside Wolverine once", ar: "قاتل مع ولفرين مرة" },
+    ],
+    origin: {
+      en: "A mercenary from the same programme that made Wolverine, who absorbs the force of what hits him and fires it back, and who has been on both sides of Logan more than once.",
+      ar: "مرتزق من البرنامج نفسه الذي صنع ولفرين، يمتص قوة ما يصيبه ويردّها، وكان في جهتَي لوغان أكثر من مرة.",
+    },
+    related: [
+      { id: "wolverine", kind: "ally" },
+    ],
+  },
+  {
+    id: "hepzibah",
+    nameEn: "Hepzibah",
+    nameAr: "هيبزيبا",
+    aliases: ["Hepzibah"],
+    category: "hero",
+    affiliation: ["Starjammers"],
+    universe: ["fox"],
+    species: "Mephitisoid",
+    powers: [
+      { en: "Claws and a skunk's defence", ar: "مخالب ودفاع الظربان" },
+      { en: "A Starjammer, not a mutant", ar: "نجّامة لا متحوّلة" },
+      { en: "Corsair's partner", ar: "شريكة كورسير" },
+    ],
+    origin: {
+      en: "A Mephitisoid pirate of the Starjammers, an alien rather than a mutant, who fights with claws and a scent nobody stays near.",
+      ar: "قرصانة ميفيتيسويدية من النجّامين، فضائية لا متحوّلة، تقاتل بمخالبها وبرائحة لا يبقى أحد قربها.",
+    },
+    related: [
+      { id: "gladiator", kind: "enemy" },
+    ],
+  },
+  {
+    id: "goldballs",
+    nameEn: "Goldballs",
+    nameAr: "غولدبولز",
+    aliases: ["Goldballs", "Fabio Medina"],
+    category: "hero",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Fires golden spheres", ar: "يقذف كرات ذهبية" },
+      { en: "They are not gold", ar: "وليست ذهبًا" },
+      { en: "The spheres were eggs", ar: "الكرات كانت بيضًا" },
+    ],
+    origin: {
+      en: "A mutant who generates large golden spheres, treated as a joke power for years, until it emerged that the spheres were how mutants were being resurrected.",
+      ar: "متحوّل يولّد كرات ذهبية كبيرة، عُدّت قوةً هزلية سنين، حتى تبيّن أن تلك الكرات هي وسيلة إحياء المتحوّلين.",
+    },
+    related: [
+      { id: "magik", kind: "ally" },
+    ],
+  },
+  {
+    id: "glob-herman",
+    nameEn: "Glob Herman",
+    nameAr: "غلوب هيرمان",
+    aliases: ["Glob Herman", "Robert Herman"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "A body of translucent wax", ar: "جسد من شمع شفّاف" },
+      { en: "His skeleton is visible", ar: "هيكله ظاهر" },
+      { en: "Highly flammable", ar: "سريع الاشتعال" },
+    ],
+    origin: {
+      en: "A mutant made of transparent bio-paraffin with his skeleton showing through, who is well liked, easily set on fire, and rebuilds afterwards.",
+      ar: "متحوّل من برافين حيوي شفاف يظهر هيكله عبره، محبوب، سريع الاشتعال، ويعيد بناء نفسه بعدها.",
+    },
+    related: [
+      { id: "magik", kind: "ally" },
+    ],
+  },
+  {
+    id: "angel-dust",
+    nameEn: "Angel Dust",
+    nameAr: "أنجل داست",
+    aliases: ["Angel Dust"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Adrenaline-driven strength", ar: "قوة تحرّكها الأدرينالين" },
+      { en: "Bursts, then crashes", ar: "تندفع ثم تنهار" },
+      { en: "Loyal to whoever took her in", ar: "وفية لمن آواها" },
+    ],
+    origin: {
+      en: "A mutant whose strength spikes on adrenaline and drops just as fast, who fights for the people who gave her somewhere to be rather than for a cause.",
+      ar: "متحوّلة تقفز قوتها بالأدرينالين وتهبط بالسرعة نفسها، تقاتل من أجل من آووها لا من أجل قضية.",
+    },
+    related: [
+      { id: "deadpool", kind: "enemy" },
+    ],
+  },
+  {
+    id: "lady-deathstrike",
+    nameEn: "Lady Deathstrike",
+    nameAr: "الليدي ديثسترايك",
+    aliases: ["Lady Deathstrike", "Yuriko Oyama"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Cyborg",
+    powers: [
+      { en: "Adamantium talons", ar: "مخالب أداماتيوم" },
+      { en: "Rebuilt herself for revenge", ar: "أعادت بناء نفسها للثأر" },
+      { en: "Hunts Wolverine specifically", ar: "تطارد ولفرين تحديدًا" },
+    ],
+    origin: {
+      en: "The daughter of the man who invented the adamantium bonding process, who had herself rebuilt as a cyborg to hunt the man wearing her father's work.",
+      ar: "ابنة الرجل الذي ابتكر طريقة ربط الأداماتيوم، أعادت بناء نفسها آلية لتطارد الرجل الذي يرتدي عمل أبيها.",
+    },
+    related: [
+      { id: "wolverine", kind: "enemy" },
+    ],
+  },
+  {
+    id: "fabian-cortez",
+    nameEn: "Fabian Cortez",
+    nameAr: "فابيان كورتيز",
+    aliases: ["Fabian Cortez"],
+    category: "villain",
+    affiliation: ["Brotherhood"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Amplifies another's power", ar: "يضخّم قوة غيره" },
+      { en: "Burns them out doing it", ar: "ويحرقهم وهو يفعل" },
+      { en: "Betrayed Magneto first", ar: "خان ماغنيتو أولًا" },
+    ],
+    origin: {
+      en: "A mutant who boosts other mutants' abilities to the point of killing them, and who used that on Magneto while calling himself his most loyal follower.",
+      ar: "متحوّل يضخّم قدرات المتحوّلين إلى حدّ قتلهم، واستعمل ذلك على ماغنيتو وهو يسمّي نفسه أوفى أتباعه.",
+    },
+    related: [
+      { id: "magneto", kind: "enemy" },
+    ],
+  },
+  {
+    id: "jamie-braddock",
+    nameEn: "Jamie Braddock",
+    nameAr: "جيمي برادوك",
+    aliases: ["Jamie Braddock", "James Braddock"],
+    category: "antivillain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    mutantClass: "omega",
+    powers: [
+      { en: "Sees reality as strings", ar: "يرى الواقع خيوطًا" },
+      { en: "Reties them at will", ar: "ويعيد عقدها كما يشاء" },
+      { en: "Sanity did not survive it", ar: "لم يصمد عقله لذلك" },
+    ],
+    origin: {
+      en: "Betsy and Brian Braddock's brother, an Omega-level reality manipulator who sees the world as knotted strings and lost his mind somewhere in the untangling.",
+      ar: "أخو بيتسي وبراين برادوك، متلاعب بالواقع من مستوى أوميغا يرى العالم خيوطًا معقودة، وفقد عقله في مكان ما من فكّها.",
+    },
+    related: [
+      { id: "psylocke", kind: "family" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -12976,6 +13256,7 @@ export const characters: CharacterDraft[] = [
   ...bugleAndRogues,
   ...powerList,
   ...spiderVariants,
+  ...mutantsF,
   ...avengers,
   ...guardians,
   ...xmen,
