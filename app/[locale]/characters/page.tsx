@@ -67,6 +67,7 @@ export default async function CharactersPage({
     affiliation: c.affiliation,
     species: c.species,
     mutantClass: c.mutantClass,
+    symbioteClass: c.symbioteClass,
     universe: c.universe,
     appearances: c.appearances.length,
     /**

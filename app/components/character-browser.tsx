@@ -32,6 +32,7 @@ export interface CharacterCard {
   affiliation: string[];
   species: string | null;
   mutantClass: MutantClass | null;
+  symbioteClass: string | null;
   universe: string[];
   /** Distinct performers, so "Tobey" and "Jackman" are searchable terms. */
   actors: string[];
@@ -67,7 +68,18 @@ type Rule = (c: CharacterCard) => boolean;
 const aff = (name: string): Rule => (c) => c.affiliation.includes(name);
 const is = (...names: string[]): Rule => (c) => c.species !== null && names.includes(c.species);
 
-const GROUPS: { group: string; chips: { id: string; match: Rule }[] }[] = [
+/**
+ * A CHIP CAN HAVE A PARENT, and children only appear once the parent is on.
+ *
+ * "Mutant" is a useful answer and "Omega" is a better one, but showing both
+ * at once puts thirty chips on a page whose whole job is narrowing. So the
+ * level chips live under their parent and unfold when it is chosen: press
+ * Mutant and the classes appear, press Symbiote and the four origins do.
+ *
+ * The parent chip stays selectable throughout, because "all mutants" is still
+ * the most common thing anyone wants.
+ */
+const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string }[] }[] = [
   {
     group: "role",
     chips: [
@@ -109,6 +121,12 @@ const GROUPS: { group: string; chips: { id: string; match: Rule }[] }[] = [
     group: "kind",
     chips: [
       { id: "mutant", match: is("Mutant", "Mutant hybrid") },
+      /* Marvel's own published ranks, not a power score invented here. Only
+         the four the corpus actually holds get a chip. */
+      { id: "mutant-omega", parent: "mutant", match: (c) => c.mutantClass === "omega" },
+      { id: "mutant-alpha", parent: "mutant", match: (c) => c.mutantClass === "alpha" },
+      { id: "mutant-beta", parent: "mutant", match: (c) => c.mutantClass === "beta" },
+      { id: "mutant-gamma", parent: "mutant", match: (c) => c.mutantClass === "gamma" },
       { id: "inhuman", match: is("Inhuman") },
       { id: "eternal", match: is("Eternal") },
       { id: "celestial", match: is("Celestial") },
@@ -117,6 +135,12 @@ const GROUPS: { group: string; chips: { id: string; match: Rule }[] }[] = [
          reading species alone — Agent Venom carrying the Venom symbiote is a
          symbiote answer to "show me the symbiotes". */
       { id: "symbiote", match: is("Symbiote", "Symbiote god", "Symbiote host") },
+      /* Origin, not strength: a spawn was harvested in a lab and a lineage was
+         born, which is why Toxin and Riot are different kinds of thing. */
+      { id: "symbiote-lineage", parent: "symbiote", match: (c) => c.symbioteClass === "lineage" },
+      { id: "symbiote-spawn", parent: "symbiote", match: (c) => c.symbioteClass === "spawn" },
+      { id: "symbiote-anomaly", parent: "symbiote", match: (c) => c.symbioteClass === "anomaly" },
+      { id: "symbiote-ancient", parent: "symbiote", match: (c) => c.symbioteClass === "ancient" },
       { id: "hulks", match: aff("Hulks") },
       {
         id: "asgardian",
@@ -139,9 +163,48 @@ const GROUPS: { group: string; chips: { id: string; match: Rule }[] }[] = [
           aff("Masters of the Mystic Arts")(c) ||
           is("Witch", "Demon", "Human avatar")(c),
       },
+      /* The parent stays: "show me the magic users" is still the common ask.
+         These three split what it was doing badly, because a Sorcerer
+         Supreme, an Elder God and a demon are not the same kind of thing. */
+      {
+        id: "sorcerer",
+        parent: "magician",
+        match: (c) => aff("Masters of the Mystic Arts")(c) || aff("Vishanti")(c),
+      },
+      { id: "elder-god", parent: "magician", match: is("Elder God") },
+      { id: "demon", parent: "magician", match: is("Demon", "Faltine") },
       {
         id: "cosmic",
-        match: (c) => is("Abstract entity", "Cosmic entity", "Watcher")(c) || aff("Cosmic entities")(c),
+        match: (c) =>
+          is("Abstract entity", "Cosmic entity", "Cosmic Being", "Watcher")(c) ||
+          aff("Cosmic entities")(c),
+      },
+      /* Same rule as magic: the parent stays and the three real distinctions
+         inside it get their own chips. The list's own caveat is that these
+         are different CATEGORIES rather than different tiers. */
+      {
+        id: "abstract",
+        parent: "cosmic",
+        match: is("Abstract entity", "Abstract Entity"),
+      },
+      { id: "elder-universe", parent: "cosmic", match: aff("Elders of the Universe") },
+      { id: "herald", parent: "cosmic", match: aff("Heralds of Galactus") },
+      /**
+       * ORDINARY PEOPLE, which is a real answer and was missing.
+       *
+       * Iron Man, Black Widow, Hawkeye, Nick Fury, Kingpin: no mutation, no
+       * serum, no magic, no alien blood. Everything they do they do with
+       * money, training or nerve, and a reader who wants exactly that had no
+       * way to ask for it. Enhanced humans and mutates are deliberately NOT
+       * here — a super-soldier is not an ordinary man.
+       */
+      {
+        id: "human",
+        match: (c) =>
+          c.species === "Human" &&
+          c.mutantClass === null &&
+          !aff("Magic")(c) &&
+          !aff("Masters of the Mystic Arts")(c),
       },
     ],
   },
@@ -304,13 +367,18 @@ export function CharacterBrowser({
                 {t(`chipGroup.${g.group}`)}
               </span>
               <div className="chip-band-row">
-                {g.chips.map((c) => (
+                {g.chips
+                  /* A child shows when its parent is the active chip, or when
+                     it is itself active — otherwise pressing one would hide
+                     the row it lives in. */
+                  .filter((c) => !c.parent || c.parent === chip || c.id === chip)
+                  .map((c) => (
                   <button
                     key={c.id}
                     type="button"
                     role="radio"
                     aria-checked={chip === c.id}
-                    className="chip"
+                    className={c.parent ? "chip chip-child" : "chip"}
                     onClick={() => setChip(c.id)}
                   >
                     {t(`chip.${c.id}`)}

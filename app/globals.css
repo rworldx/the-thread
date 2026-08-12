@@ -5936,3 +5936,25 @@ html:has(:target) {
   flex-direction: row;
   align-items: center;
 }
+
+/**
+ * A CHILD CHIP, which is a narrowing of the one before it rather than a
+ * sibling of it. Indented by a marker rather than by margin so it still sits
+ * in the same wrapping row, and dimmer until chosen so the parent stays the
+ * thing the eye lands on.
+ */
+.chip-child {
+  font-size: 0.85em;
+  opacity: 0.85;
+}
+.chip-child::before {
+  content: "";
+  display: inline-block;
+  inline-size: 0.45em;
+  block-size: 0.45em;
+  margin-inline-end: 0.4em;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.5;
+  vertical-align: middle;
+}
