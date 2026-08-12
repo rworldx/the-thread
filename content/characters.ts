@@ -1842,7 +1842,12 @@ const villains: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Witch",
-    magicSchool: "chaos",
+    /* NOT chaos. Chaos magic is the thing Agatha covets and cannot do — the
+       entire plot of WandaVision is her working out that Wanda has it and she
+       does not, then trying to take it. She is a centuries-old witch
+       practising traditional dark witchcraft, which is a different craft
+       rather than a lesser amount of the same one. */
+    magicSchool: "dark",
     powers: [
       { en: "Witchcraft", ar: "سحر" },
       { en: "Drains other witches", ar: "تستنزف الساحرات الأخريات" },
@@ -7419,7 +7424,9 @@ const smallScreen: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["marvel-tv"],
     species: "Witch",
-    magicSchool: "chaos",
+    /* The Staff of One is blood magic, paid for in her own blood and never
+       repeating a spell. Closer to Agatha's witchcraft than to Wanda's. */
+    magicSchool: "dark",
     powers: [
       { en: "The Staff of One", ar: "عصا الواحد" },
       { en: "Each spell said once", ar: "كل تعويذة تُقال مرة" },
@@ -10415,7 +10422,10 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Masters of the Mystic Arts"],
     universe: ["mcu"],
     species: "Faltine",
-    magicSchool: "eldritch",
+    /* NOT eldritch. She is born of the Dark Dimension and rules it after
+       Dormammu; the purple she throws is his energy, not Kamar-Taj's. She
+       learns Earth sorcery later, but the magic she IS comes from there. */
+    magicSchool: "dark",
     powers: [
       { en: "Sorceress of the Dark Dimension", ar: "ساحرة البعد المظلم" },
       { en: "Opens incursions and closes them", ar: "تفتح الاختراقات وتغلقها" },
