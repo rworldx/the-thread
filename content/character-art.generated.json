@@ -1094,6 +1094,56 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "krakoa": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Krakoa_%28Earth-616%29_from_X-Men_Vol_6_35_001.jpg/revision/latest?cb=20240606005137",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "lila-cheney": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/ba/Lila_Cheney_%28Earth-616%29_from_Dazzler_Vol_3_3_001.jpg/revision/latest?cb=20241201203131",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "living-monolith": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Ahmet_Abdol_%28Earth-616%29_from_Uncanny_X-Men_Vol_1_376_001.jpg/revision/latest?cb=20260214031915",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "loa": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a7/Alani_Ryan_%28Earth-616%29_from_Fear_Itself_The_Deep_Vol_1_3_002.jpg/revision/latest?cb=20210425114523",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "mondo": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/3b/Mondo_%28Earth-616%29_from_New_Mutants_Vol_4_1_001.jpg/revision/latest?cb=20191106231552",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "nature-girl": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e8/Lin_Li_%28Earth-616%29_from_X-Men_Heir_of_Apocalypse_Vol_1_1_001.jpg/revision/latest?cb=20240613092339",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "petra": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1a/Petra_%28Earth-616%29_from_X-Men_Deadly_Genesis_Vol_1_4_0001.png/revision/latest?cb=20190407082142",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "random": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c5/Marshall_Stone_III_%28Earth-616%29_from_X-Force_Vol_6_12_001.jpg/revision/latest?cb=20200911033832",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "tempo": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/ad/Marauders_Vol_2_4_Textless.jpg/revision/latest?cb=20220319231800",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "unus": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/35/Gunther_Bain_%28Earth-616%29_from_Excalibur_Vol_3_2_001.jpg/revision/latest?cb=20220629024846",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",

@@ -688,6 +688,27 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7e/Hijack_%28Earth-616%29_from_X-Men_Legacy_Annual_Vol_1_1_001.jpg/revision/latest?cb=20090918020802",
   "jetstream":
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6d/Haroum_ibn_Sallah_al-Rashid_%28Earth-616%29_from_New_Mutants_Vol_3_7.png/revision/latest?cb=20141103172342",
+  /* Batch 21. */
+  "krakoa":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Krakoa_%28Earth-616%29_from_X-Men_Vol_6_35_001.jpg/revision/latest?cb=20240606005137",
+  "lila-cheney":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/ba/Lila_Cheney_%28Earth-616%29_from_Dazzler_Vol_3_3_001.jpg/revision/latest?cb=20241201203131",
+  "living-monolith":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Ahmet_Abdol_%28Earth-616%29_from_Uncanny_X-Men_Vol_1_376_001.jpg/revision/latest?cb=20260214031915",
+  "loa":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a7/Alani_Ryan_%28Earth-616%29_from_Fear_Itself_The_Deep_Vol_1_3_002.jpg/revision/latest?cb=20210425114523",
+  "mondo":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/3b/Mondo_%28Earth-616%29_from_New_Mutants_Vol_4_1_001.jpg/revision/latest?cb=20191106231552",
+  "nature-girl":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e8/Lin_Li_%28Earth-616%29_from_X-Men_Heir_of_Apocalypse_Vol_1_1_001.jpg/revision/latest?cb=20240613092339",
+  "petra":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1a/Petra_%28Earth-616%29_from_X-Men_Deadly_Genesis_Vol_1_4_0001.png/revision/latest?cb=20190407082142",
+  "random":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c5/Marshall_Stone_III_%28Earth-616%29_from_X-Force_Vol_6_12_001.jpg/revision/latest?cb=20200911033832",
+  "tempo":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/ad/Marauders_Vol_2_4_Textless.jpg/revision/latest?cb=20220319231800",
+  "unus":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/35/Gunther_Bain_%28Earth-616%29_from_Excalibur_Vol_3_2_001.jpg/revision/latest?cb=20220629024846",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

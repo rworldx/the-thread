@@ -13779,6 +13779,241 @@ const mutantsG: CharacterDraft[] = [
   },
 ];
 
+/**
+ * MUTANTS, batch 21.
+ *
+ * Two more were in this batch and are not here: Match and Sunder both came
+ * back with no published art, joining Hindsight. Three characters out of
+ * thirty-four at this depth, which is where the pictures finally start
+ * running out rather than where I predicted they would.
+ *
+ * Krakoa is typed as a mutant island rather than a mutant, because that is
+ * what it is: the living land the nation was built on, and an enemy before it
+ * was a home.
+ */
+const mutantsH: CharacterDraft[] = [
+  {
+    id: "krakoa",
+    nameEn: "Krakoa",
+    nameAr: "كراكوا",
+    aliases: ["Krakoa"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant island",
+    powers: [
+      { en: "An island that is alive", ar: "جزيرة حية" },
+      { en: "Grows what mutants need", ar: "تنبت ما يحتاجه المتحوّلون" },
+      { en: "Was an enemy first", ar: "كانت عدوة أولًا" },
+    ],
+    origin: {
+      en: "A living island that is itself a mutant, which fought the X-Men before becoming the place they built a nation on. It grows the habitats and the gateways.",
+      ar: "جزيرة حية هي نفسها متحوّلة، قاتلت الإكس مِن قبل أن تصير المكان الذي أقاموا عليه أمّة. وهي تنبت المساكن والبوابات.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "lila-cheney",
+    nameEn: "Lila Cheney",
+    nameAr: "ليلى تشيني",
+    aliases: ["Lila Cheney"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Teleports across galaxies", ar: "تنتقل عبر المجرّات" },
+      { en: "Only interstellar distances", ar: "المسافات النجمية فقط" },
+      { en: "A rock star by trade", ar: "نجمة روك بالمهنة" },
+    ],
+    origin: {
+      en: "An intergalactic rock star who can only teleport light-years at a time, which makes her useless for crossing a room and unmatched for crossing a galaxy.",
+      ar: "نجمة روك بين المجرّات لا تنتقل إلا سنين ضوئية دفعة واحدة، فلا تنفع لعبور غرفة ولا تُبارى في عبور مجرّة.",
+    },
+    related: [
+      { id: "cannonball", kind: "ally" },
+    ],
+  },
+  {
+    id: "living-monolith",
+    nameEn: "Living Monolith",
+    nameAr: "المونوليث الحي",
+    aliases: ["Living Monolith", "Ahmet Abdol"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Grows to the size of a building", ar: "ينمو بحجم بناية" },
+      { en: "Draws power from cosmic rays", ar: "يستمد قوته من الأشعة الكونية" },
+      { en: "An Egyptologist first", ar: "عالم مصريات أولًا" },
+    ],
+    origin: {
+      en: "An Egyptologist whose mutation lets him grow enormous on cosmic energy, and who decided that made him the heir of the pharaohs rather than a man with a condition.",
+      ar: "عالم مصريات تتيح له طفرته أن ينمو هائلًا بالطاقة الكونية، فقرّر أن ذلك يجعله وريث الفراعنة لا رجلًا ذا حالة.",
+    },
+    related: [
+      { id: "apocalypse", kind: "enemy" },
+    ],
+  },
+  {
+    id: "loa",
+    nameEn: "Loa",
+    nameAr: "لوا",
+    aliases: ["Loa", "Alani Ryan"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Phases through solid matter", ar: "تعبر المادة الصلبة" },
+      { en: "Dissolves what she passes through", ar: "تذيب ما تعبره" },
+      { en: "A surfer from Hawaii", ar: "راكبة أمواج من هاواي" },
+    ],
+    origin: {
+      en: "A Hawaiian student who passes through solid objects and leaves them crumbling behind her, which makes her power closer to destruction than to Kitty Pryde's.",
+      ar: "طالبة من هاواي تعبر الأجسام الصلبة فتتركها متفتّتة خلفها، فقوّتها أقرب إلى التدمير منها إلى قوة كيتي برايد.",
+    },
+    related: [
+      { id: "kitty-pryde", kind: "ally" },
+    ],
+  },
+  {
+    id: "mondo",
+    nameEn: "Mondo",
+    nameAr: "موندو",
+    aliases: ["Mondo"],
+    category: "antihero",
+    affiliation: ["Generation X"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Absorbs and becomes matter", ar: "يمتص المادة ويصيرها" },
+      { en: "Rock, wood, metal, all of it", ar: "صخر وخشب ومعدن، كلها" },
+      { en: "A Samoan student", ar: "طالب ساموي" },
+    ],
+    origin: {
+      en: "A Samoan mutant who takes on the properties of whatever he touches, and who was replaced by a duplicate for long enough that nobody is sure which appearances were him.",
+      ar: "متحوّل ساموي يكتسب خصائص ما يلمسه، واستُبدل بنسخة مدة طويلة حتى لم يعد أحد متيقنًا أي الظهورات كانت له.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "nature-girl",
+    nameEn: "Nature Girl",
+    nameAr: "فتاة الطبيعة",
+    aliases: ["Nature Girl", "Lin Li"],
+    category: "antihero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Speaks with animals and plants", ar: "تكلّم الحيوان والنبات" },
+      { en: "Takes their side", ar: "وتنحاز إليها" },
+      { en: "Against people, often", ar: "ضد الناس غالبًا" },
+    ],
+    origin: {
+      en: "A student who can talk to every living thing that is not human, and who has increasingly concluded that humans are the problem the rest of them describe.",
+      ar: "طالبة تكلّم كل حيّ غير بشري، وخلصت على نحو متزايد إلى أن البشر هم المشكلة التي يصفها سائر الأحياء.",
+    },
+    related: [
+      { id: "storm", kind: "ally" },
+    ],
+  },
+  {
+    id: "petra",
+    nameEn: "Petra",
+    nameAr: "بيترا",
+    aliases: ["Petra"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Commands rock and earth", ar: "تأمر الصخر والأرض" },
+      { en: "Died on her first mission", ar: "ماتت في أول مهمة" },
+      { en: "Xavier erased the team", ar: "محا إكزافير الفريق" },
+    ],
+    origin: {
+      en: "A member of the second team Xavier sent to Krakoa, who died there, and whose existence he removed from everyone's memory including his own students.",
+      ar: "عضوة في الفريق الثاني الذي أرسله إكزافير إلى كراكوا، ماتت هناك، ومحا وجودها من ذاكرة الجميع بمن فيهم طلابه.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "random",
+    nameEn: "Random",
+    nameAr: "راندوم",
+    aliases: ["Random", "Marshall Stone"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "A shapeshifting weapon body", ar: "جسد سلاح متبدّل" },
+      { en: "Reforms limbs into guns", ar: "يحوّل أطرافه إلى مدافع" },
+      { en: "Was a teenager underneath", ar: "كان مراهقًا تحت ذلك" },
+    ],
+    origin: {
+      en: "A mercenary whose body is a shapeless mass that reshapes into weapons, hiding a teenager who was experimented on and never quite got to be one.",
+      ar: "مرتزق جسده كتلة بلا شكل تعيد تشكّلها أسلحة، تخفي مراهقًا جُرّب عليه ولم يُتح له قط أن يكون مراهقًا.",
+    },
+    related: [
+      { id: "cyclops", kind: "ally" },
+    ],
+  },
+  {
+    id: "tempo",
+    nameEn: "Tempo",
+    nameAr: "تيمبو",
+    aliases: ["Tempo", "Heather Tucker"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Slows or speeds time locally", ar: "تبطئ الزمن أو تسرّعه موضعيًا" },
+      { en: "A field she controls", ar: "حقل تتحكم به" },
+      { en: "Fought for the Mutant Liberation Front", ar: "قاتلت مع جبهة تحرير المتحوّلين" },
+    ],
+    origin: {
+      en: "A mutant who alters the speed of time inside a field around her, and who spent her early years with a militant group before deciding the method was the problem.",
+      ar: "متحوّلة تغيّر سرعة الزمن داخل حقل حولها، وأمضت سنيها الأولى مع جماعة مسلحة قبل أن ترى أن الأسلوب هو المشكلة.",
+    },
+    related: [
+      { id: "cable", kind: "enemy" },
+    ],
+  },
+  {
+    id: "unus",
+    nameEn: "Unus the Untouchable",
+    nameAr: "أونوس المنيع",
+    aliases: ["Unus", "Unus the Untouchable", "Angelo Unuscione"],
+    category: "villain",
+    affiliation: ["Brotherhood"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "A force field he cannot drop", ar: "حقل قوة لا يقدر على إسقاطه" },
+      { en: "Nothing gets through", ar: "لا ينفذ شيء" },
+      { en: "Including food and air", ar: "بما في ذلك الطعام والهواء" },
+    ],
+    origin: {
+      en: "A mutant surrounded by an impenetrable field, whose problem is that it grew strong enough to keep out everything, including what he needed to live.",
+      ar: "متحوّل يحيط به حقل لا يُخترق، ومشكلته أنه قوي إلى حدّ منْع كل شيء، بما فيه ما يحتاجه ليعيش.",
+    },
+    related: [
+      { id: "magneto", kind: "ally" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -13800,6 +14035,7 @@ export const characters: CharacterDraft[] = [
   ...mutantsF,
   ...minorRogues,
   ...mutantsG,
+  ...mutantsH,
   ...avengers,
   ...guardians,
   ...xmen,
