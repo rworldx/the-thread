@@ -833,7 +833,8 @@ const xmen: CharacterDraft[] = [
     nameEn: "Magneto",
     nameAr: "ماغنيتو",
     aliases: ["Erik Lehnsherr", "Magneto", "Max Eisenhardt"],
-    category: "villain",
+    /* ANTIVILLAIN, not villain. A Holocaust survivor whose goal is that it never happens to his people. Opposed by the protagonists and not wrong about the stakes, which is the definition this file already uses for Ikaris and He Who Remains. He has also fought beside the X-Men and led them. */
+    category: "antivillain",
     affiliation: ["Brotherhood"],
     universe: ["fox"],
     species: "Mutant",
@@ -1270,7 +1271,8 @@ const spiderVerse: CharacterDraft[] = [
     nameEn: "Electro",
     nameAr: "إلكترو",
     aliases: ["Electro", "Max Dillon", "Max Dillon / Electro"],
-    category: "villain",
+    /* ANTIVILLAIN. Max Dillon was ignored until it made him dangerous, and what he wanted was to be seen. */
+    category: "antivillain",
     affiliation: ["Sinister Six"],
     universe: ["sony", "mcu"],
     species: "Human mutate",
@@ -1289,7 +1291,8 @@ const spiderVerse: CharacterDraft[] = [
     nameEn: "Sandman",
     nameAr: "ساندمان",
     aliases: ["Sandman", "Flint Marko"],
-    category: "villain",
+    /* ANTIVILLAIN, not villain. Flint Marko robs to pay for a sick daughter and says so, and Spider-Man 3 ends with Peter forgiving him rather than beating him. */
+    category: "antivillain",
     affiliation: ["Sinister Six"],
     universe: ["sony", "mcu"],
     species: "Human mutate",
@@ -1308,7 +1311,8 @@ const spiderVerse: CharacterDraft[] = [
     nameEn: "The Lizard",
     nameAr: "السحلية",
     aliases: ["The Lizard", "Curt Connors", "Dr. Curt Connors", "Lizard"],
-    category: "villain",
+    /* ANTIVILLAIN, not villain. Curt Connors is trying to regrow his own arm and then everyone else's, which is the whole of his motive before the reptile takes over. */
+    category: "antivillain",
     affiliation: ["Sinister Six"],
     universe: ["sony", "mcu"],
     species: "Human mutate",
@@ -1641,7 +1645,8 @@ const fantasticFour: CharacterDraft[] = [
     nameEn: "Doctor Doom",
     nameAr: "دكتور دووم",
     aliases: ["Doctor Doom", "Victor Von Doom", "Doom", "Victor Domashev"],
-    category: "villain",
+    /* ANTIVILLAIN, not villain. A dictator who genuinely believes only he can protect Latveria, and is often right about the threat if never about himself. */
+    category: "antivillain",
     affiliation: [],
     universe: ["fox", "mcu"],
     species: "Human",
@@ -1684,7 +1689,8 @@ const villains: CharacterDraft[] = [
     nameEn: "Thanos",
     nameAr: "ثانوس",
     aliases: ["Thanos"],
-    category: "villain",
+    /* ANTIVILLAIN, not villain. Sincere about the arithmetic and wrong about everything else. The films make his reasoning explicit rather than hiding it, which is what separates him from a Red Skull. */
+    category: "antivillain",
     affiliation: ["Titans"],
     universe: ["mcu"],
     species: "Titan",
@@ -1731,7 +1737,8 @@ const villains: CharacterDraft[] = [
     nameEn: "Killmonger",
     nameAr: "كيلمونجر",
     aliases: ["Killmonger", "Erik Killmonger", "N'Jadaka", "Erik Stevens"],
-    category: "villain",
+    /* ANTIVILLAIN, not villain. His grievance is correct and the film agrees with him: Wakanda did abandon the diaspora. What he does with that is the part he is opposed for. */
+    category: "antivillain",
     affiliation: ["Wakandans"],
     universe: ["mcu"],
     species: "Human",
@@ -1864,7 +1871,8 @@ const villains: CharacterDraft[] = [
     nameEn: "Xu Wenwu",
     nameAr: "شو وينوو",
     aliases: ["Xu Wenwu", "Wenwu", "The Mandarin", "Mandarin"],
-    category: "villain",
+    /* ANTIVILLAIN, not villain. Xu Wenwu spends a thousand years as a warlord and then dismantles it for his wife. What drives him at the end is grief and a voice he thinks is hers. */
+    category: "antivillain",
     affiliation: ["Ten Rings"],
     universe: ["mcu"],
     species: "Human",
@@ -1884,7 +1892,8 @@ const villains: CharacterDraft[] = [
     nameEn: "Galactus",
     nameAr: "جالاكتوس",
     aliases: ["Galactus"],
-    category: "villain",
+    /* ANTIVILLAIN, not villain. He is hunger with a shape. He must eat worlds to exist and has spared them when given a substitute, which is not what a villain does. */
+    category: "antivillain",
     affiliation: ["Cosmic entities"],
     universe: ["fox", "mcu"],
     species: "Cosmic entity",
@@ -2320,7 +2329,8 @@ const supporting: CharacterDraft[] = [
     nameEn: "Vulture",
     nameAr: "فَلتشر",
     aliases: ["Vulture", "Adrian Toomes"],
-    category: "villain",
+    /* ANTIVILLAIN, not villain. A working man whose salvage contract is cancelled by Stark's cleanup company, who turns to crime to keep his crew employed and stops short of killing the boy dating his daughter. */
+    category: "antivillain",
     affiliation: ["Sinister Six"],
     universe: ["mcu"],
     species: "Human",
@@ -2341,7 +2351,8 @@ const supporting: CharacterDraft[] = [
     nameEn: "Taskmaster",
     nameAr: "تاسك ماستر",
     aliases: ["Taskmaster", "Antonia Dreykov"],
-    category: "villain",
+    /* ANTIVILLAIN. Antonia is a weapon her own father made out of his daughter. She is controlled rather than convinced. */
+    category: "antivillain",
     affiliation: ["Thunderbolts"],
     universe: ["mcu"],
     species: "Enhanced human",
@@ -2844,7 +2855,8 @@ const supporting: CharacterDraft[] = [
      * nothing here is hand-listed.
      */
     aliases: ["Super-Skrull", "Kl'rt", "Klrt", "G'iah", "Giah"],
-    category: "villain",
+    /* ANTIVILLAIN. The Skrulls are refugees whose world was eaten. He fights for a people with nowhere to go. */
+    category: "antivillain",
     affiliation: ["Skrull"],
     universe: ["mcu"],
     species: "Skrull",
@@ -3067,7 +3079,8 @@ const supporting: CharacterDraft[] = [
     nameEn: "Mister Negative",
     nameAr: "مستر نيغاتيف",
     aliases: ["Mister Negative", "Martin Li"],
-    category: "villain",
+    /* ANTIVILLAIN. Martin Li runs a homeless shelter with one face and a crime syndicate with the other, and the shelter is not a cover. */
+    category: "antivillain",
     affiliation: [],
     universe: ["sony"],
     species: "Enhanced human",
@@ -3907,7 +3920,8 @@ const abstracts: CharacterDraft[] = [
     nameEn: "Oblivion",
     nameAr: "العدم",
     aliases: ["Oblivion"],
-    category: "villain",
+    /* ANTIVILLAIN. Nothingness, embodied. It is the end that everything arrives at rather than something that hates. */
+    category: "antivillain",
     affiliation: ["Cosmic entities"],
     universe: ["legacy"],
     species: "Abstract entity",
@@ -3929,7 +3943,8 @@ const abstracts: CharacterDraft[] = [
     nameEn: "The One Below All",
     nameAr: "الواحد تحت الجميع",
     aliases: ["The One Below All"],
-    category: "villain",
+    /* ANTIVILLAIN. The dark counterpart of the supreme being, which is a role in the structure rather than a choice. */
+    category: "antivillain",
     affiliation: ["Cosmic entities"],
     universe: ["legacy"],
     species: "Abstract entity",
@@ -3951,7 +3966,8 @@ const abstracts: CharacterDraft[] = [
     nameEn: "The Beyonder",
     nameAr: "البِيونْدر",
     aliases: ["The Beyonder", "Beyonder"],
-    category: "villain",
+    /* ANTIVILLAIN. Curious rather than cruel: a being from outside who could not understand what it was doing to the people it experimented on. */
+    category: "antivillain",
     affiliation: ["Cosmic entities"],
     universe: ["legacy"],
     species: "Abstract entity",
@@ -3996,7 +4012,8 @@ const abstracts: CharacterDraft[] = [
     nameEn: "Molecule Man",
     nameAr: "رجل الجزيئات",
     aliases: ["Molecule Man", "Owen Reece"],
-    category: "villain",
+    /* ANTIVILLAIN. A frightened man handed the power to unmake matter, who spends most of his existence trying not to. */
+    category: "antivillain",
     affiliation: ["Cosmic entities"],
     universe: ["legacy"],
     species: "Human",
@@ -4095,7 +4112,8 @@ const celestials: CharacterDraft[] = [
     nameEn: "Arishem the Judge",
     nameAr: "أريشيم القاضي",
     aliases: ["Arishem", "Arishem the Judge"],
-    category: "villain",
+    /* ANTIVILLAIN, not villain. A Celestial doing what Celestials do. He weighs Earth honestly and, when shown what grew on it, lets it live. */
+    category: "antivillain",
     affiliation: ["Celestials"],
     universe: ["mcu"],
     species: "Celestial",
@@ -4991,7 +5009,8 @@ const moreMutants: CharacterDraft[] = [
        still matches on the first segment, and the Force now matches on the
        second. Nobody shares an alias, so C18 stays satisfied. */
     aliases: ["Phoenix Force", "Dark Phoenix"],
-    category: "villain",
+    /* ANTIVILLAIN. Creation and destruction in the same force. It burns worlds because that is half of what it is for, not out of malice. */
+    category: "antivillain",
     affiliation: ["Cosmic entities"],
     universe: ["fox", "legacy"],
     species: "Cosmic entity",
@@ -6601,7 +6620,8 @@ const others: CharacterDraft[] = [
     nameEn: "Ronan the Accuser",
     nameAr: "رونان المُتّهِم",
     aliases: ["Ronan", "Ronan the Accuser"],
-    category: "villain",
+    /* ANTIVILLAIN. A zealot who believes the Kree cause is righteous and his own treaty a betrayal. Wrong, and sincere about it. */
+    category: "antivillain",
     affiliation: ["Kree"],
     universe: ["mcu", "legacy"],
     species: "Kree",
@@ -6947,7 +6967,8 @@ const laterAdditions: CharacterDraft[] = [
     nameEn: "Surtur",
     nameAr: "سورتر",
     aliases: ["Surtur"],
-    category: "villain",
+    /* ANTIVILLAIN. Fulfilling a prophecy written before he existed. Ragnarok is his function and Asgard's own texts agree. */
+    category: "antivillain",
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Fire demon",
@@ -6971,7 +6992,8 @@ const laterAdditions: CharacterDraft[] = [
     nameEn: "Baron Zemo",
     nameAr: "البارون زيمو",
     aliases: ["Zemo", "Baron Zemo", "Helmut Zemo"],
-    category: "villain",
+    /* ANTIVILLAIN, not villain. His wife and son died in Sokovia. He dismantles the Avengers for it and spends the rest of his life arguing that super-soldiers should not exist, which the story never quite tells him he is wrong about. */
+    category: "antivillain",
     affiliation: [],
     universe: ["mcu"],
     species: "Human",
@@ -9357,7 +9379,8 @@ const namedMutants: CharacterDraft[] = [
     nameEn: "Madelyne Pryor",
     nameAr: "مادلين برايور",
     aliases: ["Madelyne Pryor", "Goblin Queen"],
-    category: "villain",
+    /* ANTIVILLAIN. Grown to be a vessel, married Cyclops and bore his son before learning what she was. Everything after is an answer to being made as a substitute. */
+    category: "antivillain",
     affiliation: [],
     universe: ["fox"],
     species: "Clone",
@@ -10871,7 +10894,8 @@ const heralds: CharacterDraft[] = [
     nameEn: "Mangog",
     nameAr: "مانغوغ",
     aliases: ["Mangog"],
-    category: "villain",
+    /* ANTIVILLAIN. A grievance made solid: the collected fury of a billion beings Odin destroyed. The grievance is TRUE, which is the whole problem with killing it. */
+    category: "antivillain",
     affiliation: ["Asgard", "Gods"],
     universe: ["mcu"],
     species: "Abstract Entity",
@@ -11122,7 +11146,8 @@ const mutantsB: CharacterDraft[] = [
     nameEn: "Proteus",
     nameAr: "بروتيوس",
     aliases: ["Proteus", "Kevin MacTaggert"],
-    category: "villain",
+    /* ANTIVILLAIN. A child with no body of his own who burns through the people he wears. His mother kept him locked up and could not bring herself to end it. */
+    category: "antivillain",
     affiliation: ["Brotherhood"],
     universe: ["fox"],
     species: "Mutant",
@@ -11477,7 +11502,8 @@ const mutantsC: CharacterDraft[] = [
     nameEn: "Vulcan",
     nameAr: "فولكان",
     aliases: ["Vulcan", "Gabriel Summers"],
-    category: "villain",
+    /* ANTIVILLAIN. The Summers brother nobody knew existed, raised as a slave, who came back angry enough to take an empire. */
+    category: "antivillain",
     affiliation: ["Shi'ar"],
     universe: ["fox"],
     species: "Mutant",
@@ -12051,7 +12077,8 @@ const mutantsE: CharacterDraft[] = [
     nameEn: "Wither",
     nameAr: "ويذر",
     aliases: ["Wither", "Kevin Ford"],
-    category: "villain",
+    /* ANTIVILLAIN. His touch kills anything living and he found that out on his own father. He has never been able to switch it off. */
+    category: "antivillain",
     affiliation: ["New Mutants"],
     universe: ["fox"],
     species: "Mutant",
@@ -12593,7 +12620,8 @@ const powerList: CharacterDraft[] = [
     nameEn: "Abraxas",
     nameAr: "أبراكساس",
     aliases: ["Abraxas"],
-    category: "villain",
+    /* ANTIVILLAIN. The destruction of the multiverse, sealed by Galactus's existence. It is a function that gets loose, not a plan. */
+    category: "antivillain",
     affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
@@ -12615,7 +12643,8 @@ const powerList: CharacterDraft[] = [
     nameEn: "The Chaos King",
     nameAr: "ملك الفوضى",
     aliases: ["The Chaos King", "Amatsu-Mikaboshi"],
-    category: "villain",
+    /* ANTIVILLAIN. The primordial darkness that was there before anything else and wants to be the only thing again, which it regards as restoration. */
+    category: "antivillain",
     affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
@@ -15055,7 +15084,8 @@ const cosmicTop: CharacterDraft[] = [
     nameEn: "The First Firmament",
     nameAr: "الجَلَد الأول",
     aliases: ["The First Firmament"],
-    category: "villain",
+    /* ANTIVILLAIN. The original universe, which made itself company and was divided when the company rebelled. It wants to be whole, which reads as wanting to be alone. */
+    category: "antivillain",
     affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
