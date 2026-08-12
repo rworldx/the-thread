@@ -5985,6 +5985,10 @@ html:has(:target) {
 .chip-fold-summary {
   display: none;
 }
+/* Lets `block-size: auto` be a transition endpoint rather than a snap. */
+:root {
+  interpolate-size: allow-keywords;
+}
 /**
  * THE CHILD BAND, drawn as a branch of the row above it.
  *
@@ -6068,9 +6072,33 @@ html:has(:target) {
   .chip-fold[open] .chip-band-row {
     margin-block-start: var(--space-2);
   }
+  /**
+   * THE OPEN ITSELF, ANIMATED — which needs `interpolate-size` because a
+   * transition to `auto` is otherwise ignored and the panel snaps.
+   *
+   * Snapping is what made it read as the page jumping rather than as a panel
+   * opening: nothing connected the tap to the result. 180ms is enough to see
+   * the cause and short enough not to wait for it. `allow-discrete` keeps the
+   * panel present for the duration of the closing half, which is what stops
+   * the close being instant while the open is not.
+   */
+  @media (prefers-reduced-motion: no-preference) {
+    .chip-fold::details-content {
+      overflow: hidden;
+      block-size: 0;
+      transition:
+        block-size 180ms ease,
+        content-visibility 180ms allow-discrete;
+    }
+    .chip-fold[open]::details-content {
+      block-size: auto;
+    }
+  }
   /* The summary IS the control when closed, so it carries the tap target. */
   .chip-fold-summary {
-    min-block-size: 44px;
+    /* Fixed height so the row itself never resizes when the value appears or
+       the band opens — only the panel below it moves. */
+    min-block-size: 48px;
     touch-action: manipulation;
   }
   .chip-fold-name {
@@ -6083,11 +6111,27 @@ html:has(:target) {
     letter-spacing: normal;
     text-transform: none;
   }
+  /**
+   * Reads as a value attached to its label, not as a second heading. Sits
+   * right of the band name and left of the caret, and only exists when a
+   * filter is on — so an unfiltered row is just the name and the arrow.
+   */
+  /**
+   * The active value, said quietly. Smaller than the band name and in the
+   * site's own red — the one token defined as "red that can carry text on the
+   * dark ground", so it is legible rather than merely coloured. No pill: it is
+   * an answer to the label beside it, not a control of its own, and giving it
+   * a background made it compete with the chips underneath.
+   */
   .chip-fold-value {
     margin-inline-start: auto;
     margin-inline-end: var(--space-2);
-    color: var(--color-ink);
-    font-weight: 600;
+    color: var(--color-red-ink);
+    font-size: var(--step--1);
+    letter-spacing: 0.02em;
+  }
+  [lang="ar"] .chip-fold-value {
+    letter-spacing: normal;
   }
   /* The band label is the summary's job on a phone; two of them is noise. */
   .chip-band > .chip-band-label {

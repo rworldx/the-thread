@@ -508,14 +508,34 @@ export function CharacterBrowser({
                    * visible above 48rem, so the desktop never sees a
                    * disclosure and loses nothing.
                    */}
-                  <details className="chip-fold">
+                  {/**
+                   * `name` MAKES THIS A NATIVE EXCLUSIVE ACCORDION.
+                   *
+                   * Three bands that all open at once means opening the third
+                   * pushes the grid down by the height of the other two, which
+                   * is what made it feel like the page jumped. Sharing a name
+                   * closes the others automatically, so at most one band is
+                   * ever expanded and the movement is bounded by that band.
+                   * No JavaScript: the browser does it.
+                   */}
+                  <details className="chip-fold" name="chip-band">
                     <summary className="chip-fold-summary">
                       <span className="chip-fold-name">{t(`chipGroup.${g.group}`)}</span>
-                      <span className="chip-fold-value">
-                        {parents.some((c) => c.id === chip) || openParent !== chip
-                          ? t(`chip.${chip}`)
-                          : t("chip.all")}
-                      </span>
+                      {/**
+                       * THE VALUE ONLY WHEN THERE IS ONE, which is the whole
+                       * of Rashid's note. Every band defaulted to printing
+                       * "All" beside its arrow, so a phone opened on three
+                       * rows saying nothing three times. "All" is the absence
+                       * of a filter and does not need announcing.
+                       *
+                       * It still shows once a band is actually filtering,
+                       * because a collapsed row that hides its own state
+                       * defeats the point of collapsing it: you would have to
+                       * open all three to find out what is narrowing the list.
+                       */}
+                      {g.chips.some((c) => c.id === chip) && chip !== "all" && (
+                        <span className="chip-fold-value">{t(`chip.${chip}`)}</span>
+                      )}
                     </summary>
                     <div className="chip-band-row">
                       {parents.map((c) => (
