@@ -1217,7 +1217,7 @@ const spiderVerse: CharacterDraft[] = [
        so a search for it lands on him rather than on a duplicate record. */
     aliases: ["Green Goblin", "Norman Osborn", "Red Goblin"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["sony", "mcu"],
     species: "Human mutate",
     powers: [
@@ -1657,7 +1657,7 @@ const fantasticFour: CharacterDraft[] = [
     nameAr: "السيلفر سيرفر",
     aliases: ["Silver Surfer", "Norrin Radd"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["fox"],
     species: "Zenn-Lavian",
     powers: [
@@ -1680,7 +1680,7 @@ const villains: CharacterDraft[] = [
     nameAr: "ثانوس",
     aliases: ["Thanos"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Titans"],
     universe: ["mcu"],
     species: "Titan",
     powers: [
@@ -1873,7 +1873,7 @@ const villains: CharacterDraft[] = [
     nameAr: "جالاكتوس",
     aliases: ["Galactus"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["fox", "mcu"],
     species: "Cosmic entity",
     powers: [
@@ -2439,7 +2439,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "نيمور",
     aliases: ["Namor", "Namor McKenzie"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["X-Men"],
     universe: ["mcu"],
     species: "Mutant hybrid",
     powers: [
@@ -2528,7 +2528,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "إيغو",
     aliases: ["Ego"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Celestials"],
     universe: ["mcu"],
     species: "Celestial",
     powers: [
@@ -2804,7 +2804,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "أليوث",
     aliases: ["Alioth"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic entity",
     powers: [
@@ -3670,7 +3670,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "الجامع",
     aliases: ["The Collector", "Taneleer Tivan"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Elders of the Universe"],
     universe: ["mcu"],
     species: "Elder of the Universe",
     powers: [
@@ -3691,7 +3691,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "الغراند ماستر",
     aliases: ["Grandmaster", "The Grandmaster", "En Dwi Gast"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Elders of the Universe"],
     universe: ["mcu"],
     species: "Elder of the Universe",
     powers: [
@@ -5431,7 +5431,7 @@ const moreSpider: CharacterDraft[] = [
     nameAr: "شاهد القبر",
     aliases: ["Tombstone", "Lonnie Lincoln"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["sony"],
     species: "Human mutate",
     powers: [
@@ -5971,7 +5971,7 @@ const others: CharacterDraft[] = [
     nameAr: "الهوبغوبلن",
     aliases: ["Hobgoblin", "Roderick Kingsley"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
@@ -6039,7 +6039,7 @@ const others: CharacterDraft[] = [
     nameAr: "نِد ليدز",
     aliases: ["Ned Leeds", "Ned"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Daily Bugle"],
     universe: ["sony", "mcu"],
     species: "Human",
     powers: [
@@ -6164,7 +6164,7 @@ const others: CharacterDraft[] = [
     nameAr: "ستارفوكس",
     aliases: ["Starfox", "Eros"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Titans"],
     universe: ["mcu", "legacy"],
     species: "Titan",
     powers: [
@@ -6676,7 +6676,7 @@ const others: CharacterDraft[] = [
     nameAr: "مدام ويب",
     aliases: ["Madame Web", "Cassandra Webb", "Cassie Webb"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Spider-Society"],
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
@@ -6699,7 +6699,7 @@ const others: CharacterDraft[] = [
     nameAr: "المرأة العنكبوت (جوليا كاربنتر)",
     aliases: ["Julia Cornwall", "Julia Carpenter", "Spider-Woman II"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Spider-Society"],
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
@@ -6719,7 +6719,7 @@ const others: CharacterDraft[] = [
     nameAr: "آنيا كورازون",
     aliases: ["Anya Corazón", "Anya Corazon", "Araña"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Spider-Society"],
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
@@ -6738,7 +6738,7 @@ const others: CharacterDraft[] = [
     nameAr: "ماتي فرانكلين",
     aliases: ["Mattie Franklin", "Martha Franklin"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Spider-Society"],
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
@@ -6924,7 +6924,7 @@ const laterAdditions: CharacterDraft[] = [
     nameAr: "سورتر",
     aliases: ["Surtur"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Fire demon",
     powers: [
@@ -7395,7 +7395,7 @@ const smallScreen: CharacterDraft[] = [
     nameAr: "نيكو مينورو",
     aliases: ["Nico Minoru", "Nico"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["marvel-tv"],
     species: "Witch",
     powers: [
@@ -7527,7 +7527,7 @@ const smallScreen: CharacterDraft[] = [
     nameAr: "دايمون هيلستروم",
     aliases: ["Daimon Helstrom", "Daimon"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["marvel-tv"],
     species: "Human hybrid",
     powers: [
@@ -7549,7 +7549,7 @@ const smallScreen: CharacterDraft[] = [
     nameAr: "آنا هيلستروم",
     aliases: ["Ana Helstrom", "Ana"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["marvel-tv"],
     species: "Human hybrid",
     powers: [
@@ -8324,7 +8324,7 @@ const antagonists: CharacterDraft[] = [
     nameAr: "أنيهيلَس",
     aliases: ["Annihilus"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["animation"],
     species: "Cosmic entity",
     powers: [
@@ -8368,7 +8368,7 @@ const antagonists: CharacterDraft[] = [
     nameAr: "بلاكهارت",
     aliases: ["Blackheart"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["legacy"],
     species: "Demon",
     powers: [
@@ -8391,7 +8391,7 @@ const antagonists: CharacterDraft[] = [
     nameAr: "ديكون فروست",
     aliases: ["Deacon Frost", "Frost"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["legacy"],
     species: "Vampire",
     powers: [
@@ -8754,7 +8754,7 @@ const cosmicBeings: CharacterDraft[] = [
     nameAr: "كورفاك",
     aliases: ["Korvac", "Michael Korvac"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["animation"],
     species: "Cyborg",
     powers: [
@@ -8836,7 +8836,7 @@ const spiderRogues: CharacterDraft[] = [
     nameAr: "هيدرو مان",
     aliases: ["Hydro-Man"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["sony"],
     species: "Mutate",
     powers: [
@@ -8859,7 +8859,7 @@ const spiderRogues: CharacterDraft[] = [
     nameAr: "مولتن مان",
     aliases: ["Molten Man"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Sinister Six"],
     universe: ["sony"],
     species: "Mutate",
     powers: [
@@ -8970,7 +8970,7 @@ const spiderRogues: CharacterDraft[] = [
     nameAr: "ديموغوبلن",
     aliases: ["Demogoblin"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["sony"],
     species: "Demon",
     powers: [
@@ -9297,7 +9297,7 @@ const namedMutants: CharacterDraft[] = [
     nameAr: "ميميك",
     aliases: ["Mimic", "Calvin Rankin"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -9400,7 +9400,7 @@ const inheritors: CharacterDraft[] = [
     nameAr: "كين",
     aliases: ["Kaine", "Kaine Parker"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["Spider-Society"],
     universe: ["sony"],
     species: "Clone",
     powers: [
@@ -10117,7 +10117,7 @@ const abstractsBatch: CharacterDraft[] = [
     nameAr: "سيد النظام",
     aliases: ["Master Order"],
     category: "antivillain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -10139,7 +10139,7 @@ const abstractsBatch: CharacterDraft[] = [
     nameAr: "سيد الفوضى",
     aliases: ["Lord Chaos"],
     category: "antivillain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -10161,7 +10161,7 @@ const abstractsBatch: CharacterDraft[] = [
     nameAr: "البَينِيّ",
     aliases: ["The In-Betweener", "In-Betweener"],
     category: "antivillain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -10184,7 +10184,7 @@ const abstractsBatch: CharacterDraft[] = [
     nameAr: "الغريب",
     aliases: ["The Stranger"],
     category: "antivillain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -10206,7 +10206,7 @@ const abstractsBatch: CharacterDraft[] = [
     nameAr: "إيون",
     aliases: ["Eon"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -10228,7 +10228,7 @@ const abstractsBatch: CharacterDraft[] = [
     nameAr: "إيبوك",
     aliases: ["Epoch"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -10250,7 +10250,7 @@ const abstractsBatch: CharacterDraft[] = [
     nameAr: "إنتروبي",
     aliases: ["Entropy"],
     category: "antivillain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -10272,7 +10272,7 @@ const abstractsBatch: CharacterDraft[] = [
     nameAr: "كرونوس",
     aliases: ["Kronos"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Eternal",
     powers: [
@@ -10294,7 +10294,7 @@ const abstractsBatch: CharacterDraft[] = [
     nameAr: "نيميسيس",
     aliases: ["Nemesis"],
     category: "antivillain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -10316,7 +10316,7 @@ const abstractsBatch: CharacterDraft[] = [
     nameAr: "بروتيجيه",
     aliases: ["Protege"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -10338,7 +10338,7 @@ const abstractsBatch: CharacterDraft[] = [
     nameAr: "تينيبروس",
     aliases: ["Tenebrous", "Tenebrous of the Darkness Between"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -10978,7 +10978,7 @@ const mutantsB: CharacterDraft[] = [
     nameAr: "داروين",
     aliases: ["Darwin", "Armando Munoz"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -11000,7 +11000,7 @@ const mutantsB: CharacterDraft[] = [
     nameAr: "فايرستار",
     aliases: ["Firestar", "Angelica Jones"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -11044,7 +11044,7 @@ const mutantsB: CharacterDraft[] = [
     nameAr: "بروتيوس",
     aliases: ["Proteus", "Kevin MacTaggert"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Brotherhood"],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "omega",
@@ -11198,7 +11198,7 @@ const mutantsC: CharacterDraft[] = [
     nameAr: "فانتوميكس",
     aliases: ["Fantomex", "Charlie Cluster-7"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["Weapon X"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -11332,7 +11332,7 @@ const mutantsC: CharacterDraft[] = [
     nameAr: "سورون",
     aliases: ["Sauron", "Karl Lykos"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Brotherhood"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -11654,7 +11654,7 @@ const mutantsD: CharacterDraft[] = [
     nameAr: "زورن",
     aliases: ["Xorn", "Shen Xorn", "Kuan-Yin Xorn"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
@@ -11749,7 +11749,7 @@ const mutantsE: CharacterDraft[] = [
     nameAr: "لونغشوت",
     aliases: ["Longshot"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Mojoworlder",
     powers: [
@@ -11771,7 +11771,7 @@ const mutantsE: CharacterDraft[] = [
     nameAr: "لوكهيد",
     aliases: ["Lockheed"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Alien dragon",
     powers: [
@@ -12144,7 +12144,7 @@ const hiddenByAudit: CharacterDraft[] = [
     nameAr: "روبي روبرتسون",
     aliases: ["Robbie Robertson", "Joe Robertson", "Joseph Robertson"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Daily Bugle"],
     universe: ["sony"],
     species: "Human",
     powers: [
@@ -12184,7 +12184,7 @@ const bugleAndRogues: CharacterDraft[] = [
     nameAr: "ج. جونا جيمسون",
     aliases: ["J. Jonah Jameson", "John Jonah Jameson", "Jonah Jameson"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Daily Bugle"],
     universe: ["sony"],
     species: "Human",
     powers: [
@@ -12229,7 +12229,7 @@ const bugleAndRogues: CharacterDraft[] = [
     nameAr: "غلوري غرانت",
     aliases: ["Glory Grant", "Gloria Grant"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Daily Bugle"],
     universe: ["sony"],
     species: "Human",
     powers: [
@@ -12251,7 +12251,7 @@ const bugleAndRogues: CharacterDraft[] = [
     nameAr: "راندي روبرتسون",
     aliases: ["Randy Robertson", "Randolph Robertson"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Daily Bugle"],
     universe: ["sony"],
     species: "Human",
     powers: [
@@ -12444,7 +12444,7 @@ const powerList: CharacterDraft[] = [
     nameAr: "الفاجعة عند نهاية كل شيء",
     aliases: ["The Griever at the End of All Things", "Griever"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -12466,7 +12466,7 @@ const powerList: CharacterDraft[] = [
     nameAr: "ماركيز الموت",
     aliases: ["The Marquis of Death", "Clyde Wyncham"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Brotherhood"],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "omega",
@@ -12489,7 +12489,7 @@ const powerList: CharacterDraft[] = [
     nameAr: "جيم جاسبرز المجنون",
     aliases: ["Mad Jim Jaspers", "James Jaspers"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Brotherhood"],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "omega",
@@ -12512,7 +12512,7 @@ const powerList: CharacterDraft[] = [
     nameAr: "أبراكساس",
     aliases: ["Abraxas"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -12534,7 +12534,7 @@ const powerList: CharacterDraft[] = [
     nameAr: "ملك الفوضى",
     aliases: ["The Chaos King", "Amatsu-Mikaboshi"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -12669,7 +12669,7 @@ const powerList: CharacterDraft[] = [
     nameAr: "نامورا",
     aliases: ["Namora", "Aquaria Nautica Neptunia"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["Atlantis"],
     universe: ["mcu"],
     species: "Atlantean",
     powers: [
@@ -12691,7 +12691,7 @@ const powerList: CharacterDraft[] = [
     nameAr: "ناموريتا",
     aliases: ["Namorita", "Namorita Prentiss"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Atlantis"],
     universe: ["mcu"],
     species: "Atlantean",
     powers: [
@@ -13808,7 +13808,7 @@ const mutantsH: CharacterDraft[] = [
     nameAr: "كراكوا",
     aliases: ["Krakoa"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Mutant island",
     powers: [
@@ -14368,7 +14368,7 @@ const spiderLast: CharacterDraft[] = [
     nameAr: "سبايدرمان 2211",
     aliases: ["Spider-Man 2211", "Max Borne"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Spider-Society"],
     universe: ["sony"],
     species: "Mutate",
     powers: [
@@ -14753,7 +14753,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "غالان من تاء",
     aliases: ["Galan of Taa", "Galan"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -14775,7 +14775,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "سيدة الحب",
     aliases: ["Mistress Love"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -14797,7 +14797,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "سيد الكراهية",
     aliases: ["Sire Hate"],
     category: "antivillain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -14819,7 +14819,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "ملكة ما لم يكن",
     aliases: ["The Queen of Nevers", "The Pilgrim"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -14841,7 +14841,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "كابتن يونيفرس",
     aliases: ["Captain Universe", "Uni-Power", "Enigma Force"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -14863,7 +14863,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "المُنجِب",
     aliases: ["The Progenitor"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Celestials"],
     universe: ["mcu"],
     species: "Celestial",
     powers: [
@@ -14885,7 +14885,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "لوغوس",
     aliases: ["Logos"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -14907,7 +14907,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "إيجيس سيدة كل الأحزان",
     aliases: ["Aegis", "Lady of All Sorrows"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -14929,7 +14929,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "أنتيفون المشرف",
     aliases: ["Antiphon", "Antiphon the Overseer"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -14951,7 +14951,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "المرتكز",
     aliases: ["The Fulcrum"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -14973,7 +14973,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "الجَلَد الأول",
     aliases: ["The First Firmament"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -14998,7 +14998,7 @@ const cosmicTop: CharacterDraft[] = [
     nameAr: "ما وراء",
     aliases: ["The Beyonders"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -15057,7 +15057,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "كوزموس",
     aliases: ["Kosmos"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -15081,7 +15081,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "القوى القائمة",
     aliases: ["The-Powers-That-Be"],
     category: "antivillain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -15103,7 +15103,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "النظام الطبيعي للأشياء",
     aliases: ["The-Natural-Order-of-Things"],
     category: "antivillain",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -15125,7 +15125,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "المقدَّر",
     aliases: ["The Preordained"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -15148,7 +15148,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "كونتينيوم",
     aliases: ["Continuum"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
@@ -15215,7 +15215,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "المكعب الكوني",
     aliases: ["Cosmic Cube", "The Cosmic Cube"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Artifact",
     powers: [
@@ -15237,7 +15237,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "كوبيك",
     aliases: ["Kubik"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -15260,7 +15260,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "صائغ العوالم",
     aliases: ["The Shaper of Worlds", "Shaper of Worlds"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -15282,7 +15282,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "شبكة القدر الكبرى",
     aliases: ["The Great Web of Destiny", "Web of Life and Destiny"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Force",
     powers: [
@@ -15304,7 +15304,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "النسّاج الأعظم",
     aliases: ["The Master Weaver"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Cosmic entities"],
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
@@ -15351,7 +15351,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "الخالدون",
     aliases: ["The Undying Ones"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Demon",
     powers: [
@@ -15373,7 +15373,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "ذوو الزوايا الكثيرة",
     aliases: ["The Many-Angled Ones"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Demon",
     powers: [
@@ -15395,7 +15395,7 @@ const collectives: CharacterDraft[] = [
     nameAr: "الطامحون",
     aliases: ["The Aspirants"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Celestials"],
     universe: ["mcu"],
     species: "Celestial",
     powers: [

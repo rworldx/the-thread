@@ -79,6 +79,15 @@ const is = (...names: string[]): Rule => (c) => c.species !== null && names.incl
  * The parent chip stays selectable throughout, because "all mutants" is still
  * the most common thing anyone wants.
  */
+/**
+ * ORDER IS ROLE, THEN KIND, THEN TEAM, and that is a change.
+ *
+ * Team used to come second. But "what is this person" narrows harder and more
+ * naturally than "whose side are they on" — a reader who wants mutants wants
+ * mutants, while a reader who wants the Avengers usually already has a name in
+ * mind and would search it. Kind also owns the child bands, so putting it
+ * mid-page keeps the unfolding near the top rather than below fifty chips.
+ */
 const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string }[] }[] = [
   {
     group: "role",
@@ -88,45 +97,6 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       { id: "villain", match: (c) => c.category === "villain" },
       { id: "antihero", match: (c) => c.category === "antihero" },
       { id: "antivillain", match: (c) => c.category === "antivillain" },
-    ],
-  },
-  {
-    group: "team",
-    chips: [
-      { id: "avengers", match: aff("Avengers") },
-      { id: "x-men", match: aff("X-Men") },
-      { id: "x-force", match: aff("X-Force") },
-      { id: "guardians", match: aff("Guardians of the Galaxy") },
-      { id: "defenders", match: aff("Defenders") },
-      { id: "fantastic-four", match: aff("Fantastic Four") },
-      { id: "thunderbolts", match: aff("Thunderbolts") },
-      { id: "young-avengers", match: aff("Young Avengers") },
-      { id: "midnight-sons", match: aff("Midnight Sons") },
-      { id: "revengers", match: aff("Revengers") },
-      { id: "team-cap", match: aff("Team Captain America") },
-      { id: "team-iron-man", match: aff("Team Iron Man") },
-      { id: "wakandan", match: aff("Wakandan heroes") },
-      { id: "weapon-x", match: aff("Weapon X") },
-      { id: "brotherhood", match: aff("Brotherhood") },
-      { id: "acolytes", match: aff("Acolytes") },
-      { id: "marauders", match: aff("Marauders") },
-      { id: "hellions", match: aff("Hellions") },
-      { id: "hellfire", match: aff("Hellfire Club") },
-      { id: "sinister-six", match: aff("Sinister Six") },
-      { id: "inheritors", match: aff("Inheritors") },
-      { id: "new-mutants", match: aff("New Mutants") },
-      { id: "generation-x", match: aff("Generation X") },
-      { id: "x-factor", match: aff("X-Factor") },
-      { id: "morlocks", match: aff("Morlocks") },
-      /* Three groupings a reader asks for by name and the data already holds:
-         who works for S.H.I.E.L.D., every Loki, and the Spider-Society. */
-      { id: "agents", match: aff("S.H.I.E.L.D.") },
-      { id: "loki-variants", match: aff("Loki variants") },
-      { id: "spider-society", match: aff("Spider-Society") },
-      /* Computed from appearances upstream — see the note in the page. A
-         rights tag put Kingpin and Ned Leeds outside a category they are
-         obviously in. */
-      { id: "spider-verse", match: (c) => c.spiderVerse },
     ],
   },
   {
@@ -222,6 +192,45 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
           !aff("Magic")(c) &&
           !aff("Masters of the Mystic Arts")(c),
       },
+    ],
+  },
+  {
+    group: "team",
+    chips: [
+      { id: "avengers", match: aff("Avengers") },
+      { id: "x-men", match: aff("X-Men") },
+      { id: "x-force", match: aff("X-Force") },
+      { id: "guardians", match: aff("Guardians of the Galaxy") },
+      { id: "defenders", match: aff("Defenders") },
+      { id: "fantastic-four", match: aff("Fantastic Four") },
+      { id: "thunderbolts", match: aff("Thunderbolts") },
+      { id: "young-avengers", match: aff("Young Avengers") },
+      { id: "midnight-sons", match: aff("Midnight Sons") },
+      { id: "revengers", match: aff("Revengers") },
+      { id: "team-cap", match: aff("Team Captain America") },
+      { id: "team-iron-man", match: aff("Team Iron Man") },
+      { id: "wakandan", match: aff("Wakandan heroes") },
+      { id: "weapon-x", match: aff("Weapon X") },
+      { id: "brotherhood", match: aff("Brotherhood") },
+      { id: "acolytes", match: aff("Acolytes") },
+      { id: "marauders", match: aff("Marauders") },
+      { id: "hellions", match: aff("Hellions") },
+      { id: "hellfire", match: aff("Hellfire Club") },
+      { id: "sinister-six", match: aff("Sinister Six") },
+      { id: "inheritors", match: aff("Inheritors") },
+      { id: "new-mutants", match: aff("New Mutants") },
+      { id: "generation-x", match: aff("Generation X") },
+      { id: "x-factor", match: aff("X-Factor") },
+      { id: "morlocks", match: aff("Morlocks") },
+      /* Three groupings a reader asks for by name and the data already holds:
+         who works for S.H.I.E.L.D., every Loki, and the Spider-Society. */
+      { id: "agents", match: aff("S.H.I.E.L.D.") },
+      { id: "loki-variants", match: aff("Loki variants") },
+      { id: "spider-society", match: aff("Spider-Society") },
+      /* Computed from appearances upstream — see the note in the page. A
+         rights tag put Kingpin and Ned Leeds outside a category they are
+         obviously in. */
+      { id: "spider-verse", match: (c) => c.spiderVerse },
     ],
   },
 ];
