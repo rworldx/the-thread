@@ -250,6 +250,7 @@
     "species_": {
       "abstract-entity": "Abstract entity",
       "alien": "Alien",
+      "alien-dragon": "Alien dragon",
       "alligator": "Alligator",
       "artificial-being": "Artificial being",
       "artificial-intelligence": "Artificial intelligence",
@@ -293,6 +294,7 @@
       "lem": "Lem",
       "luphomoid": "Luphomoid",
       "machine": "Machine",
+      "mojoworlder": "Mojoworlder",
       "mutant": "Mutant",
       "mutant-hybrid": "Mutant hybrid",
       "mutate": "Mutate",

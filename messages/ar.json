@@ -250,6 +250,7 @@
     "species_": {
       "abstract-entity": "كيان مجرّد",
       "alien": "كائن فضائي",
+      "alien-dragon": "تنين فضائي",
       "alligator": "تمساح",
       "artificial-being": "كائن مصنوع",
       "artificial-intelligence": "ذكاء اصطناعي",
@@ -293,6 +294,7 @@
       "lem": "لِميّ",
       "luphomoid": "لوفومويد",
       "machine": "آلة",
+      "mojoworlder": "موجووردي",
       "mutant": "متحوّل",
       "mutant-hybrid": "هجين متحوّل",
       "mutate": "متحوّر",

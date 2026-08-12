@@ -498,6 +498,32 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Psylocke_Vol_2_4_Textless.jpg/revision/latest?cb=20241123063239",
   "quentin-quire":
     "https://static.wikia.nocookie.net/marveldatabase/images/1/18/Quintavius_Quire_%28Earth-616%29_from_X-Men_Vol_7_3_001.jpg/revision/latest?cb=20250521084021",
+  /* Batch 13. Maggott is filed as "Maggott (Japheth)", Nocturne under
+     Earth-2182 — the reality she is from. */
+  "longshot":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/62/Longshot_%28Mojoverse%29_from_X-Men_Blue_Vol_1_13_001.jpg/revision/latest?cb=20180613015218",
+  "lockheed":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/Lockheed_%28Earth-616%29_from_Marauders_Vol_2_11_Shavrin_Variant_cover_001.jpg/revision/latest?cb=20240917185810",
+  "anole":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/84/NYX_Vol_2_3_Textless.jpg/revision/latest?cb=20250314202445",
+  "blindfold":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c5/Ruth_Aldine_%28Earth-616%29_from_X-Men_Legacy_Vol_2_4_001.jpg/revision/latest?cb=20210926090224",
+  "feral":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/Maria_Callasantos_%28Earth-616%29_from_X-Factor_Vol_5_1_001.jpg/revision/latest?cb=20240922181144",
+  "frenzy":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/57/X-Factor_Vol_5_7_Black_History_Month_Variant_Textless.jpg/revision/latest?cb=20260226200926",
+  "gateway":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d7/Gateway_%28Earth-616%29_from_House_of_X_Vol_1_1_cover_001.jpg/revision/latest?cb=20190725013509",
+  "nocturne":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Nocturne_%28Earth-616%29_from_Vampires_The_Marvel_Undead_001.png/revision/latest?cb=20170410030344",
+  "omega-sentinel":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/0f/Karima_Shapandar_%28Moira_10_%28A%29%29_from_Fall_of_the_House_of_X_Vol_1_4_001.jpg/revision/latest?cb=20240417210411",
+  "wither":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/24/Kevin_Ford_%28Earth-616%29_from_X-Men_Battle_of_the_Atom_%28video_game%29_001.jpg/revision/latest?cb=20171022203242",
+  "maggott":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/18/Maggott_%28Japheth%29_%28Earth-616%29_from_Storm_Vol_5_6_001.png.png/revision/latest?cb=20250416065525",
+  "kitty-pryde":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/16/Exceptional_X-Men_Vol_1_10_Pride_Variant_Textless.jpg/revision/latest?cb=20250523091103",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

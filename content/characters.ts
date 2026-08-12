@@ -11684,6 +11684,300 @@ const mutantsD: CharacterDraft[] = [
   },
 ];
 
+/**
+ * MUTANTS, batch 13 — and two who are NOT mutants, typed accordingly.
+ *
+ * The supplied roster marks Longshot, Lockheed and Warlock with an asterisk:
+ * they are grouped with mutants in X-titles and none of them is Homo superior.
+ * Longshot is bred in the Mojoverse and Lockheed is an alien dragon, so their
+ * species say so and neither carries a mutantClass. Filing them as mutants to
+ * match the list would put a wrong fact on a page to keep a heading tidy.
+ *
+ * The Technarch Warlock is deliberately NOT here. Adam Warlock already holds
+ * the alias "Warlock" in this corpus, and C18 forbids two records sharing one
+ * — it is the guard that stops one character absorbing another's credits.
+ * He needs a distinguishing name before he can be added, which is a decision
+ * rather than an oversight.
+ */
+const mutantsE: CharacterDraft[] = [
+  {
+    /**
+     * SHE WAS MISSING, and the audit said she was present.
+     *
+     * The gap-check that drove these batches matched loosely — substring in
+     * either direction — and reported Kitty Pryde as already in the corpus
+     * when nothing of the sort was here. C4 caught it only because Lockheed
+     * pointed at an id that does not exist. A looser check than the guard is
+     * a check that lies.
+     */
+    id: "kitty-pryde",
+    nameEn: "Kitty Pryde",
+    nameAr: "كيتي برايد",
+    aliases: ["Kitty Pryde", "Shadowcat", "Katherine Pryde", "Kate Pryde"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Walks through solid matter", ar: "تمشي عبر المادة الصلبة" },
+      { en: "Shorts out anything she phases", ar: "تعطّل كل ما تمرّ خلاله" },
+      { en: "Youngest X-Man there was", ar: "أصغر من انضم إلى الإكس مِن" },
+    ],
+    origin: {
+      en: "The thirteen-year-old the X-Men recruited out of a Chicago suburb, who can step through walls and shut down any machine on the way. She grew up inside the team rather than joining it.",
+      ar: "الفتاة ذات الثلاثة عشر عامًا التي جنّدها الإكس مِن من ضاحية في شيكاغو، تعبر الجدران وتعطّل أي آلة في طريقها. نشأت داخل الفريق لا انضمّت إليه.",
+    },
+    related: [
+      { id: "storm", kind: "ally" },
+      { id: "colossus", kind: "ally" },
+      { id: "lockheed", kind: "ally" },
+    ],
+  },
+  {
+    id: "longshot",
+    nameEn: "Longshot",
+    nameAr: "لونغشوت",
+    aliases: ["Longshot"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mojoworlder",
+    powers: [
+      { en: "Luck bends toward him", ar: "الحظ ينحاز إليه" },
+      { en: "Only when his cause is pure", ar: "بشرط أن تكون نيته خالصة" },
+      { en: "Reads objects by touch", ar: "يقرأ الأشياء باللمس" },
+    ],
+    origin: {
+      en: "A rebel bred in an entertainment dimension to be a television star, whose luck works only when his motives are clean. He is not a mutant, which the roster marks and which the corpus keeps.",
+      ar: "متمرّد استُولد في بُعدٍ للترفيه ليكون نجم تلفزيون، ولا يعمل حظه إلا إذا صفت نيّته. وهو ليس متحوّلًا، وذلك ما يشير إليه المرجع وما يحفظه هذا السجل.",
+    },
+    related: [
+      { id: "dazzler", kind: "ally" },
+    ],
+  },
+  {
+    id: "lockheed",
+    nameEn: "Lockheed",
+    nameAr: "لوكهيد",
+    aliases: ["Lockheed"],
+    category: "hero",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Alien dragon",
+    powers: [
+      { en: "Breathes fire", ar: "ينفث النار" },
+      { en: "Far smarter than he lets on", ar: "أذكى بكثير مما يُظهر" },
+      { en: "Chose Kitty and stayed", ar: "اختار كيتي وبقي" },
+    ],
+    origin: {
+      en: "A small purple dragon from an alien world who attached himself to Kitty Pryde and never left. He understands every word said around him and lets people assume otherwise.",
+      ar: "تنين أرجواني صغير من عالم فضائي، تعلّق بكيتي برايد ولم يفارقها. يفهم كل كلمة تقال حوله ويدع الناس يظنون العكس.",
+    },
+    related: [
+      { id: "kitty-pryde", kind: "ally" },
+    ],
+  },
+  {
+    id: "anole",
+    nameEn: "Anole",
+    nameAr: "أنول",
+    aliases: ["Anole", "Victor Borkowski"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Lizard skin and a stone arm", ar: "جلد سحليّة وذراع حجرية" },
+      { en: "Climbs anything", ar: "يتسلق أي شيء" },
+      { en: "Regrows what he loses", ar: "ينمو له بدل ما يفقد" },
+    ],
+    origin: {
+      en: "A green-scaled young mutant who lost an arm and grew back something much larger, and who is one of the few students the school never tried to make look normal.",
+      ar: "متحوّل يافع أخضر الحراشف، فقد ذراعًا فنبت له ما هو أضخم بكثير، وهو من قلائل الطلاب الذين لم تحاول المدرسة أن تجعلهم يبدون عاديين.",
+    },
+    related: [
+      { id: "armor", kind: "ally" },
+    ],
+  },
+  {
+    id: "blindfold",
+    nameEn: "Blindfold",
+    nameAr: "بلايندفولد",
+    aliases: ["Blindfold", "Ruth Aldine"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Sees what has not happened", ar: "ترى ما لم يقع بعد" },
+      { en: "Born without eyes", ar: "وُلدت بلا عينين" },
+      { en: "Speaks in the wrong order", ar: "تتكلم بترتيب مقلوب" },
+    ],
+    origin: {
+      en: "A precognitive born without eyes who sees the future clearly and the present hardly at all, and whose sentences arrive in the order the visions do rather than the order people expect.",
+      ar: "بصيرة بالمستقبل وُلدت بلا عينين، ترى ما هو آتٍ بوضوح ولا تكاد ترى الحاضر، وتأتي جملها بترتيب الرؤى لا بالترتيب الذي ينتظره الناس.",
+    },
+    related: [
+      { id: "emma-frost", kind: "ally" },
+    ],
+  },
+  {
+    id: "feral",
+    nameEn: "Feral",
+    nameAr: "فيرال",
+    aliases: ["Feral", "Maria Callasantos"],
+    category: "villain",
+    affiliation: ["Morlocks"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Claws, fangs and a tail", ar: "مخالب وأنياب وذيل" },
+      { en: "Heals fast", ar: "تلتئم سريعًا" },
+      { en: "Raised on violence", ar: "نشأت على العنف" },
+    ],
+    origin: {
+      en: "A cat-like mutant who came up through the tunnels and an abusive home, and who has switched sides more than once because neither one ever offered her much.",
+      ar: "متحوّلة تشبه الهرّ، خرجت من الأنفاق ومن بيت مؤذٍ، وبدّلت الجهات أكثر من مرة لأن أيًّا منها لم يقدّم لها كثيرًا.",
+    },
+    related: [
+      { id: "cannonball", kind: "enemy" },
+    ],
+  },
+  {
+    id: "frenzy",
+    nameEn: "Frenzy",
+    nameAr: "فرينزي",
+    aliases: ["Frenzy", "Joanna Cargill"],
+    category: "antihero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Unbreakable skin", ar: "جلد لا يُخترق" },
+      { en: "Strength to match", ar: "وقوة تناسبه" },
+      { en: "Fought for Magneto first", ar: "قاتلت مع ماغنيتو أولًا" },
+    ],
+    origin: {
+      en: "A mutant with skin nothing gets through and the strength to use it, who spent years as an enforcer for other people's causes before picking one of her own.",
+      ar: "متحوّلة بجلد لا ينفذه شيء وقوة تكافئه، أمضت سنين منفّذةً لقضايا غيرها قبل أن تختار قضية لنفسها.",
+    },
+    related: [
+      { id: "magneto", kind: "ally" },
+    ],
+  },
+  {
+    id: "gateway",
+    nameEn: "Gateway",
+    nameAr: "غيتواي",
+    aliases: ["Gateway"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Opens portals anywhere", ar: "يفتح بوابات إلى أي مكان" },
+      { en: "Never speaks", ar: "لا يتكلم أبدًا" },
+      { en: "Spins a bullroarer to do it", ar: "يدير مِرواحًا ليفعلها" },
+    ],
+    origin: {
+      en: "An Aboriginal Australian mutant who opens doorways across the world by spinning a bullroarer, and who has never once explained himself to anyone who used him.",
+      ar: "متحوّل من سكان أستراليا الأصليين يفتح أبوابًا عبر العالم بإدارة مِرواح، ولم يفسّر نفسه قط لأحد ممن استعملوه.",
+    },
+    related: [
+      { id: "storm", kind: "ally" },
+    ],
+  },
+  {
+    id: "maggott",
+    nameEn: "Maggott",
+    nameAr: "ماغوت",
+    aliases: ["Maggott", "Japheth"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Two slugs do his digesting", ar: "دودتان تهضمان عنه" },
+      { en: "They eat anything at all", ar: "تأكلان أي شيء كان" },
+      { en: "Strength while they are out", ar: "قوة ما دامتا خارجه" },
+    ],
+    origin: {
+      en: "A South African mutant whose digestive system is two sentient slugs that leave his body to eat, and who is stronger while they are away. It is as strange as it sounds and he is at peace with it.",
+      ar: "متحوّل جنوب أفريقي جهازه الهضمي دودتان واعيتان تغادران جسده لتأكلا، ويكون أقوى في غيابهما. الأمر غريب كما يبدو، وهو راضٍ به.",
+    },
+    related: [
+      { id: "storm", kind: "ally" },
+    ],
+  },
+  {
+    id: "nocturne",
+    nameEn: "Nocturne",
+    nameAr: "نوكتورن",
+    aliases: ["Nocturne", "Talia Josephine Wagner"],
+    category: "hero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Possesses a body briefly", ar: "تتلبّس جسدًا مؤقتًا" },
+      { en: "Hexes what she touches", ar: "تسحر ما تلمس" },
+      { en: "From a world that ended", ar: "من عالم انتهى" },
+    ],
+    origin: {
+      en: "The daughter of Nightcrawler and the Scarlet Witch from a reality that no longer exists, stranded here and making the best of a world where her parents never met.",
+      ar: "ابنة نايتكرولر والساحرة القرمزية من واقع لم يعد موجودًا، عالقة هنا وتتدبّر أمرها في عالم لم يلتقِ فيه أبواها قط.",
+    },
+    related: [
+      { id: "nightcrawler", kind: "family" },
+      { id: "scarlet-witch", kind: "family" },
+    ],
+  },
+  {
+    id: "omega-sentinel",
+    nameEn: "Omega Sentinel",
+    nameAr: "أوميغا سنتينل",
+    aliases: ["Omega Sentinel", "Karima Shapandar"],
+    category: "antihero",
+    affiliation: ["X-Men"],
+    universe: ["fox"],
+    species: "Cyborg",
+    powers: [
+      { en: "A Sentinel built from a person", ar: "سنتينل بُني من إنسانة" },
+      { en: "Fights the programming daily", ar: "تقاوم البرمجة كل يوم" },
+      { en: "Was a police officer", ar: "كانت ضابطة شرطة" },
+    ],
+    origin: {
+      en: "An Indian police officer converted into a Sentinel by Bastion, who kept enough of herself to refuse the programming and has to keep refusing it every day since.",
+      ar: "ضابطة شرطة هندية حوّلها باستيون إلى سنتينل، فاحتفظت من نفسها بما يكفي لترفض البرمجة، وعليها أن تظل ترفضها كل يوم منذئذ.",
+    },
+    related: [
+      { id: "professor-x", kind: "ally" },
+    ],
+  },
+  {
+    id: "wither",
+    nameEn: "Wither",
+    nameAr: "ويذر",
+    aliases: ["Wither", "Kevin Ford"],
+    category: "villain",
+    affiliation: ["New Mutants"],
+    universe: ["fox"],
+    species: "Mutant",
+    powers: [
+      { en: "Rots organic matter by touch", ar: "يعفّن المادة العضوية باللمس" },
+      { en: "Cannot turn it off", ar: "لا يستطيع إيقافها" },
+      { en: "Killed his father by accident", ar: "قتل أباه مصادفة" },
+    ],
+    origin: {
+      en: "A mutant whose touch destroys anything living, which he discovered on his own father. He has never been able to switch it off, and everything that followed came out of that.",
+      ar: "متحوّل تدمّر لمسته كل حيّ، واكتشف ذلك في أبيه. ولم يقدر قط على إيقافها، وكل ما تلا خرج من ذلك.",
+    },
+    related: [
+      { id: "elixir", kind: "enemy" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -11697,6 +11991,7 @@ export const characters: CharacterDraft[] = [
   ...mutantsB,
   ...mutantsC,
   ...mutantsD,
+  ...mutantsE,
   ...avengers,
   ...guardians,
   ...xmen,
