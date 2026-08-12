@@ -155,6 +155,11 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       { id: "kree", match: (c) => is("Kree")(c) || aff("Kree")(c) },
       { id: "skrull", match: (c) => is("Skrull")(c) || aff("Skrull")(c) },
       { id: "shiar", match: (c) => is("Shi'ar", "Strontian")(c) || aff("Shi'ar")(c) },
+      /* Peoples, not teams. Wakandans sat in the team band, which said the
+         nation is something you join rather than somewhere you are from —
+         the same category error as filing Kree under teams. */
+      { id: "wakandan", match: aff("Wakandans") },
+      { id: "talokanil", match: (c) => is("Talokanil")(c) || aff("Talokanil")(c) },
       { id: "clandestine", match: aff("ClanDestine") },
       /* HOSTS COUNT. A separate "Venom family" chip was a duplicate of this
          one, and the only thing it added was people this chip was missing by
@@ -287,7 +292,6 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       { id: "spider-society", match: aff("Spider-Society") },
       { id: "sinister-six", match: aff("Sinister Six") },
       { id: "inheritors", match: aff("Inheritors") },
-      { id: "wakandan", match: aff("Wakandans") },
       { id: "agents", match: aff("S.H.I.E.L.D.") },
       { id: "loki-variants", match: aff("Loki variants") },
     ],

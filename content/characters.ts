@@ -2486,7 +2486,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "نيمور",
     aliases: ["Namor", "Namor McKenzie"],
     category: "antihero",
-    affiliation: ["X-Men"],
+    affiliation: ["X-Men", "Talokanil"],
     universe: ["mcu"],
     species: "Mutant hybrid",
     powers: [
@@ -12847,7 +12847,7 @@ const powerList: CharacterDraft[] = [
     nameAr: "نامورا",
     aliases: ["Namora", "Aquaria Nautica Neptunia"],
     category: "antihero",
-    affiliation: ["Atlantis"],
+    affiliation: ["Atlantis", "Talokanil"],
     universe: ["mcu"],
     species: "Atlantean",
     powers: [
@@ -12869,7 +12869,7 @@ const powerList: CharacterDraft[] = [
     nameAr: "ناموريتا",
     aliases: ["Namorita", "Namorita Prentiss"],
     category: "hero",
-    affiliation: ["Atlantis"],
+    affiliation: ["Atlantis", "Talokanil"],
     universe: ["mcu"],
     species: "Atlantean",
     powers: [
@@ -15606,6 +15606,31 @@ const collectives: CharacterDraft[] = [
  * N'Jobu's grievance is the one Killmonger inherits.
  */
 const wakanda: CharacterDraft[] = [
+  {
+    /* Credited in Black Panther: Wakanda Forever. Talokan's war leader, and
+       the third Talokanil on screen beside Namor and Namora. */
+    id: "attuma",
+    nameEn: "Attuma",
+    nameAr: "أتوما",
+    aliases: ["Attuma"],
+    category: "antivillain",
+    affiliation: ["Talokanil"],
+    universe: ["mcu"],
+    species: "Talokanil",
+    powers: [
+      { en: "Breathes water, fights on land", ar: "يتنفس الماء ويقاتل على اليابسة" },
+      { en: "Leads Talokan's warriors", ar: "يقود محاربي تالوكان" },
+      { en: "Wields a whale-bone hammer", ar: "يحمل مطرقة من عظم حوت" },
+    ],
+    origin: {
+      en: "Namor's war leader and the first of Talokan most surface people ever see, who fights for a nation that hid underwater for four centuries and has decided it will not hide again.",
+      ar: "قائد حرب نامور وأول من يراه أهل السطح من تالوكان، يقاتل عن أمة اختبأت تحت الماء أربعة قرون وقررت ألا تختبئ مرة أخرى.",
+    },
+    related: [
+      { id: "namor", kind: "ally" },
+      { id: "namora", kind: "ally" },
+    ],
+  },
   {
     id: "nakia",
     nameEn: "Nakia",

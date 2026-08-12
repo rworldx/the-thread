@@ -268,7 +268,8 @@
       "magic-dark": "Dark",
       "mutant-delta": "Delta",
       "mutant-epsilon": "Epsilon",
-      "symbiote-gestalt": "Gestalt"
+      "symbiote-gestalt": "Gestalt",
+      "talokanil": "Talokanil"
     },
     "appearsIn": "Appears in",
     "appearanceCount": "{n, plural, one {# title} other {# titles}}",
@@ -357,6 +358,7 @@
       "symbiote-god": "Symbiote god",
       "symbiote-host": "Symbiote host",
       "synthezoid": "Synthezoid",
+      "talokanil": "Talokanil",
       "technarch": "Technarch",
       "titan": "Titan",
       "uplifted-animal": "Uplifted animal",
@@ -418,6 +420,7 @@
       "starjammers": "Starjammers",
       "stark-industries": "Stark Industries",
       "symbiotes": "Symbiotes",
+      "talokanil": "Talokanil",
       "team-captain-america": "Team Captain America",
       "team-iron-man": "Team Iron Man",
       "ten-rings": "Ten Rings",

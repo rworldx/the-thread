@@ -851,6 +851,8 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/e/e9/Aneka_%28Earth-616%29_from_Thunderbolts_Doomstrike_Vol_1_3_001.jpg/revision/latest?cb=20250506193701",
   "nakia":
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Nakia_Shauku_%28Earth-616%29_from_Black_Panther_Vol_3_23_002.jpg/revision/latest?cb=20221025173801",
+  attuma:
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a0/Attuma_%28Earth-616%29_from_Namor_Vol_2_2_001.jpg/revision/latest?cb=20240828094112",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

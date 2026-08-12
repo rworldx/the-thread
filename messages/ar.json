@@ -268,7 +268,8 @@
       "magic-dark": "السحر الأسود",
       "mutant-delta": "دلتا",
       "mutant-epsilon": "إبسيلون",
-      "symbiote-gestalt": "مندمج"
+      "symbiote-gestalt": "مندمج",
+      "talokanil": "التالوكانيون"
     },
     "appearsIn": "يظهر في",
     "appearanceCount": "{n, plural, zero {لا عناوين} one {عنوان واحد} two {عنوانان} few {# عناوين} many {# عنوانًا} other {# عنوان}}",
@@ -357,6 +358,7 @@
       "symbiote-god": "إله السمبيوتات",
       "symbiote-host": "حامل سيمبيوت",
       "synthezoid": "كائن اصطناعي",
+      "talokanil": "تالوكاني",
       "technarch": "تكنارك",
       "titan": "تيتاني",
       "uplifted-animal": "حيوان مُرتقى",
@@ -418,6 +420,7 @@
       "starjammers": "النجّامون",
       "stark-industries": "صناعات ستارك",
       "symbiotes": "السمبيوتات",
+      "talokanil": "التالوكانيون",
       "team-captain-america": "فريق كابتن أمريكا",
       "team-iron-man": "فريق الرجل الحديدي",
       "ten-rings": "الحلقات العشر",
