@@ -33,7 +33,7 @@ export interface CharacterCard {
   species: string | null;
   mutantClass: MutantClass | null;
   symbioteClass: string | null;
-  magicSchool: string | null;
+  magicSchools: string[];
   universe: string[];
   /** Distinct performers, so "Tobey" and "Jackman" are searchable terms. */
   actors: string[];
@@ -182,7 +182,7 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
           /* Truthy, NOT `!== null`. An unset field arrives as undefined, and
              `undefined !== null` is true, so the strict form matched all 651
              characters and the chip became "everyone". */
-          Boolean(c.magicSchool) ||
+          c.magicSchools.length > 0 ||
           aff("Magic")(c) ||
           aff("Masters of the Mystic Arts")(c) ||
           is("Witch", "Demon", "Human avatar")(c),
@@ -195,6 +195,9 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
        * separating Strange from Mordo, who draw on the identical source.
        * Reading `magicSchool` asks the question a reader means.
        */
+      { id: "magic-eldritch", parent: "magician", match: (c) => c.magicSchools.includes("eldritch") },
+      { id: "magic-asgardian", parent: "magician", match: (c) => c.magicSchools.includes("asgardian") },
+      { id: "magic-chaos", parent: "magician", match: (c) => c.magicSchools.includes("chaos") },
       /**
        * DARK IS AN UMBRELLA, AND IT HAS TO BE.
        *
@@ -210,21 +213,18 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
         id: "magic-dark",
         parent: "magician",
         match: (c) =>
-          ["dark-dimension", "infernal", "witchcraft", "necromancy", "blood"].includes(
-            c.magicSchool ?? "",
+          c.magicSchools.some((k) =>
+            ["dark-dimension", "infernal", "witchcraft", "necromancy", "blood"].includes(k),
           ),
       },
-      { id: "magic-eldritch", parent: "magician", match: (c) => c.magicSchool === "eldritch" },
-      { id: "magic-asgardian", parent: "magician", match: (c) => c.magicSchool === "asgardian" },
-      { id: "magic-chaos", parent: "magician", match: (c) => c.magicSchool === "chaos" },
-      { id: "magic-dark-dimension", parent: "magician", match: (c) => c.magicSchool === "dark-dimension" },
-      { id: "magic-infernal", parent: "magician", match: (c) => c.magicSchool === "infernal" },
-      { id: "magic-witchcraft", parent: "magician", match: (c) => c.magicSchool === "witchcraft" },
-      { id: "magic-necromancy", parent: "magician", match: (c) => c.magicSchool === "necromancy" },
-      { id: "magic-blood", parent: "magician", match: (c) => c.magicSchool === "blood" },
-      { id: "magic-voodoo", parent: "magician", match: (c) => c.magicSchool === "voodoo" },
-      { id: "magic-elder", parent: "magician", match: (c) => c.magicSchool === "elder" },
-      { id: "magic-green", parent: "magician", match: (c) => c.magicSchool === "green" },
+      { id: "magic-dark-dimension", parent: "magician", match: (c) => c.magicSchools.includes("dark-dimension") },
+      { id: "magic-infernal", parent: "magician", match: (c) => c.magicSchools.includes("infernal") },
+      { id: "magic-witchcraft", parent: "magician", match: (c) => c.magicSchools.includes("witchcraft") },
+      { id: "magic-necromancy", parent: "magician", match: (c) => c.magicSchools.includes("necromancy") },
+      { id: "magic-blood", parent: "magician", match: (c) => c.magicSchools.includes("blood") },
+      { id: "magic-voodoo", parent: "magician", match: (c) => c.magicSchools.includes("voodoo") },
+      { id: "magic-elder", parent: "magician", match: (c) => c.magicSchools.includes("elder") },
+      { id: "magic-green", parent: "magician", match: (c) => c.magicSchools.includes("green") },
       { id: "god", match: (c) => aff("Gods")(c) || is("Olympian")(c) },
       {
         id: "cosmic",

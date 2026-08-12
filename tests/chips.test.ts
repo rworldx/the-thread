@@ -17,7 +17,7 @@ import type { MutantClass } from "@/content/character-schema";
  * be matched by the parent's rule.
  */
 type C = (typeof shownCharacters)[number] & {
-  magicSchool?: string | null;
+  magicSchools?: string[];
   symbioteClass?: string | null;
 };
 const aff = (n: string) => (c: C) => c.affiliation.includes(n);
@@ -28,7 +28,7 @@ const PARENTS: Record<string, (c: C) => boolean> = {
   symbiote: (c) =>
     is("Symbiote", "Symbiote god", "Symbiote host")(c) || Boolean(c.symbioteClass),
   magician: (c) =>
-    Boolean(c.magicSchool) ||
+    (c.magicSchools?.length ?? 0) > 0 ||
     aff("Magic")(c) ||
     aff("Masters of the Mystic Arts")(c) ||
     is("Witch", "Demon", "Human avatar")(c),
@@ -57,7 +57,7 @@ const CHILDREN: { id: string; parent: string; match: (c: C) => boolean }[] = [
   ].map((k) => ({
     id: `magic-${k}`,
     parent: "magician",
-    match: (c: C) => c.magicSchool === k,
+    match: (c: C) => (c.magicSchools ?? []).includes(k),
   })),
   /* The umbrella. Every fan calls all of these dark magic, so the question
      has to remain askable even though the corpus separates the practices. */
@@ -65,8 +65,8 @@ const CHILDREN: { id: string; parent: string; match: (c: C) => boolean }[] = [
     id: "magic-dark",
     parent: "magician",
     match: (c: C) =>
-      ["dark-dimension", "infernal", "witchcraft", "necromancy", "blood"].includes(
-        c.magicSchool ?? "",
+      (c.magicSchools ?? []).some((k) =>
+        ["dark-dimension", "infernal", "witchcraft", "necromancy", "blood"].includes(k),
       ),
   },
   { id: "abstract", parent: "cosmic", match: is("Abstract entity", "Abstract Entity") },

@@ -144,7 +144,7 @@ export const RelationKind = z.enum([
  * witchcraft and Selene's life-draining are four different practices that
  * happened to share a colour, so they are four entries now.
  *
- * Null for everyone who does not practise magic. NOT a power ranking: an
+ * NOT a power ranking: an
  * eldritch sorcerer is not weaker than a chaos witch, they are doing
  * different things. And NOT for energies that merely look occult — the
  * Darkforce that Cloak and Mister Negative channel is a dimension of physics,
@@ -214,7 +214,16 @@ export const CharacterSource = z.object({
   species: z.string().trim().min(1).nullable().default(null),
   mutantClass: MutantClass.nullable().default(null),
   symbioteClass: SymbioteClass.nullable().default(null),
-  magicSchool: MagicSchool.nullable().default(null),
+  /**
+   * SCHOOLS, PLURAL, because practices overlap and being one thing does not
+   * stop you studying another. Agamotto is an Elder God who founded eldritch
+   * sorcery. Chthon is an Elder God who wrote chaos magic into a book. A
+   * single value made those two facts compete for one slot and the more
+   * interesting one always lost.
+   *
+   * Empty for everyone who does not practise magic.
+   */
+  magicSchools: z.array(MagicSchool).default([]),
 
   powers: z.array(Power).min(1).max(6),
   origin: Bilingual,

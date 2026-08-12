@@ -184,7 +184,7 @@ const avengers: CharacterDraft[] = [
     affiliation: ["Avengers", "Team Captain America", "Magic"],
     universe: ["mcu"],
     species: "Enhanced human",
-    magicSchool: "chaos",
+    magicSchools: ["chaos"],
     powers: [
       { en: "Chaos magic", ar: "سحر الفوضى" },
       { en: "Telekinesis", ar: "تحريك الأشياء بالعقل" },
@@ -353,7 +353,7 @@ const avengers: CharacterDraft[] = [
     affiliation: ["Avengers", "Masters of the Mystic Arts", "Midnight Sons", "Magic"],
     universe: ["mcu"],
     species: "Human",
-    magicSchool: "eldritch",
+    magicSchools: ["eldritch"],
     powers: [
       { en: "Sorcery", ar: "سحر" },
       { en: "Opens portals", ar: "يفتح البوابات" },
@@ -446,7 +446,7 @@ const avengers: CharacterDraft[] = [
     affiliation: ["Asgard", "Revengers", "Gods", "Magic", "Loki variants"],
     universe: ["mcu"],
     species: "Frost Giant",
-    magicSchool: "asgardian",
+    magicSchools: ["asgardian"],
     powers: [
       { en: "Illusions", ar: "أوهام بصرية" },
       { en: "Shapeshifting", ar: "تغيير الهيئة" },
@@ -598,7 +598,7 @@ const avengers: CharacterDraft[] = [
     affiliation: ["Avengers", "Masters of the Mystic Arts", "Magic"],
     universe: ["mcu"],
     species: "Human",
-    magicSchool: "eldritch",
+    magicSchools: ["eldritch"],
     powers: [
       { en: "Sorcery", ar: "سحر" },
       { en: "Keeper of the library", ar: "أمين المكتبة" },
@@ -618,7 +618,7 @@ const avengers: CharacterDraft[] = [
     affiliation: ["Gods", "Magic", "Loki variants"],
     universe: ["mcu"],
     species: "Frost Giant",
-    magicSchool: "asgardian",
+    magicSchools: ["asgardian"],
     powers: [
       { en: "Enchantment", ar: "تسخير العقول" },
       { en: "Illusions", ar: "أوهام بصرية" },
@@ -1805,7 +1805,7 @@ const villains: CharacterDraft[] = [
     affiliation: ["Asgard", "Gods"],
     universe: ["mcu"],
     species: "Asgardian",
-    magicSchool: "asgardian",
+    magicSchools: ["asgardian"],
     powers: [
       { en: "Summons blades", ar: "تستدعي النصال" },
       { en: "Draws power from Asgard", ar: "تستمد قوتها من أسجارد" },
@@ -1854,7 +1854,7 @@ const villains: CharacterDraft[] = [
        does not, then trying to take it. She is a centuries-old witch
        practising traditional dark witchcraft, which is a different craft
        rather than a lesser amount of the same one. */
-    magicSchool: "witchcraft",
+    magicSchools: ["witchcraft"],
     powers: [
       { en: "Witchcraft", ar: "سحر" },
       { en: "Drains other witches", ar: "تستنزف الساحرات الأخريات" },
@@ -3108,7 +3108,7 @@ const supporting: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["legacy"],
     species: "Demon",
-    magicSchool: "infernal",
+    magicSchools: ["infernal"],
     powers: [
       { en: "Makes bargains", ar: "يعقد الصفقات" },
       { en: "Reshapes souls", ar: "يعيد تشكيل الأرواح" },
@@ -3213,7 +3213,7 @@ const ensemble: CharacterDraft[] = [
     affiliation: ["Masters of the Mystic Arts", "Magic"],
     universe: ["mcu"],
     species: "Human",
-    magicSchool: "eldritch",
+    magicSchools: ["eldritch"],
     powers: [
       { en: "Sorcerer Supreme", ar: "الساحرة العليا" },
       { en: "Astral projection", ar: "إسقاط نجمي" },
@@ -3237,7 +3237,7 @@ const ensemble: CharacterDraft[] = [
     affiliation: ["Asgard", "Gods"],
     universe: ["mcu"],
     species: "Asgardian",
-    magicSchool: "asgardian",
+    magicSchools: ["asgardian"],
     powers: [
       { en: "Seer", ar: "بصيرة" },
       { en: "Illusion magic", ar: "سحر الأوهام" },
@@ -4083,7 +4083,7 @@ const abstracts: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu", "legacy"],
     species: "Demon",
-    magicSchool: "dark-dimension",
+    magicSchools: ["dark-dimension"],
     powers: [
       { en: "Rules the Dark Dimension", ar: "يحكم البعد المظلم" },
       { en: "Devours whole worlds", ar: "يلتهم عوالم كاملة" },
@@ -5771,7 +5771,7 @@ const others: CharacterDraft[] = [
     affiliation: ["Young Avengers", "Magic"],
     universe: ["mcu"],
     species: "Witch",
-    magicSchool: "chaos",
+    magicSchools: ["chaos"],
     powers: [
       { en: "Reality-warping chaos magic", ar: "سحر فوضى يُعيد صوغ الواقع" },
       { en: "Flight", ar: "طيران" },
@@ -5990,7 +5990,7 @@ const others: CharacterDraft[] = [
     affiliation: ["Midnight Sons", "Masters of the Mystic Arts", "Magic"],
     universe: ["mcu", "legacy"],
     species: "Human",
-    magicSchool: "voodoo",
+    magicSchools: ["voodoo"],
     powers: [
       { en: "Houngan Supreme", ar: "الهونغان الأعلى" },
       { en: "Shares his brother's spirit", ar: "يشارك روح أخيه" },
@@ -6333,7 +6333,7 @@ const others: CharacterDraft[] = [
     affiliation: ["Young Avengers", "Loki variants"],
     universe: ["mcu"],
     species: "Frost Giant",
-    magicSchool: "asgardian",
+    magicSchools: ["asgardian"],
     powers: [
       { en: "Illusions", ar: "أوهام" },
       { en: "Killed his own Thor", ar: "قتل ثوره الخاص" },
@@ -6476,7 +6476,7 @@ const others: CharacterDraft[] = [
     affiliation: ["Magic", "Loki variants"],
     universe: ["mcu"],
     species: "Frost Giant",
-    magicSchool: "asgardian",
+    magicSchools: ["asgardian"],
     powers: [
       { en: "Illusions on an enormous scale", ar: "أوهام بمقياس هائل" },
       { en: "Survived by hiding for decades", ar: "نجا بالاختباء عقودًا" },
@@ -6496,7 +6496,7 @@ const others: CharacterDraft[] = [
     affiliation: ["Loki variants"],
     universe: ["mcu"],
     species: "Frost Giant",
-    magicSchool: "asgardian",
+    magicSchools: ["asgardian"],
     powers: [
       { en: "Claims a great deal", ar: "يدّعي الكثير" },
       { en: "A hammer, allegedly", ar: "مطرقة، على حدّ زعمه" },
@@ -6540,7 +6540,7 @@ const others: CharacterDraft[] = [
     affiliation: ["Asgard", "Loki variants"],
     universe: ["mcu"],
     species: "Alligator",
-    magicSchool: "asgardian",
+    magicSchools: ["asgardian"],
     powers: [
       { en: "Is an alligator", ar: "تمساح" },
       { en: "Wears the horns", ar: "يعتمر القرنين" },
@@ -6599,7 +6599,7 @@ const others: CharacterDraft[] = [
     affiliation: ["Loki variants"],
     universe: ["mcu"],
     species: "Frost Giant",
-    magicSchool: "asgardian",
+    magicSchools: ["asgardian"],
     powers: [
       { en: "Ran for office, in the Void", ar: "ترشّح للرئاسة، في الفراغ" },
       { en: "Betrayed by his own cabinet", ar: "خانه وزراؤه" },
@@ -6974,7 +6974,7 @@ const laterAdditions: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Fire demon",
-    magicSchool: "asgardian",
+    magicSchools: ["asgardian"],
     powers: [
       { en: "The Twilight Sword", ar: "سيف الشفق" },
       { en: "Grows without limit", ar: "ينمو بلا حدّ" },
@@ -7151,7 +7151,7 @@ const knowhere: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Lem",
-    magicSchool: "eldritch",
+    magicSchools: ["eldritch"],
     powers: [
       { en: "Sorcerer Supreme of his era", ar: "الساحر الأعظم في زمنه" },
       { en: "Casts without speaking", ar: "يسحر دون كلام" },
@@ -7450,7 +7450,7 @@ const smallScreen: CharacterDraft[] = [
     species: "Witch",
     /* The Staff of One is blood magic, paid for in her own blood and never
        repeating a spell. Closer to Agatha's witchcraft than to Wanda's. */
-    magicSchool: "blood",
+    magicSchools: ["blood"],
     powers: [
       { en: "The Staff of One", ar: "عصا الواحد" },
       { en: "Each spell said once", ar: "كل تعويذة تُقال مرة" },
@@ -7583,7 +7583,7 @@ const smallScreen: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["marvel-tv"],
     species: "Human hybrid",
-    magicSchool: "infernal",
+    magicSchools: ["infernal"],
     powers: [
       { en: "Casts out demons", ar: "يطرد الشياطين" },
       { en: "Hellfire in the blood", ar: "نار الجحيم في دمه" },
@@ -7606,7 +7606,7 @@ const smallScreen: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["marvel-tv"],
     species: "Human hybrid",
-    magicSchool: "infernal",
+    magicSchools: ["infernal"],
     powers: [
       { en: "Reads a life by touch", ar: "تقرأ حياة المرء بلمسة" },
       { en: "Sells antiques", ar: "تبيع التحف" },
@@ -8043,7 +8043,7 @@ const antagonists: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Human",
-    magicSchool: "eldritch",
+    magicSchools: ["eldritch"],
     powers: [
       { en: "Mirror-dimension combat", ar: "قتال في بُعد المرآة" },
       { en: "Space folding", ar: "طيّ المكان" },
@@ -8247,7 +8247,7 @@ const antagonists: CharacterDraft[] = [
     affiliation: ["Masters of the Mystic Arts"],
     universe: ["mcu"],
     species: "Human",
-    magicSchool: "eldritch",
+    magicSchools: ["eldritch"],
     powers: [
       { en: "Sling ring", ar: "حلقة العبور" },
       { en: "Staff of the Living Tribunal", ar: "عصا المحكمة الحيّة" },
@@ -8428,7 +8428,7 @@ const antagonists: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["legacy"],
     species: "Demon",
-    magicSchool: "infernal",
+    magicSchools: ["infernal"],
     powers: [
       { en: "Son of Mephisto", ar: "ابن مفيستو" },
       { en: "Takes the souls of the damned", ar: "يأخذ أرواح الملعونين" },
@@ -8452,7 +8452,7 @@ const antagonists: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["legacy"],
     species: "Vampire",
-    magicSchool: "infernal",
+    magicSchools: ["infernal"],
     powers: [
       { en: "Turned, not born", ar: "تحوّل ولم يُولد" },
       { en: "Reads the old blood scriptures", ar: "يقرأ كتب الدم القديمة" },
@@ -8678,7 +8678,7 @@ const cosmicBeings: CharacterDraft[] = [
     affiliation: ["Magic", "Vishanti", "Gods"],
     universe: ["animation"],
     species: "Elder God",
-    magicSchool: "eldritch",
+    magicSchools: ["eldritch", "elder"],
     powers: [
       { en: "First Sorcerer Supreme", ar: "أول ساحر أعظم" },
       { en: "Sees every truth", ar: "يرى كل حقيقة" },
@@ -8700,7 +8700,7 @@ const cosmicBeings: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["animation"],
     species: "Elder God",
-    magicSchool: "chaos",
+    magicSchools: ["chaos", "elder"],
     powers: [
       { en: "Wrote the Darkhold", ar: "كتب الداركهولد" },
       { en: "Source of chaos magic", ar: "منبع سحر الفوضى" },
@@ -8722,7 +8722,7 @@ const cosmicBeings: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["animation"],
     species: "Demon",
-    magicSchool: "dark-dimension",
+    magicSchools: ["dark-dimension"],
     powers: [
       { en: "Rules the Dream Dimension", ar: "يحكم بُعد الأحلام" },
       { en: "Feeds on fear", ar: "يتغذى على الخوف" },
@@ -9035,7 +9035,7 @@ const spiderRogues: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["sony"],
     species: "Demon",
-    magicSchool: "infernal",
+    magicSchools: ["infernal"],
     powers: [
       { en: "A demon on a glider", ar: "شيطان على منزلقة" },
       { en: "Judges the guilty", ar: "يحاكم المذنبين" },
@@ -10450,7 +10450,7 @@ const mystics: CharacterDraft[] = [
     /* NOT eldritch. She is born of the Dark Dimension and rules it after
        Dormammu; the purple she throws is his energy, not Kamar-Taj's. She
        learns Earth sorcery later, but the magic she IS comes from there. */
-    magicSchool: "dark-dimension",
+    magicSchools: ["dark-dimension"],
     powers: [
       { en: "Sorceress of the Dark Dimension", ar: "ساحرة البعد المظلم" },
       { en: "Opens incursions and closes them", ar: "تفتح الاختراقات وتغلقها" },
@@ -10475,7 +10475,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Demon",
-    magicSchool: "elder",
+    magicSchools: ["elder", "infernal"],
     powers: [
       { en: "Grants unstoppable force", ar: "يهب قوة لا تُوقف" },
       { en: "Powers the Juggernaut", ar: "يمدّ الجاغرنوت بالقوة" },
@@ -10498,7 +10498,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
-    magicSchool: "elder",
+    magicSchools: ["elder", "infernal"],
     powers: [
       { en: "Ruled Earth before people", ar: "حكم الأرض قبل البشر" },
       { en: "A mass of eyes and tendrils", ar: "كتلة من أعين ومحالق" },
@@ -10521,7 +10521,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Vishanti", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
-    magicSchool: "eldritch",
+    magicSchools: ["eldritch", "elder"],
     powers: [
       { en: "One of the Vishanti", ar: "إحدى الفيشانتي" },
       { en: "Left Earth by choice", ar: "غادرت الأرض اختيارًا" },
@@ -10544,7 +10544,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Vishanti", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
-    magicSchool: "eldritch",
+    magicSchools: ["eldritch", "elder"],
     powers: [
       { en: "One of the Vishanti", ar: "أحد الفيشانتي" },
       { en: "Lends power to the worthy", ar: "يمنح القوة لمن يستحق" },
@@ -10567,7 +10567,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Faltine",
-    magicSchool: "dark-dimension",
+    magicSchools: ["dark-dimension"],
     powers: [
       { en: "Dormammu's sister", ar: "أخت دورمامو" },
       { en: "Raw mystical force", ar: "قوة سحرية خام" },
@@ -10591,7 +10591,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Demon",
-    magicSchool: "infernal",
+    magicSchools: ["infernal"],
     powers: [
       { en: "Power without restraint", ar: "قوة بلا كابح" },
       { en: "Corrupts whoever wields it", ar: "تفسد من يستعملها" },
@@ -10614,7 +10614,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
-    magicSchool: "green",
+    magicSchools: ["green", "elder"],
     powers: [
       { en: "The living Earth itself", ar: "الأرض الحية نفسها" },
       { en: "Grew all life on it", ar: "أنبتت كل حياة عليها" },
@@ -10637,7 +10637,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
-    magicSchool: "elder",
+    magicSchools: ["elder"],
     powers: [
       { en: "The source Earth's gods grew from", ar: "المنبع الذي نبتت منه آلهة الأرض" },
       { en: "Older than the Elder Gods", ar: "أقدم من الآلهة القديمة" },
@@ -10660,7 +10660,7 @@ const mystics: CharacterDraft[] = [
     affiliation: ["Magic", "Gods"],
     universe: ["mcu"],
     species: "Elder God",
-    magicSchool: "elder",
+    magicSchools: ["elder", "necromancy"],
     powers: [
       { en: "A seven-headed serpent", ar: "أفعى بسبعة رؤوس" },
       { en: "First of the Elder Gods to kill", ar: "أول الآلهة القديمة قتلًا" },
@@ -11205,7 +11205,7 @@ const mutantsB: CharacterDraft[] = [
     affiliation: ["Hellfire Club"],
     universe: ["fox"],
     species: "Mutant",
-    magicSchool: "necromancy",
+    magicSchools: ["necromancy"],
     powers: [
       { en: "Drains life to stay young", ar: "تمتص الحياة لتبقى شابة" },
       { en: "Thousands of years old", ar: "عمرها آلاف السنين" },
@@ -14034,7 +14034,7 @@ const mutantsH: CharacterDraft[] = [
     affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Mutant",
-    magicSchool: "green",
+    magicSchools: ["green"],
     powers: [
       { en: "Speaks with animals and plants", ar: "تكلّم الحيوان والنبات" },
       { en: "Takes their side", ar: "وتنحاز إليها" },
@@ -15469,7 +15469,7 @@ const collectives: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Demon",
-    magicSchool: "infernal",
+    magicSchools: ["infernal"],
     powers: [
       { en: "Ruled Earth before people", ar: "حكموا الأرض قبل البشر" },
       { en: "Waiting to be let back", ar: "ينتظرون من يعيدهم" },
@@ -15492,7 +15492,7 @@ const collectives: CharacterDraft[] = [
     affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Demon",
-    magicSchool: "infernal",
+    magicSchools: ["infernal"],
     powers: [
       { en: "From the Cancerverse", ar: "من كون السرطان" },
       { en: "A reality where death died", ar: "واقع مات فيه الموت" },
