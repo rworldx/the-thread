@@ -109,6 +109,39 @@ export const RelationKind = z.enum([
  * Null for everyone who is not a symbiote, and for Knull, who is the god that
  * made them rather than one of them.
  */
+/**
+ * WHICH MAGIC, not which kind of being.
+ *
+ * The chips used to split magic users into Sorcerers, Elder Gods and Demons,
+ * which sorts them by WHAT THEY ARE. Rashid pointed out the more useful
+ * question is what they actually practise, and he is right: Loki and Agatha
+ * are both "not sorcerers" and have nothing else in common, while Strange and
+ * Mordo are opposites who draw on the identical source.
+ *
+ *   eldritch   The Masters of the Mystic Arts: borrowed dimensional energy,
+ *              sling rings, the Eye. Learned from books at Kamar-Taj.
+ *   asgardian  Seidr. Inherited rather than studied, and Frigga taught it to
+ *              Loki because Odin would not.
+ *   chaos      Not learned at all and not borrowed. Wanda and Agatha, and the
+ *              Darkhold that Chthon wrote it into.
+ *   dark       The Dark Dimension and the hells: Dormammu, Mephisto, Umar,
+ *              Nightmare. Power lent on terms, always.
+ *   elder      What the Elder Gods are made of, older than any practice.
+ *   green      Gaea's magic, of the living earth rather than any dimension.
+ *
+ * Null for everyone who does not practise magic. NOT a power ranking: an
+ * eldritch sorcerer is not weaker than a chaos witch, they are doing
+ * different things.
+ */
+export const MagicSchool = z.enum([
+  "eldritch",
+  "asgardian",
+  "chaos",
+  "dark",
+  "elder",
+  "green",
+]);
+
 export const SymbioteClass = z.enum(["lineage", "spawn", "anomaly", "ancient"]);
 
 export const Relation = z.object({
@@ -159,6 +192,7 @@ export const CharacterSource = z.object({
   species: z.string().trim().min(1).nullable().default(null),
   mutantClass: MutantClass.nullable().default(null),
   symbioteClass: SymbioteClass.nullable().default(null),
+  magicSchool: MagicSchool.nullable().default(null),
 
   powers: z.array(Power).min(1).max(6),
   origin: Bilingual,
@@ -240,6 +274,7 @@ export type Relation = z.infer<typeof Relation>;
 export type RelationKind = z.infer<typeof RelationKind>;
 export type MutantClass = z.infer<typeof MutantClass>;
 export type SymbioteClass = z.infer<typeof SymbioteClass>;
+export type MagicSchool = z.infer<typeof MagicSchool>;
 export type CharacterCategory = z.infer<typeof CharacterCategory>;
 
 /** The shipped shape: authored fields plus everything derived from the cast. */

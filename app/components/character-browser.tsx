@@ -33,6 +33,7 @@ export interface CharacterCard {
   species: string | null;
   mutantClass: MutantClass | null;
   symbioteClass: string | null;
+  magicSchool: string | null;
   universe: string[];
   /** Distinct performers, so "Tobey" and "Jackman" are searchable terms. */
   actors: string[];
@@ -165,13 +166,20 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
           aff("Masters of the Mystic Arts")(c) ||
           is("Witch", "Demon", "Human avatar")(c),
       },
-      {
-        id: "sorcerer",
-        parent: "magician",
-        match: (c) => aff("Masters of the Mystic Arts")(c) || aff("Vishanti")(c),
-      },
-      { id: "elder-god", parent: "magician", match: is("Elder God") },
-      { id: "demon", parent: "magician", match: is("Demon", "Faltine", "Fire demon") },
+      /**
+       * BY WHAT THEY PRACTISE, not by what they are.
+       *
+       * These were Sorcerers / Elder Gods / Demons, which sorts magic users by
+       * SPECIES and puts Loki and Agatha in the same "neither" bucket while
+       * separating Strange from Mordo, who draw on the identical source.
+       * Reading `magicSchool` asks the question a reader means.
+       */
+      { id: "magic-eldritch", parent: "magician", match: (c) => c.magicSchool === "eldritch" },
+      { id: "magic-asgardian", parent: "magician", match: (c) => c.magicSchool === "asgardian" },
+      { id: "magic-chaos", parent: "magician", match: (c) => c.magicSchool === "chaos" },
+      { id: "magic-dark", parent: "magician", match: (c) => c.magicSchool === "dark" },
+      { id: "magic-elder", parent: "magician", match: (c) => c.magicSchool === "elder" },
+      { id: "magic-green", parent: "magician", match: (c) => c.magicSchool === "green" },
       { id: "god", match: (c) => aff("Gods")(c) || is("Olympian")(c) },
       {
         id: "cosmic",

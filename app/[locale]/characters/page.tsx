@@ -68,6 +68,7 @@ export default async function CharactersPage({
     species: c.species,
     mutantClass: c.mutantClass,
     symbioteClass: c.symbioteClass,
+    magicSchool: c.magicSchool,
     performerOf: c.performerOf?.character ?? null,
     /**
      * THE BASE CHARACTER'S ARTWORK, for the character half of the split.
