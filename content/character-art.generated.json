@@ -1214,6 +1214,51 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "spider-man-2211": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Max_Borne_%28Earth-9500%29_from_Friendly_Neighborhood_Spider-Man_Vol_1_9_0001.jpg/revision/latest?cb=20191203043715",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "will-o-the-wisp": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/c2/Jackson_Arvad_%28Earth-616%29_from_Sensational_Spider-Man_Vol_2_31_0002.jpg/revision/latest?cb=20120124020956",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "kangaroo": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9a/Frank_Oliver_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_Master_Edition_Vol_1_18_0001.png/revision/latest?cb=20170409215614",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "massacre": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Superior_Spider-Man_Vol_1_4_Textless.jpg/revision/latest?cb=20121115183819",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "spencer-smythe": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Spencer_Smythe_%28Earth-616%29_from_Spine-Tingling_Spider-Man_Infinity_Comic_Vol_1_2_001.png/revision/latest?cb=20240120004915",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "raze": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/02/Claire_Dixon_%28Earth-616%29_from_Carnage_Vol_2_11_001.jpg/revision/latest?cb=20160905211108",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "void-knight": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a9/Norrin_Radd_%28Earth-36%29_from_Startling_Stories_Thing_-_Night_Falls_on_Yancy_Street_Vol_1_1_0001.jpg/revision/latest?cb=20130530150839",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "jack-o-lantern": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/85/Jason_Macendale_Jr._%28Earth-616%29_from_Daredevil_Black_Armor_Vol_1_2_001.jpg/revision/latest?cb=20250915111656",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "madame-masque": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b7/Whitney_Frost_%28Earth-616%29_from_Iron_Man_Vol_7_3_Bengal_Varinat_cover_001.jpg/revision/latest?cb=20260314030354",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",

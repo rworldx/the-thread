@@ -738,6 +738,25 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6a/Hector_Rendoza_%28Earth-616%29_from_X-Men_Earth%27s_Mutant_Heroes_Vol_1_1.png/revision/latest?cb=20140129191726",
   "ziggy-karst":
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b4/Ziggy_Karst_%28Earth-616%29_from_Nightcrawler_Vol_4_5_001.png/revision/latest?cb=20141116061509",
+  /* Batch 23 — the last of the Spider-Verse roster. */
+  "spider-man-2211":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Max_Borne_%28Earth-9500%29_from_Friendly_Neighborhood_Spider-Man_Vol_1_9_0001.jpg/revision/latest?cb=20191203043715",
+  "will-o-the-wisp":
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c2/Jackson_Arvad_%28Earth-616%29_from_Sensational_Spider-Man_Vol_2_31_0002.jpg/revision/latest?cb=20120124020956",
+  "kangaroo":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9a/Frank_Oliver_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_Master_Edition_Vol_1_18_0001.png/revision/latest?cb=20170409215614",
+  "massacre":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Superior_Spider-Man_Vol_1_4_Textless.jpg/revision/latest?cb=20121115183819",
+  "spencer-smythe":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Spencer_Smythe_%28Earth-616%29_from_Spine-Tingling_Spider-Man_Infinity_Comic_Vol_1_2_001.png/revision/latest?cb=20240120004915",
+  "raze":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/02/Claire_Dixon_%28Earth-616%29_from_Carnage_Vol_2_11_001.jpg/revision/latest?cb=20160905211108",
+  "void-knight":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a9/Norrin_Radd_%28Earth-36%29_from_Startling_Stories_Thing_-_Night_Falls_on_Yancy_Street_Vol_1_1_0001.jpg/revision/latest?cb=20130530150839",
+  "jack-o-lantern":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/85/Jason_Macendale_Jr._%28Earth-616%29_from_Daredevil_Black_Armor_Vol_1_2_001.jpg/revision/latest?cb=20250915111656",
+  "madame-masque":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b7/Whitney_Frost_%28Earth-616%29_from_Iron_Man_Vol_7_3_Bengal_Varinat_cover_001.jpg/revision/latest?cb=20260314030354",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

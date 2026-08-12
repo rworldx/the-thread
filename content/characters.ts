@@ -1235,7 +1235,17 @@ const spiderVerse: CharacterDraft[] = [
     id: "doctor-octopus",
     nameEn: "Doctor Octopus",
     nameAr: "دكتور أوكتوبوس",
-    aliases: ["Doctor Octopus", "Otto Octavius", "Doc Ock", "Dr. Otto Octavius"],
+    /* Superior Spider-Man and Superior Octopus are both Otto, in Peter's
+       body and in his own. Aliases rather than records, by the rule Kindred
+       and the Red Goblin already set: this file holds people, not costumes. */
+    aliases: [
+      "Doctor Octopus",
+      "Otto Octavius",
+      "Doc Ock",
+      "Dr. Otto Octavius",
+      "Superior Spider-Man",
+      "Superior Octopus",
+    ],
     category: "villain",
     affiliation: [],
     universe: ["sony", "mcu"],
@@ -14337,6 +14347,226 @@ const mutantsI: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE LAST OF THE SPIDER-VERSE ROSTER, batch 23.
+ *
+ * The Superior Octopus and the Superior Spider-Man are NOT records here. Both
+ * are Otto Octavius, in his own body and in Peter's, and he is already in
+ * this corpus. They are aliases on him, by the rule Kindred and the Red
+ * Goblin already set: this file holds people, not costumes. That was one of
+ * the three decisions left open, and it answers itself the moment the
+ * Fandom lookup for "Superior Octopus" redirects to Otto Octavius.
+ *
+ * Raze and Void Knight are typed `ancient` rather than `lineage` or `spawn`:
+ * both were made in Knull's war rather than descended from Venom, which is
+ * the distinction that field exists for.
+ */
+const spiderLast: CharacterDraft[] = [
+  {
+    id: "spider-man-2211",
+    nameEn: "Spider-Man 2211",
+    nameAr: "سبايدرمان 2211",
+    aliases: ["Spider-Man 2211", "Max Borne"],
+    category: "hero",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "A Spider-Man from 2211", ar: "سبايدرمان من عام 2211" },
+      { en: "Six mechanical arms", ar: "ستة أذرع آلية" },
+      { en: "Polices the timestream", ar: "يحرس مجرى الزمن" },
+    ],
+    origin: {
+      en: "A Spider-Man from the twenty-third century who works as a time-cop and wears mechanical arms, which puts him halfway between Peter Parker and the man Peter fights most.",
+      ar: "سبايدرمان من القرن الثالث والعشرين يعمل شرطيَّ زمن ويرتدي أذرعًا آلية، فهو بين بيتر باركر وبين أكثر من يقاتله بيتر.",
+    },
+    related: [
+      { id: "spider-man", kind: "variant" },
+    ],
+  },
+  {
+    id: "will-o-the-wisp",
+    nameEn: "Will o' the Wisp",
+    nameAr: "ويل أو ذا ويسب",
+    aliases: ["Will o' the Wisp", "Jackson Arvad"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Mutate",
+    powers: [
+      { en: "Controls his own density", ar: "يتحكم بكثافته" },
+      { en: "Passes through or hardens", ar: "يعبر أو يتصلّب" },
+      { en: "Hypnotises with a light", ar: "ينوّم بضوء" },
+    ],
+    origin: {
+      en: "A scientist scattered at the molecular level in an accident and rebuilt by will alone, who can now pass through walls or make himself harder than steel.",
+      ar: "عالم تشتّت على المستوى الجزيئي في حادث وأعاد بناء نفسه بالإرادة وحدها، فصار يعبر الجدران أو يجعل نفسه أصلب من الفولاذ.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "kangaroo",
+    nameEn: "Kangaroo",
+    nameAr: "الكنغر",
+    aliases: ["Kangaroo", "Frank Oliver"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Leaps enormous distances", ar: "يقفز مسافات هائلة" },
+      { en: "Trained with real kangaroos", ar: "تدرّب مع كناغر حقيقية" },
+      { en: "Took it entirely seriously", ar: "وأخذ الأمر بجدّية تامة" },
+    ],
+    origin: {
+      en: "An Australian boxer who trained alongside kangaroos until he could leap like one, and who committed to the theme with a sincerity nobody asked for.",
+      ar: "ملاكم أسترالي تدرّب مع الكناغر حتى صار يقفز مثلها، والتزم بالثيمة بصدق لم يطلبه أحد.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "massacre",
+    nameEn: "Massacre",
+    nameAr: "ماساكر",
+    aliases: ["Massacre", "Marcus Lyman"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Cannot feel anything", ar: "لا يشعر بشيء" },
+      { en: "A brain injury took it", ar: "أخذته إصابة دماغية" },
+      { en: "Kills without any anger", ar: "يقتل بلا غضب" },
+    ],
+    origin: {
+      en: "A man whose brain injury removed his capacity to feel emotion or empathy, who kills methodically and without anger, and who knows exactly what he has lost.",
+      ar: "رجل أزالت إصابة دماغية قدرته على الشعور والتعاطف، يقتل بمنهجية وبلا غضب، ويعلم تمامًا ما الذي فقده.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "spencer-smythe",
+    nameEn: "Spencer Smythe",
+    nameAr: "سبنسر سمايث",
+    aliases: ["Spencer Smythe"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "Built the first Spider-Slayer", ar: "بنى أول قاتل عنكبوت" },
+      { en: "A robotics engineer", ar: "مهندس روبوتات" },
+      { en: "His own machines killed him", ar: "قتلته آلاته" },
+    ],
+    origin: {
+      en: "The engineer who built the original Spider-Slayer robots for J. Jonah Jameson, and who was killed by the radiation from the machines he kept making.",
+      ar: "المهندس الذي بنى روبوتات قاتل العنكبوت الأصلية لجي جونا جيمسون، وقتله الإشعاع من الآلات التي ظل يصنعها.",
+    },
+    related: [
+      { id: "spider-man", kind: "enemy" },
+      { id: "alistair-smythe", kind: "family" },
+    ],
+  },
+  {
+    id: "raze",
+    nameEn: "Raze",
+    nameAr: "رايز",
+    aliases: ["Raze"],
+    category: "villain",
+    affiliation: ["Symbiotes"],
+    universe: ["sony"],
+    species: "Symbiote",
+    symbioteClass: "ancient",
+    powers: [
+      { en: "A symbiote grown from Knull", ar: "سيمبيوت نبت من نال" },
+      { en: "Cuts through anything", ar: "يقطع أي شيء" },
+      { en: "Made for the King in Black", ar: "صُنع للملك الأسود" },
+    ],
+    origin: {
+      en: "A symbiote created in Knull's war, built to cut rather than to bond, and one of the few that has never wanted a host at all.",
+      ar: "سيمبيوت أُنشئ في حرب نال، صُنع ليقطع لا ليرتبط، وهو من قلائل لم يرغب قط في مضيف.",
+    },
+    related: [
+      { id: "knull", kind: "ally" },
+    ],
+  },
+  {
+    id: "void-knight",
+    nameEn: "Void Knight",
+    nameAr: "فارس الفراغ",
+    aliases: ["Void Knight"],
+    category: "villain",
+    affiliation: ["Symbiotes"],
+    universe: ["sony"],
+    species: "Symbiote",
+    symbioteClass: "ancient",
+    powers: [
+      { en: "A symbiote in armour", ar: "سيمبيوت في درع" },
+      { en: "Serves the King in Black", ar: "يخدم الملك الأسود" },
+      { en: "Built for the invasion", ar: "صُنع للغزو" },
+    ],
+    origin: {
+      en: "One of Knull's armoured symbiote soldiers, made for the invasion of Earth rather than grown from anyone, which is why it fights like a weapon and not a creature.",
+      ar: "أحد جنود نال السيمبيوتية المدرّعة، صُنع لغزو الأرض لا نبت من أحد، ولهذا يقاتل كسلاح لا كمخلوق.",
+    },
+    related: [
+      { id: "knull", kind: "ally" },
+    ],
+  },
+  {
+    id: "jack-o-lantern",
+    nameEn: "Jack O'Lantern",
+    nameAr: "جاك أو لانترن",
+    aliases: ["Jack O'Lantern", "Jason Macendale"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "A flying platform and gas", ar: "منصة طائرة وغاز" },
+      { en: "Pumpkin bombs, again", ar: "قنابل يقطين، مجددًا" },
+      { en: "Became the Hobgoblin later", ar: "صار هوبغوبلن لاحقًا" },
+    ],
+    origin: {
+      en: "A mercenary with a burning pumpkin head and a flying platform, who wanted so badly to be a proper goblin that he eventually bought the identity.",
+      ar: "مرتزق برأس يقطين مشتعل ومنصة طائرة، أراد أن يكون غوبلن حقيقيًا إرادةً بلغت به أن اشترى الهوية في النهاية.",
+    },
+    related: [
+      { id: "hobgoblin", kind: "variant" },
+      { id: "spider-man", kind: "enemy" },
+    ],
+  },
+  {
+    id: "madame-masque",
+    nameEn: "Madame Masque",
+    nameAr: "مدام ماسك",
+    aliases: ["Madame Masque", "Whitney Frost"],
+    category: "villain",
+    affiliation: [],
+    universe: ["sony"],
+    species: "Human",
+    powers: [
+      { en: "A golden mask, always", ar: "قناع ذهبي دائمًا" },
+      { en: "Runs the Maggia", ar: "تدير المافيا" },
+      { en: "Her face was scarred", ar: "شُوّه وجهها" },
+    ],
+    origin: {
+      en: "The daughter of a crime boss who took over his organisation after an accident scarred her face, and who has worn a golden mask ever since.",
+      ar: "ابنة زعيم إجرام تولّت منظمته بعد حادث شوّه وجهها، ولبست منذئذ قناعًا ذهبيًا.",
+    },
+    related: [
+      { id: "kingpin", kind: "ally" },
+      { id: "iron-man", kind: "enemy" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -14360,6 +14590,7 @@ export const characters: CharacterDraft[] = [
   ...mutantsG,
   ...mutantsH,
   ...mutantsI,
+  ...spiderLast,
   ...avengers,
   ...guardians,
   ...xmen,
