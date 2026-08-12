@@ -265,7 +265,10 @@
       "magic-necromancy": "Necromancy",
       "magic-blood": "Blood",
       "magic-voodoo": "Voodoo",
-      "magic-dark": "Dark"
+      "magic-dark": "Dark",
+      "mutant-delta": "Delta",
+      "mutant-epsilon": "Epsilon",
+      "symbiote-gestalt": "Gestalt"
     },
     "appearsIn": "Appears in",
     "appearanceCount": "{n, plural, one {# title} other {# titles}}",

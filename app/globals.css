@@ -6177,3 +6177,14 @@ html:has(:target) {
     margin-block-start: var(--space-1);
   }
 }
+
+/**
+ * A LEVEL NOBODY IN THE CORPUS CARRIES — shown so the system reads as six
+ * rather than four, dimmed and unpressable so it is not a dead end. It is a
+ * label at this point, not a control, so it loses the pointer and the hover.
+ */
+.chip:disabled {
+  opacity: 0.4;
+  cursor: default;
+  border-style: dashed;
+}

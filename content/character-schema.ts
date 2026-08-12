@@ -113,11 +113,19 @@ export const RelationKind = z.enum([
 ]);
 
 /**
- * HOW A SYMBIOTE CAME TO EXIST — Marvel's own four categories, not a tier list.
+ * HOW A SYMBIOTE CAME TO EXIST — and NOT, it turns out, Marvel's own system.
  *
- * The same rule `MutantClass` follows: this is a published in-universe
- * classification, so it can sit on a page as a fact. It is about ORIGIN rather
- * than power, which is why Toxin and Riot are different kinds of thing even
+ * This comment used to claim these were "Marvel's own four categories" and a
+ * "published in-universe classification". Checked, and that is wrong: unlike
+ * the Omega level, which House of X #1 formally defines, Marvel has never
+ * published a symbiote class system. The origins below are real and sourced —
+ * the Life Foundation five WERE forcibly spawned, Toxin IS the thousandth of
+ * its line — but grouping them into five named classes is this site's
+ * editorial framing, and the schema should say so rather than borrow an
+ * authority it does not have.
+ *
+ * It is about ORIGIN rather than power, which is why Toxin and Riot are
+ * different kinds of thing even
  * though both descend from Venom.
  *
  *   lineage  Natural generational descent. Venom, then Carnage from Venom,
@@ -191,7 +199,19 @@ export const MagicSchool = z.enum([
   "green",
 ]);
 
-export const SymbioteClass = z.enum(["lineage", "spawn", "anomaly", "ancient"]);
+export const SymbioteClass = z.enum([
+  "lineage",
+  "spawn",
+  "anomaly",
+  "ancient",
+  /**
+   * GESTALT. Four of the Life Foundation five were merged into one creature,
+   * Hybrid, which is neither a descendant nor a harvest: it is several
+   * symbiotes forced into a single mind that does not agree with itself. Spawn
+   * described where its parts came from and said nothing about what it became.
+   */
+  "gestalt",
+]);
 
 export const Relation = z.object({
   id: Id,

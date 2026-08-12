@@ -9837,7 +9837,7 @@ const lifeFoundation: CharacterDraft[] = [
     affiliation: ["Symbiotes"],
     universe: ["sony"],
     species: "Symbiote",
-    symbioteClass: "spawn",
+    symbioteClass: "gestalt",
     powers: [
       { en: "Four symbiotes in one", ar: "أربعة سيمبيوتات في واحد" },
       { en: "Argues with itself", ar: "يخاصم نفسه" },

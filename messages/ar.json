@@ -265,7 +265,10 @@
       "magic-necromancy": "سحر الموتى",
       "magic-blood": "سحر الدم",
       "magic-voodoo": "فودو",
-      "magic-dark": "السحر الأسود"
+      "magic-dark": "السحر الأسود",
+      "mutant-delta": "دلتا",
+      "mutant-epsilon": "إبسيلون",
+      "symbiote-gestalt": "مندمج"
     },
     "appearsIn": "يظهر في",
     "appearanceCount": "{n, plural, zero {لا عناوين} one {عنوان واحد} two {عنوانان} few {# عناوين} many {# عنوانًا} other {# عنوان}}",

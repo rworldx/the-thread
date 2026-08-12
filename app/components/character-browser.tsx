@@ -127,6 +127,12 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       { id: "mutant-alpha", parent: "mutant", match: (c) => c.mutantClass === "alpha" },
       { id: "mutant-beta", parent: "mutant", match: (c) => c.mutantClass === "beta" },
       { id: "mutant-gamma", parent: "mutant", match: (c) => c.mutantClass === "gamma" },
+      /* Delta and epsilon match nobody here and are shown anyway, disabled, so
+         the six-level system is legible rather than looking like four. They
+         are real classifications from adjacent material; the corpus simply
+         holds no one who carries them. */
+      { id: "mutant-delta", parent: "mutant", match: (c) => c.mutantClass === "delta" },
+      { id: "mutant-epsilon", parent: "mutant", match: (c) => c.mutantClass === "epsilon" },
       {
         id: "human",
         match: (c) =>
@@ -164,6 +170,7 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       { id: "symbiote-spawn", parent: "symbiote", match: (c) => c.symbioteClass === "spawn" },
       { id: "symbiote-anomaly", parent: "symbiote", match: (c) => c.symbioteClass === "anomaly" },
       { id: "symbiote-ancient", parent: "symbiote", match: (c) => c.symbioteClass === "ancient" },
+      { id: "symbiote-gestalt", parent: "symbiote", match: (c) => c.symbioteClass === "gestalt" },
       {
         id: "magician",
         /* "Magic" is an affiliation because magic is a ROLE here, not a
@@ -578,6 +585,9 @@ export function CharacterBrowser({
                           role="radio"
                           aria-checked={chip === c.id}
                           className="chip chip-child"
+                          /* A level nobody carries is shown but not pressable:
+                             it teaches the system without offering a dead end. */
+                          disabled={!index.some((x) => c.match(x))}
                           onClick={() => setChip(c.id)}
                         >
                           {t(`chip.${c.id}`)}

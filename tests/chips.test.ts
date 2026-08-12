@@ -41,12 +41,12 @@ const PARENTS: Record<string, (c: C) => boolean> = {
 };
 
 const CHILDREN: { id: string; parent: string; match: (c: C) => boolean }[] = [
-  ...(["omega", "alpha", "beta", "gamma"] as MutantClass[]).map((k) => ({
+  ...(["omega", "alpha", "beta", "gamma", "delta", "epsilon"] as MutantClass[]).map((k) => ({
     id: `mutant-${k}`,
     parent: "mutant",
     match: (c: C) => c.mutantClass === k,
   })),
-  ...["lineage", "spawn", "anomaly", "ancient"].map((k) => ({
+  ...["lineage", "spawn", "anomaly", "ancient", "gestalt"].map((k) => ({
     id: `symbiote-${k}`,
     parent: "symbiote",
     match: (c: C) => c.symbioteClass === k,
@@ -86,9 +86,15 @@ describe("C26 the chip hierarchy", () => {
     });
   }
 
-  /** A child that matches nobody is a chip a reader can press for nothing. */
-  it("no child chip is empty", () => {
+  /**
+   * A child that matches nobody is normally a chip a reader can press for
+   * nothing. Delta and epsilon are the documented exceptions: they are real
+   * classifications and the corpus holds no one who carries them, so they
+   * render DISABLED rather than being hidden — the six-level system should
+   * read as six. Any OTHER empty chip is still a fault.
+   */
+  it("no child chip is empty except the two levels nobody carries", () => {
     const empty = CHILDREN.filter((ch) => !all.some((c) => ch.match(c))).map((c) => c.id);
-    expect(empty).toEqual([]);
+    expect(empty.sort()).toEqual(["mutant-delta", "mutant-epsilon"]);
   });
 });
