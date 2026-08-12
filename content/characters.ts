@@ -426,7 +426,8 @@ const avengers: CharacterDraft[] = [
     category: "hero",
     affiliation: [],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT an ordinary human. He wields the Ten Rings by the end, and the chi was never ordinary. */
+    species: "Enhanced human",
     powers: [
       { en: "Master martial artist", ar: "أستاذ فنون قتالية" },
       { en: "The Ten Rings", ar: "الحلقات العشر" },
@@ -1423,7 +1424,8 @@ const defenders: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Defenders"],
     universe: ["defenders", "mcu", "legacy"],
-    species: "Human",
+    /* NOT an ordinary human. Radioactive waste blinded him and rewired every other sense. Radar sense is not training. */
+    species: "Mutate",
     powers: [
       { en: "Radar sense", ar: "حاسة رادارية" },
       { en: "Heightened hearing", ar: "سمع فائق" },
@@ -1487,7 +1489,8 @@ const defenders: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Defenders"],
     universe: ["defenders"],
-    species: "Human",
+    /* NOT an ordinary human. He punched the heart of a dragon and the chi is what came back out. */
+    species: "Enhanced human",
     powers: [
       { en: "The chi-charged fist", ar: "القبضة المشحونة بالتشي" },
       { en: "Martial arts master", ar: "أستاذ فنون قتالية" },
@@ -1568,7 +1571,8 @@ const defenders: CharacterDraft[] = [
     category: "antihero",
     affiliation: ["Young Avengers"],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT an ordinary human. Photographic reflexes, and in the MCU the ancestral power that comes with them. */
+    species: "Enhanced human",
     powers: [
       { en: "Copies any movement", ar: "تحاكي أي حركة" },
       { en: "Trained fighter", ar: "مقاتلة مدرَّبة" },
@@ -1905,7 +1909,8 @@ const villains: CharacterDraft[] = [
     category: "antivillain",
     affiliation: ["Ten Rings"],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT an ordinary human. The Ten Rings keep Wenwu alive for a thousand years. Not ageing is a power. */
+    species: "Enhanced human",
     powers: [
       { en: "The Ten Rings", ar: "الحلقات العشر" },
       { en: "A thousand years of combat", ar: "ألف عام من القتال" },
@@ -3364,7 +3369,8 @@ const ensemble: CharacterDraft[] = [
     category: "hero",
     affiliation: [],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT an ordinary human. She lifts Mjolnir and becomes the Mighty Thor. */
+    species: "Enhanced human",
     powers: [
       { en: "Astrophysicist", ar: "عالمة فيزياء فلكية" },
       { en: "Wields Mjolnir", ar: "تحمل ميولنير" },
@@ -4917,7 +4923,8 @@ const thunderbolts: CharacterDraft[] = [
     category: "antihero",
     affiliation: ["Thunderbolts"],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT an ordinary human. A quantum accident left her phasing through matter and unable to reliably stop. */
+    species: "Mutate",
     powers: [
       { en: "Phases through matter", ar: "تعبر المادة" },
       { en: "Cannot always stay solid", ar: "لا تثبت صلبة دائمًا" },
@@ -5540,7 +5547,8 @@ const others: CharacterDraft[] = [
     category: "villain",
     affiliation: [],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT an ordinary human. He evolved himself first, which is the whole of his method. */
+    species: "Mutate",
     powers: [
       { en: "Rebuilds species from scratch", ar: "يعيد بناء الأنواع من الصفر" },
       { en: "Builds whole worlds", ar: "يبني عوالم كاملة" },
@@ -6021,7 +6029,8 @@ const others: CharacterDraft[] = [
     category: "antihero",
     affiliation: ["Midnight Sons"],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT an ordinary human. The Bloodstone gives her the strength and the long life. */
+    species: "Enhanced human",
     powers: [
       { en: "The Bloodstone", ar: "حجر الدم" },
       { en: "Raised as a monster hunter", ar: "نشأت صائدة وحوش" },
@@ -6705,9 +6714,11 @@ const others: CharacterDraft[] = [
     nameAr: "الفارس الأسود",
     aliases: ["Black Knight", "Dane Whitman"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["mcu", "legacy"],
     species: "Human",
+    /* A mystical object or rite, not equipment. */
+    magicSchools: ["eldritch"],
     powers: [
       { en: "The Ebony Blade", ar: "النصل الأبنوسي" },
       { en: "Cuts anything", ar: "يقطع أي شيء" },
@@ -7401,9 +7412,11 @@ const laterHeroes: CharacterDraft[] = [
     nameAr: "النمر الأبيض",
     aliases: ["White Tiger", "Ava Ayala"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["animation"],
     species: "Human",
+    /* A mystical object or rite, not equipment. */
+    magicSchools: ["eldritch"],
     powers: [
       { en: "The Jade Tiger amulet", ar: "تميمة النمر اليشمي" },
       { en: "Peak agility", ar: "رشاقة قصوى" },
@@ -8122,7 +8135,8 @@ const antagonists: CharacterDraft[] = [
     category: "antivillain",
     affiliation: [],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT an ordinary human. Sovereign, grown in a pod. Not human at any point. */
+    species: "Alien",
     powers: [
       { en: "Genetically designed", ar: "مصمَّمة وراثيًا" },
       { en: "Commands a golden fleet", ar: "تقود أسطولًا ذهبيًا" },
@@ -8530,7 +8544,8 @@ const antagonists: CharacterDraft[] = [
     category: "villain",
     affiliation: [],
     universe: ["defenders"],
-    species: "Human",
+    /* NOT an ordinary human. Same resurrection, same price. */
+    species: "Enhanced human",
     powers: [
       { en: "Kyoketsu-shoge chain", ar: "سلسلة كيوكِتسو-شوغيه" },
       { en: "Comes back", ar: "يعود" },
@@ -8598,7 +8613,8 @@ const antagonists: CharacterDraft[] = [
     category: "villain",
     affiliation: [],
     universe: ["defenders"],
-    species: "Human",
+    /* NOT an ordinary human. Died, and the Hand brought him back. Twice. */
+    species: "Enhanced human",
     powers: [
       { en: "Died and did not stay dead", ar: "مات ولم يبقَ ميتًا" },
       { en: "Runs Rand from a penthouse", ar: "يدير راند من شقة علوية" },
@@ -8898,7 +8914,8 @@ const cosmicBeings: CharacterDraft[] = [
        Universe, which Eon appoints and no team confers. */
     affiliation: ["Protectors of the Universe"],
     universe: ["animation"],
-    species: "Human",
+    /* NOT an ordinary human. The Quantum Bands make him Protector of the Universe. */
+    species: "Enhanced human",
     powers: [
       { en: "Wears the Quantum Bands", ar: "يرتدي أساور الكم" },
       { en: "Protector of the Universe", ar: "حامي الكون" },
@@ -8934,7 +8951,8 @@ const spiderRogues: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Maggia"],
     universe: ["sony"],
-    species: "Human",
+    /* NOT an ordinary human. A steel alloy plate surgically set into his skull. */
+    species: "Mutate",
     powers: [
       { en: "A skull plated in steel", ar: "جمجمة مصفّحة بالفولاذ" },
       { en: "Charges head first", ar: "يندفع برأسه أولًا" },
@@ -9157,9 +9175,11 @@ const spiderRogues: CharacterDraft[] = [
     nameAr: "كاليبسو",
     aliases: ["Calypso"],
     category: "villain",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["sony"],
     species: "Human",
+    /* A mystical object or rite, not equipment. */
+    magicSchools: ["voodoo"],
     powers: [
       { en: "Voodoo and old rites", ar: "سحر الفودو وطقوس قديمة" },
       { en: "Bends a hunter's will", ar: "تلوي إرادة صيّاد" },
@@ -10988,7 +11008,8 @@ const heralds: CharacterDraft[] = [
     category: "hero",
     affiliation: [],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT an ordinary human. An antimatter reactor where a body should be. */
+    species: "Enhanced human",
     powers: [
       { en: "Antimatter reactor for a body", ar: "جسد كمفاعل مضاد للمادة" },
       { en: "A physicist first", ar: "فيزيائي قبل كل شيء" },
@@ -15392,9 +15413,11 @@ const collectives: CharacterDraft[] = [
     nameAr: "السنتيفار",
     aliases: ["The Centivars", "Aiko Maki"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["Magic"],
     universe: ["mcu"],
     species: "Human",
+    /* A mystical object or rite, not equipment. */
+    magicSchools: ["eldritch"],
     powers: [
       { en: "A hundred of them at once", ar: "مئة منهم في آن" },
       { en: "Represent the natural order", ar: "يمثلون النظام الطبيعي" },
