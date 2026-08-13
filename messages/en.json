@@ -472,7 +472,8 @@
       "lineage": "Natural lineage",
       "spawn": "Artificial spawn",
       "anomaly": "Inverted anomaly",
-      "ancient": "Ancient strain"
+      "ancient": "Ancient strain",
+      "gestalt": "Gestalt"
     }
   },
   "rights": {

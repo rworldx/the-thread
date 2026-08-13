@@ -1294,11 +1294,6 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
-  "galan-of-taa": {
-    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d1/Amazing_Spider-Man_Vol_5_12_Fantastic_Four_Villains_Variant_Textless.jpg/revision/latest?cb=20181216083445",
-    "source": "chosen",
-    "matchedAs": "hand-picked"
-  },
   "mistress-love": {
     "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1e/Mistress_Love_%28Earth-616%29_from_Iron_Man_Vol_5_15_001.jpg/revision/latest?cb=20211228034133",
     "source": "chosen",
@@ -1873,6 +1868,11 @@
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/598-silver-surfer.jpg",
     "source": "shdb",
     "matchedAs": "Silver Surfer"
+  },
+  "shalla-bal": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5e/Shalla-Bal_%28Earth-828%29_from_The_Fantastic_Four_First_Steps_promotional_material_002.jpg/revision/latest?cb=20250711075836",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "thanos": {
     "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6f/Thanos_Vol_4_1_Lim_Virgin_Variant.jpg/revision/latest?cb=20231110201203",

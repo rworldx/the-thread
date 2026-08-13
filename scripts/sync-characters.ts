@@ -59,6 +59,10 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  /* The Earth-828 Surfer on her board. The wiki lookup finds an MCU-wiki
+     infobox for her, but this is the one that reads as the character. */
+  "shalla-bal":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5e/Shalla-Bal_%28Earth-828%29_from_The_Fantastic_Four_First_Steps_promotional_material_002.jpg/revision/latest?cb=20250711075836",
   "ms-marvel":
     "https://www.hollywoodreporter.com/wp-content/uploads/2018/12/ms._marvel_38_-_publicity_-_p_2018.jpg",
   echo:
@@ -772,8 +776,6 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/New_Mutants_Vol_4_2_Adams_Variant_Textless.jpg/revision/latest?cb=20200514003124",
   /* Batch 24 — the top of the cosmic hierarchy. Mistress Love, Sire Hate
      and the Fulcrum are filed under Earth-616 rather than (Multiverse). */
-  "galan-of-taa":
-    "https://static.wikia.nocookie.net/marveldatabase/images/d/d1/Amazing_Spider-Man_Vol_5_12_Fantastic_Four_Villains_Variant_Textless.jpg/revision/latest?cb=20181216083445",
   "queen-of-nevers":
     "https://static.wikia.nocookie.net/marveldatabase/images/4/48/Silver_Surfer_Vol_7_2_Textless.jpg/revision/latest?cb=20140116222853",
   "captain-universe":

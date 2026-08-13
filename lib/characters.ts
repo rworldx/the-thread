@@ -135,6 +135,18 @@ function matchesFor(seg: string): string[] {
 /** Parsed once, so defaults are filled and nothing downstream sees `undefined`. */
 const parsed = authored.map((c) => CharacterSource.parse(c));
 
+/**
+ * See `notIn` on the schema. MODULE SCOPE, because two different functions
+ * answer "is this character in this title" and both have to give the same
+ * answer. It lived inside `build()` first, so a character's own page dropped
+ * the excluded title while the TITLE's cast list still listed them — the Leader
+ * gone from his own filmography and still standing in Daredevil season 2.
+ */
+const excluded = new Map(
+  parsed.filter((c) => c.notIn.length).map((c) => [c.id, new Set(c.notIn)] as const),
+);
+const isExcluded = (id: string, titleId: string) => excluded.get(id)?.has(titleId) ?? false;
+
 const aliasIndex = new Map<string, string[]>();
 for (const c of parsed) {
   for (const alias of [c.nameEn, ...c.aliases]) {
@@ -158,9 +170,6 @@ function build(): Character[] {
   const ordered = releaseOrder(titles);
   const appearances = new Map<string, string[]>();
   const portrayals = new Map<string, Character["portrayals"]>();
-  const excluded = new Map(
-    parsed.filter((c) => c.notIn.length).map((c) => [c.id, new Set(c.notIn)] as const),
-  );
   const fired = new Set<string>();
 
   for (const t of ordered) {
@@ -176,7 +185,7 @@ function build(): Character[] {
         for (const id of matchesFor(seg)) {
           /* See `notIn` on the schema: the credit uses the word for somebody
              else. Recorded as fired, so a stale exclusion cannot hide. */
-          if (excluded.get(id)?.has(t.id)) {
+          if (isExcluded(id, t.id)) {
             fired.add(`${id}/${t.id}`);
             continue;
           }
@@ -628,7 +637,7 @@ export function charactersIn(titleId: string): Character[] {
   credits.forEach((credit, i) => {
     for (const seg of segments(credit.character)) {
       for (const id of aliasIndex.get(seg) ?? []) {
-        if (!rank.has(id)) rank.set(id, i);
+        if (!rank.has(id) && !isExcluded(id, titleId)) rank.set(id, i);
       }
     }
   });

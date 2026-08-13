@@ -97,7 +97,10 @@ describe("C. the character corpus", () => {
        eight turning out to be credited in the animated series once they had
        aliases to match on, then the Hulk's rogues, of whom five are unfilmed —
        Bi-Beast, Brian Banner, Xemnu, the U-Foes and Flux. Empty lists here are the intent, not a fault. */
-    expect(offScreen).toHaveLength(248);
+    /* 247, not 248: Galan of Taa was a second record for Galactus and had no
+       credit of his own, because the credit says "Galactus". Merging him back
+       removed an off-screen record rather than filling one. */
+    expect(offScreen).toHaveLength(247);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);
@@ -243,6 +246,13 @@ describe("C. the character corpus", () => {
        * had since gone dead, which is how verify:assets surfaced it.
        */
       "richard-rider": "Richard Rider (Earth-616)",
+      /**
+       * Same shape as Nova, and for the same reason: the screen has TWO Silver
+       * Surfers and the corpus names both, so our node is "Silver Surfer
+       * (Norrin Radd)" while the article is plainly "Silver Surfer". Shalla-Bal
+       * is not here because her art is hand-picked, which C20 does not cover.
+       */
+      "silver-surfer": "Silver Surfer",
     };
     const bare = (x: string) =>
       x.toLowerCase().replace(/[^a-z0-9]+/g, "").replace(/^the/, "");

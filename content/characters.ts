@@ -1073,6 +1073,14 @@ const xmen: CharacterDraft[] = [
     affiliation: ["X-Force", "Weapon X"],
     universe: ["fox", "mcu"],
     reality: "Earth-10005",
+    /* NOT a Mutant, and the joke of the character depends on it: the X-Men
+       keep turning him down because he was never born with an X-gene. Weapon X
+       copied Wolverine's healing factor into a dying man, which is what a
+       mutate is. Two real complications, neither enough to move him. The films
+       say the Workshop TRIGGERS dormant mutant genes, so Marvel Database files
+       Earth-10005 Wade as an "artificial mutant"; and X-Force #32 grew him a
+       new body out of Krakoa that came with an X-gene, which finally got him
+       citizenship. Both are him acquiring the gene, not being born with it. */
     species: "Mutate",
     powers: [
       { en: "Heals from anything", ar: "يشفى من كل شيء" },
@@ -1696,11 +1704,29 @@ const fantasticFour: CharacterDraft[] = [
     },
     related: [{ id: "mister-fantastic", kind: "enemy" }],
   },
+  /**
+   * TWO SURFERS, because the screen has two and they are not the same person.
+   *
+   * Norrin Radd is the Surfer of the comics and of Rise of the Silver Surfer,
+   * the 1994 cartoon and Super Hero Squad. The Fantastic Four: First Steps
+   * casts Julia Garner as SHALLA-BAL — in the comics Norrin's love on Zenn-La,
+   * the woman he gave himself up to save, and on Earth-828 the one who took
+   * the board instead. Filing both under one record would say the MCU cast a
+   * woman as Norrin, which is not what happened.
+   *
+   * The split runs on the credits themselves. First Steps credits her
+   * "Shalla-Bal / Silver Surfer", and everything else credits a bare "Silver
+   * Surfer" — so she matches on her own name, and Norrin keeps the bare alias
+   * he needs for the other four titles with First Steps excluded by name. See
+   * `notIn`: it throws if it ever stops matching.
+   */
   {
     id: "silver-surfer",
-    nameEn: "Silver Surfer",
-    nameAr: "السيلفر سيرفر",
+    nameEn: "Silver Surfer (Norrin Radd)",
+    nameAr: "السيلفر سيرفر (نورين راد)",
     aliases: ["Silver Surfer", "Norrin Radd"],
+    /* First Steps is Shalla-Bal's, and the bare alias would take it. */
+    notIn: ["the-fantastic-four-first-steps"],
     category: "antihero",
     affiliation: ["Cosmic entities", "Heralds of Galactus"],
     universe: ["fox"],
@@ -1714,7 +1740,36 @@ const fantasticFour: CharacterDraft[] = [
       en: "A man who gave himself to something enormous in exchange for his planet being spared, and now goes ahead of it looking for the next one.",
       ar: "رجل وهب نفسه لشيء هائل مقابل النجاة بكوكبه، وصار يسبقه باحثًا عن الكوكب التالي.",
     },
-    related: [{ id: "galactus", kind: "enemy" }],
+    related: [
+      { id: "galactus", kind: "enemy" },
+      { id: "shalla-bal", kind: "family" },
+    ],
+  },
+  {
+    id: "shalla-bal",
+    nameEn: "Silver Surfer (Shalla-Bal)",
+    nameAr: "السيلفر سيرفر (شالا-بال)",
+    /* NOT a bare "Silver Surfer": four other titles credit that and none of
+       them are hers. Her own name is on the First Steps credit. */
+    aliases: ["Shalla-Bal"],
+    category: "antihero",
+    affiliation: ["Cosmic entities", "Heralds of Galactus"],
+    universe: ["mcu"],
+    reality: "Earth-828",
+    species: "Zenn-Lavian",
+    powers: [
+      { en: "The Power Cosmic", ar: "القوة الكونية" },
+      { en: "Rides ahead of Galactus", ar: "تسبق غالاكتوس" },
+      { en: "Finds the next world", ar: "تدل على العالم التالي" },
+    ],
+    origin: {
+      en: "She took the bargain so her own world would live, and has spent every year since picking out somebody else's. The job is to arrive first and be the last thing a planet sees that is still willing to talk.",
+      ar: "قبلت الصفقة لينجو عالمها، وأمضت كل عام منذئذ تنتقي عالم غيرها. مهمتها أن تصل أولًا، وأن تكون آخر ما يراه كوكب وهو ما زال قادرًا على الكلام.",
+    },
+    related: [
+      { id: "galactus", kind: "enemy" },
+      { id: "silver-surfer", kind: "family" },
+    ],
   },
 ];
 
@@ -1928,7 +1983,19 @@ const villains: CharacterDraft[] = [
     id: "galactus",
     nameEn: "Galactus",
     nameAr: "جالاكتوس",
-    aliases: ["Galactus"],
+    /**
+     * GALAN OF TAA IS THIS RECORD, not a second one. He was the mortal
+     * scientist of the universe before this one and flew into its collapse; the
+     * thing that came out is what he has been ever since. The corpus held both
+     * as separate records joined by `variant`, which is the one thing that kind
+     * must never mean — the schema says so in as many words, because Banner and
+     * the Hulk, and Reynolds and the Void, are each ONE record with two names.
+     *
+     * The Surfer above genuinely is two records. The difference is the test:
+     * Norrin and Shalla-Bal can stand in a room together, and Galan and
+     * Galactus cannot.
+     */
+    aliases: ["Galactus", "Galan", "Galan of Taa"],
     /* ANTIVILLAIN, not villain. He is hunger with a shape. He must eat worlds to exist and has spared them when given a substitute, which is not what a villain does. */
     category: "antivillain",
     affiliation: ["Cosmic entities"],
@@ -1938,10 +2005,11 @@ const villains: CharacterDraft[] = [
       { en: "Consumes worlds", ar: "يلتهم العوالم" },
       { en: "The Power Cosmic", ar: "القوة الكونية" },
       { en: "Older than this universe", ar: "أقدم من هذا الكون" },
+      { en: "Was a man, once", ar: "كان رجلًا ذات يوم" },
     ],
     origin: {
-      en: "Not a villain so much as a condition. He eats planets because that is what he is, and he arrives with someone sent ahead to find them.",
-      ar: "ليس شريرًا بقدر ما هو حالة. يلتهم الكواكب لأن هذا ما هو عليه، ويصل ومعه من أُرسل قبله ليجدها.",
+      en: "Not a villain so much as a condition. He eats planets because that is what he is, and he arrives with someone sent ahead to find them. Before any of it he was Galan, a scientist of the universe that came before this one, who flew into its collapse to see what was there.",
+      ar: "ليس شريرًا بقدر ما هو حالة. يلتهم الكواكب لأن هذا ما هو عليه، ويصل ومعه من أُرسل قبله ليجدها. وقبل ذلك كله كان غالان، عالِمًا من الكون الذي سبق هذا، طار إلى انهياره ليرى ما هناك.",
     },
     /* In the film as the cloud that eats the planet, with no actor credited
        because no actor played him. See `alsoIn` on the schema. */
@@ -14994,28 +15062,6 @@ const cosmicTop: CharacterDraft[] = [
       ar: "ابن خالدٍ وجنّية، تجاوز عمره مئتي عام، يربّي إخوته الأصغر منه بكثير ويأبى أن يُنادى بالاسم الحركي الذي أطلقوه عليه.",
     },
     related: [{ id: "krakoa", kind: "ally" }],
-  },
-  {
-    id: "galan-of-taa",
-    nameEn: "Galan of Taa",
-    nameAr: "غالان من تاء",
-    aliases: ["Galan of Taa", "Galan"],
-    category: "supporting",
-    affiliation: ["Cosmic entities"],
-    universe: ["mcu"],
-    species: "Cosmic Being",
-    powers: [
-      { en: "The last man of the last universe", ar: "آخر رجال الكون السابق" },
-      { en: "Flew into a dying cosmos", ar: "حلّق في كونٍ يحتضر" },
-      { en: "Came out as Galactus", ar: "خرج جالاكتوس" },
-    ],
-    origin: {
-      en: "The mortal scientist of a universe before this one, who flew into its final collapse to see what was there and emerged as the thing that eats worlds.",
-      ar: "العالم الفاني من كونٍ سبق هذا، طار إلى انهياره الأخير ليرى ما هناك، فخرج الكائن الذي يلتهم العوالم.",
-    },
-    related: [
-      { id: "galactus", kind: "variant" },
-    ],
   },
   {
     id: "mistress-love",
