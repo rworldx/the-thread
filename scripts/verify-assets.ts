@@ -140,13 +140,55 @@ const EMBED_RESTRICTED = new Set([401, 403]);
  */
 const TRANSIENT = new Set([408, 425, 429, 500, 502, 503, 504]);
 
+/**
+ * FANDOM SAYS 403 WHERE EVERYONE ELSE SAYS 429.
+ *
+ * The paragraph above was written about 429s and is right about the shape of
+ * the problem, but it named the wrong status for the host that causes it. The
+ * 667 character portraits all come from static.wikia.nocookie.net, and when
+ * that edge decides a caller is a bot it answers 403 Forbidden — not 429, not
+ * Retry-After. From a laptop it never fires; from a GitHub runner, arriving
+ * with hundreds of others, it does. The step failed on a commit whose nine new
+ * URLs all return 200 when asked from here, one at a time.
+ *
+ * So a 403 on anything that is not a trailer is retried like a 429 rather than
+ * reported dead on the spot. It is NOT forgiven: it still has to come back 403
+ * three times across several seconds, and a URL that is genuinely gone or
+ * genuinely restricted still fails the gate. Trailers keep their own meaning
+ * for 403 — embedding disabled by the owner, which EMBED_RESTRICTED reports
+ * and does not count against the run.
+ */
+const throttled = (status: number, what: string) => status === 403 && what !== "trailer";
+
+/**
+ * THE GET FALLBACK HAS TO THROW THE BODY AWAY, and for a long time it did not.
+ *
+ * A HEAD costs nothing. This GET asks for a full-size comic scan, and the
+ * status is the only part of the answer that matters — but a fetch Response
+ * whose body is never read or cancelled holds its buffer AND its socket until
+ * the pool decides otherwise. On a laptop that never showed, because HEAD
+ * returns 200 there and this branch does not run. On a runner, where wikia
+ * answers HEAD with 403, it ran for hundreds of images at twelve at a time,
+ * and the step died 93 seconds into a sweep that takes 236.
+ *
+ * So the fallback asks for one byte and cancels what comes back. `Range` is a
+ * request to be polite that a server may refuse — a 200 with the whole file is
+ * a legal answer to it, which is why the cancel is what actually does the work
+ * and the header is only there to keep it small when honoured. 206 is the
+ * success case when it is.
+ */
+async function statusOnly(url: string, headers: Record<string, string>): Promise<number> {
+  const get = await fetch(url, { method: "GET", redirect: "follow", headers });
+  await get.body?.cancel();
+  return get.status === 206 ? 200 : get.status;
+}
+
 async function once(t: Target): Promise<number> {
-  const opts = { redirect: "follow" as const, headers: { "user-agent": "the-thread/verify" } };
+  const ua = { "user-agent": "the-thread/verify" };
   try {
-    const head = await fetch(t.url, { method: "HEAD", ...opts });
+    const head = await fetch(t.url, { method: "HEAD", redirect: "follow", headers: ua });
     if (head.status === 405 || (head.status === 403 && t.what !== "trailer")) {
-      const get = await fetch(t.url, { method: "GET", ...opts });
-      return get.status;
+      return await statusOnly(t.url, { ...ua, range: "bytes=0-0" });
     }
     return head.status;
   } catch {
@@ -156,7 +198,11 @@ async function once(t: Target): Promise<number> {
 
 async function check(t: Target): Promise<number> {
   let status = await once(t);
-  for (let attempt = 1; attempt <= 2 && (status === 0 || TRANSIENT.has(status)); attempt += 1) {
+  for (
+    let attempt = 1;
+    attempt <= 2 && (status === 0 || TRANSIENT.has(status) || throttled(status, t.what));
+    attempt += 1
+  ) {
     await new Promise((r) => setTimeout(r, attempt * 1500));
     status = await once(t);
   }
@@ -166,8 +212,36 @@ async function check(t: Target): Promise<number> {
 const ok = (status: number, what: string) =>
   (status >= 200 && status < 300) || (what === "trailer" && EMBED_RESTRICTED.has(status));
 
+/**
+ * DEAL THE HOSTS ALTERNATELY, so twelve workers are never all on one server.
+ *
+ * `collect()` walks the corpus in a sensible order and that order is the
+ * problem: every poster together, then every portrait together. The 667
+ * portraits are one contiguous run, so for that stretch all twelve workers are
+ * hammering static.wikia.nocookie.net and nothing else — the densest possible
+ * burst at the one host that answers bursts with 403.
+ *
+ * Round-robin by hostname turns that into a rotation: wikia, TMDB, YouTube,
+ * wikia, and each host sees roughly a third of the rate for three times as
+ * long. Deterministic, so a failing run can be reproduced, and it costs
+ * nothing — the same requests in a different order.
+ */
+function spread(targets: Target[]): Target[] {
+  const byHost = new Map<string, Target[]>();
+  for (const t of targets) {
+    const host = URL.canParse(t.url) ? new URL(t.url).hostname : "";
+    byHost.set(host, [...(byHost.get(host) ?? []), t]);
+  }
+  const queues = [...byHost.values()];
+  const out: Target[] = [];
+  for (let i = 0; out.length < targets.length; i += 1) {
+    for (const q of queues) if (i < q.length) out.push(q[i]!);
+  }
+  return out;
+}
+
 async function main() {
-  const targets = collect();
+  const targets = spread(collect());
   const byWhat = new Map<string, number>();
   for (const t of targets) byWhat.set(t.what, (byWhat.get(t.what) ?? 0) + 1);
   console.log(`\n  ${targets.length} external URLs to verify`);
@@ -250,4 +324,16 @@ async function main() {
   process.exitCode = 1;
 }
 
-await main();
+/**
+ * A CRASH IS NOT A VERDICT ON THE URLS, and the log should say so. The step
+ * that failed at 93 seconds reported nothing except a non-zero exit, which
+ * reads exactly like a dead link and is not one. If this ever dies again,
+ * whoever opens the log should be able to tell the two apart in one line.
+ */
+await main().catch((err: unknown) => {
+  console.error(
+    "\n  the sweep CRASHED — this is a fault in the check, not a verdict on the URLs.\n",
+  );
+  console.error(err);
+  process.exitCode = 1;
+});

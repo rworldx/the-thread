@@ -856,8 +856,11 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   /* The Hulk's rogues. The Leader is filed as Samuel Sterns, the Absorbing
      Man as Carl Creel, Wendigo under (Race) because it is a curse rather
      than a person. */
+  /* The green skull, not the man. The first pick here was a small panel of
+     Sterns before the change — accurate to the name and useless as a face,
+     because nobody recognises the Leader without the head. */
   "the-leader":
-    "https://static.wikia.nocookie.net/marveldatabase/images/3/31/Samuel_Sterns_%28Earth-616%29_from_Immortal_Hulk_Vol_1_50_001.jpg/revision/latest?cb=20211020051933",
+    "https://static.wikia.nocookie.net/hulk/images/9/9d/The_leader.png/revision/latest?cb=20111212040715",
   "absorbing-man":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/08/Carl_Creel_%28Earth-616%29_from_Gamma_Flight_Vol_1_1_cover_001.jpg/revision/latest?cb=20210713213623",
   "bi-beast":
