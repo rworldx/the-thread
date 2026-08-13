@@ -102,10 +102,12 @@ describe("C. the character corpus", () => {
        removed an off-screen record rather than filling one.
        246: Madelyne Pryor was credited all along, as "The Goblin Queen" —
        a leading article was the whole difference. Ten records gained one.
-       248: Ka-Zar and Zabu, who are in Ultimate Spider-Man but not in the
-       cast list TMDB holds for it. Amadeus Cho, added alongside them, IS
-       credited there and lands on screen. */
-    expect(offScreen).toHaveLength(248);
+       245, and the three that moved were all wrong the same way. Ka-Zar IS
+       credited in Ultimate Spider-Man, as "Ka Zar" without the hyphen, so he
+       was a normalising miss rather than an absence. Zabu, Kaine and Triton
+       are in that show and in none of its 66 credits, which is what `alsoIn`
+       is for. Squirrel Girl and Miles Morales had titles already. */
+    expect(offScreen).toHaveLength(245);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);

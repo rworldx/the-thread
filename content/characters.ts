@@ -1185,6 +1185,10 @@ const spiderVerse: CharacterDraft[] = [
     nameEn: "Miles Morales",
     nameAr: "مايلز موراليس",
     aliases: ["Miles Morales", "Miles"],
+    /* REAL AND UNCREDITED, like the Silver Surfer in the 1967 series. TMDB
+       lists 66 credits for Ultimate Spider-Man and none of them is this
+       character, who is a New Warrior across seasons 3 and 4. */
+    alsoIn: ["ultimate-spider-man"],
     category: "hero",
     affiliation: ["Spider-Society", "New Warriors"],
     universe: ["sony"],
@@ -4878,6 +4882,10 @@ const inhumans: CharacterDraft[] = [
     nameEn: "Triton",
     nameAr: "تريتون",
     aliases: ["Triton"],
+    /* REAL AND UNCREDITED, like the Silver Surfer in the 1967 series. TMDB
+       lists 66 credits for Ultimate Spider-Man and none of them is this
+       character, who is a New Warrior across seasons 3 and 4. */
+    alsoIn: ["ultimate-spider-man"],
     category: "hero",
     affiliation: ["Inhumans", "New Warriors"],
     universe: ["marvel-tv"],
@@ -6324,6 +6332,10 @@ const others: CharacterDraft[] = [
     nameEn: "Squirrel Girl",
     nameAr: "فتاة السنجاب",
     aliases: ["Squirrel Girl", "Doreen Green"],
+    /* REAL AND UNCREDITED, like the Silver Surfer in the 1967 series. TMDB
+       lists 66 credits for Ultimate Spider-Man and none of them is this
+       character, who is a New Warrior across seasons 3 and 4. */
+    alsoIn: ["ultimate-spider-man"],
     category: "hero",
     affiliation: ["New Warriors"],
     universe: ["animation", "legacy"],
@@ -9630,6 +9642,10 @@ const inheritors: CharacterDraft[] = [
     nameEn: "Kaine",
     nameAr: "كين",
     aliases: ["Kaine", "Kaine Parker"],
+    /* REAL AND UNCREDITED, like the Silver Surfer in the 1967 series. TMDB
+       lists 66 credits for Ultimate Spider-Man and none of them is this
+       character, who is a New Warrior across seasons 3 and 4. */
+    alsoIn: ["ultimate-spider-man"],
     category: "antihero",
     affiliation: ["Spider-Society", "New Warriors"],
     universe: ["sony"],
@@ -16124,30 +16140,39 @@ const newWarriors: CharacterDraft[] = [
     id: "amadeus-cho",
     nameEn: "Amadeus Cho",
     nameAr: "أماديوس تشو",
-    aliases: ["Amadeus Cho", "Iron Spider", "Brawn"],
+    aliases: ["Amadeus Cho", "Iron Spider", "Brawn", "Totally Awesome Hulk"],
     category: "hero",
-    affiliation: ["New Warriors"],
+    /* HULKS TOO, not just the New Warriors. He pulled the gamma out of Bruce
+       Banner and into himself and spent years as the Totally Awesome Hulk
+       before settling into Brawn — which is why he is no longer an ordinary
+       human, whatever his file said when he was only the smart one. */
+    affiliation: ["New Warriors", "Hulks"],
     universe: ["mcu"],
-    species: "Human",
+    species: "Gamma mutate",
     powers: [
       { en: "Eighth-smartest person alive", ar: "ثامن أذكى إنسان على قيد الحياة" },
+      { en: "Took the gamma off Banner", ar: "سحب أشعة غاما من بانر" },
       { en: "Calculates a fight before it starts", ar: "يحسب المعركة قبل أن تبدأ" },
       { en: "Built his own spider armour", ar: "بنى درع العنكبوت خاصته" },
     ],
     origin: {
-      en: "A teenager whose mind works like a machine for reading consequences, which makes him useful to everyone and hard for anyone to keep. He built the Iron Spider suit because nobody was going to hand him one.",
-      ar: "مراهق يعمل عقله كآلة لقراءة العواقب، ما يجعله نافعًا للجميع وعصيًا على أن يحتفظ به أحد. بنى بدلة آيرون سبايدر لأن لا أحد كان سيمنحه واحدة.",
+      en: "A teenager whose mind works like a machine for reading consequences, which makes him useful to everyone and hard for anyone to keep. He built the Iron Spider suit because nobody was going to hand him one, and later took the gamma out of Bruce Banner on the theory that he could hold it better.",
+      ar: "مراهق يعمل عقله كآلة لقراءة العواقب، ما يجعله نافعًا للجميع وعصيًا على أن يحتفظ به أحد. بنى بدلة آيرون سبايدر لأن لا أحد كان سيمنحه واحدة، ثم سحب أشعة غاما من بروس بانر ظنًا منه أنه أقدر على حملها.",
     },
     related: [
       { id: "spider-man", kind: "ally" },
       { id: "hulk", kind: "ally" },
+      { id: "she-hulk", kind: "ally" },
     ],
   },
   {
     id: "ka-zar",
     nameEn: "Ka-Zar",
     nameAr: "كازار",
-    aliases: ["Ka-Zar", "Kevin Plunder"],
+    /* "Ka Zar" as well: Ultimate Spider-Man credits him unhyphenated, inside
+       "Wolverine / Ka Zar", and normalising strips the hyphen from ours rather
+       than the space from theirs. A credit exists, so this stays derived. */
+    aliases: ["Ka-Zar", "Ka Zar", "Kevin Plunder"],
     category: "hero",
     affiliation: ["New Warriors"],
     universe: ["mcu"],
@@ -16171,6 +16196,10 @@ const newWarriors: CharacterDraft[] = [
     nameEn: "Zabu",
     nameAr: "زابو",
     aliases: ["Zabu"],
+    /* REAL AND UNCREDITED, like the Silver Surfer in the 1967 series. TMDB
+       lists 66 credits for Ultimate Spider-Man and none of them is this
+       character, who is a New Warrior across seasons 3 and 4. */
+    alsoIn: ["ultimate-spider-man"],
     category: "supporting",
     affiliation: ["New Warriors"],
     universe: ["mcu"],

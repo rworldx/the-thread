@@ -185,7 +185,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   "molecule-man": "https://static.wikia.nocookie.net/marveldatabase/images/6/67/Owen_Reece_%28Earth-616%29_from_New_Avengers_Vol_3_24_001.jpg/revision/latest?cb=20240516161927",
   knull: "https://cdn.marvel.com/content/2x/venom_2018_4_1.webp",
   "doctor-doom": "https://static.wikia.nocookie.net/heroes-and-villain/images/f/fc/Doctor_Doom.jpg/revision/latest?cb=20220208120207",
-  "squirrel-girl": "https://static.wikia.nocookie.net/versus-compendium/images/0/01/Squirrel_Girl.png/revision/latest?cb=20181025135059",
+  "squirrel-girl": "https://static.wikia.nocookie.net/marveldatabase/images/3/30/Unbeatable_Squirrel_Girl_Vol_2_7_Classic_Variant_Textless.jpg/revision/latest?cb=20160119180039",
   prowler: "https://static.wikia.nocookie.net/villains/images/8/89/Prowler2.jpg/revision/latest?cb=20190227002026",
   "a-bomb": "https://static.wikia.nocookie.net/marvel-battlelines/images/c/c9/Screenshot_2018-11-15-13-16-45.png/revision/latest?cb=20181116004936",
   "adam-warlock": "https://i.pinimg.com/736x/b6/30/78/b63078241e496fdaf4073646a12da56c.jpg",
