@@ -346,6 +346,32 @@ export const CharacterSource = z.object({
   alsoIn: z.array(z.string().trim().min(1)).default([]),
 
   /**
+   * SOMEBODY ELSE WEARING THE SAME WORD — the mirror of `alsoIn`.
+   *
+   * Some codenames are also ordinary nouns, and a live-action call sheet uses
+   * them for bit parts. Daredevil season 2 credits James Yaegashi as "Leader",
+   * meaning the man leading a room; the Hulk's Leader is Samuel Sterns and is
+   * not in that show. This corpus has been caught by a bare codename six times
+   * — Selene, Thunderbird, the Jackal, the Owl, Abyss, Hope Summers — and the
+   * answer every time was to delete the bare alias.
+   *
+   * That answer is wrong here, because the bare form is genuinely how five
+   * animated series credit him: "Leader (voice)" in Iron Man (1994), The
+   * Incredible Hulk (1996), Earth's Mightiest Heroes, Ultimate Spider-Man and
+   * Avengers Assemble. Deleting the alias would trade one false appearance for
+   * five true ones.
+   *
+   * So this names the titles where the word is a different person. It is the
+   * narrowest possible statement — one character, one title — and it CANNOT
+   * rot: an entry that stops matching throws at build time rather than quietly
+   * doing nothing, the same rule the poster-wall swaps run under.
+   *
+   * It is not a way to prune appearances that are merely surprising. If a
+   * credit really is the character, it stays.
+   */
+  notIn: z.array(z.string().trim().min(1)).default([]),
+
+  /**
    * CREDITED AS A DIFFERENT NAME EVERY TIME — join on the actor instead.
    *
    * Stan Lee is in 28 titles here and the character name is different in all

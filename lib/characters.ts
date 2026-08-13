@@ -158,6 +158,10 @@ function build(): Character[] {
   const ordered = releaseOrder(titles);
   const appearances = new Map<string, string[]>();
   const portrayals = new Map<string, Character["portrayals"]>();
+  const excluded = new Map(
+    parsed.filter((c) => c.notIn.length).map((c) => [c.id, new Set(c.notIn)] as const),
+  );
+  const fired = new Set<string>();
 
   for (const t of ordered) {
     /**
@@ -170,6 +174,12 @@ function build(): Character[] {
     for (const credit of castOf(t.id)) {
       for (const seg of segments(credit.character)) {
         for (const id of matchesFor(seg)) {
+          /* See `notIn` on the schema: the credit uses the word for somebody
+             else. Recorded as fired, so a stale exclusion cannot hide. */
+          if (excluded.get(id)?.has(t.id)) {
+            fired.add(`${id}/${t.id}`);
+            continue;
+          }
           if (!seenHere.has(id)) {
             seenHere.add(id);
             appearances.set(id, [...(appearances.get(id) ?? []), t.id]);
@@ -190,6 +200,23 @@ function build(): Character[] {
           }
         }
       }
+    }
+  }
+
+  /**
+   * AN EXCLUSION THAT NO LONGER EXCLUDES ANYTHING IS A LIE ABOUT THE DATA —
+   * either the credit was re-typed on TMDB, the alias changed, or somebody
+   * pruned an appearance that was real all along. Throwing here is the same
+   * rule the poster-wall swaps run under, and for the same reason: a silent
+   * no-op is how hand-tuning rots.
+   */
+  for (const [id, ids] of excluded) {
+    for (const titleId of ids) {
+      if (fired.has(`${id}/${titleId}`)) continue;
+      throw new Error(
+        `${id} excludes ${titleId}, but nothing there matches it any more. ` +
+          `Re-check the credit — the exclusion is either stale or was wrong.`,
+      );
     }
   }
 

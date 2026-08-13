@@ -1469,6 +1469,51 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "the-leader": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/3/31/Samuel_Sterns_%28Earth-616%29_from_Immortal_Hulk_Vol_1_50_001.jpg/revision/latest?cb=20211020051933",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "absorbing-man": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/08/Carl_Creel_%28Earth-616%29_from_Gamma_Flight_Vol_1_1_cover_001.jpg/revision/latest?cb=20210713213623",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "bi-beast": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Bi-Beast_%28Earth-616%29_from_Thor_Vol_1_315_001.png/revision/latest?cb=20170623160635",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "zzzax": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1e/Zzzax_%28Earth-616%29_from_Hulk_Vol_2_36_001.jpg/revision/latest?cb=20230625040346",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "wendigo": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Thaddeus_Ross_%28Earth-616%29_and_Wendigo_%28Race%29_from_King-Size_Hulk_Vol_1_1_001.jpg/revision/latest?cb=20170529053339",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "brian-banner": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/02/Brian_Banner_%28Earth-616%29_from_Immortal_She-Hulk_Vol_1_1_001.jpg/revision/latest?cb=20200925205931",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "xemnu": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a7/Immortal_Hulk_Vol_1_30_Textless.jpg/revision/latest?cb=20200202052805",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "u-foes": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/13/U-Foes_%28Earth-616%29_from_Amazing_Spider-Man_Vol_5_75_001.jpg/revision/latest?cb=20211020033316",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "flux": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/af/Benjamin_Tibbetts_%28Earth-616%29_from_World_War_Hulk_Gamma_Corps_Vol_1_1_0001.jpg/revision/latest?cb=20191208040547",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",

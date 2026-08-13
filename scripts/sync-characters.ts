@@ -853,6 +853,27 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Nakia_Shauku_%28Earth-616%29_from_Black_Panther_Vol_3_23_002.jpg/revision/latest?cb=20221025173801",
   attuma:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a0/Attuma_%28Earth-616%29_from_Namor_Vol_2_2_001.jpg/revision/latest?cb=20240828094112",
+  /* The Hulk's rogues. The Leader is filed as Samuel Sterns, the Absorbing
+     Man as Carl Creel, Wendigo under (Race) because it is a curse rather
+     than a person. */
+  "the-leader":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/31/Samuel_Sterns_%28Earth-616%29_from_Immortal_Hulk_Vol_1_50_001.jpg/revision/latest?cb=20211020051933",
+  "absorbing-man":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/08/Carl_Creel_%28Earth-616%29_from_Gamma_Flight_Vol_1_1_cover_001.jpg/revision/latest?cb=20210713213623",
+  "bi-beast":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Bi-Beast_%28Earth-616%29_from_Thor_Vol_1_315_001.png/revision/latest?cb=20170623160635",
+  "zzzax":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1e/Zzzax_%28Earth-616%29_from_Hulk_Vol_2_36_001.jpg/revision/latest?cb=20230625040346",
+  "brian-banner":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/02/Brian_Banner_%28Earth-616%29_from_Immortal_She-Hulk_Vol_1_1_001.jpg/revision/latest?cb=20200925205931",
+  "xemnu":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/a7/Immortal_Hulk_Vol_1_30_Textless.jpg/revision/latest?cb=20200202052805",
+  "u-foes":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/13/U-Foes_%28Earth-616%29_from_Amazing_Spider-Man_Vol_5_75_001.jpg/revision/latest?cb=20211020033316",
+  "flux":
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/af/Benjamin_Tibbetts_%28Earth-616%29_from_World_War_Hulk_Gamma_Corps_Vol_1_1_0001.jpg/revision/latest?cb=20191208040547",
+  "wendigo":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Thaddeus_Ross_%28Earth-616%29_and_Wendigo_%28Race%29_from_King-Size_Hulk_Vol_1_1_001.jpg/revision/latest?cb=20170529053339",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:

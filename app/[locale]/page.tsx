@@ -430,7 +430,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <ArrowIcon />
           </Link>
         </div>
-        <p className="section-lede">{t("characters.lede")}</p>
+        {/* The count is derived, not typed. It read "651" for three batches after
+            the corpus passed it, which is exactly the rot a hardcoded number
+            invites. Western digits in both locales, matching the ratings. */}
+        <p className="section-lede">
+          {t("characters.lede", { count: shownCharacters.length.toLocaleString("en") })}
+        </p>
         <ul className="face-rail" role="list">
           {faces.map((c) => (
             <li key={c.id}>

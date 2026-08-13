@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { allCharacters, charactersIn, shownCharacters } from "@/lib/characters";
+import { allCharacters, characterOf, charactersIn, shownCharacters } from "@/lib/characters";
 import { characters as authored } from "@/content/characters";
 import { CharacterSource } from "@/content/character-schema";
 import { titles } from "@/content/build";
@@ -24,7 +24,22 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(658);
+    expect(authored).toHaveLength(667);
+  });
+
+  /**
+   * C27 An exclusion is a claim that a specific credit is somebody else, and
+   * the build throws if one stops matching. This covers the other half: that
+   * it names a real title, and that the appearance it removes is really gone.
+   */
+  it("C27 every notIn names a real title and actually removes it", () => {
+    const ids = new Set(titles.map((t) => t.id));
+    for (const c of authored) {
+      for (const t of c.notIn ?? []) {
+        expect(ids.has(t), `${c.id} excludes ${t}, which is not a title`).toBe(true);
+        expect(characterOf(c.id)!.appearances).not.toContain(t);
+      }
+    }
   });
 
   it("C4 every relation points at a character that exists", () => {
@@ -80,8 +95,9 @@ describe("C. the character corpus", () => {
     /* 16 -> 30 -> 42: the fourteen unfilmed Celestials, then eleven of
        Spider-Man's rogues and twelve named mutants, then the Inheritors and the Life Foundation symbiotes, then the Elders and the cosmic abstracts, then the mystics and the remaining Heralds, then more mutants — of whom only three stayed off-screen, the other
        eight turning out to be credited in the animated series once they had
-       aliases to match on. Empty lists here are the intent, not a fault. */
-    expect(offScreen).toHaveLength(243);
+       aliases to match on, then the Hulk's rogues, of whom five are unfilmed —
+       Bi-Beast, Brian Banner, Xemnu, the U-Foes and Flux. Empty lists here are the intent, not a fault. */
+    expect(offScreen).toHaveLength(248);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);

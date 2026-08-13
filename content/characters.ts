@@ -15841,6 +15841,223 @@ const wakanda: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE HULK'S OWN ROGUES — the half of his stories this corpus was missing.
+ *
+ * Brian Banner is the one that matters most and has no powers at all: he beat
+ * his son and killed his wife and decided the boy was a monster years before
+ * any radiation. Everything else here is something Bruce fights; that one is
+ * what he is running from.
+ */
+const hulkRogues: CharacterDraft[] = [
+  {
+    id: "the-leader",
+    nameEn: "The Leader",
+    nameAr: "الزعيم",
+    /* The bare "Leader" stays: five animated series credit him exactly that
+       way. Daredevil season 2 uses the word for a bit part, and that one
+       title is excluded by name below rather than by dropping the alias. */
+    aliases: ["The Leader", "Samuel Sterns", "Leader"],
+    notIn: ["daredevil-s2"],
+    category: "villain",
+    affiliation: ["Hulks"],
+    universe: ["mcu"],
+    species: "Gamma mutate",
+    powers: [
+      { en: "A mind the gamma made", ar: "عقل صنعته أشعة غاما" },
+      { en: "Plans a decade ahead", ar: "يخطط لعقد مقبل" },
+      { en: "The other half of the accident", ar: "النصف الآخر من الحادث" },
+    ],
+    origin: {
+      en: "The same radiation that made Banner enormous made Samuel Sterns brilliant instead, which is the joke of him: one accident produced a body with no mind to run it and a mind with no body to carry it.",
+      ar: "الإشعاع نفسه الذي جعل بانر ضخمًا جعل صموئيل سترنز عبقريًا بدلًا من ذلك، وتلك مفارقته: حادث واحد أنتج جسدًا بلا عقل يقوده وعقلًا بلا جسد يحمله.",
+    },
+    related: [
+      { id: "hulk", kind: "enemy" },
+    ],
+  },
+  {
+    id: "absorbing-man",
+    nameEn: "Absorbing Man",
+    nameAr: "أبزوربنغ مان",
+    aliases: ["Absorbing Man", "Carl Creel"],
+    category: "villain",
+    affiliation: ["Hulks"],
+    universe: ["mcu"],
+    species: "Mutate",
+    powers: [
+      { en: "Becomes whatever he touches", ar: "يصير ما يلمسه" },
+      { en: "Steel, stone, or a whole building", ar: "فولاذًا أو حجرًا أو بناية كاملة" },
+      { en: "A boxer Loki picked", ar: "ملاكم اختاره لوكي" },
+    ],
+    origin: {
+      en: "A convict Loki gave a drink to, who now takes on the properties of anything he lays a hand on. The wrecking ball he carries is the only part of him that stays the same.",
+      ar: "سجين سقاه لوكي شرابًا، فصار يكتسب خصائص كل ما تطاله يده. وكرة الهدم التي يحملها هي الشيء الوحيد فيه الذي لا يتغيّر.",
+    },
+    related: [
+      { id: "hulk", kind: "enemy" },
+      { id: "loki", kind: "ally" },
+    ],
+  },
+  {
+    id: "bi-beast",
+    nameEn: "Bi-Beast",
+    nameAr: "باي بيست",
+    aliases: ["Bi-Beast"],
+    category: "villain",
+    affiliation: ["Hulks"],
+    universe: ["mcu"],
+    species: "Artificial being",
+    powers: [
+      { en: "Two heads, two purposes", ar: "رأسان وغرضان" },
+      { en: "One holds the war, one the art", ar: "أحدهما للحرب والآخر للفن" },
+      { en: "The last of a dead culture", ar: "آخر ما بقي من حضارة ميتة" },
+    ],
+    origin: {
+      en: "An android built by bird-people to preserve everything they knew, with their history in the lower head and their weapons in the upper one. The civilisation it was made to remember is already gone.",
+      ar: "آلي بناه قوم الطير ليحفظ كل ما عرفوه، تاريخهم في رأسه الأسفل وأسلحتهم في الأعلى. والحضارة التي صُنع ليتذكرها قد زالت أصلًا.",
+    },
+    related: [
+      { id: "hulk", kind: "enemy" },
+    ],
+  },
+  {
+    id: "zzzax",
+    nameEn: "Zzzax",
+    nameAr: "زاكس",
+    aliases: ["Zzzax"],
+    category: "villain",
+    affiliation: ["Hulks"],
+    universe: ["mcu"],
+    species: "Energy being",
+    powers: [
+      { en: "A living electrical field", ar: "حقل كهربائي حيّ" },
+      { en: "Feeds on brainwaves", ar: "يتغذى على موجات الدماغ" },
+      { en: "Born in a reactor accident", ar: "وُلد في حادث مفاعل" },
+    ],
+    origin: {
+      en: "A creature of pure electricity that formed in a reactor explosion and grows stronger by consuming the minds of anyone near it. It thinks with whatever it has most recently eaten.",
+      ar: "مخلوق من كهرباء خالصة تكوّن في انفجار مفاعل، ويزداد قوة بالتهام عقول من حوله. ويفكر بما التهمه آخرًا.",
+    },
+    related: [
+      { id: "hulk", kind: "enemy" },
+    ],
+  },
+  {
+    id: "wendigo",
+    nameEn: "Wendigo",
+    nameAr: "الويندِغو",
+    aliases: ["Wendigo"],
+    category: "villain",
+    affiliation: ["Hulks"],
+    universe: ["mcu"],
+    species: "Cursed being",
+    powers: [
+      { en: "A curse, not a creature", ar: "لعنة لا مخلوق" },
+      { en: "Passes to whoever eats human flesh", ar: "تنتقل إلى آكل لحم البشر" },
+      { en: "Never the same person twice", ar: "لا يكون الشخص نفسه مرتين" },
+    ],
+    origin: {
+      en: "Not one monster but a curse laid on the Canadian wilderness: eat human flesh there and you become it, and the last one is released the moment you do.",
+      ar: "ليس وحشًا واحدًا بل لعنة على براري كندا: من أكل لحم إنسان هناك صار إياه، وأُطلق سراح من قبله في اللحظة نفسها.",
+    },
+    related: [
+      { id: "hulk", kind: "enemy" },
+      { id: "wolverine", kind: "enemy" },
+    ],
+  },
+  {
+    id: "brian-banner",
+    nameEn: "Brian Banner",
+    nameAr: "برايان بانر",
+    aliases: ["Brian Banner"],
+    category: "villain",
+    affiliation: ["Hulks"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "No powers at all", ar: "بلا أي قوى" },
+      { en: "A scientist who feared his son", ar: "عالم خاف من ابنه" },
+      { en: "The reason the Hulk exists", ar: "السبب في وجود هالك" },
+    ],
+    origin: {
+      en: "Bruce Banner's father, who beat him and killed his mother, and who convinced himself the boy was a monster long before any radiation. The Hulk is what the child built to survive that house.",
+      ar: "أبو بروس بانر، ضربه وقتل أمه، وأقنع نفسه أن الصبي وحش قبل أي إشعاع بزمن. وهالك هو ما بناه الطفل لينجو من ذلك البيت.",
+    },
+    related: [
+      { id: "hulk", kind: "family" },
+    ],
+  },
+  {
+    id: "xemnu",
+    nameEn: "Xemnu",
+    nameAr: "زيمنو",
+    aliases: ["Xemnu", "Xemnu the Titan"],
+    category: "villain",
+    affiliation: ["Hulks"],
+    universe: ["mcu"],
+    species: "Alien",
+    powers: [
+      { en: "Rewrites what people remember", ar: "يعيد كتابة ما يتذكره الناس" },
+      { en: "Everyone is sure they love him", ar: "الجميع موقنون بحبهم له" },
+      { en: "Wants a family, by force", ar: "يريد عائلة بالقوة" },
+    ],
+    origin: {
+      en: "An alien who makes the world believe he was always its favourite, and takes children to replace the species he lost. The horror of him is that nobody can tell anything is wrong.",
+      ar: "فضائي يجعل العالم يصدّق أنه كان دومًا محبوبه الأول، ويأخذ الأطفال بدلًا من جنسه الذي فقده. ورعبه أن لا أحد يستطيع أن يدرك أن ثمة خطبًا.",
+    },
+    related: [
+      { id: "hulk", kind: "enemy" },
+    ],
+  },
+  {
+    id: "u-foes",
+    nameEn: "The U-Foes",
+    nameAr: "اليو-فوز",
+    aliases: ["The U-Foes", "U-Foes"],
+    category: "villain",
+    affiliation: ["Hulks"],
+    universe: ["mcu"],
+    species: "Mutate",
+    powers: [
+      { en: "Four, irradiated on purpose", ar: "أربعة تعرّضوا للإشعاع عمدًا" },
+      { en: "Vector, Vapor, X-Ray, Ironclad", ar: "فيكتور وفيبور وإكس راي وآيرونكلاد" },
+      { en: "Wanted what the Fantastic Four got", ar: "أرادوا ما ناله الفانتاستك فور" },
+    ],
+    origin: {
+      en: "Four people who flew into cosmic rays deliberately, trying to copy the Fantastic Four, and came back with powers and none of the reasons to use them well.",
+      ar: "أربعة طاروا إلى الأشعة الكونية عن عمد، محاولين تقليد الفانتاستك فور، فعادوا بقوى وبلا شيء من أسباب إحسان استعمالها.",
+    },
+    related: [
+      { id: "hulk", kind: "enemy" },
+      { id: "mister-fantastic", kind: "enemy" },
+    ],
+  },
+  {
+    id: "flux",
+    nameEn: "Flux",
+    nameAr: "فلَكس",
+    aliases: ["Flux", "Benjamin Tibbets"],
+    category: "antivillain",
+    affiliation: ["Hulks"],
+    universe: ["mcu"],
+    species: "Gamma mutate",
+    powers: [
+      { en: "Gamma strength, growing", ar: "قوة غاما تتنامى" },
+      { en: "A soldier, not a volunteer", ar: "جندي لا متطوع" },
+      { en: "Made to hunt the Hulk", ar: "صُنع لمطاردة هالك" },
+    ],
+    origin: {
+      en: "A soldier dosed with gamma radiation by his own side to make a weapon that could catch Banner, and who never asked to become the thing he was sent after.",
+      ar: "جندي جرّعه قومه إشعاع غاما ليصنعوا سلاحًا يلحق ببانر، ولم يطلب قط أن يصير الشيء الذي أُرسل خلفه.",
+    },
+    related: [
+      { id: "hulk", kind: "enemy" },
+      { id: "thaddeus-ross", kind: "ally" },
+    ],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -15869,6 +16086,7 @@ export const characters: CharacterDraft[] = [
   ...cosmicTop,
   ...collectives,
   ...wakanda,
+  ...hulkRogues,
   ...avengers,
   ...guardians,
   ...xmen,

@@ -107,7 +107,7 @@ export default async function CharactersPage({
     <main className="characters-page">
       <header className="page-head">
         <h1>{t("heading")}</h1>
-        <p className="page-lede">{t("lede")}</p>
+        <p className="page-lede">{t("lede", { count: index.length.toLocaleString("en") })}</p>
       </header>
       {/**
        * SUSPENSE, because the browser below reads `useSearchParams`.
