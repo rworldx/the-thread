@@ -1147,7 +1147,7 @@ const spiderVerse: CharacterDraft[] = [
     nameAr: "سبايدر مان",
     aliases: ["Peter Parker", "Spider-Man", "Spiderman", "Peter Parker / Spider-Man"],
     category: "hero",
-    affiliation: ["Avengers", "Team Iron Man", "Spider-Society", "New Warriors"],
+    affiliation: ["Avengers", "Team Iron Man", "Spider-Society", "New Warriors", "Spider-Man's Team"],
     universe: ["mcu", "sony"],
     species: "Human mutate",
     powers: [
@@ -1186,7 +1186,7 @@ const spiderVerse: CharacterDraft[] = [
     nameAr: "مايلز موراليس",
     aliases: ["Miles Morales", "Miles"],
     category: "hero",
-    affiliation: ["Spider-Society"],
+    affiliation: ["Spider-Society", "New Warriors"],
     universe: ["sony"],
     reality: "Earth-1610",
     species: "Human mutate",
@@ -1329,7 +1329,7 @@ const spiderVerse: CharacterDraft[] = [
     aliases: ["Sandman", "Flint Marko"],
     /* ANTIVILLAIN, not villain. Flint Marko robs to pay for a sick daughter and says so, and Spider-Man 3 ends with Peter forgiving him rather than beating him. */
     category: "antivillain",
-    affiliation: ["Sinister Six"],
+    affiliation: ["Sinister Six", "New Warriors"],
     universe: ["sony", "mcu"],
     species: "Human mutate",
     powers: [
@@ -1478,7 +1478,7 @@ const defenders: CharacterDraft[] = [
     nameAr: "لوك كيج",
     aliases: ["Luke Cage", "Carl Lucas"],
     category: "hero",
-    affiliation: ["Defenders", "New Warriors"],
+    affiliation: ["Defenders", "Spider-Man's Team"],
     universe: ["defenders"],
     species: "Enhanced human",
     powers: [
@@ -1497,7 +1497,7 @@ const defenders: CharacterDraft[] = [
     nameAr: "آيرون فيست",
     aliases: ["Iron Fist", "Danny Rand", "Danny"],
     category: "hero",
-    affiliation: ["Defenders", "New Warriors"],
+    affiliation: ["Defenders", "Spider-Man's Team"],
     universe: ["defenders"],
     /* NOT an ordinary human. He punched the heart of a dragon and the chi is what came back out. */
     species: "Enhanced human",
@@ -4879,7 +4879,7 @@ const inhumans: CharacterDraft[] = [
     nameAr: "تريتون",
     aliases: ["Triton"],
     category: "hero",
-    affiliation: ["Inhumans"],
+    affiliation: ["Inhumans", "New Warriors"],
     universe: ["marvel-tv"],
     species: "Inhuman",
     powers: [
@@ -5524,7 +5524,7 @@ const moreSpider: CharacterDraft[] = [
     nameAr: "الكركدن",
     aliases: ["Rhino", "Aleksei Sytsevich"],
     category: "villain",
-    affiliation: ["Sinister Six"],
+    affiliation: ["Sinister Six", "New Warriors"],
     universe: ["sony"],
     species: "Human mutate",
     powers: [
@@ -5817,7 +5817,7 @@ const others: CharacterDraft[] = [
     nameAr: "نوفا (سام ألكسندر)",
     aliases: ["Sam Alexander"],
     category: "hero",
-    affiliation: ["Nova Corps", "New Warriors"],
+    affiliation: ["Nova Corps", "Spider-Man's Team"],
     universe: ["legacy"],
     /* NOT Human. Same helmet, same reason. */
     species: "Enhanced human",
@@ -6200,7 +6200,7 @@ const others: CharacterDraft[] = [
        record, because the corpus holds people rather than costumes. */
     aliases: ["Harry Osborn", "New Goblin", "Kindred"],
     category: "antivillain",
-    affiliation: [],
+    affiliation: ["New Warriors"],
     universe: ["sony"],
     species: "Human mutate",
     powers: [
@@ -6247,7 +6247,7 @@ const others: CharacterDraft[] = [
     nameAr: "ماري جين واتسون",
     aliases: ["Mary Jane Watson", "Mary Jane"],
     category: "supporting",
-    affiliation: [],
+    affiliation: ["New Warriors"],
     universe: ["sony", "animation"],
     species: "Human",
     powers: [
@@ -6325,7 +6325,7 @@ const others: CharacterDraft[] = [
     nameAr: "فتاة السنجاب",
     aliases: ["Squirrel Girl", "Doreen Green"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["New Warriors"],
     universe: ["animation", "legacy"],
     species: "Mutate",
     powers: [
@@ -7494,7 +7494,7 @@ const laterHeroes: CharacterDraft[] = [
     nameAr: "النمر الأبيض",
     aliases: ["White Tiger", "Ava Ayala"],
     category: "hero",
-    affiliation: ["Magic", "New Warriors"],
+    affiliation: ["Magic", "Spider-Man's Team"],
     universe: ["animation"],
     species: "Human",
     /* A mystical object or rite, not equipment. */
@@ -9631,7 +9631,7 @@ const inheritors: CharacterDraft[] = [
     nameAr: "كين",
     aliases: ["Kaine", "Kaine Parker"],
     category: "antihero",
-    affiliation: ["Spider-Society"],
+    affiliation: ["Spider-Society", "New Warriors"],
     universe: ["sony"],
     species: "Clone",
     powers: [
@@ -16111,6 +16111,83 @@ const hulkRogues: CharacterDraft[] = [
   },
 ];
 
+/**
+ * ULTIMATE SPIDER-MAN'S NEW WARRIORS, the three the corpus did not hold.
+ *
+ * Amadeus Cho is credited in the show and was simply absent. Ka-Zar and Zabu
+ * are not in TMDB's cast list, which runs to the regulars — the same sparseness
+ * that hid the Silver Surfer in the 1967 series — so they carry the season by
+ * hand and the team roster is honest without them being claimed as credited.
+ */
+const newWarriors: CharacterDraft[] = [
+  {
+    id: "amadeus-cho",
+    nameEn: "Amadeus Cho",
+    nameAr: "أماديوس تشو",
+    aliases: ["Amadeus Cho", "Iron Spider", "Brawn"],
+    category: "hero",
+    affiliation: ["New Warriors"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "Eighth-smartest person alive", ar: "ثامن أذكى إنسان على قيد الحياة" },
+      { en: "Calculates a fight before it starts", ar: "يحسب المعركة قبل أن تبدأ" },
+      { en: "Built his own spider armour", ar: "بنى درع العنكبوت خاصته" },
+    ],
+    origin: {
+      en: "A teenager whose mind works like a machine for reading consequences, which makes him useful to everyone and hard for anyone to keep. He built the Iron Spider suit because nobody was going to hand him one.",
+      ar: "مراهق يعمل عقله كآلة لقراءة العواقب، ما يجعله نافعًا للجميع وعصيًا على أن يحتفظ به أحد. بنى بدلة آيرون سبايدر لأن لا أحد كان سيمنحه واحدة.",
+    },
+    related: [
+      { id: "spider-man", kind: "ally" },
+      { id: "hulk", kind: "ally" },
+    ],
+  },
+  {
+    id: "ka-zar",
+    nameEn: "Ka-Zar",
+    nameAr: "كازار",
+    aliases: ["Ka-Zar", "Kevin Plunder"],
+    category: "hero",
+    affiliation: ["New Warriors"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "Raised in the Savage Land", ar: "تربّى في الأرض المتوحشة" },
+      { en: "Tracks anything that walks", ar: "يقتفي أثر كل ما يمشي" },
+      { en: "Speaks to the animals there", ar: "يخاطب حيوانات تلك الأرض" },
+    ],
+    origin: {
+      en: "An English boy stranded in a jungle that time forgot and raised by the animals in it. He is a lord by birth and has no use for it.",
+      ar: "صبي إنجليزي علق في غابة نسيها الزمن، فربّته حيواناتها. هو نبيل بالولادة ولا حاجة له بذلك.",
+    },
+    related: [
+      { id: "zabu", kind: "ally" },
+      { id: "spider-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "zabu",
+    nameEn: "Zabu",
+    nameAr: "زابو",
+    aliases: ["Zabu"],
+    category: "supporting",
+    affiliation: ["New Warriors"],
+    universe: ["mcu"],
+    species: "Sabretooth tiger",
+    powers: [
+      { en: "The last of his kind", ar: "آخر ما تبقى من جنسه" },
+      { en: "Smarter than a tiger should be", ar: "أذكى مما ينبغي لنمر" },
+      { en: "Does not leave Ka-Zar", ar: "لا يفارق كازار" },
+    ],
+    origin: {
+      en: "A sabretooth from a jungle where the ice age never ended, and the closest thing the boy raised there had to a parent.",
+      ar: "نمر مسنّن من غابة لم ينتهِ فيها العصر الجليدي، وأقرب ما عرفه الصبي الذي نشأ هناك إلى والد.",
+    },
+    related: [{ id: "ka-zar", kind: "ally" }],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -16140,6 +16217,7 @@ export const characters: CharacterDraft[] = [
   ...collectives,
   ...wakanda,
   ...hulkRogues,
+  ...newWarriors,
   ...avengers,
   ...guardians,
   ...xmen,

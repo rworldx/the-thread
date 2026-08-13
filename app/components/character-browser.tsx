@@ -298,6 +298,13 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
          Night Thrasher, Speedball and Namorita are a different set of people
          and none of them are here. */
       { id: "new-warriors", match: aff("New Warriors") },
+      /* THE ORIGINAL FIVE ARE A DIFFERENT TEAM, and filing them as New
+         Warriors was wrong. Nick Fury's five trainees — Spider-Man, White
+         Tiger, Power Man, Iron Fist and Nova — come first and are never named
+         on screen; the New Warriors are formed in season 3 around Agent Venom,
+         Iron Spider, Ka-Zar and the rest. Peter leads both, and he is the only
+         name on both chips. */
+      { id: "spider-mans-team", match: aff("Spider-Man's Team") },
       { id: "midnight-sons", match: aff("Midnight Sons") },
       { id: "revengers", match: aff("Revengers") },
       { id: "team-cap", match: aff("Team Captain America") },

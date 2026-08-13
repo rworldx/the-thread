@@ -59,6 +59,12 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  "amadeus-cho":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Amadeus_Cho_%28Earth-616%29_from_Champions_Vol_2_22_cover_001.jpg/revision/latest?cb=20180531011726",
+  "ka-zar":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/05/Kevin_Plunder_%28Earth-616%29_from_Avengers_Vol_8_50_004.jpg/revision/latest?cb=20230103031755",
+  "zabu":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/10/Zabu_%28Earth-616%29_from_Empyre_Avengers_Vol_1_1_001.jpg/revision/latest?cb=20210131203513",
   /* The Earth-828 Surfer on her board. The wiki lookup finds an MCU-wiki
      infobox for her, but this is the one that reads as the character. */
   "shalla-bal":

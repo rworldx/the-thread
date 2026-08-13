@@ -270,7 +270,8 @@
       "mutant-epsilon": "Epsilon",
       "symbiote-gestalt": "Gestalt",
       "talokanil": "Talokanil",
-      "new-warriors": "New Warriors"
+      "new-warriors": "New Warriors",
+      "spider-mans-team": "Spider-Man's Team"
     },
     "appearsIn": "Appears in",
     "appearanceCount": "{n, plural, one {# title} other {# titles}}",
@@ -355,6 +356,7 @@
       "plant-elemental": "Plant elemental",
       "pluvian": "Pluvian",
       "psychic-entity": "Psychic Entity",
+      "sabretooth-tiger": "Sabretooth tiger",
       "skrull": "Skrull",
       "strontian": "Strontian",
       "symbiote": "Symbiote",
@@ -441,7 +443,8 @@
       "x-men": "X-Men",
       "x-statix": "X-Statix",
       "young-avengers": "Young Avengers",
-      "new-warriors": "New Warriors"
+      "new-warriors": "New Warriors",
+      "spider-man-s-team": "Spider-Man's Team"
     },
     "artNote": "Character artwork. The cast photographs below each title are the actors who played them.",
     "playedByHeading": "The faces that played them",

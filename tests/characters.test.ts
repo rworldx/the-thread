@@ -24,7 +24,7 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(667);
+    expect(authored).toHaveLength(670);
   });
 
   /**
@@ -101,8 +101,11 @@ describe("C. the character corpus", () => {
        credit of his own, because the credit says "Galactus". Merging him back
        removed an off-screen record rather than filling one.
        246: Madelyne Pryor was credited all along, as "The Goblin Queen" —
-       a leading article was the whole difference. Ten records gained one. */
-    expect(offScreen).toHaveLength(246);
+       a leading article was the whole difference. Ten records gained one.
+       248: Ka-Zar and Zabu, who are in Ultimate Spider-Man but not in the
+       cast list TMDB holds for it. Amadeus Cho, added alongside them, IS
+       credited there and lands on screen. */
+    expect(offScreen).toHaveLength(248);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);

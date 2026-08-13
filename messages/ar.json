@@ -270,7 +270,8 @@
       "mutant-epsilon": "إبسيلون",
       "symbiote-gestalt": "مندمج",
       "talokanil": "التالوكانيون",
-      "new-warriors": "المحاربون الجدد"
+      "new-warriors": "المحاربون الجدد",
+      "spider-mans-team": "فريق سبايدر-مان"
     },
     "appearsIn": "يظهر في",
     "appearanceCount": "{n, plural, zero {لا عناوين} one {عنوان واحد} two {عنوانان} few {# عناوين} many {# عنوانًا} other {# عنوان}}",
@@ -355,6 +356,7 @@
       "plant-elemental": "عنصر نباتي",
       "pluvian": "بلوفيّ",
       "psychic-entity": "كيان ذهني",
+      "sabretooth-tiger": "نمر مسنّن",
       "skrull": "سكرَل",
       "strontian": "سترونتي",
       "symbiote": "سيمبيوت",
@@ -441,7 +443,8 @@
       "x-men": "إكس مِن",
       "x-statix": "إكس ستاتيكس",
       "young-avengers": "المنتقمون الصغار",
-      "new-warriors": "المحاربون الجدد"
+      "new-warriors": "المحاربون الجدد",
+      "spider-man-s-team": "فريق سبايدر-مان"
     },
     "artNote": "رسوم الشخصيات. أما صور الطاقم أسفل كل عمل فهي للممثلين الذين أدّوها.",
     "playedByHeading": "الوجوه التي أدّته",
