@@ -59,8 +59,16 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  "rhino":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/18/Aleksei_Sytsevich_%28Earth-616%29_from_Miles_Morales_Spider-Man_Vol_1_1_001.jpg/revision/latest?cb=20191010044711",
+  "triton":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/dc/Triton_%28Earth-616%29_from_Civil_War_II_Vol_1_1_001.jpg/revision/latest?cb=20160601210850",
+  "dagger":
+    "https://static.wikia.nocookie.net/marvelcrossroads/images/c/c2/Dagger_%28Marvel_Resuited%29.jpg/revision/latest?cb=20200430220411",
+  "cloak":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d7/Cloak_from_Marvel_Snap_004.jpg/revision/latest?cb=20251104201535",
   "amadeus-cho":
-    "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Amadeus_Cho_%28Earth-616%29_from_Champions_Vol_2_22_cover_001.jpg/revision/latest?cb=20180531011726",
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/97/Totally_Awesome_Hulk_Vol_1_1_Cho_Variant_Textless.jpg/revision/latest/scale-to-width-down/732?cb=20150917021939",
   "ka-zar":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/05/Kevin_Plunder_%28Earth-616%29_from_Avengers_Vol_8_50_004.jpg/revision/latest?cb=20230103031755",
   "zabu":
