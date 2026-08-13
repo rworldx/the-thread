@@ -179,7 +179,7 @@ const avengers: CharacterDraft[] = [
     id: "scarlet-witch",
     nameEn: "Scarlet Witch",
     nameAr: "الساحرة القرمزية",
-    aliases: ["Wanda Maximoff", "Scarlet Witch", "Wanda"],
+    aliases: ["Wanda Maximoff", "Scarlet Witch", "Wanda", "The Scarlet Witch"],
     category: "antihero",
     affiliation: ["Avengers", "Team Captain America", "Magic"],
     universe: ["mcu"],
@@ -262,7 +262,7 @@ const avengers: CharacterDraft[] = [
     id: "winter-soldier",
     nameEn: "Winter Soldier",
     nameAr: "جندي الشتاء",
-    aliases: ["Bucky Barnes", "Winter Soldier", "James Barnes", "James Buchanan Barnes"],
+    aliases: ["Bucky Barnes", "Winter Soldier", "James Barnes", "James Buchanan Barnes", "The Winter Soldier"],
     category: "antihero",
     affiliation: ["Avengers", "Team Captain America"],
     universe: ["mcu"],
@@ -1147,7 +1147,7 @@ const spiderVerse: CharacterDraft[] = [
     nameAr: "سبايدر مان",
     aliases: ["Peter Parker", "Spider-Man", "Spiderman", "Peter Parker / Spider-Man"],
     category: "hero",
-    affiliation: ["Avengers", "Team Iron Man", "Spider-Society"],
+    affiliation: ["Avengers", "Team Iron Man", "Spider-Society", "New Warriors"],
     universe: ["mcu", "sony"],
     species: "Human mutate",
     powers: [
@@ -1478,7 +1478,7 @@ const defenders: CharacterDraft[] = [
     nameAr: "لوك كيج",
     aliases: ["Luke Cage", "Carl Lucas"],
     category: "hero",
-    affiliation: ["Defenders"],
+    affiliation: ["Defenders", "New Warriors"],
     universe: ["defenders"],
     species: "Enhanced human",
     powers: [
@@ -1497,7 +1497,7 @@ const defenders: CharacterDraft[] = [
     nameAr: "آيرون فيست",
     aliases: ["Iron Fist", "Danny Rand", "Danny"],
     category: "hero",
-    affiliation: ["Defenders"],
+    affiliation: ["Defenders", "New Warriors"],
     universe: ["defenders"],
     /* NOT an ordinary human. He punched the heart of a dragon and the chi is what came back out. */
     species: "Enhanced human",
@@ -1554,7 +1554,7 @@ const defenders: CharacterDraft[] = [
     id: "kingpin",
     nameEn: "Kingpin",
     nameAr: "كينغ بن",
-    aliases: ["Kingpin", "Wilson Fisk", "Fisk"],
+    aliases: ["Kingpin", "Wilson Fisk", "Fisk", "The Kingpin"],
     category: "villain",
     affiliation: [],
     universe: ["sony", "defenders", "mcu"],
@@ -1622,7 +1622,7 @@ const fantasticFour: CharacterDraft[] = [
     id: "invisible-woman",
     nameEn: "Invisible Woman",
     nameAr: "المرأة الخفية",
-    aliases: ["Invisible Woman", "Sue Storm", "Susan Storm"],
+    aliases: ["Invisible Woman", "Sue Storm", "Susan Storm", "Invisible Girl", "The Invisible Woman"],
     category: "hero",
     affiliation: ["Fantastic Four"],
     universe: ["fox", "mcu"],
@@ -1644,7 +1644,7 @@ const fantasticFour: CharacterDraft[] = [
     id: "human-torch",
     nameEn: "Human Torch",
     nameAr: "الشعلة البشرية",
-    aliases: ["Human Torch", "Johnny Storm"],
+    aliases: ["Human Torch", "Johnny Storm", "The Human Torch"],
     category: "hero",
     affiliation: ["Fantastic Four"],
     universe: ["fox", "mcu"],
@@ -1727,6 +1727,13 @@ const fantasticFour: CharacterDraft[] = [
     aliases: ["Silver Surfer", "Norrin Radd"],
     /* First Steps is Shalla-Bal's, and the bare alias would take it. */
     notIn: ["the-fantastic-four-first-steps"],
+    /* REAL AND UNCREDITED. The Surfer carries the 1967 series' Galactus
+       episode, voiced by Vic Perrin, and TMDB lists four credits for the whole
+       show — the Four themselves and nobody else. Not a matcher failure: there
+       is no credit to match. The 1978 series is deliberately absent, where the
+       Thing only READS a Silver Surfer comic, and so is World's Greatest
+       Heroes, whose Galactus arrives with four elemental heralds instead. */
+    alsoIn: ["fantastic-four-1967"],
     category: "antihero",
     affiliation: ["Cosmic entities", "Heralds of Galactus"],
     universe: ["fox"],
@@ -1868,7 +1875,7 @@ const villains: CharacterDraft[] = [
     id: "red-skull",
     nameEn: "Red Skull",
     nameAr: "الجمجمة الحمراء",
-    aliases: ["Red Skull", "Johann Schmidt"],
+    aliases: ["Red Skull", "Johann Schmidt", "The Red Skull"],
     category: "villain",
     affiliation: ["HYDRA"],
     universe: ["mcu"],
@@ -2255,7 +2262,7 @@ const supporting: CharacterDraft[] = [
     id: "emma-frost",
     nameEn: "Emma Frost",
     nameAr: "إيما فروست",
-    aliases: ["White Queen", "Emma Frost"],
+    aliases: ["White Queen", "Emma Frost", "The White Queen"],
     category: "antihero",
     affiliation: ["Brotherhood", "Hellions"],
     universe: ["fox"],
@@ -5810,7 +5817,7 @@ const others: CharacterDraft[] = [
     nameAr: "نوفا (سام ألكسندر)",
     aliases: ["Sam Alexander"],
     category: "hero",
-    affiliation: ["Nova Corps"],
+    affiliation: ["Nova Corps", "New Warriors"],
     universe: ["legacy"],
     /* NOT Human. Same helmet, same reason. */
     species: "Enhanced human",
@@ -7461,7 +7468,7 @@ const laterHeroes: CharacterDraft[] = [
     nameAr: "الوكيل فينوم",
     aliases: ["Agent Venom", "Flash Thompson"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["New Warriors"],
     universe: ["mcu", "sony", "fox", "animation"],
     species: "Symbiote host",
     /* The strain he carries is the VENOM symbiote itself, so it sits in the
@@ -7487,7 +7494,7 @@ const laterHeroes: CharacterDraft[] = [
     nameAr: "النمر الأبيض",
     aliases: ["White Tiger", "Ava Ayala"],
     category: "hero",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "New Warriors"],
     universe: ["animation"],
     species: "Human",
     /* A mystical object or rite, not equipment. */
@@ -7521,7 +7528,7 @@ const smallScreen: CharacterDraft[] = [
     nameAr: "كلوك",
     aliases: ["Cloak", "Tyrone Johnson", "Ty"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["New Warriors"],
     universe: ["marvel-tv"],
     species: "Enhanced human",
     powers: [
@@ -7543,7 +7550,7 @@ const smallScreen: CharacterDraft[] = [
     nameAr: "داغر",
     aliases: ["Dagger", "Tandy Bowen", "Tandy"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["New Warriors"],
     universe: ["marvel-tv"],
     species: "Enhanced human",
     powers: [
@@ -9540,7 +9547,7 @@ const namedMutants: CharacterDraft[] = [
     id: "madelyne-pryor",
     nameEn: "Madelyne Pryor",
     nameAr: "مادلين برايور",
-    aliases: ["Madelyne Pryor", "Goblin Queen"],
+    aliases: ["Madelyne Pryor", "Goblin Queen", "The Goblin Queen"],
     /* ANTIVILLAIN. Grown to be a vessel, married Cyclops and bore his son before learning what she was. Everything after is an answer to being made as a substitute. */
     category: "antivillain",
     affiliation: [],
@@ -10030,7 +10037,7 @@ const lifeFoundation: CharacterDraft[] = [
     id: "chameleon",
     nameEn: "Chameleon",
     nameAr: "كاميليون",
-    aliases: ["Chameleon", "Dmitri Smerdyakov"],
+    aliases: ["Chameleon", "Dmitri Smerdyakov", "The Chameleon"],
     category: "villain",
     affiliation: [],
     universe: ["sony"],
@@ -11142,7 +11149,7 @@ const mutantsB: CharacterDraft[] = [
     id: "blob",
     nameEn: "Blob",
     nameAr: "بلوب",
-    aliases: ["Blob", "Fred Dukes", "Frederick Dukes"],
+    aliases: ["Blob", "Fred Dukes", "Frederick Dukes", "The Blob"],
     category: "villain",
     affiliation: ["Brotherhood"],
     universe: ["fox"],

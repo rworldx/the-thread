@@ -269,7 +269,8 @@
       "mutant-delta": "Delta",
       "mutant-epsilon": "Epsilon",
       "symbiote-gestalt": "Gestalt",
-      "talokanil": "Talokanil"
+      "talokanil": "Talokanil",
+      "new-warriors": "New Warriors"
     },
     "appearsIn": "Appears in",
     "appearanceCount": "{n, plural, one {# title} other {# titles}}",
@@ -439,7 +440,8 @@
       "x-force": "X-Force",
       "x-men": "X-Men",
       "x-statix": "X-Statix",
-      "young-avengers": "Young Avengers"
+      "young-avengers": "Young Avengers",
+      "new-warriors": "New Warriors"
     },
     "artNote": "Character artwork. The cast photographs below each title are the actors who played them.",
     "playedByHeading": "The faces that played them",

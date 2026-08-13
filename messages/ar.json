@@ -269,7 +269,8 @@
       "mutant-delta": "دلتا",
       "mutant-epsilon": "إبسيلون",
       "symbiote-gestalt": "مندمج",
-      "talokanil": "التالوكانيون"
+      "talokanil": "التالوكانيون",
+      "new-warriors": "المحاربون الجدد"
     },
     "appearsIn": "يظهر في",
     "appearanceCount": "{n, plural, zero {لا عناوين} one {عنوان واحد} two {عنوانان} few {# عناوين} many {# عنوانًا} other {# عنوان}}",
@@ -439,7 +440,8 @@
       "x-force": "إكس فورس",
       "x-men": "إكس مِن",
       "x-statix": "إكس ستاتيكس",
-      "young-avengers": "المنتقمون الصغار"
+      "young-avengers": "المنتقمون الصغار",
+      "new-warriors": "المحاربون الجدد"
     },
     "artNote": "رسوم الشخصيات. أما صور الطاقم أسفل كل عمل فهي للممثلين الذين أدّوها.",
     "playedByHeading": "الوجوه التي أدّته",

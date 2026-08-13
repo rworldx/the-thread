@@ -99,8 +99,10 @@ describe("C. the character corpus", () => {
        Bi-Beast, Brian Banner, Xemnu, the U-Foes and Flux. Empty lists here are the intent, not a fault. */
     /* 247, not 248: Galan of Taa was a second record for Galactus and had no
        credit of his own, because the credit says "Galactus". Merging him back
-       removed an off-screen record rather than filling one. */
-    expect(offScreen).toHaveLength(247);
+       removed an off-screen record rather than filling one.
+       246: Madelyne Pryor was credited all along, as "The Goblin Queen" —
+       a leading article was the whole difference. Ten records gained one. */
+    expect(offScreen).toHaveLength(246);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);

@@ -291,6 +291,13 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       { id: "fantastic-four", match: aff("Fantastic Four") },
       { id: "thunderbolts", match: aff("Thunderbolts") },
       { id: "young-avengers", match: aff("Young Avengers") },
+      /* Ultimate Spider-Man's team, named in seasons 3 and 4. Sits beside
+         Young Avengers because they are the same idea — the next generation,
+         training rather than arrived — and a reader looking for one of them
+         is looking for the other. NOT the comics roster of the same name:
+         Night Thrasher, Speedball and Namorita are a different set of people
+         and none of them are here. */
+      { id: "new-warriors", match: aff("New Warriors") },
       { id: "midnight-sons", match: aff("Midnight Sons") },
       { id: "revengers", match: aff("Revengers") },
       { id: "team-cap", match: aff("Team Captain America") },
