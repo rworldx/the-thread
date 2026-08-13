@@ -24,22 +24,22 @@ before it looked like anything.
 | Rights-holders | MCU (74) · Animation (56) · Legacy (31) · Fox (18) · Sony (15) · Defenders (13) · Marvel Television (9) |
 | Universes, as navigated | 8 — Fox splits into X-Men and Fantastic Four, two separate watch orders |
 | The essentials spine | 22 titles, Iron Man → Far From Home |
-| Characters | 350, appearances derived from cast |
-| Episodes | 1,463, with stills and runtimes, on the season pages |
-| Pages | 1,235, all statically prerendered |
-| Tests | 270 unit + 51 browser |
+| Characters | 670, appearances derived from cast |
+| Episodes | 2,193, with stills and runtimes, on the season pages |
+| Pages | 1,881, all statically prerendered |
+| Tests | 317 unit + 51 browser |
 | Locales | English and Arabic, both rendering |
 
 **Images: nothing is transformed by Vercel.** Image Optimization is billed per
-transformation, and 216 posters plus 350 portraits plus galleries and search
+transformation, and 216 posters plus 670 portraits plus galleries and search
 thumbnails exhausted the 5,000 free ones — after which the optimiser *errors*
 rather than degrading, so most of the deployed site lost its images while
 localhost looked perfect. Reducing usage does not refund a spent quota, so the
 count is now zero: TMDB serves each poster at a width written into the path,
 Wikia — the one host of eighteen that refuses a hotlinked request — goes
 through the free `images.weserv.nl`, and every other host is used directly. A
-full crawl of twelve routes and both searches makes **0** billed requests and
-1,489 direct ones, with no broken images. `image-loader.ts` records the two
+full crawl of twelve routes and both searches makes **0** billed requests, and
+the direct-request count simply tracks the corpus. `image-loader.ts` records the two
 shapes that were tried first and why each failed.
 
 **Seven and eight are both right, and they count different things.** Seven is
@@ -78,9 +78,9 @@ every prerequisite is an edge. Four orders fall out of one graph.
 
 ```
 content/schema.ts          TitleSource (hand-written) → Title (post-sync)
-content/titles.ts          the 130 nodes, one per line of the source document
+content/titles.ts          the 216 nodes, one per line of the source document
 content/tmdb.generated.json  machine-fetched facts, committed
-content/copy.ts            the 130 spoiler-safe one-liners, EN + AR
+content/copy.ts            the 216 spoiler-safe one-liners, EN + AR
 content/build.ts           the merge — the ONLY thing pages import
 app/poster-tints.css       generated per-title dominant colours
 lib/graph.ts               topoSort · releaseOrder · essentialsOrder · pathTo
@@ -88,7 +88,13 @@ lib/validate.ts            cross-node rules; runs in CI and fails the build
 lib/runtime.ts             runtimeOf · formatRuntime · schedule
 lib/locales.ts             the routing surface for locales
 lib/describe.ts            seasonLabel · formatCost · totalRuntime
+lib/collections.ts         the groupings the homepage and /projects render
+lib/wall.ts                which 24 posters make the hero, and in what order
+content/character-schema.ts  CharacterSource — species, roles, mutant levels
+content/characters.ts      the 670 people, hand-written; appearances are NOT
+lib/characters.ts          the cast join — see "Characters" below
 scripts/sync-tmdb.ts       build-time TMDB fetch; zero API calls in production
+scripts/sync-characters.ts artwork resolution; writes character-art.generated
 ```
 
 **Three layers, not two.** `titles.ts` is hand-written, `tmdb.generated.json`
@@ -122,6 +128,44 @@ confidently wrong runtime or an invented plot summary.
   events rather than release. That is not a dependency and must not be encoded
   as one.
 
+## Characters
+
+670 people. Their **appearances are derived, never typed**: a character is in a
+title when that title's TMDB cast credits name them. Hand-listing them would put
+the same fact in two files — the mistake `titleEn` and `spoilerSafe` each made
+once — and the second copy always rots first.
+
+The join runs on `aliases`, because a credit is written for a poster rather than
+for a database: `Logan / Wolverine`, `Dr. Otto Octavius`, `James Buchanan
+"Bucky" Barnes`, `Ted (Man-Thing)`. The matcher splits on the slash, reads
+inside the brackets, offers a quoted nickname three ways, and compares **whole
+segments** — never substrings, which once put Vision in every title crediting
+"Television".
+
+**One general rule, and only one.** An age prefix is stripped when the full form
+matches nothing: `Baby Groot` is Groot, and thirty-nine credits wear a
+qualifier like that. Two similar-looking rules were measured and rejected —
+stripping a leading article gives Hope van Dyne her mother's scenes, because
+Ant-Man credits `Janet van Dyne / The Wasp`; stripping an honorific gives Dagger
+a M.O.D.O.K. character called `General Dagger`. Those became explicit aliases
+instead, which are duller and cannot reach a stranger.
+
+**Two escape hatches, both self-policing**, because derivation cannot be
+absolute:
+
+| | For | Fails how |
+|---|---|---|
+| `alsoIn` | An appearance that is real and **uncredited**. TMDB lists four credits for the whole 1967 Fantastic Four series, and the Silver Surfer carries one of its episodes | Nothing — it is additive, so it is kept narrow by review |
+| `notIn` | A credit that uses the character's word for **somebody else**. Daredevil season 2 credits a bit part as "Leader"; the Hulk's Leader is not in that show | **Throws at build time** if it stops matching, so a stale exclusion cannot hide |
+
+Neither may be used to paper over a matcher bug. If a credit really is the
+character, the fix belongs in the alias list or the matcher.
+
+**Chips are a hierarchy, and a parent contains its children.** Selecting
+Mutants and then Omega must narrow, not empty — so every child chip is asserted
+to be a subset of its parent (`C26`). That property was shipped broken three
+times before it became a test.
+
 ## Invariants enforced in CI
 
 `npm run validate` fails the build on any of these:
@@ -143,19 +187,22 @@ confidently wrong runtime or an invented plot summary.
 
 ```bash
 npm install
-npm run build     # 133 static pages — render tests read its output
-npm test          # 160 unit tests
+npm run build     # 1,881 static pages — render tests read its output
+npm test          # 317 unit tests
 npm run test:e2e  # 320px reflow + touch targets, real browser
 npm run shots     # §13.12 matrix: widths × themes × 5 routes + contact sheets
-npm run validate  # corpus gate — this is what CI runs
+npm run validate  # corpus gate — hermetic, runs on every build
 npm run typecheck
+npm run verify:assets  # asks all ~9,200 external URLs to resolve. CI runs it;
+                       # it is deliberately NOT part of validate, which must
+                       # stay offline and instant
 ```
 
 To populate runtimes, dates, and posters:
 
 ```bash
 cp .env.example .env.local     # add your TMDB v4 read token
-npm run sync:tmdb              # ~130 requests, writes content/tmdb.generated.json
+npm run sync:tmdb              # ~216 requests, writes content/tmdb.generated.json
 ```
 
 Commit the generated JSON. Production makes **zero** TMDB calls — pages stay
@@ -232,7 +279,7 @@ rather than a stretched Latin one.
 
 ## Open decisions
 
-- **Story order site-wide.** Cut from v1. `storyYear` needs ~130 researched
+- **Story order site-wide.** Cut from v1. `storyYear` needs ~216 researched
   facts that exist on no API, and a half-null toggle is worse than none. The
   field is in the schema, nullable, for v1.1.
 
@@ -313,10 +360,10 @@ After the first sync:
 - **The Inhumans recommendation costs ~98h 52m**, against Blade: Trinity's
   ~3h 58m. That 25× gap is the whole reason cost annotations lead with runtime
   rather than a title count.
-- **129 of 130 titles matched.** The one that did not, *Elektra (The Hand & The
+- **215 of 216 titles matched**, and it is still the same one that does not. The one that did not, *Elektra (The Hand & The
   Devil)*, has no TMDB record — a rumoured project. `F7d` names it explicitly so
   a future title quietly failing to match cannot hide among the nulls.
-- **All 130 spoiler-safe lines are written**, in `content/copy.ts`. The English
+- **All 216 spoiler-safe lines are written**, in `content/copy.ts`. The English
   is final; **every Arabic line is a draft awaiting a native read** — listed with
   its English beside it in `docs/COPY-TODO.md`.
 
@@ -345,7 +392,7 @@ being 114 pasted blurbs.
 `style="--poster-tint:#4a1d1d"` — and that is the same trap as the `grid-row`
 inline style already removed from the Thread. A CSP without `unsafe-inline`
 blocks style attributes, and the failure here is quieter: the layout would not
-break, it would silently become 130 identical grey boxes, cancelling the whole
+break, it would silently become 216 identical grey boxes, cancelling the whole
 §14.4 placeholder strategy.
 
 `scripts/gen-tints.ts` writes `app/poster-tints.css` from the synced data — one
@@ -449,8 +496,9 @@ cannot tell which spans hold Arabic. `H5` separately guards that nothing under
 |---|---|
 | `/[locale]` | The poster mosaic, two doors, and "Previously…" for anyone returning |
 | `/[locale]/path/[slug]` | A title, and the path to it. **One route, not two** |
-| `/[locale]/order/[mode]` | The whole thread — `release` or `essentials` |
-| `/[locale]/universes/[id]/[[...order]]` | Seven universes, and how each bridges in |
+| `/[locale]/universes` | The eight doors, side by side |
+| `/[locale]/universes/[id]/[[...opts]]` | One universe, its order and its view. `all` is the whole thread |
+| `/[locale]/projects` | Everything there is, grouped — the flat inventory |
 | `/[locale]/characters` | The grid, its chips and its search |
 | `/[locale]/characters/[id]` | One person, every title they are in, and who played them |
 | `/[locale]/rights` | Who owned what, and when. The answer to "why is this hard" |
@@ -500,7 +548,7 @@ reasoning is worth more than the outcome.
 | Marvel's API evaluated, unreachable | developer.marvel.com no longer has a developer surface: `/account` redirects to the consumer homepage and there is no sign-in to obtain a key. The code path was deleted rather than left dormant. 9 characters carry the designed initial plate, and `C17` keeps that gap honest by forbidding an actor still in its place |
 | `content-visibility` removed again | It skips rendering off-screen subtrees, so every full-page screenshot showed the character grid empty. It blinds the gate that catches everything else. It returns when the budget test fails and says so |
 | Cool zinc neutrals, not warm | `--paper` was `#FEF2F2`, which is red-50: a pink page under red hairlines. Warm neutral plus red is the beige/oxblood family every "premium" AI page ships. The posters supply all the warmth this design needs |
-| Red on exactly five things | Thread, target node, progress fill, focus ring, one CTA. Every other red box became a hairline. On a page that is already 130 posters, red chrome reads as noise rather than as system |
+| Red on exactly five things | Thread, target node, progress fill, focus ring, one CTA. Every other red box became a hairline. On a page that is already 216 posters, red chrome reads as noise rather than as system |
 | `--color-branch`, renamed and relit | It means "not Marvel Studios", not "blue". The old `#1E40AF` was 2.28:1 on the dark ground and had never been measured there, so the fork's one piece of information was near-invisible in dark mode. `#2563EB` clears 3:1 in both |
 | The scroll reveal moves, it does not fade | An opacity reveal on a `view()` timeline needs `fill-mode: both`, which held every below-the-fold section at opacity 0 until scrolled. Two whole homepage sections rendered blank in the screenshot sheets, in print, and in any headless render |
 | One arrow component, not four | `←` and `→` were text, so they inherited the font stack and changed shape between locales. Phosphor, imported from `/dist/ssr/*` so the pages that show an arrow still ship zero JavaScript |
