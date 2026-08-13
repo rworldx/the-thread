@@ -630,7 +630,7 @@ const avengers: CharacterDraft[] = [
       en: "A variant of Loki taken as a child by an organisation that decides which lives are allowed to happen, who has spent her whole life hiding from it and planning to take it apart.",
       ar: "نسخة من لوكي أخذتها وهي طفلة منظمة تقرّر أي الحيوات يُسمح لها بالحدوث، فأمضت عمرها مختبئة منها ومخطّطة لتفكيكها.",
     },
-    related: [{ id: "loki", kind: "variant" }],
+    related: [{ id: "loki", kind: "variant", variantOrigin: "timeline-branch" }],
   },
 ];
 
@@ -1072,6 +1072,7 @@ const xmen: CharacterDraft[] = [
     category: "antihero",
     affiliation: ["X-Force", "Weapon X"],
     universe: ["fox", "mcu"],
+    reality: "Earth-10005",
     species: "Mutate",
     powers: [
       { en: "Heals from anything", ar: "يشفى من كل شيء" },
@@ -1179,6 +1180,7 @@ const spiderVerse: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-1610",
     species: "Human mutate",
     powers: [
       { en: "Turns invisible", ar: "يصير خفيًا" },
@@ -1190,7 +1192,7 @@ const spiderVerse: CharacterDraft[] = [
       ar: "مراهق من بروكلين في مدرسة لم يرد الالتحاق بها، يلدغه عنكبوت من مكان آخر، فيكتشف أنه واحد من كثيرين وعليه أن يقرّر أن يكون نفسه.",
     },
     related: [
-      { id: "spider-man", kind: "variant" },
+      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
       { id: "gwen-stacy", kind: "ally" },
     ],
   },
@@ -5326,6 +5328,7 @@ const moreSpider: CharacterDraft[] = [
     category: "antihero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-928",
     species: "Human mutate",
     powers: [
       { en: "Talons and fangs", ar: "مخالب وأنياب" },
@@ -5349,6 +5352,7 @@ const moreSpider: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-90214",
     species: "Human mutate",
     powers: [
       { en: "Spider powers", ar: "قدرات العنكبوت" },
@@ -5358,7 +5362,7 @@ const moreSpider: CharacterDraft[] = [
       en: "A Peter Parker from a 1933 where the Depression never lifted, who narrates his own life like a detective novel and does not understand colour when he sees it.",
       ar: "بيتر باركر من عام 1933 لم ينقشع فيه الكساد، يروي حياته كرواية بوليسية ولا يفهم الألوان حين يراها.",
     },
-    related: [{ id: "spider-man", kind: "variant" }],
+    related: [{ id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" }],
   },
   {
     id: "peni-parker",
@@ -5368,6 +5372,7 @@ const moreSpider: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-14512",
     species: "Human",
     powers: [
       { en: "Pilots the SP//dr suit", ar: "تقود بذلة SP//dr" },
@@ -5387,6 +5392,7 @@ const moreSpider: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-8311",
     species: "Uplifted animal",
     powers: [
       { en: "Cartoon physics", ar: "فيزياء الرسوم المتحركة" },
@@ -6361,7 +6367,7 @@ const others: CharacterDraft[] = [
       ar: "بيغي كارتر من كونٍ دخلت فيه الحجرة بدل ستيف روجرز. كانت الأمهر تكتيكيًا في كل نسخة من الحكاية، وهذه النسخة التي سُمح لها فيها بأخذ المصل أيضًا.",
     },
     related: [
-      { id: "peggy-carter", kind: "variant" },
+      { id: "peggy-carter", kind: "variant", variantOrigin: "alternate-universe" },
       { id: "captain-america", kind: "ally" },
     ],
   },
@@ -6408,8 +6414,8 @@ const others: CharacterDraft[] = [
       ar: "نسخة من لوكي شُذّبت إلى الفراغ وهو طفل، فنجا حتى صار من يتبعه الآخرون. أصغرهم سنًّا وأظهرهم قيادةً، وتلك النكتة وتلك الفكرة معًا.",
     },
     related: [
-      { id: "loki", kind: "variant" },
-      { id: "sylvie", kind: "variant" },
+      { id: "loki", kind: "variant", variantOrigin: "timeline-branch" },
+      { id: "sylvie", kind: "variant", variantOrigin: "timeline-branch" },
     ],
   },
   {
@@ -6549,7 +6555,7 @@ const others: CharacterDraft[] = [
       en: "The Loki who faked his death on Thanos's ship and spent a lifetime alone on a planet, which he eventually could not bear. His last illusion is the largest anyone in the series casts.",
       ar: "لوكي الذي زيّف موته على متن سفينة ثانوس وأمضى عمرًا وحيدًا على كوكب، حتى لم يعد يحتمل. وآخر أوهامه أضخم ما يصنعه أحد في المسلسل.",
     },
-    related: [{ id: "loki", kind: "variant" }],
+    related: [{ id: "loki", kind: "variant", variantOrigin: "timeline-branch" }],
   },
   {
     id: "boastful-loki",
@@ -6569,7 +6575,7 @@ const others: CharacterDraft[] = [
       en: "A Loki who says he killed Captain America and Iron Man with his bare hands, in a group of Lokis where nobody believes anybody. The betrayal is telegraphed and lands anyway.",
       ar: "لوكي يقول إنه قتل كابتن أمريكا والرجل الحديدي بيديه العاريتين، في جماعة من الـلوكي لا يصدّق فيها أحد أحدًا. والخيانة متوقّعة وتقع رغم ذلك.",
     },
-    related: [{ id: "loki", kind: "variant" }],
+    related: [{ id: "loki", kind: "variant", variantOrigin: "timeline-branch" }],
   },
   {
     id: "monica-rambeau",
@@ -6617,7 +6623,7 @@ const others: CharacterDraft[] = [
     /* An alligator in horns, in the Void from episode five on. TMDB credits no performer for a puppet. */
     alsoIn: ["loki-s1"],
     related: [
-      { id: "loki", kind: "variant" },
+      { id: "loki", kind: "variant", variantOrigin: "timeline-branch" },
       { id: "classic-loki", kind: "ally" },
     ],
   },
@@ -6676,7 +6682,7 @@ const others: CharacterDraft[] = [
     /* Leads the mob of Lokis in the Void. Hiddleston plays him, credited only as Loki. */
     alsoIn: ["loki-s1"],
     related: [
-      { id: "loki", kind: "variant" },
+      { id: "loki", kind: "variant", variantOrigin: "timeline-branch" },
       { id: "classic-loki", kind: "ally" },
       { id: "alligator-loki", kind: "ally" },
     ],
@@ -6766,6 +6772,7 @@ const others: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-138",
     species: "Human mutate",
     powers: [
       { en: "Anarchy, as a method", ar: "الفوضوية بوصفها منهجًا" },
@@ -6939,7 +6946,7 @@ const whiteVision: CharacterDraft[] = [
        nothing reading the cast can find him. */
     alsoIn: ["wandavision-s1"],
     related: [
-      { id: "vision", kind: "variant" },
+      { id: "vision", kind: "variant", variantOrigin: "alternate-universe" },
       { id: "scarlet-witch", kind: "ally" },
     ],
   },
@@ -8654,8 +8661,8 @@ const livePeters: CharacterDraft[] = [
        from three universes, which is the single most interesting fact about
        them and the reason the multiverse section of this site exists. */
     related: [
-      { id: "spider-man-andrew", kind: "variant" },
-      { id: "spider-man-tom", kind: "variant" },
+      { id: "spider-man-andrew", kind: "variant", variantOrigin: "clone" },
+      { id: "spider-man-tom", kind: "variant", variantOrigin: "clone" },
     ],
     performerOf: { character: "spider-man", actor: "Tobey Maguire" },
   },
@@ -8678,8 +8685,8 @@ const livePeters: CharacterDraft[] = [
       ar: "من فقد غوين. فيلمان ثم انقطاع طويل، وحين يعود يكون الإخفاق الذي ما زال يحمله هو ما يحتاجه الآخرون منه.",
     },
     related: [
-      { id: "spider-man-tobey", kind: "variant" },
-      { id: "spider-man-tom", kind: "variant" },
+      { id: "spider-man-tobey", kind: "variant", variantOrigin: "clone" },
+      { id: "spider-man-tom", kind: "variant", variantOrigin: "clone" },
       /* HIS Gwen, and only his. Two films, and the second one ends with her.
          For every other Spider-Man the record means Spider-Gwen, who is a
          variant — which is why this cannot live on the base character. */
@@ -8706,8 +8713,8 @@ const livePeters: CharacterDraft[] = [
       ar: "قُدِّم في فيلم شخص آخر. فتى في الخامسة عشرة يُستدعى إلى شجار بين المنتقمين، يمنحه توني ستارك بذلة، ثم يُترك في النهاية دون أحد يذكر اسمه.",
     },
     related: [
-      { id: "spider-man-tobey", kind: "variant" },
-      { id: "spider-man-andrew", kind: "variant" },
+      { id: "spider-man-tobey", kind: "variant", variantOrigin: "clone" },
+      { id: "spider-man-andrew", kind: "variant", variantOrigin: "clone" },
       /* AUTHORED, because it cannot be derived yet. Brand New Day has not
          shipped and TMDB's cast for it does not credit the Rhino, so no rule
          reading the credits can find this. It goes here rather than on the
@@ -9482,7 +9489,7 @@ const namedMutants: CharacterDraft[] = [
     },
     related: [
       { id: "cyclops", kind: "family" },
-      { id: "jean-grey", kind: "variant" },
+      { id: "jean-grey", kind: "variant", variantOrigin: "clone" },
     ],
   },
 ];
@@ -9562,7 +9569,7 @@ const inheritors: CharacterDraft[] = [
       ar: "أول محاولة لاستنساخ بيتر باركر، أُبقي حيًّا وهو يتحلّل، أمضى سنين يكره من نُسخ عنه قبل أن يقرّر أن يكون خيرًا منهما معًا.",
     },
     related: [
-      { id: "spider-man", kind: "variant" },
+      { id: "spider-man", kind: "variant", variantOrigin: "clone" },
     ],
   },
   {
@@ -9573,6 +9580,7 @@ const inheritors: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Inheritors"],
     universe: ["sony"],
+    reality: "Earth-001",
     species: "Inheritor",
     powers: [
       { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
@@ -9595,6 +9603,7 @@ const inheritors: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Inheritors"],
     universe: ["sony"],
+    reality: "Earth-001",
     species: "Inheritor",
     powers: [
       { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
@@ -9617,6 +9626,7 @@ const inheritors: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Inheritors"],
     universe: ["sony"],
+    reality: "Earth-001",
     species: "Inheritor",
     powers: [
       { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
@@ -9639,6 +9649,7 @@ const inheritors: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Inheritors"],
     universe: ["sony"],
+    reality: "Earth-001",
     species: "Inheritor",
     powers: [
       { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
@@ -9661,6 +9672,7 @@ const inheritors: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Inheritors"],
     universe: ["sony"],
+    reality: "Earth-001",
     species: "Inheritor",
     powers: [
       { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
@@ -9683,6 +9695,7 @@ const inheritors: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Inheritors"],
     universe: ["sony"],
+    reality: "Earth-001",
     species: "Inheritor",
     powers: [
       { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
@@ -9705,6 +9718,7 @@ const inheritors: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Inheritors"],
     universe: ["sony"],
+    reality: "Earth-001",
     species: "Inheritor",
     powers: [
       { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
@@ -9727,6 +9741,7 @@ const inheritors: CharacterDraft[] = [
     category: "antihero",
     affiliation: ["Inheritors"],
     universe: ["sony"],
+    reality: "Earth-001",
     species: "Inheritor",
     powers: [
       { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
@@ -9749,6 +9764,7 @@ const inheritors: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-833",
     species: "Mutate",
     powers: [
       { en: "Captain Britain of his Earth", ar: "كابتن بريطانيا في أرضه" },
@@ -12488,6 +12504,7 @@ const bugleAndRogues: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-982",
     species: "Mutate",
     powers: [
       { en: "Her father's powers, inherited", ar: "قوى أبيها بالوراثة" },
@@ -12511,6 +12528,7 @@ const bugleAndRogues: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-50101",
     species: "Mutate",
     powers: [
       { en: "Powers from a yogi, not a spider", ar: "قواه من يوغيّ لا من عنكبوت" },
@@ -12522,7 +12540,7 @@ const bugleAndRogues: CharacterDraft[] = [
       ar: "سبايدرمان مومباي، جاءته قواه من يوغيّ يحتضر لا من حادث مختبر، ومدينته ليست خلفية بل سبب اختلاف الحكاية.",
     },
     related: [
-      { id: "spider-man", kind: "variant" },
+      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
     ],
   },
   {
@@ -12975,6 +12993,7 @@ const spiderVariants: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-31913",
     species: "Mutate",
     powers: [
       { en: "Rides a spider-sensed horse", ar: "يمتطي حصانًا بحسّ عنكبوتي" },
@@ -12986,7 +13005,7 @@ const spiderVariants: CharacterDraft[] = [
       ar: "سبايدرمان في واقعٍ من التخوم الأمريكية، عمدة مقنّع بحصان اسمه الأرملة يشاركه حسّ الإنذار.",
     },
     related: [
-      { id: "spider-man", kind: "variant" },
+      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
     ],
   },
   {
@@ -12997,6 +13016,7 @@ const spiderVariants: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-66",
     species: "Mutate",
     powers: [
       { en: "A tyrannosaur with the powers", ar: "تيرانوصور بالقوى" },
@@ -13008,7 +13028,7 @@ const spiderVariants: CharacterDraft[] = [
       ar: "تيرانوصور من عالمٍ لم تنقرض فيه الديناصورات، لدغته عنكبوت مشعّ. وهو تمامًا ما يبدو عليه، ويحمل المسؤولية بالجدّية نفسها.",
     },
     related: [
-      { id: "spider-man", kind: "variant" },
+      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
     ],
   },
   {
@@ -13030,7 +13050,7 @@ const spiderVariants: CharacterDraft[] = [
       ar: "سبايدر وومان في واقعٍ على هيئة مسرحية غنائية، أميرة يستدعي غناؤها العون وتُحلّ مشكلاتها في مقاطع.",
     },
     related: [
-      { id: "spider-man", kind: "variant" },
+      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
     ],
   },
   {
@@ -13041,6 +13061,7 @@ const spiderVariants: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-71490",
     species: "Mutate",
     powers: [
       { en: "Designed his own suit", ar: "صمّم بدلته بنفسه" },
@@ -13085,6 +13106,7 @@ const spiderVariants: CharacterDraft[] = [
     category: "antihero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-90266",
     species: "Mutate",
     powers: [
       { en: "Decades past retiring", ar: "تجاوز التقاعد بعقود" },
@@ -13096,7 +13118,7 @@ const spiderVariants: CharacterDraft[] = [
       ar: "بيتر باركر من مستقبل خرِب، تجاوز السنّ بكثير ويفعلها رغم ذلك، بعدما بقي حيًّا بعد كل من كان العمل من أجلهم.",
     },
     related: [
-      { id: "spider-man", kind: "variant" },
+      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
     ],
   },
   {
@@ -13107,6 +13129,7 @@ const spiderVariants: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-20023",
     species: "Mutate",
     powers: [
       { en: "Swings with forearm crutches", ar: "تتأرجح بعكازي ساعد" },
@@ -13152,6 +13175,7 @@ const spiderVariants: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-22191",
     species: "Mutate",
     powers: [
       { en: "Lives partly in the network", ar: "تعيش جزئيًا في الشبكة" },
@@ -14593,6 +14617,7 @@ const spiderLast: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Spider-Society"],
     universe: ["sony"],
+    reality: "Earth-9500",
     species: "Mutate",
     powers: [
       { en: "A Spider-Man from 2211", ar: "سبايدرمان من عام 2211" },
@@ -14604,7 +14629,7 @@ const spiderLast: CharacterDraft[] = [
       ar: "سبايدرمان من القرن الثالث والعشرين يعمل شرطيَّ زمن ويرتدي أذرعًا آلية، فهو بين بيتر باركر وبين أكثر من يقاتله بيتر.",
     },
     related: [
-      { id: "spider-man", kind: "variant" },
+      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
     ],
   },
   {

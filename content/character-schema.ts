@@ -213,9 +213,39 @@ export const SymbioteClass = z.enum([
   "gestalt",
 ]);
 
+/**
+ * WHY THIS VERSION IS DIFFERENT — the missing half of a `variant` edge.
+ *
+ * The edge said two characters are alternate versions of each other and
+ * nothing about the cause, which flattens three genuinely different things:
+ *
+ *   timeline-branch     Same reality, history split. The Loki who takes the
+ *                       Tesseract in Endgame is this: Earth-199999 both
+ *                       before and after, one branch later.
+ *   alternate-universe  A different reality entirely. Three Peter Parkers
+ *                       from three Earths.
+ *   reality-divergence  The reality itself was rewritten or overwritten
+ *                       rather than branched.
+ *   clone               Grown from another person rather than diverged from
+ *                       them. Madelyne Pryor, Kaine, X-23.
+ *   other               A real edge whose cause is not one of the above, or
+ *                       is not established on screen.
+ *
+ * NEVER ASSUME A VARIANT CAME FROM ANOTHER UNIVERSE. Half of them did not.
+ */
+export const VariantOrigin = z.enum([
+  "timeline-branch",
+  "alternate-universe",
+  "reality-divergence",
+  "clone",
+  "other",
+]);
+
 export const Relation = z.object({
   id: Id,
   kind: RelationKind,
+  /** Only meaningful on a `variant` edge; ignored elsewhere. */
+  variantOrigin: VariantOrigin.optional(),
 });
 
 /** A power is a short phrase, never a paragraph. It renders as a chip. */
@@ -271,6 +301,28 @@ export const CharacterSource = z.object({
    * Empty for everyone who does not practise magic.
    */
   magicSchools: z.array(MagicSchool).default([]),
+
+  /**
+   * WHICH REALITY, and NOT the same thing as `universe` above.
+   *
+   * `universe` in this corpus has always meant the RIGHTS bucket — mcu, sony,
+   * fox, defenders, marvel-tv, legacy, animation — which is who owned the
+   * character, not where they live. That is a genuine naming collision with
+   * how Marvel uses the word, and renaming a field the whole site reads from
+   * is not something to do quietly, so the reality gets its own field.
+   *
+   *   universe  WHO owned it        "sony"
+   *   reality   WHERE it happens    "Earth-1610"
+   *
+   * NULL WHEN UNESTABLISHED, and that is the common case. Deadpool & Wolverine
+   * never gives an Earth number for most of its cameos, so inventing one would
+   * be putting a fact on a page that no source supports.
+   */
+  reality: z.string().trim().min(1).nullable().default(null),
+  /** The chronological path within that reality, where a story names one. */
+  timeline: z.string().trim().min(1).nullable().default(null),
+  /** Where that timeline split from another, where a story names it. */
+  timelineBranch: z.string().trim().min(1).nullable().default(null),
 
   powers: z.array(Power).min(1).max(6),
   origin: Bilingual,
@@ -350,6 +402,7 @@ export type CharacterSource = z.infer<typeof CharacterSource>;
 export type CharacterDraft = z.input<typeof CharacterSource>;
 export type Relation = z.infer<typeof Relation>;
 export type RelationKind = z.infer<typeof RelationKind>;
+export type VariantOrigin = z.infer<typeof VariantOrigin>;
 export type MutantClass = z.infer<typeof MutantClass>;
 export type SymbioteClass = z.infer<typeof SymbioteClass>;
 export type MagicSchool = z.infer<typeof MagicSchool>;
