@@ -143,6 +143,30 @@ export function storyOrderOf(c: Collection): TitleSource[] | null {
   if (members.every((t) => t.storyRank !== null)) {
     return [...members].sort((a, b) => a.storyRank! - b.storyRank!);
   }
+  /**
+   * NEARLY ALL, NOT ALL — and the MCU is why this had to change.
+   *
+   * The rule demanded a COMPLETE set, on the reasoning that a list where a
+   * third of the titles have no rank puts them in a lump at one end and looks
+   * like an answer. That reasoning is sound and the threshold was not: the MCU
+   * has story years for 67 of 69 titles and lost the toggle entirely over two
+   * unannounced 2028 films nobody knows the setting of. Ninety-seven per cent
+   * coverage is not a lump, and withholding the order from the collection the
+   * whole site is built around is a worse answer than a short tail.
+   *
+   * Ninety per cent, and the unranked go to the END in release order, where
+   * "we do not know yet" reads correctly for films that have not come out.
+   */
+  const dated = members.filter((t) => t.storyYear !== null);
+  if (dated.length !== members.length && dated.length / members.length >= 0.9) {
+    const rank = new Map(releaseOrder(members).map((t, i) => [t.id, i]));
+    const undated = releaseOrder(members.filter((t) => t.storyYear === null));
+    return [
+      ...dated.sort((a, b) => a.storyYear! - b.storyYear! || rank.get(a.id)! - rank.get(b.id)!),
+      ...undated,
+    ];
+  }
+
   if (members.every((t) => t.storyYear !== null)) {
     /**
      * Ties break on RELEASE date, not on id. Several MCU films share a story
