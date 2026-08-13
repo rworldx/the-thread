@@ -285,7 +285,7 @@ const avengers: CharacterDraft[] = [
     id: "war-machine",
     nameEn: "War Machine",
     nameAr: "وور ماشين",
-    aliases: ["James Rhodes", "Rhodey", "War Machine", "Iron Patriot"],
+    aliases: ["James Rhodes", "Rhodey", "War Machine", "Iron Patriot", "Colonel James Rhodes"],
     category: "hero",
     affiliation: ["Avengers", "Team Iron Man"],
     universe: ["mcu"],
@@ -468,7 +468,7 @@ const avengers: CharacterDraft[] = [
     id: "nick-fury",
     nameEn: "Nick Fury",
     nameAr: "نيك فيوري",
-    aliases: ["Nick Fury", "Nicholas Fury", "Nicholas J. Fury"],
+    aliases: ["Nick Fury", "Nicholas Fury", "Nicholas J. Fury", "Colonel Nick Fury"],
     category: "supporting",
     affiliation: ["S.H.I.E.L.D.", "Avengers"],
     universe: ["mcu"],
@@ -2223,7 +2223,7 @@ const supporting: CharacterDraft[] = [
     id: "medusa",
     nameEn: "Medusa",
     nameAr: "ميدوسا",
-    aliases: ["Medusa", "Medusalith Amaquelin"],
+    aliases: ["Medusa", "Medusalith Amaquelin", "Madam Medusa"],
     category: "hero",
     affiliation: ["Inhumans"],
     universe: ["marvel-tv"],
@@ -2577,7 +2577,7 @@ const supporting: CharacterDraft[] = [
     id: "namor",
     nameEn: "Namor",
     nameAr: "نيمور",
-    aliases: ["Namor", "Namor McKenzie"],
+    aliases: ["Namor", "Namor McKenzie", "Prince Namor"],
     category: "antihero",
     affiliation: ["X-Men", "Talokanil"],
     universe: ["mcu"],
@@ -3282,7 +3282,7 @@ const ensemble: CharacterDraft[] = [
     id: "valkyrie",
     nameEn: "Valkyrie",
     nameAr: "فالكيري",
-    aliases: ["Valkyrie", "Brunnhilde"],
+    aliases: ["Valkyrie", "Brunnhilde", "King Valkyrie"],
     category: "hero",
     affiliation: ["Asgard", "Avengers", "Revengers", "Gods"],
     universe: ["mcu"],
@@ -3468,7 +3468,7 @@ const ensemble: CharacterDraft[] = [
     id: "aunt-may",
     nameEn: "May Parker",
     nameAr: "ماي باركر",
-    aliases: ["Aunt May", "May Parker"],
+    aliases: ["Aunt May", "May Parker", "Aunt May Parker"],
     category: "supporting",
     affiliation: [],
     universe: ["mcu", "sony"],
@@ -3491,7 +3491,13 @@ const ensemble: CharacterDraft[] = [
     nameAr: "ميك",
     aliases: ["Miek"],
     category: "hero",
-    affiliation: ["Revengers"],
+    /* NOT the Revengers, whatever a roster list will tell you. The name is
+       coined in one exchange — Valkyrie asks "I want to be on the team, has it
+       got a name?" and Thor answers "the Revengers" — and the team is the four
+       of them: Thor, Hulk, Loki and Valkyrie. Korg and Miek lead the gladiator
+       revolt and leave on the same ship, which is not the same as being on the
+       team. Removed after Rashid caught it. */
+    affiliation: ["Asgard"],
     universe: ["mcu"],
     species: "Insectivorid",
     powers: [
@@ -3515,7 +3521,13 @@ const ensemble: CharacterDraft[] = [
     nameAr: "كورغ",
     aliases: ["Korg"],
     category: "supporting",
-    affiliation: ["Asgard", "Revengers"],
+    /* NOT the Revengers, whatever a roster list will tell you. The name is
+       coined in one exchange — Valkyrie asks "I want to be on the team, has it
+       got a name?" and Thor answers "the Revengers" — and the team is the four
+       of them: Thor, Hulk, Loki and Valkyrie. Korg and Miek lead the gladiator
+       revolt and leave on the same ship, which is not the same as being on the
+       team. Removed after Rashid caught it. */
+    affiliation: ["Asgard"],
     universe: ["mcu"],
     species: "Kronan",
     powers: [
@@ -3534,7 +3546,7 @@ const ensemble: CharacterDraft[] = [
     id: "ramonda",
     nameEn: "Ramonda",
     nameAr: "راموندا",
-    aliases: ["Ramonda"],
+    aliases: ["Ramonda", "Queen Ramonda"],
     category: "supporting",
     affiliation: ["Wakandans"],
     universe: ["mcu"],
@@ -3622,6 +3634,8 @@ const ensemble: CharacterDraft[] = [
       /* Brave New World credits Harrison Ford as PRESIDENT Thaddeus Ross —
          a title the matcher has no reason to know is a title. */
       "President Thaddeus Ross",
+      /* And the 1966 series credits him with the rank he actually held. */
+      "General Thaddeus Ross",
     ],
     category: "antivillain",
     affiliation: ["Hulks"],
@@ -15866,7 +15880,7 @@ const wakanda: CharacterDraft[] = [
     id: "tchaka",
     nameEn: "T'Chaka",
     nameAr: "تشاكا",
-    aliases: ["T'Chaka"],
+    aliases: ["T'Chaka", "King T'Chaka"],
     category: "supporting",
     affiliation: ["Wakandans"],
     universe: ["mcu"],
