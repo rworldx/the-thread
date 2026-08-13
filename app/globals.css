@@ -6188,3 +6188,47 @@ html:has(:target) {
   cursor: default;
   border-style: dashed;
 }
+
+/**
+ * THE CHAPTERS, GIVEN SOME WEIGHT.
+ *
+ * Rashid's note was that the page reads like a privacy policy: five paragraphs
+ * with a year above each. The year was set at body size, so nothing on the
+ * page said "this is a sequence" except the order of the words.
+ *
+ * The year is now the largest thing in its chapter and sits behind the title
+ * rather than above it, which is the one move that turns a list of paragraphs
+ * into a timeline without adding a single element.
+ */
+.what-year {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  color: var(--color-red-ink);
+  opacity: 0.9;
+}
+.what-chapter {
+  position: relative;
+  padding-block: var(--space-4);
+}
+.what-chapter + .what-chapter {
+  border-block-start: 1px solid var(--color-hairline);
+}
+/* A rule down the side of the sequence, so the chapters read as one run. */
+@media (min-width: 48rem) {
+  .what-journey {
+    border-inline-start: 2px solid var(--color-red-200);
+    padding-inline-start: var(--space-4);
+  }
+  .what-chapter::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: calc(var(--space-4) * -1 - 5px);
+    inset-block-start: var(--space-4);
+    inline-size: 8px;
+    block-size: 8px;
+    border-radius: 50%;
+    background: var(--color-red);
+  }
+}

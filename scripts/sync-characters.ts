@@ -483,7 +483,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   "elixir":
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c1/X-Men_-_Forever_Vol_1_2_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250130001155",
   "mastermind":
-    "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Hellions_Vol_1_9_from_cover_001.jpg/revision/latest?cb=20210215024644",
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/bd/Hellions_Vol_1_9_Textless.jpg/revision/latest?cb=20260813001743",
   "monet-st-croix":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/96/Monet_St._Croix_%28Earth-616%29_from_Giant-Size_X-Men_Storm_Vol_1_1_002.jpg/revision/latest?cb=20200917223338",
   "rockslide":

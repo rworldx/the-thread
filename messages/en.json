@@ -165,23 +165,23 @@
     "metaDescription": "Comics, then a studio, then a rights split. That is why a watch order is hard.",
     "intro": "Marvel is three things that people use one word for: a comics publisher, a film studio, and a set of characters other studios still partly own. The last one is why a watch order is hard.",
     "payoffHeading": "This is why the order is hard",
-    "payoff": "One story runs through six sets of rights. That is the whole problem, and it is why this site has six universes rather than one list.",
+    "payoff": "One story, eight sets of rights. That is the whole problem, and it is why this site has eight universes rather than one list.",
     "payoffCta": "See every universe",
     "ch1Year": "1939",
     "ch1Title": "A comics publisher",
     "ch1Body": "Timely Comics, later Marvel. Decades of characters built to cross over. That habit is exactly what makes a screen order complicated later.",
     "ch2Year": "1990s",
-    "ch2Title": "The studio sells the rights",
-    "ch2Body": "Near bankruptcy, Marvel licensed its best-known characters out. Spider-Man went to Sony. X-Men and Fantastic Four went to Fox. Blade, Daredevil, Ghost Rider and Punisher went elsewhere again.",
+    "ch2Title": "Then it sold them off",
+    "ch2Body": "Near bankruptcy in the nineties, Marvel licensed its best-known characters to other studios to raise cash. Those deals are the reason the rest of this page exists.",
     "ch3Year": "2008",
-    "ch3Title": "Marvel Studios makes its own",
-    "ch3Body": "Left with the characters nobody else wanted, Marvel financed Iron Man itself, and built a connected universe out of what remained.",
+    "ch3Title": "So it made films itself",
+    "ch3Body": "Left with the characters nobody had licensed, Marvel financed Iron Man on the strength of what remained, and built a connected universe out of the leftovers.",
     "ch4Year": "2015",
-    "ch4Title": "Netflix builds a corner of it",
-    "ch4Body": "Thirteen seasons of Daredevil, Jessica Jones, Luke Cage, Iron Fist and Punisher ran alongside the films for years before being folded back in.",
-    "ch5Year": "2019",
-    "ch5Title": "Disney buys Fox",
-    "ch5Body": "X-Men and Fantastic Four come home. Sony keeps Spider-Man and lends him out. The map stops getting simpler and starts getting tangled."
+    "ch4Title": "Others kept building too",
+    "ch4Body": "Fox ran the X-Men, Sony ran Spider-Man, Netflix ran thirteen seasons of street-level television. Four studios telling one story at once, none of them obliged to agree.",
+    "ch5Year": "Now",
+    "ch5Title": "It is still being untangled",
+    "ch5Body": "Disney has bought most of it back and lent some of it out again. The map is smaller than it was and it is not one map yet."
   },
   "characters": {
     "metaTitle": "Characters",
@@ -475,10 +475,10 @@
   },
   "rights": {
     "metaTitle": "Who owned what, and when",
-    "metaDescription": "One story, seven sets of rights, thirty years. This is why a watch order is hard.",
-    "heading": "One story, seven sets of rights",
+    "metaDescription": "One story, eight sets of rights, thirty years. This is why a watch order is hard.",
+    "heading": "One story, eight sets of rights",
     "lede": "Marvel sold its characters off to survive the nineties. Everything confusing about the order comes from that, and from getting them back one studio at a time.",
-    "payoff": "That is the whole problem, and it is why this site has seven universes rather than one list.",
+    "payoff": "That is the whole problem, and it is why this site has eight universes rather than one list.",
     "cta": "See every universe"
   },
   "theme": {
@@ -582,10 +582,10 @@
       "name": "Kevin Feige",
       "role": "President, Marvel Studios",
       "dates": "b. 1973",
-      "line": "Has run the films since 2007. He is the reason they connect to each other at all.",
-      "about": "He started as an assistant on the first X-Men film and was made president of Marvel Studios in 2007, a year before Iron Man. The decision that defines everything on this site is his: that these films would share one continuity, in public, with a schedule announced years ahead. Nobody had tried it at that scale, and every studio has been trying to copy it since.",
-      "extraLabel": "Since",
-      "extra": "Producer on the first films, president of Marvel Studios since 2007, and Chief Creative Officer of Marvel since 2019. The connective structure this whole site maps is his."
+      "line": "The films connect to each other because one man decided in 2007 that they would.",
+      "about": "He was an assistant on the first X-Men film and president of Marvel Studios by 2007, a year before Iron Man. The decision that defines this entire site is his: that these films would share one continuity, in public, with a schedule announced years in advance. Nobody had attempted it at that scale. Every studio has been trying to copy it since, and none has managed it.",
+      "extraLabel": "What he actually did",
+      "extra": "Announced Phase One as a plan rather than a hope, put a post-credits scene in Iron Man promising a team-up four years out, and then delivered it. The thread this site maps is the one he tied."
     }
   },
   "saga": {
