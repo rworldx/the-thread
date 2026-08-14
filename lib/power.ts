@@ -600,6 +600,23 @@ export const PEAK_HEAD: string[] = [
    fields are never scored, so \b behaving as ASCII-only is correct rather
    than merely tolerable. */
 const SCALE: [RegExp, number][] = [
+  /**
+   * AN OPEN-ENDED CLAIM IS THE BIGGEST CLAIM A RECORD CAN MAKE, and it was
+   * worth nothing. Jean Grey's bullets read "Telepathy / Telekinesis / No
+   * known upper limit" and scored 28 — telepathy and telekinesis and then
+   * silence on the sentence that matters. Thirteen records say something of
+   * this kind and none of them were heard.
+   *
+   * Deliberately below world-scale rather than above it: "no upper limit" is
+   * a writer declining to name a ceiling, which is a weaker statement than
+   * "moves planets", where somebody has.
+   * ascii-ok: English `powers[].en` only.
+   */
+  // ascii-ok: English `powers[].en` only.
+  [/\b(no known upper limit|no upper limit|without limit|limitless|beyond measure|grows without limit)/i, 60],
+  /* Unkillable is durability, not output — real, and worth less. */
+  // ascii-ok: English only.
+  [/\b(cannot be killed|cannot be destroyed|unkillable|adapts to anything)/i, 25],
   /* Reality itself. ascii-ok: scores English `powers[].en` only. */
   [/\b(realit|universe|universal|multiverse|cosmos|cosmic|existence|creation|omnipot|omniscien|timeline|time itself|all things|infinit)/i, 120],
   /* Worlds and stars. ascii-ok: English only. */
