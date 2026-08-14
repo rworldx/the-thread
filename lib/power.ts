@@ -267,6 +267,12 @@ const TIERS: Tier[] = [
       "doctor-doom",
       "kang",
       "apocalypse",
+      /* A Spirit of Vengeance is not an "Enhanced human", which is where
+         `species: Human host` had left him at 289 — behind Blade in kind if
+         not in number, and behind two hundred people who can be killed. The
+         Penance Stare works on gods, and his own record says the quiet part:
+         "Cannot be destroyed". */
+      "ghost-rider",
       "cassandra-nova",
       "shadow-king",
       "selene",
@@ -291,6 +297,8 @@ const TIERS: Tier[] = [
       "sylvie",
       "magik",
       "khonshu",
+      /* Guards the Nexus of All Realities and cannot be killed by force. */
+      "man-thing",
     ],
     match: (c) =>
       c.mutantClass === "alpha" ||
