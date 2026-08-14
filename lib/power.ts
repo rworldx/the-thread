@@ -467,6 +467,13 @@ const TIERS: Tier[] = [
     title: "The ones with nothing but nerve",
     gloss:
       "Reporters, aunts, girlfriends, police captains. They have no business in a fight and are in every one of these stories anyway.",
+    /* MISS MINUTES IS NAMED HERE BECAUSE NO RULE WOULD PUT HER HERE. Tier 9
+       admits `category: supporting` with no affiliation, and she is filed as a
+       villain — so she sat at 590, above Cassie Lang, who grows to the size of
+       a building, and Peni Parker, who pilots a mech. She is a cartoon clock
+       on a screen. Everything she does, she does by talking somebody into it,
+       which is exactly what this tier is for. */
+    ranked: ["miss-minutes"],
     match: () => true,
   },
 ];
