@@ -15888,8 +15888,13 @@ const wakanda: CharacterDraft[] = [
     category: "supporting",
     affiliation: ["Wakandans"],
     universe: ["mcu"],
-    species: "Human",
+    /* ENHANCED HUMAN, like his son and like Killmonger. He wore the suit and
+       took the heart-shaped herb — the 1992 flashback shows him as the Panther
+       — and filing him as an ordinary Human put him at 658, below the Dora
+       Milaje he commanded. */
+    species: "Enhanced human",
     powers: [
+      { en: "Enhanced by the herb", ar: "معزّز بالعشبة" },
       { en: "Black Panther before his son", ar: "بلاك بانثر قبل ابنه" },
       { en: "Killed his own brother", ar: "قتل أخاه" },
       { en: "Left the boy behind", ar: "وترك الصبي" },

@@ -651,9 +651,9 @@ const SCALE: [RegExp, number][] = [
   /* Armies, cities, dimensions. ascii-ok: English only. */
   [/\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|commands\b)/i, 25],
   /* Ordinary superhuman. ascii-ok: English only. */
-  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|flies|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|acid|sonic|radiation|invulnerab|rock body|phases?)/i, 14],
+  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|flies|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum)/i, 14],
   /* Training and equipment. ascii-ok: English only. */
-  [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow|training|weapons|arsenal|combat)/i, 6],
+  [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow|training|weapons|arsenal|combat|spear|staff|axe|hammer|shield|knife|sai|fists|soldier|marine|military|sniper|assassin|agent|espionage|intelligence)/i, 6],
 ];
 
 const CLASS_WEIGHT: Record<string, number> = {
@@ -695,7 +695,22 @@ export function scaleScore(c: Character): number {
       return n + w * Math.min(hits, 3);
     }, 0);
   const clean = (x: string) => x.replace(PROPER_NOUNS, " ");
-  const abilities = score(clean(c.powers.map((p) => p.en).join(" ")));
+  /**
+   * SEEING IS NOT DOING, and the scorer could not tell them apart. Heimdall's
+   * "Sees the nine realms" scored a full 70 — world-scale, the same as moving
+   * planets — for looking at them, and the Watcher's "Sees every timeline"
+   * scored 120 for a being sworn never to act. Madame Web, Blindfold and
+   * Karnak were all being paid for perception.
+   *
+   * So each bullet is scored on its own and a bullet that opens with a verb of
+   * PERCEPTION keeps a quarter of what it earns. A quarter rather than zero
+   * because knowing is worth something: Karnak sees the flaw and then hits it.
+   */
+  // ascii-ok: matched against `powers[].en`, English by construction.
+  const PERCEIVES = /^(sees|watches|observes|reads|senses|knows)\b/i;
+  const abilities = c.powers
+    .map((p) => clean(p.en).trim())
+    .reduce((n, b) => n + score(b) * (PERCEIVES.test(b) ? 0.25 : 1), 0);
   let n = abilities + score(clean(c.origin.en)) / 4;
   n += CLASS_WEIGHT[c.mutantClass ?? ""] ?? 0;
   n += SYMBIOTE_WEIGHT[c.symbioteClass ?? ""] ?? 0;
