@@ -209,10 +209,15 @@ const TIERS: Tier[] = [
        * gods below them. That is a claim about what they are rather than how
        * they fight, and it is the same claim this tier is making.
        */
+      /* TITAN IS A HOMEWORLD, NOT A POWER LEVEL. The rule was written for
+         Thanos, who is named in the head above, and his four lieutenants
+         inherited it: the whole Black Order came out at 148-154, ahead of
+         Doctor Strange, Doom, Apocalypse, Kang and the Ancient One. Strange
+         beat Ebony Maw on his own and the Hulkbuster handled Cull Obsidian.
+         They are elite soldiers, which is what tier 6 describes. */
       sp(
         "God",
         "Olympian",
-        "Titan",
         "Elder of the Universe",
         "Fire demon",
         "Alien dragon",
@@ -295,6 +300,7 @@ const TIERS: Tier[] = [
         "Asgardian",
         "Frost Giant",
         "Eternal",
+        "Titan",
         "Demon",
         "Witch",
         "Faltine",
