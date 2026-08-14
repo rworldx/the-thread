@@ -311,14 +311,19 @@ export const PEAK_HEAD: string[] = [
   "the-beyonders",
   "molecule-man",
   "the-beyonder",
+  /* Thanos moved up on the Heart of the Universe, which the sources call a
+     FRAGMENT OF THE ONE ABOVE ALL'S OWN POWER — a higher ceiling than the
+     Infinity Gauntlet he is usually ranked on, and higher than God Emperor
+     Doom, whose thousand Beyonders were borrowed and lost. */
+  "thanos",
   "doctor-doom",
+  /* Franklin beat God Emperor Doom, so he sits with him rather than below. */
+  "franklin-richards",
+  "adam-warlock",
   "the-living-tribunal",
   "protege",
   "master-weaver",
   "great-web",
-  "franklin-richards",
-  "thanos",
-  "adam-warlock",
   "eternity",
   "infinity",
   "oblivion",
