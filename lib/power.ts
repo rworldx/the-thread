@@ -325,11 +325,13 @@ export const PEAK_HEAD: string[] = [
      Doom, whose thousand Beyonders were borrowed and lost. */
   "thanos",
   "doctor-doom",
-  /* Warlock ahead of Franklin on Rashid's call, and it is consistent: the two
-     names above him are ranked on artifacts too, so the Gauntlet counts. */
-  "adam-warlock",
-  /* Franklin beat God Emperor Doom, so he sits with them rather than below. */
+  /* FRANKLIN AHEAD OF WARLOCK, which is the one place I disagree with the
+     26-name draft. Warlock's peak is the Infinity Gauntlet — the same object
+     Thanos is already ranked on two places above — and ranking two characters
+     on one borrowed artifact stacks the list with the artifact rather than
+     with them. Franklin's ceiling is his own, and he beat God Emperor Doom. */
   "franklin-richards",
+  "adam-warlock",
   "the-living-tribunal",
   "protege",
   "master-weaver",
@@ -384,8 +386,10 @@ export const PEAK_HEAD: string[] = [
   "loki",
   "ghost-rider",
   "professor-x",
-  "magneto",
+  /* Binary above Magneto: Carol at her peak is channelling a white hole,
+     which is a larger claim than magnetism however well it is used. */
   "captain-marvel",
+  "magneto",
   "iceman",
   "kang",
 ];
