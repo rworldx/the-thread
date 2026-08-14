@@ -356,7 +356,6 @@ const TIERS: Tier[] = [
         "Frost Giant",
         "Eternal",
         "Titan",
-        "God",
         "Elder of the Universe",
         "Demon",
         "Witch",
@@ -397,6 +396,10 @@ const TIERS: Tier[] = [
         "Vampire",
         "Dhampir",
         "Werewolf",
+        /* The last stop for `species: God`. Khonshu is named into tier 6; the
+           only other record carrying the word is Love, who is a child with
+           one film, and 190th put her above Wolverine and Captain America. */
+        "God",
         "Human hybrid",
         "Human-Kree hybrid",
         "Human host",
@@ -624,9 +627,9 @@ const SCALE: [RegExp, number][] = [
   /* Gods, ages, souls. ascii-ok: English only. */
   [/\b(god|divine|immortal|ageless|millenni|thousand years|eternal|resurrect|soul|underworld|hell\b|death)/i, 40],
   /* Armies, cities, dimensions. ascii-ok: English only. */
-  [/\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|command)/i, 25],
+  [/\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|commands\b)/i, 25],
   /* Ordinary superhuman. ascii-ok: English only. */
-  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|flies|speed|claws|symbiote|venom|gamma|adamantium)/i, 14],
+  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|flies|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field)/i, 14],
   /* Training and equipment. ascii-ok: English only. */
   [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow)/i, 6],
 ];
@@ -648,8 +651,18 @@ const SYMBIOTE_WEIGHT: Record<string, number> = {
  * is prose, and prose mentions big things in passing.
  */
 export function scaleScore(c: Character): number {
+  /**
+   * EACH DISTINCT POWER COUNTS, up to three per class. Scoring a class once
+   * made "Proportionate strength / Wall-crawling / Spider-sense" worth exactly
+   * as much as "Enhanced strength" alone, so Spider-Man ranked 61 places below
+   * the Winter Soldier. A character with three different abilities has three
+   * different abilities; the cap stops a florid paragraph outscoring a god.
+   */
   const score = (text: string) =>
-    SCALE.reduce((n, [re, w]) => n + (re.test(text) ? w : 0), 0);
+    SCALE.reduce((n, [re, w]) => {
+      const hits = [...text.matchAll(new RegExp(re.source, "gi"))].length;
+      return n + w * Math.min(hits, 3);
+    }, 0);
   const abilities = score(c.powers.map((p) => p.en).join(" "));
   let n = abilities + score(c.origin.en) / 4;
   n += CLASS_WEIGHT[c.mutantClass ?? ""] ?? 0;
