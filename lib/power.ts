@@ -650,12 +650,22 @@ const SYMBIOTE_WEIGHT: Record<string, number> = {
 export function scaleScore(c: Character): number {
   const score = (text: string) =>
     SCALE.reduce((n, [re, w]) => n + (re.test(text) ? w : 0), 0);
-  let n = score(c.powers.map((p) => p.en).join(" ")) + score(c.origin.en) / 4;
+  const abilities = score(c.powers.map((p) => p.en).join(" "));
+  let n = abilities + score(c.origin.en) / 4;
   n += CLASS_WEIGHT[c.mutantClass ?? ""] ?? 0;
   n += SYMBIOTE_WEIGHT[c.symbioteClass ?? ""] ?? 0;
-  /* A supporting character is rarely a power, whatever words their origin
-     happens to contain — Ben Parker's paragraph mentions the world. */
-  if (c.category === "supporting") n -= 40;
+  /**
+   * THE SUPPORTING PENALTY ONLY APPLIES TO THE POWERLESS, which it did not,
+   * and Wong paid for it: "Sorcery / Keeper of the library" scored 14 and then
+   * lost 40 for being `category: supporting`, finishing on -20 — behind
+   * ALLIGATOR LOKI, who scores zero and is an alligator.
+   *
+   * `supporting` means nobody's protagonist. It is the same field that put
+   * Nick Fury among the bystanders, and it says nothing about whether someone
+   * has powers. So it now costs nothing to anyone whose ABILITIES scored:
+   * Ben Parker and Darcy Lewis still pay it, because theirs is zero.
+   */
+  if (c.category === "supporting" && abilities === 0) n -= 40;
   return n;
 }
 
