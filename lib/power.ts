@@ -681,7 +681,7 @@ const SCALE: [RegExp, number][] = [
   /* Reality itself. ascii-ok: scores English `powers[].en` only. */
   [/\b(realit|universe|universal|multiverse|cosmos|cosmic|existence|creation|omnipot|omniscien|timeline|time itself|all things|infinit)/i, 120],
   /* Worlds and stars. ascii-ok: English only. */
-  [/\b(planet|world|star|sun|galax|continent|ocean|weather|storms?\b|nine realms|devour)/i, 70],
+  [/\b(planets?\b|planetary|worlds?\b|stars?\b|suns?\b|galax|continent|ocean|weather|storms?\b|nine realms|devour)/i, 70],
   /* An Infinity Stone is a piece of the universe. ascii-ok: English only. */
   [/\b(infinity stone|mind stone|power stone|reality stone|soul stone|time stone|space stone|infinity gem)/i, 40],
   /* Gods, ages, souls. ascii-ok: English only. */
