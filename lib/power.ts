@@ -142,6 +142,12 @@ const TIERS: Tier[] = [
       "onslaught",
       "legion",
       "scarlet-witch",
+      /* JEAN ABOVE RACHEL, which she was not. Rachel was named into this tier
+         as a Phoenix host and Jean was left in tier 5 on the omega rule, so
+         the daughter outranked the mother and the X-Men chip opened on Rachel.
+         Jean is the Phoenix host the others are measured against, and her own
+         record is the one that says "No known upper limit". */
+      "jean-grey",
       "mad-jim-jaspers",
       "nate-grey",
       "proteus",

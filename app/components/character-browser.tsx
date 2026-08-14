@@ -655,16 +655,18 @@ export function CharacterBrowser({
         <p className="char-empty">{t("empty", { query })}</p>
       ) : (
         <ul className="char-grid" role="list">
-          {shown.map((c) => (
+          {shown.map((c, i) => (
             <li key={c.id}>
               <Link className="char-tile" href={`/${locale}/characters/${c.id}`}>
-                {/* THE RANK, and only in the order that has one. Its own
-                    corpus-wide position rather than a count down the page, so
-                    filtering to the X-Men still says where Storm sits among
-                    all 670. `.tile-index` is the same badge the numbered
-                    posters use, down to the corner it sits in. */}
+                {/* THE RANK WITHIN WHAT IS ON SCREEN, not the corpus-wide
+                    one. Filtering to the X-Men and reading 100, 123, 124 makes
+                    the reader do the subtraction; reading 1, 2, 3 answers the
+                    question they filtered in order to ask. The absolute
+                    position is still on the record as `power` if a page ever
+                    needs it. `.tile-index` is the badge the numbered posters
+                    use, down to the corner. */}
                 {sort === "power" && (
-                  <span className="tile-index tabular">{c.power}</span>
+                  <span className="tile-index tabular">{i + 1}</span>
                 )}
                 {c.performerOf && c.baseImage ? (
                   <SplitAvatar
