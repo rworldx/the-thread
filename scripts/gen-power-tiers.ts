@@ -282,6 +282,96 @@ const TIERS: Tier[] = [
   },
 ];
 
+
+/**
+ * PEAK FORMS — docs/POWER-TIERS-PEAK.md, a second and different question.
+ *
+ * The tiers above ask "how strong is this character when you meet them". This
+ * asks "how strong have they ever been", which reorders the top violently and
+ * barely touches the bottom: Thanos picks up the Gauntlet, Thor becomes Rune
+ * King, Jean becomes the White Phoenix, and a man with a bow is still a man
+ * with a bow.
+ *
+ * THAT ASYMMETRY IS THE POINT, and it is why this is a separate head over the
+ * same derived tail rather than a whole second ranking. A "peak" list that
+ * reorders all 670 is claiming a peak feat for 600 characters who do not have
+ * one.
+ *
+ * The two hardest calls, both stated rather than hidden:
+ *
+ *   GOD EMPEROR DOOM ABOVE THE LIVING TRIBUNAL. Doom held the power of a
+ *   thousand Beyonders, murdered a Phoenix-powered Cyclops and beat an
+ *   Infinity Gauntlet. The Beyonders as a race killed the Tribunal, so the
+ *   power that killed it ranks above it. Reasonable people put the Tribunal
+ *   first because its office is permanent and Doom's throne was borrowed.
+ *
+ *   GALACTUS ABOVE KNULL. Both have killed Celestials, and the sources that
+ *   compare them directly give Galactus the higher raw output. Knull's edge is
+ *   a weapon rather than a power.
+ */
+const PEAK_HEAD: string[] = [
+  "the-one-above-all",
+  "the-one-below-all",
+  "the-fulcrum",
+  "first-firmament",
+  "the-beyonders",
+  "molecule-man",
+  "the-beyonder",
+  "doctor-doom",
+  "the-living-tribunal",
+  "protege",
+  "master-weaver",
+  "great-web",
+  "franklin-richards",
+  "thanos",
+  "adam-warlock",
+  "eternity",
+  "infinity",
+  "oblivion",
+  "death",
+  "queen-of-nevers",
+  "chaos-king",
+  "master-order",
+  "lord-chaos",
+  "the-in-betweener",
+  "powers-that-be",
+  "natural-order",
+  "nemesis",
+  "abraxas",
+  "griever",
+  "phoenix",
+  "jean-grey",
+  "scarlet-witch",
+  "legion",
+  "onslaught",
+  "galactus",
+  "knull",
+  "thor",
+  "hulk",
+  "gorr",
+  "odin",
+  "surtur",
+  "sentry",
+  "silver-surfer",
+  "doctor-strange",
+  "captain-universe",
+  "the-progenitor",
+  "arishem",
+  "exitar",
+  "chthon",
+  "shuma-gorath",
+  "cyttorak",
+  "dormammu",
+  "mephisto",
+  "zeus",
+  "hercules",
+  "hela",
+  "apocalypse",
+  "cosmic-ghost-rider",
+  "ghost-rider",
+  "kang",
+];
+
 function main() {
   const byId = new Map(allCharacters.map((c) => [c.id, c]));
   const placed = new Set<string>();
@@ -391,6 +481,47 @@ function main() {
   out.push("");
 
   writeFileSync("docs/POWER-TIERS.md", out.join("\n"));
+
+  /* The peak document: one researched head, then everyone not named in it, in
+     the same derived tiers. */
+  const peak: string[] = [];
+  peak.push("# Power tiers — peak forms");
+  peak.push("");
+  peak.push(
+    "**Generated — do not edit.** `npm run gen:power` rebuilds it. The " +
+      "companion to POWER-TIERS.md, asking a different question: not how " +
+      "strong a character is when you meet them, but **how strong they have " +
+      "ever been**. Thanos has the Gauntlet here. Thor is Rune King. Jean is " +
+      "the White Phoenix. Hawkeye is still a man with a bow — which is why " +
+      "this reorders the top violently and barely touches the bottom.",
+  );
+  peak.push("");
+  peak.push("## The peak head, ranked");
+  peak.push("");
+  PEAK_HEAD.forEach((id, i) => {
+    const c = byId.get(id);
+    if (!c) throw new Error(`PEAK_HEAD names "${id}", which is not a character`);
+    peak.push(`${i + 1}. **${c.nameEn}** — ${c.species ?? "unknown"}`);
+  });
+  peak.push("");
+  peak.push(
+    "_Everything below keeps the tiers of the base ranking, because a peak " +
+      "claim needs a peak feat and most characters do not have one._",
+  );
+  peak.push("");
+  const inHead = new Set(PEAK_HEAD);
+  for (const { tier, members } of rows) {
+    const rest = members.filter((m) => !inHead.has(m.c.id));
+    if (rest.length === 0) continue;
+    peak.push(`## Tier ${tier.n} — ${tier.title}`);
+    peak.push("");
+    rest.forEach((m, i) => {
+      const why = m.c.mutantClass ? `${m.c.mutantClass} mutant` : (m.c.species ?? "unknown");
+      peak.push(`${i + 1}. ${m.c.nameEn} — ${why}`);
+    });
+    peak.push("");
+  }
+  writeFileSync("docs/POWER-TIERS-PEAK.md", peak.join("\n"));
   console.log(`\n  wrote docs/POWER-TIERS.md — ${allCharacters.length} characters in ${TIERS.length} tiers.\n`);
   for (const { tier, members } of rows) {
     console.log(`    tier ${tier.n}  ${String(members.length).padStart(3)}  ${tier.title}`);
