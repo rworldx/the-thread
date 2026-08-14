@@ -658,6 +658,14 @@ export function CharacterBrowser({
           {shown.map((c) => (
             <li key={c.id}>
               <Link className="char-tile" href={`/${locale}/characters/${c.id}`}>
+                {/* THE RANK, and only in the order that has one. Its own
+                    corpus-wide position rather than a count down the page, so
+                    filtering to the X-Men still says where Storm sits among
+                    all 670. `.tile-index` is the same badge the numbered
+                    posters use, down to the corner it sits in. */}
+                {sort === "power" && (
+                  <span className="tile-index tabular">{c.power}</span>
+                )}
                 {c.performerOf && c.baseImage ? (
                   <SplitAvatar
                     characterSrc={c.baseImage}

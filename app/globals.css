@@ -2636,9 +2636,17 @@ a:has(.poster):focus-visible {
  */
 .char-tile {
   display: block;
+  position: relative;
   text-decoration: none;
   color: inherit;
   border-radius: var(--radius-media);
+}
+/* The rank badge sits over the portrait, not over the name below it, so it is
+   pinned to the tile rather than centred on it. Same treatment as the numbered
+   posters; `inset-inline-start` puts it on the right edge in Arabic, which is
+   where the eye starts there. */
+.char-tile .tile-index {
+  z-index: 1;
 }
 .char-tile-body {
   display: flex;
