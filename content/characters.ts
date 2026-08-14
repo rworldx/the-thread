@@ -266,13 +266,21 @@ const avengers: CharacterDraft[] = [
     nameAr: "جندي الشتاء",
     aliases: ["Bucky Barnes", "Winter Soldier", "James Barnes", "James Buchanan Barnes", "The Winter Soldier"],
     category: "antihero",
-    affiliation: ["Avengers", "Team Captain America"],
+    affiliation: ["Avengers", "Team Captain America", "Thunderbolts"],
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Metal arm", ar: "ذراع معدنية" },
-      { en: "Enhanced strength", ar: "قوة معزّزة" },
-      { en: "Marksmanship", ar: "براعة في الرماية" },
+      /* THE SERUM WAS NOT ON IT. Three bullets — "Metal arm / Enhanced
+         strength / Marksmanship" — put him behind U.S. Agent and the Red
+         Guardian, who each have one serum and a shield, while Bucky has a
+         version of the same serum, a vibranium arm and seventy years of doing
+         this for a living. */
+      { en: "Super-soldier serum", ar: "مصل الجندي الخارق" },
+      { en: "A vibranium arm", ar: "ذراع من الفيبرانيوم" },
+      { en: "Enhanced strength and reflexes", ar: "قوة وردود فعل معزّزة" },
+      { en: "Seventy years of combat", ar: "سبعون عامًا من القتال" },
+      { en: "Master assassin", ar: "قاتل محترف" },
+      { en: "Marksmanship", ar: "براعة في التصويب" },
     ],
     origin: {
       en: "A sergeant who fell from a train in 1945 and was not recovered by his own side. What was made of him afterwards spent seventy years being pointed at people.",
