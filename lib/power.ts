@@ -394,7 +394,14 @@ const TIERS: Tier[] = [
        Miss Minutes — a cartoon clock on a screen — and Arnim Zola, a mind on
        magnetic tape, above Iron Man and the Punisher. The two AIs that do act
        on the world are named; the rest fall to tier 8. */
-    ranked: ["cosmo", "supreme-intelligence", "mainframe"],
+    /* COSMO CAME OFF THIS HEAD. Naming her here pinned her to the TOP of tier
+       7 and made a telepathic dog the second-strongest Guardian, ahead of Drax
+       and Groot. Her telepathy is real and her own score can carry it.
+
+       "Uplifted raccoon" comes back, and it is Rocket alone: he is
+       cybernetically rebuilt and fights for a living, which is not true of the
+       otter and the walrus that lost the grant with him. */
+    ranked: ["supreme-intelligence", "mainframe"],
     match: (c) =>
       c.mutantClass !== null ||
       /**
@@ -446,6 +453,7 @@ const TIERS: Tier[] = [
         "Dark elf",
         "Dwarf",
         "Kronan",
+        "Uplifted raccoon",
         "Alien",
         "Kree",
         "Skrull",
@@ -701,7 +709,7 @@ const SCALE: [RegExp, number][] = [
   /* Armies, cities, dimensions. ascii-ok: English only. */
   [/\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|commands\b)/i, 25],
   /* Ordinary superhuman. ascii-ok: English only. */
-  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers)/i, 14],
+  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|indestructible|dagger|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i, 14],
   /* Training and equipment. ascii-ok: English only. */
   [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow|training|weapons|arsenal|combat|spear|staff|axe|hammer|shield|knife|sai|fists|soldier|marine|military|sniper|assassin|agent|espionage|intelligence|physicist|scientist|engineer|inventor|brilliant|surgeon|doctor|cia\b|operative|counter terror|pilot|deputy director)/i, 6],
 ];
@@ -825,6 +833,13 @@ export const OUTRANKS: string[][] = [
      three points and no further, because the scorer counts abilities and
      cannot weigh "walks through you" against "carries a shield". */
   ["ghost", "john-walker"],
+  /* THE GUARDIANS, in the order a fight would settle rather than the order a
+     bullet count does. Drax is called the Destroyer, is superhumanly strong
+     and nearly indestructible, and came out seventh behind a pilot and two
+     trained assassins — because the scorer counts abilities and cannot weigh
+     "nearly indestructible" against "ace pilot". Adam Warlock leads from
+     tier 5 and is not in this group; Kraglin, Phyla-Vell and Cosmo trail it. */
+  ["drax", "star-lord", "nebula", "gamora", "rocket", "groot", "mantis"],
 ];
 
 /** Ordered strongest to weakest, every character exactly once. */

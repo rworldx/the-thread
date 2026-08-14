@@ -655,8 +655,13 @@ const guardians: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human hybrid",
     powers: [
-      { en: "Element blasters", ar: "مسدسات عنصرية" },
-      { en: "Pilot", ar: "طيّار" },
+      /* Half-Celestial by blood, which is the fact the films are ABOUT, and
+         it was not on the record. He held the Power Stone bare-handed. */
+      { en: "Half-Celestial by blood", ar: "نصف سيليستيال بالدم" },
+      { en: "Held the Power Stone", ar: "أمسك حجر القوة" },
+      { en: "Element blasters", ar: "مسدسات العناصر" },
+      { en: "Expert marksman", ar: "رامٍ بارع" },
+      { en: "Ace pilot", ar: "طيار بارع" },
       { en: "Rocket boots", ar: "حذاء صاروخي" },
     ],
     origin: {
@@ -702,9 +707,13 @@ const guardians: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Uplifted raccoon",
     powers: [
-      { en: "Weapons engineer", ar: "مهندس أسلحة" },
-      { en: "Tactician", ar: "مخطّط تكتيكي" },
-      { en: "Marksmanship", ar: "براعة في الرماية" },
+      /* WEAPONS, and the skill to use them, which is the whole character. He
+         was 589th — last of the Guardians, behind a dog and a plant. */
+      { en: "Master weapons engineer", ar: "مهندس أسلحة بارع" },
+      { en: "Builds anything that shoots", ar: "يبني كل ما يطلق النار" },
+      { en: "Deadly marksmanship", ar: "تصويب قاتل" },
+      { en: "Cybernetically rebuilt", ar: "أُعيد بناؤه سيبرانيًا" },
+      { en: "Tactician", ar: "تكتيكي" },
     ],
     origin: {
       en: "The result of experiments nobody asked for, on an animal that could not consent. He is the smartest one in the room and he would rather you did not ask how he got that way.",
@@ -742,8 +751,11 @@ const guardians: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Kylosian",
     powers: [
-      { en: "Great durability", ar: "متانة كبيرة" },
-      { en: "Great strength", ar: "قوة هائلة" },
+      /* He is called the Destroyer and the record said "Great strength". */
+      { en: "Superhuman strength", ar: "قوة خارقة" },
+      { en: "Nearly indestructible", ar: "شبه غير قابل للتدمير" },
+      { en: "Twin daggers", ar: "خنجران" },
+      { en: "Built to kill a Titan", ar: "صُنع ليقتل تيتانيًا" },
       { en: "Takes everything literally", ar: "يأخذ كل شيء حرفيًا" },
     ],
     origin: {
@@ -2129,8 +2141,12 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Empath",
     powers: [
-      { en: "Reads and moves feelings", ar: "تقرأ المشاعر وتحرّكها" },
+      /* "Reads and moves feelings" was scored as PERCEPTION and discounted,
+         so the woman who put Thanos to sleep scored zero. */
+      { en: "Empathic control", ar: "تحكم وجداني" },
       { en: "Puts anyone to sleep", ar: "تُنيم أي أحد" },
+      { en: "Calmed a Titan", ar: "هدّأت تيتانيًا" },
+      { en: "Feels what you feel", ar: "تشعر بما تشعر" },
     ],
     origin: {
       en: "An empath raised alone by a being who used her to help him sleep, meeting other people for the first time as an adult.",
