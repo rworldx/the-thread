@@ -175,7 +175,25 @@ const TIERS: Tier[] = [
     n: 6,
     title: "Alpha class",
     gloss:
-      "The strongest tier a person can reach without leaving the scale. Sorcerers, alpha mutants, symbiotes, Inhumans.",
+      "The strongest tier a person can reach without leaving the scale. Sorcerers, alpha mutants, symbiotes, Inhumans — and the ones whose power is a machine.",
+    /**
+     * THE CORPUS HAS NO FIELD FOR "CONQUERED THE TIMELINE WITH A MACHINE",
+     * and this tier is where that shows.
+     *
+     * Kang came out at 610 of 670, below Hawkeye, because he is `species:
+     * Human` with no mutant class, no magic and no affiliation — so every rule
+     * above him missed and he fell to "humans who turn up anyway". He Who
+     * Remains and Ultron landed the same way. Doom escaped only by accident:
+     * he carries `magicSchools`, added months ago for a different argument,
+     * and that one field is the whole reason he ranks 194 instead of 600.
+     *
+     * A ranking that puts the man who rules the multiverse below the man with
+     * the bow is not making a judgement, it is reporting a gap in its own
+     * inputs. Naming them here is the same hand-placement the ranked heads
+     * already use, and it is honest about what it is: technology and time
+     * travel are power, and nothing else in this file can see them.
+     */
+    ranked: ["doctor-doom", "kang", "he-who-remains", "ultron"],
     match: (c) =>
       c.mutantClass === "alpha" ||
       (c.magicSchools?.length ?? 0) > 0 ||
