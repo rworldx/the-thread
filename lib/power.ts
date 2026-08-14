@@ -122,15 +122,33 @@ const TIERS: Tier[] = [
     title: "Mortals who rewrite reality",
     gloss:
       "Born inside the universe and able to edit it. Molecule Man and Franklin Richards are the live argument for strongest being in Marvel, and neither wins it cleanly.",
+    /**
+     * THE PUBLISHED OMEGA LIST IS NOT A POWER RANKING, and this tier learned
+     * that the hard way. `mutantClass` follows Marvel's own list on purpose —
+     * C12 exists because five names were once added to it off a fan roster and
+     * had to come back off. That rule is right for the FIELD and wrong as the
+     * only way in here: it left Nate Grey at 253 and Matthew Malloy at 509,
+     * behind an alligator, because a list they are absent from is not evidence
+     * that they cannot warp reality. Nate reshaped the world in Age of X-Man.
+     * Malloy was so far past control that Xavier erased him rather than fight.
+     *
+     * So they are named. The field still says what Marvel published; the
+     * ranking says what they did.
+     */
     ranked: [
       "molecule-man",
       "franklin-richards",
       "captain-universe",
       "onslaught",
       "legion",
-      "proteus",
       "scarlet-witch",
+      "mad-jim-jaspers",
+      "nate-grey",
+      "proteus",
+      "matthew-malloy",
+      "marquis-of-death",
       "jamie-braddock",
+      "rachel-summers",
       "mister-m",
     ],
     match: (c) => c.mutantClass === "omega",
@@ -232,6 +250,9 @@ const TIERS: Tier[] = [
       "cassandra-nova",
       "shadow-king",
       "selene",
+      /* Same family, same fault: a clone of Jean Grey with her telepathy and
+         a demon army, stranded at 393 for having no published class. */
+      "madelyne-pryor",
       "he-who-remains",
       "loki",
       "clea",
