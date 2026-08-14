@@ -3382,9 +3382,14 @@ const ensemble: CharacterDraft[] = [
     species: "Asgardian",
     magicSchools: ["asgardian"],
     powers: [
-      { en: "Seer", ar: "بصيرة" },
+      /* SHE TAUGHT LOKI, which is the fact everything else about her follows
+         from, and it was not on the record — so the gatekeeper outranked the
+         sorceress who trained the god of mischief. */
+      { en: "Taught Loki his magic", ar: "علّمت لوكي سحره" },
       { en: "Illusion magic", ar: "سحر الأوهام" },
-      { en: "Trained fighter", ar: "مقاتلة مدرَّبة" },
+      { en: "Seer", ar: "بصيرة" },
+      { en: "Asgardian strength", ar: "قوة أسغاردية" },
+      { en: "Trained fighter", ar: "مقاتلة مدرّبة" },
     ],
     origin: {
       en: "The queen of Asgard, who taught one of her sons everything he knows about illusion and was the only person in that house who ever really saw him.",
@@ -3522,7 +3527,9 @@ const ensemble: CharacterDraft[] = [
        of them: Thor, Hulk, Loki and Valkyrie. Korg and Miek lead the gladiator
        revolt and leave on the same ship, which is not the same as being on the
        team. Removed after Rashid caught it. */
-    affiliation: ["Asgard"],
+    /* Not Asgard either, and for the same reason. Sakaaran, insectivorid, and
+       on that ship because he was in the arena. */
+    affiliation: [],
     universe: ["mcu"],
     species: "Insectivorid",
     powers: [
@@ -3552,7 +3559,11 @@ const ensemble: CharacterDraft[] = [
        of them: Thor, Hulk, Loki and Valkyrie. Korg and Miek lead the gladiator
        revolt and leave on the same ship, which is not the same as being on the
        team. Removed after Rashid caught it. */
-    affiliation: ["Asgard"],
+    /* NOT ASGARD. He is a Kronan from Sakaar who left on the same ship, and
+       filing him here was my doing: he lost the Revengers and I gave him this
+       rather than leave the field empty. An empty field was the honest answer.
+       His tier comes from his species either way. */
+    affiliation: [],
     universe: ["mcu"],
     species: "Kronan",
     powers: [
