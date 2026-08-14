@@ -657,9 +657,9 @@ const SCALE: [RegExp, number][] = [
   /* Armies, cities, dimensions. ascii-ok: English only. */
   [/\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|commands\b)/i, 25],
   /* Ordinary superhuman. ascii-ok: English only. */
-  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|flies|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum)/i, 14],
+  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|flies|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology)/i, 14],
   /* Training and equipment. ascii-ok: English only. */
-  [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow|training|weapons|arsenal|combat|spear|staff|axe|hammer|shield|knife|sai|fists|soldier|marine|military|sniper|assassin|agent|espionage|intelligence)/i, 6],
+  [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow|training|weapons|arsenal|combat|spear|staff|axe|hammer|shield|knife|sai|fists|soldier|marine|military|sniper|assassin|agent|espionage|intelligence|physicist|scientist|engineer|inventor|brilliant|surgeon|doctor)/i, 6],
 ];
 
 const CLASS_WEIGHT: Record<string, number> = {

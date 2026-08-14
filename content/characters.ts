@@ -3570,11 +3570,18 @@ const ensemble: CharacterDraft[] = [
     nameAr: "هانك بيم",
     aliases: ["Hank Pym", "Dr. Hank Pym"],
     category: "supporting",
-    affiliation: [],
+    /* S.H.I.E.L.D., which he actually was: the 1989 flashback is Hank
+       resigning from it. An empty affiliation was dropping him into the
+       bottom tier with the reporters and aunts. */
+    affiliation: ["S.H.I.E.L.D."],
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Invented the particle", ar: "مخترع الجسيم" },
+      /* HE WORE IT FIRST. The record described an inventor and nothing else,
+         which put the original Ant-Man 102nd of 105 humans — below Ned Leeds
+         and Betty Ross. He fought as Ant-Man for years before Scott Lang. */
+      { en: "Wore the Ant-Man suit first", ar: "ارتدى بدلة أنت-مان أولًا" },
+      { en: "Invented the particle", ar: "اخترع الجسيم" },
       { en: "Quantum physicist", ar: "فيزيائي كمّي" },
     ],
     origin: {
