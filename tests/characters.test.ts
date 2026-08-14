@@ -3,6 +3,7 @@ import { allCharacters, characterOf, charactersIn, shownCharacters } from "@/lib
 import { characters as authored } from "@/content/characters";
 import { CharacterSource } from "@/content/character-schema";
 import { titles } from "@/content/build";
+import { powerOrder, powerRankOf, powerTierOf, POWER_TIERS } from "@/lib/power";
 import artRaw from "@/content/character-art.generated.json";
 import { visibleLength } from "@/content/schema";
 import { releaseOrder } from "@/lib/graph";
@@ -38,6 +39,35 @@ describe("C. the character corpus", () => {
       for (const t of c.notIn ?? []) {
         expect(ids.has(t), `${c.id} excludes ${t}, which is not a title`).toBe(true);
         expect(characterOf(c.id)!.appearances).not.toContain(t);
+      }
+    }
+  });
+
+  /**
+   * C28 THE POWER RANKING IS A TOTAL ORDER, because a sort needs one.
+   *
+   * The failure this guards is a rule quietly matching two tiers, or none:
+   * a character in two tiers gets two ranks and the sort becomes unstable,
+   * and a character in none disappears from a sorted view entirely. Both are
+   * invisible on the page — the grid still renders, in the wrong order.
+   */
+  it("C28 every character has exactly one rank, 1..N, in tier order", () => {
+    expect(powerOrder).toHaveLength(allCharacters.length);
+    const ranks = allCharacters.map((c) => powerRankOf(c.id)).sort((a, b) => a - b);
+    expect(ranks).toEqual(allCharacters.map((_, i) => i + 1));
+    /* Rank must never contradict tier: everyone in tier 3 outranks everyone
+       in tier 4, or the tiers are decoration. */
+    const tiers = powerOrder.map((x) => x.tier);
+    expect([...tiers].sort((a, b) => a - b)).toEqual(tiers);
+  });
+
+  it("C28b the hand-ranked heads keep the order they were researched in", () => {
+    for (const t of POWER_TIERS) {
+      for (const [i, id] of (t.ranked ?? []).entries()) {
+        expect(powerTierOf(id), `${id} left tier ${t.n}`).toBe(t.n);
+        if (i === 0) continue;
+        const prev = t.ranked![i - 1]!;
+        expect(powerRankOf(prev), `${prev} must outrank ${id}`).toBeLessThan(powerRankOf(id));
       }
     }
   });

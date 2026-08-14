@@ -46,6 +46,10 @@ export interface CharacterCard {
       actor, so the split takes its two halves from different places. */
   baseImage: string | null;
   appearances: number;
+  /** 1 is strongest, unique across the corpus. See lib/power.ts. */
+  power: number;
+  /** 0 is strongest. The tier is the claim; the rank only breaks ties. */
+  powerTier: number;
 }
 
 /**
@@ -457,6 +461,10 @@ export function CharacterBrowser({
           })()
         : kept;
     if (sort === "fame") return merged;
+    /* STRONGEST FIRST, and the rank is precomputed rather than compared here:
+       it is a total order over the whole corpus, so a filtered view stays in
+       the same relative order as the unfiltered one. */
+    if (sort === "power") return [...merged].sort((a, b) => a.power - b.power);
     /**
      * ONE COMPARISON, NEGATED, rather than two sorts kept in step. And
      * `localeCompare` with the page's own locale, so Arabic sorts by Arabic
@@ -486,7 +494,7 @@ export function CharacterBrowser({
         {/* Two states, so a segmented control rather than a select: both
             options are visible and switching is one tap, not three. */}
         <div className="char-sort" role="radiogroup" aria-label={t("sortLabel")}>
-          {(["fame", "az", "za"] as const).map((mode) => (
+          {(["fame", "power", "az", "za"] as const).map((mode) => (
             <button
               key={mode}
               type="button"

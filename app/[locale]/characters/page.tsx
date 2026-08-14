@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeParams } from "@/lib/locales";
 import { shownCharacters, characterOf } from "@/lib/characters";
+import { powerRankOf, powerTierOf } from "@/lib/power";
 import { CharacterBrowser } from "@/app/components/character-browser";
 
 /**
@@ -101,6 +102,10 @@ export default async function CharactersPage({
      * else, which is what makes the split an exception rather than a mode.
      */
     spiderVerse: c.universe.includes("sony"),
+    /* See lib/power.ts. The RANK sorts and the TIER is what the ranking
+       actually claims; both travel so the grid never has to recompute them. */
+    power: powerRankOf(c.id),
+    powerTier: powerTierOf(c.id),
   }));
 
   return (

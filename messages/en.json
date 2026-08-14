@@ -470,7 +470,8 @@
     "sort": {
       "fame": "Most known",
       "az": "A–Z",
-      "za": "Z–A"
+      "za": "Z–A",
+      "power": "Strongest"
     },
     "symbioteClass": "Symbiote origin",
     "symbioteClass_": {
