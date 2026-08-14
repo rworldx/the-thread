@@ -820,9 +820,15 @@ const xmen: CharacterDraft[] = [
      */
     mutantClass: "omega",
     powers: [
+      /* Cerebro was listed as an object rather than as what it does: it puts
+         every mind on Earth within his reach. The memory work and the psychic
+         attacks — the things he actually wins with — were absent. */
       { en: "The strongest telepath", ar: "أقوى قارئ للأفكار" },
       { en: "Mind control", ar: "التحكم بالعقول" },
-      { en: "Cerebro", ar: "سيريبرو" },
+      { en: "Erases and rewrites memory", ar: "يمحو الذكريات ويعيد كتابتها" },
+      { en: "Psychic attacks and illusions", ar: "هجمات نفسية وأوهام" },
+      { en: "Every mind on Earth, via Cerebro", ar: "كل عقل على الأرض عبر سيريبرو" },
+      { en: "A brilliant scientist", ar: "عالِم لامع" },
     ],
     origin: {
       en: "A telepath who opened a school so that children like him would have somewhere to go. He is not on Marvel's published list of Omega-level mutants, which is a strange omission on a list he is written as having compiled.",
@@ -873,8 +879,15 @@ const xmen: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "omega",
     powers: [
+      /* THE PLANET WAS MISSING. Three bullets described a man who lifts
+         metal; at his height he has moved the Earth's own magnetic field,
+         which is the difference between a strong mutant and an omega one.
+         The force fields and the blasts were not there either. */
       { en: "Controls magnetism", ar: "يتحكم بالمغناطيسية" },
-      { en: "Moves metal at any scale", ar: "يحرّك المعادن بأي حجم" },
+      { en: "Moves metal at any scale", ar: "يحرّك المعادن بأي مقياس" },
+      { en: "Bends the planet's magnetic field", ar: "يلوي حقل الأرض المغناطيسي" },
+      { en: "Magnetic force fields", ar: "دروع مغناطيسية" },
+      { en: "Electromagnetic blasts", ar: "دفقات كهرومغناطيسية" },
       { en: "Magnetic flight", ar: "طيران مغناطيسي" },
     ],
     origin: {
