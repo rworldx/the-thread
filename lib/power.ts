@@ -377,9 +377,23 @@ const TIERS: Tier[] = [
     n: 7,
     title: "Enhanced",
     gloss:
-      "Beta and gamma mutants, mutates, super-soldiers, androids, aliens. Superhuman, and bounded.",
+      "Beta and gamma mutants, mutates, super-soldiers, androids, aliens, and anyone whose power is bolted on. Superhuman, and bounded.",
+    /* UPLIFTED ANIMALS LOST THE SPECIES GRANT, because it was carrying Lylla,
+       Teefs and Floor — whose records list mechanical hands, wheels and spider
+       legs, and who score below zero — above Iron Man and the Kingpin. Cosmo
+       keeps the tier by name: telepathy and telekinesis are not bolted on. */
+    ranked: ["cosmo"],
     match: (c) =>
       c.mutantClass !== null ||
+      /**
+       * ARMOUR IS POWER, and `species: Human` cannot see it. Iron Man came out
+       * 574th, War Machine 607th and Ironheart 571st — below Lylla and Teefs,
+       * who are an otter and a walrus. The suit has fought Thanos.
+       * ascii-ok: reads `powers[].en`, which is English by construction.
+       */
+      /\b(powered armour|powered armor|exoskeleton|repulsor|built her own suit|suit of armour)/i.test(
+        c.powers.map((x) => x.en).join(" "),
+      ) ||
       sp(
         "Mutant",
         "Mutant hybrid",
@@ -407,8 +421,6 @@ const TIERS: Tier[] = [
         "Empath",
         "Atlantean",
         "Talokanil",
-        "Uplifted animal",
-        "Uplifted raccoon",
         "Flora colossus",
         "Plant elemental",
         "Alligator",
@@ -717,6 +729,10 @@ export const OUTRANKS: string[][] = [
   /* Then the one who cast an illusion big enough to hide a city, a thug, a
      child, and a liar whose whole character is feats he never performed. */
   ["classic-loki", "president-loki", "kid-loki", "boastful-loki"],
+  /* Three suits, and the scorer reads the newest record as the best one
+     because Riri's bullets are wordier than Tony's. Decades of iteration and
+     military hardware beat a first build, whatever the prose count says. */
+  ["iron-man", "war-machine", "ironheart"],
 ];
 
 /** Ordered strongest to weakest, every character exactly once. */
