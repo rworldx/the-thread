@@ -299,6 +299,19 @@ const TIERS: Tier[] = [
       "khonshu",
       /* Guards the Nexus of All Realities and cannot be killed by force. */
       "man-thing",
+      /**
+       * FOUND BY AUDIT RATHER THAN BY BEING ASKED — the same strandings, one
+       * layer down. Namor rules an ocean and is routinely argued as one of the
+       * strongest mutants alive, and sat at 279. Amadeus Cho took the gamma
+       * off Bruce Banner and is Hulk-tier when he uses it. Ronan held an
+       * Infinity Stone. America Chavez punches holes between universes. Xorn
+       * has a star inside his head.
+       */
+      "namor",
+      "amadeus-cho",
+      "ronan",
+      "america-chavez",
+      "xorn",
     ],
     match: (c) =>
       c.mutantClass === "alpha" ||
@@ -581,7 +594,7 @@ const SYMBIOTE_WEIGHT: Record<string, number> = {
  * power bullets are a deliberate claim about what someone can do; the origin
  * is prose, and prose mentions big things in passing.
  */
-function scaleScore(c: Character): number {
+export function scaleScore(c: Character): number {
   const score = (text: string) =>
     SCALE.reduce((n, [re, w]) => n + (re.test(text) ? w : 0), 0);
   let n = score(c.powers.map((p) => p.en).join(" ")) + score(c.origin.en) / 4;
