@@ -290,6 +290,11 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
      */
     chips: [
       { id: "avengers", match: aff("Avengers") },
+      /* The six who stood in a circle in 2012. A fixed, closed set — it is
+         the only team on this page that can never gain a member, which is
+         exactly why people ask for it by name. Kept beside the Avengers
+         rather than inside them: every one of the six is on both chips. */
+      { id: "original-six", match: aff("Original Six") },
       { id: "guardians", match: aff("Guardians of the Galaxy") },
       { id: "defenders", match: aff("Defenders") },
       { id: "fantastic-four", match: aff("Fantastic Four") },

@@ -34,7 +34,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "الرجل الحديدي",
     aliases: ["Tony Stark", "Anthony Stark", "Iron Man"],
     category: "hero",
-    affiliation: ["Avengers", "Team Iron Man"],
+    affiliation: ["Avengers", "Team Iron Man", "Original Six"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -61,7 +61,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "كابتن أمريكا",
     aliases: ["Steve Rogers", "Captain America", "Steven Rogers"],
     category: "hero",
-    affiliation: ["Avengers", "Team Captain America"],
+    affiliation: ["Avengers", "Team Captain America", "Original Six"],
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
@@ -86,7 +86,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "ثور",
     aliases: ["Thor", "Thor Odinson"],
     category: "hero",
-    affiliation: ["Avengers", "Asgard", "Revengers", "Gods"],
+    affiliation: ["Avengers", "Asgard", "Revengers", "Gods", "Original Six"],
     universe: ["mcu"],
     species: "Asgardian",
     powers: [
@@ -110,7 +110,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "هالك",
     aliases: ["Bruce Banner", "Hulk", "The Hulk", "Robert Bruce Banner"],
     category: "hero",
-    affiliation: ["Avengers", "Hulks", "Revengers"],
+    affiliation: ["Avengers", "Hulks", "Revengers", "Original Six"],
     universe: ["mcu", "legacy"],
     species: "Enhanced human",
     powers: [
@@ -134,7 +134,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "الأرملة السوداء",
     aliases: ["Natasha Romanoff", "Black Widow", "Natalie Rushman"],
     category: "hero",
-    affiliation: ["Avengers", "S.H.I.E.L.D.", "Team Iron Man"],
+    affiliation: ["Avengers", "S.H.I.E.L.D.", "Team Iron Man", "Original Six"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -158,7 +158,7 @@ const avengers: CharacterDraft[] = [
     nameAr: "هوك آي",
     aliases: ["Clint Barton", "Hawkeye", "Ronin"],
     category: "hero",
-    affiliation: ["Avengers", "S.H.I.E.L.D.", "Team Captain America"],
+    affiliation: ["Avengers", "S.H.I.E.L.D.", "Team Captain America", "Original Six"],
     universe: ["mcu"],
     species: "Human",
     powers: [

@@ -271,7 +271,8 @@
       "symbiote-gestalt": "مندمج",
       "talokanil": "التالوكانيون",
       "new-warriors": "المحاربون الجدد",
-      "spider-mans-team": "فريق سبايدر-مان"
+      "spider-mans-team": "فريق سبايدر-مان",
+      "original-six": "الستة الأوائل"
     },
     "appearsIn": "يظهر في",
     "appearanceCount": "{n, plural, zero {لا عناوين} one {عنوان واحد} two {عنوانان} few {# عناوين} many {# عنوانًا} other {# عنوان}}",
@@ -444,7 +445,8 @@
       "x-statix": "إكس ستاتيكس",
       "young-avengers": "المنتقمون الصغار",
       "new-warriors": "المحاربون الجدد",
-      "spider-man-s-team": "فريق سبايدر-مان"
+      "spider-man-s-team": "فريق سبايدر-مان",
+      "original-six": "الستة الأوائل"
     },
     "artNote": "رسوم الشخصيات. أما صور الطاقم أسفل كل عمل فهي للممثلين الذين أدّوها.",
     "playedByHeading": "الوجوه التي أدّته",
