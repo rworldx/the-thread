@@ -213,10 +213,12 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Synthezoid",
     powers: [
+      /* THE MIND STONE FIRST. It is what he is built around, and leaving it
+         off the list ranked him 20th of 25 Avengers, below the Falcon. */
+      { en: "The Mind Stone in his brow", ar: "حجر العقل في جبينه" },
       { en: "Changes his own density", ar: "يغيّر كثافته" },
       { en: "Flight", ar: "طيران" },
       { en: "Beam projection", ar: "إطلاق شعاع" },
-      { en: "Artificial mind", ar: "عقل اصطناعي" },
     ],
     origin: {
       en: "A body built to house an artificial intelligence, brought to life by something much older than either. He wakes up already able to lift a hammer that almost nobody else can.",
