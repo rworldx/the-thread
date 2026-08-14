@@ -165,6 +165,13 @@ const TIERS: Tier[] = [
       "mangog",
       "sentry",
       "silver-surfer",
+      /* Shalla-Bal directly behind him, because the two records carry
+         IDENTICAL data — same species, same two affiliations — and came out 81
+         places apart: Norrin was pinned here by being named, and she floated
+         to tier 3 on the "Cosmic entities" affiliation they both hold. Being
+         named in a head should never be what decides a character's tier when
+         an identical record is not. */
+      "shalla-bal",
       "thanos",
       "hela",
       "thor",
@@ -215,17 +222,27 @@ const TIERS: Tier[] = [
          Doctor Strange, Doom, Apocalypse, Kang and the Ancient One. Strange
          beat Ebony Maw on his own and the Hulkbuster handled Cull Obsidian.
          They are elite soldiers, which is what tier 6 describes. */
+      /* ELDERS OF THE UNIVERSE MOVE DOWN, reversing an earlier call. They were
+         kept here on Marvel's glossary, which files them with the cosmic
+         beings — true of what they ARE, and this tier is read as what someone
+         can DO. The Collector and the Grandmaster outranking the Sorcerer
+         Supreme is the form that claim took, and it is not one I will defend:
+         they are ancient and they are schemers, and Strange beats either. */
+      /* "God" GOES THE WAY OF ASGARDIAN AND TITAN, and for the fourth time.
+         Two records carry it: Khonshu, already named into tier 6, and Love —
+         Gorr's daughter, a god by Eternity's grant, one film old, holding
+         Stormbreaker's charge. Ranked 140th, ahead of Valkyrie and every
+         sorcerer. A word in a species field is not a feat. The gods who
+         belong in this tier are named in its head. */
       sp(
-        "God",
         "Olympian",
-        "Elder of the Universe",
         "Fire demon",
         "Alien dragon",
         "Zenn-Lavian",
         "Elder god",
       /* "Gods" is 28 characters and most of them are Heimdall — a god by
          species and a sentry by job. The ones who belong are named above. */
-      )(c) || aff("Heralds of Galactus", "Elders of the Universe")(c),
+      )(c) || aff("Heralds of Galactus")(c),
   },
   {
     n: 6,
@@ -322,6 +339,8 @@ const TIERS: Tier[] = [
         "Frost Giant",
         "Eternal",
         "Titan",
+        "God",
+        "Elder of the Universe",
         "Demon",
         "Witch",
         "Faltine",
@@ -336,7 +355,7 @@ const TIERS: Tier[] = [
         "Artifact",
         "Strontian",
       )(c) ||
-      aff("Magic", "Vishanti", "Masters of the Mystic Arts")(c),
+      aff("Magic", "Vishanti", "Masters of the Mystic Arts", "Elders of the Universe")(c),
   },
   {
     n: 7,
