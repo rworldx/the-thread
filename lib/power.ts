@@ -485,6 +485,18 @@ const TIERS: Tier[] = [
       "hawkeye",
       "nick-fury",
       "yelena-belova",
+      /**
+       * RED GUARDIAN IS PINNED HERE ON PURPOSE, against his own species.
+       *
+       * He carries the Soviet serum, which is why every rule put him in tier 7
+       * at 334 — third on the Thunderbolts chip, ahead of Ghost, Taskmaster
+       * and Yelena. Rashid's call, and it is a reading of the character rather
+       * than of the file: he is out of shape, twenty years past it, tells the
+       * story differently every time and loses most of what he starts. The
+       * serum is on the record and the record is right; what he does with it
+       * is the thing being ranked.
+       */
+      "red-guardian",
       "kate-bishop",
       "punisher",
       "elektra",
