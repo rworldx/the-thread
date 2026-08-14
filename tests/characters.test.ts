@@ -3,7 +3,7 @@ import { allCharacters, characterOf, charactersIn, shownCharacters } from "@/lib
 import { characters as authored } from "@/content/characters";
 import { CharacterSource } from "@/content/character-schema";
 import { titles } from "@/content/build";
-import { powerOrder, powerRankOf, powerTierOf, POWER_TIERS } from "@/lib/power";
+import { OUTRANKS, powerOrder, powerRankOf, powerTierOf, POWER_TIERS } from "@/lib/power";
 import artRaw from "@/content/character-art.generated.json";
 import { visibleLength } from "@/content/schema";
 import { releaseOrder } from "@/lib/graph";
@@ -68,6 +68,24 @@ describe("C. the character corpus", () => {
         if (i === 0) continue;
         const prev = t.ranked![i - 1]!;
         expect(powerRankOf(prev), `${prev} must outrank ${id}`).toBeLessThan(powerRankOf(id));
+      }
+    }
+  });
+
+  /**
+   * C28c A hand-ordered group must actually come out in that order. The
+   * mechanism reseats characters into slots they already hold, so a typo in a
+   * name throws, but a group listed in the wrong order would quietly ship.
+   */
+  it("C28c every OUTRANKS group holds, and sits in one tier", () => {
+    for (const group of OUTRANKS) {
+      const tiers = new Set(group.map((id) => powerTierOf(id)));
+      expect(tiers.size, `[${group.join(", ")}] spans tiers`).toBe(1);
+      for (let i = 1; i < group.length; i += 1) {
+        expect(
+          powerRankOf(group[i - 1]!),
+          `${group[i - 1]} must outrank ${group[i]}`,
+        ).toBeLessThan(powerRankOf(group[i]!));
       }
     }
   });

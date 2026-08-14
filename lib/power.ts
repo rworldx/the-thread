@@ -150,6 +150,12 @@ const TIERS: Tier[] = [
       "thanos",
       "hela",
       "thor",
+      /* Named because their species is a dead end: Bill is a Korbinite and
+         Gladiator a Strontian, races of one, so no rule could ever find them.
+         Bill carries Stormbreaker and fought Thor to a draw; Gladiator has
+         held off the entire X-Men roster. Both were ranked below Cyclops. */
+      "beta-ray-bill",
+      "gladiator",
       /* The Hulk is here rather than higher ONLY because of the base-form
          rule. Savage Hulk is what the corpus holds; World-Breaker, who tore
          a continent, is a state he reaches and not a form he keeps. */
@@ -157,19 +163,31 @@ const TIERS: Tier[] = [
       "hyperion",
     ],
     match: (c) =>
+      /**
+       * ASGARDIAN, FROST GIANT AND ETERNAL ARE RACES, NOT POWER LEVELS, and
+       * treating them as tier-5 admission put Heimdall and Frigga above Doctor
+       * Strange, and Valkyrie above Doctor Doom. The Asgardians who belong up
+       * here are named in the head — Odin, Thor, Hela — and the rest are
+       * warriors, which tier 6 already describes.
+       *
+       * ELDERS OF THE UNIVERSE STAY. They are not warriors either, but Marvel's
+       * own glossary files them with the cosmic beings: survivors of the
+       * universe's oldest races, wielding the Power Primordial, older than the
+       * gods below them. That is a claim about what they are rather than how
+       * they fight, and it is the same claim this tier is making.
+       */
       sp(
         "God",
-        "Asgardian",
         "Olympian",
         "Titan",
-        "Eternal",
         "Elder of the Universe",
-        "Frost Giant",
         "Fire demon",
         "Alien dragon",
         "Zenn-Lavian",
         "Elder god",
-      )(c) || aff("Heralds of Galactus", "Elders of the Universe", "Gods")(c),
+      /* "Gods" is 28 characters and most of them are Heimdall — a god by
+         species and a sentry by job. The ones who belong are named above. */
+      )(c) || aff("Heralds of Galactus", "Elders of the Universe")(c),
   },
   {
     n: 6,
@@ -193,12 +211,46 @@ const TIERS: Tier[] = [
      * already use, and it is honest about what it is: technology and time
      * travel are power, and nothing else in this file can see them.
      */
-    ranked: ["doctor-doom", "kang", "he-who-remains", "ultron"],
+    /**
+     * THIS TIER NEEDED A HEAD MORE THAN ANY OTHER, because it is where every
+     * notable character who is not a god or a cosmic entity ends up — and
+     * alphabetical order inside it kept producing claims. The Ancient One
+     * ranked 234th, below Wong's teacher-of-Wong, because her name starts with
+     * "The"; Agatha Harkness ranked 164th on the strength of an "A".
+     *
+     * Ordered by what they have actually done: the Sorcerer Supreme, the woman
+     * who taught him and held Dormammu off for centuries, then the two men who
+     * beat gods with study, then the first mutant, then the psychics who have
+     * emptied minds by the million.
+     */
+    ranked: [
+      "doctor-strange",
+      "the-ancient-one",
+      "doctor-doom",
+      "kang",
+      "apocalypse",
+      "cassandra-nova",
+      "shadow-king",
+      "selene",
+      "he-who-remains",
+      "loki",
+      "clea",
+      "agatha-harkness",
+      "doctor-voodoo",
+      "mister-sinister",
+      "ultron",
+      "sylvie",
+      "magik",
+      "khonshu",
+    ],
     match: (c) =>
       c.mutantClass === "alpha" ||
       (c.magicSchools?.length ?? 0) > 0 ||
       Boolean(c.symbioteClass) ||
       sp(
+        "Asgardian",
+        "Frost Giant",
+        "Eternal",
         "Demon",
         "Witch",
         "Faltine",
@@ -413,6 +465,44 @@ export const PEAK_HEAD: string[] = [
 ];
 
 
+
+/**
+ * WHEN THE ALPHABET MAKES A CLAIM — the one escape hatch from alphabetical.
+ *
+ * Inside a tier the order is alphabetical and is meant to mean nothing. That
+ * holds right up until two characters share a name, and then it means
+ * something loudly and wrongly: the six Loki variants are all Frost Giants, so
+ * they all land in tier 5, and the alphabet handed the tier to BOASTFUL LOKI —
+ * whose entire character is that he lies about feats he never performed — at
+ * 123, with Kid Loki at 136 and Loki himself at 139.
+ *
+ * Nobody reading the sort would take that as "we don't know". They would take
+ * it as the site claiming a child beats the god he is a copy of.
+ *
+ * A general rule was tried first and does not work: the corpus HAS variant
+ * edges, but they are symmetric, so nothing marks which one is the original —
+ * and "a variant never outranks its base" is false anyway, since Onslaught
+ * came out of Professor X and the Cosmic Ghost Rider out of the Punisher, and
+ * both dwarf what they came from.
+ *
+ * So: an explicit order, applied to the slots those characters already hold.
+ * Everyone else keeps their position exactly. A group must sit in ONE tier,
+ * because reordering across a tier boundary would make rank contradict tier,
+ * which is the thing C28 exists to prevent.
+ */
+export const OUTRANKS: string[][] = [
+  /* TWO GROUPS, NOT ONE, and the tier guard is what found that. Loki and
+     Sylvie carry the "Gods" affiliation and stay in tier 5; the lesser
+     variants carry nothing and fall to 6 — which is the correct answer and
+     not one I would have thought to write.
+
+     The god, then the one who killed He Who Remains. */
+  ["loki", "sylvie"],
+  /* Then the one who cast an illusion big enough to hide a city, a thug, a
+     child, and a liar whose whole character is feats he never performed. */
+  ["classic-loki", "president-loki", "kid-loki", "boastful-loki"],
+];
+
 /** Ordered strongest to weakest, every character exactly once. */
 export const powerOrder: { c: Character; tier: number; ranked: boolean }[] = (() => {
   const byId = new Map(allCharacters.map((c) => [c.id, c]));
@@ -440,6 +530,27 @@ export const powerOrder: { c: Character; tier: number; ranked: boolean }[] = (()
   }
   const missed = allCharacters.filter((c) => !seen.has(c.id));
   if (missed.length) throw new Error(`unplaced: ${missed.map((c) => c.id).join(", ")}`);
+
+  /* Reseat each group into the slots its own members already occupy. */
+  for (const group of OUTRANKS) {
+    const slots = group
+      .map((id) => out.findIndex((x) => x.c.id === id))
+      .sort((a, b) => a - b);
+    if (slots.some((i) => i === -1)) {
+      throw new Error(`OUTRANKS names an id that is not ranked: ${group.join(", ")}`);
+    }
+    const tiers = new Set(slots.map((i) => out[i]!.tier));
+    if (tiers.size > 1) {
+      throw new Error(
+        `OUTRANKS group [${group.join(", ")}] spans tiers ${[...tiers].join(", ")}. ` +
+          `Reordering across a tier boundary would make rank contradict tier.`,
+      );
+    }
+    const rows = group.map((id) => out.find((x) => x.c.id === id)!);
+    slots.forEach((slot, i) => {
+      out[slot] = rows[i]!;
+    });
+  }
   return out;
 })();
 
