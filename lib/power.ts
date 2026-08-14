@@ -299,6 +299,14 @@ const TIERS: Tier[] = [
  *   power that killed it ranks above it. Reasonable people put the Tribunal
  *   first because its office is permanent and Doom's throne was borrowed.
  *
+ *   A CHARACTER'S PEAK IS WHAT THEY WIELDED, NOT WHAT RODE THEM. Jean's
+ *   White Phoenix counts because she mastered the Force; Wanda's chaos magic
+ *   counts because she casts it. The Hulk as a vessel for the One Below All
+ *   does NOT, and he is ranked as the Breaker of Worlds instead — otherwise
+ *   the rule proves too much, since Xavier would be ranked as Onslaught and
+ *   half this list would collapse into the four entities doing the riding,
+ *   each of which already has its own record here.
+ *
  *   GALACTUS ABOVE KNULL. Both have killed Celestials, and the sources that
  *   compare them directly give Galactus the higher raw output. Knull's edge is
  *   a weapon rather than a power.
@@ -317,9 +325,11 @@ export const PEAK_HEAD: string[] = [
      Doom, whose thousand Beyonders were borrowed and lost. */
   "thanos",
   "doctor-doom",
-  /* Franklin beat God Emperor Doom, so he sits with him rather than below. */
-  "franklin-richards",
+  /* Warlock ahead of Franklin on Rashid's call, and it is consistent: the two
+     names above him are ranked on artifacts too, so the Gauntlet counts. */
   "adam-warlock",
+  /* Franklin beat God Emperor Doom, so he sits with them rather than below. */
+  "franklin-richards",
   "the-living-tribunal",
   "protege",
   "master-weaver",
@@ -346,13 +356,15 @@ export const PEAK_HEAD: string[] = [
   "galactus",
   "knull",
   "thor",
+  /* Hulk above Odin, per Rashid. Ranked as the Breaker of Worlds — see the
+     note on One-Below-All in the comment above PEAK_HEAD. */
   "hulk",
   "gorr",
   "odin",
   "surtur",
-  "sentry",
   "silver-surfer",
   "doctor-strange",
+  "sentry",
   "captain-universe",
   "the-progenitor",
   "arishem",
@@ -364,10 +376,17 @@ export const PEAK_HEAD: string[] = [
   "mephisto",
   "zeus",
   "hercules",
-  "hela",
   "apocalypse",
   "cosmic-ghost-rider",
+  "hela",
+  /* The God of Stories rewrote himself into the narrative, which is a bigger
+     peak than any version of Loki that only fights. */
+  "loki",
   "ghost-rider",
+  "professor-x",
+  "magneto",
+  "captain-marvel",
+  "iceman",
   "kang",
 ];
 
