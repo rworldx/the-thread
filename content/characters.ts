@@ -782,9 +782,14 @@ const xmen: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "beta",
     powers: [
-      { en: "Heals from anything", ar: "يشفى من كل شيء" },
-      { en: "Adamantium claws", ar: "مخالب من الأدامانتيوم" },
-      { en: "Enhanced senses", ar: "حواس معزّزة" },
+      /* THE SKELETON WAS MISSING, which is half of what he is: the claws cut
+         and the skeleton is why nothing cuts back. So was the century of
+         fighting. Four bullets described a man who heals. */
+      { en: "Heals from anything", ar: "يشفى من أي شيء" },
+      { en: "An adamantium skeleton", ar: "هيكل عظمي من الأدامانتيوم" },
+      { en: "Adamantium claws", ar: "مخالب أدامانتيوم" },
+      { en: "Enhanced strength and senses", ar: "قوة وحواس معزّزة" },
+      { en: "A century of combat", ar: "قرن من القتال" },
       { en: "Barely ages", ar: "لا يشيخ تقريبًا" },
     ],
     origin: {
@@ -1085,10 +1090,15 @@ const xmen: CharacterDraft[] = [
        citizenship. Both are him acquiring the gene, not being born with it. */
     species: "Mutate",
     powers: [
-      { en: "Heals from anything", ar: "يشفى من كل شيء" },
+      /* He was ranked 344th, below a man who vomits acid and cannot aim it,
+         because three of his four bullets were about dying and joking. He is
+         a master of every weapon he picks up and that was nowhere. */
+      { en: "Heals from anything", ar: "يشفى من أي شيء" },
       { en: "Cannot be killed", ar: "لا يُقتَل" },
+      { en: "Master of blades and guns", ar: "بارع بالسيوف والبنادق" },
+      { en: "Fights through any injury", ar: "يقاتل رغم أي إصابة" },
+      { en: "Enhanced agility and reflexes", ar: "رشاقة وردود فعل معزّزة" },
       { en: "Talks to the audience", ar: "يخاطب الجمهور" },
-      { en: "Expert with blades", ar: "بارع بالسيوف" },
     ],
     origin: {
       en: "A mercenary with a terminal diagnosis who signs up for a programme that promises a cure and delivers something else. He cannot die, he knows he is in a film, and neither of those makes him easier to work with.",
