@@ -401,7 +401,12 @@ const TIERS: Tier[] = [
        * who are an otter and a walrus. The suit has fought Thanos.
        * ascii-ok: reads `powers[].en`, which is English by construction.
        */
-      /\b(armour|armor|exoskeleton|repulsor|powered suit|built her own suit)/i.test(
+      /* Yellowjacket was in this tier and Ant-Man was not, on identical
+         technology, because his bullet says "Shrinking armour" and Scott's
+         says "Changes size". The rule was reading the writer's word choice.
+         Pym particles and a flight rig are equipment the same way armour is.
+         ascii-ok: reads `powers[].en`, English by construction. */
+      /\b(armour|armor|exoskeleton|repulsor|powered suit|built her own suit|changes size|pym particle|grows and shrinks|flight rig|winged)/i.test(
         c.powers.map((x) => x.en).join(" "),
       ) ||
       sp(
