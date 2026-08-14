@@ -151,13 +151,27 @@ const TIERS: Tier[] = [
       "rachel-summers",
       "mister-m",
     ],
-    match: (c) => c.mutantClass === "omega",
+    /**
+     * NO BLANKET OMEGA RULE, and removing it is the largest correction this
+     * file has taken. Every omega was landing here, above tier 5, so MAGGOTT —
+     * whose power is two slugs that do his digesting — outranked Thor, and
+     * Forge, who invents by instinct, outranked the Hulk.
+     *
+     * Omega is not a fight ranking and never was. The schema says so in its
+     * own note: it means one power with no discernible upper limit, not a
+     * character who beats gods. Iceman is omega and Wolverine is beta, and
+     * nobody thinks Iceman wins that fight.
+     *
+     * So this tier is now exactly what its title says — the ones who rewrite
+     * reality, named — and the remaining omegas are admitted to tier 5, where
+     * they sit among the gods rather than above them.
+     */
   },
   {
     n: 5,
-    title: "Gods, and the top of the physical scale",
+    title: "Gods, omegas, and the top of the physical scale",
     gloss:
-      "No cosmic office, no reality warping — just more raw power than anything below can survive.",
+      "No cosmic office and no reality warping — just more raw power than anything below can survive. The omega-level mutants who are not reality-warpers sit here, beside the gods rather than above them.",
     ranked: [
       "odin",
       "surtur",
@@ -242,7 +256,10 @@ const TIERS: Tier[] = [
         "Elder god",
       /* "Gods" is 28 characters and most of them are Heimdall — a god by
          species and a sentry by job. The ones who belong are named above. */
-      )(c) || aff("Heralds of Galactus")(c),
+      )(c) ||
+      aff("Heralds of Galactus")(c) ||
+      /* The omegas that tier 4 no longer takes. */
+      c.mutantClass === "omega",
   },
   {
     n: 6,
