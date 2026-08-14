@@ -174,6 +174,21 @@ const TIERS: Tier[] = [
          held off the entire X-Men roster. Both were ranked below Cyclops. */
       "beta-ray-bill",
       "gladiator",
+      /**
+       * COSMIC POWER WORN BY A HUMAN BODY, which "Enhanced human" and
+       * "Artificial being" describe about as well as "mammal" describes a
+       * whale. Adam Warlock came out at 295, Quasar at 267, Richard Rider at
+       * 405 and Blue Marvel at 474 — a man whose body is an antimatter
+       * reactor, ranked below three hundred people.
+       *
+       * Rider before Sam Alexander deliberately: Rich has carried the entire
+       * Nova Force and the Worldmind, and Sam's own record says the helmet
+       * does most of it.
+       */
+      "adam-warlock",
+      "quasar",
+      "richard-rider",
+      "blue-marvel",
       /* The Hulk is here rather than higher ONLY because of the base-form
          rule. Savage Hulk is what the corpus holds; World-Breaker, who tore
          a continent, is a state he reaches and not a form he keeps. */
@@ -253,6 +268,14 @@ const TIERS: Tier[] = [
       /* Same family, same fault: a clone of Jean Grey with her telepathy and
          a demon army, stranded at 393 for having no published class. */
       "madelyne-pryor",
+      /* Carol goes Binary. Monica becomes any part of the spectrum. Sue is
+         the strongest of the Fantastic Four and was ranked last of them, at
+         501, because "Invisibility / Force fields" reads small and is not —
+         she has held a force field against a Celestial. */
+      "captain-marvel",
+      "invisible-woman",
+      "monica-rambeau",
+      "sam-alexander",
       "he-who-remains",
       "loki",
       "clea",
