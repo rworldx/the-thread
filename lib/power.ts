@@ -382,7 +382,11 @@ const TIERS: Tier[] = [
        Teefs and Floor — whose records list mechanical hands, wheels and spider
        legs, and who score below zero — above Iron Man and the Kingpin. Cosmo
        keeps the tier by name: telepathy and telekinesis are not bolted on. */
-    ranked: ["cosmo"],
+    /* AN INTELLIGENCE IS NOT A BODY. "Artificial intelligence" was admitting
+       Miss Minutes — a cartoon clock on a screen — and Arnim Zola, a mind on
+       magnetic tape, above Iron Man and the Punisher. The two AIs that do act
+       on the world are named; the rest fall to tier 8. */
+    ranked: ["cosmo", "supreme-intelligence", "mainframe"],
     match: (c) =>
       c.mutantClass !== null ||
       /**
@@ -403,7 +407,6 @@ const TIERS: Tier[] = [
         "Enhanced human",
         "Synthezoid",
         "Artificial being",
-        "Artificial intelligence",
         "Machine",
         "Cyborg",
         "Clone",
@@ -635,15 +638,15 @@ const SCALE: [RegExp, number][] = [
   /* Reality itself. ascii-ok: scores English `powers[].en` only. */
   [/\b(realit|universe|universal|multiverse|cosmos|cosmic|existence|creation|omnipot|omniscien|timeline|time itself|all things|infinit)/i, 120],
   /* Worlds and stars. ascii-ok: English only. */
-  [/\b(planet|world|star|sun|galax|continent|ocean|weather|storm|nine realms|devour)/i, 70],
+  [/\b(planet|world|star|sun|galax|continent|ocean|weather|storms?\b|nine realms|devour)/i, 70],
   /* Gods, ages, souls. ascii-ok: English only. */
   [/\b(god|divine|immortal|ageless|millenni|thousand years|eternal|resurrect|soul|underworld|hell\b|death)/i, 40],
   /* Armies, cities, dimensions. ascii-ok: English only. */
   [/\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|commands\b)/i, 25],
   /* Ordinary superhuman. ascii-ok: English only. */
-  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|flies|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field)/i, 14],
+  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|flies|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|acid|sonic|radiation|invulnerab|rock body|phases?)/i, 14],
   /* Training and equipment. ascii-ok: English only. */
-  [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow)/i, 6],
+  [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow|training|weapons|arsenal|combat)/i, 6],
 ];
 
 const CLASS_WEIGHT: Record<string, number> = {
@@ -662,6 +665,15 @@ const SYMBIOTE_WEIGHT: Record<string, number> = {
  * power bullets are a deliberate claim about what someone can do; the origin
  * is prose, and prose mentions big things in passing.
  */
+/**
+ * AN ORGANISATION NAMED AFTER A BIG THING IS NOT A BIG THING. Alexander
+ * Pierce scored 70 — full world-scale — for "Runs the World Security Council",
+ * which is a committee. Scrubbed before scoring rather than weakened in the
+ * pattern, because "world" is doing real work elsewhere: Galactus devours them
+ * and Shalla-Bal finds the next one.
+ */
+const PROPER_NOUNS = /world security council/gi;
+
 export function scaleScore(c: Character): number {
   /**
    * EACH DISTINCT POWER COUNTS, up to three per class. Scoring a class once
@@ -675,8 +687,9 @@ export function scaleScore(c: Character): number {
       const hits = [...text.matchAll(new RegExp(re.source, "gi"))].length;
       return n + w * Math.min(hits, 3);
     }, 0);
-  const abilities = score(c.powers.map((p) => p.en).join(" "));
-  let n = abilities + score(c.origin.en) / 4;
+  const clean = (x: string) => x.replace(PROPER_NOUNS, " ");
+  const abilities = score(clean(c.powers.map((p) => p.en).join(" ")));
+  let n = abilities + score(clean(c.origin.en)) / 4;
   n += CLASS_WEIGHT[c.mutantClass ?? ""] ?? 0;
   n += SYMBIOTE_WEIGHT[c.symbioteClass ?? ""] ?? 0;
   /**
@@ -733,6 +746,9 @@ export const OUTRANKS: string[][] = [
      because Riri's bullets are wordier than Tony's. Decades of iteration and
      military hardware beat a first build, whatever the prose count says. */
   ["iron-man", "war-machine", "ironheart"],
+  /* Both score nothing and both are powerless, so the order between them was
+     the alphabet. One of them runs the intelligence service. */
+  ["nick-fury", "betty-ross"],
 ];
 
 /** Ordered strongest to weakest, every character exactly once. */

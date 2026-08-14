@@ -6711,7 +6711,11 @@ const others: CharacterDraft[] = [
     affiliation: ["Asgard", "Loki variants"],
     universe: ["mcu"],
     species: "Alligator",
-    magicSchools: ["asgardian"],
+    /* NO MAGIC. He was given "asgardian" with the rest of the variants in one
+       pass, and it was the only reason he ranked in tier 6 — above the
+       Punisher, Iron Man and everyone below them. His own record reads "Is an
+       alligator / Wears the horns / Nobody checks". */
+    magicSchools: [],
     powers: [
       { en: "Is an alligator", ar: "تمساح" },
       { en: "Wears the horns", ar: "يعتمر القرنين" },
