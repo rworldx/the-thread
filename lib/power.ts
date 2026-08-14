@@ -466,6 +466,75 @@ export const PEAK_HEAD: string[] = [
 
 
 
+
+/**
+ * WHAT A RECORD SAYS IT CAN DO — the within-tier order.
+ *
+ * Alphabetical was the placeholder and it kept making claims: Alligator Loki
+ * ahead of President Loki, the Ancient One at 234 for starting with "The".
+ * Inside a tier the honest answer is not "we don't know" — the corpus has been
+ * telling us all along, in the three power bullets and the origin paragraph
+ * every character carries. Alligator Loki's read "Is an alligator / Wears the
+ * horns / Nobody checks". Classic Loki's read "Illusions on an enormous
+ * scale". That is the difference, written down, and nothing was reading it.
+ *
+ * So each record is scored on the SCALE of what it claims, plus what the
+ * structured fields already know. Bigger scale sorts first; the name breaks
+ * exact ties so the order stays stable.
+ *
+ * THIS IS A HEURISTIC AND IT IS BOUNDED BY THE TIER. It cannot move anyone
+ * across a tier boundary, and it never overrides a hand-ranked head — it only
+ * decides the part that was previously alphabetical, where the alternative is
+ * the alphabet. Where it is obviously wrong for a specific pair, OUTRANKS
+ * still wins.
+ */
+/* ascii-ok: every pattern here is matched against `powers[].en` and
+   `origin.en` — the ENGLISH text, which is Latin by construction. The Arabic
+   fields are never scored, so \b behaving as ASCII-only is correct rather
+   than merely tolerable. */
+const SCALE: [RegExp, number][] = [
+  /* Reality itself. ascii-ok: scores English `powers[].en` only. */
+  [/\b(realit|universe|universal|multiverse|cosmos|cosmic|existence|creation|omnipot|omniscien|timeline|time itself|all things|infinit)/i, 120],
+  /* Worlds and stars. ascii-ok: English only. */
+  [/\b(planet|world|star|sun|galax|continent|ocean|weather|storm|nine realms|devour)/i, 70],
+  /* Gods, ages, souls. ascii-ok: English only. */
+  [/\b(god|divine|immortal|ageless|millenni|thousand years|eternal|resurrect|soul|underworld|hell\b|death)/i, 40],
+  /* Armies, cities, dimensions. ascii-ok: English only. */
+  [/\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|command)/i, 25],
+  /* Ordinary superhuman. ascii-ok: English only. */
+  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|flies|speed|claws|symbiote|venom|gamma|adamantium)/i, 14],
+  /* Training and equipment. ascii-ok: English only. */
+  [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow)/i, 6],
+];
+
+const CLASS_WEIGHT: Record<string, number> = {
+  omega: 90, alpha: 45, beta: 20, gamma: 20, delta: 10, epsilon: 4,
+};
+const SYMBIOTE_WEIGHT: Record<string, number> = {
+  gestalt: 45, ancient: 40, lineage: 25, spawn: 18, anomaly: 18,
+};
+
+/**
+ * ABILITIES COUNT FULLY, THE ORIGIN PARAGRAPH COUNTS A LITTLE.
+ *
+ * Scoring both equally put Spider-UK, Spider-Byte and Nocturne at the top of
+ * their tier, because their origins all mention the multiverse — they TRAVEL
+ * between realities, which the pattern cannot tell from bending one. The three
+ * power bullets are a deliberate claim about what someone can do; the origin
+ * is prose, and prose mentions big things in passing.
+ */
+function scaleScore(c: Character): number {
+  const score = (text: string) =>
+    SCALE.reduce((n, [re, w]) => n + (re.test(text) ? w : 0), 0);
+  let n = score(c.powers.map((p) => p.en).join(" ")) + score(c.origin.en) / 4;
+  n += CLASS_WEIGHT[c.mutantClass ?? ""] ?? 0;
+  n += SYMBIOTE_WEIGHT[c.symbioteClass ?? ""] ?? 0;
+  /* A supporting character is rarely a power, whatever words their origin
+     happens to contain — Ben Parker's paragraph mentions the world. */
+  if (c.category === "supporting") n -= 40;
+  return n;
+}
+
 /**
  * WHEN THE ALPHABET MAKES A CLAIM — the one escape hatch from alphabetical.
  *
@@ -522,7 +591,9 @@ export const powerOrder: { c: Character; tier: number; ranked: boolean }[] = (()
     }
     const rest = allCharacters
       .filter((c) => !placed.has(c.id) && !seen.has(c.id) && (t.match?.(c) ?? false))
-      .sort((a, b) => a.nameEn.localeCompare(b.nameEn, "en"));
+      .sort(
+        (a, b) => scaleScore(b) - scaleScore(a) || a.nameEn.localeCompare(b.nameEn, "en"),
+      );
     for (const c of rest) {
       out.push({ c, tier: t.n, ranked: false });
       seen.add(c.id);
