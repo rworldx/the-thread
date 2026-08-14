@@ -821,6 +821,10 @@ export const OUTRANKS: string[][] = [
   /* Both score nothing and both are powerless, so the order between them was
      the alphabet. One of them runs the intelligence service. */
   ["nick-fury", "betty-ross"],
+  /* Intangibility beats a shield. Enriching Ghost's record closed the gap to
+     three points and no further, because the scorer counts abilities and
+     cannot weigh "walks through you" against "carries a shield". */
+  ["ghost", "john-walker"],
 ];
 
 /** Ordered strongest to weakest, every character exactly once. */

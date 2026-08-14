@@ -5076,7 +5076,14 @@ const thunderbolts: CharacterDraft[] = [
     /* NOT an ordinary human. A quantum accident left her phasing through matter and unable to reliably stop. */
     species: "Mutate",
     powers: [
-      { en: "Phases through matter", ar: "تعبر المادة" },
+      /* Two bullets, and one of them was a limitation — which is how someone
+         who walks through a man and takes what is inside him ranked below a
+         soldier with a shield. Phasing is not a defence, it is the attack. */
+      { en: "Phases through matter", ar: "تنفذ عبر المادة" },
+      { en: "Reaches through a body", ar: "تمدّ يدها داخل الجسد" },
+      { en: "Untouchable when she wants", ar: "لا تُمسّ متى شاءت" },
+      { en: "A quantum containment suit", ar: "بدلة احتواء كمّية" },
+      { en: "Trained by S.H.I.E.L.D.", ar: "دُرّبت في شيلد" },
       { en: "Cannot always stay solid", ar: "لا تثبت صلبة دائمًا" },
     ],
     origin: {
