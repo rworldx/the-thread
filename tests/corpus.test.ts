@@ -370,16 +370,30 @@ describe("F. regression guards on the real corpus", () => {
     // fires on most rows is a design defect, and should fail a test rather than
     // be noticed in review.
     if (!isSynced) return;
-    for (const [label, path] of [
+    /**
+     * TWO TOLERANCES, because the two paths are now different shapes.
+     *
+     * The spine is 22 films and holds at 0.2. Deadpool & Wolverine is an MCU
+     * path, which since the spine landed means the whole MCU line behind it —
+     * 76 titles including four Loki and Guardians seasons of five hours each.
+     * A third of those nights genuinely run past two and a half hours, and the
+     * flag is reporting that correctly rather than getting noisier.
+     *
+     * The point of the guard survives: a warning on a MINORITY of rows still
+     * means something, and 0.35 would still fail the defect it was written for
+     * — 24 of 34 rows, which is 0.7.
+     */
+    for (const [label, path, tolerance] of [
       [
         "deadpool-and-wolverine",
         pathTo(shipped, "deadpool-and-wolverine", "minimum"),
+        0.35,
       ],
-      ["the spine", essentialsOrder(shipped)],
+      ["the spine", essentialsOrder(shipped), 0.2],
     ] as const) {
       const plan = schedule(path);
       const flagged = plan.filter((e) => e.overBudget).length;
-      expect(flagged / plan.length, `${label}`).toBeLessThan(0.2);
+      expect(flagged / plan.length, `${label}`).toBeLessThan(tolerance);
     }
   });
 

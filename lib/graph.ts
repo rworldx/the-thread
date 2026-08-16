@@ -14,6 +14,28 @@ export type GraphNode = Pick<
   "id" | "releaseDate" | "requires" | "enriches" | "essential" | "universe" | "storyRank"
 >;
 
+/**
+ * THE MCU TITLES THAT STAND ON THEIR OWN, named by Rashid.
+ *
+ * Each opens a corner rather than continuing one: Moon Knight is an Egyptian
+ * god and a man with dissociative identity disorder, the Eternals were here
+ * before any of it, the Fantastic Four are a different universe outright,
+ * Wonder Man is about making television, and Your Friendly Neighborhood
+ * Spider-Man restarts him animated. Somebody can be handed any of these cold.
+ *
+ * STANDALONE MEANS "NEEDS NOTHING", NOT "IS NEEDED BY NOTHING". Each of these
+ * still sits on the line behind everything released after it — the Eternals
+ * are part of the timeline and may well turn up in Doomsday. What the list
+ * says is only that you can start here.
+ */
+export const MCU_STANDALONE = new Set([
+  "moon-knight-s1",
+  "eternals",
+  "the-fantastic-four-first-steps",
+  "wonder-man-s1",
+  "your-friendly-neighborhood-spider-man",
+]);
+
 export class CycleError extends Error {
   constructor(readonly cycle: string[]) {
     super(`requires forms a cycle: ${cycle.join(" → ")}`);
@@ -233,7 +255,7 @@ export function mcuOrder<T extends GraphNode & { universe: string; type: string 
  * in `full` mode: an `enriches` edge can point at a title released *after* the
  * target, and the answer to "what comes before X" must still end at X.
  */
-export function pathTo<T extends GraphNode>(
+export function pathTo<T extends GraphNode & { optional?: boolean }>(
   titles: readonly T[],
   id: string,
   mode: PathMode = "minimum",
@@ -244,6 +266,78 @@ export function pathTo<T extends GraphNode>(
 
   const ancestors = new Set<string>();
   const queue = [id];
+
+  /**
+   * THE MCU IS ONE STORY, so its path is the whole line behind you.
+   *
+   * Everywhere else on this site a path is the SHORTEST honest one — the
+   * dependency closure and nothing more. The MCU is the exception its own
+   * marketing makes: twenty-odd films and a dozen series written as a single
+   * continuous saga, where the reason to watch Winter Soldier before Civil War
+   * is not that Civil War is unintelligible without it but that they are
+   * chapters. Endgame came out at 21 titles here and the honest number is
+   * every MCU title before it.
+   *
+   * Seeded rather than special-cased at the end, so the spine goes through the
+   * SAME closure as everything else: pulling No Way Home in pulls in the Raimi
+   * and Webb films it requires, and Daredevil behind those. The notes on the
+   * line are followed exactly as they would be if you had asked for that title
+   * directly.
+   *
+   * MCU_STANDALONE is the short list of MCU titles that need nothing and are
+   * needed by nothing — a new corner, a new team, or a story that happens
+   * beside the saga rather than inside it. They are excluded from every
+   * spine, including their own, which is what makes them standalone.
+   */
+  /**
+   * A STANDALONE TITLE HAS NO PATH, not a short one, and that includes its own
+   * `requires`. Eternals hard-requires Endgame — the Blip is why the world
+   * looks the way it does — and walking that edge produced a 22-title path for
+   * a film Rashid can hand to anybody cold. The edge is true and stays on the
+   * record; it is a fact about the timeline rather than a prerequisite for
+   * following the story, which is the distinction this list encodes.
+   *
+   * `full` mode is untouched, so the "+ Recommended" toggle still offers the
+   * context to anyone who wants it.
+   */
+  if (mode === "minimum" && MCU_STANDALONE.has(id)) return [target];
+
+  if (target.universe === "mcu" && !MCU_STANDALONE.has(id)) {
+    /**
+     * ANYTHING THAT NEEDS THE TARGET CANNOT PRECEDE IT, however the dates
+     * sort. Hand-written release dates are often a bare year, so titles from
+     * the same year tie and fall back to alphabetical — which put a title that
+     * REQUIRES the target ahead of it in the spine, and no topological sort
+     * can rescue an order that contains that pair. Descendants first, then
+     * seed around them.
+     */
+    const descendants = new Set<string>();
+    const down = [id];
+    while (down.length > 0) {
+      const current = down.pop()!;
+      for (const t of titles) {
+        if (descendants.has(t.id) || t.id === id) continue;
+        if (t.requires.includes(current)) {
+          descendants.add(t.id);
+          down.push(t.id);
+        }
+      }
+    }
+    for (const t of titles) {
+      /* OPTIONAL TITLES STAY OFF THE SPINE, which keeps D16 true: if the
+         thread draws something dashed, no minimum path may lean on it. Six MCU
+         titles are marked optional and five of them are one-shots running
+         three to fifteen minutes. The sixth is The Incredible Hulk, which this
+         corpus already judged skippable — so leaving it out is the editorial
+         position the site has held all along, not a new one. */
+      if (t.optional) continue;
+      if (t.universe !== "mcu" || t.id === id || descendants.has(t.id)) continue;
+      if (byDateThenId(t, target) >= 0) continue;
+      ancestors.add(t.id);
+      queue.push(t.id);
+    }
+  }
+
   while (queue.length > 0) {
     const current = byId.get(queue.pop()!);
     if (!current) continue;

@@ -44,7 +44,7 @@ test.describe("accessibility", () => {
      * The saga timeline replaced the flat thread on /universes/mcu/release/timeline, so this points
      * at a path page, which still renders one. The rule it guards is unchanged
      * and is the oldest one in the project: the ORDER lives in a real list, so
-     * a screen reader hears "list, 34 items" and "item 3 of 34". The timeline's
+     * a screen reader hears "list, 76 items" and "item 3 of 76". The timeline's
      * own list semantics are asserted separately in tests/render.test.ts.
      */
     await page.goto("/en/path/deadpool-and-wolverine", { waitUntil: "networkidle" });
@@ -56,7 +56,7 @@ test.describe("accessibility", () => {
      * An editor's note renders the titles it names as links, and that is a
      * `<ul>` inside a `.thread-panel`, which is itself an `<li>`. Nesting a
      * list inside a list item is correct HTML and a screen reader still hears
-     * "list, 34 items" for the outer one — but `getByRole("listitem")` returns
+     * "list, 76 items" for the outer one — but `getByRole("listitem")` returns
      * every descendant, so it counted the note's chips too.
      *
      * The claim being made is about the OUTER list, so the count is taken from
@@ -65,7 +65,10 @@ test.describe("accessibility", () => {
     const items = await page.evaluate(
       () => document.querySelectorAll("ol.thread-list > li").length,
     );
-    expect(items).toBe(34);
+    /* 76, not 34. An MCU path is the whole MCU line behind the target now,
+       not the dependency closure alone — which makes this list longer and the
+       claim it guards more important, not less. */
+    expect(items).toBe(76);
   });
 
   test("the thread rail is decoration, invisible to assistive tech", async ({ page }) => {

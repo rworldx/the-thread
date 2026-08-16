@@ -134,12 +134,14 @@ describe("D. pathTo — the product", () => {
   });
 
   it("D13c the minimum path to Multiverse of Madness drops by exactly the 12 recommendations", () => {
-    // Four direct prerequisites, but 32 titles resolved — because No Way Home
-    // is a genuine prerequisite and it drags in the five Sony Spider-Man films
-    // plus the Infinity Saga spine. That is honest, not bloat: the 12 that came
-    // out were the Professor X cameo homework, and nothing else moved.
+    // Four direct prerequisites, but 38 titles resolved — because No Way Home
+    // is a genuine prerequisite and it drags in the five Sony Spider-Man films,
+    // and because an MCU path is now the whole MCU line behind it rather than
+    // the dependency closure alone. 32 before the spine; the six that joined
+    // are MCU titles nothing happened to require. That is the point of the
+    // spine: the saga is a sequence, not a set of prerequisites.
     const min = path("doctor-strange-in-the-multiverse-of-madness");
-    expect(min).toHaveLength(32);
+    expect(min).toHaveLength(38);
     for (const id of ["doctor-strange", "wandavision-s1", "spider-man-no-way-home", "what-if-s1"]) {
       expect(min).toContain(id);
     }

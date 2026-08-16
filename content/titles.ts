@@ -457,7 +457,14 @@ const phase4: Draft[] = [
     phase: 4,
     releaseDate: "2021",
     storyYear: 2024,
-    requires: ["avengers-endgame"],
+    /* NOT a requirement. The Blip is why the world looks the way it does when
+       they finally step out of it, which is a fact about the timeline rather
+       than something you need in order to follow the film — it opens on the
+       creation of the Earth and explains itself from there. Kept as a
+       recommendation so the "+ Recommended" toggle still offers Endgame.
+       See MCU_STANDALONE in lib/graph.ts. */
+    requires: [],
+    enriches: ["avengers-endgame"],
   },
   {
     id: "hawkeye-s1",
