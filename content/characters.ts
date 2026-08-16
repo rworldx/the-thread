@@ -1718,8 +1718,15 @@ const fantasticFour: CharacterDraft[] = [
     universe: ["fox", "mcu"],
     species: "Human mutate",
     powers: [
-      { en: "Stretches indefinitely", ar: "يتمدّد بلا حدّ" },
+      /* "Stretches indefinitely / The smartest man alive" put the man who
+         out-thought Galactus at 505th. The intellect is the power — it builds
+         the gates, the fields and the machines the rest of the team survives
+         inside — and the record never said what it produces. */
+      { en: "Stretches indefinitely", ar: "يتمدد بلا حد" },
       { en: "The smartest man alive", ar: "أذكى رجل على قيد الحياة" },
+      { en: "Builds gates between universes", ar: "يبني بوابات بين الأكوان" },
+      { en: "Invents his way out of anything", ar: "يخترع مخرجًا من أي شيء" },
+      { en: "Force fields and unstable molecules", ar: "دروع وجزيئات غير مستقرة" },
     ],
     origin: {
       en: "The scientist who took three people he loved into space on a ship he built, and brought them back changed.",

@@ -305,6 +305,11 @@ const TIERS: Tier[] = [
       "doctor-strange",
       "the-ancient-one",
       "doctor-doom",
+      /* THE MAKER SITS WITH DOOM, who is the same idea from the other side: an
+         intellect that decided it should be in charge. He came out 280th in
+         "Enhanced" on `species: Human mutate` — a man whose own record says he
+         builds and unbuilds universes, ranked below three hundred people. */
+      "the-maker",
       "kang",
       "apocalypse",
       /* A Spirit of Vengeance is not an "Enhanced human", which is where
@@ -325,6 +330,14 @@ const TIERS: Tier[] = [
          she has held a force field against a Celestial. */
       "captain-marvel",
       "invisible-woman",
+      /* REED DIRECTLY BEHIND SUE, and both of them in front of the rest of the
+         team. He was 283rd while the Maker — the same man with the same powers
+         and fewer scruples — sat at 146, which is a gap in willingness rather
+         than in capability, and a power ranking should not pay him for
+         restraint. He stays behind Sue because she is the strongest of the
+         four, which is Rashid's call and the one everyone who reads the comics
+         makes. */
+      "mister-fantastic",
       "monica-rambeau",
       "sam-alexander",
       "he-who-remains",
