@@ -59,6 +59,14 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  "egghead":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/42/Elihas_Starr_%28Earth-616%29_from_Ant-Man_Annual_Vol_1_1_001.jpg/revision/latest?cb=20150723192140",
+  "enchantress":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/Immortal_Thor_Vol_1_17_Go_Variant_Textless.jpg/revision/latest?cb=20241123063641",
+  "the-maker":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6b/Ultimates_Vol_3_24_Ultimate_Special_Variant_Textless.jpg/revision/latest?cb=20260605230107",
+  "songbird":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/50/Thunderbolts_Doomstrike_Vol_1_1_Tao_Virgin_Variant.jpg/revision/latest?cb=20250221195650",
   "rhino":
     "https://static.wikia.nocookie.net/marveldatabase/images/1/18/Aleksei_Sytsevich_%28Earth-616%29_from_Miles_Morales_Spider-Man_Vol_1_1_001.jpg/revision/latest?cb=20191010044711",
   "triton":

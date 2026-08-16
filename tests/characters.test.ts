@@ -25,7 +25,7 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(670);
+    expect(authored).toHaveLength(674);
   });
 
   /**
@@ -155,6 +155,11 @@ describe("C. the character corpus", () => {
        was a normalising miss rather than an absence. Zabu, Kaine and Triton
        are in that show and in none of its 66 credits, which is what `alsoIn`
        is for. Squirrel Girl and Miles Morales had titles already. */
+    /* 245, and it went DOWN while the corpus grew by four. The Maker has no
+       credit anywhere and Egghead and the Enchantress have none either — but
+       all three arrive carrying `alsoIn`, and twenty-one existing records
+       gained the Super Hero Squad Show the same way, which pulled Firestar,
+       Toad and Ka-Zar off the off-screen list entirely. */
     expect(offScreen).toHaveLength(245);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */

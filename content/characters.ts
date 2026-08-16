@@ -133,6 +133,10 @@ const avengers: CharacterDraft[] = [
     nameEn: "Black Widow",
     nameAr: "الأرملة السوداء",
     aliases: ["Natasha Romanoff", "Black Widow", "Natalie Rushman"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
     affiliation: ["Avengers", "S.H.I.E.L.D.", "Team Iron Man", "Original Six"],
     universe: ["mcu"],
@@ -157,6 +161,10 @@ const avengers: CharacterDraft[] = [
     nameEn: "Hawkeye",
     nameAr: "هوك آي",
     aliases: ["Clint Barton", "Hawkeye", "Ronin"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
     affiliation: ["Avengers", "S.H.I.E.L.D.", "Team Captain America", "Original Six"],
     universe: ["mcu"],
@@ -180,6 +188,10 @@ const avengers: CharacterDraft[] = [
     nameEn: "Scarlet Witch",
     nameAr: "الساحرة القرمزية",
     aliases: ["Wanda Maximoff", "Scarlet Witch", "Wanda", "The Scarlet Witch"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "antihero",
     affiliation: ["Avengers", "Team Captain America", "Magic"],
     universe: ["mcu"],
@@ -242,6 +254,10 @@ const avengers: CharacterDraft[] = [
      * tile. His own credits all carry "Sam Wilson", which is enough.
      */
     aliases: ["Sam Wilson", "Falcon"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
     affiliation: ["Avengers", "Team Captain America"],
     universe: ["mcu"],
@@ -296,6 +312,10 @@ const avengers: CharacterDraft[] = [
     nameEn: "War Machine",
     nameAr: "وور ماشين",
     aliases: ["James Rhodes", "Rhodey", "War Machine", "Iron Patriot", "Colonel James Rhodes"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
     affiliation: ["Avengers", "Team Iron Man"],
     universe: ["mcu"],
@@ -316,6 +336,10 @@ const avengers: CharacterDraft[] = [
     nameEn: "Ant-Man",
     nameAr: "أنت مان",
     aliases: ["Scott Lang", "Ant-Man"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
     affiliation: ["Avengers", "Team Captain America"],
     universe: ["mcu"],
@@ -385,6 +409,10 @@ const avengers: CharacterDraft[] = [
     nameEn: "Black Panther",
     nameAr: "بلاك بانثر",
     aliases: ["T'Challa", "Black Panther", "King T'Challa"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
     affiliation: ["Avengers", "Wakandans", "Team Iron Man"],
     universe: ["mcu"],
@@ -409,6 +437,10 @@ const avengers: CharacterDraft[] = [
     nameEn: "Captain Marvel",
     nameAr: "كابتن مارفل",
     aliases: ["Carol Danvers", "Captain Marvel", "Vers"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
     affiliation: ["Avengers", "Kree"],
     universe: ["mcu"],
@@ -454,6 +486,10 @@ const avengers: CharacterDraft[] = [
     nameEn: "Loki",
     nameAr: "لوكي",
     aliases: ["Loki", "Loki Laufeyson"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "antihero",
     affiliation: ["Asgard", "Revengers", "Gods", "Magic", "Loki variants"],
     universe: ["mcu"],
@@ -769,6 +805,10 @@ const guardians: CharacterDraft[] = [
     nameEn: "Nebula",
     nameAr: "نيبيولا",
     aliases: ["Nebula"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "antihero",
     affiliation: ["Guardians of the Galaxy"],
     universe: ["mcu"],
@@ -796,6 +836,10 @@ const xmen: CharacterDraft[] = [
     nameEn: "Wolverine",
     nameAr: "وولفرين",
     aliases: ["Logan", "Wolverine", "James Howlett", "Weapon X", "Logan / Wolverine"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "antihero",
     affiliation: ["X-Men", "Midnight Sons", "Weapon X"],
     universe: ["fox", "mcu"],
@@ -1733,6 +1777,10 @@ const fantasticFour: CharacterDraft[] = [
     nameEn: "The Thing",
     nameAr: "الشيء",
     aliases: ["The Thing", "Ben Grimm", "Benjamin Grimm"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
     affiliation: ["Fantastic Four"],
     universe: ["fox", "mcu"],
@@ -1751,7 +1799,13 @@ const fantasticFour: CharacterDraft[] = [
     id: "doctor-doom",
     nameEn: "Doctor Doom",
     nameAr: "دكتور دووم",
-    aliases: ["Doctor Doom", "Victor Von Doom", "Doom", "Victor Domashev"],
+    /* "Dr. Doom" is how EIGHT titles credit him — Super Hero Squad, Black
+       Panther's Quest, the 1994 series, Earth's Mightiest Heroes, Avengers
+       Assemble, World's Greatest Heroes and Fantastic Four (2015). Without it
+       the most-adapted villain in Marvel was absent from six of his own
+       shows. "Doctor Doom" and "Dr. Doom" normalise differently: the period
+       goes, the word does not. */
+    aliases: ["Doctor Doom", "Victor Von Doom", "Doom", "Victor Domashev", "Dr. Doom"],
     /* ANTIVILLAIN, not villain. A dictator who genuinely believes only he can protect Latveria, and is often right about the threat if never about himself. */
     category: "antivillain",
     affiliation: ["Magic"],
@@ -1959,7 +2013,7 @@ const villains: CharacterDraft[] = [
     /* The Stonekeeper on Vormir in both films — Ross Marquand, and TMDB
        carries him in neither top-billed cast. He is the reason the Soul
        Stone has a price. */
-    alsoIn: ["avengers-infinity-war", "avengers-endgame"],
+    alsoIn: ["avengers-infinity-war", "avengers-endgame", "the-super-hero-squad-show"],
     related: [{ id: "captain-america", kind: "enemy" }],
   },
   {
@@ -2088,7 +2142,7 @@ const villains: CharacterDraft[] = [
     },
     /* In the film as the cloud that eats the planet, with no actor credited
        because no actor played him. See `alsoIn` on the schema. */
-    alsoIn: ["fantastic-four-rise-of-the-silver-surfer"],
+    alsoIn: ["fantastic-four-rise-of-the-silver-surfer", "the-super-hero-squad-show"],
     related: [{ id: "silver-surfer", kind: "enemy" }],
   },
 ];
@@ -2887,6 +2941,10 @@ const supporting: CharacterDraft[] = [
     nameEn: "Toad",
     nameAr: "تود",
     aliases: ["Toad", "Mortimer Toynbee"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "villain",
     affiliation: ["Brotherhood"],
     universe: ["fox"],
@@ -4302,6 +4360,10 @@ const abstracts: CharacterDraft[] = [
     nameEn: "Dormammu",
     nameAr: "دورمامو",
     aliases: ["Dormammu"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "villain",
     affiliation: ["Magic", "Gods", "Cosmic entities"],
     universe: ["mcu", "legacy"],
@@ -5841,6 +5903,10 @@ const others: CharacterDraft[] = [
     nameEn: "Hercules",
     nameAr: "هرقل",
     aliases: ["Hercules", "Heracles"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
     affiliation: ["Gods"],
     universe: ["mcu", "legacy"],
@@ -6890,6 +6956,10 @@ const others: CharacterDraft[] = [
     nameEn: "Ronan the Accuser",
     nameAr: "رونان المُتّهِم",
     aliases: ["Ronan", "Ronan the Accuser"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     /* ANTIVILLAIN. A zealot who believes the Kree cause is righteous and his own treaty a betrayal. Wrong, and sincere about it. */
     category: "antivillain",
     affiliation: ["Kree"],
@@ -11045,6 +11115,10 @@ const heralds: CharacterDraft[] = [
     nameEn: "Stardust",
     nameAr: "ستارداست",
     aliases: ["Stardust", "Lambda-Zero"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "villain",
     affiliation: ["Heralds of Galactus"],
     universe: ["mcu"],
@@ -11409,6 +11483,10 @@ const mutantsB: CharacterDraft[] = [
     nameEn: "Firestar",
     nameAr: "فايرستار",
     aliases: ["Firestar", "Angelica Jones"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
     affiliation: ["X-Men"],
     universe: ["fox"],
@@ -16289,6 +16367,10 @@ const newWarriors: CharacterDraft[] = [
        "Wolverine / Ka Zar", and normalising strips the hyphen from ours rather
        than the space from theirs. A credit exists, so this stays derived. */
     aliases: ["Ka-Zar", "Ka Zar", "Kevin Plunder"],
+    /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
+       Show and the series has 35 characters; this one is on the show's own
+       roster and in none of those credits. */
+    alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
     affiliation: ["New Warriors"],
     universe: ["mcu"],
@@ -16333,6 +16415,123 @@ const newWarriors: CharacterDraft[] = [
   },
 ];
 
+/**
+ * SONGBIRD — credited in two shows as "Screaming Mimi" and once as both, and
+ * absent from the corpus entirely. She is the Thunderbolts' longest-serving
+ * member and the clearest case the team has of the thing it exists to test:
+ * whether somebody who started as a villain gets to stop being one.
+ */
+const songbird: CharacterDraft[] = [
+  {
+    id: "songbird",
+    nameEn: "Songbird",
+    nameAr: "سونغبيرد",
+    aliases: ["Songbird", "Screaming Mimi", "Melissa Gold"],
+    category: "antihero",
+    affiliation: ["Thunderbolts"],
+    universe: ["mcu"],
+    species: "Enhanced human",
+    powers: [
+      { en: "Solid sound constructs", ar: "أشكال صلبة من الصوت" },
+      { en: "Sonic scream", ar: "صرخة صوتية" },
+      { en: "Flies on her own sound", ar: "تطير على صوتها" },
+      { en: "Trained fighter", ar: "مقاتلة مدرّبة" },
+    ],
+    origin: {
+      en: "A wrestler turned criminal turned hero, who built a career out of a voice that could break a wall and spent the rest of it trying to be believed.",
+      ar: "مصارعة صارت مجرمة ثم بطلة، بنت مسيرتها على صوت يكسر الجدران، وأمضت بقيتها تحاول أن تُصدَّق.",
+    },
+    related: [{ id: "zemo", kind: "enemy" }],
+  },
+];
+
+/**
+ * THE MAKER — the Reed Richards who worked it all out and drew the other
+ * conclusion. Ultimate Earth's Mister Fantastic, who decided the smartest man
+ * alive should be running things and has been rebuilding universes to suit
+ * himself ever since. A `variant` edge with an explicit origin, because he is
+ * not a version of Reed from a branched timeline: he is a different universe's
+ * Reed entirely, which is exactly the distinction `variantOrigin` exists for.
+ */
+const maker: CharacterDraft[] = [
+  {
+    id: "the-maker",
+    nameEn: "The Maker",
+    nameAr: "الصانع",
+    aliases: ["The Maker", "Maker"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    reality: "Earth-1610",
+    species: "Human mutate",
+    powers: [
+      { en: "Stretches like the other one", ar: "يتمدد كالآخر" },
+      { en: "The smartest man in any room", ar: "أذكى رجل في أي غرفة" },
+      { en: "Builds and unbuilds universes", ar: "يبني الأكوان ويهدمها" },
+      { en: "No line he will not cross", ar: "لا خط لا يعبره" },
+    ],
+    origin: {
+      en: "The Reed Richards of another Earth, who reached the same conclusions as ours about how the universe works and one further one about who should be in charge of it.",
+      ar: "ريد ريتشاردز من أرض أخرى، بلغ ما بلغه ريدنا عن عمل الكون، وزاد استنتاجًا واحدًا عمّن ينبغي أن يديره.",
+    },
+    related: [
+      { id: "mister-fantastic", kind: "variant", variantOrigin: "alternate-universe" },
+    ],
+  },
+];
+
+/**
+ * TWO MORE FROM THE SQUAD, neither of whom was in the corpus at all. Egghead
+ * is Hank Pym's oldest enemy and the Enchantress is Thor's; both are on the
+ * show's roster and in none of TMDB's fourteen credits for it.
+ */
+const squadVillains: CharacterDraft[] = [
+  {
+    id: "egghead",
+    nameEn: "Egghead",
+    nameAr: "إيغهيد",
+    aliases: ["Egghead", "Elihas Starr"],
+    alsoIn: ["the-super-hero-squad-show"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "Ruined by his own cleverness", ar: "أهلكه ذكاؤه" },
+      { en: "Builds what he cannot buy", ar: "يبني ما لا يستطيع شراءه" },
+      { en: "Hank Pym's oldest enemy", ar: "ألد أعداء هانك بيم" },
+    ],
+    origin: {
+      en: "A physicist who lost his career to one act of theft and spent the rest of it proving he was the cleverest man in a room that had stopped inviting him.",
+      ar: "فيزيائي خسر مسيرته بسرقة واحدة، وأمضى بقيتها يثبت أنه أذكى من في غرفة كفّت عن دعوته.",
+    },
+    related: [{ id: "hank-pym", kind: "enemy" }],
+  },
+  {
+    id: "enchantress",
+    nameEn: "Enchantress",
+    nameAr: "الساحرة",
+    aliases: ["Enchantress", "Amora"],
+    alsoIn: ["the-super-hero-squad-show"],
+    category: "villain",
+    affiliation: ["Asgard", "Magic"],
+    magicSchools: ["asgardian"],
+    universe: ["mcu"],
+    species: "Asgardian",
+    powers: [
+      { en: "Asgardian sorcery", ar: "سحر أسغاردي" },
+      { en: "Makes anyone love her", ar: "تجعل أي أحد يحبها" },
+      { en: "Illusions and shapeshifting", ar: "أوهام وتبدّل هيئة" },
+      { en: "Very long-lived", ar: "عمر طويل جدًا" },
+    ],
+    origin: {
+      en: "An Asgardian sorceress who learned early that being wanted is a kind of power, and has never once been talked out of using it.",
+      ar: "ساحرة أسغاردية تعلمت باكرًا أن أن تكوني مرغوبة نوع من القوة، ولم يثنها أحد يومًا عن استعمالها.",
+    },
+    related: [{ id: "thor", kind: "enemy" }],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -16363,6 +16562,9 @@ export const characters: CharacterDraft[] = [
   ...wakanda,
   ...hulkRogues,
   ...newWarriors,
+  ...songbird,
+  ...maker,
+  ...squadVillains,
   ...avengers,
   ...guardians,
   ...xmen,

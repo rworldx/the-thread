@@ -24,10 +24,10 @@
       "Hulu"
     ],
     "imdbId": "tt0371746",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.663,
-    "tmdbVotes": 28516,
+    "rtScore": 94,
+    "metacritic": 79,
+    "tmdbRating": 7.664,
+    "tmdbVotes": 28572,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -286,10 +286,10 @@
       "Hulu"
     ],
     "imdbId": "tt0800080",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.251,
-    "tmdbVotes": 12937,
+    "rtScore": 68,
+    "metacritic": 61,
+    "tmdbRating": 6.253,
+    "tmdbVotes": 12979,
     "trailerKey": "dz6eBeW19Lg",
     "videos": [
       {
@@ -555,10 +555,10 @@
       "Hulu"
     ],
     "imdbId": "tt1228705",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 72,
+    "metacritic": 57,
     "tmdbRating": 6.855,
-    "tmdbVotes": 22683,
+    "tmdbVotes": 22720,
     "trailerKey": "5fUQkLdJ2kE",
     "videos": [
       {
@@ -570,14 +570,14 @@
       }
     ],
     "posters": [
+      "/t4P8jFGcs2PsWJfp8QwcBg8NvNb.jpg",
       "/1NHEyFPxKnsLdMuDVPy6AI7GRmE.jpg",
       "/bMYuDvz2Zl0pNWIbt9GQqZt1CH.jpg",
-      "/paI9sr04Tld4GlgbhLB3Fbugz4B.jpg",
-      "/6WBeq4fCfn7AN0o21W9qNcRF2l9.jpg",
       "/riFnBWrK3sdndFjKVSaQdkxprLr.jpg",
+      "/6WBeq4fCfn7AN0o21W9qNcRF2l9.jpg",
+      "/paI9sr04Tld4GlgbhLB3Fbugz4B.jpg",
       "/rmavxkXtz7SMuQWWPtNV63QwD1c.jpg",
-      "/9hJ6Zw0ot4tGrdugsmDqnXl0MYI.jpg",
-      "/vzsdbpqOImEg8njfvK5kLLpUgsW.jpg"
+      "/vioYkmuRlnWr4dZQSblkGSIlzS9.jpg"
     ],
     "backdrop": "/7lmBufEG7P7Y1HClYK3gCxYrkgS.jpg",
     "cast": [
@@ -819,10 +819,10 @@
       "Hulu"
     ],
     "imdbId": "tt0800369",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.771,
-    "tmdbVotes": 22596,
+    "rtScore": 77,
+    "metacritic": 57,
+    "tmdbRating": 6.772,
+    "tmdbVotes": 22640,
     "trailerKey": "uHBnrJowBZE",
     "videos": [
       {
@@ -1123,18 +1123,17 @@
         "Disney Plus"
       ],
       "US": [
-        "Disney Plus",
-        "YouTube TV"
+        "Disney Plus"
       ]
     },
     "providersGlobal": [
       "Disney+"
     ],
     "imdbId": "tt0458339",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 80,
+    "metacritic": 66,
     "tmdbRating": 7.009,
-    "tmdbVotes": 23012,
+    "tmdbVotes": 23058,
     "trailerKey": "W4DlMggBPvc",
     "videos": [
       {
@@ -1225,7 +1224,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
         "character": "James Buchanan 'Bucky' Barnes"
       },
       {
@@ -1456,10 +1455,10 @@
       "Hulu"
     ],
     "imdbId": "tt0848228",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 8.064,
-    "tmdbVotes": 39148,
+    "rtScore": 91,
+    "metacritic": 69,
+    "tmdbRating": 8.066,
+    "tmdbVotes": 39239,
     "trailerKey": "hIR8Ar-Z4hw",
     "videos": [
       {
@@ -1541,9 +1540,9 @@
       }
     ],
     "posters": [
+      "/yHdPTs239Cqce1s6y9figbeolR1.jpg",
       "/qMxAmzGQO722q0UlssCOPhrXmvX.jpg",
       "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
-      "/yHdPTs239Cqce1s6y9figbeolR1.jpg",
       "/ywb9dKBMdu3DEiTFpXrLofYizVC.jpg",
       "/qyNX4w5T5HpMHvYPRih7jTnD5Fj.jpg",
       "/n3G6dLQPDDdKvUKWMlCI7LRH9TQ.jpg",
@@ -1793,10 +1792,10 @@
       "Disney+"
     ],
     "imdbId": "tt1300854",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.933,
-    "tmdbVotes": 23684,
+    "rtScore": 79,
+    "metacritic": 62,
+    "tmdbRating": 6.934,
+    "tmdbVotes": 23720,
     "trailerKey": "YLorLVa95Xo",
     "videos": [
       {
@@ -2074,10 +2073,10 @@
       "Disney+"
     ],
     "imdbId": "tt1981115",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.511,
-    "tmdbVotes": 18545,
+    "rtScore": 67,
+    "metacritic": 54,
+    "tmdbRating": 6.5,
+    "tmdbVotes": 18581,
     "trailerKey": "npvJ9FTgZbM",
     "videos": [
       {
@@ -2399,18 +2398,17 @@
         "Disney Plus"
       ],
       "US": [
-        "Disney Plus",
-        "YouTube TV"
+        "Disney Plus"
       ]
     },
     "providersGlobal": [
       "Disney+"
     ],
     "imdbId": "tt1843866",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.655,
-    "tmdbVotes": 20266,
+    "rtScore": 90,
+    "metacritic": 70,
+    "tmdbRating": 7.654,
+    "tmdbVotes": 20299,
     "trailerKey": "7SlILk2WMTI",
     "videos": [
       {
@@ -2462,7 +2460,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
         "character": "Bucky Barnes / Winter Soldier"
       },
       {
@@ -2678,10 +2676,10 @@
       "Disney+"
     ],
     "imdbId": "tt2015381",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.907,
-    "tmdbVotes": 30054,
+    "rtScore": 91,
+    "metacritic": 76,
+    "tmdbRating": 7.908,
+    "tmdbVotes": 30102,
     "trailerKey": "3CqymRQ1uUU",
     "videos": [
       {
@@ -3031,10 +3029,10 @@
       "Apple TV"
     ],
     "imdbId": "tt2395427",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 75,
+    "metacritic": 66,
     "tmdbRating": 7.276,
-    "tmdbVotes": 24765,
+    "tmdbVotes": 24810,
     "trailerKey": "JAUoeqvedMo",
     "videos": [
       {
@@ -3145,7 +3143,7 @@
       },
       {
         "actor": "James Spader",
-        "actorPhoto": "/uET0mbf2bMkUXbRb1Oxi8Qjqcw3.jpg",
+        "actorPhoto": "/3gurW3OgDOD4hcqDfgcqUnoNg34.jpg",
         "character": "Ultron (voice)"
       },
       {
@@ -3349,10 +3347,10 @@
       "Disney+"
     ],
     "imdbId": "tt0478970",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 83,
+    "metacritic": 64,
     "tmdbRating": 7.066,
-    "tmdbVotes": 21072,
+    "tmdbVotes": 21103,
     "trailerKey": "cx3joJnXydc",
     "videos": [
       {
@@ -3679,18 +3677,17 @@
         "Disney Plus"
       ],
       "US": [
-        "Disney Plus",
-        "YouTube TV"
+        "Disney Plus"
       ]
     },
     "providersGlobal": [
       "Disney+"
     ],
     "imdbId": "tt3498820",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 90,
+    "metacritic": 75,
     "tmdbRating": 7.45,
-    "tmdbVotes": 24315,
+    "tmdbVotes": 24361,
     "trailerKey": "dKrVegVI0Us",
     "videos": [
       {
@@ -3772,7 +3769,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
         "character": "Bucky Barnes / Winter Soldier"
       },
       {
@@ -3992,17 +3989,18 @@
       ],
       "US": [
         "Disney Plus",
-        "fuboTV"
+        "fuboTV",
+        "YouTube TV"
       ]
     },
     "providersGlobal": [
       "Disney+"
     ],
     "imdbId": "tt1211837",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 89,
+    "metacritic": 72,
     "tmdbRating": 7.424,
-    "tmdbVotes": 23686,
+    "tmdbVotes": 23724,
     "trailerKey": "HSzx-zryEgM",
     "videos": [
       {
@@ -4322,10 +4320,10 @@
       "TOD"
     ],
     "imdbId": "tt2250912",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.332,
-    "tmdbVotes": 23571,
+    "rtScore": 92,
+    "metacritic": 73,
+    "tmdbRating": 7.333,
+    "tmdbVotes": 23645,
     "trailerKey": "xEvV3OsE2WM",
     "videos": [
       {
@@ -4590,7 +4588,7 @@
       },
       {
         "actor": "Michael Chernus",
-        "actorPhoto": "/Df2ZE3P9BiXawPtewinxLPNAu2.jpg",
+        "actorPhoto": "/tqtVxv36oQf4LlHpR3nlfUCm6M4.jpg",
         "character": "Phineas Mason / The Tinkerer"
       },
       {
@@ -4724,10 +4722,10 @@
       "Disney+"
     ],
     "imdbId": "tt3896198",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.61,
-    "tmdbVotes": 23206,
+    "rtScore": 85,
+    "metacritic": 67,
+    "tmdbRating": 7.609,
+    "tmdbVotes": 23246,
     "trailerKey": "wUn05hdkhjM",
     "videos": [
       {
@@ -5035,10 +5033,10 @@
       "Disney+"
     ],
     "imdbId": "tt3501632",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 93,
+    "metacritic": 74,
     "tmdbRating": 7.582,
-    "tmdbVotes": 22277,
+    "tmdbVotes": 22317,
     "trailerKey": "ue80QwXMRHg",
     "videos": [
       {
@@ -5057,9 +5055,9 @@
       }
     ],
     "posters": [
-      "/nw05ZXrKM0mxasdkGf41DVowVvb.jpg",
       "/8hnNdUFlUkjPWxKDyiE4Kn8h7Q5.jpg",
       "/fx68UQgQvAOJZoRtMVigRkOozcQ.jpg",
+      "/nw05ZXrKM0mxasdkGf41DVowVvb.jpg",
       "/s7hV8HFh7w2EZ4GK5EiltRVvWJA.jpg",
       "/jfAFkGetZEBNIwPubR0JG3k7Zkt.jpg",
       "/lJSu88sQ5N4BEgsj4pcCdzDVsU6.jpg",
@@ -5312,10 +5310,10 @@
       "Hulu"
     ],
     "imdbId": "tt1825683",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.365,
-    "tmdbVotes": 23747,
+    "rtScore": 96,
+    "metacritic": 88,
+    "tmdbRating": 7.364,
+    "tmdbVotes": 23787,
     "trailerKey": "xjDjIWPwcPU",
     "videos": [
       {
@@ -5623,10 +5621,10 @@
       "Disney+"
     ],
     "imdbId": "tt4154756",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 85,
+    "metacritic": 68,
     "tmdbRating": 8.24,
-    "tmdbVotes": 32524,
+    "tmdbVotes": 32580,
     "trailerKey": "QwievZ1Tx-8",
     "videos": [
       {
@@ -5766,7 +5764,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
         "character": "Bucky Barnes / Winter Soldier"
       },
       {
@@ -5886,12 +5884,12 @@
       }
     ],
     "authors": [
-      "Anthony Russo",
-      "Joe Russo"
+      "Joe Russo",
+      "Anthony Russo"
     ],
     "authorPhotos": [
-      "/xbINBnWn28YygYWUJ1aSAw0xPRv.jpg",
-      "/o0OXjFzL10jCy89iAs7UzzSbyoK.jpg"
+      "/o0OXjFzL10jCy89iAs7UzzSbyoK.jpg",
+      "/xbINBnWn28YygYWUJ1aSAw0xPRv.jpg"
     ],
     "authorRole": "director",
     "genres": [
@@ -5922,10 +5920,10 @@
       "Disney+"
     ],
     "imdbId": "tt5095030",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.899,
-    "tmdbVotes": 14352,
+    "rtScore": 87,
+    "metacritic": 70,
+    "tmdbRating": 6.898,
+    "tmdbVotes": 14380,
     "trailerKey": "UUkn-enk2RU",
     "videos": [
       {
@@ -6198,10 +6196,10 @@
       "Disney+"
     ],
     "imdbId": "tt4154664",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.776,
-    "tmdbVotes": 16965,
+    "rtScore": 79,
+    "metacritic": 64,
+    "tmdbRating": 6.775,
+    "tmdbVotes": 16998,
     "trailerKey": "GX33bIOA5aA",
     "videos": [
       {
@@ -6575,7 +6573,6 @@
       ],
       "US": [
         "Disney Plus",
-        "YouTube TV",
         "TNT",
         "TBS",
         "tru TV"
@@ -6585,10 +6582,10 @@
       "Disney+"
     ],
     "imdbId": "tt4154796",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 94,
+    "metacritic": 78,
     "tmdbRating": 8.239,
-    "tmdbVotes": 28260,
+    "tmdbVotes": 28325,
     "trailerKey": "AMSITikqKiM",
     "videos": [
       {
@@ -6832,7 +6829,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
         "character": "Bucky Barnes / Winter Soldier"
       },
       {
@@ -6937,12 +6934,12 @@
       }
     ],
     "authors": [
-      "Anthony Russo",
-      "Joe Russo"
+      "Joe Russo",
+      "Anthony Russo"
     ],
     "authorPhotos": [
-      "/xbINBnWn28YygYWUJ1aSAw0xPRv.jpg",
-      "/o0OXjFzL10jCy89iAs7UzzSbyoK.jpg"
+      "/o0OXjFzL10jCy89iAs7UzzSbyoK.jpg",
+      "/xbINBnWn28YygYWUJ1aSAw0xPRv.jpg"
     ],
     "authorRole": "director",
     "genres": [
@@ -6967,7 +6964,8 @@
       ],
       "AE": [
         "STARZPLAY",
-        "Shahid VIP"
+        "Shahid VIP",
+        "TOD"
       ],
       "SA": [
         "STARZPLAY",
@@ -7005,10 +7003,10 @@
       "TOD"
     ],
     "imdbId": "tt6320628",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 91,
+    "metacritic": 69,
     "tmdbRating": 7.394,
-    "tmdbVotes": 17322,
+    "tmdbVotes": 17393,
     "trailerKey": "LFoz8ZJWmPs",
     "videos": [
       {
@@ -7425,8 +7423,8 @@
     "imdbId": "tt9140560",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.184,
-    "tmdbVotes": 12807,
+    "tmdbRating": 8.182,
+    "tmdbVotes": 12824,
     "trailerKey": "UBhlqe2OTt4",
     "videos": [
       {
@@ -7615,7 +7613,7 @@
       {
         "actor": "Fred Melamed",
         "actorPhoto": "/cb5HSNuu6n4OVuxxQCDd5CfEocb.jpg",
-        "character": "Todd Davis (a.k.a. Arthur Hart) (uncredited) / Todd Davis (a.k.a. Arthur Hart)"
+        "character": "Todd Davis (a.k.a. Arthur Hart) / Todd Davis (a.k.a. Arthur Hart) (uncredited)"
       },
       {
         "actor": "Zac Henry",
@@ -7993,8 +7991,8 @@
     "imdbId": "tt9208876",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.591,
-    "tmdbVotes": 8957,
+    "tmdbRating": 7.6,
+    "tmdbVotes": 8965,
     "trailerKey": "ojGHE581lsM",
     "videos": [
       {
@@ -8115,7 +8113,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
         "character": "Bucky Barnes / Winter Soldier"
       },
       {
@@ -8605,8 +8603,8 @@
         "runtime": 48
       }
     ],
-    "posterPath": "/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg",
-    "posterTint": "#634522",
+    "posterPath": "/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+    "posterTint": "#452e1c",
     "overviewEn": "After stealing the Tesseract during the events of “Avengers: Endgame,” an alternate version of Loki is brought to the mysterious Time Variance Authority, a bureaucratic organization that exists outside of time and space and monitors the timeline. They give Loki a choice: face being erased from existence due to being a “time variant” or help fix the timeline and stop a greater threat.",
     "overviewAr": "بعد سرقة الـ\"تيسراكت\" خلال أحداث“المنتقمون: نهاية اللعبة” ، يتم نقل نسخة بديلة من لوكي إلى هيئة التباين الزمني، وهي منظمة بيروقراطية غامضة تقع خارج الزمان والمكان وتراقب الخط الزمني. تعرض عليه الهيئة خيارًا: إما مواجهة الإزالة من الوجود باعتباره “متغيرًا زمنيًا”، أو المساعدة في إصلاح الخط الزمني والتصدي لتهديد أكبر.",
     "providers": {
@@ -8623,8 +8621,8 @@
     "imdbId": "tt9140554",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.171,
-    "tmdbVotes": 12579,
+    "tmdbRating": 8.172,
+    "tmdbVotes": 12608,
     "trailerKey": "nW948Va-l10",
     "videos": [
       {
@@ -8713,14 +8711,14 @@
       }
     ],
     "posters": [
-      "/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg",
+      "/rqDoCJEM3SNaX1h2PjCCVkgoql2.jpg",
       "/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+      "/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg",
       "/w3cF2E269oUQIFq4IhRQ5MfkwMY.jpg",
       "/voHUmluYmKyleFkTu3lOXQG702u.jpg",
       "/oJdVHUYrjdS2IqiNztVIP4GPB1p.jpg",
       "/eP0gsotw38OI0cowI4RO1WXFpkg.jpg",
-      "/2bADrjsngEN2rZtd4TDmau6tuJ3.jpg",
-      "/dqqV9MrRa7O19aiGWCKYFeedY0A.jpg"
+      "/2bADrjsngEN2rZtd4TDmau6tuJ3.jpg"
     ],
     "backdrop": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg",
     "cast": [
@@ -8827,7 +8825,7 @@
       {
         "actor": "Jonathan Majors",
         "actorPhoto": "/nsxnMbkl9Lpc12AmYwKi9SmsJ7e.jpg",
-        "character": "Time Keepers (voice) (uncredited) / He Who Remains"
+        "character": "He Who Remains / Time Keepers (voice) (uncredited)"
       },
       {
         "actor": "Derek Russo",
@@ -9049,10 +9047,10 @@
       "Disney+"
     ],
     "imdbId": "tt3480822",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.159,
-    "tmdbVotes": 11439,
+    "rtScore": 79,
+    "metacritic": 68,
+    "tmdbRating": 7.156,
+    "tmdbVotes": 11470,
     "trailerKey": "Fp9pNPdNwjI",
     "videos": [
       {
@@ -9574,7 +9572,7 @@
     "rtScore": null,
     "metacritic": null,
     "tmdbRating": 8.038,
-    "tmdbVotes": 4680,
+    "tmdbVotes": 4691,
     "trailerKey": "x9D0uUKJ5KI",
     "videos": [
       {
@@ -9658,7 +9656,7 @@
       {
         "actor": "Ross Marquand",
         "actorPhoto": "/2CxkVPimin0c2v7fUK3MGjgEnLt.jpg",
-        "character": "Ultron (voice) / Johann Schmidt / Red Skull (voice) / Ultron / Sub-Ultron Sentries (voice)"
+        "character": "Ultron / Sub-Ultron Sentries (voice) / Ultron (voice) / Johann Schmidt / Red Skull (voice)"
       },
       {
         "actor": "Jeremy Renner",
@@ -9702,7 +9700,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
         "character": "Bucky Barnes (voice)"
       },
       {
@@ -9718,7 +9716,7 @@
       {
         "actor": "Jon Favreau",
         "actorPhoto": "/8MtRRnEHaBSw8Ztdl8saXiw1egP.jpg",
-        "character": "Happy Hogan (voice) / Happy Hogan / Zombie Happy (voice)"
+        "character": "Happy Hogan / Zombie Happy (voice) / Happy Hogan (voice)"
       },
       {
         "actor": "Leslie Bibb",
@@ -10027,10 +10025,10 @@
       "Disney+"
     ],
     "imdbId": "tt9376612",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.489,
-    "tmdbVotes": 10581,
+    "rtScore": 92,
+    "metacritic": 71,
+    "tmdbRating": 7.488,
+    "tmdbVotes": 10603,
     "trailerKey": "8YjFbMbfXaQ",
     "videos": [
       {
@@ -10485,10 +10483,10 @@
       "Disney+"
     ],
     "imdbId": "tt9032400",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.762,
-    "tmdbVotes": 9283,
+    "rtScore": 48,
+    "metacritic": 52,
+    "tmdbRating": 6.76,
+    "tmdbVotes": 9301,
     "trailerKey": "x_me3xsvDgk",
     "videos": [
       {
@@ -10946,8 +10944,8 @@
     "imdbId": "tt10160804",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.775,
-    "tmdbVotes": 3791,
+    "tmdbRating": 7.774,
+    "tmdbVotes": 3799,
     "trailerKey": "5VYb3B1ETlk",
     "videos": [
       {
@@ -11470,7 +11468,8 @@
         "TOD"
       ],
       "SA": [
-        "Shahid VIP"
+        "Shahid VIP",
+        "TOD"
       ],
       "KW": [
         "TOD"
@@ -11508,10 +11507,10 @@
       "TOD"
     ],
     "imdbId": "tt10872600",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.938,
-    "tmdbVotes": 22588,
+    "rtScore": 93,
+    "metacritic": 71,
+    "tmdbRating": 7.939,
+    "tmdbVotes": 22686,
     "trailerKey": "1mTjfMFyPi8",
     "videos": [
       {
@@ -11637,7 +11636,7 @@
       "/1gxZrx9gL9ov2c1NpXimEUzMTmh.jpg",
       "/5pVJ9SuuO72IgN6i9kMwQwnhGHG.jpg"
     ],
-    "backdrop": "/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
+    "backdrop": "/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
     "cast": [
       {
         "actor": "Tom Holland",
@@ -11701,7 +11700,7 @@
       },
       {
         "actor": "Tobey Maguire",
-        "actorPhoto": "/s6PwSvq6gC7PGEjIku69tPbvR8M.jpg",
+        "actorPhoto": "/1EtXu72Cuo7YX4IqIaEslwOhEQ9.jpg",
         "character": "Peter Parker / Spider-Man"
       },
       {
@@ -11920,8 +11919,8 @@
     "imdbId": "tt10234724",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.634,
-    "tmdbVotes": 3615,
+    "tmdbRating": 7.631,
+    "tmdbVotes": 3630,
     "trailerKey": "x7Krla_UxRg",
     "videos": [
       {
@@ -12350,17 +12349,18 @@
       ],
       "US": [
         "Disney Plus",
-        "fuboTV"
+        "fuboTV",
+        "YouTube TV"
       ]
     },
     "providersGlobal": [
       "Disney+"
     ],
     "imdbId": "tt9419884",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.231,
-    "tmdbVotes": 10596,
+    "rtScore": 73,
+    "metacritic": 60,
+    "tmdbRating": 7.229,
+    "tmdbVotes": 10641,
     "trailerKey": "Rf8LAYJSOL8",
     "videos": [
       {
@@ -12846,8 +12846,8 @@
     "imdbId": "tt10857164",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.268,
-    "tmdbVotes": 1487,
+    "tmdbRating": 6.27,
+    "tmdbVotes": 1491,
     "trailerKey": "m9EX0f6V11Y",
     "videos": [
       {
@@ -13395,10 +13395,10 @@
       "Disney+"
     ],
     "imdbId": "tt10648342",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 64,
+    "metacritic": 57,
     "tmdbRating": 6.361,
-    "tmdbVotes": 8770,
+    "tmdbVotes": 8793,
     "trailerKey": "Go8nTmfrQd8",
     "videos": [
       {
@@ -13755,10 +13755,10 @@
       "Disney+"
     ],
     "imdbId": "tt13623136",
-    "rtScore": null,
+    "rtScore": 95,
     "metacritic": null,
-    "tmdbRating": 7.084,
-    "tmdbVotes": 2425,
+    "tmdbRating": 7.085,
+    "tmdbVotes": 2432,
     "trailerKey": "OYhFFQl4fLs",
     "videos": [
       {
@@ -14034,8 +14034,8 @@
     "imdbId": "tt13623148",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.028,
-    "tmdbVotes": 504,
+    "tmdbRating": 7.03,
+    "tmdbVotes": 508,
     "trailerKey": "D7eFpRf4tac",
     "videos": [
       {
@@ -14178,8 +14178,8 @@
     "imdbId": "tt10857160",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.083,
-    "tmdbVotes": 2548,
+    "tmdbRating": 6.079,
+    "tmdbVotes": 2558,
     "trailerKey": "u7JsKhI2An0",
     "videos": [
       {
@@ -14259,6 +14259,11 @@
     "backdrop": "/eljErfkQUcFUgQkI4I1soZcH8MW.jpg",
     "cast": [
       {
+        "actor": "Tim Roth",
+        "actorPhoto": "/qSizF2i9gz6c6DbAC5RoIq8sVqX.jpg",
+        "character": "Emil Blonsky/Abomination / Emil Blonsky / Abomination"
+      },
+      {
         "actor": "Tatiana Maslany",
         "actorPhoto": "/x8lBkm9CBJbIlLpqjEwkQydZ2or.jpg",
         "character": "Jennifer Walters / She-Hulk"
@@ -14306,12 +14311,7 @@
       {
         "actor": "Jon Bass",
         "actorPhoto": "/2eo9pMyPhA9mBaSrNlD6UP3Nkyw.jpg",
-        "character": "Todd Phelps / Todd Phelps / Hulk Todd"
-      },
-      {
-        "actor": "Tim Roth",
-        "actorPhoto": "/qSizF2i9gz6c6DbAC5RoIq8sVqX.jpg",
-        "character": "Emil Blonsky / Abomination"
+        "character": "Todd Phelps / Hulk Todd / Todd Phelps"
       },
       {
         "actor": "Mark Ruffalo",
@@ -14346,7 +14346,7 @@
       {
         "actor": "Justin Eaton",
         "actorPhoto": "/oA7mVeD9ShNCORJn2n4CmjnozAN.jpg",
-        "character": "DODC Officer / Thunderball"
+        "character": "Thunderball / DODC Officer"
       },
       {
         "actor": "Benedict Wong",
@@ -14416,7 +14416,7 @@
       {
         "actor": "Brandon Stanley",
         "actorPhoto": "/26wYqLBknyVfXQoLw1RSbhPeDV.jpg",
-        "character": "Eugene Patilio / Leapfrog"
+        "character": "Leapfrog / Eugene Patilio"
       },
       {
         "actor": "Charlie Cox",
@@ -14793,10 +14793,10 @@
       "Disney+"
     ],
     "imdbId": "tt15318872",
-    "rtScore": null,
+    "rtScore": 90,
     "metacritic": null,
-    "tmdbRating": 6.967,
-    "tmdbVotes": 1573,
+    "tmdbRating": 6.965,
+    "tmdbVotes": 1578,
     "trailerKey": "kyaCzFvWbdM",
     "videos": [
       {
@@ -14946,10 +14946,10 @@
       "Disney+"
     ],
     "imdbId": "tt9114286",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.001,
-    "tmdbVotes": 7639,
+    "rtScore": 84,
+    "metacritic": 67,
+    "tmdbRating": 6.999,
+    "tmdbVotes": 7661,
     "trailerKey": "_Z3QKkl1WyM",
     "videos": [
       {
@@ -15369,10 +15369,10 @@
       "Disney+"
     ],
     "imdbId": "tt10954600",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.222,
-    "tmdbVotes": 5975,
+    "rtScore": 46,
+    "metacritic": 48,
+    "tmdbRating": 6.221,
+    "tmdbVotes": 5991,
     "trailerKey": "5WfTEZJnv_8",
     "videos": [
       {
@@ -15743,10 +15743,10 @@
       "Disney+"
     ],
     "imdbId": "tt6791350",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.931,
-    "tmdbVotes": 8608,
+    "rtScore": 82,
+    "metacritic": 64,
+    "tmdbRating": 7.932,
+    "tmdbVotes": 8642,
     "trailerKey": "AAE5VZktooM",
     "videos": [
       {
@@ -16204,8 +16204,8 @@
     "imdbId": "tt13157618",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.458,
-    "tmdbVotes": 1425,
+    "tmdbRating": 6.5,
+    "tmdbVotes": 1432,
     "trailerKey": "Tp_YZNqNBhw",
     "videos": [
       {
@@ -16436,7 +16436,7 @@
       {
         "actor": "Nisha Aaliya",
         "actorPhoto": "/zcKmS2rhRPGKDQBLuMJy3TIU81P.jpg",
-        "character": "Rhodey Skrull / Raava / Raava"
+        "character": "Raava / Rhodey Skrull / Raava"
       },
       {
         "actor": "Andrei Nova",
@@ -16802,8 +16802,8 @@
     "imdbId": "tt13623148",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.028,
-    "tmdbVotes": 504,
+    "tmdbRating": 7.03,
+    "tmdbVotes": 508,
     "trailerKey": "D7eFpRf4tac",
     "videos": [
       {
@@ -16907,8 +16907,8 @@
         "runtime": 59
       }
     ],
-    "posterPath": "/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg",
-    "posterTint": "#634522",
+    "posterPath": "/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+    "posterTint": "#452e1c",
     "overviewEn": "After stealing the Tesseract during the events of “Avengers: Endgame,” an alternate version of Loki is brought to the mysterious Time Variance Authority, a bureaucratic organization that exists outside of time and space and monitors the timeline. They give Loki a choice: face being erased from existence due to being a “time variant” or help fix the timeline and stop a greater threat.",
     "overviewAr": "بعد سرقة الـ\"تيسراكت\" خلال أحداث“المنتقمون: نهاية اللعبة” ، يتم نقل نسخة بديلة من لوكي إلى هيئة التباين الزمني، وهي منظمة بيروقراطية غامضة تقع خارج الزمان والمكان وتراقب الخط الزمني. تعرض عليه الهيئة خيارًا: إما مواجهة الإزالة من الوجود باعتباره “متغيرًا زمنيًا”، أو المساعدة في إصلاح الخط الزمني والتصدي لتهديد أكبر.",
     "providers": {
@@ -16925,8 +16925,8 @@
     "imdbId": "tt9140554",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.171,
-    "tmdbVotes": 12579,
+    "tmdbRating": 8.172,
+    "tmdbVotes": 12608,
     "trailerKey": "nW948Va-l10",
     "videos": [
       {
@@ -17015,14 +17015,14 @@
       }
     ],
     "posters": [
-      "/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg",
+      "/rqDoCJEM3SNaX1h2PjCCVkgoql2.jpg",
       "/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+      "/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg",
       "/w3cF2E269oUQIFq4IhRQ5MfkwMY.jpg",
       "/voHUmluYmKyleFkTu3lOXQG702u.jpg",
       "/oJdVHUYrjdS2IqiNztVIP4GPB1p.jpg",
       "/eP0gsotw38OI0cowI4RO1WXFpkg.jpg",
-      "/2bADrjsngEN2rZtd4TDmau6tuJ3.jpg",
-      "/dqqV9MrRa7O19aiGWCKYFeedY0A.jpg"
+      "/2bADrjsngEN2rZtd4TDmau6tuJ3.jpg"
     ],
     "backdrop": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg",
     "cast": [
@@ -17261,10 +17261,10 @@
       "Disney+"
     ],
     "imdbId": "tt10676048",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 5.927,
-    "tmdbVotes": 3529,
+    "rtScore": 63,
+    "metacritic": 50,
+    "tmdbRating": 5.924,
+    "tmdbVotes": 3549,
     "trailerKey": "uwmDH12MAA4",
     "videos": [
       {
@@ -17672,7 +17672,7 @@
     "rtScore": null,
     "metacritic": null,
     "tmdbRating": 8.038,
-    "tmdbVotes": 4680,
+    "tmdbVotes": 4691,
     "trailerKey": "x9D0uUKJ5KI",
     "videos": [
       {
@@ -17736,12 +17736,12 @@
       {
         "actor": "Josh Keaton",
         "actorPhoto": "/9ss2EXbN0VarF1tM2Qotwxy6fJs.jpg",
-        "character": "Steve Rogers (voice) / Steve Rogers / Rogers Hood (voice) / Steve Rogers / Captain America (voice) / Steve Rogers / The Hydra Stomper (voice)"
+        "character": "Steve Rogers / Captain America (voice) / Steve Rogers / The Hydra Stomper (voice) / Steve Rogers / Rogers Hood (voice) / Steve Rogers (voice)"
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
-        "character": "Bucky Barnes (voice) / Bucky Barnes / The Winter Soldier (voice)"
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
+        "character": "Bucky Barnes / The Winter Soldier (voice) / Bucky Barnes (voice)"
       },
       {
         "actor": "Benedict Cumberbatch",
@@ -17751,7 +17751,7 @@
       {
         "actor": "Lake Bell",
         "actorPhoto": "/sITVdq39jtR1l3VohWYDyxorx1v.jpg",
-        "character": "Natasha Romanoff (voice) / Natasha Romanoff / Black Widow (voice)"
+        "character": "Natasha Romanoff / Black Widow (voice) / Natasha Romanoff (voice)"
       },
       {
         "actor": "Mick Wingert",
@@ -17776,7 +17776,7 @@
       {
         "actor": "Mark Ruffalo",
         "actorPhoto": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
-        "character": "Bruce Banner / Hulk (voice) / Bruce Banner (voice)"
+        "character": "Bruce Banner (voice) / Bruce Banner / Hulk (voice)"
       },
       {
         "actor": "Samuel L. Jackson",
@@ -17796,7 +17796,7 @@
       {
         "actor": "Jon Favreau",
         "actorPhoto": "/8MtRRnEHaBSw8Ztdl8saXiw1egP.jpg",
-        "character": "Sir Harold 'The Happy' Hogan / Happy 'The Freak' Hogan (voice) / Happy Hogan / Happy 'The Freak' Hogan (voice)"
+        "character": "Happy Hogan / Happy 'The Freak' Hogan (voice) / Sir Harold 'The Happy' Hogan / Happy 'The Freak' Hogan (voice)"
       },
       {
         "actor": "Jeff Bergman",
@@ -17811,7 +17811,7 @@
       {
         "actor": "Feodor Chin",
         "actorPhoto": "/fbyQN0Hjk640yny5ZWqUZDBa8xq.jpg",
-        "character": "Xu Wenwu (voice) / Wenwu (voice)"
+        "character": "Wenwu (voice) / Xu Wenwu (voice)"
       },
       {
         "actor": "Stanley Tucci",
@@ -18005,7 +18005,7 @@
       },
       {
         "actor": "Liv Zamora",
-        "actorPhoto": "/eZxX6fHe9UiNpNzvY0awaf2AtwG.jpg",
+        "actorPhoto": "/8ryOOcg846frVYPMMbtJjRW2G6X.jpg",
         "character": "Young Hela (voice)"
       }
     ],
@@ -18078,8 +18078,8 @@
     "imdbId": "tt13966962",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6,
-    "tmdbVotes": 643,
+    "tmdbRating": 6.027,
+    "tmdbVotes": 646,
     "trailerKey": "g0f1o-KGWPM",
     "videos": [
       {
@@ -18683,10 +18683,10 @@
       "Disney+"
     ],
     "imdbId": "tt6263850",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.6,
-    "tmdbVotes": 9127,
+    "rtScore": 77,
+    "metacritic": 56,
+    "tmdbRating": 7.584,
+    "tmdbVotes": 9181,
     "trailerKey": "Idh8n5XuYIA",
     "videos": [
       {
@@ -19214,8 +19214,8 @@
     "imdbId": "tt15571732",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.429,
-    "tmdbVotes": 998,
+    "tmdbRating": 7.424,
+    "tmdbVotes": 1002,
     "trailerKey": "R9pXbNz6Vbw",
     "videos": [
       {
@@ -19610,7 +19610,7 @@
     "rtScore": null,
     "metacritic": null,
     "tmdbRating": 8.038,
-    "tmdbVotes": 4680,
+    "tmdbVotes": 4691,
     "trailerKey": "x9D0uUKJ5KI",
     "videos": [
       {
@@ -19669,7 +19669,7 @@
       {
         "actor": "Darin De Paul",
         "actorPhoto": "/vGzewVsLWtXyEU7X3iNdjWEd6y9.jpg",
-        "character": "The Executioner (voice) / Zeus (voice)"
+        "character": "Zeus (voice) / The Executioner (voice)"
       },
       {
         "actor": "Jason Isaacs",
@@ -19693,7 +19693,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
         "character": "Bucky Barnes (voice) / Bucky Barnes / Winter Soldier (voice)"
       },
       {
@@ -19709,7 +19709,7 @@
       {
         "actor": "David Harbour",
         "actorPhoto": "/qMFtMWlYVtFVyBoBhX5IoA5sN5a.jpg",
-        "character": "Alexei Shostakov (voice) / Alexei Shostakov / Red Guardian (voice)"
+        "character": "Alexei Shostakov / Red Guardian (voice) / Alexei Shostakov (voice)"
       },
       {
         "actor": "Hayley Atwell",
@@ -20038,8 +20038,8 @@
     "imdbId": "tt16027074",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.824,
-    "tmdbVotes": 284,
+    "tmdbRating": 7.8,
+    "tmdbVotes": 285,
     "trailerKey": "N3J2JRQg040",
     "videos": [
       {
@@ -20096,7 +20096,7 @@
       {
         "actor": "Kari Wahlgren",
         "actorPhoto": "/kc0BOnSdzCfq8w9qoNVEm5K12x1.jpg",
-        "character": "Kari Wahlgren / Mrs. Eberhardt (voice) / May Parker (voice) / Roxanna Volkov (voice)"
+        "character": "May Parker (voice) / Kari Wahlgren / Mrs. Eberhardt (voice) / Roxanna Volkov (voice)"
       },
       {
         "actor": "Eugene Byrd",
@@ -20111,7 +20111,7 @@
       {
         "actor": "Erica Luttrell",
         "actorPhoto": "/qRsIqCvNf2uUDoKYxNxtW0FxX8r.jpg",
-        "character": "Asha (voice) / Mrs. Lincoln (voice) / Emma (voice) / Emma / Mrs. Lincoln (voice)"
+        "character": "Mrs. Lincoln (voice) / Emma / Mrs. Lincoln (voice) / Emma (voice) / Asha (voice)"
       },
       {
         "actor": "Grace Song",
@@ -20121,17 +20121,17 @@
       {
         "actor": "Leilani Barrett",
         "actorPhoto": null,
-        "character": "Big Donavan (voice) / Big Donovan (voice)"
+        "character": "Big Donovan (voice) / Big Donavan (voice)"
       },
       {
         "actor": "Roger Craig Smith",
         "actorPhoto": "/6oE356GbRHAf91Llw7LDpvsAf5L.jpg",
-        "character": "Dmitri Smerdyakov (voice) / Coach Grayfield / Dimitri Smerdyakov (voice) / Dmitri Smerdyakov / Chameleon (voice) / Coach Grayfield (voice) / James Sanders (voice)"
+        "character": "Dmitri Smerdyakov / Chameleon (voice) / Coach Grayfield / Dimitri Smerdyakov (voice) / James Sanders (voice) / Dmitri Smerdyakov (voice) / Coach Grayfield (voice)"
       },
       {
         "actor": "Zeno Robinson",
         "actorPhoto": "/PyoUSDPm4AiGcp6W2WTBD2zSMt.jpg",
-        "character": "Harry Osborn (voice) / Harry Osborn / Mr. Campbell (voice)"
+        "character": "Harry Osborn / Mr. Campbell (voice) / Harry Osborn (voice)"
       },
       {
         "actor": "Ettore Ewen",
@@ -20151,7 +20151,7 @@
       {
         "actor": "Phil LaMarr",
         "actorPhoto": "/xP2kNlsmXtzXq0geutflO4K9mSE.jpg",
-        "character": "Mr. Lincoln (voice) / Mr. Taylor (voice) / Mr. Taylor / Mr. Lincoln (voice)"
+        "character": "Mr. Taylor (voice) / Mr. Lincoln (voice) / Mr. Taylor / Mr. Lincoln (voice)"
       },
       {
         "actor": "Anjali Kunapaneni",
@@ -20161,7 +20161,7 @@
       {
         "actor": "Anairis Quinones",
         "actorPhoto": "/iVpt3snYDQ8BkBcn4eZKsesCHQr.jpg",
-        "character": "Carmilla Black (voice) / Maria Vasquez (voice) / Carmilla Black / Ms. Anand (voice)"
+        "character": "Carmilla Black (voice) / Carmilla Black / Ms. Anand (voice) / Maria Vasquez (voice)"
       },
       {
         "actor": "Hugh Dancy",
@@ -20176,7 +20176,7 @@
       {
         "actor": "Kellen Goff",
         "actorPhoto": "/3HWEo27RznochUzqPYsffYPzC8A.jpg",
-        "character": "Symbiotic Alien (voice) / Vincent Patillo (voice) / Vincent Patilio (voice)"
+        "character": "Symbiotic Alien (voice) / Vincent Patilio (voice) / Vincent Patillo (voice)"
       },
       {
         "actor": "Jonathan Medina",
@@ -20270,10 +20270,10 @@
       "Disney+"
     ],
     "imdbId": "tt14513804",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 5.955,
-    "tmdbVotes": 3255,
+    "rtScore": 46,
+    "metacritic": 42,
+    "tmdbRating": 5.952,
+    "tmdbVotes": 3278,
     "trailerKey": "5PSzFLV-EyQ",
     "videos": [
       {
@@ -20448,7 +20448,7 @@
       "/mFzFJc1XnGqaEbyac2KcCFJx8Uo.jpg",
       "/fva0XcaHrxBvcNK370mGT5CHCa3.jpg"
     ],
-    "backdrop": "/ywe9S1cOyIhR5yWzK7511NuQ2YX.jpg",
+    "backdrop": "/ce3prrjh9ZehEl5JinNqr4jIeaB.jpg",
     "cast": [
       {
         "actor": "Anthony Mackie",
@@ -20754,8 +20754,8 @@
     "imdbId": "tt18923754",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.164,
-    "tmdbVotes": 1049,
+    "tmdbRating": 8.163,
+    "tmdbVotes": 1062,
     "trailerKey": "7xALolZzhSM",
     "videos": [
       {
@@ -20979,7 +20979,7 @@
       {
         "actor": "Deborah Ann Woll",
         "actorPhoto": "/btTnyvRLXOH0pz2SLBwyKbmnFhX.jpg",
-        "character": "Karen Page (archive footage) / Karen Page"
+        "character": "Karen Page / Karen Page (archive footage)"
       },
       {
         "actor": "Cillian O'Sullivan",
@@ -21074,7 +21074,7 @@
       {
         "actor": "Elden Henson",
         "actorPhoto": "/8U5g30U76UJe0erbJdWjGLVz7NF.jpg",
-        "character": "Foggy Nelson / Foggy Nelson (archive footage)"
+        "character": "Foggy Nelson (archive footage) / Foggy Nelson"
       },
       {
         "actor": "Jimmy Palumbo",
@@ -21416,10 +21416,10 @@
       "Disney+"
     ],
     "imdbId": "tt20969586",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.298,
-    "tmdbVotes": 3842,
+    "rtScore": 88,
+    "metacritic": 68,
+    "tmdbRating": 7.3,
+    "tmdbVotes": 3879,
     "trailerKey": "7rs_HhSA7XY",
     "videos": [
       {
@@ -21806,7 +21806,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
         "character": "Bucky Barnes"
       },
       {
@@ -22076,7 +22076,7 @@
     "rtScore": null,
     "metacritic": null,
     "tmdbRating": 5.3,
-    "tmdbVotes": 482,
+    "tmdbVotes": 484,
     "trailerKey": "r6j-wSIqJJ0",
     "videos": [
       {
@@ -22567,9 +22567,9 @@
     ],
     "imdbId": "tt10676052",
     "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.945,
-    "tmdbVotes": 3658,
+    "metacritic": 65,
+    "tmdbRating": 6.947,
+    "tmdbVotes": 3693,
     "trailerKey": "LJa5wv93YGM",
     "videos": [
       {
@@ -23153,8 +23153,8 @@
     "imdbId": "tt13968252",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.2,
-    "tmdbVotes": 187,
+    "tmdbRating": 6.18,
+    "tmdbVotes": 189,
     "trailerKey": "ODHh6oe4MlE",
     "videos": [
       {
@@ -23272,7 +23272,7 @@
       },
       {
         "actor": "Yerman Gur",
-        "actorPhoto": "/bqS48ALCMYIbM935ux5ocMX31cG.jpg",
+        "actorPhoto": null,
         "character": "Paris / Guard 2 / Trojan Watchman (voice)"
       },
       {
@@ -23434,7 +23434,7 @@
     "rtScore": null,
     "metacritic": null,
     "tmdbRating": 7.3,
-    "tmdbVotes": 387,
+    "tmdbVotes": 392,
     "trailerKey": "8VEmp_Ycjws",
     "videos": [
       {
@@ -23708,8 +23708,8 @@
     "imdbId": "tt21066182",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.1,
-    "tmdbVotes": 334,
+    "tmdbRating": 7.069,
+    "tmdbVotes": 339,
     "trailerKey": "wHuWmjXsReU",
     "videos": [
       {
@@ -23804,8 +23804,8 @@
       "/gNk4kuXQdK7vGOVYtwTirekLqV1.jpg",
       "/EwAa97mv109h70mDq5yz4pWTwT.jpg",
       "/6MHugkkyTyjR4nsfLRAwF5coEfy.jpg",
-      "/4hU9y2Zs8MUfCkNrLFqvnqg853u.jpg",
-      "/rA5TABYYyllc7KObOGWxcz7ev3i.jpg"
+      "/rA5TABYYyllc7KObOGWxcz7ev3i.jpg",
+      "/o2obeixL5uePdveNyv3oYVaoAC3.jpg"
     ],
     "backdrop": "/ldz9THIHaV4orMsUrPT1nlQF51T.jpg",
     "cast": [
@@ -23882,7 +23882,7 @@
       {
         "actor": "Dane Larsen",
         "actorPhoto": null,
-        "character": "Brent Willard / Wonder Man / Brent Willard"
+        "character": "Brent Willard / Brent Willard / Wonder Man"
       },
       {
         "actor": "Brandon Wardell",
@@ -24367,8 +24367,8 @@
     "imdbId": "tt18923754",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.164,
-    "tmdbVotes": 1049,
+    "tmdbRating": 8.163,
+    "tmdbVotes": 1062,
     "trailerKey": "7xALolZzhSM",
     "videos": [
       {
@@ -24607,7 +24607,7 @@
       {
         "actor": "Tony Dalton",
         "actorPhoto": "/vWteTJu9Dyrax7gQq8ndTjx5s6V.jpg",
-        "character": "Jack Duquesne / Jack Duquesne (uncredited)"
+        "character": "Jack Duquesne (uncredited) / Jack Duquesne"
       },
       {
         "actor": "Ruibo Qian",
@@ -25031,8 +25031,8 @@
     "imdbId": "tt36042156",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.3,
-    "tmdbVotes": 2037,
+    "tmdbRating": 8.29,
+    "tmdbVotes": 2070,
     "trailerKey": "oSeqs_xeqv4",
     "videos": [
       {
@@ -25099,8 +25099,8 @@
       "/kcfrtUB8Ev0oOnHAwI2vCrjL9TS.jpg",
       "/3PVrDwyym0B2hRF18xVKtI92uHv.jpg",
       "/q87ISy7R2tcxjDu6EKotXUepK4g.jpg",
-      "/aOaoPWGNI4k4l1B5pZlVRBi30DR.jpg",
-      "/aM4L8vrhtoL0sUwXEre56MqiEEO.jpg"
+      "/aM4L8vrhtoL0sUwXEre56MqiEEO.jpg",
+      "/7zjbYdpPyxIwRdjzvtGrSuVvGRh.jpg"
     ],
     "backdrop": "/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
     "cast": [
@@ -25299,8 +25299,8 @@
     "releaseDate": "2026-12-16",
     "runtimeMin": 165,
     "episodes": [],
-    "posterPath": "/bh2OuKvq19jBHsloUVCfPSZZw81.jpg",
-    "posterTint": "#2b3927",
+    "posterPath": "/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
+    "posterTint": "#49361d",
     "overviewEn": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
     "overviewAr": "أبطال محبوبون من ثلاثة أكوان مختلفة يُدفعون نحو صدام مميت، ويواجهون تهديدًا مرعبًا قد يمحو وجودهم بالكامل… شيء يفوق كل ما عرفوه من قبل.",
     "providers": {},
@@ -25310,7 +25310,7 @@
     "metacritic": null,
     "tmdbRating": null,
     "tmdbVotes": null,
-    "trailerKey": "irVNGjRFZGk",
+    "trailerKey": "X1aFkAkFASk",
     "videos": [
       {
         "key": "UiMg566PREA",
@@ -25346,16 +25346,30 @@
         "type": "Trailer",
         "official": true,
         "publishedAt": "2026-07-20T13:00:20.000Z"
+      },
+      {
+        "key": "lqBdGDi3akg",
+        "name": "Get ready for Doomsday.",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-08-14T18:08:46.000Z"
+      },
+      {
+        "key": "X1aFkAkFASk",
+        "name": "Special Look",
+        "type": "Trailer",
+        "official": true,
+        "publishedAt": "2026-08-15T04:06:21.000Z"
       }
     ],
     "posters": [
-      "/bh2OuKvq19jBHsloUVCfPSZZw81.jpg",
+      "/5pOEr3ypuPhrXACdeesHj01VAM8.jpg",
       "/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
+      "/bh2OuKvq19jBHsloUVCfPSZZw81.jpg",
       "/7bQczUMnjz8iwxNP9YrmLkfI8od.jpg",
       "/s2Fkuq0tj7mjAHEdbfQkFkdbeRI.jpg",
       "/8HkIe2i4ScpCkcX9SzZ9IPasqWV.jpg",
       "/aoDpTDvwNorynUV3xVnOpcpSzkO.jpg",
-      "/5pOEr3ypuPhrXACdeesHj01VAM8.jpg",
       "/5lqTP2YmjHA7O7TxDrkxo3eUKxo.jpg"
     ],
     "backdrop": "/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
@@ -25426,6 +25440,11 @@
         "character": "Magneto"
       },
       {
+        "actor": "Hayley Atwell",
+        "actorPhoto": "/x57wXHexIjD2ywly9cRA4rov7cu.jpg",
+        "character": "Peggy Carter"
+      },
+      {
         "actor": "Tom Hiddleston",
         "actorPhoto": "/mclHxMm8aPlCPKptP67257F5GPo.jpg",
         "character": "Loki"
@@ -25447,7 +25466,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
         "character": "Bucky Barnes / Winter Soldier"
       },
       {
@@ -25526,9 +25545,9 @@
         "character": "Kamala Khan"
       },
       {
-        "actor": "Hayley Atwell",
-        "actorPhoto": "/x57wXHexIjD2ywly9cRA4rov7cu.jpg",
-        "character": "Peggy Carter"
+        "actor": "Aubrey Plaza",
+        "actorPhoto": "/ejtGfjOAvUHBdVc3xTIV1HtJBi9.jpg",
+        "character": "Rio Vidal/Lady Death"
       }
     ],
     "authors": [
@@ -25598,7 +25617,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
         "character": "Bucky Barnes / Winter Soldier"
       },
       {
@@ -25658,12 +25677,12 @@
       }
     ],
     "authors": [
-      "Joe Russo",
-      "Anthony Russo"
+      "Anthony Russo",
+      "Joe Russo"
     ],
     "authorPhotos": [
-      "/o0OXjFzL10jCy89iAs7UzzSbyoK.jpg",
-      "/xbINBnWn28YygYWUJ1aSAw0xPRv.jpg"
+      "/xbINBnWn28YygYWUJ1aSAw0xPRv.jpg",
+      "/o0OXjFzL10jCy89iAs7UzzSbyoK.jpg"
     ],
     "authorRole": "director",
     "genres": [
@@ -25764,7 +25783,8 @@
     ],
     "authorRole": "director",
     "genres": [
-      "Fantasy"
+      "Fantasy",
+      "Action"
     ]
   },
   "visionquest": {
@@ -25830,9 +25850,9 @@
         "runtime": null
       }
     ],
-    "posterPath": "/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg",
-    "posterTint": "#030303",
-    "overviewEn": "After the events of WandaVision, White Vision struggles to connect with the memories given to him as he lacks the emotions or feelings associated with them.",
+    "posterPath": "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+    "posterTint": "#513420",
+    "overviewEn": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
     "overviewAr": "بعد أحداث (واندا فيجن)، يجد (فيجن الأبيض) صعوبة في الارتباط بالذكريات التي مُنحت له، نظراً لافتقاره إلى العواطف أو المشاعر المصاحبة لها.",
     "providers": {},
     "providersGlobal": [],
@@ -25841,12 +25861,24 @@
     "metacritic": null,
     "tmdbRating": null,
     "tmdbVotes": null,
-    "trailerKey": null,
-    "videos": [],
-    "posters": [
-      "/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg"
+    "trailerKey": "oSVTAUKyrL8",
+    "videos": [
+      {
+        "key": "oSVTAUKyrL8",
+        "name": "Official Trailer",
+        "type": "Trailer",
+        "official": true,
+        "publishedAt": "2026-08-15T03:59:17.000Z"
+      }
     ],
-    "backdrop": "/hgo15B8eUnbEjszVV1qdV8sGz9S.jpg",
+    "posters": [
+      "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+      "/jfltxthL5nDD14AxOd6gxbBYX6v.jpg",
+      "/kSLKCUUsYXjXomMIPEFGcNbeByV.jpg",
+      "/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg",
+      "/dZ49yww0E5atTX1VFOK0vturcbK.jpg"
+    ],
+    "backdrop": "/pMgAiQYQpVHNrcQBJNgWxAqMt2c.jpg",
     "cast": [
       {
         "actor": "Paul Bettany",
@@ -25854,49 +25886,19 @@
         "character": "The Vision"
       },
       {
-        "actor": "Henry Lewis",
-        "actorPhoto": "/sMDsMyLYhmI1N1amPPmd6Lrh7UK.jpg",
-        "character": "D.U.M.-E"
-      },
-      {
-        "actor": "Jonathan Sayer",
-        "actorPhoto": "/s7uy8s3sG9AqMOlUuKC74JbKRxP.jpg",
-        "character": "U"
-      },
-      {
-        "actor": "James D'Arcy",
-        "actorPhoto": "/6CInTvBeLwXLx2id9TgaULaVEO4.jpg",
-        "character": "J.A.R.V.I.S."
-      },
-      {
-        "actor": "Orla Brady",
-        "actorPhoto": "/wjo8xposTE0HenFopy6KELCWoD0.jpg",
-        "character": "F.R.I.D.A.Y."
-      },
-      {
-        "actor": "Emily Hampshire",
-        "actorPhoto": "/kXb6SAUOACHN9F3M4rkxF7BsJGN.jpg",
-        "character": "E.D.I.T.H."
-      },
-      {
         "actor": "James Spader",
-        "actorPhoto": "/uET0mbf2bMkUXbRb1Oxi8Qjqcw3.jpg",
+        "actorPhoto": "/3gurW3OgDOD4hcqDfgcqUnoNg34.jpg",
         "character": "Ultron"
+      },
+      {
+        "actor": "Ruaridh Mollica",
+        "actorPhoto": "/wiSim6nG9TSY4AO8KOwsaaPJ0EH.jpg",
+        "character": "Thomas Shepard"
       },
       {
         "actor": "Todd Stashwick",
         "actorPhoto": "/seKRXV2HMS36ip4SfQq6PLRiLL2.jpg",
         "character": "Paladin"
-      },
-      {
-        "actor": "Faran Tahir",
-        "actorPhoto": "/dMsD7h6KiZ5dM0f9MegXUOKnqb0.jpg",
-        "character": "Raza"
-      },
-      {
-        "actor": "Ruaridh Mollica",
-        "actorPhoto": "/wiSim6nG9TSY4AO8KOwsaaPJ0EH.jpg",
-        "character": "Thomas Shepherd"
       },
       {
         "actor": "T'Nia Miller",
@@ -25907,6 +25909,31 @@
         "actor": "Lauren Morais",
         "actorPhoto": "/7Eur3EddzlvXTYzKAGkRmo87xcS.jpg",
         "character": "Lisa Molinari"
+      },
+      {
+        "actor": "Orla Brady",
+        "actorPhoto": "/wjo8xposTE0HenFopy6KELCWoD0.jpg",
+        "character": "F.R.I.D.A.Y."
+      },
+      {
+        "actor": "Henry Lewis",
+        "actorPhoto": "/sMDsMyLYhmI1N1amPPmd6Lrh7UK.jpg",
+        "character": "D.U.M.-E"
+      },
+      {
+        "actor": "Jonathan Sayer",
+        "actorPhoto": "/cfF9sJMiJyxkYATv47H2qRabCVB.jpg",
+        "character": "U"
+      },
+      {
+        "actor": "Emily Hampshire",
+        "actorPhoto": "/kXb6SAUOACHN9F3M4rkxF7BsJGN.jpg",
+        "character": "E.D.I.T.H."
+      },
+      {
+        "actor": "James D'Arcy",
+        "actorPhoto": "/6CInTvBeLwXLx2id9TgaULaVEO4.jpg",
+        "character": "J.A.R.V.I.S."
       }
     ],
     "authors": [
@@ -25934,9 +25961,9 @@
     "providersGlobal": [],
     "imdbId": "tt22084616",
     "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.877,
-    "tmdbVotes": 1479,
+    "metacritic": 66,
+    "tmdbRating": 7.9,
+    "tmdbVotes": 1787,
     "trailerKey": "P3uI5sLosKU",
     "videos": [
       {
@@ -26388,6 +26415,41 @@
         "publishedAt": "2026-08-03T11:05:01.000Z"
       },
       {
+        "key": "5vIsahKS-7o",
+        "name": "It’s your turn to swing into the theatres",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-08-04T06:04:13.000Z"
+      },
+      {
+        "key": "UpnI8ax6czc",
+        "name": "The movie everyone’s talking about",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-08-04T10:27:10.000Z"
+      },
+      {
+        "key": "6EewWA9ijgA",
+        "name": "Big potatoes.",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-08-06T03:59:49.000Z"
+      },
+      {
+        "key": "5yUyiXkKwF0",
+        "name": "The message is clear.",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-08-06T04:58:23.000Z"
+      },
+      {
+        "key": "jnQ6lklSbEM",
+        "name": "Fighting for his life.",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-08-09T00:00:10.000Z"
+      },
+      {
         "key": "TJAwmu-v9mw",
         "name": "Happy Birthday, Peter Parker!",
         "type": "Teaser",
@@ -26396,14 +26458,14 @@
       }
     ],
     "posters": [
+      "/tV712n7bMaRuaKyltFl65HPNRiP.jpg",
       "/lH6LQcUhkVOK6ekvXzthQAogUnR.jpg",
       "/yxOxOBxspl3NgC676W62G02g1cR.jpg",
-      "/co2xrECpXtlFmqAlDRD1A6EWu2H.jpg",
       "/ghF1JYv7P5BgWHYfq9dqhqqNfz8.jpg",
+      "/co2xrECpXtlFmqAlDRD1A6EWu2H.jpg",
       "/x19dchU8e38vQfW4epzOsQNLuZ2.jpg",
       "/wiHUI2zYxo1lDw8mF56Zp0CtkUy.jpg",
-      "/dswjf9LMu2DAffcvTBzqYK3pu10.jpg",
-      "/kjNlN0gFNHRLUAfOs3AeNynUFKQ.jpg"
+      "/dswjf9LMu2DAffcvTBzqYK3pu10.jpg"
     ],
     "backdrop": "/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
     "cast": [
@@ -26509,7 +26571,7 @@
       },
       {
         "actor": "Maikol Roque",
-        "actorPhoto": null,
+        "actorPhoto": "/mvHuLX4jwOqgm4HLV4S7e8MscxK.jpg",
         "character": "EJ"
       },
       {
@@ -26627,8 +26689,8 @@
     "releaseDate": "2002-05-01",
     "runtimeMin": 121,
     "episodes": [],
-    "posterPath": "/nXdAh5vUwERL4WGVMaee8RoDEAS.jpg",
-    "posterTint": "#986632",
+    "posterPath": "/or6XJBVpcEbIkma0V9zshnbEtx4.jpg",
+    "posterTint": "#9c6644",
     "overviewEn": "After being bitten by a genetically altered spider at Oscorp, nerdy but endearing high school student Peter Parker is endowed with amazing powers to become the superhero known as Spider-Man.",
     "overviewAr": "يتعرض مراهق خجول للدغة عنكبوت معدل وراثيًا، فيستغل قدراته الجديدة الشبيهة بالعنكبوت لمحاربة الظلم كبطل خارق مقنع.",
     "providers": {
@@ -26685,10 +26747,10 @@
       "TOD"
     ],
     "imdbId": "tt0145487",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.3,
-    "tmdbVotes": 21075,
+    "rtScore": 90,
+    "metacritic": 73,
+    "tmdbRating": 7.343,
+    "tmdbVotes": 21143,
     "trailerKey": "t06RUxPbp_c",
     "videos": [
       {
@@ -26714,20 +26776,20 @@
       }
     ],
     "posters": [
+      "/or6XJBVpcEbIkma0V9zshnbEtx4.jpg",
       "/nXdAh5vUwERL4WGVMaee8RoDEAS.jpg",
+      "/wSdPLwKmjSH55UH9zeYI37A9pwp.jpg",
       "/kjdJntyBeEvqm9w97QGBdxPptzj.jpg",
       "/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
       "/ltuwOEAJ4rfGVLdC4YYmCYBVcQV.jpg",
       "/gSZyYEK5AfZuOFFjnVPUCLvdOD6.jpg",
-      "/vSsOo0GwXP2zDZP4EyXmHejJ3H8.jpg",
-      "/bjpG3damAVWA6aTmqgdBin9vdEi.jpg",
-      "/wZGlaMxBAjCIYLzyDWvocaoNooZ.jpg"
+      "/vSsOo0GwXP2zDZP4EyXmHejJ3H8.jpg"
     ],
     "backdrop": "/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
     "cast": [
       {
         "actor": "Tobey Maguire",
-        "actorPhoto": "/s6PwSvq6gC7PGEjIku69tPbvR8M.jpg",
+        "actorPhoto": "/1EtXu72Cuo7YX4IqIaEslwOhEQ9.jpg",
         "character": "Spider-Man / Peter Parker"
       },
       {
@@ -26973,6 +27035,9 @@
       "QA": [
         "TOD"
       ],
+      "BH": [
+        "TOD"
+      ],
       "EG": [
         "STARZPLAY",
         "Shahid VIP",
@@ -27004,10 +27069,10 @@
       "TOD"
     ],
     "imdbId": "tt0316654",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.323,
-    "tmdbVotes": 16670,
+    "rtScore": 93,
+    "metacritic": 83,
+    "tmdbRating": 7.325,
+    "tmdbVotes": 16718,
     "trailerKey": "CA5vsCnLm34",
     "videos": [
       {
@@ -27039,7 +27104,7 @@
     "cast": [
       {
         "actor": "Tobey Maguire",
-        "actorPhoto": "/s6PwSvq6gC7PGEjIku69tPbvR8M.jpg",
+        "actorPhoto": "/1EtXu72Cuo7YX4IqIaEslwOhEQ9.jpg",
         "character": "Spider-Man / Peter Parker"
       },
       {
@@ -27275,6 +27340,9 @@
         "Shahid VIP",
         "TOD"
       ],
+      "KW": [
+        "TOD"
+      ],
       "QA": [
         "TOD"
       ],
@@ -27312,16 +27380,30 @@
       "TOD"
     ],
     "imdbId": "tt0413300",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.471,
-    "tmdbVotes": 15513,
+    "rtScore": 62,
+    "metacritic": 59,
+    "tmdbRating": 6.473,
+    "tmdbVotes": 15575,
     "trailerKey": "e5wUilOeOmg",
     "videos": [
       {
+        "key": "wOg-yjOeuVU",
+        "name": "Teaser Trailer",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2007-04-18T16:40:13.000Z"
+      },
+      {
+        "key": "NowJB2kx6nY",
+        "name": "Trailer to Snow Patrol",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2007-04-26T14:39:01.000Z"
+      },
+      {
         "key": "yulxywCKu6o",
-        "name": "Spider-Man 3 Venom Trailer",
-        "type": "Trailer",
+        "name": "Venom Trailer",
+        "type": "Teaser",
         "official": true,
         "publishedAt": "2007-05-02T16:43:17.000Z"
       },
@@ -27350,11 +27432,11 @@
       "/sqZKCRYGovZ8aN99VVJSdL8Ja9k.jpg",
       "/qjhalSrfqe0nXmNflgY76nN4zpn.jpg"
     ],
-    "backdrop": "/xslNxb3T3HW8dt70ybbR5lrBJRj.jpg",
+    "backdrop": "/FfAU0PUs8AJkMU2VbkVNFtRXR4.jpg",
     "cast": [
       {
         "actor": "Tobey Maguire",
-        "actorPhoto": "/s6PwSvq6gC7PGEjIku69tPbvR8M.jpg",
+        "actorPhoto": "/1EtXu72Cuo7YX4IqIaEslwOhEQ9.jpg",
         "character": "Spider-Man / Peter Parker"
       },
       {
@@ -27374,12 +27456,12 @@
       },
       {
         "actor": "Topher Grace",
-        "actorPhoto": "/oJQxl4DG0KSCtOGrpWNhYz9gUZA.jpg",
+        "actorPhoto": "/y56aFmbJ8UmcOcGei5pswooumnp.jpg",
         "character": "Venom / Eddie Brock"
       },
       {
         "actor": "Bryce Dallas Howard",
-        "actorPhoto": "/6yhDkPXythZavS6Wk57XQ2sg5AW.jpg",
+        "actorPhoto": "/fmXhf4rJOrzc3QWwxVbNd7kP8wy.jpg",
         "character": "Gwen Stacy"
       },
       {
@@ -27577,6 +27659,9 @@
     "overviewEn": "A teenage Peter Parker grapples with both high school and amazing super-human crises as his alter-ego Spider-Man.",
     "overviewAr": "يجد بيتر باركر دليلًا قد يساعده في فهم سبب اختفاء والديه عندما كان صغيرًا. ويأخذه طريقه إلى التصادم مع الدكتور كيرت كونرز، شريك والده السابق.",
     "providers": {
+      "OM": [
+        "TOD"
+      ],
       "AE": [
         "STARZPLAY",
         "Shahid VIP",
@@ -27603,8 +27688,10 @@
       ],
       "GB": [
         "Netflix",
+        "Amazon Prime Video",
         "Sky Go",
-        "Now TV Cinema"
+        "Now TV Cinema",
+        "Amazon Prime Video with Ads"
       ],
       "US": [
         "Disney Plus",
@@ -27624,10 +27711,10 @@
       "TOD"
     ],
     "imdbId": "tt0948470",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.748,
-    "tmdbVotes": 18841,
+    "rtScore": 71,
+    "metacritic": 66,
+    "tmdbRating": 6.751,
+    "tmdbVotes": 18896,
     "trailerKey": "WLxul0Vzuhk",
     "videos": [
       {
@@ -27672,9 +27759,9 @@
       "/qGLvuJ182jr5GMn9X8oWPf7HnGB.jpg",
       "/3zbb5XD0hEA8IpAcUmv1J9Rej3B.jpg",
       "/563aELaufKmblKYAbYVlf5ETyRo.jpg",
+      "/sJ80wl69fiWxs3LEwb8yMiHa7F7.jpg",
       "/jIfkQNARYyERqRAq1p1c8xgePp4.jpg",
-      "/ww2YPsGe6Yd1nUHH6XVvfj4Rrin.jpg",
-      "/sJ80wl69fiWxs3LEwb8yMiHa7F7.jpg"
+      "/ww2YPsGe6Yd1nUHH6XVvfj4Rrin.jpg"
     ],
     "backdrop": "/HVcza6tJtWFrLriuh3Ano4Vt46.jpg",
     "cast": [
@@ -27883,7 +27970,7 @@
       "Marc Webb"
     ],
     "authorPhotos": [
-      "/20mVzuzAwkznDVp7HJnTpVvoEvx.jpg"
+      "/95FAAT150Mi6DB8VcJgEeOplOsU.jpg"
     ],
     "authorRole": "director",
     "genres": [
@@ -27932,8 +28019,10 @@
       ],
       "GB": [
         "Netflix",
+        "Amazon Prime Video",
         "Sky Go",
-        "Now TV Cinema"
+        "Now TV Cinema",
+        "Amazon Prime Video with Ads"
       ],
       "US": [
         "Disney Plus",
@@ -27953,10 +28042,10 @@
       "TOD"
     ],
     "imdbId": "tt1872181",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.552,
-    "tmdbVotes": 14525,
+    "rtScore": 50,
+    "metacritic": 53,
+    "tmdbRating": 6.556,
+    "tmdbVotes": 14574,
     "trailerKey": "DlM2CWNTQ84",
     "videos": [
       {
@@ -28245,7 +28334,7 @@
       "Marc Webb"
     ],
     "authorPhotos": [
-      "/20mVzuzAwkznDVp7HJnTpVvoEvx.jpg"
+      "/95FAAT150Mi6DB8VcJgEeOplOsU.jpg"
     ],
     "authorRole": "director",
     "genres": [
@@ -28263,7 +28352,7 @@
     "posterPath": "/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
     "posterTint": "#647d99",
     "overviewEn": "Struggling to find his place in the world while juggling school and family, Brooklyn teenager Miles Morales is unexpectedly bitten by a radioactive spider and develops unfathomable powers just like the one and only Spider-Man. While wrestling with the implications of his new abilities, Miles discovers a super collider created by the madman Wilson \"Kingpin\" Fisk, causing others from across the Spider-Verse to be inadvertently transported to his dimension.",
-    "overviewAr": "مايلز موراليس يحاول موازنة حياته بين كونه طالب في المدرسة الثانوية وكونه سبايدرمان. ومع ذلك، فعندما يستخدم ويلسون فيسك مصادما مغناطيسيا ضخم، يأتي سبايدرمان من بُعد آخر، بيتر باركر، ويصطدم في بعد مايلز.",
+    "overviewAr": "يعيش مايلز موراليس حياة طبيعية كمراهق في نيويورك، إلى أن يتعرض للدغة عنكبوت تمنحه قدرات خارقة وتغير حياته بالكامل. وبينما يحاول مايلز فهم قواه الجديدة والتكيف مع هويته كبطل خارق، يكتشف وجود عوالم موازية يصل منها عدد من نسخ سبايدرمان المختلفة إلى عالمه. يجد مايلز نفسه وسط مهمة لإنقاذ المدينة وإعادة التوازن بين العوالم، ويتعلم من أبطال العنكبوت الآخرين كيفية التحكم في قدراته وتحمل مسؤولية أن يصبح سبايدرمان.",
     "providers": {
       "OM": [
         "TOD"
@@ -28311,10 +28400,10 @@
       "TOD"
     ],
     "imdbId": "tt4633694",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 8.394,
-    "tmdbVotes": 17589,
+    "rtScore": 97,
+    "metacritic": 87,
+    "tmdbRating": 8.395,
+    "tmdbVotes": 17634,
     "trailerKey": "tg52up16eq0",
     "videos": [
       {
@@ -28389,7 +28478,7 @@
       },
       {
         "actor": "Mahershala Ali",
-        "actorPhoto": "/oId1ulmetuWr3lFFsSb81KS5LJS.jpg",
+        "actorPhoto": "/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg",
         "character": "Uncle Aaron (voice)"
       },
       {
@@ -28580,7 +28669,7 @@
     "posterPath": "/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
     "posterTint": "#7f4545",
     "overviewEn": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse's very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
-    "overviewAr": "بعد مرور فترة طويلة، يتلقى مايلز موراليس زيارة جديدة من جوين ستيسي، ومعًا ينطلق الثنائي في مغامرة جديدة مليئة بالمخاطر والأعداء عبر عالم العنكبوت.",
+    "overviewAr": "يواصل مايلز موراليس رحلته كبطل خارق بعد أن اعتاد على حياته الجديدة كسبايدرمان، لكنه يجد نفسه أمام مغامرة تتجاوز عالمه عندما تفتح أمامه بوابات تقوده إلى أكوان موازية. يلتقي مايلز بعدد كبير من نسخ سبايدرمان من عوالم مختلفة، من بينهم غوين ستايسي، وينضم إلى مجموعة من أبطال العنكبوت الذين يحمون توازن الأكوان. ومع اكتشافه أن هناك أحداثًا مأساوية تبدو مرتبطة بمصير كل سبايدرمان، يحاول مايلز تحدي القواعد وإنقاذ الأشخاص الذين يحبهم، ليجد نفسه في مواجهة صراع يهدد بتغيير مصير الأكوان المتعددة.",
     "providers": {
       "OM": [
         "Netflix"
@@ -28618,10 +28707,10 @@
       "HBO Max"
     ],
     "imdbId": "tt9362722",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 8.341,
-    "tmdbVotes": 8961,
+    "rtScore": 95,
+    "metacritic": 86,
+    "tmdbRating": 8.342,
+    "tmdbVotes": 9014,
     "trailerKey": "yFrxzaBLDQM",
     "videos": [
       {
@@ -29028,7 +29117,7 @@
       },
       {
         "actor": "Mahershala Ali",
-        "actorPhoto": "/oId1ulmetuWr3lFFsSb81KS5LJS.jpg",
+        "actorPhoto": "/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg",
         "character": "Uncle Aaron (voice)"
       },
       {
@@ -29168,13 +29257,13 @@
       }
     ],
     "authors": [
-      "Justin K. Thompson",
       "Kemp Powers",
+      "Justin K. Thompson",
       "Joaquim Dos Santos"
     ],
     "authorPhotos": [
-      "/mRMi8Q2fmlfbDYkE7A63gzFtGsZ.jpg",
       "/oE4TcENMQw25t4UTAjrnl0m4JyH.jpg",
+      "/mRMi8Q2fmlfbDYkE7A63gzFtGsZ.jpg",
       "/w45GPb3cW6TqPw4FxB5Hc6zzAwx.jpg"
     ],
     "authorRole": "director",
@@ -29225,24 +29314,9 @@
         "character": "Gwen Stacy (voice)"
       },
       {
-        "actor": "Brian Tyree Henry",
-        "actorPhoto": "/2MsJh0bpyzwvOUnXOltHp3j85Pb.jpg",
-        "character": "Jefferson Morales (voice)"
-      },
-      {
-        "actor": "Luna Lauren Vélez",
-        "actorPhoto": "/98BvmTJCZHx0jPv0oNcv04Jkmfb.jpg",
-        "character": "Rio Morales (voice)"
-      },
-      {
         "actor": "Oscar Isaac",
         "actorPhoto": "/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg",
         "character": "Miguel O'Hara (voice)"
-      },
-      {
-        "actor": "Jake Johnson",
-        "actorPhoto": "/3UNfW2qZgRkW81neNVfQvaRC92K.jpg",
-        "character": "Peter B. Parker (voice)"
       },
       {
         "actor": "Jason Schwartzman",
@@ -29250,9 +29324,24 @@
         "character": "Spot (voice)"
       },
       {
+        "actor": "Jake Johnson",
+        "actorPhoto": "/3UNfW2qZgRkW81neNVfQvaRC92K.jpg",
+        "character": "Peter B. Parker (voice)"
+      },
+      {
+        "actor": "Brian Tyree Henry",
+        "actorPhoto": "/2MsJh0bpyzwvOUnXOltHp3j85Pb.jpg",
+        "character": "Jefferson Morales (voice)"
+      },
+      {
         "actor": "Issa Rae",
         "actorPhoto": "/uFjimuDgBv8kckApr19t8DykxPH.jpg",
         "character": "Jessica Drew (voice)"
+      },
+      {
+        "actor": "Luna Lauren Vélez",
+        "actorPhoto": "/98BvmTJCZHx0jPv0oNcv04Jkmfb.jpg",
+        "character": "Rio Morales (voice)"
       },
       {
         "actor": "Daniel Kaluuya",
@@ -29286,7 +29375,7 @@
       },
       {
         "actor": "Mahershala Ali",
-        "actorPhoto": "/oId1ulmetuWr3lFFsSb81KS5LJS.jpg",
+        "actorPhoto": "/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg",
         "character": "Uncle Aaron (voice)"
       },
       {
@@ -29440,8 +29529,8 @@
     "imdbId": "tt30460310",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.361,
-    "tmdbVotes": 765,
+    "tmdbRating": 8.36,
+    "tmdbVotes": 783,
     "trailerKey": "e5QW457407U",
     "videos": [
       {
@@ -29603,7 +29692,7 @@
       },
       {
         "actor": "Kai Caster",
-        "actorPhoto": null,
+        "actorPhoto": "/nxsuGKOCMt76OetH6J0txStYGjY.jpg",
         "character": "Young Ogden"
       },
       {
@@ -29916,7 +30005,8 @@
       ],
       "AE": [
         "STARZPLAY",
-        "Shahid VIP"
+        "Shahid VIP",
+        "TOD"
       ],
       "SA": [
         "STARZPLAY",
@@ -29938,8 +30028,10 @@
         "TOD"
       ],
       "GB": [
+        "Amazon Prime Video",
         "Sky Go",
-        "Now TV Cinema"
+        "Now TV Cinema",
+        "Amazon Prime Video with Ads"
       ],
       "US": [
         "Disney Plus",
@@ -29958,10 +30050,10 @@
       "TOD"
     ],
     "imdbId": "tt1270797",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 31,
+    "metacritic": 35,
     "tmdbRating": 6.825,
-    "tmdbVotes": 17441,
+    "tmdbVotes": 17465,
     "trailerKey": "xLCn88bfW1o",
     "videos": [
       {
@@ -30248,6 +30340,7 @@
       "US": [
         "Disney Plus",
         "fuboTV",
+        "YouTube TV",
         "FXNow",
         "Starz Apple TV Channel"
       ]
@@ -30262,10 +30355,10 @@
       "TOD"
     ],
     "imdbId": "tt7097896",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.737,
-    "tmdbVotes": 11309,
+    "rtScore": 58,
+    "metacritic": 49,
+    "tmdbRating": 6.736,
+    "tmdbVotes": 11328,
     "trailerKey": "GVwq2HlKYpE",
     "videos": [
       {
@@ -30564,8 +30657,12 @@
       "EG": [
         "STARZPLAY"
       ],
+      "GB": [
+        "Netflix"
+      ],
       "US": [
         "Netflix",
+        "YouTube TV",
         "Netflix Standard with Ads"
       ]
     },
@@ -30576,10 +30673,10 @@
       "StarzPlay"
     ],
     "imdbId": "tt16366836",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.667,
-    "tmdbVotes": 4397,
+    "rtScore": 40,
+    "metacritic": 41,
+    "tmdbRating": 6.669,
+    "tmdbVotes": 4423,
     "trailerKey": "FKBN1qAzW3s",
     "videos": [
       {
@@ -30712,7 +30809,7 @@
       },
       {
         "actor": "Juno Temple",
-        "actorPhoto": "/n20TNExAma6q9iVcWtPRxLl7pEc.jpg",
+        "actorPhoto": "/nvsPrM4OKHVCDivgMx4FF6PgE5f.jpg",
         "character": "Dr. Teddy Paine"
       },
       {
@@ -30737,7 +30834,7 @@
       },
       {
         "actor": "Alanna Ubach",
-        "actorPhoto": "/p2sIpgftEIkhPrrpgu8wW8XEpDg.jpg",
+        "actorPhoto": "/ffyBAEoW3bDgVJQV3GaHsZ9x29W.jpg",
         "character": "Nova"
       },
       {
@@ -30897,10 +30994,10 @@
       "TOD"
     ],
     "imdbId": "tt5108870",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 15,
+    "metacritic": 35,
     "tmdbRating": 5.89,
-    "tmdbVotes": 4898,
+    "tmdbVotes": 4911,
     "trailerKey": "wG2TjtueeSU",
     "videos": [
       {
@@ -31186,10 +31283,10 @@
       "TOD"
     ],
     "imdbId": "tt11057302",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 5.279,
-    "tmdbVotes": 2650,
+    "rtScore": 10,
+    "metacritic": 26,
+    "tmdbRating": 5.281,
+    "tmdbVotes": 2664,
     "trailerKey": "s_76M4c4LTo",
     "videos": [
       {
@@ -31315,7 +31412,7 @@
       },
       {
         "actor": "Isabela Merced",
-        "actorPhoto": "/4SolFI9dwyPm6BXcb3PDcOYzSEl.jpg",
+        "actorPhoto": "/7O5GWIH8IHwU4kGZIhC3JkGDiZr.jpg",
         "character": "Anya Corazón"
       },
       {
@@ -31485,6 +31582,9 @@
       "OM": [
         "TOD"
       ],
+      "AE": [
+        "TOD"
+      ],
       "SA": [
         "TOD"
       ],
@@ -31515,10 +31615,10 @@
       "TOD"
     ],
     "imdbId": "tt8790086",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 15,
+    "metacritic": 35,
     "tmdbRating": 6.424,
-    "tmdbVotes": 2434,
+    "tmdbVotes": 2443,
     "trailerKey": "hR1-ihzff3I",
     "videos": [
       {
@@ -31719,7 +31819,7 @@
       },
       {
         "actor": "Diaana Babnicova",
-        "actorPhoto": "/kWWQWs2EADkytaNnbiyTL0rxlvN.jpg",
+        "actorPhoto": "/loGzfhm7zs8QrTMGelif0UcUUi2.jpg",
         "character": "Young Calypso"
       },
       {
@@ -31903,10 +32003,10 @@
       "Disney+"
     ],
     "imdbId": "tt0120667",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 5.809,
-    "tmdbVotes": 10119,
+    "rtScore": 28,
+    "metacritic": 40,
+    "tmdbRating": 5.81,
+    "tmdbVotes": 10136,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -31916,8 +32016,8 @@
       "/9Z68tJxgX9gf4gT0rFZkqUhxRYc.jpg",
       "/8zPUXUgrPTdQNwcihFPzEgRwl4X.jpg",
       "/90zrGBuhxEEsHnZ9KdptoVSYZca.jpg",
-      "/ycaHTzeQeD9JPbaANhyuFyoeUDp.jpg",
-      "/ogDAyGjobIeVdCncYPFgYoFpe5s.jpg"
+      "/9Rez4VKxWckvXOJHz1ymxL02Ebd.jpg",
+      "/ycaHTzeQeD9JPbaANhyuFyoeUDp.jpg"
     ],
     "backdrop": "/2cDXXLirYsoP6rk9B8yrvNHbbFy.jpg",
     "cast": [
@@ -32162,10 +32262,10 @@
       "Disney+"
     ],
     "imdbId": "tt0486576",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 38,
+    "metacritic": 45,
     "tmdbRating": 5.634,
-    "tmdbVotes": 8507,
+    "tmdbVotes": 8517,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -32173,10 +32273,10 @@
       "/pyk3c1a4U6nxRJPljPQbP8elTSU.jpg",
       "/sIhxnV5GcBQMoEuCiY4C7rBU9eg.jpg",
       "/hrhSgYqeegMg6MAlO1RDLCz9U4F.jpg",
+      "/bCEHt2AGpsZmCBEYMI05mfiFj0v.jpg",
       "/1rxTraSO45jbvTrCeSvJ6RmOu1b.jpg",
       "/d2zSsh1jqhrIzWEk1UZyRudoTx9.jpg",
-      "/glTKoIeKSw3ogWHdJyFdRZMhGLX.jpg",
-      "/vwEuPwO1OmxEEFrQTCCPdXwhrp1.jpg"
+      "/glTKoIeKSw3ogWHdJyFdRZMhGLX.jpg"
     ],
     "backdrop": "/o2wYH40zW0JIYiYUTu6L4gsNy7E.jpg",
     "cast": [
@@ -32409,18 +32509,17 @@
         "Disney Plus"
       ],
       "US": [
-        "Disney Plus",
-        "fuboTV"
+        "Disney Plus"
       ]
     },
     "providersGlobal": [
       "Disney+"
     ],
     "imdbId": "tt1502712",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 4.435,
-    "tmdbVotes": 6483,
+    "rtScore": 9,
+    "metacritic": 27,
+    "tmdbRating": 4.4,
+    "tmdbVotes": 6494,
     "trailerKey": "AAgnQdiZFsQ",
     "videos": [
       {
@@ -32789,8 +32888,8 @@
     "imdbId": "tt3322312",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.172,
-    "tmdbVotes": 5299,
+    "tmdbRating": 8.171,
+    "tmdbVotes": 5319,
     "trailerKey": "jAy6NJ_D5vU",
     "videos": [
       {
@@ -33053,7 +33152,7 @@
       {
         "actor": "Lauren Lim Jackson",
         "actorPhoto": "/v0q2TpCzbS2Ov1WPSE9lyykszkL.jpg",
-        "character": "Female Reporter / Reporter #2"
+        "character": "Reporter #2 / Female Reporter"
       },
       {
         "actor": "Logan Crawford",
@@ -33063,7 +33162,7 @@
       {
         "actor": "Eboni Booth",
         "actorPhoto": "/uVfGePwUpah6QpUUkwuq5wMP57l.jpg",
-        "character": "Reporter #1 / News Reporter #2"
+        "character": "News Reporter #2 / Reporter #1"
       },
       {
         "actor": "Richard Bekins",
@@ -33487,8 +33586,8 @@
     "imdbId": "tt2357547",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.482,
-    "tmdbVotes": 2672,
+    "tmdbRating": 7.484,
+    "tmdbVotes": 2676,
     "trailerKey": "nWHUjuJ8zxE",
     "videos": [
       {
@@ -34163,8 +34262,8 @@
     "imdbId": "tt3322312",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.172,
-    "tmdbVotes": 5299,
+    "tmdbRating": 8.171,
+    "tmdbVotes": 5319,
     "trailerKey": "jAy6NJ_D5vU",
     "videos": [
       {
@@ -34859,8 +34958,8 @@
     "imdbId": "tt3322314",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.9,
-    "tmdbVotes": 2057,
+    "tmdbRating": 6.915,
+    "tmdbVotes": 2060,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -34952,7 +35051,7 @@
       },
       {
         "actor": "Mahershala Ali",
-        "actorPhoto": "/oId1ulmetuWr3lFFsSb81KS5LJS.jpg",
+        "actorPhoto": "/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg",
         "character": "Cornell 'Cottonmouth' Stokes"
       },
       {
@@ -35128,7 +35227,7 @@
       {
         "actor": "Robyn Payne",
         "actorPhoto": "/5uP9R3P89tiW3cDO9KIFnGCdR5N.jpg",
-        "character": "Reporter 2 / Female Reporter"
+        "character": "Female Reporter / Reporter 2"
       },
       {
         "actor": "Norma Aurel",
@@ -35506,7 +35605,7 @@
     "rtScore": null,
     "metacritic": null,
     "tmdbRating": 6.51,
-    "tmdbVotes": 2718,
+    "tmdbVotes": 2720,
     "trailerKey": "f9OKL5no-S0",
     "videos": [
       {
@@ -36093,8 +36192,8 @@
     "imdbId": "tt4230076",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.041,
-    "tmdbVotes": 1697,
+    "tmdbRating": 7.042,
+    "tmdbVotes": 1700,
     "trailerKey": "MAbjq7ydKDI",
     "videos": [
       {
@@ -36570,8 +36669,8 @@
     "imdbId": "tt5675620",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.154,
-    "tmdbVotes": 3268,
+    "tmdbRating": 8.157,
+    "tmdbVotes": 3286,
     "trailerKey": "sDp4AuNen0Y",
     "videos": [
       {
@@ -37086,8 +37185,8 @@
     "imdbId": "tt2357547",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.482,
-    "tmdbVotes": 2672,
+    "tmdbRating": 7.484,
+    "tmdbVotes": 2676,
     "trailerKey": "nWHUjuJ8zxE",
     "videos": [
       {
@@ -37760,8 +37859,8 @@
     "imdbId": "tt3322314",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.9,
-    "tmdbVotes": 2057,
+    "tmdbRating": 6.915,
+    "tmdbVotes": 2060,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -37894,7 +37993,7 @@
       {
         "actor": "Jamar Greene",
         "actorPhoto": "/r1dhuNDEP9Ic1mHGBfRelgk54oc.jpg",
-        "character": "Goon One / Goon"
+        "character": "Goon / Goon One"
       },
       {
         "actor": "Rosario Dawson",
@@ -38386,7 +38485,7 @@
     "rtScore": null,
     "metacritic": null,
     "tmdbRating": 6.51,
-    "tmdbVotes": 2718,
+    "tmdbVotes": 2720,
     "trailerKey": "f9OKL5no-S0",
     "videos": [
       {
@@ -38546,7 +38645,7 @@
       {
         "actor": "Stephen Lin",
         "actorPhoto": "/ra6LO6SfU5RI9oaZQCzX91M1iMH.jpg",
-        "character": "Golden Tiger Soldier / Hatchet Soldier"
+        "character": "Hatchet Soldier / Golden Tiger Soldier"
       },
       {
         "actor": "Marcus Ho",
@@ -38556,7 +38655,7 @@
       {
         "actor": "James Tam",
         "actorPhoto": "/sjppWDCJyzDK3GF6ukizPtoMWov.jpg",
-        "character": "Golden Tiger / Golden Tiger Soldier"
+        "character": "Golden Tiger Soldier / Golden Tiger"
       },
       {
         "actor": "Chil Kong",
@@ -38915,8 +39014,8 @@
     "imdbId": "tt3322312",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.172,
-    "tmdbVotes": 5299,
+    "tmdbRating": 8.171,
+    "tmdbVotes": 5319,
     "trailerKey": "jAy6NJ_D5vU",
     "videos": [
       {
@@ -39104,7 +39203,7 @@
       {
         "actor": "Andrew Sensenig",
         "actorPhoto": "/wkzoOV3uW4iVeIGWUe2TIPO4DVk.jpg",
-        "character": "Agent Winn / OPR Agent Winn"
+        "character": "OPR Agent Winn / Agent Winn"
       },
       {
         "actor": "Scotty Crowe",
@@ -39611,8 +39710,8 @@
     "imdbId": "tt5675620",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.154,
-    "tmdbVotes": 3268,
+    "tmdbRating": 8.157,
+    "tmdbVotes": 3286,
     "trailerKey": "sDp4AuNen0Y",
     "videos": [
       {
@@ -40267,8 +40366,8 @@
     "imdbId": "tt2357547",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.482,
-    "tmdbVotes": 2672,
+    "tmdbRating": 7.484,
+    "tmdbVotes": 2676,
     "trailerKey": "nWHUjuJ8zxE",
     "videos": [
       {
@@ -40842,7 +40941,6 @@
       "US": [
         "Disney Plus",
         "HBO Max Amazon Channel",
-        "YouTube TV",
         "Cinemax Amazon Channel",
         "HBO Max",
         "Cinemax Apple TV Channel"
@@ -40854,10 +40952,10 @@
       "Apple TV"
     ],
     "imdbId": "tt1270798",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 86,
+    "metacritic": 65,
     "tmdbRating": 7.304,
-    "tmdbVotes": 13711,
+    "tmdbVotes": 13733,
     "trailerKey": "2BAYQD_j6Xc",
     "videos": [
       {
@@ -41186,10 +41284,10 @@
       "Disney+"
     ],
     "imdbId": "tt0458525",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.296,
-    "tmdbVotes": 11404,
+    "rtScore": 37,
+    "metacritic": 40,
+    "tmdbRating": 6.297,
+    "tmdbVotes": 11428,
     "trailerKey": "8TQ-gD4UCmI",
     "videos": [
       {
@@ -41213,9 +41311,9 @@
       "/eFr7GEFrbyqr7ASP0xSeX4Mk3KD.jpg",
       "/mC9CjPzAbSxAvpnpbNGUDgN4HOS.jpg",
       "/sm9ioPuNZ1OXXNOLMGyRdpY8GFL.jpg",
-      "/ftgZ79wNaVGwGrNXYZv14AERSsN.jpg",
-      "/kUsNIktsIQTLztbpH1JiByKxBro.jpg",
-      "/yZl8rSTRy0cQ4n1INVKgbiSxsps.jpg"
+      "/yZl8rSTRy0cQ4n1INVKgbiSxsps.jpg",
+      "/pa4qgK6Tf9dIWufeXC1P6Uw5cDi.jpg",
+      "/mQglrQzgZT0Oj9cQYPsLI8dsEqB.jpg"
     ],
     "backdrop": "/p4GzAzjlL7lXIVGvayg7zvzGTSi.jpg",
     "cast": [
@@ -41448,17 +41546,18 @@
         "Disney Plus"
       ],
       "US": [
-        "Disney Plus"
+        "Disney Plus",
+        "fuboTV"
       ]
     },
     "providersGlobal": [
       "Disney+"
     ],
     "imdbId": "tt0120903",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.022,
-    "tmdbVotes": 12366,
+    "rtScore": 82,
+    "metacritic": 64,
+    "tmdbRating": 7.021,
+    "tmdbVotes": 12388,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -41727,10 +41826,10 @@
       "Disney+"
     ],
     "imdbId": "tt0290334",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.043,
-    "tmdbVotes": 11036,
+    "rtScore": 85,
+    "metacritic": 68,
+    "tmdbRating": 7.044,
+    "tmdbVotes": 11056,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -41981,10 +42080,10 @@
       "Disney+"
     ],
     "imdbId": "tt0376994",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.425,
-    "tmdbVotes": 10533,
+    "rtScore": 56,
+    "metacritic": 58,
+    "tmdbRating": 6.426,
+    "tmdbVotes": 10552,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -42228,17 +42327,18 @@
         "Disney Plus"
       ],
       "US": [
-        "Disney Plus"
+        "Disney Plus",
+        "fuboTV"
       ]
     },
     "providersGlobal": [
       "Disney+"
     ],
     "imdbId": "tt1430132",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 71,
+    "metacritic": 61,
     "tmdbRating": 6.437,
-    "tmdbVotes": 10433,
+    "tmdbVotes": 10455,
     "trailerKey": "DwG56k6VGOE",
     "videos": [
       {
@@ -42504,10 +42604,10 @@
       "Disney+"
     ],
     "imdbId": "tt1877832",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 90,
+    "metacritic": 75,
     "tmdbRating": 7.534,
-    "tmdbVotes": 16471,
+    "tmdbVotes": 16505,
     "trailerKey": "gsjtg7m1MMM",
     "videos": [
       {
@@ -42540,7 +42640,7 @@
       "/jERhyETKbvQXE3aTjRMEka4dWwv.jpg",
       "/xI8ecl2JXVhbMdKlmyxRgu61Vga.jpg",
       "/nOVqNEwQchJvdIezFC6kXpcfqTK.jpg",
-      "/qLSzWQ2jwny5msRYcGJ8ipprZSM.jpg"
+      "/bSqyvBdSqj96IwfS9Ieo8J6hmxj.jpg"
     ],
     "backdrop": "/3czpqXzFy5UcNuD1AubecRLWkwD.jpg",
     "cast": [
@@ -42780,10 +42880,10 @@
       "Disney+"
     ],
     "imdbId": "tt3385516",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 47,
+    "metacritic": 52,
     "tmdbRating": 6.527,
-    "tmdbVotes": 13948,
+    "tmdbVotes": 13974,
     "trailerKey": "Jer8XjMrUB4",
     "videos": [
       {
@@ -43078,10 +43178,10 @@
       "Disney+"
     ],
     "imdbId": "tt6565702",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 5.966,
-    "tmdbVotes": 7185,
+    "rtScore": 22,
+    "metacritic": 43,
+    "tmdbRating": 5.964,
+    "tmdbVotes": 7197,
     "trailerKey": "azvR__GRQic",
     "videos": [
       {
@@ -43368,10 +43468,10 @@
       "Disney+"
     ],
     "imdbId": "tt1431045",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 85,
+    "metacritic": 65,
     "tmdbRating": 7.625,
-    "tmdbVotes": 33060,
+    "tmdbVotes": 33103,
     "trailerKey": "9vN6DHB6bJc",
     "videos": [
       {
@@ -43689,10 +43789,10 @@
       "HBO Max"
     ],
     "imdbId": "tt5463162",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 7.5,
-    "tmdbVotes": 19469,
+    "rtScore": 83,
+    "metacritic": 66,
+    "tmdbRating": 7.489,
+    "tmdbVotes": 19502,
     "trailerKey": "20bpjtCbCz0",
     "videos": [
       {
@@ -44003,10 +44103,10 @@
       "Disney+"
     ],
     "imdbId": "tt4682266",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.068,
-    "tmdbVotes": 3767,
+    "rtScore": 36,
+    "metacritic": 43,
+    "tmdbRating": 6.064,
+    "tmdbVotes": 3777,
     "trailerKey": "W_vJhUAOFpI",
     "videos": [
       {
@@ -44223,10 +44323,10 @@
       "Disney+"
     ],
     "imdbId": "tt3315342",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 93,
+    "metacritic": 77,
     "tmdbRating": 7.821,
-    "tmdbVotes": 20641,
+    "tmdbVotes": 20673,
     "trailerKey": "XaE_9pfybL4",
     "videos": [
       {
@@ -45461,8 +45561,8 @@
     "imdbId": "tt2364582",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.485,
-    "tmdbVotes": 3865,
+    "tmdbRating": 7.484,
+    "tmdbVotes": 3867,
     "trailerKey": "T3T-evQZiQo",
     "videos": [
       {
@@ -45565,7 +45665,7 @@
       {
         "actor": "Mallory Jansen",
         "actorPhoto": "/azShNsfOJnAf0MN3FaqBpxks7uP.jpg",
-        "character": "Aida / Agnes Kitworth / Madame Hydra / Aida / Aida"
+        "character": "Aida / Aida / Agnes Kitworth / Madame Hydra / Aida"
       },
       {
         "actor": "Jeff Ward",
@@ -45590,7 +45690,7 @@
       {
         "actor": "Kyle MacLachlan",
         "actorPhoto": "/7gNyx8fYAUdOp2jpCEH3dyFbeV.jpg",
-        "character": "Skye's Father / The Doctor / Cal"
+        "character": "Cal / Skye's Father / The Doctor"
       },
       {
         "actor": "Mark Dacascos",
@@ -45945,7 +46045,7 @@
       {
         "actor": "Patton Oswalt",
         "actorPhoto": "/ljQvjbPmcIAl205Lb2Mu4CW8WO7.jpg",
-        "character": "Eric Koenig / Billy Koenig"
+        "character": "Billy Koenig / Eric Koenig"
       },
       {
         "actor": "Jeffrey Muller",
@@ -46166,8 +46266,8 @@
     "imdbId": "tt3475734",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.523,
-    "tmdbVotes": 2022,
+    "tmdbRating": 7.518,
+    "tmdbVotes": 2029,
     "trailerKey": "V13W9gQ_1GA",
     "videos": [
       {
@@ -46338,7 +46438,7 @@
       {
         "actor": "Ralph Garman",
         "actorPhoto": "/AuDBsawi0M9m9Gd23swFI3mur1v.jpg",
-        "character": "Radio Announcer / Announcer"
+        "character": "Announcer / Radio Announcer"
       },
       {
         "actor": "Patrick Robert Smith",
@@ -46348,7 +46448,7 @@
       {
         "actor": "Greg Serano",
         "actorPhoto": "/bqKA6wmh7j4HVTm0FfsYCOBGTKo.jpg",
-        "character": "Rick Ramirez / Agent Rick Ramirez"
+        "character": "Agent Rick Ramirez / Rick Ramirez"
       },
       {
         "actor": "Randy Sklar",
@@ -46786,20 +46886,20 @@
     "imdbId": "tt4154858",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 5.831,
-    "tmdbVotes": 776,
+    "tmdbRating": 5.833,
+    "tmdbVotes": 778,
     "trailerKey": "xU9Z6cKsbY0",
     "videos": [
       {
         "key": "1sYF1SXcWqQ",
-        "name": "Marvel's Inhumans - Official Trailer 1",
+        "name": "Official Trailer 1",
         "type": "Trailer",
         "official": true,
         "publishedAt": "2017-06-29T13:00:01.000Z"
       },
       {
         "key": "xU9Z6cKsbY0",
-        "name": "\"MARVEL'S INHUMANS\" - Official SDCC 2017 Trailer",
+        "name": "Official SDCC 2017 Trailer",
         "type": "Trailer",
         "official": true,
         "publishedAt": "2017-07-21T02:19:07.000Z"
@@ -46824,7 +46924,7 @@
       },
       {
         "actor": "Serinda Swan",
-        "actorPhoto": "/wVjTGPIvCGEQmSq5dr9fj1RbUHG.jpg",
+        "actorPhoto": "/mA4qtNZnn0A2oT1s4IIHseO8oiu.jpg",
         "character": "Medusalith Amaquelin / Medusa"
       },
       {
@@ -47416,8 +47516,8 @@
     "imdbId": "tt1236246",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.268,
-    "tmdbVotes": 990,
+    "tmdbRating": 7.3,
+    "tmdbVotes": 991,
     "trailerKey": "jwgUGF_pqMk",
     "videos": [
       {
@@ -47583,7 +47683,7 @@
       {
         "actor": "Clarissa Thibeaux",
         "actorPhoto": "/liKfLs72xW46BfsHZ5sEL1EzgwQ.jpg",
-        "character": "Xavin / Xavin (voice)"
+        "character": "Xavin (voice) / Xavin"
       },
       {
         "actor": "Helen Madelyn Kim",
@@ -47658,7 +47758,7 @@
       {
         "actor": "Christian Calloway",
         "actorPhoto": "/eszOqqfkK79SAXT406cHKVbDLsv.jpg",
-        "character": "Passenger Watching TV / Murray"
+        "character": "Murray / Passenger Watching TV"
       },
       {
         "actor": "Diana Tanaka",
@@ -47718,7 +47818,7 @@
       {
         "actor": "Myles Bullock",
         "actorPhoto": "/rrdQaXkqXJSFDlIjuWr1uRXQgN9.jpg",
-        "character": "Anthony \"AWOL\" Wall / Anthony \"Awol\" Wall"
+        "character": "Anthony \"Awol\" Wall / Anthony \"AWOL\" Wall"
       },
       {
         "actor": "Anjali Bhimani",
@@ -48123,7 +48223,7 @@
     "rtScore": null,
     "metacritic": null,
     "tmdbRating": 7.1,
-    "tmdbVotes": 673,
+    "tmdbVotes": 674,
     "trailerKey": "rg8PPGBu3gA",
     "videos": [
       {
@@ -48320,7 +48420,7 @@
       {
         "actor": "Lane Miller",
         "actorPhoto": null,
-        "character": "Office Fuchs / Officer Fuchs"
+        "character": "Officer Fuchs / Office Fuchs"
       },
       {
         "actor": "Mike Donovan",
@@ -48345,7 +48445,7 @@
       {
         "actor": "Aaron Mitchell",
         "actorPhoto": null,
-        "character": "Basketball Referee (uncredited) / Police Lieutenant (uncredited)"
+        "character": "Police Lieutenant (uncredited) / Basketball Referee (uncredited)"
       },
       {
         "actor": "Andrea Frankle",
@@ -48360,7 +48460,7 @@
       {
         "actor": "Jon Eyez",
         "actorPhoto": "/7leDymYmNbojybUZWFBhB6Y8zJF.jpg",
-        "character": "Edwin Dunlap / Brett Latour"
+        "character": "Brett Latour / Edwin Dunlap"
       },
       {
         "actor": "Jordan Salloum",
@@ -48910,8 +49010,8 @@
     "imdbId": "tt4396630",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.59,
-    "tmdbVotes": 1598,
+    "tmdbRating": 7.6,
+    "tmdbVotes": 1599,
     "trailerKey": "3pDdXYf3nfc",
     "videos": [
       {
@@ -49152,7 +49252,7 @@
       {
         "actor": "Kristopher Charles",
         "actorPhoto": "/pWk0tq7OGTx6sens6VgJooxUpxA.jpg",
-        "character": "SS Tech #1 / SS Tech"
+        "character": "SS Tech / SS Tech #1"
       },
       {
         "actor": "Gino Vento",
@@ -49162,7 +49262,7 @@
       {
         "actor": "Forrest Briggs",
         "actorPhoto": null,
-        "character": "Diner Patron / Rally Attendee"
+        "character": "Rally Attendee / Diner Patron"
       },
       {
         "actor": "Monique Yvette Grant",
@@ -49192,12 +49292,12 @@
       {
         "actor": "Mia Ella Clyburn",
         "actorPhoto": "/aaOIL3ejicI6P3Zg8twGUlrGEWp.jpg",
-        "character": "Jazmine / Jazmin"
+        "character": "Jazmin / Jazmine"
       },
       {
         "actor": "Mark Rowe",
         "actorPhoto": "/4G3LvCPuTFzLuFdLvly1xSGjhEI.jpg",
-        "character": "Facility Owner / David Hine"
+        "character": "David Hine / Facility Owner"
       },
       {
         "actor": "Danube R. Hermosillo",
@@ -49257,7 +49357,7 @@
       {
         "actor": "Morgan Brown",
         "actorPhoto": "/RvbQT8nsA07wJuuhYz8ORgxMca.jpg",
-        "character": "Injured Purifier / Grizzled Purifier"
+        "character": "Grizzled Purifier / Injured Purifier"
       },
       {
         "actor": "Greg Weeks",
@@ -49666,8 +49766,8 @@
     "imdbId": "tt5114356",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.516,
-    "tmdbVotes": 1575,
+    "tmdbRating": 7.517,
+    "tmdbVotes": 1577,
     "trailerKey": "bybp0iQpzIs",
     "videos": [
       {
@@ -49807,7 +49907,7 @@
       {
         "actor": "Scarlett DeMeo",
         "actorPhoto": "/mkklBzfS3ZT9LkN9fnjvDTORQK4.jpg",
-        "character": "Manson Girl #1 / Cynthia"
+        "character": "Cynthia / Manson Girl #1"
       },
       {
         "actor": "Scott Lawrence",
@@ -50164,8 +50264,8 @@
     "imdbId": "tt10266874",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.687,
-    "tmdbVotes": 246,
+    "tmdbRating": 6.69,
+    "tmdbVotes": 248,
     "trailerKey": "XKeugS4qjag",
     "videos": [
       {
@@ -50233,17 +50333,17 @@
       {
         "actor": "Daniel Cudmore",
         "actorPhoto": "/zX4bU9mIUNQqNqppF3GbvSzkNCo.jpg",
-        "character": "Keith Spivey / Basar / Keith Spivey"
+        "character": "Keith Spivey / Keith Spivey / Basar"
       },
       {
         "actor": "Trevor Roberts",
         "actorPhoto": "/vDMVg8qjuBJMKjtBYpFizHPm3MW.jpg",
-        "character": "Father Joshua Crow / Father Joshua Crow / Raum"
+        "character": "Father Joshua Crow / Raum / Father Joshua Crow"
       },
       {
         "actor": "Erica Tremblay",
         "actorPhoto": "/pUoqzce8NcRIUbDXZwmXYs3m7qr.jpg",
-        "character": "Young Ana / Young Ana (archive footage)"
+        "character": "Young Ana (archive footage) / Young Ana"
       },
       {
         "actor": "Nolan Hupp",
@@ -50278,7 +50378,7 @@
       {
         "actor": "Sandy Robson",
         "actorPhoto": "/9EztCZQ4nZmBxCAKvdgYjTCVyF1.jpg",
-        "character": "Alex Tilden / Alex Tilden/Magoth"
+        "character": "Alex Tilden/Magoth / Alex Tilden"
       },
       {
         "actor": "Kyle Warren",
@@ -50675,8 +50775,8 @@
     "imdbId": "tt9811118",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.627,
-    "tmdbVotes": 197,
+    "tmdbRating": 6.644,
+    "tmdbVotes": 198,
     "trailerKey": "oSEWdhHBlYU",
     "videos": [
       {
@@ -50903,8 +51003,8 @@
         "runtime": 27
       }
     ],
-    "posterPath": "/y3ee57YPBhP8RHadX920UjURAWu.jpg",
-    "posterTint": "#5a3425",
+    "posterPath": "/1aK7hApRSDUv8xxDQXyQil7qBjN.jpg",
+    "posterTint": "#5f566c",
     "overviewEn": "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
     "overviewAr": null,
     "providers": {
@@ -50922,7 +51022,7 @@
     "imdbId": "tt9811316",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.73,
+    "tmdbRating": 7.7,
     "tmdbVotes": 198,
     "trailerKey": "gb72HBB1QbA",
     "videos": [
@@ -50944,8 +51044,8 @@
     "posters": [
       "/1aK7hApRSDUv8xxDQXyQil7qBjN.jpg",
       "/8tJxLPRK8AStbFuTJUdk77vNsKW.jpg",
-      "/y3ee57YPBhP8RHadX920UjURAWu.jpg",
       "/c63jLejCDACyChWNvw8ufSOf25q.jpg",
+      "/y3ee57YPBhP8RHadX920UjURAWu.jpg",
       "/qeyRoNXlykxcbYy0rAFQW460PTg.jpg",
       "/8CXMGtMqfhZCSCAYtxuI8FVQDvF.jpg",
       "/YS1JG9T2mPLA0uXpXU3MzvcIyu.jpg",
@@ -51080,8 +51180,8 @@
         "runtime": 24
       }
     ],
-    "posterPath": "/y3ee57YPBhP8RHadX920UjURAWu.jpg",
-    "posterTint": "#5a3425",
+    "posterPath": "/1aK7hApRSDUv8xxDQXyQil7qBjN.jpg",
+    "posterTint": "#5f566c",
     "overviewEn": "After a high-profile political assassination goes sideways, an injured hitman hides out amongst a tribe of snow monkeys in the mountains of Japan.",
     "overviewAr": null,
     "providers": {
@@ -51099,7 +51199,7 @@
     "imdbId": "tt9811316",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.73,
+    "tmdbRating": 7.7,
     "tmdbVotes": 198,
     "trailerKey": "gb72HBB1QbA",
     "videos": [
@@ -51121,8 +51221,8 @@
     "posters": [
       "/1aK7hApRSDUv8xxDQXyQil7qBjN.jpg",
       "/8tJxLPRK8AStbFuTJUdk77vNsKW.jpg",
-      "/y3ee57YPBhP8RHadX920UjURAWu.jpg",
       "/c63jLejCDACyChWNvw8ufSOf25q.jpg",
+      "/y3ee57YPBhP8RHadX920UjURAWu.jpg",
       "/qeyRoNXlykxcbYy0rAFQW460PTg.jpg",
       "/8CXMGtMqfhZCSCAYtxuI8FVQDvF.jpg",
       "/YS1JG9T2mPLA0uXpXU3MzvcIyu.jpg",
@@ -51263,10 +51363,10 @@
       "HBO Max"
     ],
     "imdbId": "tt0120611",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.85,
-    "tmdbVotes": 6862,
+    "rtScore": 59,
+    "metacritic": 47,
+    "tmdbRating": 6.851,
+    "tmdbVotes": 6879,
     "trailerKey": "O2Y3FFFIvRI",
     "videos": [
       {
@@ -51551,10 +51651,10 @@
       "StarzPlay"
     ],
     "imdbId": "tt0187738",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.569,
-    "tmdbVotes": 5322,
+    "rtScore": 57,
+    "metacritic": 52,
+    "tmdbRating": 6.571,
+    "tmdbVotes": 5337,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -51828,10 +51928,10 @@
       "OSN+"
     ],
     "imdbId": "tt0287978",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 5.302,
-    "tmdbVotes": 5540,
+    "rtScore": 42,
+    "metacritic": 42,
+    "tmdbRating": 5.301,
+    "tmdbVotes": 5546,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -52083,10 +52183,10 @@
       "StarzPlay"
     ],
     "imdbId": "tt0286716",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 5.589,
-    "tmdbVotes": 6366,
+    "rtScore": 63,
+    "metacritic": 54,
+    "tmdbRating": 5.592,
+    "tmdbVotes": 6381,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -52358,10 +52458,10 @@
       "StarzPlay"
     ],
     "imdbId": "tt0359013",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 5.86,
-    "tmdbVotes": 4397,
+    "rtScore": 24,
+    "metacritic": 38,
+    "tmdbRating": 5.862,
+    "tmdbVotes": 4412,
     "trailerKey": "qcHEDGs7eAY",
     "videos": [
       {
@@ -52391,7 +52491,7 @@
       },
       {
         "actor": "Jessica Biel",
-        "actorPhoto": "/3txkpzteYNW12vpREFpagSrWe6d.jpg",
+        "actorPhoto": "/31A4NhIUTz1vgHgpjYj16eYVQR6.jpg",
         "character": "Abigail Whistler"
       },
       {
@@ -52534,10 +52634,10 @@
       "HBO Max"
     ],
     "imdbId": "tt0330793",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 6.379,
-    "tmdbVotes": 3228,
+    "rtScore": 30,
+    "metacritic": 33,
+    "tmdbRating": 6.38,
+    "tmdbVotes": 3237,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -52777,35 +52877,11 @@
     "overviewEn": "Elektra the warrior survives a near-death experience, becomes an assassin-for-hire, and tries to protect her two latest targets, a single father and his young daughter, from a group of supernatural assassins.",
     "overviewAr": null,
     "providers": {
-      "OM": [
-        "Netflix"
-      ],
-      "AE": [
-        "Netflix"
-      ],
-      "SA": [
-        "Netflix"
-      ],
-      "KW": [
-        "Netflix"
-      ],
-      "QA": [
-        "Netflix"
-      ],
-      "BH": [
-        "Netflix"
-      ],
-      "EG": [
-        "Netflix"
-      ],
       "GB": [
-        "Netflix",
-        "Disney Plus",
-        "Netflix Standard with Ads"
+        "Disney Plus"
       ],
       "US": [
-        "Disney Plus",
-        "fuboTV"
+        "Disney Plus"
       ]
     },
     "providersGlobal": [
@@ -52814,10 +52890,10 @@
       "Prime Video"
     ],
     "imdbId": "tt0357277",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 11,
+    "metacritic": 34,
     "tmdbRating": 5.05,
-    "tmdbVotes": 2722,
+    "tmdbVotes": 2726,
     "trailerKey": "etfIjKxKzqw",
     "videos": [
       {
@@ -53035,10 +53111,10 @@
       "Apple TV"
     ],
     "imdbId": "tt0259324",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 28,
+    "metacritic": 35,
     "tmdbRating": 5.616,
-    "tmdbVotes": 6577,
+    "tmdbVotes": 6586,
     "trailerKey": "nu6R7ypaz5g",
     "videos": [
       {
@@ -53251,6 +53327,7 @@
       "US": [
         "Hulu",
         "Philo",
+        "YouTube TV",
         "BBC America",
         "Sony Pictures Core Amazon Channel"
       ]
@@ -53261,10 +53338,10 @@
       "Hulu"
     ],
     "imdbId": "tt1071875",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 5.026,
-    "tmdbVotes": 4147,
+    "rtScore": 18,
+    "metacritic": 34,
+    "tmdbRating": 5.024,
+    "tmdbVotes": 4153,
     "trailerKey": "ibZPd9MX0zg",
     "videos": [
       {
@@ -53410,12 +53487,12 @@
       }
     ],
     "authors": [
-      "Brian Taylor",
-      "Mark Neveldine"
+      "Mark Neveldine",
+      "Brian Taylor"
     ],
     "authorPhotos": [
-      "/1TXxgF48STiUb3F9cp1L5iEx5Pb.jpg",
-      "/lgmXPChEiXBSzroCSZS5XNqaZJF.jpg"
+      "/lgmXPChEiXBSzroCSZS5XNqaZJF.jpg",
+      "/1TXxgF48STiUb3F9cp1L5iEx5Pb.jpg"
     ],
     "authorRole": "director",
     "genres": [
@@ -53439,7 +53516,7 @@
     "imdbId": "tt0036697",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 5.264,
+    "tmdbRating": 5.3,
     "tmdbVotes": 36,
     "trailerKey": null,
     "videos": [],
@@ -54935,8 +55012,8 @@
     "cast": [
       {
         "actor": "John Vernon",
-        "actorPhoto": "/m4atQ6vOlPDH0oP2X1Owc5J53A1.jpg",
-        "character": "Iron Man (Tony Stark) (voice) / Major Glenn Talbot (voice)"
+        "actorPhoto": "/xlHU7X2FhjnZVxu7fjoguCWlXeC.jpg",
+        "character": "Major Glenn Talbot (voice) / Iron Man (Tony Stark) (voice)"
       },
       {
         "actor": "Chris Wiggins",
@@ -55485,8 +55562,8 @@
     "imdbId": "tt0061301",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.9,
-    "tmdbVotes": 234,
+    "tmdbRating": 7.874,
+    "tmdbVotes": 235,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -55580,7 +55657,7 @@
     "imdbId": "tt0075671",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.31,
+    "tmdbRating": 6.3,
     "tmdbVotes": 216,
     "trailerKey": null,
     "videos": [],
@@ -56752,8 +56829,8 @@
     "releaseDate": "1978-07-22",
     "runtimeMin": 24,
     "episodes": [],
-    "posterPath": "/mVeOiXqSIYRLkuC8HtLKpHRzuek.jpg",
-    "posterTint": "#584242",
+    "posterPath": "/hi98SQoZgxBMHmWsbhxyh5tNQcB.jpg",
+    "posterTint": "#514f5a",
     "overviewEn": "The Iron Cross Army are sabotaging oil-tankers with the help of their monster, the Sea-Devil, a semi-mechanical anthropomorphic swordfish with an ability to shoot torpedoes from its mouth. Spiderman employs the help of the interpol agent Juzo Mamiya to help him stop the Iron Cross Army.",
     "overviewAr": null,
     "providers": {},
@@ -56761,12 +56838,11 @@
     "imdbId": "tt1841843",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.048,
+    "tmdbRating": 6,
     "tmdbVotes": 31,
     "trailerKey": null,
     "videos": [],
     "posters": [
-      "/2g4ewSIYFSdkIWAxbXm1YW0FfEM.jpg",
       "/hi98SQoZgxBMHmWsbhxyh5tNQcB.jpg",
       "/42m2DnUS1bOMjvDSq0Fjvzggb3X.jpg",
       "/mVeOiXqSIYRLkuC8HtLKpHRzuek.jpg",
@@ -56869,7 +56945,7 @@
     "imdbId": "tt0078937",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 3.961,
+    "tmdbRating": 4,
     "tmdbVotes": 89,
     "trailerKey": null,
     "videos": [],
@@ -57020,7 +57096,7 @@
     "imdbId": "tt0078938",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 3.791,
+    "tmdbRating": 3.8,
     "tmdbVotes": 67,
     "trailerKey": null,
     "videos": [],
@@ -57958,8 +58034,8 @@
     "imdbId": "tt0083481",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.5,
-    "tmdbVotes": 263,
+    "tmdbRating": 7.525,
+    "tmdbVotes": 264,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -58022,12 +58098,12 @@
       {
         "actor": "Janet Waldo",
         "actorPhoto": "/liuY8vTRtKsQeDN7HYZD2oRkE80.jpg",
-        "character": "(voice) / Shanna the She-Devil (voice)"
+        "character": "Shanna the She-Devil (voice) / (voice)"
       },
       {
         "actor": "William Woodson",
         "actorPhoto": "/sNKELHCKM8KzFuaFn30llbgvv7W.jpg",
-        "character": "Namor the Sub-Mariner (voice) / (voice)"
+        "character": "(voice) / Namor the Sub-Mariner (voice)"
       },
       {
         "actor": "Michael Ansara",
@@ -58240,8 +58316,8 @@
     "releaseDate": "1988-05-22",
     "runtimeMin": 94,
     "episodes": [],
-    "posterPath": "/qCl0GT9B0fRicjaoaizPEYW1FT3.jpg",
-    "posterTint": "#423f37",
+    "posterPath": "/rDAWdpW0uzUj9c4YPeuanPGWHBq.jpg",
+    "posterTint": "#576046",
     "overviewEn": "Years after the end of the original series, David Banner continues his wandering search for a cure for the condition that turns him into the Hulk. He reunites with former colleague Don Blake, unaware of his mystical connection to Thor. When a criminal organization threatens their lives, Banner is forced to unleash the Hulk once again, marking the character’s return after the series finale.",
     "overviewAr": null,
     "providers": {
@@ -58258,17 +58334,17 @@
       "Prime Video"
     ],
     "imdbId": "tt0095368",
-    "rtScore": null,
+    "rtScore": 50,
     "metacritic": null,
-    "tmdbRating": 6.254,
+    "tmdbRating": 6.3,
     "tmdbVotes": 169,
     "trailerKey": null,
     "videos": [],
     "posters": [
+      "/rDAWdpW0uzUj9c4YPeuanPGWHBq.jpg",
       "/qCl0GT9B0fRicjaoaizPEYW1FT3.jpg",
       "/1fdyTaFdivd2rpT51SwmxCFNCTW.jpg",
       "/gW7IAvwd8HBXVJwqxPIW50JEVPB.jpg",
-      "/rDAWdpW0uzUj9c4YPeuanPGWHBq.jpg",
       "/JV5E53jDYT42qOIgnXRnmTKW5N.jpg",
       "/rgmlEj2x1BGWl5b76RXjc6TSgzS.jpg",
       "/a99qtLqTpDTOni9HFFjbzACjgfo.jpg",
@@ -58692,7 +58768,7 @@
     "providers": {},
     "providersGlobal": [],
     "imdbId": "tt0099387",
-    "rtScore": null,
+    "rtScore": 20,
     "metacritic": null,
     "tmdbRating": 5.756,
     "tmdbVotes": 117,
@@ -58951,8 +59027,8 @@
     "imdbId": "tt0207120",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.569,
-    "tmdbVotes": 254,
+    "tmdbRating": 7.578,
+    "tmdbVotes": 255,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -59035,7 +59111,7 @@
       {
         "actor": "Scott McNeil",
         "actorPhoto": "/rjiHH4krrSdipdSUdSUjvODKJM2.jpg",
-        "character": "Vulture (voice) / Man-Wolf (voice)"
+        "character": "Man-Wolf (voice) / Vulture (voice)"
       },
       {
         "actor": "Christopher Gaze",
@@ -59464,7 +59540,8 @@
         "Amazon Prime Video",
         "Philo",
         "Amazon Prime Video with Ads",
-        "MovieSphere+ Amazon Channel"
+        "MovieSphere+ Amazon Channel",
+        "Howdy Amazon Channel"
       ]
     },
     "providersGlobal": [
@@ -60105,7 +60182,7 @@
       {
         "actor": "Rino Romano",
         "actorPhoto": "/rpyq7xdQ5zSCHYiwnlPvkx7gLrl.jpg",
-        "character": "Doug's friend (voice) / Muang / Drip Den guy (voice)"
+        "character": "Muang / Drip Den guy (voice) / Doug's friend (voice)"
       },
       {
         "actor": "Ethan Embry",
@@ -60140,7 +60217,7 @@
       {
         "actor": "Jeffrey Combs",
         "actorPhoto": "/dfWcxKNsyGuN18GjWkbOmMhO4c9.jpg",
-        "character": "Professor (voice) / Dr. Zellner (voice)"
+        "character": "Dr. Zellner (voice) / Professor (voice)"
       },
       {
         "actor": "Karen Maruyama",
@@ -60160,7 +60237,7 @@
       {
         "actor": "Jennifer Hale",
         "actorPhoto": "/oNQCrdiSm0mABCcE5YaHwuZQK8X.jpg",
-        "character": "Female Reporter (voice) / Female News Announcer (voice)"
+        "character": "Female News Announcer (voice) / Female Reporter (voice)"
       },
       {
         "actor": "Michael Clarke Duncan",
@@ -60466,7 +60543,7 @@
     "rtScore": null,
     "metacritic": null,
     "tmdbRating": 7.5,
-    "tmdbVotes": 95,
+    "tmdbVotes": 96,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -60509,7 +60586,7 @@
       {
         "actor": "Paul Dobson",
         "actorPhoto": "/huQqiIHgnswYR9x5V1e46FTYfSI.jpg",
-        "character": "Victor Von Doom/Dr. Doom (voice) / Mole Man (voice) / Victor Von Doom/Dr. Doom/Mole Man (voice) / Harvey Elder/Mole Man (voice) / Mole Man/Captain Ultra (voice) / Paul Dobson  Victor Von Doom/Dr. Doom (voice)"
+        "character": "Victor Von Doom/Dr. Doom/Mole Man (voice) / Mole Man (voice) / Mole Man/Captain Ultra (voice) / Paul Dobson  Victor Von Doom/Dr. Doom (voice) / Harvey Elder/Mole Man (voice) / Victor Von Doom/Dr. Doom (voice)"
       },
       {
         "actor": "Sunita Prasad",
@@ -60519,7 +60596,7 @@
       {
         "actor": "Michael Dobson",
         "actorPhoto": "/AjzZvcIWkq6mUC5dIxgGsPCv8bk.jpg",
-        "character": "Ronan the Accuser (voice) / Mr. Bonner-Davis/Ronan the Accuser (voice)"
+        "character": "Mr. Bonner-Davis/Ronan the Accuser (voice) / Ronan the Accuser (voice)"
       },
       {
         "actor": "Laura Drummond",
@@ -60674,9 +60751,9 @@
       ],
       "US": [
         "Amazon Prime Video",
-        "YouTube TV",
         "Amazon Prime Video with Ads",
-        "MovieSphere+ Amazon Channel"
+        "MovieSphere+ Amazon Channel",
+        "Howdy Amazon Channel"
       ]
     },
     "providersGlobal": [
@@ -60684,10 +60761,10 @@
       "Prime Video"
     ],
     "imdbId": "tt0450314",
-    "rtScore": null,
-    "metacritic": null,
+    "rtScore": 29,
+    "metacritic": 30,
     "tmdbRating": 5.88,
-    "tmdbVotes": 1353,
+    "tmdbVotes": 1355,
     "trailerKey": "liABMxEvPAc",
     "videos": [
       {
@@ -61151,8 +61228,8 @@
     "imdbId": "tt1388589",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.484,
-    "tmdbVotes": 129,
+    "tmdbRating": 7.504,
+    "tmdbVotes": 130,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -61445,7 +61522,6 @@
     },
     "providersGlobal": [
       "Disney+",
-      "Netflix",
       "Prime Video"
     ],
     "imdbId": "tt0837143",
@@ -61990,8 +62066,8 @@
     "imdbId": "tt2070571",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.291,
-    "tmdbVotes": 179,
+    "tmdbRating": 7.289,
+    "tmdbVotes": 180,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -62389,7 +62465,7 @@
     "imdbId": "tt3911200",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.471,
+    "tmdbRating": 6.5,
     "tmdbVotes": 171,
     "trailerKey": null,
     "videos": [],
@@ -63132,8 +63208,8 @@
     "imdbId": "tt1851040",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.6,
-    "tmdbVotes": 195,
+    "tmdbRating": 6.63,
+    "tmdbVotes": 196,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -63354,7 +63430,7 @@
       {
         "actor": "Dayo Abanikanda",
         "actorPhoto": "/wyorxXbKsFiekNNpgbo4Cpk1wl1.jpg",
-        "character": "Watchman / Control Officer"
+        "character": "Control Officer / Watchman"
       },
       {
         "actor": "Charmin Lee",
@@ -64233,12 +64309,12 @@
       {
         "actor": "Fred Tatasciore",
         "actorPhoto": "/xodxYKRC9mdvgquTdqpmYldliJ3.jpg",
-        "character": "Thunderball (voice) / Volstagg (voice) / Hulk / Bruce Banner (voice)"
+        "character": "Volstagg (voice) / Hulk / Bruce Banner (voice) / Thunderball (voice)"
       },
       {
         "actor": "Roger Craig Smith",
         "actorPhoto": "/6oE356GbRHAf91Llw7LDpvsAf5L.jpg",
-        "character": "Captain America / Steve Rogers (voice) / Nanot Bots (voice) / Computer Voice (voice)"
+        "character": "Nanot Bots (voice) / Computer Voice (voice) / Captain America / Steve Rogers (voice)"
       },
       {
         "actor": "Travis Willingham",
@@ -64273,7 +64349,7 @@
       {
         "actor": "John DiMaggio",
         "actorPhoto": "/qcbQe71nSlULDsP1OxTqltEKFbl.jpg",
-        "character": "Wrecker / Cop (voice) / Galactus (voice)"
+        "character": "Galactus (voice) / Wrecker / Cop (voice)"
       },
       {
         "actor": "Frank Welker",
@@ -64771,8 +64847,8 @@
     "imdbId": "tt10862280",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.1,
-    "tmdbVotes": 259,
+    "tmdbRating": 7.081,
+    "tmdbVotes": 260,
     "trailerKey": "mzuAyY8WzWA",
     "videos": [
       {
@@ -64833,12 +64909,12 @@
       {
         "actor": "Dee Bradley Baker",
         "actorPhoto": "/9oFnToDZWp0I484s7Ua1EzNQQ2m.jpg",
-        "character": "Trace-E / CAL (voice) / Trace-E (voice)"
+        "character": "Trace-E (voice) / Trace-E / CAL (voice)"
       },
       {
         "actor": "Sandra Saad",
         "actorPhoto": "/gmqI2bodZLeeHTmoQTLI3ZO01g4.jpg",
-        "character": "Vendor #1 / Civilian #2 / Mother (voice) / Kamala Khan / Ms. Marvel (voice)"
+        "character": "Kamala Khan / Ms. Marvel (voice) / Vendor #1 / Civilian #2 / Mother (voice)"
       },
       {
         "actor": "Tru Valentino",
@@ -65009,8 +65085,7 @@
         "Disney Plus"
       ],
       "US": [
-        "Disney Plus",
-        "YouTube TV"
+        "Disney Plus"
       ]
     },
     "providersGlobal": [
@@ -65019,7 +65094,7 @@
     "imdbId": "tt8041658",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.488,
+    "tmdbRating": 7.5,
     "tmdbVotes": 41,
     "trailerKey": "Fq6_26R2QFI",
     "videos": [
@@ -65088,7 +65163,7 @@
       {
         "actor": "Laurence Fishburne",
         "actorPhoto": "/2GbXERENPpl5MmlqOLlPVaVtifD.jpg",
-        "character": "Backstory Man (voice) / Foster (voice) / Beyonder (voice)"
+        "character": "Foster (voice) / Beyonder (voice) / Backstory Man (voice)"
       },
       {
         "actor": "Michael Cimino",
@@ -65274,10 +65349,10 @@
     "providers": {},
     "providersGlobal": [],
     "imdbId": "tt0091225",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 5.445,
-    "tmdbVotes": 1160,
+    "rtScore": 13,
+    "metacritic": 28,
+    "tmdbRating": 5.451,
+    "tmdbVotes": 1163,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -65521,10 +65596,10 @@
       "Disney+"
     ],
     "imdbId": "tt0098141",
-    "rtScore": null,
-    "metacritic": null,
-    "tmdbRating": 5.757,
-    "tmdbVotes": 702,
+    "rtScore": 24,
+    "metacritic": 63,
+    "tmdbRating": 5.766,
+    "tmdbVotes": 704,
     "trailerKey": "WvcieGlrp68",
     "videos": [
       {
@@ -65774,10 +65849,10 @@
     "providers": {},
     "providersGlobal": [],
     "imdbId": "tt0103923",
-    "rtScore": null,
+    "rtScore": 16,
     "metacritic": null,
-    "tmdbRating": 4.529,
-    "tmdbVotes": 467,
+    "tmdbRating": 4.521,
+    "tmdbVotes": 468,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -66354,16 +66429,15 @@
     "overviewAr": null,
     "providers": {
       "US": [
-        "YouTube TV",
         "MovieSphere+ Amazon Channel"
       ]
     },
     "providersGlobal": [],
     "imdbId": "tt0290747",
-    "rtScore": null,
+    "rtScore": 14,
     "metacritic": null,
-    "tmdbRating": 4.302,
-    "tmdbVotes": 227,
+    "tmdbRating": 4.305,
+    "tmdbVotes": 228,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -66684,8 +66758,8 @@
     "imdbId": "tt2011118",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.311,
-    "tmdbVotes": 636,
+    "tmdbRating": 6.309,
+    "tmdbVotes": 637,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -66761,8 +66835,8 @@
     "imdbId": "tt2011109",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.866,
-    "tmdbVotes": 584,
+    "tmdbRating": 6.865,
+    "tmdbVotes": 585,
     "trailerKey": "AqcnUD468no",
     "videos": [
       {
@@ -66846,7 +66920,7 @@
     "rtScore": null,
     "metacritic": null,
     "tmdbRating": 6.429,
-    "tmdbVotes": 630,
+    "tmdbVotes": 631,
     "trailerKey": "Gog0_GKYpIg",
     "videos": [
       {
@@ -66876,7 +66950,7 @@
       },
       {
         "actor": "Jesse Bradford",
-        "actorPhoto": "/aT3eZzGDMKrwlYgHtwBH4KHKa64.jpg",
+        "actorPhoto": "/hlqrBAEsT2DN2POufl50HA0yrl2.jpg",
         "character": "Bennie Pollack"
       },
       {
@@ -66927,8 +67001,8 @@
     "imdbId": "tt3067038",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.247,
-    "tmdbVotes": 918,
+    "tmdbRating": 7.252,
+    "tmdbVotes": 924,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -67031,8 +67105,8 @@
     "imdbId": "tt3438640",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.75,
-    "tmdbVotes": 634,
+    "tmdbRating": 6.7,
+    "tmdbVotes": 636,
     "trailerKey": "XlJuWdLpdNw",
     "videos": [
       {
@@ -67681,8 +67755,8 @@
     "imdbId": "tt0103584",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.2,
-    "tmdbVotes": 1388,
+    "tmdbRating": 8.19,
+    "tmdbVotes": 1392,
     "trailerKey": "gh0KJImjkqc",
     "videos": [
       {
@@ -67783,7 +67857,7 @@
       {
         "actor": "Susan Roman",
         "actorPhoto": "/vyWyOdnKcoNf40ytZSy6qlIIr9p.jpg",
-        "character": "Callisto (voice) / Amelia Voght (voice) / Scarlet Witch (voice)"
+        "character": "Scarlet Witch (voice) / Callisto (voice) / Amelia Voght (voice)"
       },
       {
         "actor": "Stephen Ouimette",
@@ -67798,7 +67872,7 @@
       {
         "actor": "Paul Haddad",
         "actorPhoto": null,
-        "character": "Quicksilver (voice) / Arkon (voice)"
+        "character": "Arkon (voice) / Quicksilver (voice)"
       },
       {
         "actor": "Don Francks",
@@ -67813,7 +67887,7 @@
       {
         "actor": "Stephen Ouimette",
         "actorPhoto": "/kk7rbjYnNNgLN1f853vRepd3GcA.jpg",
-        "character": "Archangel (voice) / Angel (voice) / Cameron Hodge (voice)"
+        "character": "Cameron Hodge (voice) / Angel (voice) / Archangel (voice)"
       },
       {
         "actor": "David Hemblen",
@@ -67833,7 +67907,7 @@
       {
         "actor": "David Fox",
         "actorPhoto": "/kgdBv3Pk68oolH0DA39rpmUai47.jpg",
-        "character": "Sentinels (voice) / Sentinels / Master Mold (voice)"
+        "character": "Sentinels / Master Mold (voice) / Sentinels (voice)"
       },
       {
         "actor": "Lawrence Bayne",
@@ -67893,7 +67967,7 @@
       {
         "actor": "Lawrence Bayne",
         "actorPhoto": "/mfb2WumVLTAHFE0FVvKWvEjgmV5.jpg",
-        "character": "Fabian Cortez (voice) / Captain America (voice)"
+        "character": "Captain America (voice) / Fabian Cortez (voice)"
       },
       {
         "actor": "Susan Roman",
@@ -68515,8 +68589,8 @@
     "imdbId": "tt0112175",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.3,
-    "tmdbVotes": 1150,
+    "tmdbRating": 8.306,
+    "tmdbVotes": 1155,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -68629,7 +68703,7 @@
       {
         "actor": "Gary Imhoff",
         "actorPhoto": "/hm3JDtO1CTbC5aHdV94QRmcMI4C.jpg",
-        "character": "Harry Osborn (voice) / Harry Osborn / Green Goblin (voice)"
+        "character": "Harry Osborn / Green Goblin (voice) / Harry Osborn (voice)"
       },
       {
         "actor": "Richard Moll",
@@ -68669,12 +68743,12 @@
       {
         "actor": "Neil Ross",
         "actorPhoto": "/pNgkQKw5k6z9kscDnOAwstcmNnt.jpg",
-        "character": "Norman Osborn / Green Goblin (voice) / Norman Osborn (voice)"
+        "character": "Norman Osborn (voice) / Norman Osborn / Green Goblin (voice)"
       },
       {
         "actor": "Nick Jameson",
         "actorPhoto": "/rOvaOcNigOLPeZkAFipAwBEJQF6.jpg",
-        "character": "Richard Fisk (voice) / Morbius (voice) / Michael Morbius (voice)"
+        "character": "Michael Morbius (voice) / Richard Fisk (voice) / Morbius (voice)"
       },
       {
         "actor": "David Warner",
@@ -68714,7 +68788,7 @@
       {
         "actor": "Gregg Berger",
         "actorPhoto": "/bMlJUmhblX50gQrnA8XWG7UuaLk.jpg",
-        "character": "Mysterio (voice) / Kraven (voice)"
+        "character": "Kraven (voice) / Mysterio (voice)"
       },
       {
         "actor": "Martin Landau",
@@ -68739,12 +68813,12 @@
       {
         "actor": "Mark Hamill",
         "actorPhoto": "/zMQ93JTLW8KxusKhOlHFZhih3YQ.jpg",
-        "character": "Jason Phillips / Hobgoblin (voice) / Jason Phillips (voice)"
+        "character": "Jason Phillips (voice) / Jason Phillips / Hobgoblin (voice)"
       },
       {
         "actor": "Scott Cleverdon",
         "actorPhoto": "/lsCFyEQZimxS8c6vWe4WH3lge95.jpg",
-        "character": "Michael Pingree (voice) / Cletus Kasady / Carnage (voice)"
+        "character": "Cletus Kasady / Carnage (voice) / Michael Pingree (voice)"
       },
       {
         "actor": "Ed Gilbert",
@@ -68819,7 +68893,7 @@
       {
         "actor": "Nick Jameson",
         "actorPhoto": "/rOvaOcNigOLPeZkAFipAwBEJQF6.jpg",
-        "character": "Dr. Groitzig (voice) / Morbius (voice)"
+        "character": "Morbius (voice) / Dr. Groitzig (voice)"
       },
       {
         "actor": "Maxwell Caulfield",
@@ -68830,11 +68904,6 @@
         "actor": "Iona Morris",
         "actorPhoto": "/4Ij1bKHykl7w61Vqnygz17djyPp.jpg",
         "character": "Storm (voice)"
-      },
-      {
-        "actor": "Joseph Campanella",
-        "actorPhoto": "/o6A0IZkjcDNDVBTFCVLsdySz3w3.jpg",
-        "character": "Dr. Curt Connors / Lizard (voice) / Dr. Curt Connors (voice)"
       },
       {
         "actor": "Gregg Berger",
@@ -69005,6 +69074,11 @@
         "actor": "Don Reed",
         "actorPhoto": "/qNBK2He4GFINiZELWT0dFKhWLr.jpg",
         "character": "Clay Marks (voice)"
+      },
+      {
+        "actor": "Gary Imhoff",
+        "actorPhoto": "/hm3JDtO1CTbC5aHdV94QRmcMI4C.jpg",
+        "character": "Harry Osborn (voice) / Harry Osborn / Green Goblin (voice)"
       },
       {
         "actor": "Rob Paulsen",
@@ -69243,8 +69317,8 @@
     "imdbId": "tt0976192",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.624,
-    "tmdbVotes": 918,
+    "tmdbRating": 8.628,
+    "tmdbVotes": 921,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -69266,13 +69340,13 @@
       },
       {
         "actor": "Alanna Ubach",
-        "actorPhoto": "/p2sIpgftEIkhPrrpgu8wW8XEpDg.jpg",
-        "character": "Liz Allan / Trina (voice) / Liz Allan / Helena (voice) / Liz Allan (voice)"
+        "actorPhoto": "/ffyBAEoW3bDgVJQV3GaHsZ9x29W.jpg",
+        "character": "Liz Allan (voice) / Liz Allan / Trina (voice) / Liz Allan / Helena (voice)"
       },
       {
         "actor": "Joshua LeBar",
         "actorPhoto": "/vvQo3RC8niT6ojGwF12u1nJ4mkp.jpg",
-        "character": "Flash Thompson / Car Thief #1 (voice) / Flash Thompson (voice)"
+        "character": "Flash Thompson (voice) / Flash Thompson / Car Thief #1 (voice)"
       },
       {
         "actor": "Lacey Chabert",
@@ -69287,7 +69361,7 @@
       {
         "actor": "Grey DeLisle",
         "actorPhoto": "/vrUHaXe1pG56yZkgH7Hs3LGRLTT.jpg",
-        "character": "Sally Avril / Computer Voice (voice) / Sally Avril / Coffee Clerk (voice) / Sally Avril / Bette Brant (voice) / Betty Brant (voice) / Sally Avril / Betty Brant (voice) / Sally Avril (voice)"
+        "character": "Sally Avril / Bette Brant (voice) / Sally Avril / Betty Brant (voice) / Betty Brant (voice) / Sally Avril (voice) / Sally Avril / Computer Voice (voice) / Sally Avril / Coffee Clerk (voice)"
       },
       {
         "actor": "Deborah Strang",
@@ -69297,12 +69371,12 @@
       {
         "actor": "Phil LaMarr",
         "actorPhoto": "/xP2kNlsmXtzXq0geutflO4K9mSE.jpg",
-        "character": "Rand Robertson / Robbie Robertson (voice) / Rand Robertson / Fancy Dan (voice) / Rand Robertson (voice)"
+        "character": "Rand Robertson (voice) / Rand Robertson / Robbie Robertson (voice) / Rand Robertson / Fancy Dan (voice)"
       },
       {
         "actor": "Ben Diskin",
         "actorPhoto": "/4RWjcrPgfTG1yp19kFKRZYimv2B.jpg",
-        "character": "Eddie Brock (voice) / Eddie Brock / Venom (voice)"
+        "character": "Eddie Brock / Venom (voice) / Eddie Brock (voice)"
       },
       {
         "actor": "James Arnold Taylor",
@@ -69312,7 +69386,7 @@
       {
         "actor": "Grey DeLisle",
         "actorPhoto": "/vrUHaXe1pG56yZkgH7Hs3LGRLTT.jpg",
-        "character": "Voice of OsCorp (voice) / Sally Avril / Erin (voice) / Stephanie Briggs (voice) / Sally Avril / Voice of OsCorp (voice) / Sally Avril (voice)"
+        "character": "Voice of OsCorp (voice) / Stephanie Briggs (voice) / Sally Avril / Erin (voice) / Sally Avril / Voice of OsCorp (voice) / Sally Avril (voice)"
       },
       {
         "actor": "Clancy Brown",
@@ -69327,12 +69401,12 @@
       {
         "actor": "James Arnold Taylor",
         "actorPhoto": "/sSthBDGT8HBd2hXRNPymA6D0ov8.jpg",
-        "character": "Harry Osborn / Alan O'Neil (voice) / Harry Osborn / Patch / Frederick Foswell (voice) / Patch / Homunculi (voice) / Harry Osborn / Frederick Foswell (voice) / Harry Osborn (voice)"
+        "character": "Harry Osborn / Patch / Frederick Foswell (voice) / Harry Osborn (voice) / Harry Osborn / Frederick Foswell (voice) / Patch / Homunculi (voice) / Harry Osborn / Alan O'Neil (voice)"
       },
       {
         "actor": "Daran Norris",
         "actorPhoto": "/oLaegqPwuEdNNJVqrvcgI6guYsi.jpg",
-        "character": "J. Jonah Jameson / John Jameson (voice) / J. Jonah Jameson (voice)"
+        "character": "J. Jonah Jameson (voice) / J. Jonah Jameson / John Jameson (voice)"
       },
       {
         "actor": "Alan Rachins",
@@ -69342,17 +69416,17 @@
       {
         "actor": "Kevin Michael Richardson",
         "actorPhoto": "/xXt9Nh7RAT5bOen66TaXreNYmCl.jpg",
-        "character": "Big Man / Tombstone / L. Thompson Lincoln (voice) / Tombstone / Principal Davis (voice) / Big Man / Coach Smith / Thug (voice) / Coach Smith (voice) / Tombstone (voice)"
+        "character": "Tombstone / Principal Davis (voice) / Big Man / Tombstone / L. Thompson Lincoln (voice) / Coach Smith (voice) / Big Man / Coach Smith / Thug (voice) / Tombstone (voice)"
       },
       {
         "actor": "John DiMaggio",
         "actorPhoto": "/qcbQe71nSlULDsP1OxTqltEKFbl.jpg",
-        "character": "Flint Marko / Hammerhead (voice) / Hammerhead (voice) / Hammerhead / Car Thief #2 (voice) / Flint Marko / Sandman / Hammerhead (voice) / Sandman / Hammerhead (voice)"
+        "character": "Flint Marko / Hammerhead (voice) / Hammerhead (voice) / Sandman / Hammerhead (voice) / Flint Marko / Sandman / Hammerhead (voice) / Hammerhead / Car Thief #2 (voice)"
       },
       {
         "actor": "Clancy Brown",
         "actorPhoto": "/1JeBRNG7VS7r64V9lOvej9bZXW5.jpg",
-        "character": "Alex O'Hirn / Ox (voice) / Rhino / George Stacy (voice) / Alex O'Hirn / Rhino / George Stacy (voice) / George Stacy (voice) / Alex O'Hirn (voice)"
+        "character": "Alex O'Hirn / Rhino / George Stacy (voice) / George Stacy (voice) / Alex O'Hirn (voice) / Alex O'Hirn / Ox (voice) / Rhino / George Stacy (voice)"
       },
       {
         "actor": "Vanessa Marshall",
@@ -69362,27 +69436,27 @@
       {
         "actor": "Peter MacNicol",
         "actorPhoto": "/8gizugTP8hykdfBkOY0Qg0aqpiP.jpg",
-        "character": "Doctor Octopus (voice) / Otto Octavius (voice) / Otto Octavius / Doctor Octopus (voice)"
+        "character": "Otto Octavius (voice) / Otto Octavius / Doctor Octopus (voice) / Doctor Octopus (voice)"
       },
       {
         "actor": "Alanna Ubach",
-        "actorPhoto": "/p2sIpgftEIkhPrrpgu8wW8XEpDg.jpg",
+        "actorPhoto": "/ffyBAEoW3bDgVJQV3GaHsZ9x29W.jpg",
         "character": "Liz Allan (voice)"
       },
       {
         "actor": "Peter MacNicol",
         "actorPhoto": "/8gizugTP8hykdfBkOY0Qg0aqpiP.jpg",
-        "character": "Master Planner (voice) / Master Planner / Otto Octavius (voice) / Master Planner / Doctor Octopus (voice) / Doctor Octopus (voice)"
+        "character": "Master Planner / Otto Octavius (voice) / Master Planner (voice) / Master Planner / Doctor Octopus (voice) / Doctor Octopus (voice)"
       },
       {
         "actor": "Phil LaMarr",
         "actorPhoto": "/xP2kNlsmXtzXq0geutflO4K9mSE.jpg",
-        "character": "Rand Robertson (voice) / Fancy Dan / Homunculus #1 (voice) / Robbie Robertson (voice) / Fancy Dan / Ricochet / Rand Robertson (voice)"
+        "character": "Fancy Dan / Ricochet / Rand Robertson (voice) / Fancy Dan / Homunculus #1 (voice) / Robbie Robertson (voice) / Rand Robertson (voice)"
       },
       {
         "actor": "Kevin Michael Richardson",
         "actorPhoto": "/xXt9Nh7RAT5bOen66TaXreNYmCl.jpg",
-        "character": "Principal Davis (voice) / Tombstone / Principal Davis (voice) / Tombstone (voice) / OsCorp Security Guard (voice)"
+        "character": "OsCorp Security Guard (voice) / Principal Davis (voice) / Tombstone (voice) / Tombstone / Principal Davis (voice)"
       },
       {
         "actor": "Dee Bradley Baker",
@@ -69392,12 +69466,12 @@
       {
         "actor": "John DiMaggio",
         "actorPhoto": "/qcbQe71nSlULDsP1OxTqltEKFbl.jpg",
-        "character": "Sandman (voice) / Sandman / Hammerhead (voice) / Hammerhead (voice)"
+        "character": "Sandman (voice) / Hammerhead (voice) / Sandman / Hammerhead (voice)"
       },
       {
         "actor": "Daran Norris",
         "actorPhoto": "/oLaegqPwuEdNNJVqrvcgI6guYsi.jpg",
-        "character": "J. Jonah Jameson / John Jameson / Colonel Jupiter (voice) / J. Jonah Jameson (voice)"
+        "character": "J. Jonah Jameson (voice) / J. Jonah Jameson / John Jameson / Colonel Jupiter (voice)"
       },
       {
         "actor": "Dee Bradley Baker",
@@ -69437,7 +69511,7 @@
       {
         "actor": "Robert Englund",
         "actorPhoto": "/cjGEkiavinHa1dnetDvnEhlD2Wm.jpg",
-        "character": "Adrian Toomes / Vulture (voice) / Vulture (voice)"
+        "character": "Vulture (voice) / Adrian Toomes / Vulture (voice)"
       },
       {
         "actor": "Tricia Helfer",
@@ -69452,7 +69526,7 @@
       {
         "actor": "Miguel Ferrer",
         "actorPhoto": "/n6VZ8OQmozHmnJQRwR55gBH8Tl0.jpg",
-        "character": "Silvermane (voice) / Silvio Manfredi / Silvermane (voice)"
+        "character": "Silvio Manfredi / Silvermane (voice) / Silvermane (voice)"
       },
       {
         "actor": "Eric Vesbit",
@@ -70364,7 +70438,7 @@
       {
         "actor": "Grant George",
         "actorPhoto": "/julROMpew9wvfV1z6Lzik1qngsn.jpg",
-        "character": "Ant-Man (voice) / Scott Lang / Ant-Man (voice)"
+        "character": "Scott Lang / Ant-Man (voice) / Ant-Man (voice)"
       },
       {
         "actor": "Diedrich Bader",
@@ -70379,7 +70453,7 @@
       {
         "actor": "Matt Lanter",
         "actorPhoto": "/2ms8DR9n4wh9ZU6lIuqsE58LPT9.jpg",
-        "character": "Flash Thompson / Agent Venon (voice) / Flash Thompson / Agent Venom / Harry Osborn (voice)"
+        "character": "Flash Thompson / Agent Venom / Harry Osborn (voice) / Flash Thompson / Agent Venon (voice)"
       },
       {
         "actor": "Jeff Bennett",
@@ -70394,17 +70468,17 @@
       {
         "actor": "Robin Atkin Downes",
         "actorPhoto": "/qb4xPIJGiKyiQ2MhSDQzFWxN0jS.jpg",
-        "character": "Abomination (voice) / Annihus (voice)"
+        "character": "Annihus (voice) / Abomination (voice)"
       },
       {
         "actor": "James Arnold Taylor",
         "actorPhoto": "/sSthBDGT8HBd2hXRNPymA6D0ov8.jpg",
-        "character": "Molten Man (voice) / Leader (voice)"
+        "character": "Leader (voice) / Molten Man (voice)"
       },
       {
         "actor": "Travis Willingham",
         "actorPhoto": "/clvP30k6cUMf4hukRQqZD3k9z4S.jpg",
-        "character": "Skurge (voice) / Thor (voice)"
+        "character": "Thor (voice) / Skurge (voice)"
       },
       {
         "actor": "Imari Williams",
@@ -71036,8 +71110,8 @@
     "imdbId": "tt6135682",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.485,
-    "tmdbVotes": 392,
+    "tmdbRating": 7.471,
+    "tmdbVotes": 393,
     "trailerKey": "X814eTVbEyI",
     "videos": [
       {
@@ -71070,32 +71144,32 @@
       {
         "actor": "Ben Diskin",
         "actorPhoto": "/4RWjcrPgfTG1yp19kFKRZYimv2B.jpg",
-        "character": "Osborn Recruiter #1 (voice) / Student #2 (voice) / Flash Thompson / Police Officer #2/Hoodlum #1/Police Officer #4 (voice) / Flash Thompson (voice)"
+        "character": "Osborn Recruiter #1 (voice) / Flash Thompson / Flash Thompson (voice) / Police Officer #2/Hoodlum #1/Police Officer #4 (voice) / Student #2 (voice)"
       },
       {
         "actor": "Melanie Minichino",
         "actorPhoto": "/avh6oLRCYxd8tjnbdSnd7Nqfcvk.jpg",
-        "character": "Student #1 (voice) / Anya Corazon (voice) / Chaperone (voice) / Female Clerk (voice) / Helicopter Pilot (voice)"
+        "character": "Student #1 (voice) / Helicopter Pilot (voice) / Anya Corazon (voice) / Female Clerk (voice) / Chaperone (voice)"
       },
       {
         "actor": "Fred Tatasciore",
         "actorPhoto": "/xodxYKRC9mdvgquTdqpmYldliJ3.jpg",
-        "character": "Max Modell (voice) / Trucker/Mr. Slott (voice) / Police Officer #1 (voice) / Bystander (voice) / Thug #1 / Father (voice)"
+        "character": "Police Officer #1 (voice) / Trucker/Mr. Slott (voice) / Bystander (voice) / Max Modell (voice) / Thug #1 / Father (voice)"
       },
       {
         "actor": "Nancy Linari",
         "actorPhoto": "/nDcIVinFEuLlM1JXHnLszP8F53F.jpg",
-        "character": "Landlady (voice) / Bomb Voice (voice) / Aunt May (voice) / Woman Bystander (voice)"
+        "character": "Aunt May (voice) / Bomb Voice (voice) / Woman Bystander (voice) / Landlady (voice)"
       },
       {
         "actor": "Max Mittelman",
         "actorPhoto": "/zQqiIgestpxssPrUXQXkY2Sq0y8.jpg",
-        "character": "Harry Osborn (voice) / Police Officer #1/Osborn Technician #2/Police Officer #2 (voice) / Male Clerk/Guy in Line (voice) / Thug #2 / Little Kid (voice)"
+        "character": "Police Officer #1/Osborn Technician #2/Police Officer #2 (voice) / Thug #2 / Little Kid (voice) / Harry Osborn (voice) / Male Clerk/Guy in Line (voice)"
       },
       {
         "actor": "Robbie Daymond",
         "actorPhoto": "/1Wu13TUN1FiTOx6K7nIDQo63SAX.jpg",
-        "character": "Bully #1 / Hot Dog Announcer / Ticket Taker (voice) / Peter Parker / Spider-Man (voice) / Cop #1 (voice)"
+        "character": "Bully #1 / Hot Dog Announcer / Ticket Taker (voice) / Cop #1 (voice) / Peter Parker / Spider-Man (voice)"
       },
       {
         "actor": "Nadji Jeter",
@@ -71105,12 +71179,12 @@
       {
         "actor": "John DiMaggio",
         "actorPhoto": "/qcbQe71nSlULDsP1OxTqltEKFbl.jpg",
-        "character": "Security Guard/Customer (voice) / Policeman (voice) / Raymond Warren (voice)"
+        "character": "Policeman (voice) / Raymond Warren (voice) / Security Guard/Customer (voice)"
       },
       {
         "actor": "Josh Keaton",
         "actorPhoto": "/9ss2EXbN0VarF1tM2Qotwxy6fJs.jpg",
-        "character": "Hologram (voice) / Prison Guard (voice) / Norman Osborn (voice)"
+        "character": "Hologram (voice) / Norman Osborn (voice) / Prison Guard (voice)"
       },
       {
         "actor": "Laura Bailey",
@@ -71125,17 +71199,17 @@
       {
         "actor": "Scott Menville",
         "actorPhoto": "/iLoApH8LbyJSKFmdgWxNR314GGa.jpg",
-        "character": "The Living Brain / Cop #2 (voice) / Doc Ock / Otto Octavius (voice)"
+        "character": "Doc Ock / Otto Octavius (voice) / The Living Brain / Cop #2 (voice)"
       },
       {
         "actor": "Laura Bailey",
         "actorPhoto": "/xrq33v9N78hhmApcfkoYx0TAw1A.jpg",
-        "character": "Gwen Stacy (voice) / Osborn Recruiter #2 (voice)"
+        "character": "Osborn Recruiter #2 (voice) / Gwen Stacy (voice)"
       },
       {
         "actor": "Alastair Duncan",
         "actorPhoto": "/2rkDiz41uLiEYIo92DLuVOHagRS.jpg",
-        "character": "Adrian Toomes (voice) / Thug #3 (voice)"
+        "character": "Thug #3 (voice) / Adrian Toomes (voice)"
       },
       {
         "actor": "Nadji Jeter",
@@ -71205,12 +71279,12 @@
       {
         "actor": "Scott Menville",
         "actorPhoto": "/iLoApH8LbyJSKFmdgWxNR314GGa.jpg",
-        "character": "Grady Scraps (voice) / Doc Ock / Otto Octavius (voice)"
+        "character": "Doc Ock / Otto Octavius (voice) / Grady Scraps (voice)"
       },
       {
         "actor": "Josh Keaton",
         "actorPhoto": "/9ss2EXbN0VarF1tM2Qotwxy6fJs.jpg",
-        "character": "Norman Osborn (voice) / Unidentified Voice / Police Officer (voice)"
+        "character": "Unidentified Voice / Police Officer (voice) / Norman Osborn (voice)"
       },
       {
         "actor": "Fred Tatasciore",
@@ -71230,7 +71304,7 @@
       {
         "actor": "Aaron Abrams",
         "actorPhoto": "/JBmN6Byyo1QSKIagjbCrTFX96I.jpg",
-        "character": "Tinkerer / Old Man (voice) / Tinkerer (voice) / Tinkerer / Police Officer (voice)"
+        "character": "Tinkerer / Old Man (voice) / Tinkerer / Police Officer (voice) / Tinkerer (voice)"
       },
       {
         "actor": "Matthew Mercer",
@@ -71443,8 +71517,8 @@
     "imdbId": "tt16026746",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.681,
-    "tmdbVotes": 828,
+    "tmdbRating": 8.688,
+    "tmdbVotes": 848,
     "trailerKey": "pv3Ss8o9gGQ",
     "videos": [
       {
@@ -71510,17 +71584,17 @@
       {
         "actor": "Ray Chase",
         "actorPhoto": "/xeJKJnvIwItI90roo7mMUduBbbq.jpg",
-        "character": "Cyclops / Weatherman (voice) / Cyclops / Russian Judge (voice) / Cyclops (voice)"
+        "character": "Cyclops (voice) / Cyclops / Russian Judge (voice) / Cyclops / Weatherman (voice)"
       },
       {
         "actor": "Holly Chou",
         "actorPhoto": "/8sPU4zmJIwHk2qJ63wxOTnEcrS4.jpg",
-        "character": "Chinese Judge (voice) / Jubilee (voice) / Jubilee / Chinese OZT Member (voice)"
+        "character": "Jubilee (voice) / Chinese Judge (voice) / Jubilee / Chinese OZT Member (voice)"
       },
       {
         "actor": "Jennifer Hale",
         "actorPhoto": "/oNQCrdiSm0mABCcE5YaHwuZQK8X.jpg",
-        "character": "Jean Grey / Computer (voice) / Jean Grey / Female Firefighter (voice) / Jean Grey (voice) / Jean Grey / Female Prime (voice) / Jean Grey / The Goblin Queen / Madelyne (voice) / Jean Grey / Madelyne (voice) / Jean Grey / World Leader #3 (voice)"
+        "character": "Jean Grey / Madelyne (voice) / Jean Grey / Computer (voice) / Jean Grey / The Goblin Queen / Madelyne (voice) / Jean Grey / World Leader #3 (voice) / Jean Grey / Female Firefighter (voice) / Jean Grey (voice) / Jean Grey / Female Prime (voice)"
       },
       {
         "actor": "Cal Dodd",
@@ -71535,7 +71609,7 @@
       {
         "actor": "Matthew Waterson",
         "actorPhoto": "/eqL4KlMVQrL5yZrF1YDXKz5gHIj.jpg",
-        "character": "Magneto (voice) / Magneto / Security Guard (voice) / Magneto / Overeager Journalist (voice) / Magneto / World Leader #1 (voice)"
+        "character": "Magneto (voice) / Magneto / Security Guard (voice) / Magneto / World Leader #1 (voice) / Magneto / Overeager Journalist (voice)"
       },
       {
         "actor": "Gui Agustini",
@@ -71545,17 +71619,17 @@
       {
         "actor": "Alison Sealy-Smith",
         "actorPhoto": "/w4TSJBggA4c1YnXenKIOHYwuLla.jpg",
-        "character": "Storm (voice) / Storm / The Adversary (voice)"
+        "character": "Storm / The Adversary (voice) / Storm (voice)"
       },
       {
         "actor": "Ross Marquand",
         "actorPhoto": "/2CxkVPimin0c2v7fUK3MGjgEnLt.jpg",
-        "character": "Professor X (voice) / Professor X / Demonic Xavier (voice) / Professor X / Apocalypse (voice) / Professor X / Latverian OZT Member (voice)"
+        "character": "Professor X / Apocalypse (voice) / Professor X (voice) / Professor X / Demonic Xavier (voice) / Professor X / Latverian OZT Member (voice)"
       },
       {
         "actor": "JP Karliak",
         "actorPhoto": "/7Rc3n8KmKUaztqfsIpddO1a2ggn.jpg",
-        "character": "Morph (voice) / Morph / Intercom (voice) / Morph / Mullet (voice) / Morph / Weasely Doctor (voice / Morph / Reverend Stryker (voice) / Morph / Hulk (voice) / Morph / Radio Jockey / World Leader #2 (voice)"
+        "character": "Morph / Radio Jockey / World Leader #2 (voice) / Morph / Hulk (voice) / Morph / Weasely Doctor (voice / Morph / Mullet (voice) / Morph (voice) / Morph / Reverend Stryker (voice) / Morph / Intercom (voice)"
       },
       {
         "actor": "Catherine Disher",
@@ -71565,7 +71639,7 @@
       {
         "actor": "Chris Britton",
         "actorPhoto": "/aglAvk5ctIPWVWsGHX5T41Cna2V.jpg",
-        "character": "Mister Sinister (voice) / Mr. Sinister (voice) / Mr. Sinister / American OZT Member (voice) / Mr. Sinister / Herald (voice)"
+        "character": "Mr. Sinister / Herald (voice) / Mister Sinister (voice) / Mr. Sinister / American OZT Member (voice) / Mr. Sinister (voice)"
       },
       {
         "actor": "Gil Birmingham",
@@ -71575,7 +71649,7 @@
       {
         "actor": "Eric Bauza",
         "actorPhoto": "/afOlsVPQxbtkom604MeCemjlwEV.jpg",
-        "character": "Demonic Sentinel (voice) / Mastermold / Sentinels / Cameraman (voice) / Mastermold / Sentinels / News Anchor (voice) / Mastermold / Prime Sentinels (voice) / Sentinels (voice)"
+        "character": "Demonic Sentinel (voice) / Sentinels (voice) / Mastermold / Prime Sentinels (voice) / Mastermold / Sentinels / Cameraman (voice) / Mastermold / Sentinels / News Anchor (voice)"
       },
       {
         "actor": "Chris Potter",
@@ -71585,36 +71659,36 @@
       {
         "actor": "Donna Jay Fulks",
         "actorPhoto": "/jesXurl3VQF32SccYx2afIAUVJo.jpg",
-        "character": "Trish Tilby / Female FOH Goon (voice) / Trish Tilby / Tommy (voice) / Trish Tilby (voice) / Trish Tilby / Bespectacled Teacher / Female Teacher (voice) / Trish Tilby / Amelia (voice)"
+        "character": "Trish Tilby / Female FOH Goon (voice) / Trish Tilby / Amelia (voice) / Trish Tilby / Tommy (voice) / Trish Tilby / Bespectacled Teacher / Female Teacher (voice) / Trish Tilby (voice)"
       },
       {
         "actor": "Adrian Hough",
         "actorPhoto": "/58REQAaSAbiAnCptqrhx6bDhTQc.jpg",
-        "character": "Nightcrawler / Strong Guy (voice) / Nightcrawler (voice)"
+        "character": "Nightcrawler (voice) / Nightcrawler / Strong Guy (voice)"
       },
       {
-        "actor": "A.J. LoCascio",
+        "actor": "AJ LoCascio",
         "actorPhoto": "/pHycR75zn1mnGzDTEbxwXj1728P.jpg",
-        "character": "Gambit (voice) / Gambit / FOH Guard / Male Rioter / Male Judge (voice)"
+        "character": "Gambit / FOH Guard / Male Rioter / Male Judge (voice) / Gambit (voice)"
       },
       {
         "actor": "David Errigo Jr.",
         "actorPhoto": "/oTQuPPun1oDqd0PIRpl6QUZysuU.jpg",
-        "character": "Banshee / Leech (voice) / Gladiator / Royal Messenger (voice) / Mojo (voice) / Leech / Radio (voice)"
+        "character": "Mojo (voice) / Leech / Radio (voice) / Banshee / Leech (voice) / Gladiator / Royal Messenger (voice)"
       },
       {
         "actor": "Todd Haberkorn",
         "actorPhoto": "/tT8YzZMfNXXJhhS7KyYRdxgoZcN.jpg",
-        "character": "Henry Gyrich / Sweaty Soldier (voice) / Sebastian Shaw (voice) / Ronan (voice) / Henry Gyrich (voice)"
+        "character": "Sebastian Shaw (voice) / Ronan (voice) / Henry Gyrich (voice) / Henry Gyrich / Sweaty Soldier (voice)"
       },
       {
         "actor": "Jeff Bennett",
         "actorPhoto": "/6Fq3Q1e0Oz0j2J2fnFSl7fKCHd9.jpg",
-        "character": "Kree Commander (voice) / Ford (voice) / American Judge / Burly Goon (voice)"
+        "character": "Ford (voice) / Kree Commander (voice) / American Judge / Burly Goon (voice)"
       },
       {
         "actor": "Theo James",
-        "actorPhoto": "/lSC4cMhcQeCjPFkK6qCjSGDSeR3.jpg",
+        "actorPhoto": "/g4yeW1EgIpyht0fy1stv7EXUmPC.jpg",
         "character": "Bastion (voice) / Bastion / Sentinels (voice)"
       },
       {
@@ -71630,12 +71704,12 @@
       {
         "actor": "Courtenay Taylor",
         "actorPhoto": "/f58KNRoimAh5Irddrek2mtPEBam.jpg",
-        "character": "Darkchylde / Magik (voice) / Callisto (voice) / Callisto / Boy / Judge (voice)"
+        "character": "Darkchylde / Magik (voice) / Callisto / Boy / Judge (voice) / Callisto (voice)"
       },
       {
         "actor": "Gavin Hammon",
         "actorPhoto": null,
-        "character": "Bolivar Trask (voice) / Lord Araki / Bolivar Trask (voice)"
+        "character": "Lord Araki / Bolivar Trask (voice) / Bolivar Trask (voice)"
       },
       {
         "actor": "Lawrence Bayne",
@@ -71760,7 +71834,7 @@
     "providers": {},
     "providersGlobal": [],
     "imdbId": "tt1325753",
-    "rtScore": null,
+    "rtScore": 100,
     "metacritic": null,
     "tmdbRating": 6.64,
     "tmdbVotes": 240,
@@ -71860,7 +71934,7 @@
     "rtScore": null,
     "metacritic": null,
     "tmdbRating": 6.877,
-    "tmdbVotes": 405,
+    "tmdbVotes": 406,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -71960,8 +72034,8 @@
     "imdbId": "tt0803093",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.803,
-    "tmdbVotes": 328,
+    "tmdbRating": 6.811,
+    "tmdbVotes": 330,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -72080,8 +72154,8 @@
     "imdbId": "tt1483025",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.104,
-    "tmdbVotes": 558,
+    "tmdbRating": 7.109,
+    "tmdbVotes": 561,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -72215,8 +72289,8 @@
     "imdbId": "tt0910865",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.752,
-    "tmdbVotes": 351,
+    "tmdbRating": 6.747,
+    "tmdbVotes": 352,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -72515,7 +72589,7 @@
     "imdbId": "tt2654124",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.16,
+    "tmdbRating": 6.2,
     "tmdbVotes": 234,
     "trailerKey": "qFzrTBCzsFY",
     "videos": [
@@ -72848,10 +72922,10 @@
       "Disney+"
     ],
     "imdbId": "tt7728344",
-    "rtScore": null,
+    "rtScore": 100,
     "metacritic": null,
-    "tmdbRating": 6.3,
-    "tmdbVotes": 125,
+    "tmdbRating": 6.373,
+    "tmdbVotes": 126,
     "trailerKey": "6UiNnW_2STI",
     "videos": [
       {
@@ -73272,7 +73346,7 @@
       {
         "actor": "Neil Ross",
         "actorPhoto": "/pNgkQKw5k6z9kscDnOAwstcmNnt.jpg",
-        "character": "Fin Fang Foom (voice) / Anchorman (voice)"
+        "character": "Anchorman (voice) / Fin Fang Foom (voice)"
       },
       {
         "actor": "Jim Cummings",
@@ -73660,12 +73734,12 @@
       {
         "actor": "Joan Lee",
         "actorPhoto": "/ZIOy95J2tBe7ufNRmNQNrntvts.jpg",
-        "character": "Miss Forbes (voice) / Miss Forbes/Old Woman (voice)"
+        "character": "Miss Forbes/Old Woman (voice) / Miss Forbes (voice)"
       },
       {
         "actor": "Neil Ross",
         "actorPhoto": "/pNgkQKw5k6z9kscDnOAwstcmNnt.jpg",
-        "character": "Dr. Doom/Narrator/First Businessman (voice) / General Krang(voice) / The Puppet Master (voice) / Dr. Doom (voice) / Hauptmann (voice) / Dr. Doom/Sarkaan (voice)"
+        "character": "General Krang(voice) / Hauptmann (voice) / Dr. Doom (voice) / Dr. Doom/Sarkaan (voice) / The Puppet Master (voice) / Dr. Doom/Narrator/First Businessman (voice)"
       },
       {
         "actor": "Pauline Arthur Lomas",
@@ -73725,12 +73799,12 @@
       {
         "actor": "Katherine Moffat",
         "actorPhoto": "/A5BPQyzE5CVeypPCsK6nmz8nJl9.jpg",
-        "character": "Commander Lyja/Skrull Paratrooper #3 (voice) / High Fashion Model/Female Computer Voice (voice) / Commander Lyja/Five Year Old (voice)"
+        "character": "Commander Lyja/Five Year Old (voice) / High Fashion Model/Female Computer Voice (voice) / Commander Lyja/Skrull Paratrooper #3 (voice)"
       },
       {
         "actor": "James Warwick",
         "actorPhoto": "/2Dnl52M7SN80CSSkLTbCv6QDV2J.jpg",
-        "character": "Sam Jaggers/Salesman/Swat Cop (voice) / Prince Namor/Professor (voice) / Xanthus (voice)"
+        "character": "Xanthus (voice) / Sam Jaggers/Salesman/Swat Cop (voice) / Prince Namor/Professor (voice)"
       },
       {
         "actor": "Mark Hamill",
@@ -73740,12 +73814,12 @@
       {
         "actor": "Ron Perlman",
         "actorPhoto": "/nfky6J9ueey1gMdWMNU9k9YdfGP.jpg",
-        "character": "Wizard/Hulk (voice) / Hulk/Dr. Bruce Banner (voice)"
+        "character": "Hulk/Dr. Bruce Banner (voice) / Wizard/Hulk (voice)"
       },
       {
         "actor": "Tony Jay",
         "actorPhoto": "/rlL918sjBA5m6qVEjYDCKmxU7QO.jpg",
-        "character": "Galactus (voice) / Galactus/Terrax (voice)"
+        "character": "Galactus/Terrax (voice) / Galactus (voice)"
       },
       {
         "actor": "Gary Owens",
@@ -73765,7 +73839,7 @@
       {
         "actor": "Jim Cummings",
         "actorPhoto": "/c0sQPRCM5Ri3F4gVyxPr4AcPmIq.jpg",
-        "character": "President Bill Clinton/Votan (voice) / Bull Donovan / Skink Lomas / Slash Curtis (voice)"
+        "character": "Bull Donovan / Skink Lomas / Slash Curtis (voice) / President Bill Clinton/Votan (voice)"
       },
       {
         "actor": "Robert Ridgely",
@@ -73794,7 +73868,7 @@
       },
       {
         "actor": "John Vernon",
-        "actorPhoto": "/m4atQ6vOlPDH0oP2X1Owc5J53A1.jpg",
+        "actorPhoto": "/xlHU7X2FhjnZVxu7fjoguCWlXeC.jpg",
         "character": "Dr. Doom (voice)"
       },
       {
@@ -74105,8 +74179,8 @@
     "imdbId": "tt0115215",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 6.4,
-    "tmdbVotes": 85,
+    "tmdbRating": 6.407,
+    "tmdbVotes": 86,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -74137,7 +74211,7 @@
       },
       {
         "actor": "John Vernon",
-        "actorPhoto": "/m4atQ6vOlPDH0oP2X1Owc5J53A1.jpg",
+        "actorPhoto": "/xlHU7X2FhjnZVxu7fjoguCWlXeC.jpg",
         "character": "General Ross (voice)"
       },
       {
@@ -74163,7 +74237,7 @@
       {
         "actor": "Genie Francis",
         "actorPhoto": "/9x5NEX6GgcmPcucLCo5s693k3Tk.jpg",
-        "character": "Betty Ross / Sister Rose Erak (voice) / Betty Ross (voice)"
+        "character": "Betty Ross (voice) / Betty Ross / Sister Rose Erak (voice)"
       },
       {
         "actor": "Philece Sampler",
@@ -74568,8 +74642,8 @@
     "imdbId": "tt0247827",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.963,
-    "tmdbVotes": 533,
+    "tmdbRating": 7.965,
+    "tmdbVotes": 534,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -74742,7 +74816,7 @@
       {
         "actor": "Michael Donovan",
         "actorPhoto": "/yutmM2NruR2oCWSESSPu3PG7g11.jpg",
-        "character": "Sabretooth (voice) / The President (voice)"
+        "character": "The President (voice) / Sabretooth (voice)"
       },
       {
         "actor": "Michael Donovan",
@@ -75078,8 +75152,8 @@
     "imdbId": "tt0772145",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.558,
-    "tmdbVotes": 304,
+    "tmdbRating": 7.567,
+    "tmdbVotes": 306,
     "trailerKey": null,
     "videos": [],
     "posters": [
@@ -75575,8 +75649,8 @@
     "imdbId": "tt1626038",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.211,
-    "tmdbVotes": 783,
+    "tmdbRating": 8.2,
+    "tmdbVotes": 784,
     "trailerKey": "0oRwpy66NXc",
     "videos": [
       {
@@ -75661,27 +75735,27 @@
       {
         "actor": "Alex Désert",
         "actorPhoto": "/iz5fLxrOTKYUkpUmGXgVfCfIZxn.jpg",
-        "character": "Jack Fury / Damocles Officer (voice) / Nick Fury (voice) / Jack Fury (voice)"
+        "character": "Jack Fury (voice) / Nick Fury (voice) / Jack Fury / Damocles Officer (voice)"
       },
       {
         "actor": "Troy Baker",
         "actorPhoto": "/mppX8pDkwNvx3dJzclwcGkngEb3.jpg",
-        "character": "Whirlwind / Grey Gargoyle / Quartermain (voice) / Clay Quartermain (voice) / Quartermain / Blizzard / Whirlwind (voice) / Faradei / Ulik (voice)"
+        "character": "Quartermain / Blizzard / Whirlwind (voice) / Faradei / Ulik (voice) / Whirlwind / Grey Gargoyle / Quartermain (voice) / Clay Quartermain (voice)"
       },
       {
         "actor": "Phil LaMarr",
         "actorPhoto": "/xP2kNlsmXtzXq0geutflO4K9mSE.jpg",
-        "character": "J.A.R.V.I.S. (voice) / SHIELD Doctor / Jarvis (voice) / J.A.R.V.I.S. / Wonder Man (voice)"
+        "character": "SHIELD Doctor / Jarvis (voice) / J.A.R.V.I.S. / Wonder Man (voice) / J.A.R.V.I.S. (voice)"
       },
       {
         "actor": "Kari Wahlgren",
         "actorPhoto": "/kc0BOnSdzCfq8w9qoNVEm5K12x1.jpg",
-        "character": "Enchantress / Karnilla (voice) / Jane Foster (voice) / Jane Foster / Enchantress (voice) / Enchantress (voice)"
+        "character": "Enchantress (voice) / Enchantress / Karnilla (voice) / Jane Foster / Enchantress (voice) / Jane Foster (voice)"
       },
       {
         "actor": "Robin Atkin Downes",
         "actorPhoto": "/qb4xPIJGiKyiQ2MhSDQzFWxN0jS.jpg",
-        "character": "Abomination (voice) / Baron Zemo / Abomination (voice) / Abomination / Baron Zemo (voice) / Baron Zemo (voice)"
+        "character": "Baron Zemo (voice) / Baron Zemo / Abomination (voice) / Abomination / Baron Zemo (voice) / Abomination (voice)"
       },
       {
         "actor": "Peter Jessop",
@@ -75696,12 +75770,12 @@
       {
         "actor": "Cam Clarke",
         "actorPhoto": "/hScRMNVHAFge06mOfFEauKcthtO.jpg",
-        "character": "Doc Samson / Vector (voice) / Doc Samson / Hulkbuster Pilot (voice) / Doc Samson / Constrictor (voice) / Doc Samson (voice)"
+        "character": "Doc Samson / Vector (voice) / Doc Samson (voice) / Doc Samson / Constrictor (voice) / Doc Samson / Hulkbuster Pilot (voice)"
       },
       {
         "actor": "Jim Ward",
         "actorPhoto": "/7Um56ftGoxN6c5GxJSNckeARCDy.jpg",
-        "character": "Shield Agent / Baron Von Strucker (voice) / Damocles / 1940's Announcer / Baron Von Strucker (voice) / Baron Strucker (voice) / Baron Strucker / AIM Scientist / Hydra Soldier #1 (voice)"
+        "character": "Shield Agent / Baron Von Strucker (voice) / Damocles / 1940's Announcer / Baron Von Strucker (voice) / Baron Strucker / AIM Scientist / Hydra Soldier #1 (voice) / Baron Strucker (voice)"
       },
       {
         "actor": "Kari Wührer",
@@ -75721,17 +75795,17 @@
       {
         "actor": "Wally Wingert",
         "actorPhoto": "/5B9STa1OwelvyUs37SWUIFzhIhB.jpg",
-        "character": "Hank Pym (voice) / Yellowjacket (voice)"
+        "character": "Yellowjacket (voice) / Hank Pym (voice)"
       },
       {
         "actor": "Nolan North",
         "actorPhoto": "/gb499KZIoBTZnKCGKE4zwzlcfSe.jpg",
-        "character": "Scientist Supreme / Jimmy Woo / Living Laser / Balder (voice) / Jimmy Woo (voice) / Chemistro / Living Laser (voice)"
+        "character": "Jimmy Woo (voice) / Scientist Supreme / Jimmy Woo / Living Laser / Balder (voice) / Chemistro / Living Laser (voice)"
       },
       {
         "actor": "Vanessa Marshall",
         "actorPhoto": "/yZsWfaiOxaN5MZkWIKPbxz1KKS1.jpg",
-        "character": "Black Widow (voice) / Black Widow / Madame Viper (voice) / Black Widow / AIM Computer (voice)"
+        "character": "Black Widow / Madame Viper (voice) / Black Widow / AIM Computer (voice) / Black Widow (voice)"
       },
       {
         "actor": "Tom Kane",
@@ -75746,12 +75820,12 @@
       {
         "actor": "Phil LaMarr",
         "actorPhoto": "/xP2kNlsmXtzXq0geutflO4K9mSE.jpg",
-        "character": "J.A.R.V.I.S. / Child Kang (voice) / J.A.R.V.I.S. (voice)"
+        "character": "J.A.R.V.I.S. (voice) / J.A.R.V.I.S. / Child Kang (voice)"
       },
       {
         "actor": "Troy Baker",
         "actorPhoto": "/mppX8pDkwNvx3dJzclwcGkngEb3.jpg",
-        "character": "Constrictor / TV Host (voice) / Michael Korvac / Groot (voice) / Clay Quartermain / Robbie Robertson / Constrictor (voice)"
+        "character": "Clay Quartermain / Robbie Robertson / Constrictor (voice) / Constrictor / TV Host (voice) / Michael Korvac / Groot (voice)"
       },
       {
         "actor": "Mark Hamill",
@@ -75801,7 +75875,7 @@
       {
         "actor": "E. G. Daily",
         "actorPhoto": "/sWLXj0yvpMEsZTIsS1ReVQzGnwO.jpg",
-        "character": "Mockingbird / Queen Veranke (voice) / Mockingbird (voice)"
+        "character": "Mockingbird (voice) / Mockingbird / Queen Veranke (voice)"
       },
       {
         "actor": "Vanessa Marshall",
@@ -75811,7 +75885,7 @@
       {
         "actor": "Steve Blum",
         "actorPhoto": "/cpO0muunoigq1WHegeOEI1AIQAo.jpg",
-        "character": "Wolverine (voice) / Beta Ray Bill (voice)"
+        "character": "Beta Ray Bill (voice) / Wolverine (voice)"
       },
       {
         "actor": "Lex Lang",
@@ -75836,7 +75910,7 @@
       {
         "actor": "Bumper Robinson",
         "actorPhoto": "/9KU72zZXIfsGAPgHmhlJmTYvor9.jpg",
-        "character": "War Machine / AIM Drone (voice) / War Machine (voice)"
+        "character": "War Machine (voice) / War Machine / AIM Drone (voice)"
       },
       {
         "actor": "Loren Lester",
@@ -75846,7 +75920,7 @@
       {
         "actor": "Roger Craig Smith",
         "actorPhoto": "/6oE356GbRHAf91Llw7LDpvsAf5L.jpg",
-        "character": "Captain Marvel (voice) / Captain Marvel / SHIELD Agent (voice)"
+        "character": "Captain Marvel / SHIELD Agent (voice) / Captain Marvel (voice)"
       },
       {
         "actor": "Steve Blum",
@@ -76966,22 +77040,22 @@
       {
         "actor": "Roger Craig Smith",
         "actorPhoto": "/6oE356GbRHAf91Llw7LDpvsAf5L.jpg",
-        "character": "Goon #1 (voice) / Council Member #1 (voice) / Captain America / Steve Rogers (voice) / Talk Show Host (voice) / Steve Rogers '42 (voice)"
+        "character": "Goon #1 (voice) / Talk Show Host (voice) / Steve Rogers '42 (voice) / Council Member #1 (voice) / Captain America / Steve Rogers (voice)"
       },
       {
         "actor": "Travis Willingham",
         "actorPhoto": "/clvP30k6cUMf4hukRQqZD3k9z4S.jpg",
-        "character": "Growing Man (voice) / Thor (voice) / Construction Worker (voice) / Narrator (voice)"
+        "character": "Construction Worker (voice) / Thor (voice) / Narrator (voice) / Growing Man (voice)"
       },
       {
         "actor": "Fred Tatasciore",
         "actorPhoto": "/xodxYKRC9mdvgquTdqpmYldliJ3.jpg",
-        "character": "Thunderball (voice) / Volstagg (voice) / Hulk / Bruce Banner (voice)"
+        "character": "Volstagg (voice) / Hulk / Bruce Banner (voice) / Thunderball (voice)"
       },
       {
         "actor": "Roger Craig Smith",
         "actorPhoto": "/6oE356GbRHAf91Llw7LDpvsAf5L.jpg",
-        "character": "Captain America / Steve Rogers (voice) / Nanot Bots (voice) / Computer Voice (voice)"
+        "character": "Nanot Bots (voice) / Computer Voice (voice) / Captain America / Steve Rogers (voice)"
       },
       {
         "actor": "Laura Bailey",
@@ -76991,12 +77065,12 @@
       {
         "actor": "Troy Baker",
         "actorPhoto": "/mppX8pDkwNvx3dJzclwcGkngEb3.jpg",
-        "character": "Director / Gang Leader (voice) / MP Sergeant (voice) / Hawkeye / Clint Barton (voice)"
+        "character": "Hawkeye / Clint Barton (voice) / MP Sergeant (voice) / Director / Gang Leader (voice)"
       },
       {
         "actor": "Troy Baker",
         "actorPhoto": "/mppX8pDkwNvx3dJzclwcGkngEb3.jpg",
-        "character": "Hydra Soldier #2 (voice) / Loki (voice) / Hawkeye / Clint Barton (voice)"
+        "character": "Hydra Soldier #2 (voice) / Hawkeye / Clint Barton (voice) / Loki (voice)"
       },
       {
         "actor": "Travis Willingham",
@@ -77016,17 +77090,17 @@
       {
         "actor": "Troy Baker",
         "actorPhoto": "/mppX8pDkwNvx3dJzclwcGkngEb3.jpg",
-        "character": "Newscaster (voice) / Hawkeye / Clint Barton (voice)"
+        "character": "Hawkeye / Clint Barton (voice) / Newscaster (voice)"
       },
       {
         "actor": "Fred Tatasciore",
         "actorPhoto": "/xodxYKRC9mdvgquTdqpmYldliJ3.jpg",
-        "character": "Hydra Soldier (voice) / Hulk / Bruce Banner (voice)"
+        "character": "Hulk / Bruce Banner (voice) / Hydra Soldier (voice)"
       },
       {
         "actor": "Bumper Robinson",
         "actorPhoto": "/9KU72zZXIfsGAPgHmhlJmTYvor9.jpg",
-        "character": "Falcon / Sam Wilson (voice) / Dock Worker (voice)"
+        "character": "Dock Worker (voice) / Falcon / Sam Wilson (voice)"
       },
       {
         "actor": "Adrian Pasdar",
@@ -77061,7 +77135,7 @@
       {
         "actor": "James C. Mathis III",
         "actorPhoto": "/m2K3qkTJYtpSOWbEKRLBsAM8W9H.jpg",
-        "character": "T'Challa / Black Panther / Computer Voice (voice) / Black Panther / T'Challa (voice)"
+        "character": "Black Panther / T'Challa (voice) / T'Challa / Black Panther / Computer Voice (voice)"
       },
       {
         "actor": "Mick Wingert",
@@ -77076,12 +77150,12 @@
       {
         "actor": "Jennifer Hale",
         "actorPhoto": "/oNQCrdiSm0mABCcE5YaHwuZQK8X.jpg",
-        "character": "F.R.I.D.A.Y. / Songbird / Gabby Talbott (voice) / F.R.I.D.A.Y. / Mom (voice) / F.R.I.D.A.Y. (voice) / Songbird / Council Member #2 (voice) / F.R.I.D.A.Y. / Screaming Mimi (voice) / F.R.I.D.A.Y. / Girl # 1 (voice)"
+        "character": "F.R.I.D.A.Y. / Screaming Mimi (voice) / F.R.I.D.A.Y. (voice) / F.R.I.D.A.Y. / Songbird / Gabby Talbott (voice) / Songbird / Council Member #2 (voice) / F.R.I.D.A.Y. / Mom (voice) / F.R.I.D.A.Y. / Girl # 1 (voice)"
       },
       {
         "actor": "David Kaye",
         "actorPhoto": "/izxtFSio5twcVA1oJWPvobxpcZj.jpg",
-        "character": "Vision / Reporter (voice) / Baron Zemo (voice) / Baron Zemo / Modern Zemo (voice) / Citizen V (voice)"
+        "character": "Baron Zemo (voice) / Baron Zemo / Modern Zemo (voice) / Vision / Reporter (voice) / Citizen V (voice)"
       },
       {
         "actor": "David Kaye",
@@ -77091,7 +77165,7 @@
       {
         "actor": "Roger Craig Smith",
         "actorPhoto": "/6oE356GbRHAf91Llw7LDpvsAf5L.jpg",
-        "character": "Commander Orka (voice) / Captain Rogers / Captain America (voice) / Steve Rogers / Captain America / Elite #2 (voice) / Steve Rogers / Captain America (voice)"
+        "character": "Captain Rogers / Captain America (voice) / Steve Rogers / Captain America / Elite #2 (voice) / Steve Rogers / Captain America (voice) / Commander Orka (voice)"
       },
       {
         "actor": "William Salyers",
@@ -77106,7 +77180,7 @@
       {
         "actor": "Corey Burton",
         "actorPhoto": "/wcpFwdL7m01cZoBJiUSMQVakK2G.jpg",
-        "character": "Mystery Man / Agamotto (voice) / Mystery Man (voice) / Dracula (voice)"
+        "character": "Mystery Man (voice) / Mystery Man / Agamotto (voice) / Dracula (voice)"
       },
       {
         "actor": "James C. Mathis III",
@@ -77131,12 +77205,12 @@
       {
         "actor": "Keston John",
         "actorPhoto": "/zEqkvuCDDgiErHg3XNyoG5TulUg.jpg",
-        "character": "KIllmonger (voice) / N'Jaddaka (voice) / Killmonger (voice)"
+        "character": "Killmonger (voice) / N'Jaddaka (voice) / KIllmonger (voice)"
       },
       {
         "actor": "David Kaye",
         "actorPhoto": "/izxtFSio5twcVA1oJWPvobxpcZj.jpg",
-        "character": "Baron Zemo (voice) / Zemo / Knight Bot #2 (voice)"
+        "character": "Zemo / Knight Bot #2 (voice) / Baron Zemo (voice)"
       },
       {
         "actor": "Ashley Eckstein",
@@ -77151,12 +77225,12 @@
       {
         "actor": "Matt Mercer",
         "actorPhoto": "/qhNnCjYsC7K1nDQe7GQ9Qamzost.jpg",
-        "character": "Tiger Shark / Elite #1 (voice) / Tiger Shark / Knight Bot # 3 (voice) / Tiger Shark (voice)"
+        "character": "Tiger Shark / Knight Bot # 3 (voice) / Tiger Shark / Elite #1 (voice) / Tiger Shark (voice)"
       },
       {
         "actor": "John DiMaggio",
         "actorPhoto": "/qcbQe71nSlULDsP1OxTqltEKFbl.jpg",
-        "character": "Wrecker / Cop (voice) / Galactus (voice)"
+        "character": "Galactus (voice) / Wrecker / Cop (voice)"
       },
       {
         "actor": "Frank Welker",
@@ -77176,7 +77250,7 @@
       {
         "actor": "James C. Mathis III",
         "actorPhoto": "/m2K3qkTJYtpSOWbEKRLBsAM8W9H.jpg",
-        "character": "Black Panther / Secret Service #1 (voice) / Black Panther / Flint (voice)"
+        "character": "Black Panther / Flint (voice) / Black Panther / Secret Service #1 (voice)"
       },
       {
         "actor": "Jesse Burch",
@@ -77186,12 +77260,12 @@
       {
         "actor": "E. G. Daily",
         "actorPhoto": "/sWLXj0yvpMEsZTIsS1ReVQzGnwO.jpg",
-        "character": "Moonstone (voice) / Meteorite (voice)"
+        "character": "Meteorite (voice) / Moonstone (voice)"
       },
       {
         "actor": "Rick D. Wasserman",
         "actorPhoto": "/gjjsSK4WMvDQhComOC02ht1Yo26.jpg",
-        "character": "Techno (voice) / Fixer (voice)"
+        "character": "Fixer (voice) / Techno (voice)"
       },
       {
         "actor": "Grey DeLisle",
@@ -77211,7 +77285,7 @@
       {
         "actor": "Fred Tatasciore",
         "actorPhoto": "/xodxYKRC9mdvgquTdqpmYldliJ3.jpg",
-        "character": "Crossbones / Guardsman #2 (voice) / Crossbones (voice)"
+        "character": "Crossbones (voice) / Crossbones / Guardsman #2 (voice)"
       },
       {
         "actor": "Scott Porter",
@@ -77926,7 +78000,7 @@
       {
         "actor": "Drake Bell",
         "actorPhoto": "/6KxFiHrqiniS3oxV4NCz0sYNTuo.jpg",
-        "character": "Spider-Raptor (voice) / Spider-Man (voice)"
+        "character": "Spider-Man (voice) / Spider-Raptor (voice)"
       },
       {
         "actor": "Drake Bell",
@@ -77941,7 +78015,7 @@
       {
         "actor": "James Arnold Taylor",
         "actorPhoto": "/sSthBDGT8HBd2hXRNPymA6D0ov8.jpg",
-        "character": "The Leader / TV Director (voice) / Blastaar / The Leader (voice)"
+        "character": "Blastaar / The Leader (voice) / The Leader / TV Director (voice)"
       },
       {
         "actor": "James C. Mathis III",
@@ -78592,8 +78666,8 @@
     "imdbId": "tt4176370",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 7.2,
-    "tmdbVotes": 95,
+    "tmdbRating": 7.208,
+    "tmdbVotes": 96,
     "trailerKey": "N4T3wiOEGLU",
     "videos": [
       {
@@ -78719,7 +78793,7 @@
     "tmdbId": 138502,
     "tmdbType": "tv",
     "releaseDate": "2026-07-01",
-    "runtimeMin": 285,
+    "runtimeMin": 287,
     "episodes": [
       {
         "season": 2,
@@ -78781,8 +78855,8 @@
         "season": 2,
         "number": 9,
         "name": "Survival of the Fittest",
-        "still": null,
-        "runtime": null
+        "still": "/4ZS9gq1GkqyWM4GgJhSnAHUMvpr.jpg",
+        "runtime": 32
       }
     ],
     "posterPath": "/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
@@ -78803,8 +78877,8 @@
     "imdbId": "tt16026746",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": 8.681,
-    "tmdbVotes": 828,
+    "tmdbRating": 8.688,
+    "tmdbVotes": 848,
     "trailerKey": "pv3Ss8o9gGQ",
     "videos": [
       {
@@ -78875,12 +78949,17 @@
       {
         "actor": "Jennifer Hale",
         "actorPhoto": "/oNQCrdiSm0mABCcE5YaHwuZQK8X.jpg",
-        "character": "Jean Grey (voice) / Jean Grey / Wolfsbane (voice) / News Broadcaster (voice)"
+        "character": "Jean Grey / Wolfsbane (voice) / News Broadcaster (voice) / Jean Grey (voice)"
       },
       {
         "actor": "Isaac Robinson-Smith",
         "actorPhoto": "/ceNxqevAX7c9uAzl8IthjG3slqy.jpg",
         "character": "Bishop (voice)"
+      },
+      {
+        "actor": "Adrian Hough",
+        "actorPhoto": "/58REQAaSAbiAnCptqrhx6bDhTQc.jpg",
+        "character": "Nightcrawler (voice) / Nightcrawler / Strong Guy (voice) / Strong Guy (voice)"
       },
       {
         "actor": "Cal Dodd",
@@ -78893,14 +78972,9 @@
         "character": "Beast (voice)"
       },
       {
-        "actor": "Adrian Hough",
-        "actorPhoto": "/58REQAaSAbiAnCptqrhx6bDhTQc.jpg",
-        "character": "Nightcrawler (voice) / Strong Guy (voice)"
-      },
-      {
         "actor": "Rachel Kimsey",
         "actorPhoto": "/epDyu5dJYkJDisKZpCERzW3EWmw.jpg",
-        "character": "Computer Cube (voice) / Ship (voice) / Bella Donna (voice) / Danger (voice)"
+        "character": "Danger (voice) / Computer Cube (voice) / Ship (voice) / Bella Donna (voice)"
       },
       {
         "actor": "Catherine Disher",
@@ -78938,19 +79012,14 @@
         "character": "Rogue (voice)"
       },
       {
-        "actor": "Matthew Waterson",
-        "actorPhoto": "/eqL4KlMVQrL5yZrF1YDXKz5gHIj.jpg",
-        "character": "Magneto (voice) / Magneto / Eson (voice)"
-      },
-      {
         "actor": "Naoko Mori",
         "actorPhoto": "/hUrrFXt0ncgnfX1cjxvjCZa6DHj.jpg",
         "character": "Psylocke (voice)"
       },
       {
-        "actor": "Christopher Barger",
-        "actorPhoto": null,
-        "character": "Archangel (voice) / Archangel / Wing (voice)"
+        "actor": "Matthew Waterson",
+        "actorPhoto": "/eqL4KlMVQrL5yZrF1YDXKz5gHIj.jpg",
+        "character": "Magneto (voice) / Magneto / Eson (voice) / Eson (voice)"
       },
       {
         "actor": "Teddy Sears",
@@ -78963,9 +79032,24 @@
         "character": "Polaris (voice)"
       },
       {
+        "actor": "Holly Chou",
+        "actorPhoto": "/8sPU4zmJIwHk2qJ63wxOTnEcrS4.jpg",
+        "character": "Jubilee (voice)"
+      },
+      {
+        "actor": "Christopher Barger",
+        "actorPhoto": null,
+        "character": "Archangel (voice) / Archangel / Wing (voice)"
+      },
+      {
+        "actor": "Gui Agustini",
+        "actorPhoto": null,
+        "character": "Sunspot (voice)"
+      },
+      {
         "actor": "Lawrence Bayne",
         "actorPhoto": "/mfb2WumVLTAHFE0FVvKWvEjgmV5.jpg",
-        "character": "War (voice) / Carl Denti (voice)"
+        "character": "Carl Denti (voice) / War (voice)"
       },
       {
         "actor": "Gates McFadden",
@@ -78976,16 +79060,6 @@
         "actor": "Adetokumboh M'Cormack",
         "actorPhoto": "/p8yvhgwB1L9JlKf2mhRjgwIQsei.jpg",
         "character": "En Sabah Nur (voice)"
-      },
-      {
-        "actor": "Holly Chou",
-        "actorPhoto": "/8sPU4zmJIwHk2qJ63wxOTnEcrS4.jpg",
-        "character": "Jubilee (voice)"
-      },
-      {
-        "actor": "Gui Agustini",
-        "actorPhoto": null,
-        "character": "Sunspot (voice)"
       },
       {
         "actor": "Miatta Ade Lebile",
@@ -79000,7 +79074,12 @@
       {
         "actor": "John de Lancie",
         "actorPhoto": "/e9GsjWaW9fabT22ceLzesJhUgzd.jpg",
-        "character": "Rama-Tut (voice) / Rama-Tut / Kang (voice)"
+        "character": "Rama-Tut / Kang (voice) / Rama-Tut (voice)"
+      },
+      {
+        "actor": "AJ LoCascio",
+        "actorPhoto": "/pHycR75zn1mnGzDTEbxwXj1728P.jpg",
+        "character": "Gambit / Bobby LeBeau (voice) / (voice)"
       },
       {
         "actor": "Josh Keaton",
@@ -79088,9 +79167,14 @@
         "character": "Illyana Rasputin (voice)"
       },
       {
-        "actor": "A.J. LoCascio",
-        "actorPhoto": "/pHycR75zn1mnGzDTEbxwXj1728P.jpg",
-        "character": "Gambit / Bobby LeBeau (voice)"
+        "actor": "Ron Rubin",
+        "actorPhoto": "/f7C52auBxmr2VSt2zQkIqcplypC.jpg",
+        "character": "Multiple Man (voice)"
+      },
+      {
+        "actor": "Randall Carpenter",
+        "actorPhoto": "/gt2AbOrJkVsjxztrOfY0eFotypX.jpg",
+        "character": "Mystique (voice)"
       }
     ],
     "authors": [],

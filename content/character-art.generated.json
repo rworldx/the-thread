@@ -1524,6 +1524,26 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "songbird": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/50/Thunderbolts_Doomstrike_Vol_1_1_Tao_Virgin_Variant.jpg/revision/latest?cb=20250221195650",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "the-maker": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6b/Ultimates_Vol_3_24_Ultimate_Special_Variant_Textless.jpg/revision/latest?cb=20260605230107",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "egghead": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/42/Elihas_Starr_%28Earth-616%29_from_Ant-Man_Annual_Vol_1_1_001.jpg/revision/latest?cb=20150723192140",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "enchantress": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/Immortal_Thor_Vol_1_17_Go_Variant_Textless.jpg/revision/latest?cb=20241123063641",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",
@@ -2280,7 +2300,7 @@
     "matchedAs": "Kraglin Obfonteri"
   },
   "mbaku": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7e/M%27Baku_Profile.png/revision/latest?cb=20231021150505",
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e4/M%27Baku_Infobox.png/revision/latest?cb=20231021150505",
     "source": "mcu-wiki",
     "matchedAs": "M'Baku"
   },
@@ -3000,7 +3020,7 @@
     "matchedAs": "hand-picked"
   },
   "white-vision": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/13/WhiteVision_%28WV%29.jpg/revision/latest?cb=20240812220039",
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/60/White_Vision_Infobox.jpg/revision/latest?cb=20260815234105",
     "source": "mcu-wiki",
     "matchedAs": "White Vision"
   },

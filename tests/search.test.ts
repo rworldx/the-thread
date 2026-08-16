@@ -41,7 +41,10 @@ describe("S. search", () => {
     // The cost is the whole differentiator — a search returning only titles is
     // one anyone can build.
     const dw = ITEMS.find((i) => i.id === "deadpool-and-wolverine")!;
-    expect(dw.pathLength).toBe(33);
+    /* 76, not 33. An MCU path is the whole MCU line behind the target now,
+       and the search index carries that same number — which is the point of
+       carrying it: the cost shown in search is the cost the page will show. */
+    expect(dw.pathLength).toBe(76);
     expect(dw.minutes).toBeGreaterThan(4000);
     expect(ITEMS.find((i) => i.id === "iron-man")!.pathLength).toBe(0);
   });
