@@ -31,7 +31,8 @@
     "notRequired": "Not required. Skipping these will not leave you lost.",
     "fullExperience": "The full experience: {n, plural, one {# title} other {# titles}} · {runtime}",
     "needsFirst": "needs {list} first, {cost}",
-    "suggestedBy": "suggested by {title}"
+    "suggestedBy": "suggested by {title}",
+    "noExtra": "no extra"
   },
   "title": {
     "optional": "optional",

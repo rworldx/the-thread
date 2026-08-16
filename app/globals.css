@@ -6240,3 +6240,95 @@ html:has(:target) {
     background: var(--color-red);
   }
 }
+
+/**
+ * "ALSO RECOMMENDED" IS A BILL.
+ *
+ * The section had no styles at all, so it rendered as prose: title, year,
+ * universe and a runtime all running together in one line, with the cost — the
+ * only number the reader is actually deciding on — buried mid-sentence. Blade
+ * costs two hours and Marvel's Inhumans costs a hundred and fourteen, and they
+ * looked identical.
+ *
+ * Set as a ledger instead. Name and provenance on the start edge, price on the
+ * end edge, a hairline between rows, and the figures in tabular numerals so
+ * they stack into a column the eye can run down. The prerequisite line hangs
+ * under its own row, indented, because it is the REASON for that price rather
+ * than a separate item.
+ *
+ * Logical properties throughout: in Arabic the whole ledger mirrors and the
+ * prices sit on the left, which is where the eye ends a line there.
+ */
+.rec-list {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  border-block-start: 1px solid var(--color-hairline);
+}
+.rec-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: var(--space-2) var(--space-4);
+  padding-block: var(--space-3);
+  border-block-end: 1px solid var(--color-hairline);
+}
+.rec-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-inline-size: 0;
+}
+.rec-title {
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+}
+.rec-title:hover {
+  text-decoration: underline;
+}
+/* The metadata is a row of quiet facts, separated by the same middot the
+   thread panels use rather than by punctuation typed into the markup. */
+.rec-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-2);
+  color: var(--color-ink-faint);
+  font-size: var(--text-sm);
+}
+.rec-meta > * + *::before {
+  content: "·";
+  margin-inline-end: var(--space-2);
+  color: var(--color-hairline);
+}
+/* The price. Tabular so the column aligns, and set at body size rather than
+   larger — it is the most important thing in the row and does not need to
+   shout to prove it. */
+.rec-price {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  white-space: nowrap;
+  justify-self: end;
+}
+/* The homework, under its own row and indented to read as a consequence of it
+   rather than as another entry in the ledger. */
+.rec-needs {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding-inline-start: var(--space-3);
+  border-inline-start: 2px solid var(--color-hairline);
+  color: var(--color-ink-faint);
+  font-size: var(--text-sm);
+}
+
+/* Below 30rem the price drops under the name: two columns of unequal weight
+   in 320px produces a title broken across four lines to save a number that
+   fits comfortably on its own. */
+@media (max-width: 30rem) {
+  .rec-row {
+    grid-template-columns: 1fr;
+  }
+  .rec-price {
+    justify-self: start;
+  }
+}

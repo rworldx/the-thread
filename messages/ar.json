@@ -31,7 +31,8 @@
     "notRequired": "غير ضروري. تخطيه لن يؤثر على فهم القصة.",
     "fullExperience": "التجربة الكاملة: {n, plural, zero {لا عناوين} one {عنوان واحد} two {عنوانان} few {# عناوين} many {# عنوانًا} other {# عنوان}} · {runtime}",
     "needsFirst": "يحتاج إلى {list} أولًا، {cost}",
-    "suggestedBy": "موصى به مع {title}"
+    "suggestedBy": "موصى به مع {title}",
+    "noExtra": "بلا إضافة"
   },
   "title": {
     "optional": "اختياري",

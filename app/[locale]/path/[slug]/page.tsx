@@ -586,32 +586,66 @@ export default async function PathPage({ params }: Params) {
               subject by scanning every <li> on the page, which worked until the
               editor's note grew a list of the titles it mentions and one of
               those chips started matching first. */}
+          {/**
+           * A BILL, NOT A BULLET LIST.
+           *
+           * This section answers one question — is this detour worth it — and
+           * the answer is a price. Blade costs two hours and Marvel's Inhumans
+           * costs a hundred and fourteen, and the old markup gave them a bullet
+           * each and ran the numbers together in prose, which is the exact
+           * failure the comment above it warned about and did not fix.
+           *
+           * So it is set as a ledger: what you are buying on the left, what it
+           * costs on the right, hairline between rows, figures in tabular
+           * numerals so the column reads as a column. Anything with
+           * prerequisites carries them underneath as the reason for its price.
+           *
+           * NO RED. The palette spends red on exactly five things and a price
+           * that is merely large is not one of them — the number is loud enough
+           * set in the same ink as everything else.
+           */}
           <ul className="rec-list">
             {recommendations.map(({ rec, via, cost }) => (
-              <li key={rec.id}>
-                <Link href={`/${locale}/path/${rec.id}`}>
-                  <bdi lang="en">{rec.titleEn}</bdi>
-                </Link>{" "}
-                {/* Same bidi isolation as the thread panels — a `dir` here would
-                    flip start/end for this element and break in the AR locale. */}
-                <bdi lang="ar">{rec.titleAr}</bdi> · {rec.releaseDate.slice(0, 4)} ·{" "}
-                {rec.universe}
-                {seasonLabel(rec, msg) && ` · ${seasonLabel(rec, msg)}`}
-                {rec.optional && ` · ${t("title.optional")}`}
-                {via.id !== target.id && <> · {t("path.suggestedBy", { title: via.titleEn })}</>}
+              <li key={rec.id} className="rec-row">
+                <span className="rec-main">
+                  <Link className="rec-title" href={`/${locale}/path/${rec.id}`}>
+                    <bdi lang="en">{rec.titleEn}</bdi>
+                  </Link>{" "}
+                  {/* REAL SPACES BETWEEN THE FACTS, not only the CSS middot.
+                      Flex gaps and a `::before` separator look right and read
+                      as one word to anything that walks the text: without
+                      these the row is "2002legacy", which is what a screen
+                      reader announces and what the render tests parse. */}
+                  <span className="rec-meta">
+                    {/* Same bidi isolation as the thread panels — a `dir` here
+                        would flip start/end and break in the AR locale. */}
+                    <bdi lang="ar">{rec.titleAr}</bdi>{" "}
+                    <span className="tabular">{rec.releaseDate.slice(0, 4)}</span>{" "}
+                    <span>{rec.universe}</span>{" "}
+                    {seasonLabel(rec, msg) && <span>{seasonLabel(rec, msg)}</span>}{" "}
+                    {rec.optional && <span>{t("title.optional")}</span>}{" "}
+                    {via.id !== target.id && (
+                      <span>{t("path.suggestedBy", { title: via.titleEn })}</span>
+                    )}
+                  </span>
+                </span>
+                {/* THE PRICE IS THE WHOLE COST, not just the homework: what the
+                    reader spends is this title plus anything it drags in. */}
+                <span className="rec-price">
+                  <bdi>{totalRuntime([rec, ...cost], msg)}</bdi>
+                </span>
                 {cost.length > 0 && (
-                  <p>
+                  <p className="rec-needs">
                     {/* Runtime leads. "1 title" for Agents of S.H.I.E.L.D. reads
                         cheaper than "2 titles" for the Blade films while costing
                         about 25× the hours — the count is the wrong headline. */}
-                    ↳{" "}
                     {t("path.needsFirst", {
                       list: cost
                         .map((c) => {
                           const s = seasonLabel(c, msg);
                           return s ? `${c.titleEn} (${s})` : c.titleEn;
                         })
-                        .join("، ".trim() === "" ? ", " : ", "),
+                        .join(", "),
                       cost: formatCost(cost, msg),
                     })}
                   </p>
