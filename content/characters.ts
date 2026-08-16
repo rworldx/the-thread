@@ -1487,9 +1487,11 @@ const defenders: CharacterDraft[] = [
     species: "Mutate",
     powers: [
       { en: "Radar sense", ar: "حاسة رادارية" },
-      { en: "Heightened hearing", ar: "سمع فائق" },
-      { en: "Trained fighter", ar: "مقاتل مدرَّب" },
-      { en: "Defence lawyer", ar: "محامي دفاع" },
+      { en: "Hears a heartbeat lie", ar: "يسمع كذب نبضة القلب" },
+      { en: "Every sense hyper-acute", ar: "كل حواسه مفرطة الحدة" },
+      { en: "Master martial artist", ar: "سيد فنون قتالية" },
+      { en: "Acrobat", ar: "بهلواني" },
+      { en: "Billy clubs", ar: "هراوتان" },
     ],
     origin: {
       en: "Blinded as a boy by the chemicals that sharpened everything else. He is a defence lawyer in Hell's Kitchen by day and, at night, the reason the neighbourhood is worth less to the people buying it.",
@@ -1511,8 +1513,13 @@ const defenders: CharacterDraft[] = [
     universe: ["defenders"],
     species: "Enhanced human",
     powers: [
-      { en: "Enhanced strength", ar: "قوة معزّزة" },
-      { en: "Some flight", ar: "قدرة محدودة على الطيران" },
+      /* The strongest of them by raw lift, which some sources rank first
+         outright — and she is the least trained, which is why she is third. */
+      { en: "Superhuman strength", ar: "قوة خارقة" },
+      { en: "Throws a man through a wall", ar: "تقذف رجلًا عبر جدار" },
+      { en: "Great durability", ar: "تحمّل كبير" },
+      { en: "Leaps rather than flies", ar: "تقفز ولا تطير" },
+      { en: "Heals fast", ar: "تشفى سريعًا" },
       { en: "Private investigator", ar: "محققة خاصة" },
     ],
     origin: {
@@ -1531,8 +1538,11 @@ const defenders: CharacterDraft[] = [
     universe: ["defenders"],
     species: "Enhanced human",
     powers: [
-      { en: "Unbreakable skin", ar: "جلد لا يُخترق" },
-      { en: "Great strength", ar: "قوة هائلة" },
+      { en: "Unbreakable skin", ar: "جلد لا ينكسر" },
+      { en: "Bulletproof", ar: "مضاد للرصاص" },
+      { en: "Superhuman strength", ar: "قوة خارقة" },
+      { en: "Accelerated healing", ar: "شفاء متسارع" },
+      { en: "Enormous durability", ar: "تحمّل هائل" },
     ],
     origin: {
       en: "A man convicted of something he did not do, who came out of a prison experiment with skin nothing gets through, and went to Harlem to be left alone.",
@@ -1551,8 +1561,15 @@ const defenders: CharacterDraft[] = [
     /* NOT an ordinary human. He punched the heart of a dragon and the chi is what came back out. */
     species: "Enhanced human",
     powers: [
-      { en: "The chi-charged fist", ar: "القبضة المشحونة بالتشي" },
-      { en: "Martial arts master", ar: "أستاذ فنون قتالية" },
+      /* Two bullets for the man the sources call the most powerful Defender.
+         The Fist is not a punch, it is chi made into a weapon, and it heals
+         him, senses energy and kills the lights in a building. */
+      { en: "The Iron Fist: chi as a weapon", ar: "قبضة الحديد: تشي سلاحًا" },
+      { en: "Shatters steel with one strike", ar: "يحطم الفولاذ بضربة" },
+      { en: "Heals himself with chi", ar: "يشفي نفسه بالتشي" },
+      { en: "Senses and disrupts energy", ar: "يستشعر الطاقة ويعطلها" },
+      { en: "Master martial artist of K'un-Lun", ar: "سيد قتال من كون-لون" },
+      { en: "Immune to poison and disease", ar: "محصّن ضد السم والمرض" },
     ],
     origin: {
       en: "The heir to a fortune, presumed dead in a plane crash as a child, who comes back fifteen years later with a title from a city nobody believes exists.",
@@ -1570,8 +1587,10 @@ const defenders: CharacterDraft[] = [
     universe: ["defenders", "legacy", "mcu"],
     species: "Human",
     powers: [
-      { en: "Marine training", ar: "تدريب المارينز" },
+      { en: "Marine special forces training", ar: "تدريب قوات خاصة" },
+      { en: "Weapons mastery", ar: "إتقان الأسلحة" },
       { en: "Heavy weapons", ar: "أسلحة ثقيلة" },
+      { en: "Tactician", ar: "تكتيكي" },
       { en: "Will not stop", ar: "لا يتوقف" },
     ],
     origin: {
