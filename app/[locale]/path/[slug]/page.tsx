@@ -16,6 +16,7 @@ import type { DescribeMessages } from "@/lib/describe";
 import { uiMessages, type UiMessages } from "@/lib/ui-messages";
 import { Poster } from "@/app/components/poster";
 import { SpoilerContext } from "@/app/components/shield";
+import { Pace } from "@/app/components/pace";
 import { WhereToWatch } from "@/app/components/where-to-watch";
 import { ArrowIcon } from "@/app/components/icons";
 import {
@@ -545,7 +546,17 @@ export default async function PathPage({ params }: Params) {
         <p>{t("path.nothingFirst")}</p>
       )}
 
-      <Thread>
+      {/* The pace goes in the Thread's own `progress` slot, which has existed
+          unused since the component was written: "ties progress to the
+          signature element rather than bolting a separate bar onto the page". */}
+      <Thread
+        progress={
+          <Pace
+            path={minimum.map((x) => ({ id: x.id, runtimeMin: x.runtimeMin }))}
+            releaseDate={target.releaseDate}
+          />
+        }
+      >
         {minimum.map((item, i) => (
           <Row
             key={item.id}

@@ -610,5 +610,11 @@
     "heading": "The MCU",
     "lede": "Two sagas, six phases, one continuous line from Iron Man to Secret Wars. Where a film needs something from another studio first, the note is on the line rather than in a footnote.",
     "bce": "BCE"
+  },
+  "pace": {
+    "done": "done",
+    "titlesLeft": "titles left",
+    "hoursLeft": "hours left",
+    "perWeek": "hrs/week to finish in {weeks}"
   }
 }

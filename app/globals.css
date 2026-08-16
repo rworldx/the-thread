@@ -6332,3 +6332,51 @@ html:has(:target) {
     justify-self: start;
   }
 }
+
+/**
+ * THE PACE LINE — what is left, and what that costs per week.
+ *
+ * Sits above the thread inside its own slot, so the progress fill and the
+ * figures read as one object rather than as a widget parked on the page. The
+ * bar is the same red the thread's progress line uses, at the same weight, for
+ * the same reason: there is one colour for "how far you have got".
+ *
+ * Figures are tabular and the labels are not, so the numbers align down the
+ * row while the words stay in the body face. Logical properties throughout —
+ * the bar fills from the start edge, which is the right edge in Arabic.
+ */
+.pace {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-4);
+}
+.pace-bar {
+  block-size: 3px;
+  border-radius: 2px;
+  background: var(--color-hairline);
+  overflow: hidden;
+}
+.pace-fill {
+  display: block;
+  block-size: 100%;
+  background: var(--color-red);
+  /* No transition: this renders once on hydration at its final width, and
+     animating from zero would read as loading rather than as progress. */
+}
+.pace-figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-4);
+  color: var(--color-ink-faint);
+  font-size: var(--text-sm);
+}
+.pace-figures b {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+/* The deadline clause is the only part that is a prediction rather than a
+   fact, and it earns the red the rest of the row does not get. */
+.pace-target b {
+  color: var(--color-red);
+}
