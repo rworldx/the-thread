@@ -428,7 +428,7 @@ const TIERS: Tier[] = [
          says "Changes size". The rule was reading the writer's word choice.
          Pym particles and a flight rig are equipment the same way armour is.
          ascii-ok: reads `powers[].en`, English by construction. */
-      /\b(armour|armor|exoskeleton|repulsor|powered suit|built her own suit|changes size|pym particle|grows and shrinks|flight rig|winged)/i.test(
+      /\b(armour|armor|exoskeleton|repulsor|powered suit|built her own suit|changes size|pym particle|grows and shrinks|flight rig|winged|sp\/\/dr|mech\b|pilots the)/i.test(
         c.powers.map((x) => x.en).join(" "),
       ) ||
       sp(
@@ -853,6 +853,60 @@ export const OUTRANKS: string[][] = [
      "nearly indestructible" against "ace pilot". Adam Warlock leads from
      tier 5 and is not in this group; Kraglin, Phyla-Vell and Cosmo trail it. */
   ["drax", "star-lord", "nebula", "gamora", "rocket", "groot", "mantis"],
+  /**
+   * THE SPIDER-SOCIETY, thirty-three of them, ordered.
+   *
+   * This is the group the scorer handles worst, and for a structural reason:
+   * thirty-four characters with near-identical powers, so the ranking turned on
+   * how each record happens to be WORDED. Spider-UK, Spider-Byte and Spinstress
+   * led the chip because their origins talk about walking between realities;
+   * Silk, Kaine, Ben Reilly, Spider-Punk and Spider-Man 2099 scored ZERO,
+   * because "Bitten by the same spider" and "Marks his kills" contain no word
+   * the patterns know. Spider-Man himself was ninth.
+   *
+   * So the order is stated. Miles first — he has everything Peter has plus the
+   * venom strike and invisibility, which is the usual verdict. Then Peter, the
+   * benchmark. Then the ones who are measurably more than baseline: Miguel's
+   * talons and accelerated vision, Billy's Captain Britain powers, Cindy's
+   * superior spider-sense, Kaine's healing. The three live-action Peters sit
+   * together in the middle, since they are one character performed three ways.
+   * Madame Web is last of the tier: precognition is not a fight.
+   */
+  [
+    "miles-morales",
+    "spider-man",
+    "spider-man-2099",
+    "spider-uk",
+    "silk",
+    "kaine",
+    "ben-reilly",
+    "spider-woman",
+    "gwen-stacy",
+    "spider-punk",
+    "anya-corazon",
+    "julia-carpenter",
+    "mattie-franklin",
+    "spider-man-tom",
+    "spider-man-tobey",
+    "spider-man-andrew",
+    "mayday-parker",
+    "spider-boy",
+    "spider-man-noir",
+    "pavitr-prabhakar",
+    "spider-man-2211",
+    "peni-parker",
+    "charlotte-witter",
+    "bride-of-nine-spiders",
+    "spider-smasher",
+    "web-slinger",
+    "spider-rex",
+    "spinstress",
+    "spider-byte",
+    "old-man-spider",
+    "web-weaver",
+    "sun-spider",
+    "madame-web",
+  ],
   /* THE DEFENDERS, researched. Iron Fist first is the ranking ScreenRant's
      survey of the Netflix corner gives, and the reasoning holds: the Fist is
      the only power among them that scales — it shatters steel, heals its owner
