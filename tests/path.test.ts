@@ -134,29 +134,47 @@ describe("D. pathTo — the product", () => {
   });
 
   it("D13c the minimum path to Multiverse of Madness drops by exactly the 12 recommendations", () => {
-    // Four direct prerequisites, but 38 titles resolved — because No Way Home
+    // Four direct prerequisites, but 39 titles resolved — because No Way Home
     // is a genuine prerequisite and it drags in the five Sony Spider-Man films,
     // and because an MCU path is now the whole MCU line behind it rather than
     // the dependency closure alone. 32 before the spine; the six that joined
     // are MCU titles nothing happened to require. That is the point of the
     // spine: the saga is a sequence, not a set of prerequisites.
     const min = path("doctor-strange-in-the-multiverse-of-madness");
-    expect(min).toHaveLength(38);
+    expect(min).toHaveLength(39);
     for (const id of ["doctor-strange", "wandavision-s1", "spider-man-no-way-home", "what-if-s1"]) {
       expect(min).toContain(id);
     }
     expect(min).toContain("spider-man"); // via No Way Home, correctly
   });
 
-  it("D16 an optional title never appears in any minimum path", () => {
-    // The corpus counterpart of rule B18: if the thread draws something dashed,
-    // no minimum path may depend on it.
-    const optional = titles.filter((t) => t.optional).map((t) => t.id);
-    expect(optional.length).toBeGreaterThan(0);
+  it("D16 nothing ever REQUIRES an optional title", () => {
+    /**
+     * The corpus counterpart of rule B18: if the thread draws something dashed,
+     * no minimum path may DEPEND on it.
+     *
+     * This used to be stated as "never appears in a minimum path", which was
+     * the same claim while a path was only ever a dependency closure. It is
+     * not any more: an MCU path is the whole MCU line, and The Incredible Hulk
+     * is on that line — skippable, drawn hollow and dashed with the word
+     * beside it, and present. Absent and skippable are different things.
+     *
+     * So the promise is stated as what it always meant. A dashed title may sit
+     * in the sequence; nothing may be unwatchable without it.
+     */
+    const optional = new Set(titles.filter((t) => t.optional).map((t) => t.id));
+    expect(optional.size).toBeGreaterThan(0);
     for (const t of titles) {
-      for (const id of optional) {
+      for (const r of t.requires) {
+        expect(optional.has(r), `${t.id} requires optional ${r}`).toBe(false);
+      }
+    }
+    /* And the original form still holds everywhere outside the MCU spine. */
+    for (const t of titles) {
+      if (t.universe === "mcu") continue;
+      for (const id of path(t.id, "minimum")) {
         if (id === t.id) continue;
-        expect(path(t.id, "minimum"), `${t.id} requires optional ${id}`).not.toContain(id);
+        expect(optional.has(id), `${t.id} pulls in optional ${id}`).toBe(false);
       }
     }
   });
@@ -205,10 +223,17 @@ describe("D. pathTo — the product", () => {
     const onPath = new Set(pathTo(titles, "deadpool-and-wolverine", "minimum").map((t) => t.id));
     for (const id of ids) expect(onPath.has(id)).toBe(false);
 
-    // Hulk is recommended by The Avengers, not by the target — attribution
-    // matters, because the note that explains it hangs off the recommender.
-    const hulk = recs.find((r) => r.rec.id === "the-incredible-hulk");
-    expect(hulk?.via.id).toBe("the-avengers");
+    /**
+     * Daredevil is recommended by No Way Home, not by the target — attribution
+     * matters, because the note that explains it hangs off the recommender.
+     *
+     * This used to assert the same thing about The Incredible Hulk via The
+     * Avengers. The Hulk is no longer a recommendation here for the right
+     * reason: an MCU path is the whole MCU line, so he is ON it, and a title
+     * already on the path is not offered as an extra.
+     */
+    const dd = recs.find((r) => r.rec.id === "daredevil-s1");
+    expect(dd?.via.id).toBe("spider-man-no-way-home");
   });
 
   it("D18b the grouped recommendations cover every title full mode adds", () => {

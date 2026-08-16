@@ -255,7 +255,7 @@ export function mcuOrder<T extends GraphNode & { universe: string; type: string 
  * in `full` mode: an `enriches` edge can point at a title released *after* the
  * target, and the answer to "what comes before X" must still end at X.
  */
-export function pathTo<T extends GraphNode & { optional?: boolean }>(
+export function pathTo<T extends GraphNode & { optional?: boolean; type?: string }>(
   titles: readonly T[],
   id: string,
   mode: PathMode = "minimum",
@@ -324,13 +324,21 @@ export function pathTo<T extends GraphNode & { optional?: boolean }>(
       }
     }
     for (const t of titles) {
-      /* OPTIONAL TITLES STAY OFF THE SPINE, which keeps D16 true: if the
-         thread draws something dashed, no minimum path may lean on it. Six MCU
-         titles are marked optional and five of them are one-shots running
-         three to fifteen minutes. The sixth is The Incredible Hulk, which this
-         corpus already judged skippable — so leaving it out is the editorial
-         position the site has held all along, not a new one. */
-      if (t.optional) continue;
+      /**
+       * SHORTS STAY OFF THE SPINE. OPTIONAL TITLES DO NOT.
+       *
+       * The first cut of this skipped anything marked `optional`, which took
+       * The Incredible Hulk out of the MCU line — and it is an MCU film, in
+       * the timeline, whatever anyone thinks of it. Skippable is not the same
+       * as absent: the panel already draws an optional title with a hollow
+       * node, a dashed connector and the word beside it, which says "you may
+       * skip this" far better than silence does.
+       *
+       * The five one-shots go, because they are three to fifteen minutes of
+       * DVD extra and `mcuOrder` has always filtered them out of the saga for
+       * the same reason.
+       */
+      if (t.type === "short") continue;
       if (t.universe !== "mcu" || t.id === id || descendants.has(t.id)) continue;
       if (byDateThenId(t, target) >= 0) continue;
       ancestors.add(t.id);
