@@ -24,14 +24,14 @@ before it looked like anything.
 | Rights-holders | MCU (74) · Animation (56) · Legacy (31) · Fox (18) · Sony (15) · Defenders (13) · Marvel Television (9) |
 | Universes, as navigated | 8 — Fox splits into X-Men and Fantastic Four, two separate watch orders |
 | The essentials spine | 22 titles, Iron Man → Far From Home |
-| Characters | 670, appearances derived from cast |
+| Characters | 674, appearances derived from cast |
 | Episodes | 2,193, with stills and runtimes, on the season pages |
-| Pages | 1,881, all statically prerendered |
-| Tests | 317 unit + 51 browser |
+| Pages | 1,889, all statically prerendered |
+| Tests | 320 unit + 53 browser |
 | Locales | English and Arabic, both rendering |
 
 **Images: nothing is transformed by Vercel.** Image Optimization is billed per
-transformation, and 216 posters plus 670 portraits plus galleries and search
+transformation, and 216 posters plus 674 portraits plus galleries and search
 thumbnails exhausted the 5,000 free ones — after which the optimiser *errors*
 rather than degrading, so most of the deployed site lost its images while
 localhost looked perfect. Reducing usage does not refund a spent quota, so the
@@ -91,8 +91,9 @@ lib/describe.ts            seasonLabel · formatCost · totalRuntime
 lib/collections.ts         the groupings the homepage and /projects render
 lib/wall.ts                which 24 posters make the hero, and in what order
 content/character-schema.ts  CharacterSource — species, roles, mutant levels
-content/characters.ts      the 670 people, hand-written; appearances are NOT
+content/characters.ts      the 674 people, hand-written; appearances are NOT
 lib/characters.ts          the cast join — see "Characters" below
+lib/power.ts               the power ranking the Strongest sort runs on
 scripts/sync-tmdb.ts       build-time TMDB fetch; zero API calls in production
 scripts/sync-characters.ts artwork resolution; writes character-art.generated
 ```
@@ -130,7 +131,7 @@ confidently wrong runtime or an invented plot summary.
 
 ## Characters
 
-670 people. Their **appearances are derived, never typed**: a character is in a
+674 people. Their **appearances are derived, never typed**: a character is in a
 title when that title's TMDB cast credits name them. Hand-listing them would put
 the same fact in two files — the mistake `titleEn` and `spoilerSafe` each made
 once — and the second copy always rots first.
@@ -158,6 +159,10 @@ absolute:
 | `alsoIn` | An appearance that is real and **uncredited**. TMDB lists four credits for the whole 1967 Fantastic Four series, and the Silver Surfer carries one of its episodes | Nothing — it is additive, so it is kept narrow by review |
 | `notIn` | A credit that uses the character's word for **somebody else**. Daredevil season 2 credits a bit part as "Leader"; the Hulk's Leader is not in that show | **Throws at build time** if it stops matching, so a stale exclusion cannot hide |
 
+`alsoIn` earns its place constantly: TMDB lists fourteen cast credits for The
+Super Hero Squad Show and the series has thirty-five characters, so more than
+half the roster is real, on screen, and in no credit anywhere.
+
 Neither may be used to paper over a matcher bug. If a credit really is the
 character, the fix belongs in the alias list or the matcher.
 
@@ -165,6 +170,43 @@ character, the fix belongs in the alias list or the matcher.
 Mutants and then Omega must narrow, not empty — so every child chip is asserted
 to be a subset of its parent (`C26`). That property was shipped broken three
 times before it became a test.
+
+## The MCU is one story, so its path is the whole line
+
+Everywhere else a path is the SHORTEST honest one — the dependency closure and
+nothing more. The MCU is the exception its own marketing makes: twenty-odd
+films and a dozen series written as a single continuous saga, where the reason
+to watch Winter Soldier before Civil War is not that Civil War is
+unintelligible without it, but that they are chapters. So `pathTo` seeds an MCU
+target with every MCU title behind it and runs that through the SAME closure:
+pulling No Way Home in pulls the five Sony Spider-Man films it requires, and
+Daredevil behind those. Doomsday resolves to 93 titles.
+
+`MCU_STANDALONE` in `lib/graph.ts` is the short list that needs nothing — Moon
+Knight, Eternals, Fantastic Four, Wonder Man, Your Friendly Neighborhood
+Spider-Man. Standalone means NEEDS nothing, not IS NEEDED BY nothing: each
+still sits on the line behind everything released after it.
+
+Shorts stay off the spine; optional titles do not. The Incredible Hulk is an
+MCU film in the timeline whatever anyone thinks of it, and the panel already
+draws an optional title with a hollow node, a dashed connector and the word
+beside it. Skippable and absent are different things.
+
+## How strong is everyone
+
+`lib/power.ts` ranks all 674, and the /characters page sorts by it. DERIVED,
+NOT TYPED, for the reason appearances are: a `powerRank` column would be 674
+numbers to keep in step, and inserting one character at rank 200 would make
+every number under it wrong. The order falls out of species, mutant class,
+affiliation and the character's own power bullets, with a hand-ordered head per
+tier where twelve sources agree.
+
+THE RANK IS A TOTAL ORDER AND THE TIER IS THE CLAIM. A sort needs every
+character to have a distinct position, so it emits 1..N with no ties — which is
+not an assertion that #340 beats #341. Past the ranked head of a tier the order
+is decided by what each record says it can do, and `docs/POWER-TIERS.md` and
+`-PEAK.md` are generated from the same definition so the documents and the site
+can never disagree.
 
 ## Invariants enforced in CI
 
@@ -187,8 +229,8 @@ times before it became a test.
 
 ```bash
 npm install
-npm run build     # 1,881 static pages — render tests read its output
-npm test          # 317 unit tests
+npm run build     # 1,889 static pages — render tests read its output
+npm test          # 320 unit tests
 npm run test:e2e  # 320px reflow + touch targets, real browser
 npm run shots     # §13.12 matrix: widths × themes × 5 routes + contact sheets
 npm run validate  # corpus gate — hermetic, runs on every build
@@ -499,7 +541,7 @@ cannot tell which spans hold Arabic. `H5` separately guards that nothing under
 | `/[locale]/universes` | The eight doors, side by side |
 | `/[locale]/universes/[id]/[[...opts]]` | One universe, its order and its view. `all` is the whole thread |
 | `/[locale]/projects` | Everything there is, grouped — the flat inventory |
-| `/[locale]/characters` | The grid, its chips and its search |
+| `/[locale]/characters` | The grid, its chips, its search and four orders — including Strongest |
 | `/[locale]/characters/[id]` | One person, every title they are in, and who played them |
 | `/[locale]/rights` | Who owned what, and when. The answer to "why is this hard" |
 | `/[locale]/what-is-marvel` | Comics → studio → the rights split |
