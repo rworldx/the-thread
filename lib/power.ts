@@ -821,7 +821,12 @@ export function scaleScore(c: Character): number {
   const abilities = c.powers
     .map((p) => clean(p.en).trim())
     .reduce(
-      (n, b) => n + score(b) * (PERCEIVES.test(b) ? 0.25 : TRAVELS.test(b) ? 0.5 : 1),
+      /* A quarter, the same discount perception takes, and for the same
+         reason: neither one alters the thing it reaches. Half left America
+         Chavez at 286 on "Punches holes between universes" — sixty points for
+         a door, more than Spider-Man's entire power set — while her own record
+         finishes the sentence with "Cannot control it yet". */
+      (n, b) => n + score(b) * (PERCEIVES.test(b) || TRAVELS.test(b) ? 0.25 : 1),
       0,
     );
   let n = abilities + score(clean(c.origin.en)) / 4;
