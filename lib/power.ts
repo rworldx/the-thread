@@ -99,6 +99,24 @@ const TIERS: Tier[] = [
       "exitar",
       "the-progenitor",
       "tiamut",
+      /**
+       * MOLECULE MAN AND FRANKLIN RICHARDS COME UP HERE, and it is the last
+       * class grant this file had left. Every Celestial outranked Franklin on
+       * `species: Celestial` alone — including ZGREB THE ASPIRANT, whose
+       * record reads "Aspires to the Host / Not yet fully risen" and scores
+       * MINUS FORTY, two places above a boy whose record reads "Creates
+       * universes" and scores 360, the highest number on the page.
+       *
+       * Franklin is the one mortal Marvel has repeatedly called a Celestial in
+       * waiting, and Reece holds a multiverse together. Being born inside the
+       * universe is a fact about their origin, not a ceiling on what they do.
+       *
+       * Their own order is left as the documents state it — unresolved, Reece
+       * on the higher ceiling and Franklin on the wider range — so they move
+       * together and stay adjacent.
+       */
+      "molecule-man",
+      "franklin-richards",
       "chthon",
       "set",
       "shuma-gorath",
@@ -106,8 +124,22 @@ const TIERS: Tier[] = [
       "dormammu",
     ],
     match: (c) =>
+      /**
+       * A CELESTIAL WHOSE RECORD CLAIMS NOTHING IS NOT HOLDING A COSMIC
+       * OFFICE. The species alone was admitting Zgreb the Aspirant — "Aspires
+       * to the Host / Not yet fully risen", scoring MINUS FORTY — above every
+       * reality-warper in tier 4, so Scarlet Witch, Legion and Captain
+       * Universe all sat below a Celestial who has not risen yet.
+       *
+       * Reality manipulation ignores durability: somebody who edits what is
+       * true does not have to out-punch a two-thousand-foot suit of armour. So
+       * the grant now asks the record to say something, and the six it stops
+       * carrying fall to tier 4 and are ordered there by their own claims. The
+       * named Celestials — Arishem, Exitar, Tiamut, the Progenitor — are in
+       * this tier's head and unaffected.
+       */
+      (c.species === "Celestial" && scaleScore(c) > 0) ||
       sp(
-        "Celestial",
         "Elder God",
         "Cosmic Being",
         "Cosmic entity",
@@ -115,13 +147,17 @@ const TIERS: Tier[] = [
         "Watcher",
         "Symbiote god",
         "Psychic Entity",
-      )(c) || aff("Cosmic entities", "Celestials")(c),
+      )(c) ||
+      /* The affiliation has to ask the same question the species now asks, or
+         it simply lets the unrisen back in through the other door. */
+      (aff("Cosmic entities", "Celestials")(c) &&
+        (c.species !== "Celestial" || scaleScore(c) > 0)),
   },
   {
     n: 4,
     title: "Mortals who rewrite reality",
     gloss:
-      "Born inside the universe and able to edit it. Molecule Man and Franklin Richards are the live argument for strongest being in Marvel, and neither wins it cleanly.",
+      "Born inside the universe and able to edit it. The two biggest names this tier used to hold — Molecule Man and Franklin Richards — sit a tier up now: being born inside the universe turned out to be a fact about their origin rather than a ceiling on what they do.",
     /**
      * THE PUBLISHED OMEGA LIST IS NOT A POWER RANKING, and this tier learned
      * that the hard way. `mutantClass` follows Marvel's own list on purpose —
@@ -136,8 +172,6 @@ const TIERS: Tier[] = [
      * ranking says what they did.
      */
     ranked: [
-      "molecule-man",
-      "franklin-richards",
       "captain-universe",
       "onslaught",
       "legion",
@@ -172,6 +206,11 @@ const TIERS: Tier[] = [
      * reality, named — and the remaining omegas are admitted to tier 5, where
      * they sit among the gods rather than above them.
      */
+    /* THE CELESTIALS TIER 3 STOPPED CARRYING LAND HERE, not in tier 8 with the
+       reporters. Refusing the office is not the same as saying Gammenon the
+       Gatherer is a bystander: he is still a Celestial, and the bottom of the
+       reality band is the honest place for one whose record claims nothing. */
+    match: (c) => c.species === "Celestial",
   },
   {
     n: 5,
