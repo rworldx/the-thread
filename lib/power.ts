@@ -199,6 +199,30 @@ const TIERS: Tier[] = [
          Gladiator a Strontian, races of one, so no rule could ever find them.
          Bill carries Stormbreaker and fought Thor to a draw; Gladiator has
          held off the entire X-Men roster. Both were ranked below Cyclops. */
+      /**
+       * THE OMEGAS WHO BELONG HERE, NAMED — because the class alone was
+       * admitting all of them and that put MAGGOTT at 138, ahead of Doctor
+       * Strange, Doom and the Maker. His power is two slugs that do his
+       * digesting, with no discernible upper limit, and that phrase is a
+       * statement about an X-gene rather than about a fight. Omega has never
+       * meant "beats a sorcerer"; it means one power nobody has found the top
+       * of. Forge invents by instinct and Elixir heals with a touch, and
+       * neither of them is walking through Kamar-Taj.
+       *
+       * The ones listed here move worlds, minds or weather. The rest fall to
+       * tier 6 and are ordered there by what their own records claim.
+       */
+      "storm",
+      /* NOT Jean Grey — she is named in tier 4 already, and listing her twice
+         put her in the order twice. C28 counted 675 characters in a corpus of
+         674 and said so, which is exactly what it is for. */
+      "professor-x",
+      "magneto",
+      "iceman",
+      "vulcan",
+      "exodus",
+      "quentin-quire",
+      "hope-summers",
       "beta-ray-bill",
       "gladiator",
       /**
@@ -263,9 +287,7 @@ const TIERS: Tier[] = [
       /* "Gods" is 28 characters and most of them are Heimdall — a god by
          species and a sentry by job. The ones who belong are named above. */
       )(c) ||
-      aff("Heralds of Galactus")(c) ||
-      /* The omegas that tier 4 no longer takes. */
-      c.mutantClass === "omega",
+      aff("Heralds of Galactus")(c),
   },
   {
     n: 6,
@@ -365,11 +387,18 @@ const TIERS: Tier[] = [
       "namor",
       "amadeus-cho",
       "ronan",
-      "america-chavez",
+      /* AMERICA CHAVEZ COMES OFF THIS HEAD. I named her here on the strength
+         of "punches holes between universes", reading it as reality-scale when
+         it is a door — and her own record finishes the thought: "Cannot
+         control it yet". Star-powered strength is real and it is not a tier of
+         its own; her score can carry her. */
       "xorn",
     ],
     match: (c) =>
       c.mutantClass === "alpha" ||
+      /* An omega nobody named above: still the top of what a mutant reaches,
+         still not a god. */
+      c.mutantClass === "omega" ||
       (c.magicSchools?.length ?? 0) > 0 ||
       Boolean(c.symbioteClass) ||
       sp(
@@ -779,9 +808,22 @@ export function scaleScore(c: Character): number {
    */
   // ascii-ok: matched against `powers[].en`, English by construction.
   const PERCEIVES = /^(sees|watches|observes|reads|senses|knows)\b/i;
+  /**
+   * TRAVEL IS NOT CONTROL, and the reality pattern could not tell them apart.
+   * "Punches holes between universes" scored the full 120 — the same as
+   * rewriting one — so America Chavez, whose own record adds "Cannot control
+   * it yet", outranked every sorcerer on the page. Spider-UK led the
+   * Spider-Society on the same word. A door to somewhere is worth half of
+   * being able to change what is on the other side.
+   * ascii-ok: matched against `powers[].en`, English by construction.
+   */
+  const TRAVELS = /\b(between (universes|realities|dimensions|worlds)|walks between|portals?)\b/i;
   const abilities = c.powers
     .map((p) => clean(p.en).trim())
-    .reduce((n, b) => n + score(b) * (PERCEIVES.test(b) ? 0.25 : 1), 0);
+    .reduce(
+      (n, b) => n + score(b) * (PERCEIVES.test(b) ? 0.25 : TRAVELS.test(b) ? 0.5 : 1),
+      0,
+    );
   let n = abilities + score(clean(c.origin.en)) / 4;
   n += CLASS_WEIGHT[c.mutantClass ?? ""] ?? 0;
   n += SYMBIOTE_WEIGHT[c.symbioteClass ?? ""] ?? 0;
