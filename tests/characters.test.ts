@@ -219,7 +219,7 @@ describe("C. the character corpus", () => {
     }
   });
 
-  it("C12 the Omegas are the published ones", () => {
+  it("C12 the Omegas are the designated ones", () => {
     /**
      * Marvel published the Omega-level list in House of X #1. These four are
      * the members of it that this corpus holds; Legion and the rest are on the
@@ -240,14 +240,33 @@ describe("C. the character corpus", () => {
       .filter((c) => c.mutantClass === "omega")
       .map((c) => c.id)
       .sort();
-    /* Proteus and Rachel Summers join on the same rule the others are here
-       by: both are named on Marvel's published Omega list, which the supplied
-       roster reproduces. Neither is here because they feel powerful. */
+    /**
+     * TWENTY, AND THE RULE IS WIDER THAN "ON THE HOUSE OF X PAGE".
+     *
+     * This guard used to treat that one data page as the whole authority, and
+     * it is not: the classification predates it by thirty-three years and is
+     * applied in dialogue to people the page leaves out. HoX #1 lists the
+     * omegas ALIVE AND ON KRAKOA in 2019 — a census, not a taxonomy.
+     *
+     * So three names come back, each on an in-comic designation rather than a
+     * fan roster, which is still the thing this guard exists to keep out:
+     *
+     *   Rachel Summers   Uncanny X-Men #208 (1986). The term is COINED for
+     *                    her — Nimrod reports the "upper limit ... has yet to
+     *                    be determined", which is still the HoX wording.
+     *   Nate Grey        Legion, Uncanny X-Men #4: "Omega level. More than."
+     *                    Off the HoX list because he had just died.
+     *   Matthew Malloy   Beast, Uncanny X-Men #23: "more than an Omega level
+     *                    mutant", and the strongest reading Cerebro has taken.
+     *
+     * Mad Jim Jaspers and the Marquis of Death stay OUT. Both get called omega
+     * by fans constantly and neither has a panel that says it.
+     */
     expect(omegas).toEqual([
       "elixir", "exodus", "forge", "franklin-richards", "hope-summers",
       "iceman", "jamie-braddock", "jean-grey", "legion", "maggott",
-      "magneto", "mister-m", "professor-x", "proteus", "quentin-quire",
-      "storm", "vulcan",
+      "magneto", "matthew-malloy", "mister-m", "nate-grey", "professor-x",
+      "proteus", "quentin-quire", "rachel-summers", "storm", "vulcan",
     ]);
     /* This asserted the OPPOSITE until today: that Xavier must not be Omega,
        because House of X #1 pointedly left him off. The 2025 compilation put

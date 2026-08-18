@@ -11566,9 +11566,12 @@ const mutantsB: CharacterDraft[] = [
     affiliation: ["X-Men"],
     universe: ["fox"],
     species: "Mutant",
-    /* NOT omega. Marvel named its Omega-level mutants in House of X #1 and
-       this one is not on that list. See C12: the rule is the published list,
-       not a fan roster and not how strong someone feels. */
+    /* THE TERM WAS COINED FOR HER. "Class Omega" enters Marvel in Uncanny
+       X-Men #208 (1986), where Nimrod scans Rachel and reports that the
+       "upper limit of target-subject's abilities has yet to be determined" —
+       still the definition House of X #1 gave in 2019. Leaving her unlabelled
+       because a 2019 data page omitted her had it backwards. */
+    mutantClass: "omega",
     powers: [
       { en: "A Phoenix host in her own right", ar: "مضيفة للعنقاء بحقّها" },
       { en: "Telepath and telekinetic", ar: "قارئة أفكار ومحرّكة" },
@@ -11744,9 +11747,12 @@ const mutantsC: CharacterDraft[] = [
     affiliation: [],
     universe: ["fox"],
     species: "Mutant",
-    /* NOT omega. Marvel named its Omega-level mutants in House of X #1 and
-       this one is not on that list. See C12: the rule is the published list,
-       not a fan roster and not how strong someone feels. */
+    /* Designated omega in canon and absent from one roster. Legion says it
+       out loud in Uncanny X-Men #4 — "Very very powerful. Omega level. More
+       than." House of X #1 lists the omegas ALIVE AND ON KRAKOA at that
+       moment, and Nate had just died at the end of Age of X-Man. A census is
+       not a taxonomy. */
+    mutantClass: "omega",
     powers: [
       { en: "Reality bends around him", ar: "الواقع ينثني حوله" },
       { en: "Grown from Scott and Jean", ar: "نبت من سكوت وجين" },
@@ -13083,9 +13089,10 @@ const powerList: CharacterDraft[] = [
     affiliation: [],
     universe: ["fox"],
     species: "Mutant",
-    /* NOT omega. Marvel named its Omega-level mutants in House of X #1 and
-       this one is not on that list. See C12: the rule is the published list,
-       not a fan roster and not how strong someone feels. */
+    /* Beast brands him "more than an Omega level mutant" in Uncanny X-Men #23
+       (2014), and Cerebro records the most extreme power source it has ever
+       seen — which is why Xavier erased him rather than fight him. */
+    mutantClass: "omega",
     powers: [
       { en: "Power he never asked for", ar: "قوة لم يطلبها قط" },
       { en: "Erases whatever frightens him", ar: "يمحو ما يفزعه" },
