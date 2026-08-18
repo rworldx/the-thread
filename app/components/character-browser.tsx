@@ -663,15 +663,25 @@ export function CharacterBrowser({
           {shown.map((c, i) => (
             <li key={c.id}>
               <Link className="char-tile" href={`/${locale}/characters/${c.id}`}>
-                {/* THE RANK WITHIN WHAT IS ON SCREEN, not the corpus-wide
-                    one. Filtering to the X-Men and reading 100, 123, 124 makes
-                    the reader do the subtraction; reading 1, 2, 3 answers the
-                    question they filtered in order to ask. The absolute
-                    position is still on the record as `power` if a page ever
-                    needs it. `.tile-index` is the badge the numbered posters
-                    use, down to the corner. */}
+                {/**
+                 * A FILTER ASKS A DIFFERENT QUESTION FROM A SEARCH, so the
+                 * badge answers a different one.
+                 *
+                 * Filtering to the X-Men and reading 100, 123, 124 makes the
+                 * reader do the subtraction; 1, 2, 3 answers the question they
+                 * filtered in order to ask. But searching a NAME is a lookup,
+                 * not a category — type "Storm" and the list is one row long,
+                 * and telling her she is 1st of 1 says nothing at all. There
+                 * the only useful number is where she stands in the whole
+                 * corpus.
+                 *
+                 * `.tile-index` is the badge the numbered posters use, down to
+                 * the corner it sits in.
+                 */}
                 {sort === "power" && (
-                  <span className="tile-index tabular">{i + 1}</span>
+                  <span className="tile-index tabular">
+                    {query.trim() === "" ? i + 1 : c.power}
+                  </span>
                 )}
                 {c.performerOf && c.baseImage ? (
                   <SplitAvatar
