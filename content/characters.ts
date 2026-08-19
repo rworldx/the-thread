@@ -590,10 +590,18 @@ const avengers: CharacterDraft[] = [
     species: "Frost Giant",
     magicSchools: ["asgardian"],
     powers: [
-      { en: "Illusions", ar: "أوهام بصرية" },
-      { en: "Shapeshifting", ar: "تغيير الهيئة" },
-      { en: "Very long lifespan", ar: "عمر طويل جدًا" },
-      { en: "Persuasion", ar: "إقناع" },
+      /* "Illusions / Shapeshifting / Very long lifespan / Persuasion" — four
+         bullets, scoring 28, and only his slot in the tier head was holding
+         him at 157th. The sorcery itself was not in it, nor the teleportation,
+         the enchantment, or the fact that he is an Asgardian who survives what
+         would kill a man. Deception and strategy stay in the origin, where
+         they read as character rather than as a stat. */
+      { en: "Asgardian sorcery, deep and varied", ar: "سحر أسغاردي عميق ومتنوع" },
+      { en: "Illusions that fool a room", ar: "أوهام تخدع غرفة بأكملها" },
+      { en: "Shapeshifts into anyone at all", ar: "يتشكّل إلى أي أحد كان" },
+      { en: "Teleports himself and others", ar: "ينقل نفسه وغيره آنيًا" },
+      { en: "Enchants and bends a mind", ar: "يسحر العقل ويثنيه" },
+      { en: "Strength and centuries of a god", ar: "قوة إله وقرون من عمره" },
     ],
     origin: {
       en: "The second son of Asgard, raised beside a brother everyone preferred, who finds out late what he actually is. He is very good at lying and it has never once made him happy.",
@@ -767,8 +775,13 @@ const avengers: CharacterDraft[] = [
     species: "Frost Giant",
     magicSchools: ["asgardian"],
     powers: [
-      { en: "Enchantment", ar: "تسخير العقول" },
-      { en: "Illusions", ar: "أوهام بصرية" },
+      /* Ranked directly under Loki on three bullets. Her enchantment is the
+         one thing the show says she does better than he does, and killing He
+         Who Remains is the largest single act any Loki performs. */
+      { en: "Enchantment past Loki's own", ar: "سحر تعويذي يفوق سحر لوكي" },
+      { en: "Takes a mind through a touch", ar: "تستولي على العقل بلمسة" },
+      { en: "Killed He Who Remains", ar: "قتلت الباقي الأخير" },
+      { en: "Illusions", ar: "أوهام" },
       { en: "Combat training", ar: "تدريب قتالي" },
     ],
     origin: {

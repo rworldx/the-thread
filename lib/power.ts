@@ -819,6 +819,21 @@ export const PEAK_HEAD: string[] = [
   "doctor-strange",
   "sentry",
   "captain-universe",
+  /**
+   * LOKI MOVED UP THIRTEEN, from below Hercules and Hela.
+   *
+   * Two peaks, and the list was pricing neither. The God of Stories rewrote
+   * himself into the narrative of reality, and the Loki at the end of the
+   * second season sits at the End of Time holding EVERY BRANCH of the
+   * multiverse together — not the one pruned line He Who Remains kept, but
+   * all of them, as the load-bearing structure.
+   *
+   * Above the dimension-rulers on that: Mephisto, Dormammu and Cyttorak each
+   * hold one realm, and Hela one death. Below Galactus and Knull, who make
+   * and unmake rather than sustain, and below the Uni-Power directly above
+   * him, which acts.
+   */
+  "loki",
   "the-progenitor",
   "arishem",
   "exitar",
@@ -832,9 +847,7 @@ export const PEAK_HEAD: string[] = [
   "apocalypse",
   "cosmic-ghost-rider",
   "hela",
-  /* The God of Stories rewrote himself into the narrative, which is a bigger
-     peak than any version of Loki that only fights. */
-  "loki",
+
   "ghost-rider",
   "professor-x",
   /* Binary above Magneto: Carol at her peak is channelling a white hole,
@@ -1008,7 +1021,7 @@ const SCALE: [RegExp, number][] = [
    * ascii-ok: English `powers[].en` only.
    */
   [
-    /\b(mind control|controls? minds?|controls? (anyone|anybody|people|a crowd)|bends? .{0,20}\bwill\b|possesses a body)/i,
+    /\b(mind control|controls? minds?|controls? (anyone|anybody|people|a crowd)|takes? (a|the|over a) mind\b|bends? .{0,20}\bwill\b|possesses a body)/i,
     25,
   ],
   /**
