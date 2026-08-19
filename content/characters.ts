@@ -1261,10 +1261,17 @@ const spiderVerse: CharacterDraft[] = [
     universe: ["mcu", "sony"],
     species: "Human mutate",
     powers: [
-      { en: "Wall-crawling", ar: "التسلّق على الجدران" },
+      /* "Proportionate strength" is the phrase the comics use and it hides the
+         number: proportionate to a spider means several tons. Four bullets put
+         him behind Captain America, whose strength is PEAK HUMAN — the serum
+         took Steve to the top of the human scale and the bite took Peter off
+         it. */
+      { en: "Lifts several tons", ar: "يرفع عدة أطنان" },
+      { en: "Superhuman speed and agility", ar: "سرعة ورشاقة خارقتان" },
       { en: "Spider-sense", ar: "حاسة العنكبوت" },
-      { en: "Proportionate strength", ar: "قوة متناسبة" },
-      { en: "Web-shooters", ar: "قاذفات الشباك" },
+      { en: "Wall-crawling", ar: "التسلق على الجدران" },
+      { en: "Web-shooters of his own design", ar: "قاذفات شباك من تصميمه" },
+      { en: "Genius with a chemistry set", ar: "عبقري بعدة كيمياء" },
     ],
     origin: {
       en: "A teenager bitten by a spider that should not have been in that room, who learns in the worst possible way what it costs to do nothing. Three actors have played him and they are all Peter Parker.",
@@ -1305,9 +1312,12 @@ const spiderVerse: CharacterDraft[] = [
     reality: "Earth-1610",
     species: "Human mutate",
     powers: [
-      { en: "Turns invisible", ar: "يصير خفيًا" },
-      { en: "Venom strike", ar: "لسعة كهربائية" },
-      { en: "Wall-crawling", ar: "التسلّق على الجدران" },
+      { en: "Venom strike", ar: "لسعة السم" },
+      { en: "Turns invisible", ar: "يصير غير مرئي" },
+      { en: "Lifts several tons", ar: "يرفع عدة أطنان" },
+      { en: "Superhuman speed and agility", ar: "سرعة ورشاقة خارقتان" },
+      { en: "Spider-sense", ar: "حاسة العنكبوت" },
+      { en: "Wall-crawling", ar: "التسلق على الجدران" },
     ],
     origin: {
       en: "A Brooklyn teenager at a school he did not want to go to, bitten by a spider from somewhere else, who finds out he is one of many and has to decide to be his own.",
