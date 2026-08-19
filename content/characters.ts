@@ -11364,9 +11364,18 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Psychic Entity",
     powers: [
-      { en: "Xavier's mind and Magneto's", ar: "عقل إكزافير وعقل ماغنيتو" },
-      { en: "Every power of both", ar: "كل قوى الاثنين" },
-      { en: "Born from one lost temper", ar: "وُلد من لحظة غضب واحدة" },
+      {
+        en: "Xavier's telepathy and Magneto's magnetism",
+        ar: "تخاطر إكزافييه ومغناطيسية ماغنيتو",
+      },
+      { en: "Psionic energy without limit", ar: "طاقة ذهنية بلا حدّ" },
+      { en: "Reshapes matter around him", ar: "يعيد تشكيل المادة من حوله" },
+      { en: "Every power of both", ar: "كل قدرات الاثنين" },
+      {
+        en: "Beat every hero on Earth at once",
+        ar: "هزم أبطال الأرض جميعًا دفعة واحدة",
+      },
+      { en: "Born from one lost temper", ar: "وُلد من نوبة غضب واحدة" },
     ],
     origin: {
       en: "What formed when Xavier finally lost his temper inside Magneto's mind and something took the worst of both and kept going. It is the argument between them, alive and hostile.",
@@ -15221,9 +15230,18 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "The Uni-Power picks a host", ar: "القوة الكونية تختار مضيفًا" },
-      { en: "Anyone at all, briefly", ar: "أي أحد كان، لفترة" },
-      { en: "Leaves when the job is done", ar: "وتمضي متى تمّ العمل" },
+      /* THE TWO THINNEST RECORDS IN THE TOP HUNDRED were the two ranked at
+         the head of tier 4. Both described the MECHANISM and never the power:
+         who the Uni-Power picks, and whose minds Onslaught is made of. Both
+         scored zero, above Legion at 270 and Jean Grey at 182, and if either
+         ever lost its slot in the head it would fall to the floor of the
+         corpus. */
+      { en: "The Uni-Power, briefly total", ar: "قوة الوحدة، كاملة لبرهة" },
+      { en: "Rewrites matter and energy", ar: "تعيد كتابة المادة والطاقة" },
+      { en: "No known upper limit", ar: "لا حدّ أعلى معروف" },
+      { en: "The Uni-Power picks a host", ar: "قوة الوحدة تختار حاملًا" },
+      { en: "Anyone at all, briefly", ar: "أي أحد كان، لبرهة" },
+      { en: "Leaves when the job is done", ar: "ترحل متى انتهى العمل" },
     ],
     origin: {
       en: "Not a person but a power that finds whoever is needed, gives them what the moment requires, and leaves. It has been a child, a mechanic and Spider-Man.",
