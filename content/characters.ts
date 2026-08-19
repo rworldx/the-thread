@@ -38,19 +38,29 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      /* Four bullets for the suit that fought Thanos: no strength, no unibeam,
-         no durability, no nanotech. "Powered armour" was carrying all of it,
-         and the armour is the character — Tony without it is the engineer on
-         the last line. */
-      { en: "Powered armour", ar: "درع مزوّد بالطاقة" },
-      { en: "Repulsors and the unibeam", ar: "الريبولسرز وشعاع الصدر" },
-      { en: "Armour-borne strength", ar: "قوة من الدرع" },
+      /* His mind was in the record as "Genius engineer", which is training,
+         not a superlative — so the man who builds a suit in a cave out of
+         scraps was paid the same six points as a marksman. Marvel puts Stark
+         in the same conversation as Richards and Doom, and the record should
+         say so at that level or not claim it at all. */
       {
-        en: "Withstands bullets and blasts",
-        ar: "يصمد أمام الرصاص والانفجارات",
+        en: "Powered armour, rebuilt constantly",
+        ar: "درع مزوّد، يعاد بناؤه دائمًا",
       },
-      { en: "Nanotech that reshapes itself", ar: "نانو يعيد تشكيل نفسه" },
-      { en: "Genius engineer", ar: "مهندس عبقري" },
+      { en: "Repulsors and the unibeam", ar: "الريبلسورز والشعاع الموحّد" },
+      { en: "Armour-borne strength and flight", ar: "قوة وطيران من الدرع" },
+      {
+        en: "Withstands bullets, blasts and vacuum",
+        ar: "يصمد للرصاص والانفجارات والفراغ",
+      },
+      {
+        en: "Nanotech that reshapes itself",
+        ar: "تقنية نانوية تعيد تشكيل نفسها",
+      },
+      {
+        en: "One of the smartest men alive",
+        ar: "من أذكى الرجال على قيد الحياة",
+      },
     ],
     origin: {
       en: "A weapons manufacturer is taken hostage and builds a suit of armour to get out of the cave he is held in. He comes home, shuts the weapons division down, and keeps building.",
@@ -1998,8 +2008,23 @@ const fantasticFour: CharacterDraft[] = [
        in armour with no magic at all. */
     magicSchools: ["eldritch"],
     powers: [
-      { en: "Sorcery and science", ar: "سحر وعِلم" },
-      { en: "Powered armour", ar: "بذلة مدرّعة" },
+      /* Three bullets for Marvel's greatest villain, carried entirely by his
+         slot in the tier head. Rashid named him as one of the smartest, and
+         the record never said it. */
+      {
+        en: "Sorcery and science, both mastered",
+        ar: "سحر وعلم، أتقنهما معًا",
+      },
+      {
+        en: "One of the smartest men alive",
+        ar: "من أذكى الرجال على قيد الحياة",
+      },
+      { en: "Powered armour of his own design", ar: "درع مزوّد من تصميمه" },
+      {
+        en: "Has taken godhood more than once",
+        ar: "انتزع الألوهية أكثر من مرة",
+      },
+      { en: "Rules Latveria absolutely", ar: "يحكم لاتفيريا حكمًا مطلقًا" },
       { en: "Head of state", ar: "رئيس دولة" },
     ],
     origin: {

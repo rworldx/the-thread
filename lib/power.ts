@@ -920,6 +920,40 @@ const SCALE: [RegExp, number][] = [
    * than having strength, and this is the difference.
    * ascii-ok: English `powers[].en` only.
    */
+  /**
+   * INTELLIGENCE IS A POWER, AND IT WAS FILED UNDER EQUIPMENT. `genius`,
+   * `scientist`, `engineer`, `inventor` and `brilliant` all sat in the
+   * training band at SIX — the same as owning a sword — so "The smartest man
+   * alive" was worth exactly what "marksman" is worth.
+   *
+   * The incoherence showed as an asymmetry: Doom and Mister Fantastic are
+   * hand-ranked into tier 6, so their minds never had to be scored at all,
+   * while Iron Man is placed by his record and was paid six points for being
+   * a genius engineer. The corpus was treating intelligence as a power when
+   * it ranked two of them and as a hobby when it scored the third.
+   *
+   * Only the SUPERLATIVE moves, the same rule the fighters got: being a
+   * scientist is training, being the smartest man alive is not. Reed builds
+   * gates between universes with it and Tony builds a suit in a cave.
+   * ascii-ok: English `powers[].en` only.
+   */
+  [
+    /\b(smartest|super[- ]genius|greatest mind|invents? (his|her|their) way out|invents? any|builds? anything)/i,
+    25,
+  ],
+  /**
+   * AND SO IS A FULL HEALING FACTOR. "Heals fast" and "Heals from anything"
+   * scored the same fourteen, which is how Captain America — who in the
+   * sources has NO healing factor, only a serum that speeds recovery — came
+   * out above Deadpool, who cannot be killed. Regrowing from nothing is a
+   * different claim from bruising less.
+   * ascii-ok: English `powers[].en` only.
+   */
+  [
+    /\b(heals? from anything|regrows? (lost )?(limbs?|organs?)|regenerates? from|survives? decapitation)/i,
+    25,
+  ],
+  /* The Hercules idiom. ascii-ok: English `powers[].en` only. */
   [/\bstrength to match\b/i, 25],
   /* AND THE OTHER HALF OF THE SAME IDIOM. "Strength to match" was added for
      Hercules; "Rivals Galactus and Dormammu" and "Stronger than Oshtur and
@@ -1020,7 +1054,7 @@ const SCALE: [RegExp, number][] = [
    * ascii-ok: English only.
    */
   [
-    /\b(strength|durab|regenerat|healing|heals\b|heal\b|flies\b|flying\b|telepath|ignites|combust|pulls? things apart|pulls? apart|rips? apart|remotely|technopath|drives any|rebuilds any|any vehicle|tattoo|formula|animals?\b|beasts?\b|split in two|splits? into|rebuilt as a machine|a living machine|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|teleport|becomes? (a |an |the )?[a-z]|mjolnir|stormbreaker|spider[- ]powers|plasma|regrow|living rock|body of living|stone or steel|plated in steel|swaps? bodies|swaps? minds|physiolog|turns? into|copies|mimics?|duplicat|clones?\b|possess|silk|web-line|web-shooter|webbing|webs\b|poison|toxin|venomous|enormous size|giant|embiggen|grows to|constructs?\b|shakes the ground|earthquake|seismic|tremor|stretch|pheromone|\bgas\b|vibrat|absorbs?\b|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
+    /\b(strength|durab|regenerat|healing|heals\b|heal\b|powered armou?r|armou?r-borne|flies\b|flying\b|telepath|ignites|combust|pulls? things apart|pulls? apart|rips? apart|remotely|technopath|drives any|rebuilds any|any vehicle|tattoo|formula|animals?\b|beasts?\b|split in two|splits? into|rebuilt as a machine|a living machine|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|teleport|becomes? (a |an |the )?[a-z]|mjolnir|stormbreaker|spider[- ]powers|plasma|regrow|living rock|body of living|stone or steel|plated in steel|swaps? bodies|swaps? minds|physiolog|turns? into|copies|mimics?|duplicat|clones?\b|possess|silk|web-line|web-shooter|webbing|webs\b|poison|toxin|venomous|enormous size|giant|embiggen|grows to|constructs?\b|shakes the ground|earthquake|seismic|tremor|stretch|pheromone|\bgas\b|vibrat|absorbs?\b|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
     14,
   ],
   /**
