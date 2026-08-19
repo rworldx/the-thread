@@ -877,12 +877,12 @@ const SCALE: [RegExp, number][] = [
   /* Unkillable is durability, not output — real, and worth less. */
   // ascii-ok: English only.
   [
-    /\b(cannot be killed|cannot be destroyed|unkillable|adapts to anything|rebuilds himself|reassembles|comes back from)/i,
+    /\b(cannot be killed|cannot be destroyed|unkillable|did not stay dead|will not stay dead|comes back\b|adapts to anything|rebuilds himself|reassembles|comes back from)/i,
     25,
   ],
   /* Reality itself. ascii-ok: scores English `powers[].en` only. */
   [
-    /\b(realit|universe|universal|multiverse|cosmos|cosmic|existence|creation|omnipot|omniscien|timeline|time itself|time travel|manipulates time|stops time|rewinds time|controls time|all things|infinit)/i,
+    /\b(realit|universe|universal|multiverse|cosmos|cosmic|existence|creation|omnipot|omniscien|embodies|embodiment|personif|timeline|time itself|time travel|manipulates time|stops time|rewinds time|controls time|all things|infinit)/i,
     120,
   ],
   /* Worlds and stars. "antimatter" is here rather than with the ordinary
@@ -996,7 +996,7 @@ const SCALE: [RegExp, number][] = [
    * ascii-ok: English only.
    */
   [
-    /\b(strength|durab|regenerat|healing|heals\b|heal\b|flies\b|flying\b|telepath|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|teleport|becomes? (a |an |the )?[a-z]|mjolnir|stormbreaker|spider[- ]powers|plasma|regrow|living rock|body of living|stone or steel|plated in steel|swaps? bodies|swaps? minds|physiolog|turns? into|copies|mimics?|duplicat|clones?\b|possess|silk|web-line|web-shooter|webbing|webs\b|poison|toxin|venomous|enormous size|giant|embiggen|grows to|constructs?\b|shakes the ground|earthquake|seismic|tremor|stretch|pheromone|\bgas\b|vibrat|absorbs?\b|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
+    /\b(strength|durab|regenerat|healing|heals\b|heal\b|flies\b|flying\b|telepath|ignites|combust|pulls? things apart|pulls? apart|rips? apart|remotely|technopath|drives any|rebuilds any|any vehicle|tattoo|formula|animals?\b|beasts?\b|split in two|splits? into|rebuilt as a machine|a living machine|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|teleport|becomes? (a |an |the )?[a-z]|mjolnir|stormbreaker|spider[- ]powers|plasma|regrow|living rock|body of living|stone or steel|plated in steel|swaps? bodies|swaps? minds|physiolog|turns? into|copies|mimics?|duplicat|clones?\b|possess|silk|web-line|web-shooter|webbing|webs\b|poison|toxin|venomous|enormous size|giant|embiggen|grows to|constructs?\b|shakes the ground|earthquake|seismic|tremor|stretch|pheromone|\bgas\b|vibrat|absorbs?\b|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
     14,
   ],
   /**

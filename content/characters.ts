@@ -8242,6 +8242,15 @@ const smallScreen: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
+      {
+        en: "Illusions drawn from your own fear",
+        ar: "أوهام مستلّة من خوفك أنت",
+      },
+      { en: "Psychic arrows that stun", ar: "سهام ذهنية تصعق" },
+      {
+        en: "Reads minds and animals alike",
+        ar: "تقرأ العقول والحيوانات سواء",
+      },
       { en: "Makes your fear visible", ar: "تجعل خوفك مرئيًا" },
       { en: "Cannot switch it off", ar: "لا تستطيع إيقافه" },
       { en: "Cheyenne", ar: "شايان" },
@@ -13455,9 +13464,15 @@ const spiderVariants: CharacterDraft[] = [
     reality: "Earth-90266",
     species: "Mutate",
     powers: [
-      { en: "Decades past retiring", ar: "تجاوز التقاعد بعقود" },
-      { en: "Outlived everyone he saved", ar: "بقي بعد كل من أنقذ" },
-      { en: "Still going out anyway", ar: "وما يزال يخرج رغم ذلك" },
+      /* Three bullets of biography for a Spider-Man. "Decades past retiring /
+         Outlived everyone he saved / Still going out anyway" is a character
+         study and never once says he has powers. */
+      { en: "Every power Peter ever had", ar: "كل قدرة امتلكها بيتر يومًا" },
+      { en: "Spider-sense, dulled by age", ar: "حاسة العنكبوت، أضعفها العمر" },
+      { en: "Wall-crawling and webbing", ar: "تسلّق الجدران والشباك" },
+      { en: "Decades past retiring", ar: "تجاوز سن التقاعد بعقود" },
+      { en: "Outlived everyone he saved", ar: "عاش بعد كل من أنقذهم" },
+      { en: "Still going out anyway", ar: "ومع ذلك ما زال يخرج" },
     ],
     origin: {
       en: "A Peter Parker from a ruined future who is far too old for this and does it anyway, having outlived every person the work was supposed to be for.",
