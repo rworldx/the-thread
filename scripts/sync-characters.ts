@@ -60,6 +60,67 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  /* THE ETERNALS IN COMICS, not in the film. Their records are
+     `universe: ["mcu"]` because Eternals is the only title they appear in
+     here, and the name lookup read that as "use a film still" — so eight of
+     them were Gemma Chan and Kumail Nanjiani while the rest of the site is
+     drawn. The film portraits were good; they were just the wrong medium.
+
+     Earth-616, and mostly the Eternals Vol 5 / A.X.E. Judgment Day run so
+     they hang together. The wiki's own lead image is NOT used for Kingo or
+     Makkari: both are legacy montages of four incarnations at once, which is
+     a fine encyclopedia illustration and unreadable at tile size.
+
+     Ikaris and Thena keep their film stills. Rashid listed eight. */
+  "ajak":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Ajak_%28Earth-616%29_from_A.X.E._Judgment_Day_Omega_Vol_1_1_001.jpg/revision/latest?cb=20221109185607",
+  "druig":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/59/Druig_%28Earth-616%29_from_Eternals_Vol_5_7_001.jpg/revision/latest?cb=20221006163527",
+  "gilgamesh":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d9/Gilgamesh_%28Earth-616%29_from_Eternals_Vol_4_5_0001.jpg/revision/latest?cb=20200614194342",
+  "kingo":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/52/Kingo_Sunen_%28Earth-616%29_from_Eternals_Vol_5_2_001.jpg/revision/latest?cb=20210701052422",
+  "makkari":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5f/Makkari_%28Earth-616%29_from_A.X.E._Judgment_Day_Vol_1_2_001.jpg/revision/latest?cb=20221006174319",
+  "phastos":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/A.X.E._Judgment_Day_Vol_1_6_Men_of_A.X.E._Variant_Texless.jpg/revision/latest?cb=20250419005742",
+  "sersi":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/2b/Sersi_%28Earth-616%29_from_Eternals_Vol_5_2_001.jpg/revision/latest?cb=20210701081640",
+  "sprite":
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/54/Sprite_%28Earth-616%29_from_Eternals_Vol_5_1_001.jpg/revision/latest?cb=20210211062917",
+
+  /* THE FANTASTIC FOUR AS A SET. All four were on the superhero-api renders,
+     and the wiki's own lead image is a different artist and crop for each —
+     fine alone, incoherent in a row, and this team is always seen in a row.
+     These are the four Alex Ross Timeless variants from Fantastic Four Vol 6
+     #24: one issue, one artist, four portraits that belong together.
+
+     Franklin is deliberately not here. Rashid says his is fine. */
+  "mister-fantastic":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b5/Fantastic_Four_Vol_6_24_Mister_Fantastic_Timeless_Variant.jpg/revision/latest?cb=20200929194348",
+  "invisible-woman":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Fantastic_Four_Vol_6_24_Invisible_Woman_Timeless_Variant.jpg/revision/latest?cb=20200929194328",
+  "the-thing":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1f/Fantastic_Four_Vol_6_24_The_Thing_Timeless_Variant.jpg/revision/latest?cb=20200929194401",
+  "human-torch":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b8/Fantastic_Four_Vol_6_24_Human_Torch_Timeless_Variant.jpg/revision/latest?cb=20200929194308",
+  /* FOUR MORE OFF THE SUPERHERO-API, which the name lookup reaches for when
+     the wiki has nothing, and which serves low-res renders. All four are
+     first-rank characters and were the worst portraits on the page. */
+  /* The wiki article is "STEVEN Rogers (Earth-616)" — "Steve Rogers" is a
+     redirect with no lead image, which is how he ended up on the fallback.
+     Searching by name instead lands in the Secret Empire run, where Cap is
+     HYDRA, which is not the picture a browser of this site is looking for. */
+  "captain-america":
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b1/Captain_America_Vol_6_2_Textless.jpg/revision/latest?cb=20110719042719",
+  "magneto":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Max_Eisenhardt_%28Earth-616%29_from_X-Men_Vol_7_1_001.jpg/revision/latest?cb=20240710102753",
+  /* The House of X flower variant, textless — Xavier in the Cerebro helmet,
+     which is the version of him this corpus ranks. */
+  "professor-x":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/44/House_of_X_Vol_1_1_Flower_Variant_Textless.jpg/revision/latest?cb=20200514075425",
+  "crystal":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/97/War_of_Kings_Warriors_Vol_1_2_Textless.jpg/revision/latest?cb=20100204183714",
   /* The name lookup found him on the superhero-api, which serves a low-res
      render. This is the Jim Lee variant for Red Hulk Vol 1 #1, textless, and
      it is Thaddeus Ross rather than Robert Maverick — the wiki's own "Red

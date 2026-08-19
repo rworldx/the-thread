@@ -1560,9 +1560,9 @@
     "matchedAs": "Iron Man"
   },
   "captain-america": {
-    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/149-captain-america.jpg",
-    "source": "shdb",
-    "matchedAs": "Captain America"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b1/Captain_America_Vol_6_2_Textless.jpg/revision/latest?cb=20110719042719",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "thor": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/659-thor.jpg",
@@ -1720,14 +1720,14 @@
     "matchedAs": "hand-picked"
   },
   "professor-x": {
-    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/527-professor-x.jpg",
-    "source": "shdb",
-    "matchedAs": "Professor X"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/44/House_of_X_Vol_1_1_Flower_Variant_Textless.jpg/revision/latest?cb=20200514075425",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "magneto": {
-    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/423-magneto.jpg",
-    "source": "shdb",
-    "matchedAs": "Magneto"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Max_Eisenhardt_%28Earth-616%29_from_X-Men_Vol_7_1_001.jpg/revision/latest?cb=20240710102753",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "jean-grey": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/356-jean-grey.jpg",
@@ -1885,24 +1885,24 @@
     "matchedAs": "hand-picked"
   },
   "mister-fantastic": {
-    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/456-mister-fantastic.jpg",
-    "source": "shdb",
-    "matchedAs": "Mister Fantastic"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b5/Fantastic_Four_Vol_6_24_Mister_Fantastic_Timeless_Variant.jpg/revision/latest?cb=20200929194348",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "invisible-woman": {
-    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/344-invisible-woman.jpg",
-    "source": "shdb",
-    "matchedAs": "Invisible Woman"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Fantastic_Four_Vol_6_24_Invisible_Woman_Timeless_Variant.jpg/revision/latest?cb=20200929194328",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "human-torch": {
-    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/333-human-torch.jpg",
-    "source": "shdb",
-    "matchedAs": "Human Torch"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b8/Fantastic_Four_Vol_6_24_Human_Torch_Timeless_Variant.jpg/revision/latest?cb=20200929194308",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "the-thing": {
-    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/658-thing.jpg",
-    "source": "shdb",
-    "matchedAs": "Thing"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1f/Fantastic_Four_Vol_6_24_The_Thing_Timeless_Variant.jpg/revision/latest?cb=20200929194401",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "doctor-doom": {
     "image": "https://static.wikia.nocookie.net/heroes-and-villain/images/f/fc/Doctor_Doom.jpg/revision/latest?cb=20220208120207",
@@ -2015,9 +2015,9 @@
     "matchedAs": "Medusa"
   },
   "crystal": {
-    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/191-crystal.jpg",
-    "source": "shdb",
-    "matchedAs": "Crystal"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/97/War_of_Kings_Warriors_Vol_1_2_Textless.jpg/revision/latest?cb=20100204183714",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "emma-frost": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/241-emma-frost.jpg",
@@ -2515,9 +2515,9 @@
     "matchedAs": "hand-picked"
   },
   "sersi": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/cc/Sersi_Character_Poster.jpg/revision/latest?cb=20260218025919",
-    "source": "mcu-wiki",
-    "matchedAs": "Sersi"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2b/Sersi_%28Earth-616%29_from_Eternals_Vol_5_2_001.jpg/revision/latest?cb=20210701081640",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "thena": {
     "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/db/Thena_First_Look.jpg/revision/latest?cb=20231021144120",
@@ -2525,39 +2525,39 @@
     "matchedAs": "Thena"
   },
   "ajak": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3f/Ajak_Infobox.jpg/revision/latest?cb=20231021144101",
-    "source": "mcu-wiki",
-    "matchedAs": "Ajak"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Ajak_%28Earth-616%29_from_A.X.E._Judgment_Day_Omega_Vol_1_1_001.jpg/revision/latest?cb=20221109185607",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "kingo": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/25/Kingo_Character_Poster.jpg/revision/latest?cb=20231021143730",
-    "source": "mcu-wiki",
-    "matchedAs": "Kingo"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/52/Kingo_Sunen_%28Earth-616%29_from_Eternals_Vol_5_2_001.jpg/revision/latest?cb=20210701052422",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "sprite": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d8/Sprite_Character_Poster.jpg/revision/latest?cb=20231021143803",
-    "source": "mcu-wiki",
-    "matchedAs": "Sprite"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/Sprite_%28Earth-616%29_from_Eternals_Vol_5_1_001.jpg/revision/latest?cb=20210211062917",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "phastos": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/39/Phastos_Character_Poster.jpg/revision/latest?cb=20231021143830",
-    "source": "mcu-wiki",
-    "matchedAs": "Phastos"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/A.X.E._Judgment_Day_Vol_1_6_Men_of_A.X.E._Variant_Texless.jpg/revision/latest?cb=20250419005742",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "makkari": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/78/Makkari_infobox.jpg/revision/latest?cb=20231021143853",
-    "source": "mcu-wiki",
-    "matchedAs": "Makkari"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5f/Makkari_%28Earth-616%29_from_A.X.E._Judgment_Day_Vol_1_2_001.jpg/revision/latest?cb=20221006174319",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "druig": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/6d/Druig_Character_Poster.jpg/revision/latest?cb=20231021143931",
-    "source": "mcu-wiki",
-    "matchedAs": "Druig"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/59/Druig_%28Earth-616%29_from_Eternals_Vol_5_7_001.jpg/revision/latest?cb=20221006163527",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "gilgamesh": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/07/Gilgamesh_Character_Poster.jpg/revision/latest?cb=20231021143955",
-    "source": "mcu-wiki",
-    "matchedAs": "Gilgamesh"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/d/d9/Gilgamesh_%28Earth-616%29_from_Eternals_Vol_4_5_0001.jpg/revision/latest?cb=20200614194342",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "karnak": {
     "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8e/Karnak.jpg/revision/latest?cb=20170814180234",
@@ -3290,7 +3290,7 @@
     "matchedAs": "Nico Minoru"
   },
   "karolina-dean": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ac/Karolina_Dean_S3_-_Poster.jpg/revision/latest?cb=20231020204211",
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f1/Karolina.jpg/revision/latest?cb=20161204194534",
     "source": "mcu-wiki",
     "matchedAs": "Karolina Dean"
   },
