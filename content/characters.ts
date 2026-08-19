@@ -149,9 +149,15 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Master spy", ar: "جاسوسة محترفة" },
-      { en: "Close combat", ar: "قتال قريب" },
-      { en: "Interrogation", ar: "استجواب" },
+      /* Three bullets, and the Widow's Bite was not one of them — the
+         electroshock gauntlets she is drawn with in every appearance. The rest
+         was the job description rather than the training. */
+      { en: "The Widow's Bite", ar: "لسعة الأرملة" },
+      { en: "Peak human strength and agility", ar: "ذروة القوة والرشاقة البشرية" },
+      { en: "Elite martial artist", ar: "مقاتلة من الطراز الأول" },
+      { en: "Expert marksman", ar: "رامية بارعة" },
+      { en: "Master spy and interrogator", ar: "جاسوسة ومحققة بارعة" },
+      { en: "Reads a fight as it happens", ar: "تقرأ المعركة وهي تجري" },
     ],
     origin: {
       en: "Taken as a child and trained by a programme that turned girls into assets, she defects and spends the rest of her life working the debt off. She is the least powered person in most rooms she is in.",
