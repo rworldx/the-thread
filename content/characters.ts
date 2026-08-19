@@ -109,8 +109,23 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Asgardian",
     powers: [
-      { en: "Control of lightning", ar: "التحكم بالبرق" },
-      { en: "Superhuman strength", ar: "قوة خارقة" },
+      /* Three bullets and a score of 48 for the God of Thunder, who is held
+         in place by the tier head rather than by anything his record says.
+         Mjolnir, the God Blast and the durability were all missing. */
+      { en: "Control of lightning and storms", ar: "تحكّم بالبرق والعواصف" },
+      {
+        en: "Strength to match anything below a god",
+        ar: "قوة تضاهي كل ما دون الآلهة",
+      },
+      {
+        en: "Mjolnir, and it always returns",
+        ar: "ميولنير، وتعود إليه دائمًا",
+      },
+      {
+        en: "The God Blast, all of his power at once",
+        ar: "صاعقة الإله، كل قوته دفعة",
+      },
+      { en: "Near-invulnerable, heals like a god", ar: "شبه منيع، يشفى كإله" },
       { en: "Very long lifespan", ar: "عمر طويل جدًا" },
     ],
     origin: {
@@ -1901,9 +1916,26 @@ const fantasticFour: CharacterDraft[] = [
     universe: ["fox", "mcu"],
     species: "Human mutate",
     powers: [
-      { en: "Bursts into flame", ar: "يشتعل" },
-      { en: "Flight", ar: "طيران" },
-      { en: "Heat control", ar: "التحكم بالحرارة" },
+      /* "Bursts into flame / Flight / Heat control" ranked him 351st, below
+         the Thing and below Iron Man, and described a man who is warm. His
+         signature move is an omnidirectional burst at a million degrees that
+         devastates nine hundred feet, and he has absorbed an atomic
+         detonation and kept pace with the Silver Surfer. */
+      { en: "The nova flame, a million degrees", ar: "لهب النوفا، مليون درجة" },
+      {
+        en: "One burst levels everything nearby",
+        ar: "دفقة واحدة تسوّي ما حولها",
+      },
+      {
+        en: "Absorbs heat, even an atomic blast",
+        ar: "يمتص الحرارة، حتى انفجارًا ذريًا",
+      },
+      {
+        en: "Flies far past the speed of sound",
+        ar: "يطير أسرع من الصوت بأضعاف",
+      },
+      { en: "Shapes and aims every flame", ar: "يشكّل كل لهب ويصوّبه" },
+      { en: "Spent for hours after a nova", ar: "يُستنزف ساعات بعد النوفا" },
     ],
     origin: {
       en: "The youngest of the four, who enjoyed what happened to him more than the others did and never pretended otherwise.",

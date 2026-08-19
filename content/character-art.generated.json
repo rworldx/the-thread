@@ -2295,9 +2295,9 @@
     "matchedAs": "hand-picked"
   },
   "thaddeus-ross": {
-    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/547-red-hulk.jpg",
-    "source": "shdb",
-    "matchedAs": "Red Hulk"
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f1/Red_Hulk_Vol_1_1_Lee_Variant_Textless.jpg/revision/latest?cb=20250623193825",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
   },
   "maria-hill": {
     "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f4/Maria_Hill_Infobox.jpg/revision/latest?cb=20250203210426",

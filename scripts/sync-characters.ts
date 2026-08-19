@@ -30,7 +30,8 @@
 import { writeFile } from "node:fs/promises";
 import { characters } from "../content/characters";
 
-const SHDB = "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/all.json";
+const SHDB =
+  "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/all.json";
 /**
  * Two keyless MediaWiki APIs, tried in order.
  *
@@ -59,42 +60,47 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  /* The name lookup found him on the superhero-api, which serves a low-res
+     render. This is the Jim Lee variant for Red Hulk Vol 1 #1, textless, and
+     it is Thaddeus Ross rather than Robert Maverick — the wiki's own "Red
+     Hulk" article leads with Maverick, who is a different man. */
+  "thaddeus-ross":
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f1/Red_Hulk_Vol_1_1_Lee_Variant_Textless.jpg/revision/latest?cb=20250623193825",
   "master-mold":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/08/Master_Mold_%28Earth-616%29%2C_Brian_Braddock_%28Earth-616%29%2C_and_Jim_Hammond_%28Earth-616%29_from_Secret_Avengers_Vol_1_36_0001.jpg/revision/latest?cb=20131104210811",
-  "bastion":
+  bastion:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6d/Sebastion_Gilberti_%28Earth-616%29_from_X-Men_Blue_Vol_1_3_001.jpg/revision/latest?cb=20180605022436",
-  "egghead":
+  egghead:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/42/Elihas_Starr_%28Earth-616%29_from_Ant-Man_Annual_Vol_1_1_001.jpg/revision/latest?cb=20150723192140",
-  "enchantress":
+  enchantress:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/Immortal_Thor_Vol_1_17_Go_Variant_Textless.jpg/revision/latest?cb=20241123063641",
   "the-maker":
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6b/Ultimates_Vol_3_24_Ultimate_Special_Variant_Textless.jpg/revision/latest?cb=20260605230107",
-  "songbird":
+  songbird:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/50/Thunderbolts_Doomstrike_Vol_1_1_Tao_Virgin_Variant.jpg/revision/latest?cb=20250221195650",
-  "rhino":
+  rhino:
     "https://static.wikia.nocookie.net/marveldatabase/images/1/18/Aleksei_Sytsevich_%28Earth-616%29_from_Miles_Morales_Spider-Man_Vol_1_1_001.jpg/revision/latest?cb=20191010044711",
-  "triton":
+  triton:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/dc/Triton_%28Earth-616%29_from_Civil_War_II_Vol_1_1_001.jpg/revision/latest?cb=20160601210850",
-  "dagger":
+  dagger:
     "https://static.wikia.nocookie.net/marvelcrossroads/images/c/c2/Dagger_%28Marvel_Resuited%29.jpg/revision/latest?cb=20200430220411",
-  "cloak":
+  cloak:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d7/Cloak_from_Marvel_Snap_004.jpg/revision/latest?cb=20251104201535",
   "amadeus-cho":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/97/Totally_Awesome_Hulk_Vol_1_1_Cho_Variant_Textless.jpg/revision/latest/scale-to-width-down/732?cb=20150917021939",
   "ka-zar":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/05/Kevin_Plunder_%28Earth-616%29_from_Avengers_Vol_8_50_004.jpg/revision/latest?cb=20230103031755",
-  "zabu":
-    "https://static.wikia.nocookie.net/marveldatabase/images/1/10/Zabu_%28Earth-616%29_from_Empyre_Avengers_Vol_1_1_001.jpg/revision/latest?cb=20210131203513",
+  zabu: "https://static.wikia.nocookie.net/marveldatabase/images/1/10/Zabu_%28Earth-616%29_from_Empyre_Avengers_Vol_1_1_001.jpg/revision/latest?cb=20210131203513",
   /* The Earth-828 Surfer on her board. The wiki lookup finds an MCU-wiki
      infobox for her, but this is the one that reads as the character. */
   "shalla-bal":
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5e/Shalla-Bal_%28Earth-828%29_from_The_Fantastic_Four_First_Steps_promotional_material_002.jpg/revision/latest?cb=20250711075836",
   "ms-marvel":
     "https://www.hollywoodreporter.com/wp-content/uploads/2018/12/ms._marvel_38_-_publicity_-_p_2018.jpg",
-  echo:
-    "https://static.wikia.nocookie.net/p__/images/0/0d/Maya_Lopez_%28Earth-616%29_from_Daredevil_Vol_2_10_cover.jpg/revision/latest?cb=20240109231654&path-prefix=protagonist",
+  echo: "https://static.wikia.nocookie.net/p__/images/0/0d/Maya_Lopez_%28Earth-616%29_from_Daredevil_Vol_2_10_cover.jpg/revision/latest?cb=20240109231654&path-prefix=protagonist",
   ultron: "https://upload.wikimedia.org/wikipedia/en/5/5e/Ultron_%28MCU%29.png",
-  okoye: "https://i.pinimg.com/originals/65/a0/c0/65a0c0db02e90a95d04e93c9477ceca0.jpg",
+  okoye:
+    "https://i.pinimg.com/originals/65/a0/c0/65a0c0db02e90a95d04e93c9477ceca0.jpg",
   toad: "https://cdn.marvel.com/content/2x/toad.webp",
   "the-living-tribunal":
     "https://images.squarespace-cdn.com/content/v1/58c35f74d1758e424ee76710/1557960737862-DA8TG6YX0QA9OMAATAJM/7c4ce77870905d23eed53669de9ae36c--living-tribunal-comic-books.jpg",
@@ -115,8 +121,10 @@ const IMAGE_OVERRIDES: Record<string, string> = {
    * not even be downloaded and self-hosted. This is the replacement that was
    * sent for it, on a host that actually serves the file.
    */
-  punisher: "https://comicvine.gamespot.com/a/uploads/scale_medium/1/15776/9998597-punisher.jpg",
-  "the-beyonder": "https://i.pinimg.com/736x/7c/12/73/7c1273e72145647b433b44d43bf870dc.jpg",
+  punisher:
+    "https://comicvine.gamespot.com/a/uploads/scale_medium/1/15776/9998597-punisher.jpg",
+  "the-beyonder":
+    "https://i.pinimg.com/736x/7c/12/73/7c1273e72145647b433b44d43bf870dc.jpg",
   "doctor-voodoo":
     "https://i.pinimg.com/736x/03/0b/ca/030bcaf2391b6b49e777f889926657f1.jpg",
   /* Peter from Deadpool 2 — the one with no powers and type 2 diabetes, whom
@@ -131,9 +139,12 @@ const IMAGE_OVERRIDES: Record<string, string> = {
    * `s=` signature — a signed cache entry, not a host, and those expire. The
    * Marvel wiki's own Phoenix Force art instead.
    */
-  phoenix: "https://static.wikia.nocookie.net/marveldatabase/images/e/ee/Phoenix_Force_%28Earth-616%29_from_Avengers_Vol_8_32_001.jpg/revision/latest?cb=20210406171416",
-  "starfox": "https://static.wikia.nocookie.net/crossgencomicsdatabase/images/2/24/Starfox_Thanos_Vol_2_7.png/revision/latest?cb=20201205021117",
-  "jane-foster": "https://static.wikia.nocookie.net/marveldatabase/images/8/8e/Jane_Foster_%28Earth-616%29_from_Mighty_Thor_Vol_2_1_001.jpg/revision/latest/scale-to-width-down/791?cb=20151118210746",
+  phoenix:
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/ee/Phoenix_Force_%28Earth-616%29_from_Avengers_Vol_8_32_001.jpg/revision/latest?cb=20210406171416",
+  starfox:
+    "https://static.wikia.nocookie.net/crossgencomicsdatabase/images/2/24/Starfox_Thanos_Vol_2_7.png/revision/latest?cb=20201205021117",
+  "jane-foster":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/8e/Jane_Foster_%28Earth-616%29_from_Mighty_Thor_Vol_2_1_001.jpg/revision/latest/scale-to-width-down/791?cb=20151118210746",
   /**
    * MAYBELLE PARKER IS AUNT MAY. I flagged this as a possible mismatch when it
    * was first offered, on the strength of the filename — a Howard the Duck
@@ -149,11 +160,16 @@ const IMAGE_OVERRIDES: Record<string, string> = {
    * caught me writing the exact bug it was built for.
    */
   /* The Spider-Society, as they look in the Spider-Verse films. */
-  "spider-man-noir": "https://static.wikia.nocookie.net/p__/images/e/e7/1733106593483_v2pt7q_2_1~2.jpg/revision/latest?cb=20241202023919&path-prefix=protagonist",
-  "spider-punk": "https://static.wikia.nocookie.net/spiderverseseries/images/8/80/Spider-Punk_-_ATSV.png/revision/latest?cb=20230601181414",
-  "peni-parker": "https://static.wikia.nocookie.net/marveldatabase/images/6/6a/Edge_of_Spider-Geddon_Vol_1_2_Textless.jpg/revision/latest?cb=20181005044750",
-  "spider-ham": "https://playcontestofchampions.com/wp-content/uploads/2023/04/champion-spider-ham.webp",
-  "spider-man-2099": "https://static.wikia.nocookie.net/spiderverseseries/images/a/ac/Miguel_O%27Hara_-_ATSV.png/revision/latest?cb=20230601181303",
+  "spider-man-noir":
+    "https://static.wikia.nocookie.net/p__/images/e/e7/1733106593483_v2pt7q_2_1~2.jpg/revision/latest?cb=20241202023919&path-prefix=protagonist",
+  "spider-punk":
+    "https://static.wikia.nocookie.net/spiderverseseries/images/8/80/Spider-Punk_-_ATSV.png/revision/latest?cb=20230601181414",
+  "peni-parker":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6a/Edge_of_Spider-Geddon_Vol_1_2_Textless.jpg/revision/latest?cb=20181005044750",
+  "spider-ham":
+    "https://playcontestofchampions.com/wp-content/uploads/2023/04/champion-spider-ham.webp",
+  "spider-man-2099":
+    "https://static.wikia.nocookie.net/spiderverseseries/images/a/ac/Miguel_O%27Hara_-_ATSV.png/revision/latest?cb=20230601181303",
   /**
    * THE MAINSTREAM VERSIONS, because the automatic match found the wrong
    * EARTH. The name search landed on Earth-161, Earth-315, Earth-982 and
@@ -165,44 +181,73 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   /* Renaming her to "Spider-Woman (Jessica Drew)" — matching the two Novas —
      made the name search land on SPIDER-GIRL, a different person. The rename
      was right and the search could not follow it. */
-  "hobgoblin": "https://static.wikia.nocookie.net/marveldatabase/images/2/2d/Spider-Man_Vol_2_237_Textless.jpg/revision/latest?cb=20171219181335",
-  "mary-jane-watson": "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/Mary_Jane_Watson_%28Earth-616%29_from_Amazing_Spider-Man_Vol_5_50.LR_001.jpg/revision/latest?cb=20210315024600",
-  "michelle-jones": "https://static.wikia.nocookie.net/p__/images/f/f2/MJ-NWH.png/revision/latest?cb=20220308041822&path-prefix=protagonist",
-  "riot": "https://static.wikia.nocookie.net/villains/images/9/97/Riot_%28Earth-616%29_from_Absolute_Carnage_Scream_Vol_1_1_Bagley_Connecting_Variant_cover_001.jpg/revision/latest?cb=20241029173122",
-  "morbius": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Morbius_Vol_1_1_Textless.jpg/revision/latest?cb=20211102194828",
+  hobgoblin:
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/2d/Spider-Man_Vol_2_237_Textless.jpg/revision/latest?cb=20171219181335",
+  "mary-jane-watson":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/Mary_Jane_Watson_%28Earth-616%29_from_Amazing_Spider-Man_Vol_5_50.LR_001.jpg/revision/latest?cb=20210315024600",
+  "michelle-jones":
+    "https://static.wikia.nocookie.net/p__/images/f/f2/MJ-NWH.png/revision/latest?cb=20220308041822&path-prefix=protagonist",
+  riot: "https://static.wikia.nocookie.net/villains/images/9/97/Riot_%28Earth-616%29_from_Absolute_Carnage_Scream_Vol_1_1_Bagley_Connecting_Variant_cover_001.jpg/revision/latest?cb=20241029173122",
+  morbius:
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Morbius_Vol_1_1_Textless.jpg/revision/latest?cb=20211102194828",
   /**
    * KRAVEN IS A SUBSTITUTION, on the same rule as the Punisher and the
    * Phoenix. The URL offered was `preview.redd.it` with an `s=` signature — a
    * signed cache entry, not a host, and those expire. The Marvel wiki's own
    * cover instead.
    */
-  kraven: "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Amazing_Spider-Man_Vol_5_19_ComicXposure_Exclusive_Virgin_Variant.jpg/revision/latest?cb=20210222060432",
-  "spider-woman": "https://static.wikia.nocookie.net/marveldatabase/images/9/9d/Spider-Woman_Vol_7_11_Textless.jpg/revision/latest?cb=20210116123553",
-  "julia-carpenter": "https://static.wikia.nocookie.net/marveldatabase/images/7/74/Julia_Carpenter_%28Earth-616%29_from_Prowler_Vol_2_2_001.jpg/revision/latest?cb=20191006044458",
-  "anya-corazon": "https://static.wikia.nocookie.net/marveldatabase/images/e/e2/A%C3%B1a_Coraz%C3%B3n_%28Earth-616%29_from_Edge_of_Spider-Verse_Vol_2_1_001.jpg/revision/latest?cb=20220804155915",
-  "mattie-franklin": "https://static.wikia.nocookie.net/marveldatabase/images/1/19/Martha_Franklin_%28Earth-616%29_from_Silk_Vol_2_14_001.jpg/revision/latest?cb=20260611235256",
-  "ezekiel-sims": "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Ezekiel_Sims_%28Earth-616%29_from_Amazing_Spider-Man_Vol_2_33_cover.jpg/revision/latest?cb=20191219062701",
-  "madame-web": "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Cassandra_Webb_%28Earth-616%29_from_Prowler_Vol_2_1_001.jpg/revision/latest?cb=20220428150725",
-  "captain-carter": "https://theronin.org/wp-content/uploads/2021/08/captain-carter_haley-atwell_invaders_mcu_what-if_.jpeg?w=469",
+  kraven:
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Amazing_Spider-Man_Vol_5_19_ComicXposure_Exclusive_Virgin_Variant.jpg/revision/latest?cb=20210222060432",
+  "spider-woman":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9d/Spider-Woman_Vol_7_11_Textless.jpg/revision/latest?cb=20210116123553",
+  "julia-carpenter":
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/74/Julia_Carpenter_%28Earth-616%29_from_Prowler_Vol_2_2_001.jpg/revision/latest?cb=20191006044458",
+  "anya-corazon":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e2/A%C3%B1a_Coraz%C3%B3n_%28Earth-616%29_from_Edge_of_Spider-Verse_Vol_2_1_001.jpg/revision/latest?cb=20220804155915",
+  "mattie-franklin":
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/19/Martha_Franklin_%28Earth-616%29_from_Silk_Vol_2_14_001.jpg/revision/latest?cb=20260611235256",
+  "ezekiel-sims":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Ezekiel_Sims_%28Earth-616%29_from_Amazing_Spider-Man_Vol_2_33_cover.jpg/revision/latest?cb=20191219062701",
+  "madame-web":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Cassandra_Webb_%28Earth-616%29_from_Prowler_Vol_2_1_001.jpg/revision/latest?cb=20220428150725",
+  "captain-carter":
+    "https://theronin.org/wp-content/uploads/2021/08/captain-carter_haley-atwell_invaders_mcu_what-if_.jpeg?w=469",
   /* The MCU wiki's Throg is a blurry frame grab. This is the comics cover. */
-  throg: "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Thor_Vol_6_18_Textless.jpg/revision/latest?cb=20211206190320",
-  "president-loki": "https://static.wikia.nocookie.net/marveldatabase/images/2/2c/Loki_%28TV_series%29_poster_013.jpg/revision/latest?cb=20210712144857",
-  "aunt-may": "https://static.wikia.nocookie.net/marveldatabase/images/e/e2/Maybelle_Parker_%28Earth-616%29_from_Howard_the_Duck_Vol_6_1_cover_001.jpg/revision/latest?cb=20220628175232",
-  sentinels: "https://static.wikia.nocookie.net/xmenmovies/images/d/d9/Markx.jpg/revision/latest?cb=20140714214324",
-  yondu: "https://static.wikia.nocookie.net/marveldatabase/images/6/6d/All-New_Guardians_of_the_Galaxy_Annual_Vol_1_1_Mora_Variant_Textless.jpg/revision/latest?cb=20170623090214",
-  ikaris: "https://static.wikia.nocookie.net/disney/images/e/e7/Ikaris_-_Profile.jpg/revision/latest?cb=20220626100045",
-  infinity: "https://static.wikia.nocookie.net/marveldatabase/images/a/aa/Infinity_%28Multiverse%29_from_Ultimates_2_Vol_2_100_001.jpg/revision/latest?cb=20190206130229",
-  "the-runner": "https://static.wikia.nocookie.net/marvelcomicsfanon/images/8/8f/Runner_61615.jpg/revision/latest?cb=20190319143937",
-  oblivion: "https://static.wikia.nocookie.net/marveldatabase/images/0/07/Oblivion_%28Earth-616%29_from_Mighty_Thor_Annual_Vol_1_1_001.jpg/revision/latest/scale-to-width-down/985?cb=20211130020701",
-  "molecule-man": "https://static.wikia.nocookie.net/marveldatabase/images/6/67/Owen_Reece_%28Earth-616%29_from_New_Avengers_Vol_3_24_001.jpg/revision/latest?cb=20240516161927",
+  throg:
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/be/Thor_Vol_6_18_Textless.jpg/revision/latest?cb=20211206190320",
+  "president-loki":
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/2c/Loki_%28TV_series%29_poster_013.jpg/revision/latest?cb=20210712144857",
+  "aunt-may":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e2/Maybelle_Parker_%28Earth-616%29_from_Howard_the_Duck_Vol_6_1_cover_001.jpg/revision/latest?cb=20220628175232",
+  sentinels:
+    "https://static.wikia.nocookie.net/xmenmovies/images/d/d9/Markx.jpg/revision/latest?cb=20140714214324",
+  yondu:
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6d/All-New_Guardians_of_the_Galaxy_Annual_Vol_1_1_Mora_Variant_Textless.jpg/revision/latest?cb=20170623090214",
+  ikaris:
+    "https://static.wikia.nocookie.net/disney/images/e/e7/Ikaris_-_Profile.jpg/revision/latest?cb=20220626100045",
+  infinity:
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/aa/Infinity_%28Multiverse%29_from_Ultimates_2_Vol_2_100_001.jpg/revision/latest?cb=20190206130229",
+  "the-runner":
+    "https://static.wikia.nocookie.net/marvelcomicsfanon/images/8/8f/Runner_61615.jpg/revision/latest?cb=20190319143937",
+  oblivion:
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/07/Oblivion_%28Earth-616%29_from_Mighty_Thor_Annual_Vol_1_1_001.jpg/revision/latest/scale-to-width-down/985?cb=20211130020701",
+  "molecule-man":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/67/Owen_Reece_%28Earth-616%29_from_New_Avengers_Vol_3_24_001.jpg/revision/latest?cb=20240516161927",
   knull: "https://cdn.marvel.com/content/2x/venom_2018_4_1.webp",
-  "doctor-doom": "https://static.wikia.nocookie.net/heroes-and-villain/images/f/fc/Doctor_Doom.jpg/revision/latest?cb=20220208120207",
-  "squirrel-girl": "https://static.wikia.nocookie.net/marveldatabase/images/3/30/Unbeatable_Squirrel_Girl_Vol_2_7_Classic_Variant_Textless.jpg/revision/latest?cb=20160119180039",
-  prowler: "https://static.wikia.nocookie.net/villains/images/8/89/Prowler2.jpg/revision/latest?cb=20190227002026",
-  "a-bomb": "https://static.wikia.nocookie.net/marvel-battlelines/images/c/c9/Screenshot_2018-11-15-13-16-45.png/revision/latest?cb=20181116004936",
-  "adam-warlock": "https://i.pinimg.com/736x/b6/30/78/b63078241e496fdaf4073646a12da56c.jpg",
-  sentry: "https://static.wikia.nocookie.net/characterprofile/images/e/ed/Sentry_Marvel_Comics.jpeg/revision/latest/scale-to-width-down/1200?cb=20250525071708",
-  "kate-bishop": "https://static.wikia.nocookie.net/marveldatabase/images/d/df/Katherine_Bishop_%28Earth-616%29_from_Hawkeye_Kate_Bishop_Vol_1_1_cover.jpg/revision/latest?cb=20211130210330",
+  "doctor-doom":
+    "https://static.wikia.nocookie.net/heroes-and-villain/images/f/fc/Doctor_Doom.jpg/revision/latest?cb=20220208120207",
+  "squirrel-girl":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/30/Unbeatable_Squirrel_Girl_Vol_2_7_Classic_Variant_Textless.jpg/revision/latest?cb=20160119180039",
+  prowler:
+    "https://static.wikia.nocookie.net/villains/images/8/89/Prowler2.jpg/revision/latest?cb=20190227002026",
+  "a-bomb":
+    "https://static.wikia.nocookie.net/marvel-battlelines/images/c/c9/Screenshot_2018-11-15-13-16-45.png/revision/latest?cb=20181116004936",
+  "adam-warlock":
+    "https://i.pinimg.com/736x/b6/30/78/b63078241e496fdaf4073646a12da56c.jpg",
+  sentry:
+    "https://static.wikia.nocookie.net/characterprofile/images/e/ed/Sentry_Marvel_Comics.jpeg/revision/latest/scale-to-width-down/1200?cb=20250525071708",
+  "kate-bishop":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/df/Katherine_Bishop_%28Earth-616%29_from_Hawkeye_Kate_Bishop_Vol_1_1_cover.jpg/revision/latest?cb=20211130210330",
   "franklin-richards":
     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO0M4Hoz8oYnwDeK0zj7-y48Nxz1qaorHtrH41Dw_LddZDM5RVCKilkgSldOdfBpfNyLLMLMWiXZux40YOFI9VpNFURwbEenzTWwYy9vyyXt1B5DlTIc9AaAQgRpsiBqn1gHp8HLUViw_tgz4uPSTI7_UT01LOLPB03ZV_ndjAgn2tzfVkeox7_khcTu4/s3056/Fantastic%20Four%20v7%20%23%2018%20(1).jpg",
   /**
@@ -238,8 +283,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c7/Gammenon_%28First_Cosmos%29_from_X-Factor_Vol_1_43_001.jpg/revision/latest?cb=20230819214214",
   hargen:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Hargen_%28Multiverse%29_from_Official_Handbook_of_the_Marvel_Universe_Vol_2_2_001.jpg/revision/latest?cb=20161030073140",
-  oneg:
-    "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Oneg_%28First_Cosmos%29_from_Official_Handbook_of_the_Marvel_Universe_Master_Edition_Vol_1_1_001.jpg/revision/latest?cb=20161030073221",
+  oneg: "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Oneg_%28First_Cosmos%29_from_Official_Handbook_of_the_Marvel_Universe_Master_Edition_Vol_1_1_001.jpg/revision/latest?cb=20161030073221",
   ziran:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/95/Ziran_%28First_Cosmos%29_from_Official_Handbook_of_the_Marvel_Universe_Master_Edition_Vol_1_4_001.jpg/revision/latest?cb=20161029063024",
   scathan:
@@ -259,52 +303,50 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   /* Spider-Man's rogues. Several are catalogued under their real names —
      Alonzo Lincoln, Silvio Manfredi, Frederick Myers, Silvija Sablinova —
      so a codename lookup finds nothing for them. */
-  "hammerhead":
+  hammerhead:
     "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Amazing_Spider-Man_Vol_3_17.1_Textless.jpg/revision/latest?cb=20150119193829",
   "hydro-man":
     "https://static.wikia.nocookie.net/marveldatabase/images/e/ee/Classic_Marvel_Figurine_Collection_Vol_1_163_Textless.png/revision/latest?cb=20240421080822",
   "molten-man":
     "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Mark_Raxton_%28Earth-616%29_from_Amazing_Spider-Man_Vol_3_16_001.jpg/revision/latest?cb=20150312234724",
-  "silvermane":
+  silvermane:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b2/Silvio_Manfredi_%28Earth-616%29_from_Silk_Vol_3_3_001.jpg/revision/latest?cb=20250622044037",
-  "beetle":
+  beetle:
     "https://static.wikia.nocookie.net/marveldatabase/images/0/07/Abner_Jenkins_%28Earth-616%29_from_Thunderbolts_Vol_4_4_001.png/revision/latest?cb=20160901025546",
-  "boomerang":
+  boomerang:
     "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Web_of_Venom_Vol_1_1_Virgin_Variant.jpg/revision/latest?cb=20260420022347",
-  "vermin":
+  vermin:
     "https://static.wikia.nocookie.net/marveldatabase/images/3/32/Edward_Whelan_%28Earth-616%29_from_Spider-Gwen_The_Ghost-Spider_Vol_1_5_001.jpg/revision/latest?cb=20240913225111",
-  "demogoblin":
+  demogoblin:
     "https://static.wikia.nocookie.net/marveldatabase/images/2/22/Demogoblin_%28Earth-616%29_from_Absolute_Carnage_Lethal_Protectors_Vol_1_2_cover_001.jpg/revision/latest?cb=20190922001604",
   "alistair-smythe":
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Alistaire_Smythe_%28Earth-616%29_from_Amazing_Spider-Man_Vol_2_650_0001.jpg/revision/latest?cb=20191129030806",
   "silver-sable":
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c2/Silvija_Sablinova_%28Earth-616%29_from_Wolverine_Vol_8_14_001.jpg/revision/latest?cb=20260108161834",
-  "calypso":
+  calypso:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/de/Calypso_%28Earth-616%29_from_Marvel_Illustrated_The_Odyssey_Vol_1_2_002.jpg/revision/latest?cb=20231118184004",
   /* Mutants. Marvel Database files most of them under their real names —
      Elizabeth Braddock, James Madrox, Teresia Karisik, Xuan Cao Manh,
      Kevin Sidney — so a codename lookup returns nothing. */
-  "psylocke":
+  psylocke:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/4f/X-Force_Vol_7_7_Textless.jpg/revision/latest?cb=20240922081512",
   "multiple-man":
     "https://static.wikia.nocookie.net/marveldatabase/images/7/71/X-Factor_Vol_3_47_70th_Frame_Variant_Textless.jpg/revision/latest?cb=20210404124655",
-  "marrow":
+  marrow:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c2/Marrow_%28Sarah%29_%28Earth-616%29_from_Secret_X-Men_Vol_1_1_Cover.jpg/revision/latest?cb=20220210231006",
-  "forge":
+  forge:
     "https://static.wikia.nocookie.net/marveldatabase/images/8/80/X-Force_Vol_7_1_Forge_Virgin_Variant.jpg/revision/latest?cb=20240801205535",
-  "sage":
-    "https://static.wikia.nocookie.net/marveldatabase/images/9/96/X-Force_Vol_7_6_Sage_Virgin_Variant.jpg/revision/latest?cb=20241202053713",
-  "karma":
+  sage: "https://static.wikia.nocookie.net/marveldatabase/images/9/96/X-Force_Vol_7_6_Sage_Virgin_Variant.jpg/revision/latest?cb=20241202053713",
+  karma:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b5/Marvel%27s_Voices_Pride_Vol_1_1_Souza_Variant_Textless.jpg/revision/latest?cb=20210522181124",
-  "husk":
-    "https://static.wikia.nocookie.net/marveldatabase/images/7/77/Paige_Guthrie_%28Earth-616%29_from_Astonishing_X-Men_Infinity_Comic_Vol_1_20_001.jpg/revision/latest?cb=20250513085839",
-  "siryn":
+  husk: "https://static.wikia.nocookie.net/marveldatabase/images/7/77/Paige_Guthrie_%28Earth-616%29_from_Astonishing_X-Men_Infinity_Comic_Vol_1_20_001.jpg/revision/latest?cb=20250513085839",
+  siryn:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/75/Theresa_Cassidy_%28Earth-616%29_from_X-Factor_Vol_4_6_001.jpg/revision/latest?cb=20210111225550",
-  "sunfire":
+  sunfire:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d5/X-Men_Vol_6_4_New_Line-Up_Trading_Card_Variant_Textless.jpg/revision/latest?cb=20220128090535",
-  "morph":
+  morph:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/Kevin_Sidney_%28Earth-616%29_from_Astonishing_X-Men_Infinity_Comic_Vol_1_41_001.jpg/revision/latest?cb=20251024140411",
-  "mimic":
+  mimic:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/4e/Calvin_Rankin_%28Earth-616%29_from_X-Men_Legacy_Vol_1_264_001.jpg/revision/latest?cb=20120328234818",
   "madelyne-pryor":
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/Dark_X-Men_Vol_2_2_Larroca_Variant_Textless.jpg/revision/latest?cb=20250113033319",
@@ -312,48 +354,44 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      Earth-616. Spider-UK is Earth-833 and filed as William Braddock. */
   "omega-red":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/99/Wolverine_Vol_7_11_Unknown_Comic_Books_Exclusive_Virgin_Variant.jpg/revision/latest?cb=20210403195047",
-  "silk":
-    "https://static.wikia.nocookie.net/marveldatabase/images/3/37/Silk_Vol_3_1_Yoon_Virgin_Variant.jpg/revision/latest?cb=20210327180532",
-  "kaine":
+  silk: "https://static.wikia.nocookie.net/marveldatabase/images/3/37/Silk_Vol_3_1_Yoon_Virgin_Variant.jpg/revision/latest?cb=20210327180532",
+  kaine:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/bc/Scarlet_Spider_Vol_2_1_Bagley_Variant_Textless.jpg/revision/latest?cb=20111207185824",
-  "morlun":
+  morlun:
     "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/Morlun_%28Earth-001%29_from_Spider-Man_Vol_4_1_001.jpg/revision/latest?cb=20260324164257",
-  "solus":
+  solus:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Solus_%28Earth-001%29_from_Amazing_Spider-Man_Vol_3_11_0003.jpeg/revision/latest?cb=20141214032444",
-  "verna":
+  verna:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/dc/Spider-Force_Vol_1_2_Textless.jpg/revision/latest?cb=20180822075733",
-  "daemos":
+  daemos:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/90/Daemos_%28Earth-001%29_from_Amazing_Spider-Man_Vol_3_8_0001.png/revision/latest?cb=20141025084417",
-  "jennix":
+  jennix:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Jennix_%28Earth-001%29_from_Scarlet_Spiders_Vol_1_2_001.jpg/revision/latest?cb=20141229034533",
-  "brix":
-    "https://static.wikia.nocookie.net/marveldatabase/images/e/e7/Brix_%28Earth-001%29_from_Spider-Girls_Vol_1_2_001.jpg/revision/latest?cb=20210430201140",
-  "bora":
-    "https://static.wikia.nocookie.net/marveldatabase/images/a/a3/Bora_%28Earth-001%29_from_Superior_Spider-Man_Vol_1_33_001.png/revision/latest?cb=20140918235552",
-  "karn":
-    "https://static.wikia.nocookie.net/marveldatabase/images/1/14/Karn_%28Earth-001%29_from_Spider-Geddon_Vol_1_2_001.jpg/revision/latest?cb=20240413203542",
+  brix: "https://static.wikia.nocookie.net/marveldatabase/images/e/e7/Brix_%28Earth-001%29_from_Spider-Girls_Vol_1_2_001.jpg/revision/latest?cb=20210430201140",
+  bora: "https://static.wikia.nocookie.net/marveldatabase/images/a/a3/Bora_%28Earth-001%29_from_Superior_Spider-Man_Vol_1_33_001.png/revision/latest?cb=20140918235552",
+  karn: "https://static.wikia.nocookie.net/marveldatabase/images/1/14/Karn_%28Earth-001%29_from_Spider-Geddon_Vol_1_2_001.jpg/revision/latest?cb=20240413203542",
   "spider-uk":
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/William_Braddock_%28Earth-833%29_from_Amazing_Spider-Man_Vol_3_7_002.jpg/revision/latest?cb=20141012071303",
   /* Symbiotes are filed under "(Symbiote)", their hosts under real names —
      Andrea Benton, Scott Washington, Tanis Nieves, Dmitri Smerdyakov, Lily
      Hollister, Phillip Urich. */
-  "lasher":
+  lasher:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a6/Extreme_Carnage_Lasher_Vol_1_1_Comic_Kingdom_of_Canada_Exclusive_Virgin_Variant.jpg/revision/latest?cb=20210721011601",
-  "phage":
+  phage:
     "https://static.wikia.nocookie.net/marveldatabase/images/e/ed/Extreme_Carnage_Phage_Vol_1_1_Textless.jpg/revision/latest?cb=20211015151651",
-  "sleeper":
+  sleeper:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Venom_Vol_4_20_Codex_Variant_Textless.jpg/revision/latest?cb=20200823015914",
-  "mania":
+  mania:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7e/Andrea_Benton_%28Earth-616%29_and_Silence_%28Symbiote%29_%28Earth-616%29_from_Venom_War_Deadpool_Vol_1_2_Cover.jpg/revision/latest?cb=20260205183440",
-  "hybrid":
+  hybrid:
     "https://static.wikia.nocookie.net/marveldatabase/images/3/34/Venom_Vol_4_18_Codex_Variant_Textless.jpg/revision/latest?cb=20190901185734",
   "dylan-brock":
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a8/Dylan_Brock_%28Earth-616%29_and_Toxin_%28Symbiote%29_%28Earth-616%29_from_Venom_Vol_6_259_001.jpg/revision/latest?cb=20260627030657",
-  "scorn":
+  scorn:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/af/Tanis_Nieves_%28Earth-616%29_and_Scorn_%28Symbiote%29_%28Earth-616%29_from_Carnage%2C_U.S.A._Vol_1_5_001.png/revision/latest?cb=20120422120551",
-  "chameleon":
+  chameleon:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/65/Dmitri_Smerdyakov_%28Earth-616%29_from_Giant-Size_Amazing_Spider-Man_Chameleon_Conspiracy_Vol_1_1_cover_001.jpg/revision/latest?cb=20210712021523",
-  "menace":
+  menace:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Lily_Hollister_%28Earth-616%29_from_Black_Cat_Vol_1_12_001.jpg/revision/latest?cb=20220320175716",
   "phil-urich":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/00/Phillip_Urich_%28Earth-616%29_from_Red_Goblin_Vol_1_1.jpg/revision/latest?cb=20230610112349",
@@ -388,38 +426,33 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/b/bf/Lord_Chaos_%28Earth-616%29_from_G.O.D.S._Vol_1_5_Cosmic_Homage_Variant_cover_001.jpg/revision/latest?cb=20240228175436",
   "the-in-betweener":
     "https://static.wikia.nocookie.net/marveldatabase/images/5/58/G.O.D.S._Vol_1_6_Reis_Variant_Textless.jpg/revision/latest?cb=20251026160219",
-  "eon":
-    "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/Eon_%28Earth-616%29_from_Captain_Marvel_Vol_1_28_0001.jpg/revision/latest?cb=20161011040647",
-  "epoch":
+  eon: "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/Eon_%28Earth-616%29_from_Captain_Marvel_Vol_1_28_0001.jpg/revision/latest?cb=20161011040647",
+  epoch:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/Epoch_%28Earth-616%29_from_Fantastic_Four_Vol_3_544_0001.jpg/revision/latest?cb=20191202032038",
-  "entropy":
+  entropy:
     "https://static.wikia.nocookie.net/marveldatabase/images/2/22/Entropy_%28Earth-616%29_from_Captain_Marvel_Vol_5_5_001.jpg/revision/latest?cb=20220901143731",
-  "kronos":
+  kronos:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/4b/Kronos_%28Earth-616%29_from_Eternals_Thanos_Rises_Vol_1_1_001.jpg/revision/latest?cb=20220228050646",
-  "tenebrous":
+  tenebrous:
     "https://static.wikia.nocookie.net/marveldatabase/images/3/31/Tenebrous_%28Earth-616%29_from_Annihilation_Silver_Surfer_Vol_1_3_002.jpg/revision/latest?cb=20191126061634",
   "the-stranger":
     "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Stranger_%28Cosmic_Being%29_%28Earth-616%29_from_Howard_the_Duck_Vol_6_3_001.jpg/revision/latest?cb=20160102080157",
-  "nemesis":
+  nemesis:
     "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Nemesis_%28Cosmic_Being%29_%28First_Cosmos%29_from_Avengers_UltraForce_Vol_1_1_001.jpg/revision/latest?cb=20180303090223",
-  "protege":
+  protege:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6f/Prot%C3%A9g%C3%A9_%28Earth-691%29_from_Guardians_of_the_Galaxy_Vol_1_15_0001.jpg/revision/latest?cb=20191127024328",
   /* Mystics: Shuma-Gorath under (Multiverse), the Demiurge filed as
      "Demiurge Primordial". */
-  "cyttorak":
+  cyttorak:
     "https://static.wikia.nocookie.net/marveldatabase/images/8/85/Cyttorak_%28Earth-616%29_and_Cain_Marko_%28Earth-616%29_from_Juggernaut_Vol_3_4_001.jpg/revision/latest?cb=20210519150308",
-  "oshtur":
+  oshtur:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/cc/Oshtur_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124848",
-  "hoggoth":
+  hoggoth:
     "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/Hoggoth_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124702",
-  "umar":
-    "https://static.wikia.nocookie.net/marveldatabase/images/8/87/Strange_Vol_3_4_Lubera_Variant_Textless.jpg/revision/latest?cb=20220727113619",
-  "zom":
-    "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Zom_%28Earth-616%29_from_Strange_Tales_Vol_1_156_031.jpg/revision/latest?cb=20211215050707",
-  "gaea":
-    "https://static.wikia.nocookie.net/marveldatabase/images/c/c4/Gaea_%28Earth-616%29_from_Immortal_Thor_Vol_1_8_001.png/revision/latest?cb=20240313174931",
-  "set":
-    "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Set_%28Earth-616%29_from_Savage_Avengers_Vol_2_4_0001.jpeg/revision/latest?cb=20221110064408",
+  umar: "https://static.wikia.nocookie.net/marveldatabase/images/8/87/Strange_Vol_3_4_Lubera_Variant_Textless.jpg/revision/latest?cb=20220727113619",
+  zom: "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Zom_%28Earth-616%29_from_Strange_Tales_Vol_1_156_031.jpg/revision/latest?cb=20211215050707",
+  gaea: "https://static.wikia.nocookie.net/marveldatabase/images/c/c4/Gaea_%28Earth-616%29_from_Immortal_Thor_Vol_1_8_001.png/revision/latest?cb=20240313174931",
+  set: "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Set_%28Earth-616%29_from_Savage_Avengers_Vol_2_4_0001.jpeg/revision/latest?cb=20221110064408",
   "shuma-gorath":
     "https://static.wikia.nocookie.net/marveldatabase/images/2/2c/Invaders_Now%21_Vol_1_4_Textless.jpg/revision/latest?cb=20160517200603",
   "the-demiurge":
@@ -428,143 +461,137 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      (Herald), Praeter under (Mike), Gladiator as Kallark. */
   "air-walker":
     "https://static.wikia.nocookie.net/marveldatabase/images/6/65/Gabriel_Lan_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_Vol_2_16_001.jpg/revision/latest?cb=20240708083503",
-  "morg":
-    "https://static.wikia.nocookie.net/marveldatabase/images/5/56/Morg_%28Earth-616%29_from_All-New_Official_Handbook_of_the_Marvel_Universe_A_to_Z_Vol_1_7_0001.jpg/revision/latest?cb=20171230020226",
+  morg: "https://static.wikia.nocookie.net/marveldatabase/images/5/56/Morg_%28Earth-616%29_from_All-New_Official_Handbook_of_the_Marvel_Universe_A_to_Z_Vol_1_7_0001.jpg/revision/latest?cb=20171230020226",
   "red-shift":
     "https://static.wikia.nocookie.net/marveldatabase/images/2/2a/Red_Shift_%28Earth-616%29_from_Annihilation_The_Nova_Corps_Files_Vol_1_1_0001.jpg/revision/latest?cb=20210209175923",
   "beta-ray-bill":
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c3/Beta_Ray_Bill_%28Earth-616%29_from_Mortal_Thor_Vol_1_2_Clarke_Variant.jpg/revision/latest?cb=20250926064724",
-  "gladiator":
+  gladiator:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Realm_of_Kings_Imperial_Guard_Vol_1_5_Textless.jpg/revision/latest?cb=20221215064147",
-  "hyperion":
+  hyperion:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Hyperion_Vol_1_1_Textless.jpg/revision/latest?cb=20151023184219",
-  "mangog":
+  mangog:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/60/Mangog_%28Earth-616%29_from_Marvel_Monsters_Vol_1_1_001.jpg/revision/latest?cb=20221112174158",
   "blue-marvel":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/97/Adam_Brashear_%28Earth-616%29_from_Marvel_Legends_promotional_artwork_001.jpg/revision/latest?cb=20220314224837",
-  "onslaught":
+  onslaught:
     "https://static.wikia.nocookie.net/marveldatabase/images/3/36/Onslaught_%28Earth-616%29_from_Marvel_Masterpieces_%28Trading_Cards%29_1996_Set_001.jpg/revision/latest?cb=20051218191341",
-  "stardust":
+  stardust:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/46/Lambda-Zero_%28Earth-616%29_from_Annihilation_Silver_Surfer_Vol_1_3_0001.jpg/revision/latest?cb=20191126061545",
   "the-fallen-one":
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7c/Fallen_One_%28Herald%29_%28Earth-616%29_from_Thanos_Vol_1_11_001.jpg/revision/latest?cb=20101209183132",
-  "praeter":
+  praeter:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b7/Praeter_%28Mike%29_%28Earth-616%29_from_Mighty_Thor_Vol_1_6_001.jpg/revision/latest?cb=20111002171207",
   /* Mutants, batch 10. All twelve resolved under real names on the first
      try — Frederick Dukes, Tabitha Smith, Jonothon Starsmore, Armando
      Munoz, Angelica Jones, Amara Aquilla, Kevin MacTaggert, Selene Gallio,
      James Proudstar. Rachel Summers is Earth-811, the future she is from. */
-  "blob":
-    "https://static.wikia.nocookie.net/marveldatabase/images/3/3c/Frederick_Dukes_%28Earth-616%29_from_Uncanny_X-Men_Vol_6_7_001.jpg/revision/latest?cb=20241214224821",
+  blob: "https://static.wikia.nocookie.net/marveldatabase/images/3/3c/Frederick_Dukes_%28Earth-616%29_from_Uncanny_X-Men_Vol_6_7_001.jpg/revision/latest?cb=20241214224821",
   "boom-boom":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/0d/Tabitha_Smith_%28Earth-616%29_from_X-Men_Vol_7_10_001.jpg/revision/latest?cb=20250203014233",
-  "caliban":
+  caliban:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Caliban_%28Earth-616%29_from_NYX_Vol_2_3_001.jpg/revision/latest?cb=20240925191733",
-  "callisto":
+  callisto:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/4a/Marauders_Vol_1_7_Textless.jpg/revision/latest?cb=20191120184928",
-  "chamber":
+  chamber:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c0/Jonothon_Starsmore_%28Earth-616%29_from_Weapon_X-Men_Vol_2_2_Shalvey_Variant_cover.jpg/revision/latest?cb=20241223092234",
-  "darwin":
+  darwin:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/54/Armando_Mu%C3%B1oz_%28Earth-616%29_from_X-Men_Vol_5_5_001.jpg/revision/latest?cb=20200131035105",
-  "firestar":
+  firestar:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/55/West_Coast_Avengers_Vol_4_1_Artgerm_Virgin_Variant.jpg/revision/latest?cb=20241128220131",
-  "magma":
+  magma:
     "https://static.wikia.nocookie.net/marveldatabase/images/3/35/Avengers_Vol_7_685_New_Mutants_Variant_Textless.jpg/revision/latest?cb=20180330070950",
-  "proteus":
+  proteus:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b5/X-Men_-_Forever_Vol_1_1_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250130001739",
   "rachel-summers":
     "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/X-Force_Vol_7_2_Rachel_Summers_Virgin_Variant.jpg/revision/latest?cb=20240901001722",
-  "selene":
+  selene:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a6/Selene_Gallio_%28Earth-616%29_from_Immortal_X-Men_Vol_1_1_001.jpg/revision/latest?cb=20220401041713",
-  "warpath":
+  warpath:
     "https://static.wikia.nocookie.net/marveldatabase/images/0/05/Uncanny_X-Men_Vol_1_476_Textless.jpg/revision/latest?cb=20210517183725",
   /* Mutants, batch 11. All twelve on the first try. */
-  "cypher":
+  cypher:
     "https://static.wikia.nocookie.net/marveldatabase/images/3/33/Douglas_Ramsey_%28Earth-616%29_from_X-Men_Vol_7_19_cover_001.jpg/revision/latest?cb=20250702061540",
-  "exodus":
+  exodus:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/cc/Bennet_du_Paris_%28Earth-616%29_from_Immortal_X-Men_Vol_1_14_001.jpg/revision/latest?cb=20230810143335",
-  "fantomex":
+  fantomex:
     "https://static.wikia.nocookie.net/marveldatabase/images/2/28/Giant-Size_X-Men_Fantomex_Vol_1_1_Gist_Variant_Textless.jpg/revision/latest?cb=20210414094843",
-  "hellion":
+  hellion:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5a/Julian_Keller_%28Earth-616%29_from_NYX_Vol_2_1_001.jpg/revision/latest?cb=20240725161957",
   "nate-grey":
     "https://static.wikia.nocookie.net/marveldatabase/images/8/86/Uncanny_X-Men_Vol_5_4_Textless.jpg/revision/latest?cb=20180919023849",
-  "pixie":
+  pixie:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/ba/Way_of_X_Vol_1_1_Unknown_Comic_Books_Exclusive_Pixie_Virgin_Variant.jpg/revision/latest?cb=20210404181229",
-  "prodigy":
+  prodigy:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/9b/X-Men_Vol_7_17_Pride_Variant_Textless.jpg/revision/latest?cb=20250523091419",
-  "rictor":
+  rictor:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a0/Julio_Richter_%28Earth-616%29_from_Excalibur_Vol_4_16_001.jpg/revision/latest?cb=20210113013547",
-  "sauron":
+  sauron:
     "https://static.wikia.nocookie.net/marveldatabase/images/f/f2/Karl_Lykos_%28Earth-616%29_from_X-Men_Unlimited_Infinity_Comic_Vol_1_8_001.jpg/revision/latest?cb=20211018153810",
-  "scalphunter":
+  scalphunter:
     "https://static.wikia.nocookie.net/marveldatabase/images/8/88/John_Greycrow_%28Earth-616%29_from_Psylocke_Vol_2_9_001.jpg/revision/latest?cb=20250725193035",
   "stepford-cuckoos":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/99/NYX_Vol_2_4_Cuckoos_Virgin_Variant.jpg/revision/latest?cb=20240823102057",
-  "vulcan":
+  vulcan:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/72/Gabriel_Summers_%28Earth-616%29_from_X-Men_Red_Vol_2_17_001.jpg/revision/latest?cb=20250812152352",
   /* Mutants, batch 12. Quentin Quire is filed as Quintavius Quire. */
-  "armor":
+  armor:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b8/Hisako_Ichiki_%28Earth-616%29_from_Secret_X-Men_Vol_1_1_002.jpg/revision/latest?cb=20250327234000",
   "cecilia-reyes":
     "https://static.wikia.nocookie.net/marveldatabase/images/4/47/X-Factor_Vol_5_4_Cecilia_Reyes_Virgin_Variant.jpg/revision/latest?cb=20250104115512",
-  "dust":
-    "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Sooraya_Qadir_%28Earth-616%29_from_Champions_Vol_3_10_cover_001.png/revision/latest?cb=20191005035218",
-  "elixir":
+  dust: "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Sooraya_Qadir_%28Earth-616%29_from_Champions_Vol_3_10_cover_001.png/revision/latest?cb=20191005035218",
+  elixir:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c1/X-Men_-_Forever_Vol_1_2_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250130001155",
-  "mastermind":
+  mastermind:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/bd/Hellions_Vol_1_9_Textless.jpg/revision/latest?cb=20260813001743",
   "monet-st-croix":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/96/Monet_St._Croix_%28Earth-616%29_from_Giant-Size_X-Men_Storm_Vol_1_1_002.jpg/revision/latest?cb=20200917223338",
-  "rockslide":
+  rockslide:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/ca/Young_X-Men_Vol_1_7_Textless.jpg/revision/latest?cb=20230104124139",
-  "surge":
+  surge:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/75/Noriko_Ashida_%28Earth-616%29_from_X-Force_Vol_7_10_001.jpg/revision/latest?cb=20250426104228",
-  "synch":
+  synch:
     "https://static.wikia.nocookie.net/marveldatabase/images/0/05/X-Men_Vol_6_7_New_Line-Up_Trading_Card_Variant_Textless.jpg/revision/latest?cb=20211203182822",
-  "xorn":
-    "https://static.wikia.nocookie.net/marveldatabase/images/5/51/Shen_Xorn_%28Earth-616%29_from_X-Men_Vol_7_1_001.jpg/revision/latest?cb=20240710133152",
-  "kwannon":
+  xorn: "https://static.wikia.nocookie.net/marveldatabase/images/5/51/Shen_Xorn_%28Earth-616%29_from_X-Men_Vol_7_1_001.jpg/revision/latest?cb=20240710133152",
+  kwannon:
     "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Psylocke_Vol_2_4_Textless.jpg/revision/latest?cb=20241123063239",
   "quentin-quire":
     "https://static.wikia.nocookie.net/marveldatabase/images/1/18/Quintavius_Quire_%28Earth-616%29_from_X-Men_Vol_7_3_001.jpg/revision/latest?cb=20250521084021",
   /* Batch 13. Maggott is filed as "Maggott (Japheth)", Nocturne under
      Earth-2182 — the reality she is from. */
-  "longshot":
+  longshot:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/62/Longshot_%28Mojoverse%29_from_X-Men_Blue_Vol_1_13_001.jpg/revision/latest?cb=20180613015218",
-  "lockheed":
+  lockheed:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7d/Lockheed_%28Earth-616%29_from_Marauders_Vol_2_11_Shavrin_Variant_cover_001.jpg/revision/latest?cb=20240917185810",
-  "anole":
+  anole:
     "https://static.wikia.nocookie.net/marveldatabase/images/8/84/NYX_Vol_2_3_Textless.jpg/revision/latest?cb=20250314202445",
-  "blindfold":
+  blindfold:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c5/Ruth_Aldine_%28Earth-616%29_from_X-Men_Legacy_Vol_2_4_001.jpg/revision/latest?cb=20210926090224",
-  "feral":
+  feral:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/Maria_Callasantos_%28Earth-616%29_from_X-Factor_Vol_5_1_001.jpg/revision/latest?cb=20240922181144",
-  "frenzy":
+  frenzy:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/57/X-Factor_Vol_5_7_Black_History_Month_Variant_Textless.jpg/revision/latest?cb=20260226200926",
-  "gateway":
+  gateway:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d7/Gateway_%28Earth-616%29_from_House_of_X_Vol_1_1_cover_001.jpg/revision/latest?cb=20190725013509",
-  "nocturne":
+  nocturne:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Nocturne_%28Earth-616%29_from_Vampires_The_Marvel_Undead_001.png/revision/latest?cb=20170410030344",
   "omega-sentinel":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/0f/Karima_Shapandar_%28Moira_10_%28A%29%29_from_Fall_of_the_House_of_X_Vol_1_4_001.jpg/revision/latest?cb=20240417210411",
-  "wither":
+  wither:
     "https://static.wikia.nocookie.net/marveldatabase/images/2/24/Kevin_Ford_%28Earth-616%29_from_X-Men_Battle_of_the_Atom_%28video_game%29_001.jpg/revision/latest?cb=20171022203242",
-  "maggott":
+  maggott:
     "https://static.wikia.nocookie.net/marveldatabase/images/1/18/Maggott_%28Japheth%29_%28Earth-616%29_from_Storm_Vol_5_6_001.png.png/revision/latest?cb=20250416065525",
   "kitty-pryde":
     "https://static.wikia.nocookie.net/marveldatabase/images/1/16/Exceptional_X-Men_Vol_1_10_Pride_Variant_Textless.jpg/revision/latest?cb=20250523091103",
   /* Batch 14 — the ones the loose gap-check hid. Bishop is Earth-1191,
      the future he came back from. */
-  "bishop":
+  bishop:
     "https://static.wikia.nocookie.net/marveldatabase/images/8/8d/Lucas_Bishop_%28Earth-1191%29_from_Timeslide_Vol_1_1_002.jpg/revision/latest?cb=20241228152902",
-  "skin":
-    "https://static.wikia.nocookie.net/marveldatabase/images/1/17/Angelo_Espinosa_%28Earth-616%29_from_Astonishing_X-Men_Infinity_Comic_Vol_1_29_001.png/revision/latest?cb=20250828001953",
-  "oya":
-    "https://static.wikia.nocookie.net/marveldatabase/images/2/2b/X-Men_Vol_7_11_Black_History_Month_Variant_Textless.jpg/revision/latest?cb=20260108204154",
-  "cipher":
+  skin: "https://static.wikia.nocookie.net/marveldatabase/images/1/17/Angelo_Espinosa_%28Earth-616%29_from_Astonishing_X-Men_Infinity_Comic_Vol_1_29_001.png/revision/latest?cb=20250828001953",
+  oya: "https://static.wikia.nocookie.net/marveldatabase/images/2/2b/X-Men_Vol_7_11_Black_History_Month_Variant_Textless.jpg/revision/latest?cb=20260108204154",
+  cipher:
     "https://static.wikia.nocookie.net/marveldatabase/images/0/0b/Alisa_Tager_%28Earth-616%29_from_Young_X-Men_Vol_1_10_003.jpg/revision/latest?cb=20170320170324",
-  "jackal":
+  jackal:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/93/Miles_Warren_%28Earth-616%29_from_Spider-Island_Deadly_Foes_Vol_1_1_001.jpg/revision/latest?cb=20120117113235",
   "the-rose":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/9f/Devil%27s_Reign_Spider-Man_Vol_1_1_Carlos_Variant_Textless.jpg/revision/latest?cb=20230604042814",
@@ -582,37 +609,37 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/6/62/Amazing_Spider-Girl_Vol_1_1_Textless.jpg/revision/latest?cb=20250811092457",
   "pavitr-prabhakar":
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/Pavitr_Prabhakar_%28Earth-50101%29_from_Spider-Man_India_Vol_2_5_New_Costume_Variant_001.jpg/revision/latest?cb=20240220050600",
-  "overdrive":
+  overdrive:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b8/James_Beverley_%28Earth-616%29_from_Amazing_Spider-Man_Vol_2_564_001.jpg/revision/latest?cb=20120203213657",
-  "swarm":
+  swarm:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/72/Fritz_von_Meyer_%28Earth-616%29_from_Runaways_Vol_2_7_001.jpg/revision/latest?cb=20230226150930",
-  "grizzly":
+  grizzly:
     "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Maxwell_Markham_%28Earth-616%29_from_Iron_Man_Vol_7_2_001.jpg/revision/latest?cb=20260301011805",
-  "tarantula":
+  tarantula:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6f/Anton_Miguel_Rodriquez_%28Earth-616%29_from_Sinister_War_Vol_1_2_001.jpg/revision/latest?cb=20231117151828",
-  "scarecrow":
+  scarecrow:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7c/Ebenezer_Laughton_%28Earth-616%29_from_Danny_Ketch_Ghost_Rider_Vol_1_2_001.jpg/revision/latest?cb=20231001203711",
   "j-jonah-jameson":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/96/John_Jonah_Jameson_%28Earth-616%29_from_Marvel_Knights_Spider-Man_Vol_1_4_001.jpg/revision/latest?cb=20161214062419",
   /* Batch 16. The Marquis of Death is Clyde Wyncham Jr. on Earth-807128,
      Malloy Earth-14923, Cosmic Ghost Rider Francis Castle on TRN666. */
-  "griever":
+  griever:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/98/Fantastic_Four_Vol_6_1_ComicXposure_Exclusive_Villain_Virgin_Variant.jpg/revision/latest?cb=20180722143612",
   "mad-jim-jaspers":
     "https://static.wikia.nocookie.net/marveldatabase/images/e/ef/James_Jaspers_%28Earth-616%29_from_X-Men_Die_by_the_Sword_Vol_1_3_001.jpg/revision/latest?cb=20191230234518",
-  "abraxas":
+  abraxas:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Abraxas_%28Multiverse%29_from_Storm_Vol_5_9_001.jpg/revision/latest?cb=20250608013134",
   "chaos-king":
     "https://static.wikia.nocookie.net/marveldatabase/images/3/33/Amatsu-Mikaboshi_%28Earth-616%29_from_Chaos_War_Vol_1_4_0001.jpg/revision/latest?cb=20160628224150",
   "mister-m":
     "https://static.wikia.nocookie.net/marveldatabase/images/8/87/District_X_Vol_1_4_Textless.jpg/revision/latest?cb=20070922144250",
-  "thane":
+  thane:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/90/Thane_%28Earth-616%29_from_Thanos_A_God_Up_There_Listening_Infinite_Comic_Vol_1_1_001.jpg/revision/latest?cb=20200717200411",
-  "sasquatch":
+  sasquatch:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b6/Walter_Langkowski_%28Earth-616%29_from_Alpha_Flight_Vol_5_5_001.jpg/revision/latest?cb=20240210141512",
-  "namora":
+  namora:
     "https://static.wikia.nocookie.net/marveldatabase/images/2/24/Atlas_Vol_1_1_Women_of_Marvel_Variant_Textless.jpg/revision/latest?cb=20100219131014",
-  "namorita":
+  namorita:
     "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Namorita_Prentiss_%28Earth-616%29_from_Civil_War_Unmasked_Vol_1_1_001.jpg/revision/latest?cb=20260513075658",
   "marquis-of-death":
     "https://static.wikia.nocookie.net/marveldatabase/images/3/3b/Clyde_Wyncham_Jr._%28Earth-807128%29_from_Fantastic_Four_Vol_3_566_001.jpg/revision/latest?cb=20201011175347",
@@ -628,7 +655,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/4/41/Spider-Verse_Vol_3_4_Textless.jpg/revision/latest?cb=20200129124446",
   "spider-rex":
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c5/Edge_of_Spider-Verse_Vol_2_1_Spider-Rex_Variant_Textless.jpg/revision/latest?cb=20240525095212",
-  "spinstress":
+  spinstress:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Amazing_Spider-Man_Vol_5_75_Lee_Virgin_Variant.jpg/revision/latest?cb=20220405001421",
   "web-weaver":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/9a/Edge_of_Spider-Verse_Vol_2_5_Anka_Variant_Textless.jpg/revision/latest?cb=20221008073944",
@@ -645,19 +672,17 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   "bride-of-nine-spiders":
     "https://static.wikia.nocookie.net/marveldatabase/images/7/71/Bride_of_Nine_World-Breakers_%28Temporal_Paradox%29_%28Earth-6160%29_from_Ultimates_Vol_3_12_001.jpg/revision/latest?cb=20260112185324",
   /* Batch 18. Angel Dust is filed as "Angel Dust (Christine)". */
-  "arclight":
+  arclight:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/ca/Philippa_Sontag_%28Earth-616%29_from_X-Men_Blue_Vol_1_14_001.jpg/revision/latest?cb=20180611145850",
-  "beak":
-    "https://static.wikia.nocookie.net/marveldatabase/images/d/db/Barnell_Bohusk_%28Earth-616%29_from_X-Men_Unlimited_Infinity_Comic_Vol_1_43_002.jpg/revision/latest?cb=20220909001115",
-  "ink":
-    "https://static.wikia.nocookie.net/marveldatabase/images/d/d8/Eric_Gitter_%28Earth-616%29_from_X-Men_Gold_Vol_2_23_001.jpg/revision/latest?cb=20210524073105",
-  "anarchist":
+  beak: "https://static.wikia.nocookie.net/marveldatabase/images/d/db/Barnell_Bohusk_%28Earth-616%29_from_X-Men_Unlimited_Infinity_Comic_Vol_1_43_002.jpg/revision/latest?cb=20220909001115",
+  ink: "https://static.wikia.nocookie.net/marveldatabase/images/d/d8/Eric_Gitter_%28Earth-616%29_from_X-Men_Gold_Vol_2_23_001.jpg/revision/latest?cb=20210524073105",
+  anarchist:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7a/Tike_Alicar_%28Earth-616%29_from_Giant-Size_X-Statix_Vol_1_1_001.png/revision/latest?cb=20190715013927",
-  "maverick":
+  maverick:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Christoph_Nord_%28Earth-616%29_from_Wolverine_Vol_7_9_001.jpg/revision/latest?cb=20210301203317",
-  "hepzibah":
+  hepzibah:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c4/Hepzibah_%28Earth-616%29_from_Mr._and_Mrs._X_Vol_1_4_001.jpg/revision/latest?cb=20181021225424",
-  "goldballs":
+  goldballs:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/79/X-Men_-_Forever_Vol_1_4_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250129235615",
   "glob-herman":
     "https://static.wikia.nocookie.net/marveldatabase/images/e/e9/Robert_Herman_%28Earth-616%29_from_New_Mutants_Vol_4_11_001.jpg/revision/latest?cb=20200821025306",
@@ -676,11 +701,11 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5d/Carlos_LaMuerto_%28Earth-616%29_from_Spider-Gwen_The_Ghost-Spider_Vol_1_3_001.jpg/revision/latest?cb=20240804202222",
   "crime-master":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Nicholas_Lewis_Jr._%28Earth-616%29_from_Marvel_Team-Up_Vol_1_40_001.jpg/revision/latest?cb=20230711163927",
-  "stunner":
+  stunner:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/69/Superior_Spider-Man_Vol_1_21_Textless.jpg/revision/latest?cb=20130815194003",
   "white-rabbit":
     "https://static.wikia.nocookie.net/marveldatabase/images/1/13/Tony_Stark_Iron_Man_Vol_1_10_Spider-Man_Villains_Variant_Textless.jpg/revision/latest?cb=20210112085810",
-  "screwball":
+  screwball:
     "https://static.wikia.nocookie.net/marveldatabase/images/0/04/Screwball_%28Earth-616%29_from_Amazing_Mary_Jane_Vol_1_3_001.jpg/revision/latest?cb=20260112200513",
   "big-wheel":
     "https://static.wikia.nocookie.net/marveldatabase/images/8/80/Jackson_Weele_%28Earth-616%29_from_Iron_Man_Vol_5_16_002.jpg/revision/latest?cb=20220227214413",
@@ -688,7 +713,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5a/Robert_Farrell_%28Earth-616%29_from_Amazing_Spider-Man_Vol_6_44_Black_History_Month_Variant_cover_001.jpg/revision/latest?cb=20240413142130",
   "speed-demon":
     "https://static.wikia.nocookie.net/marveldatabase/images/2/27/Superior_Foes_of_Spider-Man_Vol_1_3_Bagley_Variant_Textless.jpg/revision/latest?cb=20130813234347",
-  "gibbon":
+  gibbon:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/dc/Amazing_Spider-Man_Vol_5_18.HU_Textless.jpg/revision/latest?cb=20190125201957",
   "mister-hyde":
     "https://static.wikia.nocookie.net/marveldatabase/images/6/67/Calvin_Zabo_%28Earth-616%29_from_Avengers_Vol_9_26.jpeg/revision/latest?cb=20250608095846",
@@ -696,75 +721,72 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/Lawrence_Cranston_%28Earth-616%29_from_Spider-Gwen_The_Ghost-Spider_Vol_1_8_001.jpg/revision/latest?cb=20241209004846",
   /* Batch 20. Jetstream is filed under his full name, Haroun ibn Sallah
      al-Rashid. */
-  "abyss":
+  abyss:
     "https://static.wikia.nocookie.net/marveldatabase/images/0/08/Nils_Styger_%28Earth-616%29_from_Dark_X-Men_Vol_2_4_001.jpg/revision/latest?cb=20240714142834",
   "adam-x":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/03/Adam_Neramani_%28Earth-616%29_from_X-Men_Legends_Vol_1_2_0001.jpg/revision/latest?cb=20210402143501",
   "el-aguila":
     "https://static.wikia.nocookie.net/marveldatabase/images/e/e3/Alejandro_Montoya_%28Earth-616%29_from_Marvel_Comics_Presents_Vol_1_9_001.jpg/revision/latest?cb=20240124204145",
-  "alchemy":
+  alchemy:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d5/Thomas_Jones_%28Earth-616%29_from_Death_of_X_Vol_1_4_001.jpg/revision/latest?cb=20161123184741",
-  "box":
-    "https://static.wikia.nocookie.net/marveldatabase/images/7/76/Madison_Jeffries_%28Earth-616%29_from_Sabretooth_Vol_4_4_001.jpg/revision/latest?cb=20220903232912",
+  box: "https://static.wikia.nocookie.net/marveldatabase/images/7/76/Madison_Jeffries_%28Earth-616%29_from_Sabretooth_Vol_4_4_001.jpg/revision/latest?cb=20220903232912",
   "eye-boy":
     "https://static.wikia.nocookie.net/marveldatabase/images/f/f1/Trevor_Hawkins_%28Earth-616%29_from_X-Factor_Vol_4_6_001.jpg/revision/latest?cb=20210106172350",
   "fever-pitch":
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/Fever_Pitch_%28Earth-616%29_from_X-Force_Vol_3_13_0001.jpg/revision/latest?cb=20131226170533",
-  "gentle":
+  gentle:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/61/X-Men_Red_Vol_1_6_Textless.jpg/revision/latest?cb=20180419074741",
-  "graymalkin":
+  graymalkin:
     "https://static.wikia.nocookie.net/marveldatabase/images/1/1f/Jonas_Graymalkin_%28Earth-616%29_from_Young_X-Men_Vol_1_10_cover.jpg/revision/latest?cb=20100504163222",
-  "hijack":
+  hijack:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7e/Hijack_%28Earth-616%29_from_X-Men_Legacy_Annual_Vol_1_1_001.jpg/revision/latest?cb=20090918020802",
-  "jetstream":
+  jetstream:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6d/Haroum_ibn_Sallah_al-Rashid_%28Earth-616%29_from_New_Mutants_Vol_3_7.png/revision/latest?cb=20141103172342",
   /* Batch 21. */
-  "krakoa":
+  krakoa:
     "https://static.wikia.nocookie.net/marveldatabase/images/f/f7/Krakoa_%28Earth-616%29_from_X-Men_Vol_6_35_001.jpg/revision/latest?cb=20240606005137",
   "lila-cheney":
     "https://static.wikia.nocookie.net/marveldatabase/images/b/ba/Lila_Cheney_%28Earth-616%29_from_Dazzler_Vol_3_3_001.jpg/revision/latest?cb=20241201203131",
   "living-monolith":
     "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Ahmet_Abdol_%28Earth-616%29_from_Uncanny_X-Men_Vol_1_376_001.jpg/revision/latest?cb=20260214031915",
-  "loa":
-    "https://static.wikia.nocookie.net/marveldatabase/images/a/a7/Alani_Ryan_%28Earth-616%29_from_Fear_Itself_The_Deep_Vol_1_3_002.jpg/revision/latest?cb=20210425114523",
-  "mondo":
+  loa: "https://static.wikia.nocookie.net/marveldatabase/images/a/a7/Alani_Ryan_%28Earth-616%29_from_Fear_Itself_The_Deep_Vol_1_3_002.jpg/revision/latest?cb=20210425114523",
+  mondo:
     "https://static.wikia.nocookie.net/marveldatabase/images/3/3b/Mondo_%28Earth-616%29_from_New_Mutants_Vol_4_1_001.jpg/revision/latest?cb=20191106231552",
   "nature-girl":
     "https://static.wikia.nocookie.net/marveldatabase/images/e/e8/Lin_Li_%28Earth-616%29_from_X-Men_Heir_of_Apocalypse_Vol_1_1_001.jpg/revision/latest?cb=20240613092339",
-  "petra":
+  petra:
     "https://static.wikia.nocookie.net/marveldatabase/images/1/1a/Petra_%28Earth-616%29_from_X-Men_Deadly_Genesis_Vol_1_4_0001.png/revision/latest?cb=20190407082142",
-  "random":
+  random:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c5/Marshall_Stone_III_%28Earth-616%29_from_X-Force_Vol_6_12_001.jpg/revision/latest?cb=20200911033832",
-  "tempo":
+  tempo:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ad/Marauders_Vol_2_4_Textless.jpg/revision/latest?cb=20220319231800",
-  "unus":
-    "https://static.wikia.nocookie.net/marveldatabase/images/3/35/Gunther_Bain_%28Earth-616%29_from_Excalibur_Vol_3_2_001.jpg/revision/latest?cb=20220629024846",
+  unus: "https://static.wikia.nocookie.net/marveldatabase/images/3/35/Gunther_Bain_%28Earth-616%29_from_Excalibur_Vol_3_2_001.jpg/revision/latest?cb=20220629024846",
   /* Batch 22 — the last of the mutant roster. */
-  "onyxx":
+  onyxx:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/9a/Sidney_Green_%28Earth-616%29_from_X-Men_Earth%27s_Mutant_Heroes_Vol_1_1_0001.jpg/revision/latest?cb=20161123234139",
   "stacy-x":
     "https://static.wikia.nocookie.net/marveldatabase/images/5/58/Miranda_Leevald_%28Earth-616%29_from_Way_of_X_Vol_1_3_003.jpg/revision/latest?cb=20210625024009",
-  "tempus":
+  tempus:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7f/X-Men_-_Forever_Vol_1_3_Quiet_Council_Variant_Textless.jpg/revision/latest?cb=20250130000604",
-  "trance":
+  trance:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/cd/Hope_Abbott_%28Earth-616%29_from_X-Men_Legacy_Vol_1_228_001.jpg/revision/latest?cb=20180909020747",
-  "triage":
+  triage:
     "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Christopher_Muse_%28Earth-616%29_from_X-Men_Unlimited_Infinity_Comic_Vol_1_44_001.jpg/revision/latest?cb=20220909020256",
-  "transonic":
+  transonic:
     "https://static.wikia.nocookie.net/marveldatabase/images/1/1b/Laurie_Tromette_%28Earth-616%29_from_Generation_Hope_Vol_1_11_002.jpg/revision/latest?cb=20170611001804",
-  "tarot":
+  tarot:
     "https://static.wikia.nocookie.net/marveldatabase/images/1/1d/Marie-Ange_Colbert_%28Earth-616%29_from_Spider-Man_Deadpool_Vol_1_11_0002.png/revision/latest?cb=20161212152706",
-  "velocidad":
+  velocidad:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a0/Gabriel_Cohuelo_%28Earth-616%29_from_Generation_Hope_Vol_1_13_001.jpg/revision/latest?cb=20210228201759",
-  "wallflower":
+  wallflower:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/41/Laurie_Collins_%28Earth-616%29_from_X-Factor_Vol_4_001.jpg/revision/latest?cb=20210116191348",
   "wind-dancer":
     "https://static.wikia.nocookie.net/marveldatabase/images/3/31/Sofia_Mantega_%28Earth-616%29_from_Dazzler_Vol_3_3_001.jpg/revision/latest?cb=20241201204129",
-  "yukio":
+  yukio:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/de/Yukio_%28Earth-616%29_from_Exceptional_X-Men_Vol_1_5_001.jpg/revision/latest?cb=20250115200506",
   "whiz-kid":
     "https://static.wikia.nocookie.net/marveldatabase/images/c/cd/Whiz_Kid_%28Earth-616%29_from_Avengers_The_Initiative_Annual_Vol_1_1_001.jpg/revision/latest?cb=20220725191215",
-  "wraith":
+  wraith:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6a/Hector_Rendoza_%28Earth-616%29_from_X-Men_Earth%27s_Mutant_Heroes_Vol_1_1.png/revision/latest?cb=20140129191726",
   "ziggy-karst":
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b4/Ziggy_Karst_%28Earth-616%29_from_Nightcrawler_Vol_4_5_001.png/revision/latest?cb=20141116061509",
@@ -773,14 +795,13 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Max_Borne_%28Earth-9500%29_from_Friendly_Neighborhood_Spider-Man_Vol_1_9_0001.jpg/revision/latest?cb=20191203043715",
   "will-o-the-wisp":
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c2/Jackson_Arvad_%28Earth-616%29_from_Sensational_Spider-Man_Vol_2_31_0002.jpg/revision/latest?cb=20120124020956",
-  "kangaroo":
+  kangaroo:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/9a/Frank_Oliver_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_Master_Edition_Vol_1_18_0001.png/revision/latest?cb=20170409215614",
-  "massacre":
+  massacre:
     "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Superior_Spider-Man_Vol_1_4_Textless.jpg/revision/latest?cb=20121115183819",
   "spencer-smythe":
     "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Spencer_Smythe_%28Earth-616%29_from_Spine-Tingling_Spider-Man_Infinity_Comic_Vol_1_2_001.png/revision/latest?cb=20240120004915",
-  "raze":
-    "https://static.wikia.nocookie.net/marveldatabase/images/0/02/Claire_Dixon_%28Earth-616%29_from_Carnage_Vol_2_11_001.jpg/revision/latest?cb=20160905211108",
+  raze: "https://static.wikia.nocookie.net/marveldatabase/images/0/02/Claire_Dixon_%28Earth-616%29_from_Carnage_Vol_2_11_001.jpg/revision/latest?cb=20160905211108",
   "void-knight":
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a9/Norrin_Radd_%28Earth-36%29_from_Startling_Stories_Thing_-_Night_Falls_on_Yancy_Street_Vol_1_1_0001.jpg/revision/latest?cb=20130530150839",
   "jack-o-lantern":
@@ -790,11 +811,11 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   /* The five I wrongly reported as having no art, found once I searched
      for their real names instead of guessing them: Nathaniel Carver,
      Benjamin Hammil, Mark Hallett, Iara Dos Santos. Plus the Technarch. */
-  "hindsight":
+  hindsight:
     "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Nathaniel_Carver_%28Earth-616%29_from_Generation_X_Vol_2_3_001.jpg/revision/latest?cb=20170617034025",
-  "match":
+  match:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/de/Benjamin_Hammil_%28Earth-616%29_from_New_X-Men_Academy_X_Yearbook_Vol_1_1_0002.jpg/revision/latest?cb=20191127052949",
-  "sunder":
+  sunder:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Mark_Hallett_%28Earth-616%29_from_Uncanny_X-Men_Vol_1_254.png/revision/latest?cb=20180603015643",
   "shark-girl":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/96/X-Men_Red_Vol_2_16_Comunidades_Variant_Textless.jpg/revision/latest?cb=20240909113116",
@@ -808,11 +829,11 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/1/1a/Avengers_Vol_5_6_Textless.jpg/revision/latest?cb=20121115175227",
   "the-progenitor":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/03/Progenitor_%28Celestial%29_%28Multiverse%29_from_A.X.E._Judgment_Day_Vol_1_2_002.jpg/revision/latest?cb=20221006173948",
-  "logos":
+  logos:
     "https://static.wikia.nocookie.net/marveldatabase/images/8/89/Logos_%28Cosmic_Being%29_%28Earth-616%29_from_Ultimates_2_Vol_2_3_001.jpg/revision/latest?cb=20170120085252",
   "aegis-cosmic":
     "https://static.wikia.nocookie.net/marveldatabase/images/e/ec/Aegis_%28Proemial_God%29_%28Earth-616%29_from_Annihilation_Silver_Surfer_Vol_1_3_0001.jpg/revision/latest?cb=20200703210320",
-  "antiphon":
+  antiphon:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7c/Antiphon_%28Earth-616%29_from_Annihilation_Heralds_of_Galactus_Vol_1_2_0001.jpg/revision/latest?cb=20191202045739",
   "first-firmament":
     "https://static.wikia.nocookie.net/marveldatabase/images/3/32/First_Cosmos_from_Ultimates_2_Vol_2_6_001.jpg/revision/latest?cb=20211206015406",
@@ -825,14 +846,14 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   "the-fulcrum":
     "https://static.wikia.nocookie.net/marveldatabase/images/1/19/Fulcrum_%28Earth-616%29_from_Eternals_Vol_4_9_0001.png/revision/latest?cb=20130924135423",
   /* Wallop is filed as Walter Destine — he is a ClanDestine, not a mutant. */
-  "wallop":
+  wallop:
     "https://static.wikia.nocookie.net/marveldatabase/images/1/1b/Walter_Destine_%28Earth-616%29_from_ClanDestine_Vol_1_8_001.jpeg/revision/latest?cb=20210628174734",
   /* Batch 25 — the collectives. The G.O.D.S. abstracts are filed under
      Earth-616 rather than (Multiverse), which is why the first pass missed
      all four of them. */
   "the-centivars":
     "https://static.wikia.nocookie.net/marveldatabase/images/4/44/G.O.D.S._Vol_1_6_Hans_Variant_Textless.jpg/revision/latest?cb=20251026155941",
-  "kubik":
+  kubik:
     "https://static.wikia.nocookie.net/marveldatabase/images/f/f1/Kubik_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_Update_%2789_Vol_1_4_001.jpg/revision/latest?cb=20160822032522",
   "shaper-of-worlds":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/04/Shaper_of_Worlds_%28Earth-616%29_from_Incredible_Hulk_Vol_1_155_001.jpg/revision/latest?cb=20210617015245",
@@ -850,7 +871,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a8/The-Powers-That-Be_%28Earth-616%29_from_Vision_and_the_Scarlet_Witch_Vol_3_1_001.jpg/revision/latest?cb=20250919161905",
   "natural-order":
     "https://static.wikia.nocookie.net/marveldatabase/images/f/f6/The-Natural-Order-of-Things_%28Earth-616%29_from_G.O.D.S._Vol_1_2_001.jpg/revision/latest?cb=20231108171541",
-  "continuum":
+  continuum:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Continuum_%28Earth-616%29_from_G.O.D.S._Vol_1_8_Noto_Variant_cover_001.jpg/revision/latest?cb=20241009115951",
   "the-avatar":
     "https://static.wikia.nocookie.net/marveldatabase/images/4/45/G.O.D.S._Vol_1_1_Virgin_Variant.jpg/revision/latest?cb=20231005190950",
@@ -864,20 +885,18 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      Database turned out to have only the DIMENSION of that name. */
   kosmos:
     "https://static.wikia.nocookie.net/fictional-battle-omniverse/images/5/5d/Kosmos_Marvel_Comics.jpg/revision/latest?cb=20170425140014",
-  clea:
-    "https://static.wikia.nocookie.net/marveldatabase/images/5/5f/Sorcerer_Supreme_Vol_1_5_Fanyang_Variant_Textless.jpg/revision/latest?cb=20260427073207",
+  clea: "https://static.wikia.nocookie.net/marveldatabase/images/5/5f/Sorcerer_Supreme_Vol_1_5_Fanyang_Variant_Textless.jpg/revision/latest?cb=20260427073207",
   /* Wakanda. Nakia is filed as Nakia Shauku. */
-  "zuri":
-    "https://static.wikia.nocookie.net/marveldatabase/images/5/50/Zuri_%28Earth-616%29_from_Black_Panther_Vol_3_1_001.jpg/revision/latest?cb=20161122202136",
-  "wkabi":
+  zuri: "https://static.wikia.nocookie.net/marveldatabase/images/5/50/Zuri_%28Earth-616%29_from_Black_Panther_Vol_3_1_001.jpg/revision/latest?cb=20161122202136",
+  wkabi:
     "https://static.wikia.nocookie.net/marveldatabase/images/0/09/W%27Kabi_%28Earth-616%29_from_Fantastic_Four_Vol_3_544_0001.jpg/revision/latest?cb=20191202031822",
-  "njobu":
+  njobu:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/62/N%27Jobu_%28Earth-199999%29_from_Black_Panther_%28film%29_001.png/revision/latest?cb=20190116201608",
-  "tchaka":
+  tchaka:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/9c/T%27Chaka_%28Earth-616%29_from_Rise_of_the_Black_Panther_Vol_1_1_001.jpg/revision/latest?cb=20200710030331",
-  "aneka":
+  aneka:
     "https://static.wikia.nocookie.net/marveldatabase/images/e/e9/Aneka_%28Earth-616%29_from_Thunderbolts_Doomstrike_Vol_1_3_001.jpg/revision/latest?cb=20250506193701",
-  "nakia":
+  nakia:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Nakia_Shauku_%28Earth-616%29_from_Black_Panther_Vol_3_23_002.jpg/revision/latest?cb=20221025173801",
   attuma:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a0/Attuma_%28Earth-616%29_from_Namor_Vol_2_2_001.jpg/revision/latest?cb=20240828094112",
@@ -893,17 +912,16 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/0/08/Carl_Creel_%28Earth-616%29_from_Gamma_Flight_Vol_1_1_cover_001.jpg/revision/latest?cb=20210713213623",
   "bi-beast":
     "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Bi-Beast_%28Earth-616%29_from_Thor_Vol_1_315_001.png/revision/latest?cb=20170623160635",
-  "zzzax":
+  zzzax:
     "https://static.wikia.nocookie.net/marveldatabase/images/1/1e/Zzzax_%28Earth-616%29_from_Hulk_Vol_2_36_001.jpg/revision/latest?cb=20230625040346",
   "brian-banner":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/02/Brian_Banner_%28Earth-616%29_from_Immortal_She-Hulk_Vol_1_1_001.jpg/revision/latest?cb=20200925205931",
-  "xemnu":
+  xemnu:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a7/Immortal_Hulk_Vol_1_30_Textless.jpg/revision/latest?cb=20200202052805",
   "u-foes":
     "https://static.wikia.nocookie.net/marveldatabase/images/1/13/U-Foes_%28Earth-616%29_from_Amazing_Spider-Man_Vol_5_75_001.jpg/revision/latest?cb=20211020033316",
-  "flux":
-    "https://static.wikia.nocookie.net/marveldatabase/images/a/af/Benjamin_Tibbetts_%28Earth-616%29_from_World_War_Hulk_Gamma_Corps_Vol_1_1_0001.jpg/revision/latest?cb=20191208040547",
-  "wendigo":
+  flux: "https://static.wikia.nocookie.net/marveldatabase/images/a/af/Benjamin_Tibbetts_%28Earth-616%29_from_World_War_Hulk_Gamma_Corps_Vol_1_1_0001.jpg/revision/latest?cb=20191208040547",
+  wendigo:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Thaddeus_Ross_%28Earth-616%29_and_Wendigo_%28Race%29_from_King-Size_Hulk_Vol_1_1_001.jpg/revision/latest?cb=20170529053339",
   agamotto:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
@@ -927,7 +945,8 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   "moon-girl":
     "https://static.wikia.nocookie.net/marveldatabase/images/f/f0/Fantastic_Four_Vol_6_41_Black_History_Month_Variant_Textless.jpg/revision/latest?cb=20260227052625",
   /* The same portrait "The two people behind it" uses on What is Marvel. */
-  "stan-lee": "https://image.tmdb.org/t/p/original/kKeyWoFtTqOPsbmwylNHmuB3En9.jpg",
+  "stan-lee":
+    "https://image.tmdb.org/t/p/original/kKeyWoFtTqOPsbmwylNHmuB3En9.jpg",
   "erik-selvig":
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Erik_Selvig_%28Earth-616%29_from_Avengers_Standoff_Welcome_to_Pleasant_Hill_Vol_1_1_001.jpg/revision/latest?cb=20160218012151",
   "darcy-lewis":
@@ -940,7 +959,8 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/villains/images/0/0c/Red_skull_infobox.webp/revision/latest?cb=20240417011026",
   "andy-strucker":
     "https://static.wikia.nocookie.net/marvelmovies/images/d/d7/7FFC5FE3-B833-46E7-8640-30C0D2AE95D4.jpeg/revision/latest?cb=20180829043448",
-  "super-skrull": "https://upload.wikimedia.org/wikipedia/en/8/87/Super_Skrull.jpg",
+  "super-skrull":
+    "https://upload.wikimedia.org/wikipedia/en/8/87/Super_Skrull.jpg",
   colossus:
     "https://upload.wikimedia.org/wikipedia/en/2/26/Colossus-AvX_Consequences.jpg",
   deadpool:
@@ -963,7 +983,8 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      the wrong character. Agent Venom is what he becomes. */
   "agent-venom":
     "https://static.wikia.nocookie.net/marveldatabase/images/0/0c/Extreme_Carnage_Alpha_Vol_1_1_616_Comics_and_Jolzar_Collectibles_Exclusive_Variant_Textless.jpg/revision/latest?cb=20210901232245",
-  northstar: "https://i.pinimg.com/736x/66/c4/70/66c4704583b875c6933296de905325fc.jpg",
+  northstar:
+    "https://i.pinimg.com/736x/66/c4/70/66c4704583b875c6933296de905325fc.jpg",
   quicksilver:
     "https://static.wikia.nocookie.net/marveldatabase/images/8/80/Pietro_Maximoff_%28Earth-616%29_from_Scarlet_Witch_%26_Quicksilver_Vol_1_3_Cover_001.jpg/revision/latest/scale-to-width-down/1200?cb=20250517010915",
   "white-tiger":
@@ -1000,21 +1021,22 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   /* The automatic match found "Zemo Legends" — a Marvel Legends TOY BOX, so
      the portrait was a photograph of packaging. His character poster from The
      Falcon and the Winter Soldier instead. */
-  zemo:
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d5/TF%26TWS_Textless_Character_Posters_02.jpg/revision/latest?cb=20231021161327",
+  zemo: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d5/TF%26TWS_Textless_Character_Posters_02.jpg/revision/latest?cb=20231021161327",
   /**
    * THE THREE PETERS — the actor in the suit, because that is the whole point
    * of these records. Every other portrait here is character art rather than
    * an actor still; these three are the exception the split exists for, since
    * the only thing separating them IS who is wearing it.
    */
-  "spider-man-tom": "https://upload.wikimedia.org/wikipedia/en/0/0f/Tom_Holland_as_Spider-Man.jpg",
+  "spider-man-tom":
+    "https://upload.wikimedia.org/wikipedia/en/0/0f/Tom_Holland_as_Spider-Man.jpg",
   /* Sent as `preview.redd.it` with an expiring `&s=` signature. Same upload
      id, asked of the direct host, which has neither. */
   "spider-man-andrew": "https://i.redd.it/qnd04cbvbefa1.jpg",
   /* Sent through a Yahoo image resizer that wraps the real file in its own
      signed path. Unwrapped to the address the resizer was pointing at. */
-  "spider-man-tobey": "https://media.zenfs.com/en/us_magazine_896/8371b7c99efa855c94440f4fbb1ed7fb",
+  "spider-man-tobey":
+    "https://media.zenfs.com/en/us_magazine_896/8371b7c99efa855c94440f4fbb1ed7fb",
   "black-panther":
     "https://static.wikia.nocookie.net/superhero-films/images/9/9f/Black_Panther_OS_Vol_1_2.png/revision/latest?cb=20190203135803",
   "anti-venom":
@@ -1322,7 +1344,10 @@ async function fromShdb(): Promise<Map<string, CharacterArt>> {
  * Comics art wins where both have it, so the corpus stays visually coherent
  * rather than alternating between drawn and photographic.
  */
-async function fromFandom(names: string[], api: string): Promise<Map<string, string>> {
+async function fromFandom(
+  names: string[],
+  api: string,
+): Promise<Map<string, string>> {
   const out = new Map<string, string>();
   /** 20 titles per call is the API's documented ceiling for anonymous use. */
   for (let i = 0; i < names.length; i += 20) {
@@ -1337,7 +1362,10 @@ async function fromFandom(names: string[], api: string): Promise<Map<string, str
     }
     const j = (await res.json()) as {
       query?: {
-        pages?: Record<string, { title?: string; original?: { source?: string } }>;
+        pages?: Record<
+          string,
+          { title?: string; original?: { source?: string } }
+        >;
         /** A redirect means we asked for "Wong" and landed on "Wong (Earth-199999)". */
         normalized?: { from: string; to: string }[];
         redirects?: { from: string; to: string }[];
@@ -1345,7 +1373,10 @@ async function fromFandom(names: string[], api: string): Promise<Map<string, str
     };
     /** Map the resolved title back to what we asked for. */
     const back = new Map<string, string>();
-    for (const r of [...(j.query?.normalized ?? []), ...(j.query?.redirects ?? [])]) {
+    for (const r of [
+      ...(j.query?.normalized ?? []),
+      ...(j.query?.redirects ?? []),
+    ]) {
       back.set(r.to, back.get(r.from) ?? r.from);
     }
     for (const page of Object.values(j.query?.pages ?? {})) {
@@ -1376,15 +1407,20 @@ async function main() {
    * The named articles first, so neither automatic stage can overwrite a
    * correction with the guess it was written to replace.
    */
-  for (const wiki of new Set(Object.values(PAGE_OVERRIDES).map((o) => o.wiki))) {
-    const ids = Object.entries(PAGE_OVERRIDES).filter(([, o]) => o.wiki === wiki);
+  for (const wiki of new Set(
+    Object.values(PAGE_OVERRIDES).map((o) => o.wiki),
+  )) {
+    const ids = Object.entries(PAGE_OVERRIDES).filter(
+      ([, o]) => o.wiki === wiki,
+    );
     const found = await fromFandom(
       ids.map(([, o]) => o.page),
       wiki,
     );
     for (const [id, o] of ids) {
       const src = found.get(o.page);
-      if (src) art.set(id, { image: src, source: "mcu-wiki", matchedAs: o.page });
+      if (src)
+        art.set(id, { image: src, source: "mcu-wiki", matchedAs: o.page });
       else fandomErrors.push(`page override missed: ${id} → ${o.page}`);
     }
   }
@@ -1405,13 +1441,17 @@ async function main() {
     const asked = gaps.flatMap((c) => [c.nameEn, ...(c.aliases ?? [])]);
     const found = await fromFandom(asked, api);
     for (const c of gaps) {
-      const src = [c.nameEn, ...(c.aliases ?? [])].map((n) => found.get(n)).find(Boolean);
-      if (src) art.set(c.id, { image: src, source: "mcu-wiki", matchedAs: c.nameEn });
+      const src = [c.nameEn, ...(c.aliases ?? [])]
+        .map((n) => found.get(n))
+        .find(Boolean);
+      if (src)
+        art.set(c.id, { image: src, source: "mcu-wiki", matchedAs: c.nameEn });
     }
   }
 
   const out: Record<string, CharacterArt> = {};
-  for (const c of characters) out[c.id] = art.get(c.id) ?? { image: null, source: null, matchedAs: null };
+  for (const c of characters)
+    out[c.id] = art.get(c.id) ?? { image: null, source: null, matchedAs: null };
 
   await writeFile(
     new URL("../content/character-art.generated.json", import.meta.url),
@@ -1425,7 +1465,9 @@ async function main() {
   console.log(`\n  artwork     ${withArt.length}/${characters.length}`);
   if (without.length) {
     console.log(`  no artwork  ${without.length} — ${without.join(", ")}`);
-    console.log("              these render the designed plate, which is a state, not a bug");
+    console.log(
+      "              these render the designed plate, which is a state, not a bug",
+    );
   }
 
   /**
@@ -1434,18 +1476,24 @@ async function main() {
    * resolved to makes it reviewable in the diff.
    */
   const odd = Object.entries(out).filter(
-    ([id, x]) => x.matchedAs && bare(x.matchedAs) !== bare(characters.find((c) => c.id === id)!.nameEn),
+    ([id, x]) =>
+      x.matchedAs &&
+      bare(x.matchedAs) !== bare(characters.find((c) => c.id === id)!.nameEn),
   );
   if (odd.length) {
-    console.log(`\n  matched under a different name — check these ${odd.length}:`);
-    for (const [id, x] of odd) console.log(`    ${id.padEnd(24)} → ${x.matchedAs}`);
+    console.log(
+      `\n  matched under a different name — check these ${odd.length}:`,
+    );
+    for (const [id, x] of odd)
+      console.log(`    ${id.padEnd(24)} → ${x.matchedAs}`);
   }
   const bySource = new Map<string, number>();
   for (const v of Object.values(out)) {
     if (v.source) bySource.set(v.source, (bySource.get(v.source) ?? 0) + 1);
   }
   console.log("");
-  for (const [src, n] of [...bySource].sort()) console.log(`  from ${src.padEnd(10)} ${n}`);
+  for (const [src, n] of [...bySource].sort())
+    console.log(`  from ${src.padEnd(10)} ${n}`);
   if (fandomErrors.length) console.log(`  wiki errors ${fandomErrors.length}`);
   console.log("\n  wrote content/character-art.generated.json — commit it.\n");
 }
