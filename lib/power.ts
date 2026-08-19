@@ -418,6 +418,11 @@ const TIERS: Tier[] = [
       "khonshu",
       /* Guards the Nexus of All Realities and cannot be killed by force. */
       "man-thing",
+      /* JUGGERNAUT, whose power is not a mutation at all. Cyttorak is a god
+         and Cain is what a god does to a man who picks up his gem — which
+         puts him with the avatars and the sorcerers rather than in "enhanced"
+         at 469, below half the X-Men he walks through. */
+      "juggernaut",
       /* An android built around an Infinity Stone is not "enhanced". */
       "vision",
       /**

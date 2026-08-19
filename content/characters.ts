@@ -1846,8 +1846,11 @@ const fantasticFour: CharacterDraft[] = [
     universe: ["fox", "mcu"],
     species: "Human mutate",
     powers: [
-      { en: "Rock body", ar: "جسد صخري" },
       { en: "Enormous strength", ar: "قوة هائلة" },
+      { en: "A body of living rock", ar: "جسد من صخر حيّ" },
+      { en: "Near-total durability", ar: "صلابة شبه تامة" },
+      { en: "Fights on through anything", ar: "يواصل القتال مهما كان" },
+      { en: "Test pilot before the flight", ar: "طيار تجارب قبل الرحلة" },
     ],
     origin: {
       en: "The pilot, and the only one of the four who cannot switch it off and go outside looking like himself.",
@@ -2532,8 +2535,17 @@ const supporting: CharacterDraft[] = [
     /* NOT plain Human. Cyttorak's gem made him unstoppable. Whatever else he is, he has not been an ordinary man since he picked it up. */
     species: "Human mutate",
     powers: [
-      { en: "Unstoppable once moving", ar: "لا يتوقف متى تحرّك" },
+      /* Two bullets and 469th, for a man who has traded blows with Thor and
+         the Hulk. The armour, the force field and the resistance to telepathy
+         were all missing — and so was the fact that none of it is a mutation:
+         Cyttorak is a god, and Cain is what a god does to a man who picks up
+         his gem. */
+      { en: "Unstoppable once moving", ar: "لا يوقفه شيء متى تحرك" },
       { en: "Enormous strength", ar: "قوة هائلة" },
+      { en: "Near-total durability", ar: "صلابة شبه تامة" },
+      { en: "A magical force field", ar: "درع سحري" },
+      { en: "Resists telepathy", ar: "يقاوم التخاطر" },
+      { en: "Powered by Cyttorak", ar: "قوته من سيتوراك" },
     ],
     origin: {
       en: "Charles Xavier's stepbrother, made unstoppable by something older than mutation and angry at him since childhood.",
@@ -11475,8 +11487,12 @@ const mutantsB: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
+      /* Scored zero: "Immovable once planted / Absorbs any impact / Was a
+         carnival act" describes a stance and a job. */
       { en: "Immovable once planted", ar: "لا يُزحزح متى ثبت" },
-      { en: "Absorbs any impact", ar: "يمتص أي صدمة" },
+      { en: "Absorbs any impact", ar: "يمتص أي ارتطام" },
+      { en: "Enormous strength", ar: "قوة هائلة" },
+      { en: "Skin nothing penetrates", ar: "جلد لا يُخترق" },
       { en: "Was a carnival act", ar: "كان فقرة في سيرك" },
     ],
     origin: {
