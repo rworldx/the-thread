@@ -1070,6 +1070,26 @@ export function scaleScore(c: Character): number {
    */
   const TRAVELS =
     /\b(between (universes|realities|dimensions|worlds)|walks between|steps between|moves between|travels between|slips between|crosses (realities|universes|dimensions|worlds|interstellar)|portals?)\b/i;
+  /**
+   * A WEAKNESS IS NOT A POWER, and the scorer had no idea. This is the third
+   * time the same shape of bug has turned up — seeing is not doing, travel is
+   * not control, and now being hurt is not being able.
+   *
+   * It surfaced on the symbiotes. Not one of their records named the fire and
+   * sound that famously tear them apart, and yet Dylan Brock's record says
+   * "Fire and sound do not touch him" — the corpus stating the EXCEPTION to a
+   * rule it never states. Writing the rule in exposed the scoring hole: "Fire
+   * and sound tear it apart" contains two power words and would have PAID
+   * every symbiote fourteen points for its own vulnerability.
+   *
+   * Zero rather than a discount, unlike perception and travel, because those
+   * two are worth something and this is worth nothing. "Cannot be held" is
+   * deliberately absent: it is Hydro-Man being ungraspable and Proteus
+   * burning out his host, the same four words meaning opposite things.
+   * ascii-ok: matched against `powers[].en`, English by construction.
+   */
+  const LIMITS =
+    /^(cannot survive|cannot control|cannot speak)|\b(vulnerable to|tears? (it|him|her|them) apart|weakens? (him|her|it|for it)|overheats|spent for hours)/i;
   const abilities = c.powers
     .map((p) => clean(p.en).trim())
     .reduce(
@@ -1079,7 +1099,10 @@ export function scaleScore(c: Character): number {
          a door, more than Spider-Man's entire power set — while her own record
          finishes the sentence with "Cannot control it yet". */
       (n, b) =>
-        n + score(b) * (PERCEIVES.test(b) || TRAVELS.test(b) ? 0.25 : 1),
+        n +
+        (LIMITS.test(b)
+          ? 0
+          : score(b) * (PERCEIVES.test(b) || TRAVELS.test(b) ? 0.25 : 1)),
       0,
     );
   let n = abilities + score(clean(c.origin.en)) / 4;

@@ -1461,6 +1461,7 @@ const spiderVerse: CharacterDraft[] = [
       { en: "Symbiote strength", ar: "قوة السيمبيوت" },
       { en: "Shapeshifting mass", ar: "كتلة متغيّرة الشكل" },
       { en: "Regeneration", ar: "تجدّد" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "A journalist who lost his job chasing a story, and a creature from somewhere else that needed a body. They share one now and neither is in charge.",
@@ -1596,6 +1597,7 @@ const spiderVerse: CharacterDraft[] = [
       { en: "Symbiote strength", ar: "قوة السيمبيوت" },
       { en: "Blade constructs", ar: "أنصال متشكّلة" },
       { en: "Regeneration", ar: "تجدّد" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "A killer on death row who got hold of a second symbiote, one with none of the reservations the first one had.",
@@ -2524,9 +2526,21 @@ const supporting: CharacterDraft[] = [
     universe: ["marvel-tv"],
     species: "Inhuman",
     powers: [
-      { en: "A whisper levels a city", ar: "همسة تسوّي مدينة" },
+      /* Three bullets, one of them a limitation, for a man whose voice is
+         written as planet-cracking. He ranked BELOW six symbiotes, whose
+         defining vulnerability is sound. */
+      { en: "A whisper levels a city", ar: "همسة تسوّي مدينة بالأرض" },
+      { en: "A shout has cracked a planet", ar: "صرخة شقّت كوكبًا" },
+      {
+        en: "Harnesses electrons and particles",
+        ar: "يسخّر الإلكترونات والجسيمات",
+      },
+      {
+        en: "The Master Blow, all of it in one punch",
+        ar: "الضربة الكبرى، كل قوته بلكمة",
+      },
+      { en: "Flight beyond escape velocity", ar: "طيران يتجاوز سرعة الإفلات" },
       { en: "Cannot speak", ar: "لا يستطيع الكلام" },
-      { en: "Flight", ar: "طيران" },
     ],
     origin: {
       en: "The king of a hidden people, whose voice is a weapon he has never been able to put down, so he does not use it at all.",
@@ -5674,6 +5688,7 @@ const symbiotes: CharacterDraft[] = [
       { en: "Forms blades and axes", ar: "يصوغ نصالًا وفؤوسًا" },
       { en: "Jumps between hosts", ar: "ينتقل بين المضيفين" },
       { en: "Larger than Venom", ar: "أضخم من فينوم" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "The symbiote that came to Earth to prepare it for the rest of them, and burned through a chain of human hosts on the way. The first film's antagonist.",
@@ -5697,6 +5712,7 @@ const symbiotes: CharacterDraft[] = [
     powers: [
       { en: "Stronger than its parents", ar: "أقوى من والديه" },
       { en: "Senses other symbiotes", ar: "يستشعر السمبيوتات الأخرى" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "Carnage's offspring, and by the arithmetic of the comics the strongest of the three: a symbiote's spawn is always stronger than the parent. Bonded to a police officer, which decides which way it points.",
@@ -5740,6 +5756,7 @@ const symbiotes: CharacterDraft[] = [
     powers: [
       { en: "Hair that cuts", ar: "شعر يقطع" },
       { en: "Sonic scream", ar: "صرخة صوتية" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "One of five symbiotes bred from Venom by the Life Foundation to be sold as private security. The yellow one, and the only one of the five that kept getting stories.",
@@ -5760,6 +5777,7 @@ const symbiotes: CharacterDraft[] = [
     powers: [
       { en: "Corrosive acid", ar: "حمض آكل" },
       { en: "Absorbs chemicals", ar: "يمتصّ المواد الكيميائية" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "Another of the Life Foundation five, purple, built around acid. The set exists mostly so that a symbiote fight can have more than two people in it.",
@@ -7928,6 +7946,7 @@ const laterHeroes: CharacterDraft[] = [
       },
       { en: "Military training", ar: "تدريب عسكري" },
       { en: "Idolises Spider-Man", ar: "يتّخذ سبايدر-مان مثلًا" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "The boy who spent school shoving Peter Parker into lockers while worshipping Spider-Man, without ever working out they were the same person. He comes back from a war with two legs missing and is offered a suit.",
@@ -10221,6 +10240,7 @@ const lifeFoundation: CharacterDraft[] = [
       { en: "Whips of living tendril", ar: "سياط من محلاق حيّ" },
       { en: "Cut from Venom in a lab", ar: "انتُزع من فينوم في مختبر" },
       { en: "Bonds to a soldier", ar: "يرتبط بجندي" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "One of five symbiotes forced out of Venom by Life Foundation scientists who wanted their own. Harvested rather than born, which is why it lacks what a true offspring inherits.",
@@ -10242,6 +10262,7 @@ const lifeFoundation: CharacterDraft[] = [
       { en: "Blades from every limb", ar: "نصال من كل طرف" },
       { en: "Cut from Venom in a lab", ar: "انتُزع من فينوم في مختبر" },
       { en: "Yellow and serrated", ar: "أصفر ومسنّن" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "Another of the Life Foundation five, taken from Venom by force and grown into a weapon. It shapes its whole body into edges rather than hands.",
@@ -10263,6 +10284,7 @@ const lifeFoundation: CharacterDraft[] = [
       { en: "Born, not harvested", ar: "وُلد ولم يُحصد" },
       { en: "Changes shape at will", ar: "يبدّل شكله كما يشاء" },
       { en: "Wants no host at all", ar: "لا يريد مضيفًا أصلًا" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "Venom's own offspring, and the first of the line to decide it did not want a host. It left to find out what a symbiote is when nobody is riding it.",
@@ -10284,6 +10306,7 @@ const lifeFoundation: CharacterDraft[] = [
       { en: "A shard of Venom's own", ar: "شظية من فينوم نفسه" },
       { en: "Hellmark burning under it", ar: "وسم جحيم يتّقد تحته" },
       { en: "Younger than the job", ar: "أصغر من المهمة" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "A teenager given a piece of the Venom symbiote by Flash Thompson to protect her, who turned out to be carrying something older and angrier underneath it.",
@@ -10305,6 +10328,7 @@ const lifeFoundation: CharacterDraft[] = [
       { en: "Four symbiotes in one", ar: "أربعة سيمبيوتات في واحد" },
       { en: "Argues with itself", ar: "يخاصم نفسه" },
       { en: "Bonded to a wounded man", ar: "ارتبط برجل جريح" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "Four of the Life Foundation symbiotes merged into a single creature and bonded to a paralysed man, who could walk again as long as the four inside him agreed on anything.",
@@ -10347,6 +10371,7 @@ const lifeFoundation: CharacterDraft[] = [
       { en: "Grown from Carnage", ar: "نبت من كارنيج" },
       { en: "Merges with machinery", ar: "يندمج بالآلات" },
       { en: "Bonded to a psychiatrist", ar: "ارتبط بطبيبة نفسية" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "A piece of Carnage that attached itself to the psychiatrist sent to treat its host, and fused with her prosthetic arm before taking the rest of her.",
@@ -14944,6 +14969,7 @@ const spiderLast: CharacterDraft[] = [
       { en: "A symbiote grown from Knull", ar: "سيمبيوت نبت من نال" },
       { en: "Cuts through anything", ar: "يقطع أي شيء" },
       { en: "Made for the King in Black", ar: "صُنع للملك الأسود" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "A symbiote created in Knull's war, built to cut rather than to bond, and one of the few that has never wanted a host at all.",
@@ -14965,6 +14991,7 @@ const spiderLast: CharacterDraft[] = [
       { en: "A symbiote in armour", ar: "سيمبيوت في درع" },
       { en: "Serves the King in Black", ar: "يخدم الملك الأسود" },
       { en: "Built for the invasion", ar: "صُنع للغزو" },
+      { en: "Fire and sound tear it apart", ar: "النار والصوت يمزقانه" },
     ],
     origin: {
       en: "One of Knull's armoured symbiote soldiers, made for the invasion of Earth rather than grown from anyone, which is why it fights like a weapon and not a creature.",
