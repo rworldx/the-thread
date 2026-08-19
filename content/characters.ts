@@ -1718,7 +1718,14 @@ const defenders: CharacterDraft[] = [
     universe: ["sony", "defenders", "mcu"],
     species: "Human",
     powers: [
+      /* "Enormous physical strength / Owns the city / Ruthless negotiator" —
+         two of three about the business. The bulk is muscle, he has beaten
+         Daredevil with his hands, and none of the durability or the training
+         was written down. */
       { en: "Enormous physical strength", ar: "قوة بدنية هائلة" },
+      { en: "Takes a beating and keeps coming", ar: "يتلقى الضرب ويواصل" },
+      { en: "Elite hand-to-hand combatant", ar: "مقاتل متلاحم من الطراز الأول" },
+      { en: "Uses his own weight as a weapon", ar: "يستعمل وزنه سلاحًا" },
       { en: "Owns the city", ar: "يملك المدينة" },
       { en: "Ruthless negotiator", ar: "مفاوض بلا رحمة" },
     ],
@@ -3398,8 +3405,12 @@ const supporting: CharacterDraft[] = [
        dimension of physics that Cloak and Dagger also touch, not a craft
        anybody studies. */
     powers: [
-      { en: "Corrupts by touch", ar: "يُفسد باللمس" },
-      { en: "Darkforce and Lightforce", ar: "قوة الظلام وقوة النور" },
+      /* Scored ZERO. "Darkforce and Lightforce" is two extradimensional
+         energies and the patterns knew neither word. */
+      { en: "Darkforce and Lightforce energy", ar: "طاقتا الدارك فورس واللايت فورس" },
+      { en: "Corrupts a man by touching him", ar: "يفسد الرجل بلمسة" },
+      { en: "Heals with the other hand", ar: "يشفي باليد الأخرى" },
+      { en: "Enhanced strength and durability", ar: "قوة وصلابة معززتان" },
       { en: "Two men in one body", ar: "رجلان في جسد واحد" },
     ],
     origin: {
