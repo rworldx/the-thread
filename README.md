@@ -201,6 +201,24 @@ every number under it wrong. The order falls out of species, mutant class,
 affiliation and the character's own power bullets, with a hand-ordered head per
 tier where twelve sources agree.
 
+A SPECIES IS NOT A POWER LEVEL, and four words were still acting like one.
+Celestial, Elder of the Universe, Eternal and Inhuman each admitted a whole
+people to a high tier on ancestry, which read fine until you saw who it was
+carrying: Zgreb the Aspirant ("Not yet fully risen", the lowest score in the
+corpus) above every reality-warper, the Contemplator above Iron Fist, Lockjaw —
+a dog — above the Spot. Each of the four now has to clear the same gate, which
+is not a demotion but a question: **the record has to say what you can do.**
+Ikaris flies and burns and keeps his place; Black Bolt levels a city and moves
+up 27; the ones who fall are the ones with nothing written down.
+
+The gate did most of its work on the vocabulary rather than the tiers. It
+turned out `scaleScore` could read the noun a power reached — "city" — but had
+no verb of destruction, so holding a city and levelling one scored the same. It
+knew "telepathy" and not "mind control", so Druig, who ends wars with a word,
+scored nothing. Three patterns fixed all of it, and the lesson is the one this
+file keeps relearning: **a bad rank is almost always a thin record or a word
+the scorer does not know.**
+
 THE RANK IS A TOTAL ORDER AND THE TIER IS THE CLAIM. A sort needs every
 character to have a distinct position, so it emits 1..N with no ties — which is
 not an assertion that #340 beats #341. Past the ranked head of a tier the order

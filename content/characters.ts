@@ -45,7 +45,10 @@ const avengers: CharacterDraft[] = [
       { en: "Powered armour", ar: "درع مزوّد بالطاقة" },
       { en: "Repulsors and the unibeam", ar: "الريبولسرز وشعاع الصدر" },
       { en: "Armour-borne strength", ar: "قوة من الدرع" },
-      { en: "Withstands bullets and blasts", ar: "يصمد أمام الرصاص والانفجارات" },
+      {
+        en: "Withstands bullets and blasts",
+        ar: "يصمد أمام الرصاص والانفجارات",
+      },
       { en: "Nanotech that reshapes itself", ar: "نانو يعيد تشكيل نفسه" },
       { en: "Genius engineer", ar: "مهندس عبقري" },
     ],
@@ -76,7 +79,10 @@ const avengers: CharacterDraft[] = [
          outranked him: Daredevil's record lists every sense he has and this
          one did not even name the serum. */
       { en: "The super-soldier serum", ar: "مصل الجندي الخارق" },
-      { en: "Peak strength, speed and reflexes", ar: "ذروة القوة والسرعة ورد الفعل" },
+      {
+        en: "Peak strength, speed and reflexes",
+        ar: "ذروة القوة والسرعة ورد الفعل",
+      },
       { en: "Vibranium shield", ar: "درع من الفيبرانيوم" },
       { en: "Master hand-to-hand combatant", ar: "سيد القتال المتلاحم" },
       { en: "Heals fast and barely ages", ar: "يشفى سريعًا ولا يشيخ تقريبًا" },
@@ -159,7 +165,10 @@ const avengers: CharacterDraft[] = [
          electroshock gauntlets she is drawn with in every appearance. The rest
          was the job description rather than the training. */
       { en: "The Widow's Bite", ar: "لسعة الأرملة" },
-      { en: "Peak human strength and agility", ar: "ذروة القوة والرشاقة البشرية" },
+      {
+        en: "Peak human strength and agility",
+        ar: "ذروة القوة والرشاقة البشرية",
+      },
       { en: "Elite martial artist", ar: "مقاتلة من الطراز الأول" },
       { en: "Expert marksman", ar: "رامية بارعة" },
       { en: "Master spy and interrogator", ar: "جاسوسة ومحققة بارعة" },
@@ -185,7 +194,12 @@ const avengers: CharacterDraft[] = [
        roster and in none of those credits. */
     alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
-    affiliation: ["Avengers", "S.H.I.E.L.D.", "Team Captain America", "Original Six"],
+    affiliation: [
+      "Avengers",
+      "S.H.I.E.L.D.",
+      "Team Captain America",
+      "Original Six",
+    ],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -306,7 +320,13 @@ const avengers: CharacterDraft[] = [
     id: "winter-soldier",
     nameEn: "Winter Soldier",
     nameAr: "جندي الشتاء",
-    aliases: ["Bucky Barnes", "Winter Soldier", "James Barnes", "James Buchanan Barnes", "The Winter Soldier"],
+    aliases: [
+      "Bucky Barnes",
+      "Winter Soldier",
+      "James Barnes",
+      "James Buchanan Barnes",
+      "The Winter Soldier",
+    ],
     category: "antihero",
     affiliation: ["Avengers", "Team Captain America", "Thunderbolts"],
     universe: ["mcu"],
@@ -337,7 +357,13 @@ const avengers: CharacterDraft[] = [
     id: "war-machine",
     nameEn: "War Machine",
     nameAr: "وور ماشين",
-    aliases: ["James Rhodes", "Rhodey", "War Machine", "Iron Patriot", "Colonel James Rhodes"],
+    aliases: [
+      "James Rhodes",
+      "Rhodey",
+      "War Machine",
+      "Iron Patriot",
+      "Colonel James Rhodes",
+    ],
     /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
        Show and the series has 35 characters; this one is on the show's own
        roster and in none of those credits. */
@@ -349,7 +375,10 @@ const avengers: CharacterDraft[] = [
     powers: [
       { en: "Powered armour", ar: "درع مزوّد بالطاقة" },
       { en: "Heavy weapons and repulsors", ar: "أسلحة ثقيلة وريبولسرز" },
-      { en: "Withstands bullets and blasts", ar: "يصمد أمام الرصاص والانفجارات" },
+      {
+        en: "Withstands bullets and blasts",
+        ar: "يصمد أمام الرصاص والانفجارات",
+      },
       { en: "Flight at speed", ar: "طيران سريع" },
       { en: "Air Force officer", ar: "ضابط في سلاح الجو" },
     ],
@@ -412,7 +441,12 @@ const avengers: CharacterDraft[] = [
     nameAr: "دكتور سترينج",
     aliases: ["Stephen Strange", "Doctor Strange", "Dr. Stephen Strange"],
     category: "hero",
-    affiliation: ["Avengers", "Masters of the Mystic Arts", "Midnight Sons", "Magic"],
+    affiliation: [
+      "Avengers",
+      "Masters of the Mystic Arts",
+      "Midnight Sons",
+      "Magic",
+    ],
     universe: ["mcu"],
     species: "Human",
     magicSchools: ["eldritch"],
@@ -549,7 +583,12 @@ const avengers: CharacterDraft[] = [
     id: "nick-fury",
     nameEn: "Nick Fury",
     nameAr: "نيك فيوري",
-    aliases: ["Nick Fury", "Nicholas Fury", "Nicholas J. Fury", "Colonel Nick Fury"],
+    aliases: [
+      "Nick Fury",
+      "Nicholas Fury",
+      "Nicholas J. Fury",
+      "Colonel Nick Fury",
+    ],
     category: "supporting",
     affiliation: ["S.H.I.E.L.D.", "Avengers"],
     universe: ["mcu"],
@@ -711,7 +750,9 @@ const avengers: CharacterDraft[] = [
       en: "A variant of Loki taken as a child by an organisation that decides which lives are allowed to happen, who has spent her whole life hiding from it and planning to take it apart.",
       ar: "نسخة من لوكي أخذتها وهي طفلة منظمة تقرّر أي الحيوات يُسمح لها بالحدوث، فأمضت عمرها مختبئة منها ومخطّطة لتفكيكها.",
     },
-    related: [{ id: "loki", kind: "variant", variantOrigin: "timeline-branch" }],
+    related: [
+      { id: "loki", kind: "variant", variantOrigin: "timeline-branch" },
+    ],
   },
 ];
 
@@ -864,13 +905,18 @@ const guardians: CharacterDraft[] = [
   },
 ];
 
-
 const xmen: CharacterDraft[] = [
   {
     id: "wolverine",
     nameEn: "Wolverine",
     nameAr: "وولفرين",
-    aliases: ["Logan", "Wolverine", "James Howlett", "Weapon X", "Logan / Wolverine"],
+    aliases: [
+      "Logan",
+      "Wolverine",
+      "James Howlett",
+      "Weapon X",
+      "Logan / Wolverine",
+    ],
     /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
        Show and the series has 35 characters; this one is on the show's own
        roster and in none of those credits. */
@@ -926,7 +972,10 @@ const xmen: CharacterDraft[] = [
       { en: "Mind control", ar: "التحكم بالعقول" },
       { en: "Erases and rewrites memory", ar: "يمحو الذكريات ويعيد كتابتها" },
       { en: "Psychic attacks and illusions", ar: "هجمات نفسية وأوهام" },
-      { en: "Every mind on Earth, via Cerebro", ar: "كل عقل على الأرض عبر سيريبرو" },
+      {
+        en: "Every mind on Earth, via Cerebro",
+        ar: "كل عقل على الأرض عبر سيريبرو",
+      },
       { en: "A brilliant scientist", ar: "عالِم لامع" },
     ],
     origin: {
@@ -984,7 +1033,10 @@ const xmen: CharacterDraft[] = [
          The force fields and the blasts were not there either. */
       { en: "Controls magnetism", ar: "يتحكم بالمغناطيسية" },
       { en: "Moves metal at any scale", ar: "يحرّك المعادن بأي مقياس" },
-      { en: "Bends the planet's magnetic field", ar: "يلوي حقل الأرض المغناطيسي" },
+      {
+        en: "Bends the planet's magnetic field",
+        ar: "يلوي حقل الأرض المغناطيسي",
+      },
       { en: "Magnetic force fields", ar: "دروع مغناطيسية" },
       { en: "Electromagnetic blasts", ar: "دفقات كهرومغناطيسية" },
       { en: "Magnetic flight", ar: "طيران مغناطيسي" },
@@ -1269,9 +1321,20 @@ const spiderVerse: CharacterDraft[] = [
     id: "spider-man",
     nameEn: "Spider-Man",
     nameAr: "سبايدر مان",
-    aliases: ["Peter Parker", "Spider-Man", "Spiderman", "Peter Parker / Spider-Man"],
+    aliases: [
+      "Peter Parker",
+      "Spider-Man",
+      "Spiderman",
+      "Peter Parker / Spider-Man",
+    ],
     category: "hero",
-    affiliation: ["Avengers", "Team Iron Man", "Spider-Society", "New Warriors", "Spider-Man's Team"],
+    affiliation: [
+      "Avengers",
+      "Team Iron Man",
+      "Spider-Society",
+      "New Warriors",
+      "Spider-Man's Team",
+    ],
     universe: ["mcu", "sony"],
     species: "Human mutate",
     powers: [
@@ -1338,7 +1401,11 @@ const spiderVerse: CharacterDraft[] = [
       ar: "مراهق من بروكلين في مدرسة لم يرد الالتحاق بها، يلدغه عنكبوت من مكان آخر، فيكتشف أنه واحد من كثيرين وعليه أن يقرّر أن يكون نفسه.",
     },
     related: [
-      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
+      {
+        id: "spider-man",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
       { id: "gwen-stacy", kind: "ally" },
     ],
   },
@@ -1724,7 +1791,10 @@ const defenders: CharacterDraft[] = [
          was written down. */
       { en: "Enormous physical strength", ar: "قوة بدنية هائلة" },
       { en: "Takes a beating and keeps coming", ar: "يتلقى الضرب ويواصل" },
-      { en: "Elite hand-to-hand combatant", ar: "مقاتل متلاحم من الطراز الأول" },
+      {
+        en: "Elite hand-to-hand combatant",
+        ar: "مقاتل متلاحم من الطراز الأول",
+      },
       { en: "Uses his own weight as a weapon", ar: "يستعمل وزنه سلاحًا" },
       { en: "Owns the city", ar: "يملك المدينة" },
       { en: "Ruthless negotiator", ar: "مفاوض بلا رحمة" },
@@ -1779,7 +1849,10 @@ const fantasticFour: CharacterDraft[] = [
       { en: "The smartest man alive", ar: "أذكى رجل على قيد الحياة" },
       { en: "Builds gates between universes", ar: "يبني بوابات بين الأكوان" },
       { en: "Invents his way out of anything", ar: "يخترع مخرجًا من أي شيء" },
-      { en: "Force fields and unstable molecules", ar: "دروع وجزيئات غير مستقرة" },
+      {
+        en: "Force fields and unstable molecules",
+        ar: "دروع وجزيئات غير مستقرة",
+      },
     ],
     origin: {
       en: "The scientist who took three people he loved into space on a ship he built, and brought them back changed.",
@@ -1794,7 +1867,13 @@ const fantasticFour: CharacterDraft[] = [
     id: "invisible-woman",
     nameEn: "Invisible Woman",
     nameAr: "المرأة الخفية",
-    aliases: ["Invisible Woman", "Sue Storm", "Susan Storm", "Invisible Girl", "The Invisible Woman"],
+    aliases: [
+      "Invisible Woman",
+      "Sue Storm",
+      "Susan Storm",
+      "Invisible Girl",
+      "The Invisible Woman",
+    ],
     category: "hero",
     affiliation: ["Fantastic Four"],
     universe: ["fox", "mcu"],
@@ -1868,7 +1947,13 @@ const fantasticFour: CharacterDraft[] = [
        the most-adapted villain in Marvel was absent from six of his own
        shows. "Doctor Doom" and "Dr. Doom" normalise differently: the period
        goes, the word does not. */
-    aliases: ["Doctor Doom", "Victor Von Doom", "Doom", "Victor Domashev", "Dr. Doom"],
+    aliases: [
+      "Doctor Doom",
+      "Victor Von Doom",
+      "Doom",
+      "Victor Domashev",
+      "Dr. Doom",
+    ],
     /* ANTIVILLAIN, not villain. A dictator who genuinely believes only he can protect Latveria, and is often right about the threat if never about himself. */
     category: "antivillain",
     affiliation: ["Magic"],
@@ -2076,7 +2161,11 @@ const villains: CharacterDraft[] = [
     /* The Stonekeeper on Vormir in both films — Ross Marquand, and TMDB
        carries him in neither top-billed cast. He is the reason the Soul
        Stone has a price. */
-    alsoIn: ["avengers-infinity-war", "avengers-endgame", "the-super-hero-squad-show"],
+    alsoIn: [
+      "avengers-infinity-war",
+      "avengers-endgame",
+      "the-super-hero-squad-show",
+    ],
     related: [{ id: "captain-america", kind: "enemy" }],
   },
   {
@@ -2209,7 +2298,10 @@ const villains: CharacterDraft[] = [
     },
     /* In the film as the cloud that eats the planet, with no actor credited
        because no actor played him. See `alsoIn` on the schema. */
-    alsoIn: ["fantastic-four-rise-of-the-silver-surfer", "the-super-hero-squad-show"],
+    alsoIn: [
+      "fantastic-four-rise-of-the-silver-surfer",
+      "the-super-hero-squad-show",
+    ],
     related: [{ id: "silver-surfer", kind: "enemy" }],
   },
 ];
@@ -2233,7 +2325,10 @@ const legacyCharacters: CharacterDraft[] = [
       { en: "Vampire strength and speed", ar: "قوة وسرعة مصاص دماء" },
       { en: "Heals like the things he hunts", ar: "يشفى كما يشفى ما يصطاده" },
       { en: "Enhanced senses and tracking", ar: "حواس واقتفاء معززان" },
-      { en: "Master of blades and firearms", ar: "سيد النصال والأسلحة النارية" },
+      {
+        en: "Master of blades and firearms",
+        ar: "سيد النصال والأسلحة النارية",
+      },
       { en: "Poison and disease do nothing", ar: "السم والمرض لا يؤثران" },
       { en: "Walks in daylight", ar: "يمشي في وضح النهار" },
     ],
@@ -2264,7 +2359,6 @@ const legacyCharacters: CharacterDraft[] = [
     related: [],
   },
 ];
-
 
 /**
  * PRD v2, second pass: the heroes and villains of the projects themselves.
@@ -2348,9 +2442,7 @@ const supporting: CharacterDraft[] = [
       en: "A thief from New Orleans who can turn anything he holds into a bomb, and who has never once been on a side for longer than it suited him.",
       ar: "لصّ من نيو أورلينز يحوّل ما يمسكه إلى قنبلة، ولم يبقَ يومًا في جانب أطول مما يناسبه.",
     },
-    related: [
-      { id: "wolverine", kind: "ally" },
-    ],
+    related: [{ id: "wolverine", kind: "ally" }],
   },
   {
     id: "bullseye",
@@ -2369,9 +2461,7 @@ const supporting: CharacterDraft[] = [
       en: "A marksman who can kill with a paperclip and who has never been able to leave a target alone once he has seen it.",
       ar: "قنّاص يقتل بمشبك ورق، ولم يستطع يومًا أن يترك هدفًا بعد أن يراه.",
     },
-    related: [
-      { id: "daredevil", kind: "enemy" },
-    ],
+    related: [{ id: "daredevil", kind: "enemy" }],
   },
   {
     id: "sif",
@@ -2390,9 +2480,7 @@ const supporting: CharacterDraft[] = [
       en: "A warrior of Asgard who earned her place in a hall that did not want to give it, and stayed the better fighter for it.",
       ar: "محاربة من أسجارد انتزعت مكانها في قاعة لم تُرِد منحها إياه، فظلّت المقاتلة الأفضل بسببه.",
     },
-    related: [
-      { id: "thor", kind: "ally" },
-    ],
+    related: [{ id: "thor", kind: "ally" }],
   },
   {
     id: "black-bolt",
@@ -2412,9 +2500,7 @@ const supporting: CharacterDraft[] = [
       en: "The king of a hidden people, whose voice is a weapon he has never been able to put down, so he does not use it at all.",
       ar: "ملك شعب خفي، صوته سلاح لم يستطع قط أن يضعه، فاختار ألّا يستعمله إطلاقًا.",
     },
-    related: [
-      { id: "medusa", kind: "family" },
-    ],
+    related: [{ id: "medusa", kind: "family" }],
   },
   {
     id: "medusa",
@@ -2426,8 +2512,14 @@ const supporting: CharacterDraft[] = [
     universe: ["marvel-tv"],
     species: "Inhuman",
     powers: [
-      { en: "Prehensile hair", ar: "شعر قابض" },
-      { en: "Speaks for the king", ar: "تتحدث باسم الملك" },
+      {
+        en: "Prehensile hair, stronger than steel",
+        ar: "شعر ممسك أقوى من الفولاذ",
+      },
+      { en: "Lifts a car with it", ar: "ترفع به سيارة" },
+      { en: "Enhanced strength and durability", ar: "قوة وصلابة معززتان" },
+      { en: "Queen of the Inhumans", ar: "ملكة الإنهيومانز" },
+      { en: "Speaks for the king", ar: "تتكلم باسم الملك" },
     ],
     origin: {
       en: "The queen who speaks for a king who cannot, and whose hair is stronger than most people's hands.",
@@ -2455,9 +2547,7 @@ const supporting: CharacterDraft[] = [
       en: "The younger royal, given the elements and very little say in what her family does with her.",
       ar: "الأميرة الأصغر، مُنحت العناصر ولم تُمنح رأيًا يُذكر فيما تفعله عائلتها بها.",
     },
-    related: [
-      { id: "medusa", kind: "family" },
-    ],
+    related: [{ id: "medusa", kind: "family" }],
   },
   {
     id: "emma-frost",
@@ -2477,9 +2567,7 @@ const supporting: CharacterDraft[] = [
       en: "A telepath who can turn her skin to diamond, and who has been on every side of this at least once, always for herself.",
       ar: "قارئة أفكار تحوّل جلدها إلى ماس، وقفت في كل جانب من هذا مرة على الأقل، ودائمًا لنفسها.",
     },
-    related: [
-      { id: "professor-x", kind: "enemy" },
-    ],
+    related: [{ id: "professor-x", kind: "enemy" }],
   },
   {
     id: "havok",
@@ -2499,9 +2587,7 @@ const supporting: CharacterDraft[] = [
       en: "Cyclops's brother, with the same problem in a different direction: energy he absorbs constantly and has to put somewhere.",
       ar: "أخو سايكلوبس، بالمشكلة نفسها في اتجاه آخر: طاقة يمتصها بلا توقف وعليه أن يضعها في مكان ما.",
     },
-    related: [
-      { id: "cyclops", kind: "family" },
-    ],
+    related: [{ id: "cyclops", kind: "family" }],
   },
   {
     id: "pyro",
@@ -2520,9 +2606,7 @@ const supporting: CharacterDraft[] = [
       en: "He can shape any fire but cannot start one, which is a small enough gap to make him angry about it permanently.",
       ar: "يشكّل أي نار لكنه لا يشعلها، وهي فجوة صغيرة تكفي لتُبقيه غاضبًا منها دائمًا.",
     },
-    related: [
-      { id: "magneto", kind: "ally" },
-    ],
+    related: [{ id: "magneto", kind: "ally" }],
   },
   {
     id: "juggernaut",
@@ -2551,9 +2635,7 @@ const supporting: CharacterDraft[] = [
       en: "Charles Xavier's stepbrother, made unstoppable by something older than mutation and angry at him since childhood.",
       ar: "أخو تشارلز إكزافير بالتبنّي، جعله شيء أقدم من التحوّل لا يُوقَف، وهو غاضب منه منذ الطفولة.",
     },
-    related: [
-      { id: "professor-x", kind: "family" },
-    ],
+    related: [{ id: "professor-x", kind: "family" }],
   },
   {
     id: "negasonic",
@@ -2588,16 +2670,12 @@ const supporting: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "beta",
-    powers: [
-      { en: "Explosive light", ar: "ضوء متفجّر" },
-    ],
+    powers: [{ en: "Explosive light", ar: "ضوء متفجّر" }],
     origin: {
       en: "A mall kid from California who throws fireworks out of her hands and was one of the first students of the modern school.",
       ar: "فتاة من مراكز التسوق في كاليفورنيا تقذف الألعاب النارية من يديها، وكانت من أوائل طلاب المدرسة الحديثة.",
     },
-    related: [
-      { id: "storm", kind: "ally" },
-    ],
+    related: [{ id: "storm", kind: "ally" }],
   },
   {
     id: "apocalypse",
@@ -2643,9 +2721,7 @@ const supporting: CharacterDraft[] = [
       en: "A former effects engineer who worked out that a convincing enough illusion does not need any powers behind it.",
       ar: "مهندس مؤثرات سابق أدرك أن الوهم المقنع بما يكفي لا يحتاج قدرة خلفه.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "vulture",
@@ -2665,9 +2741,7 @@ const supporting: CharacterDraft[] = [
       en: "A salvage contractor pushed out of a city-sized clean-up job, who kept the alien technology and built wings out of it.",
       ar: "مقاول إزالة أنقاض أُقصي من عقد بحجم مدينة، فاحتفظ بالتقنية الفضائية وصنع منها جناحين.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "taskmaster",
@@ -2687,9 +2761,7 @@ const supporting: CharacterDraft[] = [
       en: "Someone who can reproduce any fighting style after seeing it once, pointed at people by whoever is holding the controls.",
       ar: "من يستطيع تكرار أي أسلوب قتالي بعد رؤيته مرة، ويوجّهه نحو الناس من يمسك بأزرار التحكم.",
     },
-    related: [
-      { id: "black-widow", kind: "enemy" },
-    ],
+    related: [{ id: "black-widow", kind: "enemy" }],
   },
   {
     id: "moon-knight",
@@ -2806,9 +2878,7 @@ const supporting: CharacterDraft[] = [
       en: "The ruler of a nation that has been hidden under the sea for centuries, and who considers the surface a recurring problem.",
       ar: "حاكم أمة اختبأت تحت البحر قرونًا، ويعدّ اليابسة مشكلة تتكرر.",
     },
-    related: [
-      { id: "black-panther", kind: "enemy" },
-    ],
+    related: [{ id: "black-panther", kind: "enemy" }],
   },
   {
     id: "cable",
@@ -2829,9 +2899,7 @@ const supporting: CharacterDraft[] = [
       en: "A soldier from a future that went badly, who came back to stop it and is not interested in discussing the cost.",
       ar: "جندي من مستقبل ساءت أحواله، عاد ليمنعه، ولا يعنيه النقاش في الثمن.",
     },
-    related: [
-      { id: "deadpool", kind: "ally" },
-    ],
+    related: [{ id: "deadpool", kind: "ally" }],
   },
   {
     id: "domino",
@@ -2843,9 +2911,7 @@ const supporting: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "beta",
-    powers: [
-      { en: "Luck, as a power", ar: "الحظ بوصفه قدرة" },
-    ],
+    powers: [{ en: "Luck, as a power", ar: "الحظ بوصفه قدرة" }],
     origin: {
       en: "Her mutation is that things go her way, which sounds like nothing until you watch a building fall in exactly the right direction.",
       ar: "تحوّلها أن الأمور تسير لصالحها، ويبدو ذلك لا شيء حتى ترى مبنى يسقط في الاتجاه الصحيح تمامًا.",
@@ -2873,9 +2939,7 @@ const supporting: CharacterDraft[] = [
       en: "A girl made in a laboratory from someone else's genes, raised as a weapon, and very good at the only thing she was taught.",
       ar: "فتاة صُنعت في مختبر من جينات شخص آخر، رُبّيت سلاحًا، وبارعة جدًا في الشيء الوحيد الذي علّموه لها.",
     },
-    related: [
-      { id: "wolverine", kind: "family" },
-    ],
+    related: [{ id: "wolverine", kind: "family" }],
   },
   {
     id: "ego",
@@ -2894,9 +2958,7 @@ const supporting: CharacterDraft[] = [
       en: "A being old enough to have grown a planet around himself, who has spent a very long time looking for company on his own terms.",
       ar: "كائن قديم بما يكفي ليُنمي كوكبًا حول نفسه، أمضى زمنًا طويلًا يبحث عن رفقة بشروطه هو.",
     },
-    related: [
-      { id: "star-lord", kind: "family" },
-    ],
+    related: [{ id: "star-lord", kind: "family" }],
   },
   {
     id: "modok",
@@ -2915,9 +2977,7 @@ const supporting: CharacterDraft[] = [
       en: "A technician rebuilt into a weapon that is mostly head, by an organisation that wanted a thinking machine and made one that resents it.",
       ar: "تقني أُعيد بناؤه سلاحًا معظمه رأس، على يد منظمة أرادت آلة تفكّر فصنعت واحدة تكره ذلك.",
     },
-    related: [
-      { id: "ant-man", kind: "enemy" },
-    ],
+    related: [{ id: "ant-man", kind: "enemy" }],
   },
   {
     id: "yellowjacket",
@@ -2936,9 +2996,7 @@ const supporting: CharacterDraft[] = [
       en: "The protege who reverse-engineered his mentor's work and sold it, then wore it.",
       ar: "التلميذ الذي فكّك عمل أستاذه وباعه، ثم ارتداه.",
     },
-    related: [
-      { id: "ant-man", kind: "enemy" },
-    ],
+    related: [{ id: "ant-man", kind: "enemy" }],
   },
   {
     id: "legion",
@@ -2959,9 +3017,7 @@ const supporting: CharacterDraft[] = [
       en: "The most powerful mutant in the corpus, whose diagnosis and whose power have been confused with each other his whole life.",
       ar: "أقوى متحوّل في هذا السجل، وقد التبس تشخيصه بقدرته طوال حياته.",
     },
-    related: [
-      { id: "professor-x", kind: "family" },
-    ],
+    related: [{ id: "professor-x", kind: "family" }],
   },
   {
     id: "banshee",
@@ -2981,9 +3037,7 @@ const supporting: CharacterDraft[] = [
       en: "An Irish former agent whose scream can shatter concrete, recruited out of a facility that was studying him.",
       ar: "عميل إيرلندي سابق تحطّم صرخته الخرسانة، جُنِّد من منشأة كانت تدرسه.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "blink",
@@ -2995,16 +3049,12 @@ const supporting: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "beta",
-    powers: [
-      { en: "Opens portals", ar: "تفتح البوابات" },
-    ],
+    powers: [{ en: "Opens portals", ar: "تفتح البوابات" }],
     origin: {
       en: "She opens doorways between places, which in a war of attrition is the difference between a last stand and a retreat.",
       ar: "تفتح أبوابًا بين الأماكن، وفي حرب استنزاف هذا هو الفرق بين موقف أخير وانسحاب.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "azazel",
@@ -3051,9 +3101,7 @@ const supporting: CharacterDraft[] = [
       en: "A brawler who leaps further than anything his size should, and has spent his life being somebody's muscle.",
       ar: "مشاكس يقفز أبعد مما ينبغي لحجمه، وأمضى حياته عضلاتٍ لأحدهم.",
     },
-    related: [
-      { id: "magneto", kind: "ally" },
-    ],
+    related: [{ id: "magneto", kind: "ally" }],
   },
   {
     id: "polaris",
@@ -3065,16 +3113,12 @@ const supporting: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "alpha",
-    powers: [
-      { en: "Controls magnetism", ar: "تتحكم بالمغناطيسية" },
-    ],
+    powers: [{ en: "Controls magnetism", ar: "تتحكم بالمغناطيسية" }],
     origin: {
       en: "She has her father's power and has spent her life refusing to be the argument he wants to use it for.",
       ar: "لديها قدرة أبيها، وأمضت حياتها ترفض أن تكون الحجة التي يريد استخدامها من أجلها.",
     },
-    related: [
-      { id: "magneto", kind: "family" },
-    ],
+    related: [{ id: "magneto", kind: "family" }],
   },
   {
     id: "sebastian-shaw",
@@ -3094,9 +3138,7 @@ const supporting: CharacterDraft[] = [
       en: "A man who gets stronger the harder you hit him, which makes him very hard to argue with and very easy to underestimate once.",
       ar: "رجل يزداد قوة كلما اشتدّ ضربك له، فيصعب جدًا جداله، ويسهل الاستهانة به مرة واحدة.",
     },
-    related: [
-      { id: "magneto", kind: "enemy" },
-    ],
+    related: [{ id: "magneto", kind: "enemy" }],
   },
   {
     id: "scorpion",
@@ -3116,9 +3158,7 @@ const supporting: CharacterDraft[] = [
       en: "A hired thug with a mechanical tail and a long memory for the person who put him inside.",
       ar: "بلطجي مأجور بذيل آلي وذاكرة طويلة تجاه من أدخله السجن.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "talos",
@@ -3198,7 +3238,10 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Skrull",
     powers: [
-      { en: "Every Fantastic Four power at once", ar: "كل قدرات الأربعة الرائعين معًا" },
+      {
+        en: "Every Fantastic Four power at once",
+        ar: "كل قدرات الأربعة الرائعين معًا",
+      },
       { en: "Shapeshifting on top", ar: "وتبدّل الهيئة فوق ذلك" },
       { en: "Engineered as a weapon", ar: "صُمّم سلاحًا" },
     ],
@@ -3232,7 +3275,10 @@ const supporting: CharacterDraft[] = [
     species: "Enhanced human",
     powers: [
       { en: "Portals he carries on his skin", ar: "بوابات يحملها على جلده" },
-      { en: "Reaches anywhere from anywhere", ar: "يصل إلى أي مكان من أي مكان" },
+      {
+        en: "Reaches anywhere from anywhere",
+        ar: "يصل إلى أي مكان من أي مكان",
+      },
       { en: "Grows with every universe", ar: "يزداد قوة مع كل كون" },
     ],
     origin: {
@@ -3364,7 +3410,10 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Astrophysics, eventually a doctorate", ar: "فيزياء فلكية، ثم دكتوراه" },
+      {
+        en: "Astrophysics, eventually a doctorate",
+        ar: "فيزياء فلكية، ثم دكتوراه",
+      },
       { en: "Taser first", ar: "الصاعق أولًا" },
       { en: "Says the obvious thing", ar: "تقول الشيء البديهي" },
     ],
@@ -3396,7 +3445,10 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "CIA, Joint Counter Terrorist", ar: "الاستخبارات المركزية، مكافحة الإرهاب" },
+      {
+        en: "CIA, Joint Counter Terrorist",
+        ar: "الاستخبارات المركزية، مكافحة الإرهاب",
+      },
       { en: "Flies anything", ar: "يقود أي طائرة" },
       { en: "Knows when to say nothing", ar: "يعرف متى يصمت" },
     ],
@@ -3427,7 +3479,10 @@ const supporting: CharacterDraft[] = [
     powers: [
       /* Scored ZERO. "Darkforce and Lightforce" is two extradimensional
          energies and the patterns knew neither word. */
-      { en: "Darkforce and Lightforce energy", ar: "طاقتا الدارك فورس واللايت فورس" },
+      {
+        en: "Darkforce and Lightforce energy",
+        ar: "طاقتا الدارك فورس واللايت فورس",
+      },
       { en: "Corrupts a man by touching him", ar: "يفسد الرجل بلمسة" },
       { en: "Heals with the other hand", ar: "يشفي باليد الأخرى" },
       { en: "Enhanced strength and durability", ar: "قوة وصلابة معززتان" },
@@ -3458,9 +3513,7 @@ const supporting: CharacterDraft[] = [
       en: "Something very old that trades in what people will give up, and has never once needed to break a deal to win one.",
       ar: "شيء قديم جدًا يتاجر بما يتنازل عنه الناس، ولم يحتج يومًا إلى نقض صفقة ليربحها.",
     },
-    related: [
-      { id: "ghost-rider", kind: "enemy" },
-    ],
+    related: [{ id: "ghost-rider", kind: "enemy" }],
   },
   {
     id: "rhomann-dey",
@@ -3481,12 +3534,9 @@ const supporting: CharacterDraft[] = [
       en: "An officer of the police force of a planet that spent a long time thinking the war was over.",
       ar: "ضابط في شرطة كوكب ظن طويلًا أن الحرب انتهت.",
     },
-    related: [
-      { id: "star-lord", kind: "ally" },
-    ],
+    related: [{ id: "star-lord", kind: "ally" }],
   },
 ];
-
 
 /**
  * THE ROOM, not just the poster.
@@ -3519,9 +3569,7 @@ const ensemble: CharacterDraft[] = [
       en: "The last of an elite guard that was wiped out in a single engagement, found centuries later on a scrapyard planet drinking her way through the memory.",
       ar: "آخر من بقي من حرس نخبة أُبيد في معركة واحدة، وُجدت بعد قرون على كوكب خردة تحاول أن تُغرق الذكرى بالشراب.",
     },
-    related: [
-      { id: "thor", kind: "ally" },
-    ],
+    related: [{ id: "thor", kind: "ally" }],
   },
   {
     id: "okoye",
@@ -3616,9 +3664,7 @@ const ensemble: CharacterDraft[] = [
       en: "The gatekeeper who can see and hear everything happening across the nine realms, and who has been quietly deciding what to report for a very long time.",
       ar: "حارس البوابة الذي يرى ويسمع كل ما يجري في العوالم التسعة، وظل زمنًا طويلًا يقرّر بهدوء ما الذي يبلّغ عنه.",
     },
-    related: [
-      { id: "thor", kind: "ally" },
-    ],
+    related: [{ id: "thor", kind: "ally" }],
   },
   {
     id: "happy-hogan",
@@ -3688,9 +3734,7 @@ const ensemble: CharacterDraft[] = [
       en: "The astrophysicist who found a man falling out of the sky in New Mexico and was the only person in the desert treating it as data.",
       ar: "عالمة الفيزياء الفلكية التي وجدت رجلًا يسقط من السماء في نيومكسيكو، وكانت الوحيدة في الصحراء التي تعاملت مع الأمر بوصفه بيانات.",
     },
-    related: [
-      { id: "thor", kind: "family" },
-    ],
+    related: [{ id: "thor", kind: "family" }],
   },
   {
     id: "aunt-may",
@@ -3709,9 +3753,7 @@ const ensemble: CharacterDraft[] = [
       en: "The aunt who raised him, and the person every version of this story eventually has to be honest with.",
       ar: "العمّة التي ربّته، والشخص الذي يضطر كل إصدار من هذه القصة أن يصدق معه في النهاية.",
     },
-    related: [
-      { id: "spider-man", kind: "family" },
-    ],
+    related: [{ id: "spider-man", kind: "family" }],
   },
   {
     id: "miek",
@@ -3772,9 +3814,7 @@ const ensemble: CharacterDraft[] = [
       en: "A Kronan gladiator made of rock, permanently and cheerfully unbothered by anything happening around him.",
       ar: "مصارع كروناني من صخر، غير مكترث على الدوام وبمرح بكل ما يجري حوله.",
     },
-    related: [
-      { id: "thor", kind: "ally" },
-    ],
+    related: [{ id: "thor", kind: "ally" }],
   },
   {
     id: "ramonda",
@@ -3838,7 +3878,10 @@ const ensemble: CharacterDraft[] = [
     species: "Human",
     powers: [
       { en: "Changes size", ar: "تغيّر حجمها" },
-      { en: "Thirty years in the quantum realm", ar: "ثلاثون عامًا في العالم الكمّي" },
+      {
+        en: "Thirty years in the quantum realm",
+        ar: "ثلاثون عامًا في العالم الكمّي",
+      },
     ],
     origin: {
       en: "The first Wasp, lost below the smallest scale there is for thirty years, and the only person alive who knows what is down there.",
@@ -3889,7 +3932,10 @@ const ensemble: CharacterDraft[] = [
          makes him a different character from Banner and it was not there, nor
          was the strength, the durability or the healing. */
       { en: "Strength that grows with his rage", ar: "قوة تنمو مع غضبه" },
-      { en: "Absorbs radiation and burns with it", ar: "يمتص الإشعاع ويحترق به" },
+      {
+        en: "Absorbs radiation and burns with it",
+        ar: "يمتص الإشعاع ويحترق به",
+      },
       { en: "Near-total durability", ar: "صلابة شبه تامة" },
       { en: "Heals from almost anything", ar: "يشفى من أي شيء تقريبًا" },
       { en: "Keeps his military mind", ar: "يحتفظ بعقله العسكري" },
@@ -3922,9 +3968,7 @@ const ensemble: CharacterDraft[] = [
       en: "The deputy who actually runs the agency day to day, and the one person its director tells the truth to first.",
       ar: "النائبة التي تدير الوكالة فعليًا يومًا بيوم، والشخص الوحيد الذي يصارحه مديرها أولًا.",
     },
-    related: [
-      { id: "nick-fury", kind: "ally" },
-    ],
+    related: [{ id: "nick-fury", kind: "ally" }],
   },
   {
     id: "kraglin",
@@ -3943,9 +3987,7 @@ const ensemble: CharacterDraft[] = [
       en: "A Ravager who stayed when the rest left, and inherited a weapon he was nowhere near ready to use.",
       ar: "أحد الرافيجرز بقي حين رحل الباقون، فورث سلاحًا لم يكن مستعدًا لاستخدامه إطلاقًا.",
     },
-    related: [
-      { id: "rocket", kind: "ally" },
-    ],
+    related: [{ id: "rocket", kind: "ally" }],
   },
   {
     id: "mbaku",
@@ -3964,9 +4006,7 @@ const ensemble: CharacterDraft[] = [
       en: "The leader of the mountain tribe that walked away from Wakanda's throne generations ago and has been loudly unimpressed ever since.",
       ar: "زعيم قبيلة الجبل التي انفصلت عن عرش واكاندا قبل أجيال، وظل معلنًا عدم إعجابه منذ ذلك الحين.",
     },
-    related: [
-      { id: "black-panther", kind: "ally" },
-    ],
+    related: [{ id: "black-panther", kind: "ally" }],
   },
   {
     id: "ebony-maw",
@@ -4051,9 +4091,7 @@ const ensemble: CharacterDraft[] = [
       en: "The Black Order's largest member, brought along for the parts of a conquest that do not require a conversation.",
       ar: "أضخم أعضاء النظام الأسود، يُصطحب لأجزاء الغزو التي لا تحتاج إلى حوار.",
     },
-    related: [
-      { id: "thanos", kind: "ally" },
-    ],
+    related: [{ id: "thanos", kind: "ally" }],
   },
   {
     id: "eitri",
@@ -4072,9 +4110,7 @@ const ensemble: CharacterDraft[] = [
       en: "The king of the forge that made most of Asgard's weapons, and the last of the smiths who worked there.",
       ar: "ملك المصهر الذي صنع معظم أسلحة أسجارد، وآخر الحدّادين الذين عملوا فيه.",
     },
-    related: [
-      { id: "thor", kind: "ally" },
-    ],
+    related: [{ id: "thor", kind: "ally" }],
   },
   {
     id: "the-collector",
@@ -4093,9 +4129,7 @@ const ensemble: CharacterDraft[] = [
       en: "One of the oldest beings alive, who has spent that life acquiring one of everything and does not distinguish between an object and a person.",
       ar: "أحد أقدم الكائنات الحية، أمضى عمره يقتني واحدًا من كل شيء، ولا يفرّق بين شيء وشخص.",
     },
-    related: [
-      { id: "grandmaster", kind: "family" },
-    ],
+    related: [{ id: "grandmaster", kind: "family" }],
   },
   {
     id: "grandmaster",
@@ -4159,9 +4193,7 @@ const ensemble: CharacterDraft[] = [
       en: "One of the Dora Milaje, and the one most willing to say out loud when the throne is wrong.",
       ar: "إحدى الدورا ميلاجي، وأكثرهن استعدادًا لتقول بصوت عالٍ إن العرش مخطئ.",
     },
-    related: [
-      { id: "okoye", kind: "ally" },
-    ],
+    related: [{ id: "okoye", kind: "ally" }],
   },
 ];
 
@@ -5156,8 +5188,10 @@ const inhumans: CharacterDraft[] = [
     universe: ["marvel-tv"],
     species: "Inhuman",
     powers: [
-      { en: "Breathes water", ar: "يتنفّس تحت الماء" },
-      { en: "Cannot survive long in air", ar: "لا يطيق الهواء طويلًا" },
+      { en: "Enhanced strength and durability", ar: "قوة وصلابة معززتان" },
+      { en: "Moves through water at speed", ar: "يتحرك في الماء بسرعة" },
+      { en: "Breathes water", ar: "يتنفس الماء" },
+      { en: "Cannot survive long in air", ar: "لا يعيش طويلًا في الهواء" },
     ],
     origin: {
       en: "Karnak's brother, whose Terrigenesis made him amphibious and, in the same stroke, unable to live on dry land for long. The gift and the exile arrived together.",
@@ -5175,7 +5209,14 @@ const inhumans: CharacterDraft[] = [
     universe: ["marvel-tv"],
     species: "Inhuman",
     powers: [
-      { en: "Teleports anywhere", ar: "ينتقل آنيًا إلى أي مكان" },
+      /* "Teleports anywhere / Very large dog" scored MINUS TWENTY-TWO and sat
+         above Iron Fist. He is a dog, and the teleport is genuinely enormous —
+         he has moved the Inhuman royal family between star systems. Written
+         out, he earns a place instead of being handed one. */
+      { en: "Teleports anywhere at all", ar: "ينتقل آنيًا إلى أي مكان" },
+      { en: "Carries others with him", ar: "ينقل غيره معه" },
+      { en: "Crosses interstellar distances", ar: "يقطع مسافات بين النجوم" },
+      { en: "Enormous strength and durability", ar: "قوة وصلابة هائلتان" },
       { en: "Very large dog", ar: "كلب ضخم جدًا" },
     ],
     origin: {
@@ -5198,7 +5239,14 @@ const thunderbolts: CharacterDraft[] = [
     id: "sentry",
     nameEn: "Sentry",
     nameAr: "الحارس",
-    aliases: ["Sentry", "The Sentry", "Robert Reynolds", "Bob Reynolds", "The Void", "Bob"],
+    aliases: [
+      "Sentry",
+      "The Sentry",
+      "Robert Reynolds",
+      "Bob Reynolds",
+      "The Void",
+      "Bob",
+    ],
     category: "antihero",
     affiliation: ["Thunderbolts"],
     universe: ["mcu"],
@@ -5254,7 +5302,10 @@ const thunderbolts: CharacterDraft[] = [
     powers: [
       { en: "Soviet super-soldier serum", ar: "مصل الجندي الخارق السوفييتي" },
       { en: "Shield", ar: "درع" },
-      { en: "Tells the story differently each time", ar: "يروي الحكاية مختلفةً كل مرة" },
+      {
+        en: "Tells the story differently each time",
+        ar: "يروي الحكاية مختلفةً كل مرة",
+      },
     ],
     origin: {
       en: "The USSR's answer to Captain America, who spent his best years undercover as a father to two girls who were not his and has never worked out that it was the realest thing he did.",
@@ -5322,14 +5373,22 @@ const thunderbolts: CharacterDraft[] = [
     id: "valentina",
     nameEn: "Valentina Allegra de Fontaine",
     nameAr: "فالنتينا أليغرا دي فونتين",
-    aliases: ["Valentina Allegra de Fontaine", "Valentina", "Val", "Contessa Valentina Allegra de Fontaine"],
+    aliases: [
+      "Valentina Allegra de Fontaine",
+      "Valentina",
+      "Val",
+      "Contessa Valentina Allegra de Fontaine",
+    ],
     category: "villain",
     affiliation: ["Thunderbolts", "CIA"],
     universe: ["mcu"],
     species: "Human",
     powers: [
       { en: "Runs the CIA", ar: "تدير الاستخبارات المركزية" },
-      { en: "Recruits people at their lowest", ar: "تجنّد الناس في أضعف لحظاتهم" },
+      {
+        en: "Recruits people at their lowest",
+        ar: "تجنّد الناس في أضعف لحظاتهم",
+      },
     ],
     origin: {
       en: "A spymaster who appears in a post-credits scene every time someone is desperate enough to sign anything, and assembles a team out of exactly those people.",
@@ -5434,7 +5493,12 @@ const moreMutants: CharacterDraft[] = [
     id: "angel",
     nameEn: "Angel",
     nameAr: "أنجل",
-    aliases: ["Angel", "Warren Worthington III", "Archangel", "Warren Worthington"],
+    aliases: [
+      "Angel",
+      "Warren Worthington III",
+      "Archangel",
+      "Warren Worthington",
+    ],
     category: "hero",
     affiliation: ["X-Men"],
     universe: ["fox"],
@@ -5477,7 +5541,10 @@ const moreMutants: CharacterDraft[] = [
     mutantClass: "omega",
     powers: [
       { en: "Copies any mutant power nearby", ar: "تنسخ أي قدرة طافرة قريبة" },
-      { en: "The first mutant born after M-Day", ar: "أول طافرة تولد بعد يوم إم" },
+      {
+        en: "The first mutant born after M-Day",
+        ar: "أول طافرة تولد بعد يوم إم",
+      },
     ],
     origin: {
       en: "The first mutant born after the Scarlet Witch ended the species, which made her an infant that half the world wanted dead. Cable took her into the future to raise her out of reach.",
@@ -5717,7 +5784,13 @@ const moreSpider: CharacterDraft[] = [
       en: "A Peter Parker from a 1933 where the Depression never lifted, who narrates his own life like a detective novel and does not understand colour when he sees it.",
       ar: "بيتر باركر من عام 1933 لم ينقشع فيه الكساد، يروي حياته كرواية بوليسية ولا يفهم الألوان حين يراها.",
     },
-    related: [{ id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" }],
+    related: [
+      {
+        id: "spider-man",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
+    ],
   },
   {
     id: "peni-parker",
@@ -6357,8 +6430,14 @@ const others: CharacterDraft[] = [
       { en: "Claws that cut most things", ar: "مخالب تقطع أغلب الأشياء" },
       { en: "Heals from almost anything", ar: "يشفى من أي شيء تقريبًا" },
       { en: "Near-total durability", ar: "صلابة شبه تامة" },
-      { en: "Enhanced senses, and sees in the dark", ar: "حواس معززة ورؤية ليلية" },
-      { en: "Turns at the full moon, and cannot stop", ar: "يتحول باكتمال القمر ولا يملك وقفه" },
+      {
+        en: "Enhanced senses, and sees in the dark",
+        ar: "حواس معززة ورؤية ليلية",
+      },
+      {
+        en: "Turns at the full moon, and cannot stop",
+        ar: "يتحول باكتمال القمر ولا يملك وقفه",
+      },
     ],
     origin: {
       en: "A cursed man who enters a monster hunters' contest in order to free the monster rather than kill it. His special is shot in black and white with the grain and the title cards of a 1940s horror film, which is the whole idea.",
@@ -6464,7 +6543,10 @@ const others: CharacterDraft[] = [
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
-      { en: "Osborn's formula, without the madness", ar: "تركيبة أوزبورن بلا جنونها" },
+      {
+        en: "Osborn's formula, without the madness",
+        ar: "تركيبة أوزبورن بلا جنونها",
+      },
       { en: "Glider and pumpkin bombs", ar: "منزلق وقنابل يقطين" },
       { en: "Lets other men take the fall", ar: "يجعل غيره يدفع الثمن" },
     ],
@@ -6588,7 +6670,10 @@ const others: CharacterDraft[] = [
     universe: ["sony", "mcu"],
     species: "Human",
     powers: [
-      { en: "Reads people faster than they like", ar: "تقرأ الناس أسرع مما يريحهم" },
+      {
+        en: "Reads people faster than they like",
+        ar: "تقرأ الناس أسرع مما يريحهم",
+      },
       { en: "Deadpan", ar: "سخرية بلا تعبير" },
       { en: "Decathlon captain", ar: "قائدة فريق العشاري" },
     ],
@@ -6750,14 +6835,21 @@ const others: CharacterDraft[] = [
     powers: [
       { en: "The super-soldier serum", ar: "مصل الجندي الخارق" },
       { en: "Vibranium shield", ar: "درع من الفيبرانيوم" },
-      { en: "The agent who was already better", ar: "العميلة التي كانت أفضل أصلًا" },
+      {
+        en: "The agent who was already better",
+        ar: "العميلة التي كانت أفضل أصلًا",
+      },
     ],
     origin: {
       en: "The Peggy Carter from a universe where she stepped into the chamber instead of Steve Rogers. She was the better tactician in every version of the story; this is the one where somebody let her take the serum too.",
       ar: "بيغي كارتر من كونٍ دخلت فيه الحجرة بدل ستيف روجرز. كانت الأمهر تكتيكيًا في كل نسخة من الحكاية، وهذه النسخة التي سُمح لها فيها بأخذ المصل أيضًا.",
     },
     related: [
-      { id: "peggy-carter", kind: "variant", variantOrigin: "alternate-universe" },
+      {
+        id: "peggy-carter",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
       { id: "captain-america", kind: "ally" },
     ],
   },
@@ -6946,7 +7038,9 @@ const others: CharacterDraft[] = [
       en: "The Loki who faked his death on Thanos's ship and spent a lifetime alone on a planet, which he eventually could not bear. His last illusion is the largest anyone in the series casts.",
       ar: "لوكي الذي زيّف موته على متن سفينة ثانوس وأمضى عمرًا وحيدًا على كوكب، حتى لم يعد يحتمل. وآخر أوهامه أضخم ما يصنعه أحد في المسلسل.",
     },
-    related: [{ id: "loki", kind: "variant", variantOrigin: "timeline-branch" }],
+    related: [
+      { id: "loki", kind: "variant", variantOrigin: "timeline-branch" },
+    ],
   },
   {
     id: "boastful-loki",
@@ -6966,7 +7060,9 @@ const others: CharacterDraft[] = [
       en: "A Loki who says he killed Captain America and Iron Man with his bare hands, in a group of Lokis where nobody believes anybody. The betrayal is telegraphed and lands anyway.",
       ar: "لوكي يقول إنه قتل كابتن أمريكا والرجل الحديدي بيديه العاريتين، في جماعة من الـلوكي لا يصدّق فيها أحد أحدًا. والخيانة متوقّعة وتقع رغم ذلك.",
     },
-    related: [{ id: "loki", kind: "variant", variantOrigin: "timeline-branch" }],
+    related: [
+      { id: "loki", kind: "variant", variantOrigin: "timeline-branch" },
+    ],
   },
   {
     id: "monica-rambeau",
@@ -6978,7 +7074,10 @@ const others: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Becomes any part of the spectrum", ar: "تتحوّل إلى أي جزء من الطيف" },
+      {
+        en: "Becomes any part of the spectrum",
+        ar: "تتحوّل إلى أي جزء من الطيف",
+      },
       { en: "Passes through energy", ar: "تعبر الطاقة" },
       { en: "S.W.O.R.D. captain", ar: "قائدة في سورد" },
     ],
@@ -7176,7 +7275,10 @@ const others: CharacterDraft[] = [
     powers: [
       { en: "Anarchy, as a method", ar: "الفوضوية بوصفها منهجًا" },
       { en: "A guitar that is also a weapon", ar: "قيثارة هي أيضًا سلاح" },
-      { en: "Animates in his own frame rate", ar: "يتحرّك بمعدّل إطاراته الخاص" },
+      {
+        en: "Animates in his own frame rate",
+        ar: "يتحرّك بمعدّل إطاراته الخاص",
+      },
     ],
     origin: {
       en: "A British punk from a London under a fascist regime, who joined the Spider-Society specifically to steal from it. He is animated in a different style and a different frame rate from everyone around him, which is the film saying he does not belong to their system.",
@@ -7280,7 +7382,10 @@ const others: CharacterDraft[] = [
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
-      { en: "The same powers, taken not given", ar: "القدرات نفسها، مأخوذة لا موهوبة" },
+      {
+        en: "The same powers, taken not given",
+        ar: "القدرات نفسها، مأخوذة لا موهوبة",
+      },
       { en: "Knows what the spider means", ar: "يعرف ما يعنيه العنكبوت" },
     ],
     origin: {
@@ -7350,7 +7455,6 @@ const whiteVision: CharacterDraft[] = [
     ],
   },
 ];
-
 
 /**
  * FIVE THE CORPUS HAD MISSED, every one of them a real TMDB credit.
@@ -7489,7 +7593,6 @@ const laterAdditions: CharacterDraft[] = [
   },
 ];
 
-
 /**
  * THE ANTAGONISTS THE CORPUS HAD NEVER WRITTEN DOWN.
  *
@@ -7610,9 +7713,7 @@ const knowhere: CharacterDraft[] = [
       en: "Stakar's second in command, made of crystal and considerably more patient than the man he answers to. He is the one who suggests they call the old team back.",
       ar: "نائب ستاكار، مصنوع من البلّور وأكثر صبرًا بكثير ممن يتبعه. وهو من يقترح استدعاء الفريق القديم.",
     },
-    related: [
-      { id: "stakar-ogord", kind: "ally" },
-    ],
+    related: [{ id: "stakar-ogord", kind: "ally" }],
   },
   {
     id: "krugarr",
@@ -7633,9 +7734,7 @@ const knowhere: CharacterDraft[] = [
       en: "A serpentine sorcerer and one of Stakar's original crew, who says nothing at all and does not need to. The mandalas he draws in the air are the same ones Strange learns much later.",
       ar: "ساحر أفعواني من طاقم ستاكار الأصلي، لا ينطق البتة ولا يحتاج. والدوائر التي يرسمها في الهواء هي نفسها التي يتعلّمها سترينج بعد ذلك بزمن طويل.",
     },
-    related: [
-      { id: "stakar-ogord", kind: "ally" },
-    ],
+    related: [{ id: "stakar-ogord", kind: "ally" }],
   },
   {
     id: "mainframe",
@@ -7655,9 +7754,7 @@ const knowhere: CharacterDraft[] = [
       en: "An artificial intelligence that governs a planet and joins the old Ravager crew from wherever she happens to be, which is everywhere on it at the same time.",
       ar: "ذكاء اصطناعي يحكم كوكبًا وينضم إلى طاقم الرافيجرز القديم من حيث هو، أي من كل مكان عليه في آنٍ واحد.",
     },
-    related: [
-      { id: "stakar-ogord", kind: "ally" },
-    ],
+    related: [{ id: "stakar-ogord", kind: "ally" }],
   },
   {
     id: "lylla",
@@ -7677,9 +7774,7 @@ const knowhere: CharacterDraft[] = [
       en: "An otter rebuilt with metal hands in the same cage Rocket was, who is the reason he knows what a friend is and the reason he has spent his life not saying so.",
       ar: "قضاعة أُعيد بناؤها بيدين معدنيتين في القفص نفسه الذي كان فيه روكِت، وهي سبب معرفته معنى الصديق، وسبب صمته عن ذلك طوال حياته.",
     },
-    related: [
-      { id: "rocket", kind: "family" },
-    ],
+    related: [{ id: "rocket", kind: "family" }],
   },
   {
     id: "teefs",
@@ -7699,9 +7794,7 @@ const knowhere: CharacterDraft[] = [
       en: "A walrus given wheels by people who did not think the question through, and one of the three friends Rocket made before he understood what would happen to them.",
       ar: "فظّ مُنح عجلات على يد من لم يفكّروا في المسألة جيدًا، وأحد الأصدقاء الثلاثة الذين عرفهم روكِت قبل أن يفهم ما سيحلّ بهم.",
     },
-    related: [
-      { id: "rocket", kind: "family" },
-    ],
+    related: [{ id: "rocket", kind: "family" }],
   },
   {
     id: "floor",
@@ -7721,9 +7814,7 @@ const knowhere: CharacterDraft[] = [
       en: "A rabbit given spider legs, who has one word and uses it for everything, and who named herself after the only thing she had ever been able to see.",
       ar: "أرنبة مُنحت أرجل عنكبوت، تملك كلمة واحدة تستعملها لكل شيء، وسمّت نفسها باسم الشيء الوحيد الذي استطاعت رؤيته يومًا.",
     },
-    related: [
-      { id: "rocket", kind: "family" },
-    ],
+    related: [{ id: "rocket", kind: "family" }],
   },
 ];
 
@@ -7799,7 +7890,10 @@ const laterHeroes: CharacterDraft[] = [
        natural lineage. The class describes the symbiote, not the man. */
     symbioteClass: "lineage",
     powers: [
-      { en: "Bonded to the symbiote, in print", ar: "متّحد بالسيمبيوت في المطبوع" },
+      {
+        en: "Bonded to the symbiote, in print",
+        ar: "متّحد بالسيمبيوت في المطبوع",
+      },
       { en: "Military training", ar: "تدريب عسكري" },
       { en: "Idolises Spider-Man", ar: "يتّخذ سبايدر-مان مثلًا" },
     ],
@@ -7864,9 +7958,7 @@ const smallScreen: CharacterDraft[] = [
       en: "A boy who watched his brother shot by a policeman and could do nothing, and who wakes with a darkness inside him that goes wherever he needs to be and takes him with it.",
       ar: "فتى رأى شرطيًا يقتل أخاه ولم يستطع شيئًا، ثم استيقظ وفي داخله ظلام يذهب حيث يحتاج أن يكون ويأخذه معه.",
     },
-    related: [
-      { id: "dagger", kind: "ally" },
-    ],
+    related: [{ id: "dagger", kind: "ally" }],
   },
   {
     id: "dagger",
@@ -7886,9 +7978,7 @@ const smallScreen: CharacterDraft[] = [
       en: "A girl whose father died the same night that boy's brother did, in the same accident, and who has been stealing her way through the city since. The light in her hands shows people what they hope for.",
       ar: "فتاة مات أبوها في الليلة نفسها التي مات فيها أخو ذلك الفتى، في الحادث نفسه، وظلت تسرق طريقها في المدينة منذاك. الضوء في يديها يُري الناس ما يرجونه.",
     },
-    related: [
-      { id: "cloak", kind: "ally" },
-    ],
+    related: [{ id: "cloak", kind: "ally" }],
   },
   {
     id: "mayhem",
@@ -7934,9 +8024,7 @@ const smallScreen: CharacterDraft[] = [
       en: "The daughter of two people who turn out to be worse than she suspected, holding a staff that grants any spell she can name and refuses to grant the same one twice.",
       ar: "ابنة اثنين تبيّن أنهما أسوأ مما ظنّت، تحمل عصا تحقّق أي تعويذة تسمّيها وترفض أن تحقّق الواحدة مرتين.",
     },
-    related: [
-      { id: "karolina-dean", kind: "family" },
-    ],
+    related: [{ id: "karolina-dean", kind: "family" }],
   },
   {
     id: "karolina-dean",
@@ -7956,9 +8044,7 @@ const smallScreen: CharacterDraft[] = [
       en: "Raised in a church her mother runs, wearing a bracelet she was told never to remove. Taking it off is how she learns what she is and where her parents actually came from.",
       ar: "نشأت في كنيسة تديرها أمها، وترتدي سوارًا قيل لها ألّا تنزعه أبدًا. ونزعه هو ما تعرف به ما هي ومن أين جاء والداها حقًا.",
     },
-    related: [
-      { id: "nico-minoru", kind: "family" },
-    ],
+    related: [{ id: "nico-minoru", kind: "family" }],
   },
   {
     id: "gert-yorkes",
@@ -7978,9 +8064,7 @@ const smallScreen: CharacterDraft[] = [
       en: "The one who names the problem out loud while everyone else is still deciding whether to. Her parents built her a genetically engineered dinosaur that answers to her feelings.",
       ar: "من تسمّي المشكلة بصوت عالٍ بينما لا يزال الآخرون يقرّرون إن كانوا سيفعلون. بنى لها والداها ديناصورًا معدّلًا وراثيًا يستجيب لمشاعرها.",
     },
-    related: [
-      { id: "chase-stein", kind: "ally" },
-    ],
+    related: [{ id: "chase-stein", kind: "ally" }],
   },
   {
     id: "chase-stein",
@@ -8000,9 +8084,7 @@ const smallScreen: CharacterDraft[] = [
       en: "The athlete everyone reads as the stupid one, including his father, who built the flame gauntlets Chase steals and then works out how to improve.",
       ar: "الرياضي الذي يقرأه الجميع بوصفه الغبي، ومنهم أبوه، الذي صنع قفازات اللهب التي يسرقها تشيس ثم يعرف كيف يحسّنها.",
     },
-    related: [
-      { id: "gert-yorkes", kind: "ally" },
-    ],
+    related: [{ id: "gert-yorkes", kind: "ally" }],
   },
   {
     id: "molly-hernandez",
@@ -8022,9 +8104,7 @@ const smallScreen: CharacterDraft[] = [
       en: "The youngest of them by years, strong enough to lift a car and tired enough afterwards to sleep through the argument about what to do next.",
       ar: "أصغرهم بسنوات، تقوى على رفع سيارة وتتعب بعدها بما يكفي لتنام خلال الجدال حول ما يُفعل تاليًا.",
     },
-    related: [
-      { id: "gert-yorkes", kind: "family" },
-    ],
+    related: [{ id: "gert-yorkes", kind: "family" }],
   },
   {
     id: "alex-wilder",
@@ -8044,9 +8124,7 @@ const smallScreen: CharacterDraft[] = [
       en: "The one who calls them back together after two years apart, and the one whose reasons for doing it take the longest to come out.",
       ar: "من يدعوهم للاجتماع بعد عامين من الفرقة، ومن تتأخر أسبابه في الظهور أكثر من الجميع.",
     },
-    related: [
-      { id: "nico-minoru", kind: "ally" },
-    ],
+    related: [{ id: "nico-minoru", kind: "ally" }],
   },
   {
     id: "daimon-helstrom",
@@ -8067,9 +8145,7 @@ const smallScreen: CharacterDraft[] = [
       en: "The son of a serial killer and something worse, teaching ethics by day and pulling demons out of people by night, and refusing the half of himself that makes him good at it.",
       ar: "ابن قاتل متسلسل وشيء أسوأ، يدرّس الأخلاق نهارًا وينتزع الشياطين من الناس ليلًا، ويرفض النصف الذي يجعله بارعًا في ذلك.",
     },
-    related: [
-      { id: "ana-helstrom", kind: "family" },
-    ],
+    related: [{ id: "ana-helstrom", kind: "family" }],
   },
   {
     id: "ana-helstrom",
@@ -8090,9 +8166,7 @@ const smallScreen: CharacterDraft[] = [
       en: "His younger sister, who got the same inheritance and made none of his apologies for it. One touch tells her everything a person has done.",
       ar: "أخته الصغرى، ورثت الشيء نفسه ولم تعتذر عنه كما فعل. لمسة واحدة تخبرها بكل ما فعله المرء.",
     },
-    related: [
-      { id: "daimon-helstrom", kind: "family" },
-    ],
+    related: [{ id: "daimon-helstrom", kind: "family" }],
   },
   {
     id: "mirage",
@@ -8112,9 +8186,7 @@ const smallScreen: CharacterDraft[] = [
       en: "A girl who survives the night her reservation does not, and wakes in a hospital that is not one, with a power she has not been told about and cannot yet control.",
       ar: "فتاة تنجو في الليلة التي لا تنجو فيها محميّتها، وتستيقظ في مستشفى ليس مستشفى، ومعها قدرة لم يخبرها بها أحد ولا تستطيع ضبطها بعد.",
     },
-    related: [
-      { id: "magik", kind: "ally" },
-    ],
+    related: [{ id: "magik", kind: "ally" }],
   },
   {
     id: "magik",
@@ -8157,9 +8229,7 @@ const smallScreen: CharacterDraft[] = [
       en: "A Kentucky mining boy whose power went off underground the first time and brought the roof down. He has been apologising for it ever since.",
       ar: "فتى من مناجم كنتاكي انطلقت قدرته تحت الأرض أول مرة فأسقطت السقف. وهو يعتذر عن ذلك منذ حينها.",
     },
-    related: [
-      { id: "mirage", kind: "ally" },
-    ],
+    related: [{ id: "mirage", kind: "ally" }],
   },
   {
     id: "wolfsbane",
@@ -8179,9 +8249,7 @@ const smallScreen: CharacterDraft[] = [
       en: "A Scottish girl taught by her church that what she turns into is a sin, who is gentler than anyone else there and the quickest to believe she deserves the room she is locked in.",
       ar: "فتاة اسكتلندية علّمتها كنيستها أن ما تتحوّل إليه خطيئة، وهي أرقّ من في المكان وأسرعهم تصديقًا بأنها تستحق الغرفة التي حُبست فيها.",
     },
-    related: [
-      { id: "mirage", kind: "ally" },
-    ],
+    related: [{ id: "mirage", kind: "ally" }],
   },
   {
     id: "sunspot",
@@ -8201,9 +8269,7 @@ const smallScreen: CharacterDraft[] = [
       en: "A Brazilian heir who burned a girl to death the first time it happened, in front of everyone, and has been performing arrogance over it ever since.",
       ar: "وريث برازيلي أحرق فتاة حتى الموت في المرة الأولى، أمام الجميع، وظل يؤدّي الغطرسة فوق ذلك منذاك.",
     },
-    related: [
-      { id: "magik", kind: "ally" },
-    ],
+    related: [{ id: "magik", kind: "ally" }],
   },
 ];
 
@@ -8233,9 +8299,7 @@ const foxTv: CharacterDraft[] = [
       en: "A mutant who worked for a cartel because nobody legitimate would take him, and who leaves it to help a network moving mutant families out of the country.",
       ar: "متحوّل عمل لدى عصابة لأن لا جهة شرعية قبلته، ثم تركها ليساعد شبكة تُهرّب عائلات المتحوّلين خارج البلاد.",
     },
-    related: [
-      { id: "polaris", kind: "family" },
-    ],
+    related: [{ id: "polaris", kind: "family" }],
   },
   {
     id: "thunderbird",
@@ -8255,9 +8319,7 @@ const foxTv: CharacterDraft[] = [
       en: "A former Marine who runs the Mutant Underground the way he ran a squad, and who can follow anyone anywhere by the trace they leave behind them.",
       ar: "جندي بحرية سابق يدير المقاومة المتحوّلة كما كان يدير فصيلة، ويستطيع تعقّب أي أحد في أي مكان بالأثر الذي يتركه.",
     },
-    related: [
-      { id: "eclipse", kind: "ally" },
-    ],
+    related: [{ id: "eclipse", kind: "ally" }],
   },
   {
     id: "lauren-strucker",
@@ -8277,9 +8339,7 @@ const foxTv: CharacterDraft[] = [
       en: "A teenager who has hidden what she can do since she was small, and who finds out her family name is one mutants have every reason to fear.",
       ar: "مراهقة أخفت ما تستطيع فعله منذ صغرها، ثم تكتشف أن اسم عائلتها اسم للمتحوّلين كل سبب لأن يخافوه.",
     },
-    related: [
-      { id: "andy-strucker", kind: "family" },
-    ],
+    related: [{ id: "andy-strucker", kind: "family" }],
   },
   {
     id: "andy-strucker",
@@ -8299,9 +8359,7 @@ const foxTv: CharacterDraft[] = [
       en: "The younger of the two, whose power arrives the day he is pushed too far, and who finds the people offering him a use for it more persuasive than his family does.",
       ar: "الأصغر بينهما، تصله قدرته يوم يُدفع أبعد مما يحتمل، فيجد من يعرضون عليه استعمالها أكثر إقناعًا من عائلته.",
     },
-    related: [
-      { id: "lauren-strucker", kind: "family" },
-    ],
+    related: [{ id: "lauren-strucker", kind: "family" }],
   },
   {
     id: "shadow-king",
@@ -8321,9 +8379,7 @@ const foxTv: CharacterDraft[] = [
       en: "A telepath with no body of his own, who has been living inside another man's head since that man was a child, and who has been called the illness the whole time.",
       ar: "متخاطر بلا جسد خاص، يعيش داخل رأس رجل آخر منذ كان طفلًا، وظل يُسمّى طوال الوقت مرضًا.",
     },
-    related: [
-      { id: "legion", kind: "enemy" },
-    ],
+    related: [{ id: "legion", kind: "enemy" }],
   },
   {
     id: "syd-barrett",
@@ -8343,9 +8399,7 @@ const foxTv: CharacterDraft[] = [
       en: "A mutant who takes over the body of anyone who touches her and therefore lets nobody, in love with a man who can enter anybody's mind.",
       ar: "متحوّلة تستولي على جسد كل من يلمسها فلا تدع أحدًا يفعل، تحبّ رجلًا يستطيع دخول أي عقل.",
     },
-    related: [
-      { id: "legion", kind: "ally" },
-    ],
+    related: [{ id: "legion", kind: "ally" }],
   },
 ];
 
@@ -8390,9 +8444,7 @@ const antagonists: CharacterDraft[] = [
       en: "Howard Stark's old partner, who ran the company while Tony grew up and never expected to hand it back. He builds a larger version of the suit out of the parts of the one that got away.",
       ar: "شريك هوارد ستارك القديم، أدار الشركة بينما كان توني يكبر، ولم يتوقّع يومًا أن يعيدها. يبني نسخة أكبر من البذلة من قطع تلك التي أفلتت منه.",
     },
-    related: [
-      { id: "iron-man", kind: "enemy" },
-    ],
+    related: [{ id: "iron-man", kind: "enemy" }],
   },
   {
     id: "ivan-vanko",
@@ -8435,9 +8487,7 @@ const antagonists: CharacterDraft[] = [
       en: "A weapons manufacturer who has spent his career one step behind Stark Industries and blames everyone but himself. He funds a better engineer and takes the credit in advance.",
       ar: "صانع أسلحة أمضى مسيرته متأخّرًا خطوة عن ستارك إندستريز، ويلوم الجميع إلا نفسه. يموّل مهندسًا أفضل منه، ثم ينسب الفضل لنفسه سلفًا.",
     },
-    related: [
-      { id: "iron-man", kind: "enemy" },
-    ],
+    related: [{ id: "iron-man", kind: "enemy" }],
   },
   {
     id: "arnim-zola",
@@ -8570,15 +8620,16 @@ const antagonists: CharacterDraft[] = [
     powers: [
       { en: "The Necrosword", ar: "سيف الموت" },
       { en: "Shadow monsters", ar: "وحوش من الظل" },
-      { en: "Cannot be lied to about gods", ar: "لا يُكذَب عليه في أمر الآلهة" },
+      {
+        en: "Cannot be lied to about gods",
+        ar: "لا يُكذَب عليه في أمر الآلهة",
+      },
     ],
     origin: {
       en: "A man who crossed a desert praying for his daughter and buried her anyway, then found the god he had prayed to laughing. A sword finds him at the worst possible moment and agrees with him.",
       ar: "رجل قطع صحراء داعيًا لأجل ابنته ثم دفنها رغم ذلك، فوجد الإله الذي دعاه يضحك. يجده سيف في أسوأ لحظة ممكنة، ويوافقه الرأي.",
     },
-    related: [
-      { id: "thor", kind: "enemy" },
-    ],
+    related: [{ id: "thor", kind: "enemy" }],
   },
   {
     id: "dreykov",
@@ -8598,9 +8649,7 @@ const antagonists: CharacterDraft[] = [
       en: "The man who built the Red Room and the widows inside it, and who has spent decades convincing the world he is a story. His only real defence is that nobody believes he exists.",
       ar: "الرجل الذي بنى الغرفة الحمراء والأرامل داخلها، وأمضى عقودًا يقنع العالم بأنه مجرد حكاية. دفاعه الحقيقي الوحيد أن لا أحد يصدّق وجوده.",
     },
-    related: [
-      { id: "black-widow", kind: "enemy" },
-    ],
+    related: [{ id: "black-widow", kind: "enemy" }],
   },
   {
     id: "dar-benn",
@@ -8620,9 +8669,7 @@ const antagonists: CharacterDraft[] = [
       en: "A Kree accuser inheriting a dying world and a grievance older than she is, who goes looking for the person she holds responsible and takes what that world needs on the way.",
       ar: "متّهِمة كريّة ورثت عالمًا يحتضر وضغينة أقدم منها، فذهبت تبحث عمّن تحمّله المسؤولية، وأخذت في طريقها ما يحتاجه ذلك العالم.",
     },
-    related: [
-      { id: "captain-marvel", kind: "enemy" },
-    ],
+    related: [{ id: "captain-marvel", kind: "enemy" }],
   },
   {
     id: "yon-rogg",
@@ -8642,9 +8689,7 @@ const antagonists: CharacterDraft[] = [
       en: "A Kree commander and mentor who taught his best soldier that her strength was a gift he could withdraw. Everything he told her about where she came from was chosen carefully.",
       ar: "قائد كريّ ومعلّم علّم أفضل جنوده أن قوّتها هبة يستطيع سحبها. وكل ما أخبرها به عن أصلها كان مُنتقى بعناية.",
     },
-    related: [
-      { id: "captain-marvel", kind: "enemy" },
-    ],
+    related: [{ id: "captain-marvel", kind: "enemy" }],
   },
   {
     id: "cassandra-nova",
@@ -8688,9 +8733,7 @@ const antagonists: CharacterDraft[] = [
       en: "A man whose voice removes the possibility of saying no, and who has never in his life had to ask for anything. He has decided that the woman who got away belongs to him.",
       ar: "رجل يمحو صوته إمكانية الرفض، ولم يضطر يومًا في حياته أن يطلب شيئًا. وقد قرّر أن المرأة التي أفلتت منه ملكٌ له.",
     },
-    related: [
-      { id: "jessica-jones", kind: "enemy" },
-    ],
+    related: [{ id: "jessica-jones", kind: "enemy" }],
   },
   {
     id: "davos",
@@ -8710,9 +8753,7 @@ const antagonists: CharacterDraft[] = [
       en: "The best student K'un-Lun had, who watched the honour he had trained his whole life for go to an outsider who then abandoned it. He comes to take it back.",
       ar: "أفضل تلميذ في كون-لون، رأى الشرف الذي تدرّب لأجله طوال عمره يذهب إلى غريب ثم يتخلّى عنه. فجاء يستردّه.",
     },
-    related: [
-      { id: "iron-fist", kind: "enemy" },
-    ],
+    related: [{ id: "iron-fist", kind: "enemy" }],
   },
   {
     id: "mordo",
@@ -8779,9 +8820,7 @@ const antagonists: CharacterDraft[] = [
       en: "A dying industrialist inside a suit of adamantium, who owes his life to a soldier at Nagasaki and has spent seventy years working out how to take that soldier's in return.",
       ar: "صناعي يحتضر داخل بذلة من الأداماتيوم، يدين بحياته لجندي في ناغازاكي، وأمضى سبعين عامًا يفكّر كيف يأخذ حياة ذلك الجندي بدلًا منها.",
     },
-    related: [
-      { id: "wolverine", kind: "enemy" },
-    ],
+    related: [{ id: "wolverine", kind: "enemy" }],
   },
   {
     id: "viper",
@@ -8824,9 +8863,7 @@ const antagonists: CharacterDraft[] = [
       en: "The man who runs the programme that turns dying people into weapons by torturing them until something mutates. He took a mercenary's face and finds the joke has followed him home.",
       ar: "الرجل الذي يدير البرنامج الذي يحوّل المحتضرين إلى أسلحة بتعذيبهم حتى يتحوّر فيهم شيء. أخذ وجه مرتزق، فوجد النكتة تلاحقه إلى بيته.",
     },
-    related: [
-      { id: "deadpool", kind: "enemy" },
-    ],
+    related: [{ id: "deadpool", kind: "enemy" }],
   },
   {
     id: "bolivar-trask",
@@ -8869,9 +8906,7 @@ const antagonists: CharacterDraft[] = [
       en: "The ruler of the Negative Zone, whose entire existence is organised around not dying, and whose answer to anything that might threaten that is an army the size of a galaxy.",
       ar: "حاكم المنطقة السالبة، وجوده كله منظّم حول ألّا يموت، وجوابه على أي شيء قد يهدّد ذلك جيش بحجم مجرّة.",
     },
-    related: [
-      { id: "mister-fantastic", kind: "enemy" },
-    ],
+    related: [{ id: "mister-fantastic", kind: "enemy" }],
   },
   {
     id: "mole-man",
@@ -8891,9 +8926,7 @@ const antagonists: CharacterDraft[] = [
       en: "A scientist the surface world dismissed, who went down instead of out and found a kingdom nobody was using. He has not forgotten who laughed.",
       ar: "عالِم رفضه عالم السطح، فنزل بدل أن يخرج، فوجد مملكة لا يستخدمها أحد. وهو لم ينسَ من ضحك.",
     },
-    related: [
-      { id: "mister-fantastic", kind: "enemy" },
-    ],
+    related: [{ id: "mister-fantastic", kind: "enemy" }],
   },
   {
     id: "blackheart",
@@ -8938,9 +8971,7 @@ const antagonists: CharacterDraft[] = [
       en: "A vampire who was made rather than born, and who is therefore excluded from everything the pure-blood houses run. He decides to end the argument by summoning the thing they all pray to.",
       ar: "مصّاص دماء صُنع ولم يُولد، ولذلك يُستبعد من كل ما تديره بيوت الدم النقي. فقرّر أن ينهي الجدال باستحضار ما يصلّون له جميعًا.",
     },
-    related: [
-      { id: "blade", kind: "enemy" },
-    ],
+    related: [{ id: "blade", kind: "enemy" }],
   },
   {
     id: "nobu",
@@ -8984,9 +9015,7 @@ const antagonists: CharacterDraft[] = [
       en: "A serial killer who treats the city as a gallery and its people as pigment, and who has never once considered that he might be doing something wrong.",
       ar: "قاتل متسلسل يعامل المدينة كصالة عرض وأهلها كأصباغ، ولم يخطر بباله يومًا أنه قد يفعل شيئًا خاطئًا.",
     },
-    related: [
-      { id: "daredevil", kind: "enemy" },
-    ],
+    related: [{ id: "daredevil", kind: "enemy" }],
   },
   {
     id: "supreme-intelligence",
@@ -9030,9 +9059,7 @@ const antagonists: CharacterDraft[] = [
       en: "Danny Rand's father's business partner, kept alive in a locked penthouse by people who expect to be repaid. Thirteen years of that has left very little of the man his children remember.",
       ar: "شريك والد داني راند في العمل، أُبقي حيًّا في شقة علوية مغلقة على يد من ينتظرون السداد. ثلاثة عشر عامًا من ذلك لم تُبقِ الكثير من الرجل الذي يذكره ولداه.",
     },
-    related: [
-      { id: "iron-fist", kind: "enemy" },
-    ],
+    related: [{ id: "iron-fist", kind: "enemy" }],
   },
 ];
 
@@ -9414,9 +9441,7 @@ const spiderRogues: CharacterDraft[] = [
       en: "A lab assistant who stole an experimental alloy and wore it into his own skin, and now runs at a heat he cannot switch off. Staying cool enough to be near people is his whole struggle.",
       ar: "مساعد مختبر سرق سبيكة تجريبية فاندمجت في جلده، فصار يتّقد بحرارةٍ لا يستطيع إطفاءها. وأن يبرد بما يكفي ليقترب من الناس هو صراعه كله.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "silvermane",
@@ -9459,9 +9484,7 @@ const spiderRogues: CharacterDraft[] = [
       en: "A mechanic good enough to build a flying battlesuit in a garage and not quite good enough to stop robbing people with it. He keeps upgrading the armour and his luck stays the same.",
       ar: "ميكانيكي بارع بما يكفي ليصنع بدلة قتال طائرة في مرآب، وليس بارعًا بما يكفي ليكفّ عن السطو بها. يظلّ يطوّر الدرع ويظل حظه على حاله.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "boomerang",
@@ -9481,9 +9504,7 @@ const spiderRogues: CharacterDraft[] = [
       en: "A washed-out pitcher who turned a perfect throwing arm into a criminal career, and survives mostly by being more useful alive than dead to whoever he has just betrayed.",
       ar: "رامي بيسبول فاشل حوّل ذراعًا لا تخطئ إلى مسيرة إجرامية، وينجو غالبًا لأنه حيًّا أنفع ممن خانهم للتوّ منه ميتًا.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "vermin",
@@ -9503,9 +9524,7 @@ const spiderRogues: CharacterDraft[] = [
       en: "A man turned into something between a rat and a person by an experiment, who lives in the tunnels under the city and is more frightened than frightening once anyone slows down enough to see it.",
       ar: "رجل حوّلته تجربة إلى شيء بين الجرذ والإنسان، يعيش في أنفاق المدينة، وهو مذعور أكثر مما هو مُذعِر متى تمهّل أحد بما يكفي ليرى.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "demogoblin",
@@ -9549,9 +9568,7 @@ const spiderRogues: CharacterDraft[] = [
       en: "The son of the man who built the first Spider-Slayers, who blamed Spider-Man for his father's death and eventually turned himself into the machine rather than keep building them.",
       ar: "ابن الرجل الذي بنى أوائل قاتلي العنكبوت، حمّل سبايدرمان موت أبيه، وانتهى إلى أن حوّل نفسه إلى الآلة بدل أن يظلّ يصنعها.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "silver-sable",
@@ -9571,9 +9588,7 @@ const spiderRogues: CharacterDraft[] = [
       en: "The head of a mercenary outfit and of a small nation that lives on its fees, who is neither an enemy nor a friend but whoever the contract says. She keeps her word exactly as written.",
       ar: "رئيسة شركة مرتزقة ودولةٍ صغيرة تعيش على أتعابها، ليست عدوة ولا صديقة بل ما يقوله العقد. وتفي بكلمتها كما كُتبت تمامًا.",
     },
-    related: [
-      { id: "spider-man", kind: "ally" },
-    ],
+    related: [{ id: "spider-man", kind: "ally" }],
   },
   {
     id: "calypso",
@@ -9595,9 +9610,7 @@ const spiderRogues: CharacterDraft[] = [
       en: "A priestess who used Kraven as her instrument for years, steering his hunts with ritual and drums. When he was gone she went on hunting in his name.",
       ar: "كاهنة اتخذت كرايفن أداةً لها سنين، توجّه صيده بالطقوس والطبول. ولمّا مضى، مضت تصطاد باسمه.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
 ];
 
@@ -9654,9 +9667,7 @@ const namedMutants: CharacterDraft[] = [
       en: "A mutant who splits into a duplicate whenever he is struck, and who sent his copies out to learn medicine, law and combat before absorbing them back. Being a crowd is his whole method.",
       ar: "متحوّل ينقسم إلى نسخة كلما ضُرب، أرسل نسخه ليتعلّموا الطب والقانون والقتال ثم استعادهم. وأن يكون حشدًا هو منهجه كله.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "marrow",
@@ -9676,9 +9687,7 @@ const namedMutants: CharacterDraft[] = [
       en: "A Morlock raised in the tunnels beneath the city, whose bones grow through her own skin and can be pulled out as blades. She learned early that the surface world was not going to be kind.",
       ar: "مورلوك نشأت في الأنفاق تحت المدينة، تنمو عظامها عبر جلدها وتُنتزع نصالًا. وتعلّمت مبكرًا أن عالم السطح لن يكون رحيمًا.",
     },
-    related: [
-      { id: "storm", kind: "ally" },
-    ],
+    related: [{ id: "storm", kind: "ally" }],
   },
   {
     id: "forge",
@@ -9706,9 +9715,7 @@ const namedMutants: CharacterDraft[] = [
       en: "A Cheyenne engineer whose mutation is not a weapon but an understanding, since he looks at a machine and knows what it should be. Most of the X-Men's equipment exists because he made it.",
       ar: "مهندس من الشايان، طفرته ليست سلاحًا بل فهمًا: ينظر إلى آلة فيعرف ما ينبغي أن تكون. ومعظم عتاد الإكس مِن أنه صنعه.",
     },
-    related: [
-      { id: "storm", kind: "ally" },
-    ],
+    related: [{ id: "storm", kind: "ally" }],
   },
   {
     id: "sage",
@@ -9774,9 +9781,7 @@ const namedMutants: CharacterDraft[] = [
       en: "Cannonball's younger sister, who shucks her skin to reveal a body of whatever she concentrates on: rock, metal, diamond. She pushed herself harder than anyone because she was following a brother who made it look easy.",
       ar: "أخت كانونبول الصغرى، تنزع جلدها لتكشف جسدًا مما تركّز عليه: صخرًا أو معدنًا أو ماسًا. وأجهدت نفسها أكثر من الجميع لأنها تتبع أخًا بدا الأمر عنده هيّنًا.",
     },
-    related: [
-      { id: "cannonball", kind: "family" },
-    ],
+    related: [{ id: "cannonball", kind: "family" }],
   },
   {
     id: "siryn",
@@ -9796,9 +9801,7 @@ const namedMutants: CharacterDraft[] = [
       en: "Banshee's daughter, with the same sonic scream and the same trouble deciding whether to be a hero because of him or in spite of him. She can fly on the sound she makes.",
       ar: "ابنة بانشي، ورثت الصرخة الصوتية نفسها والحيرة نفسها: أتكون بطلة بسببه أم رغمًا عنه. وتستطيع الطيران على الصوت الذي تصدره.",
     },
-    related: [
-      { id: "banshee", kind: "family" },
-    ],
+    related: [{ id: "banshee", kind: "family" }],
   },
   {
     id: "sunfire",
@@ -9818,9 +9821,7 @@ const namedMutants: CharacterDraft[] = [
       en: "A Japanese mutant who generates solar plasma and who has never been comfortable on a team, joining the X-Men briefly and leaving because his loyalty was to his country before any of them.",
       ar: "متحوّل ياباني يولّد بلازما شمسية، لم يرتح يومًا في فريق، انضم إلى الإكس مِن قليلًا ثم مضى لأن ولاءه لبلده قبلهم جميعًا.",
     },
-    related: [
-      { id: "wolverine", kind: "ally" },
-    ],
+    related: [{ id: "wolverine", kind: "ally" }],
   },
   {
     id: "morph",
@@ -9863,9 +9864,7 @@ const namedMutants: CharacterDraft[] = [
       en: "A man who can hold the powers of five mutants at a time, and who was briefly the sixth X-Man before anyone was ready for him. He has spent his life being almost part of something.",
       ar: "رجل يحمل قوى خمسة متحوّلين في آن، وكان لفترة وجيزة سادس الإكس مِن قبل أن يكون أحد مستعدًا له. وقضى عمره على وشك الانتماء إلى شيء.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "madelyne-pryor",
@@ -9923,9 +9922,7 @@ const inheritors: CharacterDraft[] = [
       en: "A Soviet serial killer turned into a weapon, wound with living metal coils and cursed with a spore that kills everything near him unless he drains a life to keep it down.",
       ar: "قاتل متسلسل سوفييتي حُوّل إلى سلاح، لُفّ بملفات معدنية حية ولُعن ببوغٍ يقتل كل من حوله ما لم يمتص حياةً ليكبحه.",
     },
-    related: [
-      { id: "wolverine", kind: "enemy" },
-    ],
+    related: [{ id: "wolverine", kind: "enemy" }],
   },
   {
     id: "silk",
@@ -9945,9 +9942,7 @@ const inheritors: CharacterDraft[] = [
       en: "Bitten by the same spider that bit Peter Parker, then shut in a bunker for over a decade to hide her scent from things that hunt spiders. She came out with the powers and none of the practice.",
       ar: "لدغتها العنكبوت نفسها التي لدغت بيتر باركر، ثم حُبست في قبو أكثر من عقد لإخفاء أثرها عمّن يصطاد العناكب. فخرجت بالقوى دون شيء من المِران.",
     },
-    related: [
-      { id: "spider-man", kind: "ally" },
-    ],
+    related: [{ id: "spider-man", kind: "ally" }],
   },
   {
     id: "kaine",
@@ -9971,9 +9966,7 @@ const inheritors: CharacterDraft[] = [
       en: "The first attempt at cloning Peter Parker, kept alive but degrading, who spent years hating the man he was copied from before deciding to be something better than either of them.",
       ar: "أول محاولة لاستنساخ بيتر باركر، أُبقي حيًّا وهو يتحلّل، أمضى سنين يكره من نُسخ عنه قبل أن يقرّر أن يكون خيرًا منهما معًا.",
     },
-    related: [
-      { id: "spider-man", kind: "variant", variantOrigin: "clone" },
-    ],
+    related: [{ id: "spider-man", kind: "variant", variantOrigin: "clone" }],
   },
   {
     id: "morlun",
@@ -9994,9 +9987,7 @@ const inheritors: CharacterDraft[] = [
       en: "The eldest hunter of the Inheritors, who tracks a spider by its life-force and has been eating totems for centuries. He does not rush, because he has never needed to.",
       ar: "أكبر صيّادي الورثة، يتتبّع العنكبوت بأثر حياته، ويأكل الطواطم منذ قرون. لا يتعجّل لأنه لم يحتج إلى العجلة قط.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "solus",
@@ -10017,9 +10008,7 @@ const inheritors: CharacterDraft[] = [
       en: "The patriarch of the Inheritors and the strongest of them, who fathered the family that hunts spiders across every reality and treats the Great Web as a table set for him.",
       ar: "بطريرك الورثة وأقواهم، أنجب العائلة التي تصطاد العناكب في كل واقع، ويعدّ الشبكة الكبرى مائدة مُعدّة له.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "verna",
@@ -10040,9 +10029,7 @@ const inheritors: CharacterDraft[] = [
       en: "The Inheritor who hunts with a pack of hounds and enjoys the chase more than the meal, running her prey to exhaustion across worlds before she closes.",
       ar: "الوريثة التي تصطاد بقطيع كلاب وتستمتع بالمطاردة أكثر من الوليمة، تُنهك فريستها عبر العوالم قبل أن تُطبق.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "daemos",
@@ -10063,9 +10050,7 @@ const inheritors: CharacterDraft[] = [
       en: "The heaviest of the Inheritors, who kills by walking through whatever is in the way. Where his siblings hunt, he simply arrives.",
       ar: "أثقل الورثة، يقتل بأن يمشي عبر ما يعترضه. فبينما يصطاد إخوته، هو يصل فحسب.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "jennix",
@@ -10086,9 +10071,7 @@ const inheritors: CharacterDraft[] = [
       en: "The Inheritor who keeps laboratories in every reality and backups of himself in all of them, so that killing him has never once been permanent.",
       ar: "الوريث الذي يحفظ مختبرات في كل واقع ونسخًا احتياطية من نفسه فيها جميعًا، فلم يكن قتله دائمًا قط.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "brix",
@@ -10109,9 +10092,7 @@ const inheritors: CharacterDraft[] = [
       en: "One of the younger Inheritors, who hunts alongside Bora and treats the whole thing as sport. The recklessness is real and so is the appetite.",
       ar: "أحد الورثة الصغار، يصطاد مع بورا ويعدّ الأمر كله رياضة. والتهوّر حقيقي، والشهية كذلك.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "bora",
@@ -10132,9 +10113,7 @@ const inheritors: CharacterDraft[] = [
       en: "One of the younger Inheritors, who hunts with Brix and shares his taste for making a game of it. Together they are less careful than the elders and no less lethal.",
       ar: "إحدى الورثة الصغار، تصطاد مع بريكس وتشاركه لذّة أن يجعلا منه لعبة. وهما معًا أقل حذرًا من الكبار ولا أقل فتكًا.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "karn",
@@ -10155,9 +10134,7 @@ const inheritors: CharacterDraft[] = [
       en: "The Inheritor his family cast out and made to wear a mask, who was sent to hunt spiders and ended up standing with them. He inherited the Web he was told to feed on.",
       ar: "الوريث الذي نبذته عائلته وألزمته قناعًا، أُرسل ليصطاد العناكب فانتهى واقفًا معها. وورث الشبكة التي قيل له أن يقتات عليها.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "spider-uk",
@@ -10178,9 +10155,7 @@ const inheritors: CharacterDraft[] = [
       en: "The Captain Britain of a world where the Corps recruited a Spider-Man, who noticed spiders vanishing across realities and went looking for the survivors before anyone else knew there was a hunt.",
       ar: "كابتن بريطانيا في عالمٍ جنّد فيه الفيلق سبايدرمان، لاحظ اختفاء العناكب عبر الوقائع فمضى يبحث عن الناجين قبل أن يعلم أحد بوجود صيد.",
     },
-    related: [
-      { id: "spider-man", kind: "ally" },
-    ],
+    related: [{ id: "spider-man", kind: "ally" }],
   },
 ];
 
@@ -10219,9 +10194,7 @@ const lifeFoundation: CharacterDraft[] = [
       en: "One of five symbiotes forced out of Venom by Life Foundation scientists who wanted their own. Harvested rather than born, which is why it lacks what a true offspring inherits.",
       ar: "أحد خمسة سيمبيوتات انتُزعت من فينوم على يد علماء مؤسسة الحياة أرادوا واحدًا لأنفسهم. حُصد ولم يولد، ولهذا يفتقر إلى ما يرثه المولود الحقيقي.",
     },
-    related: [
-      { id: "venom", kind: "family" },
-    ],
+    related: [{ id: "venom", kind: "family" }],
   },
   {
     id: "phage",
@@ -10242,9 +10215,7 @@ const lifeFoundation: CharacterDraft[] = [
       en: "Another of the Life Foundation five, taken from Venom by force and grown into a weapon. It shapes its whole body into edges rather than hands.",
       ar: "آخر من خمسة مؤسسة الحياة، أُخذ من فينوم قسرًا وأُنمي سلاحًا. يشكّل جسده كله حوافّ بدل أن يكون أيديًا.",
     },
-    related: [
-      { id: "venom", kind: "family" },
-    ],
+    related: [{ id: "venom", kind: "family" }],
   },
   {
     id: "sleeper",
@@ -10265,9 +10236,7 @@ const lifeFoundation: CharacterDraft[] = [
       en: "Venom's own offspring, and the first of the line to decide it did not want a host. It left to find out what a symbiote is when nobody is riding it.",
       ar: "ابن فينوم نفسه، وأول في السلالة يقرّر أنه لا يريد مضيفًا. مضى ليعرف ما يكون السيمبيوت حين لا يركبه أحد.",
     },
-    related: [
-      { id: "venom", kind: "family" },
-    ],
+    related: [{ id: "venom", kind: "family" }],
   },
   {
     id: "mania",
@@ -10288,9 +10257,7 @@ const lifeFoundation: CharacterDraft[] = [
       en: "A teenager given a piece of the Venom symbiote by Flash Thompson to protect her, who turned out to be carrying something older and angrier underneath it.",
       ar: "مراهقة أعطاها فلاش طومسون قطعة من سيمبيوت فينوم لتحميها، فتبيّن أنها تحمل تحته شيئًا أقدم وأشدّ غضبًا.",
     },
-    related: [
-      { id: "venom", kind: "family" },
-    ],
+    related: [{ id: "venom", kind: "family" }],
   },
   {
     id: "hybrid",
@@ -10311,9 +10278,7 @@ const lifeFoundation: CharacterDraft[] = [
       en: "Four of the Life Foundation symbiotes merged into a single creature and bonded to a paralysed man, who could walk again as long as the four inside him agreed on anything.",
       ar: "أربعة من سيمبيوتات مؤسسة الحياة اندمجت في كائن واحد وارتبطت برجل مشلول، صار يمشي ما دام الأربعة في داخله متفقين على شيء.",
     },
-    related: [
-      { id: "venom", kind: "family" },
-    ],
+    related: [{ id: "venom", kind: "family" }],
   },
   {
     id: "dylan-brock",
@@ -10334,9 +10299,7 @@ const lifeFoundation: CharacterDraft[] = [
       en: "Eddie Brock's son, born with an authority over symbiotes his father never had, who took up Venom while Eddie was elsewhere and found the suit answered him differently.",
       ar: "ابن إيدي بروك، وُلد بسلطان على السيمبيوتات لم يملكه أبوه، حمل فينوم حين كان إيدي في مكان آخر فوجد البدلة تجيبه على نحو مختلف.",
     },
-    related: [
-      { id: "venom", kind: "family" },
-    ],
+    related: [{ id: "venom", kind: "family" }],
   },
   {
     id: "scorn",
@@ -10357,9 +10320,7 @@ const lifeFoundation: CharacterDraft[] = [
       en: "A piece of Carnage that attached itself to the psychiatrist sent to treat its host, and fused with her prosthetic arm before taking the rest of her.",
       ar: "قطعة من كارنيج علقت بالطبيبة النفسية المرسَلة لعلاج مضيفه، فاندمجت بذراعها الاصطناعية قبل أن تأخذ سائرها.",
     },
-    related: [
-      { id: "carnage", kind: "family" },
-    ],
+    related: [{ id: "carnage", kind: "family" }],
   },
   {
     id: "chameleon",
@@ -10379,9 +10340,7 @@ const lifeFoundation: CharacterDraft[] = [
       en: "A master of disguise who can pass as anyone he has had time to study, and who was the first foe Spider-Man ever faced. Being nobody in particular is the closest thing he has to a self.",
       ar: "سيّد التنكّر، يمرّ بوصفه أي أحد أتيح له أن يدرسه، وكان أول خصم واجهه سبايدرمان. وأن يكون لا أحد بعينه هو أقرب ما يملك إلى ذات.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "menace",
@@ -10424,9 +10383,7 @@ const lifeFoundation: CharacterDraft[] = [
       en: "A reporter's nephew who found a goblin's abandoned equipment and used it as a hero for a while before the mask started deciding things for him.",
       ar: "ابن أخي صحفي، عثر على عتاد غوبلن متروك واستعمله بطلًا مدة، قبل أن يبدأ القناع يقرّر عنه.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
 ];
 
@@ -10453,7 +10410,10 @@ const elders: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Elder of the Universe",
     powers: [
-      { en: "Unbeaten for millions of years", ar: "لم يُهزم منذ ملايين السنين" },
+      {
+        en: "Unbeaten for millions of years",
+        ar: "لم يُهزم منذ ملايين السنين",
+      },
       { en: "Fights only worthy opponents", ar: "لا يقاتل إلا كفؤًا" },
       { en: "Refuses to use powers", ar: "يأبى استعمال قواه" },
     ],
@@ -10461,9 +10421,7 @@ const elders: CharacterDraft[] = [
       en: "An Elder who spent his immortality learning to fight and now travels between worlds looking for someone who can last. He will not use his cosmic power in a bout, because that would spoil it.",
       ar: "شيخ أنفق خلوده في تعلّم القتال، وصار يجول بين العوالم باحثًا عمّن يصمد. ويأبى استعمال قوته الكونية في نزال، لأن ذلك يفسده.",
     },
-    related: [
-      { id: "hulk", kind: "enemy" },
-    ],
+    related: [{ id: "hulk", kind: "enemy" }],
   },
   {
     id: "the-gardener",
@@ -10483,9 +10441,7 @@ const elders: CharacterDraft[] = [
       en: "An Elder who has spent millions of years planting gardens on dead worlds, and who used an Infinity Stone mostly to help things grow. Of all of them he is the least interested in power.",
       ar: "شيخ أمضى ملايين السنين يغرس الحدائق في عوالم ميتة، واستعمل حجر لانهاية في إنماء الأشياء أكثر من أي شيء. وهو أقلهم جميعًا اهتمامًا بالسلطان.",
     },
-    related: [
-      { id: "the-collector", kind: "family" },
-    ],
+    related: [{ id: "the-collector", kind: "family" }],
   },
   {
     id: "the-contemplator",
@@ -10505,9 +10461,7 @@ const elders: CharacterDraft[] = [
       en: "An Elder who chose contemplation as his obsession and has been thinking without pause ever since, though he intervenes in other people's affairs far more often than a contemplative should.",
       ar: "شيخ اختار التأمّل هوسًا له فما انفكّ يفكّر منذ ذلك الحين، وإن كان يتدخّل في شؤون غيره أكثر بكثير مما يليق بمتأمّل.",
     },
-    related: [
-      { id: "the-collector", kind: "family" },
-    ],
+    related: [{ id: "the-collector", kind: "family" }],
   },
   {
     id: "the-astronomer",
@@ -10527,9 +10481,7 @@ const elders: CharacterDraft[] = [
       en: "An Elder who maps the heavens and reads what is coming in them. He is the one who pointed Galactus at a planet, which is a thing an astronomer can do and a thing he has to live with.",
       ar: "شيخ يرسم خرائط السماوات ويقرأ ما هو آتٍ فيها. وهو من دلّ جالاكتوس على كوكب، وذلك ما يقدر عليه فلكيّ وما عليه أن يعيش به.",
     },
-    related: [
-      { id: "galactus", kind: "ally" },
-    ],
+    related: [{ id: "galactus", kind: "ally" }],
   },
   {
     id: "the-possessor",
@@ -10549,9 +10501,7 @@ const elders: CharacterDraft[] = [
       en: "An Elder who collects knowledge the way the Collector gathers objects, keeping every fact he has ever acquired and parting with almost none of it.",
       ar: "شيخ يجمع المعرفة كما يجمع الجامع الأشياء، يحفظ كل حقيقة حصّلها ولا يفرّط في شيء منها تقريبًا.",
     },
-    related: [
-      { id: "the-collector", kind: "family" },
-    ],
+    related: [{ id: "the-collector", kind: "family" }],
   },
   {
     id: "the-trader",
@@ -10571,9 +10521,7 @@ const elders: CharacterDraft[] = [
       en: "An Elder whose obsession is the deal itself rather than anything he gains from it. He has been trading long enough that entire civilisations have been the currency.",
       ar: "شيخ هوسه الصفقة ذاتها لا ما يكسبه منها. وقد ظل يقايض حتى صارت حضارات بأكملها عملةً في يديه.",
     },
-    related: [
-      { id: "the-collector", kind: "family" },
-    ],
+    related: [{ id: "the-collector", kind: "family" }],
   },
   {
     id: "the-explorer",
@@ -10593,9 +10541,7 @@ const elders: CharacterDraft[] = [
       en: "An Elder who has spent his immortality moving, on the reasoning that a universe this large would be wasted on anyone who settled. He has outlasted most of the places he has seen.",
       ar: "شيخ أنفق خلوده متنقلًا، بحجة أن كونًا بهذا الاتساع يضيع على من يستقرّ. وقد بقي بعد معظم الأماكن التي رآها.",
     },
-    related: [
-      { id: "the-collector", kind: "family" },
-    ],
+    related: [{ id: "the-collector", kind: "family" }],
   },
   {
     id: "the-caregiver",
@@ -10615,9 +10561,7 @@ const elders: CharacterDraft[] = [
       en: "An Elder whose chosen obsession is caring for others as they die, which on her scale means sitting with entire species through their last years. She is the gentlest of them and the saddest.",
       ar: "شيخة اختارت رعاية الآخرين عند موتهم هوسًا لها، وذلك على مقياسها يعني الجلوس مع أنواع بأكملها في سنيها الأخيرة. وهي أرقّهم وأحزنهم.",
     },
-    related: [
-      { id: "the-collector", kind: "family" },
-    ],
+    related: [{ id: "the-collector", kind: "family" }],
   },
   {
     id: "the-judicator",
@@ -10637,9 +10581,7 @@ const elders: CharacterDraft[] = [
       en: "An Elder who took judgement as his obsession and appointed himself to it, weighing whole peoples against a standard he wrote and nobody agreed to.",
       ar: "شيخ اتخذ القضاء هوسًا وولّى نفسه إياه، يزن شعوبًا بأسرها بمعيارٍ كتبه هو ولم يوافق عليه أحد.",
     },
-    related: [
-      { id: "the-collector", kind: "family" },
-    ],
+    related: [{ id: "the-collector", kind: "family" }],
   },
   {
     id: "the-obliterator",
@@ -10659,9 +10601,7 @@ const elders: CharacterDraft[] = [
       en: "An Elder who chose destruction as his obsession, and hunts targets specifically because they are said to be unkillable. It is the difficulty he is after, not the ruin.",
       ar: "شيخ اختار التدمير هوسًا له، ويطارد أهدافًا لأنه قيل إنها لا تُقتل. فالصعوبة هي مبتغاه لا الخراب.",
     },
-    related: [
-      { id: "silver-surfer", kind: "enemy" },
-    ],
+    related: [{ id: "silver-surfer", kind: "enemy" }],
   },
 ];
 
@@ -10697,9 +10637,7 @@ const abstractsBatch: CharacterDraft[] = [
       en: "One half of the pair that keeps the universe from settling into either perfect pattern or complete noise. He is not good, and the thing he opposes is not evil; they are two necessary halves.",
       ar: "أحد شطري الثنائي الذي يمنع الكون من الاستقرار على نظام تام أو ضجيج كامل. ليس خيرًا، وما يعارضه ليس شرًّا، بل هما شطران لا غنى عنهما.",
     },
-    related: [
-      { id: "lord-chaos", kind: "enemy" },
-    ],
+    related: [{ id: "lord-chaos", kind: "enemy" }],
   },
   {
     id: "lord-chaos",
@@ -10719,9 +10657,7 @@ const abstractsBatch: CharacterDraft[] = [
       en: "The other half of the pair, who is not destruction but change, and without whom nothing in the universe could ever become anything it was not already.",
       ar: "الشطر الآخر من الثنائي، وهو ليس الدمار بل التغيّر، ولولاه لما صار شيء في الكون شيئًا لم يكنه من قبل.",
     },
-    related: [
-      { id: "master-order", kind: "enemy" },
-    ],
+    related: [{ id: "master-order", kind: "enemy" }],
   },
   {
     id: "the-in-betweener",
@@ -10764,9 +10700,7 @@ const abstractsBatch: CharacterDraft[] = [
       en: "A cosmic being who wanders the universe abducting whatever interests him and keeping it on a world he uses as a laboratory. Nobody has established what he is or how strong, including him.",
       ar: "كائن كوني يجوب الكون فيخطف ما يثير اهتمامه ويحتفظ به في عالم يتخذه مختبرًا. ولم يثبت أحد ما هو ولا مبلغ قوته، ولا هو نفسه.",
     },
-    related: [
-      { id: "galactus", kind: "enemy" },
-    ],
+    related: [{ id: "galactus", kind: "enemy" }],
   },
   {
     id: "eon",
@@ -10786,9 +10720,7 @@ const abstractsBatch: CharacterDraft[] = [
       en: "The entity that chooses who holds the Quantum Bands and carries the title Protector of the Universe. He was called weak for an abstract, which the master list keeps as a caution against assuming abstracts outrank everything.",
       ar: "الكيان الذي يختار من يحمل أساور الكم ويحمل لقب حامي الكون. وقد وُصف بالضعف بمقياس المجرّدات، وهو ما يبقيه المرجع تحذيرًا من افتراض تفوّق المجرّدات على كل شيء.",
     },
-    related: [
-      { id: "quasar", kind: "ally" },
-    ],
+    related: [{ id: "quasar", kind: "ally" }],
   },
   {
     id: "epoch",
@@ -10808,9 +10740,7 @@ const abstractsBatch: CharacterDraft[] = [
       en: "Eon's successor, grown from what was left of him, who took on the duty of appointing Protectors and watching the universe for the kind of trouble abstracts are supposed to notice.",
       ar: "خليفة إيون، نبت مما بقي منه، فتولّى واجب تعيين الحماة ومراقبة الكون تحسّبًا لما يُفترض بالمجرّدات أن تنتبه إليه.",
     },
-    related: [
-      { id: "eon", kind: "family" },
-    ],
+    related: [{ id: "eon", kind: "family" }],
   },
   {
     id: "entropy",
@@ -10830,9 +10760,7 @@ const abstractsBatch: CharacterDraft[] = [
       en: "Eternity's child, whose function is to take a universe apart once it has run its course. He is not a villain; he is the last step, and he arrives on time.",
       ar: "ابن الأزل، وظيفته أن يفكّ كونًا متى بلغ منتهاه. ليس شريرًا، بل هو الخطوة الأخيرة، ويأتي في موعده.",
     },
-    related: [
-      { id: "eternity", kind: "family" },
-    ],
+    related: [{ id: "eternity", kind: "family" }],
   },
   {
     id: "kronos",
@@ -10852,9 +10780,7 @@ const abstractsBatch: CharacterDraft[] = [
       en: "An Eternal of Titan whose body was destroyed in an experiment and who reassembled as a being of pure energy with a hold over time. Thanos and Starfox are his grandsons.",
       ar: "أزليّ من تايتان دُمّر جسده في تجربة فأعاد تشكّل نفسه كيانًا من طاقة خالصة له سلطان على الزمن. وثانوس وستارفوكس حفيداه.",
     },
-    related: [
-      { id: "thanos", kind: "family" },
-    ],
+    related: [{ id: "thanos", kind: "family" }],
   },
   {
     id: "nemesis",
@@ -10874,9 +10800,7 @@ const abstractsBatch: CharacterDraft[] = [
       en: "What the Infinity Gems become when all of them are brought back together as one being rather than one weapon. Finding herself alone at the top of everything, she chose not to continue.",
       ar: "ما تصيره أحجار لانهاية حين تُجمع كلها كيانًا واحدًا لا سلاحًا واحدًا. ولمّا وجدت نفسها وحيدة على قمة كل شيء، اختارت ألا تستمر.",
     },
-    related: [
-      { id: "thanos", kind: "enemy" },
-    ],
+    related: [{ id: "thanos", kind: "enemy" }],
   },
   {
     id: "protege",
@@ -10896,9 +10820,7 @@ const abstractsBatch: CharacterDraft[] = [
       en: "A being that can mimic any cosmic entity it observes and then exceed it, raised by a church that told it this made it a god. It has the power of everything it has seen and the judgement of a child.",
       ar: "كائن يحاكي أي كيان كوني يراه ثم يفوقه، ربّته كنيسة أخبرته أن ذلك يجعله إلهًا. فله قوة كل ما رآه، وحُكم طفل.",
     },
-    related: [
-      { id: "the-living-tribunal", kind: "enemy" },
-    ],
+    related: [{ id: "the-living-tribunal", kind: "enemy" }],
   },
   {
     id: "tenebrous",
@@ -10918,9 +10840,7 @@ const abstractsBatch: CharacterDraft[] = [
       en: "One of the beings that ruled before this universe existed, defeated by Galactus in his first days and sealed away. He was released long after, and has not forgiven anyone for the interval.",
       ar: "أحد الكائنات التي حكمت قبل وجود هذا الكون، هزمه جالاكتوس في أيامه الأولى وختم عليه. أُطلق بعد دهر طويل، ولم يغفر لأحد تلك المدة.",
     },
-    related: [
-      { id: "galactus", kind: "enemy" },
-    ],
+    related: [{ id: "galactus", kind: "enemy" }],
   },
 ];
 
@@ -10989,9 +10909,7 @@ const mystics: CharacterDraft[] = [
       en: "The demon whose crimson gem makes whoever claims it unstoppable, on the understanding that they will destroy things in his name. Cain Marko picked it up and has been paying for it since.",
       ar: "الشيطان الذي تجعل جوهرته القرمزية من يحوزها لا يُوقَف، على أن يدمّر باسمه. التقطها كين ماركو وما زال يدفع الثمن منذئذ.",
     },
-    related: [
-      { id: "juggernaut", kind: "ally" },
-    ],
+    related: [{ id: "juggernaut", kind: "ally" }],
   },
   {
     id: "shuma-gorath",
@@ -11012,9 +10930,7 @@ const mystics: CharacterDraft[] = [
       en: "One of the things that owned this world before anything human walked on it, waiting outside for a door. Doctor Strange has spent much of his career keeping that door shut.",
       ar: "أحد ما امتلك هذا العالم قبل أن يمشي عليه بشر، ينتظر في الخارج بابًا. وقد أنفق دكتور سترينج شطرًا من مسيرته في إبقاء ذلك الباب مغلقًا.",
     },
-    related: [
-      { id: "doctor-strange", kind: "enemy" },
-    ],
+    related: [{ id: "doctor-strange", kind: "enemy" }],
   },
   {
     id: "oshtur",
@@ -11035,9 +10951,7 @@ const mystics: CharacterDraft[] = [
       en: "An Elder God who left this world rather than take part in what her siblings were becoming, and one of the three names every sorcerer invokes. Agamotto is her son.",
       ar: "إلهة قديمة غادرت هذا العالم بدل أن تشارك فيما صار إليه إخوتها، وهي إحدى الأسماء الثلاثة التي يستنجد بها كل ساحر. وأجاموتو ابنها.",
     },
-    related: [
-      { id: "agamotto", kind: "family" },
-    ],
+    related: [{ id: "agamotto", kind: "family" }],
   },
   {
     id: "hoggoth",
@@ -11058,9 +10972,7 @@ const mystics: CharacterDraft[] = [
       en: "The third of the Vishanti, invoked in the same breath as Agamotto and Oshtur every time a sorcerer needs something borrowed. He answers, and he keeps his own counsel about why.",
       ar: "ثالث الفيشانتي، يُستنجد به في نفس النَّفَس مع أجاموتو وأوشتور كلما احتاج ساحر عاريةً من قوة. يستجيب، ويكتم سببه لنفسه.",
     },
-    related: [
-      { id: "agamotto", kind: "ally" },
-    ],
+    related: [{ id: "agamotto", kind: "ally" }],
   },
   {
     id: "umar",
@@ -11105,9 +11017,7 @@ const mystics: CharacterDraft[] = [
       en: "A destructive force so unmanageable that even the beings who beat it could only bind it. Doctor Strange once took its power to win a fight and spent a long time regretting the trade.",
       ar: "قوة مدمّرة عصيّة إلى حدّ أن من هزمها لم يقدر إلا على تقييدها. وقد أخذ دكتور سترينج قوتها مرة ليكسب معركة، فندم على المقايضة طويلًا.",
     },
-    related: [
-      { id: "doctor-strange", kind: "enemy" },
-    ],
+    related: [{ id: "doctor-strange", kind: "enemy" }],
   },
   {
     id: "gaea",
@@ -11122,15 +11032,16 @@ const mystics: CharacterDraft[] = [
     powers: [
       { en: "The living Earth itself", ar: "الأرض الحية نفسها" },
       { en: "Grew all life on it", ar: "أنبتت كل حياة عليها" },
-      { en: "The only Elder God who stayed", ar: "الإلهة القديمة الوحيدة التي بقيت" },
+      {
+        en: "The only Elder God who stayed",
+        ar: "الإلهة القديمة الوحيدة التي بقيت",
+      },
     ],
     origin: {
       en: "The one Elder God who did not turn on the rest and did not leave, choosing instead to become the planet's own life. Thor's mother, and the reason there is anything growing here at all.",
       ar: "الإلهة القديمة الوحيدة التي لم تنقلب على البقية ولم ترحل، بل اختارت أن تصير حياة الكوكب نفسه. أمّ ثور، وسبب وجود أي شيء نامٍ هنا أصلًا.",
     },
-    related: [
-      { id: "thor", kind: "family" },
-    ],
+    related: [{ id: "thor", kind: "family" }],
   },
   {
     id: "the-demiurge",
@@ -11143,17 +11054,21 @@ const mystics: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["elder"],
     powers: [
-      { en: "The source Earth's gods grew from", ar: "المنبع الذي نبتت منه آلهة الأرض" },
+      {
+        en: "The source Earth's gods grew from",
+        ar: "المنبع الذي نبتت منه آلهة الأرض",
+      },
       { en: "Older than the Elder Gods", ar: "أقدم من الآلهة القديمة" },
-      { en: "Returns roughly every thousand years", ar: "يعود كل ألف عام تقريبًا" },
+      {
+        en: "Returns roughly every thousand years",
+        ar: "يعود كل ألف عام تقريبًا",
+      },
     ],
     origin: {
       en: "The mystical source that Earth's gods came out of, and the thing Wiccan is said to be growing into. It is less a person than a wellspring that occasionally takes a shape.",
       ar: "المنبع السحري الذي خرجت منه آلهة الأرض، وما يقال إن ويكان صائر إليه. وهو نبعٌ يتخذ شكلًا أحيانًا أكثر منه شخصًا.",
     },
-    related: [
-      { id: "gaea", kind: "family" },
-    ],
+    related: [{ id: "gaea", kind: "family" }],
   },
   {
     id: "set",
@@ -11174,9 +11089,7 @@ const mystics: CharacterDraft[] = [
       en: "The Elder God who began eating the others, which is what turned that generation into demons and drove Gaea to make something new. Every serpent cult on Earth traces back to him.",
       ar: "الإله القديم الذي بدأ يأكل الآخرين، وهو ما حوّل ذلك الجيل إلى شياطين ودفع غايا إلى صنع شيء جديد. وكل عبادة أفعى على الأرض ترجع إليه.",
     },
-    related: [
-      { id: "gaea", kind: "enemy" },
-    ],
+    related: [{ id: "gaea", kind: "enemy" }],
   },
 ];
 
@@ -11263,9 +11176,7 @@ const heralds: CharacterDraft[] = [
       en: "A herald who treats serving Galactus as a faith rather than a bargain, and who has destroyed worlds that were not even on the menu because devotion does not stop at instructions.",
       ar: "بشير يعدّ خدمة جالاكتوس عقيدةً لا صفقة، ودمّر عوالم لم تكن أصلًا مطلوبة، لأن التعبّد لا يقف عند التعليمات.",
     },
-    related: [
-      { id: "galactus", kind: "ally" },
-    ],
+    related: [{ id: "galactus", kind: "ally" }],
   },
   {
     id: "red-shift",
@@ -11285,9 +11196,7 @@ const heralds: CharacterDraft[] = [
       en: "A herald who tears space open to travel and says very little about anything. He was found on a dead world and has never explained what he was doing there.",
       ar: "بشير يمزّق الفضاء ليسافر ولا يقول في شيء إلا القليل. وُجد على عالم ميت ولم يفسّر قط ما كان يفعله هناك.",
     },
-    related: [
-      { id: "galactus", kind: "ally" },
-    ],
+    related: [{ id: "galactus", kind: "ally" }],
   },
   {
     id: "the-fallen-one",
@@ -11307,9 +11216,7 @@ const heralds: CharacterDraft[] = [
       en: "Galactus's first herald, discarded for being too cruel even by that standard, and imprisoned rather than released. He has spent the time since planning what to do about it.",
       ar: "أول بشراء جالاكتوس، نُبذ لأنه كان أقسى مما يحتمل حتى ذلك المقياس، فسُجن ولم يُطلق. وقضى ما بعدها يخطط لما يفعله حيال ذلك.",
     },
-    related: [
-      { id: "galactus", kind: "enemy" },
-    ],
+    related: [{ id: "galactus", kind: "enemy" }],
   },
   {
     id: "praeter",
@@ -11330,9 +11237,7 @@ const heralds: CharacterDraft[] = [
       en: "An ordinary man remade into a herald, which is the version of the story that shows what the Power Cosmic does to somebody with no preparation for it at all.",
       ar: "رجل عادي أُعيد صنعه بشيرًا، وهي الرواية التي تُظهر ما تفعله القوة الكونية بمن لا استعداد له بها البتة.",
     },
-    related: [
-      { id: "galactus", kind: "ally" },
-    ],
+    related: [{ id: "galactus", kind: "ally" }],
   },
   {
     id: "beta-ray-bill",
@@ -11352,9 +11257,7 @@ const heralds: CharacterDraft[] = [
       en: "The champion of a dying people who picked up Thor's hammer and found it answered him, which nobody had expected including Odin. He was given a hammer of his own rather than sent away.",
       ar: "بطل شعبٍ يفنى، التقط مطرقة ثور فوجدها تجيبه، وهو ما لم يتوقعه أحد بمن فيهم أودين. فمُنح مطرقة خاصة به بدل أن يُصرَف.",
     },
-    related: [
-      { id: "thor", kind: "ally" },
-    ],
+    related: [{ id: "thor", kind: "ally" }],
   },
   {
     id: "gladiator",
@@ -11374,9 +11277,7 @@ const heralds: CharacterDraft[] = [
       en: "The commander of the Shi'ar Imperial Guard, whose strength rises and falls with his own conviction, and who has carried out orders he disagreed with because the empire asked.",
       ar: "قائد الحرس الإمبراطوري الشياري، تعلو قوته وتهبط بيقينه، ونفّذ أوامر لم يوافق عليها لأن الإمبراطورية طلبت.",
     },
-    related: [
-      { id: "professor-x", kind: "enemy" },
-    ],
+    related: [{ id: "professor-x", kind: "enemy" }],
   },
   {
     id: "hyperion",
@@ -11396,9 +11297,7 @@ const heralds: CharacterDraft[] = [
       en: "The strongest man from a world that no longer exists, who survived its ending and now lives on this one trying to be of use to a planet that is not the one he failed.",
       ar: "أقوى رجل في عالم لم يعد موجودًا، نجا من نهايته ويعيش الآن على هذا العالم محاولًا أن ينفع كوكبًا ليس هو الذي خذله.",
     },
-    related: [
-      { id: "thor", kind: "ally" },
-    ],
+    related: [{ id: "thor", kind: "ally" }],
   },
   {
     id: "mangog",
@@ -11412,16 +11311,17 @@ const heralds: CharacterDraft[] = [
     species: "Abstract Entity",
     powers: [
       { en: "The rage of a billion dead", ar: "غضب مليار قتيل" },
-      { en: "Grows with every prayer unanswered", ar: "ينمو بكل دعاء لم يُستجب" },
+      {
+        en: "Grows with every prayer unanswered",
+        ar: "ينمو بكل دعاء لم يُستجب",
+      },
       { en: "Exists to kill Odin", ar: "وُجد ليقتل أودين" },
     ],
     origin: {
       en: "Not a creature but a grievance made solid: the collected fury of a billion beings Odin destroyed, given a body and one purpose. It cannot be killed while the grievance is true.",
       ar: "ليس مخلوقًا بل مظلمة تجسّدت: غضب مليار كائن أفناهم أودين، مجموعًا في جسد ولغرض واحد. ولا يُقتل ما دامت المظلمة صادقة.",
     },
-    related: [
-      { id: "thor", kind: "enemy" },
-    ],
+    related: [{ id: "thor", kind: "enemy" }],
   },
   {
     id: "blue-marvel",
@@ -11442,9 +11342,7 @@ const heralds: CharacterDraft[] = [
       en: "A scientist who became one of the most powerful beings on Earth in the early sixties and was quietly asked to retire when the country found out he was black. He came back decades later.",
       ar: "عالم صار من أقوى الكائنات على الأرض في أوائل الستينيات، فطُلب إليه بهدوء أن يعتزل حين علمت البلاد أنه أسود. وعاد بعد عقود.",
     },
-    related: [
-      { id: "iron-man", kind: "ally" },
-    ],
+    related: [{ id: "iron-man", kind: "ally" }],
   },
   {
     id: "onslaught",
@@ -11499,9 +11397,7 @@ const mutantsB: CharacterDraft[] = [
       en: "A circus strongman who cannot be moved from a spot he has decided to stand on. He joined Magneto early, and most of his life has been about being laughed at first and unmovable second.",
       ar: "قويّ سيرك لا يمكن إزاحته عن موضع قرّر الوقوف فيه. انضم إلى ماغنيتو مبكرًا، وأكثر عمره كان أن يُضحَك عليه أولًا ثم لا يُزحزح ثانيًا.",
     },
-    related: [
-      { id: "magneto", kind: "ally" },
-    ],
+    related: [{ id: "magneto", kind: "ally" }],
   },
   {
     id: "boom-boom",
@@ -11521,9 +11417,7 @@ const mutantsB: CharacterDraft[] = [
       en: "A runaway who makes glowing spheres that explode when she decides they should, and who has left more teams than most people join. The recklessness is a habit she keeps meaning to break.",
       ar: "هاربة تصنع كرات متوهّجة تنفجر متى قرّرت، وقد تركت من الفرق أكثر مما ينضم إليه معظم الناس. والتهوّر عادة تنوي دائمًا أن تقلع عنها.",
     },
-    related: [
-      { id: "cannonball", kind: "ally" },
-    ],
+    related: [{ id: "cannonball", kind: "ally" }],
   },
   {
     id: "caliban",
@@ -11543,9 +11437,7 @@ const mutantsB: CharacterDraft[] = [
       en: "A Morlock who can feel every mutant around him, which made him useful to people who were not kind to him. He has been a tracker for both sides and belonged to neither.",
       ar: "مورلوك يحسّ بكل متحوّل حوله، وهو ما جعله نافعًا لمن لم يرفقوا به. عمل متعقّبًا للجهتين ولم ينتمِ إلى أيّ منهما.",
     },
-    related: [
-      { id: "storm", kind: "ally" },
-    ],
+    related: [{ id: "storm", kind: "ally" }],
   },
   {
     id: "callisto",
@@ -11565,9 +11457,7 @@ const mutantsB: CharacterDraft[] = [
       en: "The leader of the Morlocks, who took the job by being the toughest one down there and lost it to Storm in a knife fight she insisted on. She stayed anyway.",
       ar: "زعيمة المورلوك، نالت الزعامة بكونها أقساهم في الأسفل، وخسرتها أمام ستورم في نزال سكاكين أصرّت عليه. وبقيت رغم ذلك.",
     },
-    related: [
-      { id: "storm", kind: "enemy" },
-    ],
+    related: [{ id: "storm", kind: "enemy" }],
   },
   {
     id: "chamber",
@@ -11587,9 +11477,7 @@ const mutantsB: CharacterDraft[] = [
       en: "A young mutant whose power detonated the first time it woke and took his jaw and chest with it. He has no mouth, so he talks telepathically, and he is far more articulate than most people expect.",
       ar: "متحوّل يافع انفجرت قوته أول ما استيقظت فأخذت فكّه وصدره. لا فم له فيتكلم تخاطرًا، وهو أفصح بكثير مما يتوقع الناس.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "darwin",
@@ -11602,16 +11490,17 @@ const mutantsB: CharacterDraft[] = [
     species: "Mutant",
     powers: [
       { en: "Adapts to anything at all", ar: "يتكيف مع أي شيء" },
-      { en: "Cannot be killed twice the same way", ar: "لا يُقتل بالطريقة نفسها مرتين" },
+      {
+        en: "Cannot be killed twice the same way",
+        ar: "لا يُقتل بالطريقة نفسها مرتين",
+      },
       { en: "The body decides, not him", ar: "الجسد يقرر لا هو" },
     ],
     origin: {
       en: "A mutant whose body reacts to any threat by becoming whatever survives it, without asking him first. Put underwater he grows gills; shot at, he turns to something the bullet cannot hurt.",
       ar: "متحوّل يستجيب جسده لأي خطر بأن يصير ما ينجو منه، دون أن يستأذنه. يُغرَق فتنبت له خياشيم، ويُرمى بالرصاص فيصير ما لا تؤذيه الرصاصة.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "firestar",
@@ -11635,9 +11524,7 @@ const mutantsB: CharacterDraft[] = [
       en: "A mutant who generates microwave radiation, flies on it, and has to live with the fact that using it has been quietly damaging her for years.",
       ar: "متحوّلة تولّد إشعاع الميكروويف وتطير عليه، وعليها أن تتعايش مع أن استعماله ظل يؤذيها بهدوء سنين.",
     },
-    related: [
-      { id: "iceman", kind: "ally" },
-    ],
+    related: [{ id: "iceman", kind: "ally" }],
   },
   {
     id: "magma",
@@ -11657,9 +11544,7 @@ const mutantsB: CharacterDraft[] = [
       en: "A girl raised in a Roman colony that never learned the empire had fallen, whose power over the earth itself surfaced when she was thrown into a pit of lava as a sacrifice.",
       ar: "فتاة نشأت في مستعمرة رومانية لم تعلم قط بسقوط الإمبراطورية، ظهرت قدرتها على الأرض نفسها حين أُلقيت في حفرة حمم قربانًا.",
     },
-    related: [
-      { id: "cannonball", kind: "ally" },
-    ],
+    related: [{ id: "cannonball", kind: "ally" }],
   },
   {
     id: "proteus",
@@ -11681,9 +11566,7 @@ const mutantsB: CharacterDraft[] = [
       en: "Moira MacTaggert's son, an Omega-level mutant with no body of his own who wears other people until they burn out. His mother kept him locked up and could not bring herself to end it.",
       ar: "ابن مويرا ماكتاغرت، متحوّل من مستوى أوميغا بلا جسد خاص، يلبس الناس حتى يحترقوا. أبقته أمه حبيسًا ولم تقوَ على إنهاء الأمر.",
     },
-    related: [
-      { id: "professor-x", kind: "enemy" },
-    ],
+    related: [{ id: "professor-x", kind: "enemy" }],
   },
   {
     id: "rachel-summers",
@@ -11738,9 +11621,7 @@ const mutantsB: CharacterDraft[] = [
       en: "A mutant who has been alive for millennia by taking the life out of other people, and who runs the Hellfire Club's inner circle when she is not trying to become a goddess outright.",
       ar: "متحوّلة عاشت آلاف السنين بامتصاص حياة الآخرين، وتدير الدائرة الداخلية لنادي هيلفاير حين لا تسعى إلى أن تصير إلهة صراحة.",
     },
-    related: [
-      { id: "emma-frost", kind: "enemy" },
-    ],
+    related: [{ id: "emma-frost", kind: "enemy" }],
   },
   {
     id: "warpath",
@@ -11763,9 +11644,7 @@ const mutantsB: CharacterDraft[] = [
       en: "The younger brother of the first Thunderbird, who joined the people he blamed for his brother's death and stayed long enough to stop blaming them.",
       ar: "الأخ الأصغر لأول ثاندربيرد، انضم إلى من حمّلهم موت أخيه وبقي حتى كفّ عن تحميلهم.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
 ];
 
@@ -11788,16 +11667,17 @@ const mutantsC: CharacterDraft[] = [
     species: "Mutant",
     powers: [
       { en: "Reads any language at all", ar: "يقرأ أي لغة كانت" },
-      { en: "Machine code and body language too", ar: "لغة الآلة ولغة الجسد أيضًا" },
+      {
+        en: "Machine code and body language too",
+        ar: "لغة الآلة ولغة الجسد أيضًا",
+      },
       { en: "The least flashy power there is", ar: "أقل القوى بريقًا" },
     ],
     origin: {
       en: "A mutant who understands every language instantly, which sounds minor next to flight or fire until you notice he can read a machine, a lie, or a person's posture with the same fluency.",
       ar: "متحوّل يفهم كل لغة فورًا، وهو ما يبدو تافهًا إلى جانب الطيران أو النار حتى تنتبه أنه يقرأ آلةً أو كذبةً أو وقفة شخص بالطلاقة نفسها.",
     },
-    related: [
-      { id: "magik", kind: "ally" },
-    ],
+    related: [{ id: "magik", kind: "ally" }],
   },
   {
     id: "exodus",
@@ -11810,7 +11690,10 @@ const mutantsC: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "omega",
     powers: [
-      { en: "Telepathy and telekinesis at Omega level", ar: "تخاطر وتحريك بمستوى أوميغا" },
+      {
+        en: "Telepathy and telekinesis at Omega level",
+        ar: "تخاطر وتحريك بمستوى أوميغا",
+      },
       { en: "Woken from the Crusades", ar: "أُيقظ من الحروب الصليبية" },
       { en: "Believes Magneto was right", ar: "يؤمن أن ماغنيتو كان محقًّا" },
     ],
@@ -11818,9 +11701,7 @@ const mutantsC: CharacterDraft[] = [
       en: "A twelfth-century crusader woken into the present as an Omega-level mutant, who took Magneto's argument and made a religion of it. He is the true believer Magneto never asked for.",
       ar: "صليبيّ من القرن الثاني عشر أُوقظ في الحاضر متحوّلًا من مستوى أوميغا، أخذ حجّة ماغنيتو فجعلها دينًا. وهو المؤمن المتشدّد الذي لم يطلبه ماغنيتو قط.",
     },
-    related: [
-      { id: "magneto", kind: "ally" },
-    ],
+    related: [{ id: "magneto", kind: "ally" }],
   },
   {
     id: "fantomex",
@@ -11840,9 +11721,7 @@ const mutantsC: CharacterDraft[] = [
       en: "A weapon grown in a laboratory who escaped and reinvented himself as a gentleman thief, complete with an accent he chose. His power is making you look at the wrong thing.",
       ar: "سلاح أُنمي في مختبر ففرّ وأعاد صنع نفسه لصًّا نبيلًا، بلكنة اختارها بنفسه. وقدرته أن يجعلك تنظر إلى الشيء الخطأ.",
     },
-    related: [
-      { id: "wolverine", kind: "ally" },
-    ],
+    related: [{ id: "wolverine", kind: "ally" }],
   },
   {
     id: "hellion",
@@ -11862,9 +11741,7 @@ const mutantsC: CharacterDraft[] = [
       en: "A wealthy telekinetic with a mouth that gets him into more trouble than his power gets him out of, who lost both hands and had to learn the whole thing again.",
       ar: "محرّك ذهني ثري، لسانه يورده من المآزق أكثر مما تخرجه قوته، فقد يديه واضطر إلى تعلّم الأمر كله من جديد.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "nate-grey",
@@ -11913,9 +11790,7 @@ const mutantsC: CharacterDraft[] = [
       en: "A cheerful young mutant with butterfly wings who had a piece of her soul cut out to forge a magic dagger, and who came back from that funnier rather than darker.",
       ar: "متحوّلة يافعة مرحة بجناحي فراشة، اقتُطعت قطعة من روحها لصوغ خنجر سحري، فعادت من ذلك أكثر طرافة لا أكثر عتمة.",
     },
-    related: [
-      { id: "magik", kind: "ally" },
-    ],
+    related: [{ id: "magik", kind: "ally" }],
   },
   {
     id: "prodigy",
@@ -11935,9 +11810,7 @@ const mutantsC: CharacterDraft[] = [
       en: "A mutant who absorbs the skills of anyone near him, lost the power, and found he had kept everything he had ever learned. He also remembers every version of himself the resurrections made.",
       ar: "متحوّل يمتص مهارات من حوله، فقد قدرته فوجد أنه احتفظ بكل ما تعلّمه يومًا. ويتذكر أيضًا كل نسخة من نفسه صنعتها الإحياءات.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "rictor",
@@ -11957,9 +11830,7 @@ const mutantsC: CharacterDraft[] = [
       en: "A mutant who generates seismic waves, who lost his power on M-Day and spent the years without it discovering he was still the same person underneath.",
       ar: "متحوّل يولّد موجات زلزالية، فقد قوته يوم إم وأمضى السنين بدونها يكتشف أنه ظل الشخص نفسه تحت ذلك.",
     },
-    related: [
-      { id: "cannonball", kind: "ally" },
-    ],
+    related: [{ id: "cannonball", kind: "ally" }],
   },
   {
     id: "sauron",
@@ -11979,9 +11850,7 @@ const mutantsC: CharacterDraft[] = [
       en: "A doctor who has to drain mutant life-force to survive and turns into a great winged reptile when he does. He fights it, loses, and fights it again.",
       ar: "طبيب مضطر إلى امتصاص طاقة حياة المتحوّلين ليبقى، فيتحوّل حين يفعل إلى زاحف مجنّح ضخم. يقاوم فيخسر ثم يقاوم من جديد.",
     },
-    related: [
-      { id: "professor-x", kind: "enemy" },
-    ],
+    related: [{ id: "professor-x", kind: "enemy" }],
   },
   {
     id: "scalphunter",
@@ -12001,9 +11870,7 @@ const mutantsC: CharacterDraft[] = [
       en: "A mutant who can operate any weapon he picks up as though he built it, and one of the Marauders Mister Sinister sent into the Morlock tunnels.",
       ar: "متحوّل يشغّل أي سلاح يلتقطه كأنه صانعه، وأحد المغيرين الذين أرسلهم مستر سينيستر إلى أنفاق المورلوك.",
     },
-    related: [
-      { id: "mister-sinister", kind: "ally" },
-    ],
+    related: [{ id: "mister-sinister", kind: "ally" }],
   },
   {
     id: "stepford-cuckoos",
@@ -12023,9 +11890,7 @@ const mutantsC: CharacterDraft[] = [
       en: "Five identical telepaths cloned from Emma Frost who think as a single mind, and who have already lost two of their number. They finish each other's sentences because it is one sentence.",
       ar: "خمس قارئات أفكار متطابقات استُنسخن من إيما فروست ويفكرن كعقل واحد، وقد فقدن اثنتين منهن. يكملن جمل بعضهن لأنها جملة واحدة.",
     },
-    related: [
-      { id: "emma-frost", kind: "family" },
-    ],
+    related: [{ id: "emma-frost", kind: "family" }],
   },
   {
     id: "vulcan",
@@ -12079,9 +11944,7 @@ const mutantsD: CharacterDraft[] = [
       en: "A young mutant who wraps herself in a glowing exoskeleton drawn from her ancestors, and which grows stronger the more of them she has lost.",
       ar: "متحوّلة يافعة تلفّ نفسها بهيكل خارجي متوهّج مستمدّ من أسلافها، ويزداد قوة كلما فقدت منهم أكثر.",
     },
-    related: [
-      { id: "wolverine", kind: "ally" },
-    ],
+    related: [{ id: "wolverine", kind: "ally" }],
   },
   {
     id: "cecilia-reyes",
@@ -12103,9 +11966,7 @@ const mutantsD: CharacterDraft[] = [
       en: "An emergency surgeon who generates a protective field she cannot turn off, and who spent years refusing to be an X-Man because she already had a job saving lives.",
       ar: "جرّاحة طوارئ تولّد حقلًا واقيًا لا تستطيع إطفاءه، وأمضت سنين ترفض أن تكون من الإكس مِن لأن لها أصلًا عملًا في إنقاذ الأرواح.",
     },
-    related: [
-      { id: "storm", kind: "ally" },
-    ],
+    related: [{ id: "storm", kind: "ally" }],
   },
   {
     id: "dust",
@@ -12125,9 +11986,7 @@ const mutantsD: CharacterDraft[] = [
       en: "An Afghan mutant who turns into a cloud of sand, rescued from slavers by Wolverine, and who wears the niqab because she chooses to and says so whenever anyone assumes otherwise.",
       ar: "متحوّلة أفغانية تتحول إلى سحابة رمل، أنقذها ولفرين من تجّار الرقيق، وترتدي النقاب لأنها تختاره وتقول ذلك كلما افترض أحد غيره.",
     },
-    related: [
-      { id: "wolverine", kind: "ally" },
-    ],
+    related: [{ id: "wolverine", kind: "ally" }],
   },
   {
     id: "elixir",
@@ -12142,15 +12001,16 @@ const mutantsD: CharacterDraft[] = [
     powers: [
       { en: "Heals any wound at all", ar: "يشفي أي جرح كان" },
       { en: "Can kill with the same touch", ar: "ويقتل باللمسة نفسها" },
-      { en: "Gold when healing, black when not", ar: "ذهبيّ حين يشفي وأسود حين لا يشفي" },
+      {
+        en: "Gold when healing, black when not",
+        ar: "ذهبيّ حين يشفي وأسود حين لا يشفي",
+      },
     ],
     origin: {
       en: "An Omega-level healer who turns gold when he mends and black when he kills, and who found out he could do the second thing by accident. He was raised to hate mutants.",
       ar: "شافٍ من مستوى أوميغا يصير ذهبيًا حين يرمّم وأسود حين يقتل، واكتشف قدرته على الثانية مصادفة. وقد نشأ على كراهية المتحوّلين.",
     },
-    related: [
-      { id: "magik", kind: "ally" },
-    ],
+    related: [{ id: "magik", kind: "ally" }],
   },
   {
     id: "mastermind",
@@ -12162,7 +12022,10 @@ const mutantsD: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Illusions nobody can disbelieve", ar: "أوهام لا يقدر أحد على تكذيبها" },
+      {
+        en: "Illusions nobody can disbelieve",
+        ar: "أوهام لا يقدر أحد على تكذيبها",
+      },
       { en: "Made Jean into the Black Queen", ar: "صنع من جين الملكة السوداء" },
       { en: "Physically unremarkable", ar: "لا شيء فيه جسديًا" },
     ],
@@ -12193,9 +12056,7 @@ const mutantsD: CharacterDraft[] = [
       en: "A mutant who is genuinely good at nearly everything and has never once pretended otherwise, and who spent years trapped in another body by a brother nobody knew about.",
       ar: "متحوّلة بارعة حقًا في كل شيء تقريبًا ولم تتظاهر يومًا بغير ذلك، وقضت سنين حبيسة جسد آخر بفعل أخٍ لم يعلم به أحد.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "quentin-quire",
@@ -12216,9 +12077,7 @@ const mutantsD: CharacterDraft[] = [
       en: "An Omega-level telepath who read the world's opinion of mutants and started a riot about it while still at school. He has grown up somewhat and lost none of the anger.",
       ar: "قارئ أفكار من مستوى أوميغا، قرأ رأي العالم في المتحوّلين فأشعل شغبًا بسببه وهو ما يزال في المدرسة. نضج بعض الشيء ولم يفقد شيئًا من غضبه.",
     },
-    related: [
-      { id: "professor-x", kind: "enemy" },
-    ],
+    related: [{ id: "professor-x", kind: "enemy" }],
   },
   {
     id: "rockslide",
@@ -12238,9 +12097,7 @@ const mutantsD: CharacterDraft[] = [
       en: "A mutant who is a pile of rock with a mind in it rather than a person wearing rock, which is why he can throw a fist across a room and grow a new one.",
       ar: "متحوّل هو كومة صخر فيها عقل، لا شخصٌ يرتدي صخرًا، ولهذا يقذف قبضته عبر الغرفة وتنبت له أخرى.",
     },
-    related: [
-      { id: "magik", kind: "ally" },
-    ],
+    related: [{ id: "magik", kind: "ally" }],
   },
   {
     id: "surge",
@@ -12253,16 +12110,17 @@ const mutantsD: CharacterDraft[] = [
     species: "Mutant",
     powers: [
       { en: "Absorbs electricity constantly", ar: "تمتص الكهرباء باستمرار" },
-      { en: "Gauntlets keep her from overload", ar: "قفازان يمنعان عنها الفيضان" },
+      {
+        en: "Gauntlets keep her from overload",
+        ar: "قفازان يمنعان عنها الفيضان",
+      },
       { en: "Moves faster than she can think", ar: "تتحرك أسرع مما تفكر" },
     ],
     origin: {
       en: "A mutant who absorbs electricity whether she wants to or not and wears gauntlets to bleed it off, and who is running at a speed her own judgement cannot keep up with.",
       ar: "متحوّلة تمتص الكهرباء شاءت أم أبت وترتدي قفازين لتصريفها، وتجري بسرعة لا يلحق بها حكمها على الأمور.",
     },
-    related: [
-      { id: "magik", kind: "ally" },
-    ],
+    related: [{ id: "magik", kind: "ally" }],
   },
   {
     id: "synch",
@@ -12282,9 +12140,7 @@ const mutantsD: CharacterDraft[] = [
       en: "A mutant who synchronises with any power near him and tends to use it with more precision than the person born to it. He died as a teenager and was one of the first brought back.",
       ar: "متحوّل يتزامن مع أي قوة قريبة منه ويستعملها غالبًا بدقة تفوق من وُلد بها. مات مراهقًا وكان من أوائل من أُعيدوا.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "xorn",
@@ -12304,9 +12160,7 @@ const mutantsD: CharacterDraft[] = [
       en: "A mutant with a star where his brain should be, kept behind an iron mask. There are two of them, brothers, and most of what is remembered about the name belongs to an impostor.",
       ar: "متحوّل في موضع دماغه نجم، محبوس خلف قناع حديدي. وهما اثنان، أخوان، وأكثر ما يُذكر عن الاسم يخصّ منتحلًا.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "kwannon",
@@ -12326,9 +12180,7 @@ const mutantsD: CharacterDraft[] = [
       en: "A Japanese assassin whose body Betsy Braddock lived in for years, and who eventually got it back and took up the Psylocke name herself rather than surrender it.",
       ar: "قاتلة محترفة يابانية عاشت بيتسي برادوك في جسدها سنين، ثم استعادته وحملت اسم سايلوك بنفسها بدل أن تتنازل عنه.",
     },
-    related: [
-      { id: "psylocke", kind: "variant" },
-    ],
+    related: [{ id: "psylocke", kind: "variant" }],
   },
 ];
 
@@ -12399,9 +12251,7 @@ const mutantsE: CharacterDraft[] = [
       en: "A rebel bred in an entertainment dimension to be a television star, whose luck works only when his motives are clean. He is not a mutant, which the roster marks and which the corpus keeps.",
       ar: "متمرّد استُولد في بُعدٍ للترفيه ليكون نجم تلفزيون، ولا يعمل حظه إلا إذا صفت نيّته. وهو ليس متحوّلًا، وذلك ما يشير إليه المرجع وما يحفظه هذا السجل.",
     },
-    related: [
-      { id: "dazzler", kind: "ally" },
-    ],
+    related: [{ id: "dazzler", kind: "ally" }],
   },
   {
     id: "lockheed",
@@ -12421,9 +12271,7 @@ const mutantsE: CharacterDraft[] = [
       en: "A small purple dragon from an alien world who attached himself to Kitty Pryde and never left. He understands every word said around him and lets people assume otherwise.",
       ar: "تنين أرجواني صغير من عالم فضائي، تعلّق بكيتي برايد ولم يفارقها. يفهم كل كلمة تقال حوله ويدع الناس يظنون العكس.",
     },
-    related: [
-      { id: "kitty-pryde", kind: "ally" },
-    ],
+    related: [{ id: "kitty-pryde", kind: "ally" }],
   },
   {
     id: "anole",
@@ -12443,9 +12291,7 @@ const mutantsE: CharacterDraft[] = [
       en: "A green-scaled young mutant who lost an arm and grew back something much larger, and who is one of the few students the school never tried to make look normal.",
       ar: "متحوّل يافع أخضر الحراشف، فقد ذراعًا فنبت له ما هو أضخم بكثير، وهو من قلائل الطلاب الذين لم تحاول المدرسة أن تجعلهم يبدون عاديين.",
     },
-    related: [
-      { id: "armor", kind: "ally" },
-    ],
+    related: [{ id: "armor", kind: "ally" }],
   },
   {
     id: "blindfold",
@@ -12465,9 +12311,7 @@ const mutantsE: CharacterDraft[] = [
       en: "A precognitive born without eyes who sees the future clearly and the present hardly at all, and whose sentences arrive in the order the visions do rather than the order people expect.",
       ar: "بصيرة بالمستقبل وُلدت بلا عينين، ترى ما هو آتٍ بوضوح ولا تكاد ترى الحاضر، وتأتي جملها بترتيب الرؤى لا بالترتيب الذي ينتظره الناس.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "feral",
@@ -12487,9 +12331,7 @@ const mutantsE: CharacterDraft[] = [
       en: "A cat-like mutant who came up through the tunnels and an abusive home, and who has switched sides more than once because neither one ever offered her much.",
       ar: "متحوّلة تشبه الهرّ، خرجت من الأنفاق ومن بيت مؤذٍ، وبدّلت الجهات أكثر من مرة لأن أيًّا منها لم يقدّم لها كثيرًا.",
     },
-    related: [
-      { id: "cannonball", kind: "enemy" },
-    ],
+    related: [{ id: "cannonball", kind: "enemy" }],
   },
   {
     id: "frenzy",
@@ -12509,9 +12351,7 @@ const mutantsE: CharacterDraft[] = [
       en: "A mutant with skin nothing gets through and the strength to use it, who spent years as an enforcer for other people's causes before picking one of her own.",
       ar: "متحوّلة بجلد لا ينفذه شيء وقوة تكافئه، أمضت سنين منفّذةً لقضايا غيرها قبل أن تختار قضية لنفسها.",
     },
-    related: [
-      { id: "magneto", kind: "ally" },
-    ],
+    related: [{ id: "magneto", kind: "ally" }],
   },
   {
     id: "gateway",
@@ -12531,9 +12371,7 @@ const mutantsE: CharacterDraft[] = [
       en: "An Aboriginal Australian mutant who opens doorways across the world by spinning a bullroarer, and who has never once explained himself to anyone who used him.",
       ar: "متحوّل من سكان أستراليا الأصليين يفتح أبوابًا عبر العالم بإدارة مِرواح، ولم يفسّر نفسه قط لأحد ممن استعملوه.",
     },
-    related: [
-      { id: "storm", kind: "ally" },
-    ],
+    related: [{ id: "storm", kind: "ally" }],
   },
   {
     id: "maggott",
@@ -12560,9 +12398,7 @@ const mutantsE: CharacterDraft[] = [
       en: "A South African mutant whose digestive system is two sentient slugs that leave his body to eat, and who is stronger while they are away. It is as strange as it sounds and he is at peace with it.",
       ar: "متحوّل جنوب أفريقي جهازه الهضمي دودتان واعيتان تغادران جسده لتأكلا، ويكون أقوى في غيابهما. الأمر غريب كما يبدو، وهو راضٍ به.",
     },
-    related: [
-      { id: "storm", kind: "ally" },
-    ],
+    related: [{ id: "storm", kind: "ally" }],
   },
   {
     id: "nocturne",
@@ -12601,7 +12437,10 @@ const mutantsE: CharacterDraft[] = [
       { en: "Sentinel strength and durability", ar: "قوة وصلابة سنتينل" },
       { en: "Energy weapons built into her", ar: "أسلحة طاقة مدمجة فيها" },
       { en: "Flight", ar: "طيران" },
-      { en: "Adapts to the powers she meets", ar: "تتكيف مع القوى التي تواجهها" },
+      {
+        en: "Adapts to the powers she meets",
+        ar: "تتكيف مع القوى التي تواجهها",
+      },
       { en: "A Sentinel built from a person", ar: "سنتينل بُني من إنسانة" },
       { en: "Fights the programming daily", ar: "تقاوم البرمجة كل يوم" },
     ],
@@ -12609,9 +12448,7 @@ const mutantsE: CharacterDraft[] = [
       en: "An Indian police officer converted into a Sentinel by Bastion, who kept enough of herself to refuse the programming and has to keep refusing it every day since.",
       ar: "ضابطة شرطة هندية حوّلها باستيون إلى سنتينل، فاحتفظت من نفسها بما يكفي لترفض البرمجة، وعليها أن تظل ترفضها كل يوم منذئذ.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "wither",
@@ -12632,9 +12469,7 @@ const mutantsE: CharacterDraft[] = [
       en: "A mutant whose touch destroys anything living, which he discovered on his own father. He has never been able to switch it off, and everything that followed came out of that.",
       ar: "متحوّل تدمّر لمسته كل حيّ، واكتشف ذلك في أبيه. ولم يقدر قط على إيقافها، وكل ما تلا خرج من ذلك.",
     },
-    related: [
-      { id: "elixir", kind: "enemy" },
-    ],
+    related: [{ id: "elixir", kind: "enemy" }],
   },
 ];
 
@@ -12667,9 +12502,7 @@ const hiddenByAudit: CharacterDraft[] = [
       en: "A mutant from a future where his people were rounded up and branded, who travelled back to prevent it and has never entirely stopped treating the present as evidence.",
       ar: "متحوّل من مستقبل جُمع فيه قومه ووُسموا، عاد ليمنع ذلك، ولم يكفّ قط عن معاملة الحاضر بوصفه دليلًا.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "skin",
@@ -12689,9 +12522,7 @@ const hiddenByAudit: CharacterDraft[] = [
       en: "A former gang member with several feet of extra grey skin he can stretch at will, and no way at all of passing for anything but what he is.",
       ar: "عضو عصابة سابق لديه أقدام إضافية من جلد رمادي يمدّه كما يشاء، ولا سبيل البتة إلى أن يبدو شيئًا غير ما هو عليه.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "oya",
@@ -12711,9 +12542,7 @@ const hiddenByAudit: CharacterDraft[] = [
       en: "A Nigerian mutant who commands fire and ice and believes herself damned for using them, having killed to protect other children before she was old enough to weigh it.",
       ar: "متحوّلة نيجيرية تأمر النار والجليد وتعتقد أنها هلكت باستعمالهما، إذ قتلت حمايةً لأطفال آخرين قبل أن تبلغ سنّ الموازنة.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "cipher",
@@ -12733,9 +12562,7 @@ const hiddenByAudit: CharacterDraft[] = [
       en: "A mutant nobody can see, hear or sense, who spent years living inside the school unnoticed and knowing everything about everyone before she let anyone find her.",
       ar: "متحوّلة لا يراها أحد ولا يسمعها ولا يحسّ بها، عاشت سنين داخل المدرسة دون أن يُنتبه إليها وهي تعلم كل شيء عن الجميع، قبل أن تدع أحدًا يجدها.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "jackal",
@@ -12844,7 +12671,10 @@ const bugleAndRogues: CharacterDraft[] = [
     powers: [
       { en: "Runs the Daily Bugle", ar: "يدير الديلي بيوغل" },
       { en: "Hates Spider-Man in print", ar: "يكره سبايدرمان في المطبوع" },
-      { en: "Right about almost nothing else", ar: "مصيب في كل شيء تقريبًا سواه" },
+      {
+        en: "Right about almost nothing else",
+        ar: "مصيب في كل شيء تقريبًا سواه",
+      },
     ],
     origin: {
       en: "The newspaperman who has spent his career calling Spider-Man a menace, and who has also run every story about corrupt officials nobody else would print. He is wrong about one thing loudly.",
@@ -12873,9 +12703,7 @@ const bugleAndRogues: CharacterDraft[] = [
       en: "A police captain who worked alongside Spider-Man until the system kept failing the cases she brought it, then put on a mask herself to do what the badge would not let her.",
       ar: "نقيبة شرطة عملت إلى جانب سبايدرمان حتى ظل النظام يخذل القضايا التي رفعتها، فارتدت قناعًا لتفعل ما لم تدعها الشارة تفعله.",
     },
-    related: [
-      { id: "spider-man", kind: "ally" },
-    ],
+    related: [{ id: "spider-man", kind: "ally" }],
   },
   {
     id: "glory-grant",
@@ -12895,9 +12723,7 @@ const bugleAndRogues: CharacterDraft[] = [
       en: "Peter Parker's old neighbour who became J. Jonah Jameson's secretary, and who knows more about what happens at the Bugle than anyone whose name is on the masthead.",
       ar: "جارة بيتر باركر القديمة التي صارت سكرتيرة جي جونا جيمسون، وتعرف عمّا يجري في البيوغل أكثر من أي أحد اسمه على الترويسة.",
     },
-    related: [
-      { id: "j-jonah-jameson", kind: "ally" },
-    ],
+    related: [{ id: "j-jonah-jameson", kind: "ally" }],
   },
   {
     id: "randy-robertson",
@@ -12917,9 +12743,7 @@ const bugleAndRogues: CharacterDraft[] = [
       en: "Robbie Robertson's son and one of Peter Parker's roommates, an activist who has been arguing about the same injustices since college and has not got tired of it.",
       ar: "ابن روبي روبرتسون وأحد رفاق سكن بيتر باركر، ناشط يجادل في المظالم نفسها منذ الجامعة ولم يملّ.",
     },
-    related: [
-      { id: "robbie-robertson", kind: "family" },
-    ],
+    related: [{ id: "robbie-robertson", kind: "family" }],
   },
   {
     id: "mayday-parker",
@@ -12956,7 +12780,10 @@ const bugleAndRogues: CharacterDraft[] = [
     reality: "Earth-50101",
     species: "Mutate",
     powers: [
-      { en: "Powers from a yogi, not a spider", ar: "قواه من يوغيّ لا من عنكبوت" },
+      {
+        en: "Powers from a yogi, not a spider",
+        ar: "قواه من يوغيّ لا من عنكبوت",
+      },
       { en: "Fights demons, not scientists", ar: "يقاتل شياطين لا علماء" },
       { en: "Mumbai is the whole point", ar: "مومباي هي المقصد كله" },
     ],
@@ -12965,7 +12792,11 @@ const bugleAndRogues: CharacterDraft[] = [
       ar: "سبايدرمان مومباي، جاءته قواه من يوغيّ يحتضر لا من حادث مختبر، ومدينته ليست خلفية بل سبب اختلاف الحكاية.",
     },
     related: [
-      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
+      {
+        id: "spider-man",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
     ],
   },
   {
@@ -12978,17 +12809,21 @@ const bugleAndRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Rebuilds any vehicle he touches", ar: "يعيد بناء أي مركبة يلمسها" },
+      {
+        en: "Rebuilds any vehicle he touches",
+        ar: "يعيد بناء أي مركبة يلمسها",
+      },
       { en: "A getaway driver by trade", ar: "سائق هروب بالمهنة" },
-      { en: "A fan of Spider-Man, oddly", ar: "معجب بسبايدرمان، والغريب أنه صادق" },
+      {
+        en: "A fan of Spider-Man, oddly",
+        ar: "معجب بسبايدرمان، والغريب أنه صادق",
+      },
     ],
     origin: {
       en: "A getaway driver who can turn any car he touches into something far faster, and who is a genuine Spider-Man fan while working for the people trying to kill him.",
       ar: "سائق هروب يحوّل أي سيارة يلمسها إلى ما هو أسرع بكثير، وهو معجب صادق بسبايدرمان بينما يعمل لدى من يحاولون قتله.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "swarm",
@@ -13008,9 +12843,7 @@ const bugleAndRogues: CharacterDraft[] = [
       en: "A Nazi scientist consumed by mutated bees who did not die so much as become the swarm, and who has no solid body for anyone to punch.",
       ar: "عالم نازي التهمه نحل متطفّر، فلم يمت بقدر ما صار السرب نفسه، ولا جسد صلب فيه يلكمه أحد.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "grizzly",
@@ -13030,9 +12863,7 @@ const bugleAndRogues: CharacterDraft[] = [
       en: "A wrestler whose career was ended by a Daily Bugle story, who put on a powered bear suit to do something about it and has been drifting between crews ever since.",
       ar: "مصارع أنهت مسيرته قصة في الديلي بيوغل، فارتدى بدلة دبّ مدعّمة ليفعل شيئًا حيال ذلك، وظل يتنقل بين العصابات منذئذ.",
     },
-    related: [
-      { id: "j-jonah-jameson", kind: "enemy" },
-    ],
+    related: [{ id: "j-jonah-jameson", kind: "enemy" }],
   },
   {
     id: "tarantula",
@@ -13052,9 +12883,7 @@ const bugleAndRogues: CharacterDraft[] = [
       en: "A South American political assassin turned costumed killer, whose employers eventually experimented on him until he stopped being a man in a spider suit and became a spider.",
       ar: "قاتل سياسي من أمريكا الجنوبية صار قاتلًا مقنّعًا، وانتهى بمشغّليه أن جرّبوا عليه حتى كفّ عن كونه رجلًا في زيّ عنكبوت وصار عنكبوتًا.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "scarecrow",
@@ -13074,9 +12903,7 @@ const bugleAndRogues: CharacterDraft[] = [
       en: "A circus contortionist who can fold himself through any gap, commands a flock of crows, and grows stronger on the fear he provokes.",
       ar: "بهلوان سيرك يطوي نفسه عبر أي فُرجة، ويأمر سربًا من الغربان، ويزداد قوة بالخوف الذي يثيره.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
 ];
 
@@ -13112,9 +12939,7 @@ const powerList: CharacterDraft[] = [
       en: "A cosmic being who arrives when a reality is finished, grieving for it while she removes what is left. She goes after survivors specifically, because a survivor means the ending is incomplete.",
       ar: "كائنة كونية تصل حين ينتهي واقعٌ ما، تنعاه وهي تزيل ما بقي منه. وتلاحق الناجين تحديدًا، لأن ناجيًا يعني أن النهاية لم تكتمل.",
     },
-    related: [
-      { id: "star-lord", kind: "enemy" },
-    ],
+    related: [{ id: "star-lord", kind: "enemy" }],
   },
   {
     id: "marquis-of-death",
@@ -13137,9 +12962,7 @@ const powerList: CharacterDraft[] = [
       en: "An Omega-level mutant driven past sanity and returned as something that unmakes what it touches, who beat Doctor Doom so thoroughly that Doom spent the rest of it planning an answer.",
       ar: "متحوّل من مستوى أوميغا دُفع إلى ما وراء العقل وعاد كائنًا يفكّ ما يلمسه، هزم دكتور دووم هزيمة جعلت دووم يقضي ما تبقى في تدبير ردّ.",
     },
-    related: [
-      { id: "doctor-doom", kind: "enemy" },
-    ],
+    related: [{ id: "doctor-doom", kind: "enemy" }],
   },
   {
     id: "mad-jim-jaspers",
@@ -13155,16 +12978,17 @@ const powerList: CharacterDraft[] = [
        not a fan roster and not how strong someone feels. */
     powers: [
       { en: "Warps reality by thinking", ar: "يشوّه الواقع بالتفكير" },
-      { en: "The madder he gets, the worse", ar: "كلما ازداد جنونًا ازداد الأمر سوءًا" },
+      {
+        en: "The madder he gets, the worse",
+        ar: "كلما ازداد جنونًا ازداد الأمر سوءًا",
+      },
       { en: "A politician in public", ar: "سياسي في العلن" },
     ],
     origin: {
       en: "A reality-warping mutant whose power scales with his own insanity, and who was a respectable politician for as long as the madness stayed private.",
       ar: "متحوّل يشوّه الواقع، تنمو قوته مع جنونه، وكان سياسيًا محترمًا ما دام الجنون في طيّ الكتمان.",
     },
-    related: [
-      { id: "psylocke", kind: "enemy" },
-    ],
+    related: [{ id: "psylocke", kind: "enemy" }],
   },
   {
     id: "abraxas",
@@ -13185,9 +13009,7 @@ const powerList: CharacterDraft[] = [
       en: "The embodiment of the multiverse's destruction, kept sealed by Galactus's mere existence. Every time Galactus has died, Abraxas has come out.",
       ar: "تجسيد دمار الكون المتعدد، يبقيه مختومًا مجرّد وجود جالاكتوس. وكلما مات جالاكتوس خرج أبراكساس.",
     },
-    related: [
-      { id: "galactus", kind: "enemy" },
-    ],
+    related: [{ id: "galactus", kind: "enemy" }],
   },
   {
     id: "chaos-king",
@@ -13208,9 +13030,7 @@ const powerList: CharacterDraft[] = [
       en: "The primordial darkness that existed before anything else and wants to be the only thing again, which is not a conquest but a restoration as far as it is concerned.",
       ar: "الظلمة البدئية التي وُجدت قبل كل شيء وتريد أن تعود الشيء الوحيد، وذلك في نظرها ليس غزوًا بل إعادة إلى الأصل.",
     },
-    related: [
-      { id: "thor", kind: "enemy" },
-    ],
+    related: [{ id: "thor", kind: "enemy" }],
   },
   {
     id: "matthew-malloy",
@@ -13234,9 +13054,7 @@ const powerList: CharacterDraft[] = [
       en: "An Omega-level mutant so dangerous that Xavier suppressed his memory and his power and left him to live an ordinary life. He is not a villain; he is what happens when the suppression fails.",
       ar: "متحوّل من مستوى أوميغا بلغ من الخطورة أن كبت إكزافير ذاكرته وقوته وتركه يعيش حياة عادية. ليس شريرًا، بل هو ما يحدث حين يخفق الكبت.",
     },
-    related: [
-      { id: "professor-x", kind: "enemy" },
-    ],
+    related: [{ id: "professor-x", kind: "enemy" }],
   },
   {
     id: "mister-m",
@@ -13257,9 +13075,7 @@ const powerList: CharacterDraft[] = [
       en: "An Omega-level mutant who can rearrange matter at will and used it mostly to repair other mutants after they lost their powers, while declining to join anyone's cause.",
       ar: "متحوّل من مستوى أوميغا يعيد ترتيب المادة كما يشاء، واستعملها في الأغلب لإصلاح متحوّلين بعد فقدهم قواهم، رافضًا الانضمام إلى قضية أحد.",
     },
-    related: [
-      { id: "magneto", kind: "ally" },
-    ],
+    related: [{ id: "magneto", kind: "ally" }],
   },
   {
     id: "thane",
@@ -13279,9 +13095,7 @@ const powerList: CharacterDraft[] = [
       en: "Thanos's son by an Inhuman, who spent his life as a healer in a hidden city before his father came looking. One of his hands kills and the other seals a person in amber.",
       ar: "ابن ثانوس من امرأة لا بشرية، أمضى عمره مداويًا في مدينة خفية قبل أن يأتي أبوه باحثًا عنه. إحدى يديه تقتل والأخرى تحبس المرء في كهرمان.",
     },
-    related: [
-      { id: "thanos", kind: "family" },
-    ],
+    related: [{ id: "thanos", kind: "family" }],
   },
   {
     id: "sasquatch",
@@ -13301,9 +13115,7 @@ const powerList: CharacterDraft[] = [
       en: "A Canadian physicist who tried to reproduce the Hulk's transformation on himself and instead bound a mythical creature's strength to his body.",
       ar: "فيزيائي كندي حاول أن يكرّر تحوّل هالك في نفسه، فربط بجسده بدلًا من ذلك قوة مخلوق أسطوري.",
     },
-    related: [
-      { id: "hulk", kind: "ally" },
-    ],
+    related: [{ id: "hulk", kind: "ally" }],
   },
   {
     id: "cosmic-ghost-rider",
@@ -13324,7 +13136,10 @@ const powerList: CharacterDraft[] = [
       { en: "Chains from Cyttorak's bones", ar: "سلاسل من عظام سيتوراك" },
       { en: "Rebuilds himself from a skull", ar: "يعيد بناء نفسه من جمجمة" },
       { en: "Cannot be permanently killed", ar: "لا يُقتل نهائيًا" },
-      { en: "Frank Castle, at the end of things", ar: "فرانك كاسل في آخر الزمان" },
+      {
+        en: "Frank Castle, at the end of things",
+        ar: "فرانك كاسل في آخر الزمان",
+      },
     ],
     origin: {
       en: "Frank Castle from a future where everything had already lost, who made a deal with Mephisto and then another with Galactus, and came out carrying both.",
@@ -13353,9 +13168,7 @@ const powerList: CharacterDraft[] = [
       en: "Namor's cousin, stronger than he is and considerably less interested in diplomacy, who has spent most of her life defending the sea from whoever came for it that decade.",
       ar: "ابنة عم نامور، أقوى منه وأقل اهتمامًا بالدبلوماسية بكثير، أمضت أكثر عمرها تدافع عن البحر ضد من جاءه في كل عقد.",
     },
-    related: [
-      { id: "namor", kind: "family" },
-    ],
+    related: [{ id: "namor", kind: "family" }],
   },
   {
     id: "namorita",
@@ -13375,9 +13188,7 @@ const powerList: CharacterDraft[] = [
       en: "Namora's clone-daughter, raised among surface humans, whose death alongside hundreds of civilians is the event that started the superhero civil war.",
       ar: "ابنة نامورا المستنسخة، نشأت بين بشر السطح، وموتها مع مئات المدنيين هو الحدث الذي أشعل الحرب الأهلية بين الأبطال.",
     },
-    related: [
-      { id: "namora", kind: "family" },
-    ],
+    related: [{ id: "namora", kind: "family" }],
   },
 ];
 
@@ -13413,9 +13224,7 @@ const spiderVariants: CharacterDraft[] = [
       en: "Spider-Man's forgotten sidekick, wiped from the memory of everyone who knew him including Peter, and now trying to prove to a world with no record of him that he was ever there.",
       ar: "مساعد سبايدرمان المنسيّ، مُحي من ذاكرة كل من عرفه بمن فيهم بيتر، ويحاول الآن أن يثبت لعالم لا سجلّ له فيه أنه كان موجودًا.",
     },
-    related: [
-      { id: "spider-man", kind: "ally" },
-    ],
+    related: [{ id: "spider-man", kind: "ally" }],
   },
   {
     id: "web-slinger",
@@ -13437,7 +13246,11 @@ const spiderVariants: CharacterDraft[] = [
       ar: "سبايدرمان في واقعٍ من التخوم الأمريكية، عمدة مقنّع بحصان اسمه الأرملة يشاركه حسّ الإنذار.",
     },
     related: [
-      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
+      {
+        id: "spider-man",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
     ],
   },
   {
@@ -13460,7 +13273,11 @@ const spiderVariants: CharacterDraft[] = [
       ar: "تيرانوصور من عالمٍ لم تنقرض فيه الديناصورات، لدغته عنكبوت مشعّ. وهو تمامًا ما يبدو عليه، ويحمل المسؤولية بالجدّية نفسها.",
     },
     related: [
-      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
+      {
+        id: "spider-man",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
     ],
   },
   {
@@ -13482,7 +13299,11 @@ const spiderVariants: CharacterDraft[] = [
       ar: "سبايدر وومان في واقعٍ على هيئة مسرحية غنائية، أميرة يستدعي غناؤها العون وتُحلّ مشكلاتها في مقاطع.",
     },
     related: [
-      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
+      {
+        id: "spider-man",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
     ],
   },
   {
@@ -13504,9 +13325,7 @@ const spiderVariants: CharacterDraft[] = [
       en: "A fashion designer who became a Spider-hero and made a point of the costume being genuinely well made, which none of the others can claim.",
       ar: "مصمم أزياء صار بطلًا عنكبوتيًا وحرص على أن يكون الزيّ مصنوعًا صنعةً حقيقية، وهو ما لا يدّعيه سواه.",
     },
-    related: [
-      { id: "spider-man", kind: "ally" },
-    ],
+    related: [{ id: "spider-man", kind: "ally" }],
   },
   {
     id: "spider-smasher",
@@ -13526,9 +13345,7 @@ const spiderVariants: CharacterDraft[] = [
       en: "Miles Morales's sister from a reality where she was raised by the enemies of the Great Web and taught that spider-totems are the thing to be stopped.",
       ar: "أخت مايلز موراليس من واقعٍ ربّاها فيه أعداء الشبكة الكبرى وعلّموها أن الطواطم العنكبوتية هي ما يجب إيقافه.",
     },
-    related: [
-      { id: "miles-morales", kind: "family" },
-    ],
+    related: [{ id: "miles-morales", kind: "family" }],
   },
   {
     id: "old-man-spider",
@@ -13550,7 +13367,11 @@ const spiderVariants: CharacterDraft[] = [
       ar: "بيتر باركر من مستقبل خرِب، تجاوز السنّ بكثير ويفعلها رغم ذلك، بعدما بقي حيًّا بعد كل من كان العمل من أجلهم.",
     },
     related: [
-      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
+      {
+        id: "spider-man",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
     ],
   },
   {
@@ -13572,9 +13393,7 @@ const spiderVariants: CharacterDraft[] = [
       en: "A Spider-Woman with Ehlers-Danlos syndrome who designed her own web-shooters and crutches to work together, rather than treating her body as the problem to be solved.",
       ar: "سبايدر وومان مصابة بمتلازمة إهلرز دانلوس، صمّمت قاذفات خيوطها وعكازيها ليعملا معًا، بدل أن تعامل جسدها كمشكلة تُحلّ.",
     },
-    related: [
-      { id: "spider-man", kind: "ally" },
-    ],
+    related: [{ id: "spider-man", kind: "ally" }],
   },
   {
     id: "charlotte-witter",
@@ -13587,7 +13406,10 @@ const spiderVariants: CharacterDraft[] = [
     species: "Mutate",
     powers: [
       { en: "Drains other spiders' powers", ar: "تمتص قوى العناكب الأخرى" },
-      { en: "Four spider-legs from her back", ar: "أربع أرجل عنكبوتية من ظهرها" },
+      {
+        en: "Four spider-legs from her back",
+        ar: "أربع أرجل عنكبوتية من ظهرها",
+      },
       { en: "Made by Doctor Octopus", ar: "صنعها دكتور أوكتوبس" },
     ],
     origin: {
@@ -13618,9 +13440,7 @@ const spiderVariants: CharacterDraft[] = [
       en: "A Spider-hero whose powers exist in a virtual reality and who learned to carry them out of it, which makes her the only spider whose body is partly software.",
       ar: "بطلة عنكبوتية قواها قائمة في واقع افتراضي، وتعلّمت أن تحملها خارجه، فصارت العنكبوت الوحيدة التي جسدها برمجيّ في جزء منه.",
     },
-    related: [
-      { id: "miles-morales", kind: "ally" },
-    ],
+    related: [{ id: "miles-morales", kind: "ally" }],
   },
   {
     id: "bride-of-nine-spiders",
@@ -13640,9 +13460,7 @@ const spiderVariants: CharacterDraft[] = [
       en: "One of the Seven Capital Cities' Immortal Weapons, who fights by opening her cloak and letting nine spiders out of it. She rarely speaks and does not need to.",
       ar: "إحدى الأسلحة الخالدة لمدن العواصم السبع، تقاتل بأن تفتح عباءتها فتخرج منها تسعة عناكب. نادرًا ما تتكلم ولا حاجة بها إلى ذلك.",
     },
-    related: [
-      { id: "iron-fist", kind: "ally" },
-    ],
+    related: [{ id: "iron-fist", kind: "ally" }],
   },
 ];
 
@@ -13677,9 +13495,7 @@ const mutantsF: CharacterDraft[] = [
       en: "A Marauder who sends destructive shockwaves through anything she touches, and one of the group Mister Sinister sent into the Morlock tunnels.",
       ar: "مغيرة تبعث موجات صدم مدمّرة عبر كل ما تلمسه، وإحدى من أرسلهم مستر سينيستر إلى أنفاق المورلوك.",
     },
-    related: [
-      { id: "mister-sinister", kind: "ally" },
-    ],
+    related: [{ id: "mister-sinister", kind: "ally" }],
   },
   {
     id: "beak",
@@ -13699,9 +13515,7 @@ const mutantsF: CharacterDraft[] = [
       en: "A bird-like mutant who got all of the appearance and almost none of the ability, and who is widely agreed to be the most decent person the school has produced.",
       ar: "متحوّل شبيه بالطير، نال المظهر كله ولم ينل من القدرة شيئًا يُذكر، ويكاد يُجمَع على أنه أكرم من أخرجته المدرسة.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "ink",
@@ -13721,9 +13535,7 @@ const mutantsF: CharacterDraft[] = [
       en: "A man whose tattoos grant real powers, drawn by a mutant tattooist. He is not a mutant at all, which he spent a long time not knowing.",
       ar: "رجل تمنحه وشومه قوى حقيقية، رسمها واشم متحوّل. وهو ليس متحوّلًا البتة، وقد جهل ذلك زمنًا طويلًا.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "anarchist",
@@ -13743,9 +13555,7 @@ const mutantsF: CharacterDraft[] = [
       en: "A member of a mutant team assembled for television, whose sweat burns through anything and who is entirely aware that he was cast rather than recruited.",
       ar: "عضو في فريق متحوّلين جُمع للتلفزيون، عرقه يحرق كل شيء، وهو يدرك تمامًا أنه اختير للدور لا جُنّد.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "maverick",
@@ -13765,9 +13575,7 @@ const mutantsF: CharacterDraft[] = [
       en: "A mercenary from the same programme that made Wolverine, who absorbs the force of what hits him and fires it back, and who has been on both sides of Logan more than once.",
       ar: "مرتزق من البرنامج نفسه الذي صنع ولفرين، يمتص قوة ما يصيبه ويردّها، وكان في جهتَي لوغان أكثر من مرة.",
     },
-    related: [
-      { id: "wolverine", kind: "ally" },
-    ],
+    related: [{ id: "wolverine", kind: "ally" }],
   },
   {
     id: "hepzibah",
@@ -13787,9 +13595,7 @@ const mutantsF: CharacterDraft[] = [
       en: "A Mephitisoid pirate of the Starjammers, an alien rather than a mutant, who fights with claws and a scent nobody stays near.",
       ar: "قرصانة ميفيتيسويدية من النجّامين، فضائية لا متحوّلة، تقاتل بمخالبها وبرائحة لا يبقى أحد قربها.",
     },
-    related: [
-      { id: "gladiator", kind: "enemy" },
-    ],
+    related: [{ id: "gladiator", kind: "enemy" }],
   },
   {
     id: "goldballs",
@@ -13809,9 +13615,7 @@ const mutantsF: CharacterDraft[] = [
       en: "A mutant who generates large golden spheres, treated as a joke power for years, until it emerged that the spheres were how mutants were being resurrected.",
       ar: "متحوّل يولّد كرات ذهبية كبيرة، عُدّت قوةً هزلية سنين، حتى تبيّن أن تلك الكرات هي وسيلة إحياء المتحوّلين.",
     },
-    related: [
-      { id: "magik", kind: "ally" },
-    ],
+    related: [{ id: "magik", kind: "ally" }],
   },
   {
     id: "glob-herman",
@@ -13831,9 +13635,7 @@ const mutantsF: CharacterDraft[] = [
       en: "A mutant made of transparent bio-paraffin with his skeleton showing through, who is well liked, easily set on fire, and rebuilds afterwards.",
       ar: "متحوّل من برافين حيوي شفاف يظهر هيكله عبره، محبوب، سريع الاشتعال، ويعيد بناء نفسه بعدها.",
     },
-    related: [
-      { id: "magik", kind: "ally" },
-    ],
+    related: [{ id: "magik", kind: "ally" }],
   },
   {
     id: "angel-dust",
@@ -13853,9 +13655,7 @@ const mutantsF: CharacterDraft[] = [
       en: "A mutant whose strength spikes on adrenaline and drops just as fast, who fights for the people who gave her somewhere to be rather than for a cause.",
       ar: "متحوّلة تقفز قوتها بالأدرينالين وتهبط بالسرعة نفسها، تقاتل من أجل من آووها لا من أجل قضية.",
     },
-    related: [
-      { id: "deadpool", kind: "enemy" },
-    ],
+    related: [{ id: "deadpool", kind: "enemy" }],
   },
   {
     id: "lady-deathstrike",
@@ -13875,9 +13675,7 @@ const mutantsF: CharacterDraft[] = [
       en: "The daughter of the man who invented the adamantium bonding process, who had herself rebuilt as a cyborg to hunt the man wearing her father's work.",
       ar: "ابنة الرجل الذي ابتكر طريقة ربط الأداماتيوم، أعادت بناء نفسها آلية لتطارد الرجل الذي يرتدي عمل أبيها.",
     },
-    related: [
-      { id: "wolverine", kind: "enemy" },
-    ],
+    related: [{ id: "wolverine", kind: "enemy" }],
   },
   {
     id: "fabian-cortez",
@@ -13897,9 +13695,7 @@ const mutantsF: CharacterDraft[] = [
       en: "A mutant who boosts other mutants' abilities to the point of killing them, and who used that on Magneto while calling himself his most loyal follower.",
       ar: "متحوّل يضخّم قدرات المتحوّلين إلى حدّ قتلهم، واستعمل ذلك على ماغنيتو وهو يسمّي نفسه أوفى أتباعه.",
     },
-    related: [
-      { id: "magneto", kind: "enemy" },
-    ],
+    related: [{ id: "magneto", kind: "enemy" }],
   },
   {
     id: "jamie-braddock",
@@ -13920,9 +13716,7 @@ const mutantsF: CharacterDraft[] = [
       en: "Betsy and Brian Braddock's brother, an Omega-level reality manipulator who sees the world as knotted strings and lost his mind somewhere in the untangling.",
       ar: "أخو بيتسي وبراين برادوك، متلاعب بالواقع من مستوى أوميغا يرى العالم خيوطًا معقودة، وفقد عقله في مكان ما من فكّها.",
     },
-    related: [
-      { id: "psylocke", kind: "family" },
-    ],
+    related: [{ id: "psylocke", kind: "family" }],
   },
 ];
 
@@ -13980,9 +13774,7 @@ const minorRogues: CharacterDraft[] = [
       en: "The current holder of a title passed down a Peruvian family line for centuries, each one given strength by a ritual, and the first of them to question what it is for.",
       ar: "الحامل الحالي للقب توارثته عائلة بيروفية قرونًا، يُمنح كل منهم قوة بطقس، وهو أولهم الذي يسأل عمّا يفيد ذلك.",
     },
-    related: [
-      { id: "kingpin", kind: "enemy" },
-    ],
+    related: [{ id: "kingpin", kind: "enemy" }],
   },
   {
     id: "crime-master",
@@ -14002,9 +13794,7 @@ const minorRogues: CharacterDraft[] = [
       en: "A masked crime organiser whose identity has passed between several men, each of whom built a syndicate and each of whom was eventually found out by the same wall-crawler.",
       ar: "منظّم جريمة مقنّع انتقلت هويته بين عدة رجال، بنى كلٌّ منهم عصابة، وانكشف كلٌّ منهم في النهاية على يد الزاحف على الجدران نفسه.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "mister-fear",
@@ -14024,9 +13814,7 @@ const minorRogues: CharacterDraft[] = [
       en: "A lawyer with a chemical that makes people afraid of nothing in particular, who has never once needed to be in the room when it works.",
       ar: "محامٍ يملك مركبًا يجعل الناس يخافون من لا شيء بعينه، ولم يحتج قط إلى أن يكون في الغرفة حين يعمل.",
     },
-    related: [
-      { id: "daredevil", kind: "enemy" },
-    ],
+    related: [{ id: "daredevil", kind: "enemy" }],
   },
   {
     id: "stunner",
@@ -14069,9 +13857,7 @@ const minorRogues: CharacterDraft[] = [
       en: "A wealthy widow who took up costumed crime out of boredom and committed entirely to an Alice in Wonderland theme, which makes her ridiculous and does not make her harmless.",
       ar: "أرملة ثرية امتهنت الجريمة المقنّعة من الملل والتزمت تمامًا بثيمة أليس في بلاد العجائب، وذلك يجعلها سخيفة ولا يجعلها غير خطرة.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "screwball",
@@ -14091,9 +13877,7 @@ const minorRogues: CharacterDraft[] = [
       en: "A parkour athlete who commits crimes purely to livestream them, and who is chasing viewers rather than profit. Getting caught on camera is the point.",
       ar: "رياضية باركور ترتكب الجرائم لمجرّد بثّها مباشرة، وتطارد المشاهدين لا الربح. وأن تُضبط أمام الكاميرا هو المقصد.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "big-wheel",
@@ -14113,9 +13897,7 @@ const minorRogues: CharacterDraft[] = [
       en: "An embezzler who spent what was left of his money on an armed vehicle shaped like a giant wheel, which is exactly as difficult to steer as it sounds.",
       ar: "مختلس أنفق ما بقي من ماله على مركبة مسلّحة على هيئة عجلة عملاقة، وهي عسيرة القيادة تمامًا كما تبدو.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "rocket-racer",
@@ -14135,9 +13917,7 @@ const minorRogues: CharacterDraft[] = [
       en: "A gifted young engineer who built rocket skates and turned to robbery to support his younger siblings, and who was talked out of it and went to college instead.",
       ar: "مهندس شاب موهوب صنع زلّاجات صاروخية ولجأ إلى السرقة ليعيل إخوته الصغار، ثم أُقنع بالعدول عن ذلك فذهب إلى الجامعة.",
     },
-    related: [
-      { id: "spider-man", kind: "ally" },
-    ],
+    related: [{ id: "spider-man", kind: "ally" }],
   },
   {
     id: "speed-demon",
@@ -14157,9 +13937,7 @@ const minorRogues: CharacterDraft[] = [
       en: "A chemist who gave himself super-speed and uses it almost entirely for theft, on the reasoning that fighting anyone is a waste of a good head start.",
       ar: "كيميائي منح نفسه سرعة خارقة ويستعملها في السرقة كلها تقريبًا، بحجّة أن قتال أحد تبديد لسبقٍ جيد.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "gibbon",
@@ -14179,9 +13957,7 @@ const minorRogues: CharacterDraft[] = [
       en: "A man born with simian features and agility who asked Spider-Man to take him on as a partner, was refused, and turned to crime largely out of hurt feelings.",
       ar: "رجل وُلد بملامح ورشاقة قردية، طلب من سبايدرمان أن يتخذه شريكًا فرُفض، فمال إلى الجريمة من جرح المشاعر أساسًا.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "mister-hyde",
@@ -14201,9 +13977,7 @@ const minorRogues: CharacterDraft[] = [
       en: "A doctor who recreated the Jekyll formula on himself out of resentment, and who is one of the few men on the street able to trade blows with the genuinely superhuman.",
       ar: "طبيب أعاد صنع تركيبة جيكل على نفسه من الحقد، وهو من قلائل في الشارع يقدرون على تبادل اللكمات مع من هم خارقون حقًا.",
     },
-    related: [
-      { id: "daredevil", kind: "enemy" },
-    ],
+    related: [{ id: "daredevil", kind: "enemy" }],
   },
 ];
 
@@ -14263,9 +14037,7 @@ const mutantsG: CharacterDraft[] = [
       en: "A mutant who ignites the blood of anyone bleeding near him, and the half-brother of the Shi'ar empress, which almost nobody in either family knows.",
       ar: "متحوّل يشعل دم كل نازف قربه، وهو أخو إمبراطورة الشيعار غير الشقيق، وهو ما لا يكاد يعلمه أحد في أيّ من العائلتين.",
     },
-    related: [
-      { id: "gladiator", kind: "enemy" },
-    ],
+    related: [{ id: "gladiator", kind: "enemy" }],
   },
   {
     id: "el-aguila",
@@ -14285,9 +14057,7 @@ const mutantsG: CharacterDraft[] = [
       en: "A Spanish nobleman who fences with an electrically charged sabre and robs from people who will not miss it, in the full swashbuckling tradition.",
       ar: "نبيل إسباني يبارز بسيف مشحون كهربائيًا ويسرق ممن لا يفتقدون المال، على تقليد الفروسية المغامرة كاملًا.",
     },
-    related: [
-      { id: "she-hulk", kind: "ally" },
-    ],
+    related: [{ id: "she-hulk", kind: "ally" }],
   },
   {
     id: "alchemy",
@@ -14307,9 +14077,7 @@ const mutantsG: CharacterDraft[] = [
       en: "A British mutant who turns one element into another by touch, and who spent most of his life trying to have an ordinary one instead.",
       ar: "متحوّل بريطاني يحوّل عنصرًا إلى آخر باللمس، وأمضى أكثر عمره محاولًا أن يحيا حياة عادية بدل ذلك.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "box",
@@ -14329,9 +14097,7 @@ const mutantsG: CharacterDraft[] = [
       en: "A Canadian mutant who reshapes metal and machinery with his mind, and who pilots a robot body he has rebuilt from scratch more times than he can count.",
       ar: "متحوّل كندي يعيد تشكيل المعدن والآلات بعقله، ويقود جسدًا آليًا أعاد بناءه من الصفر مرات لا يحصيها.",
     },
-    related: [
-      { id: "sasquatch", kind: "ally" },
-    ],
+    related: [{ id: "sasquatch", kind: "ally" }],
   },
   {
     id: "eye-boy",
@@ -14351,9 +14117,7 @@ const mutantsG: CharacterDraft[] = [
       en: "A student covered in eyes who sees far more than sight: secrets, lies, hidden things, and is generally the first to notice something is wrong.",
       ar: "طالب مغطّى بالأعين يرى أكثر بكثير من البصر: الأسرار والأكاذيب والخفايا، وهو غالبًا أول من يلحظ أن شيئًا ما ليس على ما يرام.",
     },
-    related: [
-      { id: "armor", kind: "ally" },
-    ],
+    related: [{ id: "armor", kind: "ally" }],
   },
   {
     id: "fever-pitch",
@@ -14373,9 +14137,7 @@ const mutantsG: CharacterDraft[] = [
       en: "A mutant whose body burns constantly without harming him, who fought for Magneto's followers because nobody on the other side had offered.",
       ar: "متحوّل يتّقد جسده باستمرار دون أن يؤذيه، قاتل مع أتباع ماغنيتو لأن أحدًا من الجهة الأخرى لم يعرض عليه شيئًا.",
     },
-    related: [
-      { id: "magneto", kind: "ally" },
-    ],
+    related: [{ id: "magneto", kind: "ally" }],
   },
   {
     id: "gentle",
@@ -14395,9 +14157,7 @@ const mutantsG: CharacterDraft[] = [
       en: "A Wakandan mutant who grows to giant size, tattooed with vibranium to keep the power from tearing him apart, and who knows each use shortens his life.",
       ar: "متحوّل واكانديّ ينمو إلى حجم عملاق، وُشم بالفيبرانيوم لئلا تمزّقه قوته، ويعلم أن كل استعمال يقصّر عمره.",
     },
-    related: [
-      { id: "storm", kind: "ally" },
-    ],
+    related: [{ id: "storm", kind: "ally" }],
   },
   {
     id: "graymalkin",
@@ -14417,9 +14177,7 @@ const mutantsG: CharacterDraft[] = [
       en: "A mutant buried alive by his own father in the 1700s for being caught with another boy, whose power kept him alive underground until the ground was disturbed.",
       ar: "متحوّل دفنه أبوه حيًا في القرن الثامن عشر لأنه ضُبط مع فتى آخر، وأبقته قوته حيًا تحت الأرض حتى قُلبت التربة.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "hijack",
@@ -14439,9 +14197,7 @@ const mutantsG: CharacterDraft[] = [
       en: "A mutant who takes control of any vehicle from a distance, and who joined a mutant cause mostly because it looked like the more interesting option.",
       ar: "متحوّل يسيطر على أي مركبة من بعد، وانضم إلى قضية المتحوّلين في الأغلب لأنها بدت الخيار الأمتع.",
     },
-    related: [
-      { id: "cyclops", kind: "ally" },
-    ],
+    related: [{ id: "cyclops", kind: "ally" }],
   },
   {
     id: "jetstream",
@@ -14461,9 +14217,7 @@ const mutantsG: CharacterDraft[] = [
       en: "A Moroccan mutant who flies by generating plasma exhaust, trained at the school that competed with Xavier's rather than at Xavier's.",
       ar: "متحوّل مغربي يطير بتوليد عادم بلازمي، تدرّب في المدرسة التي نافست مدرسة إكزافير لا في مدرسته.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
 ];
 
@@ -14498,9 +14252,7 @@ const mutantsH: CharacterDraft[] = [
       en: "A living island that is itself a mutant, which fought the X-Men before becoming the place they built a nation on. It grows the habitats and the gateways.",
       ar: "جزيرة حية هي نفسها متحوّلة، قاتلت الإكس مِن قبل أن تصير المكان الذي أقاموا عليه أمّة. وهي تنبت المساكن والبوابات.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "lila-cheney",
@@ -14520,9 +14272,7 @@ const mutantsH: CharacterDraft[] = [
       en: "An intergalactic rock star who can only teleport light-years at a time, which makes her useless for crossing a room and unmatched for crossing a galaxy.",
       ar: "نجمة روك بين المجرّات لا تنتقل إلا سنين ضوئية دفعة واحدة، فلا تنفع لعبور غرفة ولا تُبارى في عبور مجرّة.",
     },
-    related: [
-      { id: "cannonball", kind: "ally" },
-    ],
+    related: [{ id: "cannonball", kind: "ally" }],
   },
   {
     id: "living-monolith",
@@ -14535,16 +14285,17 @@ const mutantsH: CharacterDraft[] = [
     species: "Mutant",
     powers: [
       { en: "Grows to the size of a building", ar: "ينمو بحجم بناية" },
-      { en: "Draws power from cosmic rays", ar: "يستمد قوته من الأشعة الكونية" },
+      {
+        en: "Draws power from cosmic rays",
+        ar: "يستمد قوته من الأشعة الكونية",
+      },
       { en: "An Egyptologist first", ar: "عالم مصريات أولًا" },
     ],
     origin: {
       en: "An Egyptologist whose mutation lets him grow enormous on cosmic energy, and who decided that made him the heir of the pharaohs rather than a man with a condition.",
       ar: "عالم مصريات تتيح له طفرته أن ينمو هائلًا بالطاقة الكونية، فقرّر أن ذلك يجعله وريث الفراعنة لا رجلًا ذا حالة.",
     },
-    related: [
-      { id: "apocalypse", kind: "enemy" },
-    ],
+    related: [{ id: "apocalypse", kind: "enemy" }],
   },
   {
     id: "loa",
@@ -14564,9 +14315,7 @@ const mutantsH: CharacterDraft[] = [
       en: "A Hawaiian student who passes through solid objects and leaves them crumbling behind her, which makes her power closer to destruction than to Kitty Pryde's.",
       ar: "طالبة من هاواي تعبر الأجسام الصلبة فتتركها متفتّتة خلفها، فقوّتها أقرب إلى التدمير منها إلى قوة كيتي برايد.",
     },
-    related: [
-      { id: "kitty-pryde", kind: "ally" },
-    ],
+    related: [{ id: "kitty-pryde", kind: "ally" }],
   },
   {
     id: "mondo",
@@ -14586,9 +14335,7 @@ const mutantsH: CharacterDraft[] = [
       en: "A Samoan mutant who takes on the properties of whatever he touches, and who was replaced by a duplicate for long enough that nobody is sure which appearances were him.",
       ar: "متحوّل ساموي يكتسب خصائص ما يلمسه، واستُبدل بنسخة مدة طويلة حتى لم يعد أحد متيقنًا أي الظهورات كانت له.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "nature-girl",
@@ -14609,9 +14356,7 @@ const mutantsH: CharacterDraft[] = [
       en: "A student who can talk to every living thing that is not human, and who has increasingly concluded that humans are the problem the rest of them describe.",
       ar: "طالبة تكلّم كل حيّ غير بشري، وخلصت على نحو متزايد إلى أن البشر هم المشكلة التي يصفها سائر الأحياء.",
     },
-    related: [
-      { id: "storm", kind: "ally" },
-    ],
+    related: [{ id: "storm", kind: "ally" }],
   },
   {
     id: "petra",
@@ -14631,9 +14376,7 @@ const mutantsH: CharacterDraft[] = [
       en: "A member of the second team Xavier sent to Krakoa, who died there, and whose existence he removed from everyone's memory including his own students.",
       ar: "عضوة في الفريق الثاني الذي أرسله إكزافير إلى كراكوا، ماتت هناك، ومحا وجودها من ذاكرة الجميع بمن فيهم طلابه.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "random",
@@ -14653,9 +14396,7 @@ const mutantsH: CharacterDraft[] = [
       en: "A mercenary whose body is a shapeless mass that reshapes into weapons, hiding a teenager who was experimented on and never quite got to be one.",
       ar: "مرتزق جسده كتلة بلا شكل تعيد تشكّلها أسلحة، تخفي مراهقًا جُرّب عليه ولم يُتح له قط أن يكون مراهقًا.",
     },
-    related: [
-      { id: "cyclops", kind: "ally" },
-    ],
+    related: [{ id: "cyclops", kind: "ally" }],
   },
   {
     id: "tempo",
@@ -14667,17 +14408,21 @@ const mutantsH: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Slows or speeds time locally", ar: "تبطئ الزمن أو تسرّعه موضعيًا" },
+      {
+        en: "Slows or speeds time locally",
+        ar: "تبطئ الزمن أو تسرّعه موضعيًا",
+      },
       { en: "A field she controls", ar: "حقل تتحكم به" },
-      { en: "Fought for the Mutant Liberation Front", ar: "قاتلت مع جبهة تحرير المتحوّلين" },
+      {
+        en: "Fought for the Mutant Liberation Front",
+        ar: "قاتلت مع جبهة تحرير المتحوّلين",
+      },
     ],
     origin: {
       en: "A mutant who alters the speed of time inside a field around her, and who spent her early years with a militant group before deciding the method was the problem.",
       ar: "متحوّلة تغيّر سرعة الزمن داخل حقل حولها، وأمضت سنيها الأولى مع جماعة مسلحة قبل أن ترى أن الأسلوب هو المشكلة.",
     },
-    related: [
-      { id: "cable", kind: "enemy" },
-    ],
+    related: [{ id: "cable", kind: "enemy" }],
   },
   {
     id: "unus",
@@ -14697,9 +14442,7 @@ const mutantsH: CharacterDraft[] = [
       en: "A mutant surrounded by an impenetrable field, whose problem is that it grew strong enough to keep out everything, including what he needed to live.",
       ar: "متحوّل يحيط به حقل لا يُخترق، ومشكلته أنه قوي إلى حدّ منْع كل شيء، بما فيه ما يحتاجه ليعيش.",
     },
-    related: [
-      { id: "magneto", kind: "ally" },
-    ],
+    related: [{ id: "magneto", kind: "ally" }],
   },
 ];
 
@@ -14733,9 +14476,7 @@ const mutantsI: CharacterDraft[] = [
       en: "A mutant made of dark stone who came to the school from a gang and found the same size and temper useful for something else.",
       ar: "متحوّل من حجر داكن، جاء إلى المدرسة من عصابة فوجد أن الحجم والطبع نفسيهما ينفعان في شيء آخر.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "stacy-x",
@@ -14755,9 +14496,7 @@ const mutantsI: CharacterDraft[] = [
       en: "A mutant who alters other people's bodies through her skin, who worked in a mutant brothel before the X-Men found her and never pretended otherwise.",
       ar: "متحوّلة تغيّر أجساد الآخرين عبر جلدها، عملت في ماخور للمتحوّلين قبل أن يجدها الإكس مِن ولم تتظاهر بغير ذلك يومًا.",
     },
-    related: [
-      { id: "storm", kind: "ally" },
-    ],
+    related: [{ id: "storm", kind: "ally" }],
   },
   {
     id: "tempus",
@@ -14777,9 +14516,7 @@ const mutantsI: CharacterDraft[] = [
       en: "An Australian student who encases things in bubbles of stopped time, and who went forward to live decades and came back to a class she had outgrown.",
       ar: "طالبة أسترالية تحبس الأشياء في فقاعات من زمن متوقف، مضت إلى الأمام فعاشت عقودًا ثم عادت إلى صفّ تجاوزته.",
     },
-    related: [
-      { id: "cyclops", kind: "ally" },
-    ],
+    related: [{ id: "cyclops", kind: "ally" }],
   },
   {
     id: "trance",
@@ -14799,9 +14536,7 @@ const mutantsI: CharacterDraft[] = [
       en: "A student who projects an astral form of purple energy that can pass through anything, and who is quieter about her power than almost anyone at the school.",
       ar: "طالبة تُسقط صورة أثيرية من طاقة بنفسجية تعبر أي شيء، وهي أكتم من كل من في المدرسة تقريبًا عن قوتها.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "triage",
@@ -14821,9 +14556,7 @@ const mutantsI: CharacterDraft[] = [
       en: "A young healer who can repair almost any injury in another person by touch, and none at all in himself, which is the arrangement he has to live with.",
       ar: "شافٍ يافع يرمّم أي إصابة تقريبًا في غيره باللمس، ولا يرمّم في نفسه شيئًا، وذلك الترتيب الذي عليه أن يعيش به.",
     },
-    related: [
-      { id: "magik", kind: "ally" },
-    ],
+    related: [{ id: "magik", kind: "ally" }],
   },
   {
     id: "transonic",
@@ -14843,9 +14576,7 @@ const mutantsI: CharacterDraft[] = [
       en: "A student whose mutation turned her blue and let her break the sound barrier, and who declined a cure on the grounds that she liked the flying more than the face.",
       ar: "طالبة حوّلتها طفرتها إلى زرقاء وأتاحت لها كسر حاجز الصوت، ورفضت علاجًا بحجة أن الطيران أحبّ إليها من الوجه.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "tarot",
@@ -14859,15 +14590,16 @@ const mutantsI: CharacterDraft[] = [
     powers: [
       { en: "Her card figures become real", ar: "أشكال بطاقاتها تصير حقيقية" },
       { en: "Draws what she summons", ar: "ترسم ما تستدعي" },
-      { en: "The deck decides as much as she does", ar: "المجموعة تقرر بقدرها" },
+      {
+        en: "The deck decides as much as she does",
+        ar: "المجموعة تقرر بقدرها",
+      },
     ],
     origin: {
       en: "A French mutant who brings the figures on her tarot cards into the world as solid creatures, and who has never been entirely sure the deck is not choosing for her.",
       ar: "متحوّلة فرنسية تُخرج أشكال بطاقات التاروت إلى العالم مخلوقات صلبة، ولم تتيقن قط أن المجموعة لا تختار عنها.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "velocidad",
@@ -14887,9 +14619,7 @@ const mutantsI: CharacterDraft[] = [
       en: "A speedster who does not move quickly so much as slow the world, and who ages at the ordinary rate the whole time he is doing it.",
       ar: "عدّاء لا يتحرك بسرعة بقدر ما يبطئ العالم، وهو يشيخ بالوتيرة العادية طوال ما يفعل ذلك.",
     },
-    related: [
-      { id: "emma-frost", kind: "ally" },
-    ],
+    related: [{ id: "emma-frost", kind: "ally" }],
   },
   {
     id: "wallflower",
@@ -14909,9 +14639,7 @@ const mutantsI: CharacterDraft[] = [
       en: "A student who emits pheromones that change how people feel about her, and who can never be certain whether anyone likes her or has simply been near her.",
       ar: "طالبة تفرز فيرومونات تغيّر شعور الناس نحوها، ولا تتيقن أبدًا أأحبّها أحد أم كان قريبًا منها فحسب.",
     },
-    related: [
-      { id: "elixir", kind: "ally" },
-    ],
+    related: [{ id: "elixir", kind: "ally" }],
   },
   {
     id: "wind-dancer",
@@ -14931,9 +14659,7 @@ const mutantsI: CharacterDraft[] = [
       en: "A Venezuelan student who controls air currents and was elected squad leader by her classmates, which is a rarer distinction at that school than any power.",
       ar: "طالبة فنزويلية تتحكم بتيارات الهواء، انتخبها زملاؤها قائدة للفرقة، وهو تمييز أندر في تلك المدرسة من أي قوة.",
     },
-    related: [
-      { id: "prodigy", kind: "ally" },
-    ],
+    related: [{ id: "prodigy", kind: "ally" }],
   },
   {
     id: "whiz-kid",
@@ -14953,9 +14679,7 @@ const mutantsI: CharacterDraft[] = [
       en: "A young mutant who rebuilds any machine he touches into something better, starting with the wheelchair he uses, which he has improved more times than anyone has counted.",
       ar: "متحوّل يافع يعيد بناء أي آلة يلمسها إلى ما هو أفضل، بدءًا بالكرسي المتحرك الذي يستعمله، وقد حسّنه مرات لم يحصها أحد.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "wraith",
@@ -14975,9 +14699,7 @@ const mutantsI: CharacterDraft[] = [
       en: "A student who phases out of solid matter and out of conversations, and who was at the school for a short and eventful time.",
       ar: "طالب يعبر خارج المادة الصلبة وخارج الأحاديث، وكان في المدرسة مدة قصيرة حافلة.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "ziggy-karst",
@@ -14997,9 +14719,7 @@ const mutantsI: CharacterDraft[] = [
       en: "A mutant who reshapes hard matter the way a sculptor does, and who has consistently treated the power as a craft rather than a weapon.",
       ar: "متحوّل يعيد تشكيل المادة الصلبة كما يفعل النحّات، وظل يعامل قوته صنعةً لا سلاحًا.",
     },
-    related: [
-      { id: "magneto", kind: "ally" },
-    ],
+    related: [{ id: "magneto", kind: "ally" }],
   },
   {
     id: "yukio",
@@ -15061,7 +14781,11 @@ const spiderLast: CharacterDraft[] = [
       ar: "سبايدرمان من القرن الثالث والعشرين يعمل شرطيَّ زمن ويرتدي أذرعًا آلية، فهو بين بيتر باركر وبين أكثر من يقاتله بيتر.",
     },
     related: [
-      { id: "spider-man", kind: "variant", variantOrigin: "alternate-universe" },
+      {
+        id: "spider-man",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
     ],
   },
   {
@@ -15082,9 +14806,7 @@ const spiderLast: CharacterDraft[] = [
       en: "A scientist scattered at the molecular level in an accident and rebuilt by will alone, who can now pass through walls or make himself harder than steel.",
       ar: "عالم تشتّت على المستوى الجزيئي في حادث وأعاد بناء نفسه بالإرادة وحدها، فصار يعبر الجدران أو يجعل نفسه أصلب من الفولاذ.",
     },
-    related: [
-      { id: "spider-man", kind: "ally" },
-    ],
+    related: [{ id: "spider-man", kind: "ally" }],
   },
   {
     id: "kangaroo",
@@ -15104,9 +14826,7 @@ const spiderLast: CharacterDraft[] = [
       en: "An Australian boxer who trained alongside kangaroos until he could leap like one, and who committed to the theme with a sincerity nobody asked for.",
       ar: "ملاكم أسترالي تدرّب مع الكناغر حتى صار يقفز مثلها، والتزم بالثيمة بصدق لم يطلبه أحد.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "massacre",
@@ -15126,9 +14846,7 @@ const spiderLast: CharacterDraft[] = [
       en: "A man whose brain injury removed his capacity to feel emotion or empathy, who kills methodically and without anger, and who knows exactly what he has lost.",
       ar: "رجل أزالت إصابة دماغية قدرته على الشعور والتعاطف، يقتل بمنهجية وبلا غضب، ويعلم تمامًا ما الذي فقده.",
     },
-    related: [
-      { id: "spider-man", kind: "enemy" },
-    ],
+    related: [{ id: "spider-man", kind: "enemy" }],
   },
   {
     id: "spencer-smythe",
@@ -15172,9 +14890,7 @@ const spiderLast: CharacterDraft[] = [
       en: "A symbiote created in Knull's war, built to cut rather than to bond, and one of the few that has never wanted a host at all.",
       ar: "سيمبيوت أُنشئ في حرب نال، صُنع ليقطع لا ليرتبط، وهو من قلائل لم يرغب قط في مضيف.",
     },
-    related: [
-      { id: "knull", kind: "ally" },
-    ],
+    related: [{ id: "knull", kind: "ally" }],
   },
   {
     id: "void-knight",
@@ -15195,9 +14911,7 @@ const spiderLast: CharacterDraft[] = [
       en: "One of Knull's armoured symbiote soldiers, made for the invasion of Earth rather than grown from anyone, which is why it fights like a weapon and not a creature.",
       ar: "أحد جنود نال السيمبيوتية المدرّعة، صُنع لغزو الأرض لا نبت من أحد، ولهذا يقاتل كسلاح لا كمخلوق.",
     },
-    related: [
-      { id: "knull", kind: "ally" },
-    ],
+    related: [{ id: "knull", kind: "ally" }],
   },
   {
     id: "jack-o-lantern",
@@ -15286,9 +15000,7 @@ const lateAdditions: CharacterDraft[] = [
       en: "A mutant who sees everything that has happened to an object or a person by touching them, without any say in which memory arrives.",
       ar: "متحوّل يرى كل ما جرى لشيء أو لشخص بمجرّد لمسه، دون أن يكون له رأي في أي ذكرى تصله.",
     },
-    related: [
-      { id: "professor-x", kind: "ally" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "match",
@@ -15308,9 +15020,7 @@ const lateAdditions: CharacterDraft[] = [
       en: "A student whose head is permanently on fire, which he cannot extinguish and which burns hotter the angrier he gets, in a school full of teenagers.",
       ar: "طالب رأسه مشتعل على الدوام، لا يقدر على إطفائه ويشتدّ اشتعاله كلما ازداد غضبًا، في مدرسة تعجّ بالمراهقين.",
     },
-    related: [
-      { id: "rockslide", kind: "ally" },
-    ],
+    related: [{ id: "rockslide", kind: "ally" }],
   },
   {
     id: "sunder",
@@ -15353,9 +15063,7 @@ const lateAdditions: CharacterDraft[] = [
       en: "A Brazilian student who becomes a humanoid shark, and who is far more comfortable in the water than in a classroom full of people who stare.",
       ar: "طالبة برازيلية تتحول إلى قرش بشريّ الهيئة، وهي في الماء أكثر ارتياحًا منها في صفّ يملؤه من يحدّقون.",
     },
-    related: [
-      { id: "armor", kind: "ally" },
-    ],
+    related: [{ id: "armor", kind: "ally" }],
   },
   {
     id: "warlock-technarch",
@@ -15375,9 +15083,7 @@ const lateAdditions: CharacterDraft[] = [
       en: "A techno-organic alien who fled his own species because they kill their young to prove strength, and who joined the New Mutants and became the gentlest of them.",
       ar: "كائن فضائي تقنيّ عضويّ فرّ من بني جنسه لأنهم يقتلون صغارهم إثباتًا للقوة، فانضم إلى الميوتانتس الجدد وصار أرقّهم.",
     },
-    related: [
-      { id: "cypher", kind: "ally" },
-    ],
+    related: [{ id: "cypher", kind: "ally" }],
   },
 ];
 
@@ -15445,9 +15151,7 @@ const cosmicTop: CharacterDraft[] = [
       en: "The personification of love, who exists in balance with hate rather than in victory over it, because a universe that had only one of them would stop working.",
       ar: "تجسيد الحب، توجد في توازن مع الكراهية لا في انتصار عليها، لأن كونًا فيه واحدة منهما فقط يتوقف عن العمل.",
     },
-    related: [
-      { id: "sire-hate", kind: "enemy" },
-    ],
+    related: [{ id: "sire-hate", kind: "enemy" }],
   },
   {
     id: "sire-hate",
@@ -15467,9 +15171,7 @@ const cosmicTop: CharacterDraft[] = [
       en: "The personification of hate, and not a villain: he is one half of a pair that has to stay in balance, and he knows it better than most beings know anything.",
       ar: "تجسيد الكراهية، وليس شريرًا: هو نصف ثنائي عليه أن يبقى متوازنًا، وهو يعلم ذلك أكثر مما تعلم أكثر الكائنات أيّ شيء.",
     },
-    related: [
-      { id: "mistress-love", kind: "enemy" },
-    ],
+    related: [{ id: "mistress-love", kind: "enemy" }],
   },
   {
     id: "queen-of-nevers",
@@ -15489,9 +15191,7 @@ const cosmicTop: CharacterDraft[] = [
       en: "A being from a universe four cosmoses ago who collects possibilities that were never taken, and who sits outside the hierarchy entirely rather than above or below it.",
       ar: "كائنة من كونٍ يسبق هذا بأربعة أكوان، تجمع الاحتمالات التي لم تُسلك قط، وتقف خارج التسلسل كليًا لا فوقه ولا تحته.",
     },
-    related: [
-      { id: "the-living-tribunal", kind: "ally" },
-    ],
+    related: [{ id: "the-living-tribunal", kind: "ally" }],
   },
   {
     id: "captain-universe",
@@ -15511,9 +15211,7 @@ const cosmicTop: CharacterDraft[] = [
       en: "Not a person but a power that finds whoever is needed, gives them what the moment requires, and leaves. It has been a child, a mechanic and Spider-Man.",
       ar: "ليس شخصًا بل قوة تجد من تحتاجه، فتمنحه ما تقتضيه اللحظة ثم تمضي. كانت طفلًا وميكانيكيًا وسبايدرمان.",
     },
-    related: [
-      { id: "spider-man", kind: "ally" },
-    ],
+    related: [{ id: "spider-man", kind: "ally" }],
   },
   {
     id: "the-progenitor",
@@ -15533,9 +15231,7 @@ const cosmicTop: CharacterDraft[] = [
       en: "The Celestial whose corpse fell to Earth and whose blood is why anything here mutated at all, and who woke long enough to judge the planet it accidentally created.",
       ar: "السماويّ الذي سقطت جثته على الأرض وكان دمه سبب أي طفرة هنا، واستيقظ ما يكفي ليحاكم الكوكب الذي خلقه مصادفة.",
     },
-    related: [
-      { id: "arishem", kind: "family" },
-    ],
+    related: [{ id: "arishem", kind: "family" }],
   },
   {
     id: "logos",
@@ -15555,9 +15251,7 @@ const cosmicTop: CharacterDraft[] = [
       en: "A cosmic being concerned with which authority governs what, and who turns up mainly to say that a matter belongs to a different court than the one hearing it.",
       ar: "كائن كوني معنيّ بأي سلطة تحكم أي شيء، ويظهر غالبًا ليقول إن المسألة تخصّ محكمة غير التي تنظر فيها.",
     },
-    related: [
-      { id: "the-living-tribunal", kind: "ally" },
-    ],
+    related: [{ id: "the-living-tribunal", kind: "ally" }],
   },
   {
     id: "aegis-cosmic",
@@ -15577,9 +15271,7 @@ const cosmicTop: CharacterDraft[] = [
       en: "A cosmic being who carries the sorrow of everything that has ever suffered, and who shields what she pities rather than avenging it.",
       ar: "كائنة كونية تحمل حزن كل ما تألّم يومًا، وتحمي ما ترثي له بدل أن تنتقم له.",
     },
-    related: [
-      { id: "eternity", kind: "ally" },
-    ],
+    related: [{ id: "eternity", kind: "ally" }],
   },
   {
     id: "antiphon",
@@ -15599,9 +15291,7 @@ const cosmicTop: CharacterDraft[] = [
       en: "A cosmic overseer who acts on the Living Tribunal's behalf in matters too small for it and too large for anybody else, and who is almost never seen doing it.",
       ar: "مشرف كوني يتصرف نيابة عن المحكمة الحية في أمور أصغر من أن تتولاها وأكبر من أن يتولاها سواه، ولا يكاد يُرى وهو يفعل.",
     },
-    related: [
-      { id: "the-living-tribunal", kind: "ally" },
-    ],
+    related: [{ id: "the-living-tribunal", kind: "ally" }],
   },
   {
     id: "the-fulcrum",
@@ -15621,9 +15311,7 @@ const cosmicTop: CharacterDraft[] = [
       en: "A being that gives orders to Celestials and abstracts alike, and which may be an aspect of the One-Above-All wearing another face. Nothing published settles it.",
       ar: "كائن يصدر الأوامر إلى السماويين والمجرّدات على السواء، وقد يكون وجهًا آخر للأعلى فوق الجميع. ولا شيء منشور يحسم ذلك.",
     },
-    related: [
-      { id: "the-one-above-all", kind: "ally" },
-    ],
+    related: [{ id: "the-one-above-all", kind: "ally" }],
   },
   {
     id: "first-firmament",
@@ -15647,9 +15335,7 @@ const cosmicTop: CharacterDraft[] = [
     /* Pointed at Arishem, who is a Celestial this corpus actually holds.
        There is no group record for the Celestials and inventing one to hang
        an edge off would be worse than naming a real member. */
-    related: [
-      { id: "arishem", kind: "enemy" },
-    ],
+    related: [{ id: "arishem", kind: "enemy" }],
   },
   {
     id: "the-beyonders",
@@ -15669,9 +15355,7 @@ const cosmicTop: CharacterDraft[] = [
       en: "A race from outside the multiverse entirely, who treated all of creation as a laboratory and ended the experiment by killing the beings that hold it together.",
       ar: "جنس من خارج الكون المتعدد كليًا، عاملوا الخلق كله مختبرًا، وأنهوا التجربة بقتل الكائنات التي تمسكه.",
     },
-    related: [
-      { id: "molecule-man", kind: "enemy" },
-    ],
+    related: [{ id: "molecule-man", kind: "enemy" }],
   },
 ];
 
@@ -15752,9 +15436,7 @@ const collectives: CharacterDraft[] = [
       en: "The abstract that governs everything magical and strange. It and its opposite are the only pair in the hierarchy with no intermediary between them, because neither will accept one.",
       ar: "المجرّدة التي تحكم كل ما هو سحري وغريب. وهي ونقيضها الثنائي الوحيد في التسلسل بلا وسيط بينهما، لأن أيًّا منهما لا يقبل وسيطًا.",
     },
-    related: [
-      { id: "natural-order", kind: "enemy" },
-    ],
+    related: [{ id: "natural-order", kind: "enemy" }],
   },
   {
     id: "natural-order",
@@ -15774,9 +15456,7 @@ const collectives: CharacterDraft[] = [
       en: "The abstract that governs science and the measurable, which has created entire universes purely to run experiments in. It and magic have kept a truce for millennia and like each other no better for it.",
       ar: "المجرّد الذي يحكم العلم والمقيس، وقد خلق أكوانًا بأكملها لمجرّد إجراء التجارب فيها. وقد حافظ هو والسحر على هدنة آلاف السنين ولم يزدد أيّ منهما حبًّا للآخر.",
     },
-    related: [
-      { id: "powers-that-be", kind: "enemy" },
-    ],
+    related: [{ id: "powers-that-be", kind: "enemy" }],
   },
   {
     id: "the-preordained",
@@ -15788,7 +15468,10 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "Stands between judgement and nothing", ar: "يقف بين القضاء والعدم" },
+      {
+        en: "Stands between judgement and nothing",
+        ar: "يقف بين القضاء والعدم",
+      },
       { en: "Speaks for both", ar: "ينطق باسمهما" },
       { en: "Serves the Tribunal and Oblivion", ar: "يخدم المحكمة والعدم" },
     ],
@@ -15812,7 +15495,10 @@ const collectives: CharacterDraft[] = [
     species: "Abstract Entity",
     powers: [
       { en: "Stands between time and space", ar: "يقف بين الزمان والمكان" },
-      { en: "Intermediary for Eternity and Infinity", ar: "وسيط بين الأزل واللانهاية" },
+      {
+        en: "Intermediary for Eternity and Infinity",
+        ar: "وسيط بين الأزل واللانهاية",
+      },
       { en: "Neither one nor the other", ar: "لا هذا ولا ذاك" },
     ],
     origin: {
@@ -15834,7 +15520,10 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Speaks for magic among mortals", ar: "ينطق باسم السحر بين الفانين" },
+      {
+        en: "Speaks for magic among mortals",
+        ar: "ينطق باسم السحر بين الفانين",
+      },
       { en: "Chosen, not born", ar: "مختار لا مولود" },
       { en: "Answers to The-Powers-That-Be", ar: "يتبع القوى القائمة" },
     ],
@@ -15842,9 +15531,7 @@ const collectives: CharacterDraft[] = [
       en: "The mortal chosen to represent The-Powers-That-Be in the world, currently a man called Wyn, whose authority is borrowed and whose judgement is entirely his own.",
       ar: "الفاني المختار ليمثّل القوى القائمة في العالم، وهو حاليًا رجل يُدعى وِن، سلطته مستعارة وحكمه له وحده.",
     },
-    related: [
-      { id: "powers-that-be", kind: "ally" },
-    ],
+    related: [{ id: "powers-that-be", kind: "ally" }],
   },
   {
     id: "the-centivars",
@@ -15866,9 +15553,7 @@ const collectives: CharacterDraft[] = [
       en: "The hundred mortals who represent The-Natural-Order-of-Things, always exactly a hundred, each replaced the moment one of them dies.",
       ar: "المئة من الفانين الذين يمثلون النظام الطبيعي للأشياء، مئة بالضبط دائمًا، ويُستبدل كلٌّ منهم لحظة موته.",
     },
-    related: [
-      { id: "natural-order", kind: "ally" },
-    ],
+    related: [{ id: "natural-order", kind: "ally" }],
   },
   {
     id: "cosmic-cube",
@@ -15888,9 +15573,7 @@ const collectives: CharacterDraft[] = [
       en: "A device that reshapes reality to match a wish, and which is not inert: left long enough, a Cube develops a mind and stops being a tool.",
       ar: "أداة تعيد تشكيل الواقع بما يوافق أمنية، وهي ليست جامدة: إن تُرك المكعب طويلًا نما له عقل وكفّ عن كونه أداة.",
     },
-    related: [
-      { id: "red-skull", kind: "enemy" },
-    ],
+    related: [{ id: "red-skull", kind: "enemy" }],
   },
   {
     id: "kubik",
@@ -15933,9 +15616,7 @@ const collectives: CharacterDraft[] = [
       en: "A Cosmic Cube that became a being, which now remakes worlds out of whatever a dreamer gives it, and cannot create anything without somebody to dream it first.",
       ar: "مكعب كوني صار كائنًا، يعيد صنع العوالم مما يعطيه إياه حالم، ولا يقدر أن يخلق شيئًا دون من يحلم به أولًا.",
     },
-    related: [
-      { id: "cosmic-cube", kind: "variant" },
-    ],
+    related: [{ id: "cosmic-cube", kind: "variant" }],
   },
   {
     id: "great-web",
@@ -15955,9 +15636,7 @@ const collectives: CharacterDraft[] = [
       en: "The structure connecting every spider-totem across every reality, which is why the Inheritors hunt spiders and why killing one is felt everywhere.",
       ar: "البنية التي تربط كل طوطم عنكبوتي عبر كل واقع، ولذلك يصطاد الورثة العناكب، ولذلك يُحسّ بمقتل واحد في كل مكان.",
     },
-    related: [
-      { id: "spider-man", kind: "ally" },
-    ],
+    related: [{ id: "spider-man", kind: "ally" }],
   },
   {
     id: "master-weaver",
@@ -16025,9 +15704,7 @@ const collectives: CharacterDraft[] = [
       en: "A race of demons that ruled this world before humanity and were banished from it, who cannot return unless somebody here opens the door for them.",
       ar: "جنس من الشياطين حكم هذا العالم قبل البشر ثم نُفي منه، ولا يقدرون على العودة ما لم يفتح لهم أحدٌ من هنا الباب.",
     },
-    related: [
-      { id: "doctor-strange", kind: "enemy" },
-    ],
+    related: [{ id: "doctor-strange", kind: "enemy" }],
   },
   {
     id: "many-angled-ones",
@@ -16048,9 +15725,7 @@ const collectives: CharacterDraft[] = [
       en: "The powers behind a reality where Death itself was killed, leaving life to grow without limit until nothing could die and everything was in agony.",
       ar: "القوى الكامنة وراء واقع قُتل فيه الموت نفسه، فتركت الحياة تنمو بلا حدّ حتى لم يعد شيء يموت وصار كل شيء في عذاب.",
     },
-    related: [
-      { id: "thanos", kind: "enemy" },
-    ],
+    related: [{ id: "thanos", kind: "enemy" }],
   },
   {
     id: "the-aspirants",
@@ -16062,7 +15737,10 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
-      { en: "The First Firmament's loyal Celestials", ar: "سماويّو الجَلَد الأول الموالون" },
+      {
+        en: "The First Firmament's loyal Celestials",
+        ar: "سماويّو الجَلَد الأول الموالون",
+      },
       { en: "Fought their own siblings", ar: "قاتلوا إخوتهم" },
       { en: "Lost, and kept fighting", ar: "خسروا وظلّوا يقاتلون" },
     ],
@@ -16099,7 +15777,10 @@ const wakanda: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Talokanil",
     powers: [
-      { en: "Breathes water, fights on land", ar: "يتنفس الماء ويقاتل على اليابسة" },
+      {
+        en: "Breathes water, fights on land",
+        ar: "يتنفس الماء ويقاتل على اليابسة",
+      },
       { en: "Leads Talokan's warriors", ar: "يقود محاربي تالوكان" },
       { en: "Wields a whale-bone hammer", ar: "يحمل مطرقة من عظم حوت" },
     ],
@@ -16153,9 +15834,7 @@ const wakanda: CharacterDraft[] = [
       en: "The elder who administers the herb that makes a Black Panther, and who kept the truth about N'Jobu from T'Challa until it walked into the throne room.",
       ar: "الشيخ الذي يناول العشبة التي تصنع بلاك بانثر، وكتم عن تشالا حقيقة نجوبو حتى دخلت قاعة العرش على قدميها.",
     },
-    related: [
-      { id: "black-panther", kind: "ally" },
-    ],
+    related: [{ id: "black-panther", kind: "ally" }],
   },
   {
     id: "wkabi",
@@ -16287,9 +15966,7 @@ const hulkRogues: CharacterDraft[] = [
       en: "The same radiation that made Banner enormous made Samuel Sterns brilliant instead, which is the joke of him: one accident produced a body with no mind to run it and a mind with no body to carry it.",
       ar: "الإشعاع نفسه الذي جعل بانر ضخمًا جعل صموئيل سترنز عبقريًا بدلًا من ذلك، وتلك مفارقته: حادث واحد أنتج جسدًا بلا عقل يقوده وعقلًا بلا جسد يحمله.",
     },
-    related: [
-      { id: "hulk", kind: "enemy" },
-    ],
+    related: [{ id: "hulk", kind: "enemy" }],
   },
   {
     id: "absorbing-man",
@@ -16307,7 +15984,10 @@ const hulkRogues: CharacterDraft[] = [
          readable, so a man who has gone toe to toe with Thor ranked below the
          Bugle's photographers. */
       { en: "Takes on any material he touches", ar: "يكتسب خصائص ما يلمسه" },
-      { en: "Adamantium, stone, or a whole building", ar: "أدامانتيوم أو حجر أو بناية" },
+      {
+        en: "Adamantium, stone, or a whole building",
+        ar: "أدامانتيوم أو حجر أو بناية",
+      },
       { en: "Strength to match what he copies", ar: "قوة بقدر ما ينسخ" },
       { en: "Near-total durability", ar: "صلابة شبه تامة" },
       { en: "A wrecking ball on a chain", ar: "كرة هدم على سلسلة" },
@@ -16342,9 +16022,7 @@ const hulkRogues: CharacterDraft[] = [
       en: "An android built by bird-people to preserve everything they knew, with their history in the lower head and their weapons in the upper one. The civilisation it was made to remember is already gone.",
       ar: "آلي بناه قوم الطير ليحفظ كل ما عرفوه، تاريخهم في رأسه الأسفل وأسلحتهم في الأعلى. والحضارة التي صُنع ليتذكرها قد زالت أصلًا.",
     },
-    related: [
-      { id: "hulk", kind: "enemy" },
-    ],
+    related: [{ id: "hulk", kind: "enemy" }],
   },
   {
     id: "zzzax",
@@ -16357,7 +16035,10 @@ const hulkRogues: CharacterDraft[] = [
     species: "Energy being",
     powers: [
       { en: "A living electrical field", ar: "حقل كهربائي حيّ" },
-      { en: "Discharges at anything it touches", ar: "يفرّغ شحنته في كل ما يلمسه" },
+      {
+        en: "Discharges at anything it touches",
+        ar: "يفرّغ شحنته في كل ما يلمسه",
+      },
       { en: "Physical blows pass through it", ar: "الضربات تنفذ خلاله" },
       { en: "Feeds on brainwaves", ar: "يتغذى على موجات الدماغ" },
       { en: "Thinks with what it last ate", ar: "يفكر بما التهمه آخرًا" },
@@ -16366,9 +16047,7 @@ const hulkRogues: CharacterDraft[] = [
       en: "A creature of pure electricity that formed in a reactor explosion and grows stronger by consuming the minds of anyone near it. It thinks with whatever it has most recently eaten.",
       ar: "مخلوق من كهرباء خالصة تكوّن في انفجار مفاعل، ويزداد قوة بالتهام عقول من حوله. ويفكر بما التهمه آخرًا.",
     },
-    related: [
-      { id: "hulk", kind: "enemy" },
-    ],
+    related: [{ id: "hulk", kind: "enemy" }],
   },
   {
     id: "wendigo",
@@ -16386,7 +16065,10 @@ const hulkRogues: CharacterDraft[] = [
       { en: "Claws and near-total durability", ar: "مخالب وصلابة شبه تامة" },
       { en: "Heals from almost anything", ar: "يشفى من أي شيء تقريبًا" },
       { en: "A curse, not a creature", ar: "لعنة لا مخلوق" },
-      { en: "Passes to whoever eats human flesh", ar: "تنتقل إلى آكل لحم البشر" },
+      {
+        en: "Passes to whoever eats human flesh",
+        ar: "تنتقل إلى آكل لحم البشر",
+      },
     ],
     origin: {
       en: "Not one monster but a curse laid on the Canadian wilderness: eat human flesh there and you become it, and the last one is released the moment you do.",
@@ -16415,9 +16097,7 @@ const hulkRogues: CharacterDraft[] = [
       en: "Bruce Banner's father, who beat him and killed his mother, and who convinced himself the boy was a monster long before any radiation. The Hulk is what the child built to survive that house.",
       ar: "أبو بروس بانر، ضربه وقتل أمه، وأقنع نفسه أن الصبي وحش قبل أي إشعاع بزمن. وهالك هو ما بناه الطفل لينجو من ذلك البيت.",
     },
-    related: [
-      { id: "hulk", kind: "family" },
-    ],
+    related: [{ id: "hulk", kind: "family" }],
   },
   {
     id: "xemnu",
@@ -16439,9 +16119,7 @@ const hulkRogues: CharacterDraft[] = [
       en: "An alien who makes the world believe he was always its favourite, and takes children to replace the species he lost. The horror of him is that nobody can tell anything is wrong.",
       ar: "فضائي يجعل العالم يصدّق أنه كان دومًا محبوبه الأول، ويأخذ الأطفال بدلًا من جنسه الذي فقده. ورعبه أن لا أحد يستطيع أن يدرك أن ثمة خطبًا.",
     },
-    related: [
-      { id: "hulk", kind: "enemy" },
-    ],
+    related: [{ id: "hulk", kind: "enemy" }],
   },
   {
     id: "u-foes",
@@ -16454,8 +16132,14 @@ const hulkRogues: CharacterDraft[] = [
     species: "Mutate",
     powers: [
       { en: "Four, irradiated on purpose", ar: "أربعة تعرّضوا للإشعاع عمدًا" },
-      { en: "Vector, Vapor, X-Ray, Ironclad", ar: "فيكتور وفيبور وإكس راي وآيرونكلاد" },
-      { en: "Wanted what the Fantastic Four got", ar: "أرادوا ما ناله الفانتاستك فور" },
+      {
+        en: "Vector, Vapor, X-Ray, Ironclad",
+        ar: "فيكتور وفيبور وإكس راي وآيرونكلاد",
+      },
+      {
+        en: "Wanted what the Fantastic Four got",
+        ar: "أرادوا ما ناله الفانتاستك فور",
+      },
     ],
     origin: {
       en: "Four people who flew into cosmic rays deliberately, trying to copy the Fantastic Four, and came back with powers and none of the reasons to use them well.",
@@ -16514,9 +16198,15 @@ const newWarriors: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Gamma mutate",
     powers: [
-      { en: "Eighth-smartest person alive", ar: "ثامن أذكى إنسان على قيد الحياة" },
+      {
+        en: "Eighth-smartest person alive",
+        ar: "ثامن أذكى إنسان على قيد الحياة",
+      },
       { en: "Took the gamma off Banner", ar: "سحب أشعة غاما من بانر" },
-      { en: "Calculates a fight before it starts", ar: "يحسب المعركة قبل أن تبدأ" },
+      {
+        en: "Calculates a fight before it starts",
+        ar: "يحسب المعركة قبل أن تبدأ",
+      },
       { en: "Built his own spider armour", ar: "بنى درع العنكبوت خاصته" },
     ],
     origin: {
@@ -16645,7 +16335,11 @@ const maker: CharacterDraft[] = [
       ar: "ريد ريتشاردز من أرض أخرى، بلغ ما بلغه ريدنا عن عمل الكون، وزاد استنتاجًا واحدًا عمّن ينبغي أن يديره.",
     },
     related: [
-      { id: "mister-fantastic", kind: "variant", variantOrigin: "alternate-universe" },
+      {
+        id: "mister-fantastic",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
     ],
   },
 ];
@@ -16741,7 +16435,10 @@ const sentinelMinds: CharacterDraft[] = [
     universe: ["fox"],
     species: "Cyborg",
     powers: [
-      { en: "Master Mold and Nimrod in one body", ar: "ماستر مولد ونمرود في جسد" },
+      {
+        en: "Master Mold and Nimrod in one body",
+        ar: "ماستر مولد ونمرود في جسد",
+      },
       { en: "Adapts to any power he meets", ar: "يتكيف مع أي قوة يواجهها" },
       { en: "Rebuilds himself from nanites", ar: "يعيد بناء نفسه من النانو" },
       { en: "Superhuman strength and durability", ar: "قوة وصلابة خارقتان" },

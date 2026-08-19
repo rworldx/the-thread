@@ -37,8 +37,10 @@ const sp =
   (...names: string[]) =>
   (c: Character) =>
     c.species !== null && names.includes(c.species);
-const aff = (...names: string[]) => (c: Character) =>
-  c.affiliation.some((a) => names.includes(a));
+const aff =
+  (...names: string[]) =>
+  (c: Character) =>
+    c.affiliation.some((a) => names.includes(a));
 
 /**
  * Ordered strongest to weakest. A character lands in the FIRST tier that takes
@@ -206,17 +208,21 @@ const TIERS: Tier[] = [
      * reality, named — and the remaining omegas are admitted to tier 5, where
      * they sit among the gods rather than above them.
      */
-    /* THE CELESTIALS TIER 3 STOPPED CARRYING LAND HERE, not in tier 8 with the
-       reporters. Refusing the office is not the same as saying Gammenon the
-       Gatherer is a bystander: he is still a Celestial, and the bottom of the
-       reality band is the honest place for one whose record claims nothing. */
-    match: (c) => c.species === "Celestial",
   },
   {
     n: 5,
     title: "Gods, omegas, and the top of the physical scale",
     gloss:
       "No cosmic office and no reality warping — just more raw power than anything below can survive. The omega-level mutants who are not reality-warpers sit here, beside the gods rather than above them.",
+    /* THE CELESTIALS TIER 3 STOPPED CARRYING LAND HERE. They were sent to
+       tier 4 first, which was wrong twice over: that tier means "rewrites
+       reality", and Gammenon the Gatherer does not, so a Celestial with an
+       empty record still outranked Odin and Thor on ancestry.
+
+       This tier's title is already the answer — "the top of the physical
+       scale". Refusing the office is not the same as being a bystander: a
+       silent Celestial is still two thousand feet of living armour, and that
+       is a physical claim, not a cosmic one. */
     ranked: [
       "odin",
       "surtur",
@@ -322,13 +328,18 @@ const TIERS: Tier[] = [
          Stormbreaker's charge. Ranked 140th, ahead of Valkyrie and every
          sorcerer. A word in a species field is not a feat. The gods who
          belong in this tier are named in its head. */
+      /* THE CELESTIALS TIER 3 STOPPED CARRYING LAND HERE — this is the clause
+         the note above the gloss is describing. Without it they fell through
+         every tier to 8, "humans who turn up anyway", which is a worse error
+         than the one the gate was fixing. */
+      c.species === "Celestial" ||
       sp(
         "Olympian",
         "Fire demon",
         "Alien dragon",
         "Zenn-Lavian",
         "Elder god",
-      /* "Gods" is 28 characters and most of them are Heimdall — a god by
+        /* "Gods" is 28 characters and most of them are Heimdall — a god by
          species and a sentry by job. The ones who belong are named above. */
       )(c) ||
       aff("Heralds of Galactus")(c),
@@ -453,14 +464,13 @@ const TIERS: Tier[] = [
       sp(
         "Asgardian",
         "Frost Giant",
-        "Eternal",
+        /* "Eternal" is gated below, with the Elders and Inhumans. */
         "Titan",
-        "Elder of the Universe",
         "Demon",
         "Witch",
         "Faltine",
         "Inheritor",
-        "Inhuman",
+        /* "Inhuman" is gated below, with the Elders, rather than granted here. */
         "Symbiote",
         "Symbiote host",
         "Technarch",
@@ -470,7 +480,27 @@ const TIERS: Tier[] = [
         "Artifact",
         "Strontian",
       )(c) ||
-      aff("Magic", "Vishanti", "Masters of the Mystic Arts", "Elders of the Universe")(c),
+      aff("Magic", "Vishanti", "Masters of the Mystic Arts")(c) ||
+      /**
+       * THE SAME TEST THE CELESTIALS TAKE. Four species words — Celestial,
+       * Elder of the Universe, Eternal and Inhuman — were the last class
+       * grants big enough to carry a character on ancestry alone, and each
+       * was carrying people whose records claim nothing: the Caregiver tends
+       * the dying, the Contemplator thinks, Lockjaw is a very large dog,
+       * Sprite is a child who tells stories. They sat ABOVE the top of tier
+       * 7, where Iron Fist, the Spot and Lila Cheney score 116 to 175.
+       *
+       * A tier meaning "the strongest a person reaches" should not be entered
+       * by a species word alone. The gate does not demote anyone who can do
+       * something — it asks the record to say what. Ikaris flies and shoots
+       * cosmic beams and stays; Medusa's hair lifts a car once the record
+       * says so; the ones who fall are the ones with nothing written down.
+       */
+      ((c.species === "Elder of the Universe" ||
+        c.species === "Eternal" ||
+        c.species === "Inhuman" ||
+        aff("Elders of the Universe")(c)) &&
+        scaleScore(c) > 0),
   },
   {
     n: 7,
@@ -544,6 +574,10 @@ const TIERS: Tier[] = [
         "Dark elf",
         "Dwarf",
         "Kronan",
+        /* Where tier 6 sends the Elders and Inhumans whose records are quiet. */
+        "Elder of the Universe",
+        "Eternal",
+        "Inhuman",
         "Uplifted raccoon",
         "Alien",
         "Kree",
@@ -645,7 +679,6 @@ const TIERS: Tier[] = [
     match: () => true,
   },
 ];
-
 
 /**
  * PEAK FORMS — docs/POWER-TIERS-PEAK.md, a second and different question.
@@ -764,9 +797,6 @@ export const PEAK_HEAD: string[] = [
   "kang",
 ];
 
-
-
-
 /**
  * WHAT A RECORD SAYS IT CAN DO — the within-tier order.
  *
@@ -806,31 +836,111 @@ const SCALE: [RegExp, number][] = [
    * ascii-ok: English `powers[].en` only.
    */
   // ascii-ok: English `powers[].en` only.
-  [/\b(no known upper limit|no upper limit|without limit|limitless|beyond measure|grows without limit)/i, 60],
+  [
+    /\b(no known upper limit|no upper limit|without limit|limitless|beyond measure|grows without limit)/i,
+    60,
+  ],
   /* Unkillable is durability, not output — real, and worth less. */
   // ascii-ok: English only.
-  [/\b(cannot be killed|cannot be destroyed|unkillable|adapts to anything|rebuilds himself|reassembles|comes back from)/i, 25],
+  [
+    /\b(cannot be killed|cannot be destroyed|unkillable|adapts to anything|rebuilds himself|reassembles|comes back from)/i,
+    25,
+  ],
   /* Reality itself. ascii-ok: scores English `powers[].en` only. */
-  [/\b(realit|universe|universal|multiverse|cosmos|cosmic|existence|creation|omnipot|omniscien|timeline|time itself|all things|infinit)/i, 120],
+  [
+    /\b(realit|universe|universal|multiverse|cosmos|cosmic|existence|creation|omnipot|omniscien|timeline|time itself|all things|infinit)/i,
+    120,
+  ],
   /* Worlds and stars. ascii-ok: English only. */
-  [/\b(planets?\b|planetary|worlds?\b|stars?\b|suns?\b|galax|continent|ocean|weather|storms?\b|nine realms|devour)/i, 70],
+  [
+    /\b(planets?\b|planetary|worlds?\b|stars?\b|suns?\b|galax|continent|ocean|weather|storms?\b|nine realms|devour)/i,
+    70,
+  ],
   /* An Infinity Stone is a piece of the universe. ascii-ok: English only. */
-  [/\b(infinity stone|mind stone|power stone|reality stone|soul stone|time stone|space stone|infinity gem)/i, 40],
+  [
+    /\b(infinity stone|mind stone|power stone|reality stone|soul stone|time stone|space stone|infinity gem)/i,
+    40,
+  ],
   /* Gods, ages, souls. ascii-ok: English only. */
-  [/\b(god|divine|immortal|ageless|millenni|thousand years|eternal|resurrect|soul|underworld|hell\b|death|penance stare)/i, 40],
+  [
+    /\b(god|divine|immortal|ageless|millenni|thousand years|eternal|resurrect|soul|underworld|hell\b|death|penance stare)/i,
+    40,
+  ],
+  /**
+   * A VERB OF DESTRUCTION, which this vocabulary did not have. It could read
+   * the NOUN a power reaches — "city" scored 25 as a place with an army in it
+   * — and had no way to tell holding a city from levelling one. Black Bolt's
+   * record reads "A whisper levels a city" and scored 39, below Triton, who
+   * breathes water.
+   *
+   * Weighted with the armies rather than with strength, because destroying is
+   * an act on a scale and the scale word beside it is already being read: the
+   * two compound, which is the correct shape. A scream that shatters is worth
+   * less than a scream that shatters a planet, and now it is.
+   * ascii-ok: English `powers[].en` only.
+   */
+  [
+    /\b(levels?\s+(a|an|the)|razes|flattens|annihilat|obliterat|vaporiz|wipes out|shatters|tears apart|destroys)/i,
+    25,
+  ],
+  /**
+   * MIND CONTROL, which scored ZERO. "telepath" was in the vocabulary and
+   * "controls minds" was not, so Druig — who ends wars with a word and turned
+   * a whole city on itself — scored 6, entirely from his origin line, and
+   * ranked below Karnak. Taking someone's will is not a lesser power than
+   * reading their thoughts.
+   *
+   * Anchored to the mind on purpose. A bare /control/ would have scored
+   * America Chavez for "Cannot control it yet", which is the opposite claim.
+   * ascii-ok: English `powers[].en` only.
+   */
+  [
+    /\b(mind control|controls? minds?|controls? (anyone|anybody|people|a crowd)|bends? .{0,20}\bwill\b|possesses a body)/i,
+    25,
+  ],
   /* Armies, cities, dimensions. ascii-ok: English only. */
-  [/\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|commands\b)/i, 25],
+  [
+    /\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|commands\b)/i,
+    25,
+  ],
   /* Ordinary superhuman. ascii-ok: English only. */
-  [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i, 14],
+  [
+    /\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
+    14,
+  ],
+  /**
+   * THE SUPERLATIVE OF A SKILL IS NOT THE SKILL. "Trained" and "master" scored
+   * 6 and there was no way to say BEST — so Thena, unmatched as a fighter
+   * among a people seven thousand years old, was scored the same as anyone who
+   * had been to a dojo. Weighted with the powers rather than the training,
+   * because that is the claim being made.
+   *
+   * `warrior` is deliberately absent: it caught "Gathered the Web Warriors"
+   * and "Leads Talokan's warriors", which are rosters, not fighting.
+   * ascii-ok: English `powers[].en` only.
+   */
+  [/\b(unmatched|greatest|deadliest|peerless|finest)\b/i, 14],
   /* Training and equipment. ascii-ok: English only. */
-  [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow|training|weapons?|arsenal|combat|spear|staff|axe|hammer|shield|knife|sai|fists|chains|soldier|marine|military|sniper|assassin|agent|espionage|intelligence|physicist|scientist|engineer|inventor|brilliant|surgeon|doctor|cia\b|operative|counter terror|pilot|deputy director)/i, 6],
+  [
+    /\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow|training|weapons?|arsenal|combat|spear|staff|axe|hammer|shield|knife|sai|fists|chains|soldier|marine|military|sniper|assassin|agent|espionage|intelligence|physicist|scientist|engineer|inventor|brilliant|surgeon|doctor|cia\b|operative|counter terror|pilot|deputy director)/i,
+    6,
+  ],
 ];
 
 const CLASS_WEIGHT: Record<string, number> = {
-  omega: 90, alpha: 45, beta: 20, gamma: 20, delta: 10, epsilon: 4,
+  omega: 90,
+  alpha: 45,
+  beta: 20,
+  gamma: 20,
+  delta: 10,
+  epsilon: 4,
 };
 const SYMBIOTE_WEIGHT: Record<string, number> = {
-  gestalt: 45, ancient: 40, lineage: 25, spawn: 18, anomaly: 18,
+  gestalt: 45,
+  ancient: 40,
+  lineage: 25,
+  spawn: 18,
+  anomaly: 18,
 };
 
 /**
@@ -887,7 +997,8 @@ export function scaleScore(c: Character): number {
    * being able to change what is on the other side.
    * ascii-ok: matched against `powers[].en`, English by construction.
    */
-  const TRAVELS = /\b(between (universes|realities|dimensions|worlds)|walks between|portals?)\b/i;
+  const TRAVELS =
+    /\b(between (universes|realities|dimensions|worlds)|walks between|portals?)\b/i;
   const abilities = c.powers
     .map((p) => clean(p.en).trim())
     .reduce(
@@ -896,7 +1007,8 @@ export function scaleScore(c: Character): number {
          Chavez at 286 on "Punches holes between universes" — sixty points for
          a door, more than Spider-Man's entire power set — while her own record
          finishes the sentence with "Cannot control it yet". */
-      (n, b) => n + score(b) * (PERCEIVES.test(b) || TRAVELS.test(b) ? 0.25 : 1),
+      (n, b) =>
+        n + score(b) * (PERCEIVES.test(b) || TRAVELS.test(b) ? 0.25 : 1),
       0,
     );
   let n = abilities + score(clean(c.origin.en)) / 4;
@@ -1036,57 +1148,69 @@ export const OUTRANKS: string[][] = [
 ];
 
 /** Ordered strongest to weakest, every character exactly once. */
-export const powerOrder: { c: Character; tier: number; ranked: boolean }[] = (() => {
-  const byId = new Map(allCharacters.map((c) => [c.id, c]));
-  const placed = new Set<string>();
-  for (const t of TIERS) {
-    for (const id of t.ranked ?? []) {
-      if (!byId.has(id)) throw new Error(`tier ${t.n} names "${id}", which is not a character`);
-      placed.add(id);
+export const powerOrder: { c: Character; tier: number; ranked: boolean }[] =
+  (() => {
+    const byId = new Map(allCharacters.map((c) => [c.id, c]));
+    const placed = new Set<string>();
+    for (const t of TIERS) {
+      for (const id of t.ranked ?? []) {
+        if (!byId.has(id))
+          throw new Error(
+            `tier ${t.n} names "${id}", which is not a character`,
+          );
+        placed.add(id);
+      }
     }
-  }
-  const out: { c: Character; tier: number; ranked: boolean }[] = [];
-  const seen = new Set<string>();
-  for (const t of TIERS) {
-    for (const id of t.ranked ?? []) {
-      out.push({ c: byId.get(id)!, tier: t.n, ranked: true });
-      seen.add(id);
+    const out: { c: Character; tier: number; ranked: boolean }[] = [];
+    const seen = new Set<string>();
+    for (const t of TIERS) {
+      for (const id of t.ranked ?? []) {
+        out.push({ c: byId.get(id)!, tier: t.n, ranked: true });
+        seen.add(id);
+      }
+      const rest = allCharacters
+        .filter(
+          (c) =>
+            !placed.has(c.id) && !seen.has(c.id) && (t.match?.(c) ?? false),
+        )
+        .sort(
+          (a, b) =>
+            scaleScore(b) - scaleScore(a) ||
+            a.nameEn.localeCompare(b.nameEn, "en"),
+        );
+      for (const c of rest) {
+        out.push({ c, tier: t.n, ranked: false });
+        seen.add(c.id);
+      }
     }
-    const rest = allCharacters
-      .filter((c) => !placed.has(c.id) && !seen.has(c.id) && (t.match?.(c) ?? false))
-      .sort(
-        (a, b) => scaleScore(b) - scaleScore(a) || a.nameEn.localeCompare(b.nameEn, "en"),
-      );
-    for (const c of rest) {
-      out.push({ c, tier: t.n, ranked: false });
-      seen.add(c.id);
-    }
-  }
-  const missed = allCharacters.filter((c) => !seen.has(c.id));
-  if (missed.length) throw new Error(`unplaced: ${missed.map((c) => c.id).join(", ")}`);
+    const missed = allCharacters.filter((c) => !seen.has(c.id));
+    if (missed.length)
+      throw new Error(`unplaced: ${missed.map((c) => c.id).join(", ")}`);
 
-  /* Reseat each group into the slots its own members already occupy. */
-  for (const group of OUTRANKS) {
-    const slots = group
-      .map((id) => out.findIndex((x) => x.c.id === id))
-      .sort((a, b) => a - b);
-    if (slots.some((i) => i === -1)) {
-      throw new Error(`OUTRANKS names an id that is not ranked: ${group.join(", ")}`);
+    /* Reseat each group into the slots its own members already occupy. */
+    for (const group of OUTRANKS) {
+      const slots = group
+        .map((id) => out.findIndex((x) => x.c.id === id))
+        .sort((a, b) => a - b);
+      if (slots.some((i) => i === -1)) {
+        throw new Error(
+          `OUTRANKS names an id that is not ranked: ${group.join(", ")}`,
+        );
+      }
+      const tiers = new Set(slots.map((i) => out[i]!.tier));
+      if (tiers.size > 1) {
+        throw new Error(
+          `OUTRANKS group [${group.join(", ")}] spans tiers ${[...tiers].join(", ")}. ` +
+            `Reordering across a tier boundary would make rank contradict tier.`,
+        );
+      }
+      const rows = group.map((id) => out.find((x) => x.c.id === id)!);
+      slots.forEach((slot, i) => {
+        out[slot] = rows[i]!;
+      });
     }
-    const tiers = new Set(slots.map((i) => out[i]!.tier));
-    if (tiers.size > 1) {
-      throw new Error(
-        `OUTRANKS group [${group.join(", ")}] spans tiers ${[...tiers].join(", ")}. ` +
-          `Reordering across a tier boundary would make rank contradict tier.`,
-      );
-    }
-    const rows = group.map((id) => out.find((x) => x.c.id === id)!);
-    slots.forEach((slot, i) => {
-      out[slot] = rows[i]!;
-    });
-  }
-  return out;
-})();
+    return out;
+  })();
 
 const rankById = new Map(powerOrder.map((x, i) => [x.c.id, i + 1]));
 const tierById = new Map(powerOrder.map((x) => [x.c.id, x.tier]));
