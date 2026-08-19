@@ -2222,9 +2222,17 @@ const legacyCharacters: CharacterDraft[] = [
     universe: ["legacy", "mcu"],
     species: "Dhampir",
     powers: [
-      { en: "Vampire strength", ar: "قوة مصّاصي الدماء" },
-      { en: "Walks in daylight", ar: "يمشي في ضوء النهار" },
-      { en: "Regeneration", ar: "تجدّد" },
+      /* Three bullets for a dhampir: the strength, the daylight and the
+         healing. Not the speed, the senses, the immunity to what kills
+         everyone else in his line, or the fact that he is a master of every
+         weapon he carries — which for a man who hunts vampires for a living
+         is most of the job. */
+      { en: "Vampire strength and speed", ar: "قوة وسرعة مصاص دماء" },
+      { en: "Heals like the things he hunts", ar: "يشفى كما يشفى ما يصطاده" },
+      { en: "Enhanced senses and tracking", ar: "حواس واقتفاء معززان" },
+      { en: "Master of blades and firearms", ar: "سيد النصال والأسلحة النارية" },
+      { en: "Poison and disease do nothing", ar: "السم والمرض لا يؤثران" },
+      { en: "Walks in daylight", ar: "يمشي في وضح النهار" },
     ],
     origin: {
       en: "Born as his mother was dying of a bite, with everything a vampire has and none of what stops one. His film in 1998 is the reason any of the rest of this got made.",
@@ -6330,9 +6338,15 @@ const others: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Werewolf",
     powers: [
-      { en: "Turns at the full moon", ar: "يتحوّل مع اكتمال القمر" },
-      { en: "Cannot control the change", ar: "لا يتحكّم في التحوّل" },
-      { en: "Claws and speed", ar: "مخالب وسرعة" },
+      /* Six is the cap, so the transformation and its limit share ONE line
+         instead of taking two — which buys the durability and the night
+         vision Rashid's list names and the first rewrite had no room for. */
+      { en: "Superhuman strength and speed", ar: "قوة وسرعة خارقتان" },
+      { en: "Claws that cut most things", ar: "مخالب تقطع أغلب الأشياء" },
+      { en: "Heals from almost anything", ar: "يشفى من أي شيء تقريبًا" },
+      { en: "Near-total durability", ar: "صلابة شبه تامة" },
+      { en: "Enhanced senses, and sees in the dark", ar: "حواس معززة ورؤية ليلية" },
+      { en: "Turns at the full moon, and cannot stop", ar: "يتحول باكتمال القمر ولا يملك وقفه" },
     ],
     origin: {
       en: "A cursed man who enters a monster hunters' contest in order to free the monster rather than kill it. His special is shot in black and white with the grain and the title cards of a 1940s horror film, which is the whole idea.",
