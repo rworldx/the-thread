@@ -65,9 +65,16 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Peak human strength", ar: "قوة بشرية قصوى" },
+      /* Three bullets for the original super-soldier, while Bucky — who has a
+         version of the same serum — carried six. It is why a blind lawyer
+         outranked him: Daredevil's record lists every sense he has and this
+         one did not even name the serum. */
+      { en: "The super-soldier serum", ar: "مصل الجندي الخارق" },
+      { en: "Peak strength, speed and reflexes", ar: "ذروة القوة والسرعة ورد الفعل" },
       { en: "Vibranium shield", ar: "درع من الفيبرانيوم" },
-      { en: "Tactical command", ar: "قيادة ميدانية" },
+      { en: "Master hand-to-hand combatant", ar: "سيد القتال المتلاحم" },
+      { en: "Heals fast and barely ages", ar: "يشفى سريعًا ولا يشيخ تقريبًا" },
+      { en: "Tactical command", ar: "قيادة تكتيكية" },
     ],
     origin: {
       en: "A man too small to enlist volunteers for an experimental programme in 1943 and comes out of it the only success it ever had. The war ends without him, and he wakes up a long way from it.",
