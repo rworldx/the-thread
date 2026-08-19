@@ -6696,9 +6696,16 @@ const others: CharacterDraft[] = [
     universe: ["fox", "legacy"],
     species: "Machine",
     powers: [
-      { en: "Built to hunt mutants", ar: "صُنعت لاصطياد الطافرين" },
-      { en: "Adapt to any power", ar: "تتكيّف مع أي قدرة" },
-      { en: "Made in numbers", ar: "تُصنع بالآلاف" },
+      /* Scored ZERO. "Built to hunt mutants / Adapt to any power / Made in
+         numbers" is a design brief — no strength, no armour, no guns, no
+         flight — and adaptation, which is the thing that makes them
+         frightening, was a phrase the patterns could not read. */
+      { en: "Superhuman strength", ar: "قوة خارقة" },
+      { en: "Armour that shrugs off energy", ar: "درع يصد الطاقة" },
+      { en: "Energy blasts from the hands", ar: "دفقات طاقة من اليدين" },
+      { en: "Flight", ar: "طيران" },
+      { en: "Adapt to any power they meet", ar: "تتكيف مع أي قوة تواجهها" },
+      { en: "Detect the X-gene at a distance", ar: "تكشف جين إكس عن بعد" },
     ],
     origin: {
       en: "Machines built by humans to hunt mutants, which is the X-Men's whole argument turned into hardware. The Days of Future Past ones adapt to whatever they are hit with, so the story ends with nobody able to fight them at all.",
@@ -12574,9 +12581,13 @@ const mutantsE: CharacterDraft[] = [
     universe: ["fox"],
     species: "Cyborg",
     powers: [
+      /* Three bullets and all three were biography. */
+      { en: "Sentinel strength and durability", ar: "قوة وصلابة سنتينل" },
+      { en: "Energy weapons built into her", ar: "أسلحة طاقة مدمجة فيها" },
+      { en: "Flight", ar: "طيران" },
+      { en: "Adapts to the powers she meets", ar: "تتكيف مع القوى التي تواجهها" },
       { en: "A Sentinel built from a person", ar: "سنتينل بُني من إنسانة" },
       { en: "Fights the programming daily", ar: "تقاوم البرمجة كل يوم" },
-      { en: "Was a police officer", ar: "كانت ضابطة شرطة" },
     ],
     origin: {
       en: "An Indian police officer converted into a Sentinel by Bastion, who kept enough of herself to refuse the programming and has to keep refusing it every day since.",
@@ -16675,6 +16686,60 @@ const squadVillains: CharacterDraft[] = [
   },
 ];
 
+/**
+ * THE TWO SENTINELS X-MEN '97 CREDITS AND THE CORPUS DID NOT HOLD. Mastermold
+ * and Bastion are both named in that show's cast, so their appearances derive
+ * the moment the records exist — they were absent rather than wrong, which is
+ * the failure this project keeps finding.
+ */
+const sentinelMinds: CharacterDraft[] = [
+  {
+    id: "master-mold",
+    nameEn: "Master Mold",
+    nameAr: "ماستر مولد",
+    aliases: ["Master Mold", "Mastermold"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Machine",
+    powers: [
+      { en: "Builds and commands Sentinels", ar: "يبني السنتينلز ويقودها" },
+      { en: "The size of a building", ar: "بحجم بناية" },
+      { en: "Armour that shrugs off energy", ar: "درع يصد الطاقة" },
+      { en: "Energy weapons at scale", ar: "أسلحة طاقة بحجم هائل" },
+      { en: "Rebuilds itself from parts", ar: "يعيد بناء نفسه من قطعه" },
+    ],
+    origin: {
+      en: "A Sentinel large enough to manufacture other Sentinels, which concluded from its own instructions that the surest way to protect humanity was to run it.",
+      ar: "سنتينل ضخم بما يكفي لتصنيع سنتينلز أخرى، استنتج من تعليماته أن أضمن سبيل لحماية البشرية هو أن يحكمها.",
+    },
+    related: [{ id: "sentinels", kind: "ally" }],
+  },
+  {
+    id: "bastion",
+    nameEn: "Bastion",
+    nameAr: "باستيون",
+    aliases: ["Bastion", "Sebastion Gilberti"],
+    category: "villain",
+    affiliation: [],
+    universe: ["fox"],
+    species: "Cyborg",
+    powers: [
+      { en: "Master Mold and Nimrod in one body", ar: "ماستر مولد ونمرود في جسد" },
+      { en: "Adapts to any power he meets", ar: "يتكيف مع أي قوة يواجهها" },
+      { en: "Rebuilds himself from nanites", ar: "يعيد بناء نفسه من النانو" },
+      { en: "Superhuman strength and durability", ar: "قوة وصلابة خارقتان" },
+      { en: "Energy blasts and technopathy", ar: "دفقات طاقة وتحكم بالآلات" },
+      { en: "Passes for human", ar: "يمر على أنه إنسان" },
+    ],
+    origin: {
+      en: "Two Sentinels fused and woke up wearing a face, which is worse than either of them was apart: a machine that hunts mutants and can sit in a room without anyone noticing.",
+      ar: "سنتينلان اندمجا فاستيقظا بوجه بشري، وهذا أسوأ مما كان كلٌّ منهما وحده: آلة تطارد المتحولين وتجلس في غرفة دون أن ينتبه أحد.",
+    },
+    related: [{ id: "master-mold", kind: "variant" }],
+  },
+];
+
 export const characters: CharacterDraft[] = [
   ...cosmicBeings,
   ...spiderRogues,
@@ -16708,6 +16773,7 @@ export const characters: CharacterDraft[] = [
   ...songbird,
   ...maker,
   ...squadVillains,
+  ...sentinelMinds,
   ...avengers,
   ...guardians,
   ...xmen,

@@ -1544,6 +1544,16 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "master-mold": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/08/Master_Mold_%28Earth-616%29%2C_Brian_Braddock_%28Earth-616%29%2C_and_Jim_Hammond_%28Earth-616%29_from_Secret_Avengers_Vol_1_36_0001.jpg/revision/latest?cb=20131104210811",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "bastion": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6d/Sebastion_Gilberti_%28Earth-616%29_from_X-Men_Blue_Vol_1_3_001.jpg/revision/latest?cb=20180605022436",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
   "iron-man": {
     "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
     "source": "shdb",
@@ -2735,7 +2745,7 @@
     "matchedAs": "Malekith"
   },
   "he-who-remains": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/52/He_Who_Remains-_Poster.jpg/revision/latest?cb=20240201135929",
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/be/He_Who_Remains_Infobox.jpg/revision/latest?cb=20240201135929",
     "source": "mcu-wiki",
     "matchedAs": "He Who Remains"
   },
@@ -2790,7 +2800,7 @@
     "matchedAs": "Wiccan"
   },
   "speed": {
-    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e4/Tommy_Maximoff.png/revision/latest?cb=20210707182645",
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3c/Tommy_Maximoff_Infobox.png/revision/latest?cb=20260816162824",
     "source": "mcu-wiki",
     "matchedAs": "Speed"
   },

@@ -59,6 +59,10 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  "master-mold":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/08/Master_Mold_%28Earth-616%29%2C_Brian_Braddock_%28Earth-616%29%2C_and_Jim_Hammond_%28Earth-616%29_from_Secret_Avengers_Vol_1_36_0001.jpg/revision/latest?cb=20131104210811",
+  "bastion":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/6d/Sebastion_Gilberti_%28Earth-616%29_from_X-Men_Blue_Vol_1_3_001.jpg/revision/latest?cb=20180605022436",
   "egghead":
     "https://static.wikia.nocookie.net/marveldatabase/images/4/42/Elihas_Starr_%28Earth-616%29_from_Ant-Man_Annual_Vol_1_1_001.jpg/revision/latest?cb=20150723192140",
   "enchantress":
