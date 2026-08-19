@@ -13184,8 +13184,14 @@ const powerList: CharacterDraft[] = [
     /* NOT plain Human. Frank Castle carrying the Power Cosmic and the Spirit of Vengeance at once. */
     species: "Enhanced human",
     powers: [
+      /* Three bullets, two of which were biography. He is a Spirit of
+         Vengeance who took the Power Cosmic — Ghost Rider and Silver Surfer in
+         one body — and the record named neither the Stare nor the chains. */
       { en: "The Power Cosmic and hellfire", ar: "القوة الكونية ونار الجحيم" },
-      { en: "Sold his soul, then his service", ar: "باع روحه ثم خدمته" },
+      { en: "The Penance Stare", ar: "نظرة الكفارة" },
+      { en: "Chains from Cyttorak's bones", ar: "سلاسل من عظام سيتوراك" },
+      { en: "Rebuilds himself from a skull", ar: "يعيد بناء نفسه من جمجمة" },
+      { en: "Cannot be permanently killed", ar: "لا يُقتل نهائيًا" },
       { en: "Frank Castle, at the end of things", ar: "فرانك كاسل في آخر الزمان" },
     ],
     origin: {

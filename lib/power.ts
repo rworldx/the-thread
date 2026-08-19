@@ -778,7 +778,7 @@ const SCALE: [RegExp, number][] = [
   [/\b(no known upper limit|no upper limit|without limit|limitless|beyond measure|grows without limit)/i, 60],
   /* Unkillable is durability, not output — real, and worth less. */
   // ascii-ok: English only.
-  [/\b(cannot be killed|cannot be destroyed|unkillable|adapts to anything)/i, 25],
+  [/\b(cannot be killed|cannot be destroyed|unkillable|adapts to anything|rebuilds himself|reassembles|comes back from)/i, 25],
   /* Reality itself. ascii-ok: scores English `powers[].en` only. */
   [/\b(realit|universe|universal|multiverse|cosmos|cosmic|existence|creation|omnipot|omniscien|timeline|time itself|all things|infinit)/i, 120],
   /* Worlds and stars. ascii-ok: English only. */
@@ -786,13 +786,13 @@ const SCALE: [RegExp, number][] = [
   /* An Infinity Stone is a piece of the universe. ascii-ok: English only. */
   [/\b(infinity stone|mind stone|power stone|reality stone|soul stone|time stone|space stone|infinity gem)/i, 40],
   /* Gods, ages, souls. ascii-ok: English only. */
-  [/\b(god|divine|immortal|ageless|millenni|thousand years|eternal|resurrect|soul|underworld|hell\b|death)/i, 40],
+  [/\b(god|divine|immortal|ageless|millenni|thousand years|eternal|resurrect|soul|underworld|hell\b|death|penance stare)/i, 40],
   /* Armies, cities, dimensions. ascii-ok: English only. */
   [/\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|commands\b)/i, 25],
   /* Ordinary superhuman. ascii-ok: English only. */
   [/\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|indestructible|dagger|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i, 14],
   /* Training and equipment. ascii-ok: English only. */
-  [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow|training|weapons|arsenal|combat|spear|staff|axe|hammer|shield|knife|sai|fists|soldier|marine|military|sniper|assassin|agent|espionage|intelligence|physicist|scientist|engineer|inventor|brilliant|surgeon|doctor|cia\b|operative|counter terror|pilot|deputy director)/i, 6],
+  [/\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow|training|weapons|arsenal|combat|spear|staff|axe|hammer|shield|knife|sai|fists|chains|soldier|marine|military|sniper|assassin|agent|espionage|intelligence|physicist|scientist|engineer|inventor|brilliant|surgeon|doctor|cia\b|operative|counter terror|pilot|deputy director)/i, 6],
 ];
 
 const CLASS_WEIGHT: Record<string, number> = {
