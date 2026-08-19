@@ -1612,15 +1612,16 @@ const defenders: CharacterDraft[] = [
     /* NOT an ordinary human. He punched the heart of a dragon and the chi is what came back out. */
     species: "Enhanced human",
     powers: [
-      /* Two bullets for the man the sources call the most powerful Defender.
-         The Fist is not a punch, it is chi made into a weapon, and it heals
-         him, senses energy and kills the lights in a building. */
+      /* Six is the cap, so the utility gave way to the body. "Immune to
+         poison and disease" is true and is not what he wins fights with;
+         chi-enhanced strength, speed and durability are the half of him the
+         record was missing. */
       { en: "The Iron Fist: chi as a weapon", ar: "قبضة الحديد: تشي سلاحًا" },
       { en: "Shatters steel with one strike", ar: "يحطم الفولاذ بضربة" },
+      { en: "Chi-enhanced strength and speed", ar: "قوة وسرعة معززتان بالتشي" },
+      { en: "Chi-hardened durability", ar: "صلابة مقواة بالتشي" },
       { en: "Heals himself with chi", ar: "يشفي نفسه بالتشي" },
-      { en: "Senses and disrupts energy", ar: "يستشعر الطاقة ويعطلها" },
       { en: "Master martial artist of K'un-Lun", ar: "سيد قتال من كون-لون" },
-      { en: "Immune to poison and disease", ar: "محصّن ضد السم والمرض" },
     ],
     origin: {
       en: "The heir to a fortune, presumed dead in a plane crash as a child, who comes back fifteen years later with a title from a city nobody believes exists.",
