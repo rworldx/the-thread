@@ -240,6 +240,13 @@ const TIERS: Tier[] = [
       "thanos",
       "hela",
       "thor",
+      /* HERCULES WAS UNRANKED and therefore placed by score, which landed him
+         132nd — below all eight Heralds of Galactus and below Hyperion, on a
+         record that says "Strength to match Thor" twenty-six places under
+         Thor. Marvel's own handbook has them as near-equals, Herc marginally
+         ahead on pure lifting and far behind on range. Adjacent is the honest
+         answer and it needs a name in the head to say so. */
+      "hercules",
       /* Named because their species is a dead end: Bill is a Korbinite and
          Gladiator a Strontian, races of one, so no rule could ever find them.
          Bill carries Stormbreaker and fought Thor to a draw; Gladiator has
@@ -263,6 +270,29 @@ const TIERS: Tier[] = [
          674 and said so, which is exactly what it is for. */
       "professor-x",
       "magneto",
+      /**
+       * THE HULK MOVED UP PAST THE OMEGAS, from 121st. The base-form rule is
+       * why he is not higher still — Savage Hulk is what the corpus holds and
+       * World-Breaker is a state he reaches — but that rule explains why he
+       * sits below Odin and Thanos. It never explained Quentin Quire, a
+       * teenage telepath, and Hope Summers, who copies whatever is nearby,
+       * ranked above him.
+       *
+       * This file's own position on the omega list is that it is not a fight
+       * ranking: "Iceman is omega and Wolverine is beta, and nobody thinks
+       * Iceman wins that fight." The Hulk sitting below five omegas was that
+       * same mistake, unnoticed because it was made inside a ranked head.
+       *
+       * Xavier and Magneto stay above him, and that is a claim, not an
+       * oversight: a telepath and a magnetokinetic both have an answer to a
+       * body, and the sources are near-unanimous that they beat him.
+       */
+      "hulk",
+      /* RED HULK BESIDE HIM, because he is the one gamma character who trades
+         with Banner rather than trailing him — he fought the Hulk to a
+         standstill and put Thor down in his debut. He sat in tier 7 at 308,
+         below a curse and a cloud of electricity that he beats. */
+      "thaddeus-ross",
       "iceman",
       "vulcan",
       "exodus",
@@ -285,15 +315,6 @@ const TIERS: Tier[] = [
       "quasar",
       "richard-rider",
       "blue-marvel",
-      /* The Hulk is here rather than higher ONLY because of the base-form
-         rule. Savage Hulk is what the corpus holds; World-Breaker, who tore
-         a continent, is a state he reaches and not a form he keeps. */
-      "hulk",
-      /* RED HULK BESIDE HIM, because he is the one gamma character who trades
-         with Banner rather than trailing him — he fought the Hulk to a
-         standstill and put Thor down in his debut. He sat in tier 7 at 308,
-         below a curse and a cloud of electricity that he beats. */
-      "thaddeus-ross",
       "hyperion",
     ],
     match: (c) =>
@@ -336,7 +357,19 @@ const TIERS: Tier[] = [
       sp(
         "Olympian",
         "Fire demon",
-        "Alien dragon",
+        /* "ALIEN DRAGON" MOVED TO TIER 7, because it is one character and he
+           is Lockheed — a purple dragon the size of a cat who breathes fire
+           and follows Kitty Pryde around. The word was doing the job
+           "Celestial" and "Eternal" did before the gate: it sounds like a
+           power level and is a species, and a rule with exactly one member is
+           a hand-placement wearing a rule's clothes. It put him 133rd, one
+           place below Hercules and above every Celestial.
+
+           Deleting it outright sent him to tier 8, "humans who turn up
+           anyway", between Nick Fury and Doctor Octopus — the opposite error
+           and a worse one. Tier 7's own gloss says "aliens, and anyone whose
+           power is bolted on", which is a flying alien who breathes fire
+           exactly. */
         "Zenn-Lavian",
         "Elder god",
         /* "Gods" is 28 characters and most of them are Heimdall — a god by
@@ -574,6 +607,7 @@ const TIERS: Tier[] = [
         "Dark elf",
         "Dwarf",
         "Kronan",
+        "Alien dragon",
         /* Where tier 6 sends the Elders and Inhumans whose records are quiet. */
         "Elder of the Universe",
         "Eternal",
@@ -848,12 +882,15 @@ const SCALE: [RegExp, number][] = [
   ],
   /* Reality itself. ascii-ok: scores English `powers[].en` only. */
   [
-    /\b(realit|universe|universal|multiverse|cosmos|cosmic|existence|creation|omnipot|omniscien|timeline|time itself|all things|infinit)/i,
+    /\b(realit|universe|universal|multiverse|cosmos|cosmic|existence|creation|omnipot|omniscien|timeline|time itself|time travel|manipulates time|stops time|rewinds time|controls time|all things|infinit)/i,
     120,
   ],
-  /* Worlds and stars. ascii-ok: English only. */
+  /* Worlds and stars. "antimatter" is here rather than with the ordinary
+     superhuman words because it is not an ordinary superhuman word: Blue
+     Marvel's body is an antimatter reactor and the reaction is repeatedly
+     written as planet-ending. ascii-ok: English only. */
   [
-    /\b(planets?\b|planetary|worlds?\b|stars?\b|suns?\b|galax|continent|ocean|weather|storms?\b|nine realms|devour)/i,
+    /\b(planets?\b|planetary|worlds?\b|stars?\b|suns?\b|galax|continent|ocean|weather|storms?\b|nine realms|devour|antimatter|anti-matter)/i,
     70,
   ],
   /* An Infinity Stone is a piece of the universe. ascii-ok: English only. */
@@ -861,6 +898,15 @@ const SCALE: [RegExp, number][] = [
     /\b(infinity stone|mind stone|power stone|reality stone|soul stone|time stone|space stone|infinity gem)/i,
     40,
   ],
+  /**
+   * "STRENGTH TO MATCH X" IS A FIVE-RECORD IDIOM in this corpus and the
+   * scorer read none of it — Hercules, Stunner, Xemnu, the Absorbing Man and
+   * Frenzy all measure themselves against a named powerhouse, and all five
+   * were scored for the bare word "strength". Matching Thor is a larger claim
+   * than having strength, and this is the difference.
+   * ascii-ok: English `powers[].en` only.
+   */
+  [/\bstrength to match\b/i, 25],
   /* Gods, ages, souls. ascii-ok: English only. */
   [
     /\b(god|divine|immortal|ageless|millenni|thousand years|eternal|resurrect|soul|underworld|hell\b|death|penance stare)/i,
@@ -905,7 +951,7 @@ const SCALE: [RegExp, number][] = [
   ],
   /* Ordinary superhuman. ascii-ok: English only. */
   [
-    /\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|illusion|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
+    /\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
     14,
   ],
   /**
@@ -995,10 +1041,17 @@ export function scaleScore(c: Character): number {
    * it yet", outranked every sorcerer on the page. Spider-UK led the
    * Spider-Society on the same word. A door to somewhere is worth half of
    * being able to change what is on the other side.
+   *
+   * IT ONLY KNEW ONE PHRASING, which is how the Inheritors got in. All eight
+   * of them carry the identical bullet "Crosses realities to hunt" — travel,
+   * plainly — and the pattern was looking for "between realities", so each
+   * scored the full 120 for a door and outranked Wiccan, Krakoa, Emma Frost,
+   * Psylocke and Black Bolt. They are Spider-Man villains who hunt across the
+   * web, not reality-warpers.
    * ascii-ok: matched against `powers[].en`, English by construction.
    */
   const TRAVELS =
-    /\b(between (universes|realities|dimensions|worlds)|walks between|portals?)\b/i;
+    /\b(between (universes|realities|dimensions|worlds)|walks between|steps between|moves between|travels between|slips between|crosses (realities|universes|dimensions|worlds|interstellar)|portals?)\b/i;
   const abilities = c.powers
     .map((p) => clean(p.en).trim())
     .reduce(

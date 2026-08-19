@@ -11208,7 +11208,11 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Alien",
     powers: [
-      { en: "The first herald of all", ar: "أول البشراء جميعًا" },
+      /* Every other herald's record opens with the Power Cosmic. His did not,
+         which is why the first herald Galactus ever made scored 6. */
+      { en: "The Power Cosmic", ar: "القوة الكونية" },
+      { en: "Flight between stars", ar: "طيران بين النجوم" },
+      { en: "The first herald of all", ar: "أول المبشّرين جميعًا" },
       { en: "Turned on his master", ar: "انقلب على سيده" },
       { en: "Imprisoned rather than freed", ar: "سُجن ولم يُطلق" },
     ],
@@ -11249,9 +11253,15 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Korbinite",
     powers: [
-      { en: "Worthy of the hammer", ar: "أهل للمطرقة" },
+      /* THE RECORD NAMED NO POWER. "Worthy of the hammer / Carries
+         Stormbreaker / Last of his people" is three lines of biography for a
+         character who fought Thor to a draw, and it scored 9. */
+      { en: "Strength to match Thor", ar: "قوة تضاهي ثور" },
       { en: "Carries Stormbreaker", ar: "يحمل ستورمبريكر" },
-      { en: "Last of his people", ar: "آخر قومه" },
+      { en: "Energy blasts and lightning", ar: "صواعق وطلقات طاقة" },
+      { en: "Flight between stars", ar: "طيران بين النجوم" },
+      { en: "Worthy of the hammer", ar: "جدير بالمطرقة" },
+      { en: "Last of his people", ar: "آخر بني قومه" },
     ],
     origin: {
       en: "The champion of a dying people who picked up Thor's hammer and found it answered him, which nobody had expected including Odin. He was given a hammer of his own rather than sent away.",
@@ -12264,6 +12274,7 @@ const mutantsE: CharacterDraft[] = [
     species: "Alien dragon",
     powers: [
       { en: "Breathes fire", ar: "ينفث النار" },
+      { en: "Flight", ar: "طيران" },
       { en: "Far smarter than he lets on", ar: "أذكى بكثير مما يُظهر" },
       { en: "Chose Kitty and stayed", ar: "اختار كيتي وبقي" },
     ],
@@ -14244,7 +14255,14 @@ const mutantsH: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant island",
     powers: [
+      /* SCORED MINUS FORTY and sat at 270, above Iron Fist, on the strength of
+         `species: "Mutant island"` — a rule with one member. The record was
+         three lines of biography for something that regenerates, absorbs
+         energy and grows a teleport network circling the Earth. */
       { en: "An island that is alive", ar: "جزيرة حية" },
+      { en: "Gateways that circle the planet", ar: "بوابات تحيط بالكوكب" },
+      { en: "Regenerates whatever is cut", ar: "تجدّد ما يُقطع منها" },
+      { en: "Absorbs energy to grow", ar: "تمتص الطاقة لتنمو" },
       { en: "Grows what mutants need", ar: "تنبت ما يحتاجه المتحوّلون" },
       { en: "Was an enemy first", ar: "كانت عدوة أولًا" },
     ],
