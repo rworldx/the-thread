@@ -61,6 +61,20 @@ const TIERS: Tier[] = [
       "Each has ended, judged or rewritten a cosmos. The Beyonders lead on the plainest feat available: they killed the Living Tribunal.",
     ranked: [
       "the-beyonders",
+      /**
+       * LOGOS KILLED THE LIVING TRIBUNAL, which is the exact feat the sentence
+       * above ranks the Beyonders first for — and he was 73rd, in tier 3, on a
+       * record reading "Speaks for jurisdiction / Knows which court applies /
+       * Rarely intervenes". Master Order and Lord Chaos fused with the
+       * In-Betweener, killed the Tribunal, murdered the last of the Celestials
+       * and tried to install itself as the law of the multiverse.
+       *
+       * Below the Beyonders rather than above because Galactus unmade him and
+       * the fusion did not hold. Order and Chaos stay in tier 2 as themselves:
+       * this corpus keeps a separate record for the fused being, so the feat
+       * belongs to the record that performed it.
+       */
+      "logos",
       "the-living-tribunal",
       "the-beyonder",
       "first-firmament",
@@ -140,7 +154,7 @@ const TIERS: Tier[] = [
        * named Celestials — Arishem, Exitar, Tiamut, the Progenitor — are in
        * this tier's head and unaffected.
        */
-      (c.species === "Celestial" && scaleScore(c) > 0) ||
+      (c.species === "Celestial" && claimScore(c) > 0) ||
       sp(
         "Elder God",
         "Cosmic Being",
@@ -153,7 +167,7 @@ const TIERS: Tier[] = [
       /* The affiliation has to ask the same question the species now asks, or
          it simply lets the unrisen back in through the other door. */
       (aff("Cosmic entities", "Celestials")(c) &&
-        (c.species !== "Celestial" || scaleScore(c) > 0)),
+        (c.species !== "Celestial" || claimScore(c) > 0)),
   },
   {
     n: 4,
@@ -533,7 +547,7 @@ const TIERS: Tier[] = [
         c.species === "Eternal" ||
         c.species === "Inhuman" ||
         aff("Elders of the Universe")(c)) &&
-        scaleScore(c) > 0),
+        claimScore(c) > 0),
   },
   {
     n: 7,
@@ -907,6 +921,16 @@ const SCALE: [RegExp, number][] = [
    * ascii-ok: English `powers[].en` only.
    */
   [/\bstrength to match\b/i, 25],
+  /* AND THE OTHER HALF OF THE SAME IDIOM. "Strength to match" was added for
+     Hercules; "Rivals Galactus and Dormammu" and "Stronger than Oshtur and
+     Hoggoth both" are Agamotto measuring himself the same way and scoring
+     nothing for it, because the scorer reads no names. `rivals` and not
+     `rival`, or it pays Justin Hammer for being a rival contractor.
+     ascii-ok: English `powers[].en` only. */
+  [
+    /\b(rivals|holds? (his|her|its) own against|a match for|stronger than|as strong as)\b/i,
+    25,
+  ],
   /**
    * Gods, ages, souls.
    *
@@ -1178,6 +1202,34 @@ export function scaleScore(c: Character): number {
     COSMIC.has(c.species ?? "");
   if (c.category === "supporting" && abilities === 0 && !recorded) n -= 40;
   return n;
+}
+
+/**
+ * WHAT THE RECORD ITSELF CLAIMS — the number the class gates ask for.
+ *
+ * The gates were written as `scaleScore(c) > 0`, meaning "the record has to
+ * say something". That was never quite what they measured: scaleScore also
+ * carries the mutant-class weight and the supporting penalty, so a change to
+ * either MOVES CHARACTERS BETWEEN TIERS without anyone touching a tier.
+ *
+ * It happened. Exempting the abstracts from the powerless penalty lifted four
+ * Celestials from minus twenty-two to plus eighteen, which silently carried
+ * Devron, Gammenon, Ziran and Scathan back through the tier-3 gate they had
+ * been placed outside of. The outcome was defensible — those four have real
+ * offices and Zgreb, who has none, correctly stayed out — but it was luck,
+ * not design.
+ *
+ * So the gates read this instead: the abilities alone, with no penalty and no
+ * class weight, which is exactly the question the gates are asking.
+ */
+export function claimScore(c: Character): number {
+  const bare = {
+    ...c,
+    category: "hero" as const,
+    mutantClass: null,
+    symbioteClass: null,
+  };
+  return scaleScore(bare as Character);
 }
 
 /**

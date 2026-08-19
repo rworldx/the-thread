@@ -3552,8 +3552,27 @@ const supporting: CharacterDraft[] = [
     species: "Demon",
     magicSchools: ["infernal"],
     powers: [
+      /* "Makes bargains / Reshapes souls" — two bullets, 77th, for the devil
+         of the Marvel universe, who has fought the Silver Surfer, Thor and
+         Thanos and is effectively without limit inside his own realm. */
+      {
+        en: "Rules a hell dimension entirely",
+        ar: "يحكم بعدًا جهنميًا بالكامل",
+      },
+      {
+        en: "Near-limitless power in his realm",
+        ar: "قوة شبه لا محدودة في مملكته",
+      },
+      {
+        en: "Reshapes souls, and buys them",
+        ar: "يعيد تشكيل الأرواح، ويشتريها",
+      },
+      {
+        en: "Fought the Silver Surfer and Thor",
+        ar: "قاتل السيلفر سيرفر وثور",
+      },
+      { en: "Illusions no mortal sees through", ar: "أوهام لا يخترقها بشر" },
       { en: "Makes bargains", ar: "يعقد الصفقات" },
-      { en: "Reshapes souls", ar: "يعيد تشكيل الأرواح" },
     ],
     origin: {
       en: "Something very old that trades in what people will give up, and has never once needed to break a deal to win one.",
@@ -9265,9 +9284,15 @@ const cosmicBeings: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["eldritch", "elder"],
     powers: [
-      { en: "First Sorcerer Supreme", ar: "أول ساحر أعظم" },
-      { en: "Sees every truth", ar: "يرى كل حقيقة" },
-      { en: "Made the Eye", ar: "صنع العين" },
+      { en: "The first Sorcerer Supreme", ar: "أول ساحر أعظم" },
+      { en: "Rivals Galactus and Dormammu", ar: "يضاهي غالاكتوس ودورمامو" },
+      { en: "The all-seeing eye", ar: "العين التي ترى كل شيء" },
+      {
+        en: "Stronger than Oshtur and Hoggoth both",
+        ar: "أقوى من أوشتور وهوغوث معًا",
+      },
+      { en: "Lends his power to sorcerers", ar: "يعير قوته للسحرة" },
+      { en: "One of the Vishanti", ar: "أحد الفيشانتي" },
     ],
     origin: {
       en: "The first being on Earth to hold the title of Sorcerer Supreme, and one of the three the Vishanti are named for. The eye every later sorcerer swears by is the one he made and left behind.",
@@ -10755,9 +10780,14 @@ const abstractsBatch: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
+      { en: "Turns a thing into its opposite", ar: "يقلب الشيء إلى نقيضه" },
+      { en: "Balances order against chaos", ar: "يوازن النظام بالفوضى" },
+      {
+        en: "Reshapes reality to keep it even",
+        ar: "يعيد تشكيل الواقع ليبقى متوازنًا",
+      },
       { en: "Agent of Order and Chaos", ar: "عميل النظام والفوضى" },
-      { en: "Half light, half dark", ar: "نصفه نور ونصفه ظلمة" },
-      { en: "Turns a thing into its opposite", ar: "يقلب الشيء إلى ضدّه" },
+      { en: "Half light, half dark", ar: "نصفه نور ونصفه ظلام" },
     ],
     origin: {
       en: "The servant Order and Chaos share, sent to correct anything that has tilted too far one way. He inverts what he touches, which makes him the only errand either of them can agree on.",
@@ -10987,8 +11017,16 @@ const mystics: CharacterDraft[] = [
     species: "Demon",
     magicSchools: ["elder", "infernal"],
     powers: [
-      { en: "Grants unstoppable force", ar: "يهب قوة لا تُوقف" },
-      { en: "Powers the Juggernaut", ar: "يمدّ الجاغرنوت بالقوة" },
+      /* Scored ZERO, and he is the only ranked head in the top ninety that
+         did. "Grants unstoppable force" is a real claim and the vocabulary
+         had no word for any of it. */
+      { en: "A demon lord of the Octessence", ar: "أمير شياطين من الأوكتيسنس" },
+      { en: "Grants unstoppable force", ar: "يمنح قوة لا تُوقف" },
+      {
+        en: "The magic that powers the Juggernaut",
+        ar: "السحر الذي يمدّ الجاغرنوت",
+      },
+      { en: "Rules his own crimson dimension", ar: "يحكم بعده القرمزي" },
       { en: "Wants destruction done for him", ar: "يريد من يدمّر نيابة عنه" },
     ],
     origin: {
@@ -11029,9 +11067,18 @@ const mystics: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["eldritch", "elder"],
     powers: [
+      {
+        en: "Elder Goddess, called all-powerful",
+        ar: "إلهة قديمة، تُدعى كلية القدرة",
+      },
+      { en: "Created entire races of beings", ar: "خلقت أجناسًا كاملة" },
+      { en: "Originated magic on Earth", ar: "أنشأت السحر على الأرض" },
+      {
+        en: "Vast power on every astral plane",
+        ar: "قوة هائلة في كل مستوى أثيري",
+      },
+      { en: "Left Earth by choice", ar: "غادرت الأرض باختيارها" },
       { en: "One of the Vishanti", ar: "إحدى الفيشانتي" },
-      { en: "Left Earth by choice", ar: "غادرت الأرض اختيارًا" },
-      { en: "Refused to feed on it", ar: "أبت أن تقتات عليها" },
     ],
     origin: {
       en: "An Elder God who left this world rather than take part in what her siblings were becoming, and one of the three names every sorcerer invokes. Agamotto is her son.",
@@ -11050,9 +11097,11 @@ const mystics: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["eldritch", "elder"],
     powers: [
+      { en: "Lord of Hosts, and an Old One", ar: "ربّ الجنود، وأحد القدماء" },
+      { en: "Magic older than the Earth", ar: "سحر أقدم من الأرض" },
+      { en: "Lends power to the worthy", ar: "يعير قوته للجديرين" },
+      { en: "Last survivor of his race", ar: "آخر الناجين من جنسه" },
       { en: "One of the Vishanti", ar: "أحد الفيشانتي" },
-      { en: "Lends power to the worthy", ar: "يمنح القوة لمن يستحق" },
-      { en: "Ancient beyond reckoning", ar: "قديم لا يُحصى قِدَمه" },
     ],
     origin: {
       en: "The third of the Vishanti, invoked in the same breath as Agamotto and Oshtur every time a sorcerer needs something borrowed. He answers, and he keeps his own counsel about why.",
@@ -11095,8 +11144,17 @@ const mystics: CharacterDraft[] = [
     species: "Demon",
     magicSchools: ["infernal"],
     powers: [
+      /* The sources are blunt: Zom dwarfs Doctor Strange and beats Dormammu
+         and Umar AT THEIR PEAK. Dormammu is ranked 40th here and Zom was
+         86th, on a record that scored 2. */
+      { en: "Magic past the Sorcerer Supreme", ar: "سحر يفوق الساحر الأعظم" },
+      {
+        en: "Beat Dormammu and Umar at their peak",
+        ar: "هزم دورمامو وأومار في أوجهما",
+      },
       { en: "Power without restraint", ar: "قوة بلا كابح" },
-      { en: "Corrupts whoever wields it", ar: "تفسد من يستعملها" },
+      { en: "Corrupts whoever wields it", ar: "يُفسد كل من يستخدمه" },
+      { en: "Took a union of gods to bind", ar: "لزم اتحاد آلهة لتقييده" },
       { en: "Bound rather than killed", ar: "قُيّد ولم يُقتل" },
     ],
     origin: {
@@ -15373,9 +15431,24 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Speaks for jurisdiction", ar: "ينطق في الاختصاص" },
-      { en: "Knows which court applies", ar: "يعرف أي محكمة تنطبق" },
-      { en: "Rarely intervenes", ar: "نادرًا ما يتدخل" },
+      /* "Speaks for jurisdiction / Knows which court applies / Rarely
+         intervenes" — a description of a clerk, ranked 73rd. Logos is Master
+         Order and Lord Chaos fused with the In-Betweener, and what it did was
+         KILL THE LIVING TRIBUNAL and try to take his place as the law of the
+         multiverse. That is the exact feat this file ranks the Beyonders at
+         number three for. */
+      { en: "Killed the Living Tribunal", ar: "قتل المحكمة الحيّة" },
+      {
+        en: "Master Order and Lord Chaos, fused",
+        ar: "سيد النظام وربّ الفوضى، مندمجين",
+      },
+      {
+        en: "Tried to replace multiversal law",
+        ar: "حاول أن يحلّ محلّ قانون المتعدد",
+      },
+      { en: "Murdered the last of the Celestials", ar: "قتل آخر السماويين" },
+      { en: "Speaks for jurisdiction", ar: "ينطق باسم الاختصاص" },
+      { en: "Unmade by Galactus in the end", ar: "فكّكه غالاكتوس في النهاية" },
     ],
     origin: {
       en: "A cosmic being concerned with which authority governs what, and who turns up mainly to say that a matter belongs to a different court than the one hearing it.",
@@ -15599,11 +15672,21 @@ const collectives: CharacterDraft[] = [
     species: "Abstract Entity",
     powers: [
       {
-        en: "Stands between judgement and nothing",
-        ar: "يقف بين القضاء والعدم",
+        en: "Weighs whether a reality continues",
+        ar: "يزن إن كان لواقعٍ أن يستمر",
       },
-      { en: "Speaks for both", ar: "ينطق باسمهما" },
-      { en: "Serves the Tribunal and Oblivion", ar: "يخدم المحكمة والعدم" },
+      {
+        en: "Stands between judgement and nothing",
+        ar: "يقف بين الحكم والعدم",
+      },
+      {
+        en: "Speaks for the Tribunal and Oblivion",
+        ar: "ينطق باسم المحكمة والنسيان",
+      },
+      {
+        en: "Serves both, answers to neither",
+        ar: "يخدم كليهما ولا يحاسبه أيّ منهما",
+      },
     ],
     origin: {
       en: "The intermediary between the Living Tribunal and Oblivion, carrying messages between the thing that judges everything and the thing that would end it.",
@@ -15715,9 +15798,17 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "A Cube that woke up", ar: "مكعب استيقظ" },
-      { en: "Learns what a person is", ar: "يتعلم ما يكونه الشخص" },
-      { en: "Taught by the Shaper", ar: "علّمه الصائغ" },
+      /* A sentient Cosmic Cube whose power the sources call literally
+         infinite, ranked 76th on "A Cube that woke up". */
+      { en: "A Cosmic Cube that woke up", ar: "مكعب كوني استيقظ" },
+      { en: "Power without a stated limit", ar: "قوة بلا حدّ معلن" },
+      {
+        en: "Rewrites the laws of time and space",
+        ar: "يعيد كتابة قوانين الزمان والمكان",
+      },
+      { en: "Grants any wish, at any scale", ar: "يحقق أي أمنية، بأي مقياس" },
+      { en: "Learns what a person is", ar: "يتعلّم ما يكونه الإنسان" },
+      { en: "Taught by the Shaper", ar: "علّمه المُشكِّل" },
     ],
     origin: {
       en: "A Cosmic Cube that achieved awareness and had to be taught what people are, by another Cube that had already gone through it.",
@@ -15778,7 +15869,12 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Weaves the Web itself", ar: "ينسج الشبكة نفسها" },
+      { en: "Weaves the Web of Life itself", ar: "ينسج شبكة الحياة نفسها" },
+      {
+        en: "Every reality is one of its threads",
+        ar: "كل واقع خيط من خيوطها",
+      },
+      { en: "Shapes what the Web holds", ar: "يشكّل ما تحمله الشبكة" },
       { en: "Chained to a loom", ar: "مقيّد إلى نول" },
       { en: "Was Karn all along", ar: "كان كارن طوال الوقت" },
     ],
@@ -15801,9 +15897,14 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Three beings, one oath", ar: "ثلاثة كائنات وقسم واحد" },
-      { en: "Lend power to sorcerers", ar: "يعيرون القوة للسحرة" },
-      { en: "Agamotto, Oshtur, Hoggoth", ar: "أجاموتو وأوشتور وهوغوث" },
+      { en: "Three gods acting as one", ar: "ثلاثة آلهة تعمل كواحد" },
+      { en: "The source of all white magic", ar: "منبع كل السحر الأبيض" },
+      {
+        en: "Omniscience, magnified together",
+        ar: "علم كلي، يتضاعف باجتماعهم",
+      },
+      { en: "Every sorcerer draws on them", ar: "كل ساحر يستمد منهم" },
+      { en: "Agamotto, Oshtur, Hoggoth", ar: "أغاموتو، أوشتور، هوغوث" },
     ],
     origin: {
       en: "The trinity every sorcerer swears by, three separate beings who answer as one when invoked and who each have their own record and their own reasons.",
