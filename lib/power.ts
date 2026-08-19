@@ -111,10 +111,15 @@ const TIERS: Tier[] = [
       "knull",
       "chaos-king",
       "galactus",
+      /* TIAMUT ABOVE ARISHEM, reversing the order they were written in. The
+         Dreaming Celestial BEAT ARISHEM IN SINGLE COMBAT — it took the rest
+         of the Host to subdue him afterwards — and he is feared by Galactus
+         and could not be perceived by the Watcher when he woke. Arishem leads
+         the Host, which is an office; Tiamut won the fight. */
+      "tiamut",
       "arishem",
       "exitar",
       "the-progenitor",
-      "tiamut",
       /**
        * MOLECULE MAN AND FRANKLIN RICHARDS COME UP HERE, and it is the last
        * class grant this file had left. Every Celestial outranked Franklin on
@@ -1067,7 +1072,7 @@ const SCALE: [RegExp, number][] = [
    * ascii-ok: English only.
    */
   [
-    /\b(strength|durab|regenerat|healing|heals\b|heal\b|powered armou?r|armou?r-borne|flies\b|flying\b|telepath|ignites|combust|pulls? things apart|pulls? apart|rips? apart|remotely|technopath|drives any|rebuilds any|any vehicle|tattoo|formula|animals?\b|beasts?\b|split in two|splits? into|rebuilt as a machine|a living machine|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|teleport|becomes? (a |an |the )?[a-z]|mjolnir|stormbreaker|spider[- ]powers|plasma|regrow|living rock|body of living|stone or steel|plated in steel|swaps? bodies|swaps? minds|physiolog|turns? into|copies|mimics?|duplicat|clones?\b|possess|silk|web-line|web-shooter|webbing|webs\b|poison|toxin|venomous|enormous size|giant|embiggen|grows to|constructs?\b|shakes the ground|earthquake|seismic|tremor|stretch|pheromone|\bgas\b|vibrat|absorbs?\b|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
+    /\b(strength|durab|regenerat|healing|heals\b|heal\b|powered armou?r|armou?r-borne|flies\b|flying\b|telepath|ignites|combust|disintegrat|pulls? things apart|pulls? apart|rips? apart|remotely|technopath|drives any|rebuilds any|any vehicle|tattoo|formula|animals?\b|beasts?\b|split in two|splits? into|rebuilt as a machine|a living machine|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|teleport|becomes? (a |an |the )?[a-z]|mjolnir|stormbreaker|spider[- ]powers|plasma|regrow|living rock|body of living|stone or steel|plated in steel|swaps? bodies|swaps? minds|physiolog|turns? into|copies|mimics?|duplicat|clones?\b|possess|silk|web-line|web-shooter|webbing|webs\b|poison|toxin|venomous|enormous size|giant|embiggen|grows to|constructs?\b|shakes the ground|earthquake|seismic|tremor|stretch|pheromone|\bgas\b|vibrat|absorbs?\b|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
     14,
   ],
   /**
@@ -1121,7 +1126,13 @@ const SYMBIOTE_WEIGHT: Record<string, number> = {
  * pattern, because "world" is doing real work elsewhere: Galactus devours them
  * and Shalla-Bal finds the next one.
  */
-const PROPER_NOUNS = /world security council|nexus of all realities/gi;
+/* Phrases that contain a scoring word but do not mean it. "Infinity
+   Gauntlet" is an OBJECT — it was paying Mistress Love and Sire Hate the full
+   reality-class 120 for having been mustered against Thanos, which is a thing
+   that happened to them rather than a thing they do. The Infinity STONES keep
+   their own pattern and their own 40. ascii-ok: English `powers[].en` only. */
+const PROPER_NOUNS =
+  /world security council|nexus of all realities|infinity gauntlet/gi;
 
 export function scaleScore(c: Character): number {
   /**

@@ -596,7 +596,10 @@ const avengers: CharacterDraft[] = [
          the enchantment, or the fact that he is an Asgardian who survives what
          would kill a man. Deception and strategy stay in the origin, where
          they read as character rather than as a stat. */
-      { en: "Asgardian sorcery, deep and varied", ar: "سحر أسغاردي عميق ومتنوع" },
+      {
+        en: "Asgardian sorcery, deep and varied",
+        ar: "سحر أسغاردي عميق ومتنوع",
+      },
       { en: "Illusions that fool a room", ar: "أوهام تخدع غرفة بأكملها" },
       { en: "Shapeshifts into anyone at all", ar: "يتشكّل إلى أي أحد كان" },
       { en: "Teleports himself and others", ar: "ينقل نفسه وغيره آنيًا" },
@@ -4337,8 +4340,20 @@ const abstracts: CharacterDraft[] = [
     universe: ["legacy"],
     species: "Abstract entity",
     powers: [
-      { en: "Omnipotence", ar: "قدرة مطلقة" },
-      { en: "Author of everything", ar: "مؤلّف كل شيء" },
+      {
+        en: "Omnipotence, omniscience, omnipresence",
+        ar: "قدرة وعلم وحضور مطلق",
+      },
+      { en: "Author of everything", ar: "مؤلف كل شيء" },
+      {
+        en: "Created and sustains all existence",
+        ar: "خلق الوجود كله ويُمسكه",
+      },
+      {
+        en: "Can undo or restore anything at will",
+        ar: "يمحو أو يعيد أي شيء بمشيئته",
+      },
+      { en: "Acts through the Living Tribunal", ar: "يعمل عبر المحكمة الحيّة" },
     ],
     origin: {
       en: "The top of the Marvel hierarchy, and the only figure in it with no equal and no opposite. Every other power here answers to it, including the ones that answer to nobody else.",
@@ -4382,8 +4397,14 @@ const abstracts: CharacterDraft[] = [
     universe: ["legacy"],
     species: "Abstract entity",
     powers: [
-      { en: "Is the universe", ar: "هو الكون ذاته" },
-      { en: "Reality on any scale", ar: "تصريف الواقع بأي مقياس" },
+      { en: "Is the universe, and is awake", ar: "هو الكون، وهو مستيقظ" },
+      {
+        en: "Commands its matter, energy and time",
+        ar: "يأمر مادته وطاقته وزمنه",
+      },
+      { en: "Near-omnipotent, near-omniscient", ar: "شبه كلي القدرة والعلم" },
+      { en: "Reality on any scale", ar: "الواقع بأي مقياس" },
+      { en: "Answers only to the Tribunal", ar: "لا يحاسبه إلا المحكمة" },
     ],
     origin: {
       en: "Not a being in the universe: the universe, aware of itself and wearing a shape so that anyone can hold a conversation with it. Sibling to Infinity, opposite of Death.",
@@ -4409,7 +4430,10 @@ const abstracts: CharacterDraft[] = [
     universe: ["legacy"],
     species: "Abstract entity",
     powers: [
-      { en: "Embodies all of space", ar: "تجسيد المكان كله" },
+      { en: "Embodies all of space", ar: "يجسّد المكان كله" },
+      { en: "Commands everything within it", ar: "يأمر كل ما فيه" },
+      { en: "Near-omnipotent, near-omniscient", ar: "شبه كلي القدرة والعلم" },
+      { en: "Powers Quasar's Quantum Bands", ar: "يمدّ أساور كوازار الكمّية" },
       { en: "Unbounded scale", ar: "مقياس بلا حدود" },
     ],
     origin: {
@@ -4434,7 +4458,17 @@ const abstracts: CharacterDraft[] = [
     universe: ["legacy"],
     species: "Abstract entity",
     powers: [
-      { en: "Embodies all ending", ar: "تجسيد كل انتهاء" },
+      { en: "Embodies all ending", ar: "تجسّد كل نهاية" },
+      { en: "Near-omnipotent, near-omniscient", ar: "شبه كلية القدرة والعلم" },
+      {
+        en: "Warps reality, matter, energy and time",
+        ar: "تلوي الواقع والمادة والطاقة والزمن",
+      },
+      {
+        en: "Necromancy, and the gift of dying",
+        ar: "استحضار الموتى، وهبة الموت",
+      },
+      { en: "Cursed Thanos with immortality", ar: "لعنت ثانوس بالخلود" },
       { en: "Cannot be refused", ar: "لا تُرَدّ" },
     ],
     origin: {
@@ -4593,9 +4627,24 @@ const abstracts: CharacterDraft[] = [
     universe: ["sony", "legacy"],
     species: "Symbiote god",
     powers: [
-      { en: "Made the symbiotes", ar: "خلق السمبيوتات" },
-      { en: "Forged from living darkness", ar: "مصوغ من ظلام حيّ" },
-      { en: "Commands every symbiote", ar: "يأمر كل سمبيوت" },
+      {
+        en: "Made the symbiotes, and commands them",
+        ar: "صنع السيمبيوتس ويأمرها",
+      },
+      {
+        en: "All-Black, a sword that kills gods",
+        ar: "أول-بلاك، سيف يقتل الآلهة",
+      },
+      {
+        en: "Decapitated a Celestial at the dawn",
+        ar: "قطع رأس سماوي عند الفجر",
+      },
+      {
+        en: "Manipulates the living abyss itself",
+        ar: "يتحكم بالهاوية الحية نفسها",
+      },
+      { en: "Strength, flight and shapeshifting", ar: "قوة وطيران وتشكّل" },
+      { en: "Comes back, every time", ar: "يعود في كل مرة" },
     ],
     origin: {
       en: "The god who was there before the light, who forged a blade out of living darkness and made the symbiotes from his own substance. Every one of them, Venom included, is a piece of him that got away.",
@@ -4679,8 +4728,15 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
+      { en: "Beat Arishem in single combat", ar: "هزم أريشِم في نزال فردي" },
+      { en: "Feared even by Galactus", ar: "يخشاه حتى غالاكتوس" },
+      {
+        en: "The Watcher could not perceive him",
+        ar: "لم يستطع المُراقب إدراكه",
+      },
+      { en: "Reality, matter and energy", ar: "الواقع والمادة والطاقة" },
+      { en: "Broadcast dreams while sealed away", ar: "بثّ أحلامه وهو محبوس" },
       { en: "A world grew around him", ar: "نما حوله عالم" },
-      { en: "Celestial scale", ar: "بحجم السماويين" },
     ],
     origin: {
       en: "The Celestial seeded inside the Earth. The planet is his egg, everything living on it is what he needs to hatch, and the Eternals were sent to make sure nothing interrupted that.",
@@ -10866,9 +10922,21 @@ const abstractsBatch: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "Appoints the Protector", ar: "يعيّن حامي الكون" },
-      { en: "Older than most of them", ar: "أقدم من معظمهم" },
-      { en: "Weak for an abstract", ar: "ضعيف بمقياس المجرّدات" },
+      { en: "Cosmic Awareness, given time", ar: "وعي كوني، متى أُمهل" },
+      { en: "Grants it to a chosen Protector", ar: "يمنحه لحامٍ مختار" },
+      { en: "Opens portals between dimensions", ar: "يفتح بوابات بين الأبعاد" },
+      {
+        en: "Made a pocket universe of his own",
+        ar: "صنع كونًا جيبيًا خاصًا به",
+      },
+      {
+        en: "Reanimates dead tissue, grows limbs",
+        ar: "يحيي الأنسجة الميتة ويُنبت الأطراف",
+      },
+      {
+        en: "One vulnerable spot, and it killed him",
+        ar: "نقطة ضعف واحدة، وقتلته",
+      },
     ],
     origin: {
       en: "The entity that chooses who holds the Quantum Bands and carries the title Protector of the Universe. He was called weak for an abstract, which the master list keeps as a caution against assuming abstracts outrank everything.",
@@ -10886,9 +10954,20 @@ const abstractsBatch: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "Eon's successor", ar: "خليفة إيون" },
-      { en: "Watches over the living", ar: "يرعى الأحياء" },
-      { en: "Grew from Eon's remains", ar: "نبت من بقايا إيون" },
+      { en: "Cosmic Awareness, not yet mastered", ar: "وعي كوني لم تتقنه بعد" },
+      {
+        en: "Teleportation, flight and telepathy",
+        ar: "انتقال آني وطيران وتخاطر",
+      },
+      {
+        en: "Shapeshifts and grows pseudopods",
+        ar: "تتشكّل وتُنبت أذرعًا كاذبة",
+      },
+      {
+        en: "Potentially without limit, once grown",
+        ar: "قد تصير بلا حدّ متى نضجت",
+      },
+      { en: "Eon's daughter and successor", ar: "ابنة إيون وخليفته" },
     ],
     origin: {
       en: "Eon's successor, grown from what was left of him, who took on the duty of appointing Protectors and watching the universe for the kind of trouble abstracts are supposed to notice.",
@@ -10906,9 +10985,18 @@ const abstractsBatch: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "Child of Eternity", ar: "ابن الأزل" },
-      { en: "Unmakes what is finished", ar: "يفكّ ما تمّ" },
-      { en: "Ends a universe cleanly", ar: "ينهي كونًا بلا فوضى" },
+      {
+        en: "Erases matter, energy and abstractions",
+        ar: "يمحو المادة والطاقة والمجرّدات",
+      },
+      { en: "Unravels an entire universe", ar: "يحلّ كونًا بأكمله" },
+      {
+        en: "Destroyed all creation, then remade it",
+        ar: "دمّر الخلق كله ثم أعاده",
+      },
+      { en: "Unseen even by Cosmic Awareness", ar: "لا يراه حتى الوعي الكوني" },
+      { en: "The heat death, embodied", ar: "الموت الحراري مجسّدًا" },
+      { en: "Child of Eternity", ar: "ابن الأبدية" },
     ],
     origin: {
       en: "Eternity's child, whose function is to take a universe apart once it has run its course. He is not a villain; he is the last step, and he arrives on time.",
@@ -15360,9 +15448,20 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "Love, embodied", ar: "الحب مجسّدًا" },
-      { en: "Paired against Sire Hate", ar: "تقابل سيّد الكراهية" },
-      { en: "Neither can win outright", ar: "ولا ينتصر أحدهما تمامًا" },
+      {
+        en: "Love, embodied across the universe",
+        ar: "الحب مجسّدًا في الكون كله",
+      },
+      {
+        en: "Moves what anyone feels, by being there",
+        ar: "تحرّك مشاعر أي أحد بحضورها",
+      },
+      { en: "Immortal, and goes where she likes", ar: "خالدة، وتذهب حيث تشاء" },
+      {
+        en: "Raised against the Infinity Gauntlet",
+        ar: "استُدعيت في وجه قفاز اللانهاية",
+      },
+      { en: "Paired against Sire Hate", ar: "مقابلة للسيد كره" },
     ],
     origin: {
       en: "The personification of love, who exists in balance with hate rather than in victory over it, because a universe that had only one of them would stop working.",
@@ -15380,9 +15479,20 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "Hate, embodied", ar: "الكراهية مجسّدة" },
-      { en: "Paired against Mistress Love", ar: "يقابل سيدة الحب" },
-      { en: "Not evil, only necessary", ar: "ليس شرًّا بل ضرورة" },
+      {
+        en: "Hate, embodied across the universe",
+        ar: "الكره مجسّدًا في الكون كله",
+      },
+      {
+        en: "Turns feeling to hostility by presence",
+        ar: "يقلب الشعور عداءً بحضوره",
+      },
+      { en: "Immortal, and goes where he likes", ar: "خالد، ويذهب حيث يشاء" },
+      {
+        en: "Raised against the Infinity Gauntlet",
+        ar: "استُدعي في وجه قفاز اللانهاية",
+      },
+      { en: "Not evil, only necessary", ar: "ليس شرًا، بل ضرورة" },
     ],
     origin: {
       en: "The personification of hate, and not a villain: he is one half of a pair that has to stay in balance, and he knows it better than most beings know anything.",
@@ -15449,9 +15559,24 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
-      { en: "A Celestial that died on Earth", ar: "سماويّ مات على الأرض" },
-      { en: "Its blood became life here", ar: "صار دمه حياةً هنا" },
-      { en: "Woke to judge everyone", ar: "استيقظ ليحاكم الجميع" },
+      {
+        en: "Planet-scale energy and reality control",
+        ar: "تحكم بالطاقة والواقع بمقياس كوكبي",
+      },
+      {
+        en: "Telepathy over every mind on Earth",
+        ar: "تخاطر مع كل عقل على الأرض",
+      },
+      {
+        en: "Disintegrates whoever it judges unfit",
+        ar: "يفتّت كل من يحكم بعدم جدارته",
+      },
+      { en: "Woke inside its own corpse", ar: "استيقظ داخل جثته" },
+      { en: "Its blood became life on Earth", ar: "صار دمه حياةً على الأرض" },
+      {
+        en: "Judged itself, and undid the damage",
+        ar: "حاكم نفسه، وأصلح ما أفسد",
+      },
     ],
     origin: {
       en: "The Celestial whose corpse fell to Earth and whose blood is why anything here mutated at all, and who woke long enough to judge the planet it accidentally created.",
@@ -15469,23 +15594,20 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      /* "Speaks for jurisdiction / Knows which court applies / Rarely
-         intervenes" — a description of a clerk, ranked 73rd. Logos is Master
-         Order and Lord Chaos fused with the In-Betweener, and what it did was
-         KILL THE LIVING TRIBUNAL and try to take his place as the law of the
-         multiverse. That is the exact feat this file ranks the Beyonders at
-         number three for. */
       { en: "Killed the Living Tribunal", ar: "قتل المحكمة الحيّة" },
       {
         en: "Master Order and Lord Chaos, fused",
         ar: "سيد النظام وربّ الفوضى، مندمجين",
       },
       {
-        en: "Tried to replace multiversal law",
-        ar: "حاول أن يحلّ محلّ قانون المتعدد",
+        en: "Warps reality, time, space and soul",
+        ar: "يلوي الواقع والزمان والمكان والروح",
+      },
+      {
+        en: "Near-omnipresent and nigh-omniscient",
+        ar: "شبه حاضر في كل مكان وشبه عليم",
       },
       { en: "Murdered the last of the Celestials", ar: "قتل آخر السماويين" },
-      { en: "Speaks for jurisdiction", ar: "ينطق باسم الاختصاص" },
       { en: "Unmade by Galactus in the end", ar: "فكّكه غالاكتوس في النهاية" },
     ],
     origin: {
@@ -15669,9 +15791,14 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "Governs magic itself", ar: "تحكم السحر ذاته" },
-      { en: "Opposed to science", ar: "نقيض العلم" },
-      { en: "Refuses an intermediary", ar: "ترفض وسيطًا" },
+      { en: "Governs magic itself", ar: "يحكم السحر نفسه" },
+      {
+        en: "Creates and destroys on a cosmic scale",
+        ar: "يخلق ويدمّر على مقياس كوني",
+      },
+      { en: "Grants immortality to its Avatar", ar: "يمنح الخلود لمُتجسّده" },
+      { en: "Opposed to science", ar: "مقابل للعلم" },
+      { en: "Refuses an intermediary", ar: "يرفض وسيطًا" },
     ],
     origin: {
       en: "The abstract that governs everything magical and strange. It and its opposite are the only pair in the hierarchy with no intermediary between them, because neither will accept one.",
