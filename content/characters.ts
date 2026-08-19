@@ -6377,8 +6377,15 @@ const others: CharacterDraft[] = [
     /* NOT an ordinary human. The Bloodstone gives her the strength and the long life. */
     species: "Enhanced human",
     powers: [
+      /* Scored ZERO. "The Bloodstone / Raised as a monster hunter / Every
+         weapon in the house" names the artefact, the upbringing and the
+         armoury, and not one thing the stone actually does — the strength,
+         the healing, the red energy out of her hand. */
       { en: "The Bloodstone", ar: "حجر الدم" },
-      { en: "Raised as a monster hunter", ar: "نشأت صائدة وحوش" },
+      { en: "Superhuman strength and durability", ar: "قوة وصلابة خارقتان" },
+      { en: "Red energy from her hand", ar: "طاقة حمراء من يدها" },
+      { en: "Heals from serious wounds", ar: "تشفى من جروح بالغة" },
+      { en: "Her blood is poison to vampires", ar: "دمها سمّ لمصاصي الدماء" },
       { en: "Every weapon in the house", ar: "كل سلاح في البيت" },
     ],
     origin: {
