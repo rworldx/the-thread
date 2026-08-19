@@ -58,8 +58,29 @@ const TIERS: Tier[] = [
     n: 1,
     title: "Above the multiverse",
     gloss:
-      "Each has ended, judged or rewritten a cosmos. The Beyonders lead on the plainest feat available: they killed the Living Tribunal.",
+      "Each has ended, judged or rewritten a cosmos. The Living Tribunal leads: every source ranks him second only to the One Above All. The Beyonders killed him, and they did it from outside the hierarchy he is second in.",
     ranked: [
+      /**
+       * THE LIVING TRIBUNAL WAS FIFTH, AND THE KILL IS WHY. This file used to
+       * lead the tier with the Beyonders "on the plainest feat available:
+       * they killed the Living Tribunal", and that rule read well and put a
+       * being every source calls the second-most-powerful in Marvel below
+       * three others.
+       *
+       * The sources that rank him second are POST-2015. They know about
+       * Secret Wars. They rank him second anyway, and the reason is in the
+       * same articles: the Beyonders "aren't even a part of the food chain" —
+       * they live outside the multiverse, they came in as a race during a
+       * multiversal collapse, and he died defending the hierarchy he is
+       * second in. Order and Chaos had to FUSE with the In-Betweener to
+       * manage the same thing.
+       *
+       * Being killed by something from outside the system is not the same as
+       * being outranked inside it. The kill stays in the record — it is why
+       * the Beyonders and Logos are second and third rather than lower — but
+       * it no longer outweighs a placement every source agrees on.
+       */
+      "the-living-tribunal",
       "the-beyonders",
       /**
        * LOGOS KILLED THE LIVING TRIBUNAL, which is the exact feat the sentence
@@ -75,7 +96,6 @@ const TIERS: Tier[] = [
        * belongs to the record that performed it.
        */
       "logos",
-      "the-living-tribunal",
       "the-beyonder",
       "first-firmament",
       "protege",

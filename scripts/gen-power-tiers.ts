@@ -61,13 +61,17 @@ function main() {
     out.push("");
     out.push(`*${tier.gloss}*`);
     out.push("");
-    out.push(`**${members.length}** ${members.length === 1 ? "character" : "characters"}.`);
+    out.push(
+      `**${members.length}** ${members.length === 1 ? "character" : "characters"}.`,
+    );
     out.push("");
     /* A REAL ordered list, so it renders as one. Bolding the number instead
        breaks the list syntax and the whole tier collapses into a paragraph. */
     members.forEach((m, i) => {
       const name = m.ranked ? `**${m.c.nameEn}**` : m.c.nameEn;
-      const why = m.c.mutantClass ? `${m.c.mutantClass} mutant` : (m.c.species ?? "unknown");
+      const why = m.c.mutantClass
+        ? `${m.c.mutantClass} mutant`
+        : (m.c.species ?? "unknown");
       out.push(`${i + 1}. ${name} — ${why}`);
     });
     if (head > 0 && head < members.length) {
@@ -90,8 +94,11 @@ function main() {
       "Thanos on durability and planning. Korvac has a real claim above both.",
   );
   out.push(
-    "- **The Beyonders vs the Living Tribunal.** Placed on the kill. Anything " +
-      "written before 2015 reverses it.",
+    "- **The Living Tribunal vs the Beyonders.** The Beyonders killed him " +
+      "during Secret Wars, and every source still ranks him second only to " +
+      "the One Above All — including sources written after the kill. Placed " +
+      "on the ranking rather than the kill, because the Beyonders came from " +
+      "outside the hierarchy he is second in.",
   );
   out.push(
     "- **Eternity vs Infinity.** Twins. ComicBasics puts Infinity first; most " +
@@ -138,7 +145,8 @@ function main() {
   peak.push("");
   PEAK_HEAD.forEach((id, i) => {
     const c = byId.get(id);
-    if (!c) throw new Error(`PEAK_HEAD names "${id}", which is not a character`);
+    if (!c)
+      throw new Error(`PEAK_HEAD names "${id}", which is not a character`);
     peak.push(`${i + 1}. **${c.nameEn}** — ${c.species ?? "unknown"}`);
   });
   peak.push("");
@@ -154,15 +162,21 @@ function main() {
     peak.push(`## Tier ${tier.n} — ${tier.title}`);
     peak.push("");
     rest.forEach((m, i) => {
-      const why = m.c.mutantClass ? `${m.c.mutantClass} mutant` : (m.c.species ?? "unknown");
+      const why = m.c.mutantClass
+        ? `${m.c.mutantClass} mutant`
+        : (m.c.species ?? "unknown");
       peak.push(`${i + 1}. ${m.c.nameEn} — ${why}`);
     });
     peak.push("");
   }
   writeFileSync("docs/POWER-TIERS-PEAK.md", peak.join("\n"));
-  console.log(`\n  wrote docs/POWER-TIERS.md — ${allCharacters.length} characters in ${TIERS.length} tiers.\n`);
+  console.log(
+    `\n  wrote docs/POWER-TIERS.md — ${allCharacters.length} characters in ${TIERS.length} tiers.\n`,
+  );
   for (const { tier, members } of rows) {
-    console.log(`    tier ${tier.n}  ${String(members.length).padStart(3)}  ${tier.title}`);
+    console.log(
+      `    tier ${tier.n}  ${String(members.length).padStart(3)}  ${tier.title}`,
+    );
   }
   console.log("");
 }
