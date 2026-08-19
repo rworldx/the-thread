@@ -471,9 +471,16 @@ const avengers: CharacterDraft[] = [
     /* NOT an ordinary human. He wields the Ten Rings by the end, and the chi was never ordinary. */
     species: "Enhanced human",
     powers: [
-      { en: "Master martial artist", ar: "أستاذ فنون قتالية" },
-      { en: "The Ten Rings", ar: "الحلقات العشر" },
-      { en: "Chi manipulation", ar: "التحكم بطاقة التشي" },
+      /* Three bullets, one of which the scorer could not read: "The Ten
+         Rings" was worth nothing, so the man who took them off Wenwu and
+         killed the Dweller-in-Darkness with them ranked 118 places behind
+         his father. */
+      { en: "The Ten Rings", ar: "الخواتم العشرة" },
+      { en: "Energy blasts and shockwaves", ar: "دفقات طاقة وموجات صدم" },
+      { en: "Chi manipulation", ar: "التحكم بالتشي" },
+      { en: "Master of every fighting style", ar: "سيد كل أساليب القتال" },
+      { en: "Superhuman reflexes and agility", ar: "ردود فعل ورشاقة خارقة" },
+      { en: "Reads an opponent mid-fight", ar: "يقرأ خصمه أثناء النزال" },
     ],
     origin: {
       en: "Raised from childhood to be a weapon by his father, he runs away to San Francisco and parks cars for a living until the past sends someone to collect him.",
