@@ -16235,8 +16235,16 @@ const hulkRogues: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Mutate",
     powers: [
-      { en: "Becomes whatever he touches", ar: "يصير ما يلمسه" },
-      { en: "Steel, stone, or a whole building", ar: "فولاذًا أو حجرًا أو بناية كاملة" },
+      /* Scored ZERO and came 509th. "Becomes whatever he touches" is one of
+         the nastiest powers in Marvel — he has taken on adamantium, the
+         Hulk's strength and an entire building — and not one word of it was
+         readable, so a man who has gone toe to toe with Thor ranked below the
+         Bugle's photographers. */
+      { en: "Takes on any material he touches", ar: "يكتسب خصائص ما يلمسه" },
+      { en: "Adamantium, stone, or a whole building", ar: "أدامانتيوم أو حجر أو بناية" },
+      { en: "Strength to match what he copies", ar: "قوة بقدر ما ينسخ" },
+      { en: "Near-total durability", ar: "صلابة شبه تامة" },
+      { en: "A wrecking ball on a chain", ar: "كرة هدم على سلسلة" },
       { en: "A boxer Loki picked", ar: "ملاكم اختاره لوكي" },
     ],
     origin: {
@@ -16258,8 +16266,10 @@ const hulkRogues: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Artificial being",
     powers: [
+      { en: "Enormous strength", ar: "قوة هائلة" },
+      { en: "Near-total durability", ar: "صلابة شبه تامة" },
+      { en: "Every weapon his makers built", ar: "كل سلاح بناه صانعوه" },
       { en: "Two heads, two purposes", ar: "رأسان وغرضان" },
-      { en: "One holds the war, one the art", ar: "أحدهما للحرب والآخر للفن" },
       { en: "The last of a dead culture", ar: "آخر ما بقي من حضارة ميتة" },
     ],
     origin: {
@@ -16281,8 +16291,10 @@ const hulkRogues: CharacterDraft[] = [
     species: "Energy being",
     powers: [
       { en: "A living electrical field", ar: "حقل كهربائي حيّ" },
+      { en: "Discharges at anything it touches", ar: "يفرّغ شحنته في كل ما يلمسه" },
+      { en: "Physical blows pass through it", ar: "الضربات تنفذ خلاله" },
       { en: "Feeds on brainwaves", ar: "يتغذى على موجات الدماغ" },
-      { en: "Born in a reactor accident", ar: "وُلد في حادث مفاعل" },
+      { en: "Thinks with what it last ate", ar: "يفكر بما التهمه آخرًا" },
     ],
     origin: {
       en: "A creature of pure electricity that formed in a reactor explosion and grows stronger by consuming the minds of anyone near it. It thinks with whatever it has most recently eaten.",
@@ -16302,9 +16314,13 @@ const hulkRogues: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cursed being",
     powers: [
+      /* Scored zero: three bullets about what the curse IS and none about what
+         it does to whoever catches it. */
+      { en: "Enormous strength", ar: "قوة هائلة" },
+      { en: "Claws and near-total durability", ar: "مخالب وصلابة شبه تامة" },
+      { en: "Heals from almost anything", ar: "يشفى من أي شيء تقريبًا" },
       { en: "A curse, not a creature", ar: "لعنة لا مخلوق" },
       { en: "Passes to whoever eats human flesh", ar: "تنتقل إلى آكل لحم البشر" },
-      { en: "Never the same person twice", ar: "لا يكون الشخص نفسه مرتين" },
     ],
     origin: {
       en: "Not one monster but a curse laid on the Canadian wilderness: eat human flesh there and you become it, and the last one is released the moment you do.",
@@ -16348,6 +16364,8 @@ const hulkRogues: CharacterDraft[] = [
     species: "Alien",
     powers: [
       { en: "Rewrites what people remember", ar: "يعيد كتابة ما يتذكره الناس" },
+      { en: "Telepathy over a whole planet", ar: "تخاطر يغطي كوكبًا" },
+      { en: "Strength to match a Hulk", ar: "قوة تضاهي هالك" },
       { en: "Everyone is sure they love him", ar: "الجميع موقنون بحبهم له" },
       { en: "Wants a family, by force", ar: "يريد عائلة بالقوة" },
     ],
