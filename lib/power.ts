@@ -569,10 +569,27 @@ const TIERS: Tier[] = [
      * Nothing in a record distinguishes "trained to kill" from "knows people
      * who are", so this is named rather than derived.
      */
+    /**
+     * ORDERED BY WHAT THEY CAN DO, not by billing. The first pass put Black
+     * Widow and Hawkeye at the top because they are Avengers and Nick Fury
+     * third because he runs the place — which is fame, not capability. The
+     * Punisher sat SEVENTH, below Kate Bishop, on the strongest record in the
+     * group: Marine special forces, weapons mastery, heavy weapons, tactics.
+     * He is a one-man army who has killed superhumans, and this is the tier
+     * for people who turn up with equipment and training against gods.
+     *
+     * Fury and Hill fall to the bottom. Both are formidable and neither is a
+     * frontline fighter; a director's job is to send other people.
+     *
+     * The Red Guardian stays directly behind Yelena, which is where Rashid put
+     * him — see the note on his own line below.
+     */
     ranked: [
+      "punisher",
       "black-widow",
       "hawkeye",
-      "nick-fury",
+      "okoye",
+      "elektra",
       "yelena-belova",
       /**
        * RED GUARDIAN IS PINNED HERE ON PURPOSE, against his own species.
@@ -587,10 +604,8 @@ const TIERS: Tier[] = [
        */
       "red-guardian",
       "kate-bishop",
-      "punisher",
-      "elektra",
-      "okoye",
       "peggy-carter",
+      "nick-fury",
       "maria-hill",
     ],
     /* Belonging to an organisation counts. Filing Nick Fury with the aunts and

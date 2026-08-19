@@ -177,9 +177,16 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Never misses", ar: "لا يخطئ هدفًا" },
-      { en: "Trick arrows", ar: "سهام خاصة" },
-      { en: "Close combat", ar: "قتال قريب" },
+      /* "Never misses / Trick arrows / Close combat" undersold the arrows,
+         which are the whole point: explosive, electric, sonic, grappling. A
+         man with no powers who stands next to Thor is standing there on
+         ordnance and reflexes, and the record should say which. */
+      { en: "Never misses", ar: "لا يخطئ الهدف" },
+      { en: "Explosive and electric arrows", ar: "سهام متفجرة وكهربائية" },
+      { en: "Peak human conditioning", ar: "ذروة اللياقة البشرية" },
+      { en: "Exceptional reflexes", ar: "ردود فعل استثنائية" },
+      { en: "Close combat and acrobatics", ar: "قتال متلاحم وبهلوانية" },
+      { en: "Fights on through the injury", ar: "يواصل القتال رغم الإصابة" },
     ],
     origin: {
       en: "A S.H.I.E.L.D. marksman sent to kill an enemy agent, who files a different report instead. He has a family nobody at work knows about, and a bow against people who can level cities.",
