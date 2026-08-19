@@ -38,10 +38,16 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Powered armour", ar: "بذلة مدرّعة" },
-      { en: "Flight", ar: "طيران" },
+      /* Four bullets for the suit that fought Thanos: no strength, no unibeam,
+         no durability, no nanotech. "Powered armour" was carrying all of it,
+         and the armour is the character — Tony without it is the engineer on
+         the last line. */
+      { en: "Powered armour", ar: "درع مزوّد بالطاقة" },
+      { en: "Repulsors and the unibeam", ar: "الريبولسرز وشعاع الصدر" },
+      { en: "Armour-borne strength", ar: "قوة من الدرع" },
+      { en: "Withstands bullets and blasts", ar: "يصمد أمام الرصاص والانفجارات" },
+      { en: "Nanotech that reshapes itself", ar: "نانو يعيد تشكيل نفسه" },
       { en: "Genius engineer", ar: "مهندس عبقري" },
-      { en: "Repulsor weapons", ar: "أسلحة دافعة" },
     ],
     origin: {
       en: "A weapons manufacturer is taken hostage and builds a suit of armour to get out of the cave he is held in. He comes home, shuts the weapons division down, and keeps building.",
@@ -341,8 +347,10 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Powered armour", ar: "بذلة مدرّعة" },
-      { en: "Heavy weapons", ar: "أسلحة ثقيلة" },
+      { en: "Powered armour", ar: "درع مزوّد بالطاقة" },
+      { en: "Heavy weapons and repulsors", ar: "أسلحة ثقيلة وريبولسرز" },
+      { en: "Withstands bullets and blasts", ar: "يصمد أمام الرصاص والانفجارات" },
+      { en: "Flight at speed", ar: "طيران سريع" },
       { en: "Air Force officer", ar: "ضابط في سلاح الجو" },
     ],
     origin: {
@@ -6692,9 +6700,10 @@ const others: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Built her own suit at fifteen", ar: "بنت بذلتها في الخامسة عشرة" },
+      { en: "Built her own suit at fifteen", ar: "بنت بدلتها في الخامسة عشرة" },
+      { en: "Flight and repulsors", ar: "طيران وريبولسرز" },
+      { en: "Armour-borne strength", ar: "قوة من الدرع" },
       { en: "Engineer", ar: "مهندسة" },
-      { en: "Flight and repulsors", ar: "طيران وأشعة دافعة" },
     ],
     origin: {
       en: "An MIT student who reverse-engineered an Iron Man suit out of scavenged parts because she could, and then had to work out what she was going to do with it. She is the answer to what Tony Stark left behind rather than a copy of him.",
