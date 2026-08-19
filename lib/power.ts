@@ -844,7 +844,7 @@ const SYMBIOTE_WEIGHT: Record<string, number> = {
  * pattern, because "world" is doing real work elsewhere: Galactus devours them
  * and Shalla-Bal finds the next one.
  */
-const PROPER_NOUNS = /world security council/gi;
+const PROPER_NOUNS = /world security council|nexus of all realities/gi;
 
 export function scaleScore(c: Character): number {
   /**

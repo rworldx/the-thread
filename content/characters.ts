@@ -6370,9 +6370,16 @@ const others: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Plant elemental",
     powers: [
-      { en: "Burns whatever fears him", ar: "يحرق كل من يخافه" },
-      { en: "Guards the Nexus of All Realities", ar: "يحرس ملتقى كل الحقائق" },
+      /* Three bullets, and one of them was scoring as reality manipulation
+         because it contains the word "Realities" — the Nexus is a PLACE he
+         guards, not a thing he does. Scrubbed like the World Security Council
+         was, and the abilities it actually grants him are written out. */
+      { en: "Burns whatever fears him", ar: "يحرق كل ما يخافه" },
+      { en: "Superhuman strength", ar: "قوة خارقة" },
       { en: "Cannot be killed by force", ar: "لا يُقتل بالقوة" },
+      { en: "Reforms out of the swamp", ar: "يتشكل من جديد من المستنقع" },
+      { en: "Commands the vegetation", ar: "يأمر النبات" },
+      { en: "Steps between dimensions", ar: "يخطو بين الأبعاد" },
     ],
     origin: {
       en: "A scientist who fell into a swamp holding an experimental serum and came out as the swamp. He has no speech and no memory, and his one rule is famous: whatever knows fear burns at his touch.",
