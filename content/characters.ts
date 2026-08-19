@@ -2105,7 +2105,11 @@ const villains: CharacterDraft[] = [
     species: "Enhanced human",
     powers: [
       { en: "Enormous strength", ar: "قوة هائلة" },
+      { en: "Near-total durability", ar: "صلابة شبه تامة" },
+      { en: "Heals from almost anything", ar: "يشفى من أي شيء تقريبًا" },
+      { en: "Cannot change back", ar: "لا يستطيع العودة" },
       { en: "Bone protrusions", ar: "نتوءات عظمية" },
+      { en: "Trained soldier", ar: "جندي مدرّب" },
     ],
     origin: {
       en: "A career soldier who watched something stronger than him and asked to be given the same thing, then asked for more of it.",
@@ -2742,7 +2746,10 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Hulk strength, kept", ar: "قوة هالك مع الوعي" },
+      { en: "Hulk strength, kept", ar: "قوة هالك محفوظة" },
+      { en: "Near-total durability", ar: "صلابة شبه تامة" },
+      { en: "Heals fast", ar: "تشفى سريعًا" },
+      { en: "Keeps her own mind", ar: "تحتفظ بعقلها" },
       { en: "Practising attorney", ar: "محامية ممارسة" },
     ],
     origin: {
@@ -3846,10 +3853,16 @@ const ensemble: CharacterDraft[] = [
     /* NOT Human. He becomes the Red Hulk. Whatever he is between transformations, ordinary is not it. */
     species: "Enhanced human",
     powers: [
-      { en: "Commands the hunt", ar: "يقود المطاردة" },
-      { en: "Secretary of State", ar: "وزير الخارجية" },
-      { en: "Becomes the Red Hulk", ar: "يتحوّل إلى هَلك الأحمر" },
-      { en: "Keeps his own mind", ar: "يحتفظ بعقله" },
+      /* "Commands the hunt / Secretary of State / Becomes the Red Hulk / Keeps
+         his own mind" — four bullets, three of them a CV. The heat is what
+         makes him a different character from Banner and it was not there, nor
+         was the strength, the durability or the healing. */
+      { en: "Strength that grows with his rage", ar: "قوة تنمو مع غضبه" },
+      { en: "Absorbs radiation and burns with it", ar: "يمتص الإشعاع ويحترق به" },
+      { en: "Near-total durability", ar: "صلابة شبه تامة" },
+      { en: "Heals from almost anything", ar: "يشفى من أي شيء تقريبًا" },
+      { en: "Keeps his military mind", ar: "يحتفظ بعقله العسكري" },
+      { en: "Overheats, and weakens for it", ar: "يفرط سخونة فيضعف" },
     ],
     origin: {
       en: "The general who spent a career hunting the Hulk, then spent the years after it in government still convinced he was the only adult in the room. What he eventually becomes is the thing he built his life around destroying.",
