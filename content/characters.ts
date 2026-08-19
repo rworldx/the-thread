@@ -2676,11 +2676,17 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human avatar",
     powers: [
-      { en: "The avatar of Khonshu", ar: "مُمثّل خونشو على الأرض" },
-      { en: "Marc Spector, the mercenary", ar: "مارك سبكتور، المرتزق" },
-      { en: "Steven Grant, the gift-shop clerk", ar: "ستيفن غرانت، بائع الهدايا" },
-      { en: "Jake Lockley, the one who acts", ar: "جيك لوكلي، الذي يتصرّف" },
-      { en: "Mr. Knight, the white suit", ar: "مستر نايت، البذلة البيضاء" },
+      /* FIVE BULLETS AND FOUR OF THEM WERE NAMES. Marc Spector, Steven Grant,
+         Jake Lockley and Mr. Knight are one fact about him, not four powers,
+         and listing them took every slot the record had — so a man a god
+         makes stronger scored sixteen and came 447th, behind the werewolf.
+         The identities keep one line, which is all they ever needed. */
+      { en: "The avatar of Khonshu", ar: "أفاتار خونشو" },
+      { en: "Strength and durability from a god", ar: "قوة وصلابة من إله" },
+      { en: "Heals what should have killed him", ar: "يشفى مما كان ليقتله" },
+      { en: "Crescent blades and batons", ar: "نصال هلالية وهراوات" },
+      { en: "Master hand-to-hand combatant", ar: "سيد القتال المتلاحم" },
+      { en: "Four men sharing one body", ar: "أربعة رجال في جسد واحد" },
     ],
     origin: {
       en: "A mercenary who died in an Egyptian tomb and got up again as the fist of a moon god, sharing a body with people he did not know were there. Three of them have names; the third took a long time to admit to.",
