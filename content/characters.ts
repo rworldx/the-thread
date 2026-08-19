@@ -3773,8 +3773,21 @@ const ensemble: CharacterDraft[] = [
     /* NOT an ordinary human. She lifts Mjolnir and becomes the Mighty Thor. */
     species: "Enhanced human",
     powers: [
-      { en: "Astrophysicist", ar: "عالمة فيزياء فلكية" },
-      { en: "Wields Mjolnir", ar: "تحمل ميولنير" },
+      /* "Astrophysicist / Wields Mjolnir" — two bullets, 504th, for a woman
+         who IS Thor when she lifts it. The hammer was the whole record and
+         the record never said what the hammer does. */
+      { en: "Mjolnir, and worthy of it", ar: "ميولنير، وهي جديرة بها" },
+      { en: "Strength and flight of a god", ar: "قوة إله وطيرانه" },
+      { en: "Control of lightning and storms", ar: "تحكّم بالبرق والعواصف" },
+      {
+        en: "Nearly invulnerable while transformed",
+        ar: "شبه منيعة وهي متحوّلة",
+      },
+      { en: "The cancer returns each time", ar: "السرطان يعود في كل مرة" },
+      {
+        en: "An astrophysicist, otherwise",
+        ar: "عالمة فيزياء فلكية فيما عدا ذلك",
+      },
     ],
     origin: {
       en: "The astrophysicist who found a man falling out of the sky in New Mexico and was the only person in the desert treating it as data.",
@@ -8776,9 +8789,16 @@ const antagonists: CharacterDraft[] = [
     universe: ["defenders"],
     species: "Enhanced human",
     powers: [
-      { en: "Says a thing and it is done", ar: "يقول الشيء فيُفعل" },
-      { en: "No memory of consent", ar: "لا يعرف معنى الموافقة" },
-      { en: "A virus in the breath", ar: "فيروس في الأنفاس" },
+      /* "Says a thing and it is done / No memory of consent / A virus in the
+         breath" — true, evocative, and it scored ZERO, because no pattern can
+         reach a power described that obliquely. The vocabulary was not the
+         problem here; the record was. It says mind control now, and keeps the
+         line that makes him frightening. */
+      { en: "Mind control by voice alone", ar: "سيطرة ذهنية بالصوت وحده" },
+      { en: "Anyone who hears him obeys", ar: "كل من يسمعه يُطيع" },
+      { en: "Says a thing and it is done", ar: "يقول الشيء فيكون" },
+      { en: "A virus carried in the breath", ar: "فيروس يحمله النَفَس" },
+      { en: "No memory of consent", ar: "لا ذكرى لأي موافقة" },
     ],
     origin: {
       en: "A man whose voice removes the possibility of saying no, and who has never in his life had to ask for anything. He has decided that the woman who got away belongs to him.",

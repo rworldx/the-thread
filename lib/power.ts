@@ -962,14 +962,41 @@ const SCALE: [RegExp, number][] = [
    * ascii-ok: English `powers[].en` only.
    */
   [/\b(controls the elements|elemental control|any element)/i, 25],
+  /* A BUBBLE OF STOPPED TIME IS NOT CONTROL OF TIME. Putting "freezes time"
+     with the reality words paid Tempus the full 120 and moved her to 282nd,
+     above Wolverine and Captain America, for a localised defensive power. It
+     is scope, not authorship, which is what this band is for.
+     ascii-ok: English `powers[].en` only. */
+  [/\bfreezes? time/i, 25],
   /* Armies, cities, dimensions. ascii-ok: English only. */
   [
     /\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|commands\b)/i,
     25,
   ],
-  /* Ordinary superhuman. ascii-ok: English only. */
+  /**
+   * ORDINARY SUPERHUMAN — and this list read NOUNS, not VERBS, which is why
+   * fifty-nine characters in tier 7 scored exactly zero while their records
+   * described real powers. "Telepathy" was in it and "Possesses another's
+   * body" was not. "Shapeshift" was in it and "Becomes a wolf", "Becomes
+   * sand", "Turns into a shark" were not. Silk spins silk from her fingers,
+   * Kilgrave says a thing and it is done, Jane Foster wields Mjolnir, and the
+   * scorer read all three as nothing.
+   *
+   * The bias was invisible because the words that WERE here are the ones a
+   * handbook uses. A record written like a sentence rather than a stat block
+   * paid for it.
+   *
+   * THE SAME BIAS IN MINIATURE: the stems were "healing" and "flight", the
+   * NOUNS, so forty-seven bullets across the corpus said "Heals from
+   * anything" or "Flies faster than sound" and were read as nothing.
+   * Wolverine, Deadpool, Thor and Captain America all list regeneration in a
+   * verb and none of them was paid for it. Two bullets now over-score
+   * slightly — Beak "Cannot really fly" and Jessica Jones "Leaps rather than
+   * flies" — which is the cheaper error at fourteen points apiece.
+   * ascii-ok: English only.
+   */
   [
-    /\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
+    /\b(strength|durab|regenerat|healing|heals\b|heal\b|flies\b|flying\b|telepath|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|teleport|becomes? (a |an |the )?[a-z]|mjolnir|stormbreaker|spider[- ]powers|plasma|regrow|living rock|body of living|stone or steel|plated in steel|swaps? bodies|swaps? minds|physiolog|turns? into|copies|mimics?|duplicat|clones?\b|possess|silk|web-line|web-shooter|webbing|webs\b|poison|toxin|venomous|enormous size|giant|embiggen|grows to|constructs?\b|shakes the ground|earthquake|seismic|tremor|stretch|pheromone|\bgas\b|vibrat|absorbs?\b|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
     14,
   ],
   /**
@@ -1125,9 +1152,30 @@ export function scaleScore(c: Character): number {
      the floor of the corpus, below characters with no powers at all. The
      `abilities === 0` guard was already the right idea; it was only reading
      the prose. A structured field asserting magic is the same assertion. */
-  const recorded = Boolean(
-    c.magicSchools?.length || c.mutantClass || c.symbioteClass,
-  );
+  /* AND NOT TO THE ABSTRACTS EITHER. `category: supporting` means nobody's
+     protagonist, and Death, Infinity, Eon, Logos, Kubik, the Preordained and
+     the Master Weaver all carry it — so the penalty written for Aunt May was
+     landing on a being who embodies all ending. Their ranks are fixed by the
+     tier heads, which is the only reason it never showed. A species naming an
+     abstract or a cosmic office is the corpus asserting enormous power in a
+     structured field, the same argument the magic schools make. */
+  const COSMIC = new Set([
+    "Abstract Entity",
+    "Abstract entity",
+    "Cosmic Being",
+    "Cosmic entity",
+    "Cosmic Force",
+    "Celestial",
+    "Elder God",
+    "Elder god",
+    "Elder of the Universe",
+    "Watcher",
+    "Psychic Entity",
+    "Symbiote god",
+  ]);
+  const recorded =
+    Boolean(c.magicSchools?.length || c.mutantClass || c.symbioteClass) ||
+    COSMIC.has(c.species ?? "");
   if (c.category === "supporting" && abilities === 0 && !recorded) n -= 40;
   return n;
 }
