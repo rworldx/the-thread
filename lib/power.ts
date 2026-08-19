@@ -907,9 +907,18 @@ const SCALE: [RegExp, number][] = [
    * ascii-ok: English `powers[].en` only.
    */
   [/\bstrength to match\b/i, 25],
-  /* Gods, ages, souls. ascii-ok: English only. */
+  /**
+   * Gods, ages, souls.
+   *
+   * `hell\b` NEVER MATCHED "HELLFIRE", which is how every character whose
+   * power is literally hellfire came to score nothing for it: Daimon Helstrom
+   * ("Hellfire in the blood") finished on zero, Demogoblin on 2, and Ghost
+   * Rider's own first bullet was worth nothing to him. A word boundary after
+   * "hell" excludes the compound that every one of them actually uses.
+   * ascii-ok: English only.
+   */
   [
-    /\b(god|divine|immortal|ageless|millenni|thousand years|eternal|resurrect|soul|underworld|hell\b|death|penance stare)/i,
+    /\b(god|divine|immortal|ageless|millenni|thousand years|eternal|resurrect|soul|underworld|hellfire|hellmark|hell\b|death|penance stare)/i,
     40,
   ],
   /**
@@ -944,6 +953,15 @@ const SCALE: [RegExp, number][] = [
     /\b(mind control|controls? minds?|controls? (anyone|anybody|people|a crowd)|bends? .{0,20}\bwill\b|possesses a body)/i,
     25,
   ],
+  /**
+   * COMMAND OVER THE ELEMENTS, which put Crystal on 14 — the same as flight —
+   * for "Controls the elements / Earth, air, fire, water". Written as the
+   * command rather than the noun on purpose: a bare /element/ would have paid
+   * Star-Lord for his element blasters, which are guns, and a bare /earth/
+   * would have paid the nine records that just mean the planet.
+   * ascii-ok: English `powers[].en` only.
+   */
+  [/\b(controls the elements|elemental control|any element)/i, 25],
   /* Armies, cities, dimensions. ascii-ok: English only. */
   [
     /\b(army|armies|legion|horde|city|dimension|portal|realm|kingdom|throne|conquer|rules?\b|commands\b)/i,
@@ -951,7 +969,7 @@ const SCALE: [RegExp, number][] = [
   ],
   /* Ordinary superhuman. ascii-ok: English only. */
   [
-    /\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
+    /\b(strength|durab|regenerat|healing|telepath|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
     14,
   ],
   /**
@@ -1078,7 +1096,16 @@ export function scaleScore(c: Character): number {
    * has powers. So it now costs nothing to anyone whose ABILITIES scored:
    * Ben Parker and Darcy Lewis still pay it, because theirs is zero.
    */
-  if (c.category === "supporting" && abilities === 0) n -= 40;
+  /* AND NOT TO ANYONE THE CORPUS SAYS HAS POWERS IN A FIELD. The Centivars
+     carry `magicSchools: ["eldritch"]` and three bullets that name no spell,
+     so they scored zero, took the full penalty and finished on MINUS FORTY —
+     the floor of the corpus, below characters with no powers at all. The
+     `abilities === 0` guard was already the right idea; it was only reading
+     the prose. A structured field asserting magic is the same assertion. */
+  const recorded = Boolean(
+    c.magicSchools?.length || c.mutantClass || c.symbioteClass,
+  );
+  if (c.category === "supporting" && abilities === 0 && !recorded) n -= 40;
   return n;
 }
 
