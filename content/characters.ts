@@ -3038,8 +3038,21 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
-      { en: "A living planet", ar: "كوكب حي" },
-      { en: "Reshapes matter", ar: "يعيد تشكيل المادة" },
+      { en: "An entire living planet", ar: "كوكب حي بأكمله" },
+      { en: "The mass and gravity of a world", ar: "كتلة عالم وجاذبيته" },
+      {
+        en: "Vast psionic power, and matter control",
+        ar: "قوة ذهنية هائلة وتحكم بالمادة",
+      },
+      {
+        en: "Grows antibodies and tendrils to fight",
+        ar: "يُنبت أجسامًا مضادة وأذرعًا للقتال",
+      },
+      { en: "Moves himself through space", ar: "يحرّك نفسه عبر الفضاء" },
+      {
+        en: "Accelerates evolution on other worlds",
+        ar: "يسرّع التطور في عوالم أخرى",
+      },
     ],
     origin: {
       en: "A being old enough to have grown a planet around himself, who has spent a very long time looking for company on his own terms.",
@@ -3295,9 +3308,30 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic entity",
     powers: [
-      { en: "Consumes matter and time", ar: "يلتهم المادة والزمن" },
-      { en: "Guards the end of time", ar: "يحرس نهاية الزمن" },
-      { en: "Older than the timeline", ar: "أقدم من الخط الزمني" },
+      {
+        en: "Eats time periods and the realities beside them",
+        ar: "يلتهم حقبًا والوقائع المجاورة",
+      },
+      {
+        en: "Absorbs time-travellers and grows",
+        ar: "يمتص المسافرين عبر الزمن فينمو",
+      },
+      {
+        en: "Blocks time travel through any era it holds",
+        ar: "يسدّ السفر الزمني في أي حقبة يشغلها",
+      },
+      {
+        en: "Exists across divergent timelines at once",
+        ar: "يوجد عبر خطوط زمنية متشعبة معًا",
+      },
+      {
+        en: "Conventional weapons cannot kill it",
+        ar: "لا تقتله الأسلحة المعتادة",
+      },
+      {
+        en: "The first thing to escape the timestream",
+        ar: "أول ما أفلت من مجرى الزمن",
+      },
     ],
     origin: {
       en: "A living storm at the end of time, feeding on everything the TVA prunes. It is the fence around the Void, and whoever put it there did not want anybody walking out.",
@@ -4571,8 +4605,24 @@ const abstracts: CharacterDraft[] = [
     universe: ["mcu", "legacy"],
     species: "Watcher",
     powers: [
+      /* Two bullets, both perception, for a being who once hid the ENTIRE
+         EARTH from Galactus. The perception discount is right and it was
+         being applied to a record that listed nothing else. */
+      {
+        en: "Hid the whole Earth from Galactus",
+        ar: "أخفى الأرض كلها عن غالاكتوس",
+      },
+      {
+        en: "Cosmic energy blasts and force fields",
+        ar: "طلقات طاقة كونية ودروع قوة",
+      },
+      { en: "Telepathy that reaches any mind", ar: "تخاطر يبلغ أي عقل" },
+      {
+        en: "Teleports and travels through time",
+        ar: "ينتقل آنيًا ويسافر عبر الزمن",
+      },
       { en: "Sees every timeline", ar: "يرى كل خط زمني" },
-      { en: "Sworn never to interfere", ar: "أقسم ألّا يتدخّل" },
+      { en: "Sworn never to interfere", ar: "أقسم ألا يتدخل" },
     ],
     origin: {
       en: "One of a species that watches and records and takes an oath never to act. The whole drama of the character is the pressure on that oath, and what it costs him the one time it breaks.",
@@ -4598,8 +4648,21 @@ const abstracts: CharacterDraft[] = [
        else about him is, which is exactly what Mutate is for. */
     species: "Mutate",
     powers: [
-      { en: "Control of all matter", ar: "تحكّم في كل مادة" },
-      { en: "Holds a multiverse together", ar: "يمسك متعدد الأكوان" },
+      { en: "Total control of every molecule", ar: "تحكم تام بكل جزيء" },
+      {
+        en: "Rebuilt a destroyed multiverse in moments",
+        ar: "أعاد بناء متعدد مدمَّر في لحظات",
+      },
+      {
+        en: "Edits the base code of reality",
+        ar: "يعدّل شفرة الواقع الأساسية",
+      },
+      {
+        en: "Took the whole Beyonder race's power",
+        ar: "أخذ قوة جنس البيونديرز كله",
+      },
+      { en: "Survives the loss of his own body", ar: "ينجو من فقد جسده" },
+      { en: "A fragile mind, and it has been used", ar: "عقل هش، وقد استُغل" },
     ],
     origin: {
       en: "A lab technician caught in an accident who came out able to rearrange matter itself, and spent decades being written as a nervous man who happens to be one of the strongest beings alive.",
@@ -4617,7 +4680,16 @@ const abstracts: CharacterDraft[] = [
     universe: ["legacy"],
     species: "Elder of the Universe",
     powers: [
-      { en: "Faster than light", ar: "أسرع من الضوء" },
+      {
+        en: "The Power Primordial, near Galactus",
+        ar: "القوة البدئية، قرب غالاكتوس",
+      },
+      { en: "Faster than anything else alive", ar: "أسرع من أي حيّ آخر" },
+      {
+        en: "Cosmic energy for any effect at all",
+        ar: "طاقة كونية لأي أثر كان",
+      },
+      { en: "Precognition and cosmic senses", ar: "استبصار وحواس كونية" },
       { en: "Billions of years old", ar: "عمره مليارات السنين" },
     ],
     origin: {
@@ -4717,9 +4789,15 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
       { en: "Seeds worlds with life", ar: "يبذر الحياة في العوالم" },
-      { en: "Judges a planet's fate", ar: "يقضي في مصير كوكب" },
+      { en: "Judges a planet's fate", ar: "يحكم على مصير كوكب" },
       { en: "Built the Eternals", ar: "صنع الأزليين" },
+      { en: "Judges many worlds at once", ar: "يحاكم عوالم كثيرة دفعة واحدة" },
     ],
     origin: {
       en: "The Celestial who plants a seed in a world, lets intelligent life grow on it for millennia as fuel, and then harvests it. He made the Eternals, and told them a story about why they were sent.",
@@ -4771,8 +4849,20 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
       { en: "Wielded the Power Stone", ar: "حمل حجر القوة" },
       { en: "Erased a world with a touch", ar: "محا عالمًا بلمسة" },
+      { en: "Searches out life on a world", ar: "يتقصى الحياة في عالم" },
     ],
     origin: {
       en: "The Celestial seen in a flashback holding the Power Stone bare-handed and wiping out a civilisation with it: the one image that establishes what an Infinity Stone actually does.",
@@ -4803,9 +4893,15 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
+      { en: "Twenty thousand feet, not two", ar: "عشرون ألف قدم، لا ألفان" },
+      { en: "Burns a whole world clean", ar: "يحرق عالمًا بأسره تطهيرًا" },
+      { en: "Or culls it and remakes it", ar: "أو ينقّيه ويعيد صنعه" },
       { en: "Carries out the sentence", ar: "ينفّذ الحكم" },
-      { en: "Grows to a planet's size", ar: "ينمو بحجم كوكب" },
-      { en: "Burns a world clean", ar: "يحرق عالمًا حتى يطهر" },
     ],
     origin: {
       en: "The Celestial sent once judgement has already been passed, who arrives at a world's size and sterilises it. He is not there to weigh anything; the weighing was Arishem's job.",
@@ -4823,7 +4919,18 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
-      { en: "Analyses living matter", ar: "يحلّل المادة الحية" },
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
+      { en: "Analyses living matter", ar: "يحلل المادة الحية" },
       { en: "Reads a species' potential", ar: "يقرأ إمكان النوع" },
       { en: "Reports to the Judge", ar: "يرفع تقريره للقاضي" },
     ],
@@ -4843,9 +4950,23 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
-      { en: "Calculates a world's worth", ar: "يحسب قيمة عالم" },
-      { en: "Models every outcome", ar: "ينمذج كل مآل" },
-      { en: "Never revises twice", ar: "لا يراجع مرتين" },
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
+      { en: "Calculates every probable future", ar: "يحسب كل مستقبل محتمل" },
+      {
+        en: "Illusions that put men in comas",
+        ar: "أوهام تُدخل الرجال في غيبوبة",
+      },
+      { en: "Regrew a severed arm at once", ar: "أنبت ذراعًا مقطوعة فورًا" },
     ],
     origin: {
       en: "The Celestial who turns the analysis into a number. Whether a planet is worth keeping is, at the end of the process, an arithmetic question, and he is the one who answers it.",
@@ -4863,9 +4984,20 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
-      { en: "Collects living specimens", ar: "يجمع عيّنات حية" },
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
+      { en: "Collects living specimens", ar: "يجمع العينات الحية" },
       { en: "Takes whole populations", ar: "يأخذ شعوبًا بأكملها" },
-      { en: "Asks nobody first", ar: "لا يستأذن أحدًا" },
+      { en: "Gathered the first Deviants", ar: "جمع أول المنحرفين" },
     ],
     origin: {
       en: "The Celestial who goes down to a world and takes samples of everything alive on it, so the others have something to study. To the people taken, he is an abduction with no explanation.",
@@ -4883,8 +5015,19 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
-      { en: "Measures what a world is", ar: "يقيس ما عليه العالم" },
-      { en: "Records every dimension", ar: "يسجّل كل بُعد" },
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
+      { en: "Measures what a world is", ar: "يقيس ما يكونه العالم" },
+      { en: "Records every dimension", ar: "يسجّل كل بعد" },
       { en: "Misses nothing", ar: "لا يفوته شيء" },
     ],
     origin: {
@@ -4903,8 +5046,22 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
       { en: "Probes a world's deep past", ar: "يسبر ماضي العالم السحيق" },
-      { en: "Alters what grows there", ar: "يبدّل ما ينمو فيه" },
+      {
+        en: "Engineered the gene that makes mutants",
+        ar: "هندس الجين الذي يصنع المتحولين",
+      },
       { en: "Works below the surface", ar: "يعمل تحت السطح" },
     ],
     origin: {
@@ -4923,9 +5080,20 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
       { en: "Tests what a species can bear", ar: "يختبر ما يحتمله النوع" },
-      { en: "Rewrites living things", ar: "يعيد كتابة الأحياء" },
-      { en: "Keeps what survives", ar: "يبقي ما ينجو" },
+      { en: "Rewrites living things", ar: "يعيد كتابة الكائنات الحية" },
+      { en: "Mutated the first Deviants", ar: "طوّر أول المنحرفين" },
     ],
     origin: {
       en: "The Celestial who applies pressure to a species to find out what it can be pushed into becoming. Whole branches of life on a seeded world exist because he tried something.",
@@ -4943,9 +5111,23 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
-      { en: "Approves or refuses", ar: "يقرّ أو يرفض" },
-      { en: "Ranks among the strongest", ar: "يُعدّ من أقوى الحشد" },
-      { en: "Answers to no court", ar: "لا يخضع لمحكمة" },
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
+      {
+        en: "Approves or refuses, and it is final",
+        ar: "يوافق أو يرفض، وحكمه نهائي",
+      },
+      { en: "Helped stop Protege", ar: "ساعد في إيقاف بروتيجيه" },
+      { en: "Answers to no court", ar: "لا تحاسبه محكمة" },
     ],
     origin: {
       en: "The Celestial whose approval a judgement needs before it stands, and one of the most powerful of the Host. He has been called to weigh matters even the Living Tribunal was hearing.",
@@ -4963,6 +5145,17 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
       { en: "Surveys a world first", ar: "يمسح العالم أولًا" },
       { en: "Maps what is worth taking", ar: "يرسم ما يستحق الأخذ" },
       { en: "Arrives before the rest", ar: "يصل قبل البقية" },
@@ -4983,9 +5176,20 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
-      { en: "Listens to a world's case", ar: "تصغي إلى حجّة عالم" },
-      { en: "Speaks with mortals", ar: "تكلّم الفانين" },
-      { en: "Can take human form", ar: "تتخذ صورة بشرية" },
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
+      { en: "Listens to a world's case", ar: "تصغي لقضية عالم" },
+      { en: "Speaks with mortals", ar: "تحادث الفانين" },
+      { en: "Can take human form", ar: "تتخذ هيئة بشرية" },
     ],
     origin: {
       en: "The Celestial who will actually hear what the people of a world have to say for themselves, and the only one of the Host who takes a human shape to do it.",
@@ -5003,6 +5207,17 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
       { en: "Runs the experiments", ar: "يجري التجارب" },
       { en: "Reshapes a biosphere", ar: "يعيد تشكيل محيط حيوي" },
       { en: "Watches what happens", ar: "يراقب ما يحدث" },
@@ -5023,6 +5238,17 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
       { en: "Manipulates what was made", ar: "يتلاعب بما صُنع" },
       { en: "Adjusts a world's course", ar: "يعدّل مسار عالم" },
       { en: "Leaves no fingerprints", ar: "لا يترك أثرًا" },
@@ -5063,8 +5289,19 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
-      { en: "Leads a Host", ar: "يقود حشدًا" },
-      { en: "Commands the others", ar: "يأمر الآخرين" },
+      /* THE STANDARD CELESTIAL POWER SET WAS MISSING FROM ALL THIRTEEN. Every
+         Celestial has reality warping, space-time manipulation, cosmic
+         awareness and two thousand feet of near-invulnerable body; the title
+         is the SPECIALISED FUNCTION that sits on top of it. These records had
+         only the function, so they read as job descriptions and scored like
+         them — Scathan the Approver, a Celestial, scored FOUR. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
+      { en: "Leads a Host", ar: "يقود جوقة" },
+      { en: "Made the Black Vortex", ar: "صنع الدوامة السوداء" },
       { en: "Speaks for the whole", ar: "ينطق باسم الجميع" },
     ],
     origin: {
@@ -9390,15 +9627,24 @@ const cosmicBeings: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["eldritch", "elder"],
     powers: [
-      { en: "The first Sorcerer Supreme", ar: "أول ساحر أعظم" },
-      { en: "Rivals Galactus and Dormammu", ar: "يضاهي غالاكتوس ودورمامو" },
-      { en: "The all-seeing eye", ar: "العين التي ترى كل شيء" },
       {
-        en: "Stronger than Oshtur and Hoggoth both",
-        ar: "أقوى من أوشتور وهوغوث معًا",
+        en: "Exceeds Oshtur and Hoggoth combined",
+        ar: "يفوق أوشتور وهوغوث مجتمعين",
       },
-      { en: "Lends his power to sorcerers", ar: "يعير قوته للسحرة" },
-      { en: "One of the Vishanti", ar: "أحد الفيشانتي" },
+      { en: "Rivals Dormammu and Galactus", ar: "يضاهي دورمامو وغالاكتوس" },
+      {
+        en: "Doctor Strange could not banish him",
+        ar: "عجز دكتور سترينج عن نفيه",
+      },
+      {
+        en: "Magic enough for any mystical feat",
+        ar: "سحر يكفي لأي معجزة صوفية",
+      },
+      {
+        en: "Resurrects, and opens portals in time",
+        ar: "يحيي الموتى ويفتح بوابات في الزمن",
+      },
+      { en: "The first Sorcerer Supreme", ar: "أول ساحر أعظم" },
     ],
     origin: {
       en: "The first being on Earth to hold the title of Sorcerer Supreme, and one of the three the Vishanti are named for. The eye every later sorcerer swears by is the one he made and left behind.",
@@ -9418,9 +9664,24 @@ const cosmicBeings: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["chaos", "elder"],
     powers: [
-      { en: "Wrote the Darkhold", ar: "كتب الداركهولد" },
-      { en: "Source of chaos magic", ar: "منبع سحر الفوضى" },
-      { en: "Older than the gods", ar: "أقدم من الآلهة" },
+      {
+        en: "Near-omnipotent in his own domain",
+        ar: "شبه كلي القدرة في مملكته",
+      },
+      { en: "The first master of black magic", ar: "أول أساتذة السحر الأسود" },
+      {
+        en: "Wrote the Darkhold, and corrupts through it",
+        ar: "كتب الداركهولد ويُفسد عبره",
+      },
+      {
+        en: "Possesses a host and is reborn in it",
+        ar: "يتلبّس حاملًا فيولد فيه",
+      },
+      { en: "Spawned whole demonic races", ar: "أنجب أجناسًا شيطانية كاملة" },
+      {
+        en: "Bound by a pact, and looking for loopholes",
+        ar: "يقيّده عهد، وهو يبحث عن ثغرة",
+      },
     ],
     origin: {
       en: "An Elder God who wrote everything he knew into a book before the Earth had people on it, so that his knowledge would outlive his banishment. Every corruption that book has caused since is the plan working.",
@@ -9440,9 +9701,18 @@ const cosmicBeings: CharacterDraft[] = [
     species: "Demon",
     magicSchools: ["dark-dimension"],
     powers: [
-      { en: "Rules the Dream Dimension", ar: "يحكم بُعد الأحلام" },
-      { en: "Feeds on fear", ar: "يتغذى على الخوف" },
-      { en: "Reaches anyone asleep", ar: "يبلغ كل نائم" },
+      {
+        en: "Rules the Dream Dimension absolutely",
+        ar: "يحكم بُعد الأحلام حكمًا مطلقًا",
+      },
+      { en: "Put Eternity itself to sleep", ar: "أنام الأبدية نفسها" },
+      { en: "Reaches anyone who sleeps", ar: "يبلغ كل من ينام" },
+      {
+        en: "Illusions, fear and stolen dreams",
+        ar: "أوهام وخوف وأحلام مسروقة",
+      },
+      { en: "Immortal while anything dreams", ar: "خالد ما دام هناك من يحلم" },
+      { en: "Much weaker outside his realm", ar: "أضعف كثيرًا خارج مملكته" },
     ],
     origin: {
       en: "The ruler of the place minds go when they sleep, who grows stronger the more he is feared. He cannot touch anyone awake, which is why he is patient.",
@@ -9537,9 +9807,27 @@ const cosmicBeings: CharacterDraft[] = [
     universe: ["animation"],
     species: "Cyborg",
     powers: [
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Half man, half machine", ar: "نصف إنسان ونصف آلة" },
-      { en: "Rewrites what is real", ar: "يعيد كتابة الواقع" },
+      {
+        en: "The Power Cosmic, raised to near-godhood",
+        ar: "القوة الكونية مرفوعة لشبه ألوهية",
+      },
+      {
+        en: "Beat the Avengers and Guardians at once",
+        ar: "هزم الأفنجرز والحراس معًا",
+      },
+      {
+        en: "Warps reality and remakes beings",
+        ar: "يلوي الواقع ويعيد صنع الكائنات",
+      },
+      { en: "Perception close to omniscience", ar: "إدراك يقارب العلم المطلق" },
+      {
+        en: "Resurrection, shields and constructs",
+        ar: "إحياء ودروع وتكوينات",
+      },
+      {
+        en: "Undone by his own remaining humanity",
+        ar: "أهلكته بقية إنسانيته",
+      },
     ],
     origin: {
       en: "A computer technician from the thirty-first century, punished by his conquerors by being welded into a machine, who later stole enough cosmic power to remake a universe he thought he could run better.",
@@ -10914,9 +11202,24 @@ const abstractsBatch: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Collects living specimens", ar: "يجمع عيّنات حية" },
-      { en: "Power nobody has measured", ar: "قوة لم يقسها أحد" },
+      {
+        en: "Power to match Galactus and the Watchers",
+        ar: "قوة تضاهي غالاكتوس والمراقبين",
+      },
+      { en: "Made Ego the Living Planet", ar: "صنع إيغو الكوكب الحي" },
+      {
+        en: "Force blasts from ambient cosmic energy",
+        ar: "طلقات من طاقة الكون المحيطة",
+      },
+      {
+        en: "Force fields, and teleports between worlds",
+        ar: "دروع قوة، وينتقل بين العوالم",
+      },
       { en: "Keeps a Laboratory World", ar: "يملك عالمًا مختبرًا" },
+      {
+        en: "Weakens where cosmic energy cannot reach",
+        ar: "يضعف حيث لا تصل الطاقة الكونية",
+      },
     ],
     origin: {
       en: "A cosmic being who wanders the universe abducting whatever interests him and keeping it on a world he uses as a laboratory. Nobody has established what he is or how strong, including him.",
@@ -11026,9 +11329,21 @@ const abstractsBatch: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "An Eternal who became abstract", ar: "أزليّ صار مجرّدًا" },
-      { en: "Exists as pure energy", ar: "يوجد طاقةً خالصة" },
-      { en: "Watches over time", ar: "يرعى الزمن" },
+      {
+        en: "The god of time, and made of energy",
+        ar: "إله الزمن، ومصنوع من طاقة",
+      },
+      { en: "Manipulates time itself", ar: "يتحكم بالزمن نفسه" },
+      { en: "Cosmic energy on a vast scale", ar: "طاقة كونية بمقياس هائل" },
+      {
+        en: "Telepathy, and reassembles his form",
+        ar: "تخاطر، ويعيد تجميع هيئته",
+      },
+      {
+        en: "Sat with the abstracts at the Gauntlet",
+        ar: "جلس مع المجرّدات عند القفاز",
+      },
+      { en: "Thanos's grandfather", ar: "جد ثانوس" },
     ],
     origin: {
       en: "An Eternal of Titan whose body was destroyed in an experiment and who reassembled as a being of pure energy with a hold over time. Thanos and Starfox are his grandsons.",
@@ -11184,9 +11499,21 @@ const mystics: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["elder", "infernal"],
     powers: [
-      { en: "Ruled Earth before people", ar: "حكم الأرض قبل البشر" },
-      { en: "A mass of eyes and tendrils", ar: "كتلة من أعين ومحالق" },
-      { en: "Devours whole dimensions", ar: "يلتهم أبعادًا كاملة" },
+      {
+        en: "Effectively omnipotent in its dimension",
+        ar: "شبه كلي القدرة في بعده",
+      },
+      {
+        en: "An aura that destroys whole galaxies",
+        ar: "هالة تدمّر مجرات بأكملها",
+      },
+      { en: "Drains the magic out of anything", ar: "يستنزف السحر من أي شيء" },
+      {
+        en: "Mind control reaching across dimensions",
+        ar: "سيطرة ذهنية تعبر الأبعاد",
+      },
+      { en: "Ruled Earth a million years ago", ar: "حكم الأرض قبل مليون سنة" },
+      { en: "A hide immune to most harm", ar: "جلد منيع أمام معظم الأذى" },
     ],
     origin: {
       en: "One of the things that owned this world before anything human walked on it, waiting outside for a door. Doctor Strange has spent much of his career keeping that door shut.",
@@ -11235,9 +11562,23 @@ const mystics: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["eldritch", "elder"],
     powers: [
-      { en: "Lord of Hosts, and an Old One", ar: "ربّ الجنود، وأحد القدماء" },
+      /* "Manipulates matter and time itself" put him ABOVE Agamotto, who the
+         sources say exceeds Oshtur and Hoggoth combined. Time itself is
+         reality-scale in this vocabulary and it is the Vishanti's shared
+         toolkit, not his own peak. He is the aged one of the three. */
       { en: "Magic older than the Earth", ar: "سحر أقدم من الأرض" },
-      { en: "Lends power to the worthy", ar: "يعير قوته للجديرين" },
+      {
+        en: "Calls on the spirits of his slain kin",
+        ar: "يستدعي أرواح قومه القتلى",
+      },
+      {
+        en: "The Hoary Host, a fist the size of a hall",
+        ar: "القبضة الجليلة، بحجم قاعة",
+      },
+      {
+        en: "Lends his power to the Sorcerer Supreme",
+        ar: "يعير قوته للساحر الأعظم",
+      },
       { en: "Last survivor of his race", ar: "آخر الناجين من جنسه" },
       { en: "One of the Vishanti", ar: "أحد الفيشانتي" },
     ],
@@ -11258,9 +11599,18 @@ const mystics: CharacterDraft[] = [
     species: "Faltine",
     magicSchools: ["dark-dimension"],
     powers: [
+      {
+        en: "A Faltine, and living mystical energy",
+        ar: "من الفالتين، وطاقة سحرية حية",
+      },
+      {
+        en: "Nearly overwhelms Doctor Strange",
+        ar: "تكاد تطغى على دكتور سترينج",
+      },
+      { en: "Transmutes matter, and banishes", ar: "تحوّل المادة وتنفي" },
+      { en: "Held the Dark Dimension's throne", ar: "اعتلت عرش البعد المظلم" },
+      { en: "Immortal", ar: "خالدة" },
       { en: "Dormammu's sister", ar: "أخت دورمامو" },
-      { en: "Raw mystical force", ar: "قوة سحرية خام" },
-      { en: "Ruled the Dark Dimension", ar: "حكمت البعد المظلم" },
     ],
     origin: {
       en: "Dormammu's sister, born of the same energy and exiled with him, who has taken the Dark Dimension from him more than once. She finds his ambitions tedious and says so.",
@@ -11282,18 +11632,28 @@ const mystics: CharacterDraft[] = [
     species: "Demon",
     magicSchools: ["infernal"],
     powers: [
-      /* The sources are blunt: Zom dwarfs Doctor Strange and beats Dormammu
-         and Umar AT THEIR PEAK. Dormammu is ranked 40th here and Zom was
-         86th, on a record that scored 2. */
-      { en: "Magic past the Sorcerer Supreme", ar: "سحر يفوق الساحر الأعظم" },
+      /* THE DOSSIER AND THE SOURCES AGREE AND THE CORPUS DID NOT. Zom "far
+         exceeds even Umar (and thus Dormammu)", and his re-emergence
+         provoked the Living Tribunal in person — who had ignored Thanos
+         holding the Infinity Gauntlet. He was ranked BELOW Umar. */
       {
-        en: "Beat Dormammu and Umar at their peak",
-        ar: "هزم دورمامو وأومار في أوجهما",
+        en: "Far exceeds Umar, and so Dormammu",
+        ar: "يفوق أومار بكثير، ومن ثم دورمامو",
       },
-      { en: "Power without restraint", ar: "قوة بلا كابح" },
-      { en: "Corrupts whoever wields it", ar: "يُفسد كل من يستخدمه" },
-      { en: "Took a union of gods to bind", ar: "لزم اتحاد آلهة لتقييده" },
-      { en: "Bound rather than killed", ar: "قُيّد ولم يُقتل" },
+      { en: "Magic past any Sorcerer Supreme", ar: "سحر يفوق أي ساحر أعظم" },
+      {
+        en: "Destruction is the only thing he is for",
+        ar: "الدمار هو كل ما خُلق له",
+      },
+      {
+        en: "The Living Tribunal came in person",
+        ar: "حضرت المحكمة الحيّة بنفسها",
+      },
+      {
+        en: "Eternity and Dormammu bound him together",
+        ar: "قيّده الأبدية ودورمامو معًا",
+      },
+      { en: "Corrupts whoever wields him", ar: "يُفسد كل من يستخدمه" },
     ],
     origin: {
       en: "A destructive force so unmanageable that even the beings who beat it could only bind it. Doctor Strange once took its power to win a fight and spent a long time regretting the trade.",
@@ -11312,11 +11672,20 @@ const mystics: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["green", "elder"],
     powers: [
-      { en: "The living Earth itself", ar: "الأرض الحية نفسها" },
-      { en: "Grew all life on it", ar: "أنبتت كل حياة عليها" },
       {
-        en: "The only Elder God who stayed",
-        ar: "الإلهة القديمة الوحيدة التي بقيت",
+        en: "Feels everything that happens to Earth",
+        ar: "تشعر بكل ما يحدث للأرض",
+      },
+      { en: "Telekinesis that lifts Mjolnir", ar: "تحريك ذهني يرفع ميولنير" },
+      {
+        en: "Heals, revives and grows any life",
+        ar: "تشفي وتحيي وتُنمي أي حياة",
+      },
+      { en: "Mother of Earth's pantheons", ar: "أم آلهة الأرض" },
+      { en: "Alters her size and her shape", ar: "تغيّر حجمها وهيئتها" },
+      {
+        en: "The only Elder God who stayed clean",
+        ar: "الإلهة القديمة الوحيدة التي لم تفسد",
       },
     ],
     origin: {
@@ -11363,9 +11732,18 @@ const mystics: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["elder", "necromancy"],
     powers: [
-      { en: "A seven-headed serpent", ar: "أفعى بسبعة رؤوس" },
-      { en: "First of the Elder Gods to kill", ar: "أول الآلهة القديمة قتلًا" },
-      { en: "Fed on his own kind", ar: "اقتات على بني جنسه" },
+      {
+        en: "Among the strongest Elder Gods alive",
+        ar: "من أقوى الآلهة القدامى",
+      },
+      { en: "Regrows every head he loses", ar: "يُنبت كل رأس يفقده" },
+      {
+        en: "Drains the life out of what he touches",
+        ar: "يستنزف الحياة مما يلمسه",
+      },
+      { en: "Feeds on death and on war", ar: "يتغذى على الموت والحرب" },
+      { en: "Shapeshifts, and changes his size", ar: "يتشكّل ويغيّر حجمه" },
+      { en: "Grants power to those who worship him", ar: "يمنح القوة لعابديه" },
     ],
     origin: {
       en: "The Elder God who began eating the others, which is what turned that generation into demons and drove Gaea to make something new. Every serpent cult on Earth traces back to him.",
@@ -15638,9 +16016,21 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Holds every grief there is", ar: "تحمل كل حزن موجود" },
+      { en: "Power to match Galactus himself", ar: "قوة تضاهي غالاكتوس نفسه" },
+      {
+        en: "Beat Galactus and the Silver Surfer",
+        ar: "هزمت غالاكتوس والسيلفر سيرفر",
+      },
+      {
+        en: "Culls whatever creation got wrong",
+        ar: "تنقّي ما أخطأ فيه الخلق",
+      },
+      {
+        en: "Planet-breaking strength, and blasts",
+        ar: "قوة تكسر الكواكب، وطلقات",
+      },
       { en: "Older than most abstracts", ar: "أقدم من معظم المجرّدات" },
-      { en: "Shields what she pities", ar: "تحمي ما ترثي له" },
+      { en: "Holds every grief there is", ar: "تحمل كل حزن موجود" },
     ],
     origin: {
       en: "A cosmic being who carries the sorrow of everything that has ever suffered, and who shields what she pities rather than avenging it.",
@@ -15658,9 +16048,26 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Oversees cosmic affairs", ar: "يشرف على الشؤون الكونية" },
-      { en: "Answers to the Tribunal", ar: "يخضع للمحكمة" },
-      { en: "Almost never seen", ar: "لا يكاد يُرى" },
+      /* THE DOSSIER SAYS HE IS THE WEAKEST OF HIS KIND — "far below his
+         siblings, since his form fit an observer's function", "the most
+         vulnerable of the Proemial Gods". He scored 154 and sat above Aegis,
+         who beat Galactus. The rewrite has to avoid the word "cosmic", which
+         this vocabulary prices at reality scale and which was most of what
+         was carrying him. */
+      { en: "The weakest of the Proemial Gods", ar: "أضعف الآلهة الأوّلية" },
+      {
+        en: "Built to watch, and forbidden to act",
+        ar: "خُلق ليراقب ومُنع من الفعل",
+      },
+      {
+        en: "Monitors the balance, and only that",
+        ar: "يرصد التوازن، لا أكثر",
+      },
+      {
+        en: "The most vulnerable of his siblings",
+        ar: "الأكثر هشاشة بين إخوته",
+      },
+      { en: "Died imprisoned in the Kyln", ar: "مات سجينًا في الكيلن" },
     ],
     origin: {
       en: "A cosmic overseer who acts on the Living Tribunal's behalf in matters too small for it and too large for anybody else, and who is almost never seen doing it.",
@@ -16104,9 +16511,15 @@ const collectives: CharacterDraft[] = [
     species: "Demon",
     magicSchools: ["infernal"],
     powers: [
+      {
+        en: "Their leader outclaims Doctor Strange",
+        ar: "زعيمهم يزعم تفوقه على سترينج",
+      },
+      { en: "The Nameless One cannot be killed", ar: "بلا اسم لا يمكن قتله" },
+      { en: "Dark magic, and strength with it", ar: "سحر أسود، وقوة معه" },
+      { en: "Gateways between worlds", ar: "بوابات بين العوالم" },
       { en: "Ruled Earth before people", ar: "حكموا الأرض قبل البشر" },
-      { en: "Waiting to be let back", ar: "ينتظرون من يعيدهم" },
-      { en: "Need a human to open the way", ar: "يحتاجون بشريًا ليفتح الطريق" },
+      { en: "Their power wanes, and they retreat", ar: "تخبو قوتهم فينسحبون" },
     ],
     origin: {
       en: "A race of demons that ruled this world before humanity and were banished from it, who cannot return unless somebody here opens the door for them.",

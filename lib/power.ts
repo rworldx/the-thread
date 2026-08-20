@@ -173,6 +173,12 @@ const TIERS: Tier[] = [
       "set",
       "shuma-gorath",
       "cyttorak",
+      /* ZOM ABOVE DORMAMMU. Two independent sources and the dossier all say
+         he "far exceeds even Umar, and thus Dormammu", and the Living
+         Tribunal turned up in person to deal with him — having ignored
+         Thanos wearing the Infinity Gauntlet. He was ranked 86th, below
+         Umar, on a record that scored 2. */
+      "zom",
       "dormammu",
     ],
     match: (c) =>
@@ -1011,7 +1017,7 @@ const SCALE: [RegExp, number][] = [
      `rival`, or it pays Justin Hammer for being a rival contractor.
      ascii-ok: English `powers[].en` only. */
   [
-    /\b(rivals|holds? (his|her|its) own against|a match for|stronger than|as strong as)\b/i,
+    /\b(rivals|holds? (his|her|its) own against|a match for|stronger than|as strong as|far exceeds?|exceeds?|surpass|outclass)\b/i,
     25,
   ],
   /**
@@ -1042,7 +1048,7 @@ const SCALE: [RegExp, number][] = [
    * ascii-ok: English `powers[].en` only.
    */
   [
-    /\b(levels?\s+(a|an|the)|razes|flattens|annihilat|obliterat|vaporiz|wipes out|shatters|tears apart|destroys)/i,
+    /\b(levels?\s+(a|an|the)|razes|flattens|annihilat|obliterat|vaporiz|wipes out|shatters|tears apart|destroys|destroy\b|destroying|destruction)/i,
     25,
   ],
   /**
