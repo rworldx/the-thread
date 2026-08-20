@@ -4514,8 +4514,20 @@ const abstracts: CharacterDraft[] = [
     universe: ["legacy"],
     species: "Abstract entity",
     powers: [
-      { en: "The dark half of creation", ar: "النصف المظلم للخلق" },
-      { en: "Speaks through gamma", ar: "يتكلّم عبر أشعة غاما" },
+      /* Two bullets for the only being the sources place above the Living
+         Tribunal, who beside it is "literally but a fraction". */
+      {
+        en: "The One Above All's own dark half",
+        ar: "النصف المظلم من الأعلى فوق الجميع",
+      },
+      {
+        en: "Equal to it, and one being with it",
+        ar: "مساوٍ له، وهما كيان واحد",
+      },
+      { en: "Unmakes, and cannot create at all", ar: "يفكّك، ولا يخلق البتة" },
+      { en: "Killed everything that lived, once", ar: "قتل كل حيّ ذات مرة" },
+      { en: "Grows stronger as reality decays", ar: "يقوى كلما تحلّل الواقع" },
+      { en: "Speaks through gamma", ar: "يتكلم عبر أشعة غاما" },
     ],
     origin: {
       en: "The One Above All's opposite, sitting at the bottom of the same ladder. It reaches into the world through gamma radiation, which is why the Hulk keeps ending up its doorway.",

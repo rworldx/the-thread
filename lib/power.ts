@@ -51,7 +51,7 @@ const TIERS: Tier[] = [
     n: 0,
     title: "Outside creation",
     gloss:
-      "Not combatants. The reason there is anything to fight over. No source ranks anything above these two.",
+      "Not combatants. The reason there is anything to fight over. No source ranks anything above these two — and the sources say they are ONE BEING, the One Below All being the One Above All's own dark aspect, which is why nothing can sit between them.",
     ranked: ["the-one-above-all", "the-one-below-all"],
   },
   {
@@ -74,6 +74,17 @@ const TIERS: Tier[] = [
        * multiversal collapse, and he died defending the hierarchy he is
        * second in. Order and Chaos had to FUSE with the In-Betweener to
        * manage the same thing.
+       *
+       * AND WHY HE IS THIRD RATHER THAN SECOND, which is the obvious next
+       * question. "Second only to the One Above All" is the Tribunal's
+       * classic lore and it was written before the One Below All existed at
+       * all — Immortal Hulk, 2018. The two are not two: the sources call the
+       * One Below All "the evil alter-ego of the One-Above-All", "equally as
+       * powerful because they are one and the same", and separately name it
+       * "the only one superior to the Living Tribunal", who beside it is
+       * "literally but a fraction". So the old phrase and the new placement
+       * agree. Nothing sits between the Tribunal and the One Above All,
+       * because the thing above him IS the One Above All.
        *
        * Being killed by something from outside the system is not the same as
        * being outranked inside it. The kill stays in the record — it is why
