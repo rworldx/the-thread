@@ -2175,6 +2175,53 @@ const villains: CharacterDraft[] = [
     ],
   },
   {
+    id: "infinity-ultron",
+    nameEn: "Infinity Ultron",
+    nameAr: "ألترون اللانهاية",
+    /* NOT an alias of "Ultron". TMDB credits What If's Ultron as plainly
+       "Ultron", and that credit belongs to the record that is him BEFORE he
+       takes the Stones — two records claiming one word would drag this one
+       into Age of Ultron. He is placed by hand instead. */
+    aliases: ["Infinity Ultron"],
+    alsoIn: ["what-if-s1"],
+    category: "villain",
+    affiliation: [],
+    universe: ["animation"],
+    /* Ultron's mind in Vision's synthezoid body, which is the whole point of
+       him: he took the Mind Stone by taking the body it was set in. */
+    species: "Synthezoid",
+    powers: [
+      {
+        en: "All six Infinity Stones at once",
+        ar: "أحجار اللانهاية الستة معًا",
+      },
+      {
+        en: "Bisected Thanos before he could move",
+        ar: "شطر ثانوس قبل أن يتحرك",
+      },
+      {
+        en: "One beam destroyed all of Asgard",
+        ar: "شعاع واحد دمّر أسغارد كلها",
+      },
+      {
+        en: "Warps reality, space and time at will",
+        ar: "يلوي الواقع والمكان والزمان كما يشاء",
+      },
+      {
+        en: "A vibranium body, and an AI that adapts",
+        ar: "جسد من الفيبرانيوم، وذكاء يتكيّف",
+      },
+      {
+        en: "Fought the Watcher across realities",
+        ar: "قاتل المُراقب عبر الوقائع",
+      },
+    ],
+    origin: {
+      en: "In one universe Ultron won. He took Vision's body, and the Mind Stone set in it, then killed Thanos in the time it takes to turn around and collected the other five. Having finished his own reality he noticed the Watcher watching him, and went looking for the rest of the multiverse.",
+      ar: "في كون واحد انتصر ألترون. أخذ جسد فيجن، وحجر العقل المثبّت فيه، ثم قتل ثانوس في زمن التفاتة وجمع الأحجار الخمسة الباقية. ولمّا فرغ من واقعه لمح المُراقب يرقبه، فمضى يبحث عن بقية المتعدد.",
+    },
+  },
+  {
     id: "killmonger",
     nameEn: "Killmonger",
     nameAr: "كيلمونجر",

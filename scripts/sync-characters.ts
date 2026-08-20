@@ -60,6 +60,8 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  "infinity-ultron":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e7/Infinity_Ultron_-_Age_of_Ultron_Infobox.png/revision/latest?cb=20231021045211",
   /* THE ETERNALS IN COMICS, not in the film. Their records are
      `universe: ["mcu"]` because Eternals is the only title they appear in
      here, and the name lookup read that as "use a film still" — so eight of
@@ -72,21 +74,20 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      a fine encyclopedia illustration and unreadable at tile size.
 
      Ikaris and Thena keep their film stills. Rashid listed eight. */
-  "ajak":
-    "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Ajak_%28Earth-616%29_from_A.X.E._Judgment_Day_Omega_Vol_1_1_001.jpg/revision/latest?cb=20221109185607",
-  "druig":
+  ajak: "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Ajak_%28Earth-616%29_from_A.X.E._Judgment_Day_Omega_Vol_1_1_001.jpg/revision/latest?cb=20221109185607",
+  druig:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/59/Druig_%28Earth-616%29_from_Eternals_Vol_5_7_001.jpg/revision/latest?cb=20221006163527",
-  "gilgamesh":
+  gilgamesh:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d9/Gilgamesh_%28Earth-616%29_from_Eternals_Vol_4_5_0001.jpg/revision/latest?cb=20200614194342",
-  "kingo":
+  kingo:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/52/Kingo_Sunen_%28Earth-616%29_from_Eternals_Vol_5_2_001.jpg/revision/latest?cb=20210701052422",
-  "makkari":
+  makkari:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5f/Makkari_%28Earth-616%29_from_A.X.E._Judgment_Day_Vol_1_2_001.jpg/revision/latest?cb=20221006174319",
-  "phastos":
+  phastos:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/A.X.E._Judgment_Day_Vol_1_6_Men_of_A.X.E._Variant_Texless.jpg/revision/latest?cb=20250419005742",
-  "sersi":
+  sersi:
     "https://static.wikia.nocookie.net/marveldatabase/images/2/2b/Sersi_%28Earth-616%29_from_Eternals_Vol_5_2_001.jpg/revision/latest?cb=20210701081640",
-  "sprite":
+  sprite:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/54/Sprite_%28Earth-616%29_from_Eternals_Vol_5_1_001.jpg/revision/latest?cb=20210211062917",
 
   /* THE FANTASTIC FOUR AS A SET. All four were on the superhero-api renders,
@@ -113,13 +114,13 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      HYDRA, which is not the picture a browser of this site is looking for. */
   "captain-america":
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b1/Captain_America_Vol_6_2_Textless.jpg/revision/latest?cb=20110719042719",
-  "magneto":
+  magneto:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Max_Eisenhardt_%28Earth-616%29_from_X-Men_Vol_7_1_001.jpg/revision/latest?cb=20240710102753",
   /* The House of X flower variant, textless — Xavier in the Cerebro helmet,
      which is the version of him this corpus ranks. */
   "professor-x":
     "https://static.wikia.nocookie.net/marveldatabase/images/4/44/House_of_X_Vol_1_1_Flower_Variant_Textless.jpg/revision/latest?cb=20200514075425",
-  "crystal":
+  crystal:
     "https://static.wikia.nocookie.net/marveldatabase/images/9/97/War_of_Kings_Warriors_Vol_1_2_Textless.jpg/revision/latest?cb=20100204183714",
   /* The name lookup found him on the superhero-api, which serves a low-res
      render. This is the Jim Lee variant for Red Hulk Vol 1 #1, textless, and

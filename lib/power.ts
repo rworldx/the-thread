@@ -180,6 +180,20 @@ const TIERS: Tier[] = [
          Umar, on a record that scored 2. */
       "zom",
       "dormammu",
+      /**
+       * INFINITY ULTRON IS NAMED HERE BECAUSE HIS SPECIES WOULD BURY HIM.
+       * He is `Synthezoid` — Ultron's mind in Vision's body — and that word
+       * lands in tier 7, "Enhanced", among super-soldiers and androids. He
+       * holds all six Infinity Stones, bisected Thanos before the Titan could
+       * react, erased Asgard with a single beam, and fought the WATCHER
+       * across realities, who is 57th in this same tier.
+       *
+       * "Cosmic office" bends to fit him — the Stones are not a job. But this
+       * tier is where cosmic-scale authority over space, time and reality
+       * lives, and the alternative put him below thirteen Celestial
+       * functionaries he could switch off.
+       */
+      "infinity-ultron",
     ],
     match: (c) =>
       /**
