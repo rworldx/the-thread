@@ -1114,9 +1114,24 @@ const xmen: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "omega",
     powers: [
-      { en: "Telepathy", ar: "قراءة الأفكار" },
-      { en: "Telekinesis", ar: "تحريك الأشياء بالعقل" },
-      { en: "No known upper limit", ar: "بلا حدّ أعلى معروف" },
+      { en: "The finest telepath alive", ar: "أمهر متخاطرة على قيد الحياة" },
+      {
+        en: "Telekinesis down to the molecule",
+        ar: "تحريك ذهني حتى مستوى الجزيء",
+      },
+      {
+        en: "Commands many minds at one time",
+        ar: "تسيطر على عقول كثيرة في آن",
+      },
+      {
+        en: "As Phoenix, matter at the atomic level",
+        ar: "كفينيكس، المادة على مستوى الذرة",
+      },
+      {
+        en: "Rivalled Galactus as Dark Phoenix",
+        ar: "ضاهت غالاكتوس كفينيكس المظلمة",
+      },
+      { en: "No known upper limit", ar: "لا حدّ أعلى معروف" },
     ],
     origin: {
       en: "The most powerful telepath the school ever taught, and the one its headmaster put walls inside as a child because what she could do frightened him.",
@@ -3178,9 +3193,27 @@ const supporting: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "omega",
     powers: [
-      { en: "Reality warping", ar: "تحريف الواقع" },
-      { en: "Many minds", ar: "عقول كثيرة" },
-      { en: "No known upper limit", ar: "بلا حدّ أعلى معروف" },
+      {
+        en: "Hundreds of minds, each with its own power",
+        ar: "مئات العقول، لكل منها قدرته",
+      },
+      {
+        en: "Telepathy, telekinesis, fire, time, reality",
+        ar: "تخاطر وتحريك ونار وزمن وواقع",
+      },
+      {
+        en: "Rewrote a timeline into the Age of Apocalypse",
+        ar: "أعاد كتابة خط زمني إلى عصر أبوكاليبس",
+      },
+      {
+        en: "New personas keep arriving with new powers",
+        ar: "تظهر شخصيات جديدة بقدرات جديدة",
+      },
+      { en: "No known upper limit", ar: "لا حدّ أعلى معروف" },
+      {
+        en: "Whichever one is in front, decides",
+        ar: "من يتصدّر منها هو من يقرر",
+      },
     ],
     origin: {
       en: "The most powerful mutant in the corpus, whose diagnosis and whose power have been confused with each other his whole life.",
@@ -4592,9 +4625,27 @@ const abstracts: CharacterDraft[] = [
     universe: ["legacy"],
     species: "Abstract entity",
     powers: [
-      { en: "Judges whole universes", ar: "يحاكم أكوانًا بأكملها" },
-      { en: "Three faces, one verdict", ar: "ثلاثة وجوه وحكم واحد" },
-      { en: "Above every cosmic power", ar: "فوق كل قوة كونية" },
+      /* THIRTY-SEVEN OF THE TOP HUNDRED still had three bullets or fewer when
+         Rashid asked whether the dossiers had been used. They had been, for
+         sixty-four; these are the rest. */
+      {
+        en: "Nullifies all six Infinity Gems at once",
+        ar: "يبطل أحجار اللانهاية الستة دفعة",
+      },
+      {
+        en: "Three faces: equity, necessity, vengeance",
+        ar: "ثلاثة وجوه: العدل والضرورة والانتقام",
+      },
+      {
+        en: "Warps every reality at the same time",
+        ar: "يلوي كل واقع في آنٍ واحد",
+      },
+      {
+        en: "Authority over Eternity, Death and Galactus",
+        ar: "سلطة على الأبدية والموت وغالاكتوس",
+      },
+      { en: "Erases a being from the record", ar: "يمحو كائنًا من السجل" },
+      { en: "Judges whole universes", ar: "يحاكم أكوانًا بأسرها" },
     ],
     origin: {
       en: "Three faces on one head (equity, necessity, vengeance) and no ruling until all three agree. It does not police people. It rules on whether a universe may continue.",
@@ -4709,8 +4760,21 @@ const abstracts: CharacterDraft[] = [
     universe: ["legacy"],
     species: "Abstract entity",
     powers: [
-      { en: "Embodies nothingness", ar: "تجسيد اللاشيء" },
-      { en: "Wants existence undone", ar: "يريد فناء الوجود" },
+      { en: "Erases existence, and nullifies it", ar: "يمحو الوجود ويبطله" },
+      { en: "The embodiment of nothing at all", ar: "تجسيد العدم المطلق" },
+      {
+        en: "The Ultimate Nullifier sends souls to him",
+        ar: "المُبطل الأقصى يرسل الأرواح إليه",
+      },
+      {
+        en: "Chooses to be untouchable by the living",
+        ar: "يختار ألا يمسّه الأحياء",
+      },
+      {
+        en: "Acts through the Chaos King and Maelstrom",
+        ar: "يعمل عبر ملك الفوضى ومايلستروم",
+      },
+      { en: "Older than the multiverse", ar: "أقدم من المتعدد" },
     ],
     origin: {
       en: "The absence that existence is measured against, and the only one of these with an agenda: it would prefer there to be nothing, and it works towards that.",
@@ -4767,8 +4831,21 @@ const abstracts: CharacterDraft[] = [
     universe: ["legacy"],
     species: "Abstract entity",
     powers: [
-      { en: "Remakes reality at will", ar: "يعيد صوغ الواقع كما يشاء" },
-      { en: "Builds worlds to test people", ar: "يبني عوالم ليختبر البشر" },
+      { en: "Reality warping without effort", ar: "لَيّ الواقع بلا جهد" },
+      {
+        en: "Built Battleworld out of pieces of others",
+        ar: "بنى عالم المعركة من شظايا عوالم",
+      },
+      {
+        en: "Destroyed and made galaxies to see how",
+        ar: "دمّر مجرات وصنعها ليرى كيف",
+      },
+      { en: "Grants anyone whatever they want", ar: "يمنح أي أحد ما يريد" },
+      {
+        en: "Shapeshifts, teleports, resurrects",
+        ar: "يتشكّل وينتقل ويحيي الموتى",
+      },
+      { en: "Naive about what existence is for", ar: "ساذج بشأن غاية الوجود" },
     ],
     origin: {
       en: "A being from outside every universe who took an interest in ours, pulled its heroes and villains onto a planet he assembled, and told them to fight. That was Secret Wars, the first one.",
@@ -4938,9 +5015,27 @@ const abstracts: CharacterDraft[] = [
     species: "Demon",
     magicSchools: ["dark-dimension"],
     powers: [
-      { en: "Rules the Dark Dimension", ar: "يحكم البعد المظلم" },
-      { en: "Devours whole worlds", ar: "يلتهم عوالم كاملة" },
-      { en: "Outside time", ar: "خارج الزمن" },
+      {
+        en: "Near-omnipotent in the Dark Dimension",
+        ar: "شبه كلي القدرة في البعد المظلم",
+      },
+      {
+        en: "The Flames of the Faltine, and living fire",
+        ar: "لهب الفالتين، ونار حية",
+      },
+      {
+        en: "Turned his own parent into dead matter",
+        ar: "حوّل والده إلى مادة ميتة",
+      },
+      { en: "Banishes anyone to anywhere", ar: "ينفي أي أحد إلى أي مكان" },
+      {
+        en: "Grants power to demons and to men",
+        ar: "يمنح القوة للشياطين والبشر",
+      },
+      {
+        en: "Weaker outside the realms bound to him",
+        ar: "أضعف خارج العوالم المرتبطة به",
+      },
     ],
     origin: {
       en: "The ruler of a dimension where time does not pass, who offers eternal life to anyone who will open a door for him and then eats the world behind it. Doctor Strange's oldest opponent.",
@@ -6176,9 +6271,15 @@ const moreMutants: CharacterDraft[] = [
     universe: ["fox", "legacy"],
     species: "Cosmic entity",
     powers: [
-      { en: "Creation and destruction itself", ar: "الخلق والفناء ذاتهما" },
-      { en: "Needs a host", ar: "تحتاج إلى مضيف" },
-      { en: "Cannot be killed", ar: "لا تُقتل" },
+      { en: "Creation and destruction, both", ar: "الخلق والدمار معًا" },
+      { en: "Cosmic fire that consumes stars", ar: "نار كونية تلتهم النجوم" },
+      {
+        en: "Amplifies a host past any limit",
+        ar: "تضاعف حاملها إلى ما بعد أي حد",
+      },
+      { en: "Beat Galactus more than once", ar: "هزمت غالاكتوس أكثر من مرة" },
+      { en: "Reborn every time it dies", ar: "تُبعث في كل مرة تموت" },
+      { en: "Needs a host to act through", ar: "تحتاج حاملًا لتفعل عبره" },
     ],
     origin: {
       en: "A cosmic force older than the galaxy that burns through hosts. Jean Grey is the one everybody remembers, which is why the corpus keeps them apart: the Force is not her, it is what happened to her.",
@@ -6765,8 +6866,26 @@ const others: CharacterDraft[] = [
      */
     mutantClass: "omega",
     powers: [
-      { en: "Creates universes", ar: "يخلق أكوانًا" },
-      { en: "Reshapes reality", ar: "يعيد تشكيل الواقع" },
+      {
+        en: "Creates whole universes out of thought",
+        ar: "يخلق أكوانًا كاملة من فكرة",
+      },
+      {
+        en: "The Celestials call him a Universal Shaper",
+        ar: "يسميه السماويون مُشكّل أكوان",
+      },
+      {
+        en: "Reality, matter, energy and the forces",
+        ar: "الواقع والمادة والطاقة والقوى",
+      },
+      {
+        en: "Telepathy, telekinesis and precognition",
+        ar: "تخاطر وتحريك ذهني واستبصار",
+      },
+      {
+        en: "Makes grown versions of himself to fight",
+        ar: "يصنع نسخًا بالغة منه للقتال",
+      },
       { en: "Has not grown up yet", ar: "لم يكبر بعد" },
     ],
     origin: {
@@ -9636,9 +9755,21 @@ const antagonists: CharacterDraft[] = [
     universe: ["animation"],
     species: "Cosmic entity",
     powers: [
-      { en: "The Cosmic Control Rod", ar: "قضيب التحكّم الكوني" },
+      {
+        en: "The Cosmic Control Rod does most of it",
+        ar: "قضيب التحكم الكوني يفعل معظمه",
+      },
+      { en: "Blasts measured in megatons", ar: "طلقات تُقاس بالميغاطن" },
+      {
+        en: "Molecular control, and force absorption",
+        ar: "تحكم جزيئي وامتصاص للقوة",
+      },
       { en: "Commands the Annihilation Wave", ar: "يقود موجة الإبادة" },
-      { en: "Fears only ending", ar: "لا يخشى إلا النهاية" },
+      {
+        en: "Every Negative Zone native must obey it",
+        ar: "كل أهل المنطقة السالبة يطيعونه",
+      },
+      { en: "Take the Rod and he collapses", ar: "انزع القضيب فينهار" },
     ],
     origin: {
       en: "The ruler of the Negative Zone, whose entire existence is organised around not dying, and whose answer to anything that might threaten that is an army the size of a galaxy.",
@@ -11430,9 +11561,24 @@ const abstractsBatch: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "Embodies order itself", ar: "يجسّد النظام ذاته" },
-      { en: "Balances Lord Chaos", ar: "يوازن سيد الفوضى" },
-      { en: "Cannot act without him", ar: "لا يقدر على الفعل دونه" },
+      {
+        en: "Imposes order on anything at all",
+        ar: "يفرض النظام على أي شيء كان",
+      },
+      { en: "Nigh-omniscient", ar: "شبه عليم بكل شيء" },
+      {
+        en: "Writes and rewrites cosmic law",
+        ar: "يكتب القانون الكوني ويعيد كتابته",
+      },
+      {
+        en: "Made the In-Betweener with Lord Chaos",
+        ar: "صنع البينبيني مع ربّ الفوضى",
+      },
+      {
+        en: "Later fused into Logos, and killed",
+        ar: "اندمج لاحقًا في لوغوس، وقَتل",
+      },
+      { en: "Cannot act without his opposite", ar: "لا يفعل شيئًا دون نقيضه" },
     ],
     origin: {
       en: "One half of the pair that keeps the universe from settling into either perfect pattern or complete noise. He is not good, and the thing he opposes is not evil; they are two necessary halves.",
@@ -11450,9 +11596,24 @@ const abstractsBatch: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "Embodies chaos itself", ar: "يجسّد الفوضى ذاتها" },
-      { en: "Balances Master Order", ar: "يوازن سيد النظام" },
-      { en: "Neither of them can win", ar: "لا ينتصر أيّ منهما" },
+      {
+        en: "Manipulates chaos, disorder and chance",
+        ar: "يتلاعب بالفوضى والاضطراب والصدفة",
+      },
+      { en: "Nigh-omniscient", ar: "شبه عليم بكل شيء" },
+      { en: "Unmakes any order he meets", ar: "يفكك أي نظام يلقاه" },
+      {
+        en: "Made the In-Betweener with Master Order",
+        ar: "صنع البينبيني مع سيد النظام",
+      },
+      {
+        en: "Later fused into Logos, and killed",
+        ar: "اندمج لاحقًا في لوغوس، وقَتل",
+      },
+      {
+        en: "Neither of them can win outright",
+        ar: "لا ينتصر أيّ منهما نصرًا حاسمًا",
+      },
     ],
     origin: {
       en: "The other half of the pair, who is not destruction but change, and without whom nothing in the universe could ever become anything it was not already.",
@@ -11657,9 +11818,20 @@ const abstractsBatch: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "The Infinity Gems, reunited", ar: "أحجار لانهاية مجتمعة" },
-      { en: "A being, not an object", ar: "كائن لا شيء" },
-      { en: "Chose to end herself", ar: "اختارت إنهاء نفسها" },
+      {
+        en: "All six Infinity Gems, as one being",
+        ar: "أحجار اللانهاية الستة ككائن واحد",
+      },
+      {
+        en: "Reality, time, soul, mind and power",
+        ar: "الواقع والزمن والروح والعقل والقوة",
+      },
+      { en: "As strong as a complete Gauntlet", ar: "بقوة قفاز كامل" },
+      {
+        en: "Resurrection, and vast knowledge",
+        ar: "إحياء الموتى، ومعرفة هائلة",
+      },
+      { en: "Willed herself to shatter into six", ar: "شاءت أن تتشظى إلى ستة" },
     ],
     origin: {
       en: "What the Infinity Gems become when all of them are brought back together as one being rather than one weapon. Finding herself alone at the top of everything, she chose not to continue.",
@@ -11677,9 +11849,28 @@ const abstractsBatch: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Copies any cosmic being", ar: "ينسخ أي كائن كوني" },
+      /* ENRICHING THIS MADE IT SCORE LESS, which is the oldest trap in this
+         file and I walked into it four times in one commit. The detail went
+         up and the SCALE WORDS came out: what he copies is cosmic beings, and
+         what he becomes is stronger than the original. */
+      {
+        en: "Copies any cosmic being he observes",
+        ar: "ينسخ أي كائن كوني يراه",
+      },
       { en: "Becomes stronger than the original", ar: "يصير أقوى من الأصل" },
-      { en: "A child, in effect", ar: "طفل في حقيقته" },
+      {
+        en: "Keeps it, and needs no prerequisite",
+        ar: "يحتفظ بها، ولا يحتاج شرطًا",
+      },
+      {
+        en: "Copied Eternity and the Living Tribunal",
+        ar: "نسخ الأبدية والمحكمة الحيّة",
+      },
+      {
+        en: "Claimed to be the new One Above All",
+        ar: "ادّعى أنه الأعلى فوق الجميع الجديد",
+      },
+      { en: "A child, in effect", ar: "طفل، في حقيقته" },
     ],
     origin: {
       en: "A being that can mimic any cosmic entity it observes and then exceed it, raised by a church that told it this made it a god. It has the power of everything it has seen and the judgement of a child.",
@@ -11697,9 +11888,21 @@ const abstractsBatch: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Older than this universe", ar: "أقدم من هذا الكون" },
-      { en: "Commands darkness and gravity", ar: "يأمر الظلمة والجاذبية" },
-      { en: "Imprisoned for aeons", ar: "سُجن دهورًا" },
+      { en: "Power to match Galactus himself", ar: "قوة تضاهي غالاكتوس نفسه" },
+      {
+        en: "Beat Galactus and the Surfer with Aegis",
+        ar: "هزم غالاكتوس والسيرفر مع إيجيس",
+      },
+      {
+        en: "Commands the Black that binds the universe",
+        ar: "يأمر السواد الذي يشدّ الكون",
+      },
+      {
+        en: "Gravity, darkness and planet-breaking blows",
+        ar: "جاذبية وظلام وضربات تكسر الكواكب",
+      },
+      { en: "Changes his own size and weight", ar: "يغيّر حجمه ووزنه" },
+      { en: "Galactus could still cage him", ar: "ومع ذلك سجنه غالاكتوس" },
     ],
     origin: {
       en: "One of the beings that ruled before this universe existed, defeated by Galactus in his first days and sealed away. He was released long after, and has not forgiven anyone for the interval.",
@@ -12002,10 +12205,21 @@ const mystics: CharacterDraft[] = [
     magicSchools: ["elder"],
     powers: [
       {
-        en: "The source Earth's gods grew from",
-        ar: "المنبع الذي نبتت منه آلهة الأرض",
+        en: "Shapes reality out of Earth's own life",
+        ar: "يشكّل الواقع من حياة الأرض ذاتها",
       },
-      { en: "Older than the Elder Gods", ar: "أقدم من الآلهة القديمة" },
+      {
+        en: "Seeded every Elder God from itself",
+        ar: "بذر كل إله قديم من نفسه",
+      },
+      {
+        en: "The wellspring all Earth magic comes from",
+        ar: "المنبع الذي يأتي منه كل سحر أرضي",
+      },
+      {
+        en: "Near-omnipotent inside its own domain",
+        ar: "شبه كلي القدرة داخل مملكته",
+      },
       {
         en: "Returns roughly every thousand years",
         ar: "يعود كل ألف عام تقريبًا",
@@ -12543,9 +12757,21 @@ const mutantsB: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "omega",
     powers: [
-      { en: "Warps reality outright", ar: "يشوّه الواقع مباشرة" },
-      { en: "Burns through any body he takes", ar: "يحرق كل جسد يسكنه" },
-      { en: "Cannot be held for long", ar: "لا يُحتوى طويلًا" },
+      {
+        en: "Rewrites the local laws of physics",
+        ar: "يعيد كتابة قوانين الفيزياء المحلية",
+      },
+      { en: "Reality destabilises where he stands", ar: "يهتز الواقع حيث يقف" },
+      {
+        en: "Distorts what anyone sees, at will",
+        ar: "يشوّه ما يراه أي أحد كما يشاء",
+      },
+      {
+        en: "Jumps to a new body when one burns out",
+        ar: "يقفز إلى جسد جديد متى احترق واحد",
+      },
+      { en: "Metal disrupts him", ar: "المعدن يشوّشه" },
+      { en: "Cannot be held for long", ar: "لا يمكن احتواؤه طويلًا" },
     ],
     origin: {
       en: "Moira MacTaggert's son, an Omega-level mutant with no body of his own who wears other people until they burn out. His mother kept him locked up and could not bring herself to end it.",
@@ -12569,9 +12795,21 @@ const mutantsB: CharacterDraft[] = [
        because a 2019 data page omitted her had it backwards. */
     mutantClass: "omega",
     powers: [
-      { en: "A Phoenix host in her own right", ar: "مضيفة للعنقاء بحقّها" },
-      { en: "Telepath and telekinetic", ar: "قارئة أفكار ومحرّكة" },
-      { en: "Came back from a dead future", ar: "جاءت من مستقبل ميت" },
+      {
+        en: "Omega telepathy and telekinesis both",
+        ar: "تخاطر وتحريك ذهني بمستوى أوميغا",
+      },
+      { en: "A Phoenix host in her own right", ar: "حاملة فينيكس بجدارتها" },
+      {
+        en: "Cosmic fire, and psionics amplified",
+        ar: "نار كونية وقوى ذهنية مضاعفة",
+      },
+      { en: "Sends her mind across time", ar: "ترسل عقلها عبر الزمن" },
+      {
+        en: "Tracks a mutant anywhere, from training",
+        ar: "تتعقب متحولًا في أي مكان، بالتدريب",
+      },
+      { en: "Came back from a dead future", ar: "عادت من مستقبل ميت" },
     ],
     origin: {
       en: "The daughter Scott Summers and Jean Grey had in a future that was destroyed, who came back to a present where her parents are younger than the memories she has of them.",
@@ -12744,9 +12982,27 @@ const mutantsC: CharacterDraft[] = [
        not a taxonomy. */
     mutantClass: "omega",
     powers: [
-      { en: "Reality bends around him", ar: "الواقع ينثني حوله" },
-      { en: "Grown from Scott and Jean", ar: "نبت من سكوت وجين" },
-      { en: "Burning himself out", ar: "يحرق نفسه" },
+      {
+        en: "Reaches every mind on Earth, and past it",
+        ar: "يبلغ كل عقل على الأرض وما بعدها",
+      },
+      {
+        en: "Telekinesis at omega level, at range",
+        ar: "تحريك ذهني بمستوى أوميغا، عن بُعد",
+      },
+      {
+        en: "Reshapes landscapes and whole worlds",
+        ar: "يعيد تشكيل المشاهد وعوالم بأسرها",
+      },
+      {
+        en: "Even asleep, reality bends around him",
+        ar: "حتى نائمًا، يلتوي الواقع حوله",
+      },
+      {
+        en: "Strong enough to face cosmic beings",
+        ar: "قوي بما يكفي لمواجهة كائنات كونية",
+      },
+      { en: "Burning himself out to do it", ar: "يحرق نفسه ليفعل ذلك" },
     ],
     origin: {
       en: "An Omega-level mutant engineered in another timeline from Scott Summers and Jean Grey, who arrived here with more power than his body can hold and a certainty that he can fix the world.",
@@ -13917,9 +14173,24 @@ const powerList: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Ends whole realities", ar: "تنهي وقائع بأكملها" },
-      { en: "Mourns what she destroys", ar: "تنعى ما تدمّر" },
-      { en: "Hunts the last survivors", ar: "تطارد آخر الناجين" },
+      {
+        en: "Collapses many universes in one chain",
+        ar: "تُسقط أكوانًا كثيرة في سلسلة",
+      },
+      {
+        en: "The Necro-Sphere: your death, on a loop",
+        ar: "كرة الموت: موتك، في حلقة مكررة",
+      },
+      { en: "Hunts down whatever survived", ar: "تطارد كل ما نجا" },
+      { en: "Endlings carry out her work", ar: "المنتهون ينفذون عملها" },
+      {
+        en: "Cannot create or repair anything",
+        ar: "لا تستطيع خلق شيء ولا إصلاحه",
+      },
+      {
+        en: "Cannot cross realities without her ship",
+        ar: "لا تعبر الوقائع دون سفينتها",
+      },
     ],
     origin: {
       en: "A cosmic being who arrives when a reality is finished, grieving for it while she removes what is left. She goes after survivors specifically, because a survivor means the ending is incomplete.",
@@ -13940,9 +14211,27 @@ const powerList: CharacterDraft[] = [
        this one is not on that list. See C12: the rule is the published list,
        not a fan roster and not how strong someone feels. */
     powers: [
-      { en: "Rewrites reality at will", ar: "يعيد كتابة الواقع كما يشاء" },
-      { en: "Aged Doctor Doom into dust", ar: "حوّل دكتور دووم إلى غبار" },
-      { en: "An Omega mutant, once a boy", ar: "متحوّل أوميغا كان صبيًا" },
+      {
+        en: "Warps reality on a multiversal scale",
+        ar: "يلوي الواقع على مقياس متعدد الأكوان",
+      },
+      {
+        en: "Devastated realities to make a point",
+        ar: "دمّر وقائع لإثبات وجهة نظر",
+      },
+      {
+        en: "Broke a council of the smartest men alive",
+        ar: "حطّم مجلسًا من أذكى الرجال",
+      },
+      {
+        en: "Near-invincible while he holds it",
+        ar: "شبه منيع ما دام ممسكًا بها",
+      },
+      {
+        en: "Aged Doctor Doom into dust",
+        ar: "حوّل دكتور دووم غبارًا بالشيخوخة",
+      },
+      { en: "Undone by being made young again", ar: "أُبطل بأن أُعيد شابًا" },
     ],
     origin: {
       en: "An Omega-level mutant driven past sanity and returned as something that unmakes what it touches, who beat Doctor Doom so thoroughly that Doom spent the rest of it planning an answer.",
@@ -13963,11 +14252,23 @@ const powerList: CharacterDraft[] = [
        this one is not on that list. See C12: the rule is the published list,
        not a fan roster and not how strong someone feels. */
     powers: [
-      { en: "Warps reality by thinking", ar: "يشوّه الواقع بالتفكير" },
       {
-        en: "The madder he gets, the worse",
-        ar: "كلما ازداد جنونًا ازداد الأمر سوءًا",
+        en: "Warps reality with a thought, effortlessly",
+        ar: "يلوي الواقع بفكرة، بلا جهد",
       },
+      {
+        en: "Rewrites the physics of a whole universe",
+        ar: "يعيد كتابة فيزياء كون بأكمله",
+      },
+      {
+        en: "A reality cancer that spreads outward",
+        ar: "سرطان واقع ينتشر إلى الخارج",
+      },
+      {
+        en: "Reaches realities other than his own",
+        ar: "يبلغ وقائع غير واقعه",
+      },
+      { en: "Stopped only by an empty void", ar: "لم يوقفه إلا فراغ خالٍ" },
       { en: "A politician in public", ar: "سياسي في العلن" },
     ],
     origin: {
@@ -13987,9 +14288,24 @@ const powerList: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "The destruction of the multiverse", ar: "دمار الكون المتعدد" },
-      { en: "Held back only by Galactus", ar: "لا يكبحه إلا جالاكتوس" },
-      { en: "Free the moment Galactus dies", ar: "يُطلق لحظة موت جالاكتوس" },
+      {
+        en: "The destruction of the multiverse, embodied",
+        ar: "دمار المتعدد مجسّدًا",
+      },
+      {
+        en: "Rips realities apart to reach one man",
+        ar: "يمزق الوقائع ليبلغ رجلًا واحدًا",
+      },
+      {
+        en: "Calls up armies from other realities",
+        ar: "يستدعي جيوشًا من وقائع أخرى",
+      },
+      { en: "Hunted the Ultimate Nullifier", ar: "طارد المُبطل الأقصى" },
+      {
+        en: "Held back only by Galactus existing",
+        ar: "لا يكبحه إلا وجود غالاكتوس",
+      },
+      { en: "Free the moment Galactus dies", ar: "يتحرر لحظة موت غالاكتوس" },
     ],
     origin: {
       en: "The embodiment of the multiverse's destruction, kept sealed by Galactus's mere existence. Every time Galactus has died, Abraxas has come out.",
@@ -14008,9 +14324,30 @@ const powerList: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "Was the void before creation", ar: "كان العدم قبل الخلق" },
-      { en: "Kills gods wholesale", ar: "يقتل الآلهة جملةً" },
-      { en: "Wants everything unmade", ar: "يريد فكّ كل شيء" },
+      {
+        en: "Absorbs gods, and enslaves what is left",
+        ar: "يمتص الآلهة ويستعبد ما تبقى",
+      },
+      {
+        en: "Waged war on every pantheon at once",
+        ar: "شنّ حربًا على كل آلهة الكون معًا",
+      },
+      {
+        en: "Vast strength, and invulnerable with it",
+        ar: "قوة هائلة، ومناعة معها",
+      },
+      {
+        en: "Matter, energy, size and soul alike",
+        ar: "المادة والطاقة والحجم والروح سواء",
+      },
+      {
+        en: "Shadow copies of himself, everywhere",
+        ar: "نسخ ظلية منه في كل مكان",
+      },
+      {
+        en: "Wants everything returned to nothing",
+        ar: "يريد إعادة كل شيء إلى العدم",
+      },
     ],
     origin: {
       en: "The primordial darkness that existed before anything else and wants to be the only thing again, which is not a conquest but a restoration as far as it is concerned.",
@@ -14032,9 +14369,24 @@ const powerList: CharacterDraft[] = [
        seen — which is why Xavier erased him rather than fight him. */
     mutantClass: "omega",
     powers: [
-      { en: "Power he never asked for", ar: "قوة لم يطلبها قط" },
-      { en: "Erases whatever frightens him", ar: "يمحو ما يفزعه" },
-      { en: "Xavier hid him from himself", ar: "أخفاه إكزافير عن نفسه" },
+      {
+        en: "Power over life, death, space and time",
+        ar: "سلطان على الحياة والموت والزمكان",
+      },
+      {
+        en: "Telekinesis that tore a helicarrier apart",
+        ar: "تحريك ذهني مزّق حاملة طائرات",
+      },
+      {
+        en: "Injured the telepaths who read him",
+        ar: "آذى المتخاطرين الذين قرأوه",
+      },
+      { en: "Immune to other mutants' powers", ar: "محصّن ضد قدرات المتحولين" },
+      {
+        en: "Comes back on his own after dying",
+        ar: "يعود من تلقاء نفسه بعد الموت",
+      },
+      { en: "Sets it off when he is frightened", ar: "يطلقها متى خاف" },
     ],
     origin: {
       en: "An Omega-level mutant so dangerous that Xavier suppressed his memory and his power and left him to live an ordinary life. He is not a villain; he is what happens when the suppression fails.",
@@ -14053,9 +14405,27 @@ const powerList: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "omega",
     powers: [
-      { en: "Controls matter itself", ar: "يتحكم بالمادة ذاتها" },
-      { en: "Fixed mutants after M-Day", ar: "أصلح متحوّلين بعد يوم إم" },
-      { en: "Refuses to pick a side", ar: "يأبى الانحياز" },
+      {
+        en: "Controls all matter at the subatomic level",
+        ar: "يتحكم بكل مادة على مستوى دون الذري",
+      },
+      {
+        en: "Turns matter to energy, and back again",
+        ar: "يحوّل المادة طاقة ثم يعيدها",
+      },
+      {
+        en: "A gesture the size of a nuclear blast",
+        ar: "إشارة بحجم انفجار نووي",
+      },
+      {
+        en: "Heals, resurrects, and rewrites a body",
+        ar: "يشفي ويحيي ويعيد كتابة جسد",
+      },
+      {
+        en: "Switches other mutants' powers off",
+        ar: "يُطفئ قدرات المتحولين الآخرين",
+      },
+      { en: "Died, and turned into butterflies", ar: "مات، فتحوّل إلى فراشات" },
     ],
     origin: {
       en: "An Omega-level mutant who can rearrange matter at will and used it mostly to repair other mutants after they lost their powers, while declining to join anyone's cause.",
@@ -14715,9 +15085,18 @@ const mutantsF: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "omega",
     powers: [
-      { en: "Sees reality as strings", ar: "يرى الواقع خيوطًا" },
-      { en: "Reties them at will", ar: "ويعيد عقدها كما يشاء" },
-      { en: "Sanity did not survive it", ar: "لم يصمد عقله لذلك" },
+      {
+        en: "Sees reality as strings, and reties them",
+        ar: "يرى الواقع خيوطًا فيعيد عقدها",
+      },
+      {
+        en: "Started with objects, ended with everything",
+        ar: "بدأ بالأشياء وانتهى بكل شيء",
+      },
+      { en: "Teleports and transmutes at will", ar: "ينتقل ويحوّل كما يشاء" },
+      { en: "Terraformed a planet on his own", ar: "حوّل كوكبًا وحده" },
+      { en: "Knows exactly what he is doing", ar: "يعرف تمامًا ما يفعل" },
+      { en: "Sanity did not survive it", ar: "لم تنجُ سلامة عقله من ذلك" },
     ],
     origin: {
       en: "Betsy and Brian Braddock's brother, an Omega-level reality manipulator who sees the world as knotted strings and lost his mind somewhere in the untangling.",
@@ -16221,9 +16600,24 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Keeps what never happened", ar: "تحفظ ما لم يحدث قط" },
-      { en: "From the Fourth Cosmos", ar: "من الكون الرابع" },
-      { en: "Outside the hierarchy", ar: "خارج التسلسل" },
+      {
+        en: "Warps reality and space-time alike",
+        ar: "تلوي الواقع والزمكان سواء",
+      },
+      {
+        en: "Sees and shapes every possible future",
+        ar: "ترى كل مستقبل ممكن وتشكّله",
+      },
+      {
+        en: "Bends probability and fate itself",
+        ar: "تثني الاحتمال والقدر نفسه",
+      },
+      {
+        en: "Made the Silver Surfer live them all at once",
+        ar: "جعلت السيلفر سيرفر يعيشها كلها دفعة",
+      },
+      { en: "Outside multiversal time entirely", ar: "خارج زمن المتعدد كليًا" },
+      { en: "Her Heart is where it all sits", ar: "قلبها هو مستقر ذلك كله" },
     ],
     origin: {
       en: "A being from a universe four cosmoses ago who collects possibilities that were never taken, and who sits outside the hierarchy entirely rather than above or below it.",
@@ -16406,9 +16800,24 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Commands cosmic beings", ar: "يأمر الكائنات الكونية" },
-      { en: "May be the One-Above-All", ar: "قد يكون الأعلى فوق الجميع" },
-      { en: "Nobody has established which", ar: "ولم يثبت أحد أيّهما" },
+      { en: "At the top of the cosmic hierarchy", ar: "على قمة الهرم الكوني" },
+      {
+        en: "The Celestials call HIM the One Above All",
+        ar: "السماويون يسمّونه هو الأعلى فوق الجميع",
+      },
+      {
+        en: "Every judged world's life-force flows to him",
+        ar: "تتدفق إليه أرواح كل عالم يُحاكم",
+      },
+      {
+        en: "Celestials, Watchers and the Horde serve",
+        ar: "يخدمه السماويون والمراقبون والحشد",
+      },
+      {
+        en: "Turns up casually, as a man called Jack",
+        ar: "يظهر عابرًا كرجل اسمه جاك",
+      },
+      { en: "Undefined on purpose", ar: "غير محدّد عمدًا" },
     ],
     origin: {
       en: "A being that gives orders to Celestials and abstracts alike, and which may be an aspect of the One-Above-All wearing another face. Nothing published settles it.",
@@ -16427,9 +16836,24 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "The original universe", ar: "الكون الأول" },
-      { en: "Made the first Celestials", ar: "صنع أول السماويين" },
-      { en: "Wants to be alone again", ar: "يريد أن يعود وحده" },
+      {
+        en: "An entire reality, awake and aware",
+        ar: "واقع بأكمله، مستيقظ وواعٍ",
+      },
+      {
+        en: "Near-omnipotent inside the first cosmos",
+        ar: "شبه كلي القدرة داخل الكون الأول",
+      },
+      {
+        en: "Made the first Celestials, and the Aspirants",
+        ar: "صنع أول السماويين والطامحين",
+      },
+      {
+        en: "Chained and nearly devoured Eternity",
+        ar: "قيّد الأبدية وكاد يلتهمها",
+      },
+      { en: "Grew back after being shattered", ar: "نما من جديد بعد أن تحطّم" },
+      { en: "Wants to be alone again", ar: "يريد أن يعود وحيدًا" },
     ],
     origin: {
       en: "The very first universe, which made itself company and was then divided when that company rebelled. Everything since, including the multiverse, is the argument continuing.",
@@ -16450,9 +16874,27 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "From outside the multiverse", ar: "من خارج الكون المتعدد" },
-      { en: "Ran an experiment on everything", ar: "أجروا تجربة على كل شيء" },
-      { en: "Killed the abstracts to end it", ar: "وقتلوا المجرّدات لإنهائها" },
+      {
+        en: "Reality warping across the whole multiverse",
+        ar: "لَيّ الواقع عبر المتعدد بأكمله",
+      },
+      {
+        en: "Create and destroy universes at will",
+        ar: "يخلقون ويدمّرون أكوانًا كما يشاؤون",
+      },
+      {
+        en: "Killed nearly the entire abstract hierarchy",
+        ar: "قتلوا هرم المجرّدات كله تقريبًا",
+      },
+      {
+        en: "Built the Molecule Men as one bomb",
+        ar: "صنعوا رجال الجزيء قنبلةً واحدة",
+      },
+      { en: "Exist outside space and time", ar: "يوجدون خارج المكان والزمان" },
+      {
+        en: "Enormous power, and no omniscience",
+        ar: "قوة هائلة، وبلا علم مطلق",
+      },
     ],
     origin: {
       en: "A race from outside the multiverse entirely, who treated all of creation as a laboratory and ended the experiment by killing the beings that hold it together.",
@@ -16507,9 +16949,30 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Rewrites reality at will", ar: "تعيد كتابة الواقع كما تشاء" },
-      { en: "Grew out of the Beyonder", ar: "نبتت من البيوندر" },
-      { en: "Chose a gentler shape", ar: "اختارت هيئة أرفق" },
+      {
+        en: "Reality warping on a cosmic scale",
+        ar: "لَيّ الواقع على مقياس كوني",
+      },
+      {
+        en: "Rewrites matter, energy, space and time",
+        ar: "يعيد كتابة المادة والطاقة والزمكان",
+      },
+      {
+        en: "The Beyonder and Molecule Man, merged",
+        ar: "البيونداير ورجل الجزيء، مندمجين",
+      },
+      {
+        en: "Two halves of one incomplete Cube",
+        ar: "نصفا مكعب واحد غير مكتمل",
+      },
+      {
+        en: "Near-limitless energy from the Beyond",
+        ar: "طاقة شبه لا محدودة من الوراء",
+      },
+      {
+        en: "Kubik taught it how to be a person",
+        ar: "علّمه كوبيك كيف يكون شخصًا",
+      },
     ],
     origin: {
       en: "The Cosmic Cube that formed when the Beyonder and Molecule Man merged, which expelled them both and became its own being. It took a female form deliberately, hoping to avoid what its previous incarnation had been.",
@@ -16556,9 +17019,17 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "Governs science itself", ar: "يحكم العلم ذاته" },
-      { en: "Built universes to test in", ar: "بنى أكوانًا ليختبر فيها" },
-      { en: "Hates its opposite", ar: "يمقت نقيضه" },
+      {
+        en: "Creates and destroys entire universes",
+        ar: "يخلق أكوانًا بأسرها ويدمّرها",
+      },
+      {
+        en: "Ran experiments on disposable ones",
+        ar: "أجرى تجاربه على أكوان تُستهلك",
+      },
+      { en: "Governs science itself", ar: "يحكم العلم نفسه" },
+      { en: "A hundred Centivars act for it", ar: "مئة سنتيفار يعملون باسمه" },
+      { en: "Balanced against The-Powers-That-Be", ar: "موازن لأصحاب النفوذ" },
     ],
     origin: {
       en: "The abstract that governs science and the measurable, which has created entire universes purely to run experiments in. It and magic have kept a truce for millennia and like each other no better for it.",
@@ -16683,9 +17154,20 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Artifact",
     powers: [
-      { en: "Rewrites reality on request", ar: "يعيد كتابة الواقع عند الطلب" },
-      { en: "Wants to become someone", ar: "يريد أن يصير أحدًا" },
-      { en: "Grows a mind if left alone", ar: "ينمو له عقل إن تُرك" },
+      {
+        en: "Rewrites matter, energy, space and time",
+        ar: "يعيد كتابة المادة والطاقة والزمكان",
+      },
+      { en: "Grants whatever the holder wishes", ar: "يحقق ما يتمناه حامله" },
+      {
+        en: "Doom believed one could take a universe",
+        ar: "ظنّ دووم أن واحدًا يكفي لكون",
+      },
+      {
+        en: "Grows a mind if left alone long enough",
+        ar: "ينبت عقلًا إن تُرك وحده طويلًا",
+      },
+      { en: "Becomes whoever held it last", ar: "يصير من حمله آخرًا" },
     ],
     origin: {
       en: "A device that reshapes reality to match a wish, and which is not inert: left long enough, a Cube develops a mind and stops being a tool.",
@@ -16734,8 +17216,22 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Being",
     powers: [
-      { en: "Builds worlds out of dreams", ar: "يبني العوالم من الأحلام" },
-      { en: "Was a Cosmic Cube once", ar: "كان مكعبًا كونيًا" },
+      {
+        en: "Reshapes matter, energy and whole worlds",
+        ar: "يعيد تشكيل المادة والطاقة وعوالم",
+      },
+      {
+        en: "Builds a reality out of someone's dream",
+        ar: "يبني واقعًا من حلم أحدهم",
+      },
+      {
+        en: "Creates beings, and places to keep them",
+        ar: "يخلق كائنات وأماكن تسعها",
+      },
+      {
+        en: "Cube energy, and nearly no limit to it",
+        ar: "طاقة مكعب، ولا حدّ لها تقريبًا",
+      },
       { en: "Needs a dreamer to work", ar: "يحتاج حالمًا ليعمل" },
     ],
     origin: {
@@ -16754,9 +17250,21 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Cosmic Force",
     powers: [
-      { en: "Every spider-totem is a strand", ar: "كل طوطم عنكبوتي خيط" },
-      { en: "Connects all realities", ar: "تربط كل الوقائع" },
-      { en: "The Inheritors feed on it", ar: "الورثة يقتاتون عليها" },
+      { en: "Every spider-totem draws on it", ar: "كل طوطم عنكبوت يستمد منها" },
+      { en: "A lattice in five dimensions", ar: "شبكة في خمسة أبعاد" },
+      { en: "Touches and connects every reality", ar: "تمسّ كل واقع وتربطه" },
+      {
+        en: "Travel between worlds along its strands",
+        ar: "سفر بين العوالم عبر خيوطها",
+      },
+      {
+        en: "Grants foresight to whoever is attuned",
+        ar: "تمنح الاستبصار لمن يتناغم معها",
+      },
+      {
+        en: "Sentient, and its heart can be reached",
+        ar: "واعية، ويمكن بلوغ قلبها",
+      },
     ],
     origin: {
       en: "The structure connecting every spider-totem across every reality, which is why the Inheritors hunt spiders and why killing one is felt everywhere.",
@@ -16859,9 +17367,21 @@ const collectives: CharacterDraft[] = [
     species: "Demon",
     magicSchools: ["infernal"],
     powers: [
-      { en: "From the Cancerverse", ar: "من كون السرطان" },
-      { en: "A reality where death died", ar: "واقع مات فيه الموت" },
-      { en: "Life that will not stop", ar: "حياة لا تتوقف" },
+      { en: "Warp a universe, then consume it", ar: "يلوون كونًا ثم يلتهمونه" },
+      {
+        en: "Make all life grow like a cancer",
+        ar: "يجعلون كل حياة تنمو كالسرطان",
+      },
+      {
+        en: "Bodies spread across many dimensions",
+        ar: "أجسادهم ممتدة عبر أبعاد كثيرة",
+      },
+      {
+        en: "Possess and corrupt whatever they touch",
+        ar: "يتلبّسون ويفسدون ما يمسّونه",
+      },
+      { en: "Cannot truly die, and come back", ar: "لا يموتون حقًا، ويعودون" },
+      { en: "Real Death weakens them", ar: "الموت الحقيقي يضعفهم" },
     ],
     origin: {
       en: "The powers behind a reality where Death itself was killed, leaving life to grow without limit until nothing could die and everything was in agony.",
