@@ -14439,8 +14439,14 @@ const powerList: CharacterDraft[] = [
     nameAr: "ثين",
     aliases: ["Thane"],
     category: "antihero",
-    affiliation: [],
+    affiliation: ["Inhumans"],
     universe: ["mcu"],
+    /* HALF OF HIM WAS UNREACHABLE. His species says Eternal, so the
+       Inhuman chip -- which matches `is("Inhuman")` or `aff("Inhumans")` --
+       found neither side of a character who is both. The corpus already
+       solves this for Captain Marvel, a `Human-Kree hybrid` who reaches the
+       Kree chip through her affiliation, and Namor, a `Mutant hybrid` who
+       reaches Talokan the same way. Thane just never got it. */
     species: "Eternal",
     powers: [
       { en: "One hand kills whatever it touches", ar: "يد تقتل كل ما تلمسه" },

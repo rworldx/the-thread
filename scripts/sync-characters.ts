@@ -60,20 +60,23 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  /* THE PICTURE RASHID PICKED, ON THE HOST THAT ACTUALLY RENDERS.
+     I first stored the preview.redd.it link he sent and checked it with curl,
+     which returned 206, and called that verified. It was not: `preview.redd.it`
+     is absent from BOTH the remotePatterns allowlist and the CSP img-src, so
+     the browser refused it and the tile came up empty. A 206 from curl proves
+     the bytes exist, not that the page may fetch them.
+
+     `i.redd.it` is already allowlisted, and the filename is a reddit media id,
+     so the same image is there without the expiring `s=` signature and at
+     higher quality: 1.1MB against 680KB, same 1988x2933. No new host, nothing
+     to rot. */
+  "the-maker": "https://i.redd.it/1s6rqf92bayc1.jpeg",
   /* The wiki's lead for her is the Infinity #1 Generals variant -- a group
      shot of the whole Black Order, which would have recreated the
      four-records-off-one-panel problem fixed two commits ago. This is solo. */
   supergiant:
     "https://static.wikia.nocookie.net/marveldatabase/images/7/7e/Supergiant_%28Earth-616%29_from_Marvel_War_of_Heroes_001.jpg/revision/latest?cb=20140305022027",
-  /* Rashid supplied two. This is the higher-resolution one at 1988x2933 --
-     the Maker in the helmet with the machine's red eyes behind him. The other
-     was 640x1524, too narrow to crop to a tile without losing the face.
-
-     A reddit preview URL carries a signature parameter, so it is likelier to
-     rot than a wiki upload. `npm run verify:assets` in CI is what will notice
-     if it does. */
-  "the-maker":
-    "https://preview.redd.it/what-is-your-opinion-on-the-maker-is-he-a-compelling-and-v0-1s6rqf92bayc1.jpeg?auto=webp&s=1b1ef94b3af8f9615376e4ad9c73bcbbf3fe86de",
   maestro:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/aa/Maestro_Future_Imperfect_-_Marvel_Tales_Vol_1_1_Virgin_Variant.jpg/revision/latest?cb=20200924140549",
   /* FOUR RECORDS OFF ONE PANEL. Oshtur, Agamotto, Hoggoth and the Vishanti
