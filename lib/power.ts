@@ -480,7 +480,17 @@ const TIERS: Tier[] = [
          the note above the gloss is describing. Without it they fell through
          every tier to 8, "humans who turn up anyway", which is a worse error
          than the one the gate was fixing. */
-      c.species === "Celestial" ||
+      /* AND THE SAME QUESTION AT THIS BOUNDARY. Rashid opened the 5/6 line
+         and the comparison found one thing that cannot be defended under any
+         reading: ZGREB THE ASPIRANT, whose record is "Aspires to the Host /
+         Not yet fully risen" and scores ZERO, outranked DOCTOR STRANGE. The
+         Aspirants sat beside him on the same nothing.
+
+         Hoggoth and Antiphon stay, and that is deliberate rather than an
+         oversight: the Vishanti are the gods a Sorcerer Supreme INVOKES, so
+         Hoggoth above Strange is arguable, and Antiphon is a Proemial God.
+         Scoring low is not the same as claiming nothing. */
+      (c.species === "Celestial" && claimScore(c) > 0) ||
       sp(
         "Olympian",
         "Fire demon",
@@ -565,6 +575,27 @@ const TIERS: Tier[] = [
       "ghost-rider",
       "cassandra-nova",
       "shadow-king",
+      /**
+       * THREE MOVED, once all thirty-two records finally said what the
+       * characters do.
+       *
+       * JUGGERNAUT WAS 168th, below Sylvie, Magik and Agatha Harkness. He
+       * lifts a thousand tons, shatters mountains, tanks blows from the Hulk,
+       * needs no air or food or rest, and once moving is not stopped. He sits
+       * under the two telepaths who can reach past his helmet and over
+       * everyone who would simply have to survive him.
+       *
+       * INVISIBLE WOMAN WAS 153rd on two bullets. The dossier's phrasing is
+       * the consensus one: she is the most powerful of the Fantastic Four.
+       * Fields nothing has broken, domes miles across, and the one attack in
+       * this tier that kills by expanding inside a skull.
+       *
+       * RONAN WAS LAST OF THE HEAD. The Universal Weapon makes and unmakes
+       * matter at the molecular level, drains a region of energy, and bends
+       * gravity and time-motion. That is not a hammer.
+       */
+      "juggernaut",
+      "invisible-woman",
       "selene",
       /* Same family, same fault: a clone of Jean Grey with her telepathy and
          a demon army, stranded at 393 for having no published class. */
@@ -574,7 +605,6 @@ const TIERS: Tier[] = [
          501, because "Invisibility / Force fields" reads small and is not —
          she has held a force field against a Celestial. */
       "captain-marvel",
-      "invisible-woman",
       /* REED DIRECTLY BEHIND SUE, and both of them in front of the rest of the
          team. He was 283rd while the Maker — the same man with the same powers
          and fewer scruples — sat at 146, which is a gap in willingness rather
@@ -590,6 +620,7 @@ const TIERS: Tier[] = [
       "clea",
       "agatha-harkness",
       "doctor-voodoo",
+      "ronan",
       "mister-sinister",
       "ultron",
       "sylvie",
@@ -601,7 +632,6 @@ const TIERS: Tier[] = [
          and Cain is what a god does to a man who picks up his gem — which
          puts him with the avatars and the sorcerers rather than in "enhanced"
          at 469, below half the X-Men he walks through. */
-      "juggernaut",
       /* An android built around an Infinity Stone is not "enhanced". */
       "vision",
       /**
@@ -614,7 +644,6 @@ const TIERS: Tier[] = [
        */
       "namor",
       "amadeus-cho",
-      "ronan",
       /* AMERICA CHAVEZ COMES OFF THIS HEAD. I named her here on the strength
          of "punches holes between universes", reading it as reality-scale when
          it is a door — and her own record finishes the thought: "Cannot
@@ -754,7 +783,12 @@ const TIERS: Tier[] = [
         "Dwarf",
         "Kronan",
         "Alien dragon",
-        /* Where tier 6 sends the Elders and Inhumans whose records are quiet. */
+        /* Where tier 6 sends the Elders and Inhumans whose records are quiet,
+           and where tier 5 now sends the two Celestials who claim nothing.
+           Tier 8 caught them otherwise, and "humans who turn up anyway" is
+           the wrong floor for two thousand feet of living armour however
+           little it has done. */
+        "Celestial",
         "Elder of the Universe",
         "Eternal",
         "Inhuman",

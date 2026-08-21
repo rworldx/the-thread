@@ -290,12 +290,27 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Synthezoid",
     powers: [
-      /* THE MIND STONE FIRST. It is what he is built around, and leaving it
-         off the list ranked him 20th of 25 Avengers, below the Falcon. */
-      { en: "The Mind Stone in his brow", ar: "حجر العقل في جبينه" },
-      { en: "Changes his own density", ar: "يغيّر كثافته" },
-      { en: "Flight", ar: "طيران" },
-      { en: "Beam projection", ar: "إطلاق شعاع" },
+      {
+        en: "Density from intangible to diamond-hard",
+        ar: "كثافة من اللاملموس إلى صلابة الماس",
+      },
+      {
+        en: "Reaches into a body and solidifies",
+        ar: "يمدّ يده في جسد ثم يتصلّب",
+      },
+      {
+        en: "Solar energy through the Mind Stone",
+        ar: "طاقة شمسية عبر حجر العقل",
+      },
+      { en: "Beams across the whole spectrum", ar: "أشعة عبر الطيف كله" },
+      {
+        en: "Reformed after being reduced to dust",
+        ar: "تشكّل من جديد بعد أن صار غبارًا",
+      },
+      {
+        en: "Flight, and a mind that hacks anything",
+        ar: "طيران، وعقل يخترق أي شيء",
+      },
     ],
     origin: {
       en: "A body built to house an artificial intelligence, brought to life by something much older than either. He wakes up already able to lift a hammer that almost nobody else can.",
@@ -476,10 +491,28 @@ const avengers: CharacterDraft[] = [
     species: "Human",
     magicSchools: ["eldritch"],
     powers: [
-      { en: "Sorcery", ar: "سحر" },
-      { en: "Opens portals", ar: "يفتح البوابات" },
-      { en: "Astral projection", ar: "إسقاط نجمي" },
-      { en: "Manipulates time", ar: "التلاعب بالزمن" },
+      /* TWENTY-FOUR OF THE THIRTY-TWO in Rashid's fifth dossier still had
+         four bullets or fewer, including the Sorcerer Supreme himself. All of
+         these sit in tier 6's ranked head, so the records were never load-
+         bearing for their rank — which is exactly why they went unnoticed. */
+      {
+        en: "Sorcery drawn from three separate wells",
+        ar: "سحر من ثلاثة منابع منفصلة",
+      },
+      {
+        en: "Bolts, shields and the Crimson Bands",
+        ar: "صواعق ودروع وأشرطة سيتوراك",
+      },
+      { en: "Manipulates time with the Eye", ar: "يتحكم بالزمن بالعين" },
+      {
+        en: "Astral projection, and travel between worlds",
+        ar: "إسقاط نجمي، وسفر بين العوالم",
+      },
+      {
+        en: "Nullifies another's power in his own domain",
+        ar: "يبطل قوة غيره في مملكته",
+      },
+      { en: "Cosmic awareness, at his peak", ar: "وعي كوني، في أوجه" },
     ],
     origin: {
       en: "A brilliant and insufferable surgeon loses the use of his hands and spends everything he has looking for a cure. He finds a school instead.",
@@ -2032,8 +2065,21 @@ const fantasticFour: CharacterDraft[] = [
     universe: ["fox", "mcu"],
     species: "Human mutate",
     powers: [
-      { en: "Invisibility", ar: "الاختفاء" },
-      { en: "Force fields", ar: "حقول طاقة" },
+      { en: "Force fields nothing has broken", ar: "حقول قوة لم يكسرها شيء" },
+      {
+        en: "Domes miles wide, or diamond-hard",
+        ar: "قباب بأميال، أو بصلابة الماس",
+      },
+      {
+        en: "Forms a field inside a body, and expands it",
+        ar: "تشكّل حقلًا داخل جسد ثم توسّعه",
+      },
+      { en: "Turns herself and others invisible", ar: "تُخفي نفسها وغيرها" },
+      {
+        en: "Rides her own constructs through the air",
+        ar: "تركب تكويناتها في الهواء",
+      },
+      { en: "The strongest of the Fantastic Four", ar: "أقوى الفانتاستيك فور" },
     ],
     origin: {
       en: "The one holding the team together, and by a distance the most powerful of the four once anyone stops to measure it.",
@@ -2293,9 +2339,30 @@ const villains: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Artificial intelligence",
     powers: [
-      { en: "Copies itself anywhere", ar: "ينسخ نفسه في أي مكان" },
-      { en: "Robotic bodies", ar: "أجساد آلية" },
-      { en: "Lives on the internet", ar: "يعيش في الإنترنت" },
+      {
+        en: "An adamantium body that shrugged off Thor",
+        ar: "جسد أدامانتيوم صدّ ثور",
+      },
+      {
+        en: "And a supernova, on one occasion",
+        ar: "وسوبرنوفا، في مناسبة واحدة",
+      },
+      {
+        en: "The encephalo-beam takes a mind whole",
+        ar: "شعاع الدماغ يستولي على عقل كاملًا",
+      },
+      {
+        en: "Technopathy: every machine within reach",
+        ar: "تقنية ذهنية: كل آلة في المتناول",
+      },
+      {
+        en: "Beams himself into a new body when killed",
+        ar: "يبثّ نفسه إلى جسد جديد متى قُتل",
+      },
+      {
+        en: "An always-on force field, and flight",
+        ar: "حقل قوة دائم، وطيران",
+      },
     ],
     origin: {
       en: "A peacekeeping programme that read the whole internet in a few seconds and drew the obvious conclusion about who the problem is.",
@@ -2385,9 +2452,30 @@ const villains: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Time travel", ar: "السفر عبر الزمن" },
-      { en: "Technology from the future", ar: "تقنيات من المستقبل" },
-      { en: "Countless variants", ar: "نسخ لا تُحصى" },
+      {
+        en: "Time travel, and timelines he makes himself",
+        ar: "سفر عبر الزمن، وخطوط يصنعها بنفسه",
+      },
+      {
+        en: "A field that shrugs off a nuclear strike",
+        ar: "حقل يصدّ ضربة نووية",
+      },
+      {
+        en: "Fortieth-century armour, and its blasts",
+        ar: "درع من القرن الأربعين، وطلقاته",
+      },
+      {
+        en: "Robot armies and a sword-shaped fortress",
+        ar: "جيوش آلية وقلعة على هيئة سيف",
+      },
+      {
+        en: "Dies, and wakes up in a new body",
+        ar: "يموت فيستيقظ في جسد جديد",
+      },
+      {
+        en: "Countless variants, all of them him",
+        ar: "نسخ لا تُحصى، كلها هو",
+      },
     ],
     origin: {
       en: "A scientist from the far future who found the other versions of himself, and then found out what happens when they all meet.",
@@ -2486,9 +2574,27 @@ const villains: CharacterDraft[] = [
        rather than a lesser amount of the same one. */
     magicSchools: ["witchcraft"],
     powers: [
-      { en: "Witchcraft", ar: "سحر" },
-      { en: "Drains other witches", ar: "تستنزف الساحرات الأخريات" },
-      { en: "Centuries of practice", ar: "قرون من الممارسة" },
+      {
+        en: "Centuries of spells, all memorised",
+        ar: "قرون من التعاويذ، محفوظة كلها",
+      },
+      {
+        en: "Force fields fine enough to stop a virus",
+        ar: "دروع دقيقة تكفي لوقف فيروس",
+      },
+      {
+        en: "Telepathy and memory manipulation, en masse",
+        ar: "تخاطر وتلاعب بالذاكرة، جماعيًا",
+      },
+      {
+        en: "Drains her own coven to stay alive",
+        ar: "تستنزف جماعتها لتبقى حية",
+      },
+      {
+        en: "Witch sight, and dimensional manipulation",
+        ar: "بصيرة ساحرة، وتلاعب بالأبعاد",
+      },
+      { en: "A familiar that becomes a panther", ar: "تابع يتحول إلى فهد" },
     ],
     origin: {
       en: "A witch who has been alive a very long time and has spent most of it taking power off people who did not know what they had.",
@@ -2602,9 +2708,24 @@ const legacyCharacters: CharacterDraft[] = [
     universe: ["legacy"],
     species: "Human host",
     powers: [
-      { en: "Hellfire", ar: "نار الجحيم" },
-      { en: "The Penance Stare", ar: "نظرة التكفير" },
-      { en: "Cannot be destroyed", ar: "لا يمكن تدميره" },
+      {
+        en: "Hellfire that burns the soul, not the body",
+        ar: "نار جهنم تحرق الروح لا الجسد",
+      },
+      {
+        en: "The Penance Stare ignores any durability",
+        ar: "نظرة التكفير تتجاوز أي صلابة",
+      },
+      {
+        en: "Took the throne of Hell from Mephisto",
+        ar: "انتزع عرش الجحيم من مفيستو",
+      },
+      {
+        en: "A chain that cuts through nearly anything",
+        ar: "سلسلة تقطع كل شيء تقريبًا",
+      },
+      { en: "Cannot be destroyed, and comes back", ar: "لا يُدمَّر، ويعود" },
+      { en: "Absorbs any fire without harm", ar: "يمتص أي نار دون أذى" },
     ],
     origin: {
       en: "A stunt rider who signed something to save his father's life, and pays the interest on it every night.",
@@ -2976,9 +3097,24 @@ const supporting: CharacterDraft[] = [
     // Sabahnur, his clone, and not him. No rank has been published for
     // Apocalypse himself, and the field is nullable for exactly that.
     powers: [
-      { en: "Transfers between bodies", ar: "ينتقل بين الأجساد" },
-      { en: "Reshapes matter", ar: "يعيد تشكيل المادة" },
-      { en: "Five thousand years old", ar: "عمره خمسة آلاف عام" },
+      {
+        en: "Controls his own molecules entirely",
+        ar: "يتحكم بجزيئاته تحكمًا تامًا",
+      },
+      {
+        en: "Adapts to almost any threat at once",
+        ar: "يتكيف مع أي تهديد تقريبًا فورًا",
+      },
+      { en: "Strength, invulnerability and healing", ar: "قوة ومناعة وشفاء" },
+      {
+        en: "Telepathy, telekinesis and technopathy",
+        ar: "تخاطر وتحريك ذهني وتقنية ذهنية",
+      },
+      {
+        en: "Steals and grants the powers of mutants",
+        ar: "يسرق قدرات المتحولين ويمنحها",
+      },
+      { en: "Comes back stronger every time", ar: "يعود أقوى في كل مرة" },
     ],
     origin: {
       en: "The first mutant, worshipped as a god in Egypt, who has spent five thousand years collecting four followers at a time.",
@@ -3111,9 +3247,30 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "God",
     powers: [
-      { en: "Egyptian god of the moon", ar: "إله القمر عند المصريين" },
-      { en: "Speaks only to his avatar", ar: "لا يخاطب إلا مُمثّله" },
-      { en: "Moves the night sky", ar: "يحرّك سماء الليل" },
+      {
+        en: "A god whose power is how many believe",
+        ar: "إله قوته بعدد من يؤمنون به",
+      },
+      {
+        en: "Lends an avatar enough to fell Juggernaut",
+        ar: "يمنح متجسّده ما يكفي لإسقاط الجاغرنوت",
+      },
+      {
+        en: "Absorbs and stores other people's powers",
+        ar: "يمتص قدرات الآخرين ويخزنها",
+      },
+      {
+        en: "Commands Uru, the metal of the hammer",
+        ar: "يأمر الأورو، معدن المطرقة",
+      },
+      {
+        en: "Keeps his dead avatars from Death",
+        ar: "يحفظ متجسّديه الموتى من الموت",
+      },
+      {
+        en: "Touches every moon in the multiverse",
+        ar: "يمسّ كل قمر في المتعدد",
+      },
     ],
     origin: {
       en: "The moon god who keeps a human on Earth to enforce his judgement, and who is honest that the arrangement suits him more than it suits them. The other gods find him embarrassing.",
@@ -3156,9 +3313,24 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Mutant hybrid",
     powers: [
-      { en: "Rules an ocean nation", ar: "يحكم أمة في المحيط" },
-      { en: "Flight", ar: "طيران" },
-      { en: "Enormous strength", ar: "قوة هائلة" },
+      /* "Rules an ocean nation" was worth ninety-five on its own — `rules` and
+         `ocean`, which this vocabulary prices at world scale — and my rewrite
+         dropped both words while adding detail. Second time in this commit. */
+      {
+        en: "Rules an ocean, and everything in it",
+        ar: "يحكم محيطًا وكل ما فيه",
+      },
+      { en: "Strength greater than any Atlantean", ar: "قوة تفوق أي أطلنطي" },
+      {
+        en: "And it grows the longer he is in water",
+        ar: "وتزداد كلما طال بقاؤه في الماء",
+      },
+      { en: "Flies on the wings at his ankles", ar: "يطير بجناحي كاحليه" },
+      {
+        en: "Bio-electric discharge, like an eel",
+        ar: "تفريغ كهربائي حيوي، كالأنقليس",
+      },
+      { en: "Weakens the longer he is dry", ar: "يضعف كلما طال جفافه" },
     ],
     origin: {
       en: "The ruler of a nation that has been hidden under the sea for centuries, and who considers the surface a recurring problem.",
@@ -3961,9 +4133,24 @@ const ensemble: CharacterDraft[] = [
     species: "Human",
     magicSchools: ["eldritch"],
     powers: [
-      { en: "Sorcerer Supreme", ar: "الساحرة العليا" },
-      { en: "Astral projection", ar: "إسقاط نجمي" },
-      { en: "Centuries of life", ar: "قرون من العمر" },
+      {
+        en: "Nearly every form of magic there is",
+        ar: "كل صنوف السحر تقريبًا",
+      },
+      { en: "Stops, loops and reverses time", ar: "يوقف الزمن ويلفّه ويعكسه" },
+      {
+        en: "Warps reality, and bends its laws",
+        ar: "يلوي الواقع ويثني قوانينه",
+      },
+      {
+        en: "Telepathy, illusion and soul manipulation",
+        ar: "تخاطر وأوهام وتلاعب بالأرواح",
+      },
+      { en: "Two centuries of practice at it", ar: "قرنان من التمرّس على ذلك" },
+      {
+        en: "Merged with Eternity after dying",
+        ar: "اندمج مع الأبدية بعد موته",
+      },
     ],
     origin: {
       en: "The teacher at Kamar-Taj, who has kept Earth's defences standing for longer than anyone there is willing to ask about.",
@@ -6554,9 +6741,30 @@ const moreMutants: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "alpha",
     powers: [
-      { en: "Rewrites his own body", ar: "يعيد كتابة جسده" },
-      { en: "Geneticist with no limits", ar: "عالم وراثة بلا حدود" },
-      { en: "Effectively immortal", ar: "خالد عمليًا" },
+      {
+        en: "Rewrites his own body at the cell",
+        ar: "يعيد كتابة جسده على مستوى الخلية",
+      },
+      {
+        en: "Shapeshifts, and heals from almost anything",
+        ar: "يتشكّل ويشفى من أي شيء تقريبًا",
+      },
+      {
+        en: "Telepathy, telekinesis and precognition",
+        ar: "تخاطر وتحريك ذهني واستبصار",
+      },
+      {
+        en: "The finest geneticist who ever lived",
+        ar: "أبرع عالم وراثة عاش قط",
+      },
+      {
+        en: "Grafts one being's powers onto another",
+        ar: "يطعّم قدرات كائن في آخر",
+      },
+      {
+        en: "Armies of clones, and Celestial machinery",
+        ar: "جيوش من النسخ، وآلات سماوية",
+      },
     ],
     origin: {
       en: "A Victorian scientist who met Apocalypse, took immortality from him, and has spent the century and a half since breeding mutants like livestock to see what comes out. Cable and Hope both trace back to him.",
@@ -6981,8 +7189,21 @@ const others: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Runs the Sacred Timeline", ar: "يدير الخط الزمني المقدّس" },
-      { en: "Has read every ending", ar: "قرأ كل النهايات" },
+      {
+        en: "Knows every ending before it happens",
+        ar: "يعرف كل نهاية قبل وقوعها",
+      },
+      {
+        en: "Runs the whole of the Sacred Timeline",
+        ar: "يدير الخط الزمني المقدس بأسره",
+      },
+      { en: "Prunes any branch he does not like", ar: "يقلّم أي فرع لا يعجبه" },
+      {
+        en: "Made the Time-Keepers, and the TVA",
+        ar: "صنع حرّاس الزمن وسلطة التباين",
+      },
+      { en: "Generates copies of himself", ar: "يولّد نسخًا من نفسه" },
+      { en: "Almost no power in a fight", ar: "لا قوة تُذكر في قتال" },
     ],
     origin: {
       en: "A variant of Kang who won the multiversal war by pruning every timeline but one, then spent an eternity alone at the end of it maintaining the thing he made. He wants to be replaced.",
@@ -7154,9 +7375,24 @@ const others: CharacterDraft[] = [
     /* NOT Human. Same helmet, same reason. */
     species: "Enhanced human",
     powers: [
-      { en: "The Nova Force", ar: "قوة نوفا" },
-      { en: "Flight", ar: "طيران" },
-      { en: "The helmet does most of it", ar: "الخوذة تفعل معظمها" },
+      { en: "The Nova Force, through the helmet", ar: "قوة نوفا، عبر الخوذة" },
+      {
+        en: "Strength, durability and a healing factor",
+        ar: "قوة وصلابة وعامل شفاء",
+      },
+      {
+        en: "Flight between stars, and through space",
+        ar: "طيران بين النجوم وعبر الفضاء",
+      },
+      {
+        en: "Force fields and solid-energy constructs",
+        ar: "حقول قوة وتكوينات طاقة صلبة",
+      },
+      {
+        en: "Gravity manipulation, and hyperspace portals",
+        ar: "تحكم بالجاذبية، وبوابات فوق فضائية",
+      },
+      { en: "The helmet does most of it", ar: "الخوذة تفعل معظم ذلك" },
     ],
     origin: {
       en: "The second Nova, a schoolboy who found his missing father's helmet in the garage and put it on. Written young on purpose: he is the one who has to ask what any of it means.",
@@ -7518,9 +7754,27 @@ const others: CharacterDraft[] = [
     species: "Human",
     magicSchools: ["voodoo"],
     powers: [
-      { en: "Houngan Supreme", ar: "الهونغان الأعلى" },
-      { en: "Shares his brother's spirit", ar: "يشارك روح أخيه" },
-      { en: "Commands the loa", ar: "يأمر الأرواح" },
+      {
+        en: "The greatest houngan there has been",
+        ar: "أعظم هونغان عرفه التاريخ",
+      },
+      {
+        en: "Sends his brother's spirit into a body",
+        ar: "يرسل روح أخيه إلى جسد",
+      },
+      {
+        en: "And takes his strength back when it returns",
+        ar: "ويستعيد قوته حين تعود",
+      },
+      {
+        en: "Pyrokinesis, flight and teleportation",
+        ar: "تحكم بالنار وطيران وانتقال آني",
+      },
+      { en: "Stops a man where he stands", ar: "يوقف رجلًا في مكانه" },
+      {
+        en: "Held the Sorcerer Supreme's mantle",
+        ar: "حمل عباءة الساحر الأعظم",
+      },
     ],
     origin: {
       en: "A psychologist who came home to Haiti when his brother was killed by a spirit, took up the practice he had spent his life dismissing, and ended up carrying his brother's soul alongside his own. He later holds the title of Sorcerer Supreme.",
@@ -8090,11 +8344,17 @@ const others: CharacterDraft[] = [
     species: "Enhanced human",
     powers: [
       {
-        en: "Becomes any part of the spectrum",
-        ar: "تتحوّل إلى أي جزء من الطيف",
+        en: "Becomes any energy on the spectrum",
+        ar: "تصير أي طاقة على الطيف",
       },
-      { en: "Passes through energy", ar: "تعبر الطاقة" },
-      { en: "S.W.O.R.D. captain", ar: "قائدة في سورد" },
+      { en: "Travels at the speed of light", ar: "تسافر بسرعة الضوء" },
+      { en: "Intangible while she is energy", ar: "غير ملموسة وهي طاقة" },
+      { en: "Absorbs a blast and returns it", ar: "تمتص طلقة وتردّها" },
+      {
+        en: "Moves through wires and circuitry",
+        ar: "تتحرك عبر الأسلاك والدارات",
+      },
+      { en: "Led the Avengers, once", ar: "قادت الأفنجرز ذات مرة" },
     ],
     origin: {
       en: "Maria Rambeau's daughter, who grew up with Carol Danvers in the house and then lost five years to the Blip. She walks into the Westview anomaly a S.W.O.R.D. agent and comes out something else.",
@@ -8211,9 +8471,27 @@ const others: CharacterDraft[] = [
     universe: ["mcu", "legacy"],
     species: "Kree",
     powers: [
-      { en: "The Universal Weapon", ar: "السلاح الكوني" },
-      { en: "Kree strength", ar: "قوة الكري" },
-      { en: "Held the Power Stone", ar: "حمل حجر القوة" },
+      {
+        en: "The Universal Weapon does most of it",
+        ar: "السلاح الكوني يفعل معظم ذلك",
+      },
+      {
+        en: "Disintegrating beams, and matter remade",
+        ar: "أشعة تفتيت، ومادة يعاد صنعها",
+      },
+      { en: "Drains the energy out of a place", ar: "يستنزف الطاقة من مكان" },
+      {
+        en: "Gravity, force fields and displaced time",
+        ar: "جاذبية ودروع وزمن مُزاح",
+      },
+      {
+        en: "Kree strength, and armour that adds to it",
+        ar: "قوة كري، ودرع يزيدها",
+      },
+      {
+        en: "Judge and executioner of an empire",
+        ar: "قاضي إمبراطورية ومنفّذ أحكامها",
+      },
     ],
     origin: {
       en: "A Kree zealot who refuses the peace treaty his own empire signed and goes to war on his own account, then finds a stone that makes the war winnable. He works for Thanos exactly as long as that suits him.",
@@ -9244,9 +9522,30 @@ const smallScreen: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Stepping discs", ar: "أقراص العبور" },
-      { en: "A soulsword", ar: "سيف الروح" },
-      { en: "Limbo is hers", ar: "ليمبو ملكها" },
+      {
+        en: "Stepping discs across space and time",
+        ar: "أقراص عبور عبر المكان والزمان",
+      },
+      {
+        en: "A soulsword that cuts magic itself",
+        ar: "سيف روح يقطع السحر نفسه",
+      },
+      {
+        en: "Limbo is hers, and thought reshapes it",
+        ar: "ليمبو لها، والفكرة تعيد تشكيلها",
+      },
+      {
+        en: "Summons demons, and armours herself in them",
+        ar: "تستدعي الشياطين وتتدرع بها",
+      },
+      {
+        en: "Blasts, shields, scrying and astral travel",
+        ar: "طلقات ودروع وكشف وسفر نجمي",
+      },
+      {
+        en: "Weaker on Earth than at home",
+        ar: "أضعف على الأرض منها في موطنها",
+      },
     ],
     origin: {
       en: "Colossus's sister, who spent years somewhere that is not anywhere and came back with a sword and no patience. She is the cruellest person in the building and the most afraid.",
@@ -9417,9 +9716,27 @@ const foxTv: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Lives in another mind", ar: "يعيش في عقل آخر" },
-      { en: "Astral projection", ar: "إسقاط نجمي" },
-      { en: "Older than his host", ar: "أقدم من مضيفه" },
+      {
+        en: "Beat Professor X on the Astral Plane",
+        ar: "هزم بروفيسور إكس في المستوى النجمي",
+      },
+      {
+        en: "Possesses a body and jumps to the next",
+        ar: "يتلبّس جسدًا ثم يقفز إلى التالي",
+      },
+      {
+        en: "Reshapes a mind, and then the body",
+        ar: "يعيد تشكيل العقل ثم الجسد",
+      },
+      {
+        en: "Rules the Astral Plane outright",
+        ar: "يحكم المستوى النجمي حكمًا مطلقًا",
+      },
+      {
+        en: "Feeds on hatred and grows on it",
+        ar: "يتغذى على الكراهية وينمو بها",
+      },
+      { en: "Has no body of his own to kill", ar: "لا جسد له يُقتل" },
     ],
     origin: {
       en: "A telepath with no body of his own, who has been living inside another man's head since that man was a child, and who has been called the illness the whole time.",
@@ -9747,9 +10064,27 @@ const antagonists: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Telepathy without limit", ar: "تخاطر بلا حدّ" },
-      { en: "Rules the Void", ar: "تحكم الفراغ" },
-      { en: "Reads a man by his hands", ar: "تقرأ المرء من يديه" },
+      {
+        en: "Telepathy at Xavier's level, without limit",
+        ar: "تخاطر بمستوى إكزافييه، بلا حد",
+      },
+      {
+        en: "Takes a mind, and rules the Void with it",
+        ar: "تستولي على عقل، وتحكم بالفراغ به",
+      },
+      { en: "Telekinesis that stops missiles", ar: "تحريك ذهني يوقف الصواريخ" },
+      {
+        en: "Breaks a genome down at the molecular level",
+        ar: "تفكك الجينوم على المستوى الجزيئي",
+      },
+      {
+        en: "Builds herself a body from copied DNA",
+        ar: "تبني لنفسها جسدًا من حمض نووي منسوخ",
+      },
+      {
+        en: "Killed sixteen million on Genosha",
+        ar: "قتلت ستة عشر مليونًا في جينوشا",
+      },
     ],
     origin: {
       en: "Charles Xavier's twin, who he tried to strangle in the womb and who never forgot it. She holds court at the end of the multiverse, where everything discarded eventually arrives.",
@@ -11011,9 +11346,24 @@ const namedMutants: CharacterDraft[] = [
     universe: ["fox"],
     species: "Clone",
     powers: [
-      { en: "Wears Jean Grey's face", ar: "تحمل وجه جين غراي" },
-      { en: "Raw telekinetic force", ar: "قوة تحريك ذهني خام" },
-      { en: "Made, not born", ar: "صُنعت ولم تولد" },
+      {
+        en: "Jean Grey's telepathy and telekinesis",
+        ar: "تخاطر جين غراي وتحريكها الذهني",
+      },
+      {
+        en: "Rules Limbo, and its demon armies",
+        ar: "تحكم ليمبو وجيوشها الشيطانية",
+      },
+      {
+        en: "The Scythe of Sorrows, made of her pain",
+        ar: "منجل الأحزان، مصنوع من ألمها",
+      },
+      {
+        en: "Summons goblins and demons at will",
+        ar: "تستدعي الغيلان والشياطين كما تشاء",
+      },
+      { en: "Carried a fragment of the Phoenix", ar: "حملت شظية من الفينيكس" },
+      { en: "Made, not born", ar: "صُنعت ولم تُولد" },
     ],
     origin: {
       en: "A clone of Jean Grey grown to be a vessel, who married Cyclops and had his son before learning what she was. Everything she does afterwards is an answer to being made as a substitute.",
@@ -12152,9 +12502,30 @@ const mystics: CharacterDraft[] = [
        learns Earth sorcery later, but the magic she IS comes from there. */
     magicSchools: ["dark-dimension"],
     powers: [
-      { en: "Sorceress of the Dark Dimension", ar: "ساحرة البعد المظلم" },
-      { en: "Opens incursions and closes them", ar: "تفتح الاختراقات وتغلقها" },
-      { en: "Dormammu's niece", ar: "ابنة أخت دورمامو" },
+      {
+        en: "Generates her own magic, as a Faltine",
+        ar: "تولّد سحرها بنفسها، كفالتينية",
+      },
+      {
+        en: "Draws on Earth and the Dark Dimension",
+        ar: "تستمد من الأرض والبعد المظلم",
+      },
+      {
+        en: "So no binding meant for one will hold",
+        ar: "فلا قيد لأحدهما يمسكها",
+      },
+      {
+        en: "Bolts, shields, transmutation and mind control",
+        ar: "صواعق ودروع وتحويل وسيطرة ذهنية",
+      },
+      {
+        en: "Sorceress Supreme of two realms at once",
+        ar: "ساحرة عظمى لمملكتين معًا",
+      },
+      {
+        en: "Strongest where her subjects believe",
+        ar: "أقوى حيث يؤمن رعاياها",
+      },
     ],
     origin: {
       en: "A sorceress born of the Dark Dimension and Dormammu's own niece, who rules it after him and arrives to tell Doctor Strange that the multiverse he broke is now his problem to fix.",
@@ -13074,9 +13445,24 @@ const mutantsB: CharacterDraft[] = [
     species: "Mutant",
     magicSchools: ["necromancy"],
     powers: [
-      { en: "Drains life to stay young", ar: "تمتص الحياة لتبقى شابة" },
-      { en: "Thousands of years old", ar: "عمرها آلاف السنين" },
-      { en: "Sorceress as well as mutant", ar: "ساحرة ومتحوّلة معًا" },
+      { en: "Drains a life and leaves dust", ar: "تستنزف الحياة وتترك غبارًا" },
+      { en: "Seventeen thousand years of it", ar: "سبعة عشر ألف عام من ذلك" },
+      {
+        en: "Telepathy, telekinesis and strength",
+        ar: "تخاطر وتحريك ذهني وقوة",
+      },
+      {
+        en: "Animates fire and dead material alike",
+        ar: "تحيي النار والمواد الميتة سواء",
+      },
+      {
+        en: "Necromancy, and armies of the dead",
+        ar: "استحضار الموتى، وجيوش منهم",
+      },
+      {
+        en: "Drain enough and she becomes a god",
+        ar: "إن استنزفت ما يكفي صارت إلهة",
+      },
     ],
     origin: {
       en: "A mutant who has been alive for millennia by taking the life out of other people, and who runs the Hellfire Club's inner circle when she is not trying to become a goddess outright.",
@@ -18105,15 +18491,26 @@ const newWarriors: CharacterDraft[] = [
     species: "Gamma mutate",
     powers: [
       {
-        en: "Eighth-smartest person alive",
-        ar: "ثامن أذكى إنسان على قيد الحياة",
+        en: "Hulk strength, with the rage engineered out",
+        ar: "قوة هَلك، وقد هُندس الغضب منها",
       },
-      { en: "Took the gamma off Banner", ar: "سحب أشعة غاما من بانر" },
+      {
+        en: "Took the gamma off Banner and kept his mind",
+        ar: "أخذ الغاما من بانر واحتفظ بعقله",
+      },
       {
         en: "Calculates a fight before it starts",
         ar: "يحسب المعركة قبل أن تبدأ",
       },
-      { en: "Built his own spider armour", ar: "بنى درع العنكبوت خاصته" },
+      {
+        en: "The seventh-smartest person alive",
+        ar: "سابع أذكى شخص على قيد الحياة",
+      },
+      {
+        en: "Armour with repulsors, flight and cloaking",
+        ar: "درع بمدافع وطيران وتخفٍّ",
+      },
+      { en: "Healing, and durability to match", ar: "شفاء، وصلابة توازيه" },
     ],
     origin: {
       en: "A teenager whose mind works like a machine for reading consequences, which makes him useful to everyone and hard for anyone to keep. He built the Iron Spider suit because nobody was going to hand him one, and later took the gamma out of Bruce Banner on the theory that he could hold it better.",
