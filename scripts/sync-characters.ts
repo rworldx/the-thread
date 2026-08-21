@@ -70,33 +70,35 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      The group panel stays where it is correct, on the group. */
   "infinity-ultron":
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e7/Infinity_Ultron_-_Age_of_Ultron_Infobox.png/revision/latest?cb=20231021045211",
-  /* THE ETERNALS IN COMICS, not in the film. Their records are
-     `universe: ["mcu"]` because Eternals is the only title they appear in
-     here, and the name lookup read that as "use a film still" — so eight of
-     them were Gemma Chan and Kumail Nanjiani while the rest of the site is
-     drawn. The film portraits were good; they were just the wrong medium.
+  /* THE ETERNALS BACK ON FILM, reversing my own change from two days ago.
+     I asked which medium Rashid wanted and he picked comic art; seeing it on
+     the page he wanted the film after all, which is the answer that only
+     arrives by looking at it.
 
-     Earth-616, and mostly the Eternals Vol 5 / A.X.E. Judgment Day run so
-     they hang together. The wiki's own lead image is NOT used for Kingo or
-     Makkari: both are legacy montages of four incarnations at once, which is
-     a fine encyclopedia illustration and unreadable at tile size.
-
-     Ikaris and Thena keep their film stills. Rashid listed eight. */
-  ajak: "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Ajak_%28Earth-616%29_from_A.X.E._Judgment_Day_Omega_Vol_1_1_001.jpg/revision/latest?cb=20221109185607",
-  druig:
-    "https://static.wikia.nocookie.net/marveldatabase/images/5/59/Druig_%28Earth-616%29_from_Eternals_Vol_5_7_001.jpg/revision/latest?cb=20221006163527",
-  gilgamesh:
-    "https://static.wikia.nocookie.net/marveldatabase/images/d/d9/Gilgamesh_%28Earth-616%29_from_Eternals_Vol_4_5_0001.jpg/revision/latest?cb=20200614194342",
-  kingo:
-    "https://static.wikia.nocookie.net/marveldatabase/images/5/52/Kingo_Sunen_%28Earth-616%29_from_Eternals_Vol_5_2_001.jpg/revision/latest?cb=20210701052422",
-  makkari:
-    "https://static.wikia.nocookie.net/marveldatabase/images/5/5f/Makkari_%28Earth-616%29_from_A.X.E._Judgment_Day_Vol_1_2_001.jpg/revision/latest?cb=20221006174319",
-  phastos:
-    "https://static.wikia.nocookie.net/marveldatabase/images/d/d2/A.X.E._Judgment_Day_Vol_1_6_Men_of_A.X.E._Variant_Texless.jpg/revision/latest?cb=20250419005742",
+     Matched to IKARIS, who is not in this list and must not move: his is the
+     Disney wiki's "- Profile", a clean close-up. Sersi, Ajak and Makkari have
+     one of those too. The other five take the film's own character posters,
+     which are the same kind of shot — tight on the face, no text. */
   sersi:
-    "https://static.wikia.nocookie.net/marveldatabase/images/2/2b/Sersi_%28Earth-616%29_from_Eternals_Vol_5_2_001.jpg/revision/latest?cb=20210701081640",
+    "https://static.wikia.nocookie.net/disney/images/2/27/Sersi_-_Profile.jpg/revision/latest?cb=20220810095305",
+  ajak: "https://static.wikia.nocookie.net/disney/images/3/30/Ajak_-_Profile.jpg/revision/latest?cb=20211028201306",
+  makkari:
+    "https://static.wikia.nocookie.net/disney/images/1/10/Makkari_-_Profile.webp/revision/latest?cb=20220611235508",
+  kingo:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/25/Kingo_Character_Poster.jpg/revision/latest?cb=20231021143730",
+  druig:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/6d/Druig_Character_Poster.jpg/revision/latest?cb=20231021143931",
+  gilgamesh:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/07/Gilgamesh_Character_Poster.jpg/revision/latest?cb=20231021143955",
+  phastos:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/39/Phastos_Character_Poster.jpg/revision/latest?cb=20231021143830",
   sprite:
-    "https://static.wikia.nocookie.net/marveldatabase/images/5/54/Sprite_%28Earth-616%29_from_Eternals_Vol_5_1_001.jpg/revision/latest?cb=20210211062917",
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d8/Sprite_Character_Poster.jpg/revision/latest?cb=20231021143803",
+  /* Thena was on a "First Look" promo and was in neither of Rashid's lists,
+     but a matching Profile exists and she is the last of the ten still off
+     the set. */
+  thena:
+    "https://static.wikia.nocookie.net/disney/images/2/2f/Thena_-_Profile.png/revision/latest?cb=20230115202922",
 
   /* THE FANTASTIC FOUR AS A SET. All four were on the superhero-api renders,
      and the wiki's own lead image is a different artist and crop for each —
