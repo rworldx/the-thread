@@ -210,20 +210,42 @@ const TIERS: Tier[] = [
        * named Celestials — Arishem, Exitar, Tiamut, the Progenitor — are in
        * this tier's head and unaffected.
        */
-      (c.species === "Celestial" && claimScore(c) > 0) ||
-      sp(
-        "Elder God",
-        "Cosmic Being",
-        "Cosmic entity",
-        "Cosmic Force",
-        "Watcher",
-        "Symbiote god",
-        "Psychic Entity",
-      )(c) ||
-      /* The affiliation has to ask the same question the species now asks, or
-         it simply lets the unrisen back in through the other door. */
-      (aff("Cosmic entities", "Celestials")(c) &&
-        (c.species !== "Celestial" || claimScore(c) > 0)),
+      /**
+       * AND THE SAME QUESTION, ASKED HARDER, OF EVERYONE ELSE IN THE TAIL.
+       *
+       * The Celestial gate above asks the record to say SOMETHING. That was
+       * enough to keep Zgreb out and it was never enough for this tier as a
+       * whole, because tier 3 sits above tier 4, and tier 4 is full of people
+       * who rewrite reality. Hoggoth, on a record scoring THIRTY-TWO,
+       * outranked Legion on 346 and Mad Jim Jaspers on 510. An office is not
+       * a power level either.
+       *
+       * So the tail is asked for a COSMIC-SCALE claim rather than a non-zero
+       * one: one word from the reality band, which is what the band is worth.
+       * The sixteen in the head are untouched — a hand-rank always wins — so
+       * Galactus, Knull, Dormammu and the rest keep their places above every
+       * warper, which is the part of the old order worth keeping.
+       *
+       * THE SIX IT STOPS CARRYING FALL TO TIER 5, not tier 4, and land better
+       * than they sat: Oshtur, Agamotto, Hoggoth and Gaea are ELDER GODS, and
+       * tier 5 is "gods, omegas, and the top of the physical scale". The tier
+       * they were in describes a job none of the four holds.
+       */
+      ((c.species === "Celestial" && claimScore(c) > 0) ||
+        sp(
+          "Elder God",
+          "Cosmic Being",
+          "Cosmic entity",
+          "Cosmic Force",
+          "Watcher",
+          "Symbiote god",
+          "Psychic Entity",
+        )(c) ||
+        /* The affiliation has to ask the same question the species now asks,
+           or it simply lets the unrisen back in through the other door. */
+        (aff("Cosmic entities", "Celestials")(c) &&
+          (c.species !== "Celestial" || claimScore(c) > 0))) &&
+      claimScore(c) >= 120,
   },
   {
     n: 4,
@@ -433,6 +455,14 @@ const TIERS: Tier[] = [
       sp(
         "Olympian",
         "Fire demon",
+        /* THE LANDING GROUND FOR THE TIER-3 GATE. Tier 3 spells it "Elder
+           God" and this list spelled it "Elder god", so the four it stops
+           carrying — Gaea, Oshtur, Agamotto, Hoggoth — fell straight past
+           this tier into Alpha class, and Antiphon, who has no magic to catch
+           him, fell to "humans who turn up anyway". Two words, one capital
+           letter, five tiers. */
+        "Elder God",
+        "Cosmic Being",
         /* "ALIEN DRAGON" MOVED TO TIER 7, because it is one character and he
            is Lockheed — a purple dragon the size of a cat who breathes fire
            and follows Kitty Pryde around. The word was doing the job
