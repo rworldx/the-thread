@@ -533,10 +533,24 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human-Kree hybrid",
     powers: [
-      { en: "Energy projection", ar: "إطلاق الطاقة" },
-      { en: "Flight at speed", ar: "طيران فائق السرعة" },
-      { en: "Survives in space", ar: "تحيا في الفضاء" },
-      { en: "Absorbs energy", ar: "امتصاص الطاقة" },
+      {
+        en: "Absorbs any energy and fires it back",
+        ar: "تمتص أي طاقة وتردّها",
+      },
+      { en: "Binary: the power of a white hole", ar: "بايناري: قوة ثقب أبيض" },
+      {
+        en: "Strength and durability past human",
+        ar: "قوة وصلابة تفوقان البشر",
+      },
+      {
+        en: "Flight at speed, and through space",
+        ar: "طيران سريع، وعبر الفضاء",
+      },
+      { en: "A seventh sense for what is coming", ar: "حاسة سابعة لما هو آتٍ" },
+      {
+        en: "Kree physiology under all of it",
+        ar: "فسيولوجيا كري تحت ذلك كله",
+      },
     ],
     origin: {
       en: "A test pilot caught in the blast of an engine she was trying to protect. She wakes up somewhere else entirely, with someone else's story about who she is.",
@@ -6160,10 +6174,29 @@ const thunderbolts: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "The power of a million suns", ar: "قوة مليون شمس" },
-      { en: "Flight", ar: "طيران" },
-      { en: "Reshapes matter", ar: "يعيد تشكيل المادة" },
-      { en: "The Void", ar: "الفراغ" },
+      /* THE SUPERMAN-SHAPED BAND, which Rashid grouped correctly: Sentry,
+         Hyperion, Gladiator, Beta Ray Bill, Blue Marvel, Quasar, Nova, Captain
+         Marvel and Ikaris are one silhouette — fly, hit, shrug it off, project
+         energy. Six of the nine still had three or four bullets, which is why
+         their order looked arbitrary: the scorer was ranking prose length. */
+      {
+        en: "The power of a million exploding suns",
+        ar: "قوة مليون شمس تنفجر",
+      },
+      { en: "Molecular manipulation, and flight", ar: "تحكم جزيئي، وطيران" },
+      {
+        en: "Nearly invulnerable, and heals from it",
+        ar: "شبه منيع، ويشفى مما يصيبه",
+      },
+      {
+        en: "Telepathy strong enough to erase himself",
+        ar: "تخاطر يكفي ليمحو نفسه",
+      },
+      {
+        en: "Traded blows with the Hulk and Thor",
+        ar: "تبادل الضربات مع هَلك وثور",
+      },
+      { en: "The Void is the same man", ar: "الفراغ هو الرجل نفسه" },
     ],
     origin: {
       en: "A man given more power than anyone has held, who came with a shadow attached: the Void, which is the same person and wants the opposite thing. His story is a depression written as a superpower.",
@@ -7094,9 +7127,15 @@ const others: CharacterDraft[] = [
     /* NOT Human. The Nova Force is worn, but it rewrites what the body can do. A man flying at light speed is not in the ordinary-humans chip. */
     species: "Enhanced human",
     powers: [
-      { en: "The Nova Force", ar: "قوة نوفا" },
-      { en: "Flight at light speed", ar: "طيران بسرعة الضوء" },
-      { en: "Gravity manipulation", ar: "تحكّم في الجاذبية" },
+      { en: "The entire Nova Force, alone", ar: "قوة نوفا كاملة، وحده" },
+      { en: "Strength and durability past a god", ar: "قوة وصلابة تفوق إلهًا" },
+      { en: "Flight faster than light", ar: "طيران أسرع من الضوء" },
+      {
+        en: "Gravity manipulation, and energy blasts",
+        ar: "تحكم بالجاذبية، وطلقات طاقة",
+      },
+      { en: "Carried the Worldmind in his head", ar: "حمل عقل العالم في رأسه" },
+      { en: "Held the line at the Fault, alone", ar: "صمد عند الصدع وحده" },
     ],
     origin: {
       en: "A teenager from Queens handed the power of a dying alien officer at random. When the Corps is later wiped out he is the last one left holding all of it, which is a very different job.",
@@ -10433,9 +10472,21 @@ const cosmicBeings: CharacterDraft[] = [
     /* NOT an ordinary human. The Quantum Bands make him Protector of the Universe. */
     species: "Enhanced human",
     powers: [
-      { en: "Wears the Quantum Bands", ar: "يرتدي أساور الكم" },
-      { en: "Protector of the Universe", ar: "حامي الكون" },
-      { en: "Builds anything from light", ar: "يبني أي شيء من الضوء" },
+      {
+        en: "The Quantum Bands, and the Quantum Zone",
+        ar: "أساور الكم، ومنطقة الكم",
+      },
+      { en: "Builds anything at all out of light", ar: "يبني أي شيء من الضوء" },
+      { en: "Absorbs energy and returns it", ar: "يمتص الطاقة ويردّها" },
+      {
+        en: "Flight at light speed, and through space",
+        ar: "طيران بسرعة الضوء وعبر الفضاء",
+      },
+      {
+        en: "Protector of the Universe, by appointment",
+        ar: "حامي الكون، بالتعيين",
+      },
+      { en: "Shields nothing has broken through", ar: "دروع لم يخترقها شيء" },
     ],
     origin: {
       en: "A security guard who washed out of every field programme he tried, handed a pair of alien wristbands nobody else had survived wearing. He lived because he stopped trying to force them and simply asked.",
@@ -12606,9 +12657,24 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Strontian",
     powers: [
-      { en: "Strength that scales with belief", ar: "قوة تكبر بيقينه" },
-      { en: "Leads the Imperial Guard", ar: "يقود الحرس الإمبراطوري" },
-      { en: "Loyal past his own judgement", ar: "وفيّ فوق حكمه الخاص" },
+      {
+        en: "Strength that scales with his conviction",
+        ar: "قوة تتناسب مع يقينه",
+      },
+      {
+        en: "Heat vision, and breath that freezes",
+        ar: "رؤية حارقة، وأنفاس تجمّد",
+      },
+      { en: "Flight faster than light", ar: "طيران أسرع من الضوء" },
+      {
+        en: "Nearly invulnerable while he believes",
+        ar: "شبه منيع ما دام يؤمن",
+      },
+      {
+        en: "Has traded blows with Thor and the Hulk",
+        ar: "تبادل الضربات مع ثور وهَلك",
+      },
+      { en: "Praetor of the Imperial Guard", ar: "بريتور الحرس الإمبراطوري" },
     ],
     origin: {
       en: "The commander of the Shi'ar Imperial Guard, whose strength rises and falls with his own conviction, and who has carried out orders he disagreed with because the empire asked.",
@@ -12681,9 +12747,24 @@ const heralds: CharacterDraft[] = [
     /* NOT an ordinary human. An antimatter reactor where a body should be. */
     species: "Enhanced human",
     powers: [
-      { en: "Antimatter reactor for a body", ar: "جسد كمفاعل مضاد للمادة" },
-      { en: "A physicist first", ar: "فيزيائي قبل كل شيء" },
-      { en: "Retired for the wrong reason", ar: "اعتزل لسبب خاطئ" },
+      {
+        en: "An antimatter reactor for a body",
+        ar: "مفاعل مادة مضادة عوضًا عن جسد",
+      },
+      {
+        en: "Strength that traded with the Sentry",
+        ar: "قوة بادلت سنتري الضربات",
+      },
+      {
+        en: "Manipulates energy and matter alike",
+        ar: "يتحكم بالطاقة والمادة سواء",
+      },
+      { en: "Flight, and nearly invulnerable", ar: "طيران، وشبه منيع" },
+      {
+        en: "One of the finest physicists alive",
+        ar: "من أبرع الفيزيائيين أحياءً",
+      },
+      { en: "Retired for the wrong reason", ar: "اعتزل لسبب غير وجيه" },
     ],
     origin: {
       en: "A scientist who became one of the most powerful beings on Earth in the early sixties and was quietly asked to retire when the country found out he was black. He came back decades later.",

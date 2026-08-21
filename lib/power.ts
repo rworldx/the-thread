@@ -332,6 +332,21 @@ const TIERS: Tier[] = [
       "thanos",
       "hela",
       "thor",
+      /**
+       * ADAM WARLOCK MOVED UP FOURTEEN, from 120th, where he sat below
+       * Gladiator, Iceman and Quentin Quire. He carries an INFINITY STONE in
+       * his forehead, casts quantum magic without needing it, resists having
+       * reality and time bent around him, and returns from every death
+       * stronger than he went in. He has briefly worn the Gauntlet.
+       *
+       * He scores 370, the highest number in this tier, and the hand-rank was
+       * the only thing holding him down — written when his record read
+       * "Quantum magic / Flight / Reborn from a cocoon" and scored 30.
+       *
+       * Below Thor and Thanos, above Hercules and the Hulk: the Soul Gem
+       * takes what a punch cannot reach.
+       */
+      "adam-warlock",
       /* HERCULES WAS UNRANKED and therefore placed by score, which landed him
          132nd — below all eight Heralds of Galactus and below Hyperion, on a
          record that says "Strength to match Thor" twenty-six places under
@@ -391,13 +406,32 @@ const TIERS: Tier[] = [
          he kept Banner's intelligence. Below Banner rather than above only
          because Banner beat him in the story that introduced him. */
       "maestro",
+      /**
+       * THE SUPERMAN-SHAPED BAND MOVES ABOVE THE OMEGAS, which is the same
+       * correction the Hulk already got and for the same stated reason. This
+       * file's line on the omega list is that it is not a fight ranking:
+       * "Iceman is omega and Wolverine is beta, and nobody thinks Iceman wins
+       * that fight." Beta Ray Bill fights Thor to a draw and was ranked below
+       * Hope Summers. Gladiator has traded blows with Thor and the Hulk and
+       * was below Quentin Quire, a teenage telepath.
+       *
+       * Bill first: he is Thor's equal and carries Stormbreaker. Hyperion is
+       * the strength of a small sun. Gladiator is as strong as he is certain.
+       * Then the three whose power is worn rather than born, in the order of
+       * what they wear: an antimatter reactor, the Quantum Bands, the whole
+       * Nova Force.
+       */
+      "beta-ray-bill",
+      "hyperion",
+      "gladiator",
+      "blue-marvel",
+      "quasar",
+      "richard-rider",
       "iceman",
       "vulcan",
       "exodus",
       "quentin-quire",
       "hope-summers",
-      "beta-ray-bill",
-      "gladiator",
       /**
        * COSMIC POWER WORN BY A HUMAN BODY, which "Enhanced human" and
        * "Artificial being" describe about as well as "mammal" describes a
@@ -409,11 +443,6 @@ const TIERS: Tier[] = [
        * Nova Force and the Worldmind, and Sam's own record says the helmet
        * does most of it.
        */
-      "adam-warlock",
-      "quasar",
-      "richard-rider",
-      "blue-marvel",
-      "hyperion",
     ],
     match: (c) =>
       /**
