@@ -574,7 +574,11 @@ const TIERS: Tier[] = [
         "Asgardian",
         "Frost Giant",
         /* "Eternal" is gated below, with the Elders and Inhumans. */
-        "Titan",
+        /* "Titan" IS GONE, and nobody lost a tier by it. It was carrying six
+           records: Thanos and Starfox, who are Eternals OF Titan and are
+           filed that way now, and the four of the Black Order, who are not
+           Titanians at all and never were. A homeworld is not a species and
+           was doing the work of one. */
         "Demon",
         "Witch",
         "Faltine",
@@ -1143,7 +1147,15 @@ const SCALE: [RegExp, number][] = [
    * and "Leads Talokan's warriors", which are rosters, not fighting.
    * ascii-ok: English `powers[].en` only.
    */
-  [/\b(unmatched|greatest|deadliest|peerless|finest)\b/i, 14],
+  /* `strongest`, `toughest` and `fastest` belong with `greatest` and
+     `finest` and were simply missing. Cull Obsidian's own record says "The
+     strongest of the Black Order" and he was ranking LAST of the four;
+     Gilgamesh says "The strongest Eternal" and was paid nothing for it.
+     ascii-ok: English `powers[].en` only. */
+  [
+    /\b(unmatched|greatest|deadliest|peerless|finest|strongest|toughest|fastest)\b/i,
+    14,
+  ],
   /* Training and equipment. ascii-ok: English only. */
   [
     /\b(sword|blade|marksman|master|expert|trained|tactic|genius|strateg|armour|armor|suit|gun|bow|training|weapons?|arsenal|combat|spear|staff|axe|hammer|shield|knife|sai|fists|chains|soldier|marine|military|sniper|assassin|agent|espionage|intelligence|physicist|scientist|engineer|inventor|brilliant|surgeon|doctor|cia\b|operative|counter terror|pilot|deputy director)/i,

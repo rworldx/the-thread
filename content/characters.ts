@@ -2135,7 +2135,7 @@ const villains: CharacterDraft[] = [
     category: "antivillain",
     affiliation: ["Titans"],
     universe: ["mcu"],
-    species: "Titan",
+    species: "Eternal",
     powers: [
       { en: "Enormous strength", ar: "قوة هائلة" },
       { en: "Near-invulnerable", ar: "يكاد لا يُجرَح" },
@@ -4247,10 +4247,24 @@ const ensemble: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Black Order"],
     universe: ["mcu"],
-    species: "Titan",
+    species: "Alien",
     powers: [
-      { en: "Telekinesis", ar: "تحريك الأشياء بالعقل" },
-      { en: "Persuasion", ar: "إقناع" },
+      /* THE BLACK ORDER WERE FILED AS `Titan`, which is Thanos's homeworld and
+         not their species — four different aliens who work for one man. Fixing
+         that dropped all four into tier 7, where the gloss actually describes
+         them, and exposed what the wrong species had been hiding: two-bullet
+         records. Ebony Maw had "Telekinesis / Persuasion" and scored 14. */
+      {
+        en: "Takes a mind with his voice alone",
+        ar: "يستولي على العقل بصوته وحده",
+      },
+      { en: "Telekinesis that lifts a building", ar: "تحريك ذهني يرفع مبنى" },
+      {
+        en: "Tore Doctor Strange out of his sanctum",
+        ar: "انتزع دكتور سترينج من معبده",
+      },
+      { en: "The cleverest of the four", ar: "أذكى الأربعة" },
+      { en: "And the weakest of them, physically", ar: "وأضعفهم جسديًا" },
     ],
     origin: {
       en: "The Black Order's speaker: the one who arrives first, explains why resistance is beneath everyone, and means it.",
@@ -4269,10 +4283,22 @@ const ensemble: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Black Order"],
     universe: ["mcu"],
-    species: "Titan",
+    species: "Alien",
     powers: [
-      { en: "The midnight spear", ar: "رمح منتصف الليل" },
-      { en: "Combat training", ar: "تدريب قتالي" },
+      { en: "A spear forged from a dying star", ar: "رمح صيغ من نجم يحتضر" },
+      {
+        en: "It never misses, and the wound is fatal",
+        ar: "لا يخطئ، والجرح قاتل",
+      },
+      {
+        en: "Superhuman strength, speed and durability",
+        ar: "قوة وسرعة وصلابة خارقة",
+      },
+      {
+        en: "The finest fighter of the four",
+        ar: "أمهر المقاتلين بين الأربعة",
+      },
+      { en: "Corvus Glaive's wife", ar: "زوجة كورفوس غليف" },
     ],
     origin: {
       en: "One of Thanos's adopted children and the Black Order's best fighter, carrying a spear that tracks what it is thrown at.",
@@ -4291,10 +4317,16 @@ const ensemble: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Black Order"],
     universe: ["mcu"],
-    species: "Titan",
+    species: "Alien",
     powers: [
-      { en: "A blade that cuts anything", ar: "نصل يقطع كل شيء" },
-      { en: "Enhanced strength", ar: "قوة معزّزة" },
+      { en: "A blade that cuts anything at all", ar: "نصل يقطع أي شيء كان" },
+      {
+        en: "Cannot die while the blade is whole",
+        ar: "لا يموت ما دام النصل سليمًا",
+      },
+      { en: "Comes back every time it is", ar: "يعود في كل مرة يبقى فيها" },
+      { en: "Superhuman strength and speed", ar: "قوة وسرعة خارقتان" },
+      { en: "Thanos's second, and the cruellest", ar: "ساعد ثانوس، وأقساهم" },
     ],
     origin: {
       en: "Thanos's most loyal adopted son, and the one carrying the weapon that made the others stop arguing.",
@@ -4313,10 +4345,25 @@ const ensemble: CharacterDraft[] = [
     category: "villain",
     affiliation: ["Black Order"],
     universe: ["mcu"],
-    species: "Titan",
+    species: "Alien",
     powers: [
-      { en: "Enormous strength", ar: "قوة هائلة" },
-      { en: "Near-invulnerable", ar: "يكاد لا يُجرَح" },
+      {
+        en: "The strongest of the Black Order",
+        ar: "أقوى أفراد النظام الأسود",
+      },
+      {
+        en: "Skin that shrugs off almost anything",
+        ar: "جلد يصدّ كل شيء تقريبًا",
+      },
+      {
+        en: "A hammer on a chain, and a blade arm",
+        ar: "مطرقة بسلسلة وذراع نصلية",
+      },
+      { en: "Enormous strength and durability", ar: "قوة وصلابة هائلتان" },
+      {
+        en: "Needed a Hulkbuster to put down",
+        ar: "لزم درع هَلك باستر لإسقاطه",
+      },
     ],
     origin: {
       en: "The Black Order's largest member, brought along for the parts of a conquest that do not require a conversation.",
@@ -7247,11 +7294,28 @@ const others: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Titans"],
     universe: ["mcu", "legacy"],
-    species: "Titan",
+    species: "Eternal",
     powers: [
-      { en: "Stimulates pleasure in others", ar: "يثير السرور في الآخرين" },
-      { en: "Flight", ar: "طيران" },
-      { en: "Eternal of Titan", ar: "أزليّ من تيتان" },
+      /* Filed as `species: "Titan"` with a bullet that read "Eternal of Titan",
+         which Rashid spotted. Titan is where he is from; Eternal is what he
+         is, and Marvel says so in the same sentence it says it of Thanos. */
+      {
+        en: "Stimulates pleasure and stills a fight",
+        ar: "يثير المتعة ويخمد قتالًا",
+      },
+      {
+        en: "Bends what anyone feels toward him",
+        ar: "يثني مشاعر أي أحد نحوه",
+      },
+      {
+        en: "Eternal strength and near-immortality",
+        ar: "قوة أزلية وشبه خلود",
+      },
+      { en: "Flight, and cosmic energy with it", ar: "طيران، ومعه طاقة كونية" },
+      {
+        en: "Thanos's brother, and nothing like him",
+        ar: "أخو ثانوس، ولا يشبهه",
+      },
     ],
     origin: {
       en: "Thanos's brother, and as light as Thanos is heavy: an Eternal of Titan who can make anyone feel better about anything, which the comics have spent decades treating as charming and then as a serious problem.",
@@ -13845,9 +13909,24 @@ const powerList: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Thanos's son", ar: "ابن ثانوس" },
-      { en: "One hand kills, one imprisons", ar: "يد تقتل ويد تسجن" },
-      { en: "Grew up healing people", ar: "نشأ يداوي الناس" },
+      { en: "One hand kills whatever it touches", ar: "يد تقتل كل ما تلمسه" },
+      {
+        en: "The other seals a victim in living death",
+        ar: "والأخرى تحبس ضحيتها في موت حيّ",
+      },
+      {
+        en: "Half Inhuman, half Eternal of Titan",
+        ar: "نصفه إنهيوماني ونصفه أزلي من تيتان",
+      },
+      {
+        en: "Terrigenesis woke both halves at once",
+        ar: "أيقظت التيرايجينيسيس نصفيه معًا",
+      },
+      {
+        en: "Grew up healing people, before that",
+        ar: "نشأ يداوي الناس قبل ذلك",
+      },
+      { en: "Thanos's son, and hidden from him", ar: "ابن ثانوس، وأُخفي عنه" },
     ],
     origin: {
       en: "Thanos's son by an Inhuman, who spent his life as a healer in a hidden city before his father came looking. One of his hands kills and the other seals a person in amber.",
