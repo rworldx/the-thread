@@ -60,6 +60,15 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  /* Rashid supplied two. This is the higher-resolution one at 1988x2933 --
+     the Maker in the helmet with the machine's red eyes behind him. The other
+     was 640x1524, too narrow to crop to a tile without losing the face.
+
+     A reddit preview URL carries a signature parameter, so it is likelier to
+     rot than a wiki upload. `npm run verify:assets` in CI is what will notice
+     if it does. */
+  "the-maker":
+    "https://preview.redd.it/what-is-your-opinion-on-the-maker-is-he-a-compelling-and-v0-1s6rqf92bayc1.jpeg?auto=webp&s=1b1ef94b3af8f9615376e4ad9c73bcbbf3fe86de",
   maestro:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/aa/Maestro_Future_Imperfect_-_Marvel_Tales_Vol_1_1_Virgin_Variant.jpg/revision/latest?cb=20200924140549",
   /* FOUR RECORDS OFF ONE PANEL. Oshtur, Agamotto, Hoggoth and the Vishanti
@@ -146,8 +155,6 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/4/42/Elihas_Starr_%28Earth-616%29_from_Ant-Man_Annual_Vol_1_1_001.jpg/revision/latest?cb=20150723192140",
   enchantress:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/Immortal_Thor_Vol_1_17_Go_Variant_Textless.jpg/revision/latest?cb=20241123063641",
-  "the-maker":
-    "https://static.wikia.nocookie.net/marveldatabase/images/2/2a/Reed_Richards_%28Earth-1610%29_from_Ultimate_Invasion_Vol_1_1_002.jpg/revision/latest?cb=20231028231324",
   songbird:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/50/Thunderbolts_Doomstrike_Vol_1_1_Tao_Virgin_Variant.jpg/revision/latest?cb=20250221195650",
   rhino:
