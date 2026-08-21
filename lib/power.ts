@@ -1153,7 +1153,7 @@ const SCALE: [RegExp, number][] = [
      Gilgamesh says "The strongest Eternal" and was paid nothing for it.
      ascii-ok: English `powers[].en` only. */
   [
-    /\b(unmatched|greatest|deadliest|peerless|finest|strongest|toughest|fastest)\b/i,
+    /\b(unmatched|greatest|deadliest|peerless|finest|strongest|toughest|fastest|most powerful|mightiest)\b/i,
     14,
   ],
   /* Training and equipment. ascii-ok: English only. */

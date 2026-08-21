@@ -2137,9 +2137,31 @@ const villains: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Enormous strength", ar: "قوة هائلة" },
-      { en: "Near-invulnerable", ar: "يكاد لا يُجرَح" },
-      { en: "Strategist", ar: "استراتيجي" },
+      /* THREE BULLETS FOR THE MAD TITAN, and one of them was "Strategist".
+         The species line is the answer to Rashid's second question: he IS an
+         Eternal of Titan. He looks nothing like Ikaris because he carries the
+         Deviant gene, which is a fact about his face and not his species. */
+      {
+        en: "Strength enough to trade with the Hulk",
+        ar: "قوة تكفي لمبادلة هَلك الضربات",
+      },
+      {
+        en: "Near-invulnerable, and heals from it",
+        ar: "شبه منيع، ويشفى مما يصيبه",
+      },
+      { en: "Cosmic energy blasts", ar: "طلقات طاقة كونية" },
+      {
+        en: "The finest strategist alive",
+        ar: "أمهر استراتيجي على قيد الحياة",
+      },
+      {
+        en: "An Eternal of Titan, with Deviant blood",
+        ar: "أزليّ من تيتان، بدم منحرف",
+      },
+      {
+        en: "Deathless, by Death's own curse",
+        ar: "لا يموت، بلعنة الموت نفسها",
+      },
     ],
     origin: {
       en: "The last of a world that ran out of everything, who reached one conclusion about why and has spent his life applying it to every other world he finds.",
@@ -5489,9 +5511,23 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Flight", ar: "طيران" },
+      /* NINE OF THE TEN HAD TWO BULLETS. They were gated, re-imaged and
+         re-speciesed across three days and nobody wrote down what they do.
+         Every Eternal has the same base -- cosmic energy, near-immortality,
+         strength and durability well past human -- and a specialty on top,
+         which is the shape the Celestials needed too. */
       { en: "Cosmic beams from the eyes", ar: "أشعة كونية من العينين" },
-      { en: "Near invulnerability", ar: "شبه منيع" },
+      { en: "Flight at enormous speed", ar: "طيران بسرعة هائلة" },
+      { en: "Near-invulnerable, and near-immortal", ar: "شبه منيع، وشبه خالد" },
+      {
+        en: "Strength and durability past any human",
+        ar: "قوة وصلابة تفوق أي بشري",
+      },
+      { en: "The most powerful of the ten", ar: "الأقوى بين العشرة" },
+      {
+        en: "Strong enough to kill his own kind",
+        ar: "قوي بما يكفي لقتل بني جنسه",
+      },
     ],
     origin: {
       en: "The strongest of the ten and the one who believes hardest in the mission. When the mission turns out to be what it is, he does not stop believing, and that is the whole tragedy of him.",
@@ -5513,8 +5549,17 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Transmutes matter by touch", ar: "تحوّل المادة باللمس" },
-      { en: "Millennia of practice", ar: "خبرة آلاف السنين" },
+      { en: "Transmutes any matter she touches", ar: "تحوّل أي مادة تلمسها" },
+      {
+        en: "Turns rock to water, or a bus to petals",
+        ar: "تقلب الصخر ماءً والحافلة بتلات",
+      },
+      {
+        en: "Cosmic energy, and millennia of practice",
+        ar: "طاقة كونية وآلاف السنين من التمرّس",
+      },
+      { en: "Near-immortal", ar: "شبه خالدة" },
+      { en: "Took the Uni-Mind from Ajak", ar: "أخذت العقل الموحّد من آجاك" },
     ],
     origin: {
       en: "The Eternal who liked humans most and lived among them longest, which is why the decision at the end falls to her rather than to the strongest one.",
@@ -5535,8 +5580,23 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Forms any weapon from energy", ar: "تصوغ أي سلاح من الطاقة" },
-      { en: "Unmatched as a fighter", ar: "لا تُبارى في القتال" },
+      {
+        en: "Forms any weapon out of cosmic energy",
+        ar: "تشكّل أي سلاح من طاقة كونية",
+      },
+      {
+        en: "Unmatched as a fighter, over millennia",
+        ar: "لا تُبارى قتالًا عبر آلاف السنين",
+      },
+      {
+        en: "Strength and durability past any human",
+        ar: "قوة وصلابة تفوق أي بشري",
+      },
+      { en: "Near-immortal, and heals fast", ar: "شبه خالدة، وتشفى سريعًا" },
+      {
+        en: "Mahd Wy'ry: the memories come back wrong",
+        ar: "ماد وايري: الذكريات تعود مشوّهة",
+      },
     ],
     origin: {
       en: "The team's warrior, carrying thousands of years of memory that will not stay in order. The film treats that as an illness rather than a plot device, and Gilgamesh is the one who stays.",
@@ -5557,8 +5617,11 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Healing", ar: "شفاء" },
-      { en: "Speaks to the Celestials", ar: "تحادث السماويين" },
+      { en: "Heals any wound, on anyone", ar: "تشفي أي جرح لأي أحد" },
+      { en: "The only one who hears Arishem", ar: "الوحيدة التي تسمع أريشِم" },
+      { en: "Cosmic energy, like the rest of them", ar: "طاقة كونية، كسائرهم" },
+      { en: "Near-immortal", ar: "شبه خالدة" },
+      { en: "Leads the ten, and chose wrong", ar: "تقود العشرة، واختارت خطأ" },
     ],
     origin: {
       en: "The leader, and the only one Arishem talks to directly. That channel is the reason she learns the truth first, and the reason knowing it is dangerous.",
@@ -5579,7 +5642,19 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Projectiles of cosmic energy", ar: "قذائف من طاقة كونية" },
+      {
+        en: "Cosmic energy fired from his hands",
+        ar: "طاقة كونية تنطلق من يديه",
+      },
+      {
+        en: "Bolts that punch through most things",
+        ar: "قذائف تخترق معظم الأشياء",
+      },
+      {
+        en: "Strength and durability past any human",
+        ar: "قوة وصلابة تفوق أي بشري",
+      },
+      { en: "Near-immortal", ar: "شبه خالد" },
       { en: "A very long film career", ar: "مسيرة سينمائية طويلة جدًا" },
     ],
     origin: {
@@ -5598,8 +5673,17 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Illusions of anything", ar: "أوهام لأي شيء" },
-      { en: "Frozen as a child", ar: "متجمّدة في هيئة طفلة" },
+      { en: "Illusions of anything at all", ar: "أوهام لأي شيء كان" },
+      { en: "A whole crowd sees what she wants", ar: "حشد كامل يرى ما تريد" },
+      { en: "Cosmic energy, like the rest of them", ar: "طاقة كونية، كسائرهم" },
+      {
+        en: "Near-immortal, and frozen as a child",
+        ar: "شبه خالدة، ومجمّدة طفلة",
+      },
+      {
+        en: "The one thing she cannot change",
+        ar: "الشيء الوحيد الذي لا تستطيع تغييره",
+      },
     ],
     origin: {
       en: "Seven thousand years old and stuck looking twelve, watching everyone she has ever met grow up without her. Her grievance is the most understandable one in the film.",
@@ -5617,8 +5701,20 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Invents any machine", ar: "يخترع أي آلة" },
-      { en: "Weapons from raw cosmic energy", ar: "أسلحة من طاقة كونية خام" },
+      { en: "Invents any machine at all", ar: "يخترع أي آلة كانت" },
+      {
+        en: "Builds weapons from raw cosmic energy",
+        ar: "يصنع أسلحة من طاقة كونية خام",
+      },
+      {
+        en: "Every human advance has his hand in it",
+        ar: "لكل تقدّم بشري أثر من يده",
+      },
+      {
+        en: "Strength and durability past any human",
+        ar: "قوة وصلابة تفوق أي بشري",
+      },
+      { en: "Near-immortal", ar: "شبه خالد" },
     ],
     origin: {
       en: "The inventor, who gave humanity most of its technology and then watched what it built with it. He quits over Hiroshima, and the film lets him be right.",
@@ -5636,8 +5732,17 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Super speed", ar: "سرعة خارقة" },
-      { en: "Reads faster than anyone alive", ar: "تقرأ أسرع من أي حيّ" },
+      { en: "The fastest thing on the planet", ar: "أسرع ما على الكوكب" },
+      {
+        en: "Moves far past the speed of sound",
+        ar: "تتحرك أسرع من الصوت بكثير",
+      },
+      { en: "Shockwaves from a single step", ar: "موجات صدم من خطوة واحدة" },
+      { en: "Near-immortal", ar: "شبه خالدة" },
+      {
+        en: "Deaf, and reads faster than anyone",
+        ar: "صمّاء، وتقرأ أسرع من الجميع",
+      },
     ],
     origin: {
       en: "The fastest of them, and the first deaf superhero to lead a scene in a Marvel film: the speed and the silence are shot as one idea rather than two.",
@@ -5655,8 +5760,14 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Controls minds", ar: "يتحكّم في العقول" },
-      { en: "Can stop a war with a word", ar: "يوقف حربًا بكلمة" },
+      { en: "Controls minds outright", ar: "يسيطر على العقول تمامًا" },
+      { en: "Stops a war with a word", ar: "يوقف حربًا بكلمة" },
+      {
+        en: "Held a whole city for centuries",
+        ar: "أمسك مدينة بأكملها قرونًا",
+      },
+      { en: "Cosmic energy, like the rest of them", ar: "طاقة كونية، كسائرهم" },
+      { en: "Near-immortal", ar: "شبه خالد" },
     ],
     origin: {
       en: "Able to end any human conflict instantly and forbidden to, for thousands of years, by a rule he did not agree to. He walks away and builds a village where he does it anyway.",
@@ -5674,8 +5785,14 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "The strongest Eternal", ar: "أقوى الأزليين" },
-      { en: "Cosmic exoskeleton", ar: "هيكل كوني خارجي" },
+      { en: "The strongest Eternal there is", ar: "أقوى الأزليين على الإطلاق" },
+      { en: "Cosmic energy forged into armour", ar: "طاقة كونية تُصاغ درعًا" },
+      { en: "Fists that break what they hit", ar: "قبضتان تحطمان ما تصيبانه" },
+      { en: "Near-immortal, and hard to hurt", ar: "شبه خالد، ويصعب إيذاؤه" },
+      {
+        en: "Kept Thena from herself for centuries",
+        ar: "حمى ثينا من نفسها قرونًا",
+      },
     ],
     origin: {
       en: "Physically the strongest of the ten, and the one who chose to spend centuries in exile looking after Thena rather than being anywhere more important.",
@@ -12138,9 +12255,19 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Strength of a small sun", ar: "قوة شمس صغيرة" },
-      { en: "Eyes that burn through", ar: "عينان تحرقان ما تنظران" },
-      { en: "The last of his Earth", ar: "آخر أهل أرضه" },
+      /* Three bullets, and he is the one Eternal here who is not from these
+         Eternals at all: Marvel files him as an Eternal of a doomed world in
+         another universe, which is why he keeps looking out of place beside
+         Ikaris. */
+      { en: "The strength of a small sun", ar: "قوة شمس صغيرة" },
+      { en: "Eyes that burn through anything", ar: "عينان تحرقان أي شيء" },
+      { en: "Flight, and speed to match", ar: "طيران وسرعة توازيه" },
+      { en: "Nearly invulnerable", ar: "شبه منيع" },
+      {
+        en: "Absorbs cosmic radiation to fuel it",
+        ar: "يمتص الإشعاع الكوني ليتغذى",
+      },
+      { en: "The last of his Earth", ar: "آخر من بقي من أرضه" },
     ],
     origin: {
       en: "The strongest man from a world that no longer exists, who survived its ending and now lives on this one trying to be of use to a planet that is not the one he failed.",
