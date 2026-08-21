@@ -254,7 +254,6 @@
       "kree": "الكري",
       "skrull": "السكرال",
       "shiar": "الشيعار",
-      "clandestine": "كلانديستين",
       "magic-eldritch": "إلدرتش",
       "magic-asgardian": "أسغاردي",
       "magic-chaos": "الفوضى",
@@ -273,7 +272,8 @@
       "talokanil": "التالوكانيون",
       "new-warriors": "المحاربون الجدد",
       "spider-mans-team": "فريق سبايدر-مان",
-      "original-six": "الستة الأوائل"
+      "original-six": "الستة الأوائل",
+      "black-order": "النظام الأسود"
     },
     "appearsIn": "يظهر في",
     "appearanceCount": "{n, plural, zero {لا عناوين} one {عنوان واحد} two {عنوانان} few {# عناوين} many {# عنوانًا} other {# عنوان}}",

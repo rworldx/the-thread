@@ -60,6 +60,11 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  /* The wiki's lead for her is the Infinity #1 Generals variant -- a group
+     shot of the whole Black Order, which would have recreated the
+     four-records-off-one-panel problem fixed two commits ago. This is solo. */
+  supergiant:
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/7e/Supergiant_%28Earth-616%29_from_Marvel_War_of_Heroes_001.jpg/revision/latest?cb=20140305022027",
   /* Rashid supplied two. This is the higher-resolution one at 1988x2933 --
      the Maker in the helmet with the machine's red eyes behind him. The other
      was 640x1524, too narrow to crop to a tile without losing the face.

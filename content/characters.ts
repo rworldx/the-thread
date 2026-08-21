@@ -4276,6 +4276,43 @@ const ensemble: CharacterDraft[] = [
     ],
   },
   {
+    id: "supergiant",
+    nameEn: "Supergiant",
+    nameAr: "سوبرجاينت",
+    aliases: ["Supergiant"],
+    category: "villain",
+    affiliation: ["Black Order"],
+    universe: ["mcu"],
+    /* Alien, like the rest of the Order and unlike what the corpus used to
+       say: Titan is Thanos's homeworld, not the species of the people who
+       work for him. */
+    species: "Alien",
+    powers: [
+      { en: "Possesses any mind she reaches", ar: "تتلبّس أي عقل تبلغه" },
+      { en: "Devours the intellect she takes", ar: "تلتهم العقل الذي تأخذه" },
+      {
+        en: "Turns the strongest minds on their own",
+        ar: "تقلب أقوى العقول على أصحابها",
+      },
+      {
+        en: "Controls matter as well as minds",
+        ar: "تتحكم بالمادة كما بالعقول",
+      },
+      {
+        en: "A mental vampire, and unstable with it",
+        ar: "مصاصة عقول، وغير مستقرة معها",
+      },
+      {
+        en: "No strength to speak of, without a host",
+        ar: "لا قوة تُذكر لها بلا حامل",
+      },
+    ],
+    origin: {
+      en: "The fifth of the Black Order, a mental parasite who wears other people's minds until there is nothing left of them to use. She was drawn for Infinity War and cut before shooting, and most of what she does was handed to Ebony Maw, which is why the film's four can feel like five.",
+      ar: "خامسة النظام الأسود، طفيلية ذهنية ترتدي عقول الآخرين حتى لا يبقى فيها ما يُستعمل. رُسمت لأجل حرب اللانهاية وحُذفت قبل التصوير، وأُسند معظم ما تفعله إلى إيبوني ماو، ولهذا قد يبدو رباعي الفيلم خماسيًا.",
+    },
+  },
+  {
     id: "proxima-midnight",
     nameEn: "Proxima Midnight",
     nameAr: "بروكسيما ميدنايت",

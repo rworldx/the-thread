@@ -254,7 +254,6 @@
       "kree": "Kree",
       "skrull": "Skrull",
       "shiar": "Shi'ar",
-      "clandestine": "ClanDestine",
       "magic-eldritch": "Eldritch",
       "magic-asgardian": "Asgardian",
       "magic-chaos": "Chaos",
@@ -273,7 +272,8 @@
       "talokanil": "Talokanil",
       "new-warriors": "New Warriors",
       "spider-mans-team": "Spider-Man's Team",
-      "original-six": "The Original Six"
+      "original-six": "The Original Six",
+      "black-order": "Black Order"
     },
     "appearsIn": "Appears in",
     "appearanceCount": "{n, plural, one {# title} other {# titles}}",

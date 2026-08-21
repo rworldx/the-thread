@@ -76,8 +76,14 @@ export interface CharacterCard {
  * chip said 13 when the corpus held 38.
  */
 type Rule = (c: CharacterCard) => boolean;
-const aff = (name: string): Rule => (c) => c.affiliation.includes(name);
-const is = (...names: string[]): Rule => (c) => c.species !== null && names.includes(c.species);
+const aff =
+  (name: string): Rule =>
+  (c) =>
+    c.affiliation.includes(name);
+const is =
+  (...names: string[]): Rule =>
+  (c) =>
+    c.species !== null && names.includes(c.species);
 
 /**
  * A CHIP CAN HAVE A PARENT, and children only appear once the parent is on.
@@ -99,7 +105,10 @@ const is = (...names: string[]): Rule => (c) => c.species !== null && names.incl
  * mind and would search it. Kind also owns the child bands, so putting it
  * mid-page keeps the unfolding near the top rather than below fifty chips.
  */
-const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string }[] }[] = [
+const GROUPS: {
+  group: string;
+  chips: { id: string; match: Rule; parent?: string }[];
+}[] = [
   {
     group: "role",
     chips: [
@@ -126,17 +135,45 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       /* A CLASS IMPLIES THE KIND. Anyone carrying a published mutant rank is a
          mutant whatever their species field says, so the parent can never lose
          one of its own levels. */
-      { id: "mutant", match: (c) => is("Mutant", "Mutant hybrid")(c) || Boolean(c.mutantClass) },
-      { id: "mutant-omega", parent: "mutant", match: (c) => c.mutantClass === "omega" },
-      { id: "mutant-alpha", parent: "mutant", match: (c) => c.mutantClass === "alpha" },
-      { id: "mutant-beta", parent: "mutant", match: (c) => c.mutantClass === "beta" },
-      { id: "mutant-gamma", parent: "mutant", match: (c) => c.mutantClass === "gamma" },
+      {
+        id: "mutant",
+        match: (c) =>
+          is("Mutant", "Mutant hybrid")(c) || Boolean(c.mutantClass),
+      },
+      {
+        id: "mutant-omega",
+        parent: "mutant",
+        match: (c) => c.mutantClass === "omega",
+      },
+      {
+        id: "mutant-alpha",
+        parent: "mutant",
+        match: (c) => c.mutantClass === "alpha",
+      },
+      {
+        id: "mutant-beta",
+        parent: "mutant",
+        match: (c) => c.mutantClass === "beta",
+      },
+      {
+        id: "mutant-gamma",
+        parent: "mutant",
+        match: (c) => c.mutantClass === "gamma",
+      },
       /* Delta and epsilon match nobody here and are shown anyway, disabled, so
          the six-level system is legible rather than looking like four. They
          are real classifications from adjacent material; the corpus simply
          holds no one who carries them. */
-      { id: "mutant-delta", parent: "mutant", match: (c) => c.mutantClass === "delta" },
-      { id: "mutant-epsilon", parent: "mutant", match: (c) => c.mutantClass === "epsilon" },
+      {
+        id: "mutant-delta",
+        parent: "mutant",
+        match: (c) => c.mutantClass === "delta",
+      },
+      {
+        id: "mutant-epsilon",
+        parent: "mutant",
+        match: (c) => c.mutantClass === "epsilon",
+      },
       {
         id: "human",
         /**
@@ -177,13 +214,22 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       },
       { id: "kree", match: (c) => is("Kree")(c) || aff("Kree")(c) },
       { id: "skrull", match: (c) => is("Skrull")(c) || aff("Skrull")(c) },
-      { id: "shiar", match: (c) => is("Shi'ar", "Strontian")(c) || aff("Shi'ar")(c) },
+      {
+        id: "shiar",
+        match: (c) => is("Shi'ar", "Strontian")(c) || aff("Shi'ar")(c),
+      },
       /* Peoples, not teams. Wakandans sat in the team band, which said the
          nation is something you join rather than somewhere you are from —
          the same category error as filing Kree under teams. */
       { id: "wakandan", match: aff("Wakandans") },
-      { id: "talokanil", match: (c) => is("Talokanil")(c) || aff("Talokanil")(c) },
-      { id: "clandestine", match: aff("ClanDestine") },
+      {
+        id: "talokanil",
+        match: (c) => is("Talokanil")(c) || aff("Talokanil")(c),
+      },
+      /* NO ClanDestine CHIP. It matched exactly one character — Wallop — which
+         Rashid spotted, and a filter that returns one person is a label
+         wearing a filter's clothes. The affiliation stays on his card, where
+         it reads as a fact about him rather than as a group to browse. */
       /* HOSTS COUNT. A separate "Venom family" chip was a duplicate of this
          one, and the only thing it added was people this chip was missing by
          reading species alone — Agent Venom carrying the Venom symbiote is a
@@ -192,13 +238,34 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       {
         id: "symbiote",
         match: (c) =>
-          is("Symbiote", "Symbiote god", "Symbiote host")(c) || Boolean(c.symbioteClass),
+          is("Symbiote", "Symbiote god", "Symbiote host")(c) ||
+          Boolean(c.symbioteClass),
       },
-      { id: "symbiote-lineage", parent: "symbiote", match: (c) => c.symbioteClass === "lineage" },
-      { id: "symbiote-spawn", parent: "symbiote", match: (c) => c.symbioteClass === "spawn" },
-      { id: "symbiote-anomaly", parent: "symbiote", match: (c) => c.symbioteClass === "anomaly" },
-      { id: "symbiote-ancient", parent: "symbiote", match: (c) => c.symbioteClass === "ancient" },
-      { id: "symbiote-gestalt", parent: "symbiote", match: (c) => c.symbioteClass === "gestalt" },
+      {
+        id: "symbiote-lineage",
+        parent: "symbiote",
+        match: (c) => c.symbioteClass === "lineage",
+      },
+      {
+        id: "symbiote-spawn",
+        parent: "symbiote",
+        match: (c) => c.symbioteClass === "spawn",
+      },
+      {
+        id: "symbiote-anomaly",
+        parent: "symbiote",
+        match: (c) => c.symbioteClass === "anomaly",
+      },
+      {
+        id: "symbiote-ancient",
+        parent: "symbiote",
+        match: (c) => c.symbioteClass === "ancient",
+      },
+      {
+        id: "symbiote-gestalt",
+        parent: "symbiote",
+        match: (c) => c.symbioteClass === "gestalt",
+      },
       {
         id: "magician",
         /* "Magic" is an affiliation because magic is a ROLE here, not a
@@ -230,9 +297,21 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
        * separating Strange from Mordo, who draw on the identical source.
        * Reading `magicSchool` asks the question a reader means.
        */
-      { id: "magic-eldritch", parent: "magician", match: (c) => c.magicSchools.includes("eldritch") },
-      { id: "magic-asgardian", parent: "magician", match: (c) => c.magicSchools.includes("asgardian") },
-      { id: "magic-chaos", parent: "magician", match: (c) => c.magicSchools.includes("chaos") },
+      {
+        id: "magic-eldritch",
+        parent: "magician",
+        match: (c) => c.magicSchools.includes("eldritch"),
+      },
+      {
+        id: "magic-asgardian",
+        parent: "magician",
+        match: (c) => c.magicSchools.includes("asgardian"),
+      },
+      {
+        id: "magic-chaos",
+        parent: "magician",
+        match: (c) => c.magicSchools.includes("chaos"),
+      },
       /**
        * DARK IS AN UMBRELLA, AND IT HAS TO BE.
        *
@@ -249,22 +328,66 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
         parent: "magician",
         match: (c) =>
           c.magicSchools.some((k) =>
-            ["dark-dimension", "infernal", "witchcraft", "necromancy", "blood"].includes(k),
+            [
+              "dark-dimension",
+              "infernal",
+              "witchcraft",
+              "necromancy",
+              "blood",
+            ].includes(k),
           ),
       },
-      { id: "magic-dark-dimension", parent: "magician", match: (c) => c.magicSchools.includes("dark-dimension") },
-      { id: "magic-infernal", parent: "magician", match: (c) => c.magicSchools.includes("infernal") },
-      { id: "magic-witchcraft", parent: "magician", match: (c) => c.magicSchools.includes("witchcraft") },
-      { id: "magic-necromancy", parent: "magician", match: (c) => c.magicSchools.includes("necromancy") },
-      { id: "magic-blood", parent: "magician", match: (c) => c.magicSchools.includes("blood") },
-      { id: "magic-voodoo", parent: "magician", match: (c) => c.magicSchools.includes("voodoo") },
-      { id: "magic-elder", parent: "magician", match: (c) => c.magicSchools.includes("elder") },
-      { id: "magic-green", parent: "magician", match: (c) => c.magicSchools.includes("green") },
+      {
+        id: "magic-dark-dimension",
+        parent: "magician",
+        match: (c) => c.magicSchools.includes("dark-dimension"),
+      },
+      {
+        id: "magic-infernal",
+        parent: "magician",
+        match: (c) => c.magicSchools.includes("infernal"),
+      },
+      {
+        id: "magic-witchcraft",
+        parent: "magician",
+        match: (c) => c.magicSchools.includes("witchcraft"),
+      },
+      {
+        id: "magic-necromancy",
+        parent: "magician",
+        match: (c) => c.magicSchools.includes("necromancy"),
+      },
+      {
+        id: "magic-blood",
+        parent: "magician",
+        match: (c) => c.magicSchools.includes("blood"),
+      },
+      {
+        id: "magic-voodoo",
+        parent: "magician",
+        match: (c) => c.magicSchools.includes("voodoo"),
+      },
+      {
+        id: "magic-elder",
+        parent: "magician",
+        match: (c) => c.magicSchools.includes("elder"),
+      },
+      {
+        id: "magic-green",
+        parent: "magician",
+        match: (c) => c.magicSchools.includes("green"),
+      },
       { id: "god", match: (c) => aff("Gods")(c) || is("Olympian")(c) },
       {
         id: "cosmic",
         match: (c) =>
-          is("Abstract entity", "Abstract Entity", "Cosmic entity", "Cosmic Being", "Watcher")(c) ||
+          is(
+            "Abstract entity",
+            "Abstract Entity",
+            "Cosmic entity",
+            "Cosmic Being",
+            "Watcher",
+          )(c) ||
           aff("Cosmic entities")(c) ||
           aff("Celestials")(c) ||
           /* The children have to be inside the parent. Heralds and Elders each
@@ -274,9 +397,21 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
           aff("Heralds of Galactus")(c) ||
           aff("Elders of the Universe")(c),
       },
-      { id: "abstract", parent: "cosmic", match: is("Abstract entity", "Abstract Entity") },
-      { id: "celestial", parent: "cosmic", match: (c) => is("Celestial")(c) || aff("Celestials")(c) },
-      { id: "elder-universe", parent: "cosmic", match: aff("Elders of the Universe") },
+      {
+        id: "abstract",
+        parent: "cosmic",
+        match: is("Abstract entity", "Abstract Entity"),
+      },
+      {
+        id: "celestial",
+        parent: "cosmic",
+        match: (c) => is("Celestial")(c) || aff("Celestials")(c),
+      },
+      {
+        id: "elder-universe",
+        parent: "cosmic",
+        match: aff("Elders of the Universe"),
+      },
       { id: "herald", parent: "cosmic", match: aff("Heralds of Galactus") },
     ],
   },
@@ -332,6 +467,11 @@ const GROUPS: { group: string; chips: { id: string; match: Rule; parent?: string
       { id: "morlocks", match: aff("Morlocks") },
       { id: "spider-verse", match: (c) => c.spiderVerse },
       { id: "spider-society", match: aff("Spider-Society") },
+      /* Thanos's five generals. The affiliation and its label already
+         existed; only the chip was missing, so the team could be read off a
+         card and not searched for. Five now that Supergiant is here — the
+         comics roster. The films used four. */
+      { id: "black-order", match: aff("Black Order") },
       { id: "sinister-six", match: aff("Sinister Six") },
       { id: "inheritors", match: aff("Inheritors") },
       { id: "agents", match: aff("S.H.I.E.L.D.") },
@@ -441,8 +581,11 @@ export function CharacterBrowser({
     const rule = CHIPS.find((x) => x.id === chip)?.match ?? (() => true);
     const q = normalise(query);
     const kept = index.filter(
-      (c) => rule(c) && (q === "" || (haystack.get(c.id) ?? "").includes(q) ||
-        (haystack.get(c.id) ?? "").includes(squash(query))),
+      (c) =>
+        rule(c) &&
+        (q === "" ||
+          (haystack.get(c.id) ?? "").includes(q) ||
+          (haystack.get(c.id) ?? "").includes(squash(query))),
     );
     /**
      * THE TWO TEAMS THAT HOLD BOTH A SPIDER-MAN AND A PERFORMANCE OF HIM.
@@ -477,7 +620,9 @@ export function CharacterBrowser({
      * the language the page is written in.
      */
     const dir = sort === "za" ? -1 : 1;
-    return [...merged].sort((a, b) => dir * a.name.localeCompare(b.name, locale));
+    return [...merged].sort(
+      (a, b) => dir * a.name.localeCompare(b.name, locale),
+    );
   }, [index, chip, query, haystack, sort, locale]);
 
   return (
@@ -498,7 +643,11 @@ export function CharacterBrowser({
 
         {/* Two states, so a segmented control rather than a select: both
             options are visible and switching is one tap, not three. */}
-        <div className="char-sort" role="radiogroup" aria-label={t("sortLabel")}>
+        <div
+          className="char-sort"
+          role="radiogroup"
+          aria-label={t("sortLabel")}
+        >
           {(["fame", "power", "az", "za"] as const).map((mode) => (
             <button
               key={mode}
@@ -584,7 +733,9 @@ export function CharacterBrowser({
                    */}
                   <details className="chip-fold" name="chip-band">
                     <summary className="chip-fold-summary">
-                      <span className="chip-fold-name">{t(`chipGroup.${g.group}`)}</span>
+                      <span className="chip-fold-name">
+                        {t(`chipGroup.${g.group}`)}
+                      </span>
                       {/**
                        * THE VALUE ONLY WHEN THERE IS ONE, which is the whole
                        * of Rashid's note. Every band defaulted to printing
@@ -598,7 +749,9 @@ export function CharacterBrowser({
                        * open all three to find out what is narrowing the list.
                        */}
                       {g.chips.some((c) => c.id === chip) && chip !== "all" && (
-                        <span className="chip-fold-value">{t(`chip.${chip}`)}</span>
+                        <span className="chip-fold-value">
+                          {t(`chip.${chip}`)}
+                        </span>
                       )}
                     </summary>
                     <div className="chip-band-row">
@@ -662,7 +815,10 @@ export function CharacterBrowser({
         <ul className="char-grid" role="list">
           {shown.map((c, i) => (
             <li key={c.id}>
-              <Link className="char-tile" href={`/${locale}/characters/${c.id}`}>
+              <Link
+                className="char-tile"
+                href={`/${locale}/characters/${c.id}`}
+              >
                 {/**
                  * A FILTER ASKS A DIFFERENT QUESTION FROM A SEARCH, so the
                  * badge answers a different one.
@@ -694,7 +850,9 @@ export function CharacterBrowser({
                 )}
                 <span className="char-tile-body">
                   <span className="char-tile-name">{c.name}</span>
-                  <span className="char-tile-meta tabular">{c.appearances}</span>
+                  <span className="char-tile-meta tabular">
+                    {c.appearances}
+                  </span>
                 </span>
               </Link>
             </li>
