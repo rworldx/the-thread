@@ -93,16 +93,24 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   ajak: "https://static.wikia.nocookie.net/disney/images/3/30/Ajak_-_Profile.jpg/revision/latest?cb=20211028201306",
   makkari:
     "https://static.wikia.nocookie.net/disney/images/1/10/Makkari_-_Profile.webp/revision/latest?cb=20220611235508",
+  /* THE OTHER FIVE ETERNALS, off the film's character posters, which Rashid
+     did not like. The posters were fine images and the wrong kind: they read
+     as marketing beside Ikaris's clean portrait.
+
+     The MCU wiki's alternatives all turned out to be crops of one AR asset
+     with the character's NAME set vertically down the frame, which is worse
+     at tile size than the posters were. These are the Hero Wiki's MCU
+     portraits — 3000x4500 apiece, one style across all five, no text. */
   kingo:
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/25/Kingo_Character_Poster.jpg/revision/latest?cb=20231021143730",
+    "https://static.wikia.nocookie.net/p__/images/8/80/Kingo-MCU.jpg/revision/latest?cb=20220706020730&path-prefix=protagonist",
   druig:
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/6d/Druig_Character_Poster.jpg/revision/latest?cb=20231021143931",
+    "https://static.wikia.nocookie.net/p__/images/5/5e/Druig-MCU.jpg/revision/latest?cb=20220706020833&path-prefix=protagonist",
   gilgamesh:
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/07/Gilgamesh_Character_Poster.jpg/revision/latest?cb=20231021143955",
+    "https://static.wikia.nocookie.net/p__/images/8/86/Gilgamesh-MCU.jpg/revision/latest?cb=20220706020923&path-prefix=protagonist",
   phastos:
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/39/Phastos_Character_Poster.jpg/revision/latest?cb=20231021143830",
+    "https://static.wikia.nocookie.net/p__/images/8/80/Phastos-MCU.jpg/revision/latest?cb=20220706020748&path-prefix=protagonist",
   sprite:
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d8/Sprite_Character_Poster.jpg/revision/latest?cb=20231021143803",
+    "https://static.wikia.nocookie.net/p__/images/2/24/Sprite-MCU.jpg/revision/latest?cb=20220501070220&path-prefix=protagonist",
   /* Thena was on a "First Look" promo and was in neither of Rashid's lists,
      but a matching Profile exists and she is the last of the ten still off
      the set. */
