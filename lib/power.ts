@@ -667,6 +667,13 @@ const TIERS: Tier[] = [
        otter and the walrus that lost the grant with him. */
     ranked: ["supreme-intelligence", "mainframe"],
     match: (c) =>
+      /* COSMO IS NOT A HUMAN WHO TURNS UP ANYWAY. `Uplifted animal` lost its
+         grant because it was carrying Lylla, Teefs and Floor, whose records
+         list mechanical hands, wheels and spider legs. Cosmo's now says she
+         stops a colliding ship with her mind, and tier 8 means "no powers at
+         all". The gate the Celestials, Elders, Eternals and Inhumans take
+         separates her from the other three without giving the word back. */
+      (c.species === "Uplifted animal" && claimScore(c) > 0) ||
       c.mutantClass !== null ||
       /**
        * ARMOUR IS POWER, and `species: Human` cannot see it. Iron Man came out
@@ -1435,13 +1442,36 @@ export const OUTRANKS: string[][] = [
      three points and no further, because the scorer counts abilities and
      cannot weigh "walks through you" against "carries a shield". */
   ["ghost", "john-walker"],
-  /* THE GUARDIANS, in the order a fight would settle rather than the order a
-     bullet count does. Drax is called the Destroyer, is superhumanly strong
-     and nearly indestructible, and came out seventh behind a pilot and two
-     trained assassins — because the scorer counts abilities and cannot weigh
-     "nearly indestructible" against "ace pilot". Adam Warlock leads from
-     tier 5 and is not in this group; Kraglin, Phyla-Vell and Cosmo trail it. */
-  ["drax", "star-lord", "nebula", "gamora", "rocket", "groot", "mantis"],
+  /**
+   * THE GUARDIANS, reordered once all eleven records finally said what the
+   * characters do. The old order was written when most of them had three
+   * bullets, and it shows: Groot came SIXTH on "Grows and reshapes /
+   * Regenerates / Great strength", and Phyla-Vell was left out of the group
+   * entirely to "trail it" on a record that read "Kree physiology / Raised in
+   * a cage / Newest of the team".
+   *
+   * Phyla-Vell first: the Quantum Bands, a sword of solid light, cosmic
+   * awareness and an absorb-and-return that makes shooting her a mistake.
+   * Then Groot, who lifts a hundred tons, commands every plant on a world and
+   * grows back entire from a twig. Then Gamora, then Drax, the two built by
+   * Thanos to kill things. Star-Lord channels a star, but late and briefly.
+   * Mantis stuns Thor with a nerve strike. Nebula and Rocket are an assassin
+   * and an engineer. Cosmo is a dog who stops a ship. Kraglin has a whistle.
+   *
+   * Adam Warlock leads from tier 5 and is not in this group.
+   */
+  [
+    "phyla-vell",
+    "groot",
+    "gamora",
+    "drax",
+    "star-lord",
+    "mantis",
+    "nebula",
+    "rocket",
+    "cosmo",
+    "kraglin",
+  ],
   /**
    * THE SPIDER-SOCIETY, thirty-three of them, ordered.
    *

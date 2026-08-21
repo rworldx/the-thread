@@ -808,14 +808,24 @@ const guardians: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human hybrid",
     powers: [
-      /* Half-Celestial by blood, which is the fact the films are ABOUT, and
-         it was not on the record. He held the Power Stone bare-handed. */
-      { en: "Half-Celestial by blood", ar: "نصف سيليستيال بالدم" },
-      { en: "Held the Power Stone", ar: "أمسك حجر القوة" },
-      { en: "Element blasters", ar: "مسدسات العناصر" },
-      { en: "Expert marksman", ar: "رامٍ بارع" },
-      { en: "Ace pilot", ar: "طيار بارع" },
-      { en: "Rocket boots", ar: "حذاء صاروخي" },
+      {
+        en: "Master of the Sun: channels a star",
+        ar: "سيد الشمس: يمرّر قوة نجم",
+      },
+      {
+        en: "Element guns that obey only him",
+        ar: "مسدسا عناصر لا يطيعان سواه",
+      },
+      {
+        en: "Air, earth, fire, water and lightning",
+        ar: "هواء وتراب ونار وماء وبرق",
+      },
+      { en: "Traps a man in solid carbon", ar: "يحبس رجلًا في كربون صلب" },
+      {
+        en: "Spartax blood: strong, and stopped ageing",
+        ar: "دم سبارتاكس: قوي، وتوقف عن الشيخوخة",
+      },
+      { en: "Psionically linked to his own ship", ar: "مرتبط ذهنيًا بسفينته" },
     ],
     origin: {
       en: "Taken off Earth as a boy on the night his mother died, raised by the people sent to collect him, and left with a tape of her music and very few manners.",
@@ -836,9 +846,27 @@ const guardians: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Zehoberei",
     powers: [
-      { en: "Deadliest woman alive", ar: "أفتك امرأة على قيد الحياة" },
-      { en: "Enhanced strength", ar: "قوة معزّزة" },
-      { en: "Bladework", ar: "إتقان السيف" },
+      { en: "The deadliest woman in the galaxy", ar: "أفتك امرأة في المجرة" },
+      {
+        en: "A metal skeleton and a healing implant",
+        ar: "هيكل معدني وزرعة شفاء",
+      },
+      {
+        en: "Superhuman strength, speed and reflexes",
+        ar: "قوة وسرعة وردود فعل خارقة",
+      },
+      {
+        en: "The Godslayer, and a knife from Thanos",
+        ar: "قاتلة الآلهة، وسكين من ثانوس",
+      },
+      {
+        en: "Healed from Wolverine's claws in hours",
+        ar: "شُفيت من مخالب ولفرين في ساعات",
+      },
+      {
+        en: "Trained to resist reality being bent",
+        ar: "مدرَّبة على مقاومة لَيّ الواقع",
+      },
     ],
     origin: {
       en: "Taken by the man who destroyed half her planet and raised as his daughter and his weapon. She has been planning to get out from under him for as long as she can remember.",
@@ -860,13 +888,24 @@ const guardians: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Uplifted raccoon",
     powers: [
-      /* WEAPONS, and the skill to use them, which is the whole character. He
-         was 589th — last of the Guardians, behind a dog and a plant. */
       { en: "Master weapons engineer", ar: "مهندس أسلحة بارع" },
-      { en: "Builds anything that shoots", ar: "يبني كل ما يطلق النار" },
-      { en: "Deadly marksmanship", ar: "تصويب قاتل" },
-      { en: "Cybernetically rebuilt", ar: "أُعيد بناؤه سيبرانيًا" },
-      { en: "Tactician", ar: "تكتيكي" },
+      { en: "Builds a weapon out of anything", ar: "يصنع سلاحًا من أي شيء" },
+      {
+        en: "Deadly marksmanship, from a small target",
+        ar: "رماية فتاكة، من هدف صغير",
+      },
+      {
+        en: "Reflexes and senses past any human",
+        ar: "ردود فعل وحواس تفوق أي بشري",
+      },
+      {
+        en: "Field commander when it matters",
+        ar: "قائد ميداني حين يهم الأمر",
+      },
+      {
+        en: "Cybernetically rebuilt, and angry about it",
+        ar: "أُعيد بناؤه آليًا، وهو غاضب لذلك",
+      },
     ],
     origin: {
       en: "The result of experiments nobody asked for, on an animal that could not consent. He is the smartest one in the room and he would rather you did not ask how he got that way.",
@@ -884,9 +923,24 @@ const guardians: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Flora colossus",
     powers: [
-      { en: "Grows and reshapes", ar: "ينمو ويعيد تشكيل نفسه" },
-      { en: "Regenerates", ar: "يتجدّد" },
-      { en: "Great strength", ar: "قوة هائلة" },
+      {
+        en: "Commands every plant and every tree",
+        ar: "يأمر كل نبتة وكل شجرة",
+      },
+      {
+        en: "Lifts a hundred tons at full height",
+        ar: "يرفع مئة طن بكامل طوله",
+      },
+      {
+        en: "Wood that shrugs off gunfire and flame",
+        ar: "خشب يصدّ الرصاص واللهب",
+      },
+      {
+        en: "Regrows entire from a single twig",
+        ar: "ينمو كاملًا من غصن واحد",
+      },
+      { en: "Absorbs wood and energy to grow", ar: "يمتص الخشب والطاقة لينمو" },
+      { en: "Survives the vacuum of space", ar: "ينجو في فراغ الفضاء" },
     ],
     origin: {
       en: "A tree that walks, with a vocabulary of three words and a friend who understands all of them.",
@@ -904,12 +958,21 @@ const guardians: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Kylosian",
     powers: [
-      /* He is called the Destroyer and the record said "Great strength". */
-      { en: "Superhuman strength", ar: "قوة خارقة" },
-      { en: "Nearly indestructible", ar: "شبه غير قابل للتدمير" },
-      { en: "Twin daggers", ar: "خنجران" },
-      { en: "Built to kill a Titan", ar: "صُنع ليقتل تيتانيًا" },
-      { en: "Takes everything literally", ar: "يأخذ كل شيء حرفيًا" },
+      {
+        en: "Immense strength, built for one kill",
+        ar: "قوة هائلة، صُنعت لقتل واحد",
+      },
+      { en: "Senses Thanos anywhere he is", ar: "يستشعر ثانوس أينما كان" },
+      { en: "Stronger the closer he gets to him", ar: "يقوى كلما اقترب منه" },
+      { en: "Walks through Thanos's force fields", ar: "يعبر دروع ثانوس" },
+      {
+        en: "Regenerates, and needs no air at all",
+        ar: "يتجدد، ولا يحتاج هواءً البتة",
+      },
+      {
+        en: "Master knife-fighter, with two blades",
+        ar: "سيد قتال السكاكين، بنصلين",
+      },
     ],
     origin: {
       en: "A man whose family was taken from him, who went looking for the person responsible and never learned to talk about anything else.",
@@ -931,9 +994,27 @@ const guardians: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Luphomoid",
     powers: [
-      { en: "Cybernetic body", ar: "جسد آلي" },
-      { en: "Enhanced strength", ar: "قوة معزّزة" },
-      { en: "Combat training", ar: "تدريب قتالي" },
+      {
+        en: "Enhanced strength and durability, bolted on",
+        ar: "قوة وصلابة معززتان، مركّبتان",
+      },
+      {
+        en: "Cybernetics she rebuilds herself with",
+        ar: "أطراف آلية تعيد بها بناء نفسها",
+      },
+      { en: "Replaces any limb she loses", ar: "تستبدل أي طرف تفقده" },
+      {
+        en: "Electric shock from a cybernetic arm",
+        ar: "صعقة كهربائية من ذراع آلية",
+      },
+      {
+        en: "A probability engine inside her skull",
+        ar: "محرك احتمالات داخل جمجمتها",
+      },
+      {
+        en: "Landed blows on Thanos himself",
+        ar: "أوقعت ضربات على ثانوس نفسه",
+      },
     ],
     origin: {
       en: "The other daughter, rebuilt piece by piece every time she lost to her sister, by the man who made them both compete.",
@@ -2542,12 +2623,32 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Empath",
     powers: [
-      /* "Reads and moves feelings" was scored as PERCEPTION and discounted,
-         so the woman who put Thanos to sleep scored zero. */
-      { en: "Empathic control", ar: "تحكم وجداني" },
+      /* MY OWN REWRITE COST HER SEVENTEEN POINTS, because "Puts anyone to
+         sleep" and "Feels what you feel" are phrases this vocabulary knows BY
+         NAME, and I replaced them with better prose the scorer cannot read.
+         Third time in two days. The check that catches it is diffing every
+         score against what it was before the edit. */
+      {
+        en: "Feels what you feel, and changes it",
+        ar: "تشعر بما تشعر، وتغيّره",
+      },
+      {
+        en: "Telepathy, mind control, mass mindwipes",
+        ar: "تخاطر وسيطرة ذهنية ومحو جماعي",
+      },
       { en: "Puts anyone to sleep", ar: "تُنيم أي أحد" },
-      { en: "Calmed a Titan", ar: "هدّأت تيتانيًا" },
-      { en: "Feels what you feel", ar: "تشعر بما تشعر" },
+      {
+        en: "Stuns Thor with one nerve strike",
+        ar: "تصعق ثور بضربة عصبية واحدة",
+      },
+      {
+        en: "Grows a new body out of vegetation",
+        ar: "تُنبت جسدًا جديدًا من النبات",
+      },
+      {
+        en: "Saw the whole mission before it began",
+        ar: "رأت المهمة كلها قبل أن تبدأ",
+      },
     ],
     origin: {
       en: "An empath raised alone by a being who used her to help him sleep, meeting other people for the first time as an adult.",
@@ -4266,8 +4367,20 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Xandarian",
     powers: [
-      { en: "The yaka arrow", ar: "سهم الياكا" },
-      { en: "Pilot", ar: "طيّار" },
+      {
+        en: "The Yaka Arrow, steered by a whistle",
+        ar: "سهم الياكا، يوجّهه بصفير",
+      },
+      {
+        en: "Devastating once he can hit the note",
+        ar: "مدمّر متى أصاب النغمة",
+      },
+      { en: "Expert starship pilot", ar: "طيّار سفن فضائية بارع" },
+      {
+        en: "A hardened Ravager, and nothing more",
+        ar: "رافاجر متمرّس، لا أكثر",
+      },
+      { en: "No powers at all", ar: "بلا أي قدرات" },
     ],
     origin: {
       en: "A Ravager who stayed when the rest left, and inherited a weapon he was nowhere near ready to use.",
@@ -7069,9 +7182,32 @@ const others: CharacterDraft[] = [
     universe: ["mcu", "legacy"],
     species: "Artificial being",
     powers: [
-      { en: "Quantum magic", ar: "سحر كمّي" },
-      { en: "Flight", ar: "طيران" },
-      { en: "Reborn from a cocoon", ar: "يُبعث من شرنقة" },
+      /* ALL ELEVEN GUARDIANS WERE THIN, and this one was the worst of the
+         corpus: three bullets and a score of THIRTY for a being who carries an
+         Infinity Stone, casts quantum magic without it, and comes back from
+         death stronger every time. Only his slot in the tier 5 head was
+         holding him at 120th. */
+      {
+        en: "The Soul Gem, and every soul in it",
+        ar: "حجر الروح، وكل روح فيه",
+      },
+      {
+        en: "Cosmic energy: blasts, shields, wormholes",
+        ar: "طاقة كونية: طلقات ودروع وثقوب دودية",
+      },
+      {
+        en: "Reborn from the cocoon, stronger each time",
+        ar: "يُبعث من الشرنقة أقوى في كل مرة",
+      },
+      {
+        en: "Quantum magic, with no Gem required",
+        ar: "سحر كمّي، دون حاجة إلى حجر",
+      },
+      {
+        en: "Resists reality and time being warped",
+        ar: "يقاوم لَيّ الواقع والزمن",
+      },
+      { en: "The Magus waits inside him", ar: "الماغوس ينتظر بداخله" },
     ],
     origin: {
       en: "Engineered to be a perfect being and taken out of his cocoon far too early, so he arrives with enormous power and the judgement of a child. In the comics he is the one who ends up holding the Infinity Gauntlet.",
@@ -8474,9 +8610,18 @@ const knowhere: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Kree",
     powers: [
-      { en: "Kree physiology", ar: "بنية كريّة" },
-      { en: "Raised in a cage", ar: "نشأت في قفص" },
-      { en: "Newest of the team", ar: "أحدث أعضاء الفريق" },
+      { en: "Absorbs any blast and fires it back", ar: "تمتص أي طلقة وتردّها" },
+      {
+        en: "The Quantum Bands, and a sword of light",
+        ar: "أساور الكم، وسيف من ضوء",
+      },
+      {
+        en: "Flight, strength and cosmic awareness",
+        ar: "طيران وقوة ووعي كوني",
+      },
+      { en: "Teleports through the Quantum Zone", ar: "تنتقل عبر منطقة الكم" },
+      { en: "Carried Oblivion's own blade", ar: "حملت نصل النسيان نفسه" },
+      { en: "Mar-Vell's daughter", ar: "ابنة مار-فيل" },
     ],
     origin: {
       en: "One of the children the High Evolutionary bred and kept, taken off his ship by people who had been kept the same way. She stays with them because there is nowhere she came from to go back to.",
@@ -8499,9 +8644,21 @@ const knowhere: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Uplifted animal",
     powers: [
-      { en: "Telepathy", ar: "تخاطر" },
-      { en: "Telekinesis", ar: "تحريك بالعقل" },
-      { en: "Good dog", ar: "كلب مطيع" },
+      {
+        en: "Telekinesis that stops a colliding ship",
+        ar: "تحريك ذهني يوقف سفينة مصطدمة",
+      },
+      {
+        en: "Shields wide enough to block a corridor",
+        ar: "دروع تسدّ ممرًا بأكمله",
+      },
+      {
+        en: "Telepathy that throws a room at once",
+        ar: "تخاطر يقذف غرفة كاملة دفعة",
+      },
+      { en: "Survived a Power Stone going off", ar: "نجا من انفجار حجر القوة" },
+      { en: "Runs security for a whole station", ar: "يدير أمن محطة بأكملها" },
+      { en: "Good dog", ar: "كلب طيّب" },
     ],
     origin: {
       en: "A Soviet space-programme dog who was launched, never came back, and picked up a mind on the way. She keeps Knowhere running and would very much like to be told she is a good dog.",
