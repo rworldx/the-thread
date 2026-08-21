@@ -60,6 +60,14 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  maestro:
+    "https://static.wikia.nocookie.net/marveldatabase/images/a/aa/Maestro_Future_Imperfect_-_Marvel_Tales_Vol_1_1_Virgin_Variant.jpg/revision/latest?cb=20200924140549",
+  /* FOUR RECORDS OFF ONE PANEL. Oshtur, Agamotto, Hoggoth and the Vishanti
+     were all crops of the SAME image — Sorcerer Supreme Vol 1 #4, the panel
+     where the trio is introduced. Different files, so a duplicate-URL check
+     saw nothing; Oshtur's is the centre figure of the group shot the Vishanti
+     record shows in full, with the same speech balloon visible in both.
+     The group panel stays where it is correct, on the group. */
   "infinity-ultron":
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e7/Infinity_Ultron_-_Age_of_Ultron_Infobox.png/revision/latest?cb=20231021045211",
   /* THE ETERNALS IN COMICS, not in the film. Their records are
@@ -137,7 +145,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   enchantress:
     "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/Immortal_Thor_Vol_1_17_Go_Variant_Textless.jpg/revision/latest?cb=20241123063641",
   "the-maker":
-    "https://static.wikia.nocookie.net/marveldatabase/images/6/6b/Ultimates_Vol_3_24_Ultimate_Special_Variant_Textless.jpg/revision/latest?cb=20260605230107",
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/2a/Reed_Richards_%28Earth-1610%29_from_Ultimate_Invasion_Vol_1_1_002.jpg/revision/latest?cb=20231028231324",
   songbird:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/50/Thunderbolts_Doomstrike_Vol_1_1_Tao_Virgin_Variant.jpg/revision/latest?cb=20250221195650",
   rhino:
@@ -505,12 +513,20 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6f/Prot%C3%A9g%C3%A9_%28Earth-691%29_from_Guardians_of_the_Galaxy_Vol_1_15_0001.jpg/revision/latest?cb=20191127024328",
   /* Mystics: Shuma-Gorath under (Multiverse), the Demiurge filed as
      "Demiurge Primordial". */
+  /* FOUR RECORDS OFF ONE PANEL. Oshtur, Agamotto, Hoggoth and the Vishanti
+     were all crops of the SAME image — Sorcerer Supreme Vol 1 #4, the panel
+     where the trio is introduced. Different files, so a duplicate-URL check
+     saw nothing: Oshtur's was the centre figure of the group shot the
+     Vishanti record shows in full, with the same speech balloon in both.
+     The group panel stays where it is correct, on the group. */
+  oshtur:
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/80/Oshtur_%28Earth-616%29_from_Mystic_Arcana_Sister_Grimm_Vol_1_1_001.jpg/revision/latest?cb=20190728002830",
+  hoggoth:
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/07/Hoggoth_%28Earth-616%29_from_Doctor_Strange_Vol_4_383_001.jpg/revision/latest?cb=20190826051817",
+  agamotto:
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b5/Agamotto_%28Earth-616%29_from_Marvel_Legacy_Vol_1_1_Deodato_Wraparound_Variant_Textless.jpg/revision/latest?cb=20181021191219",
   cyttorak:
     "https://static.wikia.nocookie.net/marveldatabase/images/8/85/Cyttorak_%28Earth-616%29_and_Cain_Marko_%28Earth-616%29_from_Juggernaut_Vol_3_4_001.jpg/revision/latest?cb=20210519150308",
-  oshtur:
-    "https://static.wikia.nocookie.net/marveldatabase/images/c/cc/Oshtur_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124848",
-  hoggoth:
-    "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/Hoggoth_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124702",
   umar: "https://static.wikia.nocookie.net/marveldatabase/images/8/87/Strange_Vol_3_4_Lubera_Variant_Textless.jpg/revision/latest?cb=20220727113619",
   zom: "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Zom_%28Earth-616%29_from_Strange_Tales_Vol_1_156_031.jpg/revision/latest?cb=20211215050707",
   gaea: "https://static.wikia.nocookie.net/marveldatabase/images/c/c4/Gaea_%28Earth-616%29_from_Immortal_Thor_Vol_1_8_001.png/revision/latest?cb=20240313174931",
@@ -985,8 +1001,6 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   flux: "https://static.wikia.nocookie.net/marveldatabase/images/a/af/Benjamin_Tibbetts_%28Earth-616%29_from_World_War_Hulk_Gamma_Corps_Vol_1_1_0001.jpg/revision/latest?cb=20191208040547",
   wendigo:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/6e/Thaddeus_Ross_%28Earth-616%29_and_Wendigo_%28Race%29_from_King-Size_Hulk_Vol_1_1_001.jpg/revision/latest?cb=20170529053339",
-  agamotto:
-    "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
   chthon:
     "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Chthon_%28Earth-616%29_from_Darkhold_Omega_Vol_1_1_002.jpg/revision/latest?cb=20220106163854",
   /* Strange Tales 122 — his first clean full-figure appearance. */

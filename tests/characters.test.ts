@@ -1,9 +1,20 @@
 import { describe, expect, it } from "vitest";
-import { allCharacters, characterOf, charactersIn, shownCharacters } from "@/lib/characters";
+import {
+  allCharacters,
+  characterOf,
+  charactersIn,
+  shownCharacters,
+} from "@/lib/characters";
 import { characters as authored } from "@/content/characters";
 import { CharacterSource } from "@/content/character-schema";
 import { titles } from "@/content/build";
-import { OUTRANKS, powerOrder, powerRankOf, powerTierOf, POWER_TIERS } from "@/lib/power";
+import {
+  OUTRANKS,
+  powerOrder,
+  powerRankOf,
+  powerTierOf,
+  POWER_TIERS,
+} from "@/lib/power";
 import artRaw from "@/content/character-art.generated.json";
 import { visibleLength } from "@/content/schema";
 import { releaseOrder } from "@/lib/graph";
@@ -25,7 +36,7 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(677);
+    expect(authored).toHaveLength(678);
   });
 
   /**
@@ -37,7 +48,9 @@ describe("C. the character corpus", () => {
     const ids = new Set(titles.map((t) => t.id));
     for (const c of authored) {
       for (const t of c.notIn ?? []) {
-        expect(ids.has(t), `${c.id} excludes ${t}, which is not a title`).toBe(true);
+        expect(ids.has(t), `${c.id} excludes ${t}, which is not a title`).toBe(
+          true,
+        );
         expect(characterOf(c.id)!.appearances).not.toContain(t);
       }
     }
@@ -53,7 +66,9 @@ describe("C. the character corpus", () => {
    */
   it("C28 every character has exactly one rank, 1..N, in tier order", () => {
     expect(powerOrder).toHaveLength(allCharacters.length);
-    const ranks = allCharacters.map((c) => powerRankOf(c.id)).sort((a, b) => a - b);
+    const ranks = allCharacters
+      .map((c) => powerRankOf(c.id))
+      .sort((a, b) => a - b);
     expect(ranks).toEqual(allCharacters.map((_, i) => i + 1));
     /* Rank must never contradict tier: everyone in tier 3 outranks everyone
        in tier 4, or the tiers are decoration. */
@@ -67,7 +82,9 @@ describe("C. the character corpus", () => {
         expect(powerTierOf(id), `${id} left tier ${t.n}`).toBe(t.n);
         if (i === 0) continue;
         const prev = t.ranked![i - 1]!;
-        expect(powerRankOf(prev), `${prev} must outrank ${id}`).toBeLessThan(powerRankOf(id));
+        expect(powerRankOf(prev), `${prev} must outrank ${id}`).toBeLessThan(
+          powerRankOf(id),
+        );
       }
     }
   });
@@ -103,7 +120,10 @@ describe("C. the character corpus", () => {
 
   it("C5 no character relates to itself", () => {
     for (const c of allCharacters) {
-      expect(c.related.map((r) => r.id), c.id).not.toContain(c.id);
+      expect(
+        c.related.map((r) => r.id),
+        c.id,
+      ).not.toContain(c.id);
     }
   });
 
@@ -160,7 +180,9 @@ describe("C. the character corpus", () => {
        all three arrive carrying `alsoIn`, and twenty-one existing records
        gained the Super Hero Squad Show the same way, which pulled Firestar,
        Toad and Ka-Zar off the off-screen list entirely. */
-    expect(offScreen).toHaveLength(245);
+    /* 246. Maestro is a comics character with no screen credit anywhere, the
+       same shape as Kubik, Zom and Logos, so adding him moves this by one. */
+    expect(offScreen).toHaveLength(246);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);
@@ -187,7 +209,10 @@ describe("C. the character corpus", () => {
     const rank = new Map(releaseOrder(titles).map((t, i) => [t.id, i]));
     for (const c of allCharacters) {
       const seq = c.appearances.map((id) => rank.get(id)!);
-      expect([...seq].sort((a, b) => a - b), c.id).toEqual(seq);
+      expect(
+        [...seq].sort((a, b) => a - b),
+        c.id,
+      ).toEqual(seq);
     }
   });
 
@@ -263,17 +288,35 @@ describe("C. the character corpus", () => {
      * by fans constantly and neither has a panel that says it.
      */
     expect(omegas).toEqual([
-      "elixir", "exodus", "forge", "franklin-richards", "hope-summers",
-      "iceman", "jamie-braddock", "jean-grey", "legion", "maggott",
-      "magneto", "matthew-malloy", "mister-m", "nate-grey", "professor-x",
-      "proteus", "quentin-quire", "rachel-summers", "storm", "vulcan",
+      "elixir",
+      "exodus",
+      "forge",
+      "franklin-richards",
+      "hope-summers",
+      "iceman",
+      "jamie-braddock",
+      "jean-grey",
+      "legion",
+      "maggott",
+      "magneto",
+      "matthew-malloy",
+      "mister-m",
+      "nate-grey",
+      "professor-x",
+      "proteus",
+      "quentin-quire",
+      "rachel-summers",
+      "storm",
+      "vulcan",
     ]);
     /* This asserted the OPPOSITE until today: that Xavier must not be Omega,
        because House of X #1 pointedly left him off. The 2025 compilation put
        him on, so the guard now asserts he IS one. Kept as an explicit line
        rather than folded into the list above, because the reversal is the
        interesting part and a future reader should see it was deliberate. */
-    expect(allCharacters.find((c) => c.id === "professor-x")!.mutantClass).toBe("omega");
+    expect(allCharacters.find((c) => c.id === "professor-x")!.mutantClass).toBe(
+      "omega",
+    );
   });
 
   it("C20 every avatar resolved to the character we asked for", () => {
@@ -290,7 +333,10 @@ describe("C. the character corpus", () => {
      * Nothing in the type system or the build could see it. Only comparing what
      * we asked for against what came back can, so that comparison is a test.
      */
-    const art = artRaw as Record<string, { matchedAs: string | null; source: string | null }>;
+    const art = artRaw as Record<
+      string,
+      { matchedAs: string | null; source: string | null }
+    >;
     /** Where the two corpora genuinely use different canonical names. */
     const EXPECTED_ALIASES: Record<string, string> = {
       "kate-bishop": "Hawkeye II",
@@ -334,7 +380,10 @@ describe("C. the character corpus", () => {
       "silver-surfer": "Silver Surfer",
     };
     const bare = (x: string) =>
-      x.toLowerCase().replace(/[^a-z0-9]+/g, "").replace(/^the/, "");
+      x
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "")
+        .replace(/^the/, "");
 
     const wrong: string[] = [];
     for (const c of allCharacters) {
@@ -357,7 +406,8 @@ describe("C. the character corpus", () => {
       const got = art[c.id]?.matchedAs;
       if (!got) continue;
       const want = EXPECTED_ALIASES[c.id] ?? c.nameEn;
-      if (bare(got) !== bare(want)) wrong.push(`${c.id}: asked ${want}, got ${got}`);
+      if (bare(got) !== bare(want))
+        wrong.push(`${c.id}: asked ${want}, got ${got}`);
     }
     expect(wrong).toEqual([]);
   });
@@ -419,7 +469,11 @@ describe("C. the character corpus", () => {
      * at a screenshot, which is why it is now a test.
      */
     const norm = (x: string) =>
-      x.toLowerCase().replace(/[.'’`-]/g, "").replace(/\s+/g, " ").trim();
+      x
+        .toLowerCase()
+        .replace(/[.'’`-]/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
     const owners = new Map<string, Set<string>>();
     for (const c of allCharacters) {
       for (const a of [c.nameEn, ...c.aliases]) {
@@ -447,7 +501,8 @@ describe("C. the character corpus", () => {
     const photoOf = (id: string) => {
       const c = allCharacters.find((x) => x.id === id)!;
       const counts = new Map<string, number>();
-      for (const p of c.portrayals) counts.set(p.actor, (counts.get(p.actor) ?? 0) + 1);
+      for (const p of c.portrayals)
+        counts.set(p.actor, (counts.get(p.actor) ?? 0) + 1);
       const top = [...counts.entries()].sort((a, b) => b[1] - a[1])[0]![0];
       return { top, image: c.leadActorPhoto };
     };
@@ -486,7 +541,9 @@ describe("C. the character corpus", () => {
     for (const c of allCharacters) {
       if (c.creditedActor !== null) continue;
       if (c.image === null) continue;
-      expect(c.image, `${c.id} avatar is an actor still`).not.toContain("image.tmdb.org");
+      expect(c.image, `${c.id} avatar is an actor still`).not.toContain(
+        "image.tmdb.org",
+      );
       expect(c.artSource, `${c.id} has art with no source`).not.toBeNull();
     }
     // The actor photo still exists, for the "played by" line where it belongs.
@@ -649,7 +706,8 @@ describe("C. the character corpus", () => {
     /* Every name above the tail must exist. A missing id means a rename
        silently dropped someone out of the top and into the tail — nothing
        throws, the page just quietly stops leading with Spider-Man. */
-    for (const c of shownCharacters.slice(0, 67)) expect(ids.has(c.id)).toBe(true);
+    for (const c of shownCharacters.slice(0, 67))
+      expect(ids.has(c.id)).toBe(true);
     /* And the tail really is sorted by appearances, not left in corpus order. */
     const tail = shownCharacters.slice(67, 95).map((c) => c.appearances.length);
     expect([...tail].sort((a, b) => b - a)).toEqual(tail);

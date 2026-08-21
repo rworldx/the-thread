@@ -1,6 +1,6 @@
 {
   "agamotto": {
-    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Agamotto_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124429",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b5/Agamotto_%28Earth-616%29_from_Marvel_Legacy_Vol_1_1_Deodato_Wraparound_Variant_Textless.jpg/revision/latest?cb=20181021191219",
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
@@ -385,12 +385,12 @@
     "matchedAs": "hand-picked"
   },
   "oshtur": {
-    "image": "https://static.wikia.nocookie.net/marveldatabase/images/c/cc/Oshtur_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124848",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/80/Oshtur_%28Earth-616%29_from_Mystic_Arcana_Sister_Grimm_Vol_1_1_001.jpg/revision/latest?cb=20190728002830",
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
   "hoggoth": {
-    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/Hoggoth_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_4_001.png/revision/latest?cb=20260318124702",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/0/07/Hoggoth_%28Earth-616%29_from_Doctor_Strange_Vol_4_383_001.jpg/revision/latest?cb=20190826051817",
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
@@ -1530,7 +1530,7 @@
     "matchedAs": "hand-picked"
   },
   "the-maker": {
-    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/6b/Ultimates_Vol_3_24_Ultimate_Special_Variant_Textless.jpg/revision/latest?cb=20260605230107",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2a/Reed_Richards_%28Earth-1610%29_from_Ultimate_Invasion_Vol_1_1_002.jpg/revision/latest?cb=20231028231324",
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
@@ -2301,6 +2301,11 @@
   },
   "thaddeus-ross": {
     "image": "https://static.wikia.nocookie.net/marveldatabase/images/f/f1/Red_Hulk_Vol_1_1_Lee_Variant_Textless.jpg/revision/latest?cb=20250623193825",
+    "source": "chosen",
+    "matchedAs": "hand-picked"
+  },
+  "maestro": {
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/aa/Maestro_Future_Imperfect_-_Marvel_Tales_Vol_1_1_Virgin_Variant.jpg/revision/latest?cb=20200924140549",
     "source": "chosen",
     "matchedAs": "hand-picked"
   },

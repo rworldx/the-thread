@@ -4152,6 +4152,37 @@ const ensemble: CharacterDraft[] = [
     ],
   },
   {
+    id: "maestro",
+    nameEn: "Maestro",
+    nameAr: "المايسترو",
+    aliases: ["Maestro"],
+    category: "villain",
+    affiliation: ["Hulks"],
+    universe: ["mcu"],
+    species: "Enhanced human",
+    powers: [
+      { en: "Banner's mind in the Hulk's body", ar: "عقل بانر في جسد هَلك" },
+      {
+        en: "Ten times stronger than Professor Hulk",
+        ar: "أقوى عشر مرات من هَلك البروفيسور",
+      },
+      {
+        en: "Decades of absorbed nuclear fallout",
+        ar: "عقود من الإشعاع النووي الممتص",
+      },
+      { en: "Heals so well he cannot really die", ar: "يشفى حتى لا يكاد يموت" },
+      {
+        en: "Never loses control of the change",
+        ar: "لا يفقد السيطرة على التحول أبدًا",
+      },
+      { en: "Rules what is left of the world", ar: "يحكم ما تبقى من العالم" },
+    ],
+    origin: {
+      en: "The Hulk a hundred years after the bombs, swollen on the radiation that killed everyone else and gone cruel in the quiet afterwards. He kept Banner's intelligence and lost the part of Banner that used to argue with it.",
+      ar: "هَلك بعد مئة عام من القنابل، تضخّم على الإشعاع الذي قتل كل من سواه، وقسا في السكون الذي تلا. احتفظ بذكاء بانر وفقد الجزء الذي كان يجادله منه.",
+    },
+  },
+  {
     id: "maria-hill",
     nameEn: "Maria Hill",
     nameAr: "ماريا هيل",
@@ -17156,7 +17187,7 @@ const songbird: CharacterDraft[] = [
     nameAr: "سونغبيرد",
     aliases: ["Songbird", "Screaming Mimi", "Melissa Gold"],
     category: "antihero",
-    affiliation: ["Thunderbolts"],
+    affiliation: [],
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [

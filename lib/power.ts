@@ -363,6 +363,12 @@ const TIERS: Tier[] = [
          standstill and put Thor down in his debut. He sat in tier 7 at 308,
          below a curse and a cloud of electricity that he beats. */
       "thaddeus-ross",
+      /* MAESTRO BESIDE THE OTHER TWO. `Enhanced human` alone lands in tier 7,
+         which is where Songbird is; he is the Hulk a century on, ten times
+         stronger than Professor Hulk on a lifetime of absorbed fallout, and
+         he kept Banner's intelligence. Below Banner rather than above only
+         because Banner beat him in the story that introduced him. */
+      "maestro",
       "iceman",
       "vulcan",
       "exodus",
