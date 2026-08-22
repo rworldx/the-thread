@@ -1672,9 +1672,24 @@ const spiderVerse: CharacterDraft[] = [
     universe: ["sony", "mcu"],
     species: "Human mutate",
     powers: [
-      { en: "Enhanced strength", ar: "قوة معزّزة" },
-      { en: "Glider", ar: "لوح طائر" },
-      { en: "Pumpkin bombs", ar: "قنابل اليقطين" },
+      {
+        en: "The goblin formula: strength and speed",
+        ar: "صيغة الغول: قوة وسرعة",
+      },
+      {
+        en: "Heals from what should have killed him",
+        ar: "يشفى مما كان ينبغي أن يقتله",
+      },
+      {
+        en: "A genius, and completely insane with it",
+        ar: "عبقري، ومجنون تمامًا معها",
+      },
+      {
+        en: "Pumpkin bombs, and a glider that obeys",
+        ar: "قنابل يقطينية، وحوّامة تطيعه",
+      },
+      { en: "Killed the woman Peter loved", ar: "قتل المرأة التي أحبها بيتر" },
+      { en: "Comes back, every single time", ar: "يعود في كل مرة" },
     ],
     origin: {
       en: "An industrialist who tested his own company's serum on himself rather than lose the contract, and did not come back alone.",
@@ -1702,8 +1717,30 @@ const spiderVerse: CharacterDraft[] = [
     universe: ["sony", "mcu"],
     species: "Human",
     powers: [
-      { en: "Four mechanical arms", ar: "أربع أذرع آلية" },
-      { en: "Brilliant physicist", ar: "فيزيائي لامع" },
+      /* THE SINISTER SIX WERE FIFTEEN RECORDS OF TWO OR THREE BULLETS, and
+         this one was in tier 8, "humans who turn up anyway, no powers at all",
+         because his species is Human. Tier 7's own gloss is "anyone whose
+         power is BOLTED ON", and four arms wired into a spine is the literal
+         case of it. He leads this team; ranking him under the Vulture was the
+         second half of the same mistake. */
+      {
+        en: "Four mechanical arms, tons apiece",
+        ar: "أربعة أذرع آلية، أطنان لكل منها",
+      },
+      { en: "Faster than he can be hit", ar: "أسرع مما يمكن ضربه" },
+      { en: "Armoured, and they never tire", ar: "مدرّعة، ولا تتعب أبدًا" },
+      {
+        en: "One of the smartest men alive",
+        ar: "من أذكى الرجال على قيد الحياة",
+      },
+      {
+        en: "Took Spider-Man's body and kept it",
+        ar: "استولى على جسد سبايدرمان واحتفظ به",
+      },
+      {
+        en: "Beats Peter more often than he loses",
+        ar: "يهزم بيتر أكثر مما يُهزم",
+      },
     ],
     origin: {
       en: "A fusion scientist whose harness was built to obey him and stopped, on the day the experiment it was designed for went wrong.",
@@ -1722,8 +1759,21 @@ const spiderVerse: CharacterDraft[] = [
     universe: ["sony", "mcu"],
     species: "Human mutate",
     powers: [
-      { en: "Becomes electricity", ar: "يصير كهرباء" },
-      { en: "Travels through the grid", ar: "ينتقل عبر الشبكة" },
+      { en: "Becomes living electricity", ar: "يصير كهرباء حية" },
+      {
+        en: "Discharges enough to black out a city",
+        ar: "يفرّغ ما يكفي لإطفاء مدينة",
+      },
+      {
+        en: "Travels through any wire or grid",
+        ar: "يسافر عبر أي سلك أو شبكة",
+      },
+      {
+        en: "Absorbs a power station to recharge",
+        ar: "يمتص محطة طاقة ليشحن نفسه",
+      },
+      { en: "Lightning, at will and at range", ar: "برق، متى شاء وعن بُعد" },
+      { en: "Water is what stops him", ar: "الماء هو ما يوقفه" },
     ],
     origin: {
       en: "An engineer nobody at his company could name, who fell into something live and came out able to power a city or take it down.",
@@ -1742,8 +1792,24 @@ const spiderVerse: CharacterDraft[] = [
     universe: ["sony", "mcu"],
     species: "Human mutate",
     powers: [
-      { en: "Becomes sand", ar: "يتحوّل إلى رمل" },
-      { en: "Reforms after any hit", ar: "يعيد تشكّله بعد أي ضربة" },
+      {
+        en: "Becomes sand, and reforms from any hit",
+        ar: "يصير رملًا، ويتشكل بعد أي ضربة",
+      },
+      {
+        en: "Hardens to stone or scatters to dust",
+        ar: "يتصلّب حجرًا أو يتبدد غبارًا",
+      },
+      { en: "Grows to the size of a building", ar: "ينمو بحجم مبنى" },
+      {
+        en: "Shapes his arms into hammers and blades",
+        ar: "يشكّل ذراعيه مطارق ونصالًا",
+      },
+      {
+        en: "Becomes a storm that fills a street",
+        ar: "يصير عاصفة تملأ شارعًا",
+      },
+      { en: "Water and glass are the answer", ar: "الماء والزجاج هما الحل" },
     ],
     origin: {
       en: "A thief on the run who hid in the wrong test site, and who has been trying to pay for his daughter's treatment ever since.",
@@ -1762,8 +1828,18 @@ const spiderVerse: CharacterDraft[] = [
     universe: ["sony", "mcu"],
     species: "Human mutate",
     powers: [
-      { en: "Reptilian strength", ar: "قوة زاحفة" },
-      { en: "Regrows limbs", ar: "تنمو أطرافه من جديد" },
+      {
+        en: "Reptilian strength, well past human",
+        ar: "قوة زاحفة تفوق البشر بكثير",
+      },
+      { en: "Regrows any limb he loses", ar: "يُنبت أي طرف يفقده" },
+      {
+        en: "Claws, fangs and a tail that breaks bone",
+        ar: "مخالب وأنياب وذيل يكسر العظم",
+      },
+      { en: "Commands every reptile that hears him", ar: "يأمر كل زاحف يسمعه" },
+      { en: "Heals faster than a man can", ar: "يشفى أسرع مما يقدر إنسان" },
+      { en: "Connors is still in there", ar: "كونورز لا يزال في الداخل" },
     ],
     origin: {
       en: "A one-armed geneticist trying to make limbs grow back, who tested the answer on himself and got more of it than he asked for.",
@@ -1803,9 +1879,24 @@ const spiderVerse: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human mutate",
     powers: [
-      { en: "Enhanced senses", ar: "حواس معزّزة" },
-      { en: "Master tracker", ar: "متعقّب بارع" },
-      { en: "Enhanced strength", ar: "قوة معزّزة" },
+      {
+        en: "A serum that made him more than a man",
+        ar: "مصل جعله أكثر من إنسان",
+      },
+      {
+        en: "Strength, speed and senses past human",
+        ar: "قوة وسرعة وحواس تفوق البشر",
+      },
+      {
+        en: "Tracks anything, anywhere, on foot",
+        ar: "يتعقب أي شيء في أي مكان سيرًا",
+      },
+      { en: "Barely ages, and does not tire", ar: "لا يشيخ تقريبًا ولا يتعب" },
+      {
+        en: "Beat Spider-Man and buried him alive",
+        ar: "هزم سبايدرمان ودفنه حيًا",
+      },
+      { en: "Hunts with spears and with poison", ar: "يصطاد بالرماح والسم" },
     ],
     origin: {
       en: "The son of a Russian crime family who went to Africa to hunt and came back believing he was the last real predator left.",
@@ -3154,9 +3245,27 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu", "sony"],
     species: "Human",
     powers: [
-      { en: "Illusion technology", ar: "تقنية الأوهام" },
-      { en: "Drone projection", ar: "إسقاط بالطائرات المسيّرة" },
-      { en: "Special effects", ar: "مؤثرات خاصة" },
+      {
+        en: "Illusions a whole city believes",
+        ar: "أوهام تصدقها مدينة بأكملها",
+      },
+      {
+        en: "Drones that build what is not there",
+        ar: "طائرات مسيّرة تبني ما ليس موجودًا",
+      },
+      { en: "Hallucinogenic gas, and a lot of it", ar: "غاز مهلوس، وكثير منه" },
+      {
+        en: "A master of stagecraft before crime",
+        ar: "سيد فنون المسرح قبل الجريمة",
+      },
+      {
+        en: "Fooled Spider-Man into fighting nothing",
+        ar: "خدع سبايدرمان فقاتل لا شيء",
+      },
+      {
+        en: "No powers at all under the helmet",
+        ar: "بلا أي قدرات تحت الخوذة",
+      },
     ],
     origin: {
       en: "A former effects engineer who worked out that a convincing enough illusion does not need any powers behind it.",
@@ -3175,8 +3284,17 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Salvaged flight rig", ar: "جناح من خردة" },
-      { en: "Alien-tech weapons", ar: "أسلحة بتقنية فضائية" },
+      {
+        en: "A flight rig he built from salvage",
+        ar: "جهاز طيران بناه من خردة",
+      },
+      {
+        en: "Alien tech, and weapons made from it",
+        ar: "تقنية فضائية، وأسلحة منها",
+      },
+      { en: "Talons that cut through armour", ar: "مخالب تقطع الدروع" },
+      { en: "Strength the harness gives him", ar: "قوة يمنحها له الحزام" },
+      { en: "Older than everyone he fights", ar: "أكبر سنًا من كل من يقاتلهم" },
     ],
     origin: {
       en: "A salvage contractor pushed out of a city-sized clean-up job, who kept the alien technology and built wings out of it.",
@@ -3659,8 +3777,14 @@ const supporting: CharacterDraft[] = [
     /* NOT plain Human. Surgically bonded to the rig and chemically altered with it. The tail is equipment; the strength is not. */
     species: "Mutate",
     powers: [
-      { en: "Powered tail rig", ar: "ذيل آلي" },
-      { en: "Enhanced strength", ar: "قوة معزّزة" },
+      { en: "A tail that crushes what it hits", ar: "ذيل يسحق ما يصيبه" },
+      { en: "Strength beyond what bit Peter", ar: "قوة تفوق ما لدغ بيتر" },
+      { en: "Climbs a wall as well as he does", ar: "يتسلق الجدار كما يفعل" },
+      { en: "Acid sprayed from the tail", ar: "حمض يُرش من الذيل" },
+      {
+        en: "The rig was never meant to come off",
+        ar: "الجهاز لم يُصمم ليُخلع",
+      },
     ],
     origin: {
       en: "A hired thug with a mechanical tail and a long memory for the person who put him inside.",
@@ -7058,8 +7182,14 @@ const moreSpider: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human mutate",
     powers: [
-      { en: "Armoured hide", ar: "جلد مدرّع" },
-      { en: "Unstoppable charge", ar: "اندفاع لا يُوقف" },
+      { en: "A charge that goes through walls", ar: "اندفاع يخترق الجدران" },
+      {
+        en: "Enormous strength, and a hide to match",
+        ar: "قوة هائلة، وجلد يوازيها",
+      },
+      { en: "Bullets do not reach the skin", ar: "الرصاص لا يبلغ الجلد" },
+      { en: "Once moving, he is hard to turn", ar: "متى تحرّك صعب تحويله" },
+      { en: "The suit does not come off", ar: "البدلة لا تُخلع" },
     ],
     origin: {
       en: "A hired thug bonded permanently into a suit of polymer armour that he cannot take off, which is the joke and the tragedy at once: he ran at a wall for money and now he is the wall.",
@@ -7077,8 +7207,17 @@ const moreSpider: CharacterDraft[] = [
     universe: ["sony", "mcu"],
     species: "Human",
     powers: [
-      { en: "Vibration gauntlets", ar: "قفازات اهتزازية" },
-      { en: "Safecracker", ar: "فاتح خزائن" },
+      { en: "Gauntlets that shatter concrete", ar: "قفازان يحطمان الخرسانة" },
+      {
+        en: "A vibration shell nothing lands through",
+        ar: "غلاف اهتزازي لا يخترقه شيء",
+      },
+      { en: "Has knocked Spider-Man out cold", ar: "أفقد سبايدرمان وعيه" },
+      {
+        en: "The best safecracker in the city",
+        ar: "أمهر فاتح خزائن في المدينة",
+      },
+      { en: "Knows exactly what he is not", ar: "يعرف تمامًا ما ليس هو" },
     ],
     origin: {
       en: "A safecracker who built gauntlets that shake a vault door apart and realised they work just as well on people. One of the few Spider-Man villains with no tragedy attached at all.",
@@ -7135,8 +7274,20 @@ const moreSpider: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human mutate",
     powers: [
-      { en: "Skin like stone", ar: "جلد كالحجر" },
-      { en: "Speaks in a whisper", ar: "لا يتكلّم إلا همسًا" },
+      {
+        en: "Skin like stone, and bullets flatten on it",
+        ar: "جلد كالحجر، والرصاص ينبطح عليه",
+      },
+      {
+        en: "Strength enough to trade with Spider-Man",
+        ar: "قوة تكفي لمبادلة سبايدرمان",
+      },
+      { en: "Feels almost no pain at all", ar: "لا يشعر بالألم تقريبًا" },
+      {
+        en: "Filed his teeth to points himself",
+        ar: "برد أسنانه ليجعلها مدببة بنفسه",
+      },
+      { en: "Speaks in a whisper", ar: "يتكلم همسًا" },
     ],
     origin: {
       en: "A Harlem enforcer whose skin hardened into something bulletproof, and who has never raised his voice in any story he appears in.",
@@ -7815,10 +7966,21 @@ const others: CharacterDraft[] = [
     powers: [
       {
         en: "Osborn's formula, without the madness",
-        ar: "تركيبة أوزبورن بلا جنونها",
+        ar: "صيغة أوزبورن، بلا الجنون",
       },
-      { en: "Glider and pumpkin bombs", ar: "منزلق وقنابل يقطين" },
-      { en: "Lets other men take the fall", ar: "يجعل غيره يدفع الثمن" },
+      {
+        en: "Strength and healing to match a Goblin",
+        ar: "قوة وشفاء يوازيان الغول",
+      },
+      {
+        en: "Glider, pumpkin bombs and razor bats",
+        ar: "حوّامة وقنابل يقطينية وخفافيش حادة",
+      },
+      {
+        en: "Keeps his head where Norman loses his",
+        ar: "يحتفظ برأسه حيث يفقد نورمان رأسه",
+      },
+      { en: "Lets other men take the fall", ar: "يترك غيره يتحمل السقوط" },
     ],
     origin: {
       en: "A fashion magnate who found Norman Osborn's abandoned equipment, worked out that everyone who wore the Green Goblin mask went mad, and built a version that would not. His identity stayed a mystery for years because he kept sending brainwashed stand-ins to be unmasked in his place.",
@@ -10897,9 +11059,21 @@ const spiderRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Becomes water", ar: "يصير ماءً" },
-      { en: "Cannot be held", ar: "لا يُمسك" },
-      { en: "Reforms from a puddle", ar: "يتشكّل من بركة" },
+      { en: "Becomes water, entirely", ar: "يصير ماءً، بالكامل" },
+      {
+        en: "Cannot be held, hit or contained",
+        ar: "لا يُمسك ولا يُضرب ولا يُحتوى",
+      },
+      { en: "Reforms from a puddle", ar: "يتشكل من بركة" },
+      {
+        en: "Floods a room to drown what is in it",
+        ar: "يغرق غرفة ليخنق ما فيها",
+      },
+      {
+        en: "Controls the water around him too",
+        ar: "يتحكم بالماء من حوله أيضًا",
+      },
+      { en: "Heat is what takes him apart", ar: "الحرارة هي ما يفككه" },
     ],
     origin: {
       en: "A ship hand knocked overboard into an experimental discharge, who surfaced able to turn to water at will and found that nothing anyone throws at him stays thrown.",
@@ -10920,9 +11094,17 @@ const spiderRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Skin of molten alloy", ar: "جلد من سبيكة منصهرة" },
-      { en: "Burns what he touches", ar: "يحرق ما يلمس" },
-      { en: "Cooling is the hard part", ar: "التبريد هو الأصعب" },
+      {
+        en: "Skin of molten alloy, always burning",
+        ar: "جلد من سبيكة منصهرة، يحترق دائمًا",
+      },
+      { en: "Burns whatever he touches", ar: "يحرق كل ما يلمسه" },
+      {
+        en: "Strength and durability past human",
+        ar: "قوة وصلابة تفوقان البشر",
+      },
+      { en: "Radiates enough heat to melt a car", ar: "يشع حرارة تذيب سيارة" },
+      { en: "Cooling down is the hard part", ar: "التبريد هو الجزء الصعب" },
     ],
     origin: {
       en: "A lab assistant who stole an experimental alloy and wore it into his own skin, and now runs at a heat he cannot switch off. Staying cool enough to be near people is his whole struggle.",
