@@ -3604,7 +3604,8 @@ const supporting: CharacterDraft[] = [
     nameAr: "إيما فروست",
     aliases: ["White Queen", "Emma Frost", "The White Queen"],
     category: "antihero",
-    affiliation: ["Brotherhood", "Hellions"],
+    /* THE HELLFIRE CLUB, not the Brotherhood. She is its White Queen, which is the whole of her, and the corpus already had the affiliation for it. */
+    affiliation: ["Hellfire Club", "Hellions"],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "alpha",
@@ -15132,7 +15133,8 @@ const mutantsB: CharacterDraft[] = [
     aliases: ["Proteus", "Kevin MacTaggert"],
     /* ANTIVILLAIN. A child with no body of his own who burns through the people he wears. His mother kept him locked up and could not bring herself to end it. */
     category: "antivillain",
-    affiliation: ["Brotherhood"],
+    /* NOT BROTHERHOOD. Moira MacTaggert's son, who has never joined anything. */
+    affiliation: [],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "omega",
@@ -15312,7 +15314,8 @@ const mutantsC: CharacterDraft[] = [
     nameAr: "إكزودس",
     aliases: ["Exodus", "Bennet du Paris"],
     category: "villain",
-    affiliation: ["Brotherhood", "Acolytes"],
+    /* An Acolyte, which he already carried. Magneto's follower is not Magneto's Brotherhood. */
+    affiliation: ["Acolytes"],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "omega",
@@ -16677,7 +16680,8 @@ const powerList: CharacterDraft[] = [
     nameAr: "ماركيز الموت",
     aliases: ["The Marquis of Death", "Clyde Wyncham"],
     category: "villain",
-    affiliation: ["Brotherhood"],
+    /* NOT BROTHERHOOD -- a Fantastic Four villain out of Marvel 1985. */
+    affiliation: [],
     universe: ["fox"],
     species: "Mutant",
     /* NOT omega. Marvel named its Omega-level mutants in House of X #1 and
@@ -16721,7 +16725,8 @@ const powerList: CharacterDraft[] = [
     nameAr: "جيم جاسبرز المجنون",
     aliases: ["Mad Jim Jaspers", "James Jaspers"],
     category: "villain",
-    affiliation: ["Brotherhood"],
+    /* NOT BROTHERHOOD. He is a Captain Britain villain and was never in it; the tag was this corpus using "Brotherhood" to mean "X-Men villain", which is a different thing and made the chip say 18 when the roster is 12. */
+    affiliation: [],
     universe: ["fox"],
     species: "Mutant",
     /* NOT omega. Marvel named its Omega-level mutants in House of X #1 and
@@ -17551,7 +17556,8 @@ const mutantsF: CharacterDraft[] = [
     nameAr: "فابيان كورتيز",
     aliases: ["Fabian Cortez"],
     category: "villain",
-    affiliation: ["Brotherhood", "Acolytes"],
+    /* Also an Acolyte, and the one who tried to kill Magneto. */
+    affiliation: ["Acolytes"],
     universe: ["fox"],
     species: "Mutant",
     powers: [
