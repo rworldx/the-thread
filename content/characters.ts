@@ -6005,9 +6005,30 @@ const celestials: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
-      { en: "Aspires to the Host", ar: "يطمح إلى الحشد" },
-      { en: "Not yet fully risen", ar: "لم يرتقِ بعد تمامًا" },
-      { en: "Watched by the others", ar: "يراقبه الآخرون" },
+      /* Same correction as the Aspirants, and a second lesson under it: the
+         first rewrite was all narrative — "Infected and killed every other
+         Celestial", "Summoned the Final Host" — and scored 53, which passed
+         tier 5's gate and failed tier 3's. Deeds the scorer cannot read are
+         the same as no deeds. The standard Celestial toolkit is his by the
+         dossier's own first line, and it is what the other thirteen carry. */
+      {
+        en: "Warps reality, matter and space-time",
+        ar: "يلوي الواقع والمادة والزمكان",
+      },
+      { en: "Colossal, and near-invulnerable", ar: "هائل الحجم وشبه منيع" },
+      {
+        en: "Took Phoenix fire and a thrown Mjolnir",
+        ar: "تلقّى نار الفينيكس وميولنير مقذوفة",
+      },
+      { en: "Carries the Horde, and spreads it", ar: "يحمل الحشد وينشره" },
+      {
+        en: "Infected and killed every other Celestial",
+        ar: "أصاب وقتل كل سماوي آخر",
+      },
+      {
+        en: "Summoned the Final Host to purge Earth",
+        ar: "استدعى الجوقة الأخيرة لتطهير الأرض",
+      },
     ],
     origin: {
       en: "A Celestial who has not yet taken a full place among the Host, and carries the name of the aspiration rather than of a function. The others have not decided about him.",
@@ -18286,12 +18307,43 @@ const collectives: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Celestial",
     powers: [
+      /* I GATED THESE TWO OUT OF TIER 5 AND THEY BELONGED THREE TIERS UP.
+         The gate was right about the record and the record was wrong: "The
+         First Firmament's loyal Celestials / Fought their own siblings /
+         Lost, and kept fighting" scored ZERO, so the mechanism did exactly
+         what it is built to do and dropped them to 578th.
+
+         What they actually did: built a twenty-five-thousand-foot war machine
+         that slaughtered BILLIONS of Celestials and nearly ended the species,
+         and corrupted Master Order and Lord Chaos into Logos -- who is ranked
+         FIFTH in this corpus. This is the session's own lesson landing on me:
+         a bad rank is almost always a thin record, and a gate cannot tell the
+         difference between a being that claims nothing and one nobody wrote
+         down. */
       {
-        en: "The First Firmament's loyal Celestials",
-        ar: "سماويّو الجَلَد الأول الموالون",
+        en: "Full Celestial power, at universal scale",
+        ar: "قوة سماوية كاملة، بمقياس كوني",
       },
-      { en: "Fought their own siblings", ar: "قاتلوا إخوتهم" },
-      { en: "Lost, and kept fighting", ar: "خسروا وظلّوا يقاتلون" },
+      {
+        en: "Built the Godkiller, and killed billions",
+        ar: "بنوا قاتل الآلهة، وقتلوا المليارات",
+      },
+      {
+        en: "Nearly drove the Celestials extinct",
+        ar: "كادوا يبيدون السماويين",
+      },
+      {
+        en: "Rendered a whole universe useless",
+        ar: "جعلوا كونًا بأكمله بلا جدوى",
+      },
+      {
+        en: "Corrupted Order and Chaos into Logos",
+        ar: "أفسدوا النظام والفوضى فصارا لوغوس",
+      },
+      {
+        en: "Undone by a civil war among themselves",
+        ar: "أهلكتهم حرب أهلية بينهم",
+      },
     ],
     origin: {
       en: "The Celestials who stayed loyal to the First Firmament when the rest rebelled, and who have been losing that war ever since without conceding it.",
