@@ -1622,6 +1622,41 @@ export const OUTRANKS: string[][] = [
     "kraglin",
   ],
   /**
+   * THE TEN ETERNALS, in the order Part 3 settles.
+   *
+   * Their records were differentiated once already, to break the block they
+   * had sorted into. Part 3 then arrived with the feats -- Sersi turning an
+   * EMERGING CELESTIAL to stone, Druig putting one to SLEEP, Sprite rewriting
+   * reality -- and adding those made the scores worse, not better, because
+   * the six bullet slots went to deeds and the keyword-heavy lines came out.
+   * Ikaris ended up EIGHTH of ten on a record whose second line reads "The
+   * most powerful of the ten".
+   *
+   * So it is stated. Sersi first: "the greatest transmuter among all the
+   * Eternals", and she turned a rising Celestial to stone, which is the
+   * largest single act any of them performs alone. Then Ikaris, who spreads
+   * his cosmic energy across everything rather than specialising and whom the
+   * dossier calls the best-rounded. Thena, the fiercest of them, then
+   * Gilgamesh, the physically strongest, then Sprite -- whose own
+   * transmutation is "second only to Sersi" and whose reality rewrite was
+   * borrowed from a Uni-Mind and a Celestial, so it is not his to be ranked
+   * on. Druig, who put Tiamut down. Then Phastos and Kingo, who both mostly
+   * decline to use what they have, Ajak the healer, and Makkari, who traded
+   * flight and every psionic away for speed.
+   */
+  [
+    "sersi",
+    "ikaris",
+    "thena",
+    "gilgamesh",
+    "sprite",
+    "druig",
+    "phastos",
+    "kingo",
+    "ajak",
+    "makkari",
+  ],
+  /**
    * THE HERALDS OF GALACTUS, in the order the sources settle rather than the
    * one the word count produces.
    *

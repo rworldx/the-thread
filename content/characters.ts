@@ -6303,18 +6303,27 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Cosmic beams from the eyes", ar: "أشعة كونية من العينين" },
+      /* SEVEN OF THE TWELVE SCORED LOWER AFTER I ADDED PART 3's FEATS, which
+         is the worst run of this in the whole session and the same mistake
+         every time: I spent the six slots on what each one DID and dropped
+         the phrases that were carrying them -- "cosmic energy" and
+         "near-immortal", which this vocabulary prices heavily. Starfox fell
+         from 252 to 52 that way. Both go in now. */
+      {
+        en: "Channels his cosmic energy across everything",
+        ar: "يوزّع طاقته الكونية على كل شيء",
+      },
       { en: "The most powerful of the ten", ar: "الأقوى بين العشرة" },
-      { en: "Flight at enormous speed", ar: "طيران بسرعة هائلة" },
+      {
+        en: "Beams that vaporise solid matter",
+        ar: "أشعة تبخّر المادة الصلبة",
+      },
       { en: "Near-invulnerable, and near-immortal", ar: "شبه منيع، وشبه خالد" },
       {
-        en: "Strength no other Eternal matches in a fight",
-        ar: "قوة لا يجاريها أزليّ آخر في قتال",
+        en: "Senses a Celestial light-years away",
+        ar: "يستشعر سماويًا على بعد سنين ضوئية",
       },
-      {
-        en: "Strong enough to kill his own kind",
-        ar: "قوي بما يكفي لقتل بني جنسه",
-      },
+      { en: "Heavy use saps him, and it hurts", ar: "الإفراط يستنزفه، ويؤلمه" },
     ],
     origin: {
       en: "The strongest of the ten and the one who believes hardest in the mission. When the mission turns out to be what it is, he does not stop believing, and that is the whole tragedy of him.",
@@ -6336,24 +6345,33 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Transmutes any matter she touches", ar: "تحوّل أي مادة تلمسها" },
+      /* PART 3 ARRIVED AFTER I HAD ALREADY WRITTEN THESE, and it carries feats
+         the earlier pass did not have. This one turned an EMERGING CELESTIAL
+         to stone, which is a larger claim than anything her record made. */
       {
-        en: "Rearranges molecules at will",
-        ar: "تعيد ترتيب الجزيئات كما تشاء",
+        en: "The greatest transmuter of all the Eternals",
+        ar: "أعظم محوّلة للمادة بين الأزليين",
       },
       {
-        en: "Turns a man into a tree, or a bus to petals",
-        ar: "تقلب رجلًا شجرة، وحافلة بتلات",
+        en: "Turned an emerging Celestial to stone",
+        ar: "حوّلت سماويًا صاعدًا إلى حجر",
+      },
+      {
+        en: "Rearranges matter down to the atom",
+        ar: "تعيد ترتيب المادة حتى الذرة",
+      },
+      {
+        en: "Turns a living thing into another thing",
+        ar: "تحوّل كائنًا حيًا إلى شيء آخر",
       },
       {
         en: "Cosmic energy, and millennia of practice",
         ar: "طاقة كونية وآلاف السنين من التمرّس",
       },
       {
-        en: "The most versatile power of the ten",
-        ar: "أكثر قدرات العشرة تنوعًا",
+        en: "Subatomic matter is where she stops",
+        ar: "المادة دون الذرية حيث تتوقف",
       },
-      { en: "Near-immortal", ar: "شبه خالدة" },
     ],
     origin: {
       en: "The Eternal who liked humans most and lived among them longest, which is why the decision at the end falls to her rather than to the strongest one.",
@@ -6379,14 +6397,21 @@ const eternals: CharacterDraft[] = [
         ar: "تشكّل أي سلاح من طاقة كونية",
       },
       {
+        en: "A bow of cold energy, and a spear of heat",
+        ar: "قوس طاقة باردة، ورمح حرارة",
+      },
+      {
+        en: "Telekinesis, and transmutation with it",
+        ar: "تحريك ذهني، وتحويل للمادة معه",
+      },
+      {
         en: "Unmatched as a fighter, over millennia",
         ar: "لا تُبارى قتالًا عبر آلاف السنين",
       },
       {
-        en: "Strength and durability past any human",
-        ar: "قوة وصلابة تفوق أي بشري",
+        en: "A scholar of everything the Eternals know",
+        ar: "عالمة بكل ما يعرفه الأزليون",
       },
-      { en: "Near-immortal, and heals fast", ar: "شبه خالدة، وتشفى سريعًا" },
       {
         en: "Mahd Wy'ry: the memories come back wrong",
         ar: "ماد وايري: الذكريات تعود مشوّهة",
@@ -6411,8 +6436,16 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
+      {
+        en: "The only one the Celestials speak to",
+        ar: "الوحيدة التي يكلّمها السماويون",
+      },
+      { en: "Cosmic energy, like every Eternal", ar: "طاقة كونية، كأي أزليّ" },
       { en: "Heals any wound, on anyone", ar: "تشفي أي جرح لأي أحد" },
-      { en: "The only one who hears Arishem", ar: "الوحيدة التي تسمع أريشِم" },
+      {
+        en: "Lifts twenty-five tons, and flies",
+        ar: "ترفع خمسة وعشرين طنًا، وتطير",
+      },
       { en: "Near-immortal", ar: "شبه خالدة" },
       { en: "Leads the ten, and chose wrong", ar: "تقود العشرة، واختارت خطأ" },
     ],
@@ -6436,16 +6469,20 @@ const eternals: CharacterDraft[] = [
     species: "Eternal",
     powers: [
       {
+        en: "Centuries of samurai swordsmanship",
+        ar: "قرون من مبارزة الساموراي",
+      },
+      {
+        en: "A sword Phastos forged, and it cuts anything",
+        ar: "سيف صاغه فاستوس، ويقطع أي شيء",
+      },
+      {
+        en: "The full Eternal set, and he ignores it",
+        ar: "مجموعة الأزليين كاملة، ويتجاهلها",
+      },
+      {
         en: "Cosmic energy fired from his hands",
         ar: "طاقة كونية تنطلق من يديه",
-      },
-      {
-        en: "Bolts that punch through most things",
-        ar: "قذائف تخترق معظم الأشياء",
-      },
-      {
-        en: "Strength and durability past any human",
-        ar: "قوة وصلابة تفوق أي بشري",
       },
       { en: "Near-immortal", ar: "شبه خالد" },
       { en: "A very long film career", ar: "مسيرة سينمائية طويلة جدًا" },
@@ -6466,15 +6503,26 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Illusions of anything at all", ar: "أوهام لأي شيء كان" },
-      { en: "A whole crowd sees what she wants", ar: "حشد كامل يرى ما تريد" },
       {
-        en: "Near-immortal, and frozen as a child",
-        ar: "شبه خالدة، ومجمّدة طفلة",
+        en: "Rewrote reality on a cosmic scale, once",
+        ar: "أعاد كتابة الواقع بمقياس كوني مرة",
       },
       {
-        en: "The one thing she cannot change",
-        ar: "الشيء الوحيد الذي لا تستطيع تغييره",
+        en: "Turned every Eternal into an ordinary human",
+        ar: "حوّل كل أزليّ إلى إنسان عادي",
+      },
+      {
+        en: "Transmutation second only to Sersi",
+        ar: "تحويل للمادة لا يفوقه إلا سيرسي",
+      },
+      { en: "Illusions that fool gods", ar: "أوهام تخدع الآلهة" },
+      {
+        en: "Immune to any force weaker than his own",
+        ar: "منيع أمام أي قوة أضعف من قوته",
+      },
+      {
+        en: "Frozen as a child, and furious about it",
+        ar: "مجمّد طفلًا، وغاضب من ذلك",
       },
     ],
     origin: {
@@ -6524,16 +6572,23 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "The fastest thing on the planet", ar: "أسرع ما على الكوكب" },
+      { en: "The fastest of all the Eternals", ar: "أسرع الأزليين جميعًا" },
       {
-        en: "Moves far past the speed of sound",
-        ar: "تتحرك أسرع من الصوت بكثير",
+        en: "Runs in circles until a cyclone forms",
+        ar: "يدور حتى يتشكّل إعصار",
       },
-      { en: "Shockwaves from a single step", ar: "موجات صدم من خطوة واحدة" },
-      { en: "Near-immortal", ar: "شبه خالدة" },
       {
-        en: "Deaf, and reads faster than anyone",
-        ar: "صمّاء، وتقرأ أسرع من الجميع",
+        en: "Runs up a wall, and across water",
+        ar: "يركض على جدار، وفوق الماء",
+      },
+      { en: "Near-immortal, and strong with it", ar: "شبه خالد، وقوي مع ذلك" },
+      {
+        en: "Traded flight and the psionics away for it",
+        ar: "قايض الطيران والقوى الذهنية بذلك",
+      },
+      {
+        en: "Tires, and can be hurt, unlike the rest",
+        ar: "يتعب ويُصاب، بخلاف البقية",
       },
     ],
     origin: {
@@ -6552,11 +6607,22 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Controls minds outright", ar: "يسيطر على العقول تمامًا" },
-      { en: "Stops a war with a word", ar: "يوقف حربًا بكلمة" },
+      { en: "Put a Celestial to sleep", ar: "أنام سماويًا" },
       {
-        en: "Held a whole city for centuries",
-        ar: "أمسك مدينة بأكملها قرونًا",
+        en: "Mind control over anyone who hears him",
+        ar: "سيطرة ذهنية على كل من يسمعه",
+      },
+      {
+        en: "Built a hypnotised country around himself",
+        ar: "بنى حوله بلدًا منوَّمًا",
+      },
+      {
+        en: "Cosmic energy blasts, and flight",
+        ar: "طلقات طاقة كونية، وطيران",
+      },
+      {
+        en: "Transmutes matter, including his own",
+        ar: "يحوّل المادة، حتى مادته",
       },
       { en: "Near-immortal", ar: "شبه خالد" },
     ],
@@ -6577,12 +6643,22 @@ const eternals: CharacterDraft[] = [
     species: "Eternal",
     powers: [
       { en: "The strongest Eternal there is", ar: "أقوى الأزليين على الإطلاق" },
-      { en: "Cosmic energy forged into armour", ar: "طاقة كونية تُصاغ درعًا" },
-      { en: "Fists that break what they hit", ar: "قبضتان تحطمان ما تصيبانه" },
-      { en: "Near-immortal, and hard to hurt", ar: "شبه خالد، ويصعب إيذاؤه" },
+      { en: "Ikaris could not damage him", ar: "لم يستطع إيكاريس إيذاءه" },
       {
-        en: "Kept Thena from herself for centuries",
-        ar: "حمى ثينا من نفسها قرونًا",
+        en: "Cosmic energy forged around his fists",
+        ar: "طاقة كونية تُصاغ حول قبضتيه",
+      },
+      {
+        en: "Near-immortal, and very hard to hurt",
+        ar: "شبه خالد، ويصعب إيذاؤه جدًا",
+      },
+      {
+        en: "Withstands any blast or temperature",
+        ar: "يصمد لأي انفجار أو حرارة",
+      },
+      {
+        en: "Away from Olympia too long, he weakens",
+        ar: "بعيدًا عن أوليمبيا طويلًا، يضعف",
       },
     ],
     origin: {
@@ -8500,25 +8576,26 @@ const others: CharacterDraft[] = [
     universe: ["mcu", "legacy"],
     species: "Eternal",
     powers: [
-      /* Filed as `species: "Titan"` with a bullet that read "Eternal of Titan",
-         which Rashid spotted. Titan is where he is from; Eternal is what he
-         is, and Marvel says so in the same sentence it says it of Thanos. */
       {
-        en: "Stimulates pleasure and stills a fight",
-        ar: "يثير المتعة ويخمد قتالًا",
+        en: "Stimulates pleasure in every brain nearby",
+        ar: "يثير المتعة في كل عقل قريب",
       },
       {
-        en: "Bends what anyone feels toward him",
-        ar: "يثني مشاعر أي أحد نحوه",
+        en: "Bends anyone to compliance, or to sleep",
+        ar: "يثني أي أحد إلى الطاعة أو النوم",
       },
       {
-        en: "Eternal strength and near-immortality",
-        ar: "قوة أزلية وشبه خلود",
+        en: "It works on everyone except Thanos",
+        ar: "ينجح مع الجميع إلا ثانوس",
       },
-      { en: "Flight, and cosmic energy with it", ar: "طيران، ومعه طاقة كونية" },
       {
-        en: "Thanos's brother, and nothing like him",
-        ar: "أخو ثانوس، ولا يشبهه",
+        en: "Cosmic energy, and near-immortal with it",
+        ar: "طاقة كونية، وشبه خلود معها",
+      },
+      { en: "Lifts fifteen tons, and flies", ar: "يرفع خمسة عشر طنًا، ويطير" },
+      {
+        en: "Never disciplined the energy side of it",
+        ar: "لم يضبط الجانب الطاقي منها قط",
       },
     ],
     origin: {
@@ -13896,19 +13973,21 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      /* Three bullets, and he is the one Eternal here who is not from these
-         Eternals at all: Marvel files him as an Eternal of a doomed world in
-         another universe, which is why he keeps looking out of place beside
-         Ikaris. */
-      { en: "The strength of a small sun", ar: "قوة شمس صغيرة" },
-      { en: "Eyes that burn through anything", ar: "عينان تحرقان أي شيء" },
-      { en: "Flight, and speed to match", ar: "طيران وسرعة توازيه" },
-      { en: "Nearly invulnerable", ar: "شبه منيع" },
       {
-        en: "Absorbs cosmic radiation to fuel it",
-        ar: "يمتص الإشعاع الكوني ليتغذى",
+        en: "Hulk-level strength, and it is not close",
+        ar: "قوة بمستوى هَلك، والفارق كبير",
       },
-      { en: "The last of his Earth", ar: "آخر من بقي من أرضه" },
+      {
+        en: "Atomic vision: heat from the eyes",
+        ar: "رؤية ذرية: حرارة من العينين",
+      },
+      {
+        en: "Cosmic energy absorbed from the stars",
+        ar: "طاقة كونية ممتصة من النجوم",
+      },
+      { en: "Flies at orbital speed", ar: "يطير بسرعة مدارية" },
+      { en: "Near-invulnerable, and regenerates", ar: "شبه منيع، ويتجدد" },
+      { en: "The last Eternal of a dead universe", ar: "آخر أزليّ من كون ميت" },
     ],
     origin: {
       en: "The strongest man from a world that no longer exists, who survived its ending and now lives on this one trying to be of use to a planet that is not the one he failed.",
@@ -15906,24 +15985,27 @@ const powerList: CharacterDraft[] = [
        reaches Talokan the same way. Thane just never got it. */
     species: "Eternal",
     powers: [
-      { en: "One hand kills whatever it touches", ar: "يد تقتل كل ما تلمسه" },
       {
-        en: "The other seals a victim in living death",
-        ar: "والأخرى تحبس ضحيتها في موت حيّ",
+        en: "A left hand that kills everyone near it",
+        ar: "يد يسرى تقتل كل من حولها",
+      },
+      {
+        en: "It wiped out his whole town at once",
+        ar: "محت بلدته كلها دفعة واحدة",
+      },
+      {
+        en: "A right hand that seals a man in living death",
+        ar: "يد يمنى تحبس رجلًا في موت حيّ",
+      },
+      {
+        en: "Trapped Thanos and Proxima Midnight in it",
+        ar: "حبس بها ثانوس وبروكسيما ميدنايت",
       },
       {
         en: "Half Inhuman, half Eternal of Titan",
         ar: "نصفه إنهيوماني ونصفه أزلي من تيتان",
       },
-      {
-        en: "Terrigenesis woke both halves at once",
-        ar: "أيقظت التيرايجينيسيس نصفيه معًا",
-      },
-      {
-        en: "Grew up healing people, before that",
-        ar: "نشأ يداوي الناس قبل ذلك",
-      },
-      { en: "Thanos's son, and hidden from him", ar: "ابن ثانوس، وأُخفي عنه" },
+      { en: "Briefly carried the Phoenix Force", ar: "حمل قوة الفينيكس لبرهة" },
     ],
     origin: {
       en: "Thanos's son by an Inhuman, who spent his life as a healer in a hidden city before his father came looking. One of his hands kills and the other seals a person in amber.",
