@@ -158,9 +158,28 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu", "legacy"],
     species: "Enhanced human",
     powers: [
-      { en: "Strength that grows with anger", ar: "قوة تزداد مع الغضب" },
-      { en: "Near-total durability", ar: "متانة تكاد تكون مطلقة" },
-      { en: "Leading physicist", ar: "عالم فيزياء بارز" },
+      /* THREE BULLETS FOR THE HULK, one of which was "Leading physicist",
+         which is why Red Hulk was outscoring him two to one. Rashid asked why
+         Red Hulk sits beside him: the answer was that Banner's record barely
+         said anything, not that the two are related. */
+      { en: "Strength with no ceiling on it", ar: "قوة بلا سقف" },
+      {
+        en: "The angrier he gets, the stronger",
+        ar: "كلما ازداد غضبًا ازداد قوة",
+      },
+      {
+        en: "Near-total durability, and heals from anything",
+        ar: "صلابة شبه تامة، ويشفى من أي شيء",
+      },
+      {
+        en: "A thunderclap that flattens a street",
+        ar: "تصفيقة تسوّي شارعًا بالأرض",
+      },
+      { en: "Leaps miles, and lands harder", ar: "يقفز أميالًا، ويهبط أشد" },
+      {
+        en: "Banner's mind, when Banner is driving",
+        ar: "عقل بانر، حين يقود بانر",
+      },
     ],
     origin: {
       en: "A physicist takes the full dose of his own gamma experiment and does not die. What he becomes when his pulse rises is stronger than anything on the field, and it does not take instructions.",
@@ -5920,19 +5939,14 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      /* NINE OF THE TEN HAD TWO BULLETS. They were gated, re-imaged and
-         re-speciesed across three days and nobody wrote down what they do.
-         Every Eternal has the same base -- cosmic energy, near-immortality,
-         strength and durability well past human -- and a specialty on top,
-         which is the shape the Celestials needed too. */
       { en: "Cosmic beams from the eyes", ar: "أشعة كونية من العينين" },
+      { en: "The most powerful of the ten", ar: "الأقوى بين العشرة" },
       { en: "Flight at enormous speed", ar: "طيران بسرعة هائلة" },
       { en: "Near-invulnerable, and near-immortal", ar: "شبه منيع، وشبه خالد" },
       {
-        en: "Strength and durability past any human",
-        ar: "قوة وصلابة تفوق أي بشري",
+        en: "Strength no other Eternal matches in a fight",
+        ar: "قوة لا يجاريها أزليّ آخر في قتال",
       },
-      { en: "The most powerful of the ten", ar: "الأقوى بين العشرة" },
       {
         en: "Strong enough to kill his own kind",
         ar: "قوي بما يكفي لقتل بني جنسه",
@@ -5960,15 +5974,22 @@ const eternals: CharacterDraft[] = [
     powers: [
       { en: "Transmutes any matter she touches", ar: "تحوّل أي مادة تلمسها" },
       {
-        en: "Turns rock to water, or a bus to petals",
-        ar: "تقلب الصخر ماءً والحافلة بتلات",
+        en: "Rearranges molecules at will",
+        ar: "تعيد ترتيب الجزيئات كما تشاء",
+      },
+      {
+        en: "Turns a man into a tree, or a bus to petals",
+        ar: "تقلب رجلًا شجرة، وحافلة بتلات",
       },
       {
         en: "Cosmic energy, and millennia of practice",
         ar: "طاقة كونية وآلاف السنين من التمرّس",
       },
+      {
+        en: "The most versatile power of the ten",
+        ar: "أكثر قدرات العشرة تنوعًا",
+      },
       { en: "Near-immortal", ar: "شبه خالدة" },
-      { en: "Took the Uni-Mind from Ajak", ar: "أخذت العقل الموحّد من آجاك" },
     ],
     origin: {
       en: "The Eternal who liked humans most and lived among them longest, which is why the decision at the end falls to her rather than to the strongest one.",
@@ -6028,7 +6049,6 @@ const eternals: CharacterDraft[] = [
     powers: [
       { en: "Heals any wound, on anyone", ar: "تشفي أي جرح لأي أحد" },
       { en: "The only one who hears Arishem", ar: "الوحيدة التي تسمع أريشِم" },
-      { en: "Cosmic energy, like the rest of them", ar: "طاقة كونية، كسائرهم" },
       { en: "Near-immortal", ar: "شبه خالدة" },
       { en: "Leads the ten, and chose wrong", ar: "تقود العشرة، واختارت خطأ" },
     ],
@@ -6084,7 +6104,6 @@ const eternals: CharacterDraft[] = [
     powers: [
       { en: "Illusions of anything at all", ar: "أوهام لأي شيء كان" },
       { en: "A whole crowd sees what she wants", ar: "حشد كامل يرى ما تريد" },
-      { en: "Cosmic energy, like the rest of them", ar: "طاقة كونية، كسائرهم" },
       {
         en: "Near-immortal, and frozen as a child",
         ar: "شبه خالدة، ومجمّدة طفلة",
@@ -6175,7 +6194,6 @@ const eternals: CharacterDraft[] = [
         en: "Held a whole city for centuries",
         ar: "أمسك مدينة بأكملها قرونًا",
       },
-      { en: "Cosmic energy, like the rest of them", ar: "طاقة كونية، كسائرهم" },
       { en: "Near-immortal", ar: "شبه خالد" },
     ],
     origin: {
@@ -11463,8 +11481,16 @@ const inheritors: CharacterDraft[] = [
     reality: "Earth-001",
     species: "Inheritor",
     powers: [
-      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
-      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      {
+        en: "The one who nearly finished Spider-Man",
+        ar: "من كاد يُنهي سبايدرمان",
+      },
+      {
+        en: "Tracks a totem across any distance",
+        ar: "يتعقب طوطمًا عبر أي مسافة",
+      },
+      { en: "Eats a spider's life-force", ar: "يلتهم قوة حياة العنكبوت" },
+      { en: "Comes back from almost any wound", ar: "يعود من أي جرح تقريبًا" },
       { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
     ],
     origin: {
@@ -11484,8 +11510,26 @@ const inheritors: CharacterDraft[] = [
     reality: "Earth-001",
     species: "Inheritor",
     powers: [
-      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
-      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      /* THE EIGHT INHERITORS HAD THE SAME THREE BULLETS, word for word:
+         "Eats a spider's life-force / Heals almost anything / Crosses
+         realities to hunt". Eight characters, one record, so they sorted into
+         a block by construction. Rashid's point about the Eternals applies
+         harder here -- being the same kind is not a reason to be adjacent,
+         and these eight are a father, a scientist, a huntsman, a brute, twins
+         and an outcast. */
+      {
+        en: "The patriarch, and the strongest of them",
+        ar: "البطريرك، وأقواهم",
+      },
+      {
+        en: "Drains a totem dry in one feeding",
+        ar: "يستنزف طوطمًا في وجبة واحدة",
+      },
+      {
+        en: "Strength and durability past his children",
+        ar: "قوة وصلابة تفوق أبناءه",
+      },
+      { en: "Heals almost anything", ar: "يشفى من أي شيء تقريبًا" },
       { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
     ],
     origin: {
@@ -11505,9 +11549,16 @@ const inheritors: CharacterDraft[] = [
     reality: "Earth-001",
     species: "Inheritor",
     powers: [
-      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
-      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
-      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+      {
+        en: "Leads the hunt, and keeps the hounds",
+        ar: "تقود الصيد وتمسك الكلاب",
+      },
+      {
+        en: "Runs a totem down before it can turn",
+        ar: "تُنهك الطوطم قبل أن يلتفت",
+      },
+      { en: "Eats a spider's life-force", ar: "تلتهم قوة حياة العنكبوت" },
+      { en: "Heals almost anything", ar: "تشفى من أي شيء تقريبًا" },
     ],
     origin: {
       en: "The Inheritor who hunts with a pack of hounds and enjoys the chase more than the meal, running her prey to exhaustion across worlds before she closes.",
@@ -11526,9 +11577,16 @@ const inheritors: CharacterDraft[] = [
     reality: "Earth-001",
     species: "Inheritor",
     powers: [
-      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
-      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
-      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+      {
+        en: "The heaviest hitter of the family",
+        ar: "أعنفهم ضربًا في العائلة",
+      },
+      {
+        en: "Tears a totem apart before feeding",
+        ar: "يمزق الطوطم قبل أن يلتهمه",
+      },
+      { en: "Enormous strength, and no restraint", ar: "قوة هائلة، وبلا كابح" },
+      { en: "Heals almost anything", ar: "يشفى من أي شيء تقريبًا" },
     ],
     origin: {
       en: "The heaviest of the Inheritors, who kills by walking through whatever is in the way. Where his siblings hunt, he simply arrives.",
@@ -11547,8 +11605,15 @@ const inheritors: CharacterDraft[] = [
     reality: "Earth-001",
     species: "Inheritor",
     powers: [
-      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
-      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
+      {
+        en: "Clones himself, so killing him does nothing",
+        ar: "يستنسخ نفسه، فقتله لا يجدي",
+      },
+      {
+        en: "A scientist before he is a hunter",
+        ar: "عالِم قبل أن يكون صيادًا",
+      },
+      { en: "Eats a spider's life-force", ar: "يلتهم قوة حياة العنكبوت" },
       { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
     ],
     origin: {
@@ -11568,9 +11633,9 @@ const inheritors: CharacterDraft[] = [
     reality: "Earth-001",
     species: "Inheritor",
     powers: [
-      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
-      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
-      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+      { en: "Hunts as one half of a pair", ar: "يصطاد بوصفه نصف ثنائي" },
+      { en: "Younger, and hungrier for it", ar: "أصغر، وأشد جوعًا لذلك" },
+      { en: "Eats a spider's life-force", ar: "يلتهم قوة حياة العنكبوت" },
     ],
     origin: {
       en: "One of the younger Inheritors, who hunts alongside Bora and treats the whole thing as sport. The recklessness is real and so is the appetite.",
@@ -11589,9 +11654,12 @@ const inheritors: CharacterDraft[] = [
     reality: "Earth-001",
     species: "Inheritor",
     powers: [
-      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
-      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
-      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+      {
+        en: "Hunts as the other half of a pair",
+        ar: "تصطاد بوصفها النصف الآخر",
+      },
+      { en: "Younger, and less careful for it", ar: "أصغر، وأقل حذرًا لذلك" },
+      { en: "Eats a spider's life-force", ar: "تلتهم قوة حياة العنكبوت" },
     ],
     origin: {
       en: "One of the younger Inheritors, who hunts with Brix and shares his taste for making a game of it. Together they are less careful than the elders and no less lethal.",
@@ -11610,9 +11678,16 @@ const inheritors: CharacterDraft[] = [
     reality: "Earth-001",
     species: "Inheritor",
     powers: [
-      { en: "Eats a spider's life-force", ar: "يلتهم أثر حياة العنكبوت" },
-      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
-      { en: "Crosses realities to hunt", ar: "يعبر الوقائع للصيد" },
+      {
+        en: "The outcast the others hunted first",
+        ar: "المنبوذ الذي طاردوه أولًا",
+      },
+      {
+        en: "Took the Master Weaver's chair in the end",
+        ar: "اعتلى مقعد النسّاج الأعظم أخيرًا",
+      },
+      { en: "Eats a spider's life-force", ar: "يلتهم قوة حياة العنكبوت" },
+      { en: "Heals almost anything", ar: "يشفى من أي شيء تقريبًا" },
     ],
     origin: {
       en: "The Inheritor his family cast out and made to wear a mask, who was sent to hunt spiders and ended up standing with them. He inherited the Web he was told to feed on.",
