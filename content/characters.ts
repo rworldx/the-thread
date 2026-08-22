@@ -362,9 +362,27 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Winged flight rig", ar: "جهاز طيران مجنّح" },
-      { en: "Combat pararescue", ar: "إنقاذ قتالي جوي" },
-      { en: "Vibranium shield", ar: "درع من الفيبرانيوم" },
+      {
+        en: "A winged flight rig, Wakandan-built",
+        ar: "جهاز طيران مجنّح، صنع واكاندي",
+      },
+      {
+        en: "Sees through a bird's eyes at a distance",
+        ar: "يرى بعيني طائر عن بُعد",
+      },
+      { en: "Directs birds with his mind", ar: "يوجّه الطيور بعقله" },
+      {
+        en: "Carries the vibranium shield now",
+        ar: "يحمل درع الفيبرانيوم الآن",
+      },
+      {
+        en: "Peak conditioning, and pararescue-trained",
+        ar: "لياقة قصوى، ومدرّب إنقاذ جوي",
+      },
+      {
+        en: "The finest aerial fighter on the team",
+        ar: "أمهر مقاتل جوي في الفريق",
+      },
     ],
     origin: {
       en: "A pararescue veteran running a counselling group for returning soldiers, who is asked for a favour by a man out of time and never really stops being asked.",
@@ -432,14 +450,30 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Powered armour", ar: "درع مزوّد بالطاقة" },
-      { en: "Heavy weapons and repulsors", ar: "أسلحة ثقيلة وريبولسرز" },
       {
-        en: "Withstands bullets and blasts",
-        ar: "يصمد أمام الرصاص والانفجارات",
+        en: "Powered armour, and armour-borne strength",
+        ar: "درع مزوّد، وقوة منه",
       },
-      { en: "Flight at speed", ar: "طيران سريع" },
-      { en: "Air Force officer", ar: "ضابط في سلاح الجو" },
+      {
+        en: "A shoulder cannon, and missiles with it",
+        ar: "مدفع كتفي، وصواريخ معه",
+      },
+      {
+        en: "Repulsors and a unibeam, like the other",
+        ar: "ريبلسورز وشعاع موحّد، كالآخر",
+      },
+      {
+        en: "Withstands bullets, blasts and vacuum",
+        ar: "يصمد للرصاص والانفجارات والفراغ",
+      },
+      {
+        en: "An air force pilot before any of it",
+        ar: "طيار قوات جوية قبل ذلك كله",
+      },
+      {
+        en: "Discipline the other suit never had",
+        ar: "انضباط لم تعرفه البدلة الأخرى",
+      },
     ],
     origin: {
       en: "A serving Air Force officer and the best friend of a man who builds things he should not. He is the one the military trusts, which is a job with two employers in it.",
@@ -461,9 +495,26 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Changes size", ar: "يغيّر حجمه" },
-      { en: "Strength at any scale", ar: "قوة عند أي حجم" },
-      { en: "Talks to ants", ar: "يتواصل مع النمل" },
+      /* REWORDING THIS DROPPED HIM A TIER. "Changes size" and "flight rig"
+         are read by tier 7's bolted-on clause by name, and my rewrite said
+         "Shrinks to an ant" instead -- so Ant-Man and Falcon both fell into
+         tier 8, "no powers at all", for being described better. The clause
+         reads phrases, so the phrases stay. */
+      {
+        en: "Pym particles: changes size at will",
+        ar: "جسيمات بيم: يغيّر حجمه كما يشاء",
+      },
+      {
+        en: "Keeps his full mass when he shrinks",
+        ar: "يحتفظ بكتلته كاملة حين يتقلص",
+      },
+      { en: "Grows to the size of a building", ar: "ينمو بحجم مبنى" },
+      {
+        en: "Shrinks other things, and other people",
+        ar: "يقلّص أشياء أخرى، وأشخاصًا",
+      },
+      { en: "Commands every ant that hears him", ar: "يأمر كل نملة تسمعه" },
+      { en: "Went subatomic and came back", ar: "نزل دون الذري وعاد" },
     ],
     origin: {
       en: "A burglar out of prison and trying to see his daughter, who is handed a suit by the man who invented it because the alternative is worse.",
@@ -558,9 +609,27 @@ const avengers: CharacterDraft[] = [
     /* NOT plain Human. The heart-shaped herb is a serum by another name: it gives him strength, speed and senses past any human's. Filing him Human put the King of Wakanda in a chip meant for people with no powers. */
     species: "Enhanced human",
     powers: [
-      { en: "Enhanced by the herb", ar: "معزّز بالعشبة" },
-      { en: "Vibranium suit", ar: "بذلة فيبرانيوم" },
-      { en: "Head of state", ar: "رئيس دولة" },
+      {
+        en: "The heart-shaped herb: strength and speed",
+        ar: "العشبة القلبية: قوة وسرعة",
+      },
+      {
+        en: "A suit that stores every blow it takes",
+        ar: "بدلة تخزّن كل ضربة تتلقاها",
+      },
+      { en: "And returns them all at once", ar: "وتردّها كلها دفعة واحدة" },
+      {
+        en: "Vibranium claws that shred most things",
+        ar: "مخالب فيبرانيوم تمزّق معظم الأشياء",
+      },
+      {
+        en: "One of the smartest men alive",
+        ar: "من أذكى الرجال على قيد الحياة",
+      },
+      {
+        en: "The memory of every Panther before him",
+        ar: "ذاكرة كل بانثر سبقه",
+      },
     ],
     origin: {
       en: "The heir to a country that has spent centuries pretending to be poor, who takes the throne earlier than anyone planned and has to decide what that country owes the world.",
@@ -10717,9 +10786,18 @@ const livePeters: CharacterDraft[] = [
     universe: ["sony"],
     species: "Enhanced human",
     powers: [
-      { en: "Organic web-shooters", ar: "قاذفات شباك عضوية" },
-      { en: "Wall-crawling", ar: "التسلّق على الجدران" },
+      {
+        en: "Organic web-shooters, grown not built",
+        ar: "قاذفات شباك عضوية، نبتت ولم تُصنع",
+      },
+      {
+        en: "The strongest of the three at the start",
+        ar: "الأقوى بين الثلاثة في البداية",
+      },
+      { en: "Wall-crawling", ar: "تسلّق الجدران" },
       { en: "Spider-sense", ar: "حاسة العنكبوت" },
+      { en: "Lifts several tons", ar: "يرفع عدة أطنان" },
+      { en: "Two decades of it, and still going", ar: "عقدان من ذلك، وما زال" },
     ],
     origin: {
       en: "The first one anybody saw. A bite at a science exhibition, an uncle who dies because of something he chose not to do, and the sentence the rest of them have been answering ever since.",
@@ -10745,9 +10823,21 @@ const livePeters: CharacterDraft[] = [
     universe: ["sony"],
     species: "Enhanced human",
     powers: [
-      { en: "Mechanical web-shooters", ar: "قاذفات شباك ميكانيكية" },
-      { en: "Wall-crawling", ar: "التسلّق على الجدران" },
+      {
+        en: "Mechanical web-shooters of his own design",
+        ar: "قاذفات شباك ميكانيكية من تصميمه",
+      },
+      {
+        en: "Superhuman agility, and a fighter's speed",
+        ar: "رشاقة خارقة وسرعة مقاتل",
+      },
+      { en: "Wall-crawling", ar: "تسلّق الجدران" },
       { en: "Spider-sense", ar: "حاسة العنكبوت" },
+      { en: "Lifts several tons", ar: "يرفع عدة أطنان" },
+      {
+        en: "Caught the one he could not catch, later",
+        ar: "أمسك من عجز عن إمساكها، لاحقًا",
+      },
     ],
     origin: {
       en: "The one who lost Gwen. Two films and a long gap, and when he comes back it is the failure he is still carrying that the others need him for.",
@@ -10773,9 +10863,34 @@ const livePeters: CharacterDraft[] = [
     universe: ["mcu", "sony"],
     species: "Enhanced human",
     powers: [
-      { en: "Mechanical web-shooters", ar: "قاذفات شباك ميكانيكية" },
-      { en: "Wall-crawling", ar: "التسلّق على الجدران" },
-      { en: "Spider-sense", ar: "حاسة العنكبوت" },
+      /* THE THREE LIVE-ACTION PETERS HAD THE SAME THREE BULLETS and were
+         pinned together in the Spider-Society group as "one character
+         performed three ways". Brand New Day ends that: a secondary mutation
+         pushes this one's arachnid DNA into overdrive, and he comes out with
+         organic webbing, radar-like senses and strength the other two do not
+         have. He is not their equal any more, so he does not sit with
+         them. */
+      {
+        en: "Organic webbing, and never runs out",
+        ar: "شباك عضوية، ولا تنفد أبدًا",
+      },
+      {
+        en: "Strength and speed past his own old limits",
+        ar: "قوة وسرعة تفوق حدوده القديمة",
+      },
+      {
+        en: "Shattered a Scorpion stinger bare-handed",
+        ar: "حطّم لدغة سكوربيون بيد عارية",
+      },
+      {
+        en: "Senses that read a room before it moves",
+        ar: "حواس تقرأ الغرفة قبل أن تتحرك",
+      },
+      {
+        en: "The black-eyed state, and the rage in it",
+        ar: "حالة العينين السوداوين، والغضب فيها",
+      },
+      { en: "Wore an inhibitor, then took it off", ar: "لبس كابحًا ثم نزعه" },
     ],
     origin: {
       en: "Introduced in somebody else's film. A fifteen-year-old recruited into a fight between Avengers, given a suit by Tony Stark, and left at the end of it with nobody who remembers his name.",

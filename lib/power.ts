@@ -1651,6 +1651,15 @@ export const OUTRANKS: string[][] = [
   [
     "miles-morales",
     "spider-man",
+    /* BRAND NEW DAY SPLIT THE TRIO. This group's own note said the three
+       live-action Peters "sit together in the middle, since they are one
+       character performed three ways", and that stopped being true in July:
+       a secondary mutation gives this one organic webbing that never runs
+       out, radar-like senses that read a room before it moves, and strength
+       past his own old limits. He is measurably more than baseline now, so
+       he sits with the ones who are, and the other two stay where they were
+       as each other's equals. */
+    "spider-man-tom",
     "spider-man-2099",
     "spider-uk",
     "silk",
@@ -1662,7 +1671,6 @@ export const OUTRANKS: string[][] = [
     "anya-corazon",
     "julia-carpenter",
     "mattie-franklin",
-    "spider-man-tom",
     "spider-man-tobey",
     "spider-man-andrew",
     "mayday-parker",
