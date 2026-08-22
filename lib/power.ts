@@ -438,12 +438,24 @@ const TIERS: Tier[] = [
        * below the gods and the Hulks and above the flying bricks: none of them
        * out-punches Thor, and all four beat the ones who only punch.
        */
-      /* And his teacher above him, which is the order the sources give:
-         "possibly the most proficient sorcerer who ever lived", who stops and
-         loops and reverses time and warps reality outright. Leaving her in
-         tier 6 while promoting her student was incoherent. */
-      "the-ancient-one",
+      /**
+       * THE STUDENT ABOVE THE TEACHER, reversing what I wrote an hour ago.
+       * I had put the Ancient One over Strange because she trained him, and
+       * Rashid pointed out that this file already disagrees with itself on
+       * that: Thor is ranked above ODIN in the peak list, and Loki, who
+       * learned his magic from Frigga, becomes the God of Stories. Being
+       * taught by someone is not a ceiling. Surpassing the teacher is the
+       * arc, and in Strange's case it is the whole character.
+       *
+       * DOOM COMES UP WITH THEM, and his was the widest gap on the page. He
+       * is PEAK #9 in this corpus -- God Emperor Doom, wearing the power of
+       * the Beyonders -- and his base rank was 139th, below a Herald of
+       * Galactus. He matches Richards' intellect, has held the Sorcerer
+       * Supreme mantle himself, and has beaten Strange.
+       */
       "doctor-strange",
+      "doctor-doom",
+      "the-ancient-one",
       "ghost-rider",
       "kang",
       "khonshu",
@@ -596,7 +608,6 @@ const TIERS: Tier[] = [
      * emptied minds by the million.
      */
     ranked: [
-      "doctor-doom",
       /* THE MAKER SITS WITH DOOM, who is the same idea from the other side: an
          intellect that decided it should be in charge. He came out 280th in
          "Enhanced" on `species: Human mutate` — a man whose own record says he
