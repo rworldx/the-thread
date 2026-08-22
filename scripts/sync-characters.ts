@@ -60,6 +60,11 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  /* Wendell Vaughn with the Quantum Bands lit, picked by Rashid. Hosted on
+     the fanon wiki but the art is the standard black-and-gold design, and the
+     host is the fandom CDN that most of this list already uses. */
+  quasar:
+    "https://static.wikia.nocookie.net/marvelcomicsfanon/images/b/b9/Quasar-0.jpg/revision/latest?cb=20190928225233",
   /* THE PICTURE RASHID PICKED, ON THE HOST THAT ACTUALLY RENDERS.
      I first stored the preview.redd.it link he sent and checked it with curl,
      which returned 206, and called that verified. It was not: `preview.redd.it`
@@ -1037,8 +1042,6 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   korvac:
     "https://static.wikia.nocookie.net/marveldatabase/images/a/a1/Michael_Korvac_%28Earth-691%29_from_Iron_Man_Vol_5_15_001.jpg/revision/latest?cb=20211228033211",
   /* Wendell Vaughn in the Quasar suit, from his own gallery. */
-  quasar:
-    "https://static.wikia.nocookie.net/marveldatabase/images/e/e6/Wendell_Vaughn_%28Earth-616%29_from_Annihilation_Nova_Vol_1_4_0001.jpg/revision/latest?cb=20161001030249",
   /* Her AS Nova, rather than the Fearless Defenders panel of her out of it. */
   "frankie-raye":
     "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/497-nova.jpg",
