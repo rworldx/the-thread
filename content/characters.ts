@@ -2817,12 +2817,24 @@ const villains: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Enormous strength", ar: "قوة هائلة" },
-      { en: "Near-total durability", ar: "صلابة شبه تامة" },
+      {
+        en: "Stronger than the Hulk at his baseline",
+        ar: "أقوى من هَلك في حالته الأساسية",
+      },
+      { en: "Twice the gamma Banner took", ar: "ضعف الغاما التي تلقاها بانر" },
+      {
+        en: "Never changes back, and never wanted to",
+        ar: "لا يعود أبدًا، ولم يرد ذلك قط",
+      },
+      {
+        en: "Near-total durability, and gills with it",
+        ar: "صلابة شبه تامة، وخياشيم معها",
+      },
       { en: "Heals from almost anything", ar: "يشفى من أي شيء تقريبًا" },
-      { en: "Cannot change back", ar: "لا يستطيع العودة" },
-      { en: "Bone protrusions", ar: "نتوءات عظمية" },
-      { en: "Trained soldier", ar: "جندي مدرّب" },
+      {
+        en: "Loses only when Banner gets angry enough",
+        ar: "لا يُهزم إلا إذا غضب بانر كفاية",
+      },
     ],
     origin: {
       en: "A career soldier who watched something stronger than him and asked to be given the same thing, then asked for more of it.",
@@ -3587,11 +3599,36 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Hulk strength, kept", ar: "قوة هالك محفوظة" },
-      { en: "Near-total durability", ar: "صلابة شبه تامة" },
-      { en: "Heals fast", ar: "تشفى سريعًا" },
-      { en: "Keeps her own mind", ar: "تحتفظ بعقلها" },
-      { en: "Practising attorney", ar: "محامية ممارسة" },
+      /* THE GAMMA CHARACTERS ARE ALL FLATTENED BY THE PER-CLASS CAP: strength,
+         durability and healing are one vocabulary class, capped at three
+         hits, so She-Hulk scored 42 and the Abomination 62 no matter how many
+         bullets they had. What separates them is what ELSE is true -- she
+         keeps her mind, he never changes back -- so that is what the records
+         say now. */
+      {
+        en: "Hulk-level strength, and her own mind",
+        ar: "قوة بمستوى هَلك، وعقلها معها",
+      },
+      {
+        en: "Stronger the angrier she gets, like him",
+        ar: "تقوى مع غضبها، مثله",
+      },
+      {
+        en: "Near-invulnerable, and heals from anything",
+        ar: "شبه منيعة، وتشفى من أي شيء",
+      },
+      {
+        en: "Seven feet of gamma, and it never wears off",
+        ar: "سبعة أقدام من الغاما، لا تزول",
+      },
+      {
+        en: "Traded blows with the Thing and won",
+        ar: "بادلت الثينج الضربات وفازت",
+      },
+      {
+        en: "A working lawyer the rest of the week",
+        ar: "محامية عاملة بقية الأسبوع",
+      },
     ],
     origin: {
       en: "A lawyer who got her cousin's condition from a blood transfusion and, unlike him, kept her mind through all of it.",
@@ -7839,9 +7876,21 @@ const others: CharacterDraft[] = [
     universe: ["animation", "legacy"],
     species: "Gamma mutate",
     powers: [
-      { en: "Armoured blue hide", ar: "جلد أزرق مدرّع" },
-      { en: "Hulk-level strength", ar: "قوة بمستوى هَلك" },
-      { en: "Keeps his own mind", ar: "يحتفظ بعقله" },
+      {
+        en: "Hulk-level strength, in blue armour",
+        ar: "قوة بمستوى هَلك، في درع أزرق",
+      },
+      {
+        en: "A hide that shrugs off what stops tanks",
+        ar: "جلد يصدّ ما يوقف الدبابات",
+      },
+      { en: "Turns invisible when he holds still", ar: "يصير خفيًا حين يثبت" },
+      {
+        en: "Keeps his own mind, and his own mouth",
+        ar: "يحتفظ بعقله، وبلسانه",
+      },
+      { en: "Heals from almost anything", ar: "يشفى من أي شيء تقريبًا" },
+      { en: "Rick Jones, of all people", ar: "ريك جونز، من بين كل الناس" },
     ],
     origin: {
       en: "Rick Jones is the teenager Bruce Banner ran into the gamma field to save, which makes him the reason the Hulk exists at all. Decades of guilt later he takes the same exposure on purpose and comes out blue, armoured and still talking.",
@@ -19065,9 +19114,27 @@ const hulkRogues: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Gamma mutate",
     powers: [
-      { en: "A mind the gamma made", ar: "عقل صنعته أشعة غاما" },
-      { en: "Plans a decade ahead", ar: "يخطط لعقد مقبل" },
-      { en: "The other half of the accident", ar: "النصف الآخر من الحادث" },
+      {
+        en: "One of the smartest men alive",
+        ar: "من أذكى الرجال على قيد الحياة",
+      },
+      {
+        en: "The gamma built a mind, not a body",
+        ar: "بنت الغاما عقلًا لا جسدًا",
+      },
+      {
+        en: "Telepathy, and mind control with it",
+        ar: "تخاطر، وسيطرة ذهنية معه",
+      },
+      { en: "Plans a decade ahead of everyone", ar: "يخطط قبل الجميع بعقد" },
+      {
+        en: "Builds whatever he needs from nothing",
+        ar: "يبني ما يحتاجه من لا شيء",
+      },
+      {
+        en: "The other half of what happened to Banner",
+        ar: "النصف الآخر مما حدث لبانر",
+      },
     ],
     origin: {
       en: "The same radiation that made Banner enormous made Samuel Sterns brilliant instead, which is the joke of him: one accident produced a body with no mind to run it and a mind with no body to carry it.",
@@ -19119,11 +19186,23 @@ const hulkRogues: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Artificial being",
     powers: [
-      { en: "Enormous strength", ar: "قوة هائلة" },
-      { en: "Near-total durability", ar: "صلابة شبه تامة" },
-      { en: "Every weapon his makers built", ar: "كل سلاح بناه صانعوه" },
-      { en: "Two heads, two purposes", ar: "رأسان وغرضان" },
-      { en: "The last of a dead culture", ar: "آخر ما بقي من حضارة ميتة" },
+      {
+        en: "Two heads: one fights, one remembers",
+        ar: "رأسان: أحدهما يقاتل والآخر يتذكر",
+      },
+      {
+        en: "Enormous strength and near-total durability",
+        ar: "قوة هائلة وصلابة شبه تامة",
+      },
+      {
+        en: "Every weapon his people ever built",
+        ar: "كل سلاح صنعه قومه يومًا",
+      },
+      { en: "Flight, and a fortress in the sky", ar: "طيران، وحصن في السماء" },
+      {
+        en: "Neither head can be reasoned with",
+        ar: "لا يمكن إقناع أي من الرأسين",
+      },
     ],
     origin: {
       en: "An android built by bird-people to preserve everything they knew, with their history in the lower head and their weapons in the upper one. The civilisation it was made to remember is already gone.",
@@ -19238,14 +19317,26 @@ const hulkRogues: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Mutate",
     powers: [
-      { en: "Four, irradiated on purpose", ar: "أربعة تعرّضوا للإشعاع عمدًا" },
       {
-        en: "Vector, Vapor, X-Ray, Ironclad",
-        ar: "فيكتور وفيبور وإكس راي وآيرونكلاد",
+        en: "Four irradiated on purpose, and it worked",
+        ar: "أربعة تعرّضوا للإشعاع عمدًا، ونجح",
       },
       {
-        en: "Wanted what the Fantastic Four got",
-        ar: "أرادوا ما ناله الفانتاستك فور",
+        en: "Vector repels anything he points at",
+        ar: "فيكتور يدفع كل ما يشير إليه",
+      },
+      {
+        en: "Vapor becomes any gas she chooses",
+        ar: "فيبور تصير أي غاز تختاره",
+      },
+      { en: "X-Ray is living radiation", ar: "إكس-راي إشعاع حيّ" },
+      {
+        en: "Ironclad controls his own density",
+        ar: "آيرونكلاد يتحكم بكثافته",
+      },
+      {
+        en: "They chose this, which is the difference",
+        ar: "اختاروا هذا، وهذا هو الفرق",
       },
     ],
     origin: {
@@ -19267,9 +19358,11 @@ const hulkRogues: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Gamma mutate",
     powers: [
-      { en: "Gamma strength, growing", ar: "قوة غاما تتنامى" },
-      { en: "A soldier, not a volunteer", ar: "جندي لا متطوع" },
-      { en: "Made to hunt the Hulk", ar: "صُنع لمطاردة هالك" },
+      { en: "Gamma strength, and it keeps growing", ar: "قوة غاما، وتظل تنمو" },
+      { en: "Near-total durability", ar: "صلابة شبه تامة" },
+      { en: "Heals from almost anything", ar: "يشفى من أي شيء تقريبًا" },
+      { en: "A soldier, not a volunteer", ar: "جندي، لا متطوّع" },
+      { en: "Made to hunt the Hulk", ar: "صُنع لمطاردة هَلك" },
     ],
     origin: {
       en: "A soldier dosed with gamma radiation by his own side to make a weapon that could catch Banner, and who never asked to become the thing he was sent after.",
