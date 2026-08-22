@@ -237,7 +237,12 @@ const TIERS: Tier[] = [
           "Cosmic Being",
           "Cosmic entity",
           "Cosmic Force",
-          "Watcher",
+          /* "WATCHER" IS GONE FROM HERE, and it was a rule with exactly one
+             member -- the same shape as "Alien dragon", which existed only
+             for Lockheed. It put Uatu 68th, THIRTY-THREE PLACES ABOVE ODIN,
+             on a claim score barely half of Odin's, and the sources put him
+             LEVEL with the sky-fathers rather than above them. He is named
+             into tier 5 beside them instead. */
           "Symbiote god",
           "Psychic Entity",
         )(c) ||
@@ -319,6 +324,24 @@ const TIERS: Tier[] = [
       "odin",
       "surtur",
       "zeus",
+      /**
+       * THE WATCHER SITS WITH THEM, which is where the sources put him:
+       * "power rated comparable to sky-fathers like Odin and Zeus, and
+       * collectively to the Celestials". Collectively is the Watchers as a
+       * RACE; Uatu alone is a sky-father's peer.
+       *
+       * He was 68th, in the tier defined by beings who ACT on a cosmic scale
+       * -- Galactus devours, Arishem judges, Dormammu rules a dimension --
+       * and his defining trait is that he does not. This file already settled
+       * that seeing is not doing, when Heimdall was scoring 70 for looking at
+       * the nine realms. It applied the rule to the score and never to the
+       * tier.
+       *
+       * Below Odin and Zeus rather than between them: he can hide a planet
+       * from Galactus and he has sworn not to, and an oath he keeps for
+       * millennia is a fact about what he brings to a fight.
+       */
+      "the-watcher",
       "mangog",
       "sentry",
       "silver-surfer",
