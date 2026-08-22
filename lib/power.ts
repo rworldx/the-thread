@@ -1028,6 +1028,10 @@ export const PEAK_HEAD: string[] = [
   "griever",
   "phoenix",
   "jean-grey",
+  /* Echo has hosted the Phoenix Force, which is a PEAK claim and not a base
+     one: her own power is mimicry and her base rank reflects that. A host is a
+     host, and this list is where hosting counts. */
+  "echo",
   "scarlet-witch",
   "legion",
   "onslaught",

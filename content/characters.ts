@@ -854,8 +854,24 @@ const avengers: CharacterDraft[] = [
        stays null. */
     species: "Mutant",
     powers: [
-      { en: "Hard light constructs", ar: "تشكيل الضوء الصلب" },
-      { en: "Embiggening", ar: "تكبير الأطراف" },
+      {
+        en: "Stretches and reshapes her whole body",
+        ar: "تمطّ جسدها كله وتعيد تشكيله",
+      },
+      {
+        en: "Embiggens a fist, or all of herself",
+        ar: "تُضخّم قبضتها، أو نفسها كلها",
+      },
+      {
+        en: "Hard light constructs, from the bangle",
+        ar: "تكوينات ضوء صلب، من السوار",
+      },
+      { en: "Shrinks, and mimics another face", ar: "تتقلص، وتحاكي وجهًا آخر" },
+      {
+        en: "Heals when she returns to her own shape",
+        ar: "تشفى حين تعود إلى شكلها",
+      },
+      { en: "Inhuman, and a mutant as well", ar: "إنهيومانية، ومتحوّلة أيضًا" },
     ],
     origin: {
       en: "A teenager in New Jersey who writes fan fiction about the Avengers, finds a bangle in her grandmother's things, and discovers her family has a longer story than she was told.",
@@ -873,8 +889,24 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Expert archer", ar: "رامية سهام بارعة" },
-      { en: "Fencing and combat", ar: "مبارزة وقتال" },
+      {
+        en: "Near-flawless with a bow, and trick arrows",
+        ar: "شبه معصومة بالقوس، وبالسهام الحيلية",
+      },
+      {
+        en: "Master of the sword and the battle staff",
+        ar: "أستاذة السيف والعصا القتالية",
+      },
+      {
+        en: "Boxing, jiu-jitsu and half a dozen more",
+        ar: "ملاكمة وجوجيتسو ونصف دزينة غيرها",
+      },
+      {
+        en: "A superb acrobat, and a field leader",
+        ar: "بهلوانية بارعة، وقائدة ميدانية",
+      },
+      { en: "No powers whatsoever", ar: "بلا أي قدرات على الإطلاق" },
+      { en: "Which is the entire point of her", ar: "وهذا هو مغزاها كله" },
     ],
     origin: {
       en: "A young archer who watched the Battle of New York from a window as a child and decided what she was going to be, then spent years getting good enough to say it out loud.",
@@ -2184,8 +2216,27 @@ const defenders: CharacterDraft[] = [
     /* NOT an ordinary human. Photographic reflexes, and in the MCU the ancestral power that comes with them. */
     species: "Enhanced human",
     powers: [
-      { en: "Copies any movement", ar: "تحاكي أي حركة" },
-      { en: "Trained fighter", ar: "مقاتلة مدرَّبة" },
+      {
+        en: "Copies any movement she sees, exactly",
+        ar: "تنسخ أي حركة تراها، تمامًا",
+      },
+      {
+        en: "Matches fighters who trained for decades",
+        ar: "تجاري مقاتلين تدربوا عقودًا",
+      },
+      { en: "Has hosted the Phoenix Force", ar: "حملت قوة الفينيكس" },
+      {
+        en: "Photographic memory, and peak conditioning",
+        ar: "ذاكرة تصويرية، ولياقة قصوى",
+      },
+      {
+        en: "Reaches her ancestors for what they knew",
+        ar: "تصل إلى أسلافها لتأخذ ما عرفوه",
+      },
+      {
+        en: "Deaf, and reads a room by the lips",
+        ar: "صمّاء، وتقرأ الغرفة من الشفاه",
+      },
     ],
     origin: {
       en: "A deaf Choctaw woman who can reproduce any physical movement she has seen once, raised by the man who runs New York's crime and going home to get away from him.",
@@ -4103,10 +4154,30 @@ const supporting: CharacterDraft[] = [
     category: "supporting",
     affiliation: ["Young Avengers"],
     universe: ["mcu"],
-    species: "Human",
+    /* NOT `Human`. He took a genuine blood transfusion from his grandfather and
+       carries the super-soldier serum, the same as Rogers and Barnes, both of
+       whom are filed as Enhanced human. The wrong word put a man who outran a
+       helicopter in "humans who turn up anyway, no powers at all". */
+    species: "Enhanced human",
     powers: [
-      { en: "Grandson of the first one", ar: "حفيد الأول" },
-      { en: "Not told for most of his life", ar: "لم يُخبَر معظم حياته" },
+      {
+        en: "The super-soldier serum, by transfusion",
+        ar: "مصل الجندي الخارق، بنقل دم",
+      },
+      { en: "Outran a helicopter", ar: "سبق مروحية" },
+      {
+        en: "Leaps a hundred feet, and lands fine",
+        ar: "يقفز مئة قدم ويهبط سالمًا",
+      },
+      {
+        en: "Skin that shrugs off a hail of darts",
+        ar: "جلد يصدّ وابلًا من السهام",
+      },
+      {
+        en: "Survived an explosion that should have killed",
+        ar: "نجا من انفجار كان ينبغي أن يقتله",
+      },
+      { en: "His grandfather's shield, and his name", ar: "درع جده، واسمه" },
     ],
     origin: {
       en: "The grandson of the man the army made before Steve Rogers and then buried for thirty years. He grows up ordinary because nobody was allowed to tell him otherwise.",
@@ -6818,8 +6889,24 @@ const hulks: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Gamma mutate",
     powers: [
-      { en: "Hulk-level strength", ar: "قوة بمستوى هَلك" },
-      { en: "Old Power of Sakaar", ar: "قوة ساكار القديمة" },
+      {
+        en: "Hulk-level strength, and it grows with rage",
+        ar: "قوة بمستوى هَلك، وتنمو مع الغضب",
+      },
+      { en: "Regenerates, and does not tire", ar: "يتجدد، ولا يتعب" },
+      {
+        en: "The Old Power hardens his skin to stone",
+        ar: "القوة القديمة تحوّل جلده حجرًا",
+      },
+      {
+        en: "Commands rock, and shakes the ground",
+        ar: "يأمر الصخر ويهزّ الأرض",
+      },
+      {
+        en: "Senses every life on a planet at his peak",
+        ar: "يستشعر كل حياة على كوكب في أوجه",
+      },
+      { en: "A swordsman, and a general", ar: "سيّاف، وقائد" },
     ],
     origin: {
       en: "Bruce Banner's son, born on Sakaar during the years his father spent there as a gladiator, and raised by a planet rather than a parent.",
@@ -7625,9 +7712,27 @@ const others: CharacterDraft[] = [
     /* NOT Human. Born in the Utopian Parallel, a pocket universe, to two mothers who were not human either. Punching holes between realities is not a human ability. */
     species: "Alien",
     powers: [
-      { en: "Punches holes between universes", ar: "تلكم ثقوبًا بين الأكوان" },
-      { en: "Super strength", ar: "قوة خارقة" },
-      { en: "Cannot control it yet", ar: "لا تتحكّم بها بعد" },
+      {
+        en: "Star portals between any two universes",
+        ar: "بوابات نجمية بين أي كونين",
+      },
+      {
+        en: "Kicks them open, and drags others through",
+        ar: "تركلها لتُفتح وتجرّ غيرها عبرها",
+      },
+      {
+        en: "Superhuman strength, speed and durability",
+        ar: "قوة وسرعة وصلابة خارقة",
+      },
+      {
+        en: "Trades blows with the heavy hitters",
+        ar: "تتبادل الضربات مع الأشداء",
+      },
+      {
+        en: "Flies, and survives open space unaided",
+        ar: "تطير وتنجو في الفضاء دون عون",
+      },
+      { en: "Heals fast, and does not scare", ar: "تشفى سريعًا، ولا تخاف" },
     ],
     origin: {
       en: "The only person known to travel between universes under her own power, which she can only do when frightened. Everyone who has met her wanted to take it from her.",
@@ -7809,9 +7914,29 @@ const others: CharacterDraft[] = [
     species: "Witch",
     magicSchools: ["chaos"],
     powers: [
-      { en: "Reality-warping chaos magic", ar: "سحر فوضى يُعيد صوغ الواقع" },
-      { en: "Flight", ar: "طيران" },
-      { en: "Spells that do what he says", ar: "تعاويذ تفعل ما يقول" },
+      /* ALL TWELVE YOUNG AVENGERS WERE THIN, several on two bullets, and the
+         dossier calls this one the clear heavyweight of the generation. */
+      {
+        en: "Reality-warping chaos magic, like Wanda's",
+        ar: "سحر فوضى يلوي الواقع، كسحر واندا",
+      },
+      {
+        en: "Erases a thing from existence outright",
+        ar: "يمحو شيئًا من الوجود تمامًا",
+      },
+      { en: "Conjures matter out of nothing", ar: "يستحضر المادة من العدم" },
+      {
+        en: "As the Demiurge, he is close to a god",
+        ar: "كالديميورج، يقارب الإله",
+      },
+      {
+        en: "Strange calls him a future Sorcerer Supreme",
+        ar: "يسميه سترينج ساحرًا أعظم قادمًا",
+      },
+      {
+        en: "Spells only work if he can hear himself",
+        ar: "تعمل تعاويذه إن سمع نفسه فقط",
+      },
     ],
     origin: {
       en: "One of the Scarlet Witch's twin sons, conjured into a life that was not supposed to be able to hold him and then unmade with the town he lived in. He comes back anyway, which is the whole point of him.",
@@ -7834,8 +7959,24 @@ const others: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "beta",
     powers: [
-      { en: "Super speed", ar: "سرعة خارقة" },
-      { en: "Runs through solid things", ar: "يعبر الأشياء الصلبة عدوًا" },
+      {
+        en: "Moves far past the limits of a human",
+        ar: "يتحرك متجاوزًا حدود البشر بكثير",
+      },
+      {
+        en: "Vibrates his molecules until things explode",
+        ar: "يهزّ جزيئاته حتى تنفجر الأشياء",
+      },
+      { en: "Runs through solid things", ar: "يعبر الأشياء الصلبة" },
+      {
+        en: "Reflexes and agility to match the speed",
+        ar: "ردود فعل ورشاقة توازي السرعة",
+      },
+      {
+        en: "Stamina a body should not have",
+        ar: "قدرة تحمّل لا ينبغي لجسد أن يملكها",
+      },
+      { en: "Wanda's other son", ar: "ابن واندا الآخر" },
     ],
     origin: {
       en: "The other twin, and the one who inherited his uncle's power rather than his mother's. Where his brother is careful, he is the one already halfway out of the room.",
@@ -8444,10 +8585,30 @@ const others: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Built her own suit at fifteen", ar: "بنت بدلتها في الخامسة عشرة" },
-      { en: "Flight and repulsors", ar: "طيران وريبولسرز" },
-      { en: "Armour-borne strength", ar: "قوة من الدرع" },
-      { en: "Engineer", ar: "مهندسة" },
+      {
+        en: "Built her own suit at fifteen, from scraps",
+        ar: "بنت بدلتها في الخامسة عشرة من خردة",
+      },
+      {
+        en: "Powered armour: flight and armour-borne strength",
+        ar: "درع مزوّد: طيران وقوة منه",
+      },
+      {
+        en: "Repulsor blasts, and magnetic control",
+        ar: "طلقات ريبلسور، وتحكم مغناطيسي",
+      },
+      {
+        en: "Traps a man inside an energy bubble",
+        ar: "تحبس رجلًا داخل فقاعة طاقة",
+      },
+      {
+        en: "An AI of her own design in the helmet",
+        ar: "ذكاء اصطناعي من تصميمها في الخوذة",
+      },
+      {
+        en: "Tested off the charts as a child",
+        ar: "تجاوزت المقاييس اختبارًا وهي طفلة",
+      },
     ],
     origin: {
       en: "An MIT student who reverse-engineered an Iron Man suit out of scavenged parts because she could, and then had to work out what she was going to do with it. She is the answer to what Tony Stark left behind rather than a copy of him.",
@@ -8469,9 +8630,24 @@ const others: CharacterDraft[] = [
     species: "Frost Giant",
     magicSchools: ["asgardian"],
     powers: [
-      { en: "Illusions", ar: "أوهام" },
-      { en: "Killed his own Thor", ar: "قتل ثوره الخاص" },
-      { en: "Runs the Void", ar: "يحكم الفراغ" },
+      {
+        en: "Asgardian sorcery, at a boy's scale",
+        ar: "سحر أسغاردي، بمقياس صبي",
+      },
+      {
+        en: "Illusions, shapeshifting and teleportation",
+        ar: "أوهام وتشكّل وانتقال آني",
+      },
+      {
+        en: "Durability and lifespan past a human's",
+        ar: "صلابة وعمر يفوقان البشر",
+      },
+      {
+        en: "Runs rings around everyone, allies included",
+        ar: "يدور حول الجميع، حتى حلفائه",
+      },
+      { en: "Killed his own Thor", ar: "قتل ثوره هو" },
+      { en: "Runs the Void", ar: "يدير الفراغ" },
     ],
     origin: {
       en: "A Loki variant pruned to the Void as a child, who survived long enough to be the one the others follow. He is the youngest and the most obviously in charge, which is the joke and the point.",
@@ -8492,9 +8668,21 @@ const others: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Pym particles", ar: "جزيئات بيم" },
-      { en: "Grows and shrinks", ar: "تكبر وتصغر" },
+      {
+        en: "Pym particles: grows and shrinks at will",
+        ar: "جسيمات بيم: تكبر وتصغر كما تشاء",
+      },
+      { en: "Strength that scales with her size", ar: "قوة تتناسب مع حجمها" },
+      { en: "A powerhouse at giant scale", ar: "قوة ضاربة بالحجم العملاق" },
+      {
+        en: "Trained hand-to-hand, and sharp with it",
+        ar: "مدرَّبة على القتال، وبارعة فيه",
+      },
       { en: "Built the signal herself", ar: "بنت الإشارة بنفسها" },
+      {
+        en: "Extreme changes strain the body",
+        ar: "التغيرات القصوى ترهق الجسد",
+      },
     ],
     origin: {
       en: "Scott Lang's daughter, who grew up across the five years he lost and built her own way into the Quantum Realm while he was working out how to be a father to someone older than he remembered.",
@@ -8520,8 +8708,24 @@ const others: CharacterDraft[] = [
     universe: ["mcu"],
     species: "God",
     powers: [
-      { en: "The Stormbreaker's charge", ar: "شحنة ستورم بريكر" },
-      { en: "Raised by Thor", ar: "ربّاها ثور" },
+      {
+        en: "Cosmic energy blasts from her eyes",
+        ar: "طلقات طاقة كونية من عينيها",
+      },
+      { en: "A gift from Eternity itself", ar: "هبة من الأبدية نفسها" },
+      {
+        en: "Carries Stormbreaker, and swings it",
+        ar: "تحمل ستورمبريكر وتلوّح بها",
+      },
+      {
+        en: "Durability of a being an abstract made",
+        ar: "صلابة كائن صنعته المجرّدات",
+      },
+      { en: "A lifespan with no end in sight", ar: "عمر بلا نهاية تُرى" },
+      {
+        en: "Fights beside Thor, and keeps up",
+        ar: "تقاتل إلى جانب ثور وتجاريه",
+      },
     ],
     origin: {
       en: "Gorr's daughter, wished back into life by a dying father who asked Eternity for her instead of for revenge, and handed to Thor to raise. The last thing the god-butcher does is make one.",
