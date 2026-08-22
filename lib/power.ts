@@ -1595,6 +1595,41 @@ export const OUTRANKS: string[][] = [
     "kraglin",
   ],
   /**
+   * THE HERALDS OF GALACTUS, in the order the sources settle rather than the
+   * one the word count produces.
+   *
+   * Differentiating their records fixed the block and broke the order:
+   * FIRELORD came out first of the nine on 562, because "cosmic flame as hot
+   * as a living sun" stacks three scoring words, and STARDUST came out eighth
+   * on 219 despite being rated a UNIVERSAL THREAT by the Nova Corps and
+   * fighting Beta Ray Bill on even terms. The scorer counts words; it cannot
+   * weigh "slices a planet in half" against "hot as a sun".
+   *
+   * Morg leads: he beat the Silver Surfer AND several former heralds at once,
+   * and Galactus himself had to step in. Then Stardust. Then Terrax, whose
+   * axe cut a planet in two, then Firelord, who fought Thor to a standstill,
+   * then Frankie Raye, whose fire kills stars. Red Shift cuts holes in space
+   * and needed a black hole to stop. The Fallen One is powered by dark energy
+   * and was a threat to Galactus, and was also killed by two Proemial Gods.
+   * Air-Walker has been destroyed and rebuilt repeatedly. Praeter was a
+   * pastor for one appearance.
+   *
+   * Norrin Radd and Shalla-Bal are hand-ranked above this group and are not
+   * in it: the dossier calls Norrin the acknowledged master and nothing here
+   * disputes that.
+   */
+  [
+    "morg",
+    "stardust",
+    "terrax",
+    "firelord",
+    "frankie-raye",
+    "red-shift",
+    "the-fallen-one",
+    "air-walker",
+    "praeter",
+  ],
+  /**
    * THE SPIDER-SOCIETY, thirty-three of them, ordered.
    *
    * This is the group the scorer handles worst, and for a structural reason:

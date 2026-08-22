@@ -2350,9 +2350,34 @@ const fantasticFour: CharacterDraft[] = [
     universe: ["fox"],
     species: "Zenn-Lavian",
     powers: [
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Flight between stars", ar: "طيران بين النجوم" },
-      { en: "Matter manipulation", ar: "التحكم بالمادة" },
+      /* NINE OF THE ELEVEN HERALDS WERE A BLOCK from 133 to 141: three
+         bullets each, every one of them opening "The Power Cosmic". Same
+         fault as the Eternals and the Inheritors, and the same fix. Galactus
+         tailors what he grants -- Terrax gets a planet's crust, Red Shift
+         gets a cut in space, Frankie Raye gets a fire that kills stars -- so
+         the shared line stays and what each one DOES with it is written
+         down. */
+      {
+        en: "The Power Cosmic, at its most precise",
+        ar: "القوة الكونية، في أدقّ صورها",
+      },
+      {
+        en: "Beams that shatter a planet, or tint a flower",
+        ar: "أشعة تحطم كوكبًا أو تلوّن زهرة",
+      },
+      { en: "Transmutes matter atom by atom", ar: "يحوّل المادة ذرةً ذرة" },
+      {
+        en: "Makes black holes, and survived one",
+        ar: "يصنع الثقوب السوداء، ونجا من واحد",
+      },
+      {
+        en: "Reassembled from atoms spread over a galaxy",
+        ar: "تجمّع من ذرات تناثرت عبر مجرة",
+      },
+      {
+        en: "Peels back time to see what happened",
+        ar: "يزيح الزمن ليرى ما حدث",
+      },
     ],
     origin: {
       en: "A man who gave himself to something enormous in exchange for his planet being spared, and now goes ahead of it looking for the next one.",
@@ -2376,9 +2401,26 @@ const fantasticFour: CharacterDraft[] = [
     reality: "Earth-828",
     species: "Zenn-Lavian",
     powers: [
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Rides ahead of Galactus", ar: "تسبق غالاكتوس" },
-      { en: "Finds the next world", ar: "تدل على العالم التالي" },
+      {
+        en: "The Power Cosmic, near Norrin's own range",
+        ar: "القوة الكونية، قرب مدى نورين",
+      },
+      {
+        en: "Energy and matter, at a herald's scale",
+        ar: "طاقة ومادة، بمقياس مبشّر",
+      },
+      {
+        en: "Flies between stars on her own board",
+        ar: "تطير بين النجوم على لوحها",
+      },
+      {
+        en: "Fought Celestials beside Galactus",
+        ar: "قاتلت السماويين إلى جانب غالاكتوس",
+      },
+      {
+        en: "Empress of Zenn-La before any of it",
+        ar: "إمبراطورة زين-لا قبل ذلك كله",
+      },
     ],
     origin: {
       en: "She took the bargain so her own world would live, and has spent every year since picking out somebody else's. The job is to arrive first and be the last thing a planet sees that is still willing to talk.",
@@ -10890,9 +10932,30 @@ const cosmicBeings: CharacterDraft[] = [
     universe: ["animation"],
     species: "Birjian",
     powers: [
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Commands rock and earth", ar: "يأمر الصخر والأرض" },
-      { en: "Carries a cosmic axe", ar: "يحمل فأسًا كونية" },
+      {
+        en: "The Power Cosmic, aimed at a planet's crust",
+        ar: "القوة الكونية، مصوّبة إلى قشرة كوكب",
+      },
+      {
+        en: "Moves tectonic plates, and splits chasms",
+        ar: "يحرك الصفائح ويشق الهوّات",
+      },
+      {
+        en: "Lifts a landmass miles into the air",
+        ar: "يرفع كتلة يابسة أميالًا في الهواء",
+      },
+      {
+        en: "Hurls asteroids across open space",
+        ar: "يقذف الكويكبات عبر الفضاء",
+      },
+      {
+        en: "A cosmic axe that cut a planet in half",
+        ar: "فأس كوني شطر كوكبًا نصفين",
+      },
+      {
+        en: "Treacherous enough to be a liability",
+        ar: "غادر بما يكفي ليصير عبئًا",
+      },
     ],
     origin: {
       en: "A tyrant who ruled his own world by force before Galactus made him a herald, and the only one of them who took the job as a promotion. He looks for worlds to devour with more enthusiasm than his master.",
@@ -10914,9 +10977,21 @@ const cosmicBeings: CharacterDraft[] = [
     universe: ["animation"],
     species: "Xandarian",
     powers: [
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Wields living flame", ar: "يسخّر لهبًا حيًا" },
+      {
+        en: "Cosmic flame as hot as a living sun",
+        ar: "لهب كوني بحرارة شمس حية",
+      },
+      { en: "Fought Thor to a standstill", ar: "قاتل ثور حتى التعادل" },
+      {
+        en: "A cosmic staff, burning at both ends",
+        ar: "عصا كونية تشتعل من طرفيها",
+      },
+      { en: "The Power Cosmic, through fire", ar: "القوة الكونية، عبر النار" },
       { en: "Flies between stars", ar: "يطير بين النجوم" },
+      {
+        en: "Came looking for a friend and stayed",
+        ar: "جاء يبحث عن صديق فبقي",
+      },
     ],
     origin: {
       en: "A starship officer who went looking for his lost captain and found Galactus instead, and took the job of herald as the price of the answer. Freed from it, he stayed a long way from home.",
@@ -10942,9 +11017,21 @@ const cosmicBeings: CharacterDraft[] = [
     /* NOT plain Human. She carries the Power Cosmic. A herald of Galactus is not a person with no powers. */
     species: "Enhanced human",
     powers: [
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Burns without being burned", ar: "تحرق دون أن تحترق" },
-      { en: "Feels no fear of fire", ar: "لا تخشى النار" },
+      { en: "Cosmic flame that destroys a star", ar: "لهب كوني يدمّر نجمًا" },
+      {
+        en: "Burns white-hot, and is not burned",
+        ar: "تحترق بيضاء متوهجة ولا تحترق",
+      },
+      { en: "Controls her own density", ar: "تتحكم بكثافتها" },
+      {
+        en: "Sees across spectrums other than light",
+        ar: "ترى أطيافًا غير الضوء",
+      },
+      {
+        en: "Travels at light speed, and liked it",
+        ar: "تسافر بسرعة الضوء، وأحبّت ذلك",
+      },
+      { en: "Morg killed her", ar: "قتلها مورغ" },
     ],
     origin: {
       en: "Johnny Storm's girlfriend, who had the same accident he did and none of his hesitation about it. She volunteered to be Galactus's herald because the alternative was watching him choose someone unwilling.",
@@ -13145,9 +13232,30 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Xandarian",
     powers: [
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Rebuilt as an android", ar: "أُعيد بناؤه آليًا" },
-      { en: "Died and served on", ar: "مات وظلّ يخدم" },
+      {
+        en: "The Power Cosmic, and a cosmic staff",
+        ar: "القوة الكونية، وعصا كونية",
+      },
+      {
+        en: "Strength and flight between the stars",
+        ar: "قوة وطيران بين النجوم",
+      },
+      {
+        en: "Rebuilt as an android when he fell",
+        ar: "أُعيد بناؤه آليًا حين سقط",
+      },
+      {
+        en: "Destroyed and rebuilt, more than once",
+        ar: "دُمّر وأُعيد بناؤه أكثر من مرة",
+      },
+      {
+        en: "Lived a while inside Galactus's own ship",
+        ar: "عاش حينًا داخل سفينة غالاكتوس",
+      },
+      {
+        en: "The one herald Galactus called a friend",
+        ar: "المبشّر الوحيد الذي سماه غالاكتوس صديقًا",
+      },
     ],
     origin: {
       en: "A Xandarian captain who took the heralds' bargain willingly, was killed doing the job, and was rebuilt by Galactus as a machine that carried on with it. He is the one who did not get to stop.",
@@ -13168,9 +13276,27 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Alien",
     powers: [
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Carries a cosmic axe", ar: "يحمل فأسًا كونية" },
-      { en: "Chosen for his cruelty", ar: "اختير لقسوته" },
+      {
+        en: "The Power Cosmic, and no conscience at all",
+        ar: "القوة الكونية، وبلا ضمير البتة",
+      },
+      {
+        en: "Beat the Surfer and several heralds at once",
+        ar: "هزم السيرفر وعدة مبشّرين معًا",
+      },
+      {
+        en: "Galactus himself had to step in",
+        ar: "اضطر غالاكتوس نفسه للتدخل",
+      },
+      { en: "A double-bladed cosmic axe", ar: "فأس كوني بنصلين" },
+      {
+        en: "Killed Nova and destroyed Air-Walker",
+        ar: "قتل نوفا ودمّر إير-ووكر",
+      },
+      {
+        en: "Led Galactus to worlds with people on them",
+        ar: "قاد غالاكتوس إلى عوالم آهلة",
+      },
     ],
     origin: {
       en: "An executioner picked as herald precisely because he had no conscience to trouble the work. The other heralds regard him as proof of how badly the arrangement can go.",
@@ -13195,9 +13321,27 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Alien",
     powers: [
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "A being of living energy", ar: "كائن من طاقة حية" },
-      { en: "Zealous past reason", ar: "متعصّب إلى غير حدّ" },
+      {
+        en: "Rated a universal threat by the Nova Corps",
+        ar: "صنّفه فيلق نوفا خطرًا كونيًا",
+      },
+      {
+        en: "Fought Beta Ray Bill on even terms",
+        ar: "قاتل بيتا راي بيل ندًا لند",
+      },
+      {
+        en: "Creates black holes and opens dimensions",
+        ar: "يصنع ثقوبًا سوداء ويفتح أبعادًا",
+      },
+      {
+        en: "A body of living energy, and six eyes",
+        ar: "جسد من طاقة حية، وست أعين",
+      },
+      {
+        en: "Fires beams from every one of them",
+        ar: "يطلق أشعة من كل واحدة منها",
+      },
+      { en: "Fed his own species to Galactus", ar: "أطعم جنسه لغالاكتوس" },
     ],
     origin: {
       en: "A herald who treats serving Galactus as a faith rather than a bargain, and who has destroyed worlds that were not even on the menu because devotion does not stop at instructions.",
@@ -13215,9 +13359,30 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Alien",
     powers: [
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Opens rifts in space", ar: "يفتح شقوقًا في الفضاء" },
-      { en: "Silent almost always", ar: "صامت في أغلب الأحيان" },
+      {
+        en: "Twin swords that cut holes in space",
+        ar: "سيفان يشقان ثقوبًا في الفضاء",
+      },
+      {
+        en: "Opens a rift across any distance at all",
+        ar: "يفتح شقًا عبر أي مسافة كانت",
+      },
+      {
+        en: "Sends Galactus himself through them",
+        ar: "يمرّر غالاكتوس نفسه عبرها",
+      },
+      {
+        en: "The Power Cosmic, and a herald's body",
+        ar: "القوة الكونية، وجسد مبشّر",
+      },
+      {
+        en: "The Surfer needed a black hole to stop him",
+        ar: "لزم السيرفر ثقب أسود ليوقفه",
+      },
+      {
+        en: "Held back a planet-killing blast, and died",
+        ar: "صدّ انفجارًا يقتل كوكبًا، ومات",
+      },
     ],
     origin: {
       en: "A herald who tears space open to travel and says very little about anything. He was found on a dead world and has never explained what he was doing there.",
@@ -13235,13 +13400,24 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Alien",
     powers: [
-      /* Every other herald's record opens with the Power Cosmic. His did not,
-         which is why the first herald Galactus ever made scored 6. */
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Flight between stars", ar: "طيران بين النجوم" },
-      { en: "The first herald of all", ar: "أول المبشّرين جميعًا" },
-      { en: "Turned on his master", ar: "انقلب على سيده" },
-      { en: "Imprisoned rather than freed", ar: "سُجن ولم يُطلق" },
+      {
+        en: "Dark energy, not the Power Cosmic",
+        ar: "طاقة مظلمة، لا القوة الكونية",
+      },
+      {
+        en: "Manipulates what binds the universe",
+        ar: "يتلاعب بما يشدّ الكون",
+      },
+      { en: "A threat to Galactus himself", ar: "خطر على غالاكتوس نفسه" },
+      {
+        en: "The first herald ever made, and a failure",
+        ar: "أول مبشّر صُنع، وكان فاشلًا",
+      },
+      {
+        en: "Locked in the Kyln, then used by Thanos",
+        ar: "سُجن في الكيلن ثم استخدمه ثانوس",
+      },
+      { en: "Killed by Tenebrous and Aegis", ar: "قتله تينيبروس وإيجيس" },
     ],
     origin: {
       en: "Galactus's first herald, discarded for being too cruel even by that standard, and imprisoned rather than released. He has spent the time since planning what to do about it.",
@@ -13260,9 +13436,20 @@ const heralds: CharacterDraft[] = [
     /* NOT plain Human. An ordinary man remade into a herald — which is the point of him, and also why he cannot stay in a chip for ordinary men. */
     species: "Enhanced human",
     powers: [
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Was an ordinary man", ar: "كان رجلًا عاديًا" },
-      { en: "Chosen almost at random", ar: "اختير كالمصادفة" },
+      { en: "The Power Cosmic, on loan", ar: "القوة الكونية، معارة" },
+      {
+        en: "Strength, flight and space to live in",
+        ar: "قوة وطيران وفضاء يعيش فيه",
+      },
+      {
+        en: "A pastor from Broxton, before that",
+        ar: "قسّ من بروكستون قبل ذلك",
+      },
+      {
+        en: "Part of a truce between Odin and Galactus",
+        ar: "جزء من هدنة بين أودين وغالاكتوس",
+      },
+      { en: "Barely seen again afterwards", ar: "لم يُرَ تقريبًا بعدها" },
     ],
     origin: {
       en: "An ordinary man remade into a herald, which is the version of the story that shows what the Power Cosmic does to somebody with no preparation for it at all.",
