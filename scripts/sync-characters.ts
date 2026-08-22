@@ -60,6 +60,18 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  /* PINNED BECAUSE THE LOOKUP DRIFTED. Speed's portrait had been the MCU
+     wiki's `Tommy_Maximoff.png` since this repo started. That file was
+     DELETED upstream and the page image replaced with an infobox still of a
+     man in his thirties, so the next `sync:characters` swapped it in and I
+     shipped it without looking. Rashid caught it.
+
+     Nothing was hand-picked here and nothing was wrong with the sync: an
+     un-pinned character takes whatever the wiki currently shows, and wikis
+     change. This is Thomas Shepherd from Scarlet Witch & Quicksilver #3 --
+     the comics Speed, white hair and green goggles, and pinned. */
+  speed:
+    "https://static.wikia.nocookie.net/marveldatabase/images/b/b7/Thomas_Shepherd_%28Earth-616%29_from_Scarlet_Witch_%26_Quicksilver_Vol_1_3_Cover_001.jpg/revision/latest?cb=20240504163646",
   /* Wendell Vaughn with the Quantum Bands lit, picked by Rashid. Hosted on
      the fanon wiki but the art is the standard black-and-gold design, and the
      host is the fandom CDN that most of this list already uses. */
