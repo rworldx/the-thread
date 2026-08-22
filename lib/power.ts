@@ -697,6 +697,29 @@ const TIERS: Tier[] = [
       "xorn",
     ],
     match: (c) =>
+      /**
+       * "SUPERHUMAN, AND BOUNDED" IS TIER 7's OWN GLOSS, and a healing factor
+       * that survives anything is not bounded. Rashid asked why Wolverine and
+       * Deadpool sit at 282 and 289: the per-class cap costs Wolverine one of
+       * his six bullets, but the real answer was the tier, and the tier was
+       * reading `mutantClass` -- beta, so tier 7, whatever the record says.
+       *
+       * This file already rejected the omega list as a fight ranking, in the
+       * note that moved the Hulk above five omegas: "Iceman is omega and
+       * Wolverine is beta, and nobody thinks Iceman wins that fight." It
+       * rejected the list going UP and kept obeying it going DOWN.
+       *
+       * So the record is asked instead, and narrowly: a claim that the
+       * character cannot be put down at all. Six in tier 7 make it --
+       * Wolverine, Deadpool, X-23, She-Hulk, Corvus Glaive, Darwin -- and a
+       * score cut would have moved twenty and imported the scorer's noise
+       * into the tier structure, which is the thing this file keeps having to
+       * undo.
+       * ascii-ok: reads `powers[].en`, English by construction.
+       */
+      /\b(cannot be killed|cannot be destroyed|unkillable|heals? from anything|comes back every time)\b/i.test(
+        c.powers.map((x) => x.en).join(" "),
+      ) ||
       c.mutantClass === "alpha" ||
       /* An omega nobody named above: still the top of what a mutant reaches,
          still not a god. */
