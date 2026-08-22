@@ -421,6 +421,32 @@ const TIERS: Tier[] = [
        * what they wear: an antimatter reactor, the Quantum Bands, the whole
        * Nova Force.
        */
+      /**
+       * FOUR COME UP FROM TIER 6, which is the other half of the job and the
+       * half I left undone. Gating the two empty Celestials out of tier 5 was
+       * only ever going to fix the bottom of the boundary; Rashid pointed out
+       * that the top of tier 6 was still stuck under it.
+       *
+       * Doctor Strange is the SORCERER SUPREME, nullifies another's power
+       * inside his own domain and has cosmic awareness at his peak. Ghost
+       * Rider took the throne of Hell from Mephisto and his Penance Stare
+       * ignores durability entirely, which is the one thing every brick in
+       * this tier relies on. Kang makes timelines and dies into a new body.
+       * Khonshu is a god who lends an avatar enough to fell the Juggernaut.
+       *
+       * All four score higher than most of the tier they are joining. They go
+       * below the gods and the Hulks and above the flying bricks: none of them
+       * out-punches Thor, and all four beat the ones who only punch.
+       */
+      /* And his teacher above him, which is the order the sources give:
+         "possibly the most proficient sorcerer who ever lived", who stops and
+         loops and reverses time and warps reality outright. Leaving her in
+         tier 6 while promoting her student was incoherent. */
+      "the-ancient-one",
+      "doctor-strange",
+      "ghost-rider",
+      "kang",
+      "khonshu",
       "beta-ray-bill",
       "hyperion",
       "gladiator",
@@ -491,7 +517,19 @@ const TIERS: Tier[] = [
          Hoggoth above Strange is arguable, and Antiphon is a Proemial God.
          Scoring low is not the same as claiming nothing. */
       (c.species === "Celestial" && claimScore(c) > 0) ||
-      sp(
+      /**
+       * AND THE TAIL TAKES THE SAME TEST, which is the half of Rashid's point
+       * the promotions do not reach. Hoggoth scores 32 and Antiphon 74, and
+       * they were sitting above a tier 6 head where Selene scores 209 and the
+       * Maker 189. A species word saying "god" is not a power level, which is
+       * the sentence this file has now written five times.
+       *
+       * The bar is tier 3's bar: one cosmic-scale claim. It moves five, all
+       * Elder Gods and Proemial Gods with quiet records, into Alpha class --
+       * and leaves the Heralds, who all carry the Power Cosmic, where they
+       * are. Tier 5's floor becomes 120.
+       */
+      (sp(
         "Olympian",
         "Fire demon",
         /* THE LANDING GROUND FOR THE TIER-3 GATE. Tier 3 spells it "Elder
@@ -519,7 +557,8 @@ const TIERS: Tier[] = [
         "Elder god",
         /* "Gods" is 28 characters and most of them are Heimdall — a god by
          species and a sentry by job. The ones who belong are named above. */
-      )(c) ||
+      )(c) &&
+        claimScore(c) >= 120) ||
       aff("Heralds of Galactus")(c),
   },
   {
@@ -557,22 +596,18 @@ const TIERS: Tier[] = [
      * emptied minds by the million.
      */
     ranked: [
-      "doctor-strange",
-      "the-ancient-one",
       "doctor-doom",
       /* THE MAKER SITS WITH DOOM, who is the same idea from the other side: an
          intellect that decided it should be in charge. He came out 280th in
          "Enhanced" on `species: Human mutate` — a man whose own record says he
          builds and unbuilds universes, ranked below three hundred people. */
       "the-maker",
-      "kang",
       "apocalypse",
       /* A Spirit of Vengeance is not an "Enhanced human", which is where
          `species: Human host` had left him at 289 — behind Blade in kind if
          not in number, and behind two hundred people who can be killed. The
          Penance Stare works on gods, and his own record says the quiet part:
          "Cannot be destroyed". */
-      "ghost-rider",
       "cassandra-nova",
       "shadow-king",
       /**
@@ -625,7 +660,6 @@ const TIERS: Tier[] = [
       "ultron",
       "sylvie",
       "magik",
-      "khonshu",
       /* Guards the Nexus of All Realities and cannot be killed by force. */
       "man-thing",
       /* JUGGERNAUT, whose power is not a mutation at all. Cyttorak is a god
@@ -661,6 +695,13 @@ const TIERS: Tier[] = [
       sp(
         "Asgardian",
         "Frost Giant",
+        /* THE LANDING GROUND FOR TIER 5's GATE, and the second time this exact
+           hole has been dug. Gaea, Oshtur, Agamotto and Hoggoth have magic to
+           catch them here; Antiphon does not, and fell straight past into
+           "humans who turn up anyway" at 597th. A gate needs a floor under it
+           or it is a trapdoor. */
+        "Elder God",
+        "Cosmic Being",
         /* "Eternal" is gated below, with the Elders and Inhumans. */
         /* "Titan" IS GONE, and nobody lost a tier by it. It was carrying six
            records: Thanos and Starfox, who are Eternals OF Titan and are
