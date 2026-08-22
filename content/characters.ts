@@ -2693,6 +2693,84 @@ const villains: CharacterDraft[] = [
     },
   },
   {
+    id: "the-destroyer",
+    nameEn: "The Destroyer",
+    nameAr: "المُدمِّر",
+    aliases: ["The Destroyer", "Destroyer"],
+    /* A suit of armour with no actor, so no cast list carries it. Real and
+       uncredited: it is the antagonist's weapon for the whole third act of
+       Thor, and Hela smashes it in Odin's vault in Ragnarok. */
+    alsoIn: ["thor", "thor-ragnarok"],
+    category: "villain",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Artifact",
+    powers: [
+      { en: "A disintegration beam from its face", ar: "شعاع تفتيت من وجهه" },
+      {
+        en: "Enchanted metal almost nothing marks",
+        ar: "معدن مسحور لا يكاد يُخدش",
+      },
+      { en: "Adapts to whatever hit it last", ar: "يتكيف مع آخر ما ضربه" },
+      { en: "Strength enough to level a town", ar: "قوة تكفي لتسوية بلدة" },
+      { en: "Moves only when a king wills it", ar: "لا يتحرك إلا بإرادة ملك" },
+      { en: "Nobody inside it to reason with", ar: "لا أحد بداخله ليُقنع" },
+    ],
+    origin: {
+      en: "An empty suit of Asgardian armour that moves when the throne tells it to, built to guard a vault and used, once, to kill a brother. There is nothing in it: no pilot, no mind, no argument.",
+      ar: "درع أسغاردي فارغ يتحرك متى أمره العرش، صُنع لحراسة خزانة واستُخدم مرة لقتل أخ. لا شيء بداخله: لا قائد ولا عقل ولا حجّة.",
+    },
+  },
+  {
+    id: "christine-palmer",
+    nameEn: "Christine Palmer",
+    nameAr: "كريستين بالمر",
+    aliases: ["Christine Palmer", "Dr. Christine Palmer"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "One of the finest surgeons alive", ar: "من أمهر الجراحين أحياءً" },
+      {
+        en: "Keeps working while the room does not",
+        ar: "تواصل العمل والغرفة لا تفعل",
+      },
+      {
+        en: "Restarted his heart on a gurney",
+        ar: "أعادت قلبه للنبض على نقالة",
+      },
+      { en: "No powers at all", ar: "بلا أي قدرات" },
+    ],
+    origin: {
+      en: "The emergency surgeon who kept Stephen Strange alive twice: once on the table after the crash, and once afterwards, when the thing that needed saving was not his hands.",
+      ar: "جرّاحة الطوارئ التي أبقت ستيفن سترينج حيًا مرتين: مرة على الطاولة بعد الحادث، ومرة بعدها حين لم يكن ما يحتاج الإنقاذ هو يديه.",
+    },
+  },
+  {
+    id: "morgan-stark",
+    nameEn: "Morgan Stark",
+    nameAr: "مورغان ستارك",
+    aliases: ["Morgan Stark", "Morgan"],
+    /* Credited in Endgame but absent from the cast list TMDB returns, which
+       stops at forty-one names. */
+    alsoIn: ["avengers-endgame"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "No powers whatsoever", ar: "بلا أي قدرات على الإطلاق" },
+      { en: "Four years old", ar: "في الرابعة من عمرها" },
+      { en: "The reason he would not do it", ar: "السبب الذي جعله يرفض" },
+      { en: "And then the reason he did", ar: "ثم السبب الذي جعله يفعل" },
+    ],
+    origin: {
+      en: "Tony Stark's daughter, born in the five years after the snap, and the whole of his argument against fixing it. He fixed it anyway, having worked out how to do both, and then could only do one.",
+      ar: "ابنة توني ستارك، وُلدت في السنوات الخمس بعد الطقطقة، وهي كل حجته ضد إصلاح ما جرى. أصلحه على أي حال بعد أن اهتدى إلى طريقة للأمرين، ثم لم يقدر إلا على واحد.",
+    },
+  },
+  {
     id: "killmonger",
     nameEn: "Killmonger",
     nameAr: "كيلمونجر",
@@ -2793,9 +2871,21 @@ const villains: CharacterDraft[] = [
     species: "Asgardian",
     magicSchools: ["asgardian"],
     powers: [
-      { en: "Summons blades", ar: "تستدعي النصال" },
-      { en: "Draws power from Asgard", ar: "تستمد قوتها من أسجارد" },
-      { en: "Goddess of death", ar: "إلهة الموت" },
+      {
+        en: "Goddess of death, and it is not a title",
+        ar: "إلهة الموت، وليس لقبًا",
+      },
+      {
+        en: "Draws power without limit from Asgard",
+        ar: "تستمد من أسغارد بلا حد",
+      },
+      {
+        en: "Summons blades faster than they can land",
+        ar: "تستحضر النصال أسرع مما تصيب",
+      },
+      { en: "Shattered Mjolnir with one hand", ar: "حطّمت ميولنير بيد واحدة" },
+      { en: "Takes a soul, and keeps it", ar: "تأخذ الروح وتحتفظ بها" },
+      { en: "Immortal while Asgard stands", ar: "خالدة ما دامت أسغارد قائمة" },
     ],
     origin: {
       en: "The first-born of Asgard and its executioner, written out of the official history by the father who used her to build the empire.",
@@ -3089,8 +3179,27 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Asgardian",
     powers: [
-      { en: "The Odinforce", ar: "قوة أودين" },
+      {
+        en: "The Odinforce: reality bends to it",
+        ar: "قوة أودين: ينحني لها الواقع",
+      },
+      {
+        en: "Cosmic energy, and he used it on Galactus",
+        ar: "طاقة بمقياس كوني، استعملها على غالاكتوس",
+      },
+      {
+        en: "Strength and durability past any Asgardian",
+        ar: "قوة وصلابة تفوقان أي أسغاردي",
+      },
+      {
+        en: "Raises the dead, and rewrites what is",
+        ar: "يحيي الموتى ويعيد كتابة ما هو كائن",
+      },
       { en: "Rules the nine realms", ar: "يحكم العوالم التسعة" },
+      {
+        en: "The Odinsleep, when it costs too much",
+        ar: "سُبات أودين، متى كلّفه أكثر مما يحتمل",
+      },
     ],
     origin: {
       en: "The king who built an empire and then spent centuries telling a version of how he did it that left out the worst of it.",
@@ -7779,9 +7888,24 @@ const others: CharacterDraft[] = [
     universe: ["mcu", "legacy"],
     species: "Olympian",
     powers: [
-      { en: "Strength to match Thor", ar: "قوة تضاهي ثور" },
-      { en: "Immortal", ar: "خالد" },
-      { en: "Adamantine mace", ar: "صولجان من الأدامانتين" },
+      {
+        en: "Strength to match Thor, and often more",
+        ar: "قوة تضاهي ثور، وتفوقه غالبًا",
+      },
+      { en: "Held up a collapsing continent", ar: "حمل قارة تنهار" },
+      { en: "Immortal, and heals like a god", ar: "خالد، ويشفى كإله" },
+      {
+        en: "An adamantine mace nothing breaks",
+        ar: "صولجان أدامنتي لا ينكسر",
+      },
+      {
+        en: "Near-invulnerable to anything mortal",
+        ar: "شبه منيع أمام كل ما هو فانٍ",
+      },
+      {
+        en: "The strongest Olympian there has been",
+        ar: "أقوى أولمبي عرفه التاريخ",
+      },
     ],
     origin: {
       en: "Zeus's son and the Olympian answer to Asgard, sent after Thor by a father who wanted a point made. Physically he is one of the few in any pantheon who can settle the argument.",
@@ -7802,8 +7926,31 @@ const others: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Olympian",
     powers: [
-      { en: "Thunderbolt", ar: "صاعقة" },
-      { en: "King of Olympus", ar: "ملك الأوليمب" },
+      /* TWO BULLETS FOR THE KING OF OLYMPUS, which is the actual answer to
+         "is Zeus that powerful" -- his rank was held entirely by his slot in
+         this tier's head and not by anything his record claimed. Thor beating
+         him in one film does not lower him, for the same reason it does not
+         lower Galactus or the Living Tribunal, who have both lost worse. But
+         a record that says "Thunderbolt / King of Olympus" cannot defend any
+         rank at all, and Odin's was no better. */
+      { en: "Thunderbolts that level a mountain", ar: "صواعق تسوّي جبلًا" },
+      {
+        en: "Strength to match Odin, and he has",
+        ar: "قوة تضاهي أودين، وقد فعل",
+      },
+      { en: "Near-limitless divine energy", ar: "طاقة إلهية شبه لا محدودة" },
+      {
+        en: "Reshapes matter, and grants power to others",
+        ar: "يعيد تشكيل المادة ويمنح القوة لغيره",
+      },
+      {
+        en: "Immortal, and king of every Olympian",
+        ar: "خالد، وملك كل الأولمبيين",
+      },
+      {
+        en: "Beat Thor and Hercules together, once",
+        ar: "هزم ثور وهرقل معًا ذات مرة",
+      },
     ],
     origin: {
       en: "The head of the Greek pantheon, running Omnipotence City as a members' club and entirely uninterested in a god-butcher until it becomes his problem.",
@@ -9487,9 +9634,24 @@ const laterAdditions: CharacterDraft[] = [
     species: "Fire demon",
     magicSchools: ["asgardian"],
     powers: [
-      { en: "The Twilight Sword", ar: "سيف الشفق" },
-      { en: "Grows without limit", ar: "ينمو بلا حدّ" },
-      { en: "Ragnarok itself", ar: "الرَّاغناروك نفسه" },
+      {
+        en: "Ragnarok itself, in one body",
+        ar: "الراغناروك نفسه، في جسد واحد",
+      },
+      {
+        en: "The Twilight Sword, forged to end a world",
+        ar: "سيف الشفق، صيغ لإنهاء عالم",
+      },
+      { en: "Grows without limit as he burns", ar: "ينمو بلا حد وهو يحترق" },
+      { en: "A thousand feet of living fire", ar: "ألف قدم من نار حية" },
+      {
+        en: "Fought Odin, and it took everything",
+        ar: "قاتل أودين، وكلّف ذلك كل شيء",
+      },
+      {
+        en: "Destroyed Asgard, exactly as promised",
+        ar: "دمّر أسغارد، تمامًا كما وُعد",
+      },
     ],
     origin: {
       en: "A prophecy in the shape of a giant, chained in a realm of fire and promising the end of Asgard to anyone who will listen. Thor spends the film trying to prevent him and finishes it doing the opposite.",

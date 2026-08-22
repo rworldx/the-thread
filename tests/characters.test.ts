@@ -36,7 +36,7 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(679);
+    expect(authored).toHaveLength(682);
   });
 
   /**

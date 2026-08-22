@@ -24,14 +24,14 @@ before it looked like anything.
 | Rights-holders | MCU (74) · Animation (56) · Legacy (31) · Fox (18) · Sony (15) · Defenders (13) · Marvel Television (9) |
 | Universes, as navigated | 8 — Fox splits into X-Men and Fantastic Four, two separate watch orders |
 | The essentials spine | 22 titles, Iron Man → Far From Home |
-| Characters | 679, appearances derived from cast |
+| Characters | 682, appearances derived from cast |
 | Episodes | 2,193, with stills and runtimes, on the season pages |
 | Pages | 1,893, all statically prerendered |
 | Tests | 320 unit + 55 browser |
 | Locales | English and Arabic, both rendering |
 
 **Images: nothing is transformed by Vercel.** Image Optimization is billed per
-transformation, and 216 posters plus 679 portraits plus galleries and search
+transformation, and 216 posters plus 682 portraits plus galleries and search
 thumbnails exhausted the 5,000 free ones — after which the optimiser *errors*
 rather than degrading, so most of the deployed site lost its images while
 localhost looked perfect. Reducing usage does not refund a spent quota, so the
@@ -91,7 +91,7 @@ lib/describe.ts            seasonLabel · formatCost · totalRuntime
 lib/collections.ts         the groupings the homepage and /projects render
 lib/wall.ts                which 24 posters make the hero, and in what order
 content/character-schema.ts  CharacterSource — species, roles, mutant levels
-content/characters.ts      the 679 people, hand-written; appearances are NOT
+content/characters.ts      the 682 people, hand-written; appearances are NOT
 lib/characters.ts          the cast join — see "Characters" below
 lib/power.ts               the power ranking the Strongest sort runs on
 scripts/sync-tmdb.ts       build-time TMDB fetch; zero API calls in production
@@ -131,7 +131,7 @@ confidently wrong runtime or an invented plot summary.
 
 ## Characters
 
-679 people. Their **appearances are derived, never typed**: a character is in a
+682 people. Their **appearances are derived, never typed**: a character is in a
 title when that title's TMDB cast credits name them. Hand-listing them would put
 the same fact in two files — the mistake `titleEn` and `spoilerSafe` each made
 once — and the second copy always rots first.
@@ -194,8 +194,8 @@ beside it. Skippable and absent are different things.
 
 ## How strong is everyone
 
-`lib/power.ts` ranks all 679, and the /characters page sorts by it. DERIVED,
-NOT TYPED, for the reason appearances are: a `powerRank` column would be 679
+`lib/power.ts` ranks all 682, and the /characters page sorts by it. DERIVED,
+NOT TYPED, for the reason appearances are: a `powerRank` column would be 682
 numbers to keep in step, and inserting one character at rank 200 would make
 every number under it wrong. The order falls out of species, mutant class,
 affiliation and the character's own power bullets, with a hand-ordered head per

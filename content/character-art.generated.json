@@ -1934,6 +1934,21 @@
     "source": "chosen",
     "matchedAs": "hand-picked"
   },
+  "the-destroyer": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3a/Destroyer.png/revision/latest?cb=20240322032224",
+    "source": "mcu-wiki",
+    "matchedAs": "The Destroyer"
+  },
+  "christine-palmer": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/4f/Christine_Palmer_in_DSitMoM.jpg/revision/latest?cb=20250228204813",
+    "source": "mcu-wiki",
+    "matchedAs": "Christine Palmer"
+  },
+  "morgan-stark": {
+    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/24/Morgan_H._Stark.png/revision/latest?cb=20190726133152",
+    "source": "mcu-wiki",
+    "matchedAs": "Morgan Stark"
+  },
   "killmonger": {
     "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Black_Panther_Textless_Character_Poster_03.jpg/revision/latest?cb=20231024003905",
     "source": "mcu-wiki",
