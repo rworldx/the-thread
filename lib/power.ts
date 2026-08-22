@@ -293,7 +293,18 @@ const TIERS: Tier[] = [
       "marquis-of-death",
       "jamie-braddock",
       "rachel-summers",
-      "mister-m",
+      /* MISTER M IS NOT NAMED HERE ANY MORE, and his own record is what
+         removed him. This tier is mortals who rewrite REALITY. His six
+         bullets say matter and only matter -- "controls all matter at the
+         subatomic level", "turns matter to energy, and back", and an origin
+         that spends the power "mostly to repair other mutants". That is
+         Magneto's argument at a smaller scale than Magneto's, and this tier
+         has already ruled on it once: MOLECULE MAN, the purest matter claim
+         in the corpus, was moved OUT of here rather than kept.
+         So he fell to 183, where his claim score of 204 sits him between
+         Starfox at 226 and the Gardener at 168 -- ordered by what he says
+         he can do, with nothing lent to him. Eighty-three places is a long
+         fall, and every one of them was borrowed. */
     ],
     /**
      * NO BLANKET OMEGA RULE, and removing it is the largest correction this
