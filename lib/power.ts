@@ -1472,9 +1472,15 @@ const SYMBIOTE_WEIGHT: Record<string, number> = {
    Gauntlet" is an OBJECT — it was paying Mistress Love and Sire Hate the full
    reality-class 120 for having been mustered against Thanos, which is a thing
    that happened to them rather than a thing they do. The Infinity STONES keep
-   their own pattern and their own 40. ascii-ok: English `powers[].en` only. */
+   their own pattern and their own 40.
+
+   "INFINITY FORMULA" IS THE SAME TRAP with a different noun. It is the serum
+   that slowed Nick Fury's ageing -- a man with an eyepatch and a handgun --
+   and it was paying him 134 of his 186 points, more than Zeus scores for
+   being Zeus. The word "Infinity" is doing all of it and none of it is his.
+   ascii-ok: English `powers[].en` only. */
 const PROPER_NOUNS =
-  /world security council|nexus of all realities|infinity gauntlet/gi;
+  /world security council|nexus of all realities|infinity gauntlet|infinity formula/gi;
 
 export function scaleScore(c: Character): number {
   /**

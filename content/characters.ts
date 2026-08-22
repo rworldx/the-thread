@@ -125,14 +125,15 @@ const avengers: CharacterDraft[] = [
     ],
     universe: ["mcu"],
     species: "Asgardian",
+    /* STORMBREAKER WAS MISSING ENTIRELY, and it is the weapon that summons the Bifrost -- he travels the cosmos with it. It replaces "Very long lifespan", which every Asgardian in the corpus has and which said nothing about what he does. */
     powers: [
-      /* Three bullets and a score of 48 for the God of Thunder, who is held
-         in place by the tier head rather than by anything his record says.
-         Mjolnir, the God Blast and the durability were all missing. */
-      { en: "Control of lightning and storms", ar: "تحكّم بالبرق والعواصف" },
+      {
+        en: "Control of lightning and storms",
+        ar: "تحكّم بالبرق والعواصف",
+      },
       {
         en: "Strength to match anything below a god",
-        ar: "قوة تضاهي كل ما دون الآلهة",
+        ar: "قوة توازي كل ما دون الإله",
       },
       {
         en: "Mjolnir, and it always returns",
@@ -140,10 +141,16 @@ const avengers: CharacterDraft[] = [
       },
       {
         en: "The God Blast, all of his power at once",
-        ar: "صاعقة الإله، كل قوته دفعة",
+        ar: "صرخة الإله، كل قوته دفعة واحدة",
       },
-      { en: "Near-invulnerable, heals like a god", ar: "شبه منيع، يشفى كإله" },
-      { en: "Very long lifespan", ar: "عمر طويل جدًا" },
+      {
+        en: "Near-invulnerable, heals like a god",
+        ar: "شبه منيع، ويشفى كإله",
+      },
+      {
+        en: "Stormbreaker, and the Bifrost with it",
+        ar: "ستورمبريكر، ومعها البايفروست",
+      },
     ],
     origin: {
       en: "An arrogant prince is stripped of his power and exiled to Earth by his father, to learn what the throne is actually for. He is the god of thunder, and for a while he is nobody in New Mexico.",
@@ -548,9 +555,30 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Changes size", ar: "تغيّر حجمها" },
-      { en: "Flight", ar: "طيران" },
-      { en: "Blaster stingers", ar: "لسعات نارية" },
+      {
+        en: "Changes size, down to a few centimetres",
+        ar: "تغيّر حجمها حتى بضعة سنتيمترات",
+      },
+      {
+        en: "Bio-synthetic wings for flight",
+        ar: "أجنحة حيوية اصطناعية للطيران",
+      },
+      {
+        en: "The Wasp's Sting, from both hands",
+        ar: "لسعة الزنبور، من كلتا يديها",
+      },
+      {
+        en: "Keeps her strength when she is tiny",
+        ar: "تحتفظ بقوتها وهي ضئيلة",
+      },
+      {
+        en: "Grows to giant size as well",
+        ar: "وتكبر إلى حجم عملاق أيضًا",
+      },
+      {
+        en: "Avengers field commander",
+        ar: "قائدة ميدانية للأفنجرز",
+      },
     ],
     origin: {
       en: "The daughter of the two people who built the technology, better trained than anyone who has used it, and made to wait her turn for years.",
@@ -785,9 +813,30 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Runs the intelligence service", ar: "يدير جهاز الاستخبارات" },
-      { en: "Sees it coming", ar: "يستبق ما سيأتي" },
-      { en: "Field operative", ar: "عميل ميداني" },
+      {
+        en: "The Infinity Formula slowed his ageing",
+        ar: "صيغة اللانهاية أبطأت شيخوخته",
+      },
+      {
+        en: "Peak human, and he heals faster",
+        ar: "ذروة البشر، ويشفى أسرع",
+      },
+      {
+        en: "Runs the intelligence service",
+        ar: "يدير جهاز المخابرات",
+      },
+      {
+        en: "Master spy, tactician, interrogator",
+        ar: "جاسوس بارع، وتكتيكي، ومحقق",
+      },
+      {
+        en: "Ambidextrous marksman, flies anything",
+        ar: "رامٍ بكلتا يديه، ويقود أي طائرة",
+      },
+      {
+        en: "Life Model Decoys of himself",
+        ar: "نسخ آلية طبق الأصل عنه",
+      },
     ],
     origin: {
       en: "The director of an agency that keeps track of things governments would rather not know about. He assembled the team, and he did it before anyone agreed there should be one.",
@@ -808,8 +857,30 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Runs the company", ar: "تدير الشركة" },
-      { en: "Rescue armour", ar: "بذلة الإنقاذ" },
+      {
+        en: "The Rescue armour, built for her",
+        ar: "درع ريسكيو، صُنع لها",
+      },
+      {
+        en: "Repulsors, finger lasers, sonic disruptors",
+        ar: "نوابض دافعة وليزر أصابع ومشوّشات صوتية",
+      },
+      {
+        en: "A force field that stops what comes",
+        ar: "حقل قوة يوقف ما يأتي",
+      },
+      {
+        en: "Flight, and wings that caught a plane",
+        ar: "طيران، وأجنحة أمسكت طائرة",
+      },
+      {
+        en: "An arc reactor in her chest",
+        ar: "مفاعل قوسي في صدرها",
+      },
+      {
+        en: "Runs the company",
+        ar: "تدير الشركة",
+      },
     ],
     origin: {
       en: "The assistant who became the chief executive, and the one person willing to tell a billionaire he is wrong to his face.",
@@ -847,8 +918,30 @@ const avengers: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "alpha",
     powers: [
-      { en: "Superhuman speed", ar: "سرعة خارقة" },
-      { en: "Perceives time slowly", ar: "يرى الزمن بطيئًا" },
+      {
+        en: "Runs past the speed of sound, and beyond",
+        ar: "يعدو أسرع من الصوت، وأبعد",
+      },
+      {
+        en: "Reflexes and reaction time to match",
+        ar: "ردود فعل وسرعة استجابة توازيها",
+      },
+      {
+        en: "Spins his arms into cyclonic winds",
+        ar: "يدير ذراعيه فيولّد أعاصير",
+      },
+      {
+        en: "Vibrates through solid objects",
+        ar: "يهتز فيعبر الأجسام الصلبة",
+      },
+      {
+        en: "Runs up walls and across open water",
+        ar: "يجري على الجدران وفوق الماء",
+      },
+      {
+        en: "Sees the world in slow motion",
+        ar: "يرى العالم بحركة بطيئة",
+      },
     ],
     origin: {
       en: "The other twin. Two studios made him at the same time under two sets of rights, which is why there are two of him and they are not the same person.",
@@ -944,9 +1037,32 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     magicSchools: ["eldritch"],
+    /* THE SORCERER SUPREME, reading "Sorcery / Keeper of the library" and ranked 263rd. Strange was 120th. The man who holds the office his own teacher held outranked a hundred and forty people who cannot cast anything. */
     powers: [
-      { en: "Sorcery", ar: "سحر" },
-      { en: "Keeper of the library", ar: "أمين المكتبة" },
+      {
+        en: "Sorcerer Supreme of this reality",
+        ar: "الساحر الأعظم لهذا الواقع",
+      },
+      {
+        en: "Eldritch weapons, shields and bindings",
+        ar: "أسلحة وسحرية ودروع وقيود",
+      },
+      {
+        en: "Portals anywhere, and armies through them",
+        ar: "بوابات إلى أي مكان، وجيوش تعبرها",
+      },
+      {
+        en: "Draws power from other dimensions",
+        ar: "يستمد القوة من أبعاد أخرى",
+      },
+      {
+        en: "Knows the spells nobody else is trusted with",
+        ar: "يعرف تعاويذ لا يُؤتمن عليها غيره",
+      },
+      {
+        en: "The relics and tomes of Kamar-Taj",
+        ar: "ذخائر كامار-تاج وأسفارها",
+      },
     ],
     origin: {
       en: "The librarian of Kamar-Taj, who takes the rules seriously in a building full of people who do not, and ends up running it.",
@@ -4644,9 +4760,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Asgardian",
     powers: [
-      { en: "Asgardian strength", ar: "قوة أسجاردية" },
-      { en: "Master swordswoman", ar: "سيّافة بارعة" },
-      { en: "Winged steed", ar: "جواد مجنّح" },
+      {
+        en: "Asgardian strength, and heals like one",
+        ar: "قوة أسغاردية، وشفاء مثلها",
+      },
+      {
+        en: "Asgard's finest with a blade",
+        ar: "الأمهر في أسغارد بالسيف",
+      },
+      {
+        en: "Death-sight: she sees it coming for you",
+        ar: "بصيرة الموت: ترى قدومه إليك",
+      },
+      {
+        en: "A touch sends a spirit onward",
+        ar: "لمسة تسيّر الروح إلى ما بعد",
+      },
+      {
+        en: "Dragonfang, an enchanted sword",
+        ar: "درغونفانغ، سيف مسحور",
+      },
+      {
+        en: "Flies on a winged steed",
+        ar: "تطير على جواد مجنّح",
+      },
     ],
     origin: {
       en: "The last of an elite guard that was wiped out in a single engagement, found centuries later on a scrapyard planet drinking her way through the memory.",
@@ -4988,10 +5125,29 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Changes size", ar: "تغيّر حجمها" },
+      {
+        en: "Changes size",
+        ar: "تغيّر حجمها",
+      },
       {
         en: "Thirty years in the quantum realm",
-        ar: "ثلاثون عامًا في العالم الكمّي",
+        ar: "ثلاثون عامًا في عالم الكم",
+      },
+      {
+        en: "Quantum energy, and healing with it",
+        ar: "طاقة كمّية، وشفاء بها",
+      },
+      {
+        en: "Speaks mind to mind, across distance",
+        ar: "تتحدث من عقل إلى عقل عبر المسافات",
+      },
+      {
+        en: "Took another person's body, once",
+        ar: "تلبّست جسد شخص آخر، مرة",
+      },
+      {
+        en: "Wings and stingers like her daughter",
+        ar: "أجنحة ولسعات مثل ابنتها",
       },
     ],
     origin: {
@@ -8212,9 +8368,30 @@ const others: CharacterDraft[] = [
     universe: ["mcu", "legacy"],
     species: "Uplifted animal",
     powers: [
-      { en: "Quack-Fu", ar: "كواك-فو" },
-      { en: "Marksmanship", ar: "دقة تصويب" },
-      { en: "Has seen everything", ar: "رأى كل شيء" },
+      {
+        en: "Quack-Fu, and it genuinely works",
+        ar: "كواك-فو، وهو ينفع فعلًا",
+      },
+      {
+        en: "Plucks thrown knives out of the air",
+        ar: "يلتقط السكاكين المقذوفة من الهواء",
+      },
+      {
+        en: "A genius, when he can be bothered",
+        ar: "عبقري، متى شاء أن يهتم",
+      },
+      {
+        en: "A marksman, and a terrible temper",
+        ar: "رامٍ ماهر، وطبع سيئ",
+      },
+      {
+        en: "Wore Iron Duck armour, with flamethrowers",
+        ar: "ارتدى درع البطة الحديدية بقاذفات لهب",
+      },
+      {
+        en: "Enhanced senses, and hard to frighten",
+        ar: "حواس مرهفة، ويصعب إخافته",
+      },
     ],
     origin: {
       en: "A talking duck from another dimension, stranded on Earth and permanently annoyed about it. He was the subject of the first Marvel film ever made, in 1986, and turns up in the Collector's vault and then on the field at the end of Endgame.",
@@ -8969,12 +9146,31 @@ const others: CharacterDraft[] = [
     affiliation: ["Avengers", "Guardians of the Multiverse", "Illuminati"],
     universe: ["mcu"],
     species: "Enhanced human",
+    /* NO INFINITY STONES HERE, though Part 11 records that she briefly held all six. This file's base-form rule is explicit -- Thanos has no Gauntlet, Jean Grey has no Phoenix -- and a storyline she held them in is a PEAK, not what she walks around with. */
     powers: [
-      { en: "The super-soldier serum", ar: "مصل الجندي الخارق" },
-      { en: "Vibranium shield", ar: "درع من الفيبرانيوم" },
+      {
+        en: "The super-soldier serum",
+        ar: "مصل الجندي الخارق",
+      },
+      {
+        en: "A vibranium shield, thrown to ricochet",
+        ar: "درع فيبرانيوم يُرمى فيرتدّ",
+      },
       {
         en: "The agent who was already better",
         ar: "العميلة التي كانت أفضل أصلًا",
+      },
+      {
+        en: "Peak human strength, speed and reflexes",
+        ar: "ذروة البشر قوةً وسرعةً وردّ فعل",
+      },
+      {
+        en: "Master tactician, and she leads from front",
+        ar: "تكتيكية بارعة، وتقود من الأمام",
+      },
+      {
+        en: "Fights like Rogers, and thinks faster",
+        ar: "تقاتل كروجرز، وتفكر أسرع",
       },
     ],
     origin: {
