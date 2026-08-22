@@ -11273,24 +11273,36 @@ const cosmicBeings: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["eldritch", "elder"],
     powers: [
+      /* AGAMOTTO WAS 191st, BELOW EVERYONE WHO BORROWS FROM HIM: Doctor
+         Strange at 116, the Ancient One at 118, Clea at 156, and the Vishanti
+         at 73 -- a trio he is one third of and, per the sources, the
+         strongest third.
+
+         The gate was working; the record was the problem. Almost every line
+         was a COMPARISON TO A NAME -- exceeds these two, rivals those two,
+         Strange could not banish him -- and names are the thing this scorer
+         reads worst. What his magic actually does was never written down. */
+      {
+        en: "Magic enough for any mystical feat there is",
+        ar: "سحر يكفي لأي معجزة صوفية كانت",
+      },
+      {
+        en: "Near-omniscient sensing: the all-seeing eye",
+        ar: "إدراك شبه كلي: العين التي ترى كل شيء",
+      },
+      {
+        en: "Opens portals in time, and raises the dead",
+        ar: "يفتح بوابات في الزمن ويحيي الموتى",
+      },
+      {
+        en: "Every Sorcerer Supreme borrows from him",
+        ar: "كل ساحر أعظم يستعير منه",
+      },
       {
         en: "Exceeds Oshtur and Hoggoth combined",
         ar: "يفوق أوشتور وهوغوث مجتمعين",
       },
       { en: "Rivals Dormammu and Galactus", ar: "يضاهي دورمامو وغالاكتوس" },
-      {
-        en: "Doctor Strange could not banish him",
-        ar: "عجز دكتور سترينج عن نفيه",
-      },
-      {
-        en: "Magic enough for any mystical feat",
-        ar: "سحر يكفي لأي معجزة صوفية",
-      },
-      {
-        en: "Resurrects, and opens portals in time",
-        ar: "يحيي الموتى ويفتح بوابات في الزمن",
-      },
-      { en: "The first Sorcerer Supreme", ar: "أول ساحر أعظم" },
     ],
     origin: {
       en: "The first being on Earth to hold the title of Sorcerer Supreme, and one of the three the Vishanti are named for. The eye every later sorcerer swears by is the one he made and left behind.",
@@ -13421,17 +13433,29 @@ const mystics: CharacterDraft[] = [
     magicSchools: ["eldritch", "elder"],
     powers: [
       {
-        en: "Elder Goddess, called all-powerful",
-        ar: "إلهة قديمة، تُدعى كلية القدرة",
+        en: "Elder Goddess, and called all-powerful",
+        ar: "إلهة قديمة، وتُدعى كلية القدرة",
       },
-      { en: "Created entire races of beings", ar: "خلقت أجناسًا كاملة" },
-      { en: "Originated magic on Earth", ar: "أنشأت السحر على الأرض" },
       {
-        en: "Vast power on every astral plane",
+        en: "Created entire races of living beings",
+        ar: "خلقت أجناسًا كاملة من الكائنات",
+      },
+      {
+        en: "Originated magic on Earth itself",
+        ar: "أنشأت السحر على الأرض نفسها",
+      },
+      {
+        en: "Vast power on every astral plane there is",
         ar: "قوة هائلة في كل مستوى أثيري",
       },
-      { en: "Left Earth by choice", ar: "غادرت الأرض باختيارها" },
-      { en: "One of the Vishanti", ar: "إحدى الفيشانتي" },
+      {
+        en: "Wrote the tomes every sorcerer still uses",
+        ar: "كتبت الأسفار التي ما زال السحرة يستعملونها",
+      },
+      {
+        en: "Immortal, and travels between dimensions",
+        ar: "خالدة، وتعبر الأبعاد",
+      },
     ],
     origin: {
       en: "An Elder God who left this world rather than take part in what her siblings were becoming, and one of the three names every sorcerer invokes. Agamotto is her son.",
@@ -13450,14 +13474,24 @@ const mystics: CharacterDraft[] = [
     species: "Elder God",
     magicSchools: ["eldritch", "elder"],
     powers: [
-      /* "Manipulates matter and time itself" put him ABOVE Agamotto, who the
-         sources say exceeds Oshtur and Hoggoth combined. Time itself is
-         reality-scale in this vocabulary and it is the Vishanti's shared
-         toolkit, not his own peak. He is the aged one of the three. */
-      { en: "Magic older than the Earth", ar: "سحر أقدم من الأرض" },
+      /* The third Vishanti, and he was left at 232 while Agamotto went to 70
+         and Oshtur to 84 -- the parts of one trinity a hundred and fifty
+         ranks apart. "Manipulates matter, and time with it" was the culprit:
+         the vocabulary reads "manipulates time" as a contiguous phrase and my
+         wording split it, so the largest thing on his record scored nothing.
+         The Vishanti's documented feats include time manipulation. */
+      {
+        en: "Manipulates time itself, and matter",
+        ar: "يتلاعب بالزمن نفسه وبالمادة",
+      },
+      { en: "Magic older than the Earth is", ar: "سحر أقدم من الأرض نفسها" },
       {
         en: "Calls on the spirits of his slain kin",
         ar: "يستدعي أرواح قومه القتلى",
+      },
+      {
+        en: "Each of them an Old One in their own right",
+        ar: "كل منهم قديم بحد ذاته",
       },
       {
         en: "The Hoary Host, a fist the size of a hall",
@@ -13467,8 +13501,6 @@ const mystics: CharacterDraft[] = [
         en: "Lends his power to the Sorcerer Supreme",
         ar: "يعير قوته للساحر الأعظم",
       },
-      { en: "Last survivor of his race", ar: "آخر الناجين من جنسه" },
-      { en: "One of the Vishanti", ar: "أحد الفيشانتي" },
     ],
     origin: {
       en: "The third of the Vishanti, invoked in the same breath as Agamotto and Oshtur every time a sorcerer needs something borrowed. He answers, and he keeps his own counsel about why.",
