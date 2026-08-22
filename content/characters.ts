@@ -1451,20 +1451,32 @@ const xmen: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "omega",
+    /* SIX BULLETS SAYING MAGNETISM SIX TIMES, which the per-class cap then flattened to three. The Master of Magnetism scored 202. What he DOES with it -- battleships, an island, a headless Celestial held together, an EMP round the planet -- was nowhere on the record. */
     powers: [
-      /* THE PLANET WAS MISSING. Three bullets described a man who lifts
-         metal; at his height he has moved the Earth's own magnetic field,
-         which is the difference between a strong mutant and an omega one.
-         The force fields and the blasts were not there either. */
-      { en: "Controls magnetism", ar: "يتحكم بالمغناطيسية" },
-      { en: "Moves metal at any scale", ar: "يحرّك المعادن بأي مقياس" },
       {
-        en: "Bends the planet's magnetic field",
-        ar: "يلوي حقل الأرض المغناطيسي",
+        en: "Controls magnetism, and all of its forms",
+        ar: "يتحكم بالمغناطيسية بكل صورها",
       },
-      { en: "Magnetic force fields", ar: "دروع مغناطيسية" },
-      { en: "Electromagnetic blasts", ar: "دفقات كهرومغناطيسية" },
-      { en: "Magnetic flight", ar: "طيران مغناطيسي" },
+      {
+        en: "Lifted battleships, and raised an island",
+        ar: "رفع بوارج، وانتشل جزيرة",
+      },
+      {
+        en: "Held a headless Celestial together",
+        ar: "أمسك جسد سماوي مقطوع الرأس",
+      },
+      {
+        en: "Force fields, flight, and survives space",
+        ar: "حقول قوة وطيران ونجاة في الفضاء",
+      },
+      {
+        en: "An EMP that goes round the planet",
+        ar: "نبضة كهرومغناطيسية تلف الكوكب",
+      },
+      {
+        en: "A genius in genetics and engineering",
+        ar: "عبقري في الوراثة والهندسة",
+      },
     ],
     origin: {
       en: "A survivor of the camps who came out of them certain of one thing: that a people who are hunted should never again be unarmed. He and the man who runs the school agree about everything except what to do next.",
@@ -1595,9 +1607,30 @@ const xmen: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "beta",
     powers: [
-      { en: "Becomes anyone", ar: "تصير أي أحد" },
-      { en: "Ages very slowly", ar: "تشيخ ببطء شديد" },
-      { en: "Combat training", ar: "تدريب قتالي" },
+      {
+        en: "Becomes anyone, down to the fingerprints",
+        ar: "تصير أي أحد، حتى بصمات الأصابع",
+      },
+      {
+        en: "Fools a retina scan as easily as an eye",
+        ar: "تخدع ماسح الشبكية كما تخدع العين",
+      },
+      {
+        en: "Ages a century and looks thirty",
+        ar: "تشيخ قرنًا وتبدو في الثلاثين",
+      },
+      {
+        en: "An accelerated healing factor",
+        ar: "عامل شفاء متسارع",
+      },
+      {
+        en: "Resists telepaths, poisons and disease",
+        ar: "تقاوم المتخاطرين والسموم والمرض",
+      },
+      {
+        en: "A hundred years of espionage",
+        ar: "مئة عام من التجسس",
+      },
     ],
     origin: {
       en: "She can look like anyone, and spent a childhood being told that was useful rather than that she was fine as she was. Which side she is on depends on who last asked her that question.",
@@ -1780,9 +1813,30 @@ const xmen: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "beta",
     powers: [
-      { en: "Regeneration", ar: "تجدّد" },
-      { en: "Claws and fangs", ar: "مخالب وأنياب" },
-      { en: "Enhanced senses", ar: "حواس معزّزة" },
+      {
+        en: "Heals from a claw through the brain",
+        ar: "يشفى من مخلب اخترق دماغه",
+      },
+      {
+        en: "Strength, speed and durability with it",
+        ar: "قوة وسرعة وصلابة معها",
+      },
+      {
+        en: "Retractable claws, and fangs to match",
+        ar: "مخالب تُسحب، وأنياب توازيها",
+      },
+      {
+        en: "Hears a heartbeat two hundred feet off",
+        ar: "يسمع نبض قلب على بعد مئتي قدم",
+      },
+      {
+        en: "Tracks by scent, and never loses it",
+        ar: "يتعقب بالرائحة، ولا يفقدها",
+      },
+      {
+        en: "Carbonadium slows the healing",
+        ar: "الكاربونيديوم يبطئ شفاءه",
+      },
     ],
     origin: {
       en: "The other one who heals, who kept every memory his brother lost and enjoyed most of them.",
@@ -3554,9 +3608,32 @@ const supporting: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "alpha",
+    /* TWO BULLETS -- "Telepathy" and "Diamond form" -- for an Omega telepath the sources rate against Xavier. She scored 63 and ranked 227th. */
     powers: [
-      { en: "Telepathy", ar: "قراءة الأفكار" },
-      { en: "Diamond form", ar: "هيئة ماسية" },
+      {
+        en: "Telepathy that rivals Professor X",
+        ar: "تخاطر ينافس بروفيسور إكس",
+      },
+      {
+        en: "Mind control, illusions, psychic surgery",
+        ar: "سيطرة عقول وأوهام وجراحة نفسية",
+      },
+      {
+        en: "Organic diamond, and nothing hurts her",
+        ar: "ألماس عضوي، ولا شيء يؤذيها",
+      },
+      {
+        en: "In diamond, no telepath can touch her",
+        ar: "في الألماس، لا يمسّها متخاطر",
+      },
+      {
+        en: "Has bested Xavier, Exodus and Nate Grey",
+        ar: "هزمت زافيير وإكسودس ونيت غراي",
+      },
+      {
+        en: "Stops a heart, or hides a mutant from view",
+        ar: "توقف قلبًا، أو تخفي متحولًا عن الأنظار",
+      },
     ],
     origin: {
       en: "A telepath who can turn her skin to diamond, and who has been on every side of this at least once, always for herself.",
@@ -3594,8 +3671,32 @@ const supporting: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "beta",
+    /* ONE BULLET. The whole record was "Controls fire he did not make", which is his LIMIT written as his power. */
     powers: [
-      { en: "Controls fire he did not make", ar: "يتحكم بنار لم يشعلها" },
+      {
+        en: "Controls fire he did not make",
+        ar: "يتحكم بنار لم يشعلها",
+      },
+      {
+        en: "Shapes flame into birds and golems",
+        ar: "يشكّل اللهب طيورًا وعمالقة",
+      },
+      {
+        en: "His fire constructs can lift and carry",
+        ar: "بناءاته النارية ترفع وتحمل",
+      },
+      {
+        en: "Melts bullets in the air, softens steel",
+        ar: "يذيب الرصاص في الهواء، ويليّن الفولاذ",
+      },
+      {
+        en: "Any flame he holds slides off him",
+        ar: "أي لهب يمسكه ينزلق عنه",
+      },
+      {
+        en: "Cannot make fire. He carries throwers",
+        ar: "لا يصنع النار، فيحمل قاذفات",
+      },
     ],
     origin: {
       en: "He can shape any fire but cannot start one, which is a small enough gap to make him angry about it permanently.",
@@ -4200,8 +4301,30 @@ const supporting: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "beta",
     powers: [
-      { en: "Teleportation", ar: "انتقال آني" },
-      { en: "Prehensile tail", ar: "ذيل قابض" },
+      {
+        en: "Teleports across a continent",
+        ar: "ينتقل عبر قارة",
+      },
+      {
+        en: "And between dimensions, which is rarer",
+        ar: "وبين الأبعاد، وذاك أندر",
+      },
+      {
+        en: "Unaging since nine thousand years back",
+        ar: "لا يشيخ منذ تسعة آلاف عام",
+      },
+      {
+        en: "Shapeshifts, and a prehensile tail",
+        ar: "يبدّل شكله، وله ذيل ماسك",
+      },
+      {
+        en: "A swordsman, and a manipulator",
+        ar: "سيّاف، ومتلاعب",
+      },
+      {
+        en: "Fathered a whole race of teleporters",
+        ar: "أنجب جنسًا كاملًا من المنتقلين",
+      },
     ],
     origin: {
       en: "A teleporter who works for whoever is paying, and who is on the wrong side of most of the rooms he appears in.",
@@ -4227,8 +4350,30 @@ const supporting: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "beta",
     powers: [
-      { en: "Enormous leaps", ar: "قفزات هائلة" },
-      { en: "Prehensile tongue", ar: "لسان قابض" },
+      {
+        en: "Leaps twenty-five feet straight up",
+        ar: "يقفز خمسة وعشرين قدمًا إلى أعلى",
+      },
+      {
+        en: "A tongue thirty feet long, and strong",
+        ar: "لسان بطول ثلاثين قدمًا، وقوي",
+      },
+      {
+        en: "Paralysing venom, and acid saliva",
+        ar: "سمّ مشلّ، ولعاب حمضي",
+      },
+      {
+        en: "Adhesive resin, so he sticks to walls",
+        ar: "صمغ لاصق، فيلتصق بالجدران",
+      },
+      {
+        en: "Regrew his own tongue once",
+        ar: "أنبت لسانه من جديد مرة",
+      },
+      {
+        en: "Night vision, and lungs like a bellows",
+        ar: "رؤية ليلية، ورئتان كالمنفاخ",
+      },
     ],
     origin: {
       en: "A brawler who leaps further than anything his size should, and has spent his life being somebody's muscle.",
@@ -12787,9 +12932,30 @@ const inheritors: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Carbonadium tentacles", ar: "مجسّات كربونادية" },
-      { en: "Drains life to live", ar: "يمتص الحياة ليحيا" },
-      { en: "A death spore in his blood", ar: "بوغ مميت في دمه" },
+      {
+        en: "Carbonadium coils in both arms",
+        ar: "ملفات كاربونيديوم في ذراعيه",
+      },
+      {
+        en: "Death spores that kill a man in seconds",
+        ar: "أبواغ موت تقتل رجلًا في ثوانٍ",
+      },
+      {
+        en: "Drains life, and heals faster for it",
+        ar: "يمتص الحياة، فيشفى أسرع",
+      },
+      {
+        en: "Ten tons of strength, and no fatigue",
+        ar: "قوة عشرة أطنان، وبلا تعب",
+      },
+      {
+        en: "Fought Wolverine for eighteen hours",
+        ar: "قاتل وولفرين ثماني عشرة ساعة",
+      },
+      {
+        en: "Must keep draining, or the metal kills him",
+        ar: "عليه أن يواصل الامتصاص وإلا قتله المعدن",
+      },
     ],
     origin: {
       en: "A Soviet serial killer turned into a weapon, wound with living metal coils and cursed with a spore that kills everything near him unless he drains a life to keep it down.",
@@ -14781,13 +14947,30 @@ const mutantsB: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      /* Scored zero: "Immovable once planted / Absorbs any impact / Was a
-         carnival act" describes a stance and a job. */
-      { en: "Immovable once planted", ar: "لا يُزحزح متى ثبت" },
-      { en: "Absorbs any impact", ar: "يمتص أي ارتطام" },
-      { en: "Enormous strength", ar: "قوة هائلة" },
-      { en: "Skin nothing penetrates", ar: "جلد لا يُخترق" },
-      { en: "Was a carnival act", ar: "كان فقرة في سيرك" },
+      {
+        en: "Immovable once planted",
+        ar: "لا يتزحزح متى تمكّن",
+      },
+      {
+        en: "Absorbs an impact and throws it back",
+        ar: "يمتص الصدمة ويردّها",
+      },
+      {
+        en: "Enormous strength, and enormous mass",
+        ar: "قوة هائلة، وكتلة هائلة",
+      },
+      {
+        en: "Flesh that bullets and blades bounce off",
+        ar: "لحم يرتد عنه الرصاص والنصال",
+      },
+      {
+        en: "Bends gravity beneath his own feet",
+        ar: "يثني الجاذبية تحت قدميه",
+      },
+      {
+        en: "Lift him off the ground and it stops",
+        ar: "ارفعه عن الأرض فتتوقف",
+      },
     ],
     origin: {
       en: "A circus strongman who cannot be moved from a spot he has decided to stand on. He joined Magneto early, and most of his life has been about being laughed at first and unmovable second.",
@@ -14956,19 +15139,28 @@ const mutantsB: CharacterDraft[] = [
     powers: [
       {
         en: "Rewrites the local laws of physics",
-        ar: "يعيد كتابة قوانين الفيزياء المحلية",
+        ar: "يعيد كتابة قوانين الفيزياء حوله",
       },
-      { en: "Reality destabilises where he stands", ar: "يهتز الواقع حيث يقف" },
+      {
+        en: "Reality destabilises where he stands",
+        ar: "يضطرب الواقع حيث يقف",
+      },
       {
         en: "Distorts what anyone sees, at will",
-        ar: "يشوّه ما يراه أي أحد كما يشاء",
+        ar: "يشوّه ما يراه أي أحد، كما يشاء",
       },
       {
         en: "Jumps to a new body when one burns out",
-        ar: "يقفز إلى جسد جديد متى احترق واحد",
+        ar: "ينتقل إلى جسد جديد متى احترق الأول",
       },
-      { en: "Metal disrupts him", ar: "المعدن يشوّشه" },
-      { en: "Cannot be held for long", ar: "لا يمكن احتواؤه طويلًا" },
+      {
+        en: "Grows stronger the more he uses it",
+        ar: "يزداد قوة كلما استعملها",
+      },
+      {
+        en: "Metal disrupts him",
+        ar: "المعدن يشوّشه",
+      },
     ],
     origin: {
       en: "Moira MacTaggert's son, an Omega-level mutant with no body of his own who wears other people until they burn out. His mother kept him locked up and could not bring herself to end it.",
@@ -15126,11 +15318,29 @@ const mutantsC: CharacterDraft[] = [
     mutantClass: "omega",
     powers: [
       {
-        en: "Telepathy and telekinesis at Omega level",
-        ar: "تخاطر وتحريك بمستوى أوميغا",
+        en: "Omega telekinesis: he moved Arakko to Mars",
+        ar: "تحريك ذهني أوميغا: نقل أراكو إلى المريخ",
       },
-      { en: "Woken from the Crusades", ar: "أُيقظ من الحروب الصليبية" },
-      { en: "Believes Magneto was right", ar: "يؤمن أن ماغنيتو كان محقًّا" },
+      {
+        en: "Telepathy, and battles on the astral plane",
+        ar: "تخاطر، ومعارك في المستوى الأثيري",
+      },
+      {
+        en: "Force fields near enough invulnerable",
+        ar: "حقول قوة تكاد لا تُخترق",
+      },
+      {
+        en: "Teleports, flies, and raises the dead",
+        ar: "ينتقل ويطير ويحيي الموتى",
+      },
+      {
+        en: "Drains psychic energy to boost his own",
+        ar: "يمتص الطاقة النفسية ليعزز طاقته",
+      },
+      {
+        en: "Woken from the Crusades, and near-immortal",
+        ar: "أُيقظ من الحروب الصليبية، ويكاد يخلد",
+      },
     ],
     origin: {
       en: "A twelfth-century crusader woken into the present as an Omega-level mutant, who took Magneto's argument and made a religion of it. He is the true believer Magneto never asked for.",
@@ -15295,9 +15505,30 @@ const mutantsC: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Becomes a pteranodon", ar: "يصير تيرانودون" },
-      { en: "Drains mutant energy", ar: "يمتص طاقة المتحوّلين" },
-      { en: "A doctor when he is himself", ar: "طبيب حين يكون نفسه" },
+      {
+        en: "Drains life by touch to feed himself",
+        ar: "يمتص الحياة بلمسة ليقتات",
+      },
+      {
+        en: "Draining a mutant turns him into Sauron",
+        ar: "امتصاص متحول يحيله إلى ساورون",
+      },
+      {
+        en: "Takes a piece of that mutant's power too",
+        ar: "ويأخذ جزءًا من قدرة ذلك المتحول",
+      },
+      {
+        en: "Fire breath that burned Hercules",
+        ar: "نفَس ناري أحرق هرقل",
+      },
+      {
+        en: "A hypnotic gaze that plants delusions",
+        ar: "نظرة منوّمة تزرع الأوهام",
+      },
+      {
+        en: "Flies on a twelve-foot wingspan",
+        ar: "يطير بباع اثني عشر قدمًا",
+      },
     ],
     origin: {
       en: "A doctor who has to drain mutant life-force to survive and turns into a great winged reptile when he does. He fights it, loses, and fights it again.",
@@ -15489,10 +15720,28 @@ const mutantsD: CharacterDraft[] = [
     powers: [
       {
         en: "Illusions nobody can disbelieve",
-        ar: "أوهام لا يقدر أحد على تكذيبها",
+        ar: "أوهام لا يستطيع أحد تكذيبها",
       },
-      { en: "Made Jean into the Black Queen", ar: "صنع من جين الملكة السوداء" },
-      { en: "Physically unremarkable", ar: "لا شيء فيه جسديًا" },
+      {
+        en: "You see, hear, feel and taste them",
+        ar: "تراها وتسمعها وتلمسها وتتذوقها",
+      },
+      {
+        en: "Convinces a telepath his eyes are right",
+        ar: "يقنع متخاطرًا بأن عينيه تصدقان",
+      },
+      {
+        en: "Makes you believe your powers failed",
+        ar: "يجعلك تصدق أن قدراتك خذلتك",
+      },
+      {
+        en: "Made Jean into the Black Queen",
+        ar: "حوّل جين إلى الملكة السوداء",
+      },
+      {
+        en: "None of it records on film",
+        ar: "لا شيء منها يظهر على فيلم",
+      },
     ],
     origin: {
       en: "An illusionist who cannot lift a car but can make you certain you are somewhere else, and whose slow manipulation of Jean Grey is what set the Phoenix loose.",
@@ -16437,25 +16686,28 @@ const powerList: CharacterDraft[] = [
     powers: [
       {
         en: "Warps reality on a multiversal scale",
-        ar: "يلوي الواقع على مقياس متعدد الأكوان",
+        ar: "يشوّه الواقع بمقياس متعدد الأكوان",
       },
       {
         en: "Devastated realities to make a point",
-        ar: "دمّر وقائع لإثبات وجهة نظر",
+        ar: "دمّر وقائع ليثبت وجهة نظر",
       },
       {
         en: "Broke a council of the smartest men alive",
-        ar: "حطّم مجلسًا من أذكى الرجال",
+        ar: "حطّم مجلس أذكى الرجال أحياءً",
+      },
+      {
+        en: "Time travel, mind control and illusions",
+        ar: "سفر عبر الزمن وسيطرة عقول وأوهام",
+      },
+      {
+        en: "Aged Doctor Doom into dust",
+        ar: "شيّخ دكتور دووم حتى صار ترابًا",
       },
       {
         en: "Near-invincible while he holds it",
         ar: "شبه منيع ما دام ممسكًا بها",
       },
-      {
-        en: "Aged Doctor Doom into dust",
-        ar: "حوّل دكتور دووم غبارًا بالشيخوخة",
-      },
-      { en: "Undone by being made young again", ar: "أُبطل بأن أُعيد شابًا" },
     ],
     origin: {
       en: "An Omega-level mutant driven past sanity and returned as something that unmakes what it touches, who beat Doctor Doom so thoroughly that Doom spent the rest of it planning an answer.",
@@ -16478,22 +16730,28 @@ const powerList: CharacterDraft[] = [
     powers: [
       {
         en: "Warps reality with a thought, effortlessly",
-        ar: "يلوي الواقع بفكرة، بلا جهد",
+        ar: "يشوّه الواقع بفكرة، بلا جهد",
       },
       {
         en: "Rewrites the physics of a whole universe",
-        ar: "يعيد كتابة فيزياء كون بأكمله",
+        ar: "يعيد كتابة فيزياء كون بأسره",
       },
       {
         en: "A reality cancer that spreads outward",
-        ar: "سرطان واقع ينتشر إلى الخارج",
+        ar: "سرطان في الواقع ينتشر إلى الخارج",
       },
       {
         en: "Reaches realities other than his own",
         ar: "يبلغ وقائع غير واقعه",
       },
-      { en: "Stopped only by an empty void", ar: "لم يوقفه إلا فراغ خالٍ" },
-      { en: "A politician in public", ar: "سياسي في العلن" },
+      {
+        en: "Resurrects the dead, and creates new life",
+        ar: "يحيي الموتى، ويخلق حياة جديدة",
+      },
+      {
+        en: "Stopped only by an empty void",
+        ar: "لم يوقفه إلا خواء فارغ",
+      },
     ],
     origin: {
       en: "A reality-warping mutant whose power scales with his own insanity, and who was a respectable politician for as long as the madness stayed private.",
@@ -17297,9 +17555,30 @@ const mutantsF: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Amplifies another's power", ar: "يضخّم قوة غيره" },
-      { en: "Burns them out doing it", ar: "ويحرقهم وهو يفعل" },
-      { en: "Betrayed Magneto first", ar: "خان ماغنيتو أولًا" },
+      {
+        en: "Amplifies another mutant's power",
+        ar: "يضاعف قدرة متحول آخر",
+      },
+      {
+        en: "Burns them out doing it, on purpose",
+        ar: "ويحرقهم بذلك، عن عمد",
+      },
+      {
+        en: "Nearly killed Magneto that way",
+        ar: "كاد يقتل ماغنيتو بتلك الطريقة",
+      },
+      {
+        en: "Heals himself by siphoning life",
+        ar: "يشفي نفسه بامتصاص الحياة",
+      },
+      {
+        en: "Concussive blasts, and a shield",
+        ar: "قذائف صادمة، ودرع",
+      },
+      {
+        en: "Betrayed everyone he ever knelt to",
+        ar: "خان كل من ركع له",
+      },
     ],
     origin: {
       en: "A mutant who boosts other mutants' abilities to the point of killing them, and who used that on Magneto while calling himself his most loyal follower.",
@@ -18060,9 +18339,30 @@ const mutantsH: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "A force field he cannot drop", ar: "حقل قوة لا يقدر على إسقاطه" },
-      { en: "Nothing gets through", ar: "لا ينفذ شيء" },
-      { en: "Including food and air", ar: "بما في ذلك الطعام والهواء" },
+      {
+        en: "A force field a hand's breadth off him",
+        ar: "حقل قوة على بعد شبر منه",
+      },
+      {
+        en: "Bullets, blows and blasts all stop",
+        ar: "الرصاص واللكمات والقذائف تتوقف",
+      },
+      {
+        en: "Adds the field's force to his own punch",
+        ar: "يضيف قوة الحقل إلى لكمته",
+      },
+      {
+        en: "He can vary how much it lets through",
+        ar: "يستطيع تغيير ما يسمح بمروره",
+      },
+      {
+        en: "It once sealed out air and food",
+        ar: "سدّ مرة الهواء والطعام",
+      },
+      {
+        en: "Nothing has ever touched him",
+        ar: "لم يمسّه شيء قط",
+      },
     ],
     origin: {
       en: "A mutant surrounded by an impenetrable field, whose problem is that it grew strong enough to keep out everything, including what he needed to live.",
