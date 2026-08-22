@@ -356,6 +356,21 @@ const TIERS: Tier[] = [
        */
       "thor",
       "odin",
+      /**
+       * THE SURFER UP TO THIRD, from eighth, where he was below FIVE characters
+       * he outscores. Mangog claims 59 and sat two places above him; Sentry
+       * 126, Surtur 177, the Watcher 220, Zeus 296 -- and Norrin claims 306.
+       * Only Thor and Odin were ahead of him on their own records, and they
+       * still are.
+       *
+       * The dossier calls him "the most famous and most powerful herald" and
+       * says he wields the Power Cosmic "with more precision than anyone but
+       * Galactus himself". Beams that shatter a planet or tint a flower, black
+       * holes, cosmic awareness that peels back time, and power negation. The
+       * hand-rank was written when the heralds were nine identical three-line
+       * records and it never moved after they were rewritten.
+       */
+      "silver-surfer",
       "surtur",
       "zeus",
       /**
@@ -376,9 +391,7 @@ const TIERS: Tier[] = [
        * millennia is a fact about what he brings to a fight.
        */
       "the-watcher",
-      "mangog",
       "sentry",
-      "silver-surfer",
       /* Shalla-Bal directly behind him, because the two records carry
          IDENTICAL data — same species, same two affiliations — and came out 81
          places apart: Norrin was pinned here by being named, and she floated
@@ -410,6 +423,12 @@ const TIERS: Tier[] = [
          ahead on pure lifting and far behind on range. Adjacent is the honest
          answer and it needs a name in the head to say so. */
       "hercules",
+      /* MANGOG DOWN TO HERE, from sixth. He claims 59, the lowest number in
+         the top 130, and he was ranked above the Silver Surfer at 306, Thanos
+         at 365 and Adam Warlock at 370. He is the hatred of a billion billion
+         beings and he is also a creature Thor has put down more than once.
+         Below Hercules, who outscores him four to one. */
+      "mangog",
       /* Named because their species is a dead end: Bill is a Korbinite and
          Gladiator a Strontian, races of one, so no rule could ever find them.
          Bill carries Stormbreaker and fought Thor to a draw; Gladiator has
@@ -433,6 +452,19 @@ const TIERS: Tier[] = [
          674 and said so, which is exactly what it is for. */
       "professor-x",
       "magneto",
+      /**
+       * GHOST RIDER ABOVE THE BRICKS, and this file wrote the reason itself
+       * forty lines down before ranking him under every one of them: "his
+       * Penance Stare ignores durability entirely, WHICH IS THE ONE THING
+       * EVERY BRICK IN THIS TIER RELIES ON." Then he went below the Hulk, Red
+       * Hulk and the Maestro, whose whole case is durability.
+       *
+       * What he did, since Rashid asked twice: he took the throne of Hell from
+       * Mephisto, beat Satan, Blackheart and Null, and put a weakened GALACTUS
+       * into a coma with the Stare. Zarathos unleashed is written as able to
+       * burn the planet. He is not Cosmic Ghost Rider and does not need to be.
+       */
+      "ghost-rider",
       /**
        * THE HULK MOVED UP PAST THE OMEGAS, from 121st. The base-form rule is
        * why he is not higher still — Savage Hulk is what the corpus holds and
@@ -512,7 +544,6 @@ const TIERS: Tier[] = [
       "doctor-strange",
       "doctor-doom",
       "the-ancient-one",
-      "ghost-rider",
       "kang",
       "khonshu",
       "beta-ray-bill",
@@ -1375,7 +1406,7 @@ const SCALE: [RegExp, number][] = [
    * ascii-ok: English only.
    */
   [
-    /\b(strength|durab|regenerat|healing|heals\b|heal\b|powered armou?r|armou?r-borne|flies\b|flying\b|telepath|ignites|combust|disintegrat|pulls? things apart|pulls? apart|rips? apart|remotely|technopath|drives any|rebuilds any|any vehicle|tattoo|formula|animals?\b|beasts?\b|split in two|splits? into|rebuilt as a machine|a living machine|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|teleport|becomes? (a |an |the )?[a-z]|mjolnir|stormbreaker|spider[- ]powers|plasma|regrow|living rock|body of living|stone or steel|plated in steel|swaps? bodies|swaps? minds|physiolog|turns? into|copies|mimics?|duplicat|clones?\b|possess|silk|web-line|web-shooter|webbing|webs\b|poison|toxin|venomous|enormous size|giant|embiggen|grows to|constructs?\b|shakes the ground|earthquake|seismic|tremor|stretch|pheromone|\bgas\b|vibrat|absorbs?\b|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|\btons?\b|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable)/i,
+    /\b(strength|durab|regenerat|healing|heals\b|heal\b|powered armou?r|armou?r-borne|flies\b|flying\b|telepath|ignites|combust|disintegrat|pulls? things apart|pulls? apart|rips? apart|remotely|technopath|drives any|rebuilds any|any vehicle|tattoo|formula|animals?\b|beasts?\b|split in two|splits? into|rebuilt as a machine|a living machine|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|teleport|becomes? (a |an |the )?[a-z]|mjolnir|stormbreaker|spider[- ]powers|plasma|regrow|living rock|body of living|stone or steel|plated in steel|swaps? bodies|swaps? minds|physiolog|turns? into|copies|mimics?|duplicat|clones?\b|possess|silk|web-line|web-shooter|webbing|webs\b|poison|toxin|venomous|enormous size|giant|embiggen|grows to|constructs?\b|shakes the ground|earthquake|seismic|tremor|stretch|pheromone|\bgas\b|vibrat|absorbs?\b|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|\btons?\b|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable|drains?\b|siphons?\b|life force|life energy)/i,
     14,
   ],
   /**

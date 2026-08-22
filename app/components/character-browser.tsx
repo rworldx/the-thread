@@ -431,6 +431,22 @@ const GROUPS: {
          rather than inside them: every one of the six is on both chips. */
       { id: "original-six", match: aff("Original Six") },
       { id: "guardians", match: aff("Guardians of the Galaxy") },
+      /* THE OTHER GUARDIANS, and the reason this chip is worth having is that
+         six of its seven members are filed under records a reader would never
+         think to open: Party Thor is on Thor's page, Strange Supreme is on
+         Strange's, Gamora of the Blade is on Gamora's. The team is the only
+         thing that gathers them, and it is the one team on this page whose
+         members are each from a different universe. */
+      {
+        id: "guardians-multiverse",
+        match: aff("Guardians of the Multiverse"),
+      },
+      /* THE OTHER multiverse team, and the two belong beside each other: one
+         was assembled to save every universe and the other decided which
+         universes were allowed to know things. Captain Carter is on both, and
+         she is the only name this page repeats across two teams from two
+         different Earths. */
+      { id: "illuminati", match: aff("Illuminati") },
       { id: "defenders", match: aff("Defenders") },
       { id: "fantastic-four", match: aff("Fantastic Four") },
       { id: "thunderbolts", match: aff("Thunderbolts") },

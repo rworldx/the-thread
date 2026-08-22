@@ -62,6 +62,8 @@ const WIKIS = [
 const IMAGE_OVERRIDES: Record<string, string> = {
   /* A race has no page image, and C17b requires every character to have art.
      The Original Sin #8 textless cover is the Watcher council itself. */
+  "captain-marvel-maria":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/27/Maria_Rambeau_Infobox.jpg/revision/latest?cb=20231025002315",
   "the-watchers":
     "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Watchers_from_Original_Sin_Vol_1_8_Textless_cover_001.jpg/revision/latest?cb=20170905063428",
   /* PINNED BECAUSE THE LOOKUP DRIFTED. Speed's portrait had been the MCU
@@ -1205,6 +1207,476 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   ramonda:
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1a/Ramonda_Infobox.png/revision/latest?cb=20231021151049",
   ayo: "https://static.wikia.nocookie.net/heroes-and-villain/images/1/12/BP_Ayo.jpg/revision/latest?cb=20181220165824",
+
+  /**
+   * THE REST OF THE CORPUS, PINNED. Everything below this line was resolving
+   * live from the MCU wiki or the Superhero Database on every sync, which
+   * means the portrait was whatever those pages happened to show that day.
+   *
+   * That is not hypothetical. Speed's portrait drifted exactly this way:
+   * upstream DELETED the file, the wiki replaced the page image with a photo
+   * of a man in his thirties, and the next sync swapped it in silently. It
+   * took Rashid noticing the face was wrong to catch it, eleven syncs later.
+   *
+   * Every URL here is the one the site is already serving, so this freezes
+   * the current state rather than changing it -- and every one was checked
+   * against its record's name and aliases before being written down. Two
+   * looked wrong and were not: the wiki files the One Above All and the One
+   * Below All under "(Multiverse)".
+   *
+   * A portrait that is wrong is now a thing you fix HERE, once, instead of a
+   * thing that comes back on the next sync.
+   */
+  abomination:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/4-abomination.jpg",
+  "agatha-harkness":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a5/Agatha_Harkness_Infobox.jpg/revision/latest?cb=20250404171313",
+  agony:
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f8/Extreme_Carnage_Agony_Vol_1_1_Textless.jpg/revision/latest?cb=20220919223451",
+  ajax: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/13-ajax.jpg",
+  "aldrich-killian":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c0/Aldrich_Killian_Infobox.jpeg/revision/latest?cb=20210418203927",
+  "alex-wilder":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3c/Alex_Wilder_Infobox.jpg/revision/latest?cb=20231020204253",
+  "alexander-pierce":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3e/Alexander_Pierce_profile.png/revision/latest?cb=20231022031139",
+  alioth:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/92/Alioth_Loki.jpg/revision/latest?cb=20210710221953",
+  "alligator-loki":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0e/Alligator_Loki_Official.jpg/revision/latest?cb=20231020213936",
+  "america-chavez":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a8/America_Chavez.png/revision/latest?cb=20231021153752",
+  "ana-helstrom":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d2/Ana_Helstrom_profile.png/revision/latest?cb=20230331153926",
+  angel:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/24-angel.jpg",
+  annihilus:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/29-annihilus.jpg",
+  arishem:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7e/Arishem.png/revision/latest?cb=20230926005618",
+  "arnim-zola":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/67/Arnim_Zola.png/revision/latest?cb=20141127015752",
+  aurora:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/56-aurora.jpg",
+  ayesha:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/87/Ayesha_profile_%281%29.png/revision/latest?cb=20210506194507",
+  azazel:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/57-azazel.jpg",
+  banshee:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/61-banshee.jpg",
+  beast:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/75-beast.jpg",
+  "ben-parker":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/e4/Benjamin_Parker_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_Book_of_the_Dead_2004_Vol_1_1_0001.png/revision/latest?cb=20170410023208",
+  "ben-reilly":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/577-scarlet-spider.jpg",
+  "betty-ross":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/86/Betty_Ross.jpg/revision/latest?cb=20160101141249",
+  "black-bolt":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/96-black-bolt.jpg",
+  "black-cat":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/99-black-cat.jpg",
+  "black-widow":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/107-black-widow.jpg",
+  blackheart:
+    "https://static.wikia.nocookie.net/marveldatabase/images/5/5a/Blackheart_%28Earth-9411%29_from_Marvel_Heroes_%28UK%29_Vol_1_14_001.jpg/revision/latest?cb=20200713142648",
+  blade:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/112-blade.jpg",
+  blink:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/115-blink.jpg",
+  "boastful-loki":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/43/Boastful_Loki_Official.jpg/revision/latest?cb=20231020213919",
+  "bolivar-trask":
+    "https://static.wikia.nocookie.net/marveldatabase/images/0/09/Bolivar_Trask_%28Earth-161%29_from_X-Men_Forever_Vol_2_9_001.jpg/revision/latest?cb=20091016020444",
+  bullseye:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/141-bullseye.jpg",
+  cable:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/145-cable.jpg",
+  cannonball:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/148-cannonball.jpg",
+  carnage:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/162-carnage.jpg",
+  "cassandra-nova":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ac/Cassandra_Nova.png/revision/latest?cb=20240628203222",
+  "cassie-lang":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/4b/Cassie_Lang_Infobox.jpg/revision/latest?cb=20231124223701",
+  "chase-stein":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/66/Chase_Stein_S3_-_Poster.jpg/revision/latest?cb=20231020204109",
+  "christine-palmer":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/4f/Christine_Palmer_in_DSitMoM.jpg/revision/latest?cb=20250228204813",
+  "classic-loki":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/29/Classic_Loki_Character_Poster.jpg/revision/latest?cb=20231020213825",
+  "corvus-glaive":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0f/Corvus_Glaive_Infobox.png/revision/latest?cb=20180604193419",
+  cosmo:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/80/Cosmo_Vol3_Infobox.jpg/revision/latest?cb=20231113215156",
+  crossbones:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/88/Crossbones_Infobox.jpg/revision/latest?cb=20160229172341",
+  "cull-obsidian":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f5/Cull_Obsidian.JPG/revision/latest?cb=20210525191742",
+  cyclops:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/196-cyclops.jpg",
+  "daimon-helstrom":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e6/Daimon_Helstrom_profile.png/revision/latest?cb=20230331153919",
+  "dar-benn":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/bb/Dar-Benn_Promo.jpg/revision/latest?cb=20231201092608",
+  davos:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b3/Davos.jpg/revision/latest?cb=20190531095929",
+  dazzler:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/211-dazzler.jpg",
+  "deacon-frost":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/91/Deacon_Frost_%28Earth-1610%29_from_Ultimate_Avengers_vs._New_Ultimates_Vol_1_2_0001.jpg/revision/latest?cb=20110311161218",
+  death:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/07/Death_Infobox.png/revision/latest?cb=20241102024102",
+  "doctor-octopus":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/225-doctor-octopus.jpg",
+  "doctor-strange":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/226-doctor-strange.jpg",
+  domino:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/227-domino.jpg",
+  dormammu:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/232-dormammu.jpg",
+  drax: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/234-drax-the-destroyer.jpg",
+  dreykov:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/87/Dreykov.png/revision/latest?cb=20250520123750",
+  "ebony-maw":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/67/Ebony_Maw_Infobox.jpg/revision/latest?cb=20210525202154",
+  eclipse:
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/d3/Eclipse_%28Earth-616%29_from_Ironheart_Vol_1_7_001.png/revision/latest?cb=20190615162656",
+  ego: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/235-ego.jpg",
+  eitri:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ac/Eitri.png/revision/latest?cb=20220205165648",
+  electro:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/237-electro.jpg",
+  elektra:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/238-elektra.jpg",
+  "eli-bradley":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/fd/Eli_Bradley_Headshot.png/revision/latest?cb=20210423141633",
+  "elsa-bloodstone":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b0/Elsa_Bloodstone.jpg/revision/latest?cb=20231020152003",
+  "emma-frost":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/241-emma-frost.jpg",
+  eson: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b7/Esonsearcher.png/revision/latest?cb=20141126104220",
+  eternity:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b8/Eternity_Infobox.jpg/revision/latest?cb=20241027222001",
+  falcon:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/251-falcon.jpg",
+  firelord:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/258-firelord.jpg",
+  floor:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8f/Floor.png/revision/latest?cb=20230802150408",
+  frigga:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/65/Frigga_Profile.png/revision/latest?cb=20210513163108",
+  galactus:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/273-galactus.jpg",
+  gambit:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/274-gambit.jpg",
+  gamora:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/275-gamora.jpg",
+  "gert-yorkes":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0e/Gert_Yorkes_S3_-_Poster.jpg/revision/latest?cb=20231020204151",
+  ghost:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/4f/Ghost_Infobox.jpg/revision/latest?cb=20260313234608",
+  "ghost-rider":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/280-ghost-rider.jpg",
+  gorgon:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/79/Gorgo_Profile.png/revision/latest?cb=20170814180628",
+  gorr: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/71/Gorr_Infobox.png/revision/latest?cb=20231021012723",
+  grandmaster:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/92/Thor_Ragnarok_Textless_Character_Posters_06.jpg/revision/latest?cb=20231021034059",
+  "green-goblin":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/299-green-goblin.jpg",
+  groot:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/303-groot.jpg",
+  "gwen-stacy":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/619-spider-gwen.jpg",
+  "happy-hogan":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/89/Happy_Hogan_Infobox.png/revision/latest?cb=20240807203350",
+  "harley-keener":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c2/Harley_Keener.png/revision/latest?cb=20221203155727",
+  "harold-meachum":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0a/Harold_Meachum.png/revision/latest?cb=20170324174103",
+  "harry-osborn":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2d/Harry_Osborn_YFNSM_Infobox.jpeg/revision/latest?cb=20260630184926",
+  havok:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/311-havok.jpg",
+  hawkeye:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/313-hawkeye.jpg",
+  "he-who-remains":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/be/He_Who_Remains_Infobox.jpg/revision/latest?cb=20240201135929",
+  heimdall:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/ea/Heimdall_Infobox.jpg/revision/latest?cb=20250203022212",
+  hela: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/321-hela.jpg",
+  hercules:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/325-hercules.jpg",
+  "high-evolutionary":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c2/High_Evolutionary_Infobox.png/revision/latest?cb=20230904031119",
+  "hope-summers":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/330-hope-summers.jpg",
+  "howard-stark":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f6/Howard_Stark_Infobox.png/revision/latest?cb=20191004205535",
+  "howard-the-duck":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d0/Howard_duck.png/revision/latest?cb=20230707222901",
+  hulk: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/332-hulk.jpg",
+  iceman:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/339-iceman.jpg",
+  "iron-man":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/346-iron-man.jpg",
+  ironheart:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/48/Ironheart_Infobox.jpg/revision/latest?cb=20250516014201",
+  "ivan-vanko":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/cb/Whiplash_Profile.png/revision/latest?cb=20240227160708",
+  "jean-grey":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/356-jean-grey.jpg",
+  "john-walker":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/ba/U.S._Agent_Infobox.png/revision/latest?cb=20260313234727",
+  jubilee:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/372-jubilee.jpg",
+  juggernaut:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/374-juggernaut.jpg",
+  "justin-hammer":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b1/Iron_man_2_50.jpg/revision/latest?cb=20141204045154",
+  kaecilius:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f2/Kaecilius.png/revision/latest?cb=20250211065758",
+  kang: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/379-kang.jpg",
+  karnak:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8e/Karnak.jpg/revision/latest?cb=20170814180234",
+  "karolina-dean":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f1/Karolina.jpg/revision/latest?cb=20161204194534",
+  khonshu:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0a/Khonshu.png/revision/latest?cb=20220710113106",
+  "kid-loki":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a6/Kid_Loki-official.jpg/revision/latest?cb=20231020213859",
+  kilgrave:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/da/Kilgrave-Profile-JJ.jpg/revision/latest?cb=20191114200307",
+  killmonger:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Black_Panther_Textless_Character_Poster_03.jpg/revision/latest?cb=20231024003905",
+  kingpin:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/391-kingpin.jpg",
+  korg: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/80/Korg_-_Infobox.jpg/revision/latest?cb=20231021012818",
+  kraglin:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/4e/Kraglin_Obfonteri_Infobox.jpg/revision/latest?cb=20241128003917",
+  krugarr:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/33/Krugarr-0.jpg/revision/latest?cb=20170808145705",
+  "lauren-strucker":
+    "https://static.wikia.nocookie.net/marveldatabase/images/d/df/Lauren_Strucker_%28Earth-17372%29_from_The_Gifted_%28TV_series%29_promotional_art_001.jpg/revision/latest?cb=20171018015221",
+  legion:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/403-legion.jpg",
+  lizard:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/412-lizard.jpg",
+  lockjaw:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Lockjaw.JPG/revision/latest?cb=20231023140237",
+  loki: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/414-loki.jpg",
+  love: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ab/LoveTLAT.png/revision/latest?cb=20220909151103",
+  lylla:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/64/Lylla_on_floor_infobox.png/revision/latest?cb=20230722010732",
+  mainframe:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/95/Mainframe.jpg/revision/latest?cb=20230516023646",
+  malekith:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b1/Malekith-TextlessPoster1.jpg/revision/latest?cb=20231022145132",
+  "man-thing":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/428-man-thing.jpg",
+  mantis:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/431-mantis.jpg",
+  "maria-hill":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f4/Maria_Hill_Infobox.jpg/revision/latest?cb=20250203210426",
+  martinex:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/58/Martinex.jpg/revision/latest?cb=20230516023625",
+  maximus:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/24/Maximus.jpg/revision/latest?cb=20191120220617",
+  mayhem:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/81/Mayhem_HS.jpg/revision/latest?cb=20231020211248",
+  mbaku:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e4/M%27Baku_Infobox.png/revision/latest?cb=20231021150505",
+  medusa:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/441-medusa.jpg",
+  mephisto:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/443-mephisto.jpg",
+  miek: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ad/Tlat_miek.png/revision/latest?cb=20230710000319",
+  "miles-morales":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Miles_Morales_Spider-Man_Vol_3_1_Textless.jpg/revision/latest?cb=20260421170022",
+  mirage:
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/1e/Danielle_Moonstar_%28Earth-616%29_from_Uncanny_X-Men_Vol_5_21_001.png/revision/latest?cb=20190718001414",
+  "miss-minutes":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/29/Miss_Minutes_Profile.png/revision/latest?cb=20260728164648",
+  "mister-sinister":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/460-mister-sinister.jpg",
+  mobius:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2d/Mobius_M._Mobius.png/revision/latest?cb=20231020213732",
+  modok:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/463-modok.jpg",
+  "mole-man":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/32/Mole_Man_Infobox.png/revision/latest?cb=20250717183400",
+  "molly-hernandez":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/ef/Molly_Hernandez_S3_-_Poster.jpg/revision/latest?cb=20231020204048",
+  "monica-rambeau":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/dc/Monica_Rambeau_Profile.png/revision/latest?cb=20240120054741",
+  "moon-knight":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/470-moon-knight.jpg",
+  mordo:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/98/Karl_Mordo.png/revision/latest?cb=20231020202643",
+  "morgan-stark":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/24/Morgan_H._Stark.png/revision/latest?cb=20190726133152",
+  muse: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/16/Muse_Infobox.png/revision/latest?cb=20251024023930",
+  mysterio:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/479-mysterio.jpg",
+  mystique:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/480-mystique.jpg",
+  namor:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/481-namor.jpg",
+  nebula:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/487-nebula.jpg",
+  "ned-leeds":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/88/Ned_Leeds_Infobox.jpg/revision/latest?cb=20260617111633",
+  "nick-fury":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/489-nick-fury.jpg",
+  "nico-minoru":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/60/Nico_Minoru_S3_-_Poster.jpg/revision/latest?cb=20231020204233",
+  nightcrawler:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/490-nightcrawler.jpg",
+  nobu: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1e/NobuResurrected.png/revision/latest?cb=20211016194026",
+  "obadiah-stane":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/347-iron-monger.jpg",
+  odin: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/498-odin.jpg",
+  ouroboros:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f1/Ouroboros_Infobox.jpg/revision/latest?cb=20231013213311",
+  "peggy-carter":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/6b/Peggy_Carter_Infobox.png/revision/latest?cb=20250209154948",
+  "pepper-potts":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d4/Rescue_Infobox.png/revision/latest?cb=20231025192612",
+  "phil-coulson":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/98/Phil_Coulson_Infobox.jpg/revision/latest?cb=20250203215516",
+  "phyla-vell":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/62/Phyla_Infobox.png/revision/latest?cb=20230809030044",
+  polaris:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/523-polaris.jpg",
+  "proxima-midnight":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c6/Proxima02.jpg/revision/latest?cb=20260507225713",
+  pyro: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/532-pyro.jpg",
+  "red-guardian":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a0/Red_Guardian_Infobox.jpg/revision/latest?cb=20260313235054",
+  "rhomann-dey":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e2/Rhomann.jpg/revision/latest?cb=20140716220810",
+  "richard-rider":
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/99/Imperial_Vol_1_3_Just_Spectacular_Collection_Virgin_Variant.jpg/revision/latest?cb=20250825201846",
+  rocket:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/566-rocket-raccoon.jpg",
+  rogue:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/567-rogue.jpg",
+  ronan:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0f/Ronan_the_Accuser_Infobox.jpg/revision/latest?cb=20241127020215",
+  sabretooth:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/570-sabretooth.jpg",
+  sandman:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/572-sandman.jpg",
+  "scarlet-witch":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/579-scarlet-witch.jpg",
+  scorpion:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/581-scorpion.jpg",
+  scream:
+    "https://static.wikia.nocookie.net/marveldatabase/images/f/f5/Absolute_Carnage_Scream_Vol_1_1_Textless.jpg/revision/latest?cb=20190523183515",
+  "sebastian-shaw":
+    "https://static.wikia.nocookie.net/marveldatabase/images/e/ec/Immortal_X-Men_Vol_1_6_Textless.jpg/revision/latest?cb=20220515111421",
+  "shadow-king":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/584-shadow-king.jpg",
+  "she-hulk":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/589-she-hulk.jpg",
+  shocker:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/591-shocker.jpg",
+  shuri:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/93/Black_Panther_Infobox.jpg/revision/latest?cb=20240802145610",
+  sif: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/594-sif.jpg",
+  "silver-samurai":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Shingen_Harada_II_%28Earth-616%29_from_All-New_X-Men_Vol_1_13_001.jpg/revision/latest?cb=20190925001754",
+  "silver-surfer":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/598-silver-surfer.jpg",
+  skaar:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/605-skaar.jpg",
+  "spider-man":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/620-spider-man.jpg",
+  "stakar-ogord":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c1/Stakar_Ogord.jpg/revision/latest?cb=20250119215739",
+  "star-lord":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/630-star-lord.jpg",
+  "star-lord-tchalla":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/06/Star-Lord_-_Ravager_T%27Challa_Infobox.png/revision/latest?cb=20231021044901",
+  storm:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/638-storm.jpg",
+  sunspot:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/640-sunspot.jpg",
+  "supreme-intelligence":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f2/Supreme_Intelligence_Infobox.png/revision/latest?cb=20240806135051",
+  surtur:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e7/Surtur_Profile.png/revision/latest?cb=20180208221832",
+  "syd-barrett":
+    "https://static.wikia.nocookie.net/marveldatabase/images/8/8a/Sydney_Barrett_%28Earth-TRN1067%29_from_Legion_%28TV_series%29_Season_2_7.jpg/revision/latest?cb=20251215001400",
+  sylvie:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a3/The_Variant_Loki.png/revision/latest?cb=20231020213758",
+  talos:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a1/Talos_Infobox.png/revision/latest?cb=20250204001702",
+  taskmaster:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/653-taskmaster.jpg",
+  teefs:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d0/Teefs.jpg/revision/latest?cb=20230517175832",
+  "the-ancient-one":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/dc/Ancient_One.png/revision/latest?cb=20231020202432",
+  "the-collector":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0d/Collector_Infobox.jpg/revision/latest?cb=20231022154628",
+  "the-destroyer":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3a/Destroyer.png/revision/latest?cb=20240322032224",
+  "the-mandarin":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/430-mandarin.jpg",
+  "the-one-above-all":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/4d/One_Above_All_%28Multiverse%29_from_Storm_Vol_5_8_001.jpg/revision/latest?cb=20250508024307",
+  "the-one-below-all":
+    "https://static.wikia.nocookie.net/marveldatabase/images/4/4b/Immortal_Hulk_Vol_1_12_Textless.jpg/revision/latest?cb=20181021045341",
+  "the-watcher":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e5/Uatu_the_Watcher.png/revision/latest?cb=20241230223134",
+  thor: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/659-thor.jpg",
+  thunderbird:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/661-thunderbird.jpg",
+  tiamut:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/81/Tiamut_Eternals.png/revision/latest?cb=20220124131019",
+  tombstone:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/cb/Tombstone_Infobox.jpg/revision/latest?cb=20260808030126",
+  "trevor-slattery":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/22/TrevorSlatteryShangChi.jpeg/revision/latest?cb=20231210194425",
+  valentina:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/25/Valentina_Allegra_de_Fontaine_Infobox.png/revision/latest?cb=20250828180751",
+  valkyrie:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d8/Valkyrie_in_LoveAndThunder_Poster.png/revision/latest?cb=20231021012751",
+  venom:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/687-venom.jpg",
+  viper:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7d/Aida_Infobox.jpg/revision/latest?cb=20170401230442",
+  vulture:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/701-vulture.jpg",
+  "war-machine":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/703-war-machine.jpg",
+  "werewolf-by-night":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/bb/Werewolf_by_Night.png/revision/latest?cb=20250407225448",
+  "white-vision":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/60/White_Vision_Infobox.jpg/revision/latest?cb=20260815234105",
+  wiccan:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/83/Wiccan_Infobox.png/revision/latest?cb=20241018202830",
+  "william-stryker":
+    "https://static.wikia.nocookie.net/marveldatabase/images/6/69/William_Stryker_%28Earth-65%29_from_Spider-Gwen_Vol_2_20_001.png/revision/latest?cb=20171008132759",
+  "winter-soldier":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/714-winter-soldier.jpg",
+  wolfsbane:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/716-wolfsbane.jpg",
+  "wonder-man":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/719-wonder-man.jpg",
+  wong: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/00/Wong_in_She-Hulk.jpg/revision/latest?cb=20240802144541",
+  "x-23":
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/723-x-23.jpg",
+  "yelena-belova":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8e/Yelena_Belova_Infobox.jpg/revision/latest?cb=20250425194545",
+  yellowjacket:
+    "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/726-yellowjacket.jpg",
+  "yon-rogg":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/23/Yon-Rogg_Textless_Poster.jpg/revision/latest?cb=20231025001232",
+  zeus: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2c/Zeus_Infobox.jpg/revision/latest?cb=20231021012844",
 };
 
 /**
@@ -1543,6 +2015,19 @@ async function main() {
         art.set(id, { image: src, source: "mcu-wiki", matchedAs: o.page });
       else fandomErrors.push(`page override missed: ${id} → ${o.page}`);
     }
+  }
+
+  /**
+   * AND HAND-PICKED ART WINS AGAIN, because the line above claiming it
+   * "outranks everything, including the page overrides" was not true: the
+   * page-override stage runs after it and was overwriting six pins.
+   *
+   * A page override says "use whatever image this article shows today", which
+   * is the drift itself, not a fix for it. A URL is a fix for it. Applied
+   * before the stage as well, so the gap-fill still skips anything pinned.
+   */
+  for (const [id, url] of Object.entries(IMAGE_OVERRIDES)) {
+    art.set(id, { image: url, source: "chosen", matchedAs: "hand-picked" });
   }
 
   /**

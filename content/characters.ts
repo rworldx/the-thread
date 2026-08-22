@@ -115,7 +115,14 @@ const avengers: CharacterDraft[] = [
     nameAr: "ثور",
     aliases: ["Thor", "Thor Odinson"],
     category: "hero",
-    affiliation: ["Avengers", "Asgard", "Revengers", "Gods", "Original Six"],
+    affiliation: [
+      "Avengers",
+      "Asgard",
+      "Revengers",
+      "Gods",
+      "Original Six",
+      "Guardians of the Multiverse",
+    ],
     universe: ["mcu"],
     species: "Asgardian",
     powers: [
@@ -201,7 +208,13 @@ const avengers: CharacterDraft[] = [
        roster and in none of those credits. */
     alsoIn: ["the-super-hero-squad-show"],
     category: "hero",
-    affiliation: ["Avengers", "S.H.I.E.L.D.", "Team Iron Man", "Original Six"],
+    affiliation: [
+      "Avengers",
+      "S.H.I.E.L.D.",
+      "Team Iron Man",
+      "Original Six",
+      "Guardians of the Multiverse",
+    ],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -551,11 +564,13 @@ const avengers: CharacterDraft[] = [
     nameAr: "دكتور سترينج",
     aliases: ["Stephen Strange", "Doctor Strange", "Dr. Stephen Strange"],
     category: "hero",
+    /* Strange Supreme on the team, and the same record: this corpus holds ONE record per character across every universe they appear in, which is why Thor carries Revengers from Ragnarok and Team Iron Man from Civil War on the same line. */
     affiliation: [
       "Avengers",
       "Masters of the Mystic Arts",
       "Midnight Sons",
       "Magic",
+      "Guardians of the Multiverse",
     ],
     universe: ["mcu"],
     species: "Human",
@@ -644,6 +659,11 @@ const avengers: CharacterDraft[] = [
     id: "captain-marvel",
     nameEn: "Captain Marvel",
     nameAr: "كابتن مارفل",
+    /* THE MoM CREDIT IS NOT HERS. "Captain Marvel" in Multiverse of Madness is
+       Lashana Lynch playing Maria Rambeau of Earth-838, and Carol is not in
+       that film at all. Her bare alias was taking it -- the same fault that put
+       First Steps on Norrin instead of Shalla-Bal. */
+    notIn: ["doctor-strange-in-the-multiverse-of-madness"],
     aliases: ["Carol Danvers", "Captain Marvel", "Vers"],
     /* Real and uncredited. TMDB lists 14 cast credits for The Super Hero Squad
        Show and the series has 35 characters; this one is on the show's own
@@ -1009,7 +1029,7 @@ const guardians: CharacterDraft[] = [
     nameAr: "جامورا",
     aliases: ["Gamora"],
     category: "hero",
-    affiliation: ["Guardians of the Galaxy"],
+    affiliation: ["Guardians of the Galaxy", "Guardians of the Multiverse"],
     universe: ["mcu"],
     species: "Zehoberei",
     powers: [
@@ -1243,7 +1263,7 @@ const xmen: CharacterDraft[] = [
     nameAr: "بروفيسور إكس",
     aliases: ["Charles Xavier", "Professor X", "Professor Charles Xavier"],
     category: "hero",
-    affiliation: ["X-Men"],
+    affiliation: ["X-Men", "Illuminati"],
     universe: ["fox", "mcu"],
     species: "Mutant",
     /**
@@ -2289,7 +2309,7 @@ const fantasticFour: CharacterDraft[] = [
     nameAr: "مستر فانتاستيك",
     aliases: ["Mister Fantastic", "Reed Richards", "Mr. Fantastic"],
     category: "hero",
-    affiliation: ["Fantastic Four"],
+    affiliation: ["Fantastic Four", "Illuminati"],
     universe: ["fox", "mcu"],
     species: "Human mutate",
     powers: [
@@ -2813,7 +2833,7 @@ const villains: CharacterDraft[] = [
     aliases: ["Killmonger", "Erik Killmonger", "N'Jadaka", "Erik Stevens"],
     /* ANTIVILLAIN, not villain. His grievance is correct and the film agrees with him: Wakanda did abandon the diaspora. What he does with that is the part he is opposed for. */
     category: "antivillain",
-    affiliation: ["Wakandans"],
+    affiliation: ["Wakandans", "Guardians of the Multiverse"],
     universe: ["mcu"],
     /* NOT plain Human. Took the herb too, and beat T'Challa with it. */
     species: "Enhanced human",
@@ -3057,10 +3077,30 @@ const villains: CharacterDraft[] = [
     universe: ["fox", "mcu"],
     species: "Cosmic entity",
     powers: [
-      { en: "Consumes worlds", ar: "يلتهم العوالم" },
-      { en: "The Power Cosmic", ar: "القوة الكونية" },
-      { en: "Older than this universe", ar: "أقدم من هذا الكون" },
-      { en: "Was a man, once", ar: "كان رجلًا ذات يوم" },
+      {
+        en: "Consumes worlds and stars to stay alive",
+        ar: "يلتهم العوالم والنجوم ليبقى حيًا",
+      },
+      {
+        en: "The Power Cosmic, at nearly no limit",
+        ar: "القوة الكونية، بلا حدٍّ تقريبًا",
+      },
+      {
+        en: "Older than this universe. He outlived one",
+        ar: "أقدم من هذا الكون، وقد عاش بعد فناء آخر",
+      },
+      {
+        en: "Transmutes matter, and alters his own size",
+        ar: "يحوّل المادة، ويغيّر حجمه",
+      },
+      {
+        en: "Grants a herald a piece of what he is",
+        ar: "يمنح مبشّرًا جزءًا مما هو عليه",
+      },
+      {
+        en: "Weak when starved, unstoppable when fed",
+        ar: "ضعيف جائعًا، لا يُوقَف شبعان",
+      },
     ],
     origin: {
       en: "Not a villain so much as a condition. He eats planets because that is what he is, and he arrives with someone sent ahead to find them. Before any of it he was Galan, a scientist of the universe that came before this one, who flew into its collapse to see what was there.",
@@ -3135,7 +3175,10 @@ const legacyCharacters: CharacterDraft[] = [
         ar: "سلسلة تقطع كل شيء تقريبًا",
       },
       { en: "Cannot be destroyed, and comes back", ar: "لا يُدمَّر، ويعود" },
-      { en: "Absorbs any fire without harm", ar: "يمتص أي نار دون أذى" },
+      {
+        en: "Absorbs any fire without harm",
+        ar: "يمتص أي نار دون أذى",
+      },
     ],
     origin: {
       en: "A stunt rider who signed something to save his father's life, and pays the interest on it every night.",
@@ -3312,7 +3355,7 @@ const supporting: CharacterDraft[] = [
     nameAr: "بلاك بولت",
     aliases: ["Black Bolt", "Blackagar Boltagon"],
     category: "hero",
-    affiliation: ["Inhumans"],
+    affiliation: ["Inhumans", "Illuminati"],
     universe: ["marvel-tv"],
     species: "Inhuman",
     powers: [
@@ -3614,6 +3657,10 @@ const supporting: CharacterDraft[] = [
       { en: "Talons that cut through armour", ar: "مخالب تقطع الدروع" },
       { en: "Strength the harness gives him", ar: "قوة يمنحها له الحزام" },
       { en: "Older than everyone he fights", ar: "أكبر سنًا من كل من يقاتلهم" },
+      {
+        en: "Drains the years out of other people",
+        ar: "يمتص السنين من أجساد الآخرين",
+      },
     ],
     origin: {
       en: "A salvage contractor pushed out of a city-sized clean-up job, who kept the alien technology and built wings out of it.",
@@ -5627,10 +5674,16 @@ const abstracts: CharacterDraft[] = [
         en: "Equal to it, and one being with it",
         ar: "مساوٍ له، وهما كيان واحد",
       },
-      { en: "Unmakes, and cannot create at all", ar: "يفكّك، ولا يخلق البتة" },
+      {
+        en: "Unmakes anything, and denies death itself",
+        ar: "يفكّك أي شيء، ويمنع الموت نفسه",
+      },
       { en: "Killed everything that lived, once", ar: "قتل كل حيّ ذات مرة" },
       { en: "Grows stronger as reality decays", ar: "يقوى كلما تحلّل الواقع" },
-      { en: "Speaks through gamma", ar: "يتكلم عبر أشعة غاما" },
+      {
+        en: "Acts through gamma, and through the Hulk",
+        ar: "يعمل عبر الغاما، وعبر الهالك",
+      },
     ],
     origin: {
       en: "The One Above All's opposite, sitting at the bottom of the same ladder. It reaches into the world through gamma radiation, which is why the Hulk keeps ending up its doorway.",
@@ -5846,8 +5899,14 @@ const abstracts: CharacterDraft[] = [
         en: "Manipulates the living abyss itself",
         ar: "يتحكم بالهاوية الحية نفسها",
       },
-      { en: "Strength, flight and shapeshifting", ar: "قوة وطيران وتشكّل" },
-      { en: "Comes back, every time", ar: "يعود في كل مرة" },
+      {
+        en: "Mind control, illusions, and shapeshifting",
+        ar: "سيطرة على العقول وأوهام وتبدّل شكل",
+      },
+      {
+        en: "Comes back every time, and cannot be ended",
+        ar: "يعود في كل مرة، ولا يمكن إنهاؤه",
+      },
     ],
     origin: {
       en: "The god who was there before the light, who forged a blade out of living darkness and made the symbiotes from his own substance. Every one of them, Venom included, is a piece of him that got away.",
@@ -7802,6 +7861,10 @@ const moreSpider: CharacterDraft[] = [
         ar: "برد أسنانه ليجعلها مدببة بنفسه",
       },
       { en: "Speaks in a whisper", ar: "يتكلم همسًا" },
+      {
+        en: "Sunlight hurts him. He is an albino",
+        ar: "ضوء الشمس يؤذيه، فهو أمهق",
+      },
     ],
     origin: {
       en: "A Harlem enforcer whose skin hardened into something bulletproof, and who has never raised his voice in any story he appears in.",
@@ -8587,8 +8650,8 @@ const others: CharacterDraft[] = [
         ar: "صيغة أوزبورن، بلا الجنون",
       },
       {
-        en: "Strength and healing to match a Goblin",
-        ar: "قوة وشفاء يوازيان الغول",
+        en: "Strength that surpasses the Green Goblin",
+        ar: "قوة تتجاوز الغرين غوبلن نفسه",
       },
       {
         en: "Glider, pumpkin bombs and razor bats",
@@ -8599,6 +8662,10 @@ const others: CharacterDraft[] = [
         ar: "يحتفظ برأسه حيث يفقد نورمان رأسه",
       },
       { en: "Lets other men take the fall", ar: "يترك غيره يتحمل السقوط" },
+      {
+        en: "Speed, reflexes and durability with it",
+        ar: "وسرعة وردود فعل وصلابة معها",
+      },
     ],
     origin: {
       en: "A fashion magnate who found Norman Osborn's abandoned equipment, worked out that everyone who wore the Green Goblin mask went mad, and built a version that would not. His identity stayed a mystery for years because he kept sending brainwashed stand-ins to be unmasked in his place.",
@@ -8897,7 +8964,9 @@ const others: CharacterDraft[] = [
      */
     aliases: ["Captain Carter", "Peggy Carter / Captain Carter"],
     category: "hero",
-    affiliation: ["Avengers"],
+    /* She is the one member the corpus already held as her own record, because Peggy-with-the-serum is a different arc from Peggy Carter and not merely a different life. */
+    /* The only person on both of the multiverse's teams, which is why she is the one the reader arrives through. */
+    affiliation: ["Avengers", "Guardians of the Multiverse", "Illuminati"],
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
@@ -8919,6 +8988,129 @@ const others: CharacterDraft[] = [
         variantOrigin: "alternate-universe",
       },
       { id: "captain-america", kind: "ally" },
+    ],
+  },
+  {
+    id: "star-lord-tchalla",
+    nameEn: "Star-Lord T'Challa",
+    nameAr: "ستار لورد تشالا",
+    /**
+     * THE ONLY GUARDIAN OF THE MULTIVERSE WITH NO HOME IN THE CORPUS. The
+     * other six are variants of people already held here, and this file keeps
+     * ONE record per character across universes -- Thor carries Revengers and
+     * Team Iron Man on the same line. T'Challa Star-Lord is not that. He is a
+     * different man from Black Panther in every way the corpus measures:
+     * abducted by Yondu's crew as a boy, never king, never in the suit, and
+     * the galaxy is better off for it rather than worse.
+     *
+     * NO BARE "STAR-LORD" IN THE ALIASES, deliberately. That string is Peter
+     * Quill's and would take his credits, which is the same fault that made
+     * First Steps land on Norrin instead of Shalla-Bal.
+     */
+    aliases: ["Star-Lord T'Challa"],
+    /* Real and uncredited: Chadwick Boseman voices him in What If, in a role
+       TMDB files under the Black Panther credit rather than this one. */
+    alsoIn: ["what-if-s1"],
+    category: "hero",
+    affiliation: ["Guardians of the Multiverse", "Wakandans"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      /* NOT "out of the Infinity Stones", which scored him 160 -- the scorer
+         read the Stones as HIS and made a man whose power is talking the
+         highest-scoring character in a tier of soldiers and spies. The file
+         already stripped "infinity gauntlet" for this exact reason and chose
+         to leave the Stones scoring, so the sentence is what changes. */
+      {
+        en: "Talked Thanos out of killing half of life",
+        ar: "أقنع ثانوس بالعدول عن قتل نصف الأحياء",
+      },
+      {
+        en: "Turns an enemy into crew by talking",
+        ar: "يحوّل عدوًا إلى رفيق بالكلام",
+      },
+      {
+        en: "A Wakandan prince's training, no suit",
+        ar: "تدريب أمير واكاندي، بلا بذلة",
+      },
+      {
+        en: "Emptied the Embassy of Ravagers of its guns",
+        ar: "أفرغ ميناء الرافيجرز من سلاحه",
+      },
+      { en: "A thief nobody has ever caught", ar: "لص لم يُمسك به قط" },
+      {
+        en: "Charm that has not failed him once",
+        ar: "سحر لم يخذله مرة واحدة",
+      },
+    ],
+    origin: {
+      en: "The Wakandan prince Yondu's crew took by mistake, reaching for a boy on Earth and finding him instead. He never went home, never wore the suit, and talked most of the galaxy out of its worst ideas, including the one Thanos had.",
+      ar: "الأمير الواكاندي الذي أخذه طاقم يوندو بالخطأ، إذ مدّوا أيديهم إلى فتى على الأرض فوجدوه هو. لم يعد إلى بلاده قط، ولم يرتدِ البذلة قط، وأقنع أغلب المجرة بالعدول عن أسوأ أفكارها، ومنها فكرة ثانوس.",
+    },
+    related: [
+      {
+        id: "black-panther",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
+      { id: "star-lord", kind: "ally" },
+      { id: "thanos", kind: "enemy" },
+    ],
+  },
+  {
+    id: "captain-marvel-maria",
+    nameEn: "Captain Marvel (Maria Rambeau)",
+    nameAr: "كابتن مارفل (ماريا رامبو)",
+    /**
+     * ONE RECORD FOR BOTH MARIAS, which is this corpus's rule everywhere else:
+     * Thor carries Revengers and Team Iron Man on one line, and Strange
+     * Supreme is on Strange's page. The Air Force pilot of 2019 and the
+     * Illuminati's Captain Marvel are the same woman on two Earths.
+     *
+     * Named like the Surfers -- "Silver Surfer (Norrin Radd)" and
+     * "(Shalla-Bal)" -- because the bare title belongs to Carol.
+     */
+    aliases: ["Maria Rambeau"],
+    /* Real and uncredited under a matchable name: TMDB files Lashana Lynch in
+       Multiverse of Madness as "Captain Marvel", which is Carol's string. */
+    alsoIn: ["doctor-strange-in-the-multiverse-of-madness"],
+    category: "hero",
+    affiliation: ["Illuminati"],
+    universe: ["mcu"],
+    species: "Human-Kree hybrid",
+    powers: [
+      {
+        en: "Binary form, and a star's worth of it",
+        ar: "هيئة الثنائية، وطاقة نجم فيها",
+      },
+      {
+        en: "Photon blasts from both hands",
+        ar: "قذائف فوتونية من كلتا يديها",
+      },
+      {
+        en: "Flies faster than anything with wings",
+        ar: "تطير أسرع من كل ذي جناح",
+      },
+      {
+        en: "Absorbs energy and throws it back",
+        ar: "تمتص الطاقة وتردّها",
+      },
+      {
+        en: "Strength and durability past a human's",
+        ar: "قوة وصلابة تفوق البشر",
+      },
+      {
+        en: "An Air Force pilot before any of it",
+        ar: "طيّارة في سلاح الجو قبل كل ذلك",
+      },
+    ],
+    origin: {
+      en: "The pilot who was in the cockpit next to Carol Danvers on the day of the crash. On Earth-838 she is the one who walked out of it changed, and the Illuminati's Captain Marvel.",
+      ar: "الطيّارة التي كانت في المقصورة المجاورة لكارول دانفرز يوم التحطم. وفي الأرض-838 هي من خرجت منه متغيّرة، وكابتن مارفل في جماعة المستنيرين.",
+    },
+    related: [
+      { id: "captain-marvel", kind: "ally" },
+      { id: "monica-rambeau", kind: "ally" },
     ],
   },
   {
@@ -11026,7 +11218,8 @@ const antagonists: CharacterDraft[] = [
     nameAr: "البارون موردو",
     aliases: ["Mordo", "Karl Mordo", "Baron Mordo"],
     category: "antivillain",
-    affiliation: ["Masters of the Mystic Arts"],
+    /* Earth-838's Sorcerer Supreme, and the one who calls the vote against Strange. */
+    affiliation: ["Masters of the Mystic Arts", "Illuminati"],
     universe: ["mcu"],
     species: "Human",
     magicSchools: ["eldritch"],
@@ -13253,7 +13446,10 @@ const abstractsBatch: CharacterDraft[] = [
         ar: "يعيد تشكيل الواقع ليبقى متوازنًا",
       },
       { en: "Agent of Order and Chaos", ar: "عميل النظام والفوضى" },
-      { en: "Half light, half dark", ar: "نصفه نور ونصفه ظلام" },
+      {
+        en: "Casts illusions, and transmutes anything",
+        ar: "يلقي الأوهام، ويحوّل أي شيء",
+      },
     ],
     origin: {
       en: "The servant Order and Chaos share, sent to correct anything that has tilted too far one way. He inverts what he touches, which makes him the only errand either of them can agree on.",
@@ -16177,8 +16373,8 @@ const powerList: CharacterDraft[] = [
         ar: "نسخ ظلية منه في كل مكان",
       },
       {
-        en: "Wants everything returned to nothing",
-        ar: "يريد إعادة كل شيء إلى العدم",
+        en: "Shapeshifts, teleports, raises the dead",
+        ar: "يبدّل شكله، وينتقل، ويحيي الموتى",
       },
     ],
     origin: {
@@ -18902,7 +19098,11 @@ const collectives: CharacterDraft[] = [
       },
       {
         en: "Serves both, answers to neither",
-        ar: "يخدم كليهما ولا يحاسبه أيّ منهما",
+        ar: "يخدم الاثنين، ولا يتبع أحدًا",
+      },
+      {
+        en: "Numbers and sorts all who seek them",
+        ar: "يعدّ ويرتّب كل من يقصدهما",
       },
     ],
     origin: {
@@ -18929,7 +19129,18 @@ const collectives: CharacterDraft[] = [
         en: "Intermediary for Eternity and Infinity",
         ar: "وسيط بين الأزل واللانهاية",
       },
-      { en: "Neither one nor the other", ar: "لا هذا ولا ذاك" },
+      {
+        en: "Carries out what the two of them will",
+        ar: "ينفّذ ما تريده الاثنتان",
+      },
+      {
+        en: "Summoned to face the Phoenix itself",
+        ar: "استُدعي لمواجهة الفينيق نفسه",
+      },
+      {
+        en: "What he can do is mostly unrecorded",
+        ar: "أكثر ما يقدر عليه غير مدوَّن",
+      },
     ],
     origin: {
       en: "The intermediary between Eternity and Infinity, which is to say between all of time and all of space, and belongs entirely to neither.",
