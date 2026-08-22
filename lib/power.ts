@@ -148,6 +148,11 @@ const TIERS: Tier[] = [
          and could not be perceived by the Watcher when he woke. Arishem leads
          the Host, which is an office; Tiamut won the fight. */
       "tiamut",
+      /* THE WATCHERS AS A RACE, which is a different claim from Uatu alone.
+         The sources rate him beside Odin and Zeus and the RACE beside the
+         Celestials, so the two records sit two tiers apart on purpose: he is
+         103rd with the sky-fathers and they are here with the Host. */
+      "the-watchers",
       "arishem",
       "exitar",
       "the-progenitor",
@@ -321,6 +326,24 @@ const TIERS: Tier[] = [
        silent Celestial is still two thousand feet of living armour, and that
        is a physical claim, not a cosmic one. */
     ranked: [
+      /**
+       * THOR ABOVE ODIN, which this file has already argued for once without
+       * noticing it applied here. Two days ago I put Doctor Strange over the
+       * Ancient One and gave the reason as "Thor is ranked above ODIN in the
+       * peak list" -- being taught or fathered by someone is not a ceiling.
+       * The peak list said it. The base ranking still had Odin ten places up.
+       *
+       * The sources say it in both continuities. In Ragnarok ODIN HIMSELF
+       * tells Thor he is the stronger of the two. In the comics Thor is
+       * "physically stronger and more robust than Odin in every way", and
+       * that is a claim about base form, not about Rune King Thor, who is a
+       * peak and is ranked as one.
+       *
+       * What this costs is that Thor passes Thanos and the Silver Surfer on
+       * the way, and both are defensible: he took the full Gauntlet's owner
+       * to within one swing, and he and the Surfer have fought to a draw.
+       */
+      "thor",
       "odin",
       "surtur",
       "zeus",
@@ -354,7 +377,6 @@ const TIERS: Tier[] = [
       "shalla-bal",
       "thanos",
       "hela",
-      "thor",
       /**
        * ADAM WARLOCK MOVED UP FOURTEEN, from 120th, where he sat below
        * Gladiator, Iceman and Quentin Quire. He carries an INFINITY STONE in

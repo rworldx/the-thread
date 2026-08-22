@@ -1403,9 +1403,24 @@ const xmen: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "omega",
     powers: [
-      { en: "Controls the weather", ar: "تتحكم بالطقس" },
-      { en: "Flight", ar: "طيران" },
-      { en: "Lightning", ar: "برق" },
+      {
+        en: "Controls the weather of a whole planet",
+        ar: "تتحكم بطقس كوكب بأكمله",
+      },
+      {
+        en: "Lightning, hurricanes and absolute cold",
+        ar: "برق وأعاصير وبرد مطلق",
+      },
+      {
+        en: "Omega-level, and it has no natural ceiling",
+        ar: "بمستوى أوميغا، وبلا سقف طبيعي",
+      },
+      { en: "Flies on the winds she makes", ar: "تطير على رياح تصنعها" },
+      { en: "Changes the pressure inside a room", ar: "تغيّر الضغط داخل غرفة" },
+      {
+        en: "Bound to an atmosphere, and only that",
+        ar: "مقيّدة بالغلاف الجوي، وبه وحده",
+      },
     ],
     origin: {
       en: "Orphaned in Cairo and worshipped as a goddess in Kenya before she was old enough to argue about it. She can change the weather over a continent and is on Marvel's published Omega list.",
@@ -1529,9 +1544,30 @@ const xmen: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "omega",
     powers: [
-      { en: "Becomes ice", ar: "يتحوّل إلى جليد" },
-      { en: "Freezes anything", ar: "يجمّد أي شيء" },
-      { en: "Ice constructs", ar: "تشكيلات جليدية" },
+      {
+        en: "Becomes organic ice, and stops being flesh",
+        ar: "يصير جليدًا عضويًا، ويكف عن كونه لحمًا",
+      },
+      {
+        en: "Absolute zero, and constructs from nothing",
+        ar: "صفر مطلق، وتكوينات من لا شيء",
+      },
+      {
+        en: "Controls every drop of water near him",
+        ar: "يتحكم بكل قطرة ماء قريبة",
+      },
+      {
+        en: "Omega-level: no known upper limit",
+        ar: "بمستوى أوميغا: لا حدّ أعلى معروف",
+      },
+      {
+        en: "Reforms from vapour after being shattered",
+        ar: "يتشكّل من البخار بعد أن يتحطم",
+      },
+      {
+        en: "Could freeze a planet if he let himself",
+        ar: "قد يجمّد كوكبًا لو سمح لنفسه",
+      },
     ],
     origin: {
       en: "One of the first students, usually written as the funny one, and on Marvel's published Omega list. He can freeze moisture out of the air faster than anyone can move through it.",
@@ -5679,6 +5715,43 @@ const abstracts: CharacterDraft[] = [
        which is why no rule reading the cast can find them. */
     alsoIn: ["guardians-of-the-galaxy-vol-2"],
     related: [{ id: "sylvie", kind: "ally" }],
+  },
+  {
+    id: "the-watchers",
+    nameEn: "The Watchers",
+    nameAr: "المُراقبون",
+    aliases: ["The Watchers"],
+    /* No cast list carries a race. They are named and seen in What If, where
+       Uatu narrates on their behalf and answers to them. */
+    alsoIn: ["what-if-s1"],
+    category: "supporting",
+    affiliation: ["Cosmic entities"],
+    universe: ["animation"],
+    species: "Watcher",
+    powers: [
+      {
+        en: "Together, a match for the Celestials",
+        ar: "مجتمعين، ندٌّ للسماويين",
+      },
+      {
+        en: "One of the oldest races in existence",
+        ar: "من أقدم الأجناس في الوجود",
+      },
+      { en: "See every event in every reality", ar: "يرون كل حدث في كل واقع" },
+      {
+        en: "Cosmic energy on a scale nobody measures",
+        ar: "طاقة كونية بمقياس لا يقيسه أحد",
+      },
+      {
+        en: "Sworn, all of them, never to act",
+        ar: "أقسموا جميعًا ألا يتدخلوا",
+      },
+      { en: "And they punish the ones who do", ar: "ويعاقبون من يفعل" },
+    ],
+    origin: {
+      en: "A race older than almost anything, who decided long ago that knowing everything and doing nothing was the only safe arrangement, after an early attempt to help ended a civilisation. Uatu is the one assigned to Earth, and the one who keeps breaking the rule.",
+      ar: "جنس أقدم من كل شيء تقريبًا، قرر منذ زمن بعيد أن معرفة كل شيء وعدم فعل شيء هي الترتيب الآمن الوحيد، بعد محاولة مبكرة للمساعدة أنهت حضارة. أواتو هو المكلّف بالأرض، وهو من يكسر القاعدة دائمًا.",
+    },
   },
   {
     id: "molecule-man",
@@ -14137,18 +14210,15 @@ const heralds: CharacterDraft[] = [
         ar: "قوة تتناسب مع يقينه",
       },
       {
+        en: "Traded blows with Thor and the Hulk",
+        ar: "بادل ثور وهَلك الضربات",
+      },
+      {
         en: "Heat vision, and breath that freezes",
         ar: "رؤية حارقة، وأنفاس تجمّد",
       },
-      { en: "Flight faster than light", ar: "طيران أسرع من الضوء" },
-      {
-        en: "Nearly invulnerable while he believes",
-        ar: "شبه منيع ما دام يؤمن",
-      },
-      {
-        en: "Has traded blows with Thor and the Hulk",
-        ar: "تبادل الضربات مع ثور وهَلك",
-      },
+      { en: "Flies faster than light", ar: "يطير أسرع من الضوء" },
+      { en: "Near-invulnerable while he believes", ar: "شبه منيع ما دام يؤمن" },
       { en: "Praetor of the Imperial Guard", ar: "بريتور الحرس الإمبراطوري" },
     ],
     origin: {
@@ -14200,12 +14270,32 @@ const heralds: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Abstract Entity",
     powers: [
-      { en: "The rage of a billion dead", ar: "غضب مليار قتيل" },
+      /* SCORE OF SIX, the worst record in the top hundred and thirty. Mangog
+         is the collected rage of a billion beings Odin killed, and he has
+         beaten Thor, Odin and the whole Asgardian army in one go. His record
+         said "The rage of a billion dead / Grows with every prayer unanswered
+         / Exists to kill Odin", none of which this vocabulary can read. */
       {
-        en: "Grows with every prayer unanswered",
-        ar: "ينمو بكل دعاء لم يُستجب",
+        en: "The rage of a billion murdered beings",
+        ar: "غضب مليار كائن قُتلوا",
       },
-      { en: "Exists to kill Odin", ar: "وُجد ليقتل أودين" },
+      {
+        en: "Strength that grows with every prayer unheard",
+        ar: "قوة تنمو مع كل دعاء لم يُسمع",
+      },
+      {
+        en: "Beat Thor, Odin and all of Asgard at once",
+        ar: "هزم ثور وأودين وأسغارد كلها معًا",
+      },
+      {
+        en: "Near-invulnerable while the wrong stands",
+        ar: "شبه منيع ما دام الظلم قائمًا",
+      },
+      { en: "Cannot be killed, only answered", ar: "لا يُقتل، بل يُجاب" },
+      {
+        en: "Exists for one purpose and no other",
+        ar: "وُجد لغاية واحدة لا غير",
+      },
     ],
     origin: {
       en: "Not a creature but a grievance made solid: the collected fury of a billion beings Odin destroyed, given a body and one purpose. It cannot be killed while the grievance is true.",
@@ -14875,9 +14965,21 @@ const mutantsC: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "omega",
     powers: [
-      { en: "Controls any energy at all", ar: "يتحكم بأي طاقة كانت" },
-      { en: "The third Summers brother", ar: "ثالث الإخوة سمرز" },
-      { en: "Took the Shi'ar throne", ar: "استولى على عرش الشيعار" },
+      { en: "Controls any energy that exists", ar: "يتحكم بأي طاقة موجودة" },
+      {
+        en: "Absorbs a blast and returns it larger",
+        ar: "يمتص طلقة ويردّها أكبر",
+      },
+      {
+        en: "Omega-level, with no known ceiling",
+        ar: "بمستوى أوميغا، بلا سقف معروف",
+      },
+      { en: "Took the Shi'ar throne by force", ar: "انتزع عرش الشياعر بالقوة" },
+      {
+        en: "Fought Gladiator and the Imperial Guard",
+        ar: "قاتل غلادييتور والحرس الإمبراطوري",
+      },
+      { en: "The third Summers brother", ar: "ثالث إخوة سامرز" },
     ],
     origin: {
       en: "The Summers brother nobody knew existed, an Omega-level mutant raised as a slave who came back angry enough to take an empire and did.",

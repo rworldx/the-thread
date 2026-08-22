@@ -60,6 +60,10 @@ const WIKIS = [
  * host — those URLs expire.
  */
 const IMAGE_OVERRIDES: Record<string, string> = {
+  /* A race has no page image, and C17b requires every character to have art.
+     The Original Sin #8 textless cover is the Watcher council itself. */
+  "the-watchers":
+    "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Watchers_from_Original_Sin_Vol_1_8_Textless_cover_001.jpg/revision/latest?cb=20170905063428",
   /* PINNED BECAUSE THE LOOKUP DRIFTED. Speed's portrait had been the MCU
      wiki's `Tommy_Maximoff.png` since this repo started. That file was
      DELETED upstream and the page image replaced with an infobox still of a
