@@ -898,8 +898,30 @@ const avengers: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Leading engineer", ar: "مهندسة رائدة" },
-      { en: "Vibranium technology", ar: "تقنيات الفيبرانيوم" },
+      {
+        en: "Leading engineer of Wakanda",
+        ar: "كبيرة مهندسي واكاندا",
+      },
+      {
+        en: "Built the Panther habit, and improved it",
+        ar: "صنعت بذلة النمر، وحسّنتها",
+      },
+      {
+        en: "Sonic blasters built into the sleeves",
+        ar: "قاذفات صوتية مدمجة في الأكمام",
+      },
+      {
+        en: "Smarter than anyone in the room",
+        ar: "أذكى من في الغرفة",
+      },
+      {
+        en: "Fights in the field, in her own gear",
+        ar: "تقاتل ميدانيًا، بعتادها",
+      },
+      {
+        en: "Took the mantle herself",
+        ar: "أخذت العباءة بنفسها",
+      },
     ],
     origin: {
       en: "The princess who runs Wakanda's laboratories and builds most of what the throne depends on, a long way ahead of anyone else working on it.",
@@ -2498,8 +2520,30 @@ const defenders: CharacterDraft[] = [
     universe: ["defenders", "legacy"],
     species: "Human",
     powers: [
-      { en: "Assassin training", ar: "تدريب اغتيال" },
-      { en: "The sai", ar: "خنجرا الساي" },
+      {
+        en: "Assassin training, from the Hand",
+        ar: "تدريب اغتيال، من اليد",
+      },
+      {
+        en: "Twin sai, and she never puts them down",
+        ar: "سايان، ولا تضعهما أبدًا",
+      },
+      {
+        en: "A martial artist at the top of the field",
+        ar: "فنانة قتال في القمة",
+      },
+      {
+        en: "Killed Daredevil, and came back herself",
+        ar: "قتلت ديرديفل، وعادت هي نفسها",
+      },
+      {
+        en: "Moves silently, and is hard to see",
+        ar: "تتحرك بصمت، ويصعب رؤيتها",
+      },
+      {
+        en: "Resurrected by the Hand more than once",
+        ar: "أحيتها اليد أكثر من مرة",
+      },
     ],
     origin: {
       en: "A law student and the daughter of a diplomat, trained by people who found her before anyone else did, and very hard to keep on one side of anything.",
@@ -3620,9 +3664,32 @@ const supporting: CharacterDraft[] = [
     affiliation: [],
     universe: ["defenders", "legacy"],
     species: "Human",
+    /* TWO BULLETS, AND ONE OF THEM WAS "Never misses" -- the same phrase Hawkeye scores 53 on. Bullseye scored 8. */
     powers: [
-      { en: "Never misses", ar: "لا يخطئ هدفًا" },
-      { en: "Anything is a weapon", ar: "كل شيء سلاح" },
+      {
+        en: "Never misses. Not once, with anything",
+        ar: "لا يخطئ أبدًا، ولا بأي شيء",
+      },
+      {
+        en: "A paperclip, a card, a pencil, all lethal",
+        ar: "مشبك ورق أو بطاقة أو قلم، كلها قاتلة",
+      },
+      {
+        en: "Every object is a weapon in his hand",
+        ar: "كل شيء في يده سلاح",
+      },
+      {
+        en: "Perfect aim, and he calls it a mutation",
+        ar: "تصويب تام، ويسميه طفرة",
+      },
+      {
+        en: "Trained enough to hurt Daredevil",
+        ar: "مدرب بما يكفي ليؤذي ديرديفل",
+      },
+      {
+        en: "Kills for money, and for the pleasure",
+        ar: "يقتل للمال، وللمتعة",
+      },
     ],
     origin: {
       en: "A marksman who can kill with a paperclip and who has never been able to leave a target alone once he has seen it.",
@@ -5074,9 +5141,30 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Astrophysicist", ar: "عالِم فيزياء فلكية" },
-      { en: "Read the Tesseract first", ar: "أول من قرأ التِسّيراكت" },
-      { en: "Never quite recovered", ar: "لم يتعافَ تمامًا قط" },
+      {
+        en: "Astrophysicist",
+        ar: "عالم فيزياء فلكية",
+      },
+      {
+        en: "First to model the Bifrost",
+        ar: "أول من نمذج البايفروست",
+      },
+      {
+        en: "Built the device that opened it",
+        ar: "بنى الجهاز الذي فتحه",
+      },
+      {
+        en: "Worked out the Convergence",
+        ar: "حلّ لغز التقارب",
+      },
+      {
+        en: "Survived Loki's sceptre, badly",
+        ar: "نجا من صولجان لوكي، بصعوبة",
+      },
+      {
+        en: "The one who explains the sky",
+        ar: "من يشرح السماء",
+      },
     ],
     origin: {
       en: "The scientist who was already studying the impossible when the impossible arrived, and who is taken over by it before anyone understands what it is. Everything after costs him something.",
@@ -5139,10 +5227,28 @@ const supporting: CharacterDraft[] = [
     powers: [
       {
         en: "CIA, Joint Counter Terrorist",
-        ar: "الاستخبارات المركزية، مكافحة الإرهاب",
+        ar: "سي آي إيه، مكافحة إرهاب مشتركة",
       },
-      { en: "Flies anything", ar: "يقود أي طائرة" },
-      { en: "Knows when to say nothing", ar: "يعرف متى يصمت" },
+      {
+        en: "Flies anything, a Wakandan ship included",
+        ar: "يقود أي شيء، حتى سفينة واكاندية",
+      },
+      {
+        en: "Took a bullet for somebody else",
+        ar: "تلقى رصاصة عن غيره",
+      },
+      {
+        en: "A marksman, and trained for it",
+        ar: "رامٍ ماهر، ومدرب على ذلك",
+      },
+      {
+        en: "Knows every agency's secrets",
+        ar: "يعرف أسرار كل جهاز",
+      },
+      {
+        en: "Out of his depth, and useful anyway",
+        ar: "فوق طاقته، ومفيد رغم ذلك",
+      },
     ],
     origin: {
       en: "An American intelligence officer who arrives expecting to manage a small African country and finds the most advanced nation on earth. He is the outsider the film uses to ask its questions.",
@@ -5313,8 +5419,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "General of the Dora Milaje", ar: "قائدة الدورا ميلاجي" },
-      { en: "Vibranium spear", ar: "رمح فيبرانيوم" },
+      {
+        en: "General of the Dora Milaje",
+        ar: "جنرال الدورا ميلاجي",
+      },
+      {
+        en: "A vibranium spear that cuts anything",
+        ar: "رمح فيبرانيوم يقطع أي شيء",
+      },
+      {
+        en: "The best warrior Wakanda fields",
+        ar: "أفضل محاربة تدفع بها واكاندا",
+      },
+      {
+        en: "Beat the Black Panther in the ring",
+        ar: "هزمت البلاك بانثر في الحلبة",
+      },
+      {
+        en: "Commands an army, and fights in it",
+        ar: "تقود جيشًا، وتقاتل فيه",
+      },
+      {
+        en: "Loyal to the throne before the person",
+        ar: "ولاؤها للعرش قبل الشخص",
+      },
     ],
     origin: {
       en: "The general of Wakanda's royal guard, loyal to the throne rather than to whoever is sitting on it, which is a harder position than it sounds.",
@@ -5423,8 +5551,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Head of security", ar: "رئيس الأمن" },
-      { en: "Former boxer", ar: "ملاكم سابق" },
+      {
+        en: "Head of security",
+        ar: "رئيس الأمن",
+      },
+      {
+        en: "A boxer, and he still trains",
+        ar: "ملاكم، وما زال يتدرب",
+      },
+      {
+        en: "Drove Tony everywhere that mattered",
+        ar: "أوصل توني إلى كل مكان مهم",
+      },
+      {
+        en: "Took a bomb and lived",
+        ar: "تلقى انفجارًا ونجا",
+      },
+      {
+        en: "Minds Peter, badly and sincerely",
+        ar: "يعتني ببيتر، بسوء وإخلاص",
+      },
+      {
+        en: "The one who stays",
+        ar: "الذي يبقى",
+      },
     ],
     origin: {
       en: "Stark's driver, then his head of security, then the closest thing a teenager from Queens has to someone checking in on him.",
@@ -5445,9 +5595,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu", "marvel-tv"],
     species: "Human",
     powers: [
-      { en: "Founding S.H.I.E.L.D.", ar: "من مؤسسي شيلد" },
-      { en: "Combat training", ar: "تدريب قتالي" },
-      { en: "Intelligence officer", ar: "ضابطة استخبارات" },
+      {
+        en: "Founded S.H.I.E.L.D.",
+        ar: "أسست شيلد",
+      },
+      {
+        en: "A marksman, and trained in combat",
+        ar: "رامية ماهرة، ومدربة على القتال",
+      },
+      {
+        en: "Out-fought men who outweighed her",
+        ar: "تغلبت على رجال يفوقونها وزنًا",
+      },
+      {
+        en: "Ran operations nobody else would",
+        ar: "أدارت عمليات لم يجرؤ عليها أحد",
+      },
+      {
+        en: "SSR before that, in the field",
+        ar: "وكانت في إس إس آر قبلها، ميدانيًا",
+      },
+      {
+        en: "The plan is usually hers",
+        ar: "الخطة عادة خطتها",
+      },
     ],
     origin: {
       en: "The officer who ran the programme that made a super-soldier, and then spent the years after the war building the agency that would look for him.",
@@ -5586,8 +5757,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Queen mother", ar: "الملكة الأم" },
-      { en: "Head of state", ar: "رئيسة دولة" },
+      {
+        en: "Queen mother, and queen after",
+        ar: "الملكة الأم، ثم الملكة",
+      },
+      {
+        en: "Held Wakanda together twice",
+        ar: "حفظت واكاندا مرتين",
+      },
+      {
+        en: "Faced down a council and a navy",
+        ar: "واجهت مجلسًا وأسطولًا",
+      },
+      {
+        en: "Refused Namor to his face",
+        ar: "رفضت نامور في وجهه",
+      },
+      {
+        en: "Raised two of its best",
+        ar: "ربّت اثنين من خيرة أبنائها",
+      },
+      {
+        en: "Died getting her daughter out",
+        ar: "ماتت وهي تخرج ابنتها",
+      },
     ],
     origin: {
       en: "The queen mother of Wakanda, who has buried more of her family than any throne should ask of one person and has kept the country standing anyway.",
@@ -5771,8 +5964,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Deputy director", ar: "نائبة المدير" },
-      { en: "Field command", ar: "قيادة ميدانية" },
+      {
+        en: "Deputy director of S.H.I.E.L.D.",
+        ar: "نائبة مدير شيلد",
+      },
+      {
+        en: "A marksman, and field-trained",
+        ar: "رامية ماهرة، ومدربة ميدانيًا",
+      },
+      {
+        en: "Ran the helicarrier under fire",
+        ar: "أدارت حاملة الطائرات تحت النار",
+      },
+      {
+        en: "Fought in New York with a rifle",
+        ar: "قاتلت في نيويورك ببندقية",
+      },
+      {
+        en: "Runs an operation while it collapses",
+        ar: "تدير عملية وهي تنهار",
+      },
+      {
+        en: "Fury's second, and his check",
+        ar: "ذراع فيوري اليمنى، وكابحه",
+      },
     ],
     origin: {
       en: "The deputy who actually runs the agency day to day, and the one person its director tells the truth to first.",
@@ -5821,8 +6036,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Leads the Jabari", ar: "يقود الجباري" },
-      { en: "Enormous strength", ar: "قوة هائلة" },
+      {
+        en: "Leads the Jabari",
+        ar: "يقود الجباري",
+      },
+      {
+        en: "Enormous strength, for a man",
+        ar: "قوة هائلة، لرجل",
+      },
+      {
+        en: "Nearly beat T'Challa in the ring",
+        ar: "كاد يهزم تشالا في الحلبة",
+      },
+      {
+        en: "A club, and the reach to use it",
+        ar: "هراوة، وذراع تبلغ بها",
+      },
+      {
+        en: "Fights a Black Panther without a suit",
+        ar: "يقاتل بلاك بانثر بلا بذلة",
+      },
+      {
+        en: "Commands an army in the mountains",
+        ar: "يقود جيشًا في الجبال",
+      },
     ],
     origin: {
       en: "The leader of the mountain tribe that walked away from Wakanda's throne generations ago and has been loudly unimpressed ever since.",
@@ -6069,8 +6306,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Engineer and financier", ar: "مهندس وممول" },
-      { en: "Founded S.H.I.E.L.D.", ar: "من مؤسسي شيلد" },
+      {
+        en: "Engineer and financier",
+        ar: "مهندس وممول",
+      },
+      {
+        en: "Built the vita-ray chamber",
+        ar: "بنى حجرة أشعة الحياة",
+      },
+      {
+        en: "Founded S.H.I.E.L.D. with Peggy",
+        ar: "أسس شيلد مع بيغي",
+      },
+      {
+        en: "Found what vibranium could do first",
+        ar: "اكتشف ما يفعله الفيبرانيوم أولًا",
+      },
+      {
+        en: "Designed weapons for a world war",
+        ar: "صمم أسلحة لحرب عالمية",
+      },
+      {
+        en: "A pilot, and reckless with it",
+        ar: "طيار، ومتهور به",
+      },
     ],
     origin: {
       en: "The engineer who built the machine that made a super-soldier, founded the agency that came after, and was a much better inventor than father.",
@@ -6092,8 +6351,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Dora Milaje", ar: "من الدورا ميلاجي" },
-      { en: "Vibranium spear", ar: "رمح فيبرانيوم" },
+      {
+        en: "Dora Milaje, and among the best",
+        ar: "دورا ميلاجي، ومن الأفضل",
+      },
+      {
+        en: "A vibranium spear, used well",
+        ar: "رمح فيبرانيوم، تحسن استعماله",
+      },
+      {
+        en: "Trained to guard a king",
+        ar: "مدربة على حراسة ملك",
+      },
+      {
+        en: "Fights the Winter Soldier to a stop",
+        ar: "توقف جندي الشتاء بالقتال",
+      },
+      {
+        en: "Broke with the throne on principle",
+        ar: "خرجت على العرش لأجل مبدأ",
+      },
+      {
+        en: "Leads the Midnight Angels",
+        ar: "تقود ملائكة منتصف الليل",
+      },
     ],
     origin: {
       en: "One of the Dora Milaje, and the one most willing to say out loud when the throne is wrong.",
@@ -7792,9 +8073,30 @@ const thunderbolts: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Widow training", ar: "تدريب الأرملة" },
-      { en: "Marksmanship", ar: "دقة تصويب" },
-      { en: "Very direct", ar: "مباشِرة جدًا" },
+      {
+        en: "Widow training, from the same room",
+        ar: "تدريب الأرملة، من الغرفة نفسها",
+      },
+      {
+        en: "A marksman, and lethal without a gun",
+        ar: "رامية ماهرة، وفتاكة بلا سلاح",
+      },
+      {
+        en: "Batons, blades and whatever is nearby",
+        ar: "هراوات ونصال وما يقع تحت يدها",
+      },
+      {
+        en: "Freed from chemical control herself",
+        ar: "تحررت من السيطرة الكيميائية بنفسها",
+      },
+      {
+        en: "Better than Natasha, and she says so",
+        ar: "أفضل من ناتاشا، وتقولها",
+      },
+      {
+        en: "An assassin who chose to stop",
+        ar: "قاتلة اختارت أن تتوقف",
+      },
     ],
     origin: {
       en: "Raised in the same programme as Natasha and freed from it later, she is the funniest person in any room she is in and the one keeping count of what was done to her.",
@@ -7900,10 +8202,29 @@ const thunderbolts: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Runs the CIA", ar: "تدير الاستخبارات المركزية" },
       {
-        en: "Recruits people at their lowest",
-        ar: "تجنّد الناس في أضعف لحظاتهم",
+        en: "Runs the CIA",
+        ar: "تدير السي آي إيه",
+      },
+      {
+        en: "Recruits people nobody should",
+        ar: "تجنّد من لا ينبغي تجنيدهم",
+      },
+      {
+        en: "Builds a team out of criminals",
+        ar: "تبني فريقًا من مجرمين",
+      },
+      {
+        en: "A spymaster with no oversight",
+        ar: "رئيسة جواسيس بلا رقابة",
+      },
+      {
+        en: "Knows what everyone did",
+        ar: "تعرف ما فعله الجميع",
+      },
+      {
+        en: "Never in the room when it fails",
+        ar: "لا تكون في الغرفة حين يفشل",
       },
     ],
     origin: {
@@ -7973,8 +8294,30 @@ const hulks: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Cellular biologist", ar: "عالمة أحياء خلوية" },
-      { en: "The one person he calms for", ar: "الوحيدة التي يهدأ لأجلها" },
+      {
+        en: "Cellular biologist",
+        ar: "عالمة أحياء خلوية",
+      },
+      {
+        en: "Ran the lab that studied the gamma",
+        ar: "أدارت المختبر الذي درس الغاما",
+      },
+      {
+        en: "The only one Banner calms for",
+        ar: "الوحيدة التي يهدأ بانر لأجلها",
+      },
+      {
+        en: "Talks to the Hulk, and is heard",
+        ar: "تكلم الهالك، ويسمعها",
+      },
+      {
+        en: "Stole her father's data to help",
+        ar: "سرقت بيانات أبيها لتساعد",
+      },
+      {
+        en: "A general's daughter who says no",
+        ar: "ابنة جنرال تقول لا",
+      },
     ],
     origin: {
       en: "A scientist, the general's daughter, and Bruce Banner's reason to keep trying to reverse it: the only person in the first film who treats the Hulk as a patient rather than a target.",
@@ -8581,9 +8924,30 @@ const moreSpider: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Bad luck, for other people", ar: "حظ سيئ، لغيرها" },
-      { en: "Cat burglar", ar: "لصّة محترفة" },
-      { en: "Acrobat", ar: "بهلوانية" },
+      {
+        en: "Bad luck, for other people",
+        ar: "حظ سيئ، للآخرين",
+      },
+      {
+        en: "An acrobat, and a cat burglar",
+        ar: "بهلوانية، ولصة منازل",
+      },
+      {
+        en: "Claws that cut through a wall",
+        ar: "مخالب تقطع جدارًا",
+      },
+      {
+        en: "Enhanced agility and balance",
+        ar: "رشاقة وتوازن معززان",
+      },
+      {
+        en: "Steals what cannot be stolen",
+        ar: "تسرق ما لا يُسرق",
+      },
+      {
+        en: "Trained by the best thief alive",
+        ar: "دربها أمهر لص حي",
+      },
     ],
     origin: {
       en: "A thief who steals because she is extremely good at it, and whose power is a probability field that makes things go wrong for whoever she is fighting rather than right for her.",
@@ -9612,9 +9976,30 @@ const others: CharacterDraft[] = [
     universe: ["sony", "mcu"],
     species: "Human",
     powers: [
-      { en: "The guy in the chair", ar: "الرجل الذي في الكرسي" },
-      { en: "Knew first", ar: "عرف قبل الجميع" },
-      { en: "Very good at Lego", ar: "بارع جدًا في الليغو" },
+      {
+        en: "The guy in the chair",
+        ar: "الرجل الذي في الكرسي",
+      },
+      {
+        en: "Broke Stark's suit encryption",
+        ar: "كسر تشفير بذلة ستارك",
+      },
+      {
+        en: "Worked it out on his own",
+        ar: "توصل إليه بنفسه",
+      },
+      {
+        en: "Opened a portal by accident",
+        ar: "فتح بوابة بالصدفة",
+      },
+      {
+        en: "MIT, eventually",
+        ar: "إم آي تي، في النهاية",
+      },
+      {
+        en: "Loyal past the point of sense",
+        ar: "وفيّ إلى ما بعد حدّ العقل",
+      },
     ],
     origin: {
       en: "Peter Parker's best friend, who works out the secret in about a day and appoints himself mission control. In the comics a reporter of the same name spent years being framed as the Hobgoblin, which is not this Ned's problem.",
@@ -9635,9 +10020,30 @@ const others: CharacterDraft[] = [
     universe: ["sony", "animation"],
     species: "Human",
     powers: [
-      { en: "The girl next door", ar: "فتاة الجيرة" },
-      { en: "Actor and survivor", ar: "ممثلة وناجية" },
-      { en: "Rescued more often than she likes", ar: "تُنقذ أكثر مما يروقها" },
+      {
+        en: "The girl next door",
+        ar: "الفتاة التي تسكن الجوار",
+      },
+      {
+        en: "Knew before he told her",
+        ar: "عرفت قبل أن يخبرها",
+      },
+      {
+        en: "An actress, and a good one",
+        ar: "ممثلة، وبارعة",
+      },
+      {
+        en: "Has been thrown off several bridges",
+        ar: "أُلقيت من عدة جسور",
+      },
+      {
+        en: "Keeps turning up in the fight",
+        ar: "تظل تظهر في المعركة",
+      },
+      {
+        en: "Face it, tiger",
+        ar: "واجه الأمر، أيها النمر",
+      },
     ],
     origin: {
       en: "The girl from across the street, who has been the centre of Peter Parker's life for sixty years and has spent most of it being written as something that happens to him rather than someone it happens to.",
@@ -10251,9 +10657,30 @@ const others: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Analyst, TVA", ar: "محلّل في هيئة التباين الزمني" },
-      { en: "Knows every Loki", ar: "يعرف كل نسخة من لوكي" },
-      { en: "Would like a jet ski", ar: "يودّ لو يقتني درّاجة مائية" },
+      {
+        en: "Analyst, TVA",
+        ar: "محلل في تي في إيه",
+      },
+      {
+        en: "Reads a timeline like a case file",
+        ar: "يقرأ خطًا زمنيًا كملف قضية",
+      },
+      {
+        en: "Knows every version of Loki",
+        ar: "يعرف كل نسخة من لوكي",
+      },
+      {
+        en: "Talked one of them into changing",
+        ar: "أقنع واحدة منها بأن تتغير",
+      },
+      {
+        en: "A jet ski he has never ridden",
+        ar: "دراجة مائية لم يركبها قط",
+      },
+      {
+        en: "Pruned, and came back",
+        ar: "قُلّم، وعاد",
+      },
     ],
     origin: {
       en: "The TVA analyst who has read every file on every Loki and decides to talk to one instead of pruning him. He believes in the institution completely, right up until he reads his own file.",
@@ -10274,9 +10701,30 @@ const others: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Repairs and Advancement", ar: "قسم الإصلاح والتطوير" },
-      { en: "Wrote the manual", ar: "كتب الدليل بنفسه" },
-      { en: "Alone down there for centuries", ar: "وحيد في الأسفل منذ قرون" },
+      {
+        en: "Repairs and Advancement, TVA",
+        ar: "الإصلاح والتطوير، تي في إيه",
+      },
+      {
+        en: "Built most of what the TVA runs on",
+        ar: "بنى أغلب ما تعمل به تي في إيه",
+      },
+      {
+        en: "Wrote the handbook himself",
+        ar: "كتب الدليل بنفسه",
+      },
+      {
+        en: "Understands the Loom",
+        ar: "يفهم النول",
+      },
+      {
+        en: "Explains time with a cake",
+        ar: "يشرح الزمن بكعكة",
+      },
+      {
+        en: "Long past a normal lifetime",
+        ar: "تجاوز العمر الطبيعي بكثير",
+      },
     ],
     origin: {
       en: "The entire Repairs and Advancement department, one man, who wrote the TVA handbook and has been waiting decades for somebody to come down and ask him a question about it.",
@@ -10561,9 +11009,30 @@ const others: CharacterDraft[] = [
     universe: ["mcu", "marvel-tv"],
     species: "Human",
     powers: [
-      { en: "Turns up before anyone else", ar: "يصل قبل الجميع" },
-      { en: "Vintage trading cards", ar: "بطاقات تجميع قديمة" },
-      { en: "Unfailingly polite", ar: "مؤدّب دائمًا" },
+      {
+        en: "Turns up before anyone else",
+        ar: "يصل قبل الجميع",
+      },
+      {
+        en: "A S.H.I.E.L.D. badge, and he uses it",
+        ar: "شارة شيلد، ويستعملها",
+      },
+      {
+        en: "A marksman, and field-trained",
+        ar: "رامٍ ماهر، ومدرب ميدانيًا",
+      },
+      {
+        en: "Fired the Destroyer gun at Loki",
+        ar: "أطلق سلاح المدمر على لوكي",
+      },
+      {
+        en: "Built the Avengers from a file",
+        ar: "بنى الأفنجرز من ملف",
+      },
+      {
+        en: "Died for it, and came back",
+        ar: "مات لأجلها، وعاد",
+      },
     ],
     origin: {
       en: "The S.H.I.E.L.D. agent who knocks on the door in the first film and keeps knocking for six more. He is how the early MCU connected to itself before there was an Avengers to connect it: the man in the suit standing in someone's living room explaining that this is bigger than them.",
@@ -10905,9 +11374,30 @@ const laterAdditions: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "No powers at all", ar: "بلا قدرات إطلاقًا" },
-      { en: "Patience", ar: "صبر" },
-      { en: "Finds the one true thing", ar: "يجد الحقيقة الواحدة" },
+      {
+        en: "No powers at all",
+        ar: "بلا قدرات البتة",
+      },
+      {
+        en: "A colonel of Sokovian special forces",
+        ar: "عقيد في قوات سوكوفيا الخاصة",
+      },
+      {
+        en: "Broke the Avengers with a notebook",
+        ar: "فكك الأفنجرز بدفتر",
+      },
+      {
+        en: "A tactician who plans in years",
+        ar: "تكتيكي يخطط بالسنين",
+      },
+      {
+        en: "A marksman, and lethal in a cell",
+        ar: "رامٍ ماهر، وفتاك في زنزانة",
+      },
+      {
+        en: "Patient past the point of sanity",
+        ar: "صبور إلى ما بعد حدّ العقل",
+      },
     ],
     origin: {
       en: "A Sokovian officer who loses his family when the Avengers drop a city, and works out that the way to destroy them is not a fight. He needs no powers, and the plan is one true fact revealed at the right moment.",
@@ -11509,9 +11999,30 @@ const smallScreen: CharacterDraft[] = [
     universe: ["marvel-tv"],
     species: "Human",
     powers: [
-      { en: "Plans three moves out", ar: "يخطّط ثلاث نقلات مقدّمًا" },
-      { en: "Keeps the group together", ar: "يبقي المجموعة معًا" },
-      { en: "Wants his father's chair", ar: "يريد كرسي أبيه" },
+      {
+        en: "Plans three moves out",
+        ar: "يخطط لثلاث نقلات مقدمًا",
+      },
+      {
+        en: "Played everyone at the table",
+        ar: "تلاعب بكل من على الطاولة",
+      },
+      {
+        en: "A strategist before a teenager",
+        ar: "استراتيجي قبل أن يكون مراهقًا",
+      },
+      {
+        en: "No powers, and he led them",
+        ar: "بلا قدرات، وقادهم",
+      },
+      {
+        en: "Chess, and it is not a metaphor",
+        ar: "شطرنج، وليست استعارة",
+      },
+      {
+        en: "Betrayed them all on purpose",
+        ar: "خانهم جميعًا عن عمد",
+      },
     ],
     origin: {
       en: "The one who calls them back together after two years apart, and the one whose reasons for doing it take the longest to come out.",
@@ -12143,9 +12654,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Close-quarters specialist", ar: "اختصاصي قتال قريب" },
-      { en: "Hydra inside S.H.I.E.L.D.", ar: "هايدرا داخل شيلد" },
-      { en: "Explosive vest", ar: "سترة ناسفة" },
+      {
+        en: "Close-quarters specialist",
+        ar: "متخصص في القتال القريب",
+      },
+      {
+        en: "Takes a beating and keeps coming forward",
+        ar: "يتحمل الضرب ويواصل التقدم",
+      },
+      {
+        en: "Strength enough to trade with a soldier",
+        ar: "قوة تكفي لمبادلة جندي خارق",
+      },
+      {
+        en: "A marksman, and a demolitions man",
+        ar: "رامٍ ماهر، وخبير متفجرات",
+      },
+      {
+        en: "HYDRA's best field operative",
+        ar: "أفضل عميل ميداني لدى هايدرا",
+      },
+      {
+        en: "Fought Captain America and walked away",
+        ar: "قاتل كابتن أمريكا ومضى",
+      },
     ],
     origin: {
       en: "A S.H.I.E.L.D. strike-team leader who was Hydra the whole time, and who survives the day that reveals it. He comes back for the man who put him in the fire.",
@@ -12166,9 +12698,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Runs the World Security Council", ar: "يترأس مجلس الأمن العالمي" },
-      { en: "Patient for decades", ar: "صبور لعقود" },
-      { en: "Signs the order himself", ar: "يوقّع الأمر بنفسه" },
+      {
+        en: "Runs the World Security Council",
+        ar: "يدير مجلس الأمن العالمي",
+      },
+      {
+        en: "HYDRA underneath it, for decades",
+        ar: "وهايدرا تحته، لعقود",
+      },
+      {
+        en: "Ordered Fury killed",
+        ar: "أمر بقتل فيوري",
+      },
+      {
+        en: "Commands the Winter Soldier",
+        ar: "يأمر جندي الشتاء",
+      },
+      {
+        en: "A badge nobody questions",
+        ar: "شارة لا يشكك فيها أحد",
+      },
+      {
+        en: "Never fires a shot himself",
+        ar: "ولا يطلق رصاصة بنفسه",
+      },
     ],
     origin: {
       en: "A senior S.H.I.E.L.D. official and a friend of Nick Fury's, who declined a Nobel Peace Prize and believes order is worth any price. He has been building the machinery to impose it for forty years.",
@@ -12262,9 +12815,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Runs the Red Room", ar: "يدير الغرفة الحمراء" },
-      { en: "Chemical subjugation", ar: "إخضاع كيميائي" },
-      { en: "Never leaves the building", ar: "لا يغادر المبنى" },
+      {
+        en: "Runs the Red Room",
+        ar: "يدير الغرفة الحمراء",
+      },
+      {
+        en: "Chemical control over every Widow",
+        ar: "سيطرة كيميائية على كل أرملة",
+      },
+      {
+        en: "An army of assassins he owns",
+        ar: "جيش من القاتلات يملكه",
+      },
+      {
+        en: "Pheromone locks nobody can break",
+        ar: "أقفال فيرومونية لا تُكسر",
+      },
+      {
+        en: "Never seen, and never caught",
+        ar: "لا يُرى، ولا يُمسك",
+      },
+      {
+        en: "No powers, and the worst man here",
+        ar: "بلا قدرات، وأسوأ رجل هنا",
+      },
     ],
     origin: {
       en: "The man who built the Red Room and the widows inside it, and who has spent decades convincing the world he is a story. His only real defence is that nobody believes he exists.",
@@ -12391,9 +12965,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["defenders"],
     species: "Human",
     powers: [
-      { en: "Chi-focused strike", ar: "ضربة مركّزة بالتشي" },
-      { en: "Trained at K'un-Lun", ar: "تدرّب في كون-لون" },
-      { en: "Believes he earned it", ar: "يؤمن أنه استحقّها" },
+      {
+        en: "Chi-focused strike, like the Fist",
+        ar: "ضربة مركّزة بالتشي، كالقبضة",
+      },
+      {
+        en: "Trained in K'un-Lun from a child",
+        ar: "تدرب في كون-لون منذ الصغر",
+      },
+      {
+        en: "Beat Danny Rand more than once",
+        ar: "هزم داني راند أكثر من مرة",
+      },
+      {
+        en: "Took the Iron Fist for himself",
+        ar: "انتزع القبضة الحديدية لنفسه",
+      },
+      {
+        en: "A martial artist without equal there",
+        ar: "فنان قتال لا ند له هناك",
+      },
+      {
+        en: "Steel Serpent, and he earned it",
+        ar: "الأفعى الفولاذية، وقد استحقها",
+      },
     ],
     origin: {
       en: "The best student K'un-Lun had, who watched the honour he had trained his whole life for go to an outsider who then abandoned it. He comes to take it back.",
@@ -12436,9 +13031,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["fox"],
     species: "Human",
     powers: [
-      { en: "Runs Weapon X", ar: "يدير سلاح إكس" },
-      { en: "Adamantium bonding", ar: "دمج الأداماتيوم" },
-      { en: "A father who blames mutants", ar: "أب يحمّل المتحوّلين الذنب" },
+      {
+        en: "Runs Weapon X",
+        ar: "يدير ويبون إكس",
+      },
+      {
+        en: "Built the adamantium process",
+        ar: "بنى عملية الأدامانتيوم",
+      },
+      {
+        en: "Commands a private army",
+        ar: "يقود جيشًا خاصًا",
+      },
+      {
+        en: "Mind-control serum from his own son",
+        ar: "مصل سيطرة عقلية من ابنه",
+      },
+      {
+        en: "Sent Sentinels after children",
+        ar: "أرسل الحراس خلف أطفال",
+      },
+      {
+        en: "A soldier with a government budget",
+        ar: "جندي بميزانية حكومية",
+      },
     ],
     origin: {
       en: "A military scientist who blames mutants for what happened to his family and has spent his career weaponising them anyway. His best work is a man who cannot remember agreeing to it.",
@@ -13473,9 +14089,30 @@ const spiderRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Runs a mercenary company", ar: "تدير شركة مرتزقة" },
-      { en: "Trained for every weapon", ar: "مدرَّبة على كل سلاح" },
-      { en: "Works for the contract", ar: "تعمل بالعقد" },
+      {
+        en: "Runs a mercenary company",
+        ar: "تدير شركة مرتزقة",
+      },
+      {
+        en: "A marksman, and a martial artist",
+        ar: "رامية ماهرة، وفنانة قتال",
+      },
+      {
+        en: "A chai whip, and a vest under it",
+        ar: "سوط تشاي، وسترة تحته",
+      },
+      {
+        en: "Hunts war criminals for a state",
+        ar: "تطارد مجرمي حرب لحساب دولة",
+      },
+      {
+        en: "Commands the Wild Pack",
+        ar: "تقود الوايلد باك",
+      },
+      {
+        en: "Paid, and principled anyway",
+        ar: "مأجورة، وذات مبدأ رغم ذلك",
+      },
     ],
     origin: {
       en: "The head of a mercenary outfit and of a small nation that lives on its fees, who is neither an enemy nor a friend but whoever the contract says. She keeps her word exactly as written.",
@@ -18337,9 +18974,30 @@ const hiddenByAudit: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Runs the newsroom", ar: "يدير غرفة الأخبار" },
-      { en: "The conscience of the Bugle", ar: "ضمير البيوغل" },
-      { en: "Says no to Jameson", ar: "يقول لا لجيمسون" },
+      {
+        en: "Runs the newsroom",
+        ar: "يدير غرفة الأخبار",
+      },
+      {
+        en: "The conscience of the Bugle",
+        ar: "ضمير البيوغل",
+      },
+      {
+        en: "Says no to Jameson",
+        ar: "يقول لا لجيمسون",
+      },
+      {
+        en: "Checks the story before it prints",
+        ar: "يتحقق من الخبر قبل نشره",
+      },
+      {
+        en: "Knew, and printed nothing",
+        ar: "عرف، ولم ينشر شيئًا",
+      },
+      {
+        en: "Forty years of not being scared",
+        ar: "أربعون عامًا بلا خوف",
+      },
     ],
     origin: {
       en: "The Daily Bugle's editor-in-chief and the one person in the building who tells J. Jonah Jameson he is wrong and keeps his job. Peter Parker's steadiest adult ally.",
@@ -18377,11 +19035,29 @@ const bugleAndRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Runs the Daily Bugle", ar: "يدير الديلي بيوغل" },
-      { en: "Hates Spider-Man in print", ar: "يكره سبايدرمان في المطبوع" },
       {
-        en: "Right about almost nothing else",
-        ar: "مصيب في كل شيء تقريبًا سواه",
+        en: "Runs the Daily Bugle",
+        ar: "يدير الديلي بيوغل",
+      },
+      {
+        en: "Loudest man in New York",
+        ar: "أعلى رجل صوتًا في نيويورك",
+      },
+      {
+        en: "Never prints a retraction",
+        ar: "لا ينشر تصحيحًا أبدًا",
+      },
+      {
+        en: "Funded the Scorpion himself",
+        ar: "موّل سكوربيون بنفسه",
+      },
+      {
+        en: "Right about almost nothing",
+        ar: "محق في لا شيء تقريبًا",
+      },
+      {
+        en: "And he never stops",
+        ar: "ولا يتوقف أبدًا",
       },
     ],
     origin: {
@@ -18444,9 +19120,30 @@ const bugleAndRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Jameson's secretary", ar: "سكرتيرة جيمسون" },
-      { en: "Was Peter's neighbour", ar: "كانت جارة بيتر" },
-      { en: "Knows everyone in the building", ar: "تعرف كل من في المبنى" },
+      {
+        en: "Jameson's secretary, and his filter",
+        ar: "سكرتيرة جيمسون، ومرشّحه",
+      },
+      {
+        en: "Runs the Bugle's front desk",
+        ar: "تدير مكتب استقبال البيوغل",
+      },
+      {
+        en: "Knows who is lying on the phone",
+        ar: "تعرف من يكذب على الهاتف",
+      },
+      {
+        en: "Peter's neighbour before that",
+        ar: "كانت جارة بيتر قبل ذلك",
+      },
+      {
+        en: "Kept his secret without being told",
+        ar: "حفظت سره دون أن يُخبرها",
+      },
+      {
+        en: "Later ran for office herself",
+        ar: "ثم ترشحت للمنصب بنفسها",
+      },
     ],
     origin: {
       en: "Peter Parker's old neighbour who became J. Jonah Jameson's secretary, and who knows more about what happens at the Bugle than anyone whose name is on the masthead.",
@@ -18464,9 +19161,30 @@ const bugleAndRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Robbie's son", ar: "ابن روبي" },
-      { en: "Peter's roommate", ar: "رفيق سكن بيتر" },
-      { en: "An activist before anything", ar: "ناشط قبل كل شيء" },
+      {
+        en: "Robbie's son",
+        ar: "ابن روبي",
+      },
+      {
+        en: "Peter's roommate, and patient",
+        ar: "رفيق سكن بيتر، وصبور",
+      },
+      {
+        en: "Organises the protest himself",
+        ar: "ينظم الاحتجاج بنفسه",
+      },
+      {
+        en: "Says the thing out loud",
+        ar: "يقول الأمر بصوت عالٍ",
+      },
+      {
+        en: "Grew up in the newsroom",
+        ar: "نشأ في غرفة الأخبار",
+      },
+      {
+        en: "Not impressed by any of it",
+        ar: "لا يبهره شيء من ذلك",
+      },
     ],
     origin: {
       en: "Robbie Robertson's son and one of Peter Parker's roommates, an activist who has been arguing about the same injustices since college and has not got tired of it.",
@@ -23019,9 +23737,30 @@ const wakanda: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "A War Dog abroad", ar: "كلبة حرب في الخارج" },
-      { en: "Spy before soldier", ar: "جاسوسة قبل أن تكون جندية" },
-      { en: "Argues Wakanda should help", ar: "ترى أن على واكاندا أن تعين" },
+      {
+        en: "A War Dog, working abroad alone",
+        ar: "كلبة حرب، تعمل وحدها في الخارج",
+      },
+      {
+        en: "Ring blades, thrown and returned",
+        ar: "نصال حلقية، تُرمى وتعود",
+      },
+      {
+        en: "Trained by the Dora Milaje",
+        ar: "دربتها الدورا ميلاجي",
+      },
+      {
+        en: "A spy first, and a fighter second",
+        ar: "جاسوسة أولًا، ومقاتلة ثانيًا",
+      },
+      {
+        en: "Went back for the herb alone",
+        ar: "عادت لأجل العشبة وحدها",
+      },
+      {
+        en: "Argues with the throne, and is right",
+        ar: "تجادل العرش، وتكون محقة",
+      },
     ],
     origin: {
       en: "A Wakandan spy who works outside the country and comes back arguing that a nation this rich has no business hiding, which is the argument the films eventually agree with.",
@@ -23042,9 +23781,30 @@ const wakanda: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Keeper of the heart-shaped herb", ar: "حارس العشبة القلبية" },
-      { en: "Advised two kings", ar: "نصح ملكين" },
-      { en: "Kept one secret too long", ar: "كتم سرًا أطول مما ينبغي" },
+      {
+        en: "Keeper of the heart-shaped herb",
+        ar: "حارس العشبة القلبية",
+      },
+      {
+        en: "A warrior of the old guard",
+        ar: "محارب من الحرس القديم",
+      },
+      {
+        en: "Fought beside T'Chaka in the field",
+        ar: "قاتل إلى جانب تشاكا ميدانيًا",
+      },
+      {
+        en: "Stood between Killmonger and the throne",
+        ar: "وقف بين كيلمونغر والعرش",
+      },
+      {
+        en: "Knows every secret Wakanda keeps",
+        ar: "يعرف كل سر تحفظه واكاندا",
+      },
+      {
+        en: "Died telling the truth",
+        ar: "مات وهو يقول الحقيقة",
+      },
     ],
     origin: {
       en: "The elder who administers the herb that makes a Black Panther, and who kept the truth about N'Jobu from T'Challa until it walked into the throne room.",
@@ -23085,9 +23845,30 @@ const wakanda: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "A War Dog in Oakland", ar: "كلب حرب في أوكلاند" },
-      { en: "Killmonger's father", ar: "والد كيلمونجر" },
-      { en: "Died at his brother's hand", ar: "مات بيد أخيه" },
+      {
+        en: "A War Dog in Oakland",
+        ar: "كلب حرب في أوكلاند",
+      },
+      {
+        en: "Trained by Wakanda, and left there",
+        ar: "دربته واكاندا، ثم تركته",
+      },
+      {
+        en: "Saw what the isolation cost",
+        ar: "رأى ثمن العزلة",
+      },
+      {
+        en: "Planned to arm the outside",
+        ar: "خطط لتسليح الخارج",
+      },
+      {
+        en: "Killed by his own brother",
+        ar: "قتله أخوه",
+      },
+      {
+        en: "His son finished it",
+        ar: "وابنه أكمل ما بدأ",
+      },
     ],
     origin: {
       en: "T'Chaka's brother, sent to spy in America and radicalised by what he saw there, who planned to arm the oppressed and was killed by the king for it.",
@@ -23136,9 +23917,30 @@ const wakanda: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Dora Milaje", ar: "الدورا ميلاجي" },
-      { en: "Trains the ones who come after", ar: "تدرّب من يأتين بعدها" },
-      { en: "Fights with vibranium spears", ar: "تقاتل برماح فيبرانيوم" },
+      {
+        en: "Dora Milaje, and Ayo's partner",
+        ar: "دورا ميلاجي، وشريكة آيو",
+      },
+      {
+        en: "Vibranium spear, and she trains others",
+        ar: "رمح فيبرانيوم، وتدرب غيرها",
+      },
+      {
+        en: "Built the Midnight Angel rig",
+        ar: "صنعت عتاد ملاك منتصف الليل",
+      },
+      {
+        en: "Broke the rules to save lives",
+        ar: "خالفت القواعد لتنقذ أرواحًا",
+      },
+      {
+        en: "Fights beside Ayo, always",
+        ar: "تقاتل إلى جانب آيو، دائمًا",
+      },
+      {
+        en: "A teacher before a soldier",
+        ar: "معلمة قبل أن تكون جندية",
+      },
     ],
     origin: {
       en: "A Dora Milaje who trains the next of them, and one of the warriors who holds the line when Wakanda is invaded from the sea.",
@@ -23507,9 +24309,30 @@ const newWarriors: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Raised in the Savage Land", ar: "تربّى في الأرض المتوحشة" },
-      { en: "Tracks anything that walks", ar: "يقتفي أثر كل ما يمشي" },
-      { en: "Speaks to the animals there", ar: "يخاطب حيوانات تلك الأرض" },
+      {
+        en: "Raised in the Savage Land",
+        ar: "تربى في الأرض المتوحشة",
+      },
+      {
+        en: "Strength and stamina past a city man",
+        ar: "قوة وتحمّل يفوقان رجل المدينة",
+      },
+      {
+        en: "Fights with a knife, and wins",
+        ar: "يقاتل بسكين، وينتصر",
+      },
+      {
+        en: "Commands Zabu, and is commanded back",
+        ar: "يأمر زابو، ويُؤمر منه",
+      },
+      {
+        en: "Tracks anything through jungle",
+        ar: "يتعقب أي شيء عبر الأدغال",
+      },
+      {
+        en: "A lord, and he lives like a hunter",
+        ar: "لورد، ويعيش كصياد",
+      },
     ],
     origin: {
       en: "An English boy stranded in a jungle that time forgot and raised by the animals in it. He is a lord by birth and has no use for it.",

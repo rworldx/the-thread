@@ -1019,10 +1019,11 @@ const TIERS: Tier[] = [
          being physically larger than the problem: he has beaten Daredevil with
          his hands and taken punishment that would end anyone else here. */
       "kingpin",
+      "bullseye",
+      "elektra",
       "black-widow",
       "hawkeye",
       "okoye",
-      "elektra",
       "yelena-belova",
       /**
        * RED GUARDIAN IS PINNED HERE ON PURPOSE, against his own species.
@@ -1037,9 +1038,58 @@ const TIERS: Tier[] = [
        */
       "red-guardian",
       "kate-bishop",
+      /**
+       * THE HEAD GOES TO THIRTY, because twelve was not enough to cover the
+       * people the scorer cannot see. Every record in this tier was rewritten
+       * first -- sixty-eight of the seventy-eight had three bullets or fewer,
+       * which is the least-written corner of the corpus, and no ordering of
+       * bad inputs was going to be right.
+       *
+       * Rewriting them proved the point rather than fixing it. OKOYE CAME OUT
+       * AT 101, the highest score in the tier, because a vibranium spear and
+       * an army score well; HOWARD STARK at 96 and WILLIAM STRYKER at 95 came
+       * second and third, because building weapons and running a programme
+       * score the same way. A score sort would open this tier with an
+       * engineer and an administrator.
+       *
+       * And BULLSEYE STILL SCORES 14 with six bullets, because the vocabulary
+       * has no word for aim. "Never misses. Not once, with anything" is worth
+       * nothing to the scorer and is the whole of what makes him lethal. He is
+       * third here on the record and 632nd on the number.
+       *
+       * So the order is what they bring to a fight they have no powers for:
+       * the ones who have killed people who did have powers, then the trained
+       * fighters, then the commanders who still get in it, then the ones who
+       * send other people. Fury and Hill stay last of the fighters for the
+       * reason already given -- a director's job is to send somebody else.
+       */
+      "crossbones",
+      "mbaku",
+      "ayo",
+      "nakia",
+      "aneka",
+      "davos",
+      "black-cat",
+      "silver-sable",
+      "ka-zar",
+      /* He talked Thanos out of the snap, which is not a fight and is the
+         single largest thing anyone in this tier has done. */
+      "star-lord-tchalla",
       "peggy-carter",
+      "phil-coulson",
       "nick-fury",
       "maria-hill",
+      /* THE ONES WHO NEVER THROW A PUNCH AND RUN THE PROBLEM ANYWAY. Zemo
+         broke the Avengers with a notebook and no powers at all; Dreykov owns
+         an army of assassins he never fights beside; Stryker has a government
+         budget; the Mole Man commands things rather than being one. They rank
+         below every fighter and above everyone whose plan is smaller. */
+      "zemo",
+      "dreykov",
+      "william-stryker",
+      "mole-man",
+      "everett-ross",
+      "shuri",
     ],
     /* Belonging to an organisation counts. Filing Nick Fury with the aunts and
        reporters was the tell that `category` alone was the wrong test: he is
@@ -1104,16 +1154,53 @@ const TIERS: Tier[] = [
      * `aunt-may` and not `may-parker`: I guessed the id and the guard above
      * caught it, which is the whole reason that guard exists.
      */
+    /**
+     * SIX COME DOWN FROM TIER 8, and they are the six that tier's own gloss
+     * cannot describe: "a suit, a bow, a plan or a badge". A newspaper
+     * publisher has none of those. They were in tier 8 because its rule is
+     * `category !== "supporting" || affiliation.length > 0`, written to rescue
+     * NICK FURY from being filed with the aunts -- and belonging to the Daily
+     * Bugle payroll is not the same kind of belonging as running S.H.I.E.L.D.
+     *
+     * They were also unorderable there. All six scored exactly MINUS FORTY and
+     * still do: they have no bullet the scorer can read, because "runs the
+     * newsroom" and "never prints a retraction" are not powers and enriching
+     * them further would only be padding. The tier 9 axis does not need the
+     * scorer, which is the point of it.
+     *
+     * The original fourteen keep their order exactly. This is an insertion,
+     * not a re-ranking.
+     */
     ranked: [
       "christine-palmer",
       "sharon-davis",
       "miss-minutes",
       "darcy-lewis",
+      /* BESIDE DARCY, because they are the same two scientists out of the same
+         films and the boundary was splitting them: she had no affiliation and
+         landed here, he had one and closed tier 8. He models the Bifrost and
+         she says the obvious thing, and neither of them is carrying a badge. */
+      "erik-selvig",
+      /* He built most of what the TVA runs on, wrote its handbook, and
+         understands the Loom. The most capable person in this tier by a
+         distance, and he explains time with a cake. */
+      "ouroboros",
       "harley-keener",
+      /* THE ONE CIVILIAN HERE WHO MAKES SUPERVILLAINS. He funded the Scorpion,
+         printed the story that outed Peter Parker, and has never run a
+         correction. Nobody else in this tier changes as many outcomes, and he
+         does all of it with a printing press. */
+      "j-jonah-jameson",
       "michelle-jones",
+      "mary-jane-watson",
+      /* The man who said no to the one above him for forty years, knew, and
+         printed nothing. */
+      "robbie-robertson",
       "aunt-may",
       "morgan-stark",
       "ben-parker",
+      "glory-grant",
+      "randy-robertson",
       "trevor-slattery",
       "lylla",
       "teefs",
