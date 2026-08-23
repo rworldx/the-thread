@@ -4335,7 +4335,33 @@ const supporting: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "beta",
-    powers: [{ en: "Luck, as a power", ar: "الحظ بوصفه قدرة" }],
+    /* ONE BULLET, and it was "Good luck". */
+    powers: [
+      {
+        en: "Luck bends around her, without her asking",
+        ar: "الحظ ينحني حولها دون أن تطلب",
+      },
+      {
+        en: "A gun jams, a shot finds the switch",
+        ar: "سلاح يعلق، ورصاصة تصيب المفتاح",
+      },
+      {
+        en: "Bio-electric pulses guide her reflexes",
+        ar: "نبضات حيوية توجّه ردود فعلها",
+      },
+      {
+        en: "She dodges what she never saw",
+        ar: "تراوغ ما لم تره قط",
+      },
+      {
+        en: "An expert markswoman, and a linguist",
+        ar: "رامية خبيرة، ولغوية",
+      },
+      {
+        en: "Bred by a government weapons programme",
+        ar: "نتاج برنامج أسلحة حكومي",
+      },
+    ],
     origin: {
       en: "Her mutation is that things go her way, which sounds like nothing until you watch a building fall in exactly the right direction.",
       ar: "تحوّلها أن الأمور تسير لصالحها، ويبدو ذلك لا شيء حتى ترى مبنى يسقط في الاتجاه الصحيح تمامًا.",
@@ -4723,9 +4749,32 @@ const supporting: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "alpha",
+    /* TWO BULLETS for the Black King, whose whole gimmick is that hitting him is how you lose. */
     powers: [
-      { en: "Absorbs kinetic energy", ar: "يمتص الطاقة الحركية" },
-      { en: "Hits harder the harder he is hit", ar: "كلما ضُرب أشدّ ضرب أشدّ" },
+      {
+        en: "Absorbs the kinetic energy of any blow",
+        ar: "يمتص الطاقة الحركية لأي ضربة",
+      },
+      {
+        en: "The harder you hit him, the stronger he gets",
+        ar: "كلما ضربته أشد ازداد قوة",
+      },
+      {
+        en: "No clear ceiling while you keep hitting",
+        ar: "لا سقف واضح ما دمت تضرب",
+      },
+      {
+        en: "Strength and stamina from what he took",
+        ar: "قوة وتحمّل مما امتصه",
+      },
+      {
+        en: "Ages slowly, and has for a long time",
+        ar: "يشيخ ببطء، ومنذ زمن طويل",
+      },
+      {
+        en: "Psionics and cold go straight past it",
+        ar: "النفسيات والبرد تتجاوزها تمامًا",
+      },
     ],
     origin: {
       en: "A man who gets stronger the harder you hit him, which makes him very hard to argue with and very easy to underestimate once.",
@@ -9128,8 +9177,30 @@ const others: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "beta",
     powers: [
-      { en: "Scrambles electrical fields", ar: "يشوّش الحقول الكهربائية" },
-      { en: "Kills any machine nearby", ar: "يعطّل أي آلة قريبة" },
+      {
+        en: "Generates bio-electric disruption fields",
+        ar: "يولّد حقول تشويش حيوية كهربائية",
+      },
+      {
+        en: "Scrambles any electronics near him",
+        ar: "يعطّل أي إلكترونيات قربه",
+      },
+      {
+        en: "Interferes with other people's powers",
+        ar: "يتداخل مع قدرات الآخرين",
+      },
+      {
+        en: "Disrupts a nervous system directly",
+        ar: "يشوّش جهازًا عصبيًا مباشرة",
+      },
+      {
+        en: "Machines stop when he walks in",
+        ar: "الآلات تتوقف حين يدخل",
+      },
+      {
+        en: "A field, not a beam. It covers a room",
+        ar: "حقل لا شعاع، يغطي غرفة",
+      },
     ],
     origin: {
       en: "Recruited into X-Force off a newspaper advert because he can disrupt any electrical field within a radius, including the ones inside a brain. He lasts about as long as everyone else on that jump.",
@@ -9148,9 +9219,30 @@ const others: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "beta",
     powers: [
-      { en: "Bred for the arena", ar: "استُولد للحلبة" },
-      { en: "Twin blades", ar: "نصلان توأمان" },
-      { en: "Better than you at everything", ar: "أفضل منك في كل شيء" },
+      {
+        en: "Engineered on Mojoworld as a gladiator",
+        ar: "صُنع في موجوورلد مصارعًا",
+      },
+      {
+        en: "Strength, speed and reflexes past a man's",
+        ar: "قوة وسرعة وردود فعل تفوق البشر",
+      },
+      {
+        en: "Hollow bones, so he is lighter than he looks",
+        ar: "عظام جوفاء، فهو أخف مما يبدو",
+      },
+      {
+        en: "Vibratory shockwaves through his swords",
+        ar: "موجات صدمية اهتزازية عبر سيفيه",
+      },
+      {
+        en: "A healing factor that closes wounds in hours",
+        ar: "عامل شفاء يغلق الجراح في ساعات",
+      },
+      {
+        en: "Learns a language or a style in days",
+        ar: "يتعلم لغة أو أسلوبًا في أيام",
+      },
     ],
     origin: {
       en: "From a planet called Mojoworld, which is a television network run as a dictatorship, and bred there as a gladiator. He says all of this out loud, in one breath, in an interview.",
@@ -9169,8 +9261,30 @@ const others: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "beta",
     powers: [
-      { en: "Teleportation", ar: "انتقال آني" },
-      { en: "Permanently invisible", ar: "خفيّ على الدوام" },
+      {
+        en: "Teleports himself and anyone he holds",
+        ar: "ينقل نفسه ومن يمسكه",
+      },
+      {
+        en: "Moves cargo across a continent",
+        ar: "ينقل شحنات عبر قارة",
+      },
+      {
+        en: "Jumps again and again in succession",
+        ar: "يقفز مرة تلو الأخرى",
+      },
+      {
+        en: "Vanishes without leaving anything",
+        ar: "يختفي دون أن يترك شيئًا",
+      },
+      {
+        en: "Used it to steal, mostly",
+        ar: "استعملها للسرقة، غالبًا",
+      },
+      {
+        en: "Xavier once bluffed him into stopping",
+        ar: "خدعه زافيير مرة فتوقف",
+      },
     ],
     origin: {
       en: "Interviewed for X-Force without ever being seen, because the joke is that the audience never finds out whether he was in the room. He is on the roster and he is never once on screen.",
@@ -9189,8 +9303,30 @@ const others: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "gamma",
     powers: [
-      { en: "Vomits acid", ar: "يتقيّأ حمضًا" },
-      { en: "Cannot aim it", ar: "لا يستطيع تصويبه" },
+      {
+        en: "Vomits a burning, gelatinous acid",
+        ar: "يتقيأ حمضًا هلاميًا محترقًا",
+      },
+      {
+        en: "It eats through nearly any substance",
+        ar: "يأكل أي مادة تقريبًا",
+      },
+      {
+        en: "Even the superhumanly durable",
+        ar: "حتى الصلب على نحو خارق",
+      },
+      {
+        en: "Immune to his own acid",
+        ar: "محصّن ضد حمضه",
+      },
+      {
+        en: "Durable beyond an ordinary man",
+        ar: "أصلب من رجل عادي",
+      },
+      {
+        en: "His eyes glow yellow when he uses it",
+        ar: "تتوهج عيناه صفراء حين يستعمله",
+      },
     ],
     origin: {
       en: "Auditions for X-Force by explaining that he projects acidic vomit, demonstrates it on the furniture, and is hired anyway. The film is very clear about the risks of hiring him.",
@@ -11241,9 +11377,30 @@ const smallScreen: CharacterDraft[] = [
     universe: ["marvel-tv"],
     species: "Mutant",
     powers: [
-      { en: "Enormous strength", ar: "قوة هائلة" },
-      { en: "Sleeps it off", ar: "تنام بعدها" },
-      { en: "The youngest", ar: "الأصغر" },
+      {
+        en: "Immense strength for her size",
+        ar: "قوة هائلة قياسًا بحجمها",
+      },
+      {
+        en: "Near-invulnerable while she uses it",
+        ar: "شبه منيعة ما دامت تستعملها",
+      },
+      {
+        en: "Punches through what adults cannot",
+        ar: "تخترق ما يعجز عنه الكبار",
+      },
+      {
+        en: "Lifts far past what looks possible",
+        ar: "ترفع أبعد مما يبدو ممكنًا",
+      },
+      {
+        en: "Then falls asleep, suddenly and deeply",
+        ar: "ثم تنام، فجأة وعميقًا",
+      },
+      {
+        en: "The nap is the limiter, and it is real",
+        ar: "النوم هو الحد، وهو حقيقي",
+      },
     ],
     origin: {
       en: "The youngest of them by years, strong enough to lift a car and tired enough afterwards to sleep through the argument about what to do next.",
@@ -11324,17 +11481,29 @@ const smallScreen: CharacterDraft[] = [
     species: "Mutant",
     powers: [
       {
-        en: "Illusions drawn from your own fear",
-        ar: "أوهام مستلّة من خوفك أنت",
+        en: "Pulls your worst fear out of your head",
+        ar: "تنتزع أسوأ مخاوفك من رأسك",
       },
-      { en: "Psychic arrows that stun", ar: "سهام ذهنية تصعق" },
       {
-        en: "Reads minds and animals alike",
-        ar: "تقرأ العقول والحيوانات سواء",
+        en: "And makes it solid enough to hurt you",
+        ar: "وتجعله صلبًا بما يكفي ليؤذيك",
       },
-      { en: "Makes your fear visible", ar: "تجعل خوفك مرئيًا" },
-      { en: "Cannot switch it off", ar: "لا تستطيع إيقافه" },
-      { en: "Cheyenne", ar: "شايان" },
+      {
+        en: "Psychic arrows, with the effect she picks",
+        ar: "سهام نفسية، بالأثر الذي تختاره",
+      },
+      {
+        en: "Telepathy, and a sense for danger",
+        ar: "تخاطر، وحسّ بالخطر",
+      },
+      {
+        en: "Speaks with horses, wolves and hawks",
+        ar: "تحدّث الخيل والذئاب والصقور",
+      },
+      {
+        en: "A Valkyrie: she sees death coming",
+        ar: "فالكيري: ترى الموت قادمًا",
+      },
     ],
     origin: {
       en: "A girl who survives the night her reservation does not, and wakes in a hospital that is not one, with a power she has not been told about and cannot yet control.",
@@ -11396,9 +11565,30 @@ const smallScreen: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Blasts like a rocket", ar: "ينطلق كصاروخ" },
-      { en: "Untouchable in flight", ar: "لا يُمسّ وهو منطلق" },
-      { en: "A miner's son", ar: "ابن عامل منجم" },
+      {
+        en: "Launches like a rocket, at jet speed",
+        ar: "ينطلق كالصاروخ، بسرعة نفاثة",
+      },
+      {
+        en: "A blast field that makes him invulnerable",
+        ar: "حقل انفجاري يجعله منيعًا",
+      },
+      {
+        en: "Whatever he carries is inside it too",
+        ar: "وما يحمله يكون داخله أيضًا",
+      },
+      {
+        en: "Strength enough to be a battering ram",
+        ar: "قوة تكفي ليكون كبش هدم",
+      },
+      {
+        en: "Releases the energy as concussive blasts",
+        ar: "يطلق الطاقة قذائف صادمة",
+      },
+      {
+        en: "Caught not blasting, he is ordinary",
+        ar: "إذا فوجئ وهو لا ينطلق، صار عاديًا",
+      },
     ],
     origin: {
       en: "A Kentucky mining boy whose power went off underground the first time and brought the roof down. He has been apologising for it ever since.",
@@ -11416,9 +11606,30 @@ const smallScreen: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Becomes a wolf", ar: "تتحول ذئبة" },
-      { en: "Scents a lie", ar: "تشمّ الكذبة" },
-      { en: "Raised to hate it", ar: "نشأت على كرهها" },
+      {
+        en: "Becomes a wolf, or something between",
+        ar: "تصير ذئبة، أو شيئًا بينهما",
+      },
+      {
+        en: "Strength, speed and claws in either",
+        ar: "قوة وسرعة ومخالب في الحالتين",
+      },
+      {
+        en: "Senses that track across a county",
+        ar: "حواس تتعقب عبر مقاطعة",
+      },
+      {
+        en: "Heals fast once she has shifted",
+        ar: "تشفى سريعًا متى تحولت",
+      },
+      {
+        en: "Keeps her own mind throughout",
+        ar: "تحتفظ بعقلها طوال الوقت",
+      },
+      {
+        en: "An empathic bond with those she loves",
+        ar: "رابطة وجدانية بمن تحب",
+      },
     ],
     origin: {
       en: "A Scottish girl taught by her church that what she turns into is a sin, who is gentler than anyone else there and the quickest to believe she deserves the room she is locked in.",
@@ -11436,9 +11647,30 @@ const smallScreen: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Solar fire", ar: "نار شمسية" },
-      { en: "Burns what he touches", ar: "يحرق ما يمسّ" },
-      { en: "Very rich, very alone", ar: "ثريّ جدًا ووحيد جدًا" },
+      {
+        en: "Absorbs sunlight, and goes pitch-black",
+        ar: "يمتص ضوء الشمس، فيصير أسود حالكًا",
+      },
+      {
+        en: "Fifty tons of strength at full charge",
+        ar: "خمسون طنًا من القوة بكامل شحنه",
+      },
+      {
+        en: "Solar blasts, and fire with them",
+        ar: "قذائف شمسية، ونار معها",
+      },
+      {
+        en: "Flies on thermal updrafts",
+        ar: "يطير على تيارات حرارية",
+      },
+      {
+        en: "Banks reserves to use after dark",
+        ar: "يخزّن احتياطيًا لاستعماله بعد المغيب",
+      },
+      {
+        en: "Absorbs other energy, and survives space",
+        ar: "يمتص طاقات أخرى، وينجو في الفضاء",
+      },
     ],
     origin: {
       en: "A Brazilian heir who burned a girl to death the first time it happened, in front of everyone, and has been performing arrogance over it ever since.",
@@ -12156,9 +12388,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Immune to every poison", ar: "محصّنة ضد كل سمّ" },
-      { en: "Sheds her skin", ar: "تسلخ جلدها" },
-      { en: "Poisons by touch", ar: "تسمّم باللمس" },
+      {
+        en: "No powers. That is the point of her",
+        ar: "بلا قدرات، وهذا هو المقصود",
+      },
+      {
+        en: "A chemist who coats a blade in venom",
+        ar: "كيميائية تطلي النصل بالسم",
+      },
+      {
+        en: "Poison darts, and gas when she needs it",
+        ar: "سهام سامة، وغاز عند الحاجة",
+      },
+      {
+        en: "A master strategist and assassin",
+        ar: "استراتيجية بارعة وقاتلة",
+      },
+      {
+        en: "Kept youthful by means nobody records",
+        ar: "تبقى شابة بوسائل لا تُدوَّن",
+      },
+      {
+        en: "Ran Hydra, more than once",
+        ar: "قادت هايدرا، أكثر من مرة",
+      },
     ],
     origin: {
       en: "A toxicologist who cannot be poisoned and has built a career on the fact, working for whoever is paying to keep a dying man alive long enough to finish what he started.",
@@ -13208,9 +13461,30 @@ const namedMutants: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Every impact makes a copy", ar: "كل صدمة تصنع نسخة" },
-      { en: "Copies learn separately", ar: "النسخ تتعلم منفصلة" },
-      { en: "Runs a detective agency", ar: "يدير وكالة تحرٍّ" },
+      {
+        en: "Every impact makes a duplicate of him",
+        ar: "كل ارتطام يصنع نسخة مكررة منه",
+      },
+      {
+        en: "Each duplicate is awake, and its own man",
+        ar: "كل نسخة واعية، وهي رجل بذاته",
+      },
+      {
+        en: "They make their own dupes on impact",
+        ar: "وهي تصنع نسخها عند الارتطام",
+      },
+      {
+        en: "Reabsorbs one and keeps what it learned",
+        ar: "يعيد امتصاص نسخة فيحتفظ بما تعلمته",
+      },
+      {
+        en: "Sent dupes off to learn law and medicine",
+        ar: "أرسل نسخًا لتتعلم القانون والطب",
+      },
+      {
+        en: "Killing all of them is the hard part",
+        ar: "قتلها جميعًا هو الجزء الصعب",
+      },
     ],
     origin: {
       en: "A mutant who splits into a duplicate whenever he is struck, and who sent his copies out to learn medicine, law and combat before absorbing them back. Being a crowd is his whole method.",
@@ -13228,9 +13502,30 @@ const namedMutants: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Grows bone through skin", ar: "ينمو العظم عبر جلدها" },
-      { en: "Tears it out as a weapon", ar: "تنتزعه سلاحًا" },
-      { en: "Heals what she rips", ar: "تلتئم مما تمزّق" },
+      {
+        en: "Grows excess bone all over her body",
+        ar: "ينمو العظم الزائد في كل جسدها",
+      },
+      {
+        en: "Snaps it off as blades and clubs",
+        ar: "تكسره نصالًا وهراوات",
+      },
+      {
+        en: "It regrows the moment she does",
+        ar: "وينبت في اللحظة نفسها",
+      },
+      {
+        en: "The protrusions armour her as well",
+        ar: "والنتوءات تدرّعها أيضًا",
+      },
+      {
+        en: "Strength, speed and a healing factor",
+        ar: "قوة وسرعة وعامل شفاء",
+      },
+      {
+        en: "Two hearts, so shooting one is not enough",
+        ar: "قلبان، فإصابة أحدهما لا تكفي",
+      },
     ],
     origin: {
       en: "A Morlock raised in the tunnels beneath the city, whose bones grow through her own skin and can be pulled out as blades. She learned early that the surface world was not going to be kind.",
@@ -13341,9 +13636,30 @@ const namedMutants: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Possesses another's body", ar: "تتلبّس جسد آخر" },
-      { en: "Takes the controls", ar: "تمسك بزمام الحركة" },
-      { en: "Refuses to use it lightly", ar: "تأبى استعمالها استخفافًا" },
+      {
+        en: "Takes a mind, and moves the body",
+        ar: "تستولي على عقل، وتحرك الجسد",
+      },
+      {
+        en: "Uses that body's powers as her own",
+        ar: "تستعمل قدرات ذلك الجسد كقدراتها",
+      },
+      {
+        en: "Sees through their eyes while she does",
+        ar: "ترى بعينيهم وهي تفعل",
+      },
+      {
+        en: "Possesses several people at once",
+        ar: "تتلبّس عدة أشخاص دفعة واحدة",
+      },
+      {
+        en: "Her own body stands empty meanwhile",
+        ar: "ويبقى جسدها فارغًا حينها",
+      },
+      {
+        en: "A will strong enough to be worth stealing",
+        ar: "إرادة قوية تستحق السرقة",
+      },
     ],
     origin: {
       en: "A Vietnamese refugee and one of the first New Mutants, who can take over another person's body entirely. She treats the power as something close to a violation and uses it sparingly.",
@@ -13364,9 +13680,30 @@ const namedMutants: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Tears off her own skin", ar: "تنزع جلدها" },
-      { en: "Underneath is stone or steel", ar: "وتحته حجر أو فولاذ" },
-      { en: "Works twice as hard", ar: "تجتهد ضعف غيرها" },
+      {
+        en: "Tears off her skin to become something else",
+        ar: "تنزع جلدها لتصير شيئًا آخر",
+      },
+      {
+        en: "Steel, stone, rubber, diamond, glass",
+        ar: "فولاذ وحجر ومطاط وألماس وزجاج",
+      },
+      {
+        en: "She gets that material's strength",
+        ar: "تكتسب قوة تلك المادة",
+      },
+      {
+        en: "Dozens of substances, and the list grows",
+        ar: "عشرات المواد، والقائمة تطول",
+      },
+      {
+        en: "Sheds again to change again",
+        ar: "تنسلخ ثانية لتتغير ثانية",
+      },
+      {
+        en: "Vulnerable in the moment of the change",
+        ar: "مكشوفة في لحظة التغيّر",
+      },
     ],
     origin: {
       en: "Cannonball's younger sister, who shucks her skin to reveal a body of whatever she concentrates on: rock, metal, diamond. She pushed herself harder than anyone because she was following a brother who made it look easy.",
@@ -13384,9 +13721,30 @@ const namedMutants: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "A scream that shatters", ar: "صرخة تحطّم" },
-      { en: "Rides her own sound", ar: "تركب صوتها طيرانًا" },
-      { en: "Her father's voice", ar: "صوت أبيها" },
+      {
+        en: "A sonic scream like her father's",
+        ar: "صرخة صوتية كصرخة أبيها",
+      },
+      {
+        en: "Blasts that shatter what they hit",
+        ar: "قذائف تحطم ما تصيبه",
+      },
+      {
+        en: "Rides her own sound waves in flight",
+        ar: "تمتطي موجاتها الصوتية طيرانًا",
+      },
+      {
+        en: "Echolocates with them, like sonar",
+        ar: "تحدد المواقع بها، كالسونار",
+      },
+      {
+        en: "A voice that compels you to obey",
+        ar: "صوت يجبرك على الطاعة",
+      },
+      {
+        en: "Immune to her own, and to his",
+        ar: "محصّنة ضد صوتها وصوته",
+      },
     ],
     origin: {
       en: "Banshee's daughter, with the same sonic scream and the same trouble deciding whether to be a hero because of him or in spite of him. She can fly on the sound she makes.",
@@ -15639,9 +15997,30 @@ const mutantsB: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Makes plasma time bombs", ar: "تصنع قنابل بلازما موقوتة" },
-      { en: "Sets the fuse herself", ar: "تضبط الفتيل بنفسها" },
-      { en: "Runs off more than she stays", ar: "تهرب أكثر مما تبقى" },
+      {
+        en: "Makes plasma spheres out of nothing",
+        ar: "تصنع كرات بلازما من لا شيء",
+      },
+      {
+        en: "Sets the yield, from a pop to a crater",
+        ar: "تحدد القوة، من طقّة إلى حفرة",
+      },
+      {
+        en: "And sets the fuse, which is the trick",
+        ar: "وتحدد الفتيل، وتلك هي الحيلة",
+      },
+      {
+        en: "Throws a great many of them at once",
+        ar: "تقذف كثيرًا منها دفعة واحدة",
+      },
+      {
+        en: "They cannot hurt her until they go off",
+        ar: "لا تؤذيها حتى تنفجر",
+      },
+      {
+        en: "Time bombs, and she names them that",
+        ar: "قنابل موقوتة، وهي تسميها كذلك",
+      },
     ],
     origin: {
       en: "A runaway who makes glowing spheres that explode when she decides they should, and who has left more teams than most people join. The recklessness is a habit she keeps meaning to break.",
@@ -15659,9 +16038,30 @@ const mutantsB: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Senses any mutant nearby", ar: "يستشعر أي متحوّل قريب" },
-      { en: "Tracks them anywhere", ar: "يتعقبهم في أي مكان" },
-      { en: "Wanted only to be liked", ar: "لم يُرد إلا أن يُحَبّ" },
+      {
+        en: "Senses any mutant across great distance",
+        ar: "يستشعر أي متحول عبر مسافات هائلة",
+      },
+      {
+        en: "Tracks them, which is how the Morlocks formed",
+        ar: "يتعقبهم، وهكذا تكوّن المورلوك",
+      },
+      {
+        en: "Feels your fear, and feeds on it",
+        ar: "يشعر بخوفك، ويقتات عليه",
+      },
+      {
+        en: "Amplifies it until you weaken",
+        ar: "يضاعفه حتى توهن",
+      },
+      {
+        en: "As Death he was huge, and strong with it",
+        ar: "كالموت كان ضخمًا، وقويًا معه",
+      },
+      {
+        en: "A healing factor in that form",
+        ar: "عامل شفاء في تلك الهيئة",
+      },
     ],
     origin: {
       en: "A Morlock who can feel every mutant around him, which made him useful to people who were not kind to him. He has been a tracker for both sides and belonged to neither.",
@@ -15679,9 +16079,30 @@ const mutantsB: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Superhuman speed and reflexes", ar: "سرعة وردود فعل خارقة" },
-      { en: "Led the tunnels", ar: "قادت الأنفاق" },
-      { en: "Fought Storm for the crown", ar: "نازلت ستورم على الزعامة" },
+      {
+        en: "All five senses at superhuman pitch",
+        ar: "الحواس الخمس بحدة خارقة",
+      },
+      {
+        en: "So sharp that rain can hurt her",
+        ar: "حادة حتى إن المطر قد يؤلمها",
+      },
+      {
+        en: "Strength, speed and reflexes to match",
+        ar: "قوة وسرعة وردود فعل توازيها",
+      },
+      {
+        en: "The best knife-fighter in the tunnels",
+        ar: "أمهر مقاتلة بالسكين في الأنفاق",
+      },
+      {
+        en: "Beat Storm, briefly, before losing",
+        ar: "هزمت ستورم، قليلًا، قبل أن تخسر",
+      },
+      {
+        en: "Wore grafted tentacle arms for a while",
+        ar: "ارتدت أذرع لوامس مزروعة فترة",
+      },
     ],
     origin: {
       en: "The leader of the Morlocks, who took the job by being the toughest one down there and lost it to Storm in a knife fight she insisted on. She stayed anyway.",
@@ -15699,9 +16120,30 @@ const mutantsB: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Psionic fire for a chest", ar: "نار ذهنية مكان صدره" },
-      { en: "Speaks mind to mind", ar: "يتكلم من عقل إلى عقل" },
-      { en: "Burned away his own face", ar: "أحرق نصف وجهه" },
+      {
+        en: "A furnace of psionic plasma for a chest",
+        ar: "فرن من بلازما نفسية مكان صدره",
+      },
+      {
+        en: "Blasts that explode what they touch",
+        ar: "قذائف تفجّر ما تلمسه",
+      },
+      {
+        en: "Breaks the molecular bonds of a thing",
+        ar: "يكسر الروابط الجزيئية للشيء",
+      },
+      {
+        en: "Speaks only by telepathy, having no mouth",
+        ar: "يتكلم بالتخاطر فقط، إذ لا فم له",
+      },
+      {
+        en: "Does not eat, drink or breathe",
+        ar: "لا يأكل ولا يشرب ولا يتنفس",
+      },
+      {
+        en: "Immune to Omega Red's death factor",
+        ar: "محصّن ضد عامل موت أوميغا ريد",
+      },
     ],
     origin: {
       en: "A young mutant whose power detonated the first time it woke and took his jaw and chest with it. He has no mouth, so he talks telepathically, and he is far more articulate than most people expect.",
@@ -15805,9 +16247,30 @@ const mutantsB: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Commands lava and quakes", ar: "تأمر الحمم والزلازل" },
-      { en: "Body of living fire", ar: "جسد من نار حية" },
-      { en: "Raised in a hidden Roman city", ar: "نشأت في مدينة رومانية خفية" },
+      {
+        en: "Moves the tectonic plates themselves",
+        ar: "تحرك الصفائح التكتونية نفسها",
+      },
+      {
+        en: "Earthquakes, and ground that opens",
+        ar: "زلازل، وأرض تنفتح",
+      },
+      {
+        en: "Commands lava, and hurls molten rock",
+        ar: "تأمر الحمم، وتقذف الصخر المنصهر",
+      },
+      {
+        en: "Becomes a body of living fire",
+        ar: "تصير جسدًا من نار حية",
+      },
+      {
+        en: "Flies on it, and throws fire",
+        ar: "تطير بها، وتقذف النار",
+      },
+      {
+        en: "Her temper has caused eruptions",
+        ar: "غضبها تسبب في ثورات بركانية",
+      },
     ],
     origin: {
       en: "A girl raised in a Roman colony that never learned the empire had fallen, whose power over the earth itself surfaced when she was thrown into a pit of lava as a sacrifice.",
@@ -16005,12 +16468,30 @@ const mutantsC: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Reads any language at all", ar: "يقرأ أي لغة كانت" },
       {
-        en: "Machine code and body language too",
-        ar: "لغة الآلة ولغة الجسد أيضًا",
+        en: "Understands any language on hearing it",
+        ar: "يفهم أي لغة بمجرد سماعها",
       },
-      { en: "The least flashy power there is", ar: "أقل القوى بريقًا" },
+      {
+        en: "Alien, animal, machine code, cipher",
+        ar: "لغات فضائية وحيوانية وشفرات آلة",
+      },
+      {
+        en: "Reads a fighter's body and predicts him",
+        ar: "يقرأ جسد المقاتل فيتوقع حركته",
+      },
+      {
+        en: "Speaks to technology directly",
+        ar: "يخاطب التقنية مباشرة",
+      },
+      {
+        en: "Merges with Warlock, and shapeshifts",
+        ar: "يندمج مع وارلوك، ويبدّل شكله",
+      },
+      {
+        en: "Reads the language of Krakoa itself",
+        ar: "يقرأ لغة كراكوا نفسها",
+      },
     ],
     origin: {
       en: "A mutant who understands every language instantly, which sounds minor next to flight or fire until you notice he can read a machine, a lie, or a person's posture with the same fluency.",
@@ -16071,9 +16552,30 @@ const mutantsC: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Misdirection as a power", ar: "التضليل قدرةً" },
-      { en: "Three brains, one man", ar: "ثلاثة أدمغة في رجل" },
-      { en: "Flies a living aircraft", ar: "يقود طائرة حية" },
+      {
+        en: "Misdirects the senses of everyone near",
+        ar: "يضلل حواس كل من حوله",
+      },
+      {
+        en: "You do not see what he is actually doing",
+        ar: "لا ترى ما يفعله حقًا",
+      },
+      {
+        en: "Three brains, working separately",
+        ar: "ثلاثة أدمغة، تعمل منفصلة",
+      },
+      {
+        en: "So he fights and plans at the same time",
+        ar: "فيقاتل ويخطط في آن واحد",
+      },
+      {
+        en: "E.V.A., his nerves, flies as a ship",
+        ar: "إيفا، أعصابه، تطير كسفينة",
+      },
+      {
+        en: "A healing factor, and Weapon XIII training",
+        ar: "عامل شفاء، وتدريب ويبون 13",
+      },
     ],
     origin: {
       en: "A weapon grown in a laboratory who escaped and reinvented himself as a gentleman thief, complete with an accent he chose. His power is making you look at the wrong thing.",
@@ -16091,9 +16593,30 @@ const mutantsC: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Telekinesis with a temper", ar: "تحريك ذهني بمزاج حادّ" },
-      { en: "Rich and says so", ar: "ثريّ ولا يخفي ذلك" },
-      { en: "Lost his hands and kept going", ar: "فقد يديه ومضى" },
+      {
+        en: "Telekinesis, and a great deal of it",
+        ar: "تحريك ذهني، وكثير منه",
+      },
+      {
+        en: "Force blasts of bright green",
+        ar: "قذائف قوة خضراء ساطعة",
+      },
+      {
+        en: "Flies, wrapped in his own field",
+        ar: "يطير، ملفوفًا بحقله",
+      },
+      {
+        en: "Flew at twice the speed of sound once",
+        ar: "طار مرة بضعف سرعة الصوت",
+      },
+      {
+        en: "A field that pumps every punch he throws",
+        ar: "حقل يضاعف كل لكمة يوجهها",
+      },
+      {
+        en: "Stop his thought and he stops",
+        ar: "أوقف فكره فيتوقف",
+      },
     ],
     origin: {
       en: "A wealthy telekinetic with a mouth that gets him into more trouble than his power gets him out of, who lost both hands and had to learn the whole thing again.",
@@ -16158,9 +16681,30 @@ const mutantsC: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Wings and pixie dust", ar: "جناحان وغبار جنّي" },
-      { en: "Teleports by spell", ar: "تنتقل بتعويذة" },
-      { en: "Half her soul is missing", ar: "نصف روحها مفقود" },
+      {
+        en: "Iridescent wings, and she is agile on them",
+        ar: "أجنحة قزحية، وهي رشيقة بها",
+      },
+      {
+        en: "Dust that brings hallucinations",
+        ar: "غبار يجلب الهلوسة",
+      },
+      {
+        en: "A dagger cut from her own soul",
+        ar: "خنجر قُطع من روحها",
+      },
+      {
+        en: "It strikes the spirit, and disrupts magic",
+        ar: "يضرب الروح، ويعطل السحر",
+      },
+      {
+        en: "A black-magic teleport for a whole group",
+        ar: "نقل بسحر أسود لمجموعة كاملة",
+      },
+      {
+        en: "Growing into a sorceress, slowly",
+        ar: "تصير ساحرة، ببطء",
+      },
     ],
     origin: {
       en: "A cheerful young mutant with butterfly wings who had a piece of her soul cut out to forge a magic dagger, and who came back from that funnier rather than darker.",
@@ -16178,9 +16722,30 @@ const mutantsC: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Copies any skill nearby", ar: "ينسخ أي مهارة قريبة" },
-      { en: "Kept every skill he lost", ar: "احتفظ بكل مهارة فقدها" },
-      { en: "Remembers all his lives", ar: "يتذكر كل حيواته" },
+      {
+        en: "Copies the skills of everyone near him",
+        ar: "ينسخ مهارات كل من حوله",
+      },
+      {
+        en: "Languages, science, combat, all at once",
+        ar: "لغات وعلوم وقتال، دفعة واحدة",
+      },
+      {
+        en: "It used to leave when they left",
+        ar: "كان يزول متى غادروا",
+      },
+      {
+        en: "The Cuckoos made all of it permanent",
+        ar: "الكوكوز جعلن ذلك كله دائمًا",
+      },
+      {
+        en: "Fluent in whatever the room knows",
+        ar: "يتقن ما تعرفه الغرفة",
+      },
+      {
+        en: "A strategist, and a teacher now",
+        ar: "استراتيجي، ومعلّم الآن",
+      },
     ],
     origin: {
       en: "A mutant who absorbs the skills of anyone near him, lost the power, and found he had kept everything he had ever learned. He also remembers every version of himself the resurrections made.",
@@ -16198,9 +16763,30 @@ const mutantsC: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Shakes the ground itself", ar: "يهزّ الأرض نفسها" },
-      { en: "Lost the power and got it back", ar: "فقد قوته ثم استعادها" },
-      { en: "Grew up under a cartel", ar: "نشأ تحت وطأة عصابة" },
+      {
+        en: "Generates seismic waves at will",
+        ar: "يولّد موجات زلزالية كما يشاء",
+      },
+      {
+        en: "Earthquakes, and shockwaves that shatter",
+        ar: "زلازل، وموجات صدمية تحطم",
+      },
+      {
+        en: "Moves rock, soil and magma with them",
+        ar: "يحرك الصخر والتربة والصهارة بها",
+      },
+      {
+        en: "Tunnels through the ground to travel",
+        ar: "ينفق عبر الأرض ليتنقل",
+      },
+      {
+        en: "Druidic earth magic, learned lately",
+        ar: "سحر أرضي درويدي، تعلمه حديثًا",
+      },
+      {
+        en: "A wave of magma killed several Externals",
+        ar: "موجة صهارة قتلت عدة إكسترناليين",
+      },
     ],
     origin: {
       en: "A mutant who generates seismic waves, who lost his power on M-Day and spent the years without it discovering he was still the same person underneath.",
@@ -16259,9 +16845,30 @@ const mutantsC: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Uses any weapon perfectly", ar: "يتقن أي سلاح فورًا" },
-      { en: "A Marauder for Sinister", ar: "مغيرٌ في خدمة سينيستر" },
-      { en: "Led the tunnel massacre", ar: "قاد مجزرة الأنفاق" },
+      {
+        en: "Operates any weapon on sight",
+        ar: "يشغّل أي سلاح بمجرد رؤيته",
+      },
+      {
+        en: "Builds a working firearm out of scrap",
+        ar: "يبني سلاحًا عاملًا من خردة",
+      },
+      {
+        en: "Repairs and improvises any machinery",
+        ar: "يصلح ويرتجل أي آلة",
+      },
+      {
+        en: "A superhuman marksman with all of it",
+        ar: "رامٍ خارق بكل ذلك",
+      },
+      {
+        en: "Lethal without a weapon too",
+        ar: "فتّاك بلا سلاح أيضًا",
+      },
+      {
+        en: "Led the Marauders through the Massacre",
+        ar: "قاد المارودرز خلال المجزرة",
+      },
     ],
     origin: {
       en: "A mutant who can operate any weapon he picks up as though he built it, and one of the Marauders Mister Sinister sent into the Morlock tunnels.",
@@ -16492,11 +17099,29 @@ const mutantsD: CharacterDraft[] = [
     species: "Mutant",
     mutantClass: "omega",
     powers: [
-      { en: "Heals any wound at all", ar: "يشفي أي جرح كان" },
-      { en: "Can kill with the same touch", ar: "ويقتل باللمسة نفسها" },
       {
-        en: "Gold when healing, black when not",
-        ar: "ذهبيّ حين يشفي وأسود حين لا يشفي",
+        en: "Total control over biological matter",
+        ar: "سيطرة تامة على المادة الحيوية",
+      },
+      {
+        en: "Mends any injury, and regrows an organ",
+        ar: "يرمم أي إصابة، وينبت عضوًا",
+      },
+      {
+        en: "Grew Prodigy a new heart from nothing",
+        ar: "أنبت لبروديجي قلبًا من لا شيء",
+      },
+      {
+        en: "Revives the recently dead. He turns gold",
+        ar: "يحيي حديثي الموت، فيصير ذهبيًا",
+      },
+      {
+        en: "Or stops a heart, and he turns black",
+        ar: "أو يوقف قلبًا، فيصير أسود",
+      },
+      {
+        en: "Rewrites DNA, his own or anyone's",
+        ar: "يعيد كتابة الحمض النووي، له أو لغيره",
       },
     ],
     origin: {
@@ -16559,9 +17184,30 @@ const mutantsD: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Strong, fast, and flies", ar: "قوية وسريعة وتطير" },
-      { en: "Telepath as well", ar: "قارئة أفكار أيضًا" },
-      { en: "Says she is perfect", ar: "تقول إنها كاملة" },
+      {
+        en: "Strength, speed and durability at once",
+        ar: "قوة وسرعة وصلابة معًا",
+      },
+      {
+        en: "Flight, and a healing factor with it",
+        ar: "طيران، وعامل شفاء معه",
+      },
+      {
+        en: "Telepathy, and some telekinesis",
+        ar: "تخاطر، وشيء من التحريك الذهني",
+      },
+      {
+        en: "Senses sharpened past a human's",
+        ar: "حواس أحدّ من حواس البشر",
+      },
+      {
+        en: "A genius, on top of all of it",
+        ar: "وعبقرية، فوق ذلك كله",
+      },
+      {
+        en: "Her siblings turn her into Penance",
+        ar: "إخوتها يحيلونها إلى بينانس",
+      },
     ],
     origin: {
       en: "A mutant who is genuinely good at nearly everything and has never once pretended otherwise, and who spent years trapped in another body by a brother nobody knew about.",
@@ -16662,12 +17308,30 @@ const mutantsD: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Absorbs electricity constantly", ar: "تمتص الكهرباء باستمرار" },
       {
-        en: "Gauntlets keep her from overload",
-        ar: "قفازان يمنعان عنها الفيضان",
+        en: "Absorbs electricity from anything near",
+        ar: "تمتص الكهرباء من أي شيء قريب",
       },
-      { en: "Moves faster than she can think", ar: "تتحرك أسرع مما تفكر" },
+      {
+        en: "Discharges it as lightning from her hands",
+        ar: "تفرغها برقًا من يديها",
+      },
+      {
+        en: "Runs the current through her own nerves",
+        ar: "تمرر التيار عبر أعصابها",
+      },
+      {
+        en: "Which makes her superhumanly fast",
+        ar: "مما يجعلها سريعة على نحو خارق",
+      },
+      {
+        en: "Gauntlets keep the intake survivable",
+        ar: "قفازات تجعل التدفق محتملًا",
+      },
+      {
+        en: "Without them it scrambles her mind",
+        ar: "بدونها يشوّش عقلها",
+      },
     ],
     origin: {
       en: "A mutant who absorbs electricity whether she wants to or not and wears gauntlets to bleed it off, and who is running at a speed her own judgement cannot keep up with.",
@@ -16685,9 +17349,30 @@ const mutantsD: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Copies any power nearby", ar: "ينسخ أي قوة قريبة" },
-      { en: "Uses it better than the owner", ar: "ويستعملها أفضل من صاحبها" },
-      { en: "Died young, came back", ar: "مات صغيرًا ثم عاد" },
+      {
+        en: "An aura that finds any power near him",
+        ar: "هالة تجد أي قدرة قريبة منه",
+      },
+      {
+        en: "Duplicates it at full strength",
+        ar: "ينسخها بكامل قوتها",
+      },
+      {
+        en: "And the owner's skill along with it",
+        ar: "ومهارة صاحبها معها",
+      },
+      {
+        en: "Synchs with several sources at once",
+        ar: "يتزامن مع عدة مصادر معًا",
+      },
+      {
+        en: "Loses it when they leave his range",
+        ar: "يفقدها متى غادروا مداه",
+      },
+      {
+        en: "Level-headed, which is why they follow him",
+        ar: "رابط الجأش، ولذلك يتبعونه",
+      },
     ],
     origin: {
       en: "A mutant who synchronises with any power near him and tends to use it with more precision than the person born to it. He died as a teenager and was one of the first brought back.",
@@ -17024,9 +17709,30 @@ const mutantsE: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Claws, fangs and a tail", ar: "مخالب وأنياب وذيل" },
-      { en: "Heals fast", ar: "تلتئم سريعًا" },
-      { en: "Raised on violence", ar: "نشأت على العنف" },
+      {
+        en: "Fur, fangs and a prehensile tail",
+        ar: "فراء وأنياب وذيل ماسك",
+      },
+      {
+        en: "Retractable claws that rend most things",
+        ar: "مخالب تُسحب وتمزق أغلب الأشياء",
+      },
+      {
+        en: "Strength, speed and balance past a man's",
+        ar: "قوة وسرعة وتوازن تفوق البشر",
+      },
+      {
+        en: "Feline senses, and she hunts by them",
+        ar: "حواس سنورية، وتصطاد بها",
+      },
+      {
+        en: "A regenerative healing factor",
+        ar: "عامل شفاء تجديدي",
+      },
+      {
+        en: "Savage, and not reliably on your side",
+        ar: "متوحشة، وليست في صفك دائمًا",
+      },
     ],
     origin: {
       en: "A cat-like mutant who came up through the tunnels and an abusive home, and who has switched sides more than once because neither one ever offered her much.",
@@ -17085,9 +17791,30 @@ const mutantsE: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Opens portals anywhere", ar: "يفتح بوابات إلى أي مكان" },
-      { en: "Never speaks", ar: "لا يتكلم أبدًا" },
-      { en: "Spins a bullroarer to do it", ar: "يدير مِرواحًا ليفعلها" },
+      {
+        en: "Opens portals across vast distances",
+        ar: "يفتح بوابات عبر مسافات هائلة",
+      },
+      {
+        en: "And sometimes across time",
+        ar: "وأحيانًا عبر الزمن",
+      },
+      {
+        en: "Swings a bullroarer to do it",
+        ar: "يدير مرجافًا ليفعل",
+      },
+      {
+        en: "Moves whole teams without a word",
+        ar: "ينقل فرقًا كاملة دون كلمة",
+      },
+      {
+        en: "Immensely powerful, and rarely explains",
+        ar: "قوي إلى حد هائل، ونادرًا ما يشرح",
+      },
+      {
+        en: "Almost never speaks at all",
+        ar: "لا يكاد يتكلم البتة",
+      },
     ],
     origin: {
       en: "An Aboriginal Australian mutant who opens doorways across the world by spinning a bullroarer, and who has never once explained himself to anyone who used him.",
@@ -17225,9 +17952,30 @@ const mutantsE: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Rots organic matter by touch", ar: "يعفّن المادة العضوية باللمس" },
-      { en: "Cannot turn it off", ar: "لا يستطيع إيقافها" },
-      { en: "Killed his father by accident", ar: "قتل أباه مصادفة" },
+      {
+        en: "Rots organic matter on contact",
+        ar: "يعفّن المادة العضوية بالتلامس",
+      },
+      {
+        en: "Flesh, wood and living tissue alike",
+        ar: "لحمًا وخشبًا ونسيجًا حيًا سواء",
+      },
+      {
+        en: "A touch kills, and he could not stop it",
+        ar: "لمسة تقتل، ولم يستطع إيقافها",
+      },
+      {
+        en: "Learned to decay inorganic matter too",
+        ar: "تعلم إفساد المادة غير العضوية أيضًا",
+      },
+      {
+        en: "And learned some precision, from Selene",
+        ar: "وتعلم شيئًا من الدقة، من سيلين",
+      },
+      {
+        en: "Immune to his own decay",
+        ar: "محصّن ضد فساده",
+      },
     ],
     origin: {
       en: "A mutant whose touch destroys anything living, which he discovered on his own father. He has never been able to switch it off, and everything that followed came out of that.",
@@ -17299,9 +18047,30 @@ const hiddenByAudit: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Six feet of spare skin", ar: "ستة أقدام من جلد فائض" },
-      { en: "Stretches and shapes it", ar: "يمدّه ويشكّله" },
-      { en: "Grey and impossible to hide", ar: "رماديّ يستحيل إخفاؤه" },
+      {
+        en: "Six extra feet of hyper-elastic skin",
+        ar: "ستة أقدام إضافية من جلد فائق المرونة",
+      },
+      {
+        en: "Stretches his limbs across a room",
+        ar: "يمدد أطرافه عبر غرفة",
+      },
+      {
+        en: "Forms tendrils and coils from it",
+        ar: "يشكّل منه لوامس وملفات",
+      },
+      {
+        en: "Grips and moves things at a distance",
+        ar: "يمسك ويحرك الأشياء عن بعد",
+      },
+      {
+        en: "Reshapes his own form within limits",
+        ar: "يعيد تشكيل هيئته ضمن حدود",
+      },
+      {
+        en: "Fine motor control over all of it",
+        ar: "تحكم دقيق بكل ذلك",
+      },
     ],
     origin: {
       en: "A former gang member with several feet of extra grey skin he can stretch at will, and no way at all of passing for anything but what he is.",
@@ -18469,9 +19238,30 @@ const mutantsF: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Shockwaves through the ground", ar: "موجات صدم عبر الأرض" },
-      { en: "Shatters what she stands on", ar: "تحطّم ما تقف عليه" },
-      { en: "A Marauder from the start", ar: "مغيرة منذ البداية" },
+      {
+        en: "Shockwaves on impact, from a punch",
+        ar: "موجات صدمية عند الارتطام، من لكمة",
+      },
+      {
+        en: "Or a stomp, which shatters the ground",
+        ar: "أو دوسة، تحطم الأرض",
+      },
+      {
+        en: "Scrambles machinery with the vibration",
+        ar: "تشوّش الآلات بالاهتزاز",
+      },
+      {
+        en: "Disorients anyone standing near",
+        ar: "تربك كل من يقف قريبًا",
+      },
+      {
+        en: "Superhuman strength and durability",
+        ar: "قوة وصلابة خارقتان",
+      },
+      {
+        en: "A Vietnam veteran, and a Marauder",
+        ar: "محاربة قديمة في فيتنام، ومارودر",
+      },
     ],
     origin: {
       en: "A Marauder who sends destructive shockwaves through anything she touches, and one of the group Mister Sinister sent into the Morlock tunnels.",
@@ -18531,9 +19321,30 @@ const mutantsF: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Tattoos that actually work", ar: "وشوم تعمل فعلًا" },
-      { en: "Not a mutant himself", ar: "ليس متحوّلًا هو نفسه" },
-      { en: "The tattooist was", ar: "الواشم كان كذلك" },
+      {
+        en: "Every tattoo gives him a power",
+        ar: "كل وشم يمنحه قدرة",
+      },
+      {
+        en: "A caduceus heals what it touches",
+        ar: "عصا الطبابة تشفي ما تلمسه",
+      },
+      {
+        en: "A lightning bolt fires energy blasts",
+        ar: "صاعقة تطلق قذائف طاقة",
+      },
+      {
+        en: "A biohazard mark makes his touch toxic",
+        ar: "علامة خطر حيوي تجعل لمسته سامة",
+      },
+      {
+        en: "A piston fist gives him the strength",
+        ar: "قبضة مكبس تمنحه القوة",
+      },
+      {
+        en: "The tattoos are the mutation, not him",
+        ar: "الوشوم هي الطفرة، لا هو",
+      },
     ],
     origin: {
       en: "A man whose tattoos grant real powers, drawn by a mutant tattooist. He is not a mutant at all, which he spent a long time not knowing.",
@@ -18551,9 +19362,30 @@ const mutantsF: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Corrosive sweat", ar: "عرق أكّال" },
-      { en: "A celebrity mutant", ar: "متحوّل مشهور" },
-      { en: "Angry about the marketing", ar: "غاضب من التسويق" },
+      {
+        en: "Sweats an acid he can weaponise",
+        ar: "يفرز عرقًا حمضيًا يحوّله سلاحًا",
+      },
+      {
+        en: "Fires corrosive beams from his hands",
+        ar: "يطلق أشعة أكّالة من يديه",
+      },
+      {
+        en: "They break down almost anything",
+        ar: "تفكك أي شيء تقريبًا",
+      },
+      {
+        en: "Blew the roof off a hotel with it",
+        ar: "نسف بها سقف فندق",
+      },
+      {
+        en: "Or subtly weights a pair of thrown dice",
+        ar: "أو يرجّح زهري نرد بخفة",
+      },
+      {
+        en: "Secretes a sticky adhesive as well",
+        ar: "ويفرز مادة لاصقة أيضًا",
+      },
     ],
     origin: {
       en: "A member of a mutant team assembled for television, whose sweat burns through anything and who is entirely aware that he was cast rather than recruited.",
@@ -18571,9 +19403,30 @@ const mutantsF: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Absorbs kinetic energy", ar: "يمتص الطاقة الحركية" },
-      { en: "A Weapon X operative", ar: "عميل في ويبون إكس" },
-      { en: "Fought beside Wolverine once", ar: "قاتل مع ولفرين مرة" },
+      {
+        en: "Absorbs the kinetic energy of a hit",
+        ar: "يمتص الطاقة الحركية لضربة",
+      },
+      {
+        en: "Throws it back as a concussive blast",
+        ar: "يردّها قذيفة صادمة",
+      },
+      {
+        en: "And keeps some to boost his strength",
+        ar: "ويحتفظ ببعضها ليعزز قوته",
+      },
+      {
+        en: "Ages slowly, and resists injury",
+        ar: "يشيخ ببطء، ويقاوم الإصابة",
+      },
+      {
+        en: "A master marksman and martial artist",
+        ar: "رامٍ بارع وفنان قتال",
+      },
+      {
+        en: "Weapon X, before he walked away",
+        ar: "ويبون إكس، قبل أن ينسحب",
+      },
     ],
     origin: {
       en: "A mercenary from the same programme that made Wolverine, who absorbs the force of what hits him and fires it back, and who has been on both sides of Logan more than once.",
@@ -18611,9 +19464,30 @@ const mutantsF: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Fires golden spheres", ar: "يقذف كرات ذهبية" },
-      { en: "They are not gold", ar: "وليست ذهبًا" },
-      { en: "The spheres were eggs", ar: "الكرات كانت بيضًا" },
+      {
+        en: "Launches dense golden spheres",
+        ar: "يطلق كرات ذهبية كثيفة",
+      },
+      {
+        en: "As projectiles, shields and cushions",
+        ar: "كمقذوفات ودروع ووسائد",
+      },
+      {
+        en: "Makes them fast, and in quantity",
+        ar: "يصنعها بسرعة، وبكثرة",
+      },
+      {
+        en: "They turned out to be eggs",
+        ar: "تبيّن أنها بيوض",
+      },
+      {
+        en: "His real power is creating mutant life",
+        ar: "قدرته الحقيقية خلق حياة متحولة",
+      },
+      {
+        en: "Krakoa's resurrections run through him",
+        ar: "إحياءات كراكوا تمر عبره",
+      },
     ],
     origin: {
       en: "A mutant who generates large golden spheres, treated as a joke power for years, until it emerged that the spheres were how mutants were being resurrected.",
@@ -18672,9 +19546,30 @@ const mutantsF: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Adrenaline-driven strength", ar: "قوة تحرّكها الأدرينالين" },
-      { en: "Bursts, then crashes", ar: "تندفع ثم تنهار" },
-      { en: "Loyal to whoever took her in", ar: "وفية لمن آواها" },
+      {
+        en: "Strength that surges with adrenaline",
+        ar: "قوة تتصاعد مع الأدرينالين",
+      },
+      {
+        en: "Durability and stamina rise with it",
+        ar: "تعلو الصلابة والتحمّل معها",
+      },
+      {
+        en: "Hits far above what her size suggests",
+        ar: "تضرب أقوى بكثير مما يوحي حجمها",
+      },
+      {
+        en: "Enhanced healing afterwards",
+        ar: "شفاء معزز بعدها",
+      },
+      {
+        en: "The surge is the whole mechanism",
+        ar: "التصاعد هو الآلية كلها",
+      },
+      {
+        en: "Calm, she is much closer to ordinary",
+        ar: "هادئة، تقترب من العادي كثيرًا",
+      },
     ],
     origin: {
       en: "A mutant whose strength spikes on adrenaline and drops just as fast, who fights for the people who gave her somewhere to be rather than for a cause.",
@@ -19062,9 +19957,30 @@ const mutantsG: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Unravels into a void", ar: "ينحلّ إلى فراغ" },
-      { en: "Pulls things into himself", ar: "يجذب الأشياء إلى داخله" },
-      { en: "Azazel's son", ar: "ابن أزازيل" },
+      {
+        en: "A body of dark elastic coils, not flesh",
+        ar: "جسد من ملفات مظلمة مرنة، لا لحم",
+      },
+      {
+        en: "Unravels into a churning void",
+        ar: "ينحل إلى خواء مضطرب",
+      },
+      {
+        en: "Pulls you inside, and holds you there",
+        ar: "يسحبك إلى الداخل، ويحبسك",
+      },
+      {
+        en: "A dark dimension within himself",
+        ar: "بُعد مظلم داخله",
+      },
+      {
+        en: "Teleports, which he got from his father",
+        ar: "ينتقل، وقد ورثها عن أبيه",
+      },
+      {
+        en: "Binds and constricts with the tendrils",
+        ar: "يقيّد ويخنق باللوامس",
+      },
     ],
     origin: {
       en: "Nightcrawler's half-brother and Azazel's son, who can come apart into a hole in the world and draw whatever is nearby into it.",
@@ -19085,9 +20001,30 @@ const mutantsG: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Ignites blood in the air", ar: "يُشعل الدم في الهواء" },
-      { en: "Throwing cards, always", ar: "بطاقات رمي دائمًا" },
-      { en: "A Shi'ar heir, secretly", ar: "وريث شياري في الخفاء" },
+      {
+        en: "Ignites the blood inside a body",
+        ar: "يشعل الدم داخل الجسد",
+      },
+      {
+        en: "Usually he has to cut you first",
+        ar: "وعادة عليه أن يجرحك أولًا",
+      },
+      {
+        en: "It burns from within, and it kills",
+        ar: "يحترق من الداخل، ويقتل",
+      },
+      {
+        en: "Electrifies his own blood too",
+        ar: "ويكهرب دمه هو أيضًا",
+      },
+      {
+        en: "Agility and reflexes past a man's",
+        ar: "رشاقة وردود فعل تفوق البشر",
+      },
+      {
+        en: "A costume edged like a shuriken",
+        ar: "بذلة حوافها كالشوريكن",
+      },
     ],
     origin: {
       en: "A mutant who ignites the blood of anyone bleeding near him, and the half-brother of the Shi'ar empress, which almost nobody in either family knows.",
@@ -19105,9 +20042,30 @@ const mutantsG: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Electric charge down a blade", ar: "شحنة كهربائية عبر النصل" },
-      { en: "Fences like a swashbuckler", ar: "يبارز كفارس مغامر" },
-      { en: "A nobleman and a thief", ar: "نبيل ولصّ" },
+      {
+        en: "Discharges bio-electricity",
+        ar: "يفرّغ كهرباء حيوية",
+      },
+      {
+        en: "Channels it through his sword",
+        ar: "يمررها عبر سيفه",
+      },
+      {
+        en: "A shock that drops a man",
+        ar: "صعقة تُسقط رجلًا",
+      },
+      {
+        en: "An acrobat, and a swordsman",
+        ar: "بهلوان، وسيّاف",
+      },
+      {
+        en: "Fights like a Robin Hood story",
+        ar: "يقاتل كحكاية روبن هود",
+      },
+      {
+        en: "Robs the ones who can spare it",
+        ar: "يسرق من يقدرون على الاستغناء",
+      },
     ],
     origin: {
       en: "A Spanish nobleman who fences with an electrically charged sabre and robs from people who will not miss it, in the full swashbuckling tradition.",
@@ -19125,9 +20083,30 @@ const mutantsG: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Transmutes any element", ar: "يحوّل أي عنصر" },
-      { en: "Touch is enough", ar: "تكفيه لمسة" },
-      { en: "Wanted nothing to do with it", ar: "لم يُرد شيئًا من ذلك" },
+      {
+        en: "Transmutes any element into any other",
+        ar: "يحوّل أي عنصر إلى أي آخر",
+      },
+      {
+        en: "By touch, and at the atomic level",
+        ar: "باللمس، وعلى المستوى الذري",
+      },
+      {
+        en: "Iron to gold, a wall to glass",
+        ar: "حديدًا إلى ذهب، وجدارًا إلى زجاج",
+      },
+      {
+        en: "Near-instant, and precise",
+        ar: "شبه فوري، ودقيق",
+      },
+      {
+        en: "Limited by what he knows of the thing",
+        ar: "محدود بما يعرفه عن الشيء",
+      },
+      {
+        en: "Spent years hiding that he could",
+        ar: "أمضى سنين يخفي أنه يقدر",
+      },
     ],
     origin: {
       en: "A British mutant who turns one element into another by touch, and who spent most of his life trying to have an ordinary one instead.",
@@ -19145,9 +20124,30 @@ const mutantsG: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Shapes metal by thought", ar: "يشكّل المعدن بالفكر" },
-      { en: "Wears a robot he built", ar: "يرتدي آليًا صنعه" },
-      { en: "Rebuilds it every time", ar: "يعيد بناءه كل مرة" },
+      {
+        en: "Reshapes metal and machines by thought",
+        ar: "يعيد تشكيل المعدن والآلات بالفكر",
+      },
+      {
+        en: "Builds a weapon or a robot on the spot",
+        ar: "يبني سلاحًا أو آليًا في الحال",
+      },
+      {
+        en: "Glass and metal both answer him",
+        ar: "الزجاج والمعدن كلاهما يطيعه",
+      },
+      {
+        en: "Organic matter too, with effort",
+        ar: "والمادة العضوية أيضًا، بجهد",
+      },
+      {
+        en: "Pilots the Box armour himself",
+        ar: "يقود درع بوكس بنفسه",
+      },
+      {
+        en: "A technopath, and an Alpha Flight man",
+        ar: "تقني ذهني، ورجل ألفا فلايت",
+      },
     ],
     origin: {
       en: "A Canadian mutant who reshapes metal and machinery with his mind, and who pilots a robot body he has rebuilt from scratch more times than he can count.",
@@ -19207,9 +20207,30 @@ const mutantsG: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Burns without being burned", ar: "يحترق دون أن يتأذى" },
-      { en: "A living fire", ar: "نار حية" },
-      { en: "Ran with the Acolytes", ar: "سار مع الأتباع" },
+      {
+        en: "Generates and projects intense flame",
+        ar: "يولّد اللهب الشديد ويقذفه",
+      },
+      {
+        en: "Absorbs heat as readily as he makes it",
+        ar: "يمتص الحرارة كما يولّدها",
+      },
+      {
+        en: "Fire blasts, and searing energy",
+        ar: "قذائف نارية، وطاقة حارقة",
+      },
+      {
+        en: "Burns hotter the more he takes in",
+        ar: "يزداد حرارة كلما امتص أكثر",
+      },
+      {
+        en: "Came up through Gene Nation",
+        ar: "خرج من جين نيشن",
+      },
+      {
+        en: "Held by the X-Corps afterwards",
+        ar: "احتجزته إكس-كوربس بعدها",
+      },
     ],
     origin: {
       en: "A mutant whose body burns constantly without harming him, who fought for Magneto's followers because nobody on the other side had offered.",
@@ -19329,9 +20350,30 @@ const mutantsG: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Plasma jets from his body", ar: "نفثات بلازما من جسده" },
-      { en: "Flies at enormous speed", ar: "يطير بسرعة هائلة" },
-      { en: "Trained at the Hellions", ar: "تدرّب مع الهيليونز" },
+      {
+        en: "Rocket-propelled flight, supersonic",
+        ar: "طيران بدفع صاروخي، أسرع من الصوت",
+      },
+      {
+        en: "Cybernetic implants over the mutation",
+        ar: "زرعات آلية فوق الطفرة",
+      },
+      {
+        en: "Speed enough to outrun most things",
+        ar: "سرعة تكفي لتجاوز أغلب الأشياء",
+      },
+      {
+        en: "Manoeuvres at that velocity",
+        ar: "يناور عند تلك السرعة",
+      },
+      {
+        en: "Durability to survive his own speed",
+        ar: "صلابة تحتمل سرعته",
+      },
+      {
+        en: "A Hellion before he was anything else",
+        ar: "كان هيليون قبل أي شيء آخر",
+      },
     ],
     origin: {
       en: "A Moroccan mutant who flies by generating plasma exhaust, trained at the school that competed with Xavier's rather than at Xavier's.",
@@ -19391,9 +20433,30 @@ const mutantsH: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Teleports across galaxies", ar: "تنتقل عبر المجرّات" },
-      { en: "Only interstellar distances", ar: "المسافات النجمية فقط" },
-      { en: "A rock star by trade", ar: "نجمة روك بالمهنة" },
+      {
+        en: "Teleports across galaxies, not streets",
+        ar: "تنتقل عبر المجرات، لا الشوارع",
+      },
+      {
+        en: "A tachyon field turns her faster than light",
+        ar: "حقل تاكيوني يجعلها أسرع من الضوء",
+      },
+      {
+        en: "Carries anyone standing near her",
+        ar: "تحمل كل من يقف قربها",
+      },
+      {
+        en: "Only interstellar distances work at all",
+        ar: "المسافات بين النجوم وحدها تعمل",
+      },
+      {
+        en: "So she goes to her Dyson Sphere and back",
+        ar: "فتذهب إلى كرتها الدايسونية وتعود",
+      },
+      {
+        en: "Survives open space during the jump",
+        ar: "تنجو في الفضاء المفتوح أثناء القفزة",
+      },
     ],
     origin: {
       en: "An intergalactic rock star who can only teleport light-years at a time, which makes her useless for crossing a room and unmatched for crossing a galaxy.",
@@ -19410,13 +20473,32 @@ const mutantsH: CharacterDraft[] = [
     affiliation: [],
     universe: ["fox"],
     species: "Mutant",
+    /* NO "AT HIS PEAK, THE SIZE OF A PLANET" HERE. It was worth seventy of his 322 and it is a peak, which this file excludes from base records everywhere else -- Thanos has no Gauntlet, Jean Grey has no Phoenix, Captain Carter has no Stones. */
     powers: [
-      { en: "Grows to the size of a building", ar: "ينمو بحجم بناية" },
       {
-        en: "Draws power from cosmic rays",
-        ar: "يستمد قوته من الأشعة الكونية",
+        en: "Absorbs cosmic radiation and stores it",
+        ar: "يمتص الإشعاع الكوني ويخزنه",
       },
-      { en: "An Egyptologist first", ar: "عالم مصريات أولًا" },
+      {
+        en: "Grows to a skyscraper, and then past it",
+        ar: "ينمو إلى ناطحة سحاب، ثم يتجاوزها",
+      },
+      {
+        en: "Strength and durability scale with it",
+        ar: "تتصاعد قوته وصلابته معها",
+      },
+      {
+        en: "Projects the energy he has taken in",
+        ar: "يقذف الطاقة التي امتصها",
+      },
+      {
+        en: "The more he takes in, the bigger he gets",
+        ar: "كلما امتص أكثر ازداد ضخامة",
+      },
+      {
+        en: "Cut off the supply and he shrinks",
+        ar: "اقطع المدد فينكمش",
+      },
     ],
     origin: {
       en: "An Egyptologist whose mutation lets him grow enormous on cosmic energy, and who decided that made him the heir of the pharaohs rather than a man with a condition.",
@@ -19475,9 +20557,30 @@ const mutantsH: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Absorbs and becomes matter", ar: "يمتص المادة ويصيرها" },
-      { en: "Rock, wood, metal, all of it", ar: "صخر وخشب ومعدن، كلها" },
-      { en: "A Samoan student", ar: "طالب ساموي" },
+      {
+        en: "Absorbs plants, soil and stone",
+        ar: "يمتص النبات والتربة والحجر",
+      },
+      {
+        en: "Grows in size and mass as he does",
+        ar: "ينمو حجمًا وكتلة وهو يفعل",
+      },
+      {
+        en: "Enormous strength at full absorption",
+        ar: "قوة هائلة عند الامتصاص الكامل",
+      },
+      {
+        en: "Melds with the earth around him",
+        ar: "يندمج مع الأرض حوله",
+      },
+      {
+        en: "Animates the vegetation with it",
+        ar: "ويحرّك النبات بها",
+      },
+      {
+        en: "The one who served was a Phalanx copy",
+        ar: "الذي خدم معهم كان نسخة فالانكس",
+      },
     ],
     origin: {
       en: "A Samoan mutant who takes on the properties of whatever he touches, and who was replaced by a duplicate for long enough that nobody is sure which appearances were him.",
@@ -19537,9 +20640,30 @@ const mutantsH: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Commands rock and earth", ar: "تأمر الصخر والأرض" },
-      { en: "Died on her first mission", ar: "ماتت في أول مهمة" },
-      { en: "Xavier erased the team", ar: "محا إكزافير الفريق" },
+      {
+        en: "Commands rock and earth",
+        ar: "تأمر الصخر والأرض",
+      },
+      {
+        en: "Raises stone out of the ground",
+        ar: "ترفع الحجر من الأرض",
+      },
+      {
+        en: "Shapes it, and hurls it",
+        ar: "تشكّله، وتقذفه",
+      },
+      {
+        en: "Tunnels through solid rock",
+        ar: "تنفق عبر الصخر الصلد",
+      },
+      {
+        en: "Geokinesis, and she was good at it",
+        ar: "تحريك أرضي، وكانت بارعة فيه",
+      },
+      {
+        en: "One of Moira's Deadly Genesis team",
+        ar: "من فريق مويرا في ديدلي جينيسيس",
+      },
     ],
     origin: {
       en: "A member of the second team Xavier sent to Krakoa, who died there, and whose existence he removed from everyone's memory including his own students.",
@@ -19557,9 +20681,30 @@ const mutantsH: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "A shapeshifting weapon body", ar: "جسد سلاح متبدّل" },
-      { en: "Reforms limbs into guns", ar: "يحوّل أطرافه إلى مدافع" },
-      { en: "Was a teenager underneath", ar: "كان مراهقًا تحت ذلك" },
+      {
+        en: "A malleable body he reshapes at will",
+        ar: "جسد مطواع يعيد تشكيله كما يشاء",
+      },
+      {
+        en: "Changes his size, form and face",
+        ar: "يغيّر حجمه وهيئته ووجهه",
+      },
+      {
+        en: "Morphs an arm into a bio-plasma cannon",
+        ar: "يحوّل ذراعه مدفع بلازما حيوية",
+      },
+      {
+        en: "Strength, agility and stamina with it",
+        ar: "قوة ورشاقة وتحمّل معها",
+      },
+      {
+        en: "Reforms from damage as it happens",
+        ar: "يعيد تشكّله من الضرر فور وقوعه",
+      },
+      {
+        en: "The mercenary is itself a disguise",
+        ar: "المرتزق نفسه تنكّر",
+      },
     ],
     origin: {
       en: "A mercenary whose body is a shapeless mass that reshapes into weapons, hiding a teenager who was experimented on and never quite got to be one.",
@@ -19578,13 +20723,28 @@ const mutantsH: CharacterDraft[] = [
     species: "Mutant",
     powers: [
       {
-        en: "Slows or speeds time locally",
-        ar: "تبطئ الزمن أو تسرّعه موضعيًا",
+        en: "Creates fields where time runs wrong",
+        ar: "تصنع حقولًا يسير فيها الزمن خطأ",
       },
-      { en: "A field she controls", ar: "حقل تتحكم به" },
       {
-        en: "Fought for the Mutant Liberation Front",
-        ar: "قاتلت مع جبهة تحرير المتحوّلين",
+        en: "Slows an enemy inside one",
+        ar: "تبطئ عدوًا داخل أحدها",
+      },
+      {
+        en: "Speeds an ally inside another",
+        ar: "وتسرّع حليفًا داخل آخر",
+      },
+      {
+        en: "Traps you in a moment you cannot leave",
+        ar: "تحبسك في لحظة لا تغادرها",
+      },
+      {
+        en: "Shapes the field where she wants it",
+        ar: "تشكّل الحقل حيث تريد",
+      },
+      {
+        en: "Mutant Liberation Front, originally",
+        ar: "جبهة تحرير المتحولين، أصلًا",
       },
     ],
     origin: {
@@ -19658,9 +20818,30 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "A body of living rock", ar: "جسد من صخر حيّ" },
-      { en: "Takes a hit and stands", ar: "يتلقى الضربة ويثبت" },
-      { en: "Was a gang enforcer", ar: "كان منفّذ عصابة" },
+      {
+        en: "A body of living rock",
+        ar: "جسد من صخر حي",
+      },
+      {
+        en: "Great strength inside it",
+        ar: "قوة عظيمة داخله",
+      },
+      {
+        en: "Durability that shrugs off a hit",
+        ar: "صلابة تتجاهل الضربة",
+      },
+      {
+        en: "Heavy enough to hold a doorway",
+        ar: "ثقيل بما يكفي ليسد مدخلًا",
+      },
+      {
+        en: "Stone, all the way through",
+        ar: "حجر، من الخارج إلى الداخل",
+      },
+      {
+        en: "Nothing about him bends",
+        ar: "لا شيء فيه ينثني",
+      },
     ],
     origin: {
       en: "A mutant made of dark stone who came to the school from a gang and found the same size and temper useful for something else.",
@@ -19678,9 +20859,30 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Scaled skin like a snake", ar: "جلد محرشف كالأفعى" },
-      { en: "Controls people through touch", ar: "تتحكم بالناس باللمس" },
-      { en: "Worked a brothel first", ar: "عملت في ماخور أولًا" },
+      {
+        en: "Controls your body's processes by touch",
+        ar: "تتحكم بعمليات جسدك باللمس",
+      },
+      {
+        en: "Pleasure or pain, as she chooses",
+        ar: "لذة أو ألمًا، كما تختار",
+      },
+      {
+        en: "Raises or lowers a heart rate",
+        ar: "ترفع نبض القلب أو تخفضه",
+      },
+      {
+        en: "Boosts or suppresses your healing",
+        ar: "تعزز شفاءك أو تكبحه",
+      },
+      {
+        en: "Pheromones that shift your mood",
+        ar: "فيرومونات تغيّر مزاجك",
+      },
+      {
+        en: "Scaled, snake-like skin",
+        ar: "جلد حرشفي كجلد الأفعى",
+      },
     ],
     origin: {
       en: "A mutant who alters other people's bodies through her skin, who worked in a mutant brothel before the X-Men found her and never pretended otherwise.",
@@ -19698,9 +20900,30 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Freezes time in a bubble", ar: "تجمّد الزمن في فقاعة" },
-      { en: "Travelled to her own future", ar: "سافرت إلى مستقبلها" },
-      { en: "Came back much older", ar: "وعادت أكبر بكثير" },
+      {
+        en: "Manipulates time, and stops it dead",
+        ar: "تتحكم بالزمن، وتوقفه تمامًا",
+      },
+      {
+        en: "Freezes time in a bubble around you",
+        ar: "تجمّد الزمن في فقاعة حولك",
+      },
+      {
+        en: "Slows time down, or speeds it up",
+        ar: "تبطئ الزمن، أو تسرّعه",
+      },
+      {
+        en: "Holds an army inside one of them",
+        ar: "تحبس جيشًا داخل واحدة منها",
+      },
+      {
+        en: "Travels through time herself",
+        ar: "تسافر عبر الزمن بنفسها",
+      },
+      {
+        en: "Erased a man by preventing his birth",
+        ar: "محت رجلًا بمنع ولادته",
+      },
     ],
     origin: {
       en: "An Australian student who encases things in bubbles of stopped time, and who went forward to live decades and came back to a class she had outgrown.",
@@ -19718,9 +20941,30 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Leaves her body as energy", ar: "تغادر جسدها طاقةً" },
-      { en: "Passes through walls that way", ar: "وتعبر الجدران هكذا" },
-      { en: "Shy about all of it", ar: "خجولة من ذلك كله" },
+      {
+        en: "Projects a violet astral form",
+        ar: "تسقط هيئة أثيرية بنفسجية",
+      },
+      {
+        en: "It flies, and passes through walls",
+        ar: "تطير، وتعبر الجدران",
+      },
+      {
+        en: "Fires bolts of psionic energy",
+        ar: "تطلق صواعق طاقة نفسية",
+      },
+      {
+        en: "Her body stays awake while it works",
+        ar: "يبقى جسدها مستيقظًا وهي تعمل",
+      },
+      {
+        en: "So she acts in two places at once",
+        ar: "فتعمل في مكانين معًا",
+      },
+      {
+        en: "Intangible, and hard to answer",
+        ar: "غير ملموسة، ويصعب الرد عليها",
+      },
     ],
     origin: {
       en: "A student who projects an astral form of purple energy that can pass through anything, and who is quieter about her power than almost anyone at the school.",
@@ -19738,9 +20982,30 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Heals by touch", ar: "يشفي باللمس" },
-      { en: "Brought people back from dead", ar: "أعاد أناسًا من الموت" },
-      { en: "Cannot heal himself", ar: "ولا يشفي نفسه" },
+      {
+        en: "Mends a wound by touching it",
+        ar: "يرمم جرحًا بلمسه",
+      },
+      {
+        en: "Cures an illness the same way",
+        ar: "ويشفي مرضًا بالطريقة ذاتها",
+      },
+      {
+        en: "Revives the very recently dead",
+        ar: "يحيي من مات للتو",
+      },
+      {
+        en: "Fast enough to matter in a fight",
+        ar: "سريع بما يكفي ليفيد في قتال",
+      },
+      {
+        en: "Cannot heal himself at all",
+        ar: "لا يستطيع شفاء نفسه البتة",
+      },
+      {
+        en: "The medic the young X-Men rely on",
+        ar: "المسعف الذي يعتمد عليه الصغار",
+      },
     ],
     origin: {
       en: "A young healer who can repair almost any injury in another person by touch, and none at all in himself, which is the arrangement he has to live with.",
@@ -19758,9 +21023,30 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Flies faster than sound", ar: "تطير أسرع من الصوت" },
-      { en: "Blue skin and no hair", ar: "بشرة زرقاء وبلا شعر" },
-      { en: "Would not change back", ar: "ولم تشأ العودة" },
+      {
+        en: "Her body adapts itself for flight",
+        ar: "جسدها يتكيف للطيران",
+      },
+      {
+        en: "Flies at supersonic speed",
+        ar: "تطير بسرعة تفوق الصوت",
+      },
+      {
+        en: "Streamlines into a missile shape",
+        ar: "تنسلّ في هيئة صاروخ",
+      },
+      {
+        en: "Strength and durability to hold it",
+        ar: "قوة وصلابة لتحتمل ذلك",
+      },
+      {
+        en: "Heightened senses at that velocity",
+        ar: "حواس مرهفة عند تلك السرعة",
+      },
+      {
+        en: "It hurt her until Hope cleaned it up",
+        ar: "آلمها حتى صفّاها هوب",
+      },
     ],
     origin: {
       en: "A student whose mutation turned her blue and let her break the sound barrier, and who declined a cure on the grounds that she liked the flying more than the face.",
@@ -19778,11 +21064,29 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Her card figures become real", ar: "أشكال بطاقاتها تصير حقيقية" },
-      { en: "Draws what she summons", ar: "ترسم ما تستدعي" },
       {
-        en: "The deck decides as much as she does",
-        ar: "المجموعة تقرر بقدرها",
+        en: "Brings the figures on her cards to life",
+        ar: "تحيي الأشكال على بطاقاتها",
+      },
+      {
+        en: "Knights, demons, whatever is drawn",
+        ar: "فرسان وشياطين، وما رُسم",
+      },
+      {
+        en: "They are solid, and she controls them",
+        ar: "وهي صلبة، وتتحكم بها",
+      },
+      {
+        en: "Psionic energy holds their shape",
+        ar: "طاقة نفسية تحفظ شكلها",
+      },
+      {
+        en: "The deck decides what she can call",
+        ar: "المجموعة تحدد ما تستدعيه",
+      },
+      {
+        en: "As many as she can hold at once",
+        ar: "بقدر ما تحتمل دفعة واحدة",
       },
     ],
     origin: {
@@ -19801,9 +21105,30 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Moves faster than time", ar: "يتحرك أسرع من الزمن" },
-      { en: "Ages while everyone waits", ar: "يشيخ بينما ينتظر الجميع" },
-      { en: "Every sprint costs him years", ar: "كل عَدْوة تكلّفه سنين" },
+      {
+        en: "Accelerates time around himself",
+        ar: "يسرّع الزمن حول نفسه",
+      },
+      {
+        en: "Which looks like the world standing still",
+        ar: "فيبدو العالم ساكنًا",
+      },
+      {
+        en: "Moves faster than anyone can follow",
+        ar: "يتحرك أسرع مما يلحقه أحد",
+      },
+      {
+        en: "He runs down his own lifespan doing it",
+        ar: "يستهلك عمره وهو يفعل",
+      },
+      {
+        en: "White hairs, and visible ageing",
+        ar: "شعر أبيض، وشيخوخة ظاهرة",
+      },
+      {
+        en: "One of Hope Summers's Five Lights",
+        ar: "أحد أنوار هوب سمرز الخمسة",
+      },
     ],
     origin: {
       en: "A speedster who does not move quickly so much as slow the world, and who ages at the ordinary rate the whole time he is doing it.",
@@ -19821,9 +21146,30 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Pheromones that steer a mood", ar: "فيرومونات توجّه المزاج" },
-      { en: "Cannot switch them off", ar: "لا تستطيع إطفاءها" },
-      { en: "Never knows if it is real", ar: "لا تدري قط أهو حقيقي" },
+      {
+        en: "Her body emits pheromones constantly",
+        ar: "جسدها يبث الفيرومونات باستمرار",
+      },
+      {
+        en: "They calm, frighten or anger you",
+        ar: "تهدّئك أو تخيفك أو تغضبك",
+      },
+      {
+        en: "She can pick which, with focus",
+        ar: "تختار أيها، بالتركيز",
+      },
+      {
+        en: "Mostly it happens without her deciding",
+        ar: "وأغلبه يحدث دون قرار منها",
+      },
+      {
+        en: "Medication was the only way to stop it",
+        ar: "الدواء كان السبيل الوحيد لإيقافه",
+      },
+      {
+        en: "Killed by the Purifiers, and came back",
+        ar: "قتلها المطهّرون، ثم عادت",
+      },
     ],
     origin: {
       en: "A student who emits pheromones that change how people feel about her, and who can never be certain whether anyone likes her or has simply been near her.",
@@ -19841,9 +21187,30 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Commands the wind", ar: "تأمر الريح" },
-      { en: "Flies on it", ar: "وتطير عليها" },
-      { en: "Led the class by vote", ar: "قادت الصف بالانتخاب" },
+      {
+        en: "Commands the wind, and the air with it",
+        ar: "تأمر الريح، والهواء معها",
+      },
+      {
+        en: "Flies and glides on them",
+        ar: "تطير وتنزلق عليها",
+      },
+      {
+        en: "Blasts of wind that put people down",
+        ar: "عصفات ريح تُسقط الناس",
+      },
+      {
+        en: "Shapes a breeze to carry a distant sound",
+        ar: "تشكّل نسمة تحمل صوتًا بعيدًا",
+      },
+      {
+        en: "Eavesdrops from streets away",
+        ar: "تسترق السمع من شوارع بعيدة",
+      },
+      {
+        en: "Lost it on M-Day, and got something else",
+        ar: "فقدتها يوم إم، فنالت غيرها",
+      },
     ],
     origin: {
       en: "A Venezuelan student who controls air currents and was elected squad leader by her classmates, which is a rarer distinction at that school than any power.",
@@ -19861,9 +21228,30 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Reshapes machines by touch", ar: "يعيد تشكيل الآلات باللمس" },
-      { en: "Builds from any scrap", ar: "يبني من أي خردة" },
-      { en: "A wheelchair he engineered himself", ar: "كرسيّ صمّمه بنفسه" },
+      {
+        en: "Reshapes technology with his mind",
+        ar: "يعيد تشكيل التقنية بعقله",
+      },
+      {
+        en: "Rebuilds a device into another device",
+        ar: "يعيد بناء جهاز ليصير آخر",
+      },
+      {
+        en: "Controls machinery without touching it",
+        ar: "يتحكم بالآلات دون لمسها",
+      },
+      {
+        en: "Technoforming, and he is fast at it",
+        ar: "تشكيل تقني، وهو سريع فيه",
+      },
+      {
+        en: "A genius before the mutation",
+        ar: "عبقري قبل الطفرة",
+      },
+      {
+        en: "Uses a wheelchair, and out-thinks you",
+        ar: "يستعمل كرسيًا متحركًا، ويفوقك ذكاءً",
+      },
     ],
     origin: {
       en: "A young mutant who rebuilds any machine he touches into something better, starting with the wheelchair he uses, which he has improved more times than anyone has counted.",
@@ -19881,9 +21269,30 @@ const mutantsI: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Phases through anything", ar: "يعبر أي شيء" },
-      { en: "Disappears mid-sentence", ar: "يختفي في منتصف الجملة" },
-      { en: "Xavier's student, briefly", ar: "طالب إكزافير لفترة قصيرة" },
+      {
+        en: "Phases through solid matter",
+        ar: "يعبر المادة الصلبة",
+      },
+      {
+        en: "Ghost-like, and untouchable with it",
+        ar: "كالشبح، ولا يُلمس معها",
+      },
+      {
+        en: "Walks through a wall as a door",
+        ar: "يمشي عبر الجدار كأنه باب",
+      },
+      {
+        en: "Nothing solid can hold him",
+        ar: "لا شيء صلب يحبسه",
+      },
+      {
+        en: "Nothing solid can hit him either",
+        ar: "ولا شيء صلب يصيبه أيضًا",
+      },
+      {
+        en: "Which is the whole of what he does",
+        ar: "وهذا كل ما يفعله",
+      },
     ],
     origin: {
       en: "A student who phases out of solid matter and out of conversations, and who was at the school for a short and eventful time.",
@@ -20204,10 +21613,32 @@ const lateAdditions: CharacterDraft[] = [
     affiliation: [],
     universe: ["fox"],
     species: "Mutant",
+    /* SCORED ZERO. */
     powers: [
-      { en: "Reads an object's past", ar: "يقرأ ماضي الشيء" },
-      { en: "Sees it all by touch", ar: "يرى ذلك كله باللمس" },
-      { en: "Cannot choose what he sees", ar: "لا يختار ما يرى" },
+      {
+        en: "Touch a person and he knows their life",
+        ar: "يلمس شخصًا فيعرف حياته",
+      },
+      {
+        en: "Their history, memories and knowledge",
+        ar: "تاريخه وذكرياته ومعارفه",
+      },
+      {
+        en: "Works on an object the same way",
+        ar: "ويفعل الشيء ذاته مع الأشياء",
+      },
+      {
+        en: "Psychometry, and it is instant",
+        ar: "استشعار أثري، وهو فوري",
+      },
+      {
+        en: "He learns what you would never tell",
+        ar: "يعرف ما لن تخبره أبدًا",
+      },
+      {
+        en: "Generation X, not the New Warriors one",
+        ar: "جيل إكس، لا نيو ووريورز",
+      },
     ],
     origin: {
       en: "A mutant who sees everything that has happened to an object or a person by touching them, without any say in which memory arrives.",
@@ -20266,9 +21697,30 @@ const lateAdditions: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     powers: [
-      { en: "Strength enough for a wall", ar: "قوة تكفي لجدار" },
-      { en: "Callisto's right hand", ar: "ذراع كاليستو اليمنى" },
-      { en: "Died in the tunnels", ar: "مات في الأنفاق" },
+      {
+        en: "Enormous strength, and he is large with it",
+        ar: "قوة هائلة، وهو ضخم معها",
+      },
+      {
+        en: "Durability to take what he starts",
+        ar: "صلابة تحتمل ما يبدأه",
+      },
+      {
+        en: "The Morlocks' muscle, and their shield",
+        ar: "عضلات المورلوك، ودرعهم",
+      },
+      {
+        en: "Callisto's most devoted lieutenant",
+        ar: "أشد ملازمي كاليستو إخلاصًا",
+      },
+      {
+        en: "Lifts what nobody underground can",
+        ar: "يرفع ما لا يرفعه أحد تحت الأرض",
+      },
+      {
+        en: "Stands in front, every time",
+        ar: "يقف في المقدمة، كل مرة",
+      },
     ],
     origin: {
       en: "A Morlock strong enough to walk through a wall and Callisto's second in command, who died defending the tunnels from the Marauders.",

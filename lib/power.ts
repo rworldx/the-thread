@@ -1406,7 +1406,7 @@ const SCALE: [RegExp, number][] = [
    * ascii-ok: English only.
    */
   [
-    /\b(strength|durab|regenerat|healing|heals\b|heal\b|powered armou?r|armou?r-borne|flies\b|flying\b|telepath|ignites|combust|disintegrat|pulls? things apart|pulls? apart|rips? apart|remotely|technopath|drives any|rebuilds any|any vehicle|tattoo|formula|animals?\b|beasts?\b|split in two|splits? into|rebuilt as a machine|a living machine|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|teleport|becomes? (a |an |the )?[a-z]|mjolnir|stormbreaker|spider[- ]powers|plasma|regrow|living rock|body of living|stone or steel|plated in steel|swaps? bodies|swaps? minds|physiolog|turns? into|copies|mimics?|duplicat|clones?\b|possess|silk|web-line|web-shooter|webbing|webs\b|poison|toxin|venomous|enormous size|giant|embiggen|grows to|constructs?\b|shakes the ground|earthquake|seismic|tremor|stretch|pheromone|\bgas\b|vibrat|absorbs?\b|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|\btons?\b|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable|drains?\b|siphons?\b|life force|life energy|magnetis|magnetic|magnetokine)/i,
+    /\b(strength|durab|regenerat|healing|heals\b|heal\b|powered armou?r|armou?r-borne|flies\b|flying\b|telepath|ignites|combust|disintegrat|pulls? things apart|pulls? apart|rips? apart|remotely|technopath|drives any|rebuilds any|any vehicle|tattoo|formula|animals?\b|beasts?\b|split in two|splits? into|rebuilt as a machine|a living machine|telekine|psychic|energy|matter|magic|sorcer|witchcraft|witches|hex\b|coven|astral|spectrum|illusion|teleport|becomes? (a |an |the )?[a-z]|mjolnir|stormbreaker|spider[- ]powers|plasma|regrow|living rock|body of living|stone or steel|plated in steel|swaps? bodies|swaps? minds|physiolog|turns? into|copies|mimics?|duplicat|clones?\b|possess|silk|web-line|web-shooter|webbing|webs\b|poison|toxin|venomous|enormous size|giant|embiggen|grows to|constructs?\b|shakes the ground|earthquake|seismic|tremor|stretch|pheromone|\bgas\b|vibrat|absorbs?\b|shapeshift|flight|speed|claws|symbiote|venom|gamma|adamantium|wall-craw|spider-sense|agility|reflex|senses|invisib|force field|flame|fire|heat|burn|frost|ice|lightning|thunder|electric|discharge|acid|sonic|radiation|invulnerab|rock body|phases?|enhanced|\btons?\b|the herb|super-soldier|serum|changes size|shrink|pym particle|mechanical arm|tentacle|cybernetic|prosthe|adamantium armour|goblin gear|illusion technology|density|intangib|beam|blast|solar|laser|stingers|ten rings|shockwave|darkforce|lightforce|indestructible|dagger|cuts anything|cuts through anything|adapts? to|chi\b|bulletproof|unbreakable|acrobat|empath|puts anyone to sleep|feels what you feel|nearly unkillable|drains?\b|siphons?\b|life force|life energy|magnetis|magnetic|magnetokine|psychometr)/i,
     14,
   ],
   /**
@@ -1484,9 +1484,14 @@ const SYMBIOTE_WEIGHT: Record<string, number> = {
    for the storage medium his mind is written on. The pattern itself is
    `magnetis|magnetic|magnetokine` rather than a bare `magnet`, because that
    matched the NAME -- Frenzy was scoring for "Fought for Magneto first".
-   ascii-ok: English `powers[].en` only. */
+
+   "ROCK STAR" is Lila Cheney's day job. `rock` is in the vocabulary for
+   Rockslide and Onyxx, who are made of it, and it was paying an intergalactic
+   singer SEVENTY POINTS -- more than a third of her total -- for owning a
+   guitar. Found only because rewriting her record made the score DROP and the
+   drop turned out to be correct. ascii-ok: English `powers[].en` only. */
 const PROPER_NOUNS =
-  /world security council|nexus of all realities|infinity gauntlet|infinity formula|magnetic tape/gi;
+  /world security council|nexus of all realities|infinity gauntlet|infinity formula|magnetic tape|rock star/gi;
 
 export function scaleScore(c: Character): number {
   /**
