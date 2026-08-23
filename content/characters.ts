@@ -4990,7 +4990,10 @@ const supporting: CharacterDraft[] = [
        and no alias can reach it. The one gap `creditedActor` cannot close. */
     alsoIn: ["ultimate-spider-man"],
     creditedActor: "Stan Lee",
-    related: [],
+    /* The other end of the ladder, and see the note on the One Above All:
+       the theory that every cameo is one being watching has a comic behind
+       it. This corpus ranks him 686th and that being 1st. */
+    related: [{ id: "the-one-above-all", kind: "host" }],
   },
 
   /**
@@ -6138,6 +6141,10 @@ const abstracts: CharacterDraft[] = [
         ar: "يمحو أو يعيد أي شيء بمشيئته",
       },
       { en: "Acts through the Living Tribunal", ar: "يعمل عبر المحكمة الحيّة" },
+      {
+        en: "Has turned up as a man at a drawing board",
+        ar: "ظهر رجلًا أمام لوح رسم",
+      },
     ],
     origin: {
       en: "The top of the Marvel hierarchy, and the only figure in it with no equal and no opposite. Every other power here answers to it, including the ones that answer to nobody else.",
@@ -6146,6 +6153,23 @@ const abstracts: CharacterDraft[] = [
     related: [
       { id: "the-living-tribunal", kind: "ally" },
       { id: "the-one-below-all", kind: "enemy" },
+      /**
+       * RANK 1 AND RANK 686 ARE THE SAME BEING, if you believe the comic that
+       * says so. In Fantastic Four #511 Reed Richards and the Thing go to meet
+       * God and find him at a drawing board, drawn as Kirby with Lee beside
+       * him. Part 1 records it plainly: "has manifested in humble forms
+       * (notably as a Stan Lee / Jack Kirby-like figure)."
+       *
+       * `host` and not `variant`, on this file's own distinction: variant
+       * would say Stan Lee IS the One Above All in another universe, and the
+       * claim is the other one -- a being speaking through a human shape, the
+       * same arrangement as Khonshu and Moon Knight.
+       *
+       * Two records rather than one because they pass the test this corpus
+       * uses for Galan and Galactus: Stan Lee and the thing at the drawing
+       * board are in the panel together.
+       */
+      { id: "stan-lee", kind: "host" },
     ],
   },
   {
