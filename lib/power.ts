@@ -1058,7 +1058,68 @@ const TIERS: Tier[] = [
        a building, and Peni Parker, who pilots a mech. She is a cartoon clock
        on a screen. Everything she does, she does by talking somebody into it,
        which is exactly what this tier is for. */
-    ranked: ["miss-minutes"],
+    /**
+     * ALL FOURTEEN ARE NAMED, and the reason is that the tail could not order
+     * them at all: SEVEN OF THEM SCORE EXACTLY MINUS FORTY. May Parker, Stan
+     * Lee, Morgan Stark, Michelle Jones, Lylla, Teefs and Floor were sorted by
+     * nothing but the order the array happened to be in. A tie is not a
+     * ranking, and in a tier of fourteen it was half the tier.
+     *
+     * THE AXIS IS NOT POWER, because none of them has any and the score knows
+     * it -- the numbers run 32 down to -40, and the negatives are the penalty
+     * for being `supporting` rather than a measurement of anything. The tier's
+     * own gloss states the axis instead: "they have no business in a fight and
+     * are in every one of these stories anyway." So they are ordered by WHAT
+     * THEY DO WITH NOTHING -- by how much of the story breaks without them.
+     *
+     *   Christine Palmer  a hard skill, used inside the impossible. She has
+     *                     restarted the Sorcerer Supreme's heart on a gurney
+     *                     and kept working while the room did not. The only
+     *                     person here who saves anyone by training.
+     *   Sharon Davis      walked the Witches' Road as a non-witch, was
+     *                     "surprisingly handy in the first trial", and the
+     *                     second one killed her. This tier's definition
+     *                     performed literally, with the price paid.
+     *   Miss Minutes      no body and no power, and she moves the people who
+     *                     could delete her. Agency with nothing behind it.
+     *   Darcy Lewis       a doctorate and a taser, and she has used both on a
+     *                     god. The one who says the obvious thing nobody with
+     *                     powers had thought of.
+     *   Harley Keener     armed Iron Man out of a garage when Iron Man had
+     *                     nothing, and was not impressed by him.
+     *   Michelle Jones    worked out who he was by watching. Nobody told her.
+     *   May Parker        took the villains in, and it killed her. The whole
+     *                     of that film's argument is hers.
+     *   Morgan Stark      the reason he would not do it, and then the reason
+     *                     he did. Four years old and the hinge of the ending.
+     *   Ben Parker        one sentence, and it outlives him by sixty years.
+     *   Trevor Slattery   nerve of a stupider kind: no idea what he is part
+     *                     of, and in the room anyway.
+     *   Lylla             the reason Rocket knows what a friend is.
+     *   Teefs             wheels he did not ask for, and he stayed.
+     *   Floor             one word, used for everything.
+     *   Stan Lee          last on purpose. He is outside the story rather than
+     *                     beneath it, and he is the reason there is one.
+     *
+     * `aunt-may` and not `may-parker`: I guessed the id and the guard above
+     * caught it, which is the whole reason that guard exists.
+     */
+    ranked: [
+      "christine-palmer",
+      "sharon-davis",
+      "miss-minutes",
+      "darcy-lewis",
+      "harley-keener",
+      "michelle-jones",
+      "aunt-may",
+      "morgan-stark",
+      "ben-parker",
+      "trevor-slattery",
+      "lylla",
+      "teefs",
+      "floor",
+      "stan-lee",
+    ],
     match: () => true,
   },
 ];
