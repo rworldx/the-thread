@@ -13277,9 +13277,30 @@ const spiderRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Never misses a throw", ar: "لا تخطئ رميته" },
-      { en: "Trick boomerangs for everything", ar: "بوميرانغات لكل غرض" },
-      { en: "Talks his way out", ar: "يخرج بالكلام" },
+      {
+        en: "Never misses a throw",
+        ar: "لا يخطئ رمية قط",
+      },
+      {
+        en: "Explosive, razor and gas boomerangs",
+        ar: "بوميرانغات متفجرة وحادة وغازية",
+      },
+      {
+        en: "They come back to his hand",
+        ar: "تعود إلى يده",
+      },
+      {
+        en: "Throws them round corners",
+        ar: "يرميها من خلف الزوايا",
+      },
+      {
+        en: "An athlete before he was a criminal",
+        ar: "كان رياضيًا قبل أن يصير مجرمًا",
+      },
+      {
+        en: "Talks his way out of the rest",
+        ar: "ويتكلم ليخرج من الباقي",
+      },
     ],
     origin: {
       en: "A washed-out pitcher who turned a perfect throwing arm into a criminal career, and survives mostly by being more useful alive than dead to whoever he has just betrayed.",
@@ -18291,9 +18312,30 @@ const bugleAndRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "A police captain first", ar: "نقيبة شرطة قبل كل شيء" },
-      { en: "Works cases with Spider-Man", ar: "تعمل القضايا مع سبايدرمان" },
-      { en: "Took the Wraith mask up", ar: "حملت قناع الشبح" },
+      {
+        en: "A police captain first",
+        ar: "نقيبة شرطة أولًا",
+      },
+      {
+        en: "A marksman, and trained to fight",
+        ar: "رامية ماهرة، ومدربة على القتال",
+      },
+      {
+        en: "Took the Wraith mask up",
+        ar: "ارتدت قناع الطيف",
+      },
+      {
+        en: "Body armour, and a stun weapon",
+        ar: "درع جسد، وسلاح صاعق",
+      },
+      {
+        en: "Knows every case file in the city",
+        ar: "تعرف كل ملف قضية في المدينة",
+      },
+      {
+        en: "Works with Spider-Man, off the books",
+        ar: "تعمل مع سبايدرمان، خارج السجلات",
+      },
     ],
     origin: {
       en: "A police captain who worked alongside Spider-Man until the system kept failing the cases she brought it, then put on a mask herself to do what the badge would not let her.",
@@ -19800,9 +19842,30 @@ const minorRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "A themed gang and gadgets", ar: "عصابة وعتاد على الثيمة" },
-      { en: "Rocket-powered hutch", ar: "مركبة أرنبية صاروخية" },
-      { en: "Bored, wealthy and armed", ar: "مملّة وثرية ومسلّحة" },
+      {
+        en: "A themed gang and gadgets",
+        ar: "عصابة بطابع وأدوات",
+      },
+      {
+        en: "A rocket-powered hutch that flies",
+        ar: "قنّ يطير بدفع صاروخي",
+      },
+      {
+        en: "Guns hidden in the umbrella",
+        ar: "مسدسات مخبأة في المظلة",
+      },
+      {
+        en: "Explosive carrots, and she means it",
+        ar: "جزر متفجر، وهي جادة",
+      },
+      {
+        en: "Wealthy enough to build any of it",
+        ar: "ثرية بما يكفي لبناء أي منها",
+      },
+      {
+        en: "Bored, which is the dangerous part",
+        ar: "ملولة، وهذا هو الجزء الخطر",
+      },
     ],
     origin: {
       en: "A wealthy widow who took up costumed crime out of boredom and committed entirely to an Alice in Wonderland theme, which makes her ridiculous and does not make her harmless.",
@@ -19820,9 +19883,30 @@ const minorRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Streams her own crimes", ar: "تبثّ جرائمها مباشرة" },
-      { en: "A parkour athlete", ar: "رياضية باركور" },
-      { en: "Wants the audience, not the money", ar: "تريد الجمهور لا المال" },
+      {
+        en: "Streams her own crimes",
+        ar: "تبث جرائمها مباشرة",
+      },
+      {
+        en: "A parkour athlete, and a good one",
+        ar: "رياضية باركور، وبارعة",
+      },
+      {
+        en: "Acrobatics that lose any pursuit",
+        ar: "بهلوانيات تفلت من أي مطاردة",
+      },
+      {
+        en: "Free-runs a city faster than a car",
+        ar: "تعدو في مدينة أسرع من سيارة",
+      },
+      {
+        en: "Gadgets bought with the ad revenue",
+        ar: "أدوات اشترتها من عائد الإعلانات",
+      },
+      {
+        en: "Wants the audience, not the money",
+        ar: "تريد الجمهور، لا المال",
+      },
     ],
     origin: {
       en: "A parkour athlete who commits crimes purely to livestream them, and who is chasing viewers rather than profit. Getting caught on camera is the point.",
@@ -21568,9 +21652,30 @@ const spiderLast: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "A golden mask, always", ar: "قناع ذهبي دائمًا" },
-      { en: "Runs the Maggia", ar: "تدير المافيا" },
-      { en: "Her face was scarred", ar: "شُوّه وجهها" },
+      {
+        en: "A golden mask, always",
+        ar: "قناع ذهبي، دائمًا",
+      },
+      {
+        en: "A marksman, and trained to fight",
+        ar: "رامية ماهرة، ومدربة على القتال",
+      },
+      {
+        en: "Runs the Maggia, and its soldiers",
+        ar: "تدير المافيا وجنودها",
+      },
+      {
+        en: "Body armour under the gold",
+        ar: "درع جسد تحت الذهب",
+      },
+      {
+        en: "Doubles and impostors of herself",
+        ar: "بدائل ومنتحلات لشخصها",
+      },
+      {
+        en: "Her face was scarred",
+        ar: "وجهها تشوّه",
+      },
     ],
     origin: {
       en: "The daughter of a crime boss who took over his organisation after an accident scarred her face, and who has worn a golden mask ever since.",
