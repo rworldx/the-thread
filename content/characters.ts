@@ -9990,6 +9990,73 @@ const others: CharacterDraft[] = [
     ],
   },
   {
+    id: "sharon-davis",
+    nameEn: "Sharon Davis",
+    nameAr: "شارون ديفيس",
+    /**
+     * SHE HAS NO POWERS, and that is the record rather than a gap in it. It is
+     * also the whole of what happens to her: Agatha needed a fifth witch to
+     * open the Road, looked next door, saw a woman who gardened, and called
+     * that a Green Witch. Sharon walked the Witches' Road on a green thumb and
+     * the second trial killed her.
+     *
+     * Searching her name returns a wall of fan videos calling her a "nexus
+     * being" who "rewrites realities". That grew out of the Nexus
+     * antidepressant advert in WandaVision's seventh episode and none of it is
+     * canon. Writing it down would have been inventing a character.
+     *
+     * "Mrs. Hart" is the alias that matters -- it is how TMDB credits Debra Jo
+     * Rupp in WandaVision, and Sharon Davis is the name underneath the part
+     * Wanda cast her in. She spends Agatha All Along correcting people about
+     * it.
+     */
+    aliases: ["Sharon Davis", "Mrs. Hart"],
+    category: "supporting",
+    /* NO "MAGIC" AFFILIATION, though the coven is why she is on the Road.
+       Giving her one put her in TIER 6 at rank 254, among Wolverine's
+       neighbours, because that affiliation is a tier-6 gate -- the same gate
+       that has the Centivars closing tier 6 on a score of zero. She cannot do
+       any magic. That is the entire point of her. */
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      {
+        en: "Not a witch. Agatha needed a fifth",
+        ar: "ليست ساحرة، لكن أغاثا احتاجت خامسة",
+      },
+      {
+        en: "A green thumb, taken for a Green Witch",
+        ar: "يد تنبت الزرع، حُسبت ساحرة خضراء",
+      },
+      {
+        en: "Walked the Witches' Road on that alone",
+        ar: "سلكت طريق الساحرات بذلك وحده",
+      },
+      {
+        en: "Surprisingly handy in the first trial",
+        ar: "أبلت في المحنة الأولى بلاءً مفاجئًا",
+      },
+      {
+        en: "The poison in the second one killed her",
+        ar: "سمّ المحنة الثانية قتلها",
+      },
+      {
+        en: "Her name is cut into the Road's floor",
+        ar: "اسمها محفور في أرض الطريق",
+      },
+    ],
+    origin: {
+      en: "A Westview neighbour, written into Wanda's sitcom as Mrs. Hart and made to laugh on cue while she choked. Years later Agatha knocked, needing a fifth witch, decided a woman who kept a garden was close enough, and took her onto the Witches' Road. She was the only one of the five with nothing to defend herself with.",
+      ar: "جارة من ويستفيو، كُتبت في مسلسل واندا بدور السيدة هارت وأُجبرت على الضحك عند الإشارة وهي تختنق. وبعد سنوات طرقت أغاثا بابها تبحث عن ساحرة خامسة، فرأت أن امرأة تعتني بحديقة تكفي، وأخذتها إلى طريق الساحرات. كانت الوحيدة بين الخمس بلا ما تدافع به عن نفسها.",
+    },
+    related: [
+      { id: "agatha-harkness", kind: "ally" },
+      { id: "scarlet-witch", kind: "enemy" },
+      { id: "wiccan", kind: "ally" },
+    ],
+  },
+  {
     id: "ironheart",
     nameEn: "Ironheart",
     nameAr: "آيرون هارت",

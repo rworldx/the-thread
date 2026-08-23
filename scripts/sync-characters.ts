@@ -64,6 +64,8 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      The Original Sin #8 textless cover is the Watcher council itself. */
   "captain-marvel-maria":
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/27/Maria_Rambeau_Infobox.jpg/revision/latest?cb=20231025002315",
+  "sharon-davis":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d3/Sharon_Davis_Infobox.jpg/revision/latest?cb=20240913184259",
   "the-watchers":
     "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Watchers_from_Original_Sin_Vol_1_8_Textless_cover_001.jpg/revision/latest?cb=20170905063428",
   /* PINNED BECAUSE THE LOOKUP DRIFTED. Speed's portrait had been the MCU
