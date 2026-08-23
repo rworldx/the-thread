@@ -885,7 +885,15 @@ const TIERS: Tier[] = [
        "Uplifted raccoon" comes back, and it is Rocket alone: he is
        cybernetically rebuilt and fights for a living, which is not true of the
        otter and the walrus that lost the grant with him. */
-    ranked: ["supreme-intelligence", "mainframe"],
+    /* STAKAR OGORD IS STARHAWK, which nothing in his record could reach: his
+       species reads `Human`, so every rule dropped him into tier 8 with the
+       people who have no powers, and he sat 631st -- one place below HOWARD
+       STARK, an engineer, and below four civilians whose records I had just
+       rewritten. He projects light as force, flies, survives open space and
+       remembers every cycle of his own rebirth. Named, the way Beta Ray Bill
+       and Gladiator are named a few tiers up, and for the same reason: a
+       species of one that no rule will ever find. */
+    ranked: ["supreme-intelligence", "mainframe", "stakar-ogord"],
     match: (c) =>
       /* COSMO IS NOT A HUMAN WHO TURNS UP ANYWAY. `Uplifted animal` lost its
          grant because it was carrying Lylla, Teefs and Floor, whose records

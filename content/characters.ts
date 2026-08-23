@@ -11521,10 +11521,32 @@ const knowhere: CharacterDraft[] = [
     affiliation: [],
     universe: ["mcu"],
     species: "Human",
+    /* HE IS STARHAWK, and the record was three lines of management -- "Leads the Ravager clans / Holds the code / Exiled his best captain" -- with no power on it at all. He scored 6. */
     powers: [
-      { en: "Leads the Ravager clans", ar: "يقود عشائر الرافيجرز" },
-      { en: "Holds the code", ar: "يحمل القانون" },
-      { en: "Exiled his best captain", ar: "نفى أفضل قادته" },
+      {
+        en: "Starhawk: he projects light as force",
+        ar: "ستارهوك: يقذف الضوء قوةً",
+      },
+      {
+        en: "Flies, and survives open space",
+        ar: "يطير، وينجو في الفضاء المفتوح",
+      },
+      {
+        en: "Precognition. He is the one who knows",
+        ar: "استشراف، فهو الذي يعرف",
+      },
+      {
+        en: "Reborn each cycle, remembering all of it",
+        ar: "يولد كل دورة، ويتذكر كل شيء",
+      },
+      {
+        en: "Strength and durability past a man's",
+        ar: "قوة وصلابة تفوقان البشر",
+      },
+      {
+        en: "Leads a hundred Ravager clans",
+        ar: "يقود مئة عشيرة رافيجر",
+      },
     ],
     origin: {
       en: "The Ravager captain who threw Yondu out for breaking the one rule they all agreed on, and who spent decades refusing to say his name. He gets the old crew back together.",
@@ -11918,9 +11940,30 @@ const smallScreen: CharacterDraft[] = [
     universe: ["marvel-tv"],
     species: "Human",
     powers: [
-      { en: "Bonded to a dinosaur", ar: "مرتبطة بديناصور" },
-      { en: "Reads everything", ar: "تقرأ كل شيء" },
-      { en: "Argues on principle", ar: "تجادل مبدئيًا" },
+      {
+        en: "Telepathically bonded to a dinosaur",
+        ar: "مرتبطة ذهنيًا بديناصور",
+      },
+      {
+        en: "Old Lace obeys what she feels",
+        ar: "أولد لايس تطيع ما تشعر به",
+      },
+      {
+        en: "A genetically engineered deinonychus",
+        ar: "ديناصور معدّل وراثيًا",
+      },
+      {
+        en: "She feels its pain, and it feels hers",
+        ar: "تشعر بألمه، ويشعر بألمها",
+      },
+      {
+        en: "Reads everything, and remembers it",
+        ar: "تقرأ كل شيء، وتتذكره",
+      },
+      {
+        en: "Argues on principle, and usually wins",
+        ar: "تجادل لأجل المبدأ، وتفوز غالبًا",
+      },
     ],
     origin: {
       en: "The one who names the problem out loud while everyone else is still deciding whether to. Her parents built her a genetically engineered dinosaur that answers to her feelings.",
@@ -11938,9 +11981,30 @@ const smallScreen: CharacterDraft[] = [
     universe: ["marvel-tv"],
     species: "Human",
     powers: [
-      { en: "Fistigons", ar: "قفازات نارية" },
-      { en: "Better with machines", ar: "أفضل مع الآلات" },
-      { en: "Underestimated on purpose", ar: "يُستهان به عمدًا" },
+      {
+        en: "Fistigons: gauntlets that throw fire",
+        ar: "فيستيغونز: قفازات تقذف النار",
+      },
+      {
+        en: "X-ray goggles he built himself",
+        ar: "نظارات أشعة سينية صنعها بنفسه",
+      },
+      {
+        en: "Rebuilt the gauntlets stronger each time",
+        ar: "أعاد بناء القفازات أقوى كل مرة",
+      },
+      {
+        en: "Better with machines than with people",
+        ar: "أفضل مع الآلات منه مع الناس",
+      },
+      {
+        en: "An athlete before he was an engineer",
+        ar: "رياضي قبل أن يكون مهندسًا",
+      },
+      {
+        en: "Underestimated on purpose",
+        ar: "يُستهان به عن عمد",
+      },
     ],
     origin: {
       en: "The athlete everyone reads as the stupid one, including his father, who built the flame gauntlets Chase steals and then works out how to improve.",
@@ -12567,10 +12631,32 @@ const antagonists: CharacterDraft[] = [
     affiliation: [],
     universe: ["mcu"],
     species: "Human",
+    /* THE SUIT GOT FOUR WORDS. "A suit twice the size / Runs the company / Bought the war both ways" -- two of three bullets about business, for a powered armour that fought Iron Man to a standstill. He scored 8, below four civilians. */
     powers: [
-      { en: "A suit twice the size", ar: "بذلة بضعف الحجم" },
-      { en: "Runs the company", ar: "يدير الشركة" },
-      { en: "Bought the war both ways", ar: "اشترى الحرب من طرفيها" },
+      {
+        en: "Powered armour twice Stark's size",
+        ar: "درع مؤلي بضعف حجم بذلة ستارك",
+      },
+      {
+        en: "Strength enough to lift a car overhead",
+        ar: "قوة تكفي لرفع سيارة فوق الرأس",
+      },
+      {
+        en: "Repulsors, rockets and a flamethrower",
+        ar: "نوابض دافعة وصواريخ وقاذف لهب",
+      },
+      {
+        en: "Armour that shrugs off what hits it",
+        ar: "درع يتجاهل ما يصيبه",
+      },
+      {
+        en: "Built from Stark's designs, with no limits",
+        ar: "بُني على تصاميم ستارك، بلا قيود",
+      },
+      {
+        en: "Runs the company, and sold to both sides",
+        ar: "يدير الشركة، وباع للطرفين",
+      },
     ],
     origin: {
       en: "Howard Stark's old partner, who ran the company while Tony grew up and never expected to hand it back. He builds a larger version of the suit out of the parts of the one that got away.",
@@ -12588,9 +12674,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Arc-powered whips", ar: "سياط تعمل بمفاعل قوسي" },
-      { en: "Builds from scrap", ar: "يبني من الخردة" },
-      { en: "A grudge two generations old", ar: "ضغينة عمرها جيلان" },
+      {
+        en: "Arc reactor whips that cut a car in half",
+        ar: "سياط مفاعل قوسي شطرت سيارة",
+      },
+      {
+        en: "Plasma whips that go through armour",
+        ar: "سياط بلازما تخترق الدروع",
+      },
+      {
+        en: "Built a working reactor from scrap",
+        ar: "بنى مفاعلًا عاملًا من خردة",
+      },
+      {
+        en: "Powered armour in the second suit",
+        ar: "درع مؤلي في البذلة الثانية",
+      },
+      {
+        en: "A physicist, and his father's equal",
+        ar: "فيزيائي، وندّ لأبيه",
+      },
+      {
+        en: "Took control of Hammer's drones",
+        ar: "سيطر على طائرات هامر",
+      },
     ],
     origin: {
       en: "The son of the physicist who co-designed the arc reactor and was deported for it. He builds the same technology in a Moscow flat and takes it to a racetrack in Monaco.",
@@ -19302,9 +19409,30 @@ const bugleAndRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "A powered bear suit", ar: "بدلة دبّ مدعّمة" },
-      { en: "Was a wrestler", ar: "كان مصارعًا" },
-      { en: "Blamed Jameson for the end of it", ar: "حمّل جيمسون وزر نهايتها" },
+      {
+        en: "A powered bear suit, built for him",
+        ar: "بذلة دب مؤلية، صُنعت له",
+      },
+      {
+        en: "Strength enough to trade with Spider-Man",
+        ar: "قوة تكفي لمبادلة سبايدرمان",
+      },
+      {
+        en: "Claws on the gauntlets",
+        ar: "مخالب على القفازات",
+      },
+      {
+        en: "Durable under the fur",
+        ar: "صلب تحت الفراء",
+      },
+      {
+        en: "Was a wrestler, and still fights like one",
+        ar: "كان مصارعًا، وما زال يقاتل كواحد",
+      },
+      {
+        en: "Blamed Jameson for the end of it",
+        ar: "ألقى اللوم على جيمسون في نهايته",
+      },
     ],
     origin: {
       en: "A wrestler whose career was ended by a Daily Bugle story, who put on a powered bear suit to do something about it and has been drifting between crews ever since.",
@@ -20733,9 +20861,30 @@ const minorRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Drives an enormous wheel", ar: "يقود عجلة هائلة" },
-      { en: "Guns mounted on it", ar: "مدافع مثبتة عليها" },
-      { en: "Ruined himself building it", ar: "أفلس وهو يبنيها" },
+      {
+        en: "Drives an enormous armoured wheel",
+        ar: "يقود عجلة مدرعة ضخمة",
+      },
+      {
+        en: "Guns mounted all the way around it",
+        ar: "مدافع مثبتة حولها كلها",
+      },
+      {
+        en: "Ten feet across, and it crushes cars",
+        ar: "بعرض عشرة أقدام، وتسحق السيارات",
+      },
+      {
+        en: "Faster than it has any right to be",
+        ar: "أسرع مما يحق لها",
+      },
+      {
+        en: "Built it himself, and it ruined him",
+        ar: "بناها بنفسه، فأفلسته",
+      },
+      {
+        en: "Nearly impossible to stop head-on",
+        ar: "يكاد يستحيل إيقافها وجهًا لوجه",
+      },
     ],
     origin: {
       en: "An embezzler who spent what was left of his money on an armed vehicle shaped like a giant wheel, which is exactly as difficult to steer as it sounds.",
@@ -22331,9 +22480,30 @@ const spiderLast: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Leaps enormous distances", ar: "يقفز مسافات هائلة" },
-      { en: "Trained with real kangaroos", ar: "تدرّب مع كناغر حقيقية" },
-      { en: "Took it entirely seriously", ar: "وأخذ الأمر بجدّية تامة" },
+      {
+        en: "Leaps enormous distances",
+        ar: "يقفز مسافات هائلة",
+      },
+      {
+        en: "Legs strengthened past a man's",
+        ar: "ساقان أقوى من ساقي رجل",
+      },
+      {
+        en: "Kicks hard enough to break a wall",
+        ar: "يركل بما يكفي لكسر جدار",
+      },
+      {
+        en: "A serum in the second version of him",
+        ar: "مصل في نسخته الثانية",
+      },
+      {
+        en: "Trained with real kangaroos",
+        ar: "تدرب مع كناغر حقيقية",
+      },
+      {
+        en: "Took it entirely seriously",
+        ar: "أخذ الأمر بجدية تامة",
+      },
     ],
     origin: {
       en: "An Australian boxer who trained alongside kangaroos until he could leap like one, and who committed to the theme with a sincerity nobody asked for.",

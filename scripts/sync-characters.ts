@@ -433,8 +433,14 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b2/Silvio_Manfredi_%28Earth-616%29_from_Silk_Vol_3_3_001.jpg/revision/latest?cb=20250622044037",
   beetle:
     "https://static.wikia.nocookie.net/marveldatabase/images/0/07/Abner_Jenkins_%28Earth-616%29_from_Thunderbolts_Vol_4_4_001.png/revision/latest?cb=20160901025546",
+  /* NOT the Venom cover. The wiki's own page image for Frederick Myers
+     (Earth-616) is `Web_of_Venom_Vol_1_1_Virgin_Variant.jpg`, a Venom cover
+     with no Boomerang anywhere on it, and the bulk pin FROZE it -- because
+     the check I ran compared `matchedAs` against the NAME and never looked at
+     the picture. Rashid looked at the picture. This is his Official Handbook
+     entry: purple and blue, boomerang chevrons, winged headpiece. */
   boomerang:
-    "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Web_of_Venom_Vol_1_1_Virgin_Variant.jpg/revision/latest?cb=20260420022347",
+    "https://static.wikia.nocookie.net/marveldatabase/images/c/c1/Frederick_Myers_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_A_to_Z_Update_Vol_1_5_0001.jpg/revision/latest?cb=20160821032812",
   vermin:
     "https://static.wikia.nocookie.net/marveldatabase/images/3/32/Edward_Whelan_%28Earth-616%29_from_Spider-Gwen_The_Ghost-Spider_Vol_1_5_001.jpg/revision/latest?cb=20240913225111",
   demogoblin:
