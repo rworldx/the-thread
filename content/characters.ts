@@ -3941,7 +3941,6 @@ const supporting: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "beta",
-    /* ONE BULLET, and it was "Pyrotechnics". */
     powers: [
       {
         en: "Fireworks that go off like grenades",
@@ -3969,13 +3968,10 @@ const supporting: CharacterDraft[] = [
       },
     ],
     origin: {
-      en: "The first mutant, worshipped as a god in Egypt, who has spent five thousand years collecting four followers at a time.",
-      ar: "أول المتحوّلين، عُبد إلهًا في مصر، وأمضى خمسة آلاف عام يجمع أربعة أتباع في كل مرة.",
+      en: "A mall kid from California who throws fireworks out of her hands and was one of the first students of the modern school.",
+      ar: "فتاة من مراكز التسوق في كاليفورنيا تقذف الألعاب النارية من يديها، وكانت من أوائل طلاب المدرسة الحديثة.",
     },
-    related: [
-      { id: "professor-x", kind: "enemy" },
-      { id: "magneto", kind: "enemy" },
-    ],
+    related: [{ id: "storm", kind: "ally" }],
   },
   {
     id: "apocalypse",
@@ -4552,7 +4548,6 @@ const supporting: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "beta",
-    /* ONE BULLET for a woman who kills by teleporting half of you elsewhere. */
     powers: [
       {
         en: "Opens portals across any distance",
@@ -4580,13 +4575,10 @@ const supporting: CharacterDraft[] = [
       },
     ],
     origin: {
-      en: "A teleporter who works for whoever is paying, and who is on the wrong side of most of the rooms he appears in.",
-      ar: "منتقِل آنيًا يعمل لمن يدفع، ويقف في الجانب الخطأ من معظم الغرف التي يظهر فيها.",
+      en: "She opens doorways between places, which in a war of attrition is the difference between a last stand and a retreat.",
+      ar: "تفتح أبوابًا بين الأماكن، وفي حرب استنزاف هذا هو الفرق بين موقف أخير وانسحاب.",
     },
-    related: [
-      { id: "mystique", kind: "ally" },
-      { id: "nightcrawler", kind: "family" },
-    ],
+    related: [{ id: "professor-x", kind: "ally" }],
   },
   {
     id: "azazel",
@@ -4716,10 +4708,10 @@ const supporting: CharacterDraft[] = [
       },
     ],
     origin: {
-      en: "A man who gets stronger the harder you hit him, which makes him very hard to argue with and very easy to underestimate once.",
-      ar: "رجل يزداد قوة كلما اشتدّ ضربك له، فيصعب جدًا جداله، ويسهل الاستهانة به مرة واحدة.",
+      en: "She has her father's power and has spent her life refusing to be the argument he wants to use it for.",
+      ar: "لديها قدرة أبيها، وأمضت حياتها ترفض أن تكون الحجة التي يريد استخدامها من أجلها.",
     },
-    related: [{ id: "magneto", kind: "enemy" }],
+    related: [{ id: "magneto", kind: "family" }],
   },
   {
     id: "sebastian-shaw",
