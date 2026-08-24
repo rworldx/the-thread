@@ -72,7 +72,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      wiki's `Tommy_Maximoff.png` since this repo started. That file was
      DELETED upstream and the page image replaced with an infobox still of a
      man in his thirties, so the next `sync:characters` swapped it in and I
-     shipped it without looking. Rashid caught it.
+     shipped it without looking. It was caught on the site.
 
      Nothing was hand-picked here and nothing was wrong with the sync: an
      un-pinned character takes whatever the wiki currently shows, and wikis
@@ -80,7 +80,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      the comics Speed, white hair and green goggles, and pinned. */
   speed:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b7/Thomas_Shepherd_%28Earth-616%29_from_Scarlet_Witch_%26_Quicksilver_Vol_1_3_Cover_001.jpg/revision/latest?cb=20240504163646",
-  /* Wendell Vaughn with the Quantum Bands lit, picked by Rashid. Hosted on
+  /* Wendell Vaughn with the Quantum Bands lit, hand-picked. Hosted on
      the fanon wiki but the art is the standard black-and-gold design, and the
      host is the fandom CDN that most of this list already uses. */
   quasar:
@@ -113,7 +113,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   "infinity-ultron":
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e7/Infinity_Ultron_-_Age_of_Ultron_Infobox.png/revision/latest?cb=20231021045211",
   /* THE ETERNALS BACK ON FILM, reversing my own change from two days ago.
-     I asked which medium Rashid wanted and he picked comic art; seeing it on
+     Comic art was chosen first; seeing it on
      the page he wanted the film after all, which is the answer that only
      arrives by looking at it.
 
@@ -126,7 +126,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   ajak: "https://static.wikia.nocookie.net/disney/images/3/30/Ajak_-_Profile.jpg/revision/latest?cb=20211028201306",
   makkari:
     "https://static.wikia.nocookie.net/disney/images/1/10/Makkari_-_Profile.webp/revision/latest?cb=20220611235508",
-  /* THE OTHER FIVE ETERNALS, off the film's character posters, which Rashid
+  /* THE OTHER FIVE ETERNALS, off the film's character posters, which were
      did not like. The posters were fine images and the wrong kind: they read
      as marketing beside Ikaris's clean portrait.
 
@@ -144,7 +144,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/p__/images/8/80/Phastos-MCU.jpg/revision/latest?cb=20220706020748&path-prefix=protagonist",
   sprite:
     "https://static.wikia.nocookie.net/p__/images/2/24/Sprite-MCU.jpg/revision/latest?cb=20220501070220&path-prefix=protagonist",
-  /* Thena was on a "First Look" promo and was in neither of Rashid's lists,
+  /* Thena was on a "First Look" promo and was in neither list,
      but a matching Profile exists and she is the last of the ten still off
      the set. */
   thena:
@@ -156,7 +156,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      These are the four Alex Ross Timeless variants from Fantastic Four Vol 6
      #24: one issue, one artist, four portraits that belong together.
 
-     Franklin is deliberately not here. Rashid says his is fine. */
+     Franklin is deliberately not here. His is fine. */
   "mister-fantastic":
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b5/Fantastic_Four_Vol_6_24_Mister_Fantastic_Timeless_Variant.jpg/revision/latest?cb=20200929194348",
   "invisible-woman":
@@ -437,7 +437,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
      (Earth-616) is `Web_of_Venom_Vol_1_1_Virgin_Variant.jpg`, a Venom cover
      with no Boomerang anywhere on it, and the bulk pin FROZE it -- because
      the check I ran compared `matchedAs` against the NAME and never looked at
-     the picture. Rashid looked at the picture. This is his Official Handbook
+     the picture. Someone did. This is his Official Handbook
      entry: purple and blue, boomerang chevrons, winged headpiece. */
   boomerang:
     "https://static.wikia.nocookie.net/marveldatabase/images/c/c1/Frederick_Myers_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_A_to_Z_Update_Vol_1_5_0001.jpg/revision/latest?cb=20160821032812",
@@ -585,7 +585,11 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/8/85/Cyttorak_%28Earth-616%29_and_Cain_Marko_%28Earth-616%29_from_Juggernaut_Vol_3_4_001.jpg/revision/latest?cb=20210519150308",
   umar: "https://static.wikia.nocookie.net/marveldatabase/images/8/87/Strange_Vol_3_4_Lubera_Variant_Textless.jpg/revision/latest?cb=20220727113619",
   zom: "https://static.wikia.nocookie.net/marveldatabase/images/5/5b/Zom_%28Earth-616%29_from_Strange_Tales_Vol_1_156_031.jpg/revision/latest?cb=20211215050707",
-  gaea: "https://static.wikia.nocookie.net/marveldatabase/images/c/c4/Gaea_%28Earth-616%29_from_Immortal_Thor_Vol_1_8_001.png/revision/latest?cb=20240313174931",
+  /* Supplied. It is the Earth-807128 Gaea out of Fantastic Force rather than
+     the Immortal Thor plate that was here, and it is the better portrait:
+     the face is clear and it is shaped for the grid. Same Elder Goddess,
+     drawn in another reality, which the corpus already accepts elsewhere. */
+  gaea: "https://static.wikia.nocookie.net/marveldatabase/images/f/f1/Gaea_%28Earth-807128%29_from_Fantastic_Force_Vol_2_3_0001.jpg/revision/latest?cb=20101215121333",
   set: "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Set_%28Earth-616%29_from_Savage_Avengers_Vol_2_4_0001.jpeg/revision/latest?cb=20221110064408",
   "shuma-gorath":
     "https://static.wikia.nocookie.net/marveldatabase/images/2/2c/Invaders_Now%21_Vol_1_4_Textless.jpg/revision/latest?cb=20160517200603",
@@ -1227,7 +1231,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
    * That is not hypothetical. Speed's portrait drifted exactly this way:
    * upstream DELETED the file, the wiki replaced the page image with a photo
    * of a man in his thirties, and the next sync swapped it in silently. It
-   * took Rashid noticing the face was wrong to catch it, eleven syncs later.
+   * took someone noticing the face was wrong to catch it, eleven syncs later.
    *
    * Every URL here is the one the site is already serving, so this freezes
    * the current state rather than changing it -- and every one was checked

@@ -459,7 +459,7 @@ const TIERS: Tier[] = [
        * EVERY BRICK IN THIS TIER RELIES ON." Then he went below the Hulk, Red
        * Hulk and the Maestro, whose whole case is durability.
        *
-       * What he did, since Rashid asked twice: he took the throne of Hell from
+       * What he did, since it was asked twice: he took the throne of Hell from
        * Mephisto, beat Satan, Blackheart and Null, and put a weakened GALACTUS
        * into a coma with the Stare. Zarathos unleashed is written as able to
        * burn the planet. He is not Cosmic Ghost Rider and does not need to be.
@@ -512,7 +512,7 @@ const TIERS: Tier[] = [
       /**
        * FOUR COME UP FROM TIER 6, which is the other half of the job and the
        * half I left undone. Gating the two empty Celestials out of tier 5 was
-       * only ever going to fix the bottom of the boundary; Rashid pointed out
+       * only ever going to fix the bottom of the boundary. It was pointed out
        * that the top of tier 6 was still stuck under it.
        *
        * Doctor Strange is the SORCERER SUPREME, nullifies another's power
@@ -529,7 +529,7 @@ const TIERS: Tier[] = [
       /**
        * THE STUDENT ABOVE THE TEACHER, reversing what I wrote an hour ago.
        * I had put the Ancient One over Strange because she trained him, and
-       * Rashid pointed out that this file already disagrees with itself on
+       * But this file already disagrees with itself on
        * that: Thor is ranked above ODIN in the peak list, and Loki, who
        * learned his magic from Frigga, becomes the God of Stories. Being
        * taught by someone is not a ceiling. Surpassing the teacher is the
@@ -605,7 +605,7 @@ const TIERS: Tier[] = [
          the note above the gloss is describing. Without it they fell through
          every tier to 8, "humans who turn up anyway", which is a worse error
          than the one the gate was fixing. */
-      /* AND THE SAME QUESTION AT THIS BOUNDARY. Rashid opened the 5/6 line
+      /* AND THE SAME QUESTION AT THIS BOUNDARY. The 5/6 line was opened
          and the comparison found one thing that cannot be defended under any
          reading: ZGREB THE ASPIRANT, whose record is "Aspires to the Host /
          Not yet fully risen" and scores ZERO, outranked DOCTOR STRANGE. The
@@ -617,7 +617,7 @@ const TIERS: Tier[] = [
          Scoring low is not the same as claiming nothing. */
       (c.species === "Celestial" && claimScore(c) > 0) ||
       /**
-       * AND THE TAIL TAKES THE SAME TEST, which is the half of Rashid's point
+       * AND THE TAIL TAKES THE SAME TEST, which is the half of the point
        * the promotions do not reach. Hoggoth scores 32 and Antiphon 74, and
        * they were sitting above a tier 6 head where Selene scores 209 and the
        * Maker 189. A species word saying "god" is not a power level, which is
@@ -743,7 +743,7 @@ const TIERS: Tier[] = [
          and fewer scruples — sat at 146, which is a gap in willingness rather
          than in capability, and a power ranking should not pay him for
          restraint. He stays behind Sue because she is the strongest of the
-         four, which is Rashid's call and the one everyone who reads the comics
+         four, which is the call everyone who reads the comics
          makes. */
       "mister-fantastic",
       "monica-rambeau",
@@ -786,7 +786,7 @@ const TIERS: Tier[] = [
     match: (c) =>
       /**
        * "SUPERHUMAN, AND BOUNDED" IS TIER 7's OWN GLOSS, and a healing factor
-       * that survives anything is not bounded. Rashid asked why Wolverine and
+       * that survives anything is not bounded. Asked why Wolverine and
        * Deadpool sit at 282 and 289: the per-class cap costs Wolverine one of
        * his six bullets, but the real answer was the tier, and the tier was
        * reading `mutantClass` -- beta, so tier 7, whatever the record says.
@@ -1016,7 +1016,7 @@ const TIERS: Tier[] = [
      * Fury and Hill fall to the bottom. Both are formidable and neither is a
      * frontline fighter; a director's job is to send other people.
      *
-     * The Red Guardian stays directly behind Yelena, which is where Rashid put
+     * The Red Guardian stays directly behind Yelena, which is where he was put
      * him — see the note on his own line below.
      */
     ranked: [
@@ -1038,7 +1038,7 @@ const TIERS: Tier[] = [
        *
        * He carries the Soviet serum, which is why every rule put him in tier 7
        * at 334 — third on the Thunderbolts chip, ahead of Ghost, Taskmaster
-       * and Yelena. Rashid's call, and it is a reading of the character rather
+       * and Yelena. A deliberate call, and a reading of the character rather
        * than of the file: he is out of shape, twenty years past it, tells the
        * story differently every time and loses most of what he starts. The
        * serum is on the record and the record is right; what he does with it
@@ -1304,7 +1304,7 @@ export const PEAK_HEAD: string[] = [
   "galactus",
   "knull",
   "thor",
-  /* Hulk above Odin, per Rashid. Ranked as the Breaker of Worlds — see the
+  /* Hulk above Odin, ranked as the Breaker of Worlds — see the
      note on One-Below-All in the comment above PEAK_HEAD. */
   "hulk",
   "gorr",
@@ -1845,7 +1845,7 @@ export function claimScore(c: Character): number {
  */
 export const OUTRANKS: string[][] = [
   /**
-   * THE BLACK ORDER, and Rashid is right that Supergiant leads it. She is an
+   * THE BLACK ORDER, and Supergiant leads it. She is an
    * omnipath and a mental parasite who possesses any mind she reaches, devours
    * the intellect she takes, and turns the strongest minds on their own -- and
    * the sources add that she is virtually immune to damage and phases through

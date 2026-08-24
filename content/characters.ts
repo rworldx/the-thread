@@ -173,7 +173,7 @@ const avengers: CharacterDraft[] = [
     species: "Enhanced human",
     powers: [
       /* THREE BULLETS FOR THE HULK, one of which was "Leading physicist",
-         which is why Red Hulk was outscoring him two to one. Rashid asked why
+         which is why Red Hulk was outscoring him two to one. As to why
          Red Hulk sits beside him: the answer was that Banner's record barely
          said anything, not that the two are related. */
       { en: "Strength with no ceiling on it", ar: "قوة بلا سقف" },
@@ -604,7 +604,7 @@ const avengers: CharacterDraft[] = [
     species: "Human",
     magicSchools: ["eldritch"],
     powers: [
-      /* TWENTY-FOUR OF THE THIRTY-TWO in Rashid's fifth dossier still had
+      /* TWENTY-FOUR OF THE THIRTY-TWO in the fifth dossier still had
          four bullets or fewer, including the Sorcerer Supreme himself. All of
          these sit in tier 6's ranked head, so the records were never load-
          bearing for their rank — which is exactly why they went unnoticed. */
@@ -2851,7 +2851,7 @@ const fantasticFour: CharacterDraft[] = [
     magicSchools: ["eldritch"],
     powers: [
       /* Three bullets for Marvel's greatest villain, carried entirely by his
-         slot in the tier head. Rashid named him as one of the smartest, and
+         slot in the tier head. He is named among the smartest, and
          the record never said it. */
       {
         en: "Sorcery and science, both mastered",
@@ -3006,7 +3006,7 @@ const villains: CharacterDraft[] = [
     species: "Eternal",
     powers: [
       /* THREE BULLETS FOR THE MAD TITAN, and one of them was "Strategist".
-         The species line is the answer to Rashid's second question: he IS an
+         The species line is the answer to the second question: he IS an
          Eternal of Titan. He looks nothing like Ikaris because he carries the
          Deviant gene, which is a fact about his face and not his species. */
       {
@@ -5928,7 +5928,7 @@ const ensemble: CharacterDraft[] = [
        got a name?" and Thor answers "the Revengers" — and the team is the four
        of them: Thor, Hulk, Loki and Valkyrie. Korg and Miek lead the gladiator
        revolt and leave on the same ship, which is not the same as being on the
-       team. Removed after Rashid caught it. */
+       team. Removed once it was caught. */
     /* Not Asgard either, and for the same reason. Sakaaran, insectivorid, and
        on that ship because he was in the arena. */
     affiliation: [],
@@ -5981,7 +5981,7 @@ const ensemble: CharacterDraft[] = [
        got a name?" and Thor answers "the Revengers" — and the team is the four
        of them: Thor, Hulk, Loki and Valkyrie. Korg and Miek lead the gladiator
        revolt and leave on the same ship, which is not the same as being on the
-       team. Removed after Rashid caught it. */
+       team. Removed once it was caught. */
     /* NOT ASGARD. He is a Kronan from Sakaar who left on the same ship, and
        filing him here was my doing: he lost the Revengers and I gave him this
        rather than leave the field empty. An empty field was the honest answer.
@@ -6808,7 +6808,7 @@ const abstracts: CharacterDraft[] = [
     species: "Abstract entity",
     powers: [
       /* THIRTY-SEVEN OF THE TOP HUNDRED still had three bullets or fewer when
-         Rashid asked whether the dossiers had been used. They had been, for
+         The dossiers had been used, for
          sixty-four; these are the rest. */
       {
         en: "Nullifies all six Infinity Gems at once",
@@ -8384,7 +8384,7 @@ const thunderbolts: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      /* THE SUPERMAN-SHAPED BAND, which Rashid grouped correctly: Sentry,
+      /* THE SUPERMAN-SHAPED BAND, correctly grouped: Sentry,
          Hyperion, Gladiator, Beta Ray Bill, Blue Marvel, Quasar, Nova, Captain
          Marvel and Ikaris are one silhouette — fly, hit, shrug it off, project
          energy. Six of the nine still had three or four bullets, which is why
@@ -10300,7 +10300,7 @@ const others: CharacterDraft[] = [
     powers: [
       /* Six is the cap, so the transformation and its limit share ONE line
          instead of taking two — which buys the durability and the night
-         vision Rashid's list names and the first rewrite had no room for. */
+         vision the list names and the first rewrite had no room for. */
       { en: "Superhuman strength and speed", ar: "قوة وسرعة خارقتان" },
       { en: "Claws that cut most things", ar: "مخالب تقطع أغلب الأشياء" },
       { en: "Heals from almost anything", ar: "يشفى من أي شيء تقريبًا" },
@@ -16195,7 +16195,7 @@ const inheritors: CharacterDraft[] = [
       /* THE EIGHT INHERITORS HAD THE SAME THREE BULLETS, word for word:
          "Eats a spider's life-force / Heals almost anything / Crosses
          realities to hunt". Eight characters, one record, so they sorted into
-         a block by construction. Rashid's point about the Eternals applies
+         a block by construction. The point about the Eternals applies
          harder here -- being the same kind is not a reason to be adjacent,
          and these eight are a father, a scientist, a huntsman, a brute, twins
          and an outcast. */
@@ -17375,7 +17375,7 @@ const mystics: CharacterDraft[] = [
   {
     /* Credited in Doctor Strange in the Multiverse of Madness — the woman who
        walks out of a portal in the mid-credits scene and tells him he has
-       caused an incursion. Missing entirely until Rashid noticed. */
+       caused an incursion. Missing entirely until it was noticed. */
     id: "clea",
     nameEn: "Clea",
     nameAr: "كليا",
@@ -25473,7 +25473,7 @@ const collectives: CharacterDraft[] = [
      * from, and putting a picture of a dimension on a person is the same
      * mistake as putting an island on Wallop.
      *
-     * It has a picture now. Rashid supplied four candidate URLs; two were
+     * It has a picture now. Four candidate URLs were supplied; two were
      * plainly other things (the Fifth Cosmos is a universe, Cosmos of
      * Earth-829 is a different character), and the real one came from the
      * Fictional Battle Omniverse wiki, which files the character where Marvel

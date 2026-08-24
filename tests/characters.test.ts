@@ -579,7 +579,7 @@ describe("C. the character corpus", () => {
      * between drawn and photographic at random.
      *
      * BACK TO EMPTY. Kosmos was the one exception and is not any more:
-     * Rashid supplied the URL, and it came from a wiki that files the
+     * The URL supplied came from a wiki that files the
      * character where Marvel Database files only the dimension of the same
      * name. Every character in the corpus has real artwork again.
      */
