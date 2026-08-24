@@ -1033,8 +1033,13 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   clea: "https://static.wikia.nocookie.net/marveldatabase/images/5/5f/Sorcerer_Supreme_Vol_1_5_Fanyang_Variant_Textless.jpg/revision/latest?cb=20260427073207",
   /* Wakanda. Nakia is filed as Nakia Shauku. */
   zuri: "https://static.wikia.nocookie.net/marveldatabase/images/5/50/Zuri_%28Earth-616%29_from_Black_Panther_Vol_3_1_001.jpg/revision/latest?cb=20161122202136",
+  /* Supplied. Daniel Kaluuya on the Black Panther character poster: the
+     border tribe cloak and the beaded markings. Replaces a Fantastic Four
+     panel of the Earth-616 W'Kabi, who is a different man in a different
+     medium. Pinned at `scale-to-width-down/1200` on purpose -- the original
+     is 6341x9000, which is a print poster and not a portrait tile. */
   wkabi:
-    "https://static.wikia.nocookie.net/marveldatabase/images/0/09/W%27Kabi_%28Earth-616%29_from_Fantastic_Four_Vol_3_544_0001.jpg/revision/latest?cb=20191202031822",
+    "https://static.wikia.nocookie.net/marveldatabase/images/9/9c/Black_Panther_%28film%29_poster_013_Textless.jpg/revision/latest/scale-to-width-down/1200?cb=20180318193508",
   njobu:
     "https://static.wikia.nocookie.net/marveldatabase/images/6/62/N%27Jobu_%28Earth-199999%29_from_Black_Panther_%28film%29_001.png/revision/latest?cb=20190116201608",
   tchaka:
@@ -1630,8 +1635,14 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/638-storm.jpg",
   sunspot:
     "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/640-sunspot.jpg",
+  /* Supplied. The Earth-691 Guardians 3000 plate: the green head in the tank
+     with the tendrils, which is the image everyone pictures. The record is
+     `universe: ["mcu"]`, where the Intelligence wears a borrowed human face,
+     so this is the comics depiction of the same entity rather than the MCU
+     one -- the same call already made for Gaea, and recorded here so it is a
+     decision rather than a drift. */
   "supreme-intelligence":
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f2/Supreme_Intelligence_Infobox.png/revision/latest?cb=20240806135051",
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/26/Supreme_Intelligence_%28Earth-691%29_from_Guardians_3000_Vol_1_1_0001.png/revision/latest?cb=20141123081747",
   surtur:
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e7/Surtur_Profile.png/revision/latest?cb=20180208221832",
   "syd-barrett":

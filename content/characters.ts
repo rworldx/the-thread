@@ -1568,7 +1568,13 @@ const xmen: CharacterDraft[] = [
     nameAr: "ستورم",
     aliases: ["Storm", "Ororo Munroe"],
     category: "hero",
-    affiliation: ["X-Men"],
+    /* WAKANDAN BY MARRIAGE, NOT BY BIRTH, and the record had neither half of
+       it. She is Kenyan-raised and Harlem-born, and she was also QUEEN OF
+       WAKANDA -- she married T'Challa in Black Panther #18 and reigned until
+       the marriage was annulled during Avengers vs. X-Men. Six years of
+       publication spent ruling the country is a stronger tie to it than
+       several people already on this chip have. */
+    affiliation: ["X-Men", "Wakandans"],
     universe: ["fox"],
     species: "Mutant",
     mutantClass: "omega",
@@ -1593,7 +1599,7 @@ const xmen: CharacterDraft[] = [
       },
     ],
     origin: {
-      en: "Orphaned in Cairo and worshipped as a goddess in Kenya before she was old enough to argue about it. She can change the weather over a continent and is on Marvel's published Omega list.",
+      en: "Orphaned in Cairo and worshipped as a goddess in Kenya before she was old enough to argue about it. She can change the weather over a continent, is on Marvel's published Omega list, and was for six years the queen of Wakanda.",
       ar: "تيتّمت في القاهرة وعُبدت إلهةً في كينيا قبل أن تبلغ سنًّا تجادل فيها. تستطيع تغيير الطقس فوق قارة كاملة، واسمها في قائمة أوميغا التي نشرتها مارفل.",
     },
     related: [{ id: "professor-x", kind: "ally" }],
