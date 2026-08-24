@@ -9252,30 +9252,31 @@ const moreSpider: CharacterDraft[] = [
     universe: ["sony"],
     reality: "Earth-8311",
     species: "Uplifted animal",
+    /* HE WAS 186th, IN TIER 6, ABOVE EVERY OTHER SPIDER -- above Miguel O'Hara, Miles and Peter -- because the bullet I wrote said "effectively unkillable by normal means" and `unkillable` is the exact clause tier 6 admits on. It is the phrase Part 15 uses, and it does not mean what Wolverine's healing factor means. CARTOON PHYSICS IS A FACT ABOUT THE STORY, NOT ABOUT THE CHARACTER, which is the same distinction this file already draws when it says seeing is not doing. The record says that now. */
     powers: [
       {
         en: "The spider baseline, in a cartoon",
         ar: "خط الأساس العنكبوتي، في رسوم متحركة",
       },
       {
-        en: "Cartoon physics, and they are real",
-        ar: "فيزياء الكرتون، وهي حقيقية",
+        en: "Cartoon physics, and they work on him",
+        ar: "فيزياء الكرتون، وتنطبق عليه",
       },
       {
         en: "Pulls a mallet out of nowhere",
         ar: "يخرج مطرقة من العدم",
       },
       {
-        en: "Survives what should end anyone",
-        ar: "ينجو مما كان لينهي أي أحد",
+        en: "Walks away from an anvil, every time",
+        ar: "ينجو من سندان، في كل مرة",
       },
       {
-        en: "Bends reality for a joke",
-        ar: "يثني الواقع لأجل نكتة",
+        en: "The genre protects him, not his body",
+        ar: "النوع الأدبي يحميه، لا جسده",
       },
       {
-        en: "Effectively unkillable by normal means",
-        ar: "يكاد لا يُقتل بالوسائل العادية",
+        en: "A pig, and he web-swings anyway",
+        ar: "خنزير، ويتأرجح بالشبكة رغم ذلك",
       },
     ],
     origin: {

@@ -2045,6 +2045,11 @@ export const OUTRANKS: string[][] = [
     "bride-of-nine-spiders",
     "web-slinger",
     "spider-smasher",
+    /* HE WAS NEVER IN THIS GROUP, which is how he ended up 186th and above
+       every Spider in it. Baseline plus a genre that will not let him die --
+       useful, unquantifiable, and not a reason to outrank the people who can
+       actually hurt something. */
+    "spider-ham",
     "spider-punk",
     "anya-corazon",
     "spider-man-2211",
