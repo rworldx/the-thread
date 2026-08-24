@@ -1985,47 +1985,80 @@ export const OUTRANKS: string[][] = [
    * Madame Web is last of the tier: precognition is not a fight.
    */
   [
-    "miles-morales",
-    "spider-man",
-    /* BRAND NEW DAY SPLIT THE TRIO. This group's own note said the three
-       live-action Peters "sit together in the middle, since they are one
-       character performed three ways", and that stopped being true in July:
-       a secondary mutation gives this one organic webbing that never runs
-       out, radar-like senses that read a room before it moves, and strength
-       past his own old limits. He is measurably more than baseline now, so
-       he sits with the ones who are, and the other two stay where they were
-       as each other's equals. */
-    "spider-man-tom",
+    /**
+     * RE-ORDERED ON THE RECORDS, which is the half of the job I left undone.
+     * This order was written when most of the thirty-three had two or three
+     * bullets; Part 15 gave every one of them a full record, so the SCORES
+     * moved and the ORDER DID NOT -- which is exactly what an OUTRANKS group
+     * is for, and exactly the trap this file has hit before: a stated order
+     * does not notice that its evidence changed.
+     *
+     * What it looked like: SPIDER-REX, a tyrannosaur carrying the entire
+     * spider kit, scored 88 and sat 564th, below Spider-Punk on 6 and
+     * Spider-Man Noir on 14. MADAME WEB was LAST of the thirty-three on a
+     * record that now reads precognition, telepathy, astral projection and
+     * psychic surgery. Ten of them were still on three bullets and had to be
+     * written before anything could honestly be ordered.
+     *
+     * The axis is what each has BEYOND the baseline, which is the source's
+     * own framing: "nearly all share a spider baseline... only the
+     * distinctions are listed per entry." So the ones whose records say
+     * outright that they beat Peter lead -- Miguel O'Hara is "stronger and
+     * faster than the original", Silk is "faster and more agile than he is",
+     * Kaine is "stronger than the man he came from" -- then the ones carrying
+     * something he has not got, then the plain baselines, then the ones whose
+     * power is a device, and last the one the source calls dialed down.
+     */
     "spider-man-2099",
-    "spider-uk",
+    "miles-morales",
     "silk",
+    /* BRAND NEW DAY SPLIT THE TRIO, and that still holds. This group's own
+       note said the three live-action Peters "sit together in the middle,
+       since they are one character performed three ways", and that stopped
+       being true in July: a secondary mutation gives this one organic webbing
+       that never runs out, radar-like senses that read a room before it
+       moves, and strength past his own old limits. He is measurably more than
+       baseline, so he stays up here and the other two stay each other's
+       equals further down. */
+    "spider-man-tom",
+    "spider-man",
     "kaine",
-    "ben-reilly",
-    "spider-woman",
     "gwen-stacy",
+    /* A TYRANNOSAUR WITH A SPIDER-SENSE. Absurd, and the mass is real: the
+       whole kit at dinosaur scale, and he was ranked below a man with a
+       revolver. */
+    "spider-rex",
+    "spider-uk",
+    "spider-woman",
+    "ben-reilly",
+    "julia-carpenter",
+    /* NOT LAST ANY MORE. She has no spider-powers at all, which is why she
+       was thirty-third of thirty-three -- and precognition, telepathy and
+       astral projection outrank a great many people here whose distinction is
+       that they can climb a wall. */
+    "madame-web",
+    "mattie-franklin",
+    "charlotte-witter",
+    "spider-man-andrew",
+    "spider-man-tobey",
+    "mayday-parker",
+    "bride-of-nine-spiders",
+    "web-slinger",
+    "spider-smasher",
     "spider-punk",
     "anya-corazon",
-    "julia-carpenter",
-    "mattie-franklin",
-    "spider-man-tobey",
-    "spider-man-andrew",
-    "mayday-parker",
-    "spider-boy",
-    "spider-man-noir",
-    "pavitr-prabhakar",
     "spider-man-2211",
     "peni-parker",
-    "charlotte-witter",
-    "bride-of-nine-spiders",
-    "spider-smasher",
-    "web-slinger",
-    "spider-rex",
-    "spinstress",
     "spider-byte",
-    "old-man-spider",
+    "spinstress",
+    "pavitr-prabhakar",
+    "spider-boy",
     "web-weaver",
     "sun-spider",
-    "madame-web",
+    "spider-man-noir",
+    /* Last because the source says it plainly: "baseline dialed down by age,
+       backed by a lifetime of skill and experience". */
+    "old-man-spider",
   ],
   /* THE DEFENDERS, researched. Iron Fist first is the ranking ScreenRant's
      survey of the Netflix corner gives, and the reasoning holds: the Fist is

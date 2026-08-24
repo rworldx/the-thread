@@ -2080,9 +2080,30 @@ const spiderVerse: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human mutate",
     powers: [
-      { en: "Wall-crawling", ar: "التسلّق على الجدران" },
-      { en: "Spider-sense", ar: "حاسة العنكبوت" },
-      { en: "Drummer", ar: "عازفة طبول" },
+      {
+        en: "The spider baseline, in her own world",
+        ar: "خط الأساس العنكبوتي، في عالمها",
+      },
+      {
+        en: "Faster and more acrobatic than Peter",
+        ar: "أسرع وأرشق من بيتر بهلوانيًا",
+      },
+      {
+        en: "Web-shooters built into the hood",
+        ar: "قاذفات شبكية مدمجة في القلنسوة",
+      },
+      {
+        en: "A drummer's timing in a fight",
+        ar: "توقيت عازفة طبول في القتال",
+      },
+      {
+        en: "Carried the Venom symbiote, some years",
+        ar: "حملت متكافل فينوم، سنوات",
+      },
+      {
+        en: "Crosses dimensions with a watch",
+        ar: "تعبر الأبعاد بساعة",
+      },
     ],
     origin: {
       en: "The Spider-Woman of her own universe, in a city where her father is the police captain looking for her.",
@@ -9057,9 +9078,30 @@ const moreSpider: CharacterDraft[] = [
     reality: "Earth-928",
     species: "Human mutate",
     powers: [
-      { en: "Talons and fangs", ar: "مخالب وأنياب" },
-      { en: "Accelerated vision", ar: "بصر متسارع" },
-      { en: "Webs from his own body", ar: "خيوط من جسده" },
+      {
+        en: "Talons on his hands and feet",
+        ar: "مخالب في يديه وقدميه",
+      },
+      {
+        en: "Fangs that carry a paralytic venom",
+        ar: "أنياب تحمل سمًا مشلًّا",
+      },
+      {
+        en: "Accelerated vision, so the world slows",
+        ar: "إبصار متسارع، فيبطؤ العالم",
+      },
+      {
+        en: "Stronger and faster than the original",
+        ar: "أقوى وأسرع من الأصل",
+      },
+      {
+        en: "A gliding cape, and organic webbing",
+        ar: "عباءة انزلاق، وشبكة عضوية",
+      },
+      {
+        en: "Genetically rewritten with spider DNA",
+        ar: "أُعيدت كتابته وراثيًا بحمض العنكبوت",
+      },
     ],
     origin: {
       en: "A geneticist in 2099 who rewrote his own DNA and came out with claws instead of web-shooters. He runs the Spider-Society, and he is the one insisting that some deaths have to happen.",
@@ -9212,9 +9254,30 @@ const moreSpider: CharacterDraft[] = [
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
-      { en: "Venom blasts", ar: "دفقات سُمّية" },
-      { en: "Glides", ar: "انزلاق جوّي" },
-      { en: "Pheromone control", ar: "تحكّم بالفيرومونات" },
+      {
+        en: "Venom blasts from her hands",
+        ar: "قذائف سامة من يديها",
+      },
+      {
+        en: "They stun a man, or kill him",
+        ar: "تصعق رجلًا، أو تقتله",
+      },
+      {
+        en: "Glides on the webs under her arms",
+        ar: "تنزلق على الشبكات تحت ذراعيها",
+      },
+      {
+        en: "Pheromones that draw or repel",
+        ar: "فيرومونات تجذب أو تنفّر",
+      },
+      {
+        en: "Immune to poison and radiation",
+        ar: "محصّنة ضد السم والإشعاع",
+      },
+      {
+        en: "Wall-crawling, and strength with it",
+        ar: "تسلق الجدران، وقوة معه",
+      },
     ],
     origin: {
       en: "Not a Peter Parker variant and not bitten by anything: an experiment in a HYDRA lab who spent her first stories being told what she was by people who had built her.",
@@ -9232,8 +9295,30 @@ const moreSpider: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human mutate",
     powers: [
-      { en: "Every power Peter has", ar: "كل ما يملكه بيتر" },
-      { en: "Impact webbing", ar: "خيوط صادمة" },
+      {
+        en: "A clone, and identical in every way",
+        ar: "نسخة، ومطابقة في كل شيء",
+      },
+      {
+        en: "The full spider baseline, unchanged",
+        ar: "خط الأساس العنكبوتي كاملًا، دون تغيير",
+      },
+      {
+        en: "Impact webbing, which he invented",
+        ar: "شبكة صدمية، من اختراعه",
+      },
+      {
+        en: "Stingers, in his later years",
+        ar: "لسعات، في سنواته الأخيرة",
+      },
+      {
+        en: "A better scientist than Peter",
+        ar: "عالم أفضل من بيتر",
+      },
+      {
+        en: "Lived five years as somebody else",
+        ar: "عاش خمس سنين بصفته شخصًا آخر",
+      },
     ],
     origin: {
       en: "Peter Parker's clone, who left New York for five years rather than fight over which of them was the original, then came back wearing a hoodie over the costume.",
@@ -11521,11 +11606,29 @@ const others: CharacterDraft[] = [
     reality: "Earth-138",
     species: "Human mutate",
     powers: [
-      { en: "Anarchy, as a method", ar: "الفوضوية بوصفها منهجًا" },
-      { en: "A guitar that is also a weapon", ar: "قيثارة هي أيضًا سلاح" },
       {
-        en: "Animates in his own frame rate",
-        ar: "يتحرّك بمعدّل إطاراته الخاص",
+        en: "The spider baseline, and a guitar",
+        ar: "خط الأساس العنكبوتي، وغيتار",
+      },
+      {
+        en: "Chords that land like a truck",
+        ar: "أوتار تصطدم كشاحنة",
+      },
+      {
+        en: "Sonic waves out of the instrument",
+        ar: "موجات صوتية من الآلة",
+      },
+      {
+        en: "A spider-sense he ignores on principle",
+        ar: "حاسة عنكبوت يتجاهلها مبدئيًا",
+      },
+      {
+        en: "Wall-crawling, and webbing",
+        ar: "تسلق الجدران، وشبكة",
+      },
+      {
+        en: "Brought down a President Osborn",
+        ar: "أسقط الرئيس أوزبورن",
       },
     ],
     origin: {
@@ -11633,8 +11736,30 @@ const others: CharacterDraft[] = [
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
-      { en: "An exoskeleton she can summon", ar: "هيكل خارجي تستدعيه" },
-      { en: "Spider strength and agility", ar: "قوة العنكبوت ورشاقته" },
+      {
+        en: "The spider baseline, from a rite",
+        ar: "خط الأساس العنكبوتي، من طقس",
+      },
+      {
+        en: "A carapace she grows over her skin",
+        ar: "درع صلب ينمو فوق جلدها",
+      },
+      {
+        en: "It armours her, and she sheds it",
+        ar: "يدرّعها، ثم تنسلخ منه",
+      },
+      {
+        en: "Wall-crawling, and a spider-sense",
+        ar: "تسلق الجدران، وحاسة عنكبوت",
+      },
+      {
+        en: "Trained by the Spider-Society",
+        ar: "دربتها جمعية العناكب",
+      },
+      {
+        en: "A journalist when she is not fighting",
+        ar: "صحفية حين لا تقاتل",
+      },
     ],
     origin: {
       en: "A New York teenager caught up in a war between two ancient spider clans and given an exoskeleton she did not ask for. She goes by Araña before she goes by Spider-Girl.",
@@ -15827,9 +15952,30 @@ const inheritors: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Bitten by the same spider", ar: "لدغتها العنكبوت نفسها" },
-      { en: "Spins silk from her fingers", ar: "تغزل الحرير من أصابعها" },
-      { en: "A warning sense sharper than his", ar: "حسّ إنذار أحدّ من حسّه" },
+      {
+        en: "Bitten by the same spider as Peter",
+        ar: "لدغها العنكبوت الذي لدغ بيتر",
+      },
+      {
+        en: "Faster and more agile than he is",
+        ar: "أسرع وأرشق منه",
+      },
+      {
+        en: "Organic webbing, straight from her fingers",
+        ar: "شبكة عضوية، من أصابعها مباشرة",
+      },
+      {
+        en: "A silk-sense sharper than his",
+        ar: "حاسة حرير أحدّ من حاسته",
+      },
+      {
+        en: "Locked away for ten years, and trained",
+        ar: "حُبست عشر سنين، وتدربت",
+      },
+      {
+        en: "Photographic reflexes in a fight",
+        ar: "ردود فعل فوتوغرافية في القتال",
+      },
     ],
     origin: {
       en: "Bitten by the same spider that bit Peter Parker, then shut in a bunker for over a decade to hide her scent from things that hunt spiders. She came out with the powers and none of the practice.",
@@ -15851,9 +15997,30 @@ const inheritors: CharacterDraft[] = [
     universe: ["sony"],
     species: "Clone",
     powers: [
-      { en: "The first flawed clone", ar: "أول نسخة معيبة" },
-      { en: "Marks his kills", ar: "يسم قتلاه" },
-      { en: "Stronger than the original", ar: "أقوى من الأصل" },
+      {
+        en: "A clone of Peter, and a failed one",
+        ar: "نسخة من بيتر، وفاشلة",
+      },
+      {
+        en: "Stronger than the man he came from",
+        ar: "أقوى من الرجل الذي جاء منه",
+      },
+      {
+        en: "The Mark of Kaine burns into flesh",
+        ar: "علامة كاين تحرق اللحم",
+      },
+      {
+        en: "Stingers that come out of his arms",
+        ar: "لسعات تخرج من ذراعيه",
+      },
+      {
+        en: "A healing factor, and he needs it",
+        ar: "عامل شفاء، وهو يحتاجه",
+      },
+      {
+        en: "Precognitive flashes, sharper than his",
+        ar: "ومضات استشراف، أحدّ من ومضاته",
+      },
     ],
     origin: {
       en: "The first attempt at cloning Peter Parker, kept alive but degrading, who spent years hating the man he was copied from before deciding to be something better than either of them.",
@@ -16097,9 +16264,30 @@ const inheritors: CharacterDraft[] = [
     reality: "Earth-833",
     species: "Mutate",
     powers: [
-      { en: "Captain Britain of his Earth", ar: "كابتن بريطانيا في أرضه" },
-      { en: "Walks between realities", ar: "يمشي بين الوقائع" },
-      { en: "Gathered the Web Warriors", ar: "جمع محاربي الشبكة" },
+      {
+        en: "The spider baseline, and Britain's own",
+        ar: "خط الأساس العنكبوتي، وقوة بريطانيا",
+      },
+      {
+        en: "Walks between dimensions at will",
+        ar: "يمشي بين الأبعاد كما يشاء",
+      },
+      {
+        en: "A Captain Britain Corps talisman",
+        ar: "تعويذة فيلق كابتن بريطانيا",
+      },
+      {
+        en: "Draws power from the Otherworld",
+        ar: "يستمد القوة من العالم الآخر",
+      },
+      {
+        en: "Held the Web of Life together",
+        ar: "حفظ شبكة الحياة متماسكة",
+      },
+      {
+        en: "Recruited the Spider-Army himself",
+        ar: "جنّد جيش العناكب بنفسه",
+      },
     ],
     origin: {
       en: "The Captain Britain of a world where the Corps recruited a Spider-Man, who noticed spiders vanishing across realities and went looking for the survivors before anyone else knew there was a hunt.",
@@ -21643,9 +21831,30 @@ const spiderVariants: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Nine spiders answer her", ar: "تسعة عناكب تجيبها" },
-      { en: "A chamber of them at her call", ar: "حجرة منها رهن ندائها" },
-      { en: "One of the Immortal Weapons", ar: "إحدى الأسلحة الخالدة" },
+      {
+        en: "Nine spiders live inside her",
+        ar: "تسعة عناكب تعيش بداخلها",
+      },
+      {
+        en: "She sends them out to feed",
+        ar: "ترسلها لتقتات",
+      },
+      {
+        en: "A chi warrior of the Seven Cities",
+        ar: "محاربة تشي من المدن السبع",
+      },
+      {
+        en: "Immortal, and reborn each generation",
+        ar: "خالدة، وتولد كل جيل",
+      },
+      {
+        en: "Mystical, and not radioactive",
+        ar: "صوفية، لا إشعاعية",
+      },
+      {
+        en: "Fights with the spiders, not alone",
+        ar: "تقاتل بالعناكب، لا وحدها",
+      },
     ],
     origin: {
       en: "One of the Seven Capital Cities' Immortal Weapons, who fights by opening her cloak and letting nine spiders out of it. She rarely speaks and does not need to.",
