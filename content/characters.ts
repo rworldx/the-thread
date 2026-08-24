@@ -7088,10 +7088,11 @@ const abstracts: CharacterDraft[] = [
       en: "One of a species that watches and records and takes an oath never to act. The whole drama of the character is the pressure on that oath, and what it costs him the one time it breaks.",
       ar: "من جنسٍ يراقب ويسجّل ويقسم ألّا يتدخّل. دراما الشخصية كلها في الضغط على ذلك القسم، وفي ثمنه حين ينكسر مرة واحدة.",
     },
-    /* The Watchers Stan Lee is telling his stories to, in the Vol. 2 credits
-       scene. He is credited — as "Watcher Informant" — and they are not,
-       which is why no rule reading the cast can find them. */
-    alsoIn: ["guardians-of-the-galaxy-vol-2"],
+    /* NO `alsoIn`. He is credited by name in all three What If seasons, so
+       they arrive on their own. The Guardians Vol 2 asteroid was recorded
+       here as a stand-in before the race had a record of its own -- and the
+       thing on that rock is a CIRCLE OF WATCHERS, not Uatu. It sits on their
+       record now. */
     related: [{ id: "sylvie", kind: "ally" }],
   },
   {
@@ -7099,13 +7100,15 @@ const abstracts: CharacterDraft[] = [
     nameEn: "The Watchers",
     nameAr: "المُراقبون",
     aliases: ["The Watchers"],
-    /* No cast list carries a race. They are named and seen in What If, where
-       Uatu narrates on their behalf and answers to them. */
-    /* AND THE GUARDIANS VOL 2 SCENE, which is the RACE and not Uatu. A circle
-       of Watchers sits on an asteroid listening to a man tell stories, and
-       Uatu already carried the credit while the group he is standing in did
-       not. */
-    alsoIn: ["what-if-s1", "guardians-of-the-galaxy-vol-2"],
+    /* GUARDIANS VOL 2, AND NOT WHAT IF. No cast list carries a race, so both
+       of this record's appearances have to be stated by hand -- and only one
+       of them is real. What If is UATU'S: he narrates it and is credited in
+       all three seasons as "The Watcher (voice)", and the rest of his kind
+       are never on screen in it. What the race is in is the asteroid, where a
+       circle of them sits listening to a man tell stories. That line used to
+       live on Uatu's record as a stand-in, because this one did not exist
+       yet; it lives here now, and he keeps What If. */
+    alsoIn: ["guardians-of-the-galaxy-vol-2"],
     category: "supporting",
     affiliation: ["Cosmic entities"],
     universe: ["animation"],
