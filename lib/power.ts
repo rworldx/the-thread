@@ -1844,6 +1844,36 @@ export function claimScore(c: Character): number {
  * which is the thing C28 exists to prevent.
  */
 export const OUTRANKS: string[][] = [
+  /**
+   * THE BLACK ORDER, and Rashid is right that Supergiant leads it. She is an
+   * omnipath and a mental parasite who possesses any mind she reaches, devours
+   * the intellect she takes, and turns the strongest minds on their own -- and
+   * the sources add that she is virtually immune to damage and phases through
+   * anything. The telling detail is the Order's own behaviour: they WATCHED
+   * her, and sent her only where her powers were worth the risk of having her
+   * in the room. Nobody rations Cull Obsidian.
+   *
+   * CORVUS GLAIVE HAD TO COME DOWN A TIER FIRST, and the gate was misreading
+   * him rather than the ranking being wrong. His record says "Cannot die while
+   * the blade is whole" -- a switch, and one his enemies have thrown -- but
+   * the bullet beside it read "Comes back every time it is", and `comes back
+   * every time` is the literal clause tier 6 admits on. That clause is for
+   * beings who cannot be put down AT ALL, which is the opposite of a man with
+   * a documented off switch. The sentence now carries its own condition and he
+   * sits with the rest of them.
+   *
+   * Then the Maw, who takes a mind with his voice and has done it to Doctor
+   * Strange; then Proxima, whose own record calls her the finest fighter of
+   * the four; then Corvus, who leads because Thanos says so; then Cull, who is
+   * the strongest and the least dangerous.
+   */
+  [
+    "supergiant",
+    "ebony-maw",
+    "proxima-midnight",
+    "corvus-glaive",
+    "cull-obsidian",
+  ],
   /* TWO GROUPS, NOT ONE, and the tier guard is what found that. Loki and
      Sylvie carry the "Gods" affiliation and stay in tier 5; the lesser
      variants carry nothing and fall to 6 — which is the correct answer and

@@ -6380,22 +6380,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Alien",
     powers: [
-      /* THE BLACK ORDER WERE FILED AS `Titan`, which is Thanos's homeworld and
-         not their species — four different aliens who work for one man. Fixing
-         that dropped all four into tier 7, where the gloss actually describes
-         them, and exposed what the wrong species had been hiding: two-bullet
-         records. Ebony Maw had "Telekinesis / Persuasion" and scored 14. */
       {
         en: "Takes a mind with his voice alone",
-        ar: "يستولي على العقل بصوته وحده",
+        ar: "يستولي على عقل بصوته وحده",
       },
-      { en: "Telekinesis that lifts a building", ar: "تحريك ذهني يرفع مبنى" },
       {
-        en: "Tore Doctor Strange out of his sanctum",
-        ar: "انتزع دكتور سترينج من معبده",
+        en: "It has worked on Doctor Strange",
+        ar: "وقد نجح مع دكتور سترينج",
       },
-      { en: "The cleverest of the four", ar: "أذكى الأربعة" },
-      { en: "And the weakest of them, physically", ar: "وأضعفهم جسديًا" },
+      {
+        en: "Telekinesis that pinned Thor to a hull",
+        ar: "تحريك ذهني ثبّت ثور على بدن سفينة",
+      },
+      {
+        en: "Teleports the whole Order between stars",
+        ar: "ينقل النظام كله بين النجوم",
+      },
+      {
+        en: "Conjures fire, and levitates in a fight",
+        ar: "يستحضر النار، ويحلّق في القتال",
+      },
+      {
+        en: "Ninety-seven languages, and the plan",
+        ar: "سبع وتسعون لغة، والخطة",
+      },
     ],
     origin: {
       en: "The Black Order's speaker: the one who arrives first, explains why resistance is beneath everyone, and means it.",
@@ -6418,24 +6426,31 @@ const ensemble: CharacterDraft[] = [
        say: Titan is Thanos's homeworld, not the species of the people who
        work for him. */
     species: "Alien",
+    /* THE ORDER'S OWN POSITION ON HER is the argument: she was watched by the rest of them and sent only where her powers were worth the risk of having her there. The record ended on "no strength to speak of, without a host", which reads as a weakness and is not what the sources say -- she is described as virtually immune to damage and able to phase through anything. */
     powers: [
-      { en: "Possesses any mind she reaches", ar: "تتلبّس أي عقل تبلغه" },
-      { en: "Devours the intellect she takes", ar: "تلتهم العقل الذي تأخذه" },
+      {
+        en: "Possesses any mind she reaches",
+        ar: "تتلبّس أي عقل تبلغه",
+      },
+      {
+        en: "Devours the intellect she takes",
+        ar: "تلتهم العقل الذي تأخذه",
+      },
       {
         en: "Turns the strongest minds on their own",
-        ar: "تقلب أقوى العقول على أصحابها",
+        ar: "تقلب أقوى العقول على أهلها",
+      },
+      {
+        en: "Virtually immune to damage, and phases",
+        ar: "تكاد لا تُصاب، وتعبر الأجسام",
       },
       {
         en: "Controls matter as well as minds",
         ar: "تتحكم بالمادة كما بالعقول",
       },
       {
-        en: "A mental vampire, and unstable with it",
-        ar: "مصاصة عقول، وغير مستقرة معها",
-      },
-      {
-        en: "No strength to speak of, without a host",
-        ar: "لا قوة تُذكر لها بلا حامل",
+        en: "The Order rationed her, out of fear",
+        ar: "النظام قنّن استعمالها، خوفًا",
       },
     ],
     origin: {
@@ -6492,7 +6507,10 @@ const ensemble: CharacterDraft[] = [
         en: "Cannot die while the blade is whole",
         ar: "لا يموت ما دام النصل سليمًا",
       },
-      { en: "Comes back every time it is", ar: "يعود في كل مرة يبقى فيها" },
+      {
+        en: "Break the blade and he stays dead",
+        ar: "اكسر النصل فيبقى ميتًا",
+      },
       { en: "Superhuman strength and speed", ar: "قوة وسرعة خارقتان" },
       { en: "Thanos's second, and the cruellest", ar: "ساعد ثانوس، وأقساهم" },
     ],
