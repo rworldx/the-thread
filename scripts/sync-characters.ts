@@ -1138,7 +1138,10 @@ const IMAGE_OVERRIDES: Record<string, string> = {
    * her mother. It is a real Wasp image either way; if it should be Janet's,
    * the two lines swap.
    */
-  wasp: "https://oyster.ignimgs.com/wordpress/stg.ign.com/2018/01/Janet_van_Dyne_Earth-616_from_Uncanny_Avengers_Vol_3_10_001.jpg",
+  /* HOPE, NOT JANET. This record is Hope van Dyne and it was carrying
+     `Janet_van_Dyne_Earth-616...`, her mother, who has her own record two
+     places away. The wrong person entirely, and the filename said so. */
+  wasp: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/22/Wasp_Quantumania.jpg/revision/latest?cb=20231124223547",
   "jessica-jones":
     "https://static.wikia.nocookie.net/heroes-and-villain/images/b/bd/Jessica_Jones.png/revision/latest?cb=20190324230446",
   "luke-cage":
@@ -1655,8 +1658,14 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d8/Valkyrie_in_LoveAndThunder_Poster.png/revision/latest?cb=20231021012751",
   venom:
     "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/687-venom.jpg",
+  /* NOT AIDA. The pinned image was `Aida_Infobox.jpg` -- Mallory Jansen from
+     Agents of S.H.I.E.L.D., who is a different Madame Hydra entirely. This
+     record is `universe: ["fox"]`, the toxicologist Svetlana Khodchenkova
+     plays in The Wolverine, and the marvel-movies wiki's own page image for
+     "Viper" is the Jansen photo too, so the lookup could not have got it
+     right. Downloaded and checked before pinning. */
   viper:
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7d/Aida_Infobox.jpg/revision/latest?cb=20170401230442",
+    "https://static.wikia.nocookie.net/marvelmovies/images/a/a9/Viper-3.jpg/revision/latest?cb=20130702123124",
   vulture:
     "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/701-vulture.jpg",
   "war-machine":

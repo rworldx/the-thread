@@ -5804,12 +5804,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      /* HE WORE IT FIRST. The record described an inventor and nothing else,
-         which put the original Ant-Man 102nd of 105 humans — below Ned Leeds
-         and Betty Ross. He fought as Ant-Man for years before Scott Lang. */
-      { en: "Wore the Ant-Man suit first", ar: "ارتدى بدلة أنت-مان أولًا" },
-      { en: "Invented the particle", ar: "اخترع الجسيم" },
-      { en: "Quantum physicist", ar: "فيزيائي كمّي" },
+      {
+        en: "Discovered the particle that does it",
+        ar: "اكتشف الجسيم الذي يفعلها",
+      },
+      {
+        en: "Wore the suit before either of them",
+        ar: "ارتدى البذلة قبلهما",
+      },
+      {
+        en: "Commands insects with a helmet",
+        ar: "يأمر الحشرات بخوذة",
+      },
+      {
+        en: "A biochemist of the front rank",
+        ar: "كيميائي حيوي من الطراز الأول",
+      },
+      {
+        en: "Built a laboratory into a briefcase",
+        ar: "بنى مختبرًا داخل حقيبة",
+      },
+      {
+        en: "Built Ultron, which is the other thing",
+        ar: "وبنى ألترون، وتلك المسألة الأخرى",
+      },
     ],
     origin: {
       en: "The scientist who discovered how to change the distance between atoms, and then spent decades refusing to let anyone else have it.",
@@ -8118,11 +8136,29 @@ const thunderbolts: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Soviet super-soldier serum", ar: "مصل الجندي الخارق السوفييتي" },
-      { en: "Shield", ar: "درع" },
       {
-        en: "Tells the story differently each time",
-        ar: "يروي الحكاية مختلفةً كل مرة",
+        en: "Soviet super-soldier serum",
+        ar: "مصل الجندي الخارق السوفييتي",
+      },
+      {
+        en: "Strength and durability to match a shield",
+        ar: "قوة وصلابة توازيان درعًا",
+      },
+      {
+        en: "A shield of his own, and he throws it",
+        ar: "درع خاص به، ويرميه",
+      },
+      {
+        en: "Trained to fight Captain America",
+        ar: "دُرّب ليقاتل كابتن أمريكا",
+      },
+      {
+        en: "Twenty years past it, and still hits",
+        ar: "تجاوزه بعشرين عامًا، وما زال يضرب",
+      },
+      {
+        en: "Tells the story differently every time",
+        ar: "يروي الحكاية مختلفة كل مرة",
       },
     ],
     origin: {
@@ -12718,9 +12754,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "A rival contractor", ar: "مقاول منافس" },
-      { en: "Buys what he cannot build", ar: "يشتري ما لا يستطيع بناءه" },
-      { en: "Very fond of a stage", ar: "مولع بالمنصّات" },
+      {
+        en: "A rival contractor, and a good one",
+        ar: "مقاول منافس، وبارع",
+      },
+      {
+        en: "Builds drones by the hundred",
+        ar: "يبني طائرات مسيّرة بالمئات",
+      },
+      {
+        en: "Bought the physicist who could do it",
+        ar: "اشترى الفيزيائي القادر على ذلك",
+      },
+      {
+        en: "Armour he could never make work",
+        ar: "درع لم يستطع أبدًا تشغيله",
+      },
+      {
+        en: "Sells to whoever is buying",
+        ar: "يبيع لمن يشتري",
+      },
+      {
+        en: "Loud, and always second",
+        ar: "صاخب، ودائمًا في المرتبة الثانية",
+      },
     ],
     origin: {
       en: "A weapons manufacturer who has spent his career one step behind Stark Industries and blames everyone but himself. He funds a better engineer and takes the credit in advance.",
@@ -12738,9 +12795,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Artificial intelligence",
     powers: [
-      { en: "A mind on magnetic tape", ar: "عقل على شريط ممغنط" },
-      { en: "Algorithmic prediction", ar: "تنبّؤ خوارزمي" },
-      { en: "Outlived his own body", ar: "عاش بعد جسده" },
+      {
+        en: "A mind on magnetic tape",
+        ar: "عقل على شريط ممغنط",
+      },
+      {
+        en: "Lives inside a machine body",
+        ar: "يعيش داخل جسد آلي",
+      },
+      {
+        en: "A face on a screen in its chest",
+        ar: "وجه على شاشة في صدره",
+      },
+      {
+        en: "Copies himself onto other systems",
+        ar: "ينسخ نفسه إلى أنظمة أخرى",
+      },
+      {
+        en: "A geneticist HYDRA built around",
+        ar: "عالم وراثة بنت هايدرا حوله",
+      },
+      {
+        en: "Cannot be killed by killing the body",
+        ar: "لا يُقتل بقتل الجسد",
+      },
     ],
     origin: {
       en: "Hydra's chief scientist, captured at the end of the war and quietly put to work by the people who caught him. When his body fails he writes himself onto two hundred thousand feet of data tape.",
@@ -13266,9 +13344,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["fox"],
     species: "Human",
     powers: [
-      { en: "Designed the Sentinels", ar: "صمّم الحرّاس" },
-      { en: "Reads mutants as a species", ar: "يقرأ المتحوّلين كنوع" },
-      { en: "Sells fear as defence", ar: "يبيع الخوف بوصفه دفاعًا" },
+      {
+        en: "Designed the Sentinels",
+        ar: "صمم الحراس",
+      },
+      {
+        en: "Robots that hunt a gene",
+        ar: "آليون يطاردون جينًا",
+      },
+      {
+        en: "They adapt to whatever they fight",
+        ar: "يتكيفون مع كل ما يقاتلونه",
+      },
+      {
+        en: "Built them in the hundreds",
+        ar: "بناهم بالمئات",
+      },
+      {
+        en: "A military contract behind all of it",
+        ar: "عقد عسكري وراء ذلك كله",
+      },
+      {
+        en: "Killed by the thing he warned about",
+        ar: "قتله الشيء الذي حذّر منه",
+      },
     ],
     origin: {
       en: "A weapons designer who looked at mutants and saw the one thing that could make humanity stop fighting itself. His argument is that he is trying to save everyone, and he means it.",
@@ -13321,9 +13420,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["mcu", "animation"],
     species: "Human",
     powers: [
-      { en: "Commands subterranean monsters", ar: "يقود وحوش الأعماق" },
-      { en: "Rules Subterranea", ar: "يحكم سبتيرانيا" },
-      { en: "Was laughed at once", ar: "ضُحك عليه مرّة" },
+      {
+        en: "Commands the Moloids, in their thousands",
+        ar: "يأمر المولويد، بالآلاف",
+      },
+      {
+        en: "Subterranean monsters answer to him",
+        ar: "وحوش جوفية تأتمر بأمره",
+      },
+      {
+        en: "A staff that fires energy",
+        ar: "عصا تطلق الطاقة",
+      },
+      {
+        en: "Senses vibration where he cannot see",
+        ar: "يستشعر الاهتزاز حيث لا يرى",
+      },
+      {
+        en: "Rules everything under the surface",
+        ar: "يحكم كل ما تحت السطح",
+      },
+      {
+        en: "Nearly blind, and it never stops him",
+        ar: "شبه أعمى، ولم يوقفه ذلك قط",
+      },
     ],
     origin: {
       en: "A scientist the surface world dismissed, who went down instead of out and found a kingdom nobody was using. He has not forgotten who laughed.",
@@ -13410,9 +13530,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Paints in blood", ar: "يرسم بالدم" },
-      { en: "Takes his materials alive", ar: "يأخذ مواده أحياء" },
-      { en: "Believes it is art", ar: "يؤمن أنه فنّ" },
+      {
+        en: "Paints in blood, and it is his own art",
+        ar: "يرسم بالدم، وهو فنه",
+      },
+      {
+        en: "Cuts the vocal cords of anyone near",
+        ar: "يقطع أحبال من حوله الصوتية",
+      },
+      {
+        en: "Silence follows him into a room",
+        ar: "الصمت يتبعه إلى الغرفة",
+      },
+      {
+        en: "Heals from wounds that should end him",
+        ar: "يشفى من جراح كانت لتنهيه",
+      },
+      {
+        en: "Moves without making a sound",
+        ar: "يتحرك دون صوت",
+      },
+      {
+        en: "Kills for the composition of it",
+        ar: "يقتل لأجل التكوين",
+      },
     ],
     origin: {
       en: "A serial killer who treats the city as a gallery and its people as pigment, and who has never once considered that he might be doing something wrong.",
@@ -14176,9 +14317,30 @@ const spiderRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Builds Spider-Slayers", ar: "يبني قاتلي العنكبوت" },
-      { en: "Rebuilt himself as one", ar: "أعاد بناء نفسه واحدًا منها" },
-      { en: "Blames Spider-Man", ar: "يحمّل سبايدرمان الوزر" },
+      {
+        en: "Builds Spider-Slayers, and better ones",
+        ar: "يبني صائدي عناكب، وأفضل",
+      },
+      {
+        en: "An exoskeleton grafted onto himself",
+        ar: "هيكل خارجي مزروع في جسده",
+      },
+      {
+        en: "Blades and claws that come out of it",
+        ar: "نصال ومخالب تخرج منه",
+      },
+      {
+        en: "Strength and durability from the shell",
+        ar: "قوة وصلابة من القوقعة",
+      },
+      {
+        en: "Controls a swarm of his own machines",
+        ar: "يتحكم بسرب من آلاته",
+      },
+      {
+        en: "Finished what his father started",
+        ar: "أكمل ما بدأه أبوه",
+      },
     ],
     origin: {
       en: "The son of the man who built the first Spider-Slayers, who blamed Spider-Man for his father's death and eventually turned himself into the machine rather than keep building them.",
@@ -15299,9 +15461,30 @@ const lifeFoundation: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Wears anyone's face", ar: "يلبس وجه أي أحد" },
-      { en: "Studies a man for weeks", ar: "يدرس المرء أسابيع" },
-      { en: "Kraven's half-brother", ar: "أخو كرايفن لأمه" },
+      {
+        en: "Wears anyone's face perfectly",
+        ar: "يرتدي وجه أي أحد تمامًا",
+      },
+      {
+        en: "A mask film that reshapes itself",
+        ar: "غشاء قناع يعيد تشكيل نفسه",
+      },
+      {
+        en: "Mimics a voice as well as a face",
+        ar: "يحاكي الصوت كما يحاكي الوجه",
+      },
+      {
+        en: "Memory gas that rewrites an hour",
+        ar: "غاز ذاكرة يعيد كتابة ساعة",
+      },
+      {
+        en: "Fooled the Avengers more than once",
+        ar: "خدع الأفنجرز أكثر من مرة",
+      },
+      {
+        en: "Kraven's brother, and the quieter one",
+        ar: "أخو كرافن، والأهدأ منه",
+      },
     ],
     origin: {
       en: "A master of disguise who can pass as anyone he has had time to study, and who was the first foe Spider-Man ever faced. Being nobody in particular is the closest thing he has to a self.",
@@ -15342,9 +15525,30 @@ const lifeFoundation: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Found the goblin gear", ar: "عثر على عتاد الغوبلن" },
-      { en: "A laugh that stuns", ar: "ضحكة تصعق" },
-      { en: "Ben Urich's nephew", ar: "ابن أخي بن يوريك" },
+      {
+        en: "Found the goblin gear, and kept it",
+        ar: "وجد عتاد الغول، واحتفظ به",
+      },
+      {
+        en: "A glider, and pumpkin bombs with it",
+        ar: "حوّامة، وقنابل يقطينية معها",
+      },
+      {
+        en: "Gauntlets that fire a sonic scream",
+        ar: "قفازات تطلق صرخة صوتية",
+      },
+      {
+        en: "Strength from a formula he took later",
+        ar: "قوة من صيغة تناولها لاحقًا",
+      },
+      {
+        en: "Was a hero in it first",
+        ar: "كان بطلًا بها أولًا",
+      },
+      {
+        en: "The laugh came with the mask",
+        ar: "الضحكة جاءت مع القناع",
+      },
     ],
     origin: {
       en: "A reporter's nephew who found a goblin's abandoned equipment and used it as a hero for a while before the mask started deciding things for him.",
@@ -19058,9 +19262,30 @@ const hiddenByAudit: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Runs the city's crime quietly", ar: "يدير جريمة المدينة بهدوء" },
-      { en: "Kingpin's son", ar: "ابن كينغبن" },
-      { en: "Wants his father ruined", ar: "يريد خراب أبيه" },
+      {
+        en: "Runs the city's crime quietly",
+        ar: "يدير جريمة المدينة بهدوء",
+      },
+      {
+        en: "A marksman, and he carries two",
+        ar: "رامٍ ماهر، ويحمل اثنين",
+      },
+      {
+        en: "Commands an organisation of hundreds",
+        ar: "يقود تنظيمًا من المئات",
+      },
+      {
+        en: "Never seen without the mask",
+        ar: "لا يُرى دون القناع",
+      },
+      {
+        en: "Kingpin's man before his rival",
+        ar: "كان رجل كينغبين قبل أن يصير خصمه",
+      },
+      {
+        en: "The son of a police chief",
+        ar: "ابن قائد شرطة",
+      },
     ],
     origin: {
       en: "Wilson Fisk's son, who built a criminal operation of his own for the single purpose of dismantling his father's, and wore a mask so the old man would not know who was doing it.",
@@ -19470,9 +19695,30 @@ const bugleAndRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "A contortionist's body", ar: "جسد بهلوان" },
-      { en: "Trained crows to attack", ar: "درّب غربانًا على الهجوم" },
-      { en: "Feeds on fear he causes", ar: "يقتات على الخوف الذي يبثه" },
+      {
+        en: "A contortionist's body, and no bones spared",
+        ar: "جسد بهلواني، بلا عظم يُستثنى",
+      },
+      {
+        en: "Escapes anything he is locked in",
+        ar: "يفلت من أي شيء يُحبس فيه",
+      },
+      {
+        en: "Trained crows that attack on command",
+        ar: "غربان مدربة تهاجم بأمره",
+      },
+      {
+        en: "A pitchfork, and he means it",
+        ar: "مذراة، وهو جاد بها",
+      },
+      {
+        en: "Induces fear by his presence alone",
+        ar: "يبعث الخوف بحضوره وحده",
+      },
+      {
+        en: "Feels almost no pain",
+        ar: "لا يكاد يشعر بالألم",
+      },
     ],
     origin: {
       en: "A circus contortionist who can fold himself through any gap, commands a flock of crows, and grows stronger on the fear he provokes.",
@@ -20716,9 +20962,30 @@ const minorRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Organises other criminals", ar: "ينظّم سائر المجرمين" },
-      { en: "A mask nobody has seen behind", ar: "قناع لم ير أحد ما خلفه" },
-      { en: "The title gets inherited", ar: "اللقب يُورَّث" },
+      {
+        en: "Organises other criminals",
+        ar: "ينظّم المجرمين الآخرين",
+      },
+      {
+        en: "A marksman with two pistols",
+        ar: "رامٍ ماهر بمسدسين",
+      },
+      {
+        en: "Body armour under the coat",
+        ar: "درع جسد تحت المعطف",
+      },
+      {
+        en: "Knows every mask in the city",
+        ar: "يعرف كل قناع في المدينة",
+      },
+      {
+        en: "Blackmail files on all of them",
+        ar: "ملفات ابتزاز عليهم جميعًا",
+      },
+      {
+        en: "More than one man has worn it",
+        ar: "ارتداه أكثر من رجل",
+      },
     ],
     origin: {
       en: "A masked crime organiser whose identity has passed between several men, each of whom built a syndicate and each of whom was eventually found out by the same wall-crawler.",
@@ -20736,9 +21003,30 @@ const minorRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "A gas that induces terror", ar: "غاز يبثّ الرعب" },
-      { en: "A lawyer by profession", ar: "محامٍ بالمهنة" },
-      { en: "Never fights directly", ar: "لا يقاتل مباشرة" },
+      {
+        en: "A gas that induces absolute terror",
+        ar: "غاز يبعث رعبًا مطلقًا",
+      },
+      {
+        en: "It works on anyone who breathes it",
+        ar: "يعمل على كل من يستنشقه",
+      },
+      {
+        en: "Sprayed from gauntlets and grenades",
+        ar: "يُرش من قفازات وقنابل",
+      },
+      {
+        en: "Paralyses a target where they stand",
+        ar: "يشل الهدف في مكانه",
+      },
+      {
+        en: "Immune to his own compound",
+        ar: "محصّن ضد مركّبه",
+      },
+      {
+        en: "A chemist before a criminal",
+        ar: "كيميائي قبل أن يكون مجرمًا",
+      },
     ],
     origin: {
       en: "A lawyer with a chemical that makes people afraid of nothing in particular, who has never once needed to be in the room when it works.",
@@ -20902,9 +21190,30 @@ const minorRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "A rocket-powered skateboard", ar: "لوح تزلّج صاروخي" },
-      { en: "Built the gear himself", ar: "صنع العتاد بنفسه" },
-      { en: "Stole to feed his brothers", ar: "سرق ليطعم إخوته" },
+      {
+        en: "A rocket-powered skateboard",
+        ar: "لوح تزلج بدفع صاروخي",
+      },
+      {
+        en: "Magnetic boots that hold him to it",
+        ar: "حذاء مغناطيسي يثبته عليه",
+      },
+      {
+        en: "Rides walls and ceilings on it",
+        ar: "يركبه على الجدران والأسقف",
+      },
+      {
+        en: "Micro-rockets fired from the gauntlets",
+        ar: "صواريخ صغيرة من القفازات",
+      },
+      {
+        en: "Body armour, because he falls",
+        ar: "درع جسد، لأنه يسقط",
+      },
+      {
+        en: "Robbed to feed his brothers",
+        ar: "سرق ليطعم إخوته",
+      },
     ],
     origin: {
       en: "A gifted young engineer who built rocket skates and turned to robbery to support his younger siblings, and who was talked out of it and went to college instead.",
@@ -22521,9 +22830,30 @@ const spiderLast: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Cannot feel anything", ar: "لا يشعر بشيء" },
-      { en: "A brain injury took it", ar: "أخذته إصابة دماغية" },
-      { en: "Kills without any anger", ar: "يقتل بلا غضب" },
+      {
+        en: "Cannot feel anything at all",
+        ar: "لا يشعر بشيء البتة",
+      },
+      {
+        en: "No fear, and no hesitation with it",
+        ar: "بلا خوف، وبلا تردد معه",
+      },
+      {
+        en: "Body armour, and automatic weapons",
+        ar: "درع جسد، وأسلحة آلية",
+      },
+      {
+        en: "Kills without a reason he can name",
+        ar: "يقتل بلا سبب يسميه",
+      },
+      {
+        en: "A bullet in the brain did this",
+        ar: "رصاصة في الدماغ فعلت هذا",
+      },
+      {
+        en: "Was an accountant before",
+        ar: "كان محاسبًا قبلها",
+      },
     ],
     origin: {
       en: "A man whose brain injury removed his capacity to feel emotion or empathy, who kills methodically and without anger, and who knows exactly what he has lost.",
@@ -22541,9 +22871,30 @@ const spiderLast: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "Built the first Spider-Slayer", ar: "بنى أول قاتل عنكبوت" },
-      { en: "A robotics engineer", ar: "مهندس روبوتات" },
-      { en: "His own machines killed him", ar: "قتلته آلاته" },
+      {
+        en: "Built the first Spider-Slayer",
+        ar: "بنى أول صائد عناكب",
+      },
+      {
+        en: "Robots designed for one target",
+        ar: "آليون صُمموا لهدف واحد",
+      },
+      {
+        en: "Each one learns from the last",
+        ar: "كل واحد يتعلم من سابقه",
+      },
+      {
+        en: "A roboticist of the front rank",
+        ar: "خبير روبوتات من الطراز الأول",
+      },
+      {
+        en: "Tracking systems tuned to a spider",
+        ar: "أنظمة تعقب مضبوطة على عنكبوت",
+      },
+      {
+        en: "Killed by his own radiation",
+        ar: "قتله إشعاعه هو",
+      },
     ],
     origin: {
       en: "The engineer who built the original Spider-Slayer robots for J. Jonah Jameson, and who was killed by the radiation from the machines he kept making.",
@@ -22608,9 +22959,30 @@ const spiderLast: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "A flying platform and gas", ar: "منصة طائرة وغاز" },
-      { en: "Pumpkin bombs, again", ar: "قنابل يقطين، مجددًا" },
-      { en: "Became the Hobgoblin later", ar: "صار هوبغوبلن لاحقًا" },
+      {
+        en: "A flying platform, and he fights on it",
+        ar: "منصة طائرة، ويقاتل عليها",
+      },
+      {
+        en: "Gas that makes you see what is not there",
+        ar: "غاز يريك ما ليس موجودًا",
+      },
+      {
+        en: "Pumpkin bombs, and a flame thrower",
+        ar: "قنابل يقطينية، وقاذف لهب",
+      },
+      {
+        en: "A mask that hides him from a spider-sense",
+        ar: "قناع يخفيه عن حاسة العنكبوت",
+      },
+      {
+        en: "Gauntlets that fire a searing blast",
+        ar: "قفازات تطلق قذيفة حارقة",
+      },
+      {
+        en: "Three men have worn it",
+        ar: "ارتداه ثلاثة رجال",
+      },
     ],
     origin: {
       en: "A mercenary with a burning pumpkin head and a flying platform, who wanted so badly to be a proper goblin that he eventually bought the identity.",
@@ -24307,9 +24679,30 @@ const hulkRogues: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "No powers at all", ar: "بلا أي قوى" },
-      { en: "A scientist who feared his son", ar: "عالم خاف من ابنه" },
-      { en: "The reason the Hulk exists", ar: "السبب في وجود هالك" },
+      {
+        en: "No powers at all",
+        ar: "بلا قدرات البتة",
+      },
+      {
+        en: "A biochemist who worked on the gamma",
+        ar: "كيميائي حيوي عمل على الغاما",
+      },
+      {
+        en: "Convinced his own son was a monster",
+        ar: "اقتنع بأن ابنه وحش",
+      },
+      {
+        en: "The reason the other thing exists",
+        ar: "السبب في وجود الشيء الآخر",
+      },
+      {
+        en: "Came back through the Green Door",
+        ar: "عاد عبر الباب الأخضر",
+      },
+      {
+        en: "The worst thing in the Hulk's head",
+        ar: "أسوأ ما في رأس الهالك",
+      },
     ],
     origin: {
       en: "Bruce Banner's father, who beat him and killed his mother, and who convinced himself the boy was a monster long before any radiation. The Hulk is what the child built to survive that house.",
@@ -24625,9 +25018,30 @@ const squadVillains: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Ruined by his own cleverness", ar: "أهلكه ذكاؤه" },
-      { en: "Builds what he cannot buy", ar: "يبني ما لا يستطيع شراءه" },
-      { en: "Hank Pym's oldest enemy", ar: "ألد أعداء هانك بيم" },
+      {
+        en: "A roboticist who builds what he needs",
+        ar: "خبير روبوتات يبني ما يحتاج",
+      },
+      {
+        en: "Adamantium armour in the end",
+        ar: "درع أدامانتيوم في النهاية",
+      },
+      {
+        en: "Robots that fight for him",
+        ar: "آليون يقاتلون عنه",
+      },
+      {
+        en: "Ruined by his own cleverness",
+        ar: "دمرته براعته",
+      },
+      {
+        en: "Framed Hank Pym for treason",
+        ar: "لفّق لهانك بيم تهمة الخيانة",
+      },
+      {
+        en: "Killed by a ricochet he caused",
+        ar: "قتلته رصاصة مرتدة تسبب بها",
+      },
     ],
     origin: {
       en: "A physicist who lost his career to one act of theft and spent the rest of it proving he was the cleverest man in a room that had stopped inviting him.",
