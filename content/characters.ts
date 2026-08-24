@@ -1129,7 +1129,8 @@ const guardians: CharacterDraft[] = [
     nameAr: "ستار لورد",
     aliases: ["Peter Quill", "Star-Lord", "Star Lord"],
     category: "hero",
-    affiliation: ["Guardians of the Galaxy"],
+    /* Raised by Yondu's crew and given a Ravager funeral's worth of standing at the end of Vol 2. He is one whether he files the paperwork or not. */
+    affiliation: ["Guardians of the Galaxy", "Ravagers"],
     universe: ["mcu"],
     species: "Human hybrid",
     powers: [
@@ -6304,7 +6305,7 @@ const ensemble: CharacterDraft[] = [
     nameAr: "كراغلين",
     aliases: ["Kraglin", "Kraglin Obfonteri"],
     category: "supporting",
-    affiliation: ["Guardians of the Galaxy"],
+    affiliation: ["Guardians of the Galaxy", "Ravagers"],
     universe: ["mcu"],
     species: "Xandarian",
     /* PART 15 GIVES HIM THE YAKA ARROW and his record did not mention it. He scored 14 and was last of the ten Guardians. */
@@ -10751,7 +10752,8 @@ const others: CharacterDraft[] = [
     nameAr: "يوندو",
     aliases: ["Yondu", "Yondu Udonta"],
     category: "antihero",
-    affiliation: [],
+    /* A Ravager captain, and the reason there is a Ravager on this page at all. His affiliation array was EMPTY, so the man who raised Star-Lord belonged to nothing. */
+    affiliation: ["Ravagers"],
     universe: ["mcu", "legacy"],
     species: "Centaurian",
     powers: [
@@ -10903,7 +10905,7 @@ const others: CharacterDraft[] = [
        TMDB files under the Black Panther credit rather than this one. */
     alsoIn: ["what-if-s1"],
     category: "hero",
-    affiliation: ["Guardians of the Multiverse", "Wakandans"],
+    affiliation: ["Guardians of the Multiverse", "Wakandans", "Ravagers"],
     universe: ["mcu"],
     species: "Human",
     powers: [
@@ -12374,7 +12376,8 @@ const knowhere: CharacterDraft[] = [
     nameAr: "ستاكار أوغورد",
     aliases: ["Stakar Ogord", "Stakar", "Starhawk"],
     category: "hero",
-    affiliation: [],
+    /* He leads a hundred clans of them and his affiliation was empty too. */
+    affiliation: ["Ravagers"],
     universe: ["mcu"],
     species: "Human",
     /* HE IS STARHAWK, and the record was three lines of management -- "Leads the Ravager clans / Holds the code / Exiled his best captain" -- with no power on it at all. He scored 6. */
@@ -12419,7 +12422,7 @@ const knowhere: CharacterDraft[] = [
     nameAr: "مارتينكس",
     aliases: ["Martinex", "Martinex T'Naga"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Ravagers"],
     universe: ["mcu"],
     species: "Pluvian",
     powers: [
@@ -12460,7 +12463,7 @@ const knowhere: CharacterDraft[] = [
     nameAr: "كروغار",
     aliases: ["Krugarr"],
     category: "hero",
-    affiliation: ["Magic"],
+    affiliation: ["Magic", "Ravagers"],
     universe: ["mcu"],
     species: "Lem",
     magicSchools: ["eldritch"],
@@ -12481,7 +12484,7 @@ const knowhere: CharacterDraft[] = [
     nameAr: "مِينفريم",
     aliases: ["Mainframe"],
     category: "hero",
-    affiliation: [],
+    affiliation: ["Ravagers"],
     universe: ["mcu"],
     species: "Artificial intelligence",
     powers: [

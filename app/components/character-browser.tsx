@@ -431,6 +431,11 @@ const GROUPS: {
          rather than inside them: every one of the six is on both chips. */
       { id: "original-six", match: aff("Original Six") },
       { id: "guardians", match: aff("Guardians of the Galaxy") },
+      /* THE RAVAGERS, who had no affiliation at all until now -- so searching
+         the word returned nothing and four of them, Yondu included, belonged
+         to no team on the page. Beside the Guardians because the two rosters
+         overlap and a reader looking for one is usually looking for both. */
+      { id: "ravagers", match: aff("Ravagers") },
       /* THE OTHER GUARDIANS, and the reason this chip is worth having is that
          six of its seven members are filed under records a reader would never
          think to open: Party Thor is on Thor's page, Strange Supreme is on
@@ -561,6 +566,8 @@ export function CharacterBrowser({
       Asgard: "asgardian god",
       Gods: "god goddess",
       Hulks: "gamma",
+      /* Singular and "clan", because that is how people type it. */
+      Ravagers: "ravager clan clans",
       Inhumans: "inhuman",
       Eternals: "eternal",
       Symbiotes: "symbiote",

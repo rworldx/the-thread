@@ -1501,8 +1501,12 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   love: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ab/LoveTLAT.png/revision/latest?cb=20220909151103",
   lylla:
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/64/Lylla_on_floor_infobox.png/revision/latest?cb=20230722010732",
+  /* Supplied. The Ravager council head from Vol 2, green eyes lit. Same
+     filename as the one that was here and a DIFFERENT FILE -- the Disney wiki
+     copy rather than the MCU wiki's, which is a good reminder that matching a
+     portrait on its filename proves nothing. */
   mainframe:
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/95/Mainframe.jpg/revision/latest?cb=20230516023646",
+    "https://static.wikia.nocookie.net/disney/images/9/95/Mainframe.jpg/revision/latest?cb=20170808160110",
   malekith:
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b1/Malekith-TextlessPoster1.jpg/revision/latest?cb=20231022145132",
   "man-thing":
