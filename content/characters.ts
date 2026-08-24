@@ -2372,9 +2372,30 @@ const spiderVerse: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human mutate",
     powers: [
-      { en: "Enhanced strength", ar: "قوة معزّزة" },
-      { en: "Echolocation", ar: "تحديد الموقع بالصدى" },
-      { en: "Flight", ar: "طيران" },
+      {
+        en: "A living vampire, and not an undead one",
+        ar: "مصاص دماء حي، لا ميت",
+      },
+      {
+        en: "Two tons of strength, and dodges bullets",
+        ar: "قوة طنين، ويراوغ الرصاص",
+      },
+      {
+        en: "A healing factor. He survived a stake",
+        ar: "عامل شفاء، نجا من وتد في قلبه",
+      },
+      {
+        en: "Talons and fangs that tear through bone",
+        ar: "مخالب وأنياب تمزق العظم",
+      },
+      {
+        en: "Hypnosis, and he projects fear",
+        ar: "تنويم، ويبث الخوف",
+      },
+      {
+        en: "Must drink blood, or he sickens and dies",
+        ar: "عليه شرب الدم، وإلا مرض ومات",
+      },
     ],
     origin: {
       en: "A Nobel-winning haematologist with a fatal blood disorder, who tried to cure it with something taken from bats.",
@@ -3161,9 +3182,30 @@ const villains: CharacterDraft[] = [
     /* NOT plain Human. Took the herb too, and beat T'Challa with it. */
     species: "Enhanced human",
     powers: [
-      { en: "Black-ops training", ar: "تدريب عمليات خاصة" },
-      { en: "Enhanced by the herb", ar: "معزّز بالعشبة" },
-      { en: "Strategist", ar: "استراتيجي" },
+      {
+        en: "Special forces training, and MIT",
+        ar: "تدريب قوات خاصة، وإم آي تي",
+      },
+      {
+        en: "Beat T'Challa in ritual combat",
+        ar: "هزم تشالا في قتال طقسي",
+      },
+      {
+        en: "Enhanced by the herb, once he takes it",
+        ar: "تعززه العشبة، متى تناولها",
+      },
+      {
+        en: "The Panther suit absorbs what hits it",
+        ar: "بذلة النمر تمتص ما يصيبها",
+      },
+      {
+        en: "A scar for every kill he has made",
+        ar: "ندبة عن كل قتيل له",
+      },
+      {
+        en: "A strategist before a fighter",
+        ar: "استراتيجي قبل أن يكون مقاتلًا",
+      },
     ],
     origin: {
       en: "A boy left in Oakland by a country that could have come for him, who grew up, took the training the United States would give him, and went back to collect.",
@@ -3222,8 +3264,30 @@ const villains: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Enhanced strength", ar: "قوة معزّزة" },
-      { en: "Runs HYDRA", ar: "يقود هيدرا" },
+      {
+        en: "No powers. A peak human, and a genius",
+        ar: "بلا قدرات، ذروة بشرية، وعبقري",
+      },
+      {
+        en: "A cloned body of Captain America's",
+        ar: "جسد مستنسخ عن كابتن أمريكا",
+      },
+      {
+        en: "Which gives him a super-soldier's build",
+        ar: "مما يمنحه بنية جندي خارق",
+      },
+      {
+        en: "A master of tactics and propaganda",
+        ar: "بارع في التكتيك والدعاية",
+      },
+      {
+        en: "Cosmic Cube technology, when he has it",
+        ar: "تقنية المكعب الكوني، متى ملكها",
+      },
+      {
+        en: "An extended lifespan he never earned",
+        ar: "عمر ممتد لم يستحقه",
+      },
     ],
     origin: {
       en: "The first man to take the serum, before it was finished, who wanted what it did and got what it does to someone like him.",
@@ -4163,8 +4227,30 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Copies any fighter", ar: "يحاكي أي مقاتل" },
-      { en: "Photographic reflexes", ar: "ردود فعل تصويرية" },
+      {
+        en: "Photographic reflexes. He copies a style",
+        ar: "ردود فعل فوتوغرافية، ينسخ أسلوبًا",
+      },
+      {
+        en: "Watches you once and fights like you",
+        ar: "يشاهدك مرة فيقاتل مثلك",
+      },
+      {
+        en: "The skills of a dozen masters at once",
+        ar: "مهارات عشرة أساتذة دفعة واحدة",
+      },
+      {
+        en: "Peak human, and he predicts your move",
+        ar: "ذروة البشر، ويتوقع حركتك",
+      },
+      {
+        en: "A shield, a sword and a bow",
+        ar: "درع وسيف وقوس",
+      },
+      {
+        en: "Copying costs him his own memory",
+        ar: "النسخ يكلفه ذاكرته هو",
+      },
     ],
     origin: {
       en: "Someone who can reproduce any fighting style after seeing it once, pointed at people by whoever is holding the controls.",
@@ -4522,8 +4608,30 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu", "animation"],
     species: "Human mutate",
     powers: [
-      { en: "Engineered intellect", ar: "عقل مُهندَس" },
-      { en: "Psionic blasts", ar: "انفجارات ذهنية" },
+      {
+        en: "Mental Organism Designed Only for Killing",
+        ar: "كائن ذهني صُمم للقتل فقط",
+      },
+      {
+        en: "One of the smartest beings alive",
+        ar: "من أذكى الكائنات حياةً",
+      },
+      {
+        en: "Mental energy blasts from the headband",
+        ar: "قذائف طاقة ذهنية من العصابة",
+      },
+      {
+        en: "Telepathy, mind control, precognition",
+        ar: "تخاطر وسيطرة عقول واستشراف",
+      },
+      {
+        en: "Psionic force fields around himself",
+        ar: "حقول قوة نفسية حوله",
+      },
+      {
+        en: "A chair that flies, and carries the guns",
+        ar: "كرسي يطير، ويحمل المدافع",
+      },
     ],
     origin: {
       en: "A technician rebuilt into a weapon that is mostly head, by an organisation that wanted a thinking machine and made one that resents it.",
@@ -4541,8 +4649,30 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Human",
     powers: [
-      { en: "Shrinking armour", ar: "بذلة تتقلّص" },
-      { en: "Stingers", ar: "لسعات نارية" },
+      {
+        en: "Shrinks to insect size at will",
+        ar: "يتقلص إلى حجم حشرة كما يشاء",
+      },
+      {
+        en: "Keeps human strength while small",
+        ar: "يحتفظ بقوة بشرية وهو صغير",
+      },
+      {
+        en: "Bio-electric stingers from the gauntlets",
+        ar: "لسعات حيوية كهربائية من القفازات",
+      },
+      {
+        en: "Flight on insectile wings",
+        ar: "طيران بأجنحة حشرية",
+      },
+      {
+        en: "Pym's technology, stolen and rebuilt",
+        ar: "تقنية بيم، مسروقة ومعاد بناؤها",
+      },
+      {
+        en: "Several people have worn the suit",
+        ar: "ارتدى البذلة عدة أشخاص",
+      },
     ],
     origin: {
       en: "The protege who reverse-engineered his mentor's work and sold it, then wore it.",
@@ -4885,9 +5015,30 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Skrull",
     powers: [
-      { en: "Takes any shape", ar: "يتّخذ أي هيئة" },
-      { en: "Copies a memory with it", ar: "ينسخ الذاكرة معها" },
-      { en: "A refugee, not an invader", ar: "لاجئ لا غازٍ" },
+      {
+        en: "Skrull shapeshifting, down to a voice",
+        ar: "تبدّل شكل سكرولي، حتى الصوت",
+      },
+      {
+        en: "Mimics anyone he has seen",
+        ar: "يحاكي أي أحد رآه",
+      },
+      {
+        en: "Holds a disguise indefinitely",
+        ar: "يحافظ على التنكّر بلا حد",
+      },
+      {
+        en: "Fools biometrics as well as eyes",
+        ar: "يخدع القياسات الحيوية كما يخدع العيون",
+      },
+      {
+        en: "Durability and longevity past a human's",
+        ar: "صلابة وعمر يفوقان البشر",
+      },
+      {
+        en: "A military leader, and a refugee",
+        ar: "قائد عسكري، ولاجئ",
+      },
     ],
     origin: {
       en: "A Skrull general introduced as the monster of the story, who turns out to be a father looking for the rest of his people. The reveal is that the war had the wrong side cast as villains for decades.",
@@ -4975,11 +5126,29 @@ const supporting: CharacterDraft[] = [
     species: "Skrull",
     powers: [
       {
-        en: "Every Fantastic Four power at once",
-        ar: "كل قدرات الأربعة الرائعين معًا",
+        en: "The Fantastic Four's powers, all four",
+        ar: "قدرات الفانتاستيك فور الأربع",
       },
-      { en: "Shapeshifting on top", ar: "وتبدّل الهيئة فوق ذلك" },
-      { en: "Engineered as a weapon", ar: "صُمّم سلاحًا" },
+      {
+        en: "The Thing's strength and durability",
+        ar: "قوة الثينغ وصلابته",
+      },
+      {
+        en: "Stretches the way Richards does",
+        ar: "يتمدد كما يفعل ريتشاردز",
+      },
+      {
+        en: "Flame, fiery flight, and heat absorption",
+        ar: "لهب وطيران ناري وامتصاص حرارة",
+      },
+      {
+        en: "Invisibility, and psionic force fields",
+        ar: "خفاء، وحقول قوة نفسية",
+      },
+      {
+        en: "Skrull shapeshifting on top of it",
+        ar: "وتبدّل شكل سكرولي فوق ذلك",
+      },
     ],
     origin: {
       en: "A Skrull soldier engineered to carry the powers of all four of Earth's most famous heroes at once, built for the specific purpose of beating them with their own abilities.",
@@ -5344,8 +5513,30 @@ const supporting: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Xandarian",
     powers: [
-      { en: "Nova Corps officer", ar: "ضابط في فيلق نوفا" },
-      { en: "Starship pilot", ar: "طيّار مركبة فضائية" },
+      {
+        en: "A Nova Corps helmet and uniform",
+        ar: "خوذة وزي فيلق نوفا",
+      },
+      {
+        en: "Channels the Nova Force through it",
+        ar: "يمرر قوة نوفا عبرها",
+      },
+      {
+        en: "Flight, including between stars",
+        ar: "طيران، حتى بين النجوم",
+      },
+      {
+        en: "Strength, durability and energy blasts",
+        ar: "قوة وصلابة وقذائف طاقة",
+      },
+      {
+        en: "Survives open space",
+        ar: "ينجو في الفضاء المفتوح",
+      },
+      {
+        en: "Passed the whole Force to Richard Rider",
+        ar: "سلّم القوة كلها لريتشارد رايدر",
+      },
     ],
     origin: {
       en: "An officer of the police force of a planet that spent a long time thinking the war was over.",
@@ -5704,9 +5895,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Insectivorid",
     powers: [
-      { en: "Blades for hands", ar: "نصال بدل اليدين" },
-      { en: "Says nothing anyone follows", ar: "يقول ما لا يفهمه أحد" },
-      { en: "Korg carries him", ar: "كورغ يحمله" },
+      {
+        en: "An insectoid from Sakaar",
+        ar: "حشري من ساكار",
+      },
+      {
+        en: "Bladed limbs, and he uses all of them",
+        ar: "أطراف ذات نصال، ويستعملها كلها",
+      },
+      {
+        en: "Evolves through moults into worse forms",
+        ar: "يتطور بالانسلاخ إلى هيئات أشرس",
+      },
+      {
+        en: "Great strength once hatched",
+        ar: "قوة عظيمة متى فقس",
+      },
+      {
+        en: "Armoured plating, and venom with it",
+        ar: "صفائح مدرعة، وسم معها",
+      },
+      {
+        en: "Agility, and a willingness to use it",
+        ar: "رشاقة، واستعداد لاستعمالها",
+      },
     ],
     origin: {
       en: "An insectivorid gladiator who lost his legs and had knives fitted instead, and who has followed Korg out of the arena and into everything since.",
@@ -5738,8 +5950,30 @@ const ensemble: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Kronan",
     powers: [
-      { en: "Rock body", ar: "جسد صخري" },
-      { en: "Great strength", ar: "قوة هائلة" },
+      {
+        en: "A body of living rock",
+        ar: "جسد من صخر حي",
+      },
+      {
+        en: "Strength and durability from it",
+        ar: "قوة وصلابة منه",
+      },
+      {
+        en: "Blades and impacts do little",
+        ar: "النصال والصدمات تكاد لا تؤثر",
+      },
+      {
+        en: "Insulated against heat and cold",
+        ar: "معزول ضد الحر والبرد",
+      },
+      {
+        en: "A gladiator, and a long-lived one",
+        ar: "مصارع، ومعمّر",
+      },
+      {
+        en: "Gentle, which is the surprise",
+        ar: "لطيف، وتلك هي المفاجأة",
+      },
     ],
     origin: {
       en: "A Kronan gladiator made of rock, permanently and cheerfully unbothered by anything happening around him.",
@@ -6282,9 +6516,32 @@ const ensemble: CharacterDraft[] = [
     affiliation: ["Elders of the Universe"],
     universe: ["mcu"],
     species: "Elder of the Universe",
+    /* AN ELDER OF THE UNIVERSE SCORING ZERO, on two bullets, at rank 607. */
     powers: [
-      { en: "Collects everything", ar: "يجمع كل شيء" },
-      { en: "Older than most species", ar: "أقدم من معظم الأنواع" },
+      {
+        en: "An Elder, among the first to evolve",
+        ar: "إلدر، من أوائل من تطوروا",
+      },
+      {
+        en: "Immortal. Regrows any part he loses",
+        ar: "خالد، ينبت أي جزء يفقده",
+      },
+      {
+        en: "The Power Primordial, at his command",
+        ar: "القوة البدئية، طوع أمره",
+      },
+      {
+        en: "Grows his own size, mass and strength",
+        ar: "ينمّي حجمه وكتلته وقوته",
+      },
+      {
+        en: "Precognition, in flashes he must decode",
+        ar: "استشراف، في ومضات عليه فك رموزها",
+      },
+      {
+        en: "Museums the size of planets",
+        ar: "متاحف بحجم الكواكب",
+      },
     ],
     origin: {
       en: "One of the oldest beings alive, who has spent that life acquiring one of everything and does not distinguish between an object and a person.",
@@ -8210,9 +8467,30 @@ const thunderbolts: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Super-soldier serum", ar: "مصل الجندي الخارق" },
-      { en: "Three Medals of Honor", ar: "ثلاث أوسمة شرف" },
-      { en: "Shield", ar: "درع" },
+      {
+        en: "A super-soldier serum, not Erskine's",
+        ar: "مصل جندي خارق، لا مصل إرسكين",
+      },
+      {
+        en: "Strength on Captain America's level",
+        ar: "قوة بمستوى كابتن أمريكا",
+      },
+      {
+        en: "Speed, durability and stamina with it",
+        ar: "سرعة وصلابة وتحمّل معها",
+      },
+      {
+        en: "A vibranium shield, thrown the same way",
+        ar: "درع فيبرانيوم، يُرمى بالطريقة ذاتها",
+      },
+      {
+        en: "A decorated combat veteran",
+        ar: "محارب مخضرم مكرّم",
+      },
+      {
+        en: "His temper is the weakness",
+        ar: "طبعه هو نقطة ضعفه",
+      },
     ],
     origin: {
       en: "Handed the shield by a government that wanted a Captain America it could direct. He is a genuinely decorated soldier, and the show is careful that the problem is not his competence.",
@@ -8803,8 +9081,30 @@ const moreSpider: CharacterDraft[] = [
     reality: "Earth-90214",
     species: "Human mutate",
     powers: [
-      { en: "Spider powers", ar: "قدرات العنكبوت" },
-      { en: "Sees only in black and white", ar: "لا يرى إلا الأبيض والأسود" },
+      {
+        en: "The spider baseline, in 1933",
+        ar: "خط الأساس العنكبوتي، في 1933",
+      },
+      {
+        en: "Organic webbing, in some tellings",
+        ar: "شبكة عضوية، في بعض الروايات",
+      },
+      {
+        en: "Carries a pistol, and uses it",
+        ar: "يحمل مسدسًا، ويستعمله",
+      },
+      {
+        en: "Fights out of the shadows",
+        ar: "يقاتل من الظلال",
+      },
+      {
+        en: "A detective before a hero",
+        ar: "محقق قبل أن يكون بطلًا",
+      },
+      {
+        en: "Hard-boiled, and it is not an act",
+        ar: "صلب، وليس تمثيلًا",
+      },
     ],
     origin: {
       en: "A Peter Parker from a 1933 where the Depression never lifted, who narrates his own life like a detective novel and does not understand colour when he sees it.",
@@ -8829,8 +9129,30 @@ const moreSpider: CharacterDraft[] = [
     reality: "Earth-14512",
     species: "Human",
     powers: [
-      { en: "Pilots the SP//dr suit", ar: "تقود بذلة SP//dr" },
-      { en: "Linked to a radioactive spider", ar: "مرتبطة بعنكبوت مشعّ" },
+      {
+        en: "Pilots SP//dr, a psychically linked mech",
+        ar: "تقود إس بي دي آر، آليًا مرتبطًا ذهنيًا",
+      },
+      {
+        en: "Bonded to the spider inside it",
+        ar: "مرتبطة بالعنكبوت داخله",
+      },
+      {
+        en: "The mech has the strength, not her",
+        ar: "القوة في الآلي، لا فيها",
+      },
+      {
+        en: "A genius at robotics, at her age",
+        ar: "عبقرية روبوتات، في سنها",
+      },
+      {
+        en: "The spider feels what she feels",
+        ar: "العنكبوت يشعر بما تشعر",
+      },
+      {
+        en: "No wall-crawling. She does not need it",
+        ar: "لا تتسلق الجدران، ولا تحتاج",
+      },
     ],
     origin: {
       en: "From an anime-styled New York where the spider is not a bite but a co-pilot: she shares a mental link with the one living in her father's mech, and flies it with him.",
@@ -8849,8 +9171,30 @@ const moreSpider: CharacterDraft[] = [
     reality: "Earth-8311",
     species: "Uplifted animal",
     powers: [
-      { en: "Cartoon physics", ar: "فيزياء الرسوم المتحركة" },
-      { en: "Pulls a mallet out of nowhere", ar: "يُخرج مطرقة من العدم" },
+      {
+        en: "The spider baseline, in a cartoon",
+        ar: "خط الأساس العنكبوتي، في رسوم متحركة",
+      },
+      {
+        en: "Cartoon physics, and they are real",
+        ar: "فيزياء الكرتون، وهي حقيقية",
+      },
+      {
+        en: "Pulls a mallet out of nowhere",
+        ar: "يخرج مطرقة من العدم",
+      },
+      {
+        en: "Survives what should end anyone",
+        ar: "ينجو مما كان لينهي أي أحد",
+      },
+      {
+        en: "Bends reality for a joke",
+        ar: "يثني الواقع لأجل نكتة",
+      },
+      {
+        en: "Effectively unkillable by normal means",
+        ar: "يكاد لا يُقتل بالوسائل العادية",
+      },
     ],
     origin: {
       en: "A spider bitten by a radioactive pig, which is the correct way round for his universe. He obeys cartoon rules rather than physical ones, and the other Spiders find this unfair.",
@@ -9001,8 +9345,30 @@ const moreSpider: CharacterDraft[] = [
     universe: ["sony", "mcu"],
     species: "Human",
     powers: [
-      { en: "Steam gauntlets", ar: "قفازات بخارية" },
-      { en: "Silent glide", ar: "انزلاق صامت" },
+      {
+        en: "Gauntlets that fire gas and blasts",
+        ar: "قفازات تطلق غازًا وقذائف",
+      },
+      {
+        en: "Retractable steel claws",
+        ar: "مخالب فولاذية تُسحب",
+      },
+      {
+        en: "Magnetic grips, so he climbs anything",
+        ar: "قبضات مغناطيسية، فيتسلق أي شيء",
+      },
+      {
+        en: "A cape that lets him glide",
+        ar: "عباءة تتيح له الانزلاق",
+      },
+      {
+        en: "Strength and agility from the suit",
+        ar: "قوة ورشاقة من البذلة",
+      },
+      {
+        en: "Built every piece of it himself",
+        ar: "بنى كل قطعة منها بنفسه",
+      },
     ],
     origin: {
       en: "Miles Morales's uncle, the person he is closest to, and a career criminal in a purple suit. Every version of the story turns on Miles finding out those are the same man.",
@@ -10227,9 +10593,30 @@ const others: CharacterDraft[] = [
     universe: ["mcu", "legacy"],
     species: "Centaurian",
     powers: [
-      { en: "A whistle-steered arrow", ar: "سهم يوجّهه بالصفير" },
-      { en: "Ravager captain", ar: "قائد بين الرافيجرز" },
-      { en: "Raised him badly and on purpose", ar: "ربّاه بسوء وعن قصد" },
+      {
+        en: "The Yaka arrow, steered by whistling",
+        ar: "سهم الياكا، يوجهه بالصفير",
+      },
+      {
+        en: "It changes direction in the air",
+        ar: "يغيّر اتجاهه في الهواء",
+      },
+      {
+        en: "Clears a room without touching a wall",
+        ar: "يخلي غرفة دون أن يمس جدارًا",
+      },
+      {
+        en: "Nine hundred pounds of strength",
+        ar: "قوة تسعمئة رطل",
+      },
+      {
+        en: "Breathes in vacuum, and heals fast",
+        ar: "يتنفس في الفراغ، ويشفى سريعًا",
+      },
+      {
+        en: "Silence him and the arrow drops",
+        ar: "أسكته فيسقط السهم",
+      },
     ],
     origin: {
       en: "The Ravager who was paid to deliver a boy to his father, kept him instead, and spent twenty years being a worse parent than he had to be so the boy would never be handed over. He does not explain any of that until it is too late to matter.",
@@ -10886,9 +11273,30 @@ const others: CharacterDraft[] = [
        alligator / Wears the horns / Nobody checks". */
     magicSchools: [],
     powers: [
-      { en: "Is an alligator", ar: "تمساح" },
-      { en: "Wears the horns", ar: "يعتمر القرنين" },
-      { en: "Nobody checks", ar: "لا أحد يتحقّق" },
+      {
+        en: "An alligator, and a genuine Loki",
+        ar: "تمساح، ولوكي حقيقي",
+      },
+      {
+        en: "A Loki's mischief, in that body",
+        ar: "شقاوة لوكي، في ذلك الجسد",
+      },
+      {
+        en: "Bites, mostly",
+        ar: "يعض، في الأغلب",
+      },
+      {
+        en: "Survived a room full of Loki variants",
+        ar: "نجا من غرفة ملأى بنسخ لوكي",
+      },
+      {
+        en: "Latent Asgardian nature, implied",
+        ar: "طبيعة أسغاردية كامنة، مُلمَّح إليها",
+      },
+      {
+        en: "Crowned, briefly, and deserved it",
+        ar: "تُوّج، لبرهة، واستحقها",
+      },
     ],
     origin: {
       en: "A Loki variant who is an alligator, found in the Void wearing the horns. The series never explains him and never needs to: the other Lokis accept him instantly, which tells you everything about how much they trust their own story.",
@@ -10911,9 +11319,30 @@ const others: CharacterDraft[] = [
     universe: ["mcu", "animation", "legacy"],
     species: "Frog",
     powers: [
-      { en: "A splinter of Mjolnir", ar: "شظية من ميولنير" },
-      { en: "Worthy, at frog scale", ar: "جدير، بمقياس ضفدع" },
-      { en: "The thunder, smaller", ar: "الرعد، أصغر" },
+      {
+        en: "Lifted a sliver of Mjolnir, and was worthy",
+        ar: "رفع شظية من ميولنير، فكان أهلًا",
+      },
+      {
+        en: "Thor's strength, for a frog's size",
+        ar: "قوة ثور، بحجم ضفدع",
+      },
+      {
+        en: "Calls storms, and throws lightning",
+        ar: "يستدعي العواصف، ويقذف البرق",
+      },
+      {
+        en: "Flies, and the hammer returns",
+        ar: "يطير، والمطرقة تعود",
+      },
+      {
+        en: "Leaps like the frog he is",
+        ar: "يقفز كالضفدع الذي هو",
+      },
+      {
+        en: "Leads the Pet Avengers",
+        ar: "يقود أفنجرز الحيوانات",
+      },
     ],
     origin: {
       en: "A frog who lifted a splinter of Mjolnir and became worthy, which is the joke and also exactly how the rule works. Loki turned Thor into a frog once; this is a different frog, and the comics are firm about the distinction.",
@@ -11119,9 +11548,30 @@ const others: CharacterDraft[] = [
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
-      { en: "Sees what has not happened yet", ar: "ترى ما لم يقع بعد" },
-      { en: "Clairvoyance", ar: "استبصار" },
-      { en: "Blind, in the comics", ar: "كفيفة، في القصص المصوّرة" },
+      {
+        en: "No spider-powers at all. She is a seer",
+        ar: "بلا قدرات عنكبوتية البتة، إنها عرّافة",
+      },
+      {
+        en: "Precognition, and clairvoyance with it",
+        ar: "استشراف، وبصيرة معه",
+      },
+      {
+        en: "Telepathy across any distance",
+        ar: "تخاطر عبر أي مسافة",
+      },
+      {
+        en: "Astral projection, and psychic surgery",
+        ar: "إسقاط أثيري، وجراحة نفسية",
+      },
+      {
+        en: "Alters a mind she has looked into",
+        ar: "تغيّر عقلًا نظرت فيه",
+      },
+      {
+        en: "Blind, elderly, and the Weaver",
+        ar: "عمياء، مسنّة، وهي الغزّالة",
+      },
     ],
     origin: {
       en: "A paramedic who drowns, is revived, and comes back seeing a few seconds ahead of everyone else. In the comics she is an elderly blind woman wired into a life-support web, which is where the name comes from and which the film declines to explain.",
@@ -11142,9 +11592,30 @@ const others: CharacterDraft[] = [
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
-      { en: "Psionic webs", ar: "شباك ذهنية" },
-      { en: "Wall-crawling", ar: "تسلّق الجدران" },
-      { en: "Becomes the next Madame Web", ar: "تصير مدام ويب التالية" },
+      {
+        en: "The spider baseline, from an injection",
+        ar: "خط الأساس العنكبوتي، من حقنة",
+      },
+      {
+        en: "Psionic webbing, spun from nothing",
+        ar: "شبكة نفسية، تُغزل من لا شيء",
+      },
+      {
+        en: "Force constructs she swings and binds with",
+        ar: "بناءات قوة تتأرجح بها وتقيّد",
+      },
+      {
+        en: "Later, as Madame Web: precognition",
+        ar: "لاحقًا، كمدام ويب: استشراف",
+      },
+      {
+        en: "Telepathy and astral projection with it",
+        ar: "تخاطر وإسقاط أثيري معه",
+      },
+      {
+        en: "Blinded in exchange for the sight",
+        ar: "عميت مقابل البصيرة",
+      },
     ],
     origin: {
       en: "One of three teenagers a stranger tells will one day be heroes, which is the whole plot of the film she is in. In the comics she is the second Spider-Woman and later inherits the Madame Web name outright.",
@@ -11181,9 +11652,30 @@ const others: CharacterDraft[] = [
     universe: ["sony", "legacy"],
     species: "Human mutate",
     powers: [
-      { en: "Flight", ar: "طيران" },
-      { en: "Spider strength", ar: "قوة العنكبوت" },
-      { en: "The third Spider-Woman", ar: "المرأة العنكبوت الثالثة" },
+      {
+        en: "The spider baseline, from a ritual",
+        ar: "خط الأساس العنكبوتي، من طقس",
+      },
+      {
+        en: "Flight, which the others do not have",
+        ar: "طيران، وهو ما لا يملكه الآخرون",
+      },
+      {
+        en: "Absorbs other Spiders' powers",
+        ar: "تمتص قدرات العناكب الآخرين",
+      },
+      {
+        en: "Venom blasts, taken from Witter",
+        ar: "قذائف سامة، أخذتها من ويتر",
+      },
+      {
+        en: "Psionic spider-legs from her back",
+        ar: "أرجل عنكبوتية نفسية من ظهرها",
+      },
+      {
+        en: "The Gathering of Five gave her power",
+        ar: "تجمّع الخمسة منحها القوة",
+      },
     ],
     origin: {
       en: "A teenager who took her uncle's place in an occult ritual and came out of it with powers, then spent a stretch of the comics standing in for Spider-Man while nobody noticed the difference.",
@@ -11202,10 +11694,29 @@ const others: CharacterDraft[] = [
     species: "Human mutate",
     powers: [
       {
-        en: "The same powers, taken not given",
-        ar: "القدرات نفسها، مأخوذة لا موهوبة",
+        en: "The spider baseline, from the totem",
+        ar: "خط الأساس العنكبوتي، من الطوطم",
       },
-      { en: "Knows what the spider means", ar: "يعرف ما يعنيه العنكبوت" },
+      {
+        en: "The same source Peter's came from",
+        ar: "المصدر ذاته الذي جاءت منه قوى بيتر",
+      },
+      {
+        en: "A spider-sense that cancels Peter's out",
+        ar: "حاسة عنكبوت تلغي حاسة بيتر",
+      },
+      {
+        en: "Longevity, and he has used all of it",
+        ar: "طول عمر، وقد استعمله كله",
+      },
+      {
+        en: "Knows the Web of Life by heart",
+        ar: "يحفظ شبكة الحياة عن ظهر قلب",
+      },
+      {
+        en: "Wall-crawling, and considerable strength",
+        ar: "تسلق الجدران، وقوة معتبرة",
+      },
     ],
     origin: {
       en: "A man who took spider powers in a ritual rather than receiving them by accident, and who spends his time hunting the people fate says will kill him. In the comics he is the first person to tell Peter Parker the bite might not have been chance.",
@@ -11257,9 +11768,30 @@ const whiteVision: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Synthezoid",
     powers: [
-      { en: "Density control", ar: "التحكم في الكثافة" },
-      { en: "Flight", ar: "الطيران" },
-      { en: "Total recall, no memory", ar: "ذاكرة كاملة بلا ذكريات" },
+      {
+        en: "Density control, from ghost to diamond",
+        ar: "تحكم بالكثافة، من شبح إلى ألماس",
+      },
+      {
+        en: "Phases through anything he chooses",
+        ar: "يعبر أي شيء يختاره",
+      },
+      {
+        en: "Flight, and strength to match",
+        ar: "طيران، وقوة توازيه",
+      },
+      {
+        en: "Energy beams from the forehead",
+        ar: "أشعة طاقة من جبهته",
+      },
+      {
+        en: "A synthetic brain, purely logical",
+        ar: "دماغ اصطناعي، منطقي بحت",
+      },
+      {
+        en: "No Mind Stone, and no memories at first",
+        ar: "بلا حجر العقل، وبلا ذكريات أولًا",
+      },
     ],
     origin: {
       en: "S.W.O.R.D. rebuilds the Vision's body from the pieces, drained of colour and of everything he was. He is given his memories back by the version of himself he was sent to destroy, and then flies away to work out what that makes him.",
@@ -11346,9 +11878,30 @@ const laterAdditions: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Enhanced human",
     powers: [
-      { en: "Extremis regeneration", ar: "تجدّد بواسطة إكستريمِس" },
-      { en: "Burns at 3000 degrees", ar: "يشتعل عند ثلاثة آلاف درجة" },
-      { en: "Runs a think tank", ar: "يدير مركز أبحاث" },
+      {
+        en: "Extremis, perfected on himself",
+        ar: "إكستريميس، أتقنه على نفسه",
+      },
+      {
+        en: "Regrows a lost limb in seconds",
+        ar: "ينبت طرفًا مفقودًا في ثوانٍ",
+      },
+      {
+        en: "Burns at three thousand degrees",
+        ar: "يحترق عند ثلاثة آلاف درجة",
+      },
+      {
+        en: "Breathes fire, and melts metal",
+        ar: "ينفث النار، ويذيب المعدن",
+      },
+      {
+        en: "Strength and durability with it",
+        ar: "قوة وصلابة معها",
+      },
+      {
+        en: "Push it too far and the body detonates",
+        ar: "ادفعه أبعد فينفجر الجسد",
+      },
     ],
     origin: {
       en: "A scientist Tony Stark humiliated on a rooftop in 1999 and forgot about by morning. He spends thirteen years building a company, a treatment that rewrites the human body, and a terrorist who does not exist.",
@@ -11603,9 +12156,30 @@ const knowhere: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Pluvian",
     powers: [
-      { en: "A body of living crystal", ar: "جسد من بلّور حيّ" },
-      { en: "Heat and cold at will", ar: "حرارة وبرودة بإرادته" },
-      { en: "Stakar's first officer", ar: "نائب ستاكار" },
+      {
+        en: "A crystalline, silicon body",
+        ar: "جسد بلوري سيليكوني",
+      },
+      {
+        en: "One hand fires heat, the other cold",
+        ar: "يد تطلق الحرارة، والأخرى البرد",
+      },
+      {
+        en: "Burns or flash-freezes a target",
+        ar: "يحرق هدفًا أو يجمده فورًا",
+      },
+      {
+        en: "Near-diamond hard, and unaging",
+        ar: "بصلابة تقارب الألماس، ولا يشيخ",
+      },
+      {
+        en: "A brilliant scientist and engineer",
+        ar: "عالم ومهندس بارع",
+      },
+      {
+        en: "Resistant to any temperature",
+        ar: "مقاوم لأي درجة حرارة",
+      },
     ],
     origin: {
       en: "Stakar's second in command, made of crystal and considerably more patient than the man he answers to. He is the one who suggests they call the old team back.",
@@ -11910,9 +12484,30 @@ const smallScreen: CharacterDraft[] = [
     universe: ["marvel-tv"],
     species: "Enhanced human",
     powers: [
-      { en: "Split in two", ar: "انقسمت إلى اثنتين" },
-      { en: "Feels no restraint", ar: "لا تعرف الكبح" },
-      { en: "A detective still", ar: "ما زالت محقّقة" },
+      {
+        en: "A synthezoid version of Spider-Girl",
+        ar: "نسخة صناعية من سبايدر غيرل",
+      },
+      {
+        en: "The baseline, built rather than bitten",
+        ar: "خط الأساس، مبنيّ لا ملدوغ",
+      },
+      {
+        en: "Does not tire, and does not bleed",
+        ar: "لا تتعب، ولا تنزف",
+      },
+      {
+        en: "Wall-crawling, and a spider-sense",
+        ar: "تسلق الجدران، وحاسة عنكبوت",
+      },
+      {
+        en: "An artificial body, and a real mind",
+        ar: "جسد اصطناعي، وعقل حقيقي",
+      },
+      {
+        en: "Published detail is thin",
+        ar: "التفاصيل المنشورة قليلة",
+      },
     ],
     origin: {
       en: "A detective who went into the water after the people she was investigating and came out as two of herself, and the half that surfaced does not believe in warnings.",
@@ -11956,9 +12551,30 @@ const smallScreen: CharacterDraft[] = [
     universe: ["marvel-tv"],
     species: "Human hybrid",
     powers: [
-      { en: "Flight", ar: "الطيران" },
-      { en: "Light in every colour", ar: "ضوء بكل الألوان" },
-      { en: "Not from here", ar: "ليست من هنا" },
+      {
+        en: "Absorbs solar energy into her body",
+        ar: "تمتص الطاقة الشمسية في جسدها",
+      },
+      {
+        en: "Her skin glows in rainbow colour",
+        ar: "يتوهج جلدها بألوان قوس قزح",
+      },
+      {
+        en: "Fires concussive light, and heat with it",
+        ar: "تطلق ضوءًا صادمًا، وحرارة معه",
+      },
+      {
+        en: "Solid-light constructs when she needs them",
+        ar: "بناءات ضوئية صلبة عند الحاجة",
+      },
+      {
+        en: "Flies on her own light",
+        ar: "تطير على ضوئها",
+      },
+      {
+        en: "Strongest in direct sunlight",
+        ar: "أقوى ما تكون في الشمس المباشرة",
+      },
     ],
     origin: {
       en: "Raised in a church her mother runs, wearing a bracelet she was told never to remove. Taking it off is how she learns what she is and where her parents actually came from.",
@@ -12647,10 +13263,32 @@ const antagonists: CharacterDraft[] = [
     affiliation: [],
     universe: ["mcu", "animation"],
     species: "Enhanced human",
+    /* AN AVENGERS HEAVY HITTER ON FOURTEEN POINTS. His record was three lines for a man whose body is living ionic energy and who comes back from death by reforming. */
     powers: [
-      { en: "Ionic energy body", ar: "جسد من طاقة أيونية" },
-      { en: "Does not tire", ar: "لا يتعب" },
-      { en: "Wants the part more", ar: "يريد الدور أكثر" },
+      {
+        en: "A body of living ionic energy",
+        ar: "جسد من طاقة أيونية حية",
+      },
+      {
+        en: "Strength on the Thing's own level",
+        ar: "قوة بمستوى الثينغ نفسه",
+      },
+      {
+        en: "Near-invulnerable. It shrugs off blasts",
+        ar: "شبه منيع، يتجاهل القذائف",
+      },
+      {
+        en: "Projects ionic energy, and flies",
+        ar: "يقذف الطاقة الأيونية، ويطير",
+      },
+      {
+        en: "Needs no food, water, air or sleep",
+        ar: "لا يحتاج طعامًا ولا ماءً ولا هواءً ولا نومًا",
+      },
+      {
+        en: "Reconstitutes himself after dying",
+        ar: "يعيد تشكيل نفسه بعد الموت",
+      },
     ],
     origin: {
       en: "An actor with real powers auditioning to play someone with fake ones, in a town that cannot tell the difference and would rather not find out.",
@@ -12953,9 +13591,30 @@ const antagonists: CharacterDraft[] = [
     /* NOT an ordinary human. Sovereign, grown in a pod. Not human at any point. */
     species: "Alien",
     powers: [
-      { en: "Genetically designed", ar: "مصمَّمة وراثيًا" },
-      { en: "Commands a golden fleet", ar: "تقود أسطولًا ذهبيًا" },
-      { en: "Cannot be embarrassed twice", ar: "لا تُحرَج مرتين" },
+      {
+        en: "Genetically engineered to be perfect",
+        ar: "هُندست وراثيًا لتكون مثالية",
+      },
+      {
+        en: "Strength, durability and longevity",
+        ar: "قوة وصلابة وطول عمر",
+      },
+      {
+        en: "Energy manipulation, at her command",
+        ar: "تحكم بالطاقة، طوع أمرها",
+      },
+      {
+        en: "In the comics, near-Warlock power",
+        ar: "في القصص، قوة تقارب وارلوك",
+      },
+      {
+        en: "Cosmic awareness, and matter control",
+        ar: "وعي كوني، وتحكم بالمادة",
+      },
+      {
+        en: "Created Adam to destroy the Guardians",
+        ar: "خلقت آدم ليدمر الحراس",
+      },
     ],
     origin: {
       en: "The high priestess of a people who breed themselves in pods to be perfect, and who take a theft from their vault as a personal insult. She builds a weapon to answer it.",
@@ -13061,9 +13720,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Kree",
     powers: [
-      { en: "Starforce commander", ar: "قائد قوة النجم" },
-      { en: "Trained her himself", ar: "درّبها بنفسه" },
-      { en: "Fights to prove a point", ar: "يقاتل ليثبت وجهة نظر" },
+      {
+        en: "Kree physiology, denser than a human's",
+        ar: "بنية كري، أكثف من بنية البشر",
+      },
+      {
+        en: "Strength, durability and reflexes with it",
+        ar: "قوة وصلابة وردود فعل معها",
+      },
+      {
+        en: "A master strategist and pilot",
+        ar: "استراتيجي وطيّار بارع",
+      },
+      {
+        en: "Kree weaponry, and he knows all of it",
+        ar: "أسلحة كري، ويعرفها كلها",
+      },
+      {
+        en: "Drew power from a Kree energy source",
+        ar: "استمد قوته من مصدر طاقة كري",
+      },
+      {
+        en: "Trained Carol Danvers, and lied to her",
+        ar: "درّب كارول دانفرز، وكذب عليها",
+      },
     ],
     origin: {
       en: "A Kree commander and mentor who taught his best soldier that her strength was a gift he could withdraw. Everything he told her about where she came from was chosen carefully.",
@@ -13324,9 +14004,30 @@ const antagonists: CharacterDraft[] = [
     universe: ["fox"],
     species: "Enhanced human",
     powers: [
-      { en: "Feels no pain", ar: "لا يشعر بالألم" },
-      { en: "Enhanced reflexes", ar: "ردود فعل معزّزة" },
-      { en: "Runs the workshop", ar: "يدير الورشة" },
+      {
+        en: "Feels no pain. The nerves were removed",
+        ar: "لا يشعر بالألم، فقد نُزعت أعصابه",
+      },
+      {
+        en: "Strength and reflexes from the programme",
+        ar: "قوة وردود فعل من البرنامج",
+      },
+      {
+        en: "Speed and agility via implants",
+        ar: "سرعة ورشاقة عبر زرعات",
+      },
+      {
+        en: "Heals faster than he should",
+        ar: "يشفى أسرع مما ينبغي",
+      },
+      {
+        en: "Takes injury and keeps working",
+        ar: "يتلقى الإصابة ويواصل",
+      },
+      {
+        en: "A methodical enforcer, not a brawler",
+        ar: "منفّذ منهجي، لا مشاكس",
+      },
     ],
     origin: {
       en: "The man who runs the programme that turns dying people into weapons by torturing them until something mutates. He took a mercenary's face and finds the joke has followed him home.",
@@ -13507,9 +14208,30 @@ const antagonists: CharacterDraft[] = [
     /* NOT an ordinary human. Same resurrection, same price. */
     species: "Enhanced human",
     powers: [
-      { en: "Kyoketsu-shoge chain", ar: "سلسلة كيوكِتسو-شوغيه" },
-      { en: "Comes back", ar: "يعود" },
-      { en: "Answers to the Hand", ar: "يتبع اليد" },
+      {
+        en: "A master assassin of the Hand",
+        ar: "قاتل بارع من اليد",
+      },
+      {
+        en: "The kyoketsu-shoge, a bladed chain",
+        ar: "الكيوكيتسو-شوغي، سلسلة ذات نصل",
+      },
+      {
+        en: "Moves silently, and strikes from ambush",
+        ar: "يتحرك بصمت، ويضرب من كمين",
+      },
+      {
+        en: "Resurrected by the Hand, more than once",
+        ar: "أحيته اليد، أكثر من مرة",
+      },
+      {
+        en: "Decades of combat behind him",
+        ar: "عقود من القتال وراءه",
+      },
+      {
+        en: "Leads, and is rarely seen leading",
+        ar: "يقود، ونادرًا ما يُرى قائدًا",
+      },
     ],
     origin: {
       en: "The Hand's man in New York, who runs a construction empire as cover and treats the man in the mask as an administrative problem until he stops being one.",
@@ -13595,9 +14317,30 @@ const antagonists: CharacterDraft[] = [
     /* NOT an ordinary human. Died, and the Hand brought him back. Twice. */
     species: "Enhanced human",
     powers: [
-      { en: "Died and did not stay dead", ar: "مات ولم يبقَ ميتًا" },
-      { en: "Runs Rand from a penthouse", ar: "يدير راند من شقة علوية" },
-      { en: "Owes the Hand everything", ar: "يدين لليد بكل شيء" },
+      {
+        en: "No powers. A ruthless businessman",
+        ar: "بلا قدرات، رجل أعمال قاسٍ",
+      },
+      {
+        en: "Resurrected by the Hand",
+        ar: "أحيته اليد",
+      },
+      {
+        en: "Vitality it gave back, and a price",
+        ar: "حيوية أعادتها، وثمن لها",
+      },
+      {
+        en: "Co-founded Rand Enterprises",
+        ar: "شارك في تأسيس مؤسسات راند",
+      },
+      {
+        en: "A schemer, and not a fighter",
+        ar: "مدبّر، لا مقاتل",
+      },
+      {
+        en: "Compulsions he did not choose",
+        ar: "نزوات لم يخترها",
+      },
     ],
     origin: {
       en: "Danny Rand's father's business partner, kept alive in a locked penthouse by people who expect to be repaid. Thirteen years of that has left very little of the man his children remember.",
@@ -14103,9 +14846,30 @@ const spiderRogues: CharacterDraft[] = [
     /* NOT an ordinary human. A steel alloy plate surgically set into his skull. */
     species: "Mutate",
     powers: [
-      { en: "A skull plated in steel", ar: "جمجمة مصفّحة بالفولاذ" },
-      { en: "Charges head first", ar: "يندفع برأسه أولًا" },
-      { en: "Runs a crime family", ar: "يدير عائلة إجرام" },
+      {
+        en: "A steel plate for a skull",
+        ar: "صفيحة فولاذية بدل الجمجمة",
+      },
+      {
+        en: "Adamantium in the later versions",
+        ar: "أدامانتيوم في النسخ اللاحقة",
+      },
+      {
+        en: "Charges head-first through a wall",
+        ar: "يندفع برأسه عبر جدار",
+      },
+      {
+        en: "The skull is essentially indestructible",
+        ar: "الجمجمة تكاد لا تُدمَّر",
+      },
+      {
+        en: "An adamantium-laced skeleton, eventually",
+        ar: "هيكل مطليّ بالأدامانتيوم، في النهاية",
+      },
+      {
+        en: "A crime boss, and a brawler with it",
+        ar: "زعيم جريمة، ومشاكس معها",
+      },
     ],
     origin: {
       en: "A gangster rebuilt after a beating with a steel alloy plate across his skull, who came out of surgery convinced he was a 1920s mob boss and has run his family that way ever since.",
@@ -14189,9 +14953,30 @@ const spiderRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Cyborg",
     powers: [
-      { en: "Ran the Maggia for decades", ar: "قاد المافيا عقودًا" },
-      { en: "Rebuilt as a machine", ar: "أُعيد بناؤه آلة" },
-      { en: "Terrified of dying", ar: "يرهبه الموت" },
+      {
+        en: "A cyborg body, rebuilt around a brain",
+        ar: "جسد آلي، بُني حول دماغ",
+      },
+      {
+        en: "Strength and durability from it",
+        ar: "قوة وصلابة منه",
+      },
+      {
+        en: "Built-in weaponry, and life support",
+        ar: "أسلحة مدمجة، ودعم حياة",
+      },
+      {
+        en: "A rejuvenation tablet, before that",
+        ar: "لوح تجديد شباب، قبل ذلك",
+      },
+      {
+        en: "A Maggia boss for fifty years",
+        ar: "زعيم مافيا خمسين عامًا",
+      },
+      {
+        en: "His organisation is the other weapon",
+        ar: "تنظيمه هو السلاح الآخر",
+      },
     ],
     origin: {
       en: "An old crime boss who spent his fortune chasing ways not to die, and ended up keeping his head alive on a machine body. Every scheme he runs is about buying more time.",
@@ -14212,9 +14997,30 @@ const spiderRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Human",
     powers: [
-      { en: "An armoured flight suit", ar: "بدلة طيران مدرّعة" },
-      { en: "Builds his own gear", ar: "يصنع عتاده بنفسه" },
-      { en: "Better engineer than crook", ar: "مهندس أفضل منه لصًّا" },
+      {
+        en: "Powered armour he built and rebuilds",
+        ar: "درع مؤلي بناه ويعيد بناءه",
+      },
+      {
+        en: "Strength and durability from the suit",
+        ar: "قوة وصلابة من البذلة",
+      },
+      {
+        en: "Insectile wings and jets for flight",
+        ar: "أجنحة حشرية ونفاثات للطيران",
+      },
+      {
+        en: "Electro-blasters in the gauntlets",
+        ar: "قاذفات كهربائية في القفازات",
+      },
+      {
+        en: "Suction grips, so he climbs walls",
+        ar: "قبضات شافطة، فيتسلق الجدران",
+      },
+      {
+        en: "Became MACH-I, and kept improving it",
+        ar: "صار ماك-1، وواصل تحسينها",
+      },
     ],
     origin: {
       en: "A mechanic good enough to build a flying battlesuit in a garage and not quite good enough to stop robbing people with it. He keeps upgrading the armour and his luck stays the same.",
@@ -14273,9 +15079,30 @@ const spiderRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Commands rats", ar: "يأمر الجرذان" },
-      { en: "Claws and teeth", ar: "مخالب وأنياب" },
-      { en: "Was a man once", ar: "كان إنسانًا يومًا" },
+      {
+        en: "Ten tons, and faster than a sprinter",
+        ar: "عشرة أطنان، وأسرع من عدّاء",
+      },
+      {
+        en: "Claws that gnaw through soft metal",
+        ar: "مخالب تقضم المعادن اللينة",
+      },
+      {
+        en: "Sees in the dark, and smells danger",
+        ar: "يرى في الظلام، ويشم الخطر",
+      },
+      {
+        en: "Commands the rats for two miles round",
+        ar: "يأمر الجرذان في محيط ميلين",
+      },
+      {
+        en: "Climbs any sheer wall",
+        ar: "يتسلق أي جدار أملس",
+      },
+      {
+        en: "Duplicates himself into a swarm",
+        ar: "ينسخ نفسه إلى سرب",
+      },
     ],
     origin: {
       en: "A man turned into something between a rat and a person by an experiment, who lives in the tunnels under the city and is more frightened than frightening once anyone slows down enough to see it.",
@@ -15624,9 +16451,30 @@ const elders: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Elder of the Universe",
     powers: [
-      { en: "Millions of years of thought", ar: "ملايين السنين من التأمل" },
-      { en: "Reads minds and futures", ar: "يقرأ العقول والمآلات" },
-      { en: "Meddles more than he admits", ar: "يتدخّل أكثر مما يعترف" },
+      {
+        en: "An Elder, immortal since the Big Bang",
+        ar: "إلدر، خالد منذ الانفجار الكبير",
+      },
+      {
+        en: "The Power Primordial, like all of them",
+        ar: "القوة البدئية، كسائرهم",
+      },
+      {
+        en: "Telepathy, mind control and illusion",
+        ar: "تخاطر وسيطرة عقول وأوهام",
+      },
+      {
+        en: "Astral projection, across any distance",
+        ar: "إسقاط أثيري، عبر أي مسافة",
+      },
+      {
+        en: "Separates his mind from his body",
+        ar: "يفصل عقله عن جسده",
+      },
+      {
+        en: "Eons of thought, and he counsels gods",
+        ar: "دهور من التأمل، ويشير على الآلهة",
+      },
     ],
     origin: {
       en: "An Elder who chose contemplation as his obsession and has been thinking without pause ever since, though he intervenes in other people's affairs far more often than a contemplative should.",
@@ -15724,9 +16572,30 @@ const elders: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Elder of the Universe",
     powers: [
-      { en: "Tends the dying", ar: "ترعى المحتضرين" },
-      { en: "Sits with whole species", ar: "تجلس مع أنواع بأكملها" },
-      { en: "Outlived everyone she nursed", ar: "بقيت بعد كل من مرّضت" },
+      {
+        en: "An Elder, and immortal with it",
+        ar: "إلدر، وخالدة معها",
+      },
+      {
+        en: "The Power Primordial, like all Elders",
+        ar: "القوة البدئية، كسائر الإلدر",
+      },
+      {
+        en: "Cosmic energy, and she shapes it",
+        ar: "طاقة كونية، وتشكّلها",
+      },
+      {
+        en: "Her obsession is the fostering of life",
+        ar: "هوسها رعاية الحياة",
+      },
+      {
+        en: "Cannot die while the obsession holds",
+        ar: "لا تموت ما دام الهوس قائمًا",
+      },
+      {
+        en: "What else she can do is unrecorded",
+        ar: "وما عدا ذلك غير مدوَّن",
+      },
     ],
     origin: {
       en: "An Elder whose chosen obsession is caring for others as they die, which on her scale means sitting with entire species through their last years. She is the gentlest of them and the saddest.",
@@ -15743,10 +16612,32 @@ const elders: CharacterDraft[] = [
     affiliation: ["Elders of the Universe"],
     universe: ["mcu"],
     species: "Elder of the Universe",
+    /* HE SCORED 442 ON THE FIRST PASS, three times the Collector, because the word cosmic was in two bullets and "blasts" in a third. His own entry in Part 15 says his documented feats are thin. The record now says that and scores like it. */
     powers: [
-      { en: "Passes sentence on species", ar: "يصدر الحكم على الأنواع" },
-      { en: "Answers to no court", ar: "لا يخضع لمحكمة" },
-      { en: "Certain of every verdict", ar: "واثق من كل حكم" },
+      {
+        en: "An Elder of the Universe, and immortal",
+        ar: "إلدر من الكون، وخالد",
+      },
+      {
+        en: "The Power Primordial, like all of them",
+        ar: "القوة البدئية، كسائرهم",
+      },
+      {
+        en: "A cosmic arbiter, and an executioner",
+        ar: "حَكَم كوني، ومنفّذ",
+      },
+      {
+        en: "Energy enough to enforce a judgement",
+        ar: "طاقة تكفي لإنفاذ حكم",
+      },
+      {
+        en: "Eons of accumulated knowledge",
+        ar: "دهور من المعرفة المتراكمة",
+      },
+      {
+        en: "His catalogued feats are thin",
+        ar: "إنجازاته المدوّنة قليلة",
+      },
     ],
     origin: {
       en: "An Elder who took judgement as his obsession and appointed himself to it, weighing whole peoples against a standard he wrote and nobody agreed to.",
@@ -19535,9 +20426,30 @@ const bugleAndRogues: CharacterDraft[] = [
     reality: "Earth-982",
     species: "Mutate",
     powers: [
-      { en: "Her father's powers, inherited", ar: "قوى أبيها بالوراثة" },
-      { en: "Basketball star first", ar: "نجمة كرة سلة أولًا" },
-      { en: "From a future that kept going", ar: "من مستقبل مضى قدمًا" },
+      {
+        en: "The full spider baseline, from her father",
+        ar: "خط الأساس العنكبوتي كاملًا، عن أبيها",
+      },
+      {
+        en: "More agile than he is, slightly weaker",
+        ar: "أرشق منه، وأضعف قليلًا",
+      },
+      {
+        en: "A spider-sense as sharp as his",
+        ar: "حاسة عنكبوت بحدة حاسته",
+      },
+      {
+        en: "Wall-crawling, and inherited shooters",
+        ar: "تسلق الجدران، وقاذفات موروثة",
+      },
+      {
+        en: "A natural athlete before any of it",
+        ar: "رياضية بالفطرة قبل ذلك كله",
+      },
+      {
+        en: "Grew up knowing what it costs",
+        ar: "نشأت وهي تعرف ثمنه",
+      },
     ],
     origin: {
       en: "Peter Parker and Mary Jane's daughter in a future where they both survived and retired, who found the powers in herself and the costume in the attic.",
@@ -19560,11 +20472,29 @@ const bugleAndRogues: CharacterDraft[] = [
     species: "Mutate",
     powers: [
       {
-        en: "Powers from a yogi, not a spider",
-        ar: "قواه من يوغيّ لا من عنكبوت",
+        en: "The spider baseline, granted mystically",
+        ar: "خط الأساس العنكبوتي، مُنح صوفيًا",
       },
-      { en: "Fights demons, not scientists", ar: "يقاتل شياطين لا علماء" },
-      { en: "Mumbai is the whole point", ar: "مومباي هي المقصد كله" },
+      {
+        en: "A yogi's gift, not a spider bite",
+        ar: "هبة يوغي، لا لدغة عنكبوت",
+      },
+      {
+        en: "Organic webbing, and he flows with it",
+        ar: "شبكة عضوية، وينساب بها",
+      },
+      {
+        en: "Acrobatic past the others",
+        ar: "أرشق من الآخرين بهلوانيًا",
+      },
+      {
+        en: "Wall-crawling, and a spider-sense",
+        ar: "تسلق الجدران، وحاسة عنكبوت",
+      },
+      {
+        en: "Mumbai, and he answers to it",
+        ar: "مومباي، وهو مسؤول أمامها",
+      },
     ],
     origin: {
       en: "The Spider-Man of Mumbai, whose powers came from a dying yogi rather than a laboratory accident, and whose city is not a backdrop but the reason the story works differently.",
@@ -19589,13 +20519,28 @@ const bugleAndRogues: CharacterDraft[] = [
     species: "Mutate",
     powers: [
       {
-        en: "Rebuilds any vehicle he touches",
-        ar: "يعيد بناء أي مركبة يلمسها",
+        en: "Transforms any vehicle he touches",
+        ar: "يحوّل أي مركبة يلمسها",
       },
-      { en: "A getaway driver by trade", ar: "سائق هروب بالمهنة" },
       {
-        en: "A fan of Spider-Man, oddly",
-        ar: "معجب بسبايدرمان، والغريب أنه صادق",
+        en: "It becomes armoured, armed and faster",
+        ar: "تصير مدرعة ومسلحة وأسرع",
+      },
+      {
+        en: "Spikes, plating, jets and guns",
+        ar: "أشواك وصفائح ونفاثات ومدافع",
+      },
+      {
+        en: "He drives whatever he has made",
+        ar: "يقود ما صنعه",
+      },
+      {
+        en: "It reverts when he is finished",
+        ar: "تعود كما كانت حين ينتهي",
+      },
+      {
+        en: "Useless without a vehicle to touch",
+        ar: "بلا فائدة دون مركبة يلمسها",
       },
     ],
     origin: {
@@ -19614,9 +20559,30 @@ const bugleAndRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "A man made of bees", ar: "رجل من نحل" },
-      { en: "No body to hit", ar: "لا جسد يُضرب" },
-      { en: "Was a Nazi scientist", ar: "كان عالمًا نازيًا" },
+      {
+        en: "A body made of living bees",
+        ar: "جسد من نحل حي",
+      },
+      {
+        en: "Only a skeleton underneath them",
+        ar: "لا شيء تحته إلا هيكل عظمي",
+      },
+      {
+        en: "Disperses and reforms at will",
+        ar: "يتبدد ويتجمع كما يشاء",
+      },
+      {
+        en: "Blows and bullets pass straight through",
+        ar: "الضربات والرصاص تمر من خلاله",
+      },
+      {
+        en: "Commands and breeds the swarm without limit",
+        ar: "يأمر السرب ويربيه بلا حد",
+      },
+      {
+        en: "Cold and fire are what stop him",
+        ar: "البرد والنار هما ما يوقفانه",
+      },
     ],
     origin: {
       en: "A Nazi scientist consumed by mutated bees who did not die so much as become the swarm, and who has no solid body for anyone to punch.",
@@ -19675,9 +20641,30 @@ const bugleAndRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Blades in his boots", ar: "نصال في حذائه" },
-      { en: "A government killer once", ar: "كان قاتلًا حكوميًا" },
-      { en: "Turned into an actual spider", ar: "استحال عنكبوتًا فعليًا" },
+      {
+        en: "Peak human, and a master martial artist",
+        ar: "ذروة البشر، وفنان قتال بارع",
+      },
+      {
+        en: "Toe-spikes and claws, all envenomed",
+        ar: "أشواك قدم ومخالب، كلها مسمومة",
+      },
+      {
+        en: "The poison paralyses with a scratch",
+        ar: "السم يشل بخدش",
+      },
+      {
+        en: "A gymnast, and a knife-fighter",
+        ar: "لاعب جمباز، ومقاتل بالسكين",
+      },
+      {
+        en: "Mutated into a giant spider, later",
+        ar: "تحول إلى عنكبوت عملاق، لاحقًا",
+      },
+      {
+        en: "Wall-crawling and webbing in that form",
+        ar: "تسلق وشبكة في تلك الهيئة",
+      },
     ],
     origin: {
       en: "A South American political assassin turned costumed killer, whose employers eventually experimented on him until he stopped being a man in a spider suit and became a spider.",
@@ -20130,9 +21117,30 @@ const powerList: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Atlantean",
     powers: [
-      { en: "Strength beyond Namor's", ar: "قوة تفوق قوة نامور" },
-      { en: "Flies on ankle wings", ar: "تطير بجناحي كاحلها" },
-      { en: "Namor's cousin", ar: "ابنة عم نامور" },
+      {
+        en: "Strength that rivals Namor's own",
+        ar: "قوة تنافس قوة نامور",
+      },
+      {
+        en: "It grows with contact with water",
+        ar: "تزداد بملامسة الماء",
+      },
+      {
+        en: "Breathes water and air alike",
+        ar: "تتنفس الماء والهواء سواء",
+      },
+      {
+        en: "Flies on the wings at her ankles",
+        ar: "تطير بجناحي كاحليها",
+      },
+      {
+        en: "An aquatic healing factor",
+        ar: "عامل شفاء مائي",
+      },
+      {
+        en: "Withstands pressure and freezing cold",
+        ar: "تحتمل الضغط والبرد القارس",
+      },
     ],
     origin: {
       en: "Namor's cousin, stronger than he is and considerably less interested in diplomacy, who has spent most of her life defending the sea from whoever came for it that decade.",
@@ -20150,9 +21158,30 @@ const powerList: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Atlantean",
     powers: [
-      { en: "Atlantean strength", ar: "قوة أتلانتية" },
-      { en: "Grew up on the surface", ar: "نشأت على السطح" },
-      { en: "Died starting a war", ar: "ماتت فأشعلت حربًا" },
+      {
+        en: "Seventy-five tons while she is immersed",
+        ar: "خمسة وسبعون طنًا وهي مغمورة",
+      },
+      {
+        en: "A third of that when she is dry",
+        ar: "ثلث ذلك وهي جافة",
+      },
+      {
+        en: "Breathes water and air indefinitely",
+        ar: "تتنفس الماء والهواء بلا حد",
+      },
+      {
+        en: "Flies on ankle wings, like the others",
+        ar: "تطير بجناحي الكاحل، مثلهم",
+      },
+      {
+        en: "A healing factor that peaks submerged",
+        ar: "عامل شفاء يبلغ ذروته مغمورة",
+      },
+      {
+        en: "A clone of Namora, and improved",
+        ar: "نسخة من نامورا، ومحسّنة",
+      },
     ],
     origin: {
       en: "Namora's clone-daughter, raised among surface humans, whose death alongside hundreds of civilians is the event that started the superhero civil war.",
@@ -20186,9 +21215,30 @@ const spiderVariants: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Sticks to anything", ar: "يلتصق بأي شيء" },
-      { en: "Erased from everyone's memory", ar: "مُحي من ذاكرة الجميع" },
-      { en: "Was Spider-Man's sidekick", ar: "كان مساعد سبايدرمان" },
+      {
+        en: "The spider baseline, and then some",
+        ar: "خط الأساس العنكبوتي، وزيادة",
+      },
+      {
+        en: "An adhesive grip nothing peels off",
+        ar: "قبضة لاصقة لا ينزعها شيء",
+      },
+      {
+        en: "Sticks to what others cannot",
+        ar: "يلتصق بما لا يلتصق به غيره",
+      },
+      {
+        en: "Senses things the others miss",
+        ar: "يستشعر ما يفوت الآخرين",
+      },
+      {
+        en: "Erased from every memory by magic",
+        ar: "مُحي من كل ذاكرة بالسحر",
+      },
+      {
+        en: "Spider-Man's sidekick, forgotten",
+        ar: "مساعد سبايدرمان، المنسي",
+      },
     ],
     origin: {
       en: "Spider-Man's forgotten sidekick, wiped from the memory of everyone who knew him including Peter, and now trying to prove to a world with no record of him that he was ever there.",
@@ -20207,9 +21257,30 @@ const spiderVariants: CharacterDraft[] = [
     reality: "Earth-31913",
     species: "Mutate",
     powers: [
-      { en: "Rides a spider-sensed horse", ar: "يمتطي حصانًا بحسّ عنكبوتي" },
-      { en: "Web-lines and six-guns", ar: "خيوط ومسدسان" },
-      { en: "A sheriff in the old west", ar: "عمدة في الغرب القديم" },
+      {
+        en: "The spider baseline, in the Old West",
+        ar: "خط الأساس العنكبوتي، في الغرب القديم",
+      },
+      {
+        en: "Web-fluid six-shooters, drawn fast",
+        ar: "مسدسان بسائل الشبكة، يُسحبان بسرعة",
+      },
+      {
+        en: "A webbing lasso, thrown and pulled",
+        ar: "حبل شبكي، يُرمى ويُشد",
+      },
+      {
+        en: "Rides a horse called Widow",
+        ar: "يمتطي حصانًا اسمه ويدو",
+      },
+      {
+        en: "Wall-crawling, and a spider-sense",
+        ar: "تسلق الجدران، وحاسة عنكبوت",
+      },
+      {
+        en: "A gunslinger first, a spider after",
+        ar: "مسلّح أولًا، وعنكبوت بعدها",
+      },
     ],
     origin: {
       en: "The Spider-Man of an American frontier reality, a masked sheriff with a horse called Widow who shares his warning sense.",
@@ -20234,9 +21305,30 @@ const spiderVariants: CharacterDraft[] = [
     reality: "Earth-66",
     species: "Mutate",
     powers: [
-      { en: "A tyrannosaur with the powers", ar: "تيرانوصور بالقوى" },
-      { en: "Bitten by a radioactive spider", ar: "لدغته عنكبوت مشعّ" },
-      { en: "Genuinely a dinosaur", ar: "ديناصور حقًا" },
+      {
+        en: "A tyrannosaur fused with the spider",
+        ar: "تيرانوصور اندمج مع العنكبوت",
+      },
+      {
+        en: "Dinosaur size, strength and durability",
+        ar: "حجم ديناصور وقوته وصلابته",
+      },
+      {
+        en: "Wall-crawling, at that weight",
+        ar: "تسلق الجدران، بذلك الوزن",
+      },
+      {
+        en: "A spider-sense in a T. rex skull",
+        ar: "حاسة عنكبوت في جمجمة تي ركس",
+      },
+      {
+        en: "Webbing, and jaws behind it",
+        ar: "شبكة، وفكّان خلفها",
+      },
+      {
+        en: "Exactly as absurd as it sounds",
+        ar: "سخيف تمامًا كما يبدو",
+      },
     ],
     origin: {
       en: "A tyrannosaurus from a world where dinosaurs never died out, bitten by a radioactive spider. He is exactly what he sounds like and takes the responsibility just as seriously.",
@@ -20260,9 +21352,30 @@ const spiderVariants: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "A princess who sings", ar: "أميرة تغني" },
-      { en: "Animals answer her", ar: "تجيبها الحيوانات" },
-      { en: "Her world runs on songs", ar: "عالمها يسير بالأغاني" },
+      {
+        en: "The spider baseline, and a singing voice",
+        ar: "خط الأساس العنكبوتي، وصوت غنائي",
+      },
+      {
+        en: "Song-based spellcasting",
+        ar: "سحر قائم على الغناء",
+      },
+      {
+        en: "Enchanted music that moves a person",
+        ar: "موسيقى مسحورة تحرّك شخصًا",
+      },
+      {
+        en: "Animals answer her, as in the tales",
+        ar: "الحيوانات تجيبها، كما في الحكايات",
+      },
+      {
+        en: "Wall-crawling, and webbing with it",
+        ar: "تسلق الجدران، وشبكة معه",
+      },
+      {
+        en: "Very new, and very niche",
+        ar: "جديدة جدًا، ونادرة جدًا",
+      },
     ],
     origin: {
       en: "The Spider-Woman of a reality shaped like a musical, a princess whose singing summons help and whose problems resolve in verses.",
@@ -20287,9 +21400,30 @@ const spiderVariants: CharacterDraft[] = [
     reality: "Earth-71490",
     species: "Mutate",
     powers: [
-      { en: "Designed his own suit", ar: "صمّم بدلته بنفسه" },
-      { en: "A fashion designer by day", ar: "مصمم أزياء نهارًا" },
-      { en: "Webbing spun as thread", ar: "خيوط تُغزل نسيجًا" },
+      {
+        en: "The spider baseline, in couture",
+        ar: "خط الأساس العنكبوتي، بأزياء راقية",
+      },
+      {
+        en: "A suit he designed and built",
+        ar: "بذلة صممها وبناها",
+      },
+      {
+        en: "Specialised webbing for each job",
+        ar: "شبكة متخصصة لكل مهمة",
+      },
+      {
+        en: "Pheromone effects, in some tellings",
+        ar: "آثار فيرومونية، في بعض الروايات",
+      },
+      {
+        en: "A fashion designer by daylight",
+        ar: "مصمم أزياء في النهار",
+      },
+      {
+        en: "Wall-crawling, and a spider-sense",
+        ar: "تسلق الجدران، وحاسة عنكبوت",
+      },
     ],
     origin: {
       en: "A fashion designer who became a Spider-hero and made a point of the costume being genuinely well made, which none of the others can claim.",
@@ -20307,9 +21441,30 @@ const spiderVariants: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Hunts spider-totems", ar: "تصطاد الطواطم العنكبوتية" },
-      { en: "Miles Morales's sister", ar: "أخت مايلز موراليس" },
-      { en: "Raised to end the Web", ar: "نشأت لإنهاء الشبكة" },
+      {
+        en: "The spider baseline, built for brawling",
+        ar: "خط الأساس العنكبوتي، للعراك",
+      },
+      {
+        en: "Raw strength over finesse",
+        ar: "قوة خام قبل البراعة",
+      },
+      {
+        en: "A wrestler's approach to a fight",
+        ar: "أسلوب مصارع في القتال",
+      },
+      {
+        en: "Takes a hit to land a better one",
+        ar: "يتلقى ضربة ليوجه أفضل منها",
+      },
+      {
+        en: "Wall-crawling, and a spider-sense",
+        ar: "تسلق الجدران، وحاسة عنكبوت",
+      },
+      {
+        en: "Published detail is thin",
+        ar: "التفاصيل المنشورة قليلة",
+      },
     ],
     origin: {
       en: "Miles Morales's sister from a reality where she was raised by the enemies of the Great Web and taught that spider-totems are the thing to be stopped.",
@@ -20361,9 +21516,30 @@ const spiderVariants: CharacterDraft[] = [
     reality: "Earth-20023",
     species: "Mutate",
     powers: [
-      { en: "Swings with forearm crutches", ar: "تتأرجح بعكازي ساعد" },
-      { en: "Ehlers-Danlos syndrome", ar: "متلازمة إهلرز دانلوس" },
-      { en: "Built her gear around herself", ar: "صمّمت عتادها حولها" },
+      {
+        en: "The spider baseline, on her terms",
+        ar: "خط الأساس العنكبوتي، بشروطها",
+      },
+      {
+        en: "Web-tech built into her crutches",
+        ar: "تقنية شبكية مدمجة في عكازيها",
+      },
+      {
+        en: "They are shooters and tools at once",
+        ar: "وهما قاذفان وأداتان معًا",
+      },
+      {
+        en: "Ehlers-Danlos, and she works with it",
+        ar: "إهلرز-دانلوس، وتعمل معها",
+      },
+      {
+        en: "Swings faster than she walks",
+        ar: "تتأرجح أسرع مما تمشي",
+      },
+      {
+        en: "Adapted every part of it herself",
+        ar: "كيّفت كل جزء منها بنفسها",
+      },
     ],
     origin: {
       en: "A Spider-Woman with Ehlers-Danlos syndrome who designed her own web-shooters and crutches to work together, rather than treating her body as the problem to be solved.",
@@ -20381,12 +21557,30 @@ const spiderVariants: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Drains other spiders' powers", ar: "تمتص قوى العناكب الأخرى" },
       {
-        en: "Four spider-legs from her back",
-        ar: "أربع أرجل عنكبوتية من ظهرها",
+        en: "The spider baseline, surgically given",
+        ar: "خط الأساس العنكبوتي، مُنح جراحيًا",
       },
-      { en: "Made by Doctor Octopus", ar: "صنعها دكتور أوكتوبس" },
+      {
+        en: "Four psionic legs out of her back",
+        ar: "أربع أرجل نفسية من ظهرها",
+      },
+      {
+        en: "They slash, grasp and climb",
+        ar: "تقطع وتمسك وتتسلق",
+      },
+      {
+        en: "Drains other spiders' spider-powers",
+        ar: "تمتص قوى العناكب الأخريات",
+      },
+      {
+        en: "De-powered three of them, and kept it",
+        ar: "جرّدت ثلاثًا منهن، واحتفظت بالقوة",
+      },
+      {
+        en: "Octavius built her this way",
+        ar: "أوكتيفيوس صنعها هكذا",
+      },
     ],
     origin: {
       en: "A model surgically altered by Doctor Octopus into a Spider-Woman built specifically to drain the powers of the others and leave them ordinary.",
@@ -20408,9 +21602,30 @@ const spiderVariants: CharacterDraft[] = [
     reality: "Earth-22191",
     species: "Mutate",
     powers: [
-      { en: "Lives partly in the network", ar: "تعيش جزئيًا في الشبكة" },
-      { en: "Digital avatar body", ar: "جسد رمزيّ رقمي" },
-      { en: "Powers from a virtual world", ar: "قواها من عالم افتراضي" },
+      {
+        en: "Works in digital space, through a rig",
+        ar: "تعمل في الفضاء الرقمي، عبر عتاد",
+      },
+      {
+        en: "Projects a spider-powered avatar",
+        ar: "تسقط شخصية بقدرات عنكبوتية",
+      },
+      {
+        en: "Moves through any virtual environment",
+        ar: "تتحرك في أي بيئة افتراضية",
+      },
+      {
+        en: "The baseline, inside the machine",
+        ar: "خط الأساس، داخل الآلة",
+      },
+      {
+        en: "Her body stays in the chair",
+        ar: "جسدها يبقى في الكرسي",
+      },
+      {
+        en: "A network is a city to her",
+        ar: "الشبكة مدينة بالنسبة إليها",
+      },
     ],
     origin: {
       en: "A Spider-hero whose powers exist in a virtual reality and who learned to carry them out of it, which makes her the only spider whose body is partly software.",
@@ -20669,9 +21884,30 @@ const mutantsF: CharacterDraft[] = [
     universe: ["fox"],
     species: "Mephitisoid",
     powers: [
-      { en: "Claws and a skunk's defence", ar: "مخالب ودفاع الظربان" },
-      { en: "A Starjammer, not a mutant", ar: "نجّامة لا متحوّلة" },
-      { en: "Corsair's partner", ar: "شريكة كورسير" },
+      {
+        en: "Feline agility, reflexes and balance",
+        ar: "رشاقة وردود فعل وتوازن سنّوري",
+      },
+      {
+        en: "Retractable claws and fangs",
+        ar: "مخالب وأنياب تُسحب",
+      },
+      {
+        en: "Senses sharper than a human's",
+        ar: "حواس أحدّ من حواس البشر",
+      },
+      {
+        en: "A musk that disorients and repels",
+        ar: "رائحة تربك وتطرد",
+      },
+      {
+        en: "A crack shot with Shi'ar plasma",
+        ar: "رامية بارعة ببلازما الشيار",
+      },
+      {
+        en: "A Starjammer, and a pilot",
+        ar: "من الستارجامرز، وطيّارة",
+      },
     ],
     origin: {
       en: "A Mephitisoid pirate of the Starjammers, an alien rather than a mutant, who fights with claws and a scent nobody stays near.",
@@ -20812,9 +22048,30 @@ const mutantsF: CharacterDraft[] = [
     universe: ["fox"],
     species: "Cyborg",
     powers: [
-      { en: "Adamantium talons", ar: "مخالب أداماتيوم" },
-      { en: "Rebuilt herself for revenge", ar: "أعادت بناء نفسها للثأر" },
-      { en: "Hunts Wolverine specifically", ar: "تطارد ولفرين تحديدًا" },
+      {
+        en: "Adamantium claws on every finger",
+        ar: "مخالب أدامانتيوم في كل إصبع",
+      },
+      {
+        en: "An adamantium-laced skeleton",
+        ar: "هيكل عظمي مطليّ بالأدامانتيوم",
+      },
+      {
+        en: "A cybernetic body, rebuilt entirely",
+        ar: "جسد آلي، أُعيد بناؤه بالكامل",
+      },
+      {
+        en: "Strength, speed and a healing factor",
+        ar: "قوة وسرعة وعامل شفاء",
+      },
+      {
+        en: "Interfaces with technology by touch",
+        ar: "تتصل بالتقنية باللمس",
+      },
+      {
+        en: "A master martial artist, and patient",
+        ar: "فنانة قتال بارعة، وصبورة",
+      },
     ],
     origin: {
       en: "The daughter of the man who invented the adamantium bonding process, who had herself rebuilt as a cyborg to hunt the man wearing her father's work.",
@@ -20919,9 +22176,30 @@ const minorRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Glides on skin flaps", ar: "ينزلق على أغشية جلدية" },
-      { en: "Talons and a grip", ar: "مخالب وقبضة" },
-      { en: "A crooked financier first", ar: "ماليّ فاسد قبل كل شيء" },
+      {
+        en: "Glides on skin-flaps between his limbs",
+        ar: "ينزلق على أغشية بين أطرافه",
+      },
+      {
+        en: "True flight, in some eras",
+        ar: "طيران حقيقي، في بعض الحقب",
+      },
+      {
+        en: "Taloned fingers and toes that rend",
+        ar: "أصابع ذات مخالب تمزق",
+      },
+      {
+        en: "Night vision, and senses to match",
+        ar: "رؤية ليلية، وحواس توازيها",
+      },
+      {
+        en: "Turns his head almost the whole way round",
+        ar: "يدير رأسه دورة تكاد تكتمل",
+      },
+      {
+        en: "The powers fade without treatment",
+        ar: "القوى تخبو دون علاج",
+      },
     ],
     origin: {
       en: "A corrupt financier who altered himself to glide and grew talons, and who runs a piece of the city's crime from a position halfway between banker and bird.",
@@ -20942,9 +22220,30 @@ const minorRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Strength from a family rite", ar: "قوة من طقس عائلي" },
-      { en: "Heals almost anything", ar: "يشفى من كل شيء تقريبًا" },
-      { en: "The latest of a long line", ar: "آخر سلسلة طويلة" },
+      {
+        en: "A mystical mantle, passed down by ritual",
+        ar: "عباءة صوفية، تُورَّث بطقس",
+      },
+      {
+        en: "Strength, speed and durability from it",
+        ar: "قوة وسرعة وصلابة منها",
+      },
+      {
+        en: "A healing factor, and slowed ageing",
+        ar: "عامل شفاء، وشيخوخة بطيئة",
+      },
+      {
+        en: "Telepathy, and some telekinesis, later",
+        ar: "تخاطر، وشيء من التحريك الذهني، لاحقًا",
+      },
+      {
+        en: "Venomed claws and toe-spikes",
+        ar: "مخالب مسمومة وأشواك قدم",
+      },
+      {
+        en: "A crime lord with a code",
+        ar: "زعيم جريمة له مبدأ",
+      },
     ],
     origin: {
       en: "The current holder of a title passed down a Peruvian family line for centuries, each one given strength by a ritual, and the first of them to question what it is for.",
@@ -21231,9 +22530,30 @@ const minorRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Superhuman speed", ar: "سرعة خارقة" },
-      { en: "A chemist who dosed himself", ar: "كيميائي جرّب على نفسه" },
-      { en: "Steals more than he fights", ar: "يسرق أكثر مما يقاتل" },
+      {
+        en: "Superhuman speed, past the sound barrier",
+        ar: "سرعة خارقة، تتجاوز حاجز الصوت",
+      },
+      {
+        en: "Reflexes and perception scale with it",
+        ar: "ردود الفعل والإدراك تتصاعد معها",
+      },
+      {
+        en: "Spins up wind gusts and small cyclones",
+        ar: "يولّد عصفات ريح وأعاصير صغيرة",
+      },
+      {
+        en: "Runs up walls and across water",
+        ar: "يجري على الجدران وفوق الماء",
+      },
+      {
+        en: "Durable against his own friction",
+        ar: "صلب أمام احتكاكه هو",
+      },
+      {
+        en: "A chemist, and the formula was stolen",
+        ar: "كيميائي، والصيغة كانت مسروقة",
+      },
     ],
     origin: {
       en: "A chemist who gave himself super-speed and uses it almost entirely for theft, on the reasoning that fighting anyone is a waste of a good head start.",
@@ -21251,9 +22571,30 @@ const minorRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Ape-like agility", ar: "رشاقة القرد" },
-      { en: "Wanted to be a sidekick", ar: "أراد أن يكون مساعدًا" },
-      { en: "Spider-Man turned him down", ar: "رفضه سبايدرمان" },
+      {
+        en: "Born with a gibbon's physiology",
+        ar: "وُلد ببنية جيبون",
+      },
+      {
+        en: "Leaps, climbs and swings by instinct",
+        ar: "يقفز ويتسلق ويتأرجح بالفطرة",
+      },
+      {
+        en: "Prehensile feet, and he uses them",
+        ar: "قدمان ماسكتان، ويستعملهما",
+      },
+      {
+        en: "Agility and speed past a man's",
+        ar: "رشاقة وسرعة تفوقان البشر",
+      },
+      {
+        en: "Stronger than he looks",
+        ar: "أقوى مما يبدو",
+      },
+      {
+        en: "More sympathetic than villainous",
+        ar: "أدعى للتعاطف منه للشر",
+      },
     ],
     origin: {
       en: "A man born with simian features and agility who asked Spider-Man to take him on as a partner, was refused, and turned to crime largely out of hurt feelings.",
@@ -21271,9 +22612,30 @@ const minorRogues: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "A formula that makes a monster", ar: "تركيبة تصنع وحشًا" },
-      { en: "Strength near the Hulk's", ar: "قوة تقارب قوة هالك" },
-      { en: "A doctor who wanted to be feared", ar: "طبيب أراد أن يُرهَب" },
+      {
+        en: "Seventy tons at the top of the formula",
+        ar: "سبعون طنًا في ذروة الصيغة",
+      },
+      {
+        en: "Has traded blows with Thor",
+        ar: "بادل ثور الضربات",
+      },
+      {
+        en: "Bullets and blasts do little to him",
+        ar: "الرصاص والقذائف تكاد لا تؤذيه",
+      },
+      {
+        en: "A healing factor, and no fatigue",
+        ar: "عامل شفاء، وبلا تعب",
+      },
+      {
+        en: "A serum he keeps improving",
+        ar: "مصل يواصل تحسينه",
+      },
+      {
+        en: "The change rewrites his fingerprints",
+        ar: "التحول يعيد كتابة بصماته",
+      },
     ],
     origin: {
       en: "A doctor who recreated the Jekyll formula on himself out of resentment, and who is one of the few men on the street able to trade blows with the genuinely superhuman.",
@@ -22743,9 +24105,30 @@ const spiderLast: CharacterDraft[] = [
     reality: "Earth-9500",
     species: "Mutate",
     powers: [
-      { en: "A Spider-Man from 2211", ar: "سبايدرمان من عام 2211" },
-      { en: "Six mechanical arms", ar: "ستة أذرع آلية" },
-      { en: "Polices the timestream", ar: "يحرس مجرى الزمن" },
+      {
+        en: "The spider baseline, plus future tech",
+        ar: "خط الأساس العنكبوتي، وتقنية المستقبل",
+      },
+      {
+        en: "Six mechanical arms, on his back",
+        ar: "ست أذرع آلية، على ظهره",
+      },
+      {
+        en: "Time-travel gear, and he polices it",
+        ar: "عتاد سفر زمني، ويشرطن به",
+      },
+      {
+        en: "A Timespinner, guarding the timestream",
+        ar: "غزّال زمن، يحرس مجرى الزمن",
+      },
+      {
+        en: "A veteran, and it shows",
+        ar: "مخضرم، ويبدو ذلك",
+      },
+      {
+        en: "Fights across centuries, not streets",
+        ar: "يقاتل عبر القرون، لا الشوارع",
+      },
     ],
     origin: {
       en: "A Spider-Man from the twenty-third century who works as a time-cop and wears mechanical arms, which puts him halfway between Peter Parker and the man Peter fights most.",
@@ -22769,9 +24152,30 @@ const spiderLast: CharacterDraft[] = [
     universe: ["sony"],
     species: "Mutate",
     powers: [
-      { en: "Controls his own density", ar: "يتحكم بكثافته" },
-      { en: "Passes through or hardens", ar: "يعبر أو يتصلّب" },
-      { en: "Hypnotises with a light", ar: "ينوّم بضوء" },
+      {
+        en: "A body of controllable energy",
+        ar: "جسد من طاقة يتحكم بها",
+      },
+      {
+        en: "Density control, intangible to dense",
+        ar: "تحكم بالكثافة، من غير ملموس إلى كثيف",
+      },
+      {
+        en: "Phases through matter, or shatters it",
+        ar: "يعبر المادة، أو يحطمها",
+      },
+      {
+        en: "Levitation, and flight with it",
+        ar: "تحليق، وطيران معه",
+      },
+      {
+        en: "Hypnotic light that mesmerises",
+        ar: "ضوء منوّم يسحر الأنظار",
+      },
+      {
+        en: "Lose concentration and he disperses",
+        ar: "إذا فقد التركيز تبدد",
+      },
     ],
     origin: {
       en: "A scientist scattered at the molecular level in an accident and rebuilt by will alone, who can now pass through walls or make himself harder than steel.",
@@ -23286,9 +24690,30 @@ const cosmicTop: CharacterDraft[] = [
     universe: ["fox"],
     species: "Djinn-blooded",
     powers: [
-      { en: "Swells into a hulking form", ar: "ينتفخ إلى هيئة ضخمة" },
-      { en: "The strongman of his family", ar: "قويّ عائلته" },
-      { en: "Over two centuries old", ar: "تجاوز عمره قرنين" },
+      {
+        en: "Enormous strength, and a frame to match",
+        ar: "قوة هائلة، وبنية توازيها",
+      },
+      {
+        en: "Durability under all of it",
+        ar: "صلابة تحت ذلك كله",
+      },
+      {
+        en: "A bruiser, and nothing subtler",
+        ar: "ضرّاب، ولا شيء أدق من ذلك",
+      },
+      {
+        en: "Hits until the problem stops",
+        ar: "يضرب حتى تتوقف المشكلة",
+      },
+      {
+        en: "Takes what he gives",
+        ar: "يتحمل ما يوجّه",
+      },
+      {
+        en: "Published detail is thin",
+        ar: "التفاصيل المنشورة قليلة",
+      },
     ],
     origin: {
       en: "The son of an immortal and a djinn, more than two hundred years old, who raises his far younger siblings and refuses to answer to the codename they gave him.",
@@ -24254,11 +25679,29 @@ const wakanda: CharacterDraft[] = [
     species: "Talokanil",
     powers: [
       {
-        en: "Breathes water, fights on land",
-        ar: "يتنفس الماء ويقاتل على اليابسة",
+        en: "Ten times a normal Atlantean's strength",
+        ar: "عشرة أضعاف قوة الأتلانتي العادي",
       },
-      { en: "Leads Talokan's warriors", ar: "يقود محاربي تالوكان" },
-      { en: "Wields a whale-bone hammer", ar: "يحمل مطرقة من عظم حوت" },
+      {
+        en: "Rebuilt by Doom to eighty-five tons",
+        ar: "أعاد دووم بناءه إلى خمسة وثمانين طنًا",
+      },
+      {
+        en: "On a par with Namor after that",
+        ar: "صار ندًا لنامور بعدها",
+      },
+      {
+        en: "Breathes on land, and flies",
+        ar: "يتنفس على اليابسة، ويطير",
+      },
+      {
+        en: "Swims at sixty miles an hour",
+        ar: "يسبح بستين ميلًا في الساعة",
+      },
+      {
+        en: "Commands armies of the deep",
+        ar: "يقود جيوش الأعماق",
+      },
     ],
     origin: {
       en: "Namor's war leader and the first of Talokan most surface people ever see, who fights for a nation that hid underwater for four centuries and has decided it will not hide again.",
@@ -24920,9 +26363,30 @@ const newWarriors: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Sabretooth tiger",
     powers: [
-      { en: "The last of his kind", ar: "آخر ما تبقى من جنسه" },
-      { en: "Smarter than a tiger should be", ar: "أذكى مما ينبغي لنمر" },
-      { en: "Does not leave Ka-Zar", ar: "لا يفارق كازار" },
+      {
+        en: "A sabretooth, and the last of them",
+        ar: "نمر سيفي، وآخرهم",
+      },
+      {
+        en: "Strength and speed past a big cat's",
+        ar: "قوة وسرعة تفوقان القط الكبير",
+      },
+      {
+        en: "Jaws and claws that end a fight",
+        ar: "فكّان ومخالب تنهي معركة",
+      },
+      {
+        en: "Senses that track across a jungle",
+        ar: "حواس تتعقب عبر غابة",
+      },
+      {
+        en: "Near-human problem-solving",
+        ar: "حل مشكلات يقارب البشر",
+      },
+      {
+        en: "Understands speech, and plans with Ka-Zar",
+        ar: "يفهم الكلام، ويخطط مع كازار",
+      },
     ],
     origin: {
       en: "A sabretooth from a jungle where the ice age never ended, and the closest thing the boy raised there had to a parent.",

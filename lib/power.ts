@@ -1645,9 +1645,23 @@ const SYMBIOTE_WEIGHT: Record<string, number> = {
    Rockslide and Onyxx, who are made of it, and it was paying an intergalactic
    singer SEVENTY POINTS -- more than a third of her total -- for owning a
    guitar. Found only because rewriting her record made the score DROP and the
-   drop turned out to be correct. ascii-ok: English `powers[].en` only. */
+   drop turned out to be correct.
+
+   IT WAS NOT ONLY HER. "Basketball star first" was paying SPIDER-GIRL seventy
+   points, on a three-bullet record, for having been good at a sport. So the
+   pattern generalised from `rock star` to the celebrity senses of the word,
+   and `star` still scores everywhere it means the burning kind -- Starhawk
+   projects light, Galactus consumes stars.
+
+   "ELDER OF THE UNIVERSE" IS A JOB TITLE, and it was being read as a claim to
+   command the universe: 160 points, which made THE JUDICATOR -- the Elder
+   whose own dossier says his documented feats are thin -- outscore the
+   Collector three to one on a shorter record. The Collector's own line reads
+   "An Elder, among the first to evolve" and scores nothing, which is the
+   correct treatment of both.
+   ascii-ok: English `powers[].en` only. */
 const PROPER_NOUNS =
-  /world security council|nexus of all realities|infinity gauntlet|infinity formula|magnetic tape|rock star/gi;
+  /world security council|nexus of all realities|infinity gauntlet|infinity formula|magnetic tape|(?:rock|pop|film|movie|basketball|sports?|reality|tv) star|elders? of the universe/gi;
 
 export function scaleScore(c: Character): number {
   /**
