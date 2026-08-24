@@ -316,8 +316,12 @@ const IMAGE_OVERRIDES: Record<string, string> = {
    * signed cache entry, not a host, and those expire. The Marvel wiki's own
    * cover instead.
    */
+  /* Supplied. The 2017 design: lion mane, leopard print, rifle, standing over
+     Venom. Tracking parameters stripped from the URL -- they are analytics,
+     not part of the file. It is only 255x391, which is small for the grid and
+     is the size Wikipedia hosts; there is no larger copy on that host. */
   kraven:
-    "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Amazing_Spider-Man_Vol_5_19_ComicXposure_Exclusive_Virgin_Variant.jpg/revision/latest?cb=20210222060432",
+    "https://upload.wikimedia.org/wikipedia/en/2/21/Kraven_the_Hunter_%282017_Design%29.webp",
   "spider-woman":
     "https://static.wikia.nocookie.net/marveldatabase/images/9/9d/Spider-Woman_Vol_7_11_Textless.jpg/revision/latest?cb=20210116123553",
   "julia-carpenter":
@@ -427,8 +431,11 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Amazing_Spider-Man_Vol_3_17.1_Textless.jpg/revision/latest?cb=20150119193829",
   "hydro-man":
     "https://static.wikia.nocookie.net/marveldatabase/images/e/ee/Classic_Marvel_Figurine_Collection_Vol_1_163_Textless.png/revision/latest?cb=20240421080822",
+  /* Supplied. Switched from `scale_medium` to `original` on the same file --
+     same picture, 400x549 instead of the thumbnail. Comic Vine keeps both and
+     the host is already allowlisted in remotePatterns and the CSP. */
   "molten-man":
-    "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Mark_Raxton_%28Earth-616%29_from_Amazing_Spider-Man_Vol_3_16_001.jpg/revision/latest?cb=20150312234724",
+    "https://comicvine.gamespot.com/a/uploads/original/0/40/79267-88077-molten-man.jpg",
   silvermane:
     "https://static.wikia.nocookie.net/marveldatabase/images/b/b2/Silvio_Manfredi_%28Earth-616%29_from_Silk_Vol_3_3_001.jpg/revision/latest?cb=20250622044037",
   beetle:
@@ -1339,8 +1346,12 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b3/Davos.jpg/revision/latest?cb=20190531095929",
   dazzler:
     "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/211-dazzler.jpg",
+  /* His record is `universe: ["legacy"]` and the old picture was Earth-1610,
+     the Ultimate version -- a different Frost. This is the Earth-616 handbook
+     plate: white hair, goatee, long coat, and shaped for the grid at
+     502x1179. Downloaded and looked at first. */
   "deacon-frost":
-    "https://static.wikia.nocookie.net/marveldatabase/images/9/91/Deacon_Frost_%28Earth-1610%29_from_Ultimate_Avengers_vs._New_Ultimates_Vol_1_2_0001.jpg/revision/latest?cb=20110311161218",
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Deacon_Frost_%28Earth-616%29_from_All-New_Official_Handbook_of_the_Marvel_Universe_A_to_Z_Vol_1_4_0001.jpg/revision/latest?cb=20160523151306",
   death:
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/07/Death_Infobox.png/revision/latest?cb=20241102024102",
   "doctor-octopus":
