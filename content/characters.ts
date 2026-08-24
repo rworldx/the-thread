@@ -2490,11 +2490,30 @@ const defenders: CharacterDraft[] = [
     universe: ["defenders"],
     species: "Enhanced human",
     powers: [
-      { en: "Unbreakable skin", ar: "جلد لا ينكسر" },
-      { en: "Bulletproof", ar: "مضاد للرصاص" },
-      { en: "Superhuman strength", ar: "قوة خارقة" },
-      { en: "Accelerated healing", ar: "شفاء متسارع" },
-      { en: "Enormous durability", ar: "تحمّل هائل" },
+      {
+        en: "Unbreakable skin, and bulletproof with it",
+        ar: "جلد لا يُكسر، وصامد للرصاص معه",
+      },
+      {
+        en: "Superhuman strength, enough to lift a car",
+        ar: "قوة خارقة تكفي لرفع سيارة",
+      },
+      {
+        en: "Accelerated healing from what gets through",
+        ar: "شفاء متسارع مما ينفذ",
+      },
+      {
+        en: "Enormous durability under a beating",
+        ar: "صلابة هائلة تحت الضرب",
+      },
+      {
+        en: "A cell experiment that went right",
+        ar: "تجربة في زنزانة نجحت",
+      },
+      {
+        en: "Hero for hire, and he means hire",
+        ar: "بطل بأجر، ويعني الأجر",
+      },
     ],
     origin: {
       en: "A man convicted of something he did not do, who came out of a prison experiment with skin nothing gets through, and went to Harlem to be left alone.",
@@ -6277,21 +6296,32 @@ const ensemble: CharacterDraft[] = [
     affiliation: ["Guardians of the Galaxy"],
     universe: ["mcu"],
     species: "Xandarian",
+    /* PART 15 GIVES HIM THE YAKA ARROW and his record did not mention it. He scored 14 and was last of the ten Guardians. */
     powers: [
       {
-        en: "The Yaka Arrow, steered by a whistle",
-        ar: "سهم الياكا، يوجّهه بصفير",
+        en: "An arrow that cuts through anything",
+        ar: "سهم يقطع أي شيء",
       },
       {
-        en: "Devastating once he can hit the note",
-        ar: "مدمّر متى أصاب النغمة",
+        en: "He steers it by whistling the note",
+        ar: "يوجهه بصفير النغمة",
       },
-      { en: "Expert starship pilot", ar: "طيّار سفن فضائية بارع" },
       {
-        en: "A hardened Ravager, and nothing more",
-        ar: "رافاجر متمرّس، لا أكثر",
+        en: "Badly at first, and then not",
+        ar: "بسوء أولًا، ثم لا",
       },
-      { en: "No powers at all", ar: "بلا أي قدرات" },
+      {
+        en: "Flies any ship the Ravagers own",
+        ar: "يقود أي سفينة يملكها الرافيجرز",
+      },
+      {
+        en: "No powers. Grit and hard practice",
+        ar: "بلا قدرات، عزيمة وتمرين شاق",
+      },
+      {
+        en: "Ravager first mate, and then captain",
+        ar: "مساعد أول للرافيجرز، ثم قبطان",
+      },
     ],
     origin: {
       en: "A Ravager who stayed when the rest left, and inherited a weapon he was nowhere near ready to use.",
@@ -8048,20 +8078,30 @@ const eternals: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Eternal",
     powers: [
-      { en: "Invents any machine at all", ar: "يخترع أي آلة كانت" },
       {
-        en: "Builds weapons from raw cosmic energy",
-        ar: "يصنع أسلحة من طاقة كونية خام",
+        en: "Invents anything he can imagine",
+        ar: "يخترع كل ما يتخيله",
       },
       {
-        en: "Every human advance has his hand in it",
-        ar: "لكل تقدّم بشري أثر من يده",
+        en: "Cosmic energy shaped into machines",
+        ar: "طاقة كونية تُشكَّل آلات",
       },
       {
-        en: "Strength and durability past any human",
-        ar: "قوة وصلابة تفوق أي بشري",
+        en: "Builds a weapon out of the air",
+        ar: "يبني سلاحًا من الهواء",
       },
-      { en: "Near-immortal", ar: "شبه خالد" },
+      {
+        en: "Gave humanity the plough and the wheel",
+        ar: "أعطى البشرية المحراث والعجلة",
+      },
+      {
+        en: "Strength and durability of an Eternal",
+        ar: "قوة وصلابة أبدي",
+      },
+      {
+        en: "Refused to build again, for a while",
+        ar: "رفض أن يبني ثانية، لفترة",
+      },
     ],
     origin: {
       en: "The inventor, who gave humanity most of its technology and then watched what it built with it. He quits over Hiroshima, and the film lets him be right.",
@@ -11277,8 +11317,30 @@ const others: CharacterDraft[] = [
     species: "Frost Giant",
     magicSchools: ["asgardian"],
     powers: [
-      { en: "Illusions on an enormous scale", ar: "أوهام بمقياس هائل" },
-      { en: "Survived by hiding for decades", ar: "نجا بالاختباء عقودًا" },
+      {
+        en: "Conjured an entire Asgard from nothing",
+        ar: "استحضر أسغارد كاملة من العدم",
+      },
+      {
+        en: "The largest illusion any Loki has cast",
+        ar: "أكبر وهم صنعه أي لوكي",
+      },
+      {
+        en: "Held it against Alioth long enough",
+        ar: "صمد به أمام ألايوث بما يكفي",
+      },
+      {
+        en: "Shapeshifting, and centuries of practice",
+        ar: "تبدّل شكل، وقرون من التمرين",
+      },
+      {
+        en: "Survived alone for a very long time",
+        ar: "نجا وحده زمنًا طويلًا جدًا",
+      },
+      {
+        en: "Glorious purpose, and he meant it",
+        ar: "غاية مجيدة، وقد عناها",
+      },
     ],
     origin: {
       en: "The Loki who faked his death on Thanos's ship and spent a lifetime alone on a planet, which he eventually could not bear. His last illusion is the largest anyone in the series casts.",
@@ -11299,8 +11361,30 @@ const others: CharacterDraft[] = [
     species: "Frost Giant",
     magicSchools: ["asgardian"],
     powers: [
-      { en: "Claims a great deal", ar: "يدّعي الكثير" },
-      { en: "A hammer, allegedly", ar: "مطرقة، على حدّ زعمه" },
+      {
+        en: "Claims he beat Captain America",
+        ar: "يزعم أنه هزم كابتن أمريكا",
+      },
+      {
+        en: "With Mjolnir and the shield, he says",
+        ar: "بميولنير والدرع، كما يقول",
+      },
+      {
+        en: "He did not. He says it anyway",
+        ar: "لم يفعل، ويقولها رغم ذلك",
+      },
+      {
+        en: "The standard Loki magic, unused",
+        ar: "سحر لوكي المعتاد، غير مستعمل",
+      },
+      {
+        en: "An axe he carries and rarely swings",
+        ar: "فأس يحمله ونادرًا ما يلوّح به",
+      },
+      {
+        en: "The boast is the whole character",
+        ar: "الزهو هو الشخصية كلها",
+      },
     ],
     origin: {
       en: "A Loki who says he killed Captain America and Iron Man with his bare hands, in a group of Lokis where nobody believes anybody. The betrayal is telegraphed and lands anyway.",
@@ -11459,9 +11543,30 @@ const others: CharacterDraft[] = [
     species: "Frost Giant",
     magicSchools: ["asgardian"],
     powers: [
-      { en: "Ran for office, in the Void", ar: "ترشّح للرئاسة، في الفراغ" },
-      { en: "Betrayed by his own cabinet", ar: "خانه وزراؤه" },
-      { en: "Illusions", ar: "أوهام" },
+      {
+        en: "The same magic, and none of the sense",
+        ar: "السحر ذاته، وبلا شيء من العقل",
+      },
+      {
+        en: "Shapeshifting, and illusions with it",
+        ar: "تبدّل شكل، وأوهام معه",
+      },
+      {
+        en: "Betrayed his own army immediately",
+        ar: "خان جيشه فورًا",
+      },
+      {
+        en: "A gold hand, taken from him",
+        ar: "يد ذهبية، انتُزعت منه",
+      },
+      {
+        en: "Rules nothing, and says otherwise",
+        ar: "لا يحكم شيئًا، ويقول غير ذلك",
+      },
+      {
+        en: "Cunning, spent entirely on himself",
+        ar: "دهاء، ينفقه كله على نفسه",
+      },
     ],
     origin: {
       en: "The Loki who conquered a corner of the Void by promising the other Lokis a share of it, and was betrayed by them roughly nine seconds later. He loses a hand for it, which the other Lokis find very funny.",
@@ -14776,8 +14881,8 @@ const cosmicBeings: CharacterDraft[] = [
         ar: "يقذف الكويكبات عبر الفضاء",
       },
       {
-        en: "A cosmic axe that cut a planet in half",
-        ar: "فأس كوني شطر كوكبًا نصفين",
+        en: "An axe that cut a planet in half",
+        ar: "فأس شطر كوكبًا نصفين",
       },
       {
         en: "Treacherous enough to be a liability",
@@ -14805,13 +14910,13 @@ const cosmicBeings: CharacterDraft[] = [
     species: "Xandarian",
     powers: [
       {
-        en: "Cosmic flame as hot as a living sun",
-        ar: "لهب كوني بحرارة شمس حية",
+        en: "Flame as hot as a living sun",
+        ar: "لهب بحرارة نجم حي",
       },
       { en: "Fought Thor to a standstill", ar: "قاتل ثور حتى التعادل" },
       {
-        en: "A cosmic staff, burning at both ends",
-        ar: "عصا كونية تشتعل من طرفيها",
+        en: "A staff burning at both ends",
+        ar: "عصا تشتعل من طرفيها",
       },
       { en: "The Power Cosmic, through fire", ar: "القوة الكونية، عبر النار" },
       { en: "Flies between stars", ar: "يطير بين النجوم" },
@@ -17706,7 +17811,10 @@ const heralds: CharacterDraft[] = [
         en: "Galactus himself had to step in",
         ar: "اضطر غالاكتوس نفسه للتدخل",
       },
-      { en: "A double-bladed cosmic axe", ar: "فأس كوني بنصلين" },
+      {
+        en: "A double-bladed axe",
+        ar: "فأس بنصلين",
+      },
       {
         en: "Killed Nova and destroyed Air-Walker",
         ar: "قتل نوفا ودمّر إير-ووكر",
@@ -17854,20 +17962,30 @@ const heralds: CharacterDraft[] = [
     /* NOT plain Human. An ordinary man remade into a herald — which is the point of him, and also why he cannot stay in a chip for ordinary men. */
     species: "Enhanced human",
     powers: [
-      { en: "The Power Cosmic, on loan", ar: "القوة الكونية، معارة" },
+      {
+        en: "The Power Cosmic, on loan from Galactus",
+        ar: "القوة الكونية، معارة من جالاكتوس",
+      },
       {
         en: "Strength, flight and space to live in",
         ar: "قوة وطيران وفضاء يعيش فيه",
       },
       {
-        en: "A pastor from Broxton, before that",
-        ar: "قسّ من بروكستون قبل ذلك",
+        en: "Part of a truce between Odin and Galactus",
+        ar: "جزء من هدنة بين أودين وجالاكتوس",
       },
       {
-        en: "Part of a truce between Odin and Galactus",
-        ar: "جزء من هدنة بين أودين وغالاكتوس",
+        en: "A herald who never devoured a world",
+        ar: "مبشّر لم يلتهم عالمًا قط",
       },
-      { en: "Barely seen again afterwards", ar: "لم يُرَ تقريبًا بعدها" },
+      {
+        en: "A pastor from Broxton, before that",
+        ar: "قس من بروكستون، قبل ذلك",
+      },
+      {
+        en: "Gave it back when the truce ended",
+        ar: "أعادها حين انتهت الهدنة",
+      },
     ],
     origin: {
       en: "An ordinary man remade into a herald, which is the version of the story that shows what the Power Cosmic does to somebody with no preparation for it at all.",
