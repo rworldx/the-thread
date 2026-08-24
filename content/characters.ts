@@ -5270,7 +5270,12 @@ const supporting: CharacterDraft[] = [
     /* He voices STAN THE JANITOR across Ultimate Spider-Man, a recurring
        role TMDB's aggregate cast does not carry at all — so no cap change
        and no alias can reach it. The one gap `creditedActor` cannot close. */
-    alsoIn: ["ultimate-spider-man"],
+    /* THE SCENE THAT MAKES THE LINK CONCRETE. TMDB credits him in Guardians
+       Vol 2 as "Watcher Informant" with no actor name attached, so no alias
+       could ever have reached it -- he is telling stories to a circle of
+       Watchers on an asteroid, which is the cameo the comics later confirmed
+       as one being observing. See the `host` note on the One Above All. */
+    alsoIn: ["ultimate-spider-man", "guardians-of-the-galaxy-vol-2"],
     creditedActor: "Stan Lee",
     /* The other end of the ladder, and see the note on the One Above All:
        the theory that every cameo is one being watching has a comic behind
@@ -7096,7 +7101,11 @@ const abstracts: CharacterDraft[] = [
     aliases: ["The Watchers"],
     /* No cast list carries a race. They are named and seen in What If, where
        Uatu narrates on their behalf and answers to them. */
-    alsoIn: ["what-if-s1"],
+    /* AND THE GUARDIANS VOL 2 SCENE, which is the RACE and not Uatu. A circle
+       of Watchers sits on an asteroid listening to a man tell stories, and
+       Uatu already carried the credit while the group he is standing in did
+       not. */
+    alsoIn: ["what-if-s1", "guardians-of-the-galaxy-vol-2"],
     category: "supporting",
     affiliation: ["Cosmic entities"],
     universe: ["animation"],
