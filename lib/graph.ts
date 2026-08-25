@@ -11,11 +11,17 @@ import type { TitleSource } from "@/content/schema";
 /** A node needs only these fields to be ordered. Keeps the functions testable. */
 export type GraphNode = Pick<
   TitleSource,
-  "id" | "releaseDate" | "requires" | "enriches" | "essential" | "universe" | "storyRank"
+  | "id"
+  | "releaseDate"
+  | "requires"
+  | "enriches"
+  | "essential"
+  | "universe"
+  | "storyRank"
 >;
 
 /**
- * THE MCU TITLES THAT STAND ON THEIR OWN, named by Rashid.
+ * THE MCU TITLES THAT STAND ON THEIR OWN, named deliberately.
  *
  * Each opens a corner rather than continuing one: Moon Knight is an Egyptian
  * god and a man with dissociative identity disorder, the Eternals were here
@@ -65,7 +71,8 @@ export type PathMode = "minimum" | "full";
  * points somewhere else.
  */
 function byDateThenId(a: GraphNode, b: GraphNode): number {
-  if (a.releaseDate !== b.releaseDate) return a.releaseDate < b.releaseDate ? -1 : 1;
+  if (a.releaseDate !== b.releaseDate)
+    return a.releaseDate < b.releaseDate ? -1 : 1;
   return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
 }
 
@@ -98,7 +105,10 @@ export function curatedOrder<T extends GraphNode>(
 // ---------------------------------------------------------------------------
 
 /** Edges are only counted when both ends are inside the given set. */
-function edgesWithin<T extends GraphNode>(titles: readonly T[], mode: PathMode) {
+function edgesWithin<T extends GraphNode>(
+  titles: readonly T[],
+  mode: PathMode,
+) {
   const present = new Set(titles.map((t) => t.id));
   const out = new Map<string, string[]>();
   for (const t of titles) {
@@ -133,7 +143,9 @@ export function topoSort<T extends GraphNode>(titles: readonly T[]): T[] {
     }
   }
 
-  const ready = titles.filter((t) => remaining.get(t.id) === 0).sort(byDateThenId);
+  const ready = titles
+    .filter((t) => remaining.get(t.id) === 0)
+    .sort(byDateThenId);
   const result: T[] = [];
 
   while (ready.length > 0) {
@@ -168,7 +180,9 @@ function findCycle<T extends GraphNode>(
   titles: readonly T[],
   deps: Map<string, string[]>,
 ): string[] {
-  const WHITE = 0, GREY = 1, BLACK = 2;
+  const WHITE = 0,
+    GREY = 1,
+    BLACK = 2;
   const colour = new Map<string, number>(titles.map((t) => [t.id, WHITE]));
   const stack: string[] = [];
   let found: string[] | null = null;
@@ -200,7 +214,9 @@ function findCycle<T extends GraphNode>(
 // ---------------------------------------------------------------------------
 
 /** Filter to the spine, then order it. Rule B10 guarantees this is closed. */
-export function essentialsOrder<T extends GraphNode>(titles: readonly T[]): T[] {
+export function essentialsOrder<T extends GraphNode>(
+  titles: readonly T[],
+): T[] {
   return topoSort(titles.filter((t) => t.essential));
 }
 
@@ -217,11 +233,13 @@ export function essentialsOrder<T extends GraphNode>(titles: readonly T[]): T[] 
  * they are from that era, and none of them is one of the 23. `type` is what
  * says so, so the count cannot drift from the corpus.
  */
-export function infinitySaga<T extends GraphNode & { universe: string; saga: string | null; type: string }>(
-  titles: readonly T[],
-): T[] {
+export function infinitySaga<
+  T extends GraphNode & { universe: string; saga: string | null; type: string },
+>(titles: readonly T[]): T[] {
   return releaseOrder(
-    titles.filter((t) => t.universe === "mcu" && t.saga === "infinity" && t.type === "film"),
+    titles.filter(
+      (t) => t.universe === "mcu" && t.saga === "infinity" && t.type === "film",
+    ),
   );
 }
 
@@ -238,10 +256,12 @@ export function infinitySaga<T extends GraphNode & { universe: string; saga: str
  * of them on an eighteen-year spine makes the spine harder to read for
  * something a reader can find any time from the catalogue.
  */
-export function mcuOrder<T extends GraphNode & { universe: string; type: string }>(
-  titles: readonly T[],
-): T[] {
-  return releaseOrder(titles.filter((t) => t.universe === "mcu" && t.type !== "short"));
+export function mcuOrder<
+  T extends GraphNode & { universe: string; type: string },
+>(titles: readonly T[]): T[] {
+  return releaseOrder(
+    titles.filter((t) => t.universe === "mcu" && t.type !== "short"),
+  );
 }
 
 /**
@@ -255,11 +275,9 @@ export function mcuOrder<T extends GraphNode & { universe: string; type: string 
  * in `full` mode: an `enriches` edge can point at a title released *after* the
  * target, and the answer to "what comes before X" must still end at X.
  */
-export function pathTo<T extends GraphNode & { optional?: boolean; type?: string }>(
-  titles: readonly T[],
-  id: string,
-  mode: PathMode = "minimum",
-): T[] {
+export function pathTo<
+  T extends GraphNode & { optional?: boolean; type?: string },
+>(titles: readonly T[], id: string, mode: PathMode = "minimum"): T[] {
   const byId = new Map(titles.map((t) => [t.id, t]));
   const target = byId.get(id);
   if (!target) throw new UnknownTitleError(id);
@@ -293,7 +311,7 @@ export function pathTo<T extends GraphNode & { optional?: boolean; type?: string
    * A STANDALONE TITLE HAS NO PATH, not a short one, and that includes its own
    * `requires`. Eternals hard-requires Endgame — the Blip is why the world
    * looks the way it does — and walking that edge produced a 22-title path for
-   * a film Rashid can hand to anybody cold. The edge is true and stays on the
+   * a film you can hand to anybody cold. The edge is true and stays on the
    * record; it is a fact about the timeline rather than a prerequisite for
    * following the story, which is the distinction this list encodes.
    *
@@ -339,7 +357,8 @@ export function pathTo<T extends GraphNode & { optional?: boolean; type?: string
        * the same reason.
        */
       if (t.type === "short") continue;
-      if (t.universe !== "mcu" || t.id === id || descendants.has(t.id)) continue;
+      if (t.universe !== "mcu" || t.id === id || descendants.has(t.id))
+        continue;
       if (byDateThenId(t, target) >= 0) continue;
       ancestors.add(t.id);
       queue.push(t.id);
@@ -349,7 +368,10 @@ export function pathTo<T extends GraphNode & { optional?: boolean; type?: string
   while (queue.length > 0) {
     const current = byId.get(queue.pop()!);
     if (!current) continue;
-    const edges = mode === "full" ? [...current.requires, ...current.enriches] : current.requires;
+    const edges =
+      mode === "full"
+        ? [...current.requires, ...current.enriches]
+        : current.requires;
     for (const e of edges) {
       if (e === id || ancestors.has(e) || !byId.has(e)) continue;
       ancestors.add(e);
@@ -381,7 +403,9 @@ export function recommendationCost<T extends GraphNode>(
   recId: string,
 ): T[] {
   const already = new Set(pathTo(titles, fromId, "minimum").map((t) => t.id));
-  return pathTo(titles, recId, "minimum").filter((t) => t.id !== recId && !already.has(t.id));
+  return pathTo(titles, recId, "minimum").filter(
+    (t) => t.id !== recId && !already.has(t.id),
+  );
 }
 
 export interface Recommendation<T> {

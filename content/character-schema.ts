@@ -148,7 +148,7 @@ export const RelationKind = z.enum([
  * WHICH MAGIC, not which kind of being.
  *
  * The chips used to split magic users into Sorcerers, Elder Gods and Demons,
- * which sorts them by WHAT THEY ARE. Rashid pointed out the more useful
+ * which sorts them by WHAT THEY ARE. The more useful
  * question is what they actually practise, and he is right: Loki and Agatha
  * are both "not sorcerers" and have nothing else in common, while Strange and
  * Mordo are opposites who draw on the identical source.
@@ -174,7 +174,7 @@ export const RelationKind = z.enum([
  *   green      Gaea's magic, of the living earth rather than any dimension.
  *
  * "Dark" WAS ONE OF THESE AND HELD TWENTY PEOPLE, which made it a bucket
- * rather than a school. Rashid's objection was exact: not everything purple is
+ * rather than a school. The objection was exact: not everything purple is
  * the same magic. Dormammu's Dark Dimension, Mephisto's hell, Agatha's coven
  * witchcraft and Selene's life-draining are four different practices that
  * happened to share a colour, so they are four entries now.

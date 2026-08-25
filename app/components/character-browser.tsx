@@ -128,7 +128,7 @@ const GROUPS: {
      * questions a reader actually arrives with. Then the non-human peoples,
      * then the powers, then the tiers above the story. Celestials are NOT here
      * any more: they are a kind of cosmic entity, so they sit under it as a
-     * child alongside Abstracts, Elders and Heralds, which is what Rashid
+     * child alongside Abstracts, Elders and Heralds, which is what was
      * pointed out and what the corpus already believed.
      */
     chips: [
@@ -227,7 +227,7 @@ const GROUPS: {
         match: (c) => is("Talokanil")(c) || aff("Talokanil")(c),
       },
       /* NO ClanDestine CHIP. It matched exactly one character — Wallop — which
-         Rashid spotted, and a filter that returns one person is a label
+         spotted on the page, and a filter that returns one person is a label
          wearing a filter's clothes. The affiliation stays on his card, where
          it reads as a fact about him rather than as a group to browse. */
       /* HOSTS COUNT. A separate "Venom family" chip was a duplicate of this
@@ -418,24 +418,58 @@ const GROUPS: {
   {
     group: "team",
     /**
-     * MCU ROSTERS FIRST, then the mutant institutions, then the rest. A reader
-     * naming a team is usually naming one they saw in a film, and those nine
-     * are fixed sets Rashid asked not to be touched — so they lead, in the
-     * order the films introduced them.
+     * ORDERED BY HOW MANY PEOPLE HAVE HEARD OF THEM, which replaces "MCU
+     * rosters first, in the order the films introduced them". Introduction
+     * order is a fact about the films; it is not a fact about the reader, and
+     * this band is the one a newcomer scans first.
+     *
+     * Built from two sources rather than taste. On legacy: the X-Men and the
+     * Avengers "compete for first place", with the Fantastic Four behind them
+     * as the team Marvel was built on. On screen recognition: the Avengers and
+     * the Guardians are "known even by those with only a passing knowledge of
+     * the superhero genre" — which is the test that matters on a site whose
+     * whole job is telling somebody what to watch.
+     *
+     * Where the two disagreed, screen won, because that is this site's reader.
+     * That is why THUNDERBOLTS sits mid-band despite a 2025 film — the same
+     * source says the public "still hasn't been won over" — and why MIDNIGHT
+     * SONS sits below YOUNG AVENGERS, which is stated outright.
+     *
+     * Four bands, loosely: household names, then anyone who has seen the
+     * films, then anyone following them, then the ones you need the comics
+     * for. Inside a band the order is a judgement and not a measurement.
      */
     chips: [
       { id: "avengers", match: aff("Avengers") },
+      { id: "x-men", match: aff("X-Men") },
+      { id: "guardians", match: aff("Guardians of the Galaxy") },
+      { id: "fantastic-four", match: aff("Fantastic Four") },
       /* The six who stood in a circle in 2012. A fixed, closed set — it is
          the only team on this page that can never gain a member, which is
          exactly why people ask for it by name. Kept beside the Avengers
          rather than inside them: every one of the six is on both chips. */
       { id: "original-six", match: aff("Original Six") },
-      { id: "guardians", match: aff("Guardians of the Galaxy") },
-      /* THE RAVAGERS, who had no affiliation at all until now -- so searching
-         the word returned nothing and four of them, Yondu included, belonged
-         to no team on the page. Beside the Guardians because the two rosters
-         overlap and a reader looking for one is usually looking for both. */
-      { id: "ravagers", match: aff("Ravagers") },
+      { id: "spider-verse", match: (c) => c.spiderVerse },
+      { id: "defenders", match: aff("Defenders") },
+      { id: "sinister-six", match: aff("Sinister Six") },
+      { id: "brotherhood", match: aff("Brotherhood") },
+      { id: "thunderbolts", match: aff("Thunderbolts") },
+      { id: "team-cap", match: aff("Team Captain America") },
+      { id: "team-iron-man", match: aff("Team Iron Man") },
+      { id: "agents", match: aff("S.H.I.E.L.D.") },
+      /* Thanos's five generals. The affiliation and its label already
+         existed; only the chip was missing, so the team could be read off a
+         card and not searched for. Five now that Supergiant is here — the
+         comics roster. The films used four. */
+      { id: "black-order", match: aff("Black Order") },
+      { id: "young-avengers", match: aff("Young Avengers") },
+      { id: "x-force", match: aff("X-Force") },
+      /* THE OTHER multiverse team, and the two belong beside each other: one
+         was assembled to save every universe and the other decided which
+         universes were allowed to know things. Captain Carter is on both, and
+         she is the only name this page repeats across two teams from two
+         different Earths. */
+      { id: "illuminati", match: aff("Illuminati") },
       /* THE OTHER GUARDIANS, and the reason this chip is worth having is that
          six of its seven members are filed under records a reader would never
          think to open: Party Thor is on Thor's page, Strange Supreme is on
@@ -446,16 +480,24 @@ const GROUPS: {
         id: "guardians-multiverse",
         match: aff("Guardians of the Multiverse"),
       },
-      /* THE OTHER multiverse team, and the two belong beside each other: one
-         was assembled to save every universe and the other decided which
-         universes were allowed to know things. Captain Carter is on both, and
-         she is the only name this page repeats across two teams from two
-         different Earths. */
-      { id: "illuminati", match: aff("Illuminati") },
-      { id: "defenders", match: aff("Defenders") },
-      { id: "fantastic-four", match: aff("Fantastic Four") },
-      { id: "thunderbolts", match: aff("Thunderbolts") },
-      { id: "young-avengers", match: aff("Young Avengers") },
+      /* THE RAVAGERS, who had no affiliation at all until now -- so searching
+         the word returned nothing and four of them, Yondu included, belonged
+         to no team on the page. Beside the Guardians because the two rosters
+         overlap and a reader looking for one is usually looking for both. */
+      { id: "ravagers", match: aff("Ravagers") },
+      { id: "loki-variants", match: aff("Loki variants") },
+      { id: "midnight-sons", match: aff("Midnight Sons") },
+      { id: "weapon-x", match: aff("Weapon X") },
+      { id: "spider-society", match: aff("Spider-Society") },
+      { id: "new-mutants", match: aff("New Mutants") },
+      { id: "x-factor", match: aff("X-Factor") },
+      { id: "generation-x", match: aff("Generation X") },
+      { id: "hellfire", match: aff("Hellfire Club") },
+      { id: "morlocks", match: aff("Morlocks") },
+      { id: "marauders", match: aff("Marauders") },
+      { id: "acolytes", match: aff("Acolytes") },
+      { id: "hellions", match: aff("Hellions") },
+      { id: "inheritors", match: aff("Inheritors") },
       /* Ultimate Spider-Man's team, named in seasons 3 and 4. Sits beside
          Young Avengers because they are the same idea — the next generation,
          training rather than arrived — and a reader looking for one of them
@@ -470,33 +512,7 @@ const GROUPS: {
          Iron Spider, Ka-Zar and the rest. Peter leads both, and he is the only
          name on both chips. */
       { id: "spider-mans-team", match: aff("Spider-Man's Team") },
-      { id: "midnight-sons", match: aff("Midnight Sons") },
       { id: "revengers", match: aff("Revengers") },
-      { id: "team-cap", match: aff("Team Captain America") },
-      { id: "team-iron-man", match: aff("Team Iron Man") },
-      { id: "x-men", match: aff("X-Men") },
-      { id: "x-force", match: aff("X-Force") },
-      { id: "x-factor", match: aff("X-Factor") },
-      { id: "new-mutants", match: aff("New Mutants") },
-      { id: "generation-x", match: aff("Generation X") },
-      { id: "weapon-x", match: aff("Weapon X") },
-      { id: "brotherhood", match: aff("Brotherhood") },
-      { id: "acolytes", match: aff("Acolytes") },
-      { id: "marauders", match: aff("Marauders") },
-      { id: "hellions", match: aff("Hellions") },
-      { id: "hellfire", match: aff("Hellfire Club") },
-      { id: "morlocks", match: aff("Morlocks") },
-      { id: "spider-verse", match: (c) => c.spiderVerse },
-      { id: "spider-society", match: aff("Spider-Society") },
-      /* Thanos's five generals. The affiliation and its label already
-         existed; only the chip was missing, so the team could be read off a
-         card and not searched for. Five now that Supergiant is here — the
-         comics roster. The films used four. */
-      { id: "black-order", match: aff("Black Order") },
-      { id: "sinister-six", match: aff("Sinister Six") },
-      { id: "inheritors", match: aff("Inheritors") },
-      { id: "agents", match: aff("S.H.I.E.L.D.") },
-      { id: "loki-variants", match: aff("Loki variants") },
     ],
   },
 ];
@@ -761,7 +777,7 @@ export function CharacterBrowser({
                       </span>
                       {/**
                        * THE VALUE ONLY WHEN THERE IS ONE, which is the whole
-                       * of Rashid's note. Every band defaulted to printing
+                       * of that note. Every band defaulted to printing
                        * "All" beside its arrow, so a phone opened on three
                        * rows saying nothing three times. "All" is the absence
                        * of a filter and does not need announcing.
