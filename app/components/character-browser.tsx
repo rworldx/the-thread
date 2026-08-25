@@ -122,14 +122,27 @@ const GROUPS: {
   {
     group: "kind",
     /**
-     * ORDERED FROM WHAT PEOPLE LOOK FOR TO WHAT THEY STUMBLE ON.
+     * ORDERED FROM WHAT PEOPLE LOOK FOR TO WHAT THEY STUMBLE ON, on the same
+     * test the team band now uses: how many people have heard of it, judged
+     * by what has been on a screen.
      *
-     * Mutants, humans and super-soldiers first because those are the three
-     * questions a reader actually arrives with. Then the non-human peoples,
-     * then the powers, then the tiers above the story. Celestials are NOT here
-     * any more: they are a kind of cosmic entity, so they sit under it as a
-     * child alongside Abstracts, Elders and Heralds, which is what was
-     * pointed out and what the corpus already believed.
+     * Mutants, humans and super-soldiers lead because those are the three
+     * questions a reader actually arrives with. SYMBIOTES COME FOURTH, ahead
+     * of every non-human people, because Venom has carried three films of his
+     * own and nobody needs the word explained. Then Asgardians and gods, then
+     * sorcerers, then the Hulks -- each of them a person somebody can name.
+     *
+     * Then the peoples, in the order the films made them legible: Wakandans,
+     * Eternals, Kree, Skrulls, Inhumans, Talokanil. The Shi'ar are last of
+     * those because they have never been on screen at all.
+     *
+     * COSMIC CLOSES THE BAND and takes its four children with it -- Abstracts,
+     * Celestials, Elders, Heralds. It is the deep end, and a reader who wants
+     * it will scroll for it. Celestials are NOT top-level: they are a kind of
+     * cosmic entity, which is what the corpus already believed.
+     *
+     * Families stay whole. A child chip only appears once its parent is on,
+     * so a parent and its children have to remain adjacent.
      */
     chips: [
       /* A CLASS IMPLIES THE KIND. Anyone carrying a published mutant rank is a
@@ -202,30 +215,6 @@ const GROUPS: {
           !aff("Gods")(c),
       },
       { id: "super-soldier", match: is("Enhanced human") },
-      { id: "hulks", match: aff("Hulks") },
-      { id: "inhuman", match: (c) => is("Inhuman")(c) || aff("Inhumans")(c) },
-      { id: "eternal", match: is("Eternal") },
-      {
-        id: "asgardian",
-        /* Species OR affiliation. Throg is a frog with a splinter of Mjolnir
-           and Alligator Loki is an alligator in horns — both of Asgard, and
-           neither has an Asgardian body. Belonging is the question here. */
-        match: (c) => is("Asgardian", "Frost Giant")(c) || aff("Asgard")(c),
-      },
-      { id: "kree", match: (c) => is("Kree")(c) || aff("Kree")(c) },
-      { id: "skrull", match: (c) => is("Skrull")(c) || aff("Skrull")(c) },
-      {
-        id: "shiar",
-        match: (c) => is("Shi'ar", "Strontian")(c) || aff("Shi'ar")(c),
-      },
-      /* Peoples, not teams. Wakandans sat in the team band, which said the
-         nation is something you join rather than somewhere you are from —
-         the same category error as filing Kree under teams. */
-      { id: "wakandan", match: aff("Wakandans") },
-      {
-        id: "talokanil",
-        match: (c) => is("Talokanil")(c) || aff("Talokanil")(c),
-      },
       /* NO ClanDestine CHIP. It matched exactly one character — Wallop — which
          spotted on the page, and a filter that returns one person is a label
          wearing a filter's clothes. The affiliation stays on his card, where
@@ -266,6 +255,14 @@ const GROUPS: {
         parent: "symbiote",
         match: (c) => c.symbioteClass === "gestalt",
       },
+      {
+        id: "asgardian",
+        /* Species OR affiliation. Throg is a frog with a splinter of Mjolnir
+           and Alligator Loki is an alligator in horns — both of Asgard, and
+           neither has an Asgardian body. Belonging is the question here. */
+        match: (c) => is("Asgardian", "Frost Giant")(c) || aff("Asgard")(c),
+      },
+      { id: "god", match: (c) => aff("Gods")(c) || is("Olympian")(c) },
       {
         id: "magician",
         /* "Magic" is an affiliation because magic is a ROLE here, not a
@@ -377,7 +374,23 @@ const GROUPS: {
         parent: "magician",
         match: (c) => c.magicSchools.includes("green"),
       },
-      { id: "god", match: (c) => aff("Gods")(c) || is("Olympian")(c) },
+      { id: "hulks", match: aff("Hulks") },
+      /* Peoples, not teams. Wakandans sat in the team band, which said the
+         nation is something you join rather than somewhere you are from —
+         the same category error as filing Kree under teams. */
+      { id: "wakandan", match: aff("Wakandans") },
+      { id: "eternal", match: is("Eternal") },
+      { id: "kree", match: (c) => is("Kree")(c) || aff("Kree")(c) },
+      { id: "skrull", match: (c) => is("Skrull")(c) || aff("Skrull")(c) },
+      { id: "inhuman", match: (c) => is("Inhuman")(c) || aff("Inhumans")(c) },
+      {
+        id: "talokanil",
+        match: (c) => is("Talokanil")(c) || aff("Talokanil")(c),
+      },
+      {
+        id: "shiar",
+        match: (c) => is("Shi'ar", "Strontian")(c) || aff("Shi'ar")(c),
+      },
       {
         id: "cosmic",
         match: (c) =>
