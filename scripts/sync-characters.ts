@@ -82,6 +82,9 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c4/Scarlet_Scarab_Infobox.jpg/revision/latest?cb=20230824020647",
   veronica:
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9b/Veronica_Profile.png/revision/latest?cb=20161201172118",
+  /* The mid-credits suit: white and maroon, starburst on the chest. */
+  binary:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/78/Binary.png/revision/latest?cb=20240131141813",
   "the-watchers":
     "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Watchers_from_Original_Sin_Vol_1_8_Textless_cover_001.jpg/revision/latest?cb=20170905063428",
   /* PINNED BECAUSE THE LOOKUP DRIFTED. Speed's portrait had been the MCU

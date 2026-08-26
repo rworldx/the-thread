@@ -11011,6 +11011,11 @@ const others: CharacterDraft[] = [
     aliases: ["Maria Rambeau"],
     /* Real and uncredited under a matchable name: TMDB files Lashana Lynch in
        Multiverse of Madness as "Captain Marvel", which is Carol's string. */
+    /* NOT THE MARVELS. That film credits a "Maria Rambeau" and it is the
+       BINARY variant out of the mid-credits scene -- a different woman, in a
+       reality with X-Men in it, who does not know who Monica is. This Maria
+       is dead before the film starts and her alias was taking the credit. */
+    notIn: ["the-marvels"],
     alsoIn: ["doctor-strange-in-the-multiverse-of-madness"],
     category: "hero",
     affiliation: ["Illuminati"],
@@ -11049,6 +11054,66 @@ const others: CharacterDraft[] = [
     related: [
       { id: "captain-marvel", kind: "ally" },
       { id: "monica-rambeau", kind: "ally" },
+    ],
+  },
+  {
+    id: "binary",
+    nameEn: "Binary",
+    nameAr: "باينري",
+    /**
+     * A THIRD MARIA, and a separate record for the reason Captain Carter is
+     * separate from Peggy Carter: this is not the same life. She is roughly
+     * her own daughter's age, she is called Binary rather than Captain Marvel,
+     * her reality has the X-MEN in it, and when Monica calls her "mom" she
+     * does not know who Monica is.
+     *
+     * NO "MARIA RAMBEAU" ALIAS. That string is on the Captain Marvel record
+     * and would take her credits; this one arrives by `alsoIn` instead, and
+     * the other record now carries `notIn` for the same film -- the credit
+     * reading "Maria Rambeau" in The Marvels is THIS woman, and it was
+     * landing on a Maria who died before that film starts.
+     */
+    aliases: ["Binary"],
+    alsoIn: ["the-marvels"],
+    category: "hero",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      {
+        en: "Binary, and Beast calls her that",
+        ar: "باينري، وبيست يناديها بذلك",
+      },
+      {
+        en: "The name means a white hole's power",
+        ar: "الاسم يعني قوة ثقب أبيض",
+      },
+      {
+        en: "Flight, and she survives open space",
+        ar: "طيران، وتنجو في الفضاء",
+      },
+      {
+        en: "Energy projection on a stellar scale",
+        ar: "قذف طاقة بمقياس نجمي",
+      },
+      {
+        en: "None of it is shown. She sits by a bed",
+        ar: "لا شيء من ذلك يُعرض، فهي تجلس قرب سرير",
+      },
+      { en: "Does not know who Monica is", ar: "لا تعرف من تكون مونيكا" },
+    ],
+    origin: {
+      en: "The Maria Rambeau of the reality Monica fell into, alive, young, and wearing another woman's codename. Beast is standing beside her and the X-Men exist there, which is the whole point of the scene: it is thirty seconds of a hospital room and it is how mutants arrive.",
+      ar: "ماريا رامبو في الواقع الذي سقطت فيه مونيكا: حية، شابة، وتحمل لقب امرأة أخرى. بيست يقف إلى جانبها، والإكس-مِن موجودون هناك، وهذا هو مغزى المشهد كله: ثلاثون ثانية في غرفة مستشفى، وهي الطريقة التي يصل بها المتحولون.",
+    },
+    related: [
+      {
+        id: "captain-marvel-maria",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
+      { id: "monica-rambeau", kind: "family" },
+      { id: "beast", kind: "ally" },
     ],
   },
   {
