@@ -382,12 +382,13 @@ const GROUPS: {
          a reader looking for the AIs is looking for them first. */
       {
         id: "ai",
-        match: is(
-          "Artificial intelligence",
-          "Synthezoid",
-          "Machine",
-          "Artificial being",
-        ),
+        /* NOT `Artificial being`, which I added here to keep Zola on the chip
+           after his species became `Machine`, and which dragged ADAM WARLOCK
+           onto it at 110th -- a cosmic being the Enclave grew in a cocoon,
+           filed under the AIs. Bi-Beast came with him. `Machine` stays: it
+           holds Zola, the Sentinels and Master Mold, and a reader looking for
+           the artificial minds is looking for those. */
+        match: is("Artificial intelligence", "Synthezoid", "Machine"),
       },
       /* Peoples, not teams. Wakandans sat in the team band, which said the
          nation is something you join rather than somewhere you are from —

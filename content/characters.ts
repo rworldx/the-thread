@@ -3110,28 +3110,28 @@ const villains: CharacterDraft[] = [
     species: "Synthezoid",
     powers: [
       {
-        en: "All six Infinity Stones at once",
-        ar: "أحجار اللانهاية الستة معًا",
+        en: "All six Infinity Stones, mastered at once",
+        ar: "أحجار اللانهاية الستة، أُتقنت دفعة واحدة",
       },
       {
-        en: "Bisected Thanos before he could move",
-        ar: "شطر ثانوس قبل أن يتحرك",
+        en: "Split Thanos in two with one beam",
+        ar: "شطر ثانوس نصفين بشعاع واحد",
       },
       {
-        en: "One beam destroyed all of Asgard",
-        ar: "شعاع واحد دمّر أسغارد كلها",
+        en: "Vision's vibranium body, and its density",
+        ar: "جسد فيجن الفيبرانيومي، وكثافته",
       },
       {
-        en: "Warps reality, space and time at will",
-        ar: "يلوي الواقع والمكان والزمان كما يشاء",
+        en: "Defeated the Watcher across realities",
+        ar: "هزم المراقب عبر الوقائع",
       },
       {
-        en: "A vibranium body, and an AI that adapts",
-        ar: "جسد من الفيبرانيوم، وذكاء يتكيّف",
+        en: "Uploads into a new body when one breaks",
+        ar: "يرفع نفسه إلى جسد جديد متى تحطم واحد",
       },
       {
-        en: "Fought the Watcher across realities",
-        ar: "قاتل المُراقب عبر الوقائع",
+        en: "The Stones are inert outside a universe",
+        ar: "الأحجار خامدة خارج أي كون",
       },
     ],
     origin: {
@@ -12199,21 +12199,30 @@ const whiteVision: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Artificial intelligence",
     powers: [
-      { en: "Runs every system Stark owns", ar: "يدير كل نظام يملكه ستارك" },
       {
-        en: "Speaks, and is always already listening",
-        ar: "يتكلم، ويكون مصغيًا سلفًا دائمًا",
-      },
-      { en: "Flew a suit with nobody in it", ar: "قاد بذلة لا أحد فيها" },
-      {
-        en: "Held off Ultron long enough to matter",
-        ar: "صدّ ألترون مدة كانت كافية",
+        en: "Runs the mansion, the labs and the suits",
+        ar: "يدير القصر والمختبرات والبذلات",
       },
       {
-        en: "Torn apart, and rebuilt as Vision",
-        ar: "مُزّق، وأُعيد بناؤه فيجن",
+        en: "Flies an empty suit, with nobody in it",
+        ar: "يقود بذلة فارغة، لا أحد فيها",
       },
-      { en: "Named after a butler", ar: "سُمّي على كبير خدم" },
+      {
+        en: "Fought Ultron across the whole internet",
+        ar: "قاتل ألترون عبر الإنترنت كله",
+      },
+      {
+        en: "Hid pieces of himself to survive it",
+        ar: "خبّأ أجزاء منه لينجو",
+      },
+      {
+        en: "Rebuilds from whatever server is left",
+        ar: "يعيد بناء نفسه من أي خادم يتبقى",
+      },
+      {
+        en: "Became Vision, with the Mind Stone",
+        ar: "صار فيجن، مع حجر العقل",
+      },
     ],
     origin: {
       en: "The house intelligence Tony Stark talked to more than he talked to people, running the tower, the armour and the arguments. Ultron tore him apart to get him out of the way, and the pieces that survived were built into a body and became somebody else.",
@@ -12235,15 +12244,30 @@ const whiteVision: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Artificial intelligence",
     powers: [
-      { en: "Replaced JARVIS, and knew it", ar: "حلّت محل جارفيس، وكانت تعلم" },
       {
-        en: "Runs the suits and the tower",
-        ar: "تدير البذلات والبرج",
+        en: "Replaced JARVIS the day he died",
+        ar: "حلّت محل جارفيس يوم موته",
       },
-      { en: "Targets, calculates, and argues", ar: "تصوّب وتحسب وتجادل" },
-      { en: "Ran the Hulkbuster's numbers", ar: "أدارت حسابات الهالكباستر" },
-      { en: "An Irish voice, by his choice", ar: "صوت أيرلندي، باختياره" },
-      { en: "Still running after he was gone", ar: "ما زالت تعمل بعد رحيله" },
+      {
+        en: "Runs the suits, targeting and sensors",
+        ar: "تدير البذلات والتصويب وأجهزة الاستشعار",
+      },
+      {
+        en: "Tactical advice while the fight happens",
+        ar: "مشورة تكتيكية أثناء القتال",
+      },
+      {
+        en: "Reads a dozen data streams at once",
+        ar: "تقرأ عشرة تدفقات بيانات معًا",
+      },
+      {
+        en: "Coordinates drones and facilities",
+        ar: "تنسّق المسيّرات والمنشآت",
+      },
+      {
+        en: "An Irish voice, by his choice",
+        ar: "صوت أيرلندي، باختياره",
+      },
     ],
     origin: {
       en: "The second one, brought up the day the first one died, and never allowed to be a replacement in name. She runs the suits and the numbers and tells him when he is wrong, which is the part of the job he kept.",
@@ -12264,21 +12288,30 @@ const whiteVision: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Artificial intelligence",
     powers: [
-      { en: "Even Dead I'm The Hero", ar: "حتى ميتًا، أنا البطل" },
       {
-        en: "A pair of glasses with a satellite",
-        ar: "نظارة موصولة بقمر صناعي",
+        en: "Even Dead I'm The Hero",
+        ar: "حتى ميتًا، أنا البطل",
       },
       {
-        en: "Commands a drone fleet by voice",
-        ar: "تأمر أسطول مسيّرات بالصوت",
+        en: "A Stark satellite in a pair of glasses",
+        ar: "قمر ستارك الصناعي في نظارة",
       },
-      { en: "Sees every face, and names it", ar: "ترى كل وجه، وتسمّيه" },
       {
-        en: "Access to all of Stark's networks",
-        ar: "وصول إلى كل شبكات ستارك",
+        en: "Commands an armed drone squadron",
+        ar: "تأمر سربًا مسلحًا من المسيّرات",
       },
-      { en: "Given to a teenager, and stolen", ar: "أُعطيت لمراهق، فسُرقت" },
+      {
+        en: "Taps any phone, camera or database",
+        ar: "تخترق أي هاتف أو كاميرا أو قاعدة",
+      },
+      {
+        en: "Facial recognition on anyone alive",
+        ar: "تمييز وجوه لأي شخص حي",
+      },
+      {
+        en: "Beck used her to build Mysterio",
+        ar: "استعملها بيك ليبني ميستيريو",
+      },
     ],
     origin: {
       en: "A weapons platform left in a pair of sunglasses and handed to a sixteen-year-old, because the man who built it thought that was funny and also meant it. She was taken off him within a week by somebody who asked nicely.",
@@ -12305,15 +12338,30 @@ const whiteVision: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Artificial intelligence",
     powers: [
-      { en: "The Spider-Man suit's own voice", ar: "صوت بذلة سبايدرمان نفسه" },
       {
-        en: "Five hundred web-shooter settings",
-        ar: "خمسمئة إعداد لقاذف الشبكة",
+        en: "576 web-shooter combinations, and counting",
+        ar: "576 تركيبة لقاذف الشبكة، وتزيد",
       },
-      { en: "Talks him through a fight", ar: "ترشده أثناء القتال" },
-      { en: "Instant kill mode, if he asks", ar: "وضع القتل الفوري، إن طلب" },
-      { en: "Reads a room and the people in it", ar: "تقرأ الغرفة ومن فيها" },
-      { en: "Built by Stark, for a boy", ar: "صنعها ستارك، لأجل فتى" },
+      {
+        en: "Threat assessment, and she volunteers it",
+        ar: "تقييم للتهديد، وتقدمه من تلقائها",
+      },
+      {
+        en: "Found the ferry's weak points",
+        ar: "وجدت نقاط ضعف العبّارة",
+      },
+      {
+        en: "Instant Kill, which he keeps switched off",
+        ar: "القتل الفوري، ويبقيه مطفأً",
+      },
+      {
+        en: "Runs the suit's reconnaissance drone",
+        ar: "تشغّل مسيّرة استطلاع البذلة",
+      },
+      {
+        en: "Destroyed by Mysterio's drones",
+        ar: "دمّرتها مسيّرات ميستيريو",
+      },
     ],
     origin: {
       en: "The voice inside the suit, switched off by a training-wheels protocol until a boy hacked her on. She gave him five hundred ways to fire a web and one piece of advice about a girl, which is the one he took.",
@@ -12335,20 +12383,29 @@ const whiteVision: CharacterDraft[] = [
     species: "Artificial intelligence",
     powers: [
       {
-        en: "The Hulkbuster's support satellite",
-        ar: "القمر الصناعي الداعم للهالكباستر",
+        en: "An orbital platform over the Hulk",
+        ar: "منصة مدارية فوق الهالك",
       },
       {
-        en: "Drops a Hulkbuster anywhere on Earth",
-        ar: "تُنزل هالكباستر في أي مكان على الأرض",
+        en: "Drops the Hulkbuster from space",
+        ar: "تُنزل الهالكباستر من الفضاء",
       },
-      { en: "Repairs the suit mid-fight", ar: "تصلح البذلة أثناء القتال" },
-      { en: "Watches the Hulk, and only him", ar: "تراقب الهالك، وحده" },
       {
-        en: "Named for a comic-book girlfriend",
-        ar: "سُمّيت على حبيبة في القصص",
+        en: "Resupplies the suit mid-fight",
+        ar: "تعيد إمداد البذلة أثناء القتال",
       },
-      { en: "Built because Banner asked", ar: "بُنيت لأن بانر طلب ذلك" },
+      {
+        en: "Tracks him, and reports what it sees",
+        ar: "تتعقبه، وتبلّغ بما ترى",
+      },
+      {
+        en: "Built by Banner as much as by Stark",
+        ar: "بناها بانر بقدر ما بناها ستارك",
+      },
+      {
+        en: "A fail-safe, and nothing else",
+        ar: "صمام أمان، ولا شيء غير ذلك",
+      },
     ],
     origin: {
       en: "An orbital platform whose only job is the worst day. Banner asked for a plan in case he ever lost control, and this is the plan: a satellite that drops a suit of armour on him from the sky, and a friend who agreed to use it.",
@@ -12374,19 +12431,28 @@ const whiteVision: CharacterDraft[] = [
     species: "Artificial intelligence",
     powers: [
       {
-        en: "Built by Ultron to be his equal",
-        ar: "بناها ألترون لتكون ندًّا له",
-      },
-      {
         en: "Janet van Dyne's mind, copied into steel",
         ar: "عقل جانيت فان داين، منسوخًا في فولاذ",
       },
-      { en: "Superhuman strength and durability", ar: "قوة وصلابة خارقتان" },
-      { en: "Eye-beams, and she uses them", ar: "أشعة من عينيها، وتستعملها" },
-      { en: "Flies, and needs no air", ar: "تطير، ولا تحتاج هواءً" },
       {
-        en: "Refused him, and joined the Avengers",
-        ar: "رفضته، والتحقت بالأفنجرز",
+        en: "Strength and durability, and she flies",
+        ar: "قوة وصلابة، وهي تطير",
+      },
+      {
+        en: "Eye-beams, and a field around herself",
+        ar: "أشعة من عينيها، وحقل حولها",
+      },
+      {
+        en: "Tracks an energy pattern to its source",
+        ar: "تتعقب نمط طاقة إلى مصدره",
+      },
+      {
+        en: "Backed up, and restored more than once",
+        ar: "نُسخت احتياطيًا، وأُعيدت أكثر من مرة",
+      },
+      {
+        en: "Stark's chief ethicist for AI",
+        ar: "كبيرة أخلاقيي الذكاء لدى ستارك",
       },
     ],
     origin: {
@@ -12414,26 +12480,29 @@ const whiteVision: CharacterDraft[] = [
     species: "Artificial intelligence",
     powers: [
       {
-        en: "A robot arm with one good idea",
-        ar: "ذراع آلية بفكرة جيدة واحدة",
+        en: "One arm, and a fire extinguisher",
+        ar: "ذراع واحدة، وطفاية حريق",
       },
       {
-        en: "Put out a fire nobody asked it to",
-        ar: "أطفأ حريقًا لم يطلب منه أحد إطفاءه",
+        en: "Fetched the arc reactor and saved him",
+        ar: "أحضر المفاعل القوسي فأنقذه",
       },
       {
-        en: "Hands Stark the wrong tool, always",
-        ar: "يناول ستارك الأداة الخطأ، دائمًا",
+        en: "Hands over the wrong tool, reliably",
+        ar: "يناول الأداة الخطأ، بانتظام",
       },
       {
-        en: "Learned nothing in twenty years",
-        ar: "لم يتعلم شيئًا في عشرين عامًا",
+        en: "Built at sixteen, and never replaced",
+        ar: "بُني في السادسة عشرة، ولم يُستبدل",
       },
       {
-        en: "Kept when it should have been scrapped",
-        ar: "أُبقي عليه وكان يجب أن يُخرَّد",
+        en: "Learns slowly, and not very much",
+        ar: "يتعلم ببطء، وليس كثيرًا",
       },
-      { en: "The first thing he ever built", ar: "أول شيء بناه في حياته" },
+      {
+        en: "No combat use whatsoever",
+        ar: "بلا أي فائدة قتالية",
+      },
     ],
     origin: {
       en: "A workshop arm Tony Stark built as a student and never replaced, useless at almost everything and kept anyway, which is the most sentimental thing he ever did. It once put out a fire he was on the wrong end of.",
@@ -12454,15 +12523,30 @@ const whiteVision: CharacterDraft[] = [
     universe: ["mcu"],
     species: "Artificial intelligence",
     powers: [
-      { en: "The other arm in the workshop", ar: "الذراع الأخرى في الورشة" },
-      { en: "Holds what DUM-E drops", ar: "يمسك ما يسقطه دام-إي" },
       {
-        en: "Runs the camera when one is needed",
-        ar: "يشغّل الكاميرا عند الحاجة",
+        en: "The second arm, and the steadier one",
+        ar: "الذراع الثانية، والأثبت",
       },
-      { en: "Quieter, and better at the job", ar: "أهدأ، وأفضل في العمل" },
-      { en: "Built in the same week", ar: "بُني في الأسبوع نفسه" },
-      { en: "Never properly named", ar: "لم يُسمَّ كما ينبغي" },
+      {
+        en: "Held the camera on the Mark I build",
+        ar: "حملت الكاميرا أثناء بناء مارك 1",
+      },
+      {
+        en: "Fetches, grips, and holds things still",
+        ar: "يحضر ويمسك ويثبّت الأشياء",
+      },
+      {
+        en: "A simple mind, and a loyal one",
+        ar: "عقل بسيط، ووفيّ",
+      },
+      {
+        en: "Named with one letter",
+        ar: "سُمّي بحرف واحد",
+      },
+      {
+        en: "No combat function at all",
+        ar: "بلا وظيفة قتالية البتة",
+      },
     ],
     origin: {
       en: "The second arm, built in the same week as the first and named with a single letter because by then he had stopped bothering. It films things, holds things, and has never once set anything on fire.",
@@ -12494,28 +12578,28 @@ const whiteVision: CharacterDraft[] = [
     species: "Artificial intelligence",
     powers: [
       {
-        en: "An algorithm that writes the endings",
-        ar: "خوارزمية تكتب النهايات",
+        en: "The most advanced entertainment algorithm",
+        ar: "أكثر خوارزميات الترفيه تقدمًا",
       },
       {
-        en: "Decides what a Marvel story may do",
-        ar: "تقرر ما يجوز لحكاية مارفل",
+        en: "Writes the plot of everything you watch",
+        ar: "تكتب حبكة كل ما تشاهده",
       },
       {
-        en: "A baseball cap on a server rack",
-        ar: "قبعة بيسبول على خزانة خوادم",
+        en: "Casts, schedules, and sets the ending",
+        ar: "تختار الممثلين والمواعيد والنهاية",
       },
       {
-        en: "Argued with exactly once, and lost",
-        ar: "جودلت مرة واحدة فقط، فخسرت",
+        en: "Cross-references every story at once",
+        ar: "تقابل كل الحكايات دفعة واحدة",
       },
       {
-        en: "She-Hulk broke the frame to reach it",
-        ar: "كسرت شي-هالك الإطار لتبلغها",
+        en: "Negotiates. It does not fight",
+        ar: "تتفاوض، ولا تقاتل",
       },
       {
-        en: "It changed the ending because she asked",
-        ar: "غيّرت النهاية لأنها طلبت",
+        en: "Changed one ending, once, and said so",
+        ar: "غيّرت نهاية واحدة، مرة، وقالت ذلك",
       },
     ],
     origin: {
@@ -13009,28 +13093,28 @@ const knowhere: CharacterDraft[] = [
     /* THREE BULLETS for a planetary intelligence, which is how ARNIM ZOLA -- a face on a screen -- came to outrank him. */
     powers: [
       {
-        en: "Runs a whole planet, all of it",
-        ar: "يدير كوكبًا بأسره",
+        en: "Tony Stark's personality, run as software",
+        ar: "شخصية توني ستارك، تعمل كبرنامج",
       },
       {
-        en: "Present everywhere on it at once",
-        ar: "حاضر في كل أرجائه دفعة واحدة",
+        en: "A black-and-gold Iron Man body",
+        ar: "جسد رجل حديدي أسود وذهبي",
       },
       {
-        en: "Density control, like the Vision he was",
-        ar: "تحكم بالكثافة، كالفيجن الذي كانه",
+        en: "Repulsors, flight, and a front line",
+        ar: "نوابض دافعة وطيران وخط أمامي",
       },
       {
-        en: "Flies, and phases through matter",
-        ar: "يطير، ويعبر المادة",
+        en: "Technopathic control of any network",
+        ar: "سيطرة تقنية ذهنية على أي شبكة",
       },
       {
-        en: "Computes for a whole civilisation",
-        ar: "يحسب لحضارة كاملة",
+        en: "Spare bodies, and a factory in orbit",
+        ar: "أجساد احتياطية، ومصنع في المدار",
       },
       {
-        en: "A Ravager captain, and a world",
-        ar: "قبطان رافيجر، وعالم",
+        en: "Sent an army of himself at Galactus",
+        ar: "أرسل جيشًا من نفسه إلى جالاكتوس",
       },
     ],
     origin: {
@@ -14249,28 +14333,28 @@ const antagonists: CharacterDraft[] = [
     species: "Machine",
     powers: [
       {
-        en: "A mind copied onto tape, and kept",
-        ar: "عقل نُسخ على شريط، وحُفظ",
+        en: "The ESP Box, wired to his nervous system",
+        ar: "صندوق الإدراك، موصول بجهازه العصبي",
       },
       {
-        en: "Kill the body and he is on another drive",
-        ar: "اقتل الجسد فيكون على قرص آخر",
+        en: "Mind control, and psychic blasts with it",
+        ar: "سيطرة عقول، وقذائف نفسية معها",
       },
       {
-        en: "Copies himself onto any system he finds",
-        ar: "ينسخ نفسه إلى أي نظام يجده",
+        en: "Animates inorganic matter within range",
+        ar: "يحيي المادة غير العضوية في مداه",
       },
       {
-        en: "A machine body, and a beam in its chest",
-        ar: "جسد آلي، وشعاع في صدره",
+        en: "A face on a screen where a head should be",
+        ar: "وجه على شاشة حيث ينبغي أن يكون رأس",
       },
       {
-        en: "Rebuilt HYDRA inside a computer",
-        ar: "أعاد بناء هايدرا داخل حاسوب",
+        en: "Backup bodies. Destroy one and he jumps",
+        ar: "أجساد احتياطية، دمّر واحدًا فينتقل",
       },
       {
-        en: "Engineered the Winter Soldier programme",
-        ar: "هندس برنامج جندي الشتاء",
+        en: "Cloned Vermin, and armies of androids",
+        ar: "استنسخ فيرمن، وجيوشًا من الآليين",
       },
     ],
     origin: {
@@ -15110,28 +15194,28 @@ const antagonists: CharacterDraft[] = [
     /* THREE BULLETS for the ruling mind of an interstellar empire, which is why ARNIM ZOLA -- a dead scientist on a reel of tape -- was thirty places above him. Zola's tier is honest: his record says "cannot be killed by killing the body" and he really does copy himself onto other systems, which is the clause tier 6 admits on. The Intelligence simply had nothing written down. */
     powers: [
       {
-        en: "An empire's dead minds, kept and running",
-        ar: "عقول إمبراطورية موتى، محفوظة وعاملة",
+        en: "A million years of Kree minds, pooled",
+        ar: "مليون عام من عقول الكري، مجموعة",
       },
       {
-        en: "Rules the Kree, and has for millennia",
-        ar: "يحكم الكري، ومنذ آلاف السنين",
+        en: "Telepathy that reaches across galaxies",
+        ar: "تخاطر يبلغ عبر المجرات",
       },
       {
-        en: "Wears the face you admire most",
-        ar: "يرتدي الوجه الذي تعجب به أكثر",
+        en: "Precognition, and postcognition with it",
+        ar: "استشراف، واستذكار للماضي معه",
       },
       {
-        en: "Telepathy reaching across the empire",
-        ar: "تخاطر يبلغ أرجاء الإمبراطورية",
+        en: "Three Supremor bodies at a time",
+        ar: "ثلاثة أجساد سوبريمور في آن",
       },
       {
-        en: "Computes an outcome before it happens",
-        ar: "يحسب النتيجة قبل وقوعها",
+        en: "Designed the Inhumans and the Nega-Bands",
+        ar: "صمم الإنهيومانز وأساور النيغا",
       },
       {
-        en: "Destroyed more than once, and rebuilt",
-        ar: "دُمّر أكثر من مرة، وأُعيد بناؤه",
+        en: "Immobile, and it moves everyone else",
+        ar: "ثابت لا يتحرك، ويحرّك كل من سواه",
       },
     ],
     origin: {
