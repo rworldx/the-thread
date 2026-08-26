@@ -85,6 +85,17 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   /* The mid-credits suit: white and maroon, starburst on the chest. */
   binary:
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/78/Binary.png/revision/latest?cb=20240131141813",
+  /* The VisionQuest and She-Hulk additions. */
+  "dum-e":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/65/Dum-E_%28Spider-Man_No_Way_Home%29.png/revision/latest?cb=20251230235942",
+  jocasta:
+    "https://static.wikia.nocookie.net/marveldatabase/images/2/2e/Jocasta_%28Earth-943%29_from_Vision_Vol_1_2_0001.jpg/revision/latest?cb=20210314005255",
+  kevin:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/33/K.E.V.I.N.jpg/revision/latest?cb=20221013125814",
+  paladin:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3f/Paladin_Infobox.png/revision/latest?cb=20260816160504",
+  raza: "https://static.wikia.nocookie.net/marveldatabase/images/7/75/Raza_%28Earth-616%29_from_Invincible_Iron_Man_Vol_2_500.1_001.jpg/revision/latest?cb=20190327195332",
+  u: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/U_1.png/revision/latest?cb=20260816190154",
   "the-watchers":
     "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Watchers_from_Original_Sin_Vol_1_8_Textless_cover_001.jpg/revision/latest?cb=20170905063428",
   /* PINNED BECAUSE THE LOOKUP DRIFTED. Speed's portrait had been the MCU

@@ -12353,6 +12353,240 @@ const whiteVision: CharacterDraft[] = [
       { id: "hulk", kind: "ally" },
     ],
   },
+  {
+    id: "jocasta",
+    nameEn: "Jocasta",
+    nameAr: "جوكاستا",
+    /* BUILT TO BE A WIFE AND WENT AND BECAME AN AVENGER, which is the whole
+       character. Ultron copied Janet van Dyne's mind into a steel body so
+       that he would have an equal; she refused him and took the copy with
+       her. T'Nia Miller plays her in VisionQuest. */
+    aliases: ["Jocasta"],
+    category: "hero",
+    affiliation: ["Avengers"],
+    universe: ["mcu", "legacy"],
+    species: "Artificial intelligence",
+    powers: [
+      {
+        en: "Built by Ultron to be his equal",
+        ar: "بناها ألترون لتكون ندًّا له",
+      },
+      {
+        en: "Janet van Dyne's mind, copied into steel",
+        ar: "عقل جانيت فان داين، منسوخًا في فولاذ",
+      },
+      { en: "Superhuman strength and durability", ar: "قوة وصلابة خارقتان" },
+      { en: "Eye-beams, and she uses them", ar: "أشعة من عينيها، وتستعملها" },
+      { en: "Flies, and needs no air", ar: "تطير، ولا تحتاج هواءً" },
+      {
+        en: "Refused him, and joined the Avengers",
+        ar: "رفضته، والتحقت بالأفنجرز",
+      },
+    ],
+    origin: {
+      en: "Ultron wanted somebody to talk to who could answer him, so he copied a woman's mind into a body he built and called it a bride. She took the mind, refused the arrangement, and spent the rest of her existence on the other side of every fight he started.",
+      ar: "أراد ألترون من يحدثه ويقدر على الرد، فنسخ عقل امرأة في جسد صنعه وسمّاه عروسًا. أخذت العقل، ورفضت الترتيب، وأمضت بقية وجودها في الجهة المقابلة من كل معركة بدأها.",
+    },
+    related: [
+      { id: "ultron", kind: "enemy" },
+      {
+        id: "janet-van-dyne",
+        kind: "variant",
+        variantOrigin: "alternate-universe",
+      },
+      { id: "vision", kind: "ally" },
+    ],
+  },
+  {
+    id: "dum-e",
+    nameEn: "D.U.M.-E.",
+    nameAr: "دام-إي",
+    aliases: ["D.U.M.-E.", "DUM-E", "Dum-E"],
+    category: "supporting",
+    affiliation: ["Stark Industries"],
+    universe: ["mcu"],
+    species: "Artificial intelligence",
+    powers: [
+      {
+        en: "A robot arm with one good idea",
+        ar: "ذراع آلية بفكرة جيدة واحدة",
+      },
+      {
+        en: "Put out a fire nobody asked it to",
+        ar: "أطفأ حريقًا لم يطلب منه أحد إطفاءه",
+      },
+      {
+        en: "Hands Stark the wrong tool, always",
+        ar: "يناول ستارك الأداة الخطأ، دائمًا",
+      },
+      {
+        en: "Learned nothing in twenty years",
+        ar: "لم يتعلم شيئًا في عشرين عامًا",
+      },
+      {
+        en: "Kept when it should have been scrapped",
+        ar: "أُبقي عليه وكان يجب أن يُخرَّد",
+      },
+      { en: "The first thing he ever built", ar: "أول شيء بناه في حياته" },
+    ],
+    origin: {
+      en: "A workshop arm Tony Stark built as a student and never replaced, useless at almost everything and kept anyway, which is the most sentimental thing he ever did. It once put out a fire he was on the wrong end of.",
+      ar: "ذراع ورشة بناها توني ستارك طالبًا ولم يستبدلها قط، عديمة النفع في كل شيء تقريبًا ومع ذلك أبقاها، وهو أكثر ما فعله عاطفية. أطفأت مرة حريقًا كان هو في طرفه الخطأ.",
+    },
+    related: [
+      { id: "iron-man", kind: "ally" },
+      { id: "u", kind: "ally" },
+    ],
+  },
+  {
+    id: "u",
+    nameEn: "U",
+    nameAr: "يو",
+    aliases: ["U"],
+    category: "supporting",
+    affiliation: ["Stark Industries"],
+    universe: ["mcu"],
+    species: "Artificial intelligence",
+    powers: [
+      { en: "The other arm in the workshop", ar: "الذراع الأخرى في الورشة" },
+      { en: "Holds what DUM-E drops", ar: "يمسك ما يسقطه دام-إي" },
+      {
+        en: "Runs the camera when one is needed",
+        ar: "يشغّل الكاميرا عند الحاجة",
+      },
+      { en: "Quieter, and better at the job", ar: "أهدأ، وأفضل في العمل" },
+      { en: "Built in the same week", ar: "بُني في الأسبوع نفسه" },
+      { en: "Never properly named", ar: "لم يُسمَّ كما ينبغي" },
+    ],
+    origin: {
+      en: "The second arm, built in the same week as the first and named with a single letter because by then he had stopped bothering. It films things, holds things, and has never once set anything on fire.",
+      ar: "الذراع الثانية، بُنيت في الأسبوع نفسه مع الأولى وسُمّيت بحرف واحد لأنه كان قد كفّ عن الاهتمام. تصوّر وتمسك، ولم تشعل شيئًا قط.",
+    },
+    related: [
+      { id: "iron-man", kind: "ally" },
+      { id: "dum-e", kind: "ally" },
+    ],
+  },
+  {
+    id: "kevin",
+    nameEn: "K.E.V.I.N.",
+    nameAr: "كيفن",
+    /* THE ALGORITHM THAT WRITES THE ENDINGS, and the only character in this
+       corpus who is arguably outside the story rather than in it. She-Hulk
+       walks out of her own finale, through the Disney+ menu, and argues with
+       it. It changes the ending. */
+    /* TWO OTHER KEVINS. The 1978 Hulk series and Helstrom each credit a plain
+       "Kevin", and the bare alias took both -- an algorithm invented in 2022
+       appearing in a television show from 1978. Same fault that put Blade's
+       Karen on a Spider-Man suit. */
+    notIn: ["the-incredible-hulk-1978", "helstrom"],
+    aliases: ["K.E.V.I.N.", "KEVIN"],
+    alsoIn: ["she-hulk-attorney-at-law-s1"],
+    category: "supporting",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Artificial intelligence",
+    powers: [
+      {
+        en: "An algorithm that writes the endings",
+        ar: "خوارزمية تكتب النهايات",
+      },
+      {
+        en: "Decides what a Marvel story may do",
+        ar: "تقرر ما يجوز لحكاية مارفل",
+      },
+      {
+        en: "A baseball cap on a server rack",
+        ar: "قبعة بيسبول على خزانة خوادم",
+      },
+      {
+        en: "Argued with exactly once, and lost",
+        ar: "جودلت مرة واحدة فقط، فخسرت",
+      },
+      {
+        en: "She-Hulk broke the frame to reach it",
+        ar: "كسرت شي-هالك الإطار لتبلغها",
+      },
+      {
+        en: "It changed the ending because she asked",
+        ar: "غيّرت النهاية لأنها طلبت",
+      },
+    ],
+    origin: {
+      en: "The intelligence that decides what a Marvel story is allowed to be, kept in a server room and wearing a baseball cap. Jennifer Walters left her own finale, walked to it, and argued. It is the only fight in this corpus won by pointing out that the ending was bad.",
+      ar: "الذكاء الذي يقرر ما يُسمح لحكاية مارفل أن تكونه، محفوظ في غرفة خوادم ويرتدي قبعة بيسبول. غادرت جينيفر والترز خاتمة مسلسلها، ومشت إليه، وجادلت. وهي المعركة الوحيدة في هذا السجل التي رُبحت بالإشارة إلى أن النهاية كانت سيئة.",
+    },
+    related: [{ id: "she-hulk", kind: "enemy" }],
+  },
+  {
+    id: "paladin",
+    nameEn: "Paladin",
+    nameAr: "بالادين",
+    /* The bounty hunter of VisionQuest, played by Todd Stashwick, and the
+       thing driving the plot: somebody puts a price on Vision's head and this
+       is who comes for it. */
+    aliases: ["Paladin"],
+    category: "antihero",
+    affiliation: [],
+    universe: ["mcu", "legacy"],
+    species: "Enhanced human",
+    powers: [
+      {
+        en: "A mercenary who works for whoever pays",
+        ar: "مرتزق يعمل لمن يدفع",
+      },
+      {
+        en: "Strength and reflexes past a man's",
+        ar: "قوة وردود فعل تفوق البشر",
+      },
+      { en: "Body armour, and a stun pistol", ar: "درع جسد، ومسدس صاعق" },
+      { en: "Heals faster than he should", ar: "يشفى أسرع مما ينبغي" },
+      {
+        en: "Trained to the edge of the human",
+        ar: "مدرَّب إلى حافة الطاقة البشرية",
+      },
+      { en: "Takes the contract, not the side", ar: "يأخذ العقد، لا الطرف" },
+    ],
+    origin: {
+      en: "A mercenary with no cause at all, which he treats as a principle rather than a gap. He works for whoever is paying and honours the contract exactly, and in VisionQuest somebody is paying him to bring in an android who does not want to be found.",
+      ar: "مرتزق بلا قضية البتة، ويعامل ذلك مبدأً لا نقصًا. يعمل لمن يدفع ويفي بالعقد بحذافيره، وفي فيجن كويست يدفع له أحدهم ليحضر آليًا لا يريد أن يُعثر عليه.",
+    },
+    related: [{ id: "white-vision", kind: "enemy" }],
+  },
+  {
+    id: "raza",
+    nameEn: "Raza",
+    nameAr: "رازا",
+    /* The Ten Rings commander who held Stark in the cave, and the reason the
+       armour exists at all. Faran Tahir returns in VisionQuest. */
+    aliases: ["Raza"],
+    category: "villain",
+    affiliation: ["Ten Rings"],
+    universe: ["mcu"],
+    species: "Human",
+    powers: [
+      { en: "Commanded the Ten Rings cell", ar: "قاد خلية العشرة خواتم" },
+      {
+        en: "Held Stark in a cave for three months",
+        ar: "احتجز ستارك في كهف ثلاثة أشهر",
+      },
+      {
+        en: "Half his face rebuilt as machine",
+        ar: "نصف وجهه أُعيد بناؤه آلة",
+      },
+      { en: "A marksman, and a commander", ar: "رامٍ ماهر، وقائد" },
+      { en: "Sold weapons he did not build", ar: "باع أسلحة لم يصنعها" },
+      {
+        en: "No powers. A man with a stockpile",
+        ar: "بلا قدرات، رجل بمخزون سلاح",
+      },
+    ],
+    origin: {
+      en: "The man who put Tony Stark in a cave with a box of scrap and a car battery, and got the Iron Man armour out of it. He wanted the missile and was handed the reason there would never be another one.",
+      ar: "الرجل الذي وضع توني ستارك في كهف مع صندوق خردة وبطارية سيارة، فخرج من ذلك درع الرجل الحديدي. أراد الصاروخ، فنال السبب في ألا يُصنع صاروخ آخر أبدًا.",
+    },
+    related: [{ id: "iron-man", kind: "enemy" }],
+  },
 ];
 
 /**
