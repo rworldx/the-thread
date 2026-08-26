@@ -12428,7 +12428,12 @@ const whiteVision: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Avengers"],
     universe: ["mcu", "legacy"],
-    species: "Artificial intelligence",
+    /* `Machine`, not `Artificial intelligence`, on the line this corpus now
+       draws through the AIs: the ones with a BODY are machines and land in
+       tier 7 on a rule; the pure software is `Artificial intelligence` and
+       lands in tier 8 with the people who have no powers. She has a titanium
+       body, eye-beams and flight. She is not a workshop arm. */
+    species: "Machine",
     powers: [
       {
         en: "Janet van Dyne's mind, copied into steel",
@@ -13089,7 +13094,11 @@ const knowhere: CharacterDraft[] = [
     category: "hero",
     affiliation: ["Ravagers"],
     universe: ["mcu"],
-    species: "Artificial intelligence",
+    /* `Machine` for the same reason as Jocasta: he is a program, but he is a
+       program in a black-and-gold Iron Man body with repulsors, and he was
+       NAMED into this tier's head to get him there -- which pinned him above
+       White Vision, who outscores him two to one. */
+    species: "Machine",
     /* THREE BULLETS for a planetary intelligence, which is how ARNIM ZOLA -- a face on a screen -- came to outrank him. */
     powers: [
       {

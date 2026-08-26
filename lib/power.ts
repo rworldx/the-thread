@@ -918,7 +918,11 @@ const TIERS: Tier[] = [
        above White Vision, which is the thing that needed fixing. His species
        is `Machine` instead, which this tier already admits, so he arrives on
        the same rule as everyone else and sorts on what his record claims. */
-    ranked: ["mainframe", "stakar-ogord", "jocasta"],
+    /* NEITHER MAINFRAME NOR JOCASTA ANY MORE. Naming them here put them at
+       the HEAD of the tier, above White Vision on 159 who is not named and
+       arrives on his score. Both are `Machine` now, which this tier already
+       admits, so all three sort on what they claim. */
+    ranked: ["stakar-ogord"],
     match: (c) =>
       /* COSMO IS NOT A HUMAN WHO TURNS UP ANYWAY. `Uplifted animal` lost its
          grant because it was carrying Lylla, Teefs and Floor, whose records
@@ -1891,7 +1895,18 @@ export const OUTRANKS: string[][] = [
    * sixteen-year-old through a fight, which is the smallest brief here and
    * the one she does best.
    */
-  ["jarvis", "friday", "edith", "veronica", "karen"],
+  /* KAREN ABOVE VERONICA, reversing what I wrote earlier today. I ordered
+     these by "what each was trusted with" and put Karen last as the smallest
+     brief -- and then Part 16 gave her the richest record of the group: 576
+     web-shooter combinations, the ferry's weak points, the reconnaissance
+     drone, Instant Kill. She scores 27 to Veronica's 9 and was ranked below
+     both Veronica and U, which is a robot arm holding a camera.
+
+     THE TWO ARMS JOIN THE GROUP, because leaving them out of it was the same
+     bug in a different place: D.U.M.-E. sorted on his own score and landed
+     above Karen anyway. All seven of Stark's are ordered here now, so none of
+     them can drift past another on a wording change. */
+  ["jarvis", "friday", "edith", "karen", "veronica", "dum-e", "u"],
   /**
    * THE BLACK ORDER, and Supergiant leads it. She is an
    * omnipath and a mental parasite who possesses any mind she reaches, devours
