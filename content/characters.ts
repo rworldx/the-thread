@@ -14841,10 +14841,32 @@ const antagonists: CharacterDraft[] = [
     affiliation: ["Kree"],
     universe: ["mcu"],
     species: "Artificial intelligence",
+    /* THREE BULLETS for the ruling mind of an interstellar empire, which is why ARNIM ZOLA -- a dead scientist on a reel of tape -- was thirty places above him. Zola's tier is honest: his record says "cannot be killed by killing the body" and he really does copy himself onto other systems, which is the clause tier 6 admits on. The Intelligence simply had nothing written down. */
     powers: [
-      { en: "Rules the Kree Empire", ar: "يحكم إمبراطورية الكري" },
-      { en: "Wears the face you admire most", ar: "يرتدي أكثر وجه تُعجب به" },
-      { en: "Built from Kree minds", ar: "مبنيّ من عقول كريّة" },
+      {
+        en: "An empire's dead minds, kept and running",
+        ar: "عقول إمبراطورية موتى، محفوظة وعاملة",
+      },
+      {
+        en: "Rules the Kree, and has for millennia",
+        ar: "يحكم الكري، ومنذ آلاف السنين",
+      },
+      {
+        en: "Wears the face you admire most",
+        ar: "يرتدي الوجه الذي تعجب به أكثر",
+      },
+      {
+        en: "Telepathy reaching across the empire",
+        ar: "تخاطر يبلغ أرجاء الإمبراطورية",
+      },
+      {
+        en: "Computes an outcome before it happens",
+        ar: "يحسب النتيجة قبل وقوعها",
+      },
+      {
+        en: "Destroyed more than once, and rebuilt",
+        ar: "دُمّر أكثر من مرة، وأُعيد بناؤه",
+      },
     ],
     origin: {
       en: "An artificial mind assembled from the greatest Kree who ever lived, which rules the empire and appears to each citizen as the person they most respect. It has been at war for a very long time.",

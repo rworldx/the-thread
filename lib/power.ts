@@ -756,6 +756,17 @@ const TIERS: Tier[] = [
       "ronan",
       "mister-sinister",
       "ultron",
+      /* THE SUPREME INTELLIGENCE COMES UP A TIER, and this tier's gloss is
+         the argument: "the strongest tier a person can reach without leaving
+         the scale -- sorcerers, alpha mutants, symbiotes, Inhumans, AND THE
+         ONES WHOSE POWER IS A MACHINE." It is an empire's dead minds kept
+         running and it has ruled the Kree for millennia, and it was named
+         into tier 7 and left thirty places below ARNIM ZOLA, who is one dead
+         scientist on a reel of tape.
+         BEHIND ULTRON, though, and not ahead of him: the Intelligence rules
+         and manipulates, and Ultron built himself a body out of vibranium and
+         came within a city of ending the species. */
+      "supreme-intelligence",
       "sylvie",
       "magik",
       /* Guards the Nexus of All Realities and cannot be killed by force. */
@@ -893,7 +904,7 @@ const TIERS: Tier[] = [
        remembers every cycle of his own rebirth. Named, the way Beta Ray Bill
        and Gladiator are named a few tiers up, and for the same reason: a
        species of one that no rule will ever find. */
-    ranked: ["supreme-intelligence", "mainframe", "stakar-ogord"],
+    ranked: ["mainframe", "stakar-ogord"],
     match: (c) =>
       /* COSMO IS NOT A HUMAN WHO TURNS UP ANYWAY. `Uplifted animal` lost its
          grant because it was carrying Lylla, Teefs and Floor, whose records
