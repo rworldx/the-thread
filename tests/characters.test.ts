@@ -36,7 +36,7 @@ describe("C. the character corpus", () => {
   });
 
   it("C3 corpus size is stable — adding a character is a deliberate diff", () => {
-    expect(authored).toHaveLength(686);
+    expect(authored).toHaveLength(692);
   });
 
   /**
@@ -182,7 +182,7 @@ describe("C. the character corpus", () => {
        Toad and Ka-Zar off the off-screen list entirely. */
     /* 246. Maestro is a comics character with no screen credit anywhere, the
        same shape as Kubik, Zom and Logos, so adding him moves this by one. */
-    expect(offScreen).toHaveLength(247);
+    expect(offScreen).toHaveLength(248);
     /* And everyone is reachable: the browse page no longer filters anyone out,
        so an off-screen character has a page like everybody else. */
     expect(shownCharacters).toHaveLength(allCharacters.length);

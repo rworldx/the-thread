@@ -4358,6 +4358,51 @@ const supporting: CharacterDraft[] = [
     ],
   },
   {
+    id: "scarlet-scarab",
+    nameEn: "Scarlet Scarab",
+    nameAr: "الجُعران القرمزي",
+    /* `Human avatar`, the same species Moon Knight carries, because that is
+       exactly what she is and it is the thing the show spends six episodes
+       earning: she is offered the job and TAKES it, which he never quite
+       does. */
+    aliases: ["Scarlet Scarab", "Layla El-Faouly"],
+    category: "hero",
+    affiliation: [],
+    universe: ["mcu"],
+    species: "Human avatar",
+    powers: [
+      {
+        en: "Avatar of Taweret, and she chose it",
+        ar: "مُجسّدة تاويرت، وقد اختارت ذلك",
+      },
+      {
+        en: "Golden wings that open into blades",
+        ar: "جناحان ذهبيان ينفتحان نصالًا",
+      },
+      { en: "Flies, and holds still to fight", ar: "تطير، وتثبت لتقاتل" },
+      {
+        en: "Strength and durability of an avatar",
+        ar: "قوة وصلابة مُجسّدة",
+      },
+      {
+        en: "Throws the wing edges as weapons",
+        ar: "تقذف حواف الجناحين كالأسلحة",
+      },
+      {
+        en: "An archaeologist before any of it",
+        ar: "عالمة آثار قبل ذلك كله",
+      },
+    ],
+    origin: {
+      en: "Marc Spector's wife, and better at his job than he is: a thief and archaeologist who was hunting her father's killer before she ever met a god. Taweret offers her the avatar's bargain in the middle of a fight, and she takes it without the argument he needed six episodes for.",
+      ar: "زوجة مارك سبكتور، وأبرع منه في عمله: لصّة وعالمة آثار كانت تطارد قاتل أبيها قبل أن تلتقي بإله. تعرض عليها تاويرت صفقة المُجسّد في وسط معركة، فتقبلها دون الجدال الذي احتاج هو ستّ حلقات لأجله.",
+    },
+    related: [
+      { id: "moon-knight", kind: "family" },
+      { id: "khonshu", kind: "ally" },
+    ],
+  },
+  {
     id: "khonshu",
     nameEn: "Khonshu",
     nameAr: "خونشو",
@@ -12072,6 +12117,175 @@ const whiteVision: CharacterDraft[] = [
     related: [
       { id: "vision", kind: "variant", variantOrigin: "alternate-universe" },
       { id: "scarlet-witch", kind: "ally" },
+    ],
+  },
+  {
+    id: "jarvis",
+    nameEn: "J.A.R.V.I.S.",
+    nameAr: "جارفيس",
+    /* THE ONE THE OTHERS ARE MEASURED AGAINST. He is not a gadget: he ran
+       every system Stark owned, flew a suit with nobody in it, and held Ultron
+       off long enough for it to matter. Then he was torn apart and what was
+       left of him became VISION, which is why that record and this one are
+       joined rather than merged -- Vision is what he became, not what he is. */
+    aliases: ["J.A.R.V.I.S.", "JARVIS"],
+    category: "supporting",
+    affiliation: ["Stark Industries"],
+    universe: ["mcu"],
+    species: "Artificial intelligence",
+    powers: [
+      { en: "Runs every system Stark owns", ar: "يدير كل نظام يملكه ستارك" },
+      {
+        en: "Speaks, and is always already listening",
+        ar: "يتكلم، ويكون مصغيًا سلفًا دائمًا",
+      },
+      { en: "Flew a suit with nobody in it", ar: "قاد بذلة لا أحد فيها" },
+      {
+        en: "Held off Ultron long enough to matter",
+        ar: "صدّ ألترون مدة كانت كافية",
+      },
+      {
+        en: "Torn apart, and rebuilt as Vision",
+        ar: "مُزّق، وأُعيد بناؤه فيجن",
+      },
+      { en: "Named after a butler", ar: "سُمّي على كبير خدم" },
+    ],
+    origin: {
+      en: "The house intelligence Tony Stark talked to more than he talked to people, running the tower, the armour and the arguments. Ultron tore him apart to get him out of the way, and the pieces that survived were built into a body and became somebody else.",
+      ar: "الذكاء المنزلي الذي كان توني ستارك يحدثه أكثر مما يحدث البشر، يدير البرج والدروع والمشاجرات. مزّقه ألترون ليزيحه عن الطريق، فبُنيت الأجزاء الناجية في جسد وصارت شخصًا آخر.",
+    },
+    related: [
+      { id: "iron-man", kind: "ally" },
+      { id: "vision", kind: "variant", variantOrigin: "alternate-universe" },
+      { id: "ultron", kind: "enemy" },
+    ],
+  },
+  {
+    id: "friday",
+    nameEn: "F.R.I.D.A.Y.",
+    nameAr: "فرايداي",
+    aliases: ["F.R.I.D.A.Y.", "FRIDAY"],
+    category: "supporting",
+    affiliation: ["Stark Industries"],
+    universe: ["mcu"],
+    species: "Artificial intelligence",
+    powers: [
+      { en: "Replaced JARVIS, and knew it", ar: "حلّت محل جارفيس، وكانت تعلم" },
+      { en: "Runs the armour and the tower", ar: "تدير الدروع والبرج" },
+      { en: "Targets, calculates, and argues", ar: "تصوّب وتحسب وتجادل" },
+      { en: "Ran the Hulkbuster's numbers", ar: "أدارت حسابات الهالكباستر" },
+      { en: "An Irish voice, by his choice", ar: "صوت أيرلندي، باختياره" },
+      { en: "Still running after he was gone", ar: "ما زالت تعمل بعد رحيله" },
+    ],
+    origin: {
+      en: "The second one, brought up the day the first one died, and never allowed to be a replacement in name. She runs the suits and the numbers and tells him when he is wrong, which is the part of the job he kept.",
+      ar: "الثانية، شُغّلت يوم مات الأول، ولم يُسمح لها قط بأن تكون بديلًا بالاسم. تدير البذلات والحسابات وتخبره حين يخطئ، وهو الجزء الذي أبقاه من الوظيفة.",
+    },
+    related: [
+      { id: "iron-man", kind: "ally" },
+      { id: "jarvis", kind: "ally" },
+    ],
+  },
+  {
+    id: "edith",
+    nameEn: "E.D.I.T.H.",
+    nameAr: "إيديث",
+    aliases: ["E.D.I.T.H.", "EDITH"],
+    category: "supporting",
+    affiliation: ["Stark Industries"],
+    universe: ["mcu"],
+    species: "Artificial intelligence",
+    powers: [
+      { en: "Even Dead I'm The Hero", ar: "حتى ميتًا، أنا البطل" },
+      {
+        en: "A pair of glasses with a satellite",
+        ar: "نظارة موصولة بقمر صناعي",
+      },
+      {
+        en: "Commands a drone fleet by voice",
+        ar: "تأمر أسطول مسيّرات بالصوت",
+      },
+      { en: "Sees every face, and names it", ar: "ترى كل وجه، وتسمّيه" },
+      {
+        en: "Access to all of Stark's networks",
+        ar: "وصول إلى كل شبكات ستارك",
+      },
+      { en: "Given to a teenager, and stolen", ar: "أُعطيت لمراهق، فسُرقت" },
+    ],
+    origin: {
+      en: "A weapons platform left in a pair of sunglasses and handed to a sixteen-year-old, because the man who built it thought that was funny and also meant it. She was taken off him within a week by somebody who asked nicely.",
+      ar: "منصة أسلحة تُركت في نظارة شمسية وسُلّمت إلى ابن ستة عشر عامًا، لأن صانعها ظن ذلك طريفًا وكان يعنيه أيضًا. انتُزعت منه خلال أسبوع على يد من طلبها بلطف.",
+    },
+    related: [
+      { id: "iron-man", kind: "ally" },
+      { id: "spider-man-tom", kind: "ally" },
+      { id: "mysterio", kind: "enemy" },
+    ],
+  },
+  {
+    id: "karen",
+    nameEn: "K.A.R.E.N.",
+    nameAr: "كارين",
+    /* BLADE'S KAREN IS SOMEBODY ELSE. The 1998 film credits Karen Jenson as
+       exactly "Karen", and the bare alias took it -- a suit AI built in 2017
+       appearing in a vampire film from before she existed. Same fault that put
+       First Steps on Norrin instead of Shalla-Bal. */
+    notIn: ["blade"],
+    aliases: ["K.A.R.E.N.", "KAREN", "Karen", "Suit Lady"],
+    category: "supporting",
+    affiliation: ["Stark Industries"],
+    universe: ["mcu"],
+    species: "Artificial intelligence",
+    powers: [
+      { en: "The Spider-Man suit's own voice", ar: "صوت بذلة سبايدرمان نفسه" },
+      {
+        en: "Five hundred web-shooter settings",
+        ar: "خمسمئة إعداد لقاذف الشبكة",
+      },
+      { en: "Talks him through a fight", ar: "ترشده أثناء القتال" },
+      { en: "Instant kill mode, if he asks", ar: "وضع القتل الفوري، إن طلب" },
+      { en: "Reads a room and the people in it", ar: "تقرأ الغرفة ومن فيها" },
+      { en: "Built by Stark, for a boy", ar: "صنعها ستارك، لأجل فتى" },
+    ],
+    origin: {
+      en: "The voice inside the suit, switched off by a training-wheels protocol until a boy hacked her on. She gave him five hundred ways to fire a web and one piece of advice about a girl, which is the one he took.",
+      ar: "الصوت داخل البذلة، مُعطّل ببروتوكول العجلات المساعدة حتى اخترقه فتى وشغّلها. أعطته خمسمئة طريقة لإطلاق الشبكة ونصيحة واحدة بشأن فتاة، وهي التي أخذ بها.",
+    },
+    related: [
+      { id: "spider-man-tom", kind: "ally" },
+      { id: "iron-man", kind: "ally" },
+    ],
+  },
+  {
+    id: "veronica",
+    nameEn: "Veronica",
+    nameAr: "فيرونيكا",
+    aliases: ["Veronica"],
+    category: "supporting",
+    affiliation: ["Stark Industries"],
+    universe: ["mcu"],
+    species: "Artificial intelligence",
+    powers: [
+      {
+        en: "The Hulkbuster's support satellite",
+        ar: "القمر الصناعي الداعم للهالكباستر",
+      },
+      { en: "Drops armour anywhere on Earth", ar: "تُنزل الدرع في أي مكان" },
+      { en: "Repairs the suit mid-fight", ar: "تصلح البذلة أثناء القتال" },
+      { en: "Watches the Hulk, and only him", ar: "تراقب الهالك، وحده" },
+      {
+        en: "Named for a comic-book girlfriend",
+        ar: "سُمّيت على حبيبة في القصص",
+      },
+      { en: "Built because Banner asked", ar: "بُنيت لأن بانر طلب ذلك" },
+    ],
+    origin: {
+      en: "An orbital platform whose only job is the worst day. Banner asked for a plan in case he ever lost control, and this is the plan: a satellite that drops a suit of armour on him from the sky, and a friend who agreed to use it.",
+      ar: "منصة مدارية مهمتها الوحيدة أسوأ يوم. طلب بانر خطة إن فقد السيطرة يومًا، وهذه هي الخطة: قمر صناعي يُسقط عليه درعًا من السماء، وصديق وافق على استعماله.",
+    },
+    related: [
+      { id: "iron-man", kind: "ally" },
+      { id: "hulk", kind: "ally" },
     ],
   },
 ];

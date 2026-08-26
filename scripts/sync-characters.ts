@@ -66,6 +66,22 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/27/Maria_Rambeau_Infobox.jpg/revision/latest?cb=20231025002315",
   "sharon-davis":
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d3/Sharon_Davis_Infobox.jpg/revision/latest?cb=20240913184259",
+  /* THE SIX ADDED FOR VISIONQUEST AND MOON KNIGHT. EDITH's is a 1920x800
+     film still because the wiki has no other -- she is a pair of glasses, so
+     there is no portrait to take; the centre of the frame is the face-scan
+     panel and it crops. */
+  edith:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b4/Stark_Glasses_HUD.png/revision/latest?cb=20191003070015",
+  friday:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/72/FRIDAY.png/revision/latest?cb=20230923172011",
+  jarvis:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/bf/JARVIS.png/revision/latest?cb=20230923172229",
+  karen:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/38/Spider-Man_Suit_A.I._%28Web_Shooters_-_SMH%29.png/revision/latest?cb=20171018194719",
+  "scarlet-scarab":
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c4/Scarlet_Scarab_Infobox.jpg/revision/latest?cb=20230824020647",
+  veronica:
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9b/Veronica_Profile.png/revision/latest?cb=20161201172118",
   "the-watchers":
     "https://static.wikia.nocookie.net/marveldatabase/images/3/39/Watchers_from_Original_Sin_Vol_1_8_Textless_cover_001.jpg/revision/latest?cb=20170905063428",
   /* PINNED BECAUSE THE LOOKUP DRIFTED. Speed's portrait had been the MCU

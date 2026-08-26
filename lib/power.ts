@@ -933,6 +933,13 @@ const TIERS: Tier[] = [
         "Enhanced human",
         "Synthezoid",
         "Artificial being",
+        /* AND `Artificial intelligence`, which was the only word in this
+           family the list did not have -- so JARVIS, EDITH, KAREN and Veronica
+           fell through to tier 8, "humans who turn up anyway", which is the
+           wrong floor for a thing that is not a human and does not turn up.
+           This tier's own gloss names ANDROIDS. F.R.I.D.A.Y. was already here
+           and only because one of her bullets says "armour". */
+        "Artificial intelligence",
         "Machine",
         "Cyborg",
         "Clone",
@@ -1844,6 +1851,19 @@ export function claimScore(c: Character): number {
  * which is the thing C28 exists to prevent.
  */
 export const OUTRANKS: string[][] = [
+  /**
+   * THE STARK AIs, in the order of what each was trusted with. Score cannot
+   * see this: they all say roughly the same words, and it had EDITH and KAREN
+   * above JARVIS, who ran the tower, flew a suit with nobody in it, held
+   * Ultron off long enough for it to matter, and then became VISION.
+   *
+   * Then Friday, who replaced him and still runs the armour. Then Edith, who
+   * commands an armed drone fleet and is the most directly lethal of them.
+   * Then Veronica, who exists for one bad day. Then Karen, who talks a
+   * sixteen-year-old through a fight, which is the smallest brief here and
+   * the one she does best.
+   */
+  ["jarvis", "friday", "edith", "veronica", "karen"],
   /**
    * THE BLACK ORDER, and Supergiant leads it. She is an
    * omnipath and a mental parasite who possesses any mind she reaches, devours
