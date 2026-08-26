@@ -380,7 +380,15 @@ const GROUPS: {
          eight films. It takes SYNTHEZOIDS too: Vision and White Vision are
          bodies built around a mind, which is the thing this chip is for, and
          a reader looking for the AIs is looking for them first. */
-      { id: "ai", match: is("Artificial intelligence", "Synthezoid") },
+      {
+        id: "ai",
+        match: is(
+          "Artificial intelligence",
+          "Synthezoid",
+          "Machine",
+          "Artificial being",
+        ),
+      },
       /* Peoples, not teams. Wakandans sat in the team band, which said the
          nation is something you join rather than somewhere you are from —
          the same category error as filing Kree under teams. */

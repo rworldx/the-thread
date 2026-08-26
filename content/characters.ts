@@ -12236,7 +12236,10 @@ const whiteVision: CharacterDraft[] = [
     species: "Artificial intelligence",
     powers: [
       { en: "Replaced JARVIS, and knew it", ar: "حلّت محل جارفيس، وكانت تعلم" },
-      { en: "Runs the armour and the tower", ar: "تدير الدروع والبرج" },
+      {
+        en: "Runs the suits and the tower",
+        ar: "تدير البذلات والبرج",
+      },
       { en: "Targets, calculates, and argues", ar: "تصوّب وتحسب وتجادل" },
       { en: "Ran the Hulkbuster's numbers", ar: "أدارت حسابات الهالكباستر" },
       { en: "An Irish voice, by his choice", ar: "صوت أيرلندي، باختياره" },
@@ -12335,7 +12338,10 @@ const whiteVision: CharacterDraft[] = [
         en: "The Hulkbuster's support satellite",
         ar: "القمر الصناعي الداعم للهالكباستر",
       },
-      { en: "Drops armour anywhere on Earth", ar: "تُنزل الدرع في أي مكان" },
+      {
+        en: "Drops a Hulkbuster anywhere on Earth",
+        ar: "تُنزل هالكباستر في أي مكان على الأرض",
+      },
       { en: "Repairs the suit mid-fight", ar: "تصلح البذلة أثناء القتال" },
       { en: "Watches the Hulk, and only him", ar: "تراقب الهالك، وحده" },
       {
@@ -13000,10 +13006,32 @@ const knowhere: CharacterDraft[] = [
     affiliation: ["Ravagers"],
     universe: ["mcu"],
     species: "Artificial intelligence",
+    /* THREE BULLETS for a planetary intelligence, which is how ARNIM ZOLA -- a face on a screen -- came to outrank him. */
     powers: [
-      { en: "Runs a whole planet", ar: "تدير كوكبًا بأكمله" },
-      { en: "Present everywhere at once", ar: "حاضرة في كل مكان دفعة" },
-      { en: "Was once a Vision", ar: "كانت رؤية ذات يوم" },
+      {
+        en: "Runs a whole planet, all of it",
+        ar: "يدير كوكبًا بأسره",
+      },
+      {
+        en: "Present everywhere on it at once",
+        ar: "حاضر في كل أرجائه دفعة واحدة",
+      },
+      {
+        en: "Density control, like the Vision he was",
+        ar: "تحكم بالكثافة، كالفيجن الذي كانه",
+      },
+      {
+        en: "Flies, and phases through matter",
+        ar: "يطير، ويعبر المادة",
+      },
+      {
+        en: "Computes for a whole civilisation",
+        ar: "يحسب لحضارة كاملة",
+      },
+      {
+        en: "A Ravager captain, and a world",
+        ar: "قبطان رافيجر، وعالم",
+      },
     ],
     origin: {
       en: "An artificial intelligence that governs a planet and joins the old Ravager crew from wherever she happens to be, which is everywhere on it at the same time.",
@@ -14214,31 +14242,35 @@ const antagonists: CharacterDraft[] = [
     category: "villain",
     affiliation: [],
     universe: ["mcu"],
-    species: "Artificial intelligence",
+    /* `Machine`, not `Artificial intelligence`. He is not software: he walks
+       around in a robot body with a beam in its chest, which is what the word
+       is for here -- and it is the species tier 7 already admits, so he lands
+       on a rule rather than on a name. */
+    species: "Machine",
     powers: [
       {
-        en: "A mind on magnetic tape",
-        ar: "عقل على شريط ممغنط",
+        en: "A mind copied onto tape, and kept",
+        ar: "عقل نُسخ على شريط، وحُفظ",
       },
       {
-        en: "Lives inside a machine body",
-        ar: "يعيش داخل جسد آلي",
+        en: "Kill the body and he is on another drive",
+        ar: "اقتل الجسد فيكون على قرص آخر",
       },
       {
-        en: "A face on a screen in its chest",
-        ar: "وجه على شاشة في صدره",
+        en: "Copies himself onto any system he finds",
+        ar: "ينسخ نفسه إلى أي نظام يجده",
       },
       {
-        en: "Copies himself onto other systems",
-        ar: "ينسخ نفسه إلى أنظمة أخرى",
+        en: "A machine body, and a beam in its chest",
+        ar: "جسد آلي، وشعاع في صدره",
       },
       {
-        en: "A geneticist HYDRA built around",
-        ar: "عالم وراثة بنت هايدرا حوله",
+        en: "Rebuilt HYDRA inside a computer",
+        ar: "أعاد بناء هايدرا داخل حاسوب",
       },
       {
-        en: "Cannot be killed by killing the body",
-        ar: "لا يُقتل بقتل الجسد",
+        en: "Engineered the Winter Soldier programme",
+        ar: "هندس برنامج جندي الشتاء",
       },
     ],
     origin: {

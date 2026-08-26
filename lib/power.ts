@@ -904,7 +904,21 @@ const TIERS: Tier[] = [
        remembers every cycle of his own rebirth. Named, the way Beta Ray Bill
        and Gladiator are named a few tiers up, and for the same reason: a
        species of one that no rule will ever find. */
-    ranked: ["mainframe", "stakar-ogord"],
+    /* JOCASTA IS NAMED because she is the one Stark-adjacent machine that is
+       actually superhuman -- strength, durability, flight, eye-beams -- and
+       with `Artificial intelligence` correctly out of the species list she
+       fell to tier 8 with the workshop arms. She is not a workshop arm. */
+    /* AND ZOLA, who over-corrected the other way. His "cannot be killed by
+       killing the body" was carrying him to TIER 6 and above White Vision on
+       159; taking the clause out dropped him to tier 8, below Kingpin, which
+       is just as wrong -- he walks around in a machine body, rebuilt HYDRA
+       inside a computer and engineered the Winter Soldier programme. He is an
+       android and this is the android tier. */
+    /* NOT ZOLA. Naming him here put him at the HEAD of the tier and back
+       above White Vision, which is the thing that needed fixing. His species
+       is `Machine` instead, which this tier already admits, so he arrives on
+       the same rule as everyone else and sorts on what his record claims. */
+    ranked: ["mainframe", "stakar-ogord", "jocasta"],
     match: (c) =>
       /* COSMO IS NOT A HUMAN WHO TURNS UP ANYWAY. `Uplifted animal` lost its
          grant because it was carrying Lylla, Teefs and Floor, whose records
@@ -944,13 +958,16 @@ const TIERS: Tier[] = [
         "Enhanced human",
         "Synthezoid",
         "Artificial being",
-        /* AND `Artificial intelligence`, which was the only word in this
-           family the list did not have -- so JARVIS, EDITH, KAREN and Veronica
-           fell through to tier 8, "humans who turn up anyway", which is the
-           wrong floor for a thing that is not a human and does not turn up.
-           This tier's own gloss names ANDROIDS. F.R.I.D.A.Y. was already here
-           and only because one of her bullets says "armour". */
-        "Artificial intelligence",
+        /* `Artificial intelligence` IS DELIBERATELY NOT HERE, and it was, for
+           about an hour. Adding it fixed JARVIS sitting below FRIDAY and broke
+           something worse: tier beats score, so every Stark AI vaulted over
+           every non-powered human. U SCORED MINUS THIRTY-SIX AND OUTRANKED
+           KINGPIN, the Punisher and Black Widow. It is a robot arm that holds
+           a camera.
+           This tier's gloss is "superhuman, and bounded". A workshop arm is
+           neither, and neither is an algorithm in a baseball cap. The ones
+           that ARE superhuman get named instead -- Jocasta below, and the
+           Supreme Intelligence and Ultron a tier up. */
         "Machine",
         "Cyborg",
         "Clone",
