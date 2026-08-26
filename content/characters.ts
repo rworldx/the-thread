@@ -14329,28 +14329,28 @@ const antagonists: CharacterDraft[] = [
     species: "Artificial intelligence",
     powers: [
       {
-        en: "The ESP Box, wired to his nervous system",
-        ar: "صندوق الإدراك، موصول بجهازه العصبي",
+        en: "Hydra's chief scientist, then SHIELD's",
+        ar: "كبير علماء هايدرا، ثم عالِم شيلد",
       },
       {
-        en: "Mind control, and psychic blasts with it",
-        ar: "سيطرة عقول، وقذائف نفسية معها",
+        en: "No body. A face on a bank of screens",
+        ar: "بلا جسد. وجه على جدار من الشاشات",
       },
       {
-        en: "Animates inorganic matter within range",
-        ar: "يحيي المادة غير العضوية في مداه",
+        en: "Grew Hydra inside SHIELD for fifty years",
+        ar: "ربّى هايدرا داخل شيلد خمسين عامًا",
       },
       {
-        en: "A face on a screen where a head should be",
-        ar: "وجه على شاشة حيث ينبغي أن يكون رأس",
+        en: "An algorithm that reads a life and judges it",
+        ar: "خوارزمية تقرأ حياة المرء وتحكم عليه",
       },
       {
-        en: "Backup bodies. Destroy one and he jumps",
-        ar: "أجساد احتياطية، دمّر واحدًا فينتقل",
+        en: "Chose Project Insight's targets in advance",
+        ar: "اختار أهداف مشروع إنسايت سلفًا",
       },
       {
-        en: "Cloned Vermin, and armies of androids",
-        ar: "استنسخ فيرمن، وجيوشًا من الآليين",
+        en: "Built the Winter Soldier out of a man",
+        ar: "صنع جندي الشتاء من إنسان",
       },
     ],
     origin: {
