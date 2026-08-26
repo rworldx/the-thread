@@ -385,10 +385,14 @@ const GROUPS: {
         /* NOT `Artificial being`, which I added here to keep Zola on the chip
            after his species became `Machine`, and which dragged ADAM WARLOCK
            onto it at 110th -- a cosmic being the Enclave grew in a cocoon,
-           filed under the AIs. Bi-Beast came with him. `Machine` stays: it
-           holds Zola, the Sentinels and Master Mold, and a reader looking for
-           the artificial minds is looking for those. */
-        match: is("Artificial intelligence", "Synthezoid", "Machine"),
+           filed under the AIs. Bi-Beast came with him.
+           `Machine` is gone too, and for the reason given against it: it held the
+           SENTINELS and MASTER MOLD, which are hardware. An AI is a mind. A
+           Sentinel is a weapon with a target list, and nobody looking for the
+           artificial minds is looking for a robot army. Zola stays on the chip
+           because he is software again -- in the MCU he is a screen with no
+           body at all. */
+        match: is("Artificial intelligence", "Synthezoid"),
       },
       /* Peoples, not teams. Wakandans sat in the team band, which said the
          nation is something you join rather than somewhere you are from —

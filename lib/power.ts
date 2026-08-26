@@ -885,10 +885,13 @@ const TIERS: Tier[] = [
        Teefs and Floor — whose records list mechanical hands, wheels and spider
        legs, and who score below zero — above Iron Man and the Kingpin. Cosmo
        keeps the tier by name: telepathy and telekinesis are not bolted on. */
-    /* AN INTELLIGENCE IS NOT A BODY. "Artificial intelligence" was admitting
-       Miss Minutes — a cartoon clock on a screen — and Arnim Zola, a mind on
-       magnetic tape, above Iron Man and the Punisher. The two AIs that do act
-       on the world are named; the rest fall to tier 8. */
+    /* AN INTELLIGENCE IS NOT A BODY -- but the body was never the test. The
+       bare species was admitting MISS MINUTES, a cartoon clock on a screen,
+       above Iron Man and the Punisher. The clause in `match` asks instead for
+       an artificial mind that ACTS: hero, villain or antihero, never
+       `supporting`. Miss Minutes is the one case that slips through it, being
+       a villain, and her tier 9 pin holds her there. The argument written
+       beside that pin is the right one: agency with nothing behind it. */
     /* COSMO CAME OFF THIS HEAD. Naming her here pinned her to the TOP of tier
        7 and made a telepathic dog the second-strongest Guardian, ahead of Drax
        and Groot. Her telepathy is real and her own score can carry it.
@@ -904,24 +907,15 @@ const TIERS: Tier[] = [
        remembers every cycle of his own rebirth. Named, the way Beta Ray Bill
        and Gladiator are named a few tiers up, and for the same reason: a
        species of one that no rule will ever find. */
-    /* JOCASTA IS NAMED because she is the one Stark-adjacent machine that is
-       actually superhuman -- strength, durability, flight, eye-beams -- and
-       with `Artificial intelligence` correctly out of the species list she
-       fell to tier 8 with the workshop arms. She is not a workshop arm. */
-    /* AND ZOLA, who over-corrected the other way. His "cannot be killed by
-       killing the body" was carrying him to TIER 6 and above White Vision on
-       159; taking the clause out dropped him to tier 8, below Kingpin, which
-       is just as wrong -- he walks around in a machine body, rebuilt HYDRA
-       inside a computer and engineered the Winter Soldier programme. He is an
-       android and this is the android tier. */
-    /* NOT ZOLA. Naming him here put him at the HEAD of the tier and back
-       above White Vision, which is the thing that needed fixing. His species
-       is `Machine` instead, which this tier already admits, so he arrives on
-       the same rule as everyone else and sorts on what his record claims. */
-    /* NEITHER MAINFRAME NOR JOCASTA ANY MORE. Naming them here put them at
-       the HEAD of the tier, above White Vision on 159 who is not named and
-       arrives on his score. Both are `Machine` now, which this tier already
-       admits, so all three sort on what they claim. */
+    /* ZOLA, JOCASTA AND MAINFRAME arrive on the `category` clause in
+       `match` below -- not by name, and not by having their species bent
+       until it fit. Naming them here put them at the HEAD of the tier, above
+       White Vision on 159 who is not named and arrives on his score. Calling
+       them `Machine` got the tier right for the wrong reason: it says they
+       have a body, and the MCU Zola is a screen with no body at all. It also
+       dragged the SENTINELS and MASTER MOLD onto the AI chip beside them,
+       which is a robot army filed under artificial minds. All three read
+       `Artificial intelligence` again and sort on what they claim. */
     ranked: ["stakar-ogord"],
     match: (c) =>
       /* COSMO IS NOT A HUMAN WHO TURNS UP ANYWAY. `Uplifted animal` lost its
@@ -953,6 +947,22 @@ const TIERS: Tier[] = [
       /\b(armour|armor|exoskeleton|repulsor|powered suit|built her own suit|changes size|pym particle|grows and shrinks|flight rig|winged|sp\/\/dr|mech\b|pilots the|mechanical arm|arms that lift|gauntlets\b|glider|illusion technology|drones that)/i.test(
         c.powers.map((x) => x.en).join(" "),
       ) ||
+      /**
+       * AN ARTIFICIAL MIND THAT ACTS IN THE STORY, which is the line the bare
+       * species could not draw. Putting `Artificial intelligence` in the list
+       * below promoted every Stark assistant with it, and U -- an arm holding
+       * a camera -- outranked Kingpin. Taking it out sent ZOLA to tier 8,
+       * below Kingpin, which is just as wrong.
+       *
+       * The corpus already carries the distinction in `category`. EVERY ONE of
+       * Stark's assistants is `supporting`: JARVIS, FRIDAY, EDITH, KAREN,
+       * Veronica, DUM-E, U, KEVIN. Every artificial mind that ACTS is a hero,
+       * a villain or an antihero: Ultron, the Supreme Intelligence, Zola,
+       * Jocasta, Mainframe. So the rule asks that instead of asking for a
+       * body, and Zola can go back to being what he is -- in the MCU he is a
+       * screen with no body at all, which is software by any reading.
+       */
+      (sp("Artificial intelligence")(c) && c.category !== "supporting") ||
       sp(
         "Mutant",
         "Mutant hybrid",
@@ -962,16 +972,15 @@ const TIERS: Tier[] = [
         "Enhanced human",
         "Synthezoid",
         "Artificial being",
-        /* `Artificial intelligence` IS DELIBERATELY NOT HERE, and it was, for
-           about an hour. Adding it fixed JARVIS sitting below FRIDAY and broke
-           something worse: tier beats score, so every Stark AI vaulted over
-           every non-powered human. U SCORED MINUS THIRTY-SIX AND OUTRANKED
-           KINGPIN, the Punisher and Black Widow. It is a robot arm that holds
-           a camera.
+        /* `Artificial intelligence` IS DELIBERATELY NOT HERE, and it was,
+           for about an hour. Adding it flat vaulted every Stark AI over every
+           non-powered human, because tier beats score: U SCORED MINUS
+           THIRTY-SIX AND OUTRANKED KINGPIN, the Punisher and Black Widow. It
+           is a robot arm that holds a camera.
            This tier's gloss is "superhuman, and bounded". A workshop arm is
            neither, and neither is an algorithm in a baseball cap. The ones
-           that ARE superhuman get named instead -- Jocasta below, and the
-           Supreme Intelligence and Ultron a tier up. */
+           that act arrive on the `category` clause above; the assistants are
+           all `supporting` and stay where they are. */
         "Machine",
         "Cyborg",
         "Clone",
@@ -1195,6 +1204,9 @@ const TIERS: Tier[] = [
      *   Lylla             the reason Rocket knows what a friend is.
      *   Teefs             wheels he did not ask for, and he stayed.
      *   Floor             one word, used for everything.
+     *   K.E.V.I.N.        decides what a Marvel story is allowed to be, and
+     *                     lost an argument to a lawyer. Outside the story the
+     *                     same way Stan Lee is, and one place short of him.
      *   Stan Lee          last on purpose. He is outside the story rather than
      *                     beneath it, and he is the reason there is one.
      *
@@ -1252,6 +1264,10 @@ const TIERS: Tier[] = [
       "lylla",
       "teefs",
       "floor",
+      /* HE FELL INTO THE TAIL and took the one slot in this tier that was
+         already spoken for. Nothing named him, so he sorted in on a score of
+         8 and landed 699th, below the man the tier ends with on purpose. */
+      "kevin",
       "stan-lee",
     ],
     match: () => true,
