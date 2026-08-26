@@ -1311,8 +1311,14 @@ const IMAGE_OVERRIDES: Record<string, string> = {
     "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/29-annihilus.jpg",
   arishem:
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7e/Arishem.png/revision/latest?cb=20230926005618",
+  /* THE MACHINE, not the man. The picture here was the MCU Zola -- Toby Jones
+     in a lab coat, which is who he was BEFORE -- and the record describes what
+     he became: a machine body with his face on a screen in its chest and a
+     camera on top. This is the handbook plate of exactly that, and it carries
+     an inset of the human in the corner, which is the whole character in one
+     frame. */
   "arnim-zola":
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/67/Arnim_Zola.png/revision/latest?cb=20141127015752",
+    "https://static.wikia.nocookie.net/marveldatabase/images/7/70/Arnim_Zola_%28Earth-616%29_from_All-New_Official_Handbook_of_the_Marvel_Universe_A_to_Z_Vol_1_12_0001.jpg/revision/latest?cb=20160515163442",
   aurora:
     "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/56-aurora.jpg",
   ayesha:
