@@ -18,21 +18,21 @@ pretty thing did: the graph engine and its tests landed before a single line of
 CSS, and `/path/[slug]` shipped deliberately unstyled to prove the product
 before it looked like anything.
 
-| | |
-|---|---|
-| Titles in the corpus | 216 |
-| Rights-holders | MCU (74) · Animation (56) · Legacy (31) · Fox (18) · Sony (15) · Defenders (13) · Marvel Television (9) |
-| Universes, as navigated | 8 — Fox splits into X-Men and Fantastic Four, two separate watch orders |
-| The essentials spine | 22 titles, Iron Man → Far From Home |
-| Characters | 699, appearances derived from cast |
-| Episodes | 2,193, with stills and runtimes, on the season pages |
-| Pages | 1,893, all statically prerendered |
-| Tests | 320 unit + 55 browser |
-| Locales | English and Arabic, both rendering |
+|                         |                                                                                                         |
+| ----------------------- | ------------------------------------------------------------------------------------------------------- |
+| Titles in the corpus    | 216                                                                                                     |
+| Rights-holders          | MCU (74) · Animation (56) · Legacy (31) · Fox (18) · Sony (15) · Defenders (13) · Marvel Television (9) |
+| Universes, as navigated | 8 — Fox splits into X-Men and Fantastic Four, two separate watch orders                                 |
+| The beginner spine      | 23 films, Iron Man → Far From Home. The Infinity Saga as Marvel publishes it, 50h 03m                   |
+| Characters              | 699, appearances derived from cast                                                                      |
+| Episodes                | 2,193, with stills and runtimes, on the season pages                                                    |
+| Pages                   | 1,893, all statically prerendered                                                                       |
+| Tests                   | 321 unit + 55 browser                                                                                   |
+| Locales                 | English and Arabic, both rendering                                                                      |
 
 **Images: nothing is transformed by Vercel.** Image Optimization is billed per
 transformation, and 216 posters plus 699 portraits plus galleries and search
-thumbnails exhausted the 5,000 free ones — after which the optimiser *errors*
+thumbnails exhausted the 5,000 free ones — after which the optimiser _errors_
 rather than degrading, so most of the deployed site lost its images while
 localhost looked perfect. Reducing usage does not refund a spent quota, so the
 count is now zero: TMDB serves each poster at a width written into the path,
@@ -52,7 +52,7 @@ orders that share a studio and nothing else.
 Two distinct user goals, which is why the product has two front doors:
 
 1. **The newcomer** has watched nothing and wants a starting point that will not
-   take 200 hours. Served by the 22-title essentials spine.
+   take 200 hours. Served by the 23-film Infinity Saga spine.
 2. **The returning viewer** wants to watch one specific thing tonight and needs
    to know what it depends on. Served by `pathTo(id)`.
 
@@ -61,11 +61,20 @@ follows from not doing that.
 
 ### What the spine is, and is not
 
-The essentials path is **the Infinity Saga, start to finish** — 22 titles, Iron
-Man through Far From Home. It ends in 2019 by design, because that is where the
-story ends, not because the list is stale.
+The beginner path is **the Infinity Saga, start to finish** — 23 films, Iron
+Man through Far From Home, 50h 03m. It ends in 2019 by design, because that is
+where the story ends, not because the list is stale.
 
-The homepage card therefore reads **"22 titles. The Infinity Saga, start to
+Twenty-three, not twenty-two. The card said 22 for a while because it was still
+counting the curated `essential` set, which left out The Incredible Hulk.
+Twenty-two is not a number Marvel has ever used for anything; the Infinity Saga
+is 23 films, Marvel says so on the box set, and a reader who knows that reads 22
+as an error — correctly. `infinitySaga()` in `lib/graph.ts` now derives the
+count from `saga` and `type`, films only, so it cannot drift from the corpus.
+The `essential` flag and its 22-title closure still exist for `essentialsOrder`
+and the `essential-closure` rule; they are no longer what the homepage shows.
+
+The homepage card therefore reads **"23 titles. The Infinity Saga, start to
 finish."** It must not read "catch up": a newcomer who finishes it in 2026 is
 seven years behind, and framing a complete story as a catch-up list turns a
 satisfying ending into a gap. What comes after is a separate door, not a
@@ -154,10 +163,10 @@ instead, which are duller and cannot reach a stranger.
 **Two escape hatches, both self-policing**, because derivation cannot be
 absolute:
 
-| | For | Fails how |
-|---|---|---|
-| `alsoIn` | An appearance that is real and **uncredited**. TMDB lists four credits for the whole 1967 Fantastic Four series, and the Silver Surfer carries one of its episodes | Nothing — it is additive, so it is kept narrow by review |
-| `notIn` | A credit that uses the character's word for **somebody else**. Daredevil season 2 credits a bit part as "Leader"; the Hulk's Leader is not in that show | **Throws at build time** if it stops matching, so a stale exclusion cannot hide |
+|          | For                                                                                                                                                                | Fails how                                                                       |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| `alsoIn` | An appearance that is real and **uncredited**. TMDB lists four credits for the whole 1967 Fantastic Four series, and the Silver Surfer carries one of its episodes | Nothing — it is additive, so it is kept narrow by review                        |
+| `notIn`  | A credit that uses the character's word for **somebody else**. Daredevil season 2 credits a bit part as "Leader"; the Hulk's Leader is not in that show            | **Throws at build time** if it stops matching, so a stale exclusion cannot hide |
 
 `alsoIn` earns its place constantly: TMDB lists fourteen cast credits for The
 Super Hero Squad Show and the series has thirty-five characters, so more than
@@ -230,25 +239,25 @@ can never disagree.
 
 `npm run validate` fails the build on any of these:
 
-| Rule | What it catches |
-|---|---|
-| `cycle` | a prerequisite loop — reported as a path, `a → b → c → a`, not a boolean |
-| `soft-cycle` | a loop in `requires ∪ enriches` that the hard graph alone would miss |
-| `essential-closure` | an essential title depending on a non-essential one, which puts a silent hole in the 22-title spine |
-| `optional-with-dependents` | a title drawn dashed as "skippable" that something else hard-requires — the thread would tell a user to skip it and then strand them |
-| `missing-editor-note` | a cross-universe detour, hard **or** recommended, with no explanation shown to the user |
-| `superfluous-editor-note` | a note on plain sequence — if every edge got one, the caption box would stop meaning "detour ahead" |
-| `dangling-requires` / `-enriches` | an edge pointing at an id that does not exist |
-| `duplicate-id` / `duplicate-season` | two nodes claiming the same identity |
-| `story-rank-coverage` | a partially-ranked universe, which would render a half-empty toggle |
-| `story-rank-contradiction` | a curated order that puts a prerequisite after its dependent |
+| Rule                                | What it catches                                                                                                                      |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `cycle`                             | a prerequisite loop — reported as a path, `a → b → c → a`, not a boolean                                                             |
+| `soft-cycle`                        | a loop in `requires ∪ enriches` that the hard graph alone would miss                                                                 |
+| `essential-closure`                 | an essential title depending on a non-essential one, which puts a silent hole in the 22-title `essential` closure                    |
+| `optional-with-dependents`          | a title drawn dashed as "skippable" that something else hard-requires — the thread would tell a user to skip it and then strand them |
+| `missing-editor-note`               | a cross-universe detour, hard **or** recommended, with no explanation shown to the user                                              |
+| `superfluous-editor-note`           | a note on plain sequence — if every edge got one, the caption box would stop meaning "detour ahead"                                  |
+| `dangling-requires` / `-enriches`   | an edge pointing at an id that does not exist                                                                                        |
+| `duplicate-id` / `duplicate-season` | two nodes claiming the same identity                                                                                                 |
+| `story-rank-coverage`               | a partially-ranked universe, which would render a half-empty toggle                                                                  |
+| `story-rank-contradiction`          | a curated order that puts a prerequisite after its dependent                                                                         |
 
 ## Getting started
 
 ```bash
 npm install
 npm run build     # 1,893 static pages — render tests read its output
-npm test          # 320 unit tests
+npm test          # 321 unit tests
 npm run test:e2e  # 320px reflow + touch targets, real browser
 npm run shots     # §13.12 matrix: widths × themes × 5 routes + contact sheets
 npm run validate  # corpus gate — hermetic, runs on every build
@@ -403,7 +412,7 @@ lives in the `<ol>` rather than the decoration; that premise is false in Safari
 without this attribute.
 
 `<bdi>` around **both** the English and the Arabic title, not just the Arabic.
-Putting a `dir` on the block flips what `start`/`end` mean *for that block*, so
+Putting a `dir` on the block flips what `start`/`end` mean _for that block_, so
 the title aligns to the opposite edge of its panel. Isolating only Arabic works
 today and breaks at step 7, when the AR locale makes the page `dir="rtl"` and
 the English titles hit the mirror of the same bug.
@@ -415,13 +424,15 @@ Both are asserted in `tests/render.test.ts`. Both look deletable. Neither is.
 Nine commits ran with every runtime null, so several claims were unverified.
 After the first sync:
 
-- **The spine is 48h 09m.** Brief §12's copy — *"22 titles, about 48 hours"* —
-  holds almost exactly. `F7f` pins it between 45 and 51 hours.
+- **The `essential` closure is 48h 09m**, and the 23-film Infinity Saga the
+  homepage now shows is 50h 03m. Brief §12's copy — _"22 titles, about 48
+  hours"_ — was written against the first; `F7f` pins it between 45 and 51
+  hours and both numbers clear it.
 - **The Inhumans recommendation costs ~98h 52m**, against Blade: Trinity's
   ~3h 58m. That 25× gap is the whole reason cost annotations lead with runtime
   rather than a title count.
-- **215 of 216 titles matched**, and it is still the same one that does not. The one that did not, *Elektra (The Hand & The
-  Devil)*, has no TMDB record — a rumoured project. `F7d` names it explicitly so
+- **215 of 216 titles matched**, and it is still the same one that does not. The one that did not, _Elektra (The Hand & The
+  Devil)_, has no TMDB record — a rumoured project. `F7d` names it explicitly so
   a future title quietly failing to match cannot hide among the nulls.
 - **All 216 spoiler-safe lines are written**, in `content/copy.ts`. The English
   is final; **every Arabic line is a draft awaiting a native read** — listed with
@@ -429,13 +440,13 @@ After the first sync:
 
 ## The two copy fields are not interchangeable
 
-| field | shown | seeded from TMDB? |
-|---|---|---|
-| `spoilerSafe` | **always** — shield up or down, to everyone | **never** |
-| `context` | masked until tapped | yes, from `overview` |
+| field         | shown                                       | seeded from TMDB?    |
+| ------------- | ------------------------------------------- | -------------------- |
+| `spoilerSafe` | **always** — shield up or down, to everyone | **never**            |
+| `context`     | masked until tapped                         | yes, from `overview` |
 
 A TMDB `overview` is a marketing synopsis: it gives away the premise turn, and
-for *Infinity War* or *Endgame* it describes the plot outright. Seeding it into
+for _Infinity War_ or _Endgame_ it describes the plot outright. Seeding it into
 `spoilerSafe` switched the spoiler shield off by default for every matched
 title — silently, with every test green — and spoiler safety is one of the five
 gaps this project competes on (§1).
@@ -470,11 +481,11 @@ belonged to looking correct.
 
 The precise hazard, because it is narrower than "regexes and Arabic":
 
-| | behaviour |
-|---|---|
-| `\b` `\B` `\w` `\W` | **ASCII-only.** The `u` flag does *not* fix them — only `\p{…}` is Unicode-aware |
-| `\s` | Unicode-aware by spec. Safe |
-| `\d` | ASCII `0–9` only. Correct here, since §6 fixes Western numerals |
+|                     | behaviour                                                                        |
+| ------------------- | -------------------------------------------------------------------------------- |
+| `\b` `\B` `\w` `\W` | **ASCII-only.** The `u` flag does _not_ fix them — only `\p{…}` is Unicode-aware |
+| `\s`                | Unicode-aware by spec. Safe                                                      |
+| `\d`                | ASCII `0–9` only. Correct here, since §6 fixes Western numerals                  |
 
 `tests/regex-guard.test.ts` scans `lib/`, `scripts/`, `content/` and `app/` for
 the dangerous four and fails the build unless the line carries an `ascii-ok:`
@@ -518,7 +529,7 @@ assertion could see:
 
 1. **English headings in Noto Naskh.** `[dir="rtl"] h1` applied the Arabic face
    to English text — and titles are English-primary in both locales, so that was
-   most of the page. The display voice now follows the *text's* language.
+   most of the page. The display voice now follows the _text's_ language.
 2. **No page gutter.** Text hugged the viewport edge. Pre-existing, invisible in
    LTR where the eye starts at the margin anyway.
 3. **`34 titles · 75h 26m` reordered to `titles · 75h 26m 34`** — a leading
@@ -541,7 +552,7 @@ holding Arabic renders its digits in Plex and its words in a fallback — a
 mixed-font phrase on every row of every AR page. That is exactly what happened
 when the runtime carried `.tabular` and became `ساعة واحدة و44 دقيقة`.
 
-The obvious CSS fix is worse than the bug: `.tabular:lang(ar)` matches *every*
+The obvious CSS fix is worse than the bug: `.tabular:lang(ar)` matches _every_
 tabular span on an Arabic page, because `lang` is inherited from `<html>`, so it
 strips mono from the year and the `#001` index too — Latin numerals that want the
 column alignment.
@@ -552,17 +563,17 @@ cannot tell which spans hold Arabic. `H5` separately guards that nothing under
 
 ## Routes
 
-| Route | Job |
-|---|---|
-| `/[locale]` | The poster mosaic, two doors, and "Previously…" for anyone returning |
-| `/[locale]/path/[slug]` | A title, and the path to it. **One route, not two** |
-| `/[locale]/universes` | The eight doors, side by side |
-| `/[locale]/universes/[id]/[[...opts]]` | One universe, its order and its view. `all` is the whole thread |
-| `/[locale]/projects` | Everything there is, grouped — the flat inventory |
-| `/[locale]/characters` | The grid, its chips, its search and four orders — including Strongest |
-| `/[locale]/characters/[id]` | One person, every title they are in, and who played them |
-| `/[locale]/rights` | Who owned what, and when. The answer to "why is this hard" |
-| `/[locale]/what-is-marvel` | Comics → studio → the rights split |
+| Route                                  | Job                                                                   |
+| -------------------------------------- | --------------------------------------------------------------------- |
+| `/[locale]`                            | The poster mosaic, two doors, and "Previously…" for anyone returning  |
+| `/[locale]/path/[slug]`                | A title, and the path to it. **One route, not two**                   |
+| `/[locale]/universes`                  | The eight doors, side by side                                         |
+| `/[locale]/universes/[id]/[[...opts]]` | One universe, its order and its view. `all` is the whole thread       |
+| `/[locale]/projects`                   | Everything there is, grouped — the flat inventory                     |
+| `/[locale]/characters`                 | The grid, its chips, its search and four orders — including Strongest |
+| `/[locale]/characters/[id]`            | One person, every title they are in, and who played them              |
+| `/[locale]/rights`                     | Who owned what, and when. The answer to "why is this hard"            |
+| `/[locale]/what-is-marvel`             | Comics → studio → the rights split                                    |
 
 **Five doors, one destination.** Orders by time, universes by studio, characters
 by person, search by name, rights by history. They are peers in the navigation,
@@ -578,55 +589,55 @@ makes a person navigate to reach the thing they came for.
 Every one of these was a correction, not a plan. They are recorded because the
 reasoning is worth more than the outcome.
 
-| Decision | Why |
-|---|---|
-| Two schemas, `TitleSource` → `Title` | So no runtime, date or plot line is ever invented. A missing fact fails the build loudly |
-| `requires` / `enriches` / `storyRank` | Three different things. A reading order is not a dependency, and encoding it as one poisons every path |
-| Overviews seed `context`, never `spoilerSafe` | A marketing synopsis in the always-visible field turns the spoiler shield off by default |
-| The shield fetches, not hides | Blur and `visibility:hidden` leave the text in the DOM for select-all and view-source |
-| One `<ol>`, thread is `aria-hidden` | The signature element must never *be* the information architecture |
-| No load-bearing inline styles | A CSP blocks `style` attributes, and the failure is silent |
-| `content-visibility` NOT applied | Measured: LCP 212ms, CLS 0.019 on the heaviest page. §14.6 fixed a measured problem; there isn't one. Local measurement — a floor, not a prediction; see Deploying |
-| Universe is `كون`, in both numbers | `عوالم` is the plural of `عالم`, a different root. Using it beside `الكون` splits one concept across two words. Guarded by I8 |
-| Static + `script-src 'unsafe-inline'` | Next always emits an inline bootstrap. A nonce means 294 dynamic pages, to defend an injection surface that does not exist |
-| Western numerals in Arabic | What GCC streaming and banking UIs actually use |
-| Progress in `localStorage` only | No accounts means no auth surface, no PII, no GDPR obligation. That is a feature |
-| Universes are RIGHTS, not genres | Who owned the character when the thing was made. `marvel-tv` exists because filing Agents of S.H.I.E.L.D. beside Endgame told a beginner something false: Marvel Television was a different company, and its shows lost canon status when it was absorbed in 2019 |
-| **Ratings are TMDB's, and say so** | No OMDb key exists, and TMDB's `vote_average` is a different population from IMDb's. `imdbId` is synced so a real IMDb number can be joined later without a migration. Printing one under the other's label is a lie the reader cannot check |
-| Vote count beside every score | A 9.4 from 4,000 votes and an 8.4 from 1.4 million are not the same claim |
-| Appearances derived from cast | Hand-listing them on both the character and the title is two sources of truth for one fact, which has already drifted twice here |
-| The portrait is the most-credited actor | "First in release order" put a 1992 voice actor on Wolverine. Nothing threw; a screenshot caught it |
-| An alias is a JOIN KEY | Sam Wilson had "Captain America" in his alias list, so he collected eight of Steve Rogers's credits and Chris Evans's photograph. `C18` now forbids a shared alias |
-| Dark is the DEFAULT | Posters are mostly dark and high-contrast. A wall of them on white reads as a contact sheet; on #0A0A0B it reads as a cinema |
-| Light / Dark / Auto as radios | A two-state toggle cannot say "follow my system", which is what auto does and what almost everyone wants |
-| Where to watch is GLOBAL | "Not streaming in OM" was a false negative for a film that is on Disney+ in Oman. A false negative on the one question the page answers is worse than a vague true one |
-| The trailer is a facade | An embedded iframe costs ~700KB of third-party script on load. `frame-src` allows exactly youtube-nocookie, and only after a click |
-| Full-bleed by negating the gutter | `calc(50% - 50vw)` counts the scrollbar, so the hero was wider than the viewport on every browser that reserves one. Caught by the 320px floor on the first build |
-| **Fabricated identifiers are their own failure class** | Two TMDB person photo paths were written from memory. Right shape, clean typecheck, green build, rendered page, both 404. Only a request can see it. `npm run verify:assets` HEADs all 3,674 external URLs and runs in CI |
-| IMDb from IMDb, critics from OMDb | `datasets.imdbws.com` is IMDb's own daily dump and is authoritative; OMDb keeps a copy that can lag. Only the `Ratings` array is read from OMDb, for Rotten Tomatoes and Metacritic |
-| Metacritic instead of Letterboxd | Letterboxd publishes no API. A scraped rating would be the only unverifiable number on the page. Metacritic is a real third critic score, already in the OMDb payload |
-| Marvel's API evaluated, unreachable | developer.marvel.com no longer has a developer surface: `/account` redirects to the consumer homepage and there is no sign-in to obtain a key. The code path was deleted rather than left dormant. 9 characters carry the designed initial plate, and `C17` keeps that gap honest by forbidding an actor still in its place |
-| `content-visibility` removed again | It skips rendering off-screen subtrees, so every full-page screenshot showed the character grid empty. It blinds the gate that catches everything else. It returns when the budget test fails and says so |
-| Cool zinc neutrals, not warm | `--paper` was `#FEF2F2`, which is red-50: a pink page under red hairlines. Warm neutral plus red is the beige/oxblood family every "premium" AI page ships. The posters supply all the warmth this design needs |
-| Red on exactly five things | Thread, target node, progress fill, focus ring, one CTA. Every other red box became a hairline. On a page that is already 216 posters, red chrome reads as noise rather than as system |
-| `--color-branch`, renamed and relit | It means "not Marvel Studios", not "blue". The old `#1E40AF` was 2.28:1 on the dark ground and had never been measured there, so the fork's one piece of information was near-invisible in dark mode. `#2563EB` clears 3:1 in both |
-| The scroll reveal moves, it does not fade | An opacity reveal on a `view()` timeline needs `fill-mode: both`, which held every below-the-fold section at opacity 0 until scrolled. Two whole homepage sections rendered blank in the screenshot sheets, in print, and in any headless render |
-| One arrow component, not four | `←` and `→` were text, so they inherited the font stack and changed shape between locales. Phosphor, imported from `/dist/ssr/*` so the pages that show an arrow still ship zero JavaScript |
-| `نحو`, not `~`, in Arabic | `~` is bidi-neutral: before a Latin numeral in an RTL paragraph it renders on the far side of the digit, so "~746 ساعة" read as "746~". Arabic writes approximation with a word |
+| Decision                                               | Why                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Two schemas, `TitleSource` → `Title`                   | So no runtime, date or plot line is ever invented. A missing fact fails the build loudly                                                                                                                                                                                                                                    |
+| `requires` / `enriches` / `storyRank`                  | Three different things. A reading order is not a dependency, and encoding it as one poisons every path                                                                                                                                                                                                                      |
+| Overviews seed `context`, never `spoilerSafe`          | A marketing synopsis in the always-visible field turns the spoiler shield off by default                                                                                                                                                                                                                                    |
+| The shield fetches, not hides                          | Blur and `visibility:hidden` leave the text in the DOM for select-all and view-source                                                                                                                                                                                                                                       |
+| One `<ol>`, thread is `aria-hidden`                    | The signature element must never _be_ the information architecture                                                                                                                                                                                                                                                          |
+| No load-bearing inline styles                          | A CSP blocks `style` attributes, and the failure is silent                                                                                                                                                                                                                                                                  |
+| `content-visibility` NOT applied                       | Measured: LCP 212ms, CLS 0.019 on the heaviest page. §14.6 fixed a measured problem; there isn't one. Local measurement — a floor, not a prediction; see Deploying                                                                                                                                                          |
+| Universe is `كون`, in both numbers                     | `عوالم` is the plural of `عالم`, a different root. Using it beside `الكون` splits one concept across two words. Guarded by I8                                                                                                                                                                                               |
+| Static + `script-src 'unsafe-inline'`                  | Next always emits an inline bootstrap. A nonce means 294 dynamic pages, to defend an injection surface that does not exist                                                                                                                                                                                                  |
+| Western numerals in Arabic                             | What GCC streaming and banking UIs actually use                                                                                                                                                                                                                                                                             |
+| Progress in `localStorage` only                        | No accounts means no auth surface, no PII, no GDPR obligation. That is a feature                                                                                                                                                                                                                                            |
+| Universes are RIGHTS, not genres                       | Who owned the character when the thing was made. `marvel-tv` exists because filing Agents of S.H.I.E.L.D. beside Endgame told a beginner something false: Marvel Television was a different company, and its shows lost canon status when it was absorbed in 2019                                                           |
+| **Ratings are TMDB's, and say so**                     | No OMDb key exists, and TMDB's `vote_average` is a different population from IMDb's. `imdbId` is synced so a real IMDb number can be joined later without a migration. Printing one under the other's label is a lie the reader cannot check                                                                                |
+| Vote count beside every score                          | A 9.4 from 4,000 votes and an 8.4 from 1.4 million are not the same claim                                                                                                                                                                                                                                                   |
+| Appearances derived from cast                          | Hand-listing them on both the character and the title is two sources of truth for one fact, which has already drifted twice here                                                                                                                                                                                            |
+| The portrait is the most-credited actor                | "First in release order" put a 1992 voice actor on Wolverine. Nothing threw; a screenshot caught it                                                                                                                                                                                                                         |
+| An alias is a JOIN KEY                                 | Sam Wilson had "Captain America" in his alias list, so he collected eight of Steve Rogers's credits and Chris Evans's photograph. `C18` now forbids a shared alias                                                                                                                                                          |
+| Dark is the DEFAULT                                    | Posters are mostly dark and high-contrast. A wall of them on white reads as a contact sheet; on #0A0A0B it reads as a cinema                                                                                                                                                                                                |
+| Light / Dark / Auto as radios                          | A two-state toggle cannot say "follow my system", which is what auto does and what almost everyone wants                                                                                                                                                                                                                    |
+| Where to watch is GLOBAL                               | "Not streaming in OM" was a false negative for a film that is on Disney+ in Oman. A false negative on the one question the page answers is worse than a vague true one                                                                                                                                                      |
+| The trailer is a facade                                | An embedded iframe costs ~700KB of third-party script on load. `frame-src` allows exactly youtube-nocookie, and only after a click                                                                                                                                                                                          |
+| Full-bleed by negating the gutter                      | `calc(50% - 50vw)` counts the scrollbar, so the hero was wider than the viewport on every browser that reserves one. Caught by the 320px floor on the first build                                                                                                                                                           |
+| **Fabricated identifiers are their own failure class** | Two TMDB person photo paths were written from memory. Right shape, clean typecheck, green build, rendered page, both 404. Only a request can see it. `npm run verify:assets` HEADs all 3,674 external URLs and runs in CI                                                                                                   |
+| IMDb from IMDb, critics from OMDb                      | `datasets.imdbws.com` is IMDb's own daily dump and is authoritative; OMDb keeps a copy that can lag. Only the `Ratings` array is read from OMDb, for Rotten Tomatoes and Metacritic                                                                                                                                         |
+| Metacritic instead of Letterboxd                       | Letterboxd publishes no API. A scraped rating would be the only unverifiable number on the page. Metacritic is a real third critic score, already in the OMDb payload                                                                                                                                                       |
+| Marvel's API evaluated, unreachable                    | developer.marvel.com no longer has a developer surface: `/account` redirects to the consumer homepage and there is no sign-in to obtain a key. The code path was deleted rather than left dormant. 9 characters carry the designed initial plate, and `C17` keeps that gap honest by forbidding an actor still in its place |
+| `content-visibility` removed again                     | It skips rendering off-screen subtrees, so every full-page screenshot showed the character grid empty. It blinds the gate that catches everything else. It returns when the budget test fails and says so                                                                                                                   |
+| Cool zinc neutrals, not warm                           | `--paper` was `#FEF2F2`, which is red-50: a pink page under red hairlines. Warm neutral plus red is the beige/oxblood family every "premium" AI page ships. The posters supply all the warmth this design needs                                                                                                             |
+| Red on exactly five things                             | Thread, target node, progress fill, focus ring, one CTA. Every other red box became a hairline. On a page that is already 216 posters, red chrome reads as noise rather than as system                                                                                                                                      |
+| `--color-branch`, renamed and relit                    | It means "not Marvel Studios", not "blue". The old `#1E40AF` was 2.28:1 on the dark ground and had never been measured there, so the fork's one piece of information was near-invisible in dark mode. `#2563EB` clears 3:1 in both                                                                                          |
+| The scroll reveal moves, it does not fade              | An opacity reveal on a `view()` timeline needs `fill-mode: both`, which held every below-the-fold section at opacity 0 until scrolled. Two whole homepage sections rendered blank in the screenshot sheets, in print, and in any headless render                                                                            |
+| One arrow component, not four                          | `←` and `→` were text, so they inherited the font stack and changed shape between locales. Phosphor, imported from `/dist/ssr/*` so the pages that show an arrow still ship zero JavaScript                                                                                                                                 |
+| `نحو`, not `~`, in Arabic                              | `~` is bidi-neutral: before a Latin numeral in an RTL paragraph it renders on the far side of the digit, so "~746 ساعة" read as "746~". Arabic writes approximation with a word                                                                                                                                             |
 
 ## What the tests are for
 
 They are not coverage. Each one exists because something silently broke.
 
-| Guard | The failure it caught |
-|---|---|
-| `render.test.ts` | 130 pages rendered empty with a green build — `params` became a Promise |
-| `regex-guard.test.ts` | `/^الموسم\b/` never matched: `\b` is ASCII-only and fails **open** |
-| `e2e/posters.spec.ts` | `sizes` said 45vw for a box that renders at 34vw, on every LCP image |
-| `e2e/state.spec.ts` | Hydration mismatch across 130 panels; a shield that hides rather than omits |
-| `e2e/csp.spec.ts` | The CSP blocking every script, which no other check would have seen |
-| `contrast.test.ts` | The brief's claim that red clears 4.5:1 on dark. It is 4.04:1 |
-| `npm run shots` | Dark mode unrendered for four commits; RTL bugs; `1س 44د` reading as 44 hours |
+| Guard                 | The failure it caught                                                         |
+| --------------------- | ----------------------------------------------------------------------------- |
+| `render.test.ts`      | 130 pages rendered empty with a green build — `params` became a Promise       |
+| `regex-guard.test.ts` | `/^الموسم\b/` never matched: `\b` is ASCII-only and fails **open**            |
+| `e2e/posters.spec.ts` | `sizes` said 45vw for a box that renders at 34vw, on every LCP image          |
+| `e2e/state.spec.ts`   | Hydration mismatch across 130 panels; a shield that hides rather than omits   |
+| `e2e/csp.spec.ts`     | The CSP blocking every script, which no other check would have seen           |
+| `contrast.test.ts`    | The brief's claim that red clears 4.5:1 on dark. It is 4.04:1                 |
+| `npm run shots`       | Dark mode unrendered for four commits; RTL bugs; `1س 44د` reading as 44 hours |
 
 ## Deploying
 
@@ -646,7 +657,7 @@ image CDN out of the network path entirely — the one hop this repo does not
 control. Treat that number as a floor rather than a prediction, and record the
 real one in the decision table when you have it.
 
-**Where the CSP comes from:** `next.config.ts`, under `headers()` — *not*
+**Where the CSP comes from:** `next.config.ts`, under `headers()` — _not_
 middleware. There is no `middleware.ts` in this repo, deliberately. A nonce is
 per-request and every page is prerendered, so middleware would have made all 294
 pages dynamic to defend an injection surface that does not exist. Vercel serves

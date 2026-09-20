@@ -6,6 +6,7 @@ import {
   essentialsOrder,
   pathTo,
   releaseOrder,
+  infinitySaga,
 } from "@/lib/graph";
 import { schedule } from "@/lib/runtime";
 import { sagaGroups } from "@/lib/saga";
@@ -26,13 +27,19 @@ describe("F. regression guards on the real corpus", () => {
      * They read one rule now. This asserts they still do, and it fails on a
      * drift of one rather than waiting for someone to notice a count.
      */
-    const timeline = sagaGroups(titles).flatMap((s) => s.phases.flatMap((p) => p.titles));
+    const timeline = sagaGroups(titles).flatMap((s) =>
+      s.phases.flatMap((p) => p.titles),
+    );
     const collection = membersOf("mcu");
-    expect(timeline.map((t) => t.id).sort()).toEqual(collection.map((t) => t.id).sort());
+    expect(timeline.map((t) => t.id).sort()).toEqual(
+      collection.map((t) => t.id).sort(),
+    );
     expect(timeline.filter((t) => t.type === "short")).toEqual([]);
     /* The One-Shots are not deleted — they keep their pages and stay in the
        catalogue. Out of the ORDER, not out of the site. */
-    expect(titles.filter((t) => t.universe === "mcu" && t.type === "short").length).toBe(5);
+    expect(
+      titles.filter((t) => t.universe === "mcu" && t.type === "short").length,
+    ).toBe(5);
   });
 
   it("F1 node count is stable — adding a title is a deliberate diff", () => {
@@ -276,6 +283,22 @@ describe("F. regression guards on the real corpus", () => {
     expect(hours).toBeLessThan(51);
   });
 
+  it("F7g the homepage card counts the Infinity Saga, and it is 23 films", () => {
+    // F7f above guards the `essential` closure, which is 22 titles and 48h.
+    // The homepage stopped showing that number: its beginner door reads
+    // `infinitySaga()`, which is 23 films and about 50h. The README said 22
+    // for weeks after the card said 23, and nothing failed, because the only
+    // guard was on a number nobody was looking at any more. This one is on
+    // the number a visitor sees.
+    const saga = infinitySaga(shipped);
+    expect(saga.length).toBe(23);
+    expect(saga.map((t) => t.id)).toContain("the-incredible-hulk");
+    expect(saga.every((t) => t.type === "film")).toBe(true);
+    if (!isSynced) return;
+    const hours = saga.reduce((n, t) => n + (t.runtimeMin ?? 0), 0) / 60;
+    expect(Math.round(hours)).toBe(50);
+  });
+
   it("F9 the TMDB overview seeds context, NEVER spoilerSafe", () => {
     // The regression that matters most. `spoilerSafe` is shown ALWAYS, shield up
     // or down; an overview is a marketing synopsis that gives the premise away.
@@ -419,7 +442,7 @@ describe("F. regression guards on the real corpus", () => {
     // 22-minute featurette, ABOVE the film. Taking results[0] shipped 22m and
     // 17m onto the thread, and only rendering the page revealed it.
     if (!isSynced) return;
-/**
+    /**
      * ONE EXEMPTION, and it is a fact about 1944 rather than a bad match.
      *
      * `captain-america-1944` is a fifteen-chapter theatrical SERIAL, shown a
@@ -450,5 +473,4 @@ describe("F. regression guards on the real corpus", () => {
       titles.map((t) => t.id).sort(),
     );
   });
-
 });
