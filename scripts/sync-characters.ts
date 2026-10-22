@@ -73,7 +73,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   edith:
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b4/Stark_Glasses_HUD.png/revision/latest?cb=20191003070015",
   friday:
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/72/FRIDAY.png/revision/latest?cb=20230923172011",
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/aa/FRIDAY_Human_Avatar_Infobox.png/revision/latest?cb=20261019210535",
   jarvis:
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/bf/JARVIS.png/revision/latest?cb=20230923172229",
   karen:
@@ -751,7 +751,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   nocturne:
     "https://static.wikia.nocookie.net/marveldatabase/images/d/da/Nocturne_%28Earth-616%29_from_Vampires_The_Marvel_Undead_001.png/revision/latest?cb=20170410030344",
   "omega-sentinel":
-    "https://static.wikia.nocookie.net/marveldatabase/images/0/0f/Karima_Shapandar_%28Moira_10_%28A%29%29_from_Fall_of_the_House_of_X_Vol_1_4_001.jpg/revision/latest?cb=20240417210411",
+    "https://static.wikia.nocookie.net/marveldatabase/images/1/19/Karima_Shapandar_%28Moira-10_%28A%29%29_from_Fall_of_the_House_of_X_Vol_1_4_001.jpg/revision/latest?cb=20240417210411",
   wither:
     "https://static.wikia.nocookie.net/marveldatabase/images/2/24/Kevin_Ford_%28Earth-616%29_from_X-Men_Battle_of_the_Atom_%28video_game%29_001.jpg/revision/latest?cb=20171022203242",
   maggott:
@@ -1524,7 +1524,7 @@ const IMAGE_OVERRIDES: Record<string, string> = {
   kraglin:
     "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/4e/Kraglin_Obfonteri_Infobox.jpg/revision/latest?cb=20241128003917",
   krugarr:
-    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/33/Krugarr-0.jpg/revision/latest?cb=20170808145705",
+    "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/36/Krugarr_Infobox.jpg/revision/latest?cb=20170808145705",
   "lauren-strucker":
     "https://static.wikia.nocookie.net/marveldatabase/images/d/df/Lauren_Strucker_%28Earth-17372%29_from_The_Gifted_%28TV_series%29_promotional_art_001.jpg/revision/latest?cb=20171018015221",
   legion:

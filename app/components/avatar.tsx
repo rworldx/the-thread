@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { remoteSrc } from "@/image-loader";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "./safe-image";
 
 /**
  * A CHARACTER, not the actor who played one.
@@ -67,9 +67,9 @@ export function SplitAvatar({
     <span className="avatar avatar-split">
       {[characterSrc, actorSrc].map((src, i) => (
         <span key={src} className={`avatar-half ${i === 0 ? "avatar-half-a" : "avatar-half-b"}`}>
-          <Image
-            src={remoteSrc(src, 342)}
-        unoptimized
+          <SafeImage
+            sources={imageSources(src, 342)}
+            fallback={<span className="image-gap" aria-hidden="true" />}
             alt=""
             width={320}
             height={480}
@@ -105,9 +105,15 @@ export function Avatar({
   }
   return (
     <span className="avatar">
-      <Image
-        src={remoteSrc(src, 342)}
-        unoptimized
+      <SafeImage
+        /* Every route failing is the same state as no artwork at all, so it
+           gets the same initial, inside the frame that is already laid out. */
+        sources={imageSources(src, 342)}
+        fallback={
+          <span className="image-gap" aria-hidden="true">
+            <span className="avatar-initial">{[...name][0] ?? ""}</span>
+          </span>
+        }
         alt=""
         width={320}
         height={480}

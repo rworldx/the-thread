@@ -13,10 +13,16 @@
  *   TMDB    publishes each poster at eight fixed widths, so the width is
  *           written into the path and their CDN does the resize for free.
  *
- *   WIKIA   is the ONE host of the eighteen here that refuses a hotlinked
- *           request — tested with a real browser Referer, it answers 404. It
- *           goes through images.weserv.nl, a free public image proxy that
- *           fetches server-side and resizes on the way.
+ *   WIKIA   refuses a hotlinked request when it carries a foreign
+ *           Referer — tested with a real browser Referer, it answers 404 —
+ *           and answers 200 to the same URL with no Referer at all. It is
+ *           requested directly, and every image tag sends
+ *           `referrerPolicy="no-referrer"` (see `safe-image.tsx`).
+ *
+ *           It USED to go through images.weserv.nl. In October 2026 Wikia
+ *           began answering weserv's https fetches with 403, which weserv
+ *           relays as a 404, and every character portrait on the site went
+ *           blank at once while every test stayed green.
  *
  *   EVERY   other host — ComicVine, Pinterest, Wikimedia, jsDelivr, Amazon,
  *   OTHER   Marvel's own CDN and the rest — serves a hotlinked request fine,
@@ -34,9 +40,6 @@ const TMDB_WIDTHS = [92, 154, 185, 342, 500, 780];
 /** Profile photos are published at a different, shorter set. */
 const TMDB_PROFILE_WIDTHS = [45, 185, 632];
 
-/** The only host measured to refuse a hotlinked browser request. */
-const NEEDS_PROXY = "static.wikia.nocookie.net";
-
 export function isTmdb(src: string | null | undefined): boolean {
   return typeof src === "string" && src.startsWith("https://image.tmdb.org/t/p/");
 }
@@ -44,8 +47,8 @@ export function isTmdb(src: string | null | undefined): boolean {
 /**
  * The URL to actually request, at roughly `width` pixels.
  *
- * Safe on any string: a non-TMDB, non-Wikia URL comes back untouched, so call
- * sites do not need to know which host they are holding.
+ * Safe on any string: a non-TMDB URL comes back untouched, so call sites do
+ * not need to know which host they are holding.
  */
 export function remoteSrc(src: string, width: number): string {
   const tmdb = src.match(/^(https:\/\/image\.tmdb\.org\/t\/p\/)([^/]+)(\/.+)$/);
@@ -58,15 +61,77 @@ export function remoteSrc(src: string, width: number): string {
     return `${base}w${pick}${file}`;
   }
 
-  if (src.includes(NEEDS_PROXY)) {
-    /* weserv wants the URL without its scheme, prefixed `ssl:` for https, and
-       the whole thing encoded — a bare `?` in a Wikia cache-buster would
-       otherwise terminate its own query string. */
-    const target = encodeURIComponent("ssl:" + src.replace(/^https?:\/\//, ""));
-    return `https://images.weserv.nl/?url=${target}&w=${width}&output=webp&q=80`;
-  }
-
   return src;
+}
+
+/**
+ * EVERY IMAGE GETS A LADDER, NOT A URL.
+ *
+ * A single URL is a single point of failure, and this site depends on
+ * eighteen hosts it does not own. Any of them can delete a file, rename a
+ * path, start refusing hotlinks, or block the proxy in front of it — Wikia
+ * did the last one, and nothing noticed until the portraits were gone.
+ *
+ * So each image is a list, tried in order by `SafeImage` on the client. The
+ * first rung is the URL `remoteSrc` has always produced. After it come two
+ * independent public image proxies, each of which fetches server-side with
+ * its own IP, its own cache and no Referer of ours:
+ *
+ *   weserv   images.weserv.nl, asked WITHOUT the `ssl:` prefix. Wikia
+ *            refuses weserv's https fetch and, measured in October 2026,
+ *            accepts the plain one.
+ *   photon   i0.wp.com, WordPress's image CDN. A different company, so one
+ *            host blocking one proxy cannot take out both rungs, and its
+ *            long cache keeps serving a file for a while after the origin
+ *            deletes it.
+ *
+ * `alternates` are DIFFERENT images of the same thing — another poster from
+ * the title's own TMDB gallery — and come after every rung of the first one,
+ * so the first choice is always kept while any route to it still works.
+ * Photon's cache is also why a proxy rung is worth trying for a 404: it can
+ * still hold a file the origin has since deleted.
+ *
+ * When every rung fails the component renders the designed gap, never a
+ * broken-image icon.
+ *
+ * `exact` skips `remoteSrc` for a URL already written at a published width
+ * that is not on the poster ladder — an episode still at w300, which
+ * `remoteSrc` would move to w342, a width stills are not published at.
+ */
+export function imageSources(
+  src: string,
+  width: number,
+  alternates: readonly string[] = [],
+  { exact = false }: { exact?: boolean } = {},
+): string[] {
+  const primary = exact ? src : remoteSrc(src, width);
+  /* Alternates go direct only. The proxy rungs already ran for the first
+     choice, and three more per alternate would make a title whose whole
+     gallery is gone take twenty-odd failed requests to reach its gap. */
+  const out = [
+    primary,
+    viaWeserv(primary, width),
+    viaPhoton(primary, width),
+    ...alternates.map((a) => (exact ? a : remoteSrc(a, width))),
+  ];
+  return out.filter((u, i): u is string => !!u && out.indexOf(u) === i);
+}
+
+function viaWeserv(src: string, width: number): string | null {
+  if (!/^https?:\/\//.test(src)) return null;
+  /* weserv wants the URL without its scheme, which it then fetches over http,
+     and the whole thing encoded — a bare `?` in a Wikia cache-buster would
+     otherwise terminate its own query string. */
+  const target = encodeURIComponent(src.replace(/^https?:\/\//, ""));
+  return `https://images.weserv.nl/?url=${target}&w=${width}&output=webp&q=80`;
+}
+
+function viaPhoton(src: string, width: number): string | null {
+  if (!/^https?:\/\//.test(src)) return null;
+  /* Photon takes the host and path as its own path. It reads `w` from the
+     query, and leaves any other parameter — a Wikia `cb` — alone. */
+  const bare = src.replace(/^https?:\/\//, "");
+  return `https://i0.wp.com/${bare}${bare.includes("?") ? "&" : "?"}w=${width}`;
 }
 
 /** Kept for call sites that only need to know whether to skip the optimiser. */

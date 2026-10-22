@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { remoteSrc } from "@/image-loader";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "./safe-image";
 
 /**
  * THE POSTER MOSAIC — the first screen.
@@ -35,9 +35,9 @@ export function Mosaic({ titles }: { titles: MosaicTile[] }) {
       <div className="mosaic-grid">
         {titles.map((t, i) => (
           <div className="mosaic-cell" key={t.id} data-tint={t.id}>
-            <Image
-              src={remoteSrc(`${TMDB}${t.posterPath}`, 185)}
-              unoptimized
+            <SafeImage
+              sources={imageSources(`${TMDB}${t.posterPath}`, 185)}
+              fallback={<span className="image-gap" aria-hidden="true" />}
               alt=""
               width={185}
               height={278}

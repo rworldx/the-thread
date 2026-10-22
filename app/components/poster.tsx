@@ -1,5 +1,6 @@
-import Image from "next/image";
-import { remoteSrc } from "@/image-loader";
+import { imageSources } from "@/image-loader";
+import { postersOf } from "@/content/build";
+import { SafeImage } from "./safe-image";
 import type { TitleSource } from "@/content/schema";
 
 /**
@@ -81,10 +82,12 @@ export interface PosterProps {
 }
 
 export function Poster({ title, posterPath, size, priority, locale }: PosterProps) {
+  const fallback = <PosterFallback title={title} locale={locale} />;
+  const abs = (p: string) => (p.startsWith("http") ? p : `${TMDB}/${SOURCE[size]}${p}`);
   return (
     <div className="poster" data-tint={title.id} data-size={size}>
       {posterPath ? (
-        <Image
+        <SafeImage
           /**
            * Explicit dimensions rather than `fill`.
            *
@@ -101,17 +104,22 @@ export function Poster({ title, posterPath, size, priority, locale }: PosterProp
            * An absolute URL passes straight through; a TMDB path gets the size
            * prefix. One title in the corpus supplies its own poster because
            * TMDB has no record of it at all.
+           *
+           * The rest of the title's own TMDB gallery is the last resort: if
+           * the chosen poster is deleted at the source, another poster of the
+           * same title stands in before the designed gap does.
            */
           /* Never transformed — see `image-loader.ts`. `SOURCE[size]` already
              asks TMDB for the right width, and a hand-supplied absolute URL is
-             passed through or proxied by host as needed. */
-          src={remoteSrc(
-            posterPath.startsWith("http")
-              ? posterPath
-              : `${TMDB}/${SOURCE[size]}${posterPath}`,
+             passed through as is. */
+          sources={imageSources(
+            abs(posterPath),
             342,
+            postersOf(title.id)
+              .filter((p) => p !== posterPath)
+              .map(abs),
           )}
-          unoptimized
+          fallback={fallback}
           alt=""
           width={342}
           height={513}
@@ -122,7 +130,7 @@ export function Poster({ title, posterPath, size, priority, locale }: PosterProp
           {...(priority ? {} : { loading: "lazy" as const, fetchPriority: "low" as const })}
         />
       ) : (
-        <PosterFallback title={title} locale={locale} />
+        fallback
       )}
     </div>
   );

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { remoteSrc } from "@/image-loader";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "@/app/components/safe-image";
 import Link from "next/link";
 import { collectionOf } from "@/lib/collections";
 import { notFound } from "next/navigation";
@@ -327,23 +327,19 @@ export default async function PathPage({ params }: Params) {
           <h2 id="stone-heading">{t("title.stoneHeading")}</h2>
           <div className="stone">
             {/**
-             * `next/image`, NOT a plain `<img>`, and the reason is the CDN.
+             * Through `SafeImage`, and the reason is the CDN.
              *
              * A plain tag makes the BROWSER fetch it, which sends a `Referer`
              * of this site — and Wikia's CDN rejects hotlinks, intermittently,
              * with a 404. The stone rendered on one load and vanished on the
              * next, which is exactly the "the images don't show" report.
              *
-             * The character portraits come from the same host and never had
-             * this problem, because they go through `next/image`: the fetch
-             * happens on the server, with no referer to reject. Same fix.
+             * `SafeImage` sends no Referer at all, which Wikia accepts, and
+             * falls back through two image proxies if it ever stops.
              */}
-            <Image
+            <SafeImage
               className="stone-art"
-              /* Wikia refuses hotlinks, so this one is proxied — by weserv,
-                 not by Vercel. See `image-loader.ts`. */
-              src={remoteSrc(stone.image, 342)}
-              unoptimized
+              sources={imageSources(stone.image, 342)}
               alt=""
               width={300}
               height={300}
@@ -444,11 +440,13 @@ export default async function PathPage({ params }: Params) {
                        * onto the POSTER width ladder, which would ask for
                        * w342. Stills are published at w92/w185/w300/original
                        * and a poster width 404s on them. w300 is already the
-                       * right size, so the URL is used as written.
+                       * right size, so the URL is used as written — `exact`.
                        */
-                      <Image
-                        src={`https://image.tmdb.org/t/p/w300${ep.still}`}
-                        unoptimized
+                      <SafeImage
+                        sources={imageSources(`https://image.tmdb.org/t/p/w300${ep.still}`, 300, [], {
+                          exact: true,
+                        })}
+                        fallback={<span className="episode-still-empty" aria-hidden="true" />}
                         alt=""
                         width={300}
                         height={169}

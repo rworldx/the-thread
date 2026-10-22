@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "@/app/components/safe-image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { bandFor, INDEXED_COLLECTIONS, membersOf, spanOf, hasStoryOrder } from "@/lib/collections";
 import { totalRuntime } from "@/lib/describe";
@@ -79,10 +81,10 @@ export default async function UniversesPage({
               <Link className="gateway" href={`/${locale}/universes/${id}`}>
                 <span className="gateway-band poster-scrim" aria-hidden="true">
                   {band.map((p) => (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
+                    <SafeImage
+                      plain
                       key={p}
-                      src={`https://image.tmdb.org/t/p/w342${p}`}
+                      sources={imageSources(`https://image.tmdb.org/t/p/w342${p}`, 342)}
                       alt=""
                       loading="lazy"
                       decoding="async"

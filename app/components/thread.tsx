@@ -1,4 +1,6 @@
 import { getTranslations } from "next-intl/server";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "@/app/components/safe-image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
@@ -219,9 +221,10 @@ export async function EditorNote({
               <li key={m.id}>
                 <Link className="note-mention" href={`/${locale}/path/${m.id}`}>
                   {m.poster && !m.poster.startsWith("http") ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={`https://image.tmdb.org/t/p/w92${m.poster}`}
+                    <SafeImage
+                      plain
+                      sources={imageSources(`https://image.tmdb.org/t/p/w92${m.poster}`, 92)}
+                      fallback={<span className="note-mention-plate" aria-hidden="true" />}
                       alt=""
                       loading="lazy"
                       decoding="async"

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { remoteSrc } from "@/image-loader";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "./safe-image";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { allCharacters } from "@/lib/characters";
@@ -78,12 +78,11 @@ export async function People({ locale }: { locale: string }) {
           return (
             <li key={p.id} data-lead={p.lead ? "true" : undefined}>
               <span className="person-photo">
-                <Image
+                <SafeImage
                   /* Never transformed — see `image-loader.ts`. `original` is
                      larger than this box ever needs, so the width is asked of
                      TMDB directly. */
-                  src={remoteSrc(`${TMDB}/original${p.photo}`, 342)}
-                  unoptimized
+                  sources={imageSources(`${TMDB}/original${p.photo}`, 342)}
                   alt=""
                   width={600}
                   height={900}

@@ -10163,6 +10163,10 @@ const others: CharacterDraft[] = [
       { id: "scarlet-witch", kind: "family" },
       { id: "quicksilver", kind: "family" },
     ],
+    /* VisionQuest credits Ruaridh Mollica as a bare "Thomas". He is Tommy
+       Shepherd; a bare given name as an alias would match every Thomas in
+       the corpus, which is the Billy, Trevor and Harley failure again. */
+    alsoIn: ["visionquest"],
   },
   {
     id: "bedlam",

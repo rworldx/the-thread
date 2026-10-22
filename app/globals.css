@@ -3194,6 +3194,7 @@ a:has(.portrait):focus-visible {
 .avatar-half {
   grid-area: 1 / 1;
   display: block;
+  position: relative;
   overflow: hidden;
 }
 .avatar-half img {
@@ -3287,6 +3288,22 @@ a:has(.avatar):focus-visible {
   display: grid;
   place-items: center;
   border: 1px solid var(--color-hairline);
+}
+/**
+ * THE SAME GAP, ARRIVED AT LATE.
+ *
+ * `SafeImage` renders this inside a frame that already exists when every
+ * source for its image has failed in the browser. It fills that frame and
+ * looks exactly like the empty plate the server would have drawn.
+ */
+.image-gap {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-hairline);
+  border-radius: inherit;
+  background: var(--color-surface-2);
 }
 .avatar-initial {
   font-family: var(--font-display);

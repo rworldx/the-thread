@@ -2,8 +2,8 @@
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
-import { remoteSrc } from "@/image-loader";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "./safe-image";
 import index from "@/content/search-index.json";
 import { search, suggestion, type SearchItem } from "@/lib/search";
 
@@ -140,10 +140,9 @@ export function Search({ locale }: { locale: string }) {
                     data-kind={item.kind ?? "title"}
                   >
                     {item.image && (
-                      <Image
+                      <SafeImage
                         className="search-result-thumb"
-                        src={remoteSrc(item.image, 92)}
-        unoptimized
+                        sources={imageSources(item.image, 92)}
                         alt=""
                         width={40}
                         height={60}

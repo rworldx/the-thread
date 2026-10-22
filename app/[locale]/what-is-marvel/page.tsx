@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "@/app/components/safe-image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeParams } from "@/lib/locales";
 import { ArrowIcon } from "@/app/components/icons";
@@ -85,10 +87,10 @@ export default async function WhatIsMarvel({
               {/* The mark of whoever the row is about, so eleven paragraphs
                   read as a sequence of companies rather than as prose. */}
               {logoFor(row) && (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
+                <SafeImage
+                  plain
                   className="rights-logo"
-                  src={logoFor(row)!.src}
+                  sources={imageSources(logoFor(row)!.src, 342)}
                   alt={logoFor(row)!.label}
                   loading="lazy"
                   decoding="async"

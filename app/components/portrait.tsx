@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { remoteSrc } from "@/image-loader";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "./safe-image";
 
 /**
  * An actor still from TMDB, or the gap designed as a gap.
@@ -31,11 +31,12 @@ export function Portrait({
   }
   return (
     <span className="portrait">
-      <Image
+      <SafeImage
         /* Pre-sized and unoptimized: TMDB publishes this width already, so
-           transforming it pays for a resize their CDN did for free. */
-        src={remoteSrc(`${TMDB}${src}`, 185)}
-        unoptimized
+           transforming it pays for a resize their CDN did for free. If every
+           route to the photo fails, the same empty plate fills the frame. */
+        sources={imageSources(`${TMDB}${src}`, 185)}
+        fallback={<span className="image-gap" aria-hidden="true" />}
         alt={alt}
         width={185}
         height={278}

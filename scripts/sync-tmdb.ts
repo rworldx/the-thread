@@ -3,6 +3,14 @@
  *
  * Run manually when titles are added:  npm run sync:tmdb
  *
+ * Or for a few titles only, keeping every other record exactly as committed:
+ *
+ *   npm run sync:tmdb -- --only=visionquest,avengers-doomsday
+ *
+ * That is the right tool for a title that is airing right now — its episodes,
+ * stills, trailers and cast change weekly — without turning the diff into a
+ * 216-title refresh nobody can review.
+ *
  * Fetches at BUILD time, never at request time (brief §14.1). Output lands in
  * `content/tmdb.generated.json` and is COMMITTED, so:
  *   - production makes zero TMDB calls; no rate limit, no third-party outage
@@ -17,7 +25,7 @@
  * NEXT_PUBLIC_ var — this file never runs in a browser (brief §9).
  */
 
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import { generateTintStylesheet } from "./gen-tints";
 import { titles } from "../content/titles";
 import type { TitleSource } from "../content/schema";
@@ -952,14 +960,22 @@ function arabicNeedsReview(en: string | null, ar: string | null): string | null 
 }
 
 async function main() {
-  const out: Record<string, SyncedFields> = {};
+  const onlyArg = process.argv.find((a) => a.startsWith("--only="));
+  const only = onlyArg ? new Set(onlyArg.slice("--only=".length).split(",").filter(Boolean)) : null;
+  const unknown = only ? [...only].filter((id) => !titles.some((t) => t.id === id)) : [];
+  if (unknown.length) throw new Error(`--only names no such title: ${unknown.join(", ")}`);
+
+  const out: Record<string, SyncedFields> = only
+    ? JSON.parse(await readFile(new URL("../content/tmdb.generated.json", import.meta.url), "utf8"))
+    : {};
   const noPoster: string[] = [];
   const noRuntime: string[] = [];
   const noMatch: string[] = [];
   const copyTodo: { id: string; titleEn: string; reason: string }[] = [];
 
-  for (const [i, t] of titles.entries()) {
-    process.stdout.write(`\r[${i + 1}/${titles.length}] ${t.id}`.padEnd(70));
+  const todo = only ? titles.filter((t) => only.has(t.id)) : titles;
+  for (const [i, t] of todo.entries()) {
+    process.stdout.write(`\r[${i + 1}/${todo.length}] ${t.id}`.padEnd(70));
     const synced = await fetchOne(t);
     out[t.id] = synced;
 

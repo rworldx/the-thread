@@ -1,4 +1,6 @@
 import type { TitleVideo } from "@/content/build";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "@/app/components/safe-image";
 import { getTranslations } from "next-intl/server";
 import { Collapsible } from "@/app/components/collapsible";
 
@@ -22,6 +24,7 @@ import { Collapsible } from "@/app/components/collapsible";
  */
 
 const THUMB = (key: string) => `https://i.ytimg.com/vi/${key}/hqdefault.jpg`;
+const MQ = (key: string) => `https://i.ytimg.com/vi/${key}/mqdefault.jpg`;
 const WATCH = (key: string) => `https://www.youtube.com/watch?v=${key}`;
 
 /** Same rule as the cast: ten, then the rest on request. */
@@ -58,8 +61,16 @@ export async function Trailers({ videos }: { videos: TitleVideo[] }) {
                     JPEGs from YouTube's own CDN, already the right size, and
                     routing 1,137 of them through the optimiser would bill for
                     variants of an image nobody zooms into. */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={THUMB(v.key)} alt="" width={480} height={360} loading="lazy" />
+                <SafeImage
+                  plain
+                  /* mqdefault exists for every video YouTube has ever had;
+                     hqdefault is the one that is occasionally missing. */
+                  sources={imageSources(THUMB(v.key), 480, [MQ(v.key)])}
+                  alt=""
+                  width={480}
+                  height={360}
+                  loading="lazy"
+                />
                 <span className="trailer-play-badge" aria-hidden="true" />
               </span>
               <span className="trailer-kind">{t(`videoType.${v.type.toLowerCase()}`)}</span>

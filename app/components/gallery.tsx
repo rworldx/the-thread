@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
-import { remoteSrc } from "@/image-loader";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "./safe-image";
 import { useTranslations } from "next-intl";
 
 /**
@@ -45,9 +45,8 @@ export function Gallery({ posters, title }: { posters: string[]; title: string }
               onClick={() => setOpen(i)}
               aria-label={t("openPoster", { n: i + 1, total: posters.length })}
             >
-              <Image
-                src={remoteSrc(`${THUMB}${p}`, 342)}
-                unoptimized
+              <SafeImage
+                sources={imageSources(`${THUMB}${p}`, 342)}
                 alt=""
                 width={185}
                 height={278}
@@ -72,9 +71,8 @@ export function Gallery({ posters, title }: { posters: string[]; title: string }
       >
         {open !== null && (
           <>
-            <Image
-              src={remoteSrc(`${FULL}${posters[open]}`, 780)}
-              unoptimized
+            <SafeImage
+              sources={imageSources(`${FULL}${posters[open]}`, 780)}
               alt={title}
               width={780}
               height={1170}

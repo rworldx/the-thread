@@ -3,6 +3,8 @@
 import { useMemo } from "react";
 import { useUrlState } from "@/lib/use-url-state";
 import Link from "next/link";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "./safe-image";
 import { useTranslations } from "next-intl";
 import { normalise, squash } from "@/lib/search";
 
@@ -301,12 +303,20 @@ export function ProjectBrowser({
                 <span className="project-art poster-scrim">
                   <span className="poster" data-tint={x.id} data-size="grid">
                     {x.poster ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
-                        src={
+                      <SafeImage
+                        plain
+                        sources={imageSources(
                           x.poster.startsWith("http")
                             ? x.poster
-                            : `https://image.tmdb.org/t/p/w500${x.poster}`
+                            : `https://image.tmdb.org/t/p/w500${x.poster}`,
+                          500,
+                        )}
+                        fallback={
+                          <span className="poster-fallback" aria-hidden="true">
+                            <bdi lang="en" className="poster-fallback-title">
+                              {x.titleEn}
+                            </bdi>
+                          </span>
                         }
                         /**
                          * A TILE IS UP TO 11rem — 176px — and a phone renders

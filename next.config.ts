@@ -179,7 +179,7 @@ const config: NextConfig = {
       `script-src 'self' 'unsafe-inline'${devEval}`,
       "style-src 'self' 'unsafe-inline'",
       // Posters are hotlinked from TMDB and re-hosted nowhere (§14.2).
-      "img-src 'self' blob: data: https://image.tmdb.org https://cdn.jsdelivr.net https://i.ytimg.com https://static.wikia.nocookie.net https://m.media-amazon.com https://www.hollywoodreporter.com https://upload.wikimedia.org https://i.pinimg.com https://cdn.marvel.com https://images.squarespace-cdn.com https://static.comicvine.com https://blogger.googleusercontent.com https://theronin.org https://playcontestofchampions.com https://i.redd.it https://media.zenfs.com https://comicvine.gamespot.com https://www.superherotoystore.com https://oyster.ignimgs.com https://images.weserv.nl",
+      "img-src 'self' blob: data: https://image.tmdb.org https://cdn.jsdelivr.net https://i.ytimg.com https://static.wikia.nocookie.net https://m.media-amazon.com https://www.hollywoodreporter.com https://upload.wikimedia.org https://i.pinimg.com https://cdn.marvel.com https://images.squarespace-cdn.com https://static.comicvine.com https://blogger.googleusercontent.com https://theronin.org https://playcontestofchampions.com https://i.redd.it https://media.zenfs.com https://comicvine.gamespot.com https://www.superherotoystore.com https://oyster.ignimgs.com https://images.weserv.nl https://i0.wp.com",
       "font-src 'self'",
       // The spoiler context is fetched from our own origin; nothing else is.
       "connect-src 'self'",

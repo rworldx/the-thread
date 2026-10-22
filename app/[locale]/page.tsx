@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { imageSources } from "@/image-loader";
+import { SafeImage } from "@/app/components/safe-image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { titles, posterOf, ratingsOf, tintOf } from "@/content/build";
 import { pickWall, franchiseOf, type WallItem } from "@/lib/wall";
@@ -394,10 +396,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                    */}
                   <span className="universe-slide-band" aria-hidden="true">
                     {bandFor(id, 4).map((p) => (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
+                      <SafeImage
+                        plain
                         key={p}
-                        src={`https://image.tmdb.org/t/p/w342${p}`}
+                        sources={imageSources(`https://image.tmdb.org/t/p/w342${p}`, 342)}
                         srcSet={`https://image.tmdb.org/t/p/w342${p} 1x, https://image.tmdb.org/t/p/w500${p} 2x`}
                         alt=""
                         loading="lazy"

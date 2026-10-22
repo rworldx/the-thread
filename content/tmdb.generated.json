@@ -25299,8 +25299,8 @@
     "releaseDate": "2026-12-16",
     "runtimeMin": 165,
     "episodes": [],
-    "posterPath": "/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
-    "posterTint": "#49361d",
+    "posterPath": "/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
+    "posterTint": "#3b4535",
     "overviewEn": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
     "overviewAr": "أبطال محبوبون من ثلاثة أكوان مختلفة يُدفعون نحو صدام مميت، ويواجهون تهديدًا مرعبًا قد يمحو وجودهم بالكامل… شيء يفوق كل ما عرفوه من قبل.",
     "providers": {},
@@ -25360,19 +25360,26 @@
         "type": "Trailer",
         "official": true,
         "publishedAt": "2026-08-15T04:06:21.000Z"
+      },
+      {
+        "key": "nxDMRvDr4AQ",
+        "name": "Silence Your Phones",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-09-28T18:00:09.000Z"
       }
     ],
     "posters": [
       "/5pOEr3ypuPhrXACdeesHj01VAM8.jpg",
+      "/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
+      "/sLYCyO58UvBuBtbHTQjPCCgJ4dG.jpg",
+      "/40jN1UgNAYEkGt2M0i81ghLF3cc.jpg",
+      "/gDkCXdxOrKRRa6t7uwOHDDj1Riu.jpg",
+      "/nwmCsKmuYcX80zQhK2rUhJSjOJG.jpg",
       "/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
-      "/bh2OuKvq19jBHsloUVCfPSZZw81.jpg",
-      "/7bQczUMnjz8iwxNP9YrmLkfI8od.jpg",
-      "/s2Fkuq0tj7mjAHEdbfQkFkdbeRI.jpg",
-      "/8HkIe2i4ScpCkcX9SzZ9IPasqWV.jpg",
-      "/aoDpTDvwNorynUV3xVnOpcpSzkO.jpg",
-      "/5lqTP2YmjHA7O7TxDrkxo3eUKxo.jpg"
+      "/iYVl6Vha1AQfCGJy36o2IkercOr.jpg"
     ],
-    "backdrop": "/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
+    "backdrop": "/g3gpP5YDbA85DsA0bt5mgGQIe5q.jpg",
     "cast": [
       {
         "actor": "Robert Downey Jr.",
@@ -25401,17 +25408,17 @@
       },
       {
         "actor": "Anthony Mackie",
-        "actorPhoto": "/eZSIDrtTzhvabyjrmIITQLsjx8h.jpg",
+        "actorPhoto": "/vecvTm7SimizluJkyIwBxeLbvRm.jpg",
         "character": "Sam Wilson / Captain America"
       },
       {
         "actor": "Florence Pugh",
-        "actorPhoto": "/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg",
+        "actorPhoto": "/1QfiLnofJFlOJOLCWaxyDpIN03v.jpg",
         "character": "Yelena Belova"
       },
       {
         "actor": "Vanessa Kirby",
-        "actorPhoto": "/tViEEsjvbhrJxWsOipUqIYjdHEb.jpg",
+        "actorPhoto": "/a8a9U00KL2JJkkekzhNnueIGKKF.jpg",
         "character": "Sue Storm / Invisible Woman"
       },
       {
@@ -25466,7 +25473,7 @@
       },
       {
         "actor": "Sebastian Stan",
-        "actorPhoto": "/mLqE91qUnE8fbfMvsXD7BcWJKNK.jpg",
+        "actorPhoto": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
         "character": "Bucky Barnes / Winter Soldier"
       },
       {
@@ -25486,12 +25493,12 @@
       },
       {
         "actor": "Kelsey Grammer",
-        "actorPhoto": "/5zik4VJim6YTSWDjC7tkp13wxUp.jpg",
+        "actorPhoto": "/qn38jJHEqRBsj50Gqo2uM38fgJx.jpg",
         "character": "Dr. Henry 'Hank' McCoy / Beast"
       },
       {
         "actor": "Kathryn Newton",
-        "actorPhoto": "/26OEa0uS8552sVJakaCEHYvqOao.jpg",
+        "actorPhoto": "/3mos4oK6bps0uhQzW1L7nj5O0Gd.jpg",
         "character": "Cassie Lang"
       },
       {
@@ -25511,13 +25518,18 @@
       },
       {
         "actor": "Hannah John-Kamen",
-        "actorPhoto": "/V8P9EVelewGVXbuyEylqrzF6iG.jpg",
+        "actorPhoto": "/2fqNQQW3B7upH4rBubhxXkIIoGk.jpg",
         "character": "Ava Starr"
       },
       {
         "actor": "Rebecca Romijn",
         "actorPhoto": "/doqFBHNbNhoLF9RX9SYPqwu1mvd.jpg",
         "character": "Raven Darkholme / Mystique"
+      },
+      {
+        "actor": "Alex Livinalli",
+        "actorPhoto": "/kcPcUfbPMiuNfY3Ox48lXc50NHS.jpg",
+        "character": "Attuma"
       },
       {
         "actor": "Mabel Cadena",
@@ -25530,24 +25542,9 @@
         "character": "Namor"
       },
       {
-        "actor": "Alex Livinalli",
-        "actorPhoto": "/kcPcUfbPMiuNfY3Ox48lXc50NHS.jpg",
-        "character": "Attuma"
-      },
-      {
         "actor": "India Rose Hemsworth",
         "actorPhoto": null,
         "character": "Gorr's Daughter"
-      },
-      {
-        "actor": "Iman Vellani",
-        "actorPhoto": "/oBpOjLAH8heYNNJZN1Z5jVQhAKC.jpg",
-        "character": "Kamala Khan"
-      },
-      {
-        "actor": "Aubrey Plaza",
-        "actorPhoto": "/ejtGfjOAvUHBdVc3xTIV1HtJBi9.jpg",
-        "character": "Rio Vidal/Lady Death"
       }
     ],
     "authors": [
@@ -25790,78 +25787,84 @@
   "visionquest": {
     "tmdbId": 213375,
     "tmdbType": "tv",
-    "releaseDate": "2026-10-14",
-    "runtimeMin": 240,
+    "releaseDate": "2026-10-13",
+    "runtimeMin": 329,
     "episodes": [
       {
         "season": 1,
         "number": 1,
-        "name": "Episode 1",
-        "still": null,
-        "runtime": null
+        "name": "No Strings",
+        "still": "/zNV1OOF71fzTYand5duFx3uaWlE.jpg",
+        "runtime": 56
       },
       {
         "season": 1,
         "number": 2,
-        "name": "Episode 2",
-        "still": null,
-        "runtime": null
+        "name": "Theseus",
+        "still": "/sPFlMWA0YzOfuwys7BumrOJP5HR.jpg",
+        "runtime": 48
       },
       {
         "season": 1,
         "number": 3,
-        "name": "Episode 3",
-        "still": null,
-        "runtime": null
+        "name": "Reboot",
+        "still": "/u2YwlI82Nm6pM3jFijt00lxY2Be.jpg",
+        "runtime": 54
       },
       {
         "season": 1,
         "number": 4,
-        "name": "Episode 4",
-        "still": null,
-        "runtime": null
+        "name": "Malware",
+        "still": "/6eVHqUOPEe1CIbvg4Dx6H4awFBR.jpg",
+        "runtime": 51
       },
       {
         "season": 1,
         "number": 5,
-        "name": "Episode 5",
-        "still": null,
+        "name": "Firewall",
+        "still": "/aV5shTLgl6FJvLlt45MPmhOtvM3.jpg",
         "runtime": null
       },
       {
         "season": 1,
         "number": 6,
-        "name": "Episode 6",
+        "name": "Deadlock",
         "still": null,
         "runtime": null
       },
       {
         "season": 1,
         "number": 7,
-        "name": "Episode 7",
-        "still": null,
+        "name": "Immolation",
+        "still": "/hhLuAHSGLZ5MSkN9UMjkhGu1zxN.jpg",
         "runtime": null
       },
       {
         "season": 1,
         "number": 8,
-        "name": "Episode 8",
-        "still": null,
+        "name": "Forever",
+        "still": "/5nSEYG0U4boOIYeMUBUE8MQjAk.jpg",
         "runtime": null
       }
     ],
     "posterPath": "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
     "posterTint": "#513420",
     "overviewEn": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
-    "overviewAr": "بعد أحداث (واندا فيجن)، يجد (فيجن الأبيض) صعوبة في الارتباط بالذكريات التي مُنحت له، نظراً لافتقاره إلى العواطف أو المشاعر المصاحبة لها.",
-    "providers": {},
-    "providersGlobal": [],
+    "overviewAr": "في ظل وجود مكافأة على رأسه، يتوجب على \"ڤيجن\" مواجهة طبيعته ومقاومة نفوذ \"أولترون\" ليتمكن من البقاء على قيد الحياة.",
+    "providers": {
+      "US": [
+        "Disney Plus"
+      ]
+    },
+    "providersGlobal": [
+      "Disney+"
+    ],
     "imdbId": "tt23112594",
     "rtScore": null,
     "metacritic": null,
-    "tmdbRating": null,
-    "tmdbVotes": null,
-    "trailerKey": "oSVTAUKyrL8",
+    "tmdbRating": 8.745,
+    "tmdbVotes": 153,
+    "trailerKey": "sXKnmgmbkoE",
     "videos": [
       {
         "key": "oSVTAUKyrL8",
@@ -25869,21 +25872,122 @@
         "type": "Trailer",
         "official": true,
         "publishedAt": "2026-08-15T03:59:17.000Z"
+      },
+      {
+        "key": "zUVS8Bp3GY4",
+        "name": "Mind",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-09-10T10:00:24.000Z"
+      },
+      {
+        "key": "_HKBLRpjL1s",
+        "name": "Streams October 14 on Disney+",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-09-25T18:00:18.000Z"
+      },
+      {
+        "key": "te5_f-oF2lw",
+        "name": "Two-Episode Premiere",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-09-26T20:00:18.000Z"
+      },
+      {
+        "key": "uUmR6HBc-XI",
+        "name": "Two-Episode Premiere",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-09-27T20:00:08.000Z"
+      },
+      {
+        "key": "HeFIJnoXj48",
+        "name": "Stream October 14 on Disney+",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-09-29T18:00:28.000Z"
+      },
+      {
+        "key": "pxvkGnFjS6A",
+        "name": "Stream October 14 on Disney+",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-09-30T16:00:29.000Z"
+      },
+      {
+        "key": "pM9HZ8Ovjdw",
+        "name": "The Evolution of Vision",
+        "type": "Trailer",
+        "official": true,
+        "publishedAt": "2026-09-30T19:00:38.000Z"
+      },
+      {
+        "key": "sXKnmgmbkoE",
+        "name": "Official Trailer",
+        "type": "Trailer",
+        "official": true,
+        "publishedAt": "2026-10-01T16:00:21.000Z"
+      },
+      {
+        "key": "LFlVpLvv29U",
+        "name": "Streaming October 14 on Disney+",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-10-03T16:00:29.000Z"
+      },
+      {
+        "key": "5Uk2Nej8OCE",
+        "name": "Anything for family.",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-10-06T00:21:18.000Z"
+      },
+      {
+        "key": "bm1eLRWrmgw",
+        "name": "The Son",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-10-09T19:30:13.000Z"
+      },
+      {
+        "key": "KAWYvu90G5A",
+        "name": "This Wednesday",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-10-10T16:00:03.000Z"
+      },
+      {
+        "key": "z_wp17nlyFc",
+        "name": "Stream This Wednesday Only on Disney+",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-10-11T16:00:37.000Z"
+      },
+      {
+        "key": "9FCw5f0yoTU",
+        "name": "Don't miss the Vision.",
+        "type": "Teaser",
+        "official": true,
+        "publishedAt": "2026-10-13T18:00:33.000Z"
       }
     ],
     "posters": [
-      "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
       "/jfltxthL5nDD14AxOd6gxbBYX6v.jpg",
+      "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+      "/ajbVvETMM7NMq4Gc5FauOoyeEnu.jpg",
+      "/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
+      "/9GYdl2JK4a8y3WfL3CA4sBPQuTq.jpg",
       "/kSLKCUUsYXjXomMIPEFGcNbeByV.jpg",
-      "/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg",
-      "/dZ49yww0E5atTX1VFOK0vturcbK.jpg"
+      "/molehSx8FQUupIDxxYLDse5DAVV.jpg",
+      "/47g2n12OSpQ2r6FssIBVI0QH4RD.jpg"
     ],
-    "backdrop": "/pMgAiQYQpVHNrcQBJNgWxAqMt2c.jpg",
+    "backdrop": "/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
     "cast": [
       {
         "actor": "Paul Bettany",
-        "actorPhoto": "/vcAVrAOZrpqmi37qjFdztRAv1u9.jpg",
-        "character": "The Vision"
+        "actorPhoto": "/oNrDowF5cRtK5lJJuCAh0KeFizy.jpg",
+        "character": "Vision"
       },
       {
         "actor": "James Spader",
@@ -25893,17 +25997,12 @@
       {
         "actor": "Ruaridh Mollica",
         "actorPhoto": "/wiSim6nG9TSY4AO8KOwsaaPJ0EH.jpg",
-        "character": "Thomas Shepard"
+        "character": "Thomas"
       },
       {
         "actor": "Todd Stashwick",
         "actorPhoto": "/seKRXV2HMS36ip4SfQq6PLRiLL2.jpg",
         "character": "Paladin"
-      },
-      {
-        "actor": "T'Nia Miller",
-        "actorPhoto": "/5SD80WqQBmBkGwRf5r0LeJXrv6c.jpg",
-        "character": "Jocasta"
       },
       {
         "actor": "Lauren Morais",
@@ -25916,24 +26015,134 @@
         "character": "F.R.I.D.A.Y."
       },
       {
+        "actor": "Diane Morgan",
+        "actorPhoto": "/46Mdcr9ycOaLCKApoj101Cx1c1S.jpg",
+        "character": "Handler"
+      },
+      {
+        "actor": "Polly Frame",
+        "actorPhoto": "/m1u1jCvYeaqbzJijlavj2wKXIK2.jpg",
+        "character": "Fiona Guthrie"
+      },
+      {
         "actor": "Henry Lewis",
         "actorPhoto": "/sMDsMyLYhmI1N1amPPmd6Lrh7UK.jpg",
-        "character": "D.U.M.-E"
+        "character": "D.U.M.-E."
       },
       {
         "actor": "Jonathan Sayer",
         "actorPhoto": "/cfF9sJMiJyxkYATv47H2qRabCVB.jpg",
-        "character": "U"
+        "character": "U."
       },
       {
         "actor": "Emily Hampshire",
-        "actorPhoto": "/kXb6SAUOACHN9F3M4rkxF7BsJGN.jpg",
+        "actorPhoto": "/cw5F0VKKSVzRvQB4CMRXhs6WxoH.jpg",
         "character": "E.D.I.T.H."
       },
       {
         "actor": "James D'Arcy",
         "actorPhoto": "/6CInTvBeLwXLx2id9TgaULaVEO4.jpg",
         "character": "J.A.R.V.I.S."
+      },
+      {
+        "actor": "Jonathan Rhodes",
+        "actorPhoto": "/2E8zOvsfGnYMtz9htIpqUSyphQt.jpg",
+        "character": "News Anchor 2"
+      },
+      {
+        "actor": "Nicola Alexis",
+        "actorPhoto": "/2ZtLcqg3XVMkkfA0Udh77gIb5Es.jpg",
+        "character": "Field Reporter"
+      },
+      {
+        "actor": "Matt Forde",
+        "actorPhoto": "/omquBQJKMywBPK6cA67kfJqKD7r.jpg",
+        "character": "News Anchor 1"
+      },
+      {
+        "actor": "Zoe Aldrich",
+        "actorPhoto": "/gdTmtdXzxjMgwbcyx9LHNfrhIIt.jpg",
+        "character": "Police Superintendent"
+      },
+      {
+        "actor": "T'Nia Miller",
+        "actorPhoto": "/rNsPJGkQz2yMbqcrWQCdGxq7t20.jpg",
+        "character": "Jocasta / The Butcherbird"
+      },
+      {
+        "actor": "Maximus Evans",
+        "actorPhoto": null,
+        "character": "Duncan"
+      },
+      {
+        "actor": "Hainsley Lloyd Bennett",
+        "actorPhoto": "/fV1brjt4HsTTnlPwN6KWPd0Xz13.jpg",
+        "character": "Tattooed Man"
+      },
+      {
+        "actor": "Edward Apeagyei",
+        "actorPhoto": "/t483hjO25E194jFaNjhNudrl7B7.jpg",
+        "character": "Security Guard"
+      },
+      {
+        "actor": "Josh Brolin",
+        "actorPhoto": "/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg",
+        "character": "Thanos (archive footage) (uncredited)"
+      },
+      {
+        "actor": "Elizabeth Olsen",
+        "actorPhoto": "/vXz0E5lQKZS1RnlmcHSGbdR0CzG.jpg",
+        "character": "Wanda Maximoff / Scarlet Witch (archive footage) (uncredited)"
+      },
+      {
+        "actor": "Art Malik",
+        "actorPhoto": "/hZmb9wWsteP21QA29PHEk6NlOh3.jpg",
+        "character": "Simon Moorhouse"
+      },
+      {
+        "actor": "Mike Sengelow",
+        "actorPhoto": "/94gLCJW9zCMARtpMx6Q5bcQi63C.jpg",
+        "character": "Motel Manager"
+      },
+      {
+        "actor": "Phil Cheadle",
+        "actorPhoto": "/4JDkMQsBQ2tEhKjk8bw3dD5u1Wu.jpg",
+        "character": "Edgar Denning"
+      },
+      {
+        "actor": "Eli-Gray Fehler-Williams",
+        "actorPhoto": null,
+        "character": "Young Paladin"
+      },
+      {
+        "actor": "Mary McDonnell",
+        "actorPhoto": "/qqdaaFLEPXbB8thVJJkYJ4WoAuj.jpg",
+        "character": "Katerina Wells"
+      },
+      {
+        "actor": "Ame Marie Barnett",
+        "actorPhoto": null,
+        "character": "Database Bot / Female Bot"
+      },
+      {
+        "actor": "Esther Canata",
+        "actorPhoto": "/UJEtZVLbcTEAhLuystA2iXw2bE.jpg",
+        "character": "Coat Check"
+      },
+      {
+        "actor": "Terry Matalas",
+        "actorPhoto": "/4NDGDtltOwDSpy5pTHFFVuyEMmd.jpg",
+        "character": "Interviewer #1"
+      },
+      {
+        "actor": "Ben Crompton",
+        "actorPhoto": "/tsHOfCvdONdzVun4xaWGE4a8t8S.jpg",
+        "character": "Clancy"
+      },
+      {
+        "actor": "Jamie Pouw",
+        "actorPhoto": null,
+        "character": "Cybersecurity Bot / Male Bot"
       }
     ],
     "authors": [
@@ -25944,7 +26153,8 @@
     ],
     "authorRole": "creator",
     "genres": [
-      "Sci-Fi & Fantasy"
+      "Sci-Fi & Fantasy",
+      "Drama"
     ]
   },
   "spider-man-brand-new-day": {
